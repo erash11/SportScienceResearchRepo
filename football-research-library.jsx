@@ -148,11 +148,11 @@ export default function FootballResearchLibrary() {
     (async () => {
       try {
         const r = await window.storage.get("fb-research-lib-v2", true);
-        if (r?.value) { const s = JSON.parse(r.value); if (s.length > 0) { setPapers(s); setLoading(false); return; } }
+        if (r?.value) { const s = JSON.parse(r.value); if (s.length > 0) { setPapers(s); setLoadComplete(true); return; } }
       } catch (e) {}
       setPapers(DEFAULT_PAPERS);
       try { await window.storage.set("fb-research-lib-v2", JSON.stringify(DEFAULT_PAPERS), true); } catch (e) {}
-      setLoading(false);
+      setLoadComplete(true);
     })();
   }, []);
 
@@ -222,7 +222,7 @@ export default function FootballResearchLibrary() {
   const td = { padding: "13px 14px", fontSize: 12.5, lineHeight: 1.65, color: "#2a2a2a", borderRight: "1px solid #EDE9E3", verticalAlign: "top", borderBottom: "1px solid #EDE9E3" };
   const inp = { width: "100%", boxSizing: "border-box", padding: "8px 10px", borderRadius: 5, border: "1px solid #d0ccc5", fontSize: 13, fontFamily: "'DM Sans',sans-serif", marginTop: 4 };
 
-  if (loading) return <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "#FAF8F5", fontFamily: "'DM Sans',sans-serif" }}><p>Loading research library...</p></div>;
+  if (!loadComplete) return <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "#FAF8F5", fontFamily: "'DM Sans',sans-serif" }}><p>Loading research library...</p></div>;
 
   return (
     <div style={{ minHeight: "100vh", background: "#FAF8F5", fontFamily: "'DM Sans',sans-serif", color: "#1a1a1a" }}>
