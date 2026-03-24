@@ -1,0 +1,80 @@
+<h2>Three Architectural Approaches</h2>
+<p class="subtitle">Each handles the 2,000+ paper scale problem differently — pick the one that fits how you work.</p>
+
+<div class="options">
+
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>GitHub JSON + Pending Queue <span style="font-size:12px;background:#e8f5e9;color:#2e7d32;padding:2px 8px;border-radius:12px;margin-left:8px;">Recommended</span></h3>
+      <p>GitHub hosts <code>papers.json</code> (all committed papers). Staff form submissions go to <code>window.storage</code> as a pending queue. App merges both on load. Eric sees a badge when pending papers need committing, clicks Export → pastes JSON into GitHub.</p>
+      <div class="pros-cons" style="margin-top:12px">
+        <div class="pros"><h4>Pros</h4><ul>
+          <li>No external accounts needed</li>
+          <li>Unlimited paper capacity</li>
+          <li>Staff see pending papers instantly</li>
+          <li>Eric controls what goes permanent</li>
+          <li>Version history via git</li>
+        </ul></div>
+        <div class="cons"><h4>Cons</h4><ul>
+          <li>Eric must manually commit to GitHub when notified</li>
+          <li>Pending papers lost if storage cleared</li>
+        </ul></div>
+      </div>
+      <div style="margin-top:12px;padding:10px;background:#f5f5f5;border-radius:6px;font-size:13px">
+        <strong>Data flow:</strong> GitHub JSON → fetch on load → merge with pending queue → display.<br>
+        Form submit → window.storage pending queue → badge notifies Eric → export JSON → GitHub commit.
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>GitHub JSON + GitHub API Direct Write</h3>
+      <p>All submissions (form + batch) go directly to GitHub via the GitHub REST API. No <code>window.storage</code> needed. Requires a fine-grained read/write personal access token embedded in the app.</p>
+      <div class="pros-cons" style="margin-top:12px">
+        <div class="pros"><h4>Pros</h4><ul>
+          <li>Fully automated — no manual commit step</li>
+          <li>Staff submissions permanently saved instantly</li>
+          <li>Single source of truth</li>
+        </ul></div>
+        <div class="cons"><h4>Cons</h4><ul>
+          <li>Auth token visible in client-side code (security risk)</li>
+          <li>Anyone can write to GitHub repo</li>
+          <li>More complex implementation</li>
+          <li>Token needs renewal when it expires</li>
+        </ul></div>
+      </div>
+      <div style="margin-top:12px;padding:10px;background:#fff3e0;border-radius:6px;font-size:13px">
+        <strong>Data flow:</strong> Form submit → GitHub API → papers.json updated → all users see change on next load.
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Split GitHub Files + Lazy Loading</h3>
+      <p>Papers split across multiple JSON files by category or year (<code>papers-2023.json</code>, <code>papers-2024.json</code>, etc.). App only loads the files relevant to the current filter. Same pending queue as Option A.</p>
+      <div class="pros-cons" style="margin-top:12px">
+        <div class="pros"><h4>Pros</h4><ul>
+          <li>Fastest load time for filtered views</li>
+          <li>Scales to tens of thousands of papers</li>
+          <li>Modular — add new categories easily</li>
+        </ul></div>
+        <div class="cons"><h4>Cons</h4><ul>
+          <li>Search across all papers requires loading all files</li>
+          <li>More complex data management</li>
+          <li>Over-engineered for current scale</li>
+        </ul></div>
+      </div>
+      <div style="margin-top:12px;padding:10px;background:#f5f5f5;border-radius:6px;font-size:13px">
+        <strong>Data flow:</strong> Filter selection → fetch relevant year/category file → merge → display.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<p class="subtitle" style="margin-top:24px">Click an option to select it, then let me know your choice in the terminal.</p>
