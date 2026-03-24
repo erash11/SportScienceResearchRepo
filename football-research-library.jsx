@@ -146,12 +146,72 @@ export default function FootballResearchLibrary() {
 
   useEffect(() => {
     (async () => {
+      // ── Step 1: Fetch from GitHub ────────────────────────────────────────
+      let ghPapers = [];
+      let failed = false;
       try {
-        const r = await window.storage.get("fb-research-lib-v2", true);
-        if (r?.value) { const s = JSON.parse(r.value); if (s.length > 0) { setPapers(s); setLoadComplete(true); return; } }
+        const res = await fetch(GITHUB_URL);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        ghPapers = await res.json();
+      } catch (e) {
+        failed = true;
+      }
+      setFetchFailed(failed);
+
+      // ── Step 2: Migrate old storage key if present ───────────────────────
+      try {
+        const oldR = await window.storage.get(OLD_KEY, true);
+        if (oldR?.value) {
+          const oldArr = JSON.parse(oldR.value);
+          if (Array.isArray(oldArr) && oldArr.length > 0) {
+            // Read existing pending (may already have entries from prior partial migration)
+            const pendR = await window.storage.get(PENDING_KEY, true);
+            const existingPending = (pendR?.value ? JSON.parse(pendR.value) : null) || [];
+            // Merge: existing pending takes precedence (dedup by id)
+            const existingIds = new Set(existingPending.map(p => p.id));
+            const fromOld = oldArr.filter(p => !existingIds.has(p.id));
+            const migrated = [...existingPending, ...fromOld];
+            try {
+              await window.storage.set(PENDING_KEY, JSON.stringify(migrated), true);
+              await window.storage.set(OLD_KEY, "[]", true); // sentinel: migration complete
+            } catch (e) {
+              // write failed — leave OLD_KEY untouched so next load retries
+            }
+          }
+        }
       } catch (e) {}
-      setPapers(DEFAULT_PAPERS);
-      try { await window.storage.set("fb-research-lib-v2", JSON.stringify(DEFAULT_PAPERS), true); } catch (e) {}
+
+      // ── Step 3: Load pending queue ───────────────────────────────────────
+      let pending = [];
+      try {
+        const pendR = await window.storage.get(PENDING_KEY, true);
+        if (pendR?.value) {
+          const parsed = JSON.parse(pendR.value);
+          if (Array.isArray(parsed)) pending = parsed;
+        }
+      } catch (e) {}
+
+      // ── Step 4: Dedup pending against GitHub (only if fetch succeeded) ───
+      // NEVER dedup against an empty array from a failed fetch — that would
+      // permanently remove legitimately pending papers.
+      if (!failed && ghPapers.length > 0) {
+        const ghIds = new Set(ghPapers.map(p => p.id));
+        const clean = pending.filter(p => !ghIds.has(p.id));
+        if (clean.length !== pending.length) {
+          pending = clean;
+          try {
+            await window.storage.set(PENDING_KEY, JSON.stringify(pending), true);
+          } catch (e) {}
+        }
+      }
+
+      // ── Step 5: Merge and set state ──────────────────────────────────────
+      const tagged = [
+        ...ghPapers.map(p => ({ ...p, source: "github" })),
+        ...pending.map(p => ({ ...p, source: "pending" })),
+      ];
+      setPapers(tagged);
+      setPendingPapers(pending);
       setLoadComplete(true);
     })();
   }, []);
