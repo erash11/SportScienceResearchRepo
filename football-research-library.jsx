@@ -5,120 +5,6 @@ const SCHEMA_FIELDS = ["id","year","citation","doi","driveUrl","abstract","tldr"
 
 import { useState, useEffect, useCallback, useRef } from "react";
 
-const DEFAULT_PAPERS = [
-  {
-    id: "1", year: 2025,
-    citation: "Baylor Applied Sport Science. DEXA Data in Football Analytics: The Gridiron Blueprint.",
-    doi: "",
-    driveUrl: "https://docs.google.com/document/d/1gxa6u7lbla3P7c_g26kQUl_K8t3YBLkbCBXtL5vEo8c/edit",
-    abstract: "This framework transforms DEXA scanning from a simple body composition snapshot into a longitudinal predictive model for collegiate football. By engineering novel metrics from serial scans across 100+ football athletes over multiple seasons, it establishes positional body composition fingerprints, quantifies the metabolic cost of a football season through lean mass changes, and introduces composite scores for developmental potential and injury resilience. Key innovations include the Developmental Headroom metric, Core-to-Limb Armor Ratio, and In-Season Catabolic Cost tracking.",
-    tldr: "DEXA data becomes a predictive engine when you track rate of change over time instead of just snapshots. First-year lean mass trajectory predicts starter status better than any baseline measurement. The In-Season Catabolic Cost and Core-to-Limb Armor Ratio are new KPIs your nutrition and S&C staff should be tracking.",
-    methods: "Longitudinal DEXA analysis across multiple seasons; positional cohort modeling; novel metric engineering (Developmental Headroom, Catabolic Cost, Core-to-Limb Armor Ratio, Developmental Potential Score); statistical modeling of body composition trajectories vs. performance outcomes.",
-    findings: "Rate of lean mass change in the first year is a stronger predictor of eventual starter status than any baseline body composition measurement. Bone mineral density declines serve as early markers of systemic overtraining. Visceral adipose tissue spikes during injury rehabilitation create an inflammatory environment that slows healing. Position-specific body composition fingerprints provide actionable benchmarks for recruiting evaluation.",
-    limitations: "Internal research document based on a single program's data; positional fingerprints may not generalize across offensive/defensive schemes; DEXA availability and cost limit widespread adoption; longitudinal tracking requires multi-year commitment before predictive models stabilize.",
-    practicalImplications: "Track each athlete's rate of lean mass change during their first year as a primary developmental KPI. Calculate In-Season Catabolic Cost (lean mass lost during the competitive season) as a performance indicator for nutrition and S&C staff. Monitor VAT during injury rehab periods. Use the Core-to-Limb Armor Ratio rather than total body mass when evaluating lineman readiness.",
-    athleteDev: "Use Developmental Potential Score during recruiting evaluations to project a player's physical ceiling. Stop telling linemen to just 'get bigger' and start targeting core and hip density. Build positional body composition fingerprints as benchmarks for incoming players.",
-    rtp: "Monitor VAT spikes during injury rehab as they create inflammatory conditions that slow healing. Track bone mineral density trends as early warning signals for systemic overtraining. Use bilateral DEXA asymmetry flags to identify compensation patterns before they become secondary injuries."
-  },
-  {
-    id: "2", year: 2025,
-    citation: "Baylor Applied Sport Science. An Evidence-Based Physical Evaluation Framework for Incoming Collegiate American Football Athletes.",
-    doi: "",
-    driveUrl: "https://docs.google.com/document/d/1Q99FyXYrk_hV1P78NrVRw1zpF7Zcc4aGEO3qsbgWQ7E/edit",
-    abstract: "A comprehensive seven-pillar physical evaluation framework for incoming football athletes (recruits and transfers) using force plates, markerless motion capture, DEXA, and groin strength testing. It synthesizes the evidence on CMJ, IMTP, drop jumps, hip adductor/abductor ratios, and movement screening to replace outdated testing batteries with validated, technology-driven assessments covering Maximal Strength, Explosive Power, Reactive Strength, Movement Efficiency, Body Composition, Musculoskeletal Integrity, and Static Movement Quality.",
-    tldr: "Replace your outdated combine-style testing with a seven-pillar evaluation using force plates, markerless motion capture, and DEXA. The groin adductor strength threshold of <465 N is a validated red flag for injury risk. Single-leg CMJ asymmetry and hip adductor/abductor ratios provide more actionable data than any pro agility time ever will.",
-    methods: "Literature synthesis of force plate (CMJ, IMTP, drop jump), markerless motion capture (sprint and COD kinematics), DEXA body composition, and groin strength testing protocols; framework development integrating seven assessment domains.",
-    findings: "CMJ and IMTP provide reliable, valid measures of explosive power and maximal strength with strong test-retest reliability. Groin adductor strength below 465 N is a validated threshold for elevated injury risk. Single-leg CMJ asymmetry indexes detect bilateral deficits that traditional testing misses. Markerless motion capture during sprints and COD provides movement quality data without lab constraints.",
-    limitations: "Framework requires significant technology investment (force plates, markerless motion capture, DEXA); normative data is program-specific and requires calibration period; transfer portal athletes may have limited baseline data; single assessment point captures state not trait.",
-    practicalImplications: "Build incoming player evaluation around seven pillars: Maximal Strength (IMTP), Explosive Power (CMJ), Reactive Strength (Drop Jump), Movement Efficiency (markerless motion capture), Body Composition (DEXA), Musculoskeletal Integrity (groin strength + single-leg CMJ asymmetry), and Static Movement Quality (overhead squat via motion capture). Prioritize groin strength screening for all incoming players.",
-    athleteDev: "Use the seven-pillar profile to create individualized development plans for each incoming athlete. Identify the weakest pillar and prioritize it in offseason programming. Track pillar scores longitudinally to quantify physical development across a career.",
-    rtp: "Use the incoming evaluation as the pre-injury baseline for all RTP decisions. Groin adductor strength <465 N at any point should trigger a modified training plan. Single-leg CMJ asymmetry >15% post-injury should delay full clearance regardless of other tests."
-  },
-  {
-    id: "3", year: 2025,
-    citation: "Baylor Applied Sport Science. SpeedSig: From Practitioner's Problem to Validated Product (Review of Weber et al.).",
-    doi: "",
-    driveUrl: "https://docs.google.com/document/d/1awkRNvPwhBtM1mmnLGm0aD7CGwqKjOl9d3lSozHY3TA/edit",
-    abstract: "A research deep dive into SpeedSig, an Australian SaaS analytics platform that repurposes existing Catapult or STATSports GPS hardware (repositioned from thoracic to lumbar spine via custom belt) to generate biomechanical 'Speed Signatures.' The review covers peer-reviewed validation studies showing 'Good' validity (ICC 0.83) for ground contact time against force plates and 'Excellent' field reliability (ICC 0.91-0.92).",
-    tldr: "SpeedSig turns your existing GPS hardware into a biomechanics tool by repositioning it to the lumbar spine. Its ground contact time metric is validated against force plates (ICC 0.83) with excellent field reliability (ICC 0.91-0.92). No new hardware purchase required. The real value is in rehab and RTP: objective, on-field biomechanical data showing whether an athlete is truly moving like their healthy self.",
-    methods: "Review of peer-reviewed validation studies; ICC analysis for concurrent validity against force plates; test-retest reliability assessment in field conditions; biomechanical signal processing from lumbar-mounted IMU data.",
-    findings: "Ground contact time validity rated 'Good' (ICC 0.83) against force plates. Field reliability rated 'Excellent' (ICC 0.91-0.92). Lumbar placement enables 3D profiling of spine, pelvis, and legs independently during running. Software generates individualized 'Speed Signatures' that can be compared pre/post injury for objective RTP assessment.",
-    limitations: "Validation studies primarily on straight-line running; limited peer-reviewed data on multidirectional movements; requires custom lumbar belt (proprietary); algorithm details are proprietary; still emerging technology with a small but growing evidence base.",
-    practicalImplications: "Move one GPS unit from the thoracic mount to a custom lumbar belt during warm-ups to generate biomechanical data. Use ground contact time, stiffness, and efficiency metrics to track movement quality during rehab progressions. Compare post-injury Speed Signatures to healthy baselines for objective RTP clearance.",
-    athleteDev: "Establish healthy Speed Signatures for each athlete during preseason as a baseline for longitudinal monitoring. Use asymmetry and efficiency metrics to identify movement pattern changes that may indicate fatigue accumulation or developing compensation strategies.",
-    rtp: "This is SpeedSig's primary value. When an athlete passes strength tests but something still 'looks off,' SpeedSig quantifies what the coaching staff is seeing. Compare post-injury Speed Signatures to the athlete's healthy baseline to verify they are truly moving the way they need to on the field."
-  },
-  {
-    id: "4", year: 2025,
-    citation: "Baylor Applied Sport Science. The NIRS-Enhanced Return-to-Play Framework: MOXY Monitor for Football RTP.",
-    doi: "",
-    driveUrl: "https://docs.google.com/document/d/1XBVEmXgZUTtte581qQC-4n5ZEzvMJ_h_EkYyfAY9sqs/edit",
-    abstract: "A four-phase RTP framework using MOXY near-infrared spectroscopy (NIRS) sensors to objectively track local muscle oxygen saturation (SmO2) and total hemoglobin (THb) during rehabilitation. Provides a non-invasive, real-time window into muscle metabolism. Phase 1 covers early rehab bilateral monitoring, Phase 2 adds loaded movement patterns, Phase 3 introduces sport-specific conditioning, and Phase 4 validates full-contact readiness against pre-injury baselines.",
-    tldr: "Put a MOXY sensor on the same muscle of both legs during rehab. The uninjured leg is your real-time control. If the injured quad only desaturates 5% during a leg extension while the healthy side drops 20%, the athlete is offloading even if they say it 'feels fine.' SmO2 reoxygenation time between efforts is your primary metric for between-play recovery capacity.",
-    methods: "Four-phase protocol design using bilateral MOXY NIRS monitoring; SmO2 and THb signal analysis during therapeutic exercises; reoxygenation rate calculations; pre-injury vs. post-injury NIRS signature comparison framework.",
-    findings: "Bilateral NIRS monitoring during early rehab reveals offloading patterns invisible to visual observation. SmO2 desaturation magnitude reflects true muscular work capacity, not just force production. Reoxygenation time between efforts directly correlates with between-play recovery capacity. Sport-specific drill NIRS signatures can be compared to pre-injury baselines.",
-    limitations: "MOXY sensors are relatively new to team sport settings; limited normative data for football-specific exercises; sensor placement and skin pigmentation can affect signal quality; requires pre-injury baseline data; cost per unit may limit bilateral monitoring across a full roster.",
-    practicalImplications: "Implement bilateral MOXY monitoring from Phase 1 of rehab. Use SmO2 desaturation magnitude (not just force output) to assess true muscular engagement. Track reoxygenation time as the primary metric for between-play recovery capacity. Compare sport-specific drill NIRS signatures to pre-injury baselines before clearing for full contact.",
-    athleteDev: "Establish healthy NIRS profiles during preseason testing. Use SmO2 response patterns during conditioning to identify athletes with poor local muscular endurance who may benefit from targeted aerobic development work at the tissue level.",
-    rtp: "The core use case. Bilateral NIRS monitoring catches compensation and offloading patterns that strength tests miss. An athlete who produces adequate force but does so through altered metabolic strategies is not truly ready. Do not clear based on strength alone."
-  },
-  {
-    id: "5", year: 2025,
-    citation: "Baylor Applied Sport Science. S2 Cognition in College Football.",
-    doi: "",
-    driveUrl: "https://docs.google.com/document/d/1C-PQweNLIWK4cI2YGt7SyAAyktivcxa7yGO0Sska1Qo/edit",
-    abstract: "Analysis of S2 Cognition's nine-domain cognitive assessment platform for collegiate football applications. S2 measures perception speed, tracking capacity, decision complexity, impulse control, and five other game-speed cognitive skills. Peer-reviewed research shows football players demonstrate measurable cognitive advantages over non-athletes. For QBs, S2 overall score explains 28.7% of career passer rating variance (vs. Wonderlic at 0.01%). For WRs, Search Efficiency and Impulse Control account for 72.2% of drop rate variance.",
-    tldr: "S2 Cognition quantifies the 'intangibles' coaches talk about. The QB overall score explains 28.7% of passer rating variance, making the Wonderlic's 0.01% look irrelevant. For receivers, Search Efficiency and Impulse Control predict 72.2% of drop rate variance. Use it as a tie-breaker in recruiting and as a diagnostic tool for player development.",
-    methods: "Review of S2 Cognition validation studies; regression analysis of cognitive scores vs. on-field performance metrics (passer rating, drop rate); position-specific cognitive profiling; comparison to Wonderlic.",
-    findings: "S2 overall score explains 28.7% of career passer rating variance for QBs. Wonderlic explains only 0.01%. WR Search Efficiency and Impulse Control predict 72.2% of drop rate variance. Collegiate football players show cognitive advantages over non-athletes. Position-specific cognitive profiles emerge with meaningful differences.",
-    limitations: "S2 is a proprietary commercial product; independent replication is limited; sample sizes in published validation studies are moderate; cognitive profiles may interact with scheme complexity; cost per assessment limits roster-wide deployment.",
-    practicalImplications: "Use S2 as a tie-breaker in recruiting, not standalone. When a receiver keeps dropping balls in traffic, check his Search Efficiency score. If low, design drills with deliberate visual clutter rather than saying 'focus harder.' Use cognitive profiles for scheme-fit analysis.",
-    athleteDev: "Design position-specific cognitive development drills based on S2 profiles. If QBs score low on Decision Complexity, simplify read progressions or lean into RPO concepts. Build 'chaos catching' drills for WRs with low Search Efficiency scores.",
-    rtp: "Post-concussion S2 reassessment provides an objective cognitive baseline comparison beyond standard ImPACT testing. Domain-specific declines from pre-injury baseline can inform targeted cognitive rehabilitation activities."
-  },
-  {
-    id: "6", year: 2025,
-    citation: "Baylor Applied Sport Science. Wearable Resistance Training Program Review: Exogen for Football.",
-    doi: "",
-    driveUrl: "https://docs.google.com/document/d/1M8YxaAGKFp5-ALTgP1_3qYjl6erQ4GA7ErLVxEsAskI/edit",
-    abstract: "Review of wearable resistance (WR) technology, specifically Exogen, for speed and COD training in elite football. WR applied to the limbs at 1-5% body mass provides highly specific overload for sprint and COD work. Distal (shank) placement creates greater rotational inertia than proximal (thigh), specifically overloading the deceleration/braking phase of cutting. 8-week warm-up integration improved 10m and 20m sprint times by ~2% without impairing subsequent training quality.",
-    tldr: "Exogen calf sleeves integrated into warm-ups 2-3x/week at 1-5% body mass improve sprint times by about 2% over 8 weeks without hurting session quality. Start proximal (near knee) at 200g for weeks 1-3, then go distal (near ankle) at 400-600g in weeks 5-8. Use contrast sets: one loaded rep, then one unloaded at max intent. This is your in-season speed 'microdosing' strategy.",
-    methods: "Literature review of wearable resistance research; RCT data from 8-week warm-up integration protocols; biomechanical analysis of proximal vs. distal load placement; effect size calculations for sprint and COD improvements.",
-    findings: "8-week warm-up integration improved 10m and 20m sprint times by ~2%. Distal placement specifically overloads the deceleration/braking phase. WR at 1-5% body mass does not impair subsequent training quality. Contrast sets produce acute post-activation potentiation. 180-degree COD showed greatest responsiveness.",
-    limitations: "Most WR research conducted in soccer and rugby, not American football specifically; long-term (>8 week) retention unclear; optimal loading may vary by position and body mass; limited injury risk data; athlete compliance with placement matters.",
-    practicalImplications: "Integrate Exogen calf sleeves into RAMP warm-ups 2-3 days/week. Progressive loading: proximal at 200g (weeks 1-3), distal at 400-600g (weeks 5-8). Use contrast sets for acute potentiation. In-season compatible strategy that builds speed without gym fatigue.",
-    athleteDev: "Use WR as a 'speed microdosing' tool during in-season when gym-based power training volume is reduced. Prioritize 180-degree COD work for DBs and WRs. Build position-specific WR warm-up templates.",
-    rtp: "Introduce WR progressively during late-stage RTP as a movement quality challenge. If an athlete compensates under added rotational inertia, they are not ready for full-speed demands. Use as a stress test for movement quality in the final RTP phase."
-  },
-  {
-    id: "7", year: 2025,
-    citation: "Baylor Applied Sport Science. L5-S1 Rehab Protocol: Criterion-Based RTP for Post-Microdiscectomy DL.",
-    doi: "",
-    driveUrl: "https://docs.google.com/document/d/1BNys-bC7E0SS2S6nX502BMu-SNXp6np1dtGVpgrWmxE/edit",
-    abstract: "A detailed, two-phase rehab protocol for an elite DL with persistent S1 myotomal weakness after lumbar microdiscectomy. Phase I uses NMES + BFR training for neural drive and atrophy with spine-sparing loads. Phase II integrates unilateral resistance training (trap bar DL, single-leg RDLs), criterion-based plyometric progression, and position-specific 'get-off' retraining. RTP clearance requires a multi-domain scorecard: isokinetic strength >90% LSI, functional hops, 3D motion analysis, and I-PRRS >60.",
-    tldr: "The biggest risk after disc surgery isn't re-herniation. It's secondary injuries from compensation caused by S1 weakness. A pain-free athlete is not a ready athlete. Use NMES + voluntary contractions to restore neural drive first, then BFR at 20-30% 1RM for hypertrophy without spinal load. Use trap bar DL for all post-op athletes. Never clear on time alone. Use the RTP scorecard.",
-    methods: "Case-study protocol design; two-phase progressive rehab; NMES + BFR integration; criterion-based milestones; multi-domain RTP scorecard (isokinetic LSI, functional hops, 3D motion analysis, I-PRRS).",
-    findings: "NMES + voluntary contraction restores neural drive faster than voluntary training alone. BFR at 20-30% 1RM produces hypertrophic adaptations without spinal compressive loads. Trap bar DL reduces spinal flexion vs. conventional. Multi-domain scorecard (>90% LSI, hop symmetry, 3D clearance, I-PRRS >60) provides comprehensive readiness assessment.",
-    limitations: "Single case study limits generalizability; optimal NMES parameters for S1 myotome not well established; BFR cuff placement near surgical site needs careful consideration; I-PRRS has limited football-specific validation.",
-    practicalImplications: "Pair NMES with voluntary contractions in Phase I for all neural drive deficits post-spine surgery. BFR at 20-30% 1RM during early strength phases. Trap bar DL replaces conventional for all post-disc athletes. Multi-domain RTP scorecard is mandatory. Never use time-based clearance.",
-    athleteDev: "Development plans after spine surgery must account for neural drive deficit as a rate limiter. Progressive overload timelines will be longer than for musculotendinous injuries. Communicate adjusted expectations clearly to coaching staff.",
-    rtp: "Full scorecard: isokinetic >90% LSI, functional hop symmetry, 3D motion analysis showing no compensatory patterns, I-PRRS >60. The biggest clinical mistake is clearing a pain-free athlete who still has measurable S1 weakness. Secondary injuries from compensation are the real threat."
-  },
-  {
-    id: "8", year: 2025,
-    citation: "Baylor Applied Sport Science. The Gridiron Blueprint: Actionable Summary for Coaches and Sports Dietitians.",
-    doi: "",
-    driveUrl: "https://docs.google.com/document/d/1iJ4UV-XxeLrYuB3jQEZlaVobHseVkUFgR3NsD1swr2w/edit",
-    abstract: "A coach and dietitian-friendly summary of the full Gridiron Blueprint research. Distills key analytics into three actionable tools: Data-Driven Positional Fingerprints, the Developmental Potential Score (DPS), and the Injury Resilience Dashboard. Rate of change beats baseline measurements for predicting success. In-Season Catabolic Cost is a staff KPI. Declining bone density is an early warning for systemic overtraining.",
-    tldr: "Hand this document to your coaches and dietitians. It translates complex body composition analytics into three tools they can use immediately. Biggest coaching takeaway: stop telling linemen to 'get bigger' and start targeting core and hip density. Biggest nutrition takeaway: track VAT during injury rehab because visceral fat spikes create inflammation that slows healing.",
-    methods: "Knowledge translation document synthesizing longitudinal DEXA research into practitioner-friendly frameworks; three applied tools (Positional Fingerprints, Developmental Potential Score, Injury Resilience Dashboard).",
-    findings: "Rate of change outperforms static baselines for predicting development. In-Season Catabolic Cost varies significantly by position and nutritional support quality. Core-to-Limb Armor Ratio is more meaningful than total mass for lineman readiness. Declining bone mineral density precedes other markers of systemic overtraining.",
-    limitations: "Based on single program's research; tools require DEXA access and longitudinal data; positional fingerprints need program-specific calibration; DPS has not been independently validated.",
-    practicalImplications: "Distribute to coaching and nutrition staff as an executive summary. Use three tools immediately. Make In-Season Catabolic Cost a nutrition staff KPI. Stop using total body mass as a lineman readiness metric.",
-    athleteDev: "Use DPS during recruiting to project physical ceiling. Build positional fingerprints as benchmarks. Track first-year rate of lean mass change as the primary developmental metric.",
-    rtp: "The Injury Resilience Dashboard integrates body composition signals (asymmetry, bone density, VAT) into a single view for medical and performance staff. VAT monitoring during rehab should be standard protocol."
-  }
-];
 
 const fl = document.createElement("link");
 fl.href = "https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600;700&display=swap";
@@ -227,6 +113,9 @@ export default function FootballResearchLibrary() {
   }, [papers]);
 
   const flash = (m) => { setToast(m); setTimeout(() => setToast(null), 3000); };
+
+  useEffect(() => { setCurrentPage(1); }, [search, yearFilter]);
+
   const years = [...new Set(papers.map(p => p.year))].sort((a, b) => b - a);
 
   const filtered = papers.filter(p => {
@@ -240,6 +129,11 @@ export default function FootballResearchLibrary() {
     if (sortCol === "year") return (a.year - b.year) * dir;
     return (a[sortCol]||"").localeCompare(b[sortCol]||"") * dir;
   });
+
+  const PAPERS_PER_PAGE = 50;
+  const totalPages = Math.ceil(filtered.length / PAPERS_PER_PAGE);
+  const startIndex = (currentPage - 1) * PAPERS_PER_PAGE;
+  const pagedPapers = filtered.slice(startIndex, startIndex + PAPERS_PER_PAGE);
 
   const toggleSort = (col) => {
     if (sortCol === col) setSortDir(d => d === "asc" ? "desc" : "asc");
@@ -317,7 +211,11 @@ export default function FootballResearchLibrary() {
   const td = { padding: "13px 14px", fontSize: 12.5, lineHeight: 1.65, color: "#2a2a2a", borderRight: "1px solid #EDE9E3", verticalAlign: "top", borderBottom: "1px solid #EDE9E3" };
   const inp = { width: "100%", boxSizing: "border-box", padding: "8px 10px", borderRadius: 5, border: "1px solid #d0ccc5", fontSize: 13, fontFamily: "'DM Sans',sans-serif", marginTop: 4 };
 
-  if (!loadComplete) return <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "#FAF8F5", fontFamily: "'DM Sans',sans-serif" }}><p>Loading research library...</p></div>;
+  if (!loadComplete) return (
+    <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "#FAF8F5", fontFamily: "'DM Sans',sans-serif" }}>
+      <p style={{ color: "#555", fontSize: 15 }}>Loading research library...</p>
+    </div>
+  );
 
   return (
     <div style={{ minHeight: "100vh", background: "#FAF8F5", fontFamily: "'DM Sans',sans-serif", color: "#1a1a1a" }}>
@@ -333,6 +231,13 @@ export default function FootballResearchLibrary() {
         </div>
       </div>
 
+      {/* Fetch failure banner */}
+      {fetchFailed && (
+        <div style={{ background: "#FFF8E1", borderBottom: "2px solid #F9A825", padding: "12px 24px", textAlign: "center", fontSize: 13, color: "#795548" }}>
+          ⚠️ Could not load library data from GitHub. Showing locally submitted papers only. Check your connection or try refreshing.
+        </div>
+      )}
+
       {/* Controls */}
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "20px 24px", display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
         <input value={search} onChange={e => setSearch(e.target.value)} placeholder="Search by title, methods, findings..."
@@ -344,9 +249,15 @@ export default function FootballResearchLibrary() {
           {years.map(y => <option key={y} value={y}>{y}</option>)}
         </select>
         <button onClick={exportCSV} style={{ padding: "9px 16px", borderRadius: 6, border: "none", background: "#C62828", color: "#fff", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'DM Sans',sans-serif" }}>📋 Export to CSV</button>
-        <button onClick={() => setShowUpload(!showUpload)} style={{ padding: "9px 16px", borderRadius: 6, border: "none", background: showUpload ? "#555" : "#003A2B", color: "#fff", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'DM Sans',sans-serif" }}>
+        <button onClick={() => { setShowUpload(!showUpload); setFormError(null); }} style={{ padding: "9px 16px", borderRadius: 6, border: "none", background: showUpload ? "#555" : "#003A2B", color: "#fff", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'DM Sans',sans-serif" }}>
           {showUpload ? "✕ Cancel" : "+ Add Paper"}
         </button>
+        {pendingPapers.length > 0 && (
+          <button onClick={() => setShowPendingPanel(true)}
+            style={{ padding: "9px 16px", borderRadius: 6, border: "none", background: "#E65100", color: "#fff", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'DM Sans',sans-serif" }}>
+            ⏳ {pendingPapers.length} Pending
+          </button>
+        )}
       </div>
 
       {/* Upload */}
@@ -372,6 +283,55 @@ export default function FootballResearchLibrary() {
               <button onClick={handleUpload} style={{ padding: "9px 20px", borderRadius: 6, border: "none", background: "#003A2B", color: "#fff", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'DM Sans',sans-serif" }}>Save to Library</button>
               <button onClick={() => setShowUpload(false)} style={{ padding: "9px 20px", borderRadius: 6, border: "1px solid #d0ccc5", background: "#fff", color: "#555", fontSize: 13, cursor: "pointer", fontFamily: "'DM Sans',sans-serif" }}>Cancel</button>
             </div>
+            {formError && (
+              <div style={{ marginTop: 8, fontSize: 13, color: "#C62828", background: "#FFEBEE", padding: "8px 12px", borderRadius: 4 }}>
+                {formError}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Pending Panel */}
+      {showPendingPanel && (
+        <div style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.45)", zIndex: 500, display: "flex", alignItems: "flex-start", justifyContent: "center", paddingTop: 60 }}>
+          <div style={{ background: "#fff", borderRadius: 10, padding: 24, maxWidth: 620, width: "90%", maxHeight: "70vh", overflowY: "auto", boxShadow: "0 8px 32px rgba(0,0,0,0.2)" }}>
+            <h3 style={{ fontFamily: "'DM Serif Display',serif", fontSize: 20, margin: "0 0 4px" }}>📋 Pending Papers</h3>
+            <p style={{ fontSize: 13, color: "#777", margin: "0 0 16px" }}>
+              {pendingPapers.length} paper{pendingPapers.length !== 1 ? "s" : ""} waiting to be committed to GitHub.
+              {fetchFailed && <span style={{ color: "#C62828", marginLeft: 6 }}>GitHub unavailable — download disabled.</span>}
+            </p>
+            {pendingPapers.map(p => (
+              <div key={p.id} style={{ background: "#FFF8E1", border: "1px solid #F9A825", borderLeft: "4px solid #F9A825", borderRadius: 6, padding: "10px 12px", marginBottom: 8, display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+                <div style={{ flex: 1 }}>
+                  <div style={{ fontSize: 13, fontWeight: 600, lineHeight: 1.4 }}>{p.citation}</div>
+                  <div style={{ fontSize: 11, color: "#999", marginTop: 2 }}>ID: {p.id}</div>
+                </div>
+                <button
+                  onClick={async () => {
+                    const updated = pendingPapers.filter(x => x.id !== p.id);
+                    try { await savePending(updated); flash("Removed from pending queue."); }
+                    catch (e) { flash("Could not remove paper — please try again."); }
+                  }}
+                  style={{ marginLeft: 12, color: "#C62828", background: "none", border: "none", cursor: "pointer", fontSize: 20, lineHeight: 1, flexShrink: 0, padding: 0 }}>×</button>
+              </div>
+            ))}
+            <div style={{ marginTop: 16, display: "flex", gap: 10, flexWrap: "wrap" }}>
+              <button
+                onClick={downloadPapersJson}
+                disabled={fetchFailed || !loadComplete}
+                title={fetchFailed ? "Cannot generate complete papers.json — GitHub data unavailable. Resolve the connection issue first." : "Download a complete papers.json ready to commit to GitHub"}
+                style={{ padding: "9px 16px", borderRadius: 6, border: "none", background: (fetchFailed || !loadComplete) ? "#ccc" : "#1565C0", color: "#fff", fontSize: 13, fontWeight: 600, cursor: (fetchFailed || !loadComplete) ? "not-allowed" : "pointer", fontFamily: "'DM Sans',sans-serif" }}>
+                📥 Download papers.json for GitHub
+              </button>
+              <button onClick={() => setShowPendingPanel(false)}
+                style={{ padding: "9px 16px", borderRadius: 6, border: "1px solid #d0ccc5", background: "#fff", color: "#555", fontSize: 13, cursor: "pointer", fontFamily: "'DM Sans',sans-serif" }}>
+                Close
+              </button>
+            </div>
+            <p style={{ marginTop: 12, fontSize: 11, color: "#aaa", lineHeight: 1.5 }}>
+              After downloading: open github.com/Erash11/baylor-sport-science-library, open papers.json, replace file contents, and commit. The pending papers will be automatically removed from this queue on next load.
+            </p>
           </div>
         </div>
       )}
@@ -389,18 +349,34 @@ export default function FootballResearchLibrary() {
             <tbody>
               {filtered.length === 0 ? (
                 <tr><td colSpan={COLS.length+1} style={{ padding: 40, textAlign: "center", color: "#999" }}>No papers match your search.</td></tr>
-              ) : filtered.map((p, i) => {
+              ) : pagedPapers.map((p, i) => {
                 const bg = i%2===0 ? "#fff" : "#FAF7F2";
                 const bgAlt = i%2===0 ? "#FAFAFA" : "#F5F2EC";
                 return (
                   <tr key={p.id} style={{ background: bg }}>
-                    <td style={{ ...td, textAlign: "center", fontWeight: 700, color: "#1565C0", fontSize: 14 }}>{i+1}</td>
+                    <td style={{ ...td, textAlign: "center", fontWeight: 700, color: "#1565C0", fontSize: 14 }}>{startIndex + i + 1}</td>
                     <td style={td}>
-                      <div style={{ fontWeight: 600, lineHeight: 1.45, marginBottom: 4 }}>{p.citation}</div>
+                      <div style={{ fontWeight: 600, lineHeight: 1.45, marginBottom: 4 }}>
+                        {p.citation}
+                        {p.source === "pending" && (
+                          <span style={{ display: "inline-block", fontSize: 10, fontWeight: 700, color: "#E65100", background: "#FFF3E0", border: "1px solid #FFB74D", borderRadius: 10, padding: "1px 7px", marginLeft: 6, verticalAlign: "middle" }}>⏳ PENDING</span>
+                        )}
+                      </div>
                       {p.doi && <div style={{ fontSize: 11, color: "#1565C0" }}>DOI: {p.doi}</div>}
                       <div style={{ marginTop: 6, display: "flex", gap: 8 }}>
                         {p.driveUrl && <a href={p.driveUrl} target="_blank" rel="noopener noreferrer" style={{ fontSize: 11, color: "#1565C0", textDecoration: "none", fontWeight: 600 }}>Open →</a>}
-                        <button onClick={() => { save(papers.filter(x=>x.id!==p.id)); flash("Removed."); }} style={{ fontSize: 10, color: "#C62828", background: "none", border: "none", cursor: "pointer", fontFamily: "'DM Sans',sans-serif", fontWeight: 600, padding: 0 }}>Remove</button>
+                        <button
+                          onClick={async () => {
+                            if (p.source === "github") return;
+                            const updated = pendingPapers.filter(x => x.id !== p.id);
+                            try { await savePending(updated); flash("Removed."); }
+                            catch (e) { flash("Could not remove paper."); }
+                          }}
+                          disabled={p.source === "github"}
+                          title={p.source === "github" ? "Committed papers can only be removed by editing papers.json on GitHub" : "Remove this pending paper"}
+                          style={{ fontSize: 10, color: p.source === "github" ? "#ccc" : "#C62828", background: "none", border: "none", cursor: p.source === "github" ? "default" : "pointer", fontFamily: "'DM Sans',sans-serif", fontWeight: 600, padding: 0 }}>
+                          Remove
+                        </button>
                       </div>
                     </td>
                     <td style={{ ...td, textAlign: "center", fontWeight: 700 }}><span style={{ background: "#E3F2FD", color: "#1565C0", padding: "3px 9px", borderRadius: 4, fontSize: 13 }}>{p.year}</span></td>
@@ -417,6 +393,40 @@ export default function FootballResearchLibrary() {
               })}
             </tbody>
           </table>
+          {/* Pagination controls */}
+          {totalPages > 1 && (
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "14px 16px", borderTop: "1px solid #d0ccc5", background: "#fff" }}>
+              <span style={{ fontSize: 13, color: "#666" }}>
+                {search || yearFilter !== "all"
+                  ? `${filtered.length} match${filtered.length !== 1 ? "es" : ""} · Showing ${startIndex + 1}–${Math.min(startIndex + PAPERS_PER_PAGE, filtered.length)}`
+                  : `Showing ${startIndex + 1}–${Math.min(startIndex + PAPERS_PER_PAGE, filtered.length)} of ${filtered.length} papers`}
+              </span>
+              <div style={{ display: "flex", gap: 4, alignItems: "center" }}>
+                <button
+                  onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                  disabled={currentPage === 1}
+                  style={{ padding: "5px 11px", borderRadius: 4, border: "1px solid #d0ccc5", background: currentPage === 1 ? "#f5f5f5" : "#fff", color: currentPage === 1 ? "#bbb" : "#333", cursor: currentPage === 1 ? "default" : "pointer", fontSize: 13 }}>
+                  ← Prev
+                </button>
+                {getPaginationPages(currentPage, totalPages).map((item, i) =>
+                  item === "..." ? (
+                    <span key={`ellipsis-${i}`} style={{ padding: "0 4px", color: "#888", fontSize: 13 }}>…</span>
+                  ) : (
+                    <button key={item} onClick={() => setCurrentPage(item)}
+                      style={{ padding: "5px 10px", borderRadius: 4, border: "1px solid", borderColor: item === currentPage ? "#1565C0" : "#d0ccc5", background: item === currentPage ? "#1565C0" : "#fff", color: item === currentPage ? "#fff" : "#333", cursor: "pointer", fontSize: 13, minWidth: 32 }}>
+                      {item}
+                    </button>
+                  )
+                )}
+                <button
+                  onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                  disabled={currentPage === totalPages}
+                  style={{ padding: "5px 11px", borderRadius: 4, border: "1px solid #d0ccc5", background: currentPage === totalPages ? "#f5f5f5" : "#fff", color: currentPage === totalPages ? "#bbb" : "#333", cursor: currentPage === totalPages ? "default" : "pointer", fontSize: 13 }}>
+                  Next →
+                </button>
+              </div>
+            </div>
+          )}
         </div>
         <p style={{ marginTop: 20, textAlign: "center", fontSize: 12, color: "#aaa" }}>Baylor Athletics · Applied Performance · Shared storage enabled for all staff</p>
       </div>
