@@ -1,3 +1,8 @@
+const GITHUB_URL = "https://raw.githubusercontent.com/Erash11/baylor-sport-science-library/main/papers.json";
+const PENDING_KEY = "fb-research-lib-pending-v1";
+const OLD_KEY = "fb-research-lib-v2";
+const SCHEMA_FIELDS = ["id","year","citation","doi","driveUrl","abstract","tldr","methods","findings","limitations","practicalImplications","athleteDev","rtp"];
+
 import { useState, useEffect, useCallback, useRef } from "react";
 
 const DEFAULT_PAPERS = [
@@ -121,14 +126,19 @@ fl.rel = "stylesheet";
 document.head.appendChild(fl);
 
 export default function FootballResearchLibrary() {
-  const [papers, setPapers] = useState([]);
+  const [papers, setPapers] = useState([]);          // merged: github + pending (with runtime source tags)
+  const [pendingPapers, setPendingPapers] = useState([]); // pending subset only (no source tag)
+  const [fetchFailed, setFetchFailed] = useState(false);
+  const [loadComplete, setLoadComplete] = useState(false);
   const [search, setSearch] = useState("");
   const [yearFilter, setYearFilter] = useState("all");
   const [sortCol, setSortCol] = useState("year");
   const [sortDir, setSortDir] = useState("desc");
+  const [currentPage, setCurrentPage] = useState(1);
   const [showUpload, setShowUpload] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [showPendingPanel, setShowPendingPanel] = useState(false);
   const [toast, setToast] = useState(null);
+  const [formError, setFormError] = useState(null);
   const [uploadForm, setUploadForm] = useState({
     citation:"",doi:"",driveUrl:"",year:"2025",abstract:"",tldr:"",
     methods:"",findings:"",limitations:"",practicalImplications:"",athleteDev:"",rtp:""
