@@ -2,6 +2,7 @@ const GITHUB_URL = "https://raw.githubusercontent.com/Erash11/baylor-sport-scien
 const PENDING_KEY = "fb-research-lib-pending-v1";
 const OLD_KEY = "fb-research-lib-v2";
 const SCHEMA_FIELDS = ["id","year","citation","doi","driveUrl","abstract","tldr","methods","findings","limitations","practicalImplications","athleteDev","rtp"];
+const PAPERS_PER_PAGE = 50;
 
 import { useState, useEffect, useCallback, useRef } from "react";
 
@@ -29,6 +30,9 @@ export default function FootballResearchLibrary() {
     citation:"",doi:"",driveUrl:"",year:"2025",abstract:"",tldr:"",
     methods:"",findings:"",limitations:"",practicalImplications:"",athleteDev:"",rtp:""
   });
+
+  const papersRef = useRef(papers);
+  useEffect(() => { papersRef.current = papers; }, [papers]);
 
   useEffect(() => {
     (async () => {
@@ -80,7 +84,7 @@ export default function FootballResearchLibrary() {
       // ── Step 4: Dedup pending against GitHub (only if fetch succeeded) ───
       // NEVER dedup against an empty array from a failed fetch — that would
       // permanently remove legitimately pending papers.
-      if (!failed && ghPapers.length > 0) {
+      if (!failed) {
         const ghIds = new Set(ghPapers.map(p => p.id));
         const clean = pending.filter(p => !ghIds.has(p.id));
         if (clean.length !== pending.length) {
@@ -103,14 +107,14 @@ export default function FootballResearchLibrary() {
   }, []);
 
   const savePending = useCallback(async (newPending) => {
-    // Update both pendingPapers and the merged papers state
-    const ghPapers = papers.filter(p => p.source === "github");
+    // Read from ref to avoid stale closure when called before re-render
+    const ghPapers = papersRef.current.filter(p => p.source === "github");
     const taggedPending = newPending.map(p => ({ ...p, source: "pending" }));
     setPendingPapers(newPending);
     setPapers([...ghPapers, ...taggedPending]);
     // Throws on failure — callers must handle the error
     await window.storage.set(PENDING_KEY, JSON.stringify(newPending), true);
-  }, [papers]);
+  }, []); // no papers dependency — papersRef always has the latest value
 
   const flash = (m) => { setToast(m); setTimeout(() => setToast(null), 3000); };
 
@@ -130,7 +134,6 @@ export default function FootballResearchLibrary() {
     return (a[sortCol]||"").localeCompare(b[sortCol]||"") * dir;
   });
 
-  const PAPERS_PER_PAGE = 50;
   const totalPages = Math.ceil(filtered.length / PAPERS_PER_PAGE);
   const startIndex = (currentPage - 1) * PAPERS_PER_PAGE;
   const pagedPapers = filtered.slice(startIndex, startIndex + PAPERS_PER_PAGE);
