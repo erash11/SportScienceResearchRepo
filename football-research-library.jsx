@@ -1,4 +1,4 @@
-const GITHUB_URL = "https://raw.githubusercontent.com/Erash11/baylor-sport-science-library/main/papers.json";
+const GITHUB_URL = "https://raw.githubusercontent.com/erash11/SportScienceResearchRepo/master/papers.json";
 const PENDING_KEY = "fb-research-lib-pending-v1";
 const OLD_KEY = "fb-research-lib-v2";
 const SCHEMA_FIELDS = ["id","year","citation","doi","driveUrl","abstract","tldr","methods","findings","limitations","practicalImplications","athleteDev","rtp"];
