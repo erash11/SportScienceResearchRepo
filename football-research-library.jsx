@@ -216,10 +216,15 @@ export default function FootballResearchLibrary() {
     })();
   }, []);
 
-  const save = useCallback(async (u) => {
-    setPapers(u);
-    try { await window.storage.set("fb-research-lib-v2", JSON.stringify(u), true); } catch (e) {}
-  }, []);
+  const savePending = useCallback(async (newPending) => {
+    // Update both pendingPapers and the merged papers state
+    const ghPapers = papers.filter(p => p.source === "github");
+    const taggedPending = newPending.map(p => ({ ...p, source: "pending" }));
+    setPendingPapers(newPending);
+    setPapers([...ghPapers, ...taggedPending]);
+    // Throws on failure — callers must handle the error
+    await window.storage.set(PENDING_KEY, JSON.stringify(newPending), true);
+  }, [papers]);
 
   const flash = (m) => { setToast(m); setTimeout(() => setToast(null), 3000); };
   const years = [...new Set(papers.map(p => p.year))].sort((a, b) => b - a);
@@ -254,10 +259,40 @@ export default function FootballResearchLibrary() {
 
   const handleUpload = async (e) => {
     e.preventDefault();
+    setFormError(null);
     const np = { ...uploadForm, id: Date.now().toString(), year: Number(uploadForm.year) };
-    await save([np, ...papers]);
-    setUploadForm({citation:"",doi:"",driveUrl:"",year:"2025",abstract:"",tldr:"",methods:"",findings:"",limitations:"",practicalImplications:"",athleteDev:"",rtp:""});
-    setShowUpload(false); flash("Paper added to the library!");
+    const newPending = [np, ...pendingPapers];
+    try {
+      await savePending(newPending);
+      setUploadForm({ citation:"",doi:"",driveUrl:"",year:"2025",abstract:"",tldr:"",
+        methods:"",findings:"",limitations:"",practicalImplications:"",athleteDev:"",rtp:"" });
+      setShowUpload(false);
+      flash("Paper added to the library!");
+    } catch (err) {
+      setFormError("Could not save paper. Storage may be unavailable — please try again or contact Eric.");
+    }
+  };
+
+  const downloadPapersJson = () => {
+    // Output must conform exactly to 12-field schema: no source field, no extras
+    const clean = papers.map(p => {
+      const obj = {};
+      SCHEMA_FIELDS.forEach(f => { obj[f] = p[f] !== undefined ? p[f] : ""; });
+      return obj;
+    });
+    const blob = new Blob([JSON.stringify(clean, null, 2)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "papers.json";
+    a.click();
+    flash("papers.json downloaded — commit it to GitHub to make it permanent!");
+  };
+
+  const getPaginationPages = (current, total) => {
+    if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1);
+    if (current <= 4) return [1, 2, 3, 4, 5, "...", total];
+    if (current >= total - 3) return [1, "...", total-4, total-3, total-2, total-1, total];
+    return [1, "...", current - 1, current, current + 1, "...", total];
   };
 
   const SortIcon = ({ col }) => {
