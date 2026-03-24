@@ -12,6 +12,27 @@ The entire application lives in one file: `football-research-library.jsx`. It is
 
 There is no router, no state management library, no CSS framework, and no external dependencies beyond React itself.
 
+### Data Architecture
+
+Paper data is stored in two sources, merged at load time:
+
+| Source | Contents | Capacity |
+|--------|----------|----------|
+| GitHub `papers.json` (public repo) | All permanently committed papers | Unlimited |
+| `window.storage` key `fb-research-lib-pending-v1` | Papers submitted via in-app form, not yet committed to GitHub | ~50–100 papers |
+
+- **GitHub URL:** `https://raw.githubusercontent.com/erash11/SportScienceResearchRepo/master/papers.json`
+- **No window.storage cache** for GitHub data — the browser's built-in HTTP cache handles this automatically
+- Papers have a runtime-only `source` field (`"github"` or `"pending"`) that is never persisted or exported
+
+### App Load Sequence
+
+1. Fetch `papers.json` from GitHub; on failure set `fetchFailed = true`, show warning banner
+2. Migrate legacy `fb-research-lib-v2` key if it parses to a non-empty array (write to pending, then write `"[]"` to old key)
+3. Load pending queue from `fb-research-lib-pending-v1`
+4. Dedup: if `fetchFailed = false`, remove pending papers whose `id` exists in GitHub papers and write back
+5. Merge: GitHub papers first, remaining pending papers appended; render paginated table
+
 ## `window.storage` API
 
 The component uses `window.storage`, a **custom async API provided by the host application** — it is NOT the browser's `localStorage`. Any modifications must use this API contract:
@@ -25,11 +46,18 @@ const result = await window.storage.get("key", true);
 await window.storage.set("key", JSON.stringify(data), true);
 ```
 
-The storage key is `"fb-research-lib-v2"`. The version suffix is intentional — increment it (e.g., `v3`) if the data schema changes in a breaking way, which will trigger a fresh load from `DEFAULT_PAPERS` for all users.
+**There is no delete method.** The retired `fb-research-lib-v2` key is cleared by writing `"[]"` to it (sentinel value), not deleted.
+
+### Storage Keys
+
+| Key | Purpose | Status |
+|-----|---------|--------|
+| `fb-research-lib-v2` | Old bulk storage | **Retired** — migration writes `"[]"` on first load |
+| `fb-research-lib-pending-v1` | Pending queue (in-app form submissions only) | **Active** |
 
 ## Paper Data Schema
 
-Each paper object has exactly 12 fields:
+Each paper object has exactly 12 persisted fields:
 
 | Field | Type | Notes |
 |---|---|---|
@@ -37,7 +65,7 @@ Each paper object has exactly 12 fields:
 | `year` | number | Publication year |
 | `citation` | string | Full citation text (displayed as primary label) |
 | `doi` | string | DOI string (may be empty) |
-| `driveUrl` | string | Google Drive or external link URL |
+| `driveUrl` | string | Google Drive or external link URL (may be empty); rendered as "Open →" link inside the citation cell |
 | `abstract` | string | Summarized abstract |
 | `tldr` | string | One-paragraph practitioner summary |
 | `methods` | string | Methods used |
@@ -47,13 +75,22 @@ Each paper object has exactly 12 fields:
 | `athleteDev` | string | Football athlete development applications |
 | `rtp` | string | Football return-to-play applications |
 
-## Default Papers
+A runtime-only `source` field (`"github"` or `"pending"`) is added after load and stripped before any export. Never persist or commit this field.
 
-`DEFAULT_PAPERS` (top of file, lines 3–116) contains 8 hardcoded papers from Baylor Applied Sport Science (all 2025). These load into storage on first run when storage is empty. To add a permanent baseline paper, append to `DEFAULT_PAPERS`. To add a paper at runtime, use the "+ Add Paper" UI which calls `handleUpload`.
+**ID constraint:** Paper `id` values must be preserved exactly when committing pending papers to GitHub. Deduplication matches on `id` string equality — a regenerated ID will cause the pending paper to persist in the queue indefinitely.
+
+## Adding Papers
+
+- **Batch import (AI agents):** Process PDFs from `SourcePapers/`, generate paper objects with the 12-field schema, merge into `papers.json`, commit to GitHub. IDs must be unique strings (sequential integers work; do not use `Date.now()` for batch imports as it produces near-identical values).
+- **In-app form:** Staff use the "+ Add Paper" UI → paper saved to `fb-research-lib-pending-v1` → visible to all staff immediately with `⏳ PENDING` tag → Eric downloads merged `papers.json` from the Pending Panel and commits to GitHub → auto-dedup removes it from the queue on next load.
 
 ## Search and Filter Logic
 
-Full-text search runs across: `citation`, `abstract`, `tldr`, `findings`, `practicalImplications`, `athleteDev`, `rtp`, `methods`, `doi`. Year filter is exact match. Both are applied in the `filtered` derived array (line 157).
+Full-text search runs across: `citation`, `abstract`, `tldr`, `findings`, `practicalImplications`, `athleteDev`, `rtp`, `methods`, `doi`. Year filter is exact match. Both are applied in the `filtered` derived array. Search and filter changes reset pagination to page 1.
+
+## Pagination
+
+50 papers per page. Global row numbers (page 2 starts at row 51). `getPaginationPages(current, total)` returns an array of page numbers with `"..."` ellipsis for large sets.
 
 ## Brand / Style Constants
 
@@ -64,4 +101,4 @@ All styles are inline. Key brand values:
 - **Page background:** `#FAF8F5`; alternating row: `#FAF7F2`
 - **Fonts:** `'DM Serif Display'` (headings), `'DM Sans'` (all body text)
 
-Three style objects are reused across table cells — `th` (header), `td` (data cell), `inp` (form input) — defined at lines 211–213.
+Three style objects are reused across table cells — `th` (header), `td` (data cell), `inp` (form input).

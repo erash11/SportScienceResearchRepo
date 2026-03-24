@@ -21,11 +21,14 @@ A horizontally scrollable data table with 10 columns per paper, including two fo
 - CSV export for offline access and sharing
 - Staff upload form allowing any team member to contribute new research
 - Shared persistent storage so all additions are visible to the entire team
-- Direct links to source documents in Google Drive
+- Pagination (50 papers/page) with global row numbers
+- Pending queue: staff-submitted papers are visible immediately with a `⏳ PENDING` tag while awaiting GitHub commit
+- Pending Panel with one-click `papers.json` download for Eric to commit to GitHub
+- Fetch failure banner if GitHub is unreachable (pending queue papers still display)
 
 ### Table Columns
 
-1. **#** - Row number
+1. **#** - Global row number
 2. **Citation & DOI** - Full citation with links to source document
 3. **Year** - Publication year
 4. **Summarized Abstract** - Condensed version of the paper's abstract
@@ -37,7 +40,7 @@ A horizontally scrollable data table with 10 columns per paper, including two fo
 10. **Football Athlete Development** - Connections to player development workflows
 11. **Football Return to Play** - Connections to RTP decision-making
 
-## Pre-Loaded Research (8 Papers)
+## Pre-Loaded Research (8 Internal Papers)
 
 | # | Title | Category |
 |---|-------|----------|
@@ -50,7 +53,7 @@ A horizontally scrollable data table with 10 columns per paper, including two fo
 | 7 | L5-S1 Rehab Protocol: Post-Microdiscectomy DL | Injury Prevention / RTP |
 | 8 | Gridiron Blueprint: Actionable Summary for Coaches and Dietitians | Nutrition / Coaching |
 
-All papers were sourced from the Baylor Applied Performance Google Drive.
+All internal papers were sourced from the Baylor Applied Performance Google Drive. 2,183 additional peer-reviewed papers from `SourcePapers/` are being batch-imported via AI agents.
 
 ## Technical Details
 
@@ -59,19 +62,39 @@ All papers were sourced from the Baylor Applied Performance Google Drive.
 | Framework | React (functional components with hooks) |
 | Styling | Inline CSS (no external dependencies) |
 | Typography | DM Serif Display (headings), DM Sans (body) |
-| Storage | Persistent key-value (shared: true), key: `fb-research-lib-v2` |
-| Data Format | JSON array of paper objects |
-| File Format | Single .jsx file |
+| Primary data store | GitHub public repo (`erash11/SportScienceResearchRepo`, `master` branch, `papers.json`) |
+| Pending queue storage | `window.storage` key `fb-research-lib-pending-v1` (shared: true) |
+| Retired storage key | `fb-research-lib-v2` (cleared to `"[]"` on first load after migration) |
+| Data format | JSON array of paper objects (12-field schema) |
+| File format | Single .jsx file |
 | Hosting | Claude.ai artifact rendering engine |
-| Max Capacity | ~50-100 fully populated papers (5MB storage limit) |
+| Capacity | Unlimited (GitHub-backed); pending queue ~50–100 papers max |
+| Pagination | 50 papers per page, global row numbers |
+
+## Workflows
+
+### Staff Adds a Paper
+1. Staff submits "+ Add Paper" form → saved to pending queue → visible immediately with `⏳ PENDING` tag
+2. Eric sees the pending badge, opens Pending Panel, clicks "Download papers.json for GitHub"
+3. Eric opens `github.com/erash11/SportScienceResearchRepo`, replaces `papers.json`, commits
+4. On next app load: auto-dedup removes the committed paper from the pending queue
+
+### Monthly Batch Import (Eric + AI Agents)
+1. AI agents process PDFs from `SourcePapers/` → generate paper objects (12-field schema)
+2. Eric merges new objects into `papers.json` on GitHub and commits
+3. App picks up new papers on next load — no in-app action needed
 
 ## Deliverables
 
 | File | Description |
 |------|-------------|
 | `football-research-library.jsx` | The React application |
+| `papers.json` | Authoritative paper data (committed to GitHub, fetched on every load) |
+| `SourcePapers/` | 2,183 source PDFs for batch AI import |
 | `FB_Research_Library_Project_Summary.docx` | Executive project summary document |
 | `FB_Research_Library_App_Spec_Sheet.docx` | Full application specification sheet |
+| `docs/superpowers/specs/2026-03-24-scaled-research-library-design.md` | Architecture design spec |
+| `docs/superpowers/plans/2026-03-24-scaled-research-library.md` | Implementation plan |
 | `summary.md` | This file |
 
 ## Target Audience
@@ -85,9 +108,9 @@ All papers were sourced from the Baylor Applied Performance Google Drive.
 
 ## Next Steps
 
-1. Populate with additional papers from the monthly Pro Football Sports Science Research Updates (9 editions in Google Drive)
+1. Complete batch AI import of 2,183 PDFs from `SourcePapers/` into `papers.json`
 2. Distribute the shared artifact link to all staff
-3. Establish a monthly cadence for adding new research
+3. Establish a monthly cadence for adding new research (20+ papers/month)
 4. Consider integration with Performance School curriculum
 5. Evaluate expanding the format to cover additional sports
 
