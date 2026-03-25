@@ -1,10 +1,8 @@
 const GITHUB_URL = "https://raw.githubusercontent.com/erash11/SportScienceResearchRepo/master/papers.json";
-const PENDING_KEY = "fb-research-lib-pending-v1";
-const OLD_KEY = "fb-research-lib-v2";
-const SCHEMA_FIELDS = ["id","year","citation","doi","driveUrl","abstract","tldr","methods","findings","limitations","practicalImplications","athleteDev","rtp"];
+const SUBMIT_FORM_URL = "https://docs.google.com/forms/d/1CTuXolDntwAXIkASta7_0rP1PtjCCC5xAWvtt1n1pAI/viewform";
 const PAPERS_PER_PAGE = 50;
 
-import React, { useState, useEffect, useCallback, useRef } from "react";
+import React, { useState, useEffect } from "react";
 
 
 const fl = document.createElement("link");
@@ -13,8 +11,7 @@ fl.rel = "stylesheet";
 document.head.appendChild(fl);
 
 export default function FootballResearchLibrary() {
-  const [papers, setPapers] = useState([]);          // merged: github + pending (with runtime source tags)
-  const [pendingPapers, setPendingPapers] = useState([]); // pending subset only (no source tag)
+  const [papers, setPapers] = useState([]);
   const [fetchFailed, setFetchFailed] = useState(false);
   const [loadComplete, setLoadComplete] = useState(false);
   const [search, setSearch] = useState("");
@@ -22,102 +19,20 @@ export default function FootballResearchLibrary() {
   const [sortCol, setSortCol] = useState("year");
   const [sortDir, setSortDir] = useState("desc");
   const [currentPage, setCurrentPage] = useState(1);
-  const [showUpload, setShowUpload] = useState(false);
-  const [showPendingPanel, setShowPendingPanel] = useState(false);
   const [expandedRows, setExpandedRows] = useState(new Set());
-  const [toast, setToast] = useState(null);
-  const [formError, setFormError] = useState(null);
-  const [uploadForm, setUploadForm] = useState({
-    citation:"",doi:"",driveUrl:"",year:"2025",abstract:"",tldr:"",
-    methods:"",findings:"",limitations:"",practicalImplications:"",athleteDev:"",rtp:""
-  });
-
-  const papersRef = useRef(papers);
-  useEffect(() => { papersRef.current = papers; }, [papers]);
 
   useEffect(() => {
     (async () => {
-      // ── Step 1: Fetch from GitHub ────────────────────────────────────────
-      let ghPapers = [];
-      let failed = false;
       try {
         const res = await fetch(GITHUB_URL);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        ghPapers = await res.json();
+        setPapers(await res.json());
       } catch (e) {
-        failed = true;
+        setFetchFailed(true);
       }
-      setFetchFailed(failed);
-
-      // ── Step 2: Migrate old storage key if present ───────────────────────
-      try {
-        const oldR = await window.storage.get(OLD_KEY, true);
-        if (oldR?.value) {
-          const oldArr = JSON.parse(oldR.value);
-          if (Array.isArray(oldArr) && oldArr.length > 0) {
-            // Read existing pending (may already have entries from prior partial migration)
-            const pendR = await window.storage.get(PENDING_KEY, true);
-            const existingPending = (pendR?.value ? JSON.parse(pendR.value) : null) || [];
-            // Merge: existing pending takes precedence (dedup by id)
-            const existingIds = new Set(existingPending.map(p => p.id));
-            const fromOld = oldArr.filter(p => !existingIds.has(p.id));
-            const migrated = [...existingPending, ...fromOld];
-            try {
-              await window.storage.set(PENDING_KEY, JSON.stringify(migrated), true);
-              await window.storage.set(OLD_KEY, "[]", true); // sentinel: migration complete
-            } catch (e) {
-              // write failed — leave OLD_KEY untouched so next load retries
-            }
-          }
-        }
-      } catch (e) {}
-
-      // ── Step 3: Load pending queue ───────────────────────────────────────
-      let pending = [];
-      try {
-        const pendR = await window.storage.get(PENDING_KEY, true);
-        if (pendR?.value) {
-          const parsed = JSON.parse(pendR.value);
-          if (Array.isArray(parsed)) pending = parsed;
-        }
-      } catch (e) {}
-
-      // ── Step 4: Dedup pending against GitHub (only if fetch succeeded) ───
-      // NEVER dedup against an empty array from a failed fetch — that would
-      // permanently remove legitimately pending papers.
-      if (!failed) {
-        const ghIds = new Set(ghPapers.map(p => p.id));
-        const clean = pending.filter(p => !ghIds.has(p.id));
-        if (clean.length !== pending.length) {
-          pending = clean;
-          try {
-            await window.storage.set(PENDING_KEY, JSON.stringify(pending), true);
-          } catch (e) {}
-        }
-      }
-
-      // ── Step 5: Merge and set state ──────────────────────────────────────
-      const tagged = [
-        ...ghPapers.map(p => ({ ...p, source: "github" })),
-        ...pending.map(p => ({ ...p, source: "pending" })),
-      ];
-      setPapers(tagged);
-      setPendingPapers(pending);
       setLoadComplete(true);
     })();
   }, []);
-
-  const savePending = useCallback(async (newPending) => {
-    // Read from ref to avoid stale closure when called before re-render
-    const ghPapers = papersRef.current.filter(p => p.source === "github");
-    const taggedPending = newPending.map(p => ({ ...p, source: "pending" }));
-    setPendingPapers(newPending);
-    setPapers([...ghPapers, ...taggedPending]);
-    // Throws on failure — callers must handle the error
-    await window.storage.set(PENDING_KEY, JSON.stringify(newPending), true);
-  }, []); // no papers dependency — papersRef always has the latest value
-
-  const flash = (m) => { setToast(m); setTimeout(() => setToast(null), 3000); };
 
   useEffect(() => { setCurrentPage(1); }, [search, yearFilter]);
 
@@ -156,44 +71,13 @@ export default function FootballResearchLibrary() {
 
   const exportCSV = () => {
     const cols = ["citation","doi","year","abstract","tldr","methods","findings","limitations","practicalImplications","athleteDev","rtp"];
-    const headers = ["Citation & DOI","DOI","Year","Summarized Abstract","TL;DR","Methods Used","Findings","Limitations","Practical Implications","Football Athlete Development","Football Return to Play"];
+    const headers = ["Citation","DOI","Year","Abstract","TL;DR","Methods","Findings","Limitations","Practical Implications","Football Athlete Development","Return to Play"];
     const esc = v => `"${String(v||"").replace(/"/g,'""')}"`;
     const rows = [headers.join(","), ...filtered.map(p => cols.map(c => esc(p[c])).join(","))];
     const blob = new Blob([rows.join("\n")], { type: "text/csv" });
     const a = document.createElement("a"); a.href = URL.createObjectURL(blob);
     a.download = `Baylor_FB_Research_Library_${new Date().toISOString().split("T")[0]}.csv`;
-    a.click(); flash("CSV exported!");
-  };
-
-  const handleUpload = async (e) => {
-    e.preventDefault();
-    setFormError(null);
-    const np = { ...uploadForm, id: Date.now().toString(), year: Number(uploadForm.year) };
-    const newPending = [np, ...pendingPapers];
-    try {
-      await savePending(newPending);
-      setUploadForm({ citation:"",doi:"",driveUrl:"",year:"2025",abstract:"",tldr:"",
-        methods:"",findings:"",limitations:"",practicalImplications:"",athleteDev:"",rtp:"" });
-      setShowUpload(false);
-      flash("Paper added to the library!");
-    } catch (err) {
-      setFormError("Could not save paper. Storage may be unavailable — please try again or contact Eric.");
-    }
-  };
-
-  const downloadPapersJson = () => {
-    // Output must conform exactly to 12-field schema: no source field, no extras
-    const clean = papers.map(p => {
-      const obj = {};
-      SCHEMA_FIELDS.forEach(f => { obj[f] = p[f] !== undefined ? p[f] : ""; });
-      return obj;
-    });
-    const blob = new Blob([JSON.stringify(clean, null, 2)], { type: "application/json" });
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(blob);
-    a.download = "papers.json";
     a.click();
-    flash("papers.json downloaded — commit it to GitHub to make it permanent!");
   };
 
   const getPaginationPages = (current, total) => {
@@ -226,7 +110,6 @@ export default function FootballResearchLibrary() {
 
   const th = { padding: "11px 14px", textAlign: "left", fontSize: 12.5, fontWeight: 700, color: "#fff", cursor: "pointer", userSelect: "none", whiteSpace: "nowrap", borderRight: "1px solid rgba(255,255,255,0.18)", position: "sticky", top: 0, zIndex: 2, background: "#1565C0" };
   const td = { padding: "13px 14px", fontSize: 12.5, lineHeight: 1.65, color: "#2a2a2a", borderRight: "1px solid #EDE9E3", verticalAlign: "top", borderBottom: "1px solid #EDE9E3" };
-  const inp = { width: "100%", boxSizing: "border-box", padding: "8px 10px", borderRadius: 5, border: "1px solid #d0ccc5", fontSize: 13, fontFamily: "'DM Sans',sans-serif", marginTop: 4 };
 
   if (!loadComplete) return (
     <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "#FAF8F5", fontFamily: "'DM Sans',sans-serif" }}>
@@ -236,7 +119,6 @@ export default function FootballResearchLibrary() {
 
   return (
     <div style={{ minHeight: "100vh", background: "#FAF8F5", fontFamily: "'DM Sans',sans-serif", color: "#1a1a1a" }}>
-      {toast && <div style={{ position: "fixed", top: 16, right: 16, zIndex: 1000, background: "#003A2B", color: "#fff", padding: "10px 20px", borderRadius: 6, fontSize: 13, fontWeight: 600, boxShadow: "0 4px 16px rgba(0,0,0,0.2)" }}>{toast}</div>}
 
       {/* Hero */}
       <div style={{ background: "linear-gradient(135deg, #003A2B 0%, #00563F 35%, #1B7A5A 100%)", padding: "32px 24px 28px", color: "#fff", textAlign: "center" }}>
@@ -251,7 +133,7 @@ export default function FootballResearchLibrary() {
       {/* Fetch failure banner */}
       {fetchFailed && (
         <div style={{ background: "#FFF8E1", borderBottom: "2px solid #F9A825", padding: "12px 24px", textAlign: "center", fontSize: 13, color: "#795548" }}>
-          ⚠️ Could not load library data from GitHub. Showing locally submitted papers only. Check your connection or try refreshing.
+          ⚠️ Could not load library data from GitHub. Check your connection or try refreshing.
         </div>
       )}
 
@@ -265,93 +147,11 @@ export default function FootballResearchLibrary() {
           <option value="all">All Years</option>
           {years.map(y => <option key={y} value={y}>{y}</option>)}
         </select>
-        <button onClick={exportCSV} style={{ padding: "9px 16px", borderRadius: 6, border: "none", background: "#C62828", color: "#fff", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'DM Sans',sans-serif" }}>📋 Export to CSV</button>
-        <button onClick={() => { setShowUpload(!showUpload); setFormError(null); }} style={{ padding: "9px 16px", borderRadius: 6, border: "none", background: showUpload ? "#555" : "#003A2B", color: "#fff", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'DM Sans',sans-serif" }}>
-          {showUpload ? "✕ Cancel" : "+ Add Paper"}
-        </button>
-        {pendingPapers.length > 0 && (
-          <button onClick={() => setShowPendingPanel(true)}
-            style={{ padding: "9px 16px", borderRadius: 6, border: "none", background: "#E65100", color: "#fff", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'DM Sans',sans-serif" }}>
-            ⏳ {pendingPapers.length} Pending
-          </button>
-        )}
+        <button onClick={exportCSV} style={{ padding: "9px 16px", borderRadius: 6, border: "none", background: "#C62828", color: "#fff", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'DM Sans',sans-serif" }}>Export CSV</button>
+        <a href={SUBMIT_FORM_URL} target="_blank" rel="noopener noreferrer" style={{ padding: "9px 16px", borderRadius: 6, background: "#003A2B", color: "#fff", fontSize: 13, fontWeight: 600, fontFamily: "'DM Sans',sans-serif", textDecoration: "none" }}>
+          + Submit a Paper
+        </a>
       </div>
-
-      {/* Upload */}
-      {showUpload && (
-        <div style={{ maxWidth: 1400, margin: "0 auto", padding: "0 24px 16px" }}>
-          <div style={{ background: "#fff", border: "1px solid #d0ccc5", borderRadius: 10, padding: 24, boxShadow: "0 2px 8px rgba(0,0,0,0.04)" }}>
-            <h3 style={{ fontFamily: "'DM Serif Display',serif", fontSize: 20, margin: "0 0 16px" }}>Add a New Research Paper</h3>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
-              {[{k:"citation",l:"Citation *",span:true,req:true},{k:"doi",l:"DOI"},{k:"year",l:"Year *",req:true},{k:"driveUrl",l:"Google Drive / URL Link",span:true}].map(f =>
-                <div key={f.k} style={{ gridColumn: f.span?"1/-1":"auto" }}>
-                  <label style={{ fontSize: 11, fontWeight: 700, color: "#777", textTransform: "uppercase", letterSpacing: 0.5 }}>{f.l}</label>
-                  <input value={uploadForm[f.k]} onChange={e => setUploadForm(p=>({...p,[f.k]:e.target.value}))} required={f.req} style={inp} />
-                </div>
-              )}
-              {[{k:"abstract",l:"Summarized Abstract *",req:true},{k:"tldr",l:"TL;DR *",req:true},{k:"methods",l:"Methods Used"},{k:"findings",l:"Findings"},{k:"limitations",l:"Limitations"},{k:"practicalImplications",l:"Practical Implications *",req:true},{k:"athleteDev",l:"Football Athlete Development"},{k:"rtp",l:"Football Return to Play"}].map(f =>
-                <div key={f.k} style={{ gridColumn: "1/-1" }}>
-                  <label style={{ fontSize: 11, fontWeight: 700, color: "#777", textTransform: "uppercase", letterSpacing: 0.5 }}>{f.l}</label>
-                  <textarea value={uploadForm[f.k]} onChange={e => setUploadForm(p=>({...p,[f.k]:e.target.value}))} required={f.req} rows={2} style={{ ...inp, resize: "vertical" }} />
-                </div>
-              )}
-            </div>
-            <div style={{ marginTop: 16, display: "flex", gap: 10 }}>
-              <button onClick={handleUpload} style={{ padding: "9px 20px", borderRadius: 6, border: "none", background: "#003A2B", color: "#fff", fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "'DM Sans',sans-serif" }}>Save to Library</button>
-              <button onClick={() => setShowUpload(false)} style={{ padding: "9px 20px", borderRadius: 6, border: "1px solid #d0ccc5", background: "#fff", color: "#555", fontSize: 13, cursor: "pointer", fontFamily: "'DM Sans',sans-serif" }}>Cancel</button>
-            </div>
-            {formError && (
-              <div style={{ marginTop: 8, fontSize: 13, color: "#C62828", background: "#FFEBEE", padding: "8px 12px", borderRadius: 4 }}>
-                {formError}
-              </div>
-            )}
-          </div>
-        </div>
-      )}
-
-      {/* Pending Panel */}
-      {showPendingPanel && (
-        <div style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.45)", zIndex: 500, display: "flex", alignItems: "flex-start", justifyContent: "center", paddingTop: 60 }}>
-          <div style={{ background: "#fff", borderRadius: 10, padding: 24, maxWidth: 620, width: "90%", maxHeight: "70vh", overflowY: "auto", boxShadow: "0 8px 32px rgba(0,0,0,0.2)" }}>
-            <h3 style={{ fontFamily: "'DM Serif Display',serif", fontSize: 20, margin: "0 0 4px" }}>📋 Pending Papers</h3>
-            <p style={{ fontSize: 13, color: "#777", margin: "0 0 16px" }}>
-              {pendingPapers.length} paper{pendingPapers.length !== 1 ? "s" : ""} waiting to be committed to GitHub.
-              {fetchFailed && <span style={{ color: "#C62828", marginLeft: 6 }}>GitHub unavailable — download disabled.</span>}
-            </p>
-            {pendingPapers.map(p => (
-              <div key={p.id} style={{ background: "#FFF8E1", border: "1px solid #F9A825", borderLeft: "4px solid #F9A825", borderRadius: 6, padding: "10px 12px", marginBottom: 8, display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
-                <div style={{ flex: 1 }}>
-                  <div style={{ fontSize: 13, fontWeight: 600, lineHeight: 1.4 }}>{p.citation}</div>
-                  <div style={{ fontSize: 11, color: "#999", marginTop: 2 }}>ID: {p.id}</div>
-                </div>
-                <button
-                  onClick={async () => {
-                    const updated = pendingPapers.filter(x => x.id !== p.id);
-                    try { await savePending(updated); flash("Removed from pending queue."); }
-                    catch (e) { flash("Could not remove paper — please try again."); }
-                  }}
-                  style={{ marginLeft: 12, color: "#C62828", background: "none", border: "none", cursor: "pointer", fontSize: 20, lineHeight: 1, flexShrink: 0, padding: 0 }}>×</button>
-              </div>
-            ))}
-            <div style={{ marginTop: 16, display: "flex", gap: 10, flexWrap: "wrap" }}>
-              <button
-                onClick={downloadPapersJson}
-                disabled={fetchFailed || !loadComplete}
-                title={fetchFailed ? "Cannot generate complete papers.json — GitHub data unavailable. Resolve the connection issue first." : "Download a complete papers.json ready to commit to GitHub"}
-                style={{ padding: "9px 16px", borderRadius: 6, border: "none", background: (fetchFailed || !loadComplete) ? "#ccc" : "#1565C0", color: "#fff", fontSize: 13, fontWeight: 600, cursor: (fetchFailed || !loadComplete) ? "not-allowed" : "pointer", fontFamily: "'DM Sans',sans-serif" }}>
-                📥 Download papers.json for GitHub
-              </button>
-              <button onClick={() => setShowPendingPanel(false)}
-                style={{ padding: "9px 16px", borderRadius: 6, border: "1px solid #d0ccc5", background: "#fff", color: "#555", fontSize: 13, cursor: "pointer", fontFamily: "'DM Sans',sans-serif" }}>
-                Close
-              </button>
-            </div>
-            <p style={{ marginTop: 12, fontSize: 11, color: "#aaa", lineHeight: 1.5 }}>
-              After downloading: open github.com/Erash11/baylor-sport-science-library, open papers.json, replace file contents, and commit. The pending papers will be automatically removed from this queue on next load.
-            </p>
-          </div>
-        </div>
-      )}
 
       {/* Table */}
       <div style={{ maxWidth: 1400, margin: "0 auto", padding: "0 24px 48px" }}>
@@ -378,12 +178,7 @@ export default function FootballResearchLibrary() {
                         {startIndex + i + 1}
                       </td>
                       {/* Title */}
-                      <td style={{ ...td, fontWeight: 600, color: "#1a1a1a" }}>
-                        {extractTitle(p.citation)}
-                        {p.source === "pending" && (
-                          <span style={{ display: "inline-block", fontSize: 10, fontWeight: 700, color: "#E65100", background: "#FFF3E0", border: "1px solid #FFB74D", borderRadius: 10, padding: "1px 7px", marginLeft: 6, verticalAlign: "middle" }}>⏳ PENDING</span>
-                        )}
-                      </td>
+                      <td style={{ ...td, fontWeight: 600, color: "#1a1a1a" }}>{extractTitle(p.citation)}</td>
                       {/* Year */}
                       <td style={{ ...td, textAlign: "center", fontWeight: 700 }}>
                         <span style={{ background: "#E3F2FD", color: "#1565C0", padding: "3px 9px", borderRadius: 4, fontSize: 13 }}>{p.year}</span>
@@ -394,22 +189,11 @@ export default function FootballResearchLibrary() {
                       <td style={{ ...td, fontSize: 11.5, color: "#555" }}>
                         <div style={{ lineHeight: 1.5 }}>{p.citation}</div>
                         {p.doi && <div style={{ color: "#1565C0", marginTop: 3 }}>DOI: {p.doi}</div>}
-                        <div style={{ marginTop: 6, display: "flex", gap: 8 }} onClick={e => e.stopPropagation()}>
-                          {p.driveUrl && <a href={p.driveUrl} target="_blank" rel="noopener noreferrer" style={{ fontSize: 11, color: "#1565C0", textDecoration: "none", fontWeight: 600 }}>Open →</a>}
-                          <button
-                            onClick={async (e) => {
-                              e.stopPropagation();
-                              if (p.source === "github") return;
-                              const updated = pendingPapers.filter(x => x.id !== p.id);
-                              try { await savePending(updated); flash("Removed."); }
-                              catch (err) { flash("Could not remove paper."); }
-                            }}
-                            disabled={p.source === "github"}
-                            title={p.source === "github" ? "Committed papers can only be removed by editing papers.json on GitHub" : "Remove this pending paper"}
-                            style={{ fontSize: 10, color: p.source === "github" ? "#ccc" : "#C62828", background: "none", border: "none", cursor: p.source === "github" ? "default" : "pointer", fontFamily: "'DM Sans',sans-serif", fontWeight: 600, padding: 0 }}>
-                            Remove
-                          </button>
-                        </div>
+                        {p.driveUrl && (
+                          <div style={{ marginTop: 6 }} onClick={e => e.stopPropagation()}>
+                            <a href={p.driveUrl} target="_blank" rel="noopener noreferrer" style={{ fontSize: 11, color: "#1565C0", textDecoration: "none", fontWeight: 600 }}>Open →</a>
+                          </div>
+                        )}
                       </td>
                     </tr>
                     {isExpanded && (
