@@ -102,3 +102,13 @@ All styles are inline. Key brand values:
 - **Fonts:** `'DM Serif Display'` (headings), `'DM Sans'` (all body text)
 
 Three style objects are reused across table cells — `th` (header), `td` (data cell), `inp` (form input).
+
+## Batch Import Progress
+
+See `session.md` for full details. Current state: **283 papers** in `papers.json` (IDs 1–283), pushed to `master`.
+
+- Rounds 1–5 complete (IDs 9–283)
+- Round 6 (IDs 284–333) not yet processed — usage limit hit, resets March 27, 2026 at 3pm CT
+- ~316 football papers still remaining after round 6 is done
+- Batch agent pattern: 10 parallel agents × 5 PDFs each → `docs/batch_rX_aY.json` → merge → commit/push
+- Next ID to assign: **284**
