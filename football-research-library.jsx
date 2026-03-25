@@ -120,6 +120,15 @@ export default function FootballResearchLibrary() {
 
   useEffect(() => { setCurrentPage(1); }, [search, yearFilter]);
 
+  const extractTitle = (citation) => {
+    if (!citation) return "";
+    const firstDot = citation.indexOf(". ");
+    if (firstDot === -1) return "";
+    const rest = citation.slice(firstDot + 2);
+    const secondDot = rest.indexOf(". ");
+    return secondDot === -1 ? rest : rest.slice(0, secondDot);
+  };
+
   const years = [...new Set(papers.map(p => p.year))].sort((a, b) => b - a);
 
   const filtered = papers.filter(p => {
@@ -131,6 +140,7 @@ export default function FootballResearchLibrary() {
   }).sort((a, b) => {
     const dir = sortDir === "asc" ? 1 : -1;
     if (sortCol === "year") return (a.year - b.year) * dir;
+    if (sortCol === "title") return extractTitle(a.citation).localeCompare(extractTitle(b.citation)) * dir;
     return (a[sortCol]||"").localeCompare(b[sortCol]||"") * dir;
   });
 
@@ -198,16 +208,17 @@ export default function FootballResearchLibrary() {
   };
 
   const COLS = [
-    { key: "citation", label: "Citation & DOI", w: 240 },
-    { key: "year", label: "Year", w: 72 },
-    { key: "abstract", label: "Summarized Abstract", w: 300 },
-    { key: "tldr", label: "TL;DR", w: 270 },
-    { key: "methods", label: "Methods Used", w: 250 },
-    { key: "findings", label: "Findings", w: 270 },
-    { key: "limitations", label: "Limitations", w: 250 },
-    { key: "practicalImplications", label: "Practical Implications", w: 270 },
-    { key: "athleteDev", label: "Football Athlete Development", w: 270 },
-    { key: "rtp", label: "Football Return to Play", w: 270 },
+    { key: "citation", label: "Authors / Citation", w: 200 },
+    { key: "title", label: "Paper Title", w: 240 },
+    { key: "year", label: "Year", w: 68 },
+    { key: "abstract", label: "Summarized Abstract", w: 280 },
+    { key: "tldr", label: "TL;DR", w: 260 },
+    { key: "methods", label: "Methods Used", w: 230 },
+    { key: "findings", label: "Findings", w: 260 },
+    { key: "limitations", label: "Limitations", w: 230 },
+    { key: "practicalImplications", label: "Practical Implications", w: 260 },
+    { key: "athleteDev", label: "Football Athlete Development", w: 250 },
+    { key: "rtp", label: "Football Return to Play", w: 250 },
   ];
 
   const th = { padding: "11px 14px", textAlign: "left", fontSize: 12.5, fontWeight: 700, color: "#fff", cursor: "pointer", userSelect: "none", whiteSpace: "nowrap", borderRight: "1px solid rgba(255,255,255,0.18)", position: "sticky", top: 0, zIndex: 2, background: "#1565C0" };
@@ -225,7 +236,7 @@ export default function FootballResearchLibrary() {
       {toast && <div style={{ position: "fixed", top: 16, right: 16, zIndex: 1000, background: "#003A2B", color: "#fff", padding: "10px 20px", borderRadius: 6, fontSize: 13, fontWeight: 600, boxShadow: "0 4px 16px rgba(0,0,0,0.2)" }}>{toast}</div>}
 
       {/* Hero */}
-      <div style={{ background: "linear-gradient(135deg, #003A2B 0%, #00563F 35%, #1B7A5A 100%)", padding: "44px 24px 36px", color: "#fff", textAlign: "center" }}>
+      <div style={{ background: "linear-gradient(135deg, #003A2B 0%, #00563F 35%, #1B7A5A 100%)", padding: "32px 24px 28px", color: "#fff", textAlign: "center" }}>
         <div style={{ maxWidth: 700, margin: "0 auto" }}>
           <div style={{ fontSize: 48, marginBottom: 12 }}>🏈</div>
           <h1 style={{ fontFamily: "'DM Serif Display',serif", fontSize: 36, margin: 0, lineHeight: 1.2 }}>Football Sport Science<br/>Research</h1>
@@ -242,7 +253,7 @@ export default function FootballResearchLibrary() {
       )}
 
       {/* Controls */}
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "20px 24px", display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
+      <div style={{ maxWidth: 1600, margin: "0 auto", padding: "20px 24px", display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
         <input value={search} onChange={e => setSearch(e.target.value)} placeholder="Search by title, methods, findings..."
           style={{ flex: 1, minWidth: 200, padding: "9px 14px", borderRadius: 6, border: "1px solid #d0ccc5", background: "#fff", fontSize: 14, fontFamily: "'DM Sans',sans-serif", color: "#1a1a1a", outline: "none" }} />
         <span style={{ fontSize: 14, fontWeight: 600, color: "#555" }}>Year:</span>
@@ -265,7 +276,7 @@ export default function FootballResearchLibrary() {
 
       {/* Upload */}
       {showUpload && (
-        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px 16px" }}>
+        <div style={{ maxWidth: 1600, margin: "0 auto", padding: "0 24px 16px" }}>
           <div style={{ background: "#fff", border: "1px solid #d0ccc5", borderRadius: 10, padding: 24, boxShadow: "0 2px 8px rgba(0,0,0,0.04)" }}>
             <h3 style={{ fontFamily: "'DM Serif Display',serif", fontSize: 20, margin: "0 0 16px" }}>Add a New Research Paper</h3>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
@@ -340,9 +351,9 @@ export default function FootballResearchLibrary() {
       )}
 
       {/* Table */}
-      <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px 48px" }}>
+      <div style={{ maxWidth: 1600, margin: "0 auto", padding: "0 24px 48px" }}>
         <div style={{ overflowX: "auto", borderRadius: 10, border: "1px solid #d0ccc5", boxShadow: "0 2px 12px rgba(0,0,0,0.04)" }}>
-          <table style={{ borderCollapse: "collapse", width: "100%", minWidth: 2500, background: "#fff" }}>
+          <table style={{ borderCollapse: "collapse", width: "100%", minWidth: 2600, background: "#fff" }}>
             <thead>
               <tr>
                 <th style={{ ...th, width: 40, cursor: "default", textAlign: "center" }}>#</th>
@@ -382,6 +393,7 @@ export default function FootballResearchLibrary() {
                         </button>
                       </div>
                     </td>
+                    <td style={{ ...td, fontWeight: 600, color: "#1a1a1a" }}>{extractTitle(p.citation)}</td>
                     <td style={{ ...td, textAlign: "center", fontWeight: 700 }}><span style={{ background: "#E3F2FD", color: "#1565C0", padding: "3px 9px", borderRadius: 4, fontSize: 13 }}>{p.year}</span></td>
                     <td style={td}>{p.abstract}</td>
                     <td style={{ ...td, fontWeight: 500 }}>{p.tldr}</td>
