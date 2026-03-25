@@ -4,7 +4,7 @@ const OLD_KEY = "fb-research-lib-v2";
 const SCHEMA_FIELDS = ["id","year","citation","doi","driveUrl","abstract","tldr","methods","findings","limitations","practicalImplications","athleteDev","rtp"];
 const PAPERS_PER_PAGE = 50;
 
-import { useState, useEffect, useCallback, useRef } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 
 
 const fl = document.createElement("link");
@@ -24,6 +24,7 @@ export default function FootballResearchLibrary() {
   const [currentPage, setCurrentPage] = useState(1);
   const [showUpload, setShowUpload] = useState(false);
   const [showPendingPanel, setShowPendingPanel] = useState(false);
+  const [expandedRows, setExpandedRows] = useState(new Set());
   const [toast, setToast] = useState(null);
   const [formError, setFormError] = useState(null);
   const [uploadForm, setUploadForm] = useState({
@@ -207,18 +208,20 @@ export default function FootballResearchLibrary() {
     return <span style={{ marginLeft: 4, fontSize: 11 }}>{sortDir === "asc" ? "↑" : "↓"}</span>;
   };
 
+  const toggleRow = (id) => {
+    setExpandedRows(prev => {
+      const next = new Set(prev);
+      next.has(id) ? next.delete(id) : next.add(id);
+      return next;
+    });
+  };
+
+  // Compact table: only 4 columns — detail visible on row expand
   const COLS = [
-    { key: "citation", label: "Authors / Citation", w: 200 },
-    { key: "title", label: "Paper Title", w: 240 },
-    { key: "year", label: "Year", w: 68 },
-    { key: "abstract", label: "Summarized Abstract", w: 280 },
-    { key: "tldr", label: "TL;DR", w: 260 },
-    { key: "methods", label: "Methods Used", w: 230 },
-    { key: "findings", label: "Findings", w: 260 },
-    { key: "limitations", label: "Limitations", w: 230 },
-    { key: "practicalImplications", label: "Practical Implications", w: 260 },
-    { key: "athleteDev", label: "Football Athlete Development", w: 250 },
-    { key: "rtp", label: "Football Return to Play", w: 250 },
+    { key: "title",    label: "Paper Title", w: 340 },
+    { key: "year",     label: "Year",        w: 68  },
+    { key: "tldr",     label: "TL;DR",       w: 420 },
+    { key: "citation", label: "Authors",     w: 220 },
   ];
 
   const th = { padding: "11px 14px", textAlign: "left", fontSize: 12.5, fontWeight: 700, color: "#fff", cursor: "pointer", userSelect: "none", whiteSpace: "nowrap", borderRight: "1px solid rgba(255,255,255,0.18)", position: "sticky", top: 0, zIndex: 2, background: "#1565C0" };
@@ -253,7 +256,7 @@ export default function FootballResearchLibrary() {
       )}
 
       {/* Controls */}
-      <div style={{ maxWidth: 1600, margin: "0 auto", padding: "20px 24px", display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
+      <div style={{ maxWidth: 1400, margin: "0 auto", padding: "20px 24px", display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
         <input value={search} onChange={e => setSearch(e.target.value)} placeholder="Search by title, methods, findings..."
           style={{ flex: 1, minWidth: 200, padding: "9px 14px", borderRadius: 6, border: "1px solid #d0ccc5", background: "#fff", fontSize: 14, fontFamily: "'DM Sans',sans-serif", color: "#1a1a1a", outline: "none" }} />
         <span style={{ fontSize: 14, fontWeight: 600, color: "#555" }}>Year:</span>
@@ -276,7 +279,7 @@ export default function FootballResearchLibrary() {
 
       {/* Upload */}
       {showUpload && (
-        <div style={{ maxWidth: 1600, margin: "0 auto", padding: "0 24px 16px" }}>
+        <div style={{ maxWidth: 1400, margin: "0 auto", padding: "0 24px 16px" }}>
           <div style={{ background: "#fff", border: "1px solid #d0ccc5", borderRadius: 10, padding: 24, boxShadow: "0 2px 8px rgba(0,0,0,0.04)" }}>
             <h3 style={{ fontFamily: "'DM Serif Display',serif", fontSize: 20, margin: "0 0 16px" }}>Add a New Research Paper</h3>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
@@ -351,9 +354,9 @@ export default function FootballResearchLibrary() {
       )}
 
       {/* Table */}
-      <div style={{ maxWidth: 1600, margin: "0 auto", padding: "0 24px 48px" }}>
+      <div style={{ maxWidth: 1400, margin: "0 auto", padding: "0 24px 48px" }}>
         <div style={{ overflowX: "auto", borderRadius: 10, border: "1px solid #d0ccc5", boxShadow: "0 2px 12px rgba(0,0,0,0.04)" }}>
-          <table style={{ borderCollapse: "collapse", width: "100%", minWidth: 2600, background: "#fff" }}>
+          <table style={{ borderCollapse: "collapse", width: "100%", minWidth: 820, background: "#fff" }}>
             <thead>
               <tr>
                 <th style={{ ...th, width: 40, cursor: "default", textAlign: "center" }}>#</th>
@@ -365,45 +368,74 @@ export default function FootballResearchLibrary() {
                 <tr><td colSpan={COLS.length+1} style={{ padding: 40, textAlign: "center", color: "#999" }}>No papers match your search.</td></tr>
               ) : pagedPapers.map((p, i) => {
                 const bg = i%2===0 ? "#fff" : "#FAF7F2";
-                const bgAlt = i%2===0 ? "#FAFAFA" : "#F5F2EC";
+                const isExpanded = expandedRows.has(p.id);
+                const expandBg = i%2===0 ? "#EEF4FF" : "#E8F0FE";
                 return (
-                  <tr key={p.id} style={{ background: bg }}>
-                    <td style={{ ...td, textAlign: "center", fontWeight: 700, color: "#1565C0", fontSize: 14 }}>{startIndex + i + 1}</td>
-                    <td style={td}>
-                      <div style={{ fontWeight: 600, lineHeight: 1.45, marginBottom: 4 }}>
-                        {p.citation}
+                  <React.Fragment key={p.id}>
+                    <tr onClick={() => toggleRow(p.id)} style={{ background: bg, cursor: "pointer" }}>
+                      <td style={{ ...td, textAlign: "center", fontWeight: 700, color: "#1565C0", fontSize: 14, width: 40 }}>
+                        <span style={{ display: "block", fontSize: 9, color: isExpanded ? "#1565C0" : "#bbb", marginBottom: 1 }}>{isExpanded ? "▲" : "▼"}</span>
+                        {startIndex + i + 1}
+                      </td>
+                      {/* Title */}
+                      <td style={{ ...td, fontWeight: 600, color: "#1a1a1a" }}>
+                        {extractTitle(p.citation)}
                         {p.source === "pending" && (
                           <span style={{ display: "inline-block", fontSize: 10, fontWeight: 700, color: "#E65100", background: "#FFF3E0", border: "1px solid #FFB74D", borderRadius: 10, padding: "1px 7px", marginLeft: 6, verticalAlign: "middle" }}>⏳ PENDING</span>
                         )}
-                      </div>
-                      {p.doi && <div style={{ fontSize: 11, color: "#1565C0" }}>DOI: {p.doi}</div>}
-                      <div style={{ marginTop: 6, display: "flex", gap: 8 }}>
-                        {p.driveUrl && <a href={p.driveUrl} target="_blank" rel="noopener noreferrer" style={{ fontSize: 11, color: "#1565C0", textDecoration: "none", fontWeight: 600 }}>Open →</a>}
-                        <button
-                          onClick={async () => {
-                            if (p.source === "github") return;
-                            const updated = pendingPapers.filter(x => x.id !== p.id);
-                            try { await savePending(updated); flash("Removed."); }
-                            catch (e) { flash("Could not remove paper."); }
-                          }}
-                          disabled={p.source === "github"}
-                          title={p.source === "github" ? "Committed papers can only be removed by editing papers.json on GitHub" : "Remove this pending paper"}
-                          style={{ fontSize: 10, color: p.source === "github" ? "#ccc" : "#C62828", background: "none", border: "none", cursor: p.source === "github" ? "default" : "pointer", fontFamily: "'DM Sans',sans-serif", fontWeight: 600, padding: 0 }}>
-                          Remove
-                        </button>
-                      </div>
-                    </td>
-                    <td style={{ ...td, fontWeight: 600, color: "#1a1a1a" }}>{extractTitle(p.citation)}</td>
-                    <td style={{ ...td, textAlign: "center", fontWeight: 700 }}><span style={{ background: "#E3F2FD", color: "#1565C0", padding: "3px 9px", borderRadius: 4, fontSize: 13 }}>{p.year}</span></td>
-                    <td style={td}>{p.abstract}</td>
-                    <td style={{ ...td, fontWeight: 500 }}>{p.tldr}</td>
-                    <td style={td}>{p.methods}</td>
-                    <td style={td}>{p.findings}</td>
-                    <td style={td}>{p.limitations}</td>
-                    <td style={td}>{p.practicalImplications}</td>
-                    <td style={{ ...td, background: bgAlt }}>{p.athleteDev}</td>
-                    <td style={{ ...td, background: bgAlt }}>{p.rtp}</td>
-                  </tr>
+                      </td>
+                      {/* Year */}
+                      <td style={{ ...td, textAlign: "center", fontWeight: 700 }}>
+                        <span style={{ background: "#E3F2FD", color: "#1565C0", padding: "3px 9px", borderRadius: 4, fontSize: 13 }}>{p.year}</span>
+                      </td>
+                      {/* TL;DR */}
+                      <td style={{ ...td, color: "#444" }}>{p.tldr}</td>
+                      {/* Authors */}
+                      <td style={{ ...td, fontSize: 11.5, color: "#555" }}>
+                        <div style={{ lineHeight: 1.5 }}>{p.citation}</div>
+                        {p.doi && <div style={{ color: "#1565C0", marginTop: 3 }}>DOI: {p.doi}</div>}
+                        <div style={{ marginTop: 6, display: "flex", gap: 8 }} onClick={e => e.stopPropagation()}>
+                          {p.driveUrl && <a href={p.driveUrl} target="_blank" rel="noopener noreferrer" style={{ fontSize: 11, color: "#1565C0", textDecoration: "none", fontWeight: 600 }}>Open →</a>}
+                          <button
+                            onClick={async (e) => {
+                              e.stopPropagation();
+                              if (p.source === "github") return;
+                              const updated = pendingPapers.filter(x => x.id !== p.id);
+                              try { await savePending(updated); flash("Removed."); }
+                              catch (err) { flash("Could not remove paper."); }
+                            }}
+                            disabled={p.source === "github"}
+                            title={p.source === "github" ? "Committed papers can only be removed by editing papers.json on GitHub" : "Remove this pending paper"}
+                            style={{ fontSize: 10, color: p.source === "github" ? "#ccc" : "#C62828", background: "none", border: "none", cursor: p.source === "github" ? "default" : "pointer", fontFamily: "'DM Sans',sans-serif", fontWeight: 600, padding: 0 }}>
+                            Remove
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    {isExpanded && (
+                      <tr style={{ background: expandBg }}>
+                        <td style={{ padding: 0, borderBottom: "2px solid #BBDEFB" }} />
+                        <td colSpan={4} style={{ padding: "16px 20px 20px", borderBottom: "2px solid #BBDEFB" }}>
+                          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "14px 24px" }}>
+                            {[
+                              { label: "Abstract",                  val: p.abstract              },
+                              { label: "Methods",                   val: p.methods               },
+                              { label: "Findings",                  val: p.findings              },
+                              { label: "Limitations",               val: p.limitations           },
+                              { label: "Practical Implications",    val: p.practicalImplications },
+                              { label: "Football Athlete Dev",      val: p.athleteDev            },
+                              { label: "Return to Play",            val: p.rtp                   },
+                            ].map(({ label, val }) => val ? (
+                              <div key={label}>
+                                <div style={{ fontSize: 10, fontWeight: 700, color: "#1565C0", textTransform: "uppercase", letterSpacing: 0.6, marginBottom: 4 }}>{label}</div>
+                                <div style={{ fontSize: 12.5, lineHeight: 1.65, color: "#2a2a2a" }}>{val}</div>
+                              </div>
+                            ) : null)}
+                          </div>
+                        </td>
+                      </tr>
+                    )}
+                  </React.Fragment>
                 );
               })}
             </tbody>
