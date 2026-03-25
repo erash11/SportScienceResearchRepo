@@ -8,7 +8,7 @@ This is a **standalone React component** — a research paper library browser bu
 
 ## Architecture
 
-The entire application lives in one file: `football-research-library.jsx`. It is a default-exported React functional component using hooks (`useState`, `useEffect`, `useCallback`, `useRef`). Google Fonts are injected as a DOM side effect at module load time (not inside the component), so fonts load as soon as the module is imported.
+The entire application lives in one file: `football-research-library.jsx`. It is a default-exported React functional component using hooks (`useState`, `useEffect`, `useCallback`, `useRef`, `React.Fragment`). Google Fonts are injected as a DOM side effect at module load time (not inside the component), so fonts load as soon as the module is imported.
 
 There is no router, no state management library, no CSS framework, and no external dependencies beyond React itself.
 
@@ -63,9 +63,9 @@ Each paper object has exactly 12 persisted fields:
 |---|---|---|
 | `id` | string | Unique; use `Date.now().toString()` for new entries |
 | `year` | number | Publication year |
-| `citation` | string | Full citation text (displayed as primary label) |
+| `citation` | string | Full citation text ("Authors. Title. Journal. Year;vol:pages."); displayed in Authors column |
 | `doi` | string | DOI string (may be empty) |
-| `driveUrl` | string | Google Drive or external link URL (may be empty); rendered as "Open →" link inside the citation cell |
+| `driveUrl` | string | Google Drive or external link URL (may be empty); rendered as "Open →" link inside the Authors cell |
 | `abstract` | string | Summarized abstract |
 | `tldr` | string | One-paragraph practitioner summary |
 | `methods` | string | Methods used |
@@ -92,13 +92,31 @@ Full-text search runs across: `citation`, `abstract`, `tldr`, `findings`, `pract
 
 50 papers per page. Global row numbers (page 2 starts at row 51). `getPaginationPages(current, total)` returns an array of page numbers with `"..."` ellipsis for large sets.
 
+## Table Layout
+
+The table uses an **expandable-row pattern** to avoid horizontal scrolling:
+
+**Compact view (always visible) — 4 columns:**
+| Column | Key | Notes |
+|--------|-----|-------|
+| Paper Title | derived via `extractTitle(citation)` | Text between 1st and 2nd `. ` in citation string |
+| Year | `year` | Blue badge |
+| TL;DR | `tldr` | Quick practitioner summary |
+| Authors | `citation` | Full citation + DOI + Open → link |
+
+Table `minWidth` is 820px — fits without horizontal scrolling on any standard desktop.
+
+**Expanded detail (click row to toggle):** Inline 3-column grid showing Abstract, Methods, Findings, Limitations, Practical Implications, Football Athlete Dev, Return to Play. Expansion state is tracked in `expandedRows` (a `Set` in component state). The expand indicator (▼/▲) appears above the row number. Clicking "Open →" or "Remove" calls `e.stopPropagation()` to avoid toggling the row.
+
+`extractTitle` is a pure helper defined before the `filtered` derived value (required — `const` is not hoisted).
+
 ## Brand / Style Constants
 
 All styles are inline. Key brand values:
 - **Baylor green gradient:** `#003A2B → #00563F → #1B7A5A` (hero header)
-- **Interactive blue:** `#1565C0` (links, sort indicators, year badges)
+- **Interactive blue:** `#1565C0` (links, sort indicators, year badges, expanded-row section labels)
 - **Destructive/export red:** `#C62828` (remove button, CSV export)
-- **Page background:** `#FAF8F5`; alternating row: `#FAF7F2`
+- **Page background:** `#FAF8F5`; alternating row: `#FAF7F2`; expanded row: `#EEF4FF` / `#E8F0FE`
 - **Fonts:** `'DM Serif Display'` (headings), `'DM Sans'` (all body text)
 
 Three style objects are reused across table cells — `th` (header), `td` (data cell), `inp` (form input).

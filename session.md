@@ -1,4 +1,18 @@
-# Session Progress — Batch Import
+# Session Progress
+
+## UI Changes (2026-03-24)
+
+Replaced wide multi-column table with compact **expandable-row** design:
+- Table reduced from `minWidth: 2500` to `minWidth: 820` — no horizontal scrolling on standard desktops
+- Compact view: Paper Title (derived), Year, TL;DR, Authors/Citation
+- Click any row to expand inline detail: Abstract, Methods, Findings, Limitations, Practical Implications, Football Athlete Dev, Return to Play (3-column grid)
+- `extractTitle()` helper parses title from citation string (text between 1st and 2nd `. `)
+- All containers widened to `maxWidth: 1400`; hero padding tightened to `32px/28px`
+- `expandedRows` state (Set) tracks open rows; clicking links/Remove stops propagation
+
+---
+
+# Batch Import
 
 ## Status as of 2026-03-24
 
