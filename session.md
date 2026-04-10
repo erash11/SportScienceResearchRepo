@@ -1,14 +1,29 @@
 # Session Progress
 
+## Deployment (2026-03-24) ✅
+
+**Live URL:** `https://erash11.github.io/SportScienceResearchRepo/`
+
+- GitHub Pages enabled, serving from `gh-pages` branch
+- Auto-deploy on every push to `master` via `.github/workflows/deploy.yml`
+- `vite.config.js` configured with `base: '/SportScienceResearchRepo/'`
+
+## App Simplification (2026-03-24)
+
+Removed all `window.storage` / pending queue / in-app upload form logic:
+- Component went from ~450 lines to ~280 lines
+- Data flow is now: fetch `papers.json` from GitHub → render. That's it.
+- "Submit a Paper" button links to Google Form (`SUBMIT_FORM_URL` constant at top of component)
+- Google Form partially built (title, description, first 3 questions); revisit to complete later
+- `preview-main.jsx` simplified — no longer needs localStorage mock
+
 ## UI Changes (2026-03-24)
 
 Replaced wide multi-column table with compact **expandable-row** design:
-- Table reduced from `minWidth: 2500` to `minWidth: 820` — no horizontal scrolling on standard desktops
-- Compact view: Paper Title (derived), Year, TL;DR, Authors/Citation
-- Click any row to expand inline detail: Abstract, Methods, Findings, Limitations, Practical Implications, Football Athlete Dev, Return to Play (3-column grid)
-- `extractTitle()` helper parses title from citation string (text between 1st and 2nd `. `)
-- All containers widened to `maxWidth: 1400`; hero padding tightened to `32px/28px`
-- `expandedRows` state (Set) tracks open rows; clicking links/Remove stops propagation
+- Table reduced from `minWidth: 2500` to `minWidth: 820` — no horizontal scrolling
+- Compact view: Paper Title (derived via `extractTitle`), Year, TL;DR, Authors/Citation
+- Click any row to expand inline 3-column detail grid
+- All containers at `maxWidth: 1400`; hero padding `32px/28px`
 
 ---
 
@@ -51,7 +66,7 @@ console.log('Remaining:', remaining.length);
 ### Resume Instructions
 1. Regenerate remaining list (command above) → save to `/tmp/remaining_new.json`
 2. Launch round 6: 10 agents × 5 papers each, IDs 284–333, output to `docs/batch_r6_aX.json`
-3. After all 10 complete: merge → `node -e "..."` → git add/commit/push
+3. After all 10 complete: merge → commit/push → auto-deploys to GitHub Pages
 4. Continue rounds 7–12 (approx.) until all ~316 remaining football papers processed
 5. Optionally process non-football papers after that
 
