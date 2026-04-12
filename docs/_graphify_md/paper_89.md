@@ -1,0 +1,31 @@
+---
+id: 89
+year: 2023
+doi: 10.1038/s41598-023-40396-y
+---
+
+# Majano C, Garcia-Unanue J, Fernández-Cuevas I, Escamilla-Galindo V, Alonso-Callejo A, Sanchez-Sanchez J, Gallardo L, Felipe JL. Association between physical demands, skin temperature and wellbeing status in elite football players. Scientific Reports. 2023;13:13780. https://doi.org/10.1038/s41598-023-40396-y
+
+## TLDR
+Infrared thermography can objectively reveal which muscles are under the most stress from high-intensity training and match loads in elite football players. High hamstring thermal asymmetry is linked to fewer high-intensity actions completed, adductor asymmetry correlates with worse stress and muscle soreness, and knee asymmetry is associated with more fatigue and worse rest quality. Coaches and sports scientists should integrate routine thermography alongside GPS and wellness questionnaires to proactively identify athletes at elevated injury or recovery risk—particularly targeting the hamstrings, adductors, and knees—and individualize training load reductions accordingly.
+
+## Abstract
+This study examined the relationship between physical demands (GPS), skin temperature assessed via infrared thermography (IRT), and wellbeing status in 30 elite male football players over a 12-week competitive period (21/22 season). Thermography was performed three days post-match using a FLIR T435bx camera, and players were grouped into high (≥0.3°C) and low (<0.3°C) thermal asymmetry clusters across 44 bilateral lower-limb regions of interest. High-intensity actions were associated with greater thermal asymmetries in the thighs, while hamstring and adductor asymmetries correlated with reduced high-intensity outputs and worse wellness scores (stress, soreness, rest).
+
+## Methods
+Longitudinal observational study of 30 male professional football players from a Smartbank League (Spanish second division) club during a 12-week competitive period (14 February–11 May, 21/22 season). Age: 25.37±3.60 years; BMI: 23.06±1.04; VO2peak: 61.40±2.93 ml/min/kg. Thermography was performed with a FLIR T435bx camera in a controlled room (22°C±1.5°C, 40–60% relative humidity) using the Glamorgan protocol; images analyzed with ThermoHuman software v2.21 across 44 bilateral ROIs on the lower limbs. GPS movement data were collected with WIMU PRO devices (18 Hz), capturing 20+ variables including HSR (>21.1 km/h), accelerations/decelerations (≥3 m/s²), sprints (>24 km/h), HMLD, and ACWR ratios. A digital wellness questionnaire (RPE, stress, rest time, rest quality, muscle soreness on 1–10 scales) was completed weekly. Players trained 5×/week and participated in 11 official matches across 11 competitive microcycles. Players were grouped into high asymmetry (HA, ≥0.3°C) and low asymmetry (LA, <0.3°C) clusters for each ROI and each microcycle.
+
+## Findings
+High-intensity actions (distance at HSR, accelerations, sprints, Vmax) were significantly associated with higher thermal asymmetry in the thigh muscles. The high hamstring asymmetry group completed significantly fewer sprints, HSR, and distances between 18–21 km/h and 21–24 km/h compared to the low asymmetry group (ES: 0.22–0.42). Adductor high-asymmetry players showed higher stress, higher muscle soreness, and less rest (ES: 0.32–0.45). Knee high-asymmetry was associated with more fatigue and worse rest and rest quality (ES: 0.35–0.41). Positive correlations existed between thigh asymmetry and high-intensity GPS loads; negative correlations between hamstring asymmetry and HSR distance, 21–24 km/h distance, and sprints. Acute-chronic workload ratios showed negative correlations with thigh asymmetry and positive correlations with hamstring asymmetry. High-intensity acceleration and deceleration distance decreased across the 11 microcycles (~1,250 m to ~600 m), consistent with a tapering effect.
+
+## Limitations
+The asymmetry cut-off (0.3°C) was set by club policy rather than the published clinical standard (0.5°C), which may reduce specificity and limit comparisons with other studies. The sample was small (n=30), exclusively male, and from a single club, limiting external validity. Weather variability and individual thermoregulatory differences could not be fully controlled. Psychological factors (stress, anxiety) may independently influence skin temperature readings. Dietary and nutritional variations affecting metabolic rate were not accounted for. Causal directionality between asymmetry and workload cannot be established from an observational design.
+
+## Practical Implications
+Routine IRT screening three days post-match provides an objective, non-invasive complement to GPS and wellness data. Players flagged with elevated thermal asymmetry in the hamstrings, adductors, or knees should have training intensity reviewed—particularly high-speed running and acceleration/deceleration volumes. Adductor asymmetry warrants particular attention given its association with worse stress and recovery scores. Performance staff can design individualized recovery modalities (e.g., cold water immersion, massage) based on specific thermal hotspots identified by IRT.
+
+## Athlete Development Notes
+Thermography provides a cost-effective and non-invasive tool for tracking load-related muscle stress during high-intensity training phases in developing football players. Players performing large sprint and acceleration volumes—common in American football speed and conditioning programs—can be monitored bilaterally to detect asymmetries before subjective soreness is reported. Coaches can use this data to customize training loads and recovery interventions by individual muscle group.
+
+## Return to Play Notes
+Elevated thermal asymmetry in the hamstrings post-match or post-training may indicate elevated neuromuscular stress warranting modified loads before full return to high-intensity training. The finding that high hamstring asymmetry correlates with reduced sprint and high-speed running capacity suggests these athletes should receive thermographic clearance alongside functional testing before full RTP. Adductor and knee asymmetry data may similarly inform phased RTP decisions, with persistent asymmetry suggesting incomplete tissue recovery.

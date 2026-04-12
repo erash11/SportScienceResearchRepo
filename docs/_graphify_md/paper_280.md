@@ -1,0 +1,31 @@
+---
+id: 280
+year: 2026
+doi: 10.1080/24733938.2026.2642654
+---
+
+# Hecksteden, A., Berger, J., Mazzolari, R., Zhang, G., Meyer, T., Brink, M., Lemmink, K., Fritz, J., Keller, N., & Hauser, T. (2026). How to mitigate injury risk after return-to-play in elite football? Expert judgement meets data analytics. Science and Medicine in Football. Advance online publication.
+
+## TLDR
+Expert practitioners in elite European football believe injury risk post-RTP would be meaningfully lower with longer rehabilitation times, but data analytics reveal a more nuanced picture. Longer rehab time is associated with lower subsequent injury rates when measured in calendar days — however, this protective association disappears (and reverses) when time-at-risk is measured in football exposure hours post-RTP, suggesting that football exposure rather than calendar time may be the primary driver. The most actionable expert-identified improvements are logistically simple: smooth transitions between rehab phases, gradual load progression, psychosocial support, and consistent application of proven rehabilitation measures. Teams should not mistake early injury-free return exposures for evidence of low underlying risk.
+
+## Abstract
+This mixed-methods study leveraged synergies between expert practitioner knowledge and data analytics to identify options for reducing post-RTP injury risk in elite European football. Semi-structured interviews were conducted with 14 experienced practitioners (orthopaedic surgeons, physiotherapists, rehab/S&C coaches, sport scientists) from top European football. Thematic analysis identified four themes: (1) rehab time and its effect on injury risk, (2) rehabilitation strategy, (3) psychosocial factors, and (4) team structure. Data analytics used publicly available injury data (transfermarkt.com, 2023/24 season, n=8644 complete episodes) and Cox proportional hazards models with two alternative time axes (calendar days, football exposure in weighted hours) to scrutinize expert judgment regarding rehab time. Hazard ratios for pooled episodes were 0.886 (0.834–0.937) for calendar days and 1.046 (1.005–1.087) for football exposure.
+
+## Methods
+Mixed-methods sequential problem-solving design. Qualitative: semi-structured interviews (March–November 2023) with 14 elite European football practitioners; thematic analysis using Braun and Clarke's six-phase model. Quantitative: publicly sourced injury data from top European leagues (Austria, France, Germany, Italy, Netherlands, Spain, UK), season 2023/24, tracking complete index injury–RTP–subsequent injury episodes. Cox proportional hazards models with player ID as random effect; two time axes: calendar days and football exposure (match minutes + training minutes/8). Rehab time scaled within index injury diagnosis using interquartile range. ROC curves used to explore threshold effects.
+
+## Findings
+Four expert themes identified: (1) 'They return too early' — experts broadly agree longer rehab reduces injury risk, via tissue maturation, conditioning, and psychological readiness; (2) 'Mission command' — consistent, humble rehab strategy with tight feedback loops and full load achieved during guided rehab; (3) 'Psychosocial factors deserve more attention' — internal/external pressure and emotional recovery influence risk; (4) 'Small can be beautiful' — large medical teams carry communication and responsibility-overlap risks. Quantitative: HR for calendar days = 0.886 (95% CI 0.834–0.937), p<0.05 (lower injury rate with longer rehab). HR for football exposure = 1.046 (1.005–1.087), p<0.05 (higher injury rate per exposure hour with longer rehab). No threshold effect for rehab time found in ROC analysis. High football exposure post-RTP observed almost exclusively after early return.
+
+## Limitations
+Media-based injury data lacks detailed medical information (grading, tissue defect severity). Training times required estimation from literature values. Interviews not recorded verbatim; limited to salient terms and phrases. Small number of interviewees limits qualitative richness. Results specific to elite European football context. Analyses include only complete episodes with subsequent injury, which may underrepresent players with very long injury-free periods. Season distribution of RTP and football exposure could confound results.
+
+## Practical Implications
+Practitioners should not interpret a negative association between rehab time and calendar-day injury rate as straightforward evidence that longer rehab causes lower injury risk — football exposure post-RTP is a key confounder. Early returners accumulate higher football exposure rapidly, which itself elevates risk. If early RTP is unavoidable, match playing time should be minimized in initial exposures. Rehab programs should use consistent, proven measures with tight feedback loops, achieve close-to-match loads before RTP, and provide psychosocial support. Communication quality within multi-disciplinary teams is critical.
+
+## Athlete Development Notes
+For athlete development contexts, this study reinforces that accelerating return from injury carries real risk that may be masked when injury rate is expressed per calendar day rather than per unit of football exposure. Development-stage players may face additional vulnerability if they return to full competition loads before tissue healing and conditioning are complete. Building a culture of gradual, progressive loading and transparent communication between coaches and medical staff is a practical takeaway applicable across competitive levels.
+
+## Return to Play Notes
+Directly addresses RTP decision-making in elite football. Key findings: (1) experts universally believe longer rehab reduces reinjury risk, consistent with biological healing timelines; (2) data confirm lower injury rate per calendar day with longer rehab, but this association does not hold when expressed per football exposure hour post-RTP; (3) no clear threshold rehab duration was identified; (4) the combination of early RTP and high immediate football exposure is the highest-risk constellation. RTP decisions should weight exposure management post-clearance as critically as the clearance decision itself. Psychosocial readiness and load management during the post-RTP period warrant dedicated protocols.

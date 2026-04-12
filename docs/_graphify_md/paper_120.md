@@ -1,0 +1,31 @@
+---
+id: 120
+year: 2021
+doi: 
+---
+
+# Merrigan JJ, Rentz LE, Hornsby WG, Wagle JP, Stone JD, Smith HT, Galster SM, Joseph M, Hagen JA. Comparisons of Countermovement Jump Force-Time Characteristics Among NCAA Division I American Football Athletes: Use of Principal Component Analysis. J Strength Cond Res. 2021;XX(X):000-000.
+
+## TLDR
+Force plate CMJ testing reveals meaningful positional differences in jump strategy that go well beyond jump height alone. Skill players jump highest (46.7 cm) with superior relative power, while linemen produce the greatest absolute forces but struggle to transfer eccentric energy into concentric power efficiently, reflected in longer concentric phase durations and lower RSImod. Four principal components explained 89.5% of CMJ variance organized around: (1) explosive eccentric-to-concentric transferability (RSImod, concentric mean power), (2) eccentric loading quality, (3) countermovement strategy depth and duration, and (4) jump height and power output. Practitioners should monitor 1-2 metrics from each PC dimension rather than relying on a single outcome measure, and should design position-specific programs emphasizing elastic properties and stretch-shortening cycle development for linemen, and maximal strength development for skills and hybrids.
+
+## Abstract
+This cross-sectional study examined countermovement jump (CMJ) force-time characteristics across four positional groups (skills, hybrid, linemen, specialists) in 82 NCAA Division I Power 5 football athletes using dual force plates. One-way ANOVA evaluated positional differences in absolute and relative metrics, and principal component analysis (PCA) was used to reduce the dimensionality of 27 force-time variables. Four principal components explained 89.5% of the variance in CMJ metrics, representing explosive transferability to concentric power, powerful eccentric loading, countermovement strategy, and jump height and power output. Linemen produced the greatest absolute forces but had the lowest jump heights, while skill players achieved the highest jump heights and best relative power outputs.
+
+## Methods
+Cross-sectional design using off-season (January) CMJ testing of 82 NCAA Division I football athletes (ages 18-22) grouped as linemen (n=21), hybrid (n=18), skill (n=30), and specialists (n=13). Athletes performed 2 maximal-effort, no arm-swing CMJs on ForceDecks FD4000 dual force platforms sampled at 1,000 Hz after a standardized warm-up. Metrics were averaged across two trials. One-way ANOVA with post hoc Tukey tests evaluated positional differences (p < 0.05). PCA using the correlational method via the FactoMineR package in R 4.0.3 reduced 27 force-time metrics. Bartlett's sphericity test and Kaiser-Meyer-Olkin sampling adequacy (KMO = 0.80, meritorious) confirmed factor analysis suitability. Scree plot and eigenvalue >1.0 criterion identified four principal components. Squared cosine (cos²) values and v-test statistics quantified variable importance and positional group loadings.
+
+## Findings
+Linemen (132.0 ± 14.5 kg) had significantly greater body mass than all groups (p < 0.001) and produced greater absolute eccentric and concentric forces, but lower relative forces and power. Skill players achieved the highest jump height (46.7 ± 4.6 cm) vs hybrid (42.8 ± 5.5), specialists (38.7 ± 4.0), and linemen (34.1 ± 5.3 cm). Skills and hybrids had the highest RSImod values (0.61 and 0.57 m/s respectively) vs linemen (0.41 m/s). Four PCs explained 89.5% of CMJ variance (PC1 = 52.3%, PC2 = 22.2%, PC3 = 9.2%, PC4 = 5.8%). PC1 was driven by RSImod (cos² = 0.85), concentric mean power (0.84), concentric RPD 50ms (0.83), concentric RPD 100ms (0.83), and eccentric-to-concentric mean force ratio (0.82). Linemen had a significant negative loading on PC1 (v-test = -5.6); skill players had significant positive loadings on PC1 (v-test = 4.4) and PC2 (v-test = 2.4). Concentric phase duration was significantly longer in linemen than skill and hybrid athletes.
+
+## Limitations
+Single time point (off-season January) limits generalizability across training phases and longitudinal metric tracking. Body composition and muscle physiology data were not collected, which would provide important context. PCA metric combinations may change with different scenarios, timepoints, competition levels, or sports. Sample was from one Division I Power 5 program, limiting external validity. Reliability of rate of force development metrics must be considered when applying these findings.
+
+## Practical Implications
+Strength and conditioning staff at NFL and college programs should use force plate CMJ testing by position rather than relying solely on jump height. Linemen programs should emphasize exercises that improve stretch-shortening cycle efficiency and elastic energy storage at the hip, knee, and ankle to improve eccentric-to-concentric power transfer. Skill and hybrid programs should focus on maximizing absolute strength as the primary ceiling on total relative power output. For efficient monitoring, select 1-2 metrics per PCA dimension: RSImod or concentric mean power (PC1), eccentric peak velocity or peak power (PC2), countermovement depth or braking duration (PC3), and jump height (PC4).
+
+## Athlete Development Notes
+PCA-guided metric selection enables efficient, position-specific neuromuscular monitoring throughout training blocks. Off-season CMJ profiling can identify athletes with poor eccentric-to-concentric transfer—especially linemen—who may benefit from targeted plyometric and reactive strength training blocks. Jump strategy profiles can inform appropriate positional assignment and individualized programming decisions for developing athletes at the collegiate and professional levels.
+
+## Return to Play Notes
+CMJ force-time monitoring provides a sensitive, non-fatiguing neuromuscular assessment tool for tracking recovery and readiness following injury. Tracking RSImod and concentric mean power longitudinally can help identify when an athlete has returned to baseline neuromuscular output. Position-specific normative reference values derived from this type of data can improve RTP decision-making by establishing meaningful benchmarks for determining readiness to return to full-contact practice.

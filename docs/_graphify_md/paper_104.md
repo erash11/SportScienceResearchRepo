@@ -1,0 +1,31 @@
+---
+id: 104
+year: 2025
+doi: 10.1136/bmjsem-2025-002749
+---
+
+# Myslinski T Jr, Ito N, Park G, Weiss L, Heiderscheit B, Sugarman E, Mellody J, Cormier J, Williams T, Ramirez R, Ramsden S, Arbogast KB, Crandall JR. Characterising body postures by injury scenarios: a video review analysis of hamstring strain injuries in the National Football League. BMJ Open Sport Exerc Med. 2025;11:e002749. doi:10.1136/bmjsem-2025-002749
+
+## TLDR
+Hamstring strains in the NFL most commonly occur during sprinting, but nearly 40% involve excessive trunk flexion during contact, acceleration, or change-of-direction plays unique to American football. Video review using multiple expert raters shows only moderate inter-rater agreement even with simplified classification systems, meaning single-rater video analysis should be interpreted cautiously. For performance coaches and athletic trainers, this study reinforces the need for sprint-specific hamstring loading programs while also highlighting trunk strength and control as potentially important—yet underappreciated—risk factors in both hamstring injury prevention and return-to-play programming for football players.
+
+## Abstract
+This retrospective cohort study reviewed 305 hamstring strain injury (HSI) videos from NFL game footage across the 2018–2022 seasons to classify injury scenarios and associated body postures using a standardized multi-expert review methodology. Two blinded expert reviewers independently rated each injury using seven predefined scenarios and eight body posture categories developed by a separate expert committee. Of 305 videos reviewed, 137 (45%) met inclusion criteria based on inter-rater agreement thresholds. Sprinting was the most common injury scenario (59/137, 43%), while football-specific scenarios involving excessive trunk flexion during contact, acceleration, or change of direction accounted for 39% of injuries.
+
+## Methods
+Retrospective cohort study of all game-time HSIs from the NFL electronic medical record during 2018–2022 seasons (n=305 initial videos). Three to four standardized camera angles (sideline, endzone, television) recorded at 60 Hz were reviewed using a custom application. A five-expert committee developed seven injury scenario categories (sprinting, deceleration, acceleration, change of direction, balance control, forward trunk pitch, kicking) and body posture classifications (trunk sagittal/frontal/transverse, hip sagittal/frontal, knee sagittal, limb ground contact, contact status). Two blinded expert reviewers rated each video; Cohen's Kappa and Gwet's AC1 assessed agreement. A third reviewer resolved disagreements. Only injuries with consensus on all retained body posture variables were included in the final dataset (n=137).
+
+## Findings
+Sprinting was the most common scenario (59/137, 43%), followed by forward trunk pitch (20/137, 15%), change of direction (17/137, 12%), balance control (15/137, 11%), acceleration (12/137, 9%), and deceleration (12/137, 9%). Sprinting and deceleration were predominantly non-contact (86% and 83%) with upright trunk posture (<30° flexion in 90% and 92% of cases). Forward trunk pitch and balance control involved majority contact (75% and 60%) and greater trunk flexion. Biceps femoris was most commonly injured across all scenarios (40–75%). Inter-rater agreement for injury scenario was fair (Kappa=0.385, 53% agreement); player contact status had the best agreement (90%, Kappa=0.760). Skill and hybrid position players were most susceptible to sprint-type injuries; power and hybrid positions were more represented in forward trunk pitch scenarios.
+
+## Limitations
+Only in-game injuries with two or more clear, unobstructed video views were included, potentially underrepresenting contact-heavy scenarios with high player density. Over half of original videos (55%) were excluded due to poor quality or inability to reach reviewer consensus, which may introduce selection bias. Body posture analysis is based on a single assumed frame at the time of injury. Knee sagittal, hip sagittal, and trunk transverse planes had insufficient inter-rater agreement and were excluded from analysis. The retrospective design does not support causal inference between body postures and injury risk.
+
+## Practical Implications
+NFL and college football medical and performance staffs should prioritize progressive sprint-specific hamstring loading programs since sprinting remains the dominant injury mechanism. Trunk flexion during contact, acceleration, and change of direction represents a football-specific risk factor that may warrant targeted trunk strength and stability training for hybrid and power position players. Future video analysis research should adopt agreement-based methodologies with multiple expert reviewers and predefined classification systems to improve reliability and clinical applicability.
+
+## Athlete Development Notes
+Youth and collegiate football programs should incorporate both sprint-based hamstring training (e.g., Nordic curls, high-speed running exposure) and trunk stability work to address the two dominant injury scenarios. Position-specific considerations are important: skill and hybrid athletes are most susceptible to sprint-type HSIs, while hybrid and power positions (linemen, tight ends) are at higher risk for forward trunk pitch and balance control injuries involving contact. Graduated exposure to high-speed running and collision scenarios should be systematically programmed throughout training camps and the preseason.
+
+## Return to Play Notes
+Return-to-play protocols for NFL hamstring injuries should differentiate between sprint-type and trunk-flexion/contact-type mechanisms, as these may require different rehabilitation emphases. Sprint-type injuries likely benefit from progressive high-speed running exposure, while contact-related trunk pitch injuries may additionally require trunk strength, lumbo-pelvic control, and eccentric loading under flexed-trunk positions. The poor inter-rater agreement in classifying injury scenarios from video alone highlights the need for objective biomechanical tools (e.g., GPS, motion capture) to supplement clinical judgment when determining RTP readiness.

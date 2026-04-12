@@ -1,0 +1,31 @@
+---
+id: 98
+year: 2025
+doi: 10.1007/s40279-025-02245-y
+---
+
+# Silva H, Del Coso J, Pickering C. Caffeine and Sports Performance: The Conflict between Caffeine Intake to Enhance Performance and Avoiding Caffeine to Ensure Sleep Quality. Sports Medicine. 2025;55:1579–1592. doi:10.1007/s40279-025-02245-y
+
+## TLDR
+Caffeine (3–6 mg/kg taken ~60 minutes before exercise) reliably improves sport performance across a wide range of activities, but when competition occurs in the evening, the same dose can meaningfully impair post-event sleep quality — and poor sleep undermines recovery, immune function, injury risk, and subsequent performance. The solution is individualized testing: athletes should experiment with caffeine dose, timing, and source (gum, capsule, tablet) in simulated competition conditions while monitoring sleep quality. For evening events, using the minimum effective dose (3 mg/kg) and avoiding caffeine within 5–6 hours of bedtime are practical harm-reduction strategies. Habitual caffeine users should consider periodic abstinence to re-sensitize to its ergogenic effects.
+
+## Abstract
+This narrative review examined the conflict between using caffeine to enhance sports performance and avoiding caffeine to protect sleep quality, with particular relevance for athletes competing in the evening or later. The review synthesized evidence on caffeine's ergogenic mechanisms (primarily adenosine receptor antagonism), its well-established performance benefits across sport types (recommended dose: 3–6 mg/kg, ~60 min pre-exercise), and its documented sleep-disrupting effects — including delayed sleep onset, reduced sleep efficiency, and decreased sleep duration — that can persist for hours post-ingestion given caffeine's 2.5–10 hour half-life. Practical strategies for resolving this conflict are discussed, emphasizing individualized experimentation and monitoring.
+
+## Methods
+Comprehensive narrative literature review using PubMed, Web of Science, and SPORTDiscus. Search strategy combined key concepts related to caffeine (coffee, energy drinks), sleep (sleep quality, insomnia), and athletes (sport, exercise) using MeSH headings and free-text terms. A three-step approach was used: systematic database search, title/abstract screening with duplicate removal, and backward citation searching. Only studies analyzing the effect of caffeine ingestion on athletes' sleep parameters or sports performance were included; studies on recreational athletes, children, and animals were excluded.
+
+## Findings
+Caffeine at 3–6 mg/kg significantly enhances endurance, team sport, and power performance through adenosine receptor antagonism, with meta-analytic evidence supporting benefits in sprint performance, running distance, and perceived exertion reduction. Caffeine consumed 400 mg (~6 mg/kg) up to 6 hours before bedtime significantly impairs sleep quality compared to placebo. Individual response variability is substantial, influenced by CYP1A2 and ADORA2A genetic polymorphisms, habitual caffeine consumption (tolerance), and anxiety levels. Tolerance to ergogenic effects develops gradually but ergogenic benefits remain detectable with chronic use, strongest on the first day of consumption. Doses above 6 mg/kg provide no additional performance benefit but increase side effect risk including insomnia. A combined 20-min nap plus 5 mg/kg caffeine strategy produced higher performance benefits than either alone as a counter to partial sleep deprivation.
+
+## Limitations
+The review is narrative rather than systematic, introducing potential selection bias. High heterogeneity exists among studies in terms of athlete level, sport type, timing and dose of caffeine, and sleep measurement tools (questionnaires vs. polysomnography). The impact of habitual caffeine use on sleep disturbance in athletes is incompletely understood. Genetic testing for CYP1A2 and ADORA2A polymorphisms is not yet standard practice in sports settings. Most studies measure sleep in controlled lab settings that may not reflect real-world competitive environments.
+
+## Practical Implications
+NFL and college football teams playing night games — Thursday Night Football, Sunday Night Football, Monday Night Football — should develop individualized caffeine protocols. Staff should identify players most sensitive to caffeine-induced sleep disruption, particularly those competing late at night who have early morning recovery activities. Recommended approach: test caffeine dosing in simulated late-game conditions during pre-season; use the lowest effective dose (3 mg/kg) for evening games; prefer anhydrous sources (capsules, gums) for dose precision; pair caffeine use with post-game sleep hygiene protocols. Habitual caffeine users should consider periodic abstinence cycles during the off-season to restore ergogenic sensitivity.
+
+## Athlete Development Notes
+Caffeine is one of the most evidence-supported legal ergogenic aids available to football players, with documented benefits in strength, power, sprint performance, and cognitive function — all highly relevant to football. Strength and conditioning staff should educate athletes on the performance-enhancing potential of caffeine (3–6 mg/kg, 60 min pre-activity) while simultaneously counseling on sleep hygiene to avoid performance decrements from poor recovery. Given that many football players habitually consume caffeine via pre-workout supplements and energy drinks, periodic abstinence blocks during the off-season may help restore sensitivity and maximize in-season ergogenic effects at lower and safer doses.
+
+## Return to Play Notes
+For athletes in rehabilitation, sleep quality is a critical and often overlooked component of recovery and tissue repair. Clinicians managing RTP should assess and counsel athletes on caffeine use, particularly those in early post-surgical phases where sleep is most important for healing. Athletes who habitually use caffeine late in the day to manage fatigue during long rehabilitation periods may be inadvertently compromising recovery sleep quality. Transitioning to morning-only caffeine use and reinforcing sleep hygiene practices during rehabilitation can meaningfully improve the recovery environment and support faster RTP timelines.

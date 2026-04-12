@@ -1,0 +1,31 @@
+---
+id: 278
+year: 2026
+doi: 10.5114/biolsport.2026.153532
+---
+
+# Guitart M, Alonso-Callejo A, Rodas G, Cos F, Martin-Garcia A, Franquesa X, Carles B, Valle X, Yangüas X, Felipe JL. How do muscle injuries relate to return-to-performance metrics in male elite football players? Biol Sport. 2026;43:165-175.
+
+## TLDR
+Returning to the pitch after RTP criteria are met does not equate to returning to pre-injury performance. Severe hamstring injuries cause measurable deficits in maximum velocity and high-speed running for up to five weeks post-RTP, while quadriceps injuries resolve much faster. This study quantifies the performance gap and underscores that RTP and return-to-performance are distinct milestones that require different monitoring frameworks — particularly for hamstring injuries, where incomplete performance recovery may increase re-injury risk.
+
+## Abstract
+This longitudinal prospective study examined how the type, location, and severity of hamstring and quadriceps muscle injuries relate to time elapsed for male elite football players to regain pre-injury performance levels in high-speed running (HSR, >21 km/h), sprint distance (>24 km/h), and maximum velocity (Vmax). Data were collected from 333 elite players from an elite Spanish La Liga club (male 2nd team, U-19, U-18) over five seasons (2017/18–2021/22). A total of 234 injuries (81 medical attention, 167 time-loss) were analysed using linear mixed models with 7-day pre- and post-injury time windows (Pre5–Pre1; Post1–Post5). Hamstring injuries significantly reduced Vmax and HSR post-RTP, with severe injuries requiring up to five weeks to recover; severe hamstring injuries produced a 1.43 km/h reduction in Vmax and a 32.90 m decrease in HSR in the first post-RTP week. Quadriceps injuries showed less impact, with only mild injuries producing a significant reduction in Vmax (−1.18 km/h) and HSR (−52.70 m) in the first week post-RTP.
+
+## Methods
+Descriptive longitudinal prospective study. 333 elite male football players from three squads (Male 2nd Team, U-19, U-18) of one elite Spanish La Liga club over five seasons (2017/18–2021/22). 234 hamstring and quadriceps muscle injuries included (81 medical attention, 167 time-loss). Injuries classified per UEFA consensus by severity: medical attention (0 days), mild (1–7 days), moderate (8–28 days), severe (>28 days), and coded with OSICS-10. GPS external load data collected during all on-pitch training sessions and matches using WiMU PRO devices (RealtrackSystems). Performance variables: HSR distance (>21 km/h), Sprint distance (>24 km/h), and Vmax (km/h). 7-day time windows established before (Pre5–Pre1) and after RTP (Post1–Post5). Linear mixed models (LMM) fitted for each muscle group and injury severity with Time Windows as fixed effects, Days Off as numeric covariate, and Pre1 as reference level. Statistical analyses in R 4.2.2 with lme4 package. FC Barcelona Ethics Committee approval (#2019FCB28).
+
+## Findings
+Hamstring injuries (all severities) showed significant reductions in HSR during Post1 period (p<0.05) except moderate. Severe hamstring injuries produced significant reductions in Vmax at Post1 (−1.43 km/h, p=0.01), Post2 (−0.73, p=0.04), Post3 (−1.16, p=0.01), Post4 (−0.73, p=0.04), and Post5 (−0.90, p=0.02); and in Sprint distance at Post1 (−20.27 m, p=0.02). Severe hamstring injuries also required up to 5 weeks to recover Vmax to pre-injury levels. Quadriceps mild injuries: significant reduction in Vmax (−1.18 km/h, p=0.04) and HSR (−52.70 m, p=0.01) only in Post1. No significant performance changes for moderate or severe quadriceps injuries. Days Off was significantly associated with Vmax recovery in severe hamstring injuries (coefficient=0.00, p=0.01).
+
+## Limitations
+Data from a single elite club; game model and training methodology were consistent across teams but may limit generalisability. Some injury observations were missed due to player transfers or contract endings reducing follow-up completeness. Players who changed teams mid-season were included only for the period they trained/played at the club. Goalkeepers were excluded. The study does not capture neuromuscular testing or psychological readiness, which are important RTP/RTPerf components. Follow-up limited to 5 weeks post-RTP; longer-term recovery trajectories could not be assessed.
+
+## Practical Implications
+Practitioners should distinguish between RTP (medical clearance to train/play) and return to performance (RTPerf — regaining pre-injury GPS metrics). For severe hamstring injuries, rehabilitation and performance staff must collaboratively plan a progressive reloading phase lasting at minimum 4–5 weeks post-RTP before expecting full performance restoration. Daily GPS-based monitoring of HSR, sprint distance, and Vmax is recommended to track individual recovery trajectories and adjust training loads accordingly, reducing risk of re-injury through premature high-intensity exposure.
+
+## Athlete Development Notes
+This study highlights injury location as a critical determinant of performance recovery timelines: hamstring injuries require significantly longer performance restoration than quadriceps injuries. For elite football development programmes, integrating GPS performance monitoring into injury surveillance — not just return-to-play criteria — provides more nuanced information about when athletes are truly ready to compete at full intensity. Implementing coordinated rehabilitation and performance strategies that align with individual load histories is essential for maintaining squad availability and long-term athletic development.
+
+## Return to Play Notes
+RTP clearance based on clinical criteria alone is insufficient for hamstring injuries — particularly severe ones, where Vmax and HSR remain significantly below pre-injury levels for up to five weeks after returning to play. Return-to-performance should be treated as a separate, subsequent phase of rehabilitation with objective GPS performance benchmarks (pre-injury HSR, sprint distance, and Vmax averages) as clearance criteria. The first week post-RTP carries the greatest performance deficit and likely the highest re-injury risk, warranting conservative load management even after medical staff have cleared the player.

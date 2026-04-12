@@ -1,0 +1,31 @@
+---
+id: 183
+year: 2025
+doi: 10.1123/ijspp.2024-0469
+---
+
+# Flatt AA, Allen JR, Keith CM, Esco MR. Effects of Position and Injury Status on Associations Between Preseason Workload and Heart-Rate Variability Profiles in American College Football Players. International Journal of Sports Physiology and Performance. 2025. 10.1123/ijspp.2024-0469
+
+## TLDR
+During preseason camp at a national championship-winning Division I program, HRV stability responded oppositely to high training loads depending on position: skill players (WRs, DBs) who ran the most showed the most stable HRV, while midskill players (LBs, RBs, TEs) who accumulated the highest total loads showed the greatest day-to-day HRV fluctuation. This position-specific pattern was independent of injury status, though players with minor injuries tended to have moderately lower HRV. For football performance staff, interpreting HRV data without accounting for position group risks misclassifying well-adapted aerobically fit skill players and potentially overtaxed heavy midskill players.
+
+## Abstract
+This observational study quantified position-specific associations between HRV profile characteristics (LnRMSSD mean and coefficient of variation) and GPS/accelerometer-derived external workload parameters in 27 Division I college football players (15 skill, 12 midskill) during preseason training camp, while accounting for injury-related participation status (15 full go, 12 go as can). Skill players who consistently performed the highest total workloads exhibited the most stable HRV (lowest LnRMSSD CV), while midskill players with the highest total workloads showed the greatest HRV instability. A moderate effect-size reduction in LnRMSSD was observed in players with go-as-can participation status.
+
+## Methods
+Observational study of 27 NCAA Division I football players from a national championship-winning program during a 13-day preseason camp (15 training sessions). Skill group (n=15): 8 DBs and 7 WRs (height 187.5±4.3 cm, weight 89.8±5.3 kg). Midskill group (n=12): 5 LBs, 4 RBs, 3 TEs (height 188.9±5.7 cm, weight 104.6±6.8 kg). Linemen excluded due to limited wearable tracker availability. Participation status: full go (n=15) or go as can (n=12). HRV (LnRMSSD) measured daily via 55-second photoplethysmography recordings (ithlete app) pre-practice. External workload from Catapult GPS/accelerometers: total distance, high-speed (19.4-25.8 km/h) and sprint (>25.8 km/h) distances, peak velocity, Player Load, and inertial movement analysis (IMA). Camp mean and CV calculated for all metrics. Multiple regression used to test position x workload interactions with injury status as covariate.
+
+## Findings
+Skill players ran significantly more total distance (5712 vs 4902 m, p<0.001), high-speed distance (316 vs 171 m, p<0.0001), and sprint distance (95 vs 38 m, p<0.0001) than midskill players. Skill LnRMSSD CV was inversely associated with total distance (r=-0.67, p<0.05) and Player Load (r=-0.56, p<0.05), and positively with total distance CV (r=0.61, p<0.05). Midskill LnRMSSD CV was positively associated with total distance (r=0.60, p<0.05), Player Load (r=0.63, p<0.05), and high speed CV (r=0.68, p<0.05). Multiple regression confirmed significant position x total distance (interaction p=0.002, adjusted r2=0.30) and position x Player Load (interaction p=0.002, adjusted r2=0.29) interactions independent of injury status. LnRMSSD was moderately greater in full-go vs go-as-can players (ES=0.73, p<0.07) with no statistically significant between-group workload differences.
+
+## Limitations
+Small sample size (n=27) from a single team, limiting generalizability. Linemen were excluded due to tracker availability constraints. Injury status was determined subjectively by sports medicine staff; players may not consistently self-report issues. HRV collected at the training facility rather than post-waking, increasing noise. Aerobic fitness and plasma volume — likely explanatory variables — were not directly measured. Lack of internal load data (RPE, session-RPE) is a further limitation. The potential bidirectional relationship between injury and HRV could not be fully explored.
+
+## Practical Implications
+Football performance staff using HRV monitoring during preseason camp should interpret LnRMSSD CV in the context of position group. A skill player maintaining stable HRV while accumulating high total workloads likely reflects high aerobic fitness and positive adaptation — intervention is probably not warranted. Conversely, a midskill player (LB, RB, TE) showing increasing LnRMSSD CV alongside high total workload may be experiencing fatigue-related autonomic dysregulation and could benefit from workload reduction, especially if high-intensity output is also declining. Injury-related participation status should be considered when comparing average LnRMSSD across individuals.
+
+## Athlete Development Notes
+The study provides a framework for individualized HRV monitoring in college football. High aerobic fitness in skill players appears to buffer cardiac-autonomic responses to high training loads during intense preseason camp in heat — suggesting that aerobic development should be a priority for skill position athletes entering camp. For midskill players, particularly larger LBs who accumulate very high total loads, the data suggest a potential training tolerance ceiling that, when exceeded, produces autonomic stress detectable via HRV. This has implications for optimizing long-term player health and development by tailoring camp workloads to position-specific physiological profiles.
+
+## Return to Play Notes
+The observation that players with go-as-can (minor injury) status showed moderately lower LnRMSSD than fully participating peers (ES=0.73, p<0.07) supports the hypothesis that minor musculoskeletal injuries suppress cardiac parasympathetic activity. HRV monitoring may therefore serve as an adjunct tool in RTP decisions — sustained suppression of LnRMSSD in an injured player could signal inadequate recovery before clearing for full participation. However, the current evidence is insufficient to establish HRV thresholds for RTP clearance, and this should be a focus of future research.
