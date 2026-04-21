@@ -38,11 +38,19 @@ export default function FootballResearchLibrary() {
 
   const extractTitle = (citation) => {
     if (!citation) return "";
+    // APA format: "Authors (Year). Title. Journal."
+    const yearParen = citation.match(/\(\d{4}\)\.\s*/);
+    if (yearParen) {
+      const after = citation.slice(yearParen.index + yearParen[0].length);
+      const end = after.search(/[.?!]\s/);
+      return end === -1 ? after.trimEnd().replace(/[.?!]$/, "") : after.slice(0, end);
+    }
+    // Standard format: "Authors. Title. Journal." — title may end in . ? or !
     const firstDot = citation.indexOf(". ");
-    if (firstDot === -1) return "";
+    if (firstDot === -1) return citation.trimEnd().replace(/[.?!]$/, "");
     const rest = citation.slice(firstDot + 2);
-    const secondDot = rest.indexOf(". ");
-    return secondDot === -1 ? rest : rest.slice(0, secondDot);
+    const end = rest.search(/[.?!]\s/);
+    return end === -1 ? rest.trimEnd().replace(/[.?!]$/, "") : rest.slice(0, end);
   };
 
   const years = [...new Set(papers.map(p => p.year))].sort((a, b) => b - a);
