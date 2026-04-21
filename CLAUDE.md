@@ -109,9 +109,9 @@ Two style objects reused across cells — `th` (header), `td` (data cell).
 
 ## Batch Import Progress
 
-See `session.md` for full details. Current state: **333 papers** in `papers.json` (IDs 1–333).
+See `session.md` for full details. Current state: **383 papers** in `papers.json` (IDs 1–383).
 
-- Rounds 1–6 complete (IDs 9–333)
-- ~266 football papers still remaining (rounds 7–12 approx.)
+- Rounds 1–7 complete (IDs 9–383)
+- ~319 football papers still remaining (rounds 8–12 approx.)
 - Batch agent pattern: 10 parallel agents × 5 PDFs each → `docs/batch_rX_aY.json` → merge → commit/push
-- Next ID to assign: **334**
+- Next ID to assign: **384**
