@@ -115,3 +115,10 @@ See `session.md` for full details. Current state: **383 papers** in `papers.json
 - ~319 football papers still remaining (rounds 8–12 approx.)
 - Batch agent pattern: 10 parallel agents × 5 PDFs each → `docs/batch_rX_aY.json` → merge → commit/push
 - Next ID to assign: **384**
+- driveUrl pattern: `BASE_URL + encodeURIComponent(filename)` where `BASE_URL` = `https://raw.githubusercontent.com/erash11/SportScienceResearchRepo/master/SourcePapers/`
+
+### Batch Import — Known Filename Issues
+- **Curly apostrophes (U+2019):** Some source filenames contain `'` — agents use PowerShell wildcard copy workaround
+- **`%c2%a0` literal chars in filenames:** `%` gets double-encoded to `%25` in driveUrl — preserve encoding as-is
+- **Duplicate-content files:** A few pairs share identical content with slightly different filenames — both kept; note in abstract
+- **Unreadable PDFs:** Mark as `SOURCE FILE UNREADABLE` in abstract (e.g., ID 155 has invisible char in filename)

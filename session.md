@@ -29,9 +29,9 @@ Replaced wide multi-column table with compact **expandable-row** design:
 
 # Batch Import
 
-## Status as of 2026-03-24
+## Status as of 2026-04-22
 
-**papers.json**: 283 papers (IDs 1–283), committed and pushed to `master`.
+**papers.json**: 383 papers (IDs 1–383), committed and pushed to `master`.
 
 ### Completed Rounds
 | Round | IDs | Commit |
@@ -43,11 +43,13 @@ Replaced wide multi-column table with compact **expandable-row** design:
 | Round 3 | 134–183 | b46eb0f |
 | Round 4 | 184–233 | 5288776 |
 | Round 5 | 234–283 | 8767d4d |
+| Round 6 | 284–333 | (see git log) |
+| Round 7 | 334–383 | 9e80734 |
 
-### Round 6 — NOT YET PROCESSED (IDs 284–333)
-Usage limit hit. Resets **March 27, 2026 at 3pm America/Chicago**.
+### Next: Round 8 (IDs 384–433)
+Status: Not yet started.
 
-Files needed: indices 200–249 from `/tmp/remaining3.json` (regenerate if /tmp was cleared):
+Regenerate remaining list if needed:
 ```js
 // Regenerate remaining list:
 node -e "
