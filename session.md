@@ -29,9 +29,9 @@ Replaced wide multi-column table with compact **expandable-row** design:
 
 # Batch Import
 
-## Status as of 2026-04-22
+## Status as of 2026-04-23
 
-**papers.json**: 383 papers (IDs 1–383), committed and pushed to `master`.
+**papers.json**: 433 papers (IDs 1–433), committed and ready to push to `master`.
 
 ### Completed Rounds
 | Round | IDs | Commit |
@@ -45,8 +45,9 @@ Replaced wide multi-column table with compact **expandable-row** design:
 | Round 5 | 234–283 | 8767d4d |
 | Round 6 | 284–333 | (see git log) |
 | Round 7 | 334–383 | 9e80734 |
+| Round 8 | 384–433 | (this commit) |
 
-### Next: Round 8 (IDs 384–433)
+### Next: Round 9 (IDs 434–483)
 Status: Not yet started.
 
 Regenerate remaining list if needed:
@@ -66,16 +67,16 @@ console.log('Remaining:', remaining.length);
 ```
 
 ### Resume Instructions
-1. Regenerate remaining list (command above) → save to `/tmp/remaining_new.json`
-2. Launch round 6: 10 agents × 5 papers each, IDs 284–333, output to `docs/batch_r6_aX.json`
+1. Regenerate remaining list (command above) → save to `docs/remaining_r9.json` or `/tmp/remaining_new.json`
+2. Launch round 9: 10 agents × 5 papers each, IDs 434–483, output to `docs/batch_r9_aX.json`
 3. After all 10 complete: merge → commit/push → auto-deploys to GitHub Pages
-4. Continue rounds 7–12 (approx.) until all ~316 remaining football papers processed
+4. Continue rounds 9–14 (approx.) until all ~275 remaining football papers processed
 5. Optionally process non-football papers after that
 
 ### Total Football PDFs
 - Total matching football/NFL filter: ~674
-- Processed so far: 275 (IDs 9–283, excluding 8 Baylor internal docs)
-- Remaining: ~316 (recompute after regenerating list above since /tmp may not persist)
+- Processed so far: 425 (IDs 9–433, excluding 8 Baylor internal docs)
+- Remaining: ~275 after known filename skips (recompute after regenerating list since temporary files may not persist)
 
 ### Batch Agent Pattern
 Each agent receives 5 filenames + ID range, reads PDFs from SourcePapers/, writes to

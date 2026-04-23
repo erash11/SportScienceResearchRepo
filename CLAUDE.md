@@ -109,12 +109,12 @@ Two style objects reused across cells — `th` (header), `td` (data cell).
 
 ## Batch Import Progress
 
-See `session.md` for full details. Current state: **383 papers** in `papers.json` (IDs 1–383).
+See `session.md` for full details. Current state: **433 papers** in `papers.json` (IDs 1–433).
 
-- Rounds 1–7 complete (IDs 9–383)
-- ~319 football papers still remaining (rounds 8–12 approx.)
+- Rounds 1–8 complete (IDs 9–433)
+- ~275 football papers still remaining after known filename skips (rounds 9–14 approx.)
 - Batch agent pattern: 10 parallel agents × 5 PDFs each → `docs/batch_rX_aY.json` → merge → commit/push
-- Next ID to assign: **384**
+- Next ID to assign: **434**
 - driveUrl pattern: `BASE_URL + encodeURIComponent(filename)` where `BASE_URL` = `https://raw.githubusercontent.com/erash11/SportScienceResearchRepo/master/SourcePapers/`
 
 ### Batch Import — Known Filename Issues
