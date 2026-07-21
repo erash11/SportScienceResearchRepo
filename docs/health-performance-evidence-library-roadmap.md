@@ -1,7 +1,7 @@
 # Baylor Athletics Health & Performance Evidence Library Roadmap
 
 **Adopted:** July 21, 2026
-**Status:** Working direction
+**Status:** Phase 3 implemented; Phase 4 Batches 01–02 published
 **Product name:** Baylor Athletics Health & Performance Evidence Library
 
 ## Decision
@@ -33,18 +33,18 @@ The July 21, 2026 read-only audit established:
 
 These counts supersede the older filename-filter estimate in `session.md`.
 
-## Trustworthy Baseline Completed
+## Trustworthy Baseline and Current State
 
 The July 21 cleanup removed 26 verified duplicate rows, repaired the malformed source links, separated two records that had been assigned the wrong shared source, restored the previously unreadable workload paper from its PDF, corrected one DOI/citation, and completed the blank return-to-sport field.
 
-The reproducible manifest at `docs/library-coverage-manifest.json` now reports:
+The baseline began at 407 canonical rows. After two full-text-reviewed pilot batches, the reproducible manifest at `docs/library-coverage-manifest.json` now reports:
 
-- 407 canonical published rows with 407 unique stable IDs
-- 398 local source-backed rows, 8 Baylor internal rows, and 1 DOI-backed external row
+- 431 canonical published rows with 431 unique stable IDs
+- 422 local source-backed rows, 8 Baylor internal rows, and 1 DOI-backed external row
 - no repeated or unresolved local source references
 - no missing required fields or schema mismatches
 - 2,155 PDFs representing 2,125 unique file contents
-- 394 unique local source contents represented and 1,731 unrepresented
+- 418 unique local source contents represented and 1,707 unrepresented
 - all five publication quality gates passing
 
 Run `npm run audit` before publication and `npm run audit:manifest` whenever the corpus or published library changes.
@@ -73,23 +73,29 @@ normalized evidence record
 
 This seam keeps legacy keys such as `athleteDev` and `rtp` behind a small interface. The current UI should not accumulate conditional logic for each schema generation.
 
-### Proposed normalized evidence record
+### Approved normalized evidence record
 
-The exact persisted schema will be approved before implementation, but the normalized interface should support:
+The runtime interface is implemented in `evidence-taxonomy.mjs`. The canonical 13-field `papers.json` schema remains unchanged; `normalizePaper(record, metadata)` maps legacy and future records into:
 
 - identity: ID, citation, DOI, year, source URL
 - evidence: abstract, TLDR, methods, findings, limitations
 - translation: general practical implications plus optional audience-specific applications
 - context: domains, audiences, sports, populations, and study design
-- curation: source verification and review status
+- curation: source verification, review status, and taxonomy provenance
 
-Suggested filter dimensions:
+Precedence is future record metadata, then the legacy `paper-taxonomy.json` sidecar, then deterministic inference. This keeps `athleteDev` and `rtp` behind the adapter and prevents schema-version conditionals from spreading through the UI.
 
-- **Domain:** performance, sports medicine, rehabilitation, recovery, nutrition, brain health, wellbeing, monitoring/technology
-- **Audience:** performance, athletic training, sports medicine, rehabilitation, nutrition, research, coaching
-- **Sport context:** general/mixed sport plus named sports where applicable
-- **Population:** sex, competitive level, age group, injured/healthy status when reported
-- **Study design:** systematic review, randomized trial, cohort, cross-sectional, consensus/position statement, narrative review, case report, other
+### Approved controlled vocabularies
+
+- **Domain:** Training & Performance; Sports Medicine & Injury; Rehabilitation & Return to Sport; Recovery & Readiness; Nutrition & Hydration; Brain Health & Psychology; Athlete Wellbeing; Monitoring & Technology
+- **Audience:** Performance; Athletic Training; Sports Medicine; Rehabilitation; Nutrition; Research & Analytics; Coaching
+- **Sport context:** Mixed / General Sport; American Football; Soccer; Basketball; Baseball / Softball; Rugby; Volleyball; Track & Field; Swimming & Diving; Gymnastics; Tennis; Golf; Ice Hockey; Combat Sports; Endurance Sport; Other Sport
+- **Population:** Professional / Elite; Collegiate; Youth / Adolescent; Adult / Recreational; Female Athletes; Male Athletes; Injured Athletes; Healthy Athletes; Mixed / Unspecified
+- **Study design:** Systematic Review / Meta-analysis; Randomized Controlled Trial; Cohort Study; Cross-sectional Study; Case-control Study; Consensus / Position Statement; Narrative Review; Case Report / Case Series; Laboratory / Experimental Study; Qualitative Study; Methodological / Validation Study; Internal Evidence Synthesis; Other
+
+The first legacy backfill is deterministic and marked `rules-v1-unreviewed`. It supports discovery but is not presented as expert-reviewed interpretation. Directly curated metadata can replace a sidecar row without changing the UI contract.
+
+The UI applies OR logic within a filter dimension and AND logic across dimensions. Full-text search includes normalized evidence, translations, and taxonomy labels.
 
 ## Delivery Phases
 
@@ -113,19 +119,28 @@ Suggested filter dimensions:
 
 ### Phase 3 — Taxonomy and Discovery
 
-- Approve the normalized evidence interface and controlled vocabularies
-- Add the normalization module at the data-loading seam
-- Backfill domain, audience, sport/population, and study-design metadata for existing records
-- Add multi-select filters without weakening current full-text search
+- [x] Approve the normalized evidence interface and controlled vocabularies
+- [x] Add the normalization module at the data-loading seam
+- [x] Backfill domain, audience, sport/population, and study-design metadata for all 407 existing records
+- [x] Add multi-select filters without weakening current full-text search
+- [x] Add taxonomy coverage and vocabulary auditing
 
 **Exit condition:** staff can find evidence by professional need or population without knowing football terminology.
 
 ### Phase 4 — Balanced Expansion Pilot
 
-- Select 75–100 unrepresented papers across health and performance domains
+- [x] Prepare a 96-paper title-screened queue: 12 unrepresented, content-deduplicated candidates per controlled domain
+- [x] Full-text screen and audit Batch 01: 12 INCLUDE, 0 EXCLUDE, 0 DEGRADED
+- [x] Publish Batch 01 as stable IDs 434–445
+- [x] Full-text screen and audit Batch 02: 12 INCLUDE, 0 EXCLUDE, 0 DEGRADED
+- [x] Publish Batch 02 as stable IDs 446–457
 - Include cross-sport and underrepresented population evidence intentionally; do not rely only on the existing backlog's distribution
 - Process in small audited batches with source, extraction, synthesis, and verification gates
 - Publish only after duplicate and schema checks pass
+
+The active queue is stored in `docs/pilot-expansion-shortlist.md` and `docs/pilot-expansion-shortlist.json`; durable batch decisions live under `docs/pilot-screening/`, and publication-ready records live under `docs/pilot-synthesis/`. Batches 01–02 verified and published 24 readable, eligible local sources. Their reviewed primary-domain distribution is 6 Training & Performance, 6 Recovery & Readiness, 4 Sports Medicine & Injury, 3 Nutrition & Hydration, 3 Monitoring & Technology, and 2 Rehabilitation & Return to Sport.
+
+Published screening decisions leave the active queue, which is replenished to 96 unrepresented candidates with 12 per pilot domain. Primary-domain matches fill each domain first. Athlete Wellbeing currently requires seven explicitly labeled secondary-title matches because only five unrepresented candidates have it as their strongest title signal. Generic physical `stress` wording is excluded from the Wellbeing rule to prevent heat-stress and bone-stress false positives.
 
 **Exit condition:** the live library contains at least 500 distinct evidence sources and demonstrates useful breadth to both medical and performance staff.
 
@@ -138,6 +153,10 @@ Suggested filter dimensions:
 
 **Exit condition:** the library has a repeatable intake, verification, publishing, and review cadence with named ownership.
 
-## Next Decision
+## Pilot Allocation Decision
 
-Before Phase 3 implementation, approve the controlled domain and audience vocabularies and decide whether the first expansion pilot should be balanced evenly across domains or weighted toward the highest-priority Health & Performance questions.
+Use an evenly balanced first pilot—12 candidates in each of the eight domains—to correct the current football and injury/performance concentration and test usefulness across staff groups. After this breadth pilot and staff review, weight the monthly intake cadence toward Baylor's highest-priority Health & Performance questions.
+
+## Next Gate
+
+Full-text screen Batch 03 from the replenished balanced queue, then convert only INCLUDE decisions into the next structured synthesis batch. A candidate enters synthesis only after source identity, eligibility, study-design, domain, sport/population, and duplicate-content checks pass. The next unused stable ID is 458. Run `npm run audit:screening` after recording a batch, `npm run synthesis:apply` to publish reviewed synthesis records, and `npm run pilot:shortlist` to replenish the queue.

@@ -17,7 +17,7 @@ An expandable evidence table that gives each paper a plain-language TLDR, method
 ### Key Features
 
 - Full-text search across all fields (citation, abstract, TLDR, findings, methods, and all application columns)
-- Year-based filtering with sortable column headers
+- Year, domain, audience, sport, population, and study-design filtering with sortable column headers
 - CSV export for offline access and sharing
 - Google Form submission link allowing any staff member to recommend new research
 - GitHub-backed shared data so published additions are visible to the entire team
@@ -52,7 +52,7 @@ An expandable evidence table that gives each paper a plain-language TLDR, method
 | 7 | L5-S1 Rehab Protocol: Post-Microdiscectomy DL | Injury Prevention / RTP |
 | 8 | Gridiron Blueprint: Actionable Summary for Coaches and Dietitians | Nutrition / Coaching |
 
-All internal papers were sourced from the Baylor Applied Performance Google Drive. The local `SourcePapers/` corpus contains 2,155 PDFs representing 2,125 unique file contents. After the July 21, 2026 cleanup, the library contains 407 canonical rows: 398 distinct local source PDFs, eight Baylor internal documents, and one DOI-backed external paper. By file content, 394 unique local sources are represented and 1,731 remain unrepresented.
+All internal papers were sourced from the Baylor Applied Performance Google Drive. The local `SourcePapers/` corpus contains 2,155 PDFs representing 2,125 unique file contents. After the July 21, 2026 cleanup and the first two reviewed pilot batches, the library contains 431 canonical rows: 422 distinct local source PDFs, eight Baylor internal documents, and one DOI-backed external paper. By file content, 418 unique local sources are represented and 1,707 remain unrepresented.
 
 ## Technical Details
 
@@ -109,11 +109,12 @@ All internal papers were sourced from the Baylor Applied Performance Google Driv
 ## Next Steps
 
 1. Use the automated audit and coverage manifest as the publication gate for every future batch
-2. Define and implement the sport-agnostic taxonomy and backward-compatible data adapter
-3. Add domain, audience, population/sport, and study-design filters
-4. Publish a balanced 75–100-paper expansion across health and performance domains
-5. Resume prioritized backfill batches and establish a separate monthly new-research cadence
-6. Pilot the library with representatives from performance, medicine, athletic training, and nutrition
+2. Full-text screen Batch 03 from the replenished 96-paper queue in `docs/pilot-expansion-shortlist.md`
+3. Convert only audited INCLUDE decisions into versioned records under `docs/pilot-synthesis/`
+4. Replace rules-based legacy taxonomy with staff-reviewed overrides as issues are identified
+5. Publish only candidates that pass source, eligibility, taxonomy, extraction, synthesis, and duplicate gates
+6. Resume prioritized backfill batches and establish a separate monthly new-research cadence
+7. Pilot the library with representatives from performance, medicine, athletic training, rehabilitation, and nutrition
 
 ---
 

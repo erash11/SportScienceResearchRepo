@@ -14,7 +14,7 @@ The adopted product direction and staged sport-agnostic migration are documented
 
 ## Architecture
 
-The entire application lives in one file: `football-research-library.jsx`. It is a default-exported React functional component using hooks (`useState`, `useEffect`, `React.Fragment`). Google Fonts are injected as a DOM side effect at module load time.
+The primary UI lives in `football-research-library.jsx`. It is a default-exported React functional component using hooks (`useState`, `useEffect`, `React.Fragment`). `evidence-taxonomy.mjs` owns the normalized runtime interface and controlled vocabularies; `paper-taxonomy.json` supplies deterministic legacy metadata. Google Fonts are injected as a DOM side effect at module load time.
 
 There is no router, no state management library, no CSS framework, and no external dependencies beyond React itself. There is no `window.storage` dependency — the component is self-contained.
 
@@ -33,7 +33,8 @@ Paper data has a single source:
 ### App Load Sequence
 
 1. Fetch `papers.json` from GitHub; on failure set `fetchFailed = true`, show warning banner
-2. `setPapers(data)` → render paginated table
+2. Merge each record with `paper-taxonomy.json` and call `normalizePaper(record, metadata)`
+3. `setPapers(normalizedData)` → search, filter, export, and render through the normalized interface
 
 ## Deployment
 
@@ -43,18 +44,20 @@ Paper data has a single source:
 | `package.json` | `dev`, `build`, `preview` scripts |
 | `index.html` | Vite entry point → `preview-main.jsx` |
 | `preview-main.jsx` | Mounts `<HealthPerformanceEvidenceLibrary />` |
+| `evidence-taxonomy.mjs` | Controlled vocabularies, deterministic inference, and backward-compatible `normalizePaper` adapter |
+| `paper-taxonomy.json` | 431-row taxonomy sidecar; generated legacy rows are marked unreviewed and published pilot rows retain full-text-reviewed provenance |
 | `.github/workflows/deploy.yml` | Auto-deploys `dist/` to `gh-pages` branch on every push to `master` |
 
 **To deploy:** just `git push origin master` — Actions handles the rest.
 
 ## Adding Papers
 
-- **Batch import (AI agents):** Process selected PDFs from `SourcePapers/`, generate paper objects with the 13-field legacy schema, merge into `papers.json`, commit to GitHub. IDs must be stable numeric strings; assign from the next unused ID and never reuse a removed ID. Do not use `Date.now()` for batch imports. Run `npm run audit` before publishing.
+- **Batch import (AI agents):** Process selected PDFs from `SourcePapers/`, generate paper objects with the 13-field legacy schema, merge into `papers.json`, then run `npm run taxonomy:build`. IDs must be stable numeric strings; assign from the next unused ID and never reuse a removed ID. Do not use `Date.now()` for batch imports. Run `npm run audit` before publishing.
 - **Staff submissions:** Via Google Form (link in the app's "Submit a Paper" button). Eric manually reviews responses and adds them to `papers.json`. See `SUBMIT_FORM_URL` constant at the top of `football-research-library.jsx`.
 
 ## Paper Data Schema
 
-Each current paper object has exactly 13 persisted fields. The storage keys remain stable until the roadmap's backward-compatible adapter is implemented:
+Each current paper object has exactly 13 persisted fields. The storage keys remain stable and are mapped by the backward-compatible adapter:
 
 | Field | Type | Notes |
 |---|---|---|
@@ -74,7 +77,7 @@ Each current paper object has exactly 13 persisted fields. The storage keys rema
 
 ## Search and Filter Logic
 
-Full-text search runs across: `citation`, `abstract`, `tldr`, `findings`, `practicalImplications`, `athleteDev`, `rtp`, `methods`, `doi`. Year filter is exact match. Both reset pagination to page 1.
+Full-text search runs across normalized identity, evidence, translation, and taxonomy text. Year remains an exact filter. Domain, audience, sport, population, and study-design controls are multi-select: OR within a dimension and AND across dimensions. Search and every filter reset pagination to page 1.
 
 ## Pagination
 
@@ -111,18 +114,19 @@ Two style objects reused across cells — `th` (header), `td` (data cell).
 
 ## Batch Import Progress
 
-Current state: **407 canonical published rows** in `papers.json` (stable IDs 1–433 with verified duplicate IDs removed). `session.md` preserves the April batch-import checkpoint, but its processed/remaining counts are superseded by `docs/library-coverage-manifest.json`.
+Current state: **431 canonical published rows** in `papers.json` (stable IDs 1–457 with verified duplicate IDs removed). `session.md` preserves the April batch-import checkpoint, but its processed/remaining counts are superseded by `docs/library-coverage-manifest.json`.
 
-- 8 Baylor internal entries, 1 DOI-backed external entry, and 398 local source-backed entries
-- 398 distinct local source PDFs represented; no repeated or unresolved local source references
+- 8 Baylor internal entries, 1 DOI-backed external entry, and 422 local source-backed entries
+- 422 distinct local source PDFs represented; no repeated or unresolved local source references
 - 2,155 local PDFs contain 2,125 unique file contents because 30 filename pairs are byte-identical
-- 394 unique source contents represented; 1,731 unique source contents remain unrepresented
+- 418 unique source contents represented; 1,707 unique source contents remain unrepresented
+- Pilot Batches 01–02 published 24 full-text-reviewed records; screening and synthesis provenance are preserved under `docs/pilot-screening/` and `docs/pilot-synthesis/`
 - All audit gates pass: unique IDs, source identity, link resolution, required fields, and schema consistency
 - Historical batch pattern: 10 agents × 5 PDFs each → `docs/batch_rX_aY.json` → merge → commit/push
-- Next unused ID: **434**; preserve existing IDs during cleanup
+- Next unused ID: **458**; preserve existing IDs during cleanup
 - driveUrl pattern: `BASE_URL + encodeURIComponent(filename)` where `BASE_URL` = `https://raw.githubusercontent.com/erash11/SportScienceResearchRepo/master/SourcePapers/`
 
-Run `npm run audit` for the fast publication gate. Run `npm run audit:manifest` after corpus or publication changes to regenerate the deep content-hash manifest.
+Run `npm run audit` for publication, taxonomy, full-text-screening, synthesis, and pilot-queue gates. Full-text decisions belong in versioned JSON batches under `docs/pilot-screening/`; publication-ready records belong under `docs/pilot-synthesis/`. Run `npm run audit:screening` after screening, `npm run audit:synthesis` after authoring synthesis records, and `npm run synthesis:apply` to merge verified records into `papers.json`. Run `npm run audit:manifest` after corpus or publication changes to regenerate the deep content-hash manifest. Run `npm run taxonomy:build` after changing `papers.json`, and `npm run pilot:shortlist` only when intentionally regenerating the Phase 4 queue from title inference plus reviewed screening overrides.
 
 ### Batch Import — Known Filename Issues
 - **Curly apostrophes (U+2019):** Some source filenames contain `'` — agents use PowerShell wildcard copy workaround

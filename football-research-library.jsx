@@ -1,7 +1,6 @@
 // Baylor Athletics Health & Performance Evidence Library.
 // The legacy filename is retained while the public product identity broadens.
-// All functionality (GitHub fetch, search, year filter, sort, pagination,
-// expandable rows, CSV export, Submit-a-Paper) is unchanged from the original.
+// Legacy records are normalized at the data-loading seam before the UI uses them.
 
 const GITHUB_URL = "https://raw.githubusercontent.com/erash11/SportScienceResearchRepo/master/papers.json";
 const SUBMIT_FORM_URL = "https://docs.google.com/forms/d/1CTuXolDntwAXIkASta7_0rP1PtjCCC5xAWvtt1n1pAI/viewform";
@@ -14,9 +13,38 @@ const HERO_TITLE_LINE_HEIGHT = 0.98;
 const COLUMN_HEADER_SIZE = 13;       // px
 
 import React, { useState, useEffect } from "react";
+import paperTaxonomy from "./paper-taxonomy.json";
+import { TAXONOMY, normalizePaper } from "./evidence-taxonomy.mjs";
 
 // Vite serves /public at the configured base path (/SportScienceResearchRepo/).
 const BASE = import.meta.env.BASE_URL;
+const TAXONOMY_BY_ID = new Map(paperTaxonomy.records.map((record) => [String(record.id), record]));
+
+const EMPTY_FILTERS = {
+  domains: [],
+  audiences: [],
+  sports: [],
+  populations: [],
+  studyDesigns: [],
+};
+
+function FilterGroup({ label, options, selected, onToggle }) {
+  return (
+    <details name="evidence-taxonomy-filter" style={{ position: "relative" }}>
+      <summary style={{ listStyle: "none", cursor: "pointer", padding: "9px 12px", minWidth: 142, border: "1px solid #D2D3D3", borderRadius: 4, background: selected.length ? "#E4F0E9" : "#fff", color: "#24362E", fontFamily: "'DIN Pro Condensed','DIN Pro',sans-serif", fontSize: 12, fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", userSelect: "none" }}>
+        {label}{selected.length ? ` (${selected.length})` : ""} ▾
+      </summary>
+      <div style={{ position: "absolute", zIndex: 12, top: "calc(100% + 5px)", left: 0, width: 250, maxHeight: 310, overflowY: "auto", padding: 8, border: "1px solid #C7CECA", borderRadius: 6, background: "#fff", boxShadow: "0 8px 24px rgba(11,42,31,0.16)" }}>
+        {options.map((option) => (
+          <label key={option} style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: "7px 8px", borderRadius: 4, cursor: "pointer", fontSize: 13, lineHeight: 1.25, color: "#2A3631" }}>
+            <input type="checkbox" checked={selected.includes(option)} onChange={() => onToggle(option)} style={{ marginTop: 1, accentColor: "#154734" }} />
+            <span>{option}</span>
+          </label>
+        ))}
+      </div>
+    </details>
+  );
+}
 
 // Self-host the Baylor brand fonts (replaces the old DM Google Fonts link).
 if (typeof document !== "undefined" && !document.getElementById("baylor-fonts")) {
@@ -39,6 +67,7 @@ export default function HealthPerformanceEvidenceLibrary() {
   const [loadComplete, setLoadComplete] = useState(false);
   const [search, setSearch] = useState("");
   const [yearFilter, setYearFilter] = useState("all");
+  const [filters, setFilters] = useState(EMPTY_FILTERS);
   const [sortCol, setSortCol] = useState("year");
   const [sortDir, setSortDir] = useState("desc");
   const [currentPage, setCurrentPage] = useState(1);
@@ -49,7 +78,8 @@ export default function HealthPerformanceEvidenceLibrary() {
       try {
         const res = await fetch(GITHUB_URL);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        setPapers(await res.json());
+        const records = await res.json();
+        setPapers(records.map((record) => normalizePaper(record, TAXONOMY_BY_ID.get(String(record.id)))));
       } catch (e) {
         setFetchFailed(true);
       }
@@ -57,7 +87,7 @@ export default function HealthPerformanceEvidenceLibrary() {
     })();
   }, []);
 
-  useEffect(() => { setCurrentPage(1); }, [search, yearFilter]);
+  useEffect(() => { setCurrentPage(1); }, [search, yearFilter, filters]);
 
   const extractTitle = (citation) => {
     if (!citation) return "";
@@ -75,13 +105,36 @@ export default function HealthPerformanceEvidenceLibrary() {
   };
 
   const years = [...new Set(papers.map(p => p.year))].sort((a, b) => b - a);
+  const hasActiveFilters = yearFilter !== "all" || Object.values(filters).some((values) => values.length);
+
+  const toggleFilter = (dimension, value) => {
+    setFilters((current) => ({
+      ...current,
+      [dimension]: current[dimension].includes(value)
+        ? current[dimension].filter((item) => item !== value)
+        : [...current[dimension], value],
+    }));
+  };
+
+  const clearFilters = () => {
+    setYearFilter("all");
+    setFilters({ ...EMPTY_FILTERS });
+    if (typeof document !== "undefined") {
+      document.querySelectorAll('details[name="evidence-taxonomy-filter"][open]').forEach((details) => details.removeAttribute("open"));
+    }
+  };
+
+  const matchesSelected = (selected, values) => !selected.length || selected.some((value) => values.includes(value));
 
   const filtered = papers.filter(p => {
     if (yearFilter !== "all" && p.year !== Number(yearFilter)) return false;
+    if (!matchesSelected(filters.domains, p.context.domains)) return false;
+    if (!matchesSelected(filters.audiences, p.context.audiences)) return false;
+    if (!matchesSelected(filters.sports, p.context.sports)) return false;
+    if (!matchesSelected(filters.populations, p.context.populations)) return false;
+    if (filters.studyDesigns.length && !filters.studyDesigns.includes(p.context.studyDesign)) return false;
     if (!search) return true;
-    const q = search.toLowerCase();
-    return [p.citation,p.abstract,p.tldr,p.findings,p.practicalImplications,p.athleteDev,p.rtp,p.methods,p.doi]
-      .some(f => f && f.toLowerCase().includes(q));
+    return p.searchText.includes(search.toLowerCase());
   }).sort((a, b) => {
     const dir = sortDir === "asc" ? 1 : -1;
     if (sortCol === "year") return (a.year - b.year) * dir;
@@ -99,10 +152,27 @@ export default function HealthPerformanceEvidenceLibrary() {
   };
 
   const exportCSV = () => {
-    const cols = ["citation","doi","year","abstract","tldr","methods","findings","limitations","practicalImplications","athleteDev","rtp"];
-    const headers = ["Citation","DOI","Year","Abstract","TL;DR","Methods","Findings","Limitations","Practical Implications","Performance Application","Return to Sport Application"];
+    const columns = [
+      ["Citation", (p) => p.citation],
+      ["DOI", (p) => p.doi],
+      ["Year", (p) => p.year],
+      ["Abstract", (p) => p.evidence.abstract],
+      ["TL;DR", (p) => p.evidence.summary],
+      ["Methods", (p) => p.evidence.methods],
+      ["Findings", (p) => p.evidence.findings],
+      ["Limitations", (p) => p.evidence.limitations],
+      ["Practical Implications", (p) => p.translation.practicalImplications],
+      ["Performance Application", (p) => p.translation.applications.performance],
+      ["Return to Sport Application", (p) => p.translation.applications.returnToSport],
+      ["Domains", (p) => p.context.domains.join(" | ")],
+      ["Audiences", (p) => p.context.audiences.join(" | ")],
+      ["Sport Contexts", (p) => p.context.sports.join(" | ")],
+      ["Populations", (p) => p.context.populations.join(" | ")],
+      ["Study Design", (p) => p.context.studyDesign],
+      ["Taxonomy Status", (p) => p.curation.taxonomySource],
+    ];
     const esc = v => `"${String(v||"").replace(/"/g,'""')}"`;
-    const rows = [headers.join(","), ...filtered.map(p => cols.map(c => esc(p[c])).join(","))];
+    const rows = [columns.map(([header]) => header).join(","), ...filtered.map(p => columns.map(([, getValue]) => esc(getValue(p))).join(","))];
     const blob = new Blob([rows.join("\n")], { type: "text/csv" });
     const a = document.createElement("a"); a.href = URL.createObjectURL(blob);
     a.download = `Baylor_Health_Performance_Evidence_Library_${new Date().toISOString().split("T")[0]}.csv`;
@@ -179,20 +249,32 @@ export default function HealthPerformanceEvidenceLibrary() {
         </div>
       )}
 
-      {/* Controls */}
-      <div style={{ maxWidth: 1400, margin: "0 auto", padding: "24px 24px 18px", display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
-        <input value={search} onChange={e => setSearch(e.target.value)} placeholder="Search by title, methods, findings…"
-          style={{ flex: 1, minWidth: 220, padding: "10px 15px", borderRadius: 4, border: "1px solid #D2D3D3", background: "#fff", fontSize: 14, fontFamily: "'DIN Pro',sans-serif", color: "#14231C", outline: "none" }} />
-        <span style={{ fontFamily: "'DIN Pro Condensed','DIN Pro',sans-serif", fontSize: 13, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#4E5150" }}>Year</span>
-        <select value={yearFilter} onChange={e => setYearFilter(e.target.value)}
-          style={{ padding: "10px 14px", borderRadius: 4, border: "1px solid #D2D3D3", background: "#fff", fontSize: 14, fontFamily: "'DIN Pro',sans-serif" }}>
-          <option value="all">All Years</option>
-          {years.map(y => <option key={y} value={y}>{y}</option>)}
-        </select>
-        <button onClick={exportCSV} style={{ padding: "10px 18px", borderRadius: 999, border: "none", background: "#FFB81C", color: "#154734", fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", cursor: "pointer", fontFamily: "'DIN Pro Condensed','DIN Pro',sans-serif" }}>Export CSV</button>
-        <a href={SUBMIT_FORM_URL} target="_blank" rel="noopener noreferrer" style={{ padding: "10px 18px", borderRadius: 999, background: "#154734", color: "#fff", fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: "'DIN Pro Condensed','DIN Pro',sans-serif", textDecoration: "none" }}>
-          + Submit a Paper
-        </a>
+      {/* Search, export, and controlled taxonomy filters */}
+      <div style={{ maxWidth: 1400, margin: "0 auto", padding: "24px 24px 18px" }}>
+        <div style={{ display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
+          <input value={search} onChange={e => setSearch(e.target.value)} placeholder="Search evidence, applications, or taxonomy…"
+            style={{ flex: 1, minWidth: 220, padding: "10px 15px", borderRadius: 4, border: "1px solid #D2D3D3", background: "#fff", fontSize: 14, fontFamily: "'DIN Pro',sans-serif", color: "#14231C", outline: "none" }} />
+          <span style={{ fontFamily: "'DIN Pro Condensed','DIN Pro',sans-serif", fontSize: 13, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", color: "#4E5150" }}>Year</span>
+          <select value={yearFilter} onChange={e => setYearFilter(e.target.value)}
+            style={{ padding: "10px 14px", borderRadius: 4, border: "1px solid #D2D3D3", background: "#fff", fontSize: 14, fontFamily: "'DIN Pro',sans-serif" }}>
+            <option value="all">All Years</option>
+            {years.map(y => <option key={y} value={y}>{y}</option>)}
+          </select>
+          <button onClick={exportCSV} style={{ padding: "10px 18px", borderRadius: 999, border: "none", background: "#FFB81C", color: "#154734", fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", cursor: "pointer", fontFamily: "'DIN Pro Condensed','DIN Pro',sans-serif" }}>Export CSV</button>
+          <a href={SUBMIT_FORM_URL} target="_blank" rel="noopener noreferrer" style={{ padding: "10px 18px", borderRadius: 999, background: "#154734", color: "#fff", fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: "'DIN Pro Condensed','DIN Pro',sans-serif", textDecoration: "none" }}>
+            + Submit a Paper
+          </a>
+        </div>
+        <div style={{ display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap", marginTop: 12 }}>
+          <FilterGroup label="Domain" options={TAXONOMY.domains} selected={filters.domains} onToggle={(value) => toggleFilter("domains", value)} />
+          <FilterGroup label="Audience" options={TAXONOMY.audiences} selected={filters.audiences} onToggle={(value) => toggleFilter("audiences", value)} />
+          <FilterGroup label="Sport" options={TAXONOMY.sports} selected={filters.sports} onToggle={(value) => toggleFilter("sports", value)} />
+          <FilterGroup label="Population" options={TAXONOMY.populations} selected={filters.populations} onToggle={(value) => toggleFilter("populations", value)} />
+          <FilterGroup label="Study Design" options={TAXONOMY.studyDesigns} selected={filters.studyDesigns} onToggle={(value) => toggleFilter("studyDesigns", value)} />
+          {hasActiveFilters && <button onClick={clearFilters} style={{ padding: "9px 12px", border: "none", background: "transparent", color: "#154734", fontSize: 12, fontWeight: 700, cursor: "pointer", textDecoration: "underline" }}>Clear filters</button>}
+          <span style={{ marginLeft: "auto", fontSize: 12, fontWeight: 700, color: "#154734" }}>{filtered.length} of {papers.length} sources</span>
+          <span style={{ fontSize: 11.5, color: "#6E7772" }}>Legacy taxonomy is rules-based and pending staff review.</span>
+        </div>
       </div>
 
       {/* Table */}
@@ -207,7 +289,7 @@ export default function HealthPerformanceEvidenceLibrary() {
             </thead>
             <tbody>
               {filtered.length === 0 ? (
-                <tr><td colSpan={COLS.length+1} style={{ padding: 48, textAlign: "center", color: "#8E9190" }}>No papers match your search.</td></tr>
+                <tr><td colSpan={COLS.length+1} style={{ padding: 48, textAlign: "center", color: "#8E9190" }}>No papers match your search and filters.</td></tr>
               ) : pagedPapers.map((p, i) => {
                 const bg = i%2===0 ? "#fff" : "#F7F5F1";
                 const isExpanded = expandedRows.has(p.id);
@@ -223,13 +305,13 @@ export default function HealthPerformanceEvidenceLibrary() {
                       <td style={{ ...td, textAlign: "center", fontWeight: 700 }}>
                         <span style={{ background: "#E4F0E9", color: "#154734", padding: "3px 10px", borderRadius: 4, fontSize: 13, fontWeight: 700 }}>{p.year}</span>
                       </td>
-                      <td style={{ ...td, color: "#3A4A42" }}>{p.tldr}</td>
+                      <td style={{ ...td, color: "#3A4A42" }}>{p.evidence.summary}</td>
                       <td style={{ ...td, fontSize: 11.5, color: "#4E5150" }}>
                         <div style={{ lineHeight: 1.5 }}>{p.citation}</div>
                         {p.doi && <div style={{ color: "#154734", marginTop: 3, fontWeight: 500 }}>DOI: {p.doi}</div>}
-                        {p.driveUrl && (
+                        {p.sourceUrl && (
                           <div style={{ marginTop: 6 }} onClick={e => e.stopPropagation()}>
-                            <a href={p.driveUrl} target="_blank" rel="noopener noreferrer" style={{ fontSize: 11.5, color: "#154734", textDecoration: "none", fontWeight: 700, letterSpacing: "0.03em" }}>Open →</a>
+                            <a href={p.sourceUrl} target="_blank" rel="noopener noreferrer" style={{ fontSize: 11.5, color: "#154734", textDecoration: "none", fontWeight: 700, letterSpacing: "0.03em" }}>Open →</a>
                           </div>
                         )}
                       </td>
@@ -240,13 +322,17 @@ export default function HealthPerformanceEvidenceLibrary() {
                         <td colSpan={4} style={{ padding: "18px 20px 22px", borderBottom: "2px solid #FFB81C" }}>
                           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 14 }}>
                             {[
-                              { label: "Abstract",                  val: p.abstract              },
-                              { label: "Methods",                   val: p.methods               },
-                              { label: "Findings",                  val: p.findings              },
-                              { label: "Limitations",               val: p.limitations           },
-                              { label: "Practical Implications",    val: p.practicalImplications },
-                              { label: "Performance Application",   val: p.athleteDev            },
-                              { label: "Return to Sport Application", val: p.rtp                  },
+                              { label: "Domains",                    val: p.context.domains.join(", ")                    },
+                              { label: "Audiences",                  val: p.context.audiences.join(", ")                  },
+                              { label: "Sport / Population",         val: [...p.context.sports, ...p.context.populations].join(", ") },
+                              { label: "Study Design",               val: p.context.studyDesign                             },
+                              { label: "Abstract",                   val: p.evidence.abstract                               },
+                              { label: "Methods",                    val: p.evidence.methods                                },
+                              { label: "Findings",                   val: p.evidence.findings                               },
+                              { label: "Limitations",                val: p.evidence.limitations                            },
+                              { label: "Practical Implications",     val: p.translation.practicalImplications               },
+                              { label: "Performance Application",    val: p.translation.applications.performance            },
+                              { label: "Return to Sport Application", val: p.translation.applications.returnToSport          },
                             ].map(({ label, val }) => val ? (
                               <div key={label} style={{ background: "#fff", border: "1px solid #D8E2DC", borderRadius: 6, padding: "12px 15px 14px", boxShadow: "0 1px 2px rgba(11,42,31,0.04)" }}>
                                 <div style={{ fontFamily: "'DIN Pro Condensed','DIN Pro',sans-serif", fontSize: 11, fontWeight: 700, color: "#154734", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 8, paddingBottom: 7, borderBottom: "1px solid #ECEFEA" }}>{label}</div>
@@ -266,7 +352,7 @@ export default function HealthPerformanceEvidenceLibrary() {
           {totalPages > 1 && (
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "14px 16px", borderTop: "1px solid #D2D3D3", background: "#fff", flexWrap: "wrap", gap: 10 }}>
               <span style={{ fontSize: 13, color: "#4E5150" }}>
-                {search || yearFilter !== "all"
+                {search || hasActiveFilters
                   ? `${filtered.length} match${filtered.length !== 1 ? "es" : ""} · Showing ${startIndex + 1}–${Math.min(startIndex + PAPERS_PER_PAGE, filtered.length)}`
                   : `Showing ${startIndex + 1}–${Math.min(startIndex + PAPERS_PER_PAGE, filtered.length)} of ${filtered.length} papers`}
               </span>

@@ -5,8 +5,15 @@
     "dev": "vite --open",
     "build": "vite build",
     "preview": "vite preview",
-    "audit": "node scripts/audit-library.mjs --check",
-    "audit:manifest": "node scripts/audit-library.mjs --write"
+    "audit": "node scripts/audit-library.mjs --check && node scripts/audit-taxonomy.mjs && node scripts/audit-pilot-screening.mjs && node scripts/audit-pilot-synthesis.mjs && node scripts/audit-pilot-shortlist.mjs",
+    "audit:manifest": "node scripts/audit-library.mjs --write",
+    "audit:taxonomy": "node scripts/audit-taxonomy.mjs",
+    "audit:screening": "node scripts/audit-pilot-screening.mjs",
+    "audit:synthesis": "node scripts/audit-pilot-synthesis.mjs",
+    "audit:pilot": "node scripts/audit-pilot-shortlist.mjs",
+    "taxonomy:build": "node scripts/build-paper-taxonomy.mjs",
+    "pilot:shortlist": "node scripts/build-pilot-shortlist.mjs",
+    "synthesis:apply": "node scripts/apply-pilot-synthesis.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",
