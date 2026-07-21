@@ -1,5 +1,5 @@
-// Baylor Athletics reskin of the Football Sport Science Research library.
-// Drop-in replacement for football-research-library.jsx in the live Vite app.
+// Baylor Athletics Health & Performance Evidence Library.
+// The legacy filename is retained while the public product identity broadens.
 // All functionality (GitHub fetch, search, year filter, sort, pagination,
 // expandable rows, CSV export, Submit-a-Paper) is unchanged from the original.
 
@@ -8,7 +8,7 @@ const SUBMIT_FORM_URL = "https://docs.google.com/forms/d/1CTuXolDntwAXIkASta7_0r
 const PAPERS_PER_PAGE = 50;
 
 // Easy-to-tune display knobs (were Tweaks panel controls in the design file).
-const HERO_TITLE_SIZE = 60;          // px
+const HERO_TITLE_SIZE = "clamp(38px, 5vw, 60px)";
 const HERO_TITLE_LETTER_SPACING = "0.01em";
 const HERO_TITLE_LINE_HEIGHT = 0.98;
 const COLUMN_HEADER_SIZE = 13;       // px
@@ -33,7 +33,7 @@ if (typeof document !== "undefined" && !document.getElementById("baylor-fonts"))
   document.head.appendChild(st);
 }
 
-export default function FootballResearchLibrary() {
+export default function HealthPerformanceEvidenceLibrary() {
   const [papers, setPapers] = useState([]);
   const [fetchFailed, setFetchFailed] = useState(false);
   const [loadComplete, setLoadComplete] = useState(false);
@@ -100,12 +100,12 @@ export default function FootballResearchLibrary() {
 
   const exportCSV = () => {
     const cols = ["citation","doi","year","abstract","tldr","methods","findings","limitations","practicalImplications","athleteDev","rtp"];
-    const headers = ["Citation","DOI","Year","Abstract","TL;DR","Methods","Findings","Limitations","Practical Implications","Football Athlete Development","Return to Play"];
+    const headers = ["Citation","DOI","Year","Abstract","TL;DR","Methods","Findings","Limitations","Practical Implications","Performance Application","Return to Sport Application"];
     const esc = v => `"${String(v||"").replace(/"/g,'""')}"`;
     const rows = [headers.join(","), ...filtered.map(p => cols.map(c => esc(p[c])).join(","))];
     const blob = new Blob([rows.join("\n")], { type: "text/csv" });
     const a = document.createElement("a"); a.href = URL.createObjectURL(blob);
-    a.download = `Baylor_FB_Research_Library_${new Date().toISOString().split("T")[0]}.csv`;
+    a.download = `Baylor_Health_Performance_Evidence_Library_${new Date().toISOString().split("T")[0]}.csv`;
     a.click();
   };
 
@@ -142,7 +142,7 @@ export default function FootballResearchLibrary() {
 
   if (!loadComplete) return (
     <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", background: "#F4F3EF", fontFamily: "'DIN Pro',sans-serif" }}>
-      <p style={{ color: "#707372", fontSize: 15 }}>Loading research library…</p>
+      <p style={{ color: "#707372", fontSize: 15 }}>Loading evidence library…</p>
     </div>
   );
 
@@ -158,17 +158,17 @@ export default function FootballResearchLibrary() {
           <img src={`${BASE}assets/bu-mark-white.png`} alt="Baylor BU mark" style={{ height: 30, width: "auto", display: "block" }} />
           <span style={{ fontFamily: "'DIN Pro Condensed','DIN Pro',sans-serif", fontWeight: 700, fontSize: 17, letterSpacing: "0.13em", color: "#fff", textTransform: "uppercase" }}>Baylor Athletics</span>
         </div>
-        <span style={{ fontFamily: "'DIN Pro Condensed','DIN Pro',sans-serif", fontWeight: 500, fontSize: 12, letterSpacing: "0.18em", color: "#FFB81C", textTransform: "uppercase" }}>Applied Performance</span>
+        <span style={{ fontFamily: "'DIN Pro Condensed','DIN Pro',sans-serif", fontWeight: 500, fontSize: 12, letterSpacing: "0.18em", color: "#FFB81C", textTransform: "uppercase" }}>Health &amp; Performance</span>
       </div>
 
       {/* Hero */}
       <div style={{ position: "relative", overflow: "hidden", background: "#154734", color: "#fff", padding: "46px 24px 42px", borderBottom: "4px solid #FFB81C" }}>
         <img src={`${BASE}assets/baylor-bear-mark-gold-transparent.png`} alt="" aria-hidden="true" style={{ position: "absolute", right: -40, top: "50%", transform: "translateY(-50%)", height: 280, width: "auto", opacity: 0.10, pointerEvents: "none" }} />
         <div style={{ position: "relative", maxWidth: 980, margin: "0 auto", textAlign: "center" }}>
-          <div style={{ fontFamily: "'DIN Pro Condensed','DIN Pro',sans-serif", fontSize: 13, fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase", color: "#FFB81C", marginBottom: 14 }}>Research Repository</div>
-          <h1 style={{ fontFamily: "'Baylor Bears','Arial Narrow',sans-serif", fontSize: HERO_TITLE_SIZE, lineHeight: HERO_TITLE_LINE_HEIGHT, letterSpacing: HERO_TITLE_LETTER_SPACING, margin: 0, textTransform: "uppercase", fontWeight: 700 }}>Football Sport<br/>Science Research</h1>
-          <p style={{ fontFamily: "'DIN Pro',sans-serif", fontSize: 16, fontWeight: 300, lineHeight: 1.5, color: "rgba(255,255,255,0.82)", margin: "18px auto 0", maxWidth: 640 }}>Comprehensive analysis of {papers.length} research sources on performance, injuries, training, recovery, and athlete development.</p>
-          <p style={{ fontFamily: "'DIN Pro Condensed','DIN Pro',sans-serif", fontSize: 12, letterSpacing: "0.16em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)", marginTop: 14 }}>Curated by Baylor Applied Performance</p>
+          <div style={{ fontFamily: "'DIN Pro Condensed','DIN Pro',sans-serif", fontSize: 13, fontWeight: 700, letterSpacing: "0.22em", textTransform: "uppercase", color: "#FFB81C", marginBottom: 14 }}>Baylor Athletics</div>
+          <h1 style={{ fontFamily: "'Baylor Bears','Arial Narrow',sans-serif", fontSize: HERO_TITLE_SIZE, lineHeight: HERO_TITLE_LINE_HEIGHT, letterSpacing: HERO_TITLE_LETTER_SPACING, margin: 0, textTransform: "uppercase", fontWeight: 700 }}>Health &amp; Performance<br/>Evidence Library</h1>
+          <p style={{ fontFamily: "'DIN Pro',sans-serif", fontSize: 16, fontWeight: 300, lineHeight: 1.5, color: "rgba(255,255,255,0.82)", margin: "18px auto 0", maxWidth: 680 }}>Practical analysis of {papers.length} evidence sources spanning health, performance, injury, rehabilitation, training, recovery, and athlete development.</p>
+          <p style={{ fontFamily: "'DIN Pro Condensed','DIN Pro',sans-serif", fontSize: 12, letterSpacing: "0.16em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)", marginTop: 14 }}>Curated for Baylor Athletics Health &amp; Performance staff</p>
         </div>
       </div>
 
@@ -245,8 +245,8 @@ export default function FootballResearchLibrary() {
                               { label: "Findings",                  val: p.findings              },
                               { label: "Limitations",               val: p.limitations           },
                               { label: "Practical Implications",    val: p.practicalImplications },
-                              { label: "Football Athlete Dev",      val: p.athleteDev            },
-                              { label: "Return to Play",            val: p.rtp                   },
+                              { label: "Performance Application",   val: p.athleteDev            },
+                              { label: "Return to Sport Application", val: p.rtp                  },
                             ].map(({ label, val }) => val ? (
                               <div key={label} style={{ background: "#fff", border: "1px solid #D8E2DC", borderRadius: 6, padding: "12px 15px 14px", boxShadow: "0 1px 2px rgba(11,42,31,0.04)" }}>
                                 <div style={{ fontFamily: "'DIN Pro Condensed','DIN Pro',sans-serif", fontSize: 11, fontWeight: 700, color: "#154734", textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 8, paddingBottom: 7, borderBottom: "1px solid #ECEFEA" }}>{label}</div>
@@ -297,7 +297,7 @@ export default function FootballResearchLibrary() {
             </div>
           )}
         </div>
-        <p style={{ marginTop: 20, textAlign: "center", fontFamily: "'DIN Pro Condensed','DIN Pro',sans-serif", fontSize: 12, letterSpacing: "0.14em", textTransform: "uppercase", color: "#9FA3A1" }}>Baylor Athletics · Applied Performance · Shared storage enabled for all staff</p>
+        <p style={{ marginTop: 20, textAlign: "center", fontFamily: "'DIN Pro Condensed','DIN Pro',sans-serif", fontSize: 12, letterSpacing: "0.14em", textTransform: "uppercase", color: "#9FA3A1" }}>Baylor Athletics · Health &amp; Performance · Shared evidence for all staff</p>
       </div>
 
       <style>{`

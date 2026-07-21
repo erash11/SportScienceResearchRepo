@@ -1,10 +1,12 @@
 {
-  "name": "football-research-library-preview",
+  "name": "health-performance-evidence-library",
   "private": true,
   "scripts": {
     "dev": "vite --open",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "audit": "node scripts/audit-library.mjs --check",
+    "audit:manifest": "node scripts/audit-library.mjs --write"
   },
   "dependencies": {
     "react": "^18.3.1",

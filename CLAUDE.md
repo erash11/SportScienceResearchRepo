@@ -4,11 +4,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a **deployed React web app** — a research paper library browser built for Baylor Applied Sport Science staff. It is hosted on GitHub Pages and accessible at:
+This is a **deployed React web app** — the **Baylor Athletics Health & Performance Evidence Library**, built for performance, medical, rehabilitation, nutrition, and research staff. It is hosted on GitHub Pages and accessible at:
 
 **`https://erash11.github.io/SportScienceResearchRepo/`**
 
-The app is a single-file React component (`football-research-library.jsx`) built with Vite. Staff can bookmark the URL and access it from any workstation. Every push to `master` auto-deploys via GitHub Actions.
+The app is a single-file React module (`football-research-library.jsx`, retained as a legacy filename) built with Vite. Staff can bookmark the URL and access it from any workstation. Every push to `master` auto-deploys via GitHub Actions.
+
+The adopted product direction and staged sport-agnostic migration are documented in `docs/health-performance-evidence-library-roadmap.md`.
 
 ## Architecture
 
@@ -40,23 +42,23 @@ Paper data has a single source:
 | `vite.config.js` | `base: '/SportScienceResearchRepo/'` required for GitHub Pages sub-path |
 | `package.json` | `dev`, `build`, `preview` scripts |
 | `index.html` | Vite entry point → `preview-main.jsx` |
-| `preview-main.jsx` | Mounts `<FootballResearchLibrary />` |
+| `preview-main.jsx` | Mounts `<HealthPerformanceEvidenceLibrary />` |
 | `.github/workflows/deploy.yml` | Auto-deploys `dist/` to `gh-pages` branch on every push to `master` |
 
 **To deploy:** just `git push origin master` — Actions handles the rest.
 
 ## Adding Papers
 
-- **Batch import (AI agents):** Process PDFs from `SourcePapers/`, generate paper objects with the 12-field schema, merge into `papers.json`, commit to GitHub. IDs must be unique strings (sequential integers). Do not use `Date.now()` for batch imports.
+- **Batch import (AI agents):** Process selected PDFs from `SourcePapers/`, generate paper objects with the 13-field legacy schema, merge into `papers.json`, commit to GitHub. IDs must be stable numeric strings; assign from the next unused ID and never reuse a removed ID. Do not use `Date.now()` for batch imports. Run `npm run audit` before publishing.
 - **Staff submissions:** Via Google Form (link in the app's "Submit a Paper" button). Eric manually reviews responses and adds them to `papers.json`. See `SUBMIT_FORM_URL` constant at the top of `football-research-library.jsx`.
 
 ## Paper Data Schema
 
-Each paper object has exactly 12 persisted fields:
+Each current paper object has exactly 13 persisted fields. The storage keys remain stable until the roadmap's backward-compatible adapter is implemented:
 
 | Field | Type | Notes |
 |---|---|---|
-| `id` | string | Unique sequential integer string (e.g. `"284"`) |
+| `id` | string | Unique stable numeric string (e.g. `"284"`); gaps are expected after verified deduplication |
 | `year` | number | Publication year |
 | `citation` | string | Full citation ("Authors. Title. Journal. Year;vol:pages."); displayed in Authors column |
 | `doi` | string | DOI string (may be empty) |
@@ -67,8 +69,8 @@ Each paper object has exactly 12 persisted fields:
 | `findings` | string | Key findings |
 | `limitations` | string | Study limitations |
 | `practicalImplications` | string | Actionable implications for staff |
-| `athleteDev` | string | Football athlete development applications |
-| `rtp` | string | Football return-to-play applications |
+| `athleteDev` | string | Legacy key; displayed as **Performance Application**. Many existing values retain football-specific context. |
+| `rtp` | string | Legacy key; displayed as **Return to Sport Application**. |
 
 ## Search and Filter Logic
 
@@ -92,7 +94,7 @@ The table uses an **expandable-row pattern** — no horizontal scrolling:
 
 Table `minWidth` is 820px — fits without horizontal scrolling on any standard desktop.
 
-**Expanded detail (click row to toggle):** Inline 3-column grid showing Abstract, Methods, Findings, Limitations, Practical Implications, Football Athlete Dev, Return to Play. `expandedRows` (a `Set`) tracks open rows. Clicking "Open →" calls `e.stopPropagation()`.
+**Expanded detail (click row to toggle):** Inline 3-column grid showing Abstract, Methods, Findings, Limitations, Practical Implications, Performance Application, and Return to Sport Application. `expandedRows` (a `Set`) tracks open rows. Clicking "Open →" calls `e.stopPropagation()`.
 
 `extractTitle` is defined before the `filtered` derived value (required — `const` is not hoisted).
 
@@ -109,13 +111,18 @@ Two style objects reused across cells — `th` (header), `td` (data cell).
 
 ## Batch Import Progress
 
-See `session.md` for full details. Current state: **433 papers** in `papers.json` (IDs 1–433).
+Current state: **407 canonical published rows** in `papers.json` (stable IDs 1–433 with verified duplicate IDs removed). `session.md` preserves the April batch-import checkpoint, but its processed/remaining counts are superseded by `docs/library-coverage-manifest.json`.
 
-- Rounds 1–8 complete (IDs 9–433)
-- ~275 football papers still remaining after known filename skips (rounds 9–14 approx.)
-- Batch agent pattern: 10 parallel agents × 5 PDFs each → `docs/batch_rX_aY.json` → merge → commit/push
-- Next ID to assign: **434**
+- 8 Baylor internal entries, 1 DOI-backed external entry, and 398 local source-backed entries
+- 398 distinct local source PDFs represented; no repeated or unresolved local source references
+- 2,155 local PDFs contain 2,125 unique file contents because 30 filename pairs are byte-identical
+- 394 unique source contents represented; 1,731 unique source contents remain unrepresented
+- All audit gates pass: unique IDs, source identity, link resolution, required fields, and schema consistency
+- Historical batch pattern: 10 agents × 5 PDFs each → `docs/batch_rX_aY.json` → merge → commit/push
+- Next unused ID: **434**; preserve existing IDs during cleanup
 - driveUrl pattern: `BASE_URL + encodeURIComponent(filename)` where `BASE_URL` = `https://raw.githubusercontent.com/erash11/SportScienceResearchRepo/master/SourcePapers/`
+
+Run `npm run audit` for the fast publication gate. Run `npm run audit:manifest` after corpus or publication changes to regenerate the deep content-hash manifest.
 
 ### Batch Import — Known Filename Issues
 - **Curly apostrophes (U+2019):** Some source filenames contain `'` — agents use PowerShell wildcard copy workaround
