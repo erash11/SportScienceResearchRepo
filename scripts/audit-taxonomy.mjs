@@ -69,6 +69,8 @@ const physicalStressProbe = inferTaxonomy({ citation: "Heat stress and bone stre
 if (physicalStressProbe.domains.includes("Athlete Wellbeing")) failures.push("physical stress was misclassified as Athlete Wellbeing");
 const wellbeingProbe = inferTaxonomy({ citation: "Athlete mental health help-seeking and wellbeing" });
 if (!wellbeingProbe.domains.includes("Athlete Wellbeing")) failures.push("mental-health wellbeing evidence did not map to Athlete Wellbeing");
+const ageGroupProbe = inferTaxonomy({ citation: "Recovery in under-20 male soccer players" });
+if (!ageGroupProbe.populations.includes("Youth / Adolescent")) failures.push("under-20 evidence did not map to Youth / Adolescent");
 
 const distributions = {
   domains: Object.fromEntries(TAXONOMY.domains.map((value) => [value, 0])),

@@ -135,7 +135,7 @@ const SPORT_RULES = [
 const POPULATION_RULES = [
   ["Professional / Elite", [/\bprofessional\b/i, /\belite\b/i, /world.?class/i, /\bNFL\b|\bNBA\b|\bWNBA\b|\bMLB\b|\bNHL\b/i]],
   ["Collegiate", [/\bcolleg/i, /\buniversity athlete/i, /\bNCAA\b/i]],
-  ["Youth / Adolescent", [/\byouth\b/i, /\badolescen/i, /\bteen/i, /high school/i, /\bchildren\b/i, /\bpediatric\b/i]],
+  ["Youth / Adolescent", [/\byouth\b/i, /\badolescen/i, /\bteen/i, /high school/i, /\bchildren\b/i, /\bpediatric\b/i, /\b(?:u|under)[-\s]?(?:15|16|17|18|19|20)\b/i]],
   ["Adult / Recreational", [/\brecreational\b/i, /\bactive adult/i, /\badult athlete/i]],
   ["Female Athletes", [/\bfemales?\b/i, /\bwomen\b/i, /\bwoman\b/i, /\bgirls\b/i]],
   ["Male Athletes", [/\bmales?\b/i, /\bmen\b/i, /\bman\b/i, /\bboys\b/i]],

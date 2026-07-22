@@ -8,30 +8,30 @@ This queue contains 96 unrepresented, content-deduplicated local PDFs: 12 alloca
 
 ## Training & Performance
 
-1. **Effect of a 90-Minute Nap at Different Times of the Day on Physical Performance, Psycho-Cognitive Responses, and Perceived Recovery in Trained Youth Male Athletes** — Other — TITLE SCREENED<br>
-   `Effect of a 90-Minute Nap at Different Times of the Day on Physical Performance, Psycho-Cognitive Responses, and Perceived Recovery in Trained Youth Male Athletes.pdf`
-2. **Relationship between training load and recovery in collegiate American football players during pre-season training** — Other — TITLE SCREENED<br>
-   `Relationship between training load and recovery in collegiate American football players during pre-season training.pdf`
-3. **Decreased isometric neck strength is a risk factor for head neck and face injuries in professional rugby league players** — Other — TITLE SCREENED<br>
-   `Decreased isometric neck strength is a risk factor for head  neck and face injuries in professional rugby league players.pdf`
-4. **Effect of training day match and length of the microcycle on the worst-case scenarios in professional soccer players** — Other — TITLE SCREENED<br>
-   `Effect of training day match and length of the microcycle on the worst-case scenarios in professional soccer players.pdf`
-5. **Effects of an 8-week pre-season targeted training on sprinting performance, agility and lower limb muscular asymmetries in elite soccer players** — Other — TITLE SCREENED<br>
-   `Effects of an 8-week pre-season targeted training on sprinting performance, agility and lower limb muscular asymmetries in elite soccer players.pdf`
-6. **Return to play performance and career duration after ACL rupture - A case control study in the five biggest football nations in Europe** — Case-control Study — TITLE SCREENED<br>
-   `Return to play performance and career duration after ACL rupture - A case control study in the five biggest football nations in Europe.pdf`
-7. **Reconsidering Exercise Selection with EMG - Poor Agreement between Ranking Hip Exercises with Gluteal EMG and Muscle Force** — Methodological / Validation Study — TITLE SCREENED<br>
-   `Reconsidering Exercise Selection with EMG - Poor Agreement between Ranking Hip Exercises with Gluteal EMG and Muscle Force.pdf`
-8. **The Application of Blood Flow Restriction- Lessons From the Laboratory** — Laboratory / Experimental Study — TITLE SCREENED<br>
-   `The Application of Blood Flow        Restriction- Lessons From the Laboratory.pdf`
-9. **The effect of the Copenhagen Adduction and Nordic Hamstring exercises on muscle strength and athletic performance - A quasi-experimental study** — Laboratory / Experimental Study — TITLE SCREENED<br>
-   `The effect of the Copenhagen Adduction and Nordic Hamstring exercises on muscle strength and athletic performance - A quasi-experimental study.pdf`
-10. **Acute and post-acute COVID-19 presentations in athletes - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Acute and post-acute COVID-19 presentations in athletes - A systematic review and meta-analysis.pdf`
-11. **Acute effects of cluster and rest redistribution set structures on mechanical, metabolic, and perceptual fatigue during and after resistance training - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Acute effects of cluster and rest redistribution set structures on mechanical, metabolic, and perceptual fatigue during and after resistance training - A systematic review.pdf`
-12. **Acute effects of overspeed stimuli with towing system on athletic sprint performance - A systematic review with meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Acute effects of overspeed stimuli with towing system on athletic sprint performance - A systematic review with meta-analysis.pdf`
+1. **Strength and power thresholds to identify high and low linear sprint speed performers in collegiate American football players** — Other — TITLE SCREENED<br>
+   `Strength and power thresholds to identify high and low linear sprint speed performers in collegiate American football players.pdf`
+2. **The Effects of Sleep Extension on the Athletic Performance of Collegiate Basketball Players** — Other — TITLE SCREENED<br>
+   `The Effects of Sleep Extension on the Athletic Performance of Collegiate Basketball Players.pdf`
+3. **Elite North American soccer performance in thermally challenging environments - An explorative approach to tracking outcomes** — Other — TITLE SCREENED<br>
+   `Elite North American soccer performance in thermally challenging environments  - An explorative approach to tracking outcomes.pdf`
+4. **Evaluating the relationship between neurological function, neuromuscular fatigue, and subjective performance measures in professional rugby union players** — Other — TITLE SCREENED<br>
+   `Evaluating the relationship between neurological function, neuromuscular fatigue, and subjective performance measures in professional rugby union players.pdf`
+5. **The Sprint Mechanics Assessment Score - A qualitative screening tool for the in-field assessment of sprint running mechanics** — Qualitative Study — TITLE SCREENED<br>
+   `The Sprint Mechanics Assessment Score - A qualitative screening tool for the in-field assessment of sprint running mechanics.pdf`
+6. **Validating InBody 570 multi-frequency bioelectrical impedance analyzer vs DXA for body fat percentage analysis** — Methodological / Validation Study — TITLE SCREENED<br>
+   `Validating InBody 570 multi-frequency bioelectrical   impedance analyzer vs DXA for body fat percentage analysis.pdf`
+7. **Adverse Effects of Anabolic Androgenic Steroid Abuse in Athletes and Physically Active Individuals - A Systematic Review and Meta-Analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Adverse Effects of Anabolic Androgenic Steroid Abuse in Athletes and Physically Active Individuals - A Systematic Review and Meta-Analysis.pdf`
+8. **Association of Lower Limb Compression Garments During HighIntensity Exercise with Performance and Physiological Responses- A Systematic Review and Meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Association of Lower Limb Compression Garments During HighIntensity Exercise with Performance and Physiological Responses- A Systematic Review and Meta-analysis.pdf`
+9. **Athlete Selective Androgen Receptor Modulators Abuse - A Systematic Review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Athlete Selective Androgen Receptor Modulators Abuse - A Systematic Review.pdf`
+10. **Biomechanical Determinants of Change of Direction Performance - A Systematic Review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Biomechanical Determinants of Change of Direction Performance - A Systematic Review.pdf`
+11. **Blood flow-restricted training for lower extremity muscle weakness due to knee pathology - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Blood flow-restricted training for  lower extremity muscle weakness due to knee pathology - A systematic  review.pdf`
+12. **Can caffeine change the game - Effects of acute caffeine intake on specific performance in intermittent sports during competition - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Can caffeine change the game - Effects of acute caffeine intake on specific performance in intermittent sports during competition - A systematic review and meta-analysis.pdf`
 
 ## Sports Medicine & Injury
 
@@ -89,26 +89,26 @@ This queue contains 96 unrepresented, content-deduplicated local PDFs: 12 alloca
 
 ## Recovery & Readiness
 
-37. **Wake up call for collegiate athlete sleep- narrative review and consensus recommendations from the NCAA Interassociation Task Force on Sleep and Wellness** — Narrative Review — TITLE SCREENED<br>
+37. **Effects of multiple cold-water immersion during pre-season on recovery performance in under-20 male soccer players - A randomized controlled trial** — Randomized Controlled Trial — TITLE SCREENED<br>
+   `Effects of multiple cold-water immersion during pre-season on recovery performance in under-20 male soccer players - A randomized controlled trial.pdf`
+38. **Wake up call for collegiate athlete sleep- narrative review and consensus recommendations from the NCAA Interassociation Task Force on Sleep and Wellness** — Narrative Review — TITLE SCREENED<br>
    `Wake up call for collegiate athlete sleep- narrative review and consensus recommendations from the NCAA Interassociation Task Force on Sleep and Wellness.pdf`
-38. **The effect of alcohol on subsequent sleep in healthy adults - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `The effect of alcohol on subsequent sleep in healthy adults - A systematic review and meta-analysis.pdf`
 39. **Real world fatigue testing in professional rugby union - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `Real world fatigue testing in professional rugby union - A systematic review and meta-analysis.pdf`
-40. **Effects of multiple cold-water immersion during pre-season on recovery performance in under-20 male soccer players - A randomized controlled trial** — Randomized Controlled Trial — TITLE SCREENED<br>
-   `Effects of multiple cold-water immersion during pre-season on recovery performance in under-20 male soccer players - A randomized controlled trial.pdf`
-41. **Effect of the length of the microcycle on the daily external load, fatigue, sleep quality, stress, and muscle soreness of professional soccer players - A full-season study** — Other — TITLE SCREENED<br>
+40. **Effect of the length of the microcycle on the daily external load, fatigue, sleep quality, stress, and muscle soreness of professional soccer players - A full-season study** — Other — TITLE SCREENED<br>
    `Effect of the length of the microcycle on the daily external load, fatigue, sleep quality, stress, and muscle soreness of professional soccer players - A full-season study.pdf`
-42. **Effects of consecutive domestic and international tournaments on heart rate variability in an elite rugby sevens team** — Other — TITLE SCREENED<br>
+41. **Effects of consecutive domestic and international tournaments on heart rate variability in an elite rugby sevens team** — Other — TITLE SCREENED<br>
    `Effects of consecutive domestic and international tournaments on heart rate variability in an elite rugby sevens team.pdf`
-43. **A Strategy to Inform Athlete Sleep Support From Questionnaire Data and Its Application in an Elite Athlete Cohort** — Cohort Study — TITLE SCREENED<br>
+42. **A Strategy to Inform Athlete Sleep Support From Questionnaire Data and Its Application in an Elite Athlete Cohort** — Cohort Study — TITLE SCREENED<br>
    `A Strategy to Inform Athlete Sleep Support From Questionnaire Data and Its Application in an Elite Athlete Cohort.pdf`
-44. **Professional athletes have poorer sleep quality and sleep hygiene compared with an age-matched cohort** — Cohort Study — TITLE SCREENED<br>
+43. **Professional athletes have poorer sleep quality and sleep hygiene compared with an age-matched cohort** — Cohort Study — TITLE SCREENED<br>
    `Professional athletes have poorer sleep quality and sleep hygiene compared with an age-matched cohort.pdf`
-45. **Sleep quality in elite athletes - Normative values, reliability and understanding contributors to poor sleep** — Methodological / Validation Study — TITLE SCREENED<br>
+44. **Sleep quality in elite athletes - Normative values, reliability and understanding contributors to poor sleep** — Methodological / Validation Study — TITLE SCREENED<br>
    `Sleep quality in elite athletes - Normative values, reliability and understanding contributors to poor sleep.pdf`
-46. **Sleep interventions in elite sport - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+45. **Sleep interventions in elite sport - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `Sleep interventions in elite sport - A systematic review.pdf`
+46. **The effect of alcohol on subsequent sleep in healthy adults - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `The effect of alcohol on subsequent sleep in healthy adults - A systematic review and meta-analysis.pdf`
 47. **Antioxidants for preventing and reducing muscle soreness after exercise- a Cochrane systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `Antioxidants for preventing and reducing muscle soreness after exercise- a Cochrane systematic review.pdf`
 48. **Compression Garments and Recovery from Exercise- A Meta-Analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
