@@ -8,30 +8,30 @@ This queue contains 96 unrepresented, content-deduplicated local PDFs: 12 alloca
 
 ## Training & Performance
 
-1. **Strength and power thresholds to identify high and low linear sprint speed performers in collegiate American football players** — Other — TITLE SCREENED<br>
-   `Strength and power thresholds to identify high and low linear sprint speed performers in collegiate American football players.pdf`
-2. **The Effects of Sleep Extension on the Athletic Performance of Collegiate Basketball Players** — Other — TITLE SCREENED<br>
-   `The Effects of Sleep Extension on the Athletic Performance of Collegiate Basketball Players.pdf`
-3. **Elite North American soccer performance in thermally challenging environments - An explorative approach to tracking outcomes** — Other — TITLE SCREENED<br>
-   `Elite North American soccer performance in thermally challenging environments  - An explorative approach to tracking outcomes.pdf`
-4. **Evaluating the relationship between neurological function, neuromuscular fatigue, and subjective performance measures in professional rugby union players** — Other — TITLE SCREENED<br>
-   `Evaluating the relationship between neurological function, neuromuscular fatigue, and subjective performance measures in professional rugby union players.pdf`
-5. **The Sprint Mechanics Assessment Score - A qualitative screening tool for the in-field assessment of sprint running mechanics** — Qualitative Study — TITLE SCREENED<br>
-   `The Sprint Mechanics Assessment Score - A qualitative screening tool for the in-field assessment of sprint running mechanics.pdf`
-6. **Validating InBody 570 multi-frequency bioelectrical impedance analyzer vs DXA for body fat percentage analysis** — Methodological / Validation Study — TITLE SCREENED<br>
-   `Validating InBody 570 multi-frequency bioelectrical   impedance analyzer vs DXA for body fat percentage analysis.pdf`
-7. **Adverse Effects of Anabolic Androgenic Steroid Abuse in Athletes and Physically Active Individuals - A Systematic Review and Meta-Analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Adverse Effects of Anabolic Androgenic Steroid Abuse in Athletes and Physically Active Individuals - A Systematic Review and Meta-Analysis.pdf`
-8. **Association of Lower Limb Compression Garments During HighIntensity Exercise with Performance and Physiological Responses- A Systematic Review and Meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Association of Lower Limb Compression Garments During HighIntensity Exercise with Performance and Physiological Responses- A Systematic Review and Meta-analysis.pdf`
-9. **Athlete Selective Androgen Receptor Modulators Abuse - A Systematic Review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Athlete Selective Androgen Receptor Modulators Abuse - A Systematic Review.pdf`
-10. **Biomechanical Determinants of Change of Direction Performance - A Systematic Review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Biomechanical Determinants of Change of Direction Performance - A Systematic Review.pdf`
-11. **Blood flow-restricted training for lower extremity muscle weakness due to knee pathology - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Blood flow-restricted training for  lower extremity muscle weakness due to knee pathology - A systematic  review.pdf`
-12. **Can caffeine change the game - Effects of acute caffeine intake on specific performance in intermittent sports during competition - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Can caffeine change the game - Effects of acute caffeine intake on specific performance in intermittent sports during competition - A systematic review and meta-analysis.pdf`
+1. **The Impact of Localized Muscle Mass on Sprint Mechanics During the Swing and Stance Phases of Division I Collegiate American Football Players** — Other — TITLE SCREENED<br>
+   `The Impact of Localized Muscle Mass on Sprint Mechanics During the Swing and Stance Phases of Division I Collegiate American Football Players.pdf`
+2. **Association between collision sport career duration and gait performance in male collegiate student-athletes** — Other — TITLE SCREENED<br>
+   `Association between collision sport career duration and gait performance in male collegiate student-athletes.pdf`
+3. **Feedback of GPS training data within professional English soccer A comparison of decision making and perceptions between coaches players and (1)** — Other — TITLE SCREENED<br>
+   `Feedback of GPS training data within professional English soccer A comparison of decision making and perceptions between coaches players and (1).pdf`
+4. **Hamstring injury occurrence in elite soccer players after preseason strength training with eccentric overload** — Other — TITLE SCREENED<br>
+   `Hamstring injury occurrence in elite soccer players   after preseason strength training with eccentric overload.pdf`
+5. **How does the workload applied during the training week and the contextual factors affect the physical responses of professional soccer players in the match** — Other — TITLE SCREENED<br>
+   `How does the workload applied during the training week and the contextual factors affect the physical responses of professional soccer players in the match.pdf`
+6. **Cannabis use and sport - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Cannabis use and sport - A systematic review.pdf`
+7. **Cardiovascular Health of Retired Field-Based Athletes A Systematic Review and Meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Cardiovascular Health of Retired    Field-Based Athletes A Systematic Review and Meta-analysis.pdf`
+8. **Clinical risk factors for Achilles tendinopathy- a systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Clinical risk factors for Achilles   tendinopathy- a systematic review.pdf`
+9. **Core body temperatures in intermittent sports - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Core body temperatures in intermittent sports - A systematic review.pdf`
+10. **Current Evidence for the Use of Jugular Vein Compression Collars in Sport - A Systematic Review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Current Evidence for the Use of Jugular Vein Compression Collars in Sport - A Systematic Review.pdf`
+11. **Dehydration Impairs Cognitive Performance- A Meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Dehydration Impairs Cognitive Performance- A Meta-analysis.pdf`
+12. **Do multi-ingredient protein supplements augment resistance training-induced gains in skeletal muscle mass and strength - A systematic review and meta-analysis of 35 trials** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Do multi-ingredient protein supplements augment resistance training-induced gains in skeletal muscle mass and strength - A systematic review and meta-analysis of 35 trials.pdf`
 
 ## Sports Medicine & Injury
 
