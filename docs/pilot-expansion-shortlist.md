@@ -8,30 +8,30 @@ This queue contains 96 unrepresented, content-deduplicated local PDFs: 12 alloca
 
 ## Training & Performance
 
-1. **Association between intra and inter-limb strength asymmetry with sprint kinematics and force-velocity profile in youth team athletes** — Other — TITLE SCREENED<br>
-   `Association between intra and inter-limb strength asymmetry with sprint kinematics and force-velocity profile in youth team athletes.pdf`
-2. **The impact of intrinsic foot muscle strengthening exercises in asymptomatic athletes with normal foot structure - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `The impact of intrinsic foot muscle strengthening exercises in asymptomatic athletes with normal foot structure - A systematic review.pdf`
-3. **Prophylactic knee bracing in offensive linemen of the National Football League - A retrospective analysis of usage trends, player performance, a** — Other — TITLE SCREENED<br>
-   `Prophylactic knee bracing in offensive linemen of the National Football League - A retrospective analysis of usage trends, player performance, a.pdf`
-4. **A comparison of rolling averages vs discrete time epochs for assessing the worst-case scenario locomotor demands of professional soccer match-play** — Other — TITLE SCREENED<br>
-   `A comparison of rolling averages vs discrete time epochs for assessing the worst-case scenario locomotor demands of professional soccer match-play.pdf`
-5. **Accumulative weekly load in a professional soccer team - With special reference to match playing time and game position** — Other — TITLE SCREENED<br>
-   `Accumulative weekly load in a professional soccer team - With special reference to match playing time and game position.pdf`
-6. **Are elite soccer teams preseason training sessions associated with fewer in-season injuries - A 15-year analysis from the UEFA Elite Club Injury Study** — Other — TITLE SCREENED<br>
-   `Are elite soccer teams preseason training sessions associated with fewer in-season injuries - A 15-year analysis from the UEFA Elite Club Injury Study.pdf`
-7. **Introducing the Novel Deceleration Threshold Method - Comparative Reliability to Previous Sprint Deceleration Analysis Methods in Team‐Sport Athletes** — Methodological / Validation Study — TITLE SCREENED<br>
-   `Introducing the Novel Deceleration Threshold Method - Comparative Reliability to Previous Sprint Deceleration Analysis Methods in Team‐Sport Athletes.pdf`
-8. **Unilateral or bilateral standing broad jumps - Which jump type provides inter-limb asymmetries with a higher reliability** — Methodological / Validation Study — TITLE SCREENED<br>
-   `Unilateral or bilateral standing broad jumps - Which jump type provides inter-limb asymmetries with a higher reliability.pdf`
-9. **Validity of the Hawkin Dynamics wireless dual force platform system against a piezoelectric laboratory grade system for vertical countermovement jump variables** — Laboratory / Experimental Study — TITLE SCREENED<br>
-   `Validity of the Hawkin Dynamics wireless dual force platform system against a piezoelectric laboratory grade system for vertical countermovement jump variables.pdf`
-10. **Associations between skeletal muscle mass, fat-free mass, and saliva osmolality - A cross-sectional study** — Cross-sectional Study — TITLE SCREENED<br>
-   `Associations between skeletal muscle mass, fat-free mass, and saliva osmolality - A cross-sectional study.pdf`
-11. **The effects of integrative neuromuscular training on injury risk and athletic performance in athletes - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `The effects of integrative neuromuscular training on injury risk and athletic performance in athletes - A systematic review and meta-analysis.pdf`
-12. **The Relationship Between Training Load and Injury in Athletes- A Systematic Review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `The Relationship Between Training Load and Injury in Athletes- A Systematic Review.pdf`
+1. **Cannabis use in adolescent and young adult athletes - A clinical review** — Narrative Review — TITLE SCREENED<br>
+   `Cannabis use in adolescent and young adult athletes - A clinical review.pdf`
+2. **A randomized trial of healthy weight gain in athletic individuals** — Other — TITLE SCREENED<br>
+   `A randomized trial of healthy weight gain in athletic individuals.pdf`
+3. **Basal Serum Cortisol and Testosterone-Cortisol Ratio Are Related to Rate of Na+ Lost During Exercise in Elite Soccer Players** — Other — TITLE SCREENED<br>
+   `Basal Serum Cortisol and   Testosterone-Cortisol Ratio Are Related to Rate of Na+ Lost During  Exercise  in Elite Soccer Players.pdf`
+4. **Change of Direction Deficit vs Deceleration Deficit - A Comparison of Limb Dominance and Inter limb Asymmetry between Forwards and Backs in Elite Male Rugby Union Players** — Other — TITLE SCREENED<br>
+   `Change of Direction Deficit vs Deceleration Deficit - A Comparison of Limb Dominance and Inter limb Asymmetry between Forwards and Backs in Elite Male Rugby Union Players.pdf`
+5. **Comparisons of new body load and metabolic power average workload indices between starters and non-starters - A full-season study in professional soccer players** — Other — TITLE SCREENED<br>
+   `Comparisons of new body load and metabolic power average workload indices between starters and non-starters - A full-season study in professional soccer players.pdf`
+6. **Cutoffs of isokinetic strength ratio and hamstring strain prediction in professional soccer players** — Other — TITLE SCREENED<br>
+   `Cutoffs of isokinetic strength      ratio and hamstring strain prediction in professional soccer   players.pdf`
+7. **Muscle activity and kinematics during three hamstring strengthening exercises compared to sprinting - A cross-sectional study** — Cross-sectional Study — TITLE SCREENED<br>
+   `Muscle activity and kinematics during three hamstring strengthening exercises compared to sprinting - A cross-sectional study.pdf`
+8. **A qualitative study of 11 world-class team sport athletes' experiences answering subjective questionnairs - A key ingredient for visible health and performance monitoring** — Qualitative Study — TITLE SCREENED<br>
+   `A qualitative study of 11 world-class team sport athletes' experiences answering subjective questionnairs - A key ingredient for visible health and performance monitoring.pdf`
+9. **Pectoralis Major ruptures during rugby league tackling – case series with implications for tackling technique instruction** — Case Report / Case Series — TITLE SCREENED<br>
+   `Pectoralis Major ruptures during rugby league tackling – case series with implications for tackling technique instruction .pdf`
+10. **Practices and perceptions in hamstring training for injury prevention and enhancement of athletic performance - A qualitative analysis** — Qualitative Study — TITLE SCREENED<br>
+   `Practices and perceptions in hamstring training for injury prevention and enhancement of athletic performance - A qualitative analysis.pdf`
+11. **The safety of blood flow restriction training as a therapeutic intervention for patients with musculoskleletal disorders - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `The safety of blood flow restriction training as a therapeutic intervention for patients with musculoskleletal disorders - A systematic review.pdf`
+12. **A systematic review of resistance training methodogies for the development of lower body concentric mean power, peak power, and mean propulsive power in team-sport athletes** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `A systematic review of resistance training methodogies for the development of lower body concentric mean power, peak power, and mean propulsive power in team-sport athletes.pdf`
 
 ## Sports Medicine & Injury
 
