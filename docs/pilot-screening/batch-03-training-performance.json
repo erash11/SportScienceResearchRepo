@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-03-training-performance",
+  "screenedOn": "2026-07-21",
+  "screeningScope": "Full-text source, eligibility, study-design, taxonomy, and synthesis-readiness review of queue positions 1-12 after Batch 02 publication.",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 1,
+      "sourceFile": "The Prevalence of High School Multi Sport Participation in Elite National Football League Athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 29446,
+        "doi": "10.1080/00913847.2020.1856632"
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Athlete Wellbeing",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Youth / Adolescent",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Among 318 NFL first-round draft picks from 2008-2017, 280 (88%) were identified as high-school multi-sport athletes and 38 (12%) as football-only athletes. Publicly sourced retrospective comparisons found no significant differences in injury-related games missed, total games played, NFL longevity, or Pro Bowl selection.",
+      "limitations": "Only 38 athletes were classified as single-sport; public internet sources may have misclassified participation and injuries; injury reports lacked diagnostic detail; off-season injuries were excluded; and first-round NFL players are an unusually selected population.",
+      "synthesisCaution": "Use this as descriptive evidence that early multi-sport participation is common among elite NFL draftees, not proof that playing multiple sports causes professional success or prevents injury.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "458",
+        "synthesisBatch": "pilot-synthesis-batch-03",
+        "publishedOn": "2026-07-21"
+      }
+    },
+    {
+      "originalQueueOrder": 2,
+      "sourceFile": "Performance enhancing drugs in healthy athletes - An umbrella review of systematic reviews and meta-analyses.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 57873,
+        "doi": "10.1177/19417381231197389"
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Nutrition",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "This umbrella review synthesized 27 systematic reviews or meta-analyses covering five performance-enhancing agents. Creatine showed benefits for strength and repeated high-intensity performance when appropriately dosed; anabolic steroids increased strength and lean mass but altered lipids; growth hormone changed body composition without clear performance benefit; rHuEPO evidence was limited despite serious cardiovascular risks; and cannabis did not improve performance.",
+      "limitations": "Only PubMed and Scopus were searched; evidence was sparse for several agents and absent for SARMs and ACE inhibitors; populations, doses, outcomes, and exercise protocols were heterogeneous; and the umbrella-review evidence was rated level 4.",
+      "synthesisCaution": "Keep legal, ethical, and health-risk distinctions explicit. Do not group controlled-dose creatine with prohibited pharmacologic doping or interpret physiological changes as proven performance gains.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "459",
+        "synthesisBatch": "pilot-synthesis-batch-03",
+        "publishedOn": "2026-07-21"
+      }
+    },
+    {
+      "originalQueueOrder": 3,
+      "sourceFile": "Metabolic power in team and racquet sports - A systematic review with best-evidence synthesis.pdf",
+      "decision": "EXCLUDE",
+      "sourceVerification": {
+        "status": "FAIL",
+        "pages": 13,
+        "extractedCharacters": 73250,
+        "expectedTitle": "Metabolic power in team and racquet sports: A systematic review with best-evidence synthesis",
+        "actualTitle": "Metabolic Consequences of Anabolic Steroids, Insulin, and Growth Hormone Abuse in Recreational Bodybuilders: Implications for the World Anti-Doping Agency Passport",
+        "actualDoi": "10.1186/s40798-024-00697-6"
+      },
+      "exclusionReason": "Source identity mismatch: the local PDF contains an unrelated cross-sectional hormone-doping study rather than the metabolic-power systematic review named by the file."
+    },
+    {
+      "originalQueueOrder": 4,
+      "sourceFile": "The use of biologics in NFL athletes - An expert consensus of NFL team physicians.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 62540,
+        "doi": "10.1177/23259671221143778"
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "A six-member working group used a three-round Delphi process with physicians representing 26 NFL teams and NFL London. Forty-seven statements reached the prespecified consensus threshold, including support for platelet-rich plasma in patellar tendinopathy and early osteoarthritis symptoms, while emphasizing that uncharacterized cell preparations are often marketed beyond the evidence.",
+      "limitations": "Delphi consensus is vulnerable to participant-selection and expert-opinion bias, does not demonstrate treatment efficacy, and may not generalize beyond NFL medical settings. Industry involvement and rapidly evolving biologic products also require ongoing evidence review.",
+      "synthesisCaution": "Present consensus as clinical guidance under uncertainty, not as proof that a biologic accelerates healing or return to sport for a specific athlete.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "460",
+        "synthesisBatch": "pilot-synthesis-batch-03",
+        "publishedOn": "2026-07-21"
+      }
+    },
+    {
+      "originalQueueOrder": 5,
+      "sourceFile": "What Performance Analysts Need to Know About Research Trends in Association Football (2012–2016)- A Systematic Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 38,
+        "extractedCharacters": 143851,
+        "doi": "10.1007/s40279-017-0836-6"
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "A PRISMA-guided review retained 77 of 483 identified studies on adult male association-football match analysis published from 2012-2016. Research clustered around set pieces, collective tactical behavior, match-statistic relationships, player activity profiles, fatigue and substitutions, and situational or environmental constraints.",
+      "limitations": "The search relied on Web of Science, covered a bounded historical period, focused on adult male soccer, and synthesized highly heterogeneous observational methods and outcomes. It maps research activity more directly than it establishes best practice.",
+      "synthesisCaution": "Use the review to structure analyst questions and identify measurement gaps; do not treat frequently studied variables as validated decision rules or assume older tracking methods transfer unchanged to current systems.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "461",
+        "synthesisBatch": "pilot-synthesis-batch-03",
+        "publishedOn": "2026-07-21"
+      }
+    },
+    {
+      "originalQueueOrder": 6,
+      "sourceFile": "Acute First-Time Hamstring Strains During High-Speed Running A Longitudinal Study Including Clinical and Magnetic Resonance Imaging Findings.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 41262,
+        "doi": "10.1177/0363546506294679"
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Athletic Training",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Track & Field"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Eighteen elite sprinters with first-time acute hamstring strains received clinical and MRI examinations at days 2-4, 10, 21, and 42 with two-year clinical follow-up. Every primary injury involved the biceps femoris long head; return to preinjury level was a median 16 weeks (range 6-50), and injury extent and proximal free-tendon involvement were associated with longer recovery.",
+      "limitations": "This was a small uncontrolled prognostic case series in elite sprinters. Rehabilitation was no longer standardized after six weeks, return criteria could vary, and the injury mechanism and timeline may not generalize to field-sport hamstring injuries.",
+      "synthesisCaution": "Use early palpation and MRI as prognostic context, not as deterministic return dates or a substitute for serial functional progression and athlete-specific return criteria.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "462",
+        "synthesisBatch": "pilot-synthesis-batch-03",
+        "publishedOn": "2026-07-21"
+      }
+    },
+    {
+      "originalQueueOrder": 7,
+      "sourceFile": "The association between hip-groin pain and hip strength in football players - An exploratory analysis of the FORCe cohort.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 25,
+        "extractedCharacters": 40919,
+        "doi": "10.1016/j.jsams.2023.07.008"
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer",
+        "Other Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Female Athletes",
+        "Male Athletes",
+        "Injured Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "This secondary cross-sectional analysis included 190 football players with hip/groin pain and 64 controls. Symptomatic players had lower hip adduction, internal-rotation, and external-rotation strength after adjustment; hip-abduction differences were observed in Australian football but not soccer, indicating some sport-specificity.",
+      "limitations": "Cross-sectional baseline data cannot determine whether weakness caused pain or resulted from it. The subelite soccer and Australian-football sample, limb-level analysis, mixed pain presentations, and exploratory interaction tests limit causal and predictive interpretation.",
+      "synthesisCaution": "Treat hip strength as one impairment domain within a broader assessment; do not use these group differences as prospective injury thresholds or universal return-to-sport cutoffs.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "463",
+        "synthesisBatch": "pilot-synthesis-batch-03",
+        "publishedOn": "2026-07-21"
+      }
+    },
+    {
+      "originalQueueOrder": 8,
+      "sourceFile": "The influence of sleep and training load on illness in nationally competitive male Australian Football athletes- a cohort study over one season.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 18,
+        "extractedCharacters": 34422,
+        "doi": "10.1016/j.jsams.2018.06.011"
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Forty-four male Australian-football athletes were followed across a 46-week season, with 67 illnesses recorded. After controlling for significant sleep and load variables, only acute sleep quantity remained associated with illness in the next seven days (OR 0.49, 95% CI 0.25-0.94); external training load was not independently associated when sleep was included.",
+      "limitations": "The cohort was small and sport- and sex-specific; sleep was self-reported and may be overestimated, especially below seven hours; the analysis was observational; and illness associations do not establish an individual causal threshold.",
+      "synthesisCaution": "Use reduced sleep as a conversation and surveillance signal within a multivariable readiness process, not as a stand-alone illness prediction rule or automatic training restriction.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "464",
+        "synthesisBatch": "pilot-synthesis-batch-03",
+        "publishedOn": "2026-07-21"
+      }
+    },
+    {
+      "originalQueueOrder": 9,
+      "sourceFile": "Between-Session Reliability of Field-Based Assessments of Isometric Neck Strength.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 57020,
+        "doi": "10.3390/s24155015"
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Male Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Twenty-seven recreationally active men completed repeated quadruped isometric neck tests with VALD ForceFrame and DynaMo devices. Peak-force reliability was acceptable for both systems (ForceFrame ICC above 0.80; DynaMo above 0.76; CV below 13.8%), and most force-time measures were repeatable across sessions, although early force development was more variable.",
+      "limitations": "The study assessed healthy recreational men rather than collision-sport athletes or injured patients, evaluated reliability rather than predictive or clinical validity, and found that the two devices were not interchangeable. Left-side force-time traces were less repeatable.",
+      "synthesisCaution": "Standardize the device, position, direction, instructions, and time epoch before longitudinal use; reliability alone does not show that neck strength predicts concussion risk or readiness.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "465",
+        "synthesisBatch": "pilot-synthesis-batch-03",
+        "publishedOn": "2026-07-21"
+      }
+    },
+    {
+      "originalQueueOrder": 10,
+      "sourceFile": "High‑Intensity Acceleration and Deceleration Demands in Elite Team Sports Competitive Match Play- A Systematic Review and Meta‑Analysis of Observational Studies.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 25,
+        "extractedCharacters": 116198,
+        "doi": "10.1007/s40279-019-01170-1"
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Nineteen observational studies comprising 469 elite male athletes across seven team sports were meta-analyzed. Decelerations were more frequent than accelerations in every sport except American football, with soccer showing the largest imbalance; both acceleration and deceleration frequencies declined modestly from first to second halves.",
+      "limitations": "GPS sampling, thresholds, data processing, match exposure, position, and sport context varied substantially across studies. Several sport-specific estimates relied on few studies, all participants were adult men, and observational counts do not establish an optimal training dose.",
+      "synthesisCaution": "Use sport- and position-specific match data to prepare athletes for braking demands; do not transfer pooled event counts or thresholds across tracking systems and sports without local validation.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "466",
+        "synthesisBatch": "pilot-synthesis-batch-03",
+        "publishedOn": "2026-07-21"
+      }
+    },
+    {
+      "originalQueueOrder": 11,
+      "sourceFile": "Mediterranean Diet and athletic performance in elite and competitive athletes - A systematic review and meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 69981,
+        "doi": "10.1016/j.numecd.2025.104165"
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Nine studies involving 192 mostly male competitive or elite adult athletes were reviewed. Four of five studies reporting a diet-performance relationship favored higher Mediterranean-diet adherence, but the pooled analysis found no performance effect (SMD 0.00, 95% CI -0.26 to 0.25).",
+      "limitations": "The evidence base was small, heterogeneous, and low-to-moderate quality; five studies were cross-sectional; samples ranged from 10 to 43; sports and outcomes varied; participants were mostly male; and supplement use was often unmeasured.",
+      "synthesisCaution": "Support Mediterranean-style eating for overall diet quality where appropriate, but do not promise a direct performance gain from this meta-analysis or infer causality from adherence studies.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "467",
+        "synthesisBatch": "pilot-synthesis-batch-03",
+        "publishedOn": "2026-07-21"
+      }
+    },
+    {
+      "originalQueueOrder": 12,
+      "sourceFile": "Adherence to Strength Training and Lower Rates of Sports Injury in Contact Sports - A Systematic Review and Meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 51671,
+        "doi": "10.1177/23259671251331134"
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Sixteen randomized trials of injury-prevention programs containing strength training produced a pooled injury risk ratio of 0.70 (95% CI 0.60-0.82). Single-component programs were associated with lower groin (RR 0.69) and hamstring injury risk (RR 0.37), while multicomponent programs were associated with lower knee (RR 0.71) and ankle injury risk (RR 0.68).",
+      "limitations": "Sports, injury definitions, program components, adherence, exposure, and follow-up varied. Subgroup findings were not direct head-to-head proof of component superiority, and the review identified limited evidence for specific frequencies, volumes, contraction modes, and body regions.",
+      "synthesisCaution": "Prioritize consistent exposure to a sport- and site-specific prevention program; do not interpret subgroup risk ratios as universal prescriptions or separate program design from adherence and implementation quality.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "468",
+        "synthesisBatch": "pilot-synthesis-batch-03",
+        "publishedOn": "2026-07-21"
+      }
+    }
+  ]
+}

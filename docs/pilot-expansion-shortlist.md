@@ -8,30 +8,30 @@ This queue contains 96 unrepresented, content-deduplicated local PDFs: 12 alloca
 
 ## Training & Performance
 
-1. **The Prevalence of High School Multi Sport Participation in Elite National Football League Athletes** — Other — TITLE SCREENED<br>
-   `The Prevalence of High School Multi Sport Participation in Elite National Football League Athletes.pdf`
-2. **Performance enhancing drugs in healthy athletes - An umbrella review of systematic reviews and meta-analyses** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Performance enhancing drugs in healthy athletes - An umbrella review of systematic reviews and meta-analyses.pdf`
-3. **Metabolic power in team and racquet sports - A systematic review with best-evidence synthesis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Metabolic power in team and racquet sports - A systematic review with best-evidence synthesis.pdf`
-4. **The use of biologics in NFL athletes - An expert consensus of NFL team physicians** — Consensus / Position Statement — TITLE SCREENED<br>
-   `The use of biologics in NFL athletes - An expert consensus of NFL team physicians.pdf`
-5. **What Performance Analysts Need to Know About Research Trends in Association Football (2012–2016)- A Systematic Review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `What Performance Analysts Need to Know About Research Trends in Association Football (2012–2016)- A Systematic Review.pdf`
-6. **Acute First-Time Hamstring Strains During High-Speed Running A Longitudinal Study Including Clinical and Magnetic Resonance Imaging Findings** — Cohort Study — TITLE SCREENED<br>
-   `Acute First-Time Hamstring Strains During High-Speed Running A Longitudinal Study Including Clinical and Magnetic Resonance Imaging Findings.pdf`
-7. **The association between hip-groin pain and hip strength in football players - An exploratory analysis of the FORCe cohort** — Cohort Study — TITLE SCREENED<br>
-   `The association between hip-groin pain and hip strength in football players - An exploratory analysis of the FORCe cohort.pdf`
-8. **The influence of sleep and training load on illness in nationally competitive male Australian Football athletes- a cohort study over one season** — Cohort Study — TITLE SCREENED<br>
-   `The influence of sleep and training load on illness in nationally competitive male Australian Football athletes- a cohort study over one season.pdf`
-9. **Between-Session Reliability of Field-Based Assessments of Isometric Neck Strength** — Methodological / Validation Study — TITLE SCREENED<br>
-   `Between-Session Reliability of Field-Based Assessments of Isometric Neck Strength.pdf`
-10. **High‑Intensity Acceleration and Deceleration Demands in Elite Team Sports Competitive Match Play- A Systematic Review and Meta‑Analysis of Observational Studies** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `High‑Intensity Acceleration and Deceleration Demands in Elite Team Sports Competitive Match Play- A Systematic Review and Meta‑Analysis of Observational Studies.pdf`
-11. **Mediterranean Diet and athletic performance in elite and competitive athletes - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Mediterranean Diet and athletic performance in elite and competitive athletes - A systematic review and meta-analysis.pdf`
-12. **Adherence to Strength Training and Lower Rates of Sports Injury in Contact Sports - A Systematic Review and Meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Adherence to Strength Training and Lower Rates of Sports Injury in Contact Sports - A Systematic Review and Meta-analysis.pdf`
+1. **Association between intra and inter-limb strength asymmetry with sprint kinematics and force-velocity profile in youth team athletes** — Other — TITLE SCREENED<br>
+   `Association between intra and inter-limb strength asymmetry with sprint kinematics and force-velocity profile in youth team athletes.pdf`
+2. **The impact of intrinsic foot muscle strengthening exercises in asymptomatic athletes with normal foot structure - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `The impact of intrinsic foot muscle strengthening exercises in asymptomatic athletes with normal foot structure - A systematic review.pdf`
+3. **Prophylactic knee bracing in offensive linemen of the National Football League - A retrospective analysis of usage trends, player performance, a** — Other — TITLE SCREENED<br>
+   `Prophylactic knee bracing in offensive linemen of the National Football League - A retrospective analysis of usage trends, player performance, a.pdf`
+4. **A comparison of rolling averages vs discrete time epochs for assessing the worst-case scenario locomotor demands of professional soccer match-play** — Other — TITLE SCREENED<br>
+   `A comparison of rolling averages vs discrete time epochs for assessing the worst-case scenario locomotor demands of professional soccer match-play.pdf`
+5. **Accumulative weekly load in a professional soccer team - With special reference to match playing time and game position** — Other — TITLE SCREENED<br>
+   `Accumulative weekly load in a professional soccer team - With special reference to match playing time and game position.pdf`
+6. **Are elite soccer teams preseason training sessions associated with fewer in-season injuries - A 15-year analysis from the UEFA Elite Club Injury Study** — Other — TITLE SCREENED<br>
+   `Are elite soccer teams preseason training sessions associated with fewer in-season injuries - A 15-year analysis from the UEFA Elite Club Injury Study.pdf`
+7. **Introducing the Novel Deceleration Threshold Method - Comparative Reliability to Previous Sprint Deceleration Analysis Methods in Team‐Sport Athletes** — Methodological / Validation Study — TITLE SCREENED<br>
+   `Introducing the Novel Deceleration Threshold Method - Comparative Reliability to Previous Sprint Deceleration Analysis Methods in Team‐Sport Athletes.pdf`
+8. **Unilateral or bilateral standing broad jumps - Which jump type provides inter-limb asymmetries with a higher reliability** — Methodological / Validation Study — TITLE SCREENED<br>
+   `Unilateral or bilateral standing broad jumps - Which jump type provides inter-limb asymmetries with a higher reliability.pdf`
+9. **Validity of the Hawkin Dynamics wireless dual force platform system against a piezoelectric laboratory grade system for vertical countermovement jump variables** — Laboratory / Experimental Study — TITLE SCREENED<br>
+   `Validity of the Hawkin Dynamics wireless dual force platform system against a piezoelectric laboratory grade system for vertical countermovement jump variables.pdf`
+10. **Associations between skeletal muscle mass, fat-free mass, and saliva osmolality - A cross-sectional study** — Cross-sectional Study — TITLE SCREENED<br>
+   `Associations between skeletal muscle mass, fat-free mass, and saliva osmolality - A cross-sectional study.pdf`
+11. **The effects of integrative neuromuscular training on injury risk and athletic performance in athletes - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `The effects of integrative neuromuscular training on injury risk and athletic performance in athletes - A systematic review and meta-analysis.pdf`
+12. **The Relationship Between Training Load and Injury in Athletes- A Systematic Review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `The Relationship Between Training Load and Injury in Athletes- A Systematic Review.pdf`
 
 ## Sports Medicine & Injury
 

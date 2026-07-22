@@ -52,7 +52,7 @@ An expandable evidence table that gives each paper a plain-language TLDR, method
 | 7 | L5-S1 Rehab Protocol: Post-Microdiscectomy DL | Injury Prevention / RTP |
 | 8 | Gridiron Blueprint: Actionable Summary for Coaches and Dietitians | Nutrition / Coaching |
 
-All internal papers were sourced from the Baylor Applied Performance Google Drive. The local `SourcePapers/` corpus contains 2,155 PDFs representing 2,125 unique file contents. After the July 21, 2026 cleanup and the first two reviewed pilot batches, the library contains 431 canonical rows: 422 distinct local source PDFs, eight Baylor internal documents, and one DOI-backed external paper. By file content, 418 unique local sources are represented and 1,707 remain unrepresented.
+All internal papers were sourced from the Baylor Applied Performance Google Drive. The local `SourcePapers/` corpus contains 2,155 PDFs representing 2,125 unique file contents. After the July 21, 2026 cleanup and the first three reviewed pilot batches, the library contains 442 canonical rows: 433 distinct local source PDFs, eight Baylor internal documents, and one DOI-backed external paper. By file content, 429 unique local sources are represented and 1,696 remain unrepresented. The pilot has published 35 full-text-reviewed papers and excluded one mislabeled source.
 
 ## Technical Details
 
@@ -109,7 +109,7 @@ All internal papers were sourced from the Baylor Applied Performance Google Driv
 ## Next Steps
 
 1. Use the automated audit and coverage manifest as the publication gate for every future batch
-2. Full-text screen Batch 03 from the replenished 96-paper queue in `docs/pilot-expansion-shortlist.md`
+2. Full-text screen Batch 04 from the replenished 96-paper queue in `docs/pilot-expansion-shortlist.md`
 3. Convert only audited INCLUDE decisions into versioned records under `docs/pilot-synthesis/`
 4. Replace rules-based legacy taxonomy with staff-reviewed overrides as issues are identified
 5. Publish only candidates that pass source, eligibility, taxonomy, extraction, synthesis, and duplicate gates
