@@ -8,30 +8,30 @@ This queue contains 96 unrepresented, content-deduplicated local PDFs: 12 alloca
 
 ## Training & Performance
 
-1. **Cannabis use in adolescent and young adult athletes - A clinical review** — Narrative Review — TITLE SCREENED<br>
-   `Cannabis use in adolescent and young adult athletes - A clinical review.pdf`
-2. **A randomized trial of healthy weight gain in athletic individuals** — Other — TITLE SCREENED<br>
-   `A randomized trial of healthy weight gain in athletic individuals.pdf`
-3. **Basal Serum Cortisol and Testosterone-Cortisol Ratio Are Related to Rate of Na+ Lost During Exercise in Elite Soccer Players** — Other — TITLE SCREENED<br>
-   `Basal Serum Cortisol and   Testosterone-Cortisol Ratio Are Related to Rate of Na+ Lost During  Exercise  in Elite Soccer Players.pdf`
-4. **Change of Direction Deficit vs Deceleration Deficit - A Comparison of Limb Dominance and Inter limb Asymmetry between Forwards and Backs in Elite Male Rugby Union Players** — Other — TITLE SCREENED<br>
-   `Change of Direction Deficit vs Deceleration Deficit - A Comparison of Limb Dominance and Inter limb Asymmetry between Forwards and Backs in Elite Male Rugby Union Players.pdf`
-5. **Comparisons of new body load and metabolic power average workload indices between starters and non-starters - A full-season study in professional soccer players** — Other — TITLE SCREENED<br>
-   `Comparisons of new body load and metabolic power average workload indices between starters and non-starters - A full-season study in professional soccer players.pdf`
-6. **Cutoffs of isokinetic strength ratio and hamstring strain prediction in professional soccer players** — Other — TITLE SCREENED<br>
-   `Cutoffs of isokinetic strength      ratio and hamstring strain prediction in professional soccer   players.pdf`
-7. **Muscle activity and kinematics during three hamstring strengthening exercises compared to sprinting - A cross-sectional study** — Cross-sectional Study — TITLE SCREENED<br>
-   `Muscle activity and kinematics during three hamstring strengthening exercises compared to sprinting - A cross-sectional study.pdf`
-8. **A qualitative study of 11 world-class team sport athletes' experiences answering subjective questionnairs - A key ingredient for visible health and performance monitoring** — Qualitative Study — TITLE SCREENED<br>
-   `A qualitative study of 11 world-class team sport athletes' experiences answering subjective questionnairs - A key ingredient for visible health and performance monitoring.pdf`
-9. **Pectoralis Major ruptures during rugby league tackling – case series with implications for tackling technique instruction** — Case Report / Case Series — TITLE SCREENED<br>
-   `Pectoralis Major ruptures during rugby league tackling – case series with implications for tackling technique instruction .pdf`
-10. **Practices and perceptions in hamstring training for injury prevention and enhancement of athletic performance - A qualitative analysis** — Qualitative Study — TITLE SCREENED<br>
-   `Practices and perceptions in hamstring training for injury prevention and enhancement of athletic performance - A qualitative analysis.pdf`
-11. **The safety of blood flow restriction training as a therapeutic intervention for patients with musculoskleletal disorders - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `The safety of blood flow restriction training as a therapeutic intervention for patients with musculoskleletal disorders - A systematic review.pdf`
-12. **A systematic review of resistance training methodogies for the development of lower body concentric mean power, peak power, and mean propulsive power in team-sport athletes** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `A systematic review of resistance training methodogies for the development of lower body concentric mean power, peak power, and mean propulsive power in team-sport athletes.pdf`
+1. **Effect of a 90-Minute Nap at Different Times of the Day on Physical Performance, Psycho-Cognitive Responses, and Perceived Recovery in Trained Youth Male Athletes** — Other — TITLE SCREENED<br>
+   `Effect of a 90-Minute Nap at Different Times of the Day on Physical Performance, Psycho-Cognitive Responses, and Perceived Recovery in Trained Youth Male Athletes.pdf`
+2. **Relationship between training load and recovery in collegiate American football players during pre-season training** — Other — TITLE SCREENED<br>
+   `Relationship between training load and recovery in collegiate American football players during pre-season training.pdf`
+3. **Decreased isometric neck strength is a risk factor for head neck and face injuries in professional rugby league players** — Other — TITLE SCREENED<br>
+   `Decreased isometric neck strength is a risk factor for head  neck and face injuries in professional rugby league players.pdf`
+4. **Effect of training day match and length of the microcycle on the worst-case scenarios in professional soccer players** — Other — TITLE SCREENED<br>
+   `Effect of training day match and length of the microcycle on the worst-case scenarios in professional soccer players.pdf`
+5. **Effects of an 8-week pre-season targeted training on sprinting performance, agility and lower limb muscular asymmetries in elite soccer players** — Other — TITLE SCREENED<br>
+   `Effects of an 8-week pre-season targeted training on sprinting performance, agility and lower limb muscular asymmetries in elite soccer players.pdf`
+6. **Return to play performance and career duration after ACL rupture - A case control study in the five biggest football nations in Europe** — Case-control Study — TITLE SCREENED<br>
+   `Return to play performance and career duration after ACL rupture - A case control study in the five biggest football nations in Europe.pdf`
+7. **Reconsidering Exercise Selection with EMG - Poor Agreement between Ranking Hip Exercises with Gluteal EMG and Muscle Force** — Methodological / Validation Study — TITLE SCREENED<br>
+   `Reconsidering Exercise Selection with EMG - Poor Agreement between Ranking Hip Exercises with Gluteal EMG and Muscle Force.pdf`
+8. **The Application of Blood Flow Restriction- Lessons From the Laboratory** — Laboratory / Experimental Study — TITLE SCREENED<br>
+   `The Application of Blood Flow        Restriction- Lessons From the Laboratory.pdf`
+9. **The effect of the Copenhagen Adduction and Nordic Hamstring exercises on muscle strength and athletic performance - A quasi-experimental study** — Laboratory / Experimental Study — TITLE SCREENED<br>
+   `The effect of the Copenhagen Adduction and Nordic Hamstring exercises on muscle strength and athletic performance - A quasi-experimental study.pdf`
+10. **Acute and post-acute COVID-19 presentations in athletes - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Acute and post-acute COVID-19 presentations in athletes - A systematic review and meta-analysis.pdf`
+11. **Acute effects of cluster and rest redistribution set structures on mechanical, metabolic, and perceptual fatigue during and after resistance training - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Acute effects of cluster and rest redistribution set structures on mechanical, metabolic, and perceptual fatigue during and after resistance training - A systematic review.pdf`
+12. **Acute effects of overspeed stimuli with towing system on athletic sprint performance - A systematic review with meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Acute effects of overspeed stimuli with towing system on athletic sprint performance - A systematic review with meta-analysis.pdf`
 
 ## Sports Medicine & Injury
 

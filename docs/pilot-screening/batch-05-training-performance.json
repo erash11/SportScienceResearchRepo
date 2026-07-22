@@ -1,0 +1,471 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-05-training-performance",
+  "screenedOn": "2026-07-21",
+  "screeningScope": "Full-text source, eligibility, study-design, taxonomy, and synthesis-readiness review of queue positions 1-12 after Batch 04 publication.",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 1,
+      "sourceFile": "Cannabis use in adolescent and young adult athletes - A clinical review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 40239,
+        "doi": "10.1177/19417381231208661"
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Athlete Wellbeing",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Adult / Recreational",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "This level-4 clinical review searched four databases for 2010-2022 literature. Survey studies suggested as many as one in four athletes used cannabis in the prior year; the review found no support for performance enhancement and described objective performance impairment plus cardiovascular, gastrointestinal, mental-health, and substance-use risks.",
+      "limitations": "This was a clinical narrative review rather than a quantitative systematic synthesis. Cannabis products, doses, routes, populations, outcomes, and legal contexts vary substantially, while much prevalence evidence is self-reported and causal athlete-specific evidence is limited.",
+      "synthesisCaution": "Separate THC-containing cannabis from CBD and from regulated medication, and do not treat pain or recovery claims as evidence of performance benefit, safety, or anti-doping eligibility.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "481",
+        "synthesisBatch": "pilot-synthesis-batch-05",
+        "publishedOn": "2026-07-21"
+      }
+    },
+    {
+      "originalQueueOrder": 2,
+      "sourceFile": "A randomized trial of healthy weight gain in athletic individuals.pdf",
+      "decision": "EXCLUDE",
+      "sourceVerification": {
+        "status": "FAIL",
+        "pages": 18,
+        "extractedCharacters": 58311,
+        "expectedTitle": "A randomized trial of healthy weight gain in athletic individuals",
+        "actualTitle": "A randomized, double-blind, placebo-controlled, repeated-dose pilot study of the safety, tolerability, and preliminary effects of a cannabidiol (CBD)- and cannabigerol (CBG)-based beverage powder to support recovery from delayed onset muscle soreness (DOMS)",
+        "actualDoi": "10.1080/15502783.2023.2280113"
+      },
+      "exclusionReason": "Source identity mismatch: the local PDF contains a CBD/CBG beverage pilot study for delayed-onset muscle soreness rather than the healthy-weight-gain trial named by the file."
+    },
+    {
+      "originalQueueOrder": 3,
+      "sourceFile": "Basal Serum Cortisol and   Testosterone-Cortisol Ratio Are Related to Rate of Na+ Lost During  Exercise  in Elite Soccer Players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 36019,
+        "doi": "10.1123/ijsnem.2019-0129"
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Monitoring & Technology",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "In 22 elite male soccer players, basal cortisol correlated positively with exercise sodium-loss rate (r=.43), while the testosterone-to-cortisol ratio correlated negatively (r=-.46), independent of sweating rate. The proposed cystic-fibrosis-transmembrane-conductance-regulator mechanism was not tested.",
+      "limitations": "The small cross-sectional male sample, single training-session sweat collection, correlational analysis, and multiple hormonal and environmental influences preclude causal inference or individual sodium-prescription thresholds. Serum hormones are variable and the proposed transport mechanism remains speculative.",
+      "synthesisCaution": "Do not use basal cortisol or the testosterone-to-cortisol ratio to prescribe sodium; measure individual sweat rate and sodium loss under representative conditions when replacement precision matters.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "482",
+        "synthesisBatch": "pilot-synthesis-batch-05",
+        "publishedOn": "2026-07-21"
+      }
+    },
+    {
+      "originalQueueOrder": 4,
+      "sourceFile": "Change of Direction Deficit vs Deceleration Deficit - A Comparison of Limb Dominance and Inter limb Asymmetry between Forwards and Backs in Elite Male Rugby Union Players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 48464,
+        "doi": "10.1080/02640414.2020.1857578"
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Twenty-five elite male rugby-union players completed bilateral jumps, linear speed, change-of-direction, and deceleration tests. Limb-dominance agreement between change-of-direction and deceleration deficits was only moderate, asymmetry direction varied by task, and deficit or asymmetry metrics were weakly related to general jump and speed performance.",
+      "limitations": "The small male elite-rugby sample was tested once at the end of preseason. Cross-sectional associations, test-specific calculations, and no reliability, injury, or intervention outcomes prevent stable athlete labeling or causal performance claims.",
+      "synthesisCaution": "Treat change-of-direction deficit, deceleration deficit, and asymmetry as distinct task-specific measures; do not transfer the favored limb or one deficit score across tests.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "483",
+        "synthesisBatch": "pilot-synthesis-batch-05",
+        "publishedOn": "2026-07-21"
+      }
+    },
+    {
+      "originalQueueOrder": 5,
+      "sourceFile": "Comparisons of new body load and metabolic power average workload indices between starters and non-starters - A full-season study in professional soccer players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 35400,
+        "doi": "10.1177/1754337120974873"
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Twenty-one Iranian Premier League players were monitored with GPS across a full season and classified weekly as starters or nonstarters. Starters showed very large higher body-load- and metabolic-power-derived monotony and strain in early, mid, and end-season periods, reflecting match-related exposure differences.",
+      "limitations": "One small team, weekly changing group membership, proprietary derived indices, repeated observations, and no direct injury, readiness, or performance outcomes limit interpretation. Monotony and strain calculations inherit measurement and conceptual limitations from their input metrics.",
+      "synthesisCaution": "Use the findings to flag starter–nonstarter exposure divergence, not to infer injury risk from a derived workload index or impose universal monotony and strain cutoffs.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "484",
+        "synthesisBatch": "pilot-synthesis-batch-05",
+        "publishedOn": "2026-07-21"
+      }
+    },
+    {
+      "originalQueueOrder": 6,
+      "sourceFile": "Cutoffs of isokinetic strength      ratio and hamstring strain prediction in professional soccer   players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 29244,
+        "doi": "10.1111/sms.12890"
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Preseason bilateral, conventional, and functional isokinetic ratios were evaluated in 194 professional soccer players across 15 seasons; 36 later sustained moderate hamstring strain. Neither common published cutoffs nor cohort-specific 10th-percentile cutoffs predicted injury.",
+      "limitations": "Injuries were relatively few, exposures spanned 15 seasons, and ratio cutoffs reduce continuous, protocol-specific strength measures to binary labels. The design cannot rule out other hamstring-risk factors or show that isokinetic strength lacks value for capacity assessment.",
+      "synthesisCaution": "Do not use an isokinetic ratio cutoff to predict who will sustain a hamstring injury; interpret absolute strength and ratios as capacity information within a multifactorial assessment.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "485",
+        "synthesisBatch": "pilot-synthesis-batch-05",
+        "publishedOn": "2026-07-21"
+      }
+    },
+    {
+      "originalQueueOrder": 7,
+      "sourceFile": "Muscle activity and kinematics during three hamstring strengthening exercises compared to sprinting - A cross-sectional study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 51044,
+        "doi": "10.26603/001c.116158"
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Male Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Eight male athletes completed three hip-dominant exercises, Nordic hamstring exercise, and treadmill running. Explosive rocker and fast-perpetuum-mobile variants produced the greatest hamstring activity, but every exercise reached peak activity at shorter hamstring lengths than high-speed running and therefore did not reproduce sprint elongation stress.",
+      "limitations": "Only eight healthy men were assessed cross-sectionally, surface electromyography does not directly measure muscle force or adaptation, treadmill running at 75% of maximal speed differs from field sprinting, and no injury or training outcomes were tested.",
+      "synthesisCaution": "Select exercises for their specific activation, joint, speed, and length demands; high electromyographic activity does not make an exercise mechanically equivalent to sprinting or prove injury prevention.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "486",
+        "synthesisBatch": "pilot-synthesis-batch-05",
+        "publishedOn": "2026-07-21"
+      }
+    },
+    {
+      "originalQueueOrder": 8,
+      "sourceFile": "A qualitative study of 11 world-class team sport athletes' experiences answering subjective questionnairs - A key ingredient for visible health and performance monitoring.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 73603,
+        "doi": "10.1007/s40279-023-01814-3"
+      },
+      "studyDesign": "Qualitative Study",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Monitoring & Technology",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Female Athletes",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Phenomenological interviews with 11 world-class team-sport athletes produced four themes: pursuit of the ideal self, individual barriers, social facilitators, and compassion from performance staff. Athletes described emotions and staff relationships as important influences on honest subjective-monitoring responses.",
+      "limitations": "The purposive sample was small and elite, interview accounts are context dependent, and the blended thematic story cannot estimate prevalence or prove that a specific staff behavior changes response validity. Researcher interpretation is inherent to qualitative analysis.",
+      "synthesisCaution": "Treat subjective data quality as a relational and system-design issue, not an athlete character flaw; the themes guide better practice but do not validate a questionnaire or response-correction formula.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "487",
+        "synthesisBatch": "pilot-synthesis-batch-05",
+        "publishedOn": "2026-07-21"
+      }
+    },
+    {
+      "originalQueueOrder": 9,
+      "sourceFile": "Pectoralis Major ruptures during rugby league tackling – case series with implications for tackling technique instruction .pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 29072,
+        "doi": "10.1016/j.jsams.2019.08.011"
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Three players from one 36-man professional rugby-league squad sustained complete pectoralis-major tears while tackling in the same season after a defensive approach change. All were in outer-range shoulder abduction and horizontal abduction at contact, underwent acute repair, and returned at the same level.",
+      "limitations": "A three-case series cannot estimate causal risk, separate technique from exposure or chance, or establish that the organizational change caused the cluster. Mechanism was reconstructed from limited observations and all cases came from one squad and season.",
+      "synthesisCaution": "Use the cluster as a mechanism and implementation warning when changing tackle technique, not proof that one shoulder position or coaching method causes pectoralis rupture.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "488",
+        "synthesisBatch": "pilot-synthesis-batch-05",
+        "publishedOn": "2026-07-21"
+      }
+    },
+    {
+      "originalQueueOrder": 10,
+      "sourceFile": "Practices and perceptions in hamstring training for injury prevention and enhancement of athletic performance - A qualitative analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 53080,
+        "doi": "10.1177/17479541251374792"
+      },
+      "studyDesign": "Qualitative Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Interviews with 12 practitioners identified limited athlete contact, fixture congestion, and multidisciplinary planning as constraints on hamstring programs. Practitioners described microdosing and isometrics as adaptations, while low-volume Nordic and minimum-effective-dose research was not consistently translated into practice.",
+      "limitations": "The small purposive practitioner sample, self-reported practices, mixed sports and roles, and qualitative analysis do not establish intervention effectiveness or how common a practice is. The study identifies implementation themes rather than comparative training outcomes.",
+      "synthesisCaution": "Use the findings to improve communication, planning, education, and implementation fidelity; do not treat practitioner preference as efficacy evidence or one microdose strategy as universally optimal.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "489",
+        "synthesisBatch": "pilot-synthesis-batch-05",
+        "publishedOn": "2026-07-21"
+      }
+    },
+    {
+      "originalQueueOrder": 11,
+      "sourceFile": "The safety of blood flow restriction training as a therapeutic intervention for patients with musculoskleletal disorders - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 71280,
+        "doi": "10.1177/0363546519882652"
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Nineteen studies involving 322 musculoskeletal patients reported 14 adverse events; 10 of 168 blood-flow-restriction participants and 4 of 154 controls had any event. Three rare events occurred in blood-flow-restriction groups, including deep-vein thrombosis and rhabdomyolysis, while randomized trials did not show higher overall event likelihood than exercise alone.",
+      "limitations": "Many candidate studies did not report safety, adverse-event definitions and protocols varied, samples were small, and evidence was concentrated in knee conditions. Absence of reported events is not proof of absence, and the review could not define risk for all diagnoses or screen-positive patients.",
+      "synthesisCaution": "Blood-flow restriction can be considered with medical screening, individualized occlusion pressure, supervision, and event monitoring; describe apparent safety in studied knee populations without calling it risk free.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "490",
+        "synthesisBatch": "pilot-synthesis-batch-05",
+        "publishedOn": "2026-07-21"
+      }
+    },
+    {
+      "originalQueueOrder": 12,
+      "sourceFile": "A systematic review of resistance training methodogies for the development of lower body concentric mean power, peak power, and mean propulsive power in team-sport athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 35,
+        "extractedCharacters": 113827,
+        "doi": "10.1080/14763141.2021.1948601"
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Nineteen studies were reviewed for lower-body concentric mean, peak, and mean-propulsive power in team-sport athletes. Traditional strength and combination methods had the strongest evidence; optimal-load and velocity-based approaches were supported when monitoring was available, while flywheel, eccentric-overload, and weightlifting evidence was favorable but lower level.",
+      "limitations": "Studies varied in athletes, training status, methods, power definitions, devices, intervention duration, and reporting of sport and resistance-training load. Several methods had few studies, and the review did not establish one best program across season phases or sports.",
+      "synthesisCaution": "Choose a method that fits the athlete, season, equipment, and target power metric, and track the actual stimulus; evidence hierarchy does not mean one method is universally superior.",
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "491",
+        "synthesisBatch": "pilot-synthesis-batch-05",
+        "publishedOn": "2026-07-21"
+      }
+    }
+  ]
+}

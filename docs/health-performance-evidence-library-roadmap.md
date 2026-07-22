@@ -1,7 +1,7 @@
 # Baylor Athletics Health & Performance Evidence Library Roadmap
 
 **Adopted:** July 21, 2026
-**Status:** Phase 3 implemented; Phase 4 Batches 01–04 published
+**Status:** Phase 3 implemented; Phase 4 Batches 01–05 published
 **Product name:** Baylor Athletics Health & Performance Evidence Library
 
 ## Decision
@@ -37,14 +37,14 @@ These counts supersede the older filename-filter estimate in `session.md`.
 
 The July 21 cleanup removed 26 verified duplicate rows, repaired the malformed source links, separated two records that had been assigned the wrong shared source, restored the previously unreadable workload paper from its PDF, corrected one DOI/citation, and completed the blank return-to-sport field.
 
-The baseline began at 407 canonical rows. After four full-text-reviewed pilot batches, the reproducible manifest at `docs/library-coverage-manifest.json` now reports:
+The baseline began at 407 canonical rows. After five full-text-reviewed pilot batches, the reproducible manifest at `docs/library-coverage-manifest.json` now reports:
 
-- 454 canonical published rows with 454 unique stable IDs
-- 445 local source-backed rows, 8 Baylor internal rows, and 1 DOI-backed external row
+- 465 canonical published rows with 465 unique stable IDs
+- 456 local source-backed rows, 8 Baylor internal rows, and 1 DOI-backed external row
 - no repeated or unresolved local source references
 - no missing required fields or schema mismatches
 - 2,155 PDFs representing 2,125 unique file contents
-- 441 unique local source contents represented and 1,684 unrepresented
+- 452 unique local source contents represented and 1,673 unrepresented
 - all five publication quality gates passing
 
 Run `npm run audit` before publication and `npm run audit:manifest` whenever the corpus or published library changes.
@@ -138,11 +138,13 @@ The UI applies OR logic within a filter dimension and AND logic across dimension
 - [x] Publish Batch 03 as stable IDs 458–468
 - [x] Full-text screen and audit Batch 04: 12 INCLUDE, 0 EXCLUDE, 0 DEGRADED
 - [x] Publish Batch 04 as stable IDs 469–480
+- [x] Full-text screen and audit Batch 05: 11 INCLUDE, 1 EXCLUDE, 0 DEGRADED
+- [x] Publish Batch 05 as stable IDs 481–491
 - Include cross-sport and underrepresented population evidence intentionally; do not rely only on the existing backlog's distribution
 - Process in small audited batches with source, extraction, synthesis, and verification gates
 - Publish only after duplicate and schema checks pass
 
-The active queue is stored in `docs/pilot-expansion-shortlist.md` and `docs/pilot-expansion-shortlist.json`; durable batch decisions live under `docs/pilot-screening/`, and publication-ready records live under `docs/pilot-synthesis/`. Batches 01–04 verified and published 47 readable, eligible local sources, with one mislabeled source excluded. Their reviewed primary-domain distribution is 12 Monitoring & Technology, 11 Sports Medicine & Injury, 10 Training & Performance, 7 Recovery & Readiness, 4 Nutrition & Hydration, and 3 Rehabilitation & Return to Sport.
+The active queue is stored in `docs/pilot-expansion-shortlist.md` and `docs/pilot-expansion-shortlist.json`; durable batch decisions live under `docs/pilot-screening/`, and publication-ready records live under `docs/pilot-synthesis/`. Batches 01–05 verified and published 58 readable, eligible local sources, with two mislabeled sources excluded. Their reviewed primary-domain distribution is 14 Monitoring & Technology, 14 Sports Medicine & Injury, 12 Training & Performance, 7 Recovery & Readiness, 5 Nutrition & Hydration, 4 Rehabilitation & Return to Sport, 1 Brain Health & Psychology, and 1 Athlete Wellbeing.
 
 Published screening decisions leave the active queue, which is replenished to 96 unrepresented candidates with 12 per pilot domain. Primary-domain matches fill each domain first. Athlete Wellbeing currently requires seven explicitly labeled secondary-title matches because only five unrepresented candidates have it as their strongest title signal. Generic physical `stress` wording is excluded from the Wellbeing rule to prevent heat-stress and bone-stress false positives.
 
@@ -163,4 +165,4 @@ Use an evenly balanced first pilot—12 candidates in each of the eight domains�
 
 ## Next Gate
 
-Full-text screen Batch 05 from the replenished balanced queue, then convert only INCLUDE decisions into the next structured synthesis batch. A candidate enters synthesis only after source identity, eligibility, study-design, domain, sport/population, and duplicate-content checks pass. The next unused stable ID is 481. Run `npm run audit:screening` after recording a batch, `npm run synthesis:apply` to publish reviewed synthesis records, and `npm run pilot:shortlist` to replenish the queue.
+Full-text screen Batch 06 from the replenished balanced queue, then convert only INCLUDE decisions into the next structured synthesis batch. A candidate enters synthesis only after source identity, eligibility, study-design, domain, sport/population, and duplicate-content checks pass. The next unused stable ID is 492. Run `npm run audit:screening` after recording a batch, `npm run synthesis:apply` to publish reviewed synthesis records, and `npm run pilot:shortlist` to replenish the queue.
