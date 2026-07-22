@@ -8,30 +8,30 @@ This queue contains 96 unrepresented, content-deduplicated local PDFs: 12 alloca
 
 ## Training & Performance
 
-1. **Examination of the Impact of Substance Use on Sport Training and Competition in Collegiate Athletes** — Other — TITLE SCREENED<br>
-   `Examination of the Impact of Substance Use on Sport Training and Competition in Collegiate Athletes.pdf`
-2. **On the value of a premium college football player - Evaluating the literature** — Other — TITLE SCREENED<br>
-   `On the value of a premium college football player - Evaluating the literature.pdf`
-3. **Injury prevention in professional soccer players - Can re-warmup training be organized in the post-warmup and half-time during a soccer game in a short time** — Other — TITLE SCREENED<br>
-   `Injury prevention in professional soccer players - Can re-warmup training be organized in the post-warmup and half-time during a soccer game in a short time.pdf`
-4. **Muscle activity asymmetry of the lower limbs during sprinting in elite soccer players** — Other — TITLE SCREENED<br>
-   `Muscle activity asymmetry of the lower limbs during sprinting in elite soccer players.pdf`
-5. **Peak instantaneous PlayerLoad metrics highlight movement strategy deficits in professional male soccer players** — Other — TITLE SCREENED<br>
-   `Peak instantaneous PlayerLoad metrics highlight movement strategy deficits in professional male soccer players.pdf`
-6. **Performance of Future Elite Players at The NFL Combine** — Other — TITLE SCREENED<br>
-   `Performance of Future Elite Players at The NFL Combine.pdf`
-7. **Effects of chronic static stretching interventions on jumping and sprinting performance - A systematic review with multilevel meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Effects of chronic static stretching interventions on jumping and sprinting performance - A systematic review with multilevel meta-analysis.pdf`
-8. **Effects of combined uphill-downhill sprinting vs resisted sprinting methods on sprint performance - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Effects of combined uphill-downhill sprinting vs resisted sprinting methods on sprint performance - A systematic review and meta-analysis.pdf`
-9. **Effects of Post-Exercise Heat Exposure on Acute Recovery and Training-Induced Performance Adaptations - A Systematic Review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Effects of Post-Exercise Heat Exposure on Acute Recovery and Training-Induced Performance Adaptations - A Systematic Review.pdf`
-10. **Effects of Resisted-Sprint Training on Sprint Performance and Mechanics - A Systematic Review and Meta-AnalysisFocusing on Load Magnitude** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Effects of Resisted-Sprint Training on Sprint Performance and Mechanics - A Systematic Review and Meta-AnalysisFocusing on Load Magnitude.pdf`
-11. **Effects of sleep deprivation on sports performance and perceived exertion in athletes and non-athletes -A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Effects of sleep deprivation on sports performance and perceived exertion in athletes and non-athletes -A systematic review and meta-analysis.pdf`
-12. **Efficacy of heavy eccentric calf training for treating mid-portion Achilles tendinopathy- a systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Efficacy of heavy eccentric calf training for treating mid-portion Achilles tendinopathy- a systematic review and meta-analysis.pdf`
+1. **Relationship between Pre-Training Subjective Wellness Measures, Player Load and Rating of Perceived Exertion Training Load in American College Football** — Other — TITLE SCREENED<br>
+   `Relationship between Pre-Training     Subjective Wellness Measures, Player Load and Rating of Perceived   Exertion   Training Load in American College Football.pdf`
+2. **Severe exercise associated hyponatremia in a collegiate American footbal player** — Other — TITLE SCREENED<br>
+   `Severe exercise associated              hyponatremia in a collegiate American footbal player.pdf`
+3. **The effect of tissue flossing on ankle range of motion, jump, and sprint performance in elite rugby union athletes** — Other — TITLE SCREENED<br>
+   `The effect of tissue flossing on ankle range of motion, jump, and sprint performance in elite rugby union athletes.pdf`
+4. **The influence of injury history on countermovement jump performance and movement strategy in professional soccer players - Implications for profiling and rehabilitation foci** — Other — TITLE SCREENED<br>
+   `The influence of injury history on countermovement jump performance and movement strategy in professional soccer players - Implications for profiling and rehabilitation foci.pdf`
+5. **The influence of weekly sprint volume and maximal velocity exposures on eccentric hamstring strength in professional soccer players** — Other — TITLE SCREENED<br>
+   `The influence of weekly sprint volume and maximal velocity exposures on eccentric hamstring strength in professional soccer players.pdf`
+6. **The loading impact of training and match-play on non-contact muscle injuries in elite male soccer players - A seasonal analysis** — Other — TITLE SCREENED<br>
+   `The loading impact of training and match-play on non-contact muscle injuries in elite male soccer players - A seasonal analysis.pdf`
+7. **Quantifying demands on the hamstrings during high-speed running - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Quantifying demands on the hamstrings during high-speed running - A systematic review and meta-analysis.pdf`
+8. **Reactive strength index and its associations with measures of physical and sports performance - A systematic review with meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Reactive strength index and its associations with measures of physical and sports performance - A systematic review with meta-analysis.pdf`
+9. **Reactive strength index as a key performance indicator in different athlete populations - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Reactive strength index as a key performance indicator in different athlete populations - A systematic review.pdf`
+10. **Resistance training load effects on muscle hypertrophy and strength gain - Systematic review and network meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Resistance training load effects on muscle hypertrophy and strength gain - Systematic review and network meta-analysis.pdf`
+11. **Science or hype - Non-invasive brain stimulation and sport-specific performance - Evidence from a systematic review and three-level meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Science or hype - Non-invasive brain stimulation and sport-specific performance - Evidence from a systematic review and three-level meta-analysis.pdf`
+12. **Sleep interventions for performance, mood and sleep outcomes in athletes - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Sleep interventions for performance, mood and sleep outcomes in athletes - A systematic review and meta-analysis.pdf`
 
 ## Sports Medicine & Injury
 

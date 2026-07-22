@@ -52,7 +52,7 @@ An expandable evidence table that gives each paper a plain-language TLDR, method
 | 7 | L5-S1 Rehab Protocol: Post-Microdiscectomy DL | Injury Prevention / RTP |
 | 8 | Gridiron Blueprint: Actionable Summary for Coaches and Dietitians | Nutrition / Coaching |
 
-All internal papers were sourced from the Baylor Applied Performance Google Drive. The local `SourcePapers/` corpus contains 2,155 PDFs representing 2,125 unique file contents. After the July 21, 2026 cleanup and the first nine reviewed pilot batches, the library contains 513 canonical rows: 504 distinct local source PDFs, eight Baylor internal documents, and one DOI-backed external paper. By file content, 500 unique local sources are represented and 1,625 remain unrepresented. The pilot has published 106 full-text-reviewed papers and excluded two mislabeled sources.
+All internal papers were sourced from the Baylor Applied Performance Google Drive. The local `SourcePapers/` corpus contains 2,155 PDFs representing 2,125 unique file contents. After the July 21, 2026 cleanup and 12 reviewed pilot batches, the library contains 549 canonical rows: 540 distinct local source PDFs, eight Baylor internal documents, and one DOI-backed external paper. By file content, 536 unique local sources are represented and 1,589 remain unrepresented. The pilot has published 142 full-text-reviewed papers and excluded two mislabeled sources.
 
 ## Technical Details
 
@@ -109,7 +109,7 @@ All internal papers were sourced from the Baylor Applied Performance Google Driv
 ## Next Steps
 
 1. Use the automated audit and coverage manifest as the publication gate for every future batch
-2. Full-text screen Batch 10 from the replenished 96-paper queue in `docs/pilot-expansion-shortlist.md`
+2. Full-text screen Batch 13 from the replenished 96-paper queue in `docs/pilot-expansion-shortlist.md`
 3. Convert only audited INCLUDE decisions into versioned records under `docs/pilot-synthesis/`
 4. Replace rules-based legacy taxonomy with staff-reviewed overrides as issues are identified
 5. Publish only candidates that pass source, eligibility, taxonomy, extraction, synthesis, and duplicate gates
@@ -120,4 +120,4 @@ All internal papers were sourced from the Baylor Applied Performance Google Driv
 
 **Department:** Applied Performance, Baylor University Athletics
 **Lead:** Eric Rash, Director of Applied Performance
-**Updated:** July 21, 2026
+**Updated:** July 22, 2026
