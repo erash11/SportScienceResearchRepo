@@ -3,7 +3,6 @@
 // Legacy records are normalized at the data-loading seam before the UI uses them.
 
 const GITHUB_URL = "https://raw.githubusercontent.com/erash11/SportScienceResearchRepo/master/papers.json";
-const SUBMIT_FORM_URL = "https://docs.google.com/forms/d/1CTuXolDntwAXIkASta7_0rP1PtjCCC5xAWvtt1n1pAI/viewform";
 const PAPERS_PER_PAGE = 50;
 
 // Easy-to-tune display knobs (were Tweaks panel controls in the design file).
@@ -261,9 +260,6 @@ export default function HealthPerformanceEvidenceLibrary() {
             {years.map(y => <option key={y} value={y}>{y}</option>)}
           </select>
           <button onClick={exportCSV} style={{ padding: "10px 18px", borderRadius: 999, border: "none", background: "#FFB81C", color: "#154734", fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", cursor: "pointer", fontFamily: "'DIN Pro Condensed','DIN Pro',sans-serif" }}>Export CSV</button>
-          <a href={SUBMIT_FORM_URL} target="_blank" rel="noopener noreferrer" style={{ padding: "10px 18px", borderRadius: 999, background: "#154734", color: "#fff", fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", fontFamily: "'DIN Pro Condensed','DIN Pro',sans-serif", textDecoration: "none" }}>
-            + Submit a Paper
-          </a>
         </div>
         <div style={{ display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap", marginTop: 12 }}>
           <FilterGroup label="Domain" options={TAXONOMY.domains} selected={filters.domains} onToggle={(value) => toggleFilter("domains", value)} />

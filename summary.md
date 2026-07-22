@@ -19,7 +19,7 @@ An expandable evidence table that gives each paper a plain-language TLDR, method
 - Full-text search across all fields (citation, abstract, TLDR, findings, methods, and all application columns)
 - Year, domain, audience, sport, population, and study-design filtering with sortable column headers
 - CSV export for offline access and sharing
-- Google Form submission link allowing any staff member to recommend new research
+- Curated publication workflow so every new paper is reviewed before it appears in the library
 - GitHub-backed shared data so published additions are visible to the entire team
 - Pagination (50 papers/page) with global row numbers
 - Expandable rows that keep the main table compact while exposing full evidence details
@@ -52,7 +52,7 @@ An expandable evidence table that gives each paper a plain-language TLDR, method
 | 7 | L5-S1 Rehab Protocol: Post-Microdiscectomy DL | Injury Prevention / RTP |
 | 8 | Gridiron Blueprint: Actionable Summary for Coaches and Dietitians | Nutrition / Coaching |
 
-All internal papers were sourced from the Baylor Applied Performance Google Drive. The local `SourcePapers/` corpus contains 2,155 PDFs representing 2,125 unique file contents. After the July 21, 2026 cleanup and the first seven reviewed pilot batches, the library contains 489 canonical rows: 480 distinct local source PDFs, eight Baylor internal documents, and one DOI-backed external paper. By file content, 476 unique local sources are represented and 1,649 remain unrepresented. The pilot has published 82 full-text-reviewed papers and excluded two mislabeled sources.
+All internal papers were sourced from the Baylor Applied Performance Google Drive. The local `SourcePapers/` corpus contains 2,155 PDFs representing 2,125 unique file contents. After the July 21, 2026 cleanup and the first eight reviewed pilot batches, the library contains 501 canonical rows: 492 distinct local source PDFs, eight Baylor internal documents, and one DOI-backed external paper. By file content, 488 unique local sources are represented and 1,637 remain unrepresented. The pilot has published 94 full-text-reviewed papers and excluded two mislabeled sources.
 
 ## Technical Details
 
@@ -62,7 +62,7 @@ All internal papers were sourced from the Baylor Applied Performance Google Driv
 | Styling | Inline CSS (no CSS framework) |
 | Typography | Baylor Bears and self-hosted DIN Pro fonts |
 | Primary data store | GitHub public repo (`erash11/SportScienceResearchRepo`, `master` branch, `papers.json`) |
-| Staff submission intake | Google Form; reviewed before manual publication to `papers.json` |
+| Public submission intake | Not exposed; papers enter through the curated review and publication workflow |
 | Data format | JSON array of paper objects (13-field legacy schema) |
 | File format | Single .jsx file |
 | Hosting | GitHub Pages via Vite and GitHub Actions |
@@ -71,9 +71,9 @@ All internal papers were sourced from the Baylor Applied Performance Google Driv
 
 ## Workflows
 
-### Staff Adds a Paper
-1. Staff submits the linked Google Form
-2. Eric reviews the recommendation and creates a schema-valid paper record
+### Curated Paper Addition
+1. A candidate paper is placed in `SourcePapers/` or otherwise selected for review
+2. Eric and the AI-assisted review workflow create and verify a schema-valid paper record
 3. The approved record is merged into `papers.json` and committed
 4. The application loads the new record after deployment/cache refresh
 
@@ -109,7 +109,7 @@ All internal papers were sourced from the Baylor Applied Performance Google Driv
 ## Next Steps
 
 1. Use the automated audit and coverage manifest as the publication gate for every future batch
-2. Full-text screen Batch 08 from the replenished 96-paper queue in `docs/pilot-expansion-shortlist.md`
+2. Full-text screen Batch 09 from the replenished 96-paper queue in `docs/pilot-expansion-shortlist.md`
 3. Convert only audited INCLUDE decisions into versioned records under `docs/pilot-synthesis/`
 4. Replace rules-based legacy taxonomy with staff-reviewed overrides as issues are identified
 5. Publish only candidates that pass source, eligibility, taxonomy, extraction, synthesis, and duplicate gates

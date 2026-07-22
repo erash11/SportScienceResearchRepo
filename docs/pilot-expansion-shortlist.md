@@ -8,30 +8,30 @@ This queue contains 96 unrepresented, content-deduplicated local PDFs: 12 alloca
 
 ## Training & Performance
 
-1. **The Impact of Localized Muscle Mass on Sprint Mechanics During the Swing and Stance Phases of Division I Collegiate American Football Players** — Other — TITLE SCREENED<br>
-   `The Impact of Localized Muscle Mass on Sprint Mechanics During the Swing and Stance Phases of Division I Collegiate American Football Players.pdf`
-2. **Association between collision sport career duration and gait performance in male collegiate student-athletes** — Other — TITLE SCREENED<br>
-   `Association between collision sport career duration and gait performance in male collegiate student-athletes.pdf`
-3. **Feedback of GPS training data within professional English soccer A comparison of decision making and perceptions between coaches players and (1)** — Other — TITLE SCREENED<br>
-   `Feedback of GPS training data within professional English soccer A comparison of decision making and perceptions between coaches players and (1).pdf`
-4. **Hamstring injury occurrence in elite soccer players after preseason strength training with eccentric overload** — Other — TITLE SCREENED<br>
-   `Hamstring injury occurrence in elite soccer players   after preseason strength training with eccentric overload.pdf`
-5. **How does the workload applied during the training week and the contextual factors affect the physical responses of professional soccer players in the match** — Other — TITLE SCREENED<br>
-   `How does the workload applied during the training week and the contextual factors affect the physical responses of professional soccer players in the match.pdf`
-6. **Cannabis use and sport - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Cannabis use and sport - A systematic review.pdf`
-7. **Cardiovascular Health of Retired Field-Based Athletes A Systematic Review and Meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Cardiovascular Health of Retired    Field-Based Athletes A Systematic Review and Meta-analysis.pdf`
-8. **Clinical risk factors for Achilles tendinopathy- a systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Clinical risk factors for Achilles   tendinopathy- a systematic review.pdf`
-9. **Core body temperatures in intermittent sports - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Core body temperatures in intermittent sports - A systematic review.pdf`
-10. **Current Evidence for the Use of Jugular Vein Compression Collars in Sport - A Systematic Review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Current Evidence for the Use of Jugular Vein Compression Collars in Sport - A Systematic Review.pdf`
-11. **Dehydration Impairs Cognitive Performance- A Meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Dehydration Impairs Cognitive Performance- A Meta-analysis.pdf`
-12. **Do multi-ingredient protein supplements augment resistance training-induced gains in skeletal muscle mass and strength - A systematic review and meta-analysis of 35 trials** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Do multi-ingredient protein supplements augment resistance training-induced gains in skeletal muscle mass and strength - A systematic review and meta-analysis of 35 trials.pdf`
+1. **Association of social media use on sleep quality and performance among collegiate athletes** — Other — TITLE SCREENED<br>
+   `Association of social media use on sleep quality and performance among collegiate athletes.pdf`
+2. **Does it matter - Isometric or isokinetic assessment of quadriceps strength symmetry 9 months after ACLR in collegiate athletes** — Other — TITLE SCREENED<br>
+   `Does it matter - Isometric or isokinetic assessment of quadriceps strength symmetry 9 months after ACLR in collegiate athletes.pdf`
+3. **Impact of Sled Loads on Performance and Kinematics of Elite Sprinters and Rugby Players** — Other — TITLE SCREENED<br>
+   `Impact of Sled Loads on Performance and Kinematics of Elite Sprinters and Rugby Players.pdf`
+4. **Importance of Various Training-Load Measures in Injury Incidence of Professional Rugby League Athletes** — Other — TITLE SCREENED<br>
+   `Importance of Various Training-Load Measures in Injury Incidence of Professional Rugby League Athletes.pdf`
+5. **Individual in-situ GPS derived accleration speed profiling - Toward automatization and refinement in male professional rugby union players** — Other — TITLE SCREENED<br>
+   `Individual in-situ GPS derived accleration speed profiling - Toward automatization and refinement in male professional rugby union players.pdf`
+6. **Inertial flywheel knee and hip dominant hamstring strength exercises in professional soccer players - Muscle use and velocity based eccentric overload** — Other — TITLE SCREENED<br>
+   `Inertial flywheel knee and hip dominant hamstring strength exercises in professional soccer players - Muscle use and velocity based eccentric overload.pdf`
+7. **Do sports compression garments alter measures of peripheral blood flow - A systematic review with meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Do sports compression garments alter measures of peripheral blood flow - A systematic review with meta-analysis.pdf`
+8. **Does resisted sprint training improve the sprint performance of field-based invasion team sport players - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Does resisted sprint training improve the sprint performance of field-based invasion team sport players - A systematic review and meta-analysis.pdf`
+9. **Efects of Warm‑Up, Post‑Warm‑Up, and Re‑Warm‑Up Strategies on Explosive Eforts in Team Sports- A Systematic Review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Efects of Warm‑Up, Post‑Warm‑Up, and Re‑Warm‑Up Strategies on Explosive Eforts in Team Sports- A Systematic Review.pdf`
+10. **Effect of movement velocity during resistance training on dynamic muscular strength - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Effect of movement velocity during      resistance training on dynamic muscular strength - A systematic review    and   meta-analysis.pdf`
+11. **Effects of acute sleep deprivation on sporting performance in athletes - A comprehensive systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Effects of acute sleep deprivation on sporting performance in athletes - A comprehensive systematic review and meta-analysis.pdf`
+12. **Effects of bilateral and unilateral resistance training on horizontally orientated movement performance - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Effects of bilateral and unilateral resistance training on horizontally orientated movement performance - A systematic review and meta-analysis.pdf`
 
 ## Sports Medicine & Injury
 

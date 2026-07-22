@@ -13,8 +13,8 @@
 Removed all `window.storage` / pending queue / in-app upload form logic:
 - Component went from ~450 lines to ~280 lines
 - Data flow is now: fetch `papers.json` from GitHub → render. That's it.
-- "Submit a Paper" button links to Google Form (`SUBMIT_FORM_URL` constant at top of component)
-- Google Form partially built (title, description, first 3 questions); revisit to complete later
+- The temporary Google Form submission link was removed on 2026-07-22. It was incomplete and implied a direct publishing workflow that the static site does not provide.
+- Papers continue to enter the library through the curated import and review workflow.
 - `preview-main.jsx` simplified — no longer needs localStorage mock
 
 ## UI Changes (2026-03-24)

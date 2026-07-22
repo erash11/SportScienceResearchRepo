@@ -45,7 +45,7 @@ Paper data has a single source:
 | `index.html` | Vite entry point → `preview-main.jsx` |
 | `preview-main.jsx` | Mounts `<HealthPerformanceEvidenceLibrary />` |
 | `evidence-taxonomy.mjs` | Controlled vocabularies, deterministic inference, and backward-compatible `normalizePaper` adapter |
-| `paper-taxonomy.json` | 489-row taxonomy sidecar; generated legacy rows are marked unreviewed and published pilot rows retain full-text-reviewed provenance |
+| `paper-taxonomy.json` | 501-row taxonomy sidecar; generated legacy rows are marked unreviewed and published pilot rows retain full-text-reviewed provenance |
 | `.github/workflows/deploy.yml` | Auto-deploys `dist/` to `gh-pages` branch on every push to `master` |
 
 **To deploy:** just `git push origin master` — Actions handles the rest.
@@ -53,7 +53,7 @@ Paper data has a single source:
 ## Adding Papers
 
 - **Batch import (AI agents):** Process selected PDFs from `SourcePapers/`, generate paper objects with the 13-field legacy schema, merge into `papers.json`, then run `npm run taxonomy:build`. IDs must be stable numeric strings; assign from the next unused ID and never reuse a removed ID. Do not use `Date.now()` for batch imports. Run `npm run audit` before publishing.
-- **Staff submissions:** Via Google Form (link in the app's "Submit a Paper" button). Eric manually reviews responses and adds them to `papers.json`. See `SUBMIT_FORM_URL` constant at the top of `football-research-library.jsx`.
+- **Public submissions:** The site does not expose a submission control. Papers are added through the curated batch-import and review workflow above so the public interface does not imply that a submission will be published automatically.
 
 ## Paper Data Schema
 
@@ -114,16 +114,16 @@ Two style objects reused across cells — `th` (header), `td` (data cell).
 
 ## Batch Import Progress
 
-Current state: **489 canonical published rows** in `papers.json` (highest assigned stable ID 515, with verified duplicate IDs removed and never reused). `session.md` preserves the April batch-import checkpoint, but its processed/remaining counts are superseded by `docs/library-coverage-manifest.json`.
+Current state: **501 canonical published rows** in `papers.json` (highest assigned stable ID 527, with verified duplicate IDs removed and never reused). `session.md` preserves the April batch-import checkpoint, but its processed/remaining counts are superseded by `docs/library-coverage-manifest.json`.
 
-- 8 Baylor internal entries, 1 DOI-backed external entry, and 480 local source-backed entries
-- 480 distinct local source PDFs represented; no repeated or unresolved local source references
+- 8 Baylor internal entries, 1 DOI-backed external entry, and 492 local source-backed entries
+- 492 distinct local source PDFs represented; no repeated or unresolved local source references
 - 2,155 local PDFs contain 2,125 unique file contents because 30 filename pairs are byte-identical
-- 476 unique source contents represented; 1,649 unique source contents remain unrepresented
-- Pilot Batches 01–07 published 82 full-text-reviewed records and excluded 2 verified source-identity mismatches; screening and synthesis provenance are preserved under `docs/pilot-screening/` and `docs/pilot-synthesis/`
+- 488 unique source contents represented; 1,637 unique source contents remain unrepresented
+- Pilot Batches 01–08 published 94 full-text-reviewed records and excluded 2 verified source-identity mismatches; screening and synthesis provenance are preserved under `docs/pilot-screening/` and `docs/pilot-synthesis/`
 - All audit gates pass: unique IDs, source identity, link resolution, required fields, and schema consistency
 - Historical batch pattern: 10 agents × 5 PDFs each → `docs/batch_rX_aY.json` → merge → commit/push
-- Next unused ID: **516**; preserve existing IDs during cleanup
+- Next unused ID: **528**; preserve existing IDs during cleanup
 - driveUrl pattern: `BASE_URL + encodeURIComponent(filename)` where `BASE_URL` = `https://raw.githubusercontent.com/erash11/SportScienceResearchRepo/master/SourcePapers/`
 
 Run `npm run audit` for publication, taxonomy, full-text-screening, synthesis, and pilot-queue gates. Full-text decisions belong in versioned JSON batches under `docs/pilot-screening/`; publication-ready records belong under `docs/pilot-synthesis/`. Run `npm run audit:screening` after screening, `npm run audit:synthesis` after authoring synthesis records, and `npm run synthesis:apply` to merge verified records into `papers.json`. Run `npm run audit:manifest` after corpus or publication changes to regenerate the deep content-hash manifest. Run `npm run taxonomy:build` after changing `papers.json`, and `npm run pilot:shortlist` only when intentionally regenerating the Phase 4 queue from title inference plus reviewed screening overrides.
