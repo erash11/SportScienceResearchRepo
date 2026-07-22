@@ -12,6 +12,20 @@ The app is a single-file React module (`football-research-library.jsx`, retained
 
 The adopted product direction and staged sport-agnostic migration are documented in `docs/health-performance-evidence-library-roadmap.md`.
 
+## Agent skills
+
+### Issue tracker
+
+Track implementation work and PRDs in GitHub Issues via the `gh` CLI; external pull requests are not a triage request surface. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Use the canonical `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, and `wontfix` workflow labels. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Use the single-context layout: read root `CONTEXT.md` and relevant decisions under `docs/adr/` when present. See `docs/agents/domain.md`.
+
 ## Architecture
 
 The primary UI lives in `football-research-library.jsx`. It is a default-exported React functional component using hooks (`useState`, `useEffect`, `React.Fragment`). `evidence-taxonomy.mjs` owns the normalized runtime interface and controlled vocabularies; `paper-taxonomy.json` supplies deterministic legacy metadata. Google Fonts are injected as a DOM side effect at module load time.
