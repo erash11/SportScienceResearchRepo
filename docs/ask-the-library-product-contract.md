@@ -1,6 +1,6 @@
 # Ask the Library Product Contract
 
-**Status:** Confirmed through `grill-with-docs` on July 22, 2026
+**Status:** Confirmed through `grill-with-docs` on July 22, 2026; interaction prototype approved July 23, 2026
 
 This document is the consolidated product contract for prototyping Ask the Library. Canonical language lives in [`../CONTEXT.md`](../CONTEXT.md), and durable trade-off decisions live under [`adr/`](adr/).
 
@@ -99,6 +99,8 @@ The pilot warrants expansion only when:
 - At least one brief informs or confirms a real decision.
 
 This pilot tests whether the concept merits broader evaluation. It does not establish department-wide readiness or athlete-level effectiveness.
+
+The first implementation will use the Concierge Pilot defined in [`ask-library-pilot/README.md`](ask-library-pilot/README.md). This preserves real questions, the approved Decision Brief experience, and complete evidence auditing while leaving authentication, storage, retrieval, and model choices reversible until the expansion gates are met.
 
 ## V1 non-goals
 

@@ -395,6 +395,32 @@ svg {
   outline: 0;
 }
 
+.privacy-attestation {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 30px;
+  padding: 15px 17px;
+  border-left: 3px solid var(--baylor-green);
+  background: var(--soft-green);
+  color: var(--graphite);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.privacy-attestation.has-error {
+  border-left-color: var(--signal-rust);
+  background: #f8ebe6;
+}
+
+.privacy-attestation input {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  margin: 1px 0 0;
+  accent-color: var(--baylor-green);
+}
+
 .intake-submit-row {
   display: flex;
   align-items: center;
@@ -550,7 +576,8 @@ svg {
 }
 
 .clarification-sheet,
-.loading-sheet {
+.loading-sheet,
+.request-ready-sheet {
   width: min(760px, 100%);
   border: 1px solid var(--line-dark);
   background: var(--white);
@@ -563,7 +590,8 @@ svg {
 }
 
 .clarification-sheet h1,
-.loading-sheet h1 {
+.loading-sheet h1,
+.request-ready-sheet h1 {
   margin: 0;
   color: var(--pine-shadow);
   font-family: "DIN Pro Condensed", Arial, sans-serif;
@@ -613,6 +641,69 @@ svg {
   margin: 28px 0 0;
   color: var(--muted);
   font-size: 12px;
+}
+
+.request-ready-sheet {
+  border-top: 7px solid var(--baylor-gold);
+}
+
+.request-ready-intro {
+  max-width: 660px;
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.request-receipt {
+  display: grid;
+  gap: 5px;
+  margin: 32px 0;
+  padding: 22px 24px;
+  border-left: 4px solid var(--baylor-gold);
+  background: var(--soft-green);
+}
+
+.request-receipt span {
+  color: var(--baylor-green);
+  font-family: "DIN Pro Condensed", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.request-receipt strong {
+  color: var(--pine-shadow);
+  font-family: "DIN Pro Condensed", Arial, sans-serif;
+  font-size: 23px;
+}
+
+.request-receipt small {
+  color: var(--graphite);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.request-next-steps {
+  display: grid;
+  gap: 13px;
+  margin: 0 0 30px;
+  padding-left: 22px;
+  color: var(--graphite);
+  line-height: 1.5;
+}
+
+.request-next-steps li::marker {
+  color: var(--baylor-green);
+  font-weight: 700;
+}
+
+.request-ready-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .loading-sheet {

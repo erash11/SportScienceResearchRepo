@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "briefId": "ATL-B-20260803-DEMO1",
+  "requestId": "ATL-R-20260803-DEMO1",
+  "version": 1,
+  "createdAt": "2026-08-03T16:00:00.000Z",
+  "status": "On-Demand",
+  "reviewStatus": "Not Expert-Reviewed",
+  "practicalQuestion": "How should we structure training between two competitions inside 96 hours?",
+  "decisionContext": {
+    "population": "Collegiate starters and high-minute players",
+    "sport": "Team sport",
+    "phase": "Between competitions (<96 hours)",
+    "outcome": "Preserve readiness without losing tactical preparation",
+    "constraints": "Travel after the first competition; one field session available"
+  },
+  "evidenceConfidence": {
+    "tier": "Moderate",
+    "rationale": "One directly relevant systematic review addresses congested competition, while the supporting recovery review is broader and group-level evidence does not resolve individual response."
+  },
+  "bottomLine": {
+    "text": "Use a recovery-priority between-match plan. Pooled total distance may be preserved, but broader physical effects remain inconsistent and group summaries do not establish individual recovery.",
+    "claimIds": ["C1", "C2", "C3"]
+  },
+  "recommendedDirection": {
+    "text": "Remove nonessential load, preserve only the preparation needed for the next competition, and individualize from multiple within-athlete signals rather than total distance or one group marker.",
+    "claimIds": ["C1", "C2", "C3"]
+  },
+  "actions": [
+    {
+      "text": "Separate high-minute, low-minute, and returning athletes before assigning recovery, maintenance, or top-up work.",
+      "claimIds": ["C3"]
+    },
+    {
+      "text": "Keep the field exposure focused enough to remove nonessential between-match load.",
+      "claimIds": ["C1", "C2"]
+    }
+  ],
+  "monitoring": [
+    {
+      "text": "Interpret recent exposure, athlete report, symptoms, and a stable within-athlete performance measure together.",
+      "claimIds": ["C2", "C3"]
+    }
+  ],
+  "guardrails": [
+    {
+      "text": "Maintained total distance does not establish complete recovery.",
+      "claimIds": ["C1", "C2"]
+    },
+    {
+      "text": "Do not let a group biomarker result operate as an individual readiness diagnosis.",
+      "claimIds": ["C3"]
+    }
+  ],
+  "limitations": [
+    {
+      "text": "The direct congestion review is concentrated in professional male soccer, limiting transferability to other collegiate populations.",
+      "claimIds": ["C1", "C2"]
+    }
+  ],
+  "whatCouldChange": [
+    {
+      "text": "Direct collegiate, female-athlete, or sport-specific evidence could change the direction or confidence.",
+      "claimIds": ["C1", "C2"]
+    }
+  ],
+  "evidenceTension": {
+    "text": "Pooled total distance was not reduced, while the broader review described physical-performance effects as equivocal.",
+    "claimIds": ["C1", "C2"]
+  },
+  "sources": [
+    {
+      "libraryId": "448",
+      "sourceFile": "The effect of fixture congestion on performance during professional male soccer match play - A systematic critical review with meta-analysis.pdf",
+      "citation": "Julian R, Page RM, Harper LD. The effect of fixture congestion on performance during professional male soccer match-play: A systematic critical review with meta-analysis. Sports Medicine. 2021;51(2):255-273.",
+      "year": 2021,
+      "fullTextReviewed": true
+    },
+    {
+      "libraryId": "455",
+      "sourceFile": "Acute effects of training loads on muscle damage markers and performance in semi-elite and elite athletes - A systematic review and meta-analysis.pdf",
+      "citation": "Simmons R, Doma K, Sinclair W, Connor J, Leicht A. Acute effects of training loads on muscle damage markers and performance in semi-elite and elite athletes: A systematic review and meta-analysis. Sports Medicine. 2021;51(10):2181-2207.",
+      "year": 2021,
+      "fullTextReviewed": true
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "text": "Fixture congestion did not affect pooled total distance covered.",
+      "evidence": [
+        {
+          "libraryId": "448",
+          "page": 1,
+          "excerpt": "Fixture congestion had no impact on total distance covered"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "text": "The review described the effects on physical performance as equivocal.",
+      "evidence": [
+        {
+          "libraryId": "448",
+          "page": 1,
+          "excerpt": "fixture congestion has equivocal effects on physical performance"
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "text": "The group-level recovery review did not identify within-athlete or position-specific differences across time.",
+      "evidence": [
+        {
+          "libraryId": "455",
+          "page": 1,
+          "excerpt": "The group level meta-analysis failed to identify within-athlete or position-specific differences across time."
+        }
+      ]
+    }
+  ]
+}

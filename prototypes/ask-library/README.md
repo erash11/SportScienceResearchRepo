@@ -1,6 +1,6 @@
-# Ask the Library interaction prototype
+# Ask the Library concierge-pilot prototype
 
-This isolated prototype explores the confirmed product contract in `docs/ask-the-library-product-contract.md`. It does not change the deployed Evidence Library, authenticate users, call an AI service, or store questions.
+This isolated prototype explores the confirmed product contract in `docs/ask-the-library-product-contract.md` and supports the operator-mediated pilot in `docs/ask-library-pilot/README.md`. It does not change the deployed Evidence Library, authenticate users, call an AI service, or store questions.
 
 ## Subject, audience, and job
 
@@ -52,6 +52,8 @@ The initial split-screen idea risked becoming a generic AI dashboard composed of
 ## Grounded example
 
 The congested-week example is synthesized from full-text-reviewed published records 448, 455, and 457. The prototype is still an interaction demonstration, not an expert-reviewed Baylor recommendation.
+
+For any non-demo question, the interface downloads a de-identified pilot request packet instead of pretending to generate a brief. The packet remains on the local device until it is deliberately transferred to the pilot operator.
 
 ## Run
 

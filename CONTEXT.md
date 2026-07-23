@@ -115,3 +115,7 @@ _Avoid_: Citation count, source popularity
 **Minimum Viable Pilot**:
 A two-week evaluation in which three staff from at least two functional disciplines submit nine real Practical Questions. It warrants expansion only when all nine briefs are audited, no unresolved critical Evidence Integrity failure remains, at least seven briefs are useful, at least two participants would reuse the tool, and at least one brief informs or confirms a real decision; it does not validate department-wide deployment.
 _Avoid_: Internal alpha, deployment validation
+
+**Concierge Pilot**:
+An operator-mediated implementation of the Minimum Viable Pilot in which staff submit real de-identified Practical Questions and receive the approved Decision Brief experience, while retrieval, synthesis, and claim auditing remain explicitly human-operated. It tests Decision Utility and Evidence Integrity before authenticated self-service infrastructure is built.
+_Avoid_: Production workspace, automated pilot, staff portal

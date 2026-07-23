@@ -36,7 +36,11 @@ There is no router, no state management library, no CSS framework, and no extern
 
 The confirmed product contract is in `docs/ask-the-library-product-contract.md`, canonical language is in `CONTEXT.md`, and durable trade-off decisions are in `docs/adr/`. The isolated interaction prototype lives under `prototypes/ask-library/`; run it with `npm run prototype` and validate its separate production bundle with `npm run prototype:build`.
 
-The prototype simulates guided intake, one clarification, a Decision Brief, controlled sharing, review submission, and Use Signals. It does not authenticate users, call an AI service, store questions, or change the deployed public-library entry point. Do not present or deploy it as a production staff workspace without the later specification and secure implementation phases.
+The congested-week example simulates guided intake, one clarification, a Decision Brief, controlled sharing, review submission, and Use Signals. Non-demo questions download de-identified request packets for the operator-mediated pilot described in `docs/ask-library-pilot/README.md`; the app does not send or store them. It does not authenticate users, call an AI service, or change the deployed public-library entry point. Do not present or deploy it as a production staff workspace.
+
+`ask-library/pilot-core.mjs` is the pilot policy seam. It validates requests and briefs, enforces confidence-gated recommendations, audits claim excerpts through an injected source-text adapter, and scores the confirmed expansion gates. Run `npm run pilot:check` for tests and synthetic fixtures. Run `npm run pilot:audit-source -- <brief.json>` to verify page excerpts against local PDFs with `pdftotext`.
+
+Private pilot requests, briefs, audits, and scorecards belong under `pilot-data/ask-library/private/`, which Git ignores. Never commit participant questions or other private pilot data.
 
 ### Data Architecture
 

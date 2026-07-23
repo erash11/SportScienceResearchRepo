@@ -14,6 +14,8 @@ Sport science research gets read once and then sits in someone's inbox or Google
 
 An expandable evidence table that gives each paper a plain-language TLDR, methods, findings, limitations, practical implications, performance application, and return-to-sport application. The public identity is sport-agnostic while the current football-specific application content is preserved during the staged data migration.
 
+An isolated **Ask the Library** concierge-pilot surface is now being prepared alongside the public library. It converts de-identified Practical Questions into auditable Decision Briefs through an operator-mediated workflow. The pilot is intentionally local and is not an authenticated, automated, or publicly deployed staff workspace.
+
 ### Key Features
 
 - Full-text search across all fields (citation, abstract, TLDR, findings, methods, and all application columns)
@@ -94,6 +96,10 @@ All internal papers were sourced from the Baylor Applied Performance Google Driv
 | `docs/superpowers/specs/2026-03-24-scaled-research-library-design.md` | Architecture design spec |
 | `docs/superpowers/plans/2026-03-24-scaled-research-library.md` | Implementation plan |
 | `docs/health-performance-evidence-library-roadmap.md` | Adopted product direction and staged sport-agnostic roadmap |
+| `docs/ask-the-library-product-contract.md` | Confirmed Ask the Library product and evidence contract |
+| `docs/ask-library-pilot/README.md` | Minimum credible two-week concierge-pilot operating guide |
+| `ask-library/pilot-core.mjs` | Request, brief, evidence-audit, and pilot-scorecard policy seam |
+| `prototypes/ask-library/` | Approved local Ask the Library experience and request-packet export |
 | `summary.md` | This file |
 
 ## Target Audience
@@ -108,16 +114,16 @@ All internal papers were sourced from the Baylor Applied Performance Google Driv
 
 ## Next Steps
 
-1. Use the automated audit and coverage manifest as the publication gate for every future batch
-2. Full-text screen Batch 13 from the replenished 96-paper queue in `docs/pilot-expansion-shortlist.md`
-3. Convert only audited INCLUDE decisions into versioned records under `docs/pilot-synthesis/`
-4. Replace rules-based legacy taxonomy with staff-reviewed overrides as issues are identified
-5. Publish only candidates that pass source, eligibility, taxonomy, extraction, synthesis, and duplicate gates
-6. Resume prioritized backfill batches and establish a separate monthly new-research cadence
-7. Pilot the library with representatives from performance, medicine, athletic training, rehabilitation, and nutrition
+1. Run the two-week Ask the Library concierge pilot with three staff, two or more functions, and nine real de-identified questions
+2. Audit all nine Decision Briefs and score the confirmed utility, reuse, decision-influence, and Evidence Integrity gates
+3. Select secure authentication, storage, retrieval, and model infrastructure only if the pilot warrants expansion
+4. Continue using the automated audit and coverage manifest as the publication gate for every future paper batch
+5. Full-text screen Batch 13 from the replenished 96-paper queue in `docs/pilot-expansion-shortlist.md`
+6. Convert only audited INCLUDE decisions into versioned records under `docs/pilot-synthesis/`
+7. Resume prioritized backfill batches and establish a separate monthly new-research cadence
 
 ---
 
 **Department:** Applied Performance, Baylor University Athletics
 **Lead:** Eric Rash, Director of Applied Performance
-**Updated:** July 22, 2026
+**Updated:** July 23, 2026

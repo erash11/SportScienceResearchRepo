@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { createBriefRequest } from "../../ask-library/pilot-core.mjs";
 
 const EMPTY_FORM = {
   question: "",
@@ -7,6 +8,7 @@ const EMPTY_FORM = {
   phase: "",
   outcome: "",
   constraints: "",
+  deidentifiedAttestation: false,
 };
 
 const DEMO_FORM = {
@@ -16,6 +18,7 @@ const DEMO_FORM = {
   phase: "Between competitions (<96 hours)",
   outcome: "Preserve readiness without losing tactical preparation",
   constraints: "Travel after the first competition; one field session available",
+  deidentifiedAttestation: true,
 };
 
 const SOURCES = [
@@ -51,6 +54,20 @@ const SOURCES = [
   },
 ];
 
+function downloadJson(filename, value) {
+  const blob = new Blob([`${JSON.stringify(value, null, 2)}\n`], {
+    type: "application/json",
+  });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  window.setTimeout(() => URL.revokeObjectURL(url), 0);
+}
+
 function ArrowIcon() {
   return (
     <svg aria-hidden="true" viewBox="0 0 20 20">
@@ -81,9 +98,9 @@ function BrandHeader({ hasBrief, onNewQuestion }) {
         </span>
       </a>
       <div className="workspace-meta">
-        <span className="prototype-flag">Interaction prototype</span>
+        <span className="prototype-flag">Concierge pilot</span>
         <span className="private-label">
-          <LockIcon /> Staff workspace
+          <LockIcon /> Local operator preview
         </span>
         {hasBrief && (
           <button className="header-action" type="button" onClick={onNewQuestion}>
@@ -111,7 +128,15 @@ function ContextField({ id, label, value, onChange, placeholder, children }) {
   );
 }
 
-function IntakeScreen({ form, setField, onUseDemo, onStart, error }) {
+function IntakeScreen({
+  form,
+  setField,
+  onUseDemo,
+  onStart,
+  error,
+  privacyError,
+  isDemo,
+}) {
   return (
     <main id="top" className="intake-page">
       <section className="intake-intro" aria-labelledby="intake-title">
@@ -202,13 +227,31 @@ function IntakeScreen({ form, setField, onUseDemo, onStart, error }) {
             />
           </div>
 
+          <label className={`privacy-attestation ${privacyError ? "has-error" : ""}`} htmlFor="deidentified-attestation">
+            <input
+              id="deidentified-attestation"
+              type="checkbox"
+              checked={form.deidentifiedAttestation}
+              onChange={(event) => setField("deidentifiedAttestation", event.target.checked)}
+              aria-describedby={privacyError ? "privacy-error" : undefined}
+            />
+            <span>
+              I confirm this request contains no athlete names, medical records, clinical notes, or other identifying information.
+            </span>
+          </label>
+          {privacyError && (
+            <p className="field-error" id="privacy-error" role="alert">
+              Confirm the request is de-identified before creating the pilot packet.
+            </p>
+          )}
+
           <div className="intake-submit-row">
             <div className="privacy-note">
               <LockIcon />
-              <span>Private to you unless you deliberately share or submit the brief for review.</span>
+              <span>No data is sent. Non-demo questions save only through a local download.</span>
             </div>
             <button className="primary-action" type="button" onClick={onStart}>
-              Build decision brief <ArrowIcon />
+              {isDemo ? "Preview demo brief" : "Download pilot request"} <ArrowIcon />
             </button>
           </div>
         </section>
@@ -277,6 +320,44 @@ function ClarificationScreen({ form, onChoose, onBack }) {
           Continue without specifying a phase
         </button>
         <p className="clarification-note">This is the only clarification Ask the Library will request.</p>
+      </section>
+    </main>
+  );
+}
+
+function RequestReadyScreen({ request, onDownload, onNewQuestion }) {
+  return (
+    <main id="top" className="focus-page">
+      <section className="request-ready-sheet" aria-labelledby="request-ready-title">
+        <div className="section-kicker">Concierge pilot / Request captured</div>
+        <h1 id="request-ready-title">The request packet is ready.</h1>
+        <p className="request-ready-intro">
+          The prototype did not send the question anywhere or generate an answer. Give the downloaded JSON packet to the pilot operator for library retrieval, synthesis, and claim auditing.
+        </p>
+
+        <div className="request-receipt">
+          <span>Request ID</span>
+          <strong>{request.requestId}</strong>
+          <small>{request.practicalQuestion}</small>
+        </div>
+
+        <ol className="request-next-steps">
+          <li>Keep the packet in the private, Git-ignored pilot folder.</li>
+          <li>Validate it with the pilot request command.</li>
+          <li>Return the audited brief in the approved Operational View.</li>
+        </ol>
+
+        <div className="request-ready-actions">
+          <button className="primary-action" type="button" onClick={onDownload}>
+            Download again <ArrowIcon />
+          </button>
+          <button className="back-action" type="button" onClick={onNewQuestion}>
+            Start another question
+          </button>
+        </div>
+        <p className="clarification-note">
+          This concierge step tests staff utility and evidence integrity before Baylor authentication or automated generation is built.
+        </p>
       </section>
     </main>
   );
@@ -579,6 +660,8 @@ export default function AskLibraryPrototype() {
   const [form, setForm] = useState(EMPTY_FORM);
   const [screen, setScreen] = useState("intake");
   const [error, setError] = useState(false);
+  const [privacyError, setPrivacyError] = useState(false);
+  const [requestPacket, setRequestPacket] = useState(null);
   const timerRef = useRef(null);
 
   useEffect(() => () => window.clearTimeout(timerRef.current), []);
@@ -590,6 +673,7 @@ export default function AskLibraryPrototype() {
   const setField = (field, value) => {
     setForm((current) => ({ ...current, [field]: value }));
     if (field === "question" && value.trim()) setError(false);
+    if (field === "deidentifiedAttestation" && value) setPrivacyError(false);
   };
 
   const generateBrief = (phase = form.phase) => {
@@ -598,23 +682,45 @@ export default function AskLibraryPrototype() {
     timerRef.current = window.setTimeout(() => setScreen("brief"), 1200);
   };
 
-  const startBrief = () => {
+  const completePilotAction = (phase = form.phase) => {
+    const completedForm = { ...form, phase };
+    setForm(completedForm);
+
+    if (completedForm.question.trim() === DEMO_FORM.question) {
+      generateBrief(phase);
+      return;
+    }
+
+    const packet = createBriefRequest(completedForm);
+    setRequestPacket(packet);
+    downloadJson(`${packet.requestId}.json`, packet);
+    setScreen("request");
+  };
+
+  const startPilotAction = () => {
     if (!form.question.trim()) {
       setError(true);
       document.getElementById("practical-question")?.focus();
+      return;
+    }
+    if (!form.deidentifiedAttestation) {
+      setPrivacyError(true);
+      document.getElementById("deidentified-attestation")?.focus();
       return;
     }
     if (!form.phase) {
       setScreen("clarify");
       return;
     }
-    generateBrief();
+    completePilotAction();
   };
 
   const newQuestion = () => {
     window.clearTimeout(timerRef.current);
     setForm(EMPTY_FORM);
     setError(false);
+    setPrivacyError(false);
+    setRequestPacket(null);
     setScreen("intake");
   };
 
@@ -624,7 +730,7 @@ export default function AskLibraryPrototype() {
 
   return (
     <div className="prototype-app">
-      <BrandHeader hasBrief={screen === "brief"} onNewQuestion={newQuestion} />
+      <BrandHeader hasBrief={screen === "brief" || screen === "request"} onNewQuestion={newQuestion} />
       {screen === "intake" && (
         <IntakeScreen
           form={form}
@@ -632,19 +738,29 @@ export default function AskLibraryPrototype() {
           onUseDemo={() => {
             setForm(DEMO_FORM);
             setError(false);
+            setPrivacyError(false);
           }}
-          onStart={startBrief}
+          onStart={startPilotAction}
           error={error}
+          privacyError={privacyError}
+          isDemo={form.question.trim() === DEMO_FORM.question}
         />
       )}
       {screen === "clarify" && (
-        <ClarificationScreen form={form} onChoose={generateBrief} onBack={() => setScreen("intake")} />
+        <ClarificationScreen form={form} onChoose={completePilotAction} onBack={() => setScreen("intake")} />
       )}
       {screen === "loading" && <LoadingScreen />}
       {screen === "brief" && <BriefScreen form={form} onRefine={refineQuestion} />}
+      {screen === "request" && requestPacket && (
+        <RequestReadyScreen
+          request={requestPacket}
+          onDownload={() => downloadJson(`${requestPacket.requestId}.json`, requestPacket)}
+          onNewQuestion={newQuestion}
+        />
+      )}
       <footer className="prototype-footer">
-        <span>Ask the Library interaction prototype</span>
-        <span>No authentication · No AI request · No data stored</span>
+        <span>Ask the Library concierge-pilot prototype</span>
+        <span>No authentication · No AI request · Local request export only</span>
       </footer>
     </div>
   );

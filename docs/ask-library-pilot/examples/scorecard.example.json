@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "pilot": {
+    "startedOn": "2026-08-03",
+    "endedOn": "2026-08-16"
+  },
+  "participants": [
+    {
+      "participantId": "P01",
+      "function": "Performance",
+      "wouldReuse": true
+    },
+    {
+      "participantId": "P02",
+      "function": "Athletic Medicine",
+      "wouldReuse": true
+    },
+    {
+      "participantId": "P03",
+      "function": "Nutrition",
+      "wouldReuse": false
+    }
+  ],
+  "requests": [
+    { "requestId": "R01", "participantId": "P01" },
+    { "requestId": "R02", "participantId": "P01" },
+    { "requestId": "R03", "participantId": "P01" },
+    { "requestId": "R04", "participantId": "P02" },
+    { "requestId": "R05", "participantId": "P02" },
+    { "requestId": "R06", "participantId": "P02" },
+    { "requestId": "R07", "participantId": "P03" },
+    { "requestId": "R08", "participantId": "P03" },
+    { "requestId": "R09", "participantId": "P03" }
+  ],
+  "briefs": [
+    { "briefId": "B01", "requestId": "R01" },
+    { "briefId": "B02", "requestId": "R02" },
+    { "briefId": "B03", "requestId": "R03" },
+    { "briefId": "B04", "requestId": "R04" },
+    { "briefId": "B05", "requestId": "R05" },
+    { "briefId": "B06", "requestId": "R06" },
+    { "briefId": "B07", "requestId": "R07" },
+    { "briefId": "B08", "requestId": "R08" },
+    { "briefId": "B09", "requestId": "R09" }
+  ],
+  "audits": [
+    { "briefId": "B01", "criticalFailures": 0 },
+    { "briefId": "B02", "criticalFailures": 0 },
+    { "briefId": "B03", "criticalFailures": 0 },
+    { "briefId": "B04", "criticalFailures": 0 },
+    { "briefId": "B05", "criticalFailures": 0 },
+    { "briefId": "B06", "criticalFailures": 0 },
+    { "briefId": "B07", "criticalFailures": 0 },
+    { "briefId": "B08", "criticalFailures": 0 },
+    { "briefId": "B09", "criticalFailures": 0 }
+  ],
+  "useSignals": [
+    { "briefId": "B01", "useful": true, "influencedDecision": "yes" },
+    { "briefId": "B02", "useful": true, "influencedDecision": "not-yet" },
+    { "briefId": "B03", "useful": true, "influencedDecision": "no" },
+    { "briefId": "B04", "useful": true, "influencedDecision": "not-yet" },
+    { "briefId": "B05", "useful": true, "influencedDecision": "no" },
+    { "briefId": "B06", "useful": true, "influencedDecision": "not-yet" },
+    { "briefId": "B07", "useful": true, "influencedDecision": "no" },
+    { "briefId": "B08", "useful": false, "influencedDecision": "no" },
+    { "briefId": "B09", "useful": false, "influencedDecision": "no" }
+  ]
+}
