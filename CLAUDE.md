@@ -32,6 +32,12 @@ The primary UI lives in `football-research-library.jsx`. It is a default-exporte
 
 There is no router, no state management library, no CSS framework, and no external dependencies beyond React itself. There is no `window.storage` dependency — the component is self-contained.
 
+### Ask the Library prototype
+
+The confirmed product contract is in `docs/ask-the-library-product-contract.md`, canonical language is in `CONTEXT.md`, and durable trade-off decisions are in `docs/adr/`. The isolated interaction prototype lives under `prototypes/ask-library/`; run it with `npm run prototype` and validate its separate production bundle with `npm run prototype:build`.
+
+The prototype simulates guided intake, one clarification, a Decision Brief, controlled sharing, review submission, and Use Signals. It does not authenticate users, call an AI service, store questions, or change the deployed public-library entry point. Do not present or deploy it as a production staff workspace without the later specification and secure implementation phases.
+
 ### Data Architecture
 
 Paper data has a single source:
