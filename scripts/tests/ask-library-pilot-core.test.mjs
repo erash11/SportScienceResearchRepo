@@ -2,8 +2,11 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import {
   auditDecisionBrief,
+  createBriefFeedback,
   createBriefRequest,
   evaluatePilot,
+  prepareBriefForDelivery,
+  validateBriefFeedback,
   validateBriefRequest,
   validateDecisionBrief,
 } from "../../ask-library/pilot-core.mjs";
@@ -136,6 +139,31 @@ test("returns validation errors instead of throwing on malformed collections", (
   assert.match(result.errors.join(" "), /claims must contain/);
 });
 
+test("prepares a validated brief for generic delivery", () => {
+  const result = prepareBriefForDelivery(brief);
+  assert.equal(result.valid, true);
+  assert.equal(result.brief.sourceCount, 1);
+  assert.equal(result.brief.sources[0].claims[0].id, "C1");
+  assert.match(result.brief.sources[0].url, /fixture\.pdf$/);
+  assert.deepEqual(
+    result.brief.contextItems.map((item) => item.label),
+    [
+      "Population",
+      "Sport or setting",
+      "Phase",
+      "Intended outcome",
+      "Operational constraints",
+    ],
+  );
+});
+
+test("rejects an invalid brief before delivery", () => {
+  const result = prepareBriefForDelivery({ ...brief, recommendedDirection: null });
+  assert.equal(result.valid, false);
+  assert.equal(result.brief, null);
+  assert.match(result.errors.join(" "), /recommendedDirection/);
+});
+
 test("prevents Higher confidence when Evidence Tension is present", () => {
   const result = validateDecisionBrief({
     ...brief,
@@ -177,6 +205,62 @@ test("fails the source audit when an excerpt cannot be located", async () => {
   assert.match(result.errors.join(" "), /excerpt was not found/);
 });
 
+test("creates schema-valid anonymous feedback tied to the brief", () => {
+  const feedback = createBriefFeedback(
+    brief,
+    {
+      participantId: "p01",
+      useful: true,
+      decisionEffect: "confirmed",
+      decisionNote: "Confirmed the planned reduction in nonessential field work.",
+      directionClarity: "5",
+      confidenceCalibration: "about-right",
+      missingOrMisapplied: "Nothing material.",
+      timeToUnderstanding: "under-2",
+      closeoutCompleted: false,
+      deidentifiedAttestation: true,
+    },
+    {
+      now: new Date("2026-08-05T18:00:00.000Z"),
+      feedbackId: "ATL-F-20260805-TEST1",
+    },
+  );
+
+  assert.equal(feedback.participantId, "P01");
+  assert.equal(feedback.briefId, brief.briefId);
+  assert.deepEqual(validateBriefFeedback(feedback), { valid: true, errors: [] });
+});
+
+test("requires decision detail and complete third-brief closeout feedback", () => {
+  const feedback = createBriefFeedback(
+    brief,
+    {
+      participantId: "P01",
+      useful: true,
+      decisionEffect: "changed",
+      decisionNote: "",
+      directionClarity: 4,
+      confidenceCalibration: "about-right",
+      timeToUnderstanding: "2-to-5",
+      closeoutCompleted: true,
+      wouldReuse: null,
+      questionTypes: "",
+      largestFriction: "",
+      deidentifiedAttestation: true,
+    },
+    {
+      now: new Date("2026-08-05T18:00:00.000Z"),
+      feedbackId: "ATL-F-20260805-TEST2",
+    },
+  );
+  const result = validateBriefFeedback(feedback);
+  assert.equal(result.valid, false);
+  assert.match(result.errors.join(" "), /decisionNote/);
+  assert.match(result.errors.join(" "), /wouldReuse/);
+  assert.match(result.errors.join(" "), /questionTypes/);
+  assert.match(result.errors.join(" "), /largestFriction/);
+});
+
 test("evaluates the confirmed pilot expansion gates", () => {
   const scorecard = {
     pilot: { startedOn: "2026-08-03", endedOn: "2026-08-16" },
@@ -200,7 +284,7 @@ test("evaluates the confirmed pilot expansion gates", () => {
     useSignals: Array.from({ length: 9 }, (_, index) => ({
       briefId: `B${index + 1}`,
       useful: index < 7,
-      influencedDecision: index === 0 ? "yes" : "not-yet",
+      decisionEffect: index === 0 ? "confirmed" : "not-yet",
     })),
   };
 

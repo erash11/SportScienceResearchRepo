@@ -11,6 +11,7 @@
     "pilot:check": "npm run test:pilot && node scripts/ask-library-pilot.mjs check-examples",
     "pilot:request": "node scripts/ask-library-pilot.mjs request",
     "pilot:brief": "node scripts/ask-library-pilot.mjs brief",
+    "pilot:feedback": "node scripts/ask-library-pilot.mjs feedback",
     "pilot:audit-source": "node scripts/ask-library-pilot.mjs audit-source",
     "pilot:score": "node scripts/ask-library-pilot.mjs score",
     "audit": "node scripts/audit-library.mjs --check && node scripts/audit-taxonomy.mjs && node scripts/audit-pilot-screening.mjs && node scripts/audit-pilot-synthesis.mjs && node scripts/audit-pilot-shortlist.mjs",

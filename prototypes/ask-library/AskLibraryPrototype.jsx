@@ -1,5 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-import { createBriefRequest } from "../../ask-library/pilot-core.mjs";
+import demoBrief from "../../docs/ask-library-pilot/examples/brief.example.json";
+import {
+  createBriefFeedback,
+  createBriefRequest,
+  prepareBriefForDelivery,
+  validateBriefFeedback,
+} from "../../ask-library/pilot-core.mjs";
 
 const EMPTY_FORM = {
   question: "",
@@ -21,37 +27,40 @@ const DEMO_FORM = {
   deidentifiedAttestation: true,
 };
 
-const SOURCES = [
-  {
-    id: "448",
-    year: 2021,
-    citation:
-      "Julian R, Page RM, Harper LD. The effect of fixture congestion on performance during professional male soccer match-play: A systematic critical review with meta-analysis. Sports Medicine. 2021;51(2):255–273.",
-    doi: "10.1007/s40279-020-01359-9",
-    url: "https://raw.githubusercontent.com/erash11/SportScienceResearchRepo/master/SourcePapers/The%20effect%20of%20fixture%20congestion%20on%20performance%20during%20professional%20male%20soccer%20match%20play%20-%20A%20systematic%20critical%20review%20with%20meta-analysis.pdf",
-    supports:
-      "Total match distance was generally maintained during congestion, while other physical and tactical outcomes were inconsistent.",
-  },
-  {
-    id: "455",
-    year: 2021,
-    citation:
-      "Simmons R, Doma K, Sinclair W, Connor J, Leicht A. Acute effects of training loads on muscle damage markers and performance in semi-elite and elite athletes: A systematic review and meta-analysis. Sports Medicine. 2021;51(10):2181–2207.",
-    doi: "10.1007/s40279-021-01486-x",
-    url: "https://raw.githubusercontent.com/erash11/SportScienceResearchRepo/master/SourcePapers/Acute%20effects%20of%20training%20loads%20on%20muscle%20damage%20markers%20and%20performance%20in%20semi-elite%20and%20elite%20athletes%20-%20A%20systematic%20review%20and%20meta-analysis.pdf",
-    supports:
-      "Muscle-damage and performance responses varied across settings; one biomarker should not function as an individual readiness diagnosis.",
-  },
-  {
-    id: "457",
-    year: 2019,
-    citation:
-      "Roberts SSH, Teo WP, Warmington SA. Effects of training and competition on the sleep of elite athletes: A systematic review and meta-analysis. British Journal of Sports Medicine. 2019;53(8):513–522.",
-    doi: "10.1136/bjsports-2018-099322",
-    url: "https://raw.githubusercontent.com/erash11/SportScienceResearchRepo/master/SourcePapers/Effects%20of%20training%20and%20competition%20on%20the%20sleep%20of%20elite%20athletes-%20a%20systematic%20review%20and%C2%A0meta-analysis.pdf",
-    supports:
-      "Competition, early training, abrupt load increases, and difficult travel timing were recurring schedule-level sleep risks.",
-  },
+const EMPTY_FEEDBACK = {
+  participantId: "",
+  useful: null,
+  decisionEffect: "",
+  decisionNote: "",
+  directionClarity: null,
+  confidenceCalibration: "",
+  missingOrMisapplied: "",
+  timeToUnderstanding: "",
+  closeoutCompleted: false,
+  wouldReuse: null,
+  questionTypes: "",
+  largestFriction: "",
+  deidentifiedAttestation: false,
+};
+
+const DECISION_EFFECT_OPTIONS = [
+  ["informed", "Informed"],
+  ["confirmed", "Confirmed"],
+  ["changed", "Changed"],
+  ["not-yet", "Not yet"],
+  ["no-effect", "No effect"],
+];
+
+const CONFIDENCE_OPTIONS = [
+  ["too-cautious", "Too cautious"],
+  ["about-right", "About right"],
+  ["too-confident", "Too confident"],
+];
+
+const TIME_OPTIONS = [
+  ["under-2", "Under 2 min"],
+  ["2-to-5", "2–5 min"],
+  ["over-5", "Over 5 min"],
 ];
 
 function downloadJson(filename, value) {
@@ -136,6 +145,8 @@ function IntakeScreen({
   error,
   privacyError,
   isDemo,
+  onOpenBrief,
+  importErrors,
 }) {
   return (
     <main id="top" className="intake-page">
@@ -286,6 +297,23 @@ function IntakeScreen({
             </div>
           </div>
           <p className="contract-footnote">Prototype counts reflect the July 22, 2026 repository audit.</p>
+          <div className="brief-docket">
+            <span className="sheet-index light">Brief docket</span>
+            <h3>Deliver a completed brief</h3>
+            <p>Open an audited pilot JSON file. Invalid or policy-incomplete briefs will not render.</p>
+            <label className="docket-action">
+              Open audited brief
+              <input type="file" accept="application/json,.json" onChange={onOpenBrief} />
+            </label>
+            {importErrors.length > 0 && (
+              <div className="docket-errors" role="alert">
+                <strong>Brief not opened</strong>
+                <ul>
+                  {importErrors.slice(0, 4).map((message) => <li key={message}>{message}</li>)}
+                </ul>
+              </div>
+            )}
+          </div>
         </aside>
       </div>
     </main>
@@ -385,49 +413,63 @@ function LoadingScreen() {
   );
 }
 
-function ConfidenceRationale() {
+function ConfidenceRationale({ confidence, sourceCount }) {
+  const dimensions = confidence.dimensions ?? {};
+  const items = [
+    ["Source review", dimensions.sourceReview || `${sourceCount} full-text-reviewed record${sourceCount === 1 ? "" : "s"}`],
+    ["Directness", dimensions.directness],
+    ["Consistency", dimensions.consistency],
+    ["Transferability", dimensions.transferability],
+  ].filter(([, value]) => value);
+
   return (
     <div className="confidence-grid">
-      <div>
-        <span>Source review</span>
-        <strong>3 full-text-reviewed records</strong>
-      </div>
-      <div>
-        <span>Directness</span>
-        <strong>One congestion review; two broader recovery reviews</strong>
-      </div>
-      <div>
-        <span>Consistency</span>
-        <strong>Aligned on context; no universal dose rule</strong>
-      </div>
-      <div>
-        <span>Transferability</span>
-        <strong>Professional and elite cohorts, not Baylor-specific</strong>
-      </div>
+      {items.map(([label, value]) => (
+        <div key={label}>
+          <span>{label}</span>
+          <strong>{value}</strong>
+        </div>
+      ))}
     </div>
   );
 }
 
 function SourceCard({ source, index }) {
+  const supports = source.claims.map((claim) => claim.text);
+
   return (
     <article className="source-card">
       <div className="source-number">{String(index + 1).padStart(2, "0")}</div>
       <div>
         <div className="source-meta">
-          Library ID {source.id} · {source.year} · Full-text reviewed
+          Library ID {source.libraryId} · {source.year} · Full-text reviewed
         </div>
         <h3>{source.citation}</h3>
-        <p><strong>Supports:</strong> {source.supports}</p>
+        {supports.length > 0 && (
+          <p><strong>Supports:</strong> {supports.join(" ")}</p>
+        )}
+        {source.claims.length > 0 && (
+          <details className="source-excerpts">
+            <summary>View source-grounded excerpts</summary>
+            {source.claims.flatMap((claim) => (
+              claim.evidence.map((evidence) => (
+                <blockquote key={`${claim.id}-${evidence.page}-${evidence.excerpt}`}>
+                  “{evidence.excerpt}” <cite>PDF page {evidence.page}</cite>
+                </blockquote>
+              ))
+            ))}
+          </details>
+        )}
         <div className="source-links">
           <a href={source.url} target="_blank" rel="noreferrer">Open original source ↗</a>
-          <a href={`https://doi.org/${source.doi}`} target="_blank" rel="noreferrer">DOI ↗</a>
+          {source.doiUrl && <a href={source.doiUrl} target="_blank" rel="noreferrer">DOI ↗</a>}
         </div>
       </div>
     </article>
   );
 }
 
-function ControlledShareDialog({ onClose, createdDate }) {
+function ControlledShareDialog({ onClose, createdDate, brief }) {
   return (
     <div className="dialog-backdrop" role="presentation" onMouseDown={onClose}>
       <section
@@ -441,9 +483,11 @@ function ControlledShareDialog({ onClose, createdDate }) {
         <div className="section-kicker">Controlled-share preview</div>
         <h2 id="share-title">The status travels with the brief.</h2>
         <div className="share-preview">
-          <div className="share-status">On-Demand · Not Expert-Reviewed</div>
-          <strong>Competition congestion: between-match training and recovery</strong>
-          <span>Created {createdDate} · Moderate confidence · 3 supporting sources</span>
+          <div className="share-status">{brief.status} · {brief.reviewStatus}</div>
+          <strong>{brief.practicalQuestion}</strong>
+          <span>
+            Created {createdDate} · {brief.evidenceConfidence.tier} confidence · {brief.sourceCount} supporting source{brief.sourceCount === 1 ? "" : "s"}
+          </span>
         </div>
         <p>
           A real controlled share would require Baylor authentication and retain the question, Decision Context, confidence rationale, citations, and current version.
@@ -454,40 +498,273 @@ function ControlledShareDialog({ onClose, createdDate }) {
   );
 }
 
-function BriefScreen({ form, onRefine }) {
+function ChoiceField({ legend, value, options, onChange }) {
+  return (
+    <fieldset>
+      <legend>{legend}</legend>
+      <div className="choice-row">
+        {options.map(([optionValue, label]) => (
+          <button
+            key={String(optionValue)}
+            className={value === optionValue ? "selected" : ""}
+            type="button"
+            aria-pressed={value === optionValue}
+            onClick={() => onChange(optionValue)}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+    </fieldset>
+  );
+}
+
+function FeedbackPanel({ brief }) {
+  const [draft, setDraft] = useState(EMPTY_FEEDBACK);
+  const [feedbackErrors, setFeedbackErrors] = useState([]);
+  const [exported, setExported] = useState(false);
+
+  const setFeedback = (field, value) => {
+    setDraft((current) => ({ ...current, [field]: value }));
+    setFeedbackErrors([]);
+    setExported(false);
+  };
+
+  const exportFeedback = () => {
+    const feedback = createBriefFeedback(brief, draft);
+    const validation = validateBriefFeedback(feedback);
+    if (!validation.valid) {
+      setFeedbackErrors(validation.errors);
+      setExported(false);
+      return;
+    }
+
+    downloadJson(
+      `${brief.briefId}-${feedback.participantId}-feedback.json`,
+      feedback,
+    );
+    setFeedbackErrors([]);
+    setExported(true);
+  };
+
+  const decisionDetailRequired = ["informed", "confirmed", "changed"].includes(
+    draft.decisionEffect,
+  );
+
+  return (
+    <section className="feedback-section" aria-labelledby="feedback-heading">
+      <div className="feedback-intro">
+        <div className="brief-section-label">Use signal</div>
+        <h2 id="feedback-heading">Did this help the decision?</h2>
+        <p>
+          Your responses are not sent or stored. Download the anonymous feedback file and return it to the pilot operator.
+        </p>
+      </div>
+
+      <div className="feedback-form">
+        <label className="feedback-text-field compact" htmlFor="participant-id">
+          <span>Anonymous pilot ID</span>
+          <input
+            id="participant-id"
+            value={draft.participantId}
+            onChange={(event) => setFeedback("participantId", event.target.value.toUpperCase())}
+            placeholder="P01"
+            maxLength="3"
+          />
+        </label>
+
+        <ChoiceField
+          legend="Was this useful?"
+          value={draft.useful}
+          options={[[true, "Yes"], [false, "No"]]}
+          onChange={(value) => setFeedback("useful", value)}
+        />
+
+        <ChoiceField
+          legend="What effect did it have?"
+          value={draft.decisionEffect}
+          options={DECISION_EFFECT_OPTIONS}
+          onChange={(value) => setFeedback("decisionEffect", value)}
+        />
+
+        <label className="feedback-text-field" htmlFor="decision-note">
+          <span>
+            What decision or next action did it affect?
+            {decisionDetailRequired ? " Required for this response." : " Optional."}
+          </span>
+          <textarea
+            id="decision-note"
+            value={draft.decisionNote}
+            onChange={(event) => setFeedback("decisionNote", event.target.value)}
+            placeholder="One de-identified sentence"
+            rows="3"
+            required={decisionDetailRequired}
+          />
+        </label>
+
+        <ChoiceField
+          legend="Was the direction clear enough to act on? 1 = not clear, 5 = very clear"
+          value={draft.directionClarity}
+          options={[1, 2, 3, 4, 5].map((value) => [value, String(value)])}
+          onChange={(value) => setFeedback("directionClarity", value)}
+        />
+
+        <ChoiceField
+          legend="Was the confidence appropriately calibrated?"
+          value={draft.confidenceCalibration}
+          options={CONFIDENCE_OPTIONS}
+          onChange={(value) => setFeedback("confidenceCalibration", value)}
+        />
+
+        <ChoiceField
+          legend="How long did it take to reach a usable understanding?"
+          value={draft.timeToUnderstanding}
+          options={TIME_OPTIONS}
+          onChange={(value) => setFeedback("timeToUnderstanding", value)}
+        />
+
+        <label className="feedback-text-field" htmlFor="missing-feedback">
+          <span>What was missing, misapplied, or unnecessarily complicated? Optional.</span>
+          <textarea
+            id="missing-feedback"
+            value={draft.missingOrMisapplied}
+            onChange={(event) => setFeedback("missingOrMisapplied", event.target.value)}
+            placeholder="Nothing material, or describe the issue"
+            rows="3"
+          />
+        </label>
+
+        <details className="participant-closeout">
+          <summary>Complete after your third brief</summary>
+          <label className="closeout-toggle" htmlFor="closeout-completed">
+            <input
+              id="closeout-completed"
+              type="checkbox"
+              checked={draft.closeoutCompleted}
+              onChange={(event) => setFeedback("closeoutCompleted", event.target.checked)}
+            />
+            <span>This is my third pilot brief.</span>
+          </label>
+
+          {draft.closeoutCompleted && (
+            <div className="closeout-fields">
+              <ChoiceField
+                legend="Would you use Ask the Library again?"
+                value={draft.wouldReuse}
+                options={[[true, "Yes"], [false, "No"]]}
+                onChange={(value) => setFeedback("wouldReuse", value)}
+              />
+              <label className="feedback-text-field" htmlFor="question-types">
+                <span>What types of questions would you use it for?</span>
+                <textarea
+                  id="question-types"
+                  value={draft.questionTypes}
+                  onChange={(event) => setFeedback("questionTypes", event.target.value)}
+                  rows="3"
+                />
+              </label>
+              <label className="feedback-text-field" htmlFor="largest-friction">
+                <span>What created the most friction or mistrust?</span>
+                <textarea
+                  id="largest-friction"
+                  value={draft.largestFriction}
+                  onChange={(event) => setFeedback("largestFriction", event.target.value)}
+                  rows="3"
+                />
+              </label>
+            </div>
+          )}
+        </details>
+
+        <label className="feedback-attestation" htmlFor="feedback-attestation">
+          <input
+            id="feedback-attestation"
+            type="checkbox"
+            checked={draft.deidentifiedAttestation}
+            onChange={(event) => setFeedback("deidentifiedAttestation", event.target.checked)}
+          />
+          <span>I confirm this feedback contains no identifying athlete information.</span>
+        </label>
+
+        {feedbackErrors.length > 0 && (
+          <div className="feedback-errors" role="alert">
+            <strong>Complete these items before downloading feedback:</strong>
+            <ul>
+              {feedbackErrors.map((message) => <li key={message}>{message}</li>)}
+            </ul>
+          </div>
+        )}
+
+        <div className="feedback-export-row">
+          <button className="primary-action" type="button" onClick={exportFeedback}>
+            Download feedback <ArrowIcon />
+          </button>
+          {exported && <span role="status">Feedback file downloaded ✓</span>}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function BriefScreen({ sourceBrief, isImported, onRefine }) {
+  const delivery = prepareBriefForDelivery(sourceBrief);
   const [shareOpen, setShareOpen] = useState(false);
   const [reviewState, setReviewState] = useState("idle");
-  const [useful, setUseful] = useState("");
-  const [influence, setInfluence] = useState("");
+  const brief = delivery.brief;
   const createdDate = new Intl.DateTimeFormat("en-US", {
     month: "short",
     day: "numeric",
     year: "numeric",
-  }).format(new Date());
+  }).format(new Date(brief?.createdAt ?? Date.now()));
 
-  const contextItems = [form.population, form.sport, form.phase, form.outcome, form.constraints].filter(Boolean);
+  if (!delivery.valid) {
+    return (
+      <main id="top" className="focus-page">
+        <section className="request-ready-sheet">
+          <div className="section-kicker">Brief delivery stopped</div>
+          <h1>This brief did not pass validation.</h1>
+          <ul className="detail-list">
+            {delivery.errors.map((message) => <li key={message}>{message}</li>)}
+          </ul>
+        </section>
+      </main>
+    );
+  }
 
   return (
     <main id="top" className="brief-page">
       <section className="brief-masthead">
         <div>
-          <div className="section-kicker">On-Demand Brief / Not Expert-Reviewed</div>
-          <h1>{form.question}</h1>
+          <div className="section-kicker">{brief.status} Brief / {brief.reviewStatus}</div>
+          <h1>{brief.practicalQuestion}</h1>
           <div className="context-line">
-            {contextItems.map((item) => <span key={item}>{item}</span>)}
+            {brief.contextItems.map((item) => (
+              <span key={item.field} title={item.label}>{item.value}</span>
+            ))}
           </div>
         </div>
-        <div className="brief-actions">
-          <button type="button" onClick={onRefine}>Refine question</button>
-          <button type="button" onClick={() => setShareOpen(true)}>Preview controlled share</button>
-          <button
-            className={reviewState === "submitted" ? "submitted" : ""}
-            type="button"
-            onClick={() => setReviewState("submitted")}
-            disabled={reviewState === "submitted"}
-          >
-            {reviewState === "submitted" ? "Submitted for review ✓" : "Submit for review"}
-          </button>
+        <div className={`brief-actions ${isImported ? "delivery-actions" : ""}`}>
+          {isImported ? (
+            <>
+              <button type="button" onClick={() => window.print()}>Print / Save PDF</button>
+              <button type="button" onClick={() => downloadJson(`${brief.briefId}.json`, sourceBrief)}>
+                Download brief JSON
+              </button>
+            </>
+          ) : (
+            <>
+              <button type="button" onClick={onRefine}>Refine question</button>
+              <button type="button" onClick={() => setShareOpen(true)}>Preview controlled share</button>
+              <button
+                className={reviewState === "submitted" ? "submitted" : ""}
+                type="button"
+                onClick={() => setReviewState("submitted")}
+                disabled={reviewState === "submitted"}
+              >
+                {reviewState === "submitted" ? "Submitted for review ✓" : "Submit for review"}
+              </button>
+            </>
+          )}
         </div>
       </section>
 
@@ -501,8 +778,8 @@ function BriefScreen({ form, onRefine }) {
         <aside className="brief-rail" aria-label="Decision Brief contents">
           <div className="brief-stamp">
             <span>Status</span>
-            <strong>On-demand</strong>
-            <small>{createdDate}</small>
+            <strong>{brief.status}</strong>
+            <small>{createdDate} · v{brief.version}</small>
           </div>
           <nav>
             <a href="#decision">Decision</a>
@@ -510,7 +787,11 @@ function BriefScreen({ form, onRefine }) {
             <a href="#boundaries">Boundaries</a>
             <a href="#evidence">Evidence</a>
           </nav>
-          <div className="prototype-note">Example content drawn from published records 448, 455, and 457.</div>
+          <div className="prototype-note">
+            {isImported
+              ? `Pilot brief ${brief.briefId}. Feedback remains local until downloaded.`
+              : `Example content drawn from published records ${brief.sources.map((source) => source.libraryId).join(", ")}.`}
+          </div>
         </aside>
 
         <article className="decision-brief">
@@ -521,137 +802,139 @@ function BriefScreen({ form, onRefine }) {
             <div className="confidence-lockup">
               <div className="confidence-tier">
                 <span>Evidence confidence</span>
-                <strong>Moderate</strong>
+                <strong>{brief.evidenceConfidence.tier}</strong>
               </div>
-              <p>
-                Direct congestion evidence is concentrated in professional male soccer, while the recovery evidence spans heterogeneous elite cohorts.
-              </p>
+              <p>{brief.evidenceConfidence.rationale}</p>
             </div>
 
             <h2>Bottom line</h2>
-            <p className="bottom-line">
-              Use a recovery-priority between-match plan that protects sleep opportunity, removes nonessential load, and individualizes exposure. Stable match distance or one readiness marker does not establish complete recovery.
-            </p>
+            <p className="bottom-line">{brief.bottomLine.text}</p>
 
-            <div className="direction-block">
-              <span>Recommended Direction</span>
+            <div className={`direction-block ${brief.isCoverageGap ? "coverage-gap" : ""}`}>
+              <span>{brief.hasRecommendedDirection ? "Recommended Direction" : "Decision boundary"}</span>
               <p>
-                Preserve only the tactical and physical work needed for the next competition. Separate athletes by recent exposure and current response, protect the available sleep window, and make the final training choice from multiple signals rather than a universal threshold.
+                {brief.hasRecommendedDirection
+                  ? brief.recommendedDirection.text
+                  : brief.isCoverageGap
+                    ? "No direction is offered because the Evidence Library does not contain enough relevant source-grounded evidence."
+                    : "No preferred direction is offered at Limited confidence. Use the options and guardrails below to support staff judgment."}
               </p>
             </div>
           </section>
 
-          <section id="action" className="brief-section">
-            <div className="brief-section-label">Act</div>
-            <h2>Put it into the week</h2>
-            <div className="action-ledger">
-              <div>
-                <span>01</span>
-                <h3>Separate exposure groups</h3>
-                <p>Distinguish high-minute, low-minute, and returning athletes before assigning recovery, maintenance, or top-up work.</p>
-              </div>
-              <div>
-                <span>02</span>
-                <h3>Protect sleep opportunity</h3>
-                <p>Avoid unnecessarily early work, account for travel timing, and keep required preparation focused enough to preserve recovery time.</p>
-              </div>
-              <div>
-                <span>03</span>
-                <h3>Triangulate readiness</h3>
-                <p>Read recent exposure, athlete report, symptoms, and a standardized within-athlete performance measure together. Do not let one biomarker make the decision.</p>
-              </div>
-            </div>
+          {(brief.actions.length > 0 || brief.monitoring.length > 0) && (
+            <section id="action" className="brief-section">
+              <div className="brief-section-label">Act</div>
+              <h2>Put it into the week</h2>
+              {brief.actions.length > 0 && (
+                <div className="action-ledger">
+                  {brief.actions.map((action, index) => (
+                    <div key={`${index}-${action.text}`}>
+                      <span>{String(index + 1).padStart(2, "0")}</span>
+                      <h3>{action.title || `Action ${index + 1}`}</h3>
+                      <p>{action.text}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
 
-            <h3 className="subsection-title">Monitoring considerations</h3>
-            <div className="monitoring-table" role="table" aria-label="Monitoring considerations">
-              <div role="row"><strong role="cell">Exposure</strong><span role="cell">Minutes, high-intensity actions, travel, and position demands</span></div>
-              <div role="row"><strong role="cell">Recovery</strong><span role="cell">Sleep opportunity, soreness, wellness, and daytime function</span></div>
-              <div role="row"><strong role="cell">Performance</strong><span role="cell">A stable within-athlete measure interpreted against normal variability</span></div>
-              <div role="row"><strong role="cell">Escalate discussion</strong><span role="cell">When multiple signals deteriorate or sport function is meaningfully reduced</span></div>
-            </div>
-          </section>
+              {brief.monitoring.length > 0 && (
+                <>
+                  <h3 className="subsection-title">Monitoring considerations</h3>
+                  <div className="monitoring-table" role="table" aria-label="Monitoring considerations">
+                    {brief.monitoring.map((item, index) => (
+                      <div role="row" key={`${index}-${item.text}`}>
+                        <strong role="cell">{item.label || `Signal ${index + 1}`}</strong>
+                        <span role="cell">{item.text}</span>
+                      </div>
+                    ))}
+                  </div>
+                </>
+              )}
+            </section>
+          )}
 
           <section id="boundaries" className="brief-section">
             <div className="brief-section-label">Boundaries</div>
             <div className="boundary-grid">
               <div>
-                <h2>Where the evidence disagrees</h2>
+                <h2>{brief.evidenceTension ? "Where the evidence disagrees" : "Critical limitation"}</h2>
                 <p>
-                  Pooled total distance was generally maintained during fixture congestion, but other physical outputs were equivocal and tactical evidence was sparse. Maintained distance should not be treated as proof of full recovery.
+                  {brief.evidenceTension?.text
+                    || brief.limitations[0]?.text
+                    || "No material Evidence Tension was recorded for this brief."}
                 </p>
               </div>
               <div className="caution-box">
                 <span>Guardrails</span>
                 <ul>
-                  <li>No universal congestion or readiness threshold is supported.</li>
-                  <li>Returning athletes may tolerate repeated exposure differently.</li>
-                  <li>Clinical concerns remain with the appropriate licensed professional.</li>
+                  {(brief.guardrails.length > 0 ? brief.guardrails : brief.limitations)
+                    .map((item) => <li key={item.text}>{item.text}</li>)}
                 </ul>
               </div>
             </div>
 
             <details className="evidence-details" open>
-              <summary>Why this is Moderate confidence</summary>
-              <ConfidenceRationale />
+              <summary>Why this is {brief.evidenceConfidence.tier} confidence</summary>
+              <p className="confidence-explanation">{brief.evidenceConfidence.rationale}</p>
+              <ConfidenceRationale
+                confidence={brief.evidenceConfidence}
+                sourceCount={brief.sourceCount}
+              />
             </details>
 
-            <details className="evidence-details">
-              <summary>What could change this direction</summary>
-              <ul className="detail-list">
-                <li>A different competition density, travel schedule, or environmental load</li>
-                <li>An athlete in a return-to-participation progression</li>
-                <li>Direct collegiate, female-athlete, or sport-specific evidence</li>
-                <li>Meaningful deterioration across symptoms, function, and repeated measures</li>
-              </ul>
-            </details>
+            {brief.limitations.length > 0 && (
+              <details className="evidence-details">
+                <summary>Critical limitations</summary>
+                <ul className="detail-list">
+                  {brief.limitations.map((item) => <li key={item.text}>{item.text}</li>)}
+                </ul>
+              </details>
+            )}
+
+            {brief.whatCouldChange.length > 0 && (
+              <details className="evidence-details">
+                <summary>What could change this direction</summary>
+                <ul className="detail-list">
+                  {brief.whatCouldChange.map((item) => <li key={item.text}>{item.text}</li>)}
+                </ul>
+              </details>
+            )}
           </section>
 
           <section id="evidence" className="brief-section sources-section">
             <div className="brief-section-label">Evidence</div>
             <div className="sources-heading">
               <div>
-                <h2>Supporting sources</h2>
-                <p>Every source below is already published and full-text reviewed in the Evidence Library.</p>
+                <h2>{brief.sourceCount > 0 ? "Supporting sources" : "Coverage gap"}</h2>
+                <p>
+                  {brief.sourceCount > 0
+                    ? "Every supporting source below is published and full-text reviewed in the Evidence Library."
+                    : "No source was used to support a recommendation for this Decision Context."}
+                </p>
               </div>
-              <span>3 sources</span>
+              <span>{brief.sourceCount} source{brief.sourceCount === 1 ? "" : "s"}</span>
             </div>
-            <div className="source-list">
-              {SOURCES.map((source, index) => <SourceCard key={source.id} source={source} index={index} />)}
-            </div>
+            {brief.sourceCount > 0 && (
+              <div className="source-list">
+                {brief.sources.map((source, index) => (
+                  <SourceCard key={source.libraryId} source={source} index={index} />
+                ))}
+              </div>
+            )}
           </section>
 
-          <section className="feedback-section" aria-labelledby="feedback-heading">
-            <div>
-              <div className="brief-section-label">Use signal</div>
-              <h2 id="feedback-heading">Did this help the decision?</h2>
-              <p>Prototype responses remain in this browser session and are not stored.</p>
-            </div>
-            <div className="feedback-controls">
-              <fieldset>
-                <legend>Was this useful?</legend>
-                {[
-                  ["yes", "Yes"],
-                  ["no", "No"],
-                ].map(([value, label]) => (
-                  <button key={value} className={useful === value ? "selected" : ""} type="button" onClick={() => setUseful(value)}>{label}</button>
-                ))}
-              </fieldset>
-              <fieldset>
-                <legend>Did this influence a decision?</legend>
-                {[
-                  ["yes", "Yes"],
-                  ["not-yet", "Not yet"],
-                  ["no", "No"],
-                ].map(([value, label]) => (
-                  <button key={value} className={influence === value ? "selected" : ""} type="button" onClick={() => setInfluence(value)}>{label}</button>
-                ))}
-              </fieldset>
-            </div>
-          </section>
+          <FeedbackPanel key={brief.briefId} brief={brief} />
         </article>
       </div>
 
-      {shareOpen && <ControlledShareDialog onClose={() => setShareOpen(false)} createdDate={createdDate} />}
+      {shareOpen && (
+        <ControlledShareDialog
+          onClose={() => setShareOpen(false)}
+          createdDate={createdDate}
+          brief={brief}
+        />
+      )}
     </main>
   );
 }
@@ -662,6 +945,9 @@ export default function AskLibraryPrototype() {
   const [error, setError] = useState(false);
   const [privacyError, setPrivacyError] = useState(false);
   const [requestPacket, setRequestPacket] = useState(null);
+  const [activeBrief, setActiveBrief] = useState(null);
+  const [briefOrigin, setBriefOrigin] = useState("");
+  const [importErrors, setImportErrors] = useState([]);
   const timerRef = useRef(null);
 
   useEffect(() => () => window.clearTimeout(timerRef.current), []);
@@ -678,8 +964,37 @@ export default function AskLibraryPrototype() {
 
   const generateBrief = (phase = form.phase) => {
     setForm((current) => ({ ...current, phase }));
+    setActiveBrief(demoBrief);
+    setBriefOrigin("demo");
     setScreen("loading");
     timerRef.current = window.setTimeout(() => setScreen("brief"), 1200);
+  };
+
+  const openBriefFile = async (event) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    try {
+      const parsed = JSON.parse(await file.text());
+      const delivery = prepareBriefForDelivery(parsed);
+      if (!delivery.valid) {
+        setImportErrors(delivery.errors);
+        return;
+      }
+
+      setActiveBrief(parsed);
+      setBriefOrigin("imported");
+      setImportErrors([]);
+      setScreen("brief");
+    } catch (fileError) {
+      setImportErrors([
+        fileError instanceof SyntaxError
+          ? "The selected file is not valid JSON."
+          : "The selected brief could not be read.",
+      ]);
+    } finally {
+      event.target.value = "";
+    }
   };
 
   const completePilotAction = (phase = form.phase) => {
@@ -721,6 +1036,9 @@ export default function AskLibraryPrototype() {
     setError(false);
     setPrivacyError(false);
     setRequestPacket(null);
+    setActiveBrief(null);
+    setBriefOrigin("");
+    setImportErrors([]);
     setScreen("intake");
   };
 
@@ -739,18 +1057,27 @@ export default function AskLibraryPrototype() {
             setForm(DEMO_FORM);
             setError(false);
             setPrivacyError(false);
+            setImportErrors([]);
           }}
           onStart={startPilotAction}
           error={error}
           privacyError={privacyError}
           isDemo={form.question.trim() === DEMO_FORM.question}
+          onOpenBrief={openBriefFile}
+          importErrors={importErrors}
         />
       )}
       {screen === "clarify" && (
         <ClarificationScreen form={form} onChoose={completePilotAction} onBack={() => setScreen("intake")} />
       )}
       {screen === "loading" && <LoadingScreen />}
-      {screen === "brief" && <BriefScreen form={form} onRefine={refineQuestion} />}
+      {screen === "brief" && activeBrief && (
+        <BriefScreen
+          sourceBrief={activeBrief}
+          isImported={briefOrigin === "imported"}
+          onRefine={refineQuestion}
+        />
+      )}
       {screen === "request" && requestPacket && (
         <RequestReadyScreen
           request={requestPacket}
@@ -760,7 +1087,7 @@ export default function AskLibraryPrototype() {
       )}
       <footer className="prototype-footer">
         <span>Ask the Library concierge-pilot prototype</span>
-        <span>No authentication · No AI request · Local request export only</span>
+        <span>No authentication · No AI request · Local files only</span>
       </footer>
     </div>
   );

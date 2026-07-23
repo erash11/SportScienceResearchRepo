@@ -152,6 +152,10 @@ Current state: **549 canonical published rows** in `papers.json` (highest assign
 
 Run `npm run audit` for publication, taxonomy, full-text-screening, synthesis, and pilot-queue gates. Full-text decisions belong in versioned JSON batches under `docs/pilot-screening/`; publication-ready records belong under `docs/pilot-synthesis/`. Run `npm run audit:screening` after screening, `npm run audit:synthesis` after authoring synthesis records, and `npm run synthesis:apply` to merge verified records into `papers.json`. Run `npm run audit:manifest` after corpus or publication changes to regenerate the deep content-hash manifest. Run `npm run taxonomy:build` after changing `papers.json`, and `npm run pilot:shortlist` only when intentionally regenerating the Phase 4 queue from title inference plus reviewed screening overrides.
 
+## Ask the Library Pilot
+
+The isolated concierge-pilot interface runs with `npm run prototype`; it is not part of the public GitHub Pages build. Non-demo questions download de-identified request JSON. The operator validates a brief with `npm run pilot:brief -- <brief.json>` and `npm run pilot:audit-source -- <brief.json>`, then opens it through **Open audited brief** for local delivery, print / Save PDF, and anonymous feedback export. Validate exported feedback with `npm run pilot:feedback -- <feedback.json>`. Private pilot files belong only under the Git-ignored `pilot-data/ask-library/private/` tree.
+
 ### Batch Import — Known Filename Issues
 - **Curly apostrophes (U+2019):** Some source filenames contain `'` — agents use PowerShell wildcard copy workaround
 - **`%c2%a0` literal chars in filenames:** `%` gets double-encoded to `%25` in driveUrl — preserve encoding as-is

@@ -55,6 +55,8 @@ The congested-week example is synthesized from full-text-reviewed published reco
 
 For any non-demo question, the interface downloads a de-identified pilot request packet instead of pretending to generate a brief. The packet remains on the local device until it is deliberately transferred to the pilot operator.
 
+The intake's **Open audited brief** control accepts a policy-valid Decision Brief JSON file. It renders a generic Operational View, exposes print / Save PDF delivery, and collects anonymous participant feedback as a local JSON download. Invalid or non-compliant briefs are stopped before rendering.
+
 ## Run
 
 ```powershell
@@ -66,3 +68,5 @@ Build the isolated prototype with:
 ```powershell
 npm run prototype:build
 ```
+
+`ask-library/pilot-core.mjs` is the pilot policy seam. It validates requests, briefs, and feedback; prepares validated briefs for generic delivery; enforces confidence-gated recommendations; audits claim excerpts through an injected source-text adapter; and scores the confirmed expansion gates. Run `npm run pilot:check` for tests and synthetic fixtures. Run `npm run pilot:audit-source -- <brief.json>` to verify page excerpts against local PDFs with `pdftotext`, and `npm run pilot:feedback -- <feedback.json>` to validate downloaded Use Signals.

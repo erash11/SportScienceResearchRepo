@@ -23,7 +23,7 @@ This avoids premature investment in authentication, private storage, cloud retri
 | Audit | All 9 briefs receive claim-and-citation audit |
 | Utility | At least 7 of 9 briefs rated useful |
 | Reuse | At least 2 of 3 participants would use Ask the Library again |
-| Decision influence | At least 1 brief informs or confirms a real decision |
+| Decision influence | At least 1 brief informs, confirms, or changes a real decision |
 | Integrity stop rule | No unresolved critical Evidence Integrity failure |
 
 Passing these gates warrants a secure self-service build; it does not validate department-wide rollout or athlete outcomes.
@@ -110,24 +110,47 @@ Do not deliver a brief with an unresolved critical failure.
 
 ### 4. Deliver and collect Use Signals
 
-Use the approved Operational View and preserve:
+Run the local prototype, select **Open audited brief**, and choose the validated brief JSON:
+
+```powershell
+npm run prototype
+```
+
+The Operational View renders the brief generically from that file. Use **Print / Save PDF** when a portable copy is needed. Preserve:
 
 - On-Demand / Not Expert-Reviewed status
 - creation date and version
 - Decision Context
 - Evidence Confidence and rationale
-- citations and source links
+- claim-level excerpts, page locations, citations, and source links
 
-Collect:
+Ask the participant to complete the feedback ledger at the end of the brief. It captures:
 
-- Was this useful? `yes` or `no`
-- Did this influence a decision? `yes`, `not-yet`, or `no`
-- Would the participant use Ask the Library again? `yes` or `no`
-- Optional comment
+- whether the brief was useful
+- whether it informed, confirmed, or changed a decision
+- whether the recommended direction was clear
+- whether the confidence felt too cautious, about right, or too confident
+- what was missing or misapplied
+- time to understanding
+- on the third brief only: reuse intent, useful question types, and largest friction
+
+Save the downloaded feedback JSON under:
+
+```text
+pilot-data/ask-library/private/feedback/
+```
+
+Validate it:
+
+```powershell
+npm run pilot:feedback -- pilot-data/ask-library/private/feedback/<feedback>.json
+```
+
+Participant IDs must use the anonymous `P01` format. Feedback remains on the local device until the downloaded file is deliberately transferred to the pilot operator.
 
 ### 5. Score the pilot
 
-Copy `examples/scorecard.example.json` to the ignored private folder, replace the synthetic entries with anonymous pilot results, and run:
+Copy `examples/scorecard.example.json` to the ignored private folder. Add each validated feedback file to `useSignals`; `informed`, `confirmed`, and `changed` each satisfy the decision-influence signal. Copy each participant's third-brief `wouldReuse` response into the participant row, then run:
 
 ```powershell
 npm run pilot:score -- pilot-data/ask-library/private/scorecard.json

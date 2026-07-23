@@ -55,14 +55,14 @@
     { "briefId": "B09", "criticalFailures": 0 }
   ],
   "useSignals": [
-    { "briefId": "B01", "useful": true, "influencedDecision": "yes" },
-    { "briefId": "B02", "useful": true, "influencedDecision": "not-yet" },
-    { "briefId": "B03", "useful": true, "influencedDecision": "no" },
-    { "briefId": "B04", "useful": true, "influencedDecision": "not-yet" },
-    { "briefId": "B05", "useful": true, "influencedDecision": "no" },
-    { "briefId": "B06", "useful": true, "influencedDecision": "not-yet" },
-    { "briefId": "B07", "useful": true, "influencedDecision": "no" },
-    { "briefId": "B08", "useful": false, "influencedDecision": "no" },
-    { "briefId": "B09", "useful": false, "influencedDecision": "no" }
+    { "briefId": "B01", "useful": true, "decisionEffect": "confirmed" },
+    { "briefId": "B02", "useful": true, "decisionEffect": "not-yet" },
+    { "briefId": "B03", "useful": true, "decisionEffect": "no-effect" },
+    { "briefId": "B04", "useful": true, "decisionEffect": "not-yet" },
+    { "briefId": "B05", "useful": true, "decisionEffect": "no-effect" },
+    { "briefId": "B06", "useful": true, "decisionEffect": "not-yet" },
+    { "briefId": "B07", "useful": true, "decisionEffect": "no-effect" },
+    { "briefId": "B08", "useful": false, "decisionEffect": "no-effect" },
+    { "briefId": "B09", "useful": false, "decisionEffect": "no-effect" }
   ]
 }

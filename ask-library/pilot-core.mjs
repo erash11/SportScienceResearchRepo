@@ -5,6 +5,23 @@ export const CONFIDENCE_TIERS = Object.freeze([
   "Limited",
   "Coverage Gap",
 ]);
+export const DECISION_EFFECTS = Object.freeze([
+  "informed",
+  "confirmed",
+  "changed",
+  "not-yet",
+  "no-effect",
+]);
+export const CONFIDENCE_CALIBRATIONS = Object.freeze([
+  "too-cautious",
+  "about-right",
+  "too-confident",
+]);
+export const TIME_TO_UNDERSTANDING = Object.freeze([
+  "under-2",
+  "2-to-5",
+  "over-5",
+]);
 
 const REQUEST_CONTEXT_FIELDS = Object.freeze([
   "population",
@@ -21,6 +38,17 @@ const STATEMENT_COLLECTIONS = Object.freeze([
   "limitations",
   "whatCouldChange",
 ]);
+
+const CONTEXT_LABELS = Object.freeze({
+  population: "Population",
+  sport: "Sport or setting",
+  phase: "Phase",
+  outcome: "Intended outcome",
+  constraints: "Operational constraints",
+});
+
+const PUBLISHED_SOURCE_BASE =
+  "https://raw.githubusercontent.com/erash11/SportScienceResearchRepo/master/SourcePapers/";
 
 function cleanString(value) {
   return typeof value === "string" ? value.trim() : "";
@@ -272,6 +300,198 @@ export function validateDecisionBrief(brief) {
   return { valid: errors.length === 0, errors, warnings };
 }
 
+export function prepareBriefForDelivery(brief) {
+  const validation = validateDecisionBrief(brief);
+  if (!validation.valid) {
+    return {
+      valid: false,
+      errors: validation.errors,
+      warnings: validation.warnings,
+      brief: null,
+    };
+  }
+
+  const claims = brief.claims ?? [];
+  const sourceViews = brief.sources.map((source) => {
+    const sourceClaims = claims
+      .filter((claim) => claim.evidence.some((evidence) => evidence.libraryId === source.libraryId))
+      .map((claim) => ({
+        id: claim.id,
+        text: claim.text,
+        evidence: claim.evidence
+          .filter((evidence) => evidence.libraryId === source.libraryId)
+          .map((evidence) => ({
+            page: evidence.page,
+            excerpt: evidence.excerpt,
+          })),
+      }));
+
+    return {
+      ...source,
+      url: cleanString(source.url)
+        || `${PUBLISHED_SOURCE_BASE}${encodeURIComponent(source.sourceFile)}`,
+      doiUrl: cleanString(source.doi) ? `https://doi.org/${cleanString(source.doi)}` : "",
+      claims: sourceClaims,
+    };
+  });
+
+  const contextItems = REQUEST_CONTEXT_FIELDS
+    .map((field) => ({
+      field,
+      label: CONTEXT_LABELS[field],
+      value: cleanString(brief.decisionContext?.[field]),
+    }))
+    .filter((item) => item.value);
+
+  return {
+    valid: true,
+    errors: [],
+    warnings: validation.warnings,
+    brief: {
+      ...brief,
+      contextItems,
+      sources: sourceViews,
+      sourceCount: sourceViews.length,
+      isCoverageGap: brief.evidenceConfidence.tier === "Coverage Gap",
+      hasRecommendedDirection: brief.recommendedDirection !== null,
+    },
+  };
+}
+
+export function createBriefFeedback(
+  brief,
+  input,
+  {
+    now = new Date(),
+    feedbackId = createPilotId("ATL-F", now),
+  } = {},
+) {
+  const closeoutCompleted = input?.closeoutCompleted === true;
+  const clarity = Number(input?.directionClarity);
+
+  return {
+    schemaVersion: PILOT_SCHEMA_VERSION,
+    feedbackId,
+    briefId: cleanString(brief?.briefId),
+    requestId: cleanString(brief?.requestId),
+    briefVersion: Number(brief?.version),
+    participantId: cleanString(input?.participantId).toUpperCase(),
+    createdAt: now.toISOString(),
+    useful: typeof input?.useful === "boolean" ? input.useful : null,
+    decisionEffect: cleanString(input?.decisionEffect),
+    decisionNote: cleanString(input?.decisionNote),
+    directionClarity: Number.isInteger(clarity) ? clarity : null,
+    confidenceCalibration: cleanString(input?.confidenceCalibration),
+    missingOrMisapplied: cleanString(input?.missingOrMisapplied),
+    timeToUnderstanding: cleanString(input?.timeToUnderstanding),
+    participantCloseout: {
+      completed: closeoutCompleted,
+      wouldReuse:
+        closeoutCompleted && typeof input?.wouldReuse === "boolean"
+          ? input.wouldReuse
+          : null,
+      questionTypes: closeoutCompleted ? cleanString(input?.questionTypes) : "",
+      largestFriction: closeoutCompleted ? cleanString(input?.largestFriction) : "",
+    },
+    deidentifiedAttestation: input?.deidentifiedAttestation === true,
+    feedbackStatus: "captured",
+  };
+}
+
+export function validateBriefFeedback(feedback) {
+  const errors = [];
+
+  if (!isObject(feedback)) {
+    return { valid: false, errors: ["Feedback must be a JSON object."] };
+  }
+
+  if (feedback.schemaVersion !== PILOT_SCHEMA_VERSION) {
+    errors.push(`schemaVersion must equal ${PILOT_SCHEMA_VERSION}.`);
+  }
+  pushRequiredString(errors, feedback.feedbackId, "feedbackId", 8);
+  pushRequiredString(errors, feedback.briefId, "briefId", 8);
+  pushRequiredString(errors, feedback.requestId, "requestId", 8);
+  if (!Number.isInteger(feedback.briefVersion) || feedback.briefVersion < 1) {
+    errors.push("briefVersion must be a positive integer.");
+  }
+  if (!/^P\d{2}$/.test(cleanString(feedback.participantId))) {
+    errors.push('participantId must use the anonymous format "P01".');
+  }
+  if (!isIsoDate(feedback.createdAt)) {
+    errors.push("createdAt must be an ISO-compatible date.");
+  }
+  if (typeof feedback.useful !== "boolean") {
+    errors.push("useful must be true or false.");
+  }
+  if (!DECISION_EFFECTS.includes(feedback.decisionEffect)) {
+    errors.push(`decisionEffect must be one of: ${DECISION_EFFECTS.join(", ")}.`);
+  }
+  if (
+    ["informed", "confirmed", "changed"].includes(feedback.decisionEffect)
+    && cleanString(feedback.decisionNote).length < 10
+  ) {
+    errors.push("decisionNote must briefly describe the affected decision.");
+  }
+  if (
+    !Number.isInteger(feedback.directionClarity)
+    || feedback.directionClarity < 1
+    || feedback.directionClarity > 5
+  ) {
+    errors.push("directionClarity must be an integer from 1 to 5.");
+  }
+  if (!CONFIDENCE_CALIBRATIONS.includes(feedback.confidenceCalibration)) {
+    errors.push(
+      `confidenceCalibration must be one of: ${CONFIDENCE_CALIBRATIONS.join(", ")}.`,
+    );
+  }
+  if (!TIME_TO_UNDERSTANDING.includes(feedback.timeToUnderstanding)) {
+    errors.push(
+      `timeToUnderstanding must be one of: ${TIME_TO_UNDERSTANDING.join(", ")}.`,
+    );
+  }
+  if (cleanString(feedback.decisionNote).length > 600) {
+    errors.push("decisionNote must not exceed 600 characters.");
+  }
+  if (cleanString(feedback.missingOrMisapplied).length > 600) {
+    errors.push("missingOrMisapplied must not exceed 600 characters.");
+  }
+
+  if (!isObject(feedback.participantCloseout)) {
+    errors.push("participantCloseout must be an object.");
+  } else if (feedback.participantCloseout.completed === true) {
+    if (typeof feedback.participantCloseout.wouldReuse !== "boolean") {
+      errors.push("participantCloseout.wouldReuse must be true or false.");
+    }
+    pushRequiredString(
+      errors,
+      feedback.participantCloseout.questionTypes,
+      "participantCloseout.questionTypes",
+      3,
+    );
+    pushRequiredString(
+      errors,
+      feedback.participantCloseout.largestFriction,
+      "participantCloseout.largestFriction",
+      3,
+    );
+    if (cleanString(feedback.participantCloseout.questionTypes).length > 600) {
+      errors.push("participantCloseout.questionTypes must not exceed 600 characters.");
+    }
+    if (cleanString(feedback.participantCloseout.largestFriction).length > 600) {
+      errors.push("participantCloseout.largestFriction must not exceed 600 characters.");
+    }
+  }
+
+  if (feedback.deidentifiedAttestation !== true) {
+    errors.push("deidentifiedAttestation must be true.");
+  }
+  if (feedback.feedbackStatus !== "captured") {
+    errors.push('feedbackStatus must equal "captured".');
+  }
+
+  return { valid: errors.length === 0, errors };
+}
+
 function normalizeExcerpt(value) {
   return cleanString(value)
     .normalize("NFKC")
@@ -375,7 +595,11 @@ export function evaluatePilot(scorecard) {
   );
   const usefulCount = useSignals.filter((signal) => signal.useful === true).length;
   const reuseCount = participants.filter((participant) => participant.wouldReuse === true).length;
-  const influencedCount = useSignals.filter((signal) => signal.influencedDecision === "yes").length;
+  const influencedCount = useSignals.filter(
+    (signal) =>
+      signal.influencedDecision === "yes"
+      || ["informed", "confirmed", "changed"].includes(signal.decisionEffect),
+  ).length;
   const pilotDays = calendarDaysBetween(scorecard?.pilot?.startedOn, scorecard?.pilot?.endedOn);
 
   const gates = [

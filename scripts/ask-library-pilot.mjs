@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import {
   auditDecisionBrief,
   evaluatePilot,
+  validateBriefFeedback,
   validateBriefRequest,
   validateDecisionBrief,
 } from "../ask-library/pilot-core.mjs";
@@ -73,6 +74,11 @@ async function run() {
     return;
   }
 
+  if (command === "feedback" && target) {
+    exitOnInvalid(target, validateBriefFeedback(readJson(target)));
+    return;
+  }
+
   if (command === "audit-source" && target) {
     const brief = readJson(target);
     const papers = readJson("papers.json");
@@ -98,6 +104,7 @@ async function run() {
     const examples = "docs/ask-library-pilot/examples";
     exitOnInvalid("example request", validateBriefRequest(readJson(`${examples}/request.example.json`)));
     exitOnInvalid("example brief", validateDecisionBrief(readJson(`${examples}/brief.example.json`)));
+    exitOnInvalid("example feedback", validateBriefFeedback(readJson(`${examples}/feedback.example.json`)));
     const score = evaluatePilot(readJson(`${examples}/scorecard.example.json`));
     console.log(`${score.expansionWarranted ? "PASS" : "FAIL"} example scorecard`);
     if (!score.expansionWarranted) process.exitCode = 1;
@@ -109,6 +116,7 @@ async function run() {
       "Usage:",
       "  node scripts/ask-library-pilot.mjs request <request.json>",
       "  node scripts/ask-library-pilot.mjs brief <brief.json>",
+      "  node scripts/ask-library-pilot.mjs feedback <feedback.json>",
       "  node scripts/ask-library-pilot.mjs audit-source <brief.json>",
       "  node scripts/ask-library-pilot.mjs score <scorecard.json>",
       "  node scripts/ask-library-pilot.mjs check-examples",
