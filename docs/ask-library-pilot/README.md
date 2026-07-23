@@ -3,6 +3,11 @@
 **Status:** Ready for controlled operator use
 **Issue:** [#1 — Operationalize the Ask the Library minimum credible pilot](https://github.com/erash11/SportScienceResearchRepo/issues/1)
 
+## Start here
+
+- Share the ready-to-send [`Ask-the-Library-Pilot-Participant-Quick-Start.docx`](Ask-the-Library-Pilot-Participant-Quick-Start.docx) with pilot participants. The plain-text source is [`participant-quick-start.md`](participant-quick-start.md).
+- Use [`pilot-lead-distribution-runbook.md`](pilot-lead-distribution-runbook.md) to deliver the pilot without asking staff to install software or use the repository.
+
 ## Why this is the next step
 
 The approved interaction prototype establishes the desired experience, but it does not establish that staff will use Decision Briefs or trust them enough to inform real decisions. The smallest honest test is therefore a concierge pilot: preserve the staff-facing experience while a named operator handles synthesis and evidence auditing behind it.
