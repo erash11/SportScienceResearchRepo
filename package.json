@@ -5,7 +5,7 @@
     "dev": "vite --open",
     "build": "vite build",
     "preview": "vite preview",
-    "prototype": "vite --config vite.prototype.config.js",
+    "prototype": "vite --config vite.prototype.config.js --open",
     "prototype:build": "vite build --config vite.prototype.config.js",
     "audit": "node scripts/audit-library.mjs --check && node scripts/audit-taxonomy.mjs && node scripts/audit-pilot-screening.mjs && node scripts/audit-pilot-synthesis.mjs && node scripts/audit-pilot-shortlist.mjs",
     "audit:manifest": "node scripts/audit-library.mjs --write",
