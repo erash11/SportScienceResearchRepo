@@ -6,6 +6,7 @@
 ## Start here
 
 - Share the ready-to-send [`Ask-the-Library-Pilot-Participant-Quick-Start.docx`](Ask-the-Library-Pilot-Participant-Quick-Start.docx) with pilot participants. The plain-text source is [`participant-quick-start.md`](participant-quick-start.md).
+- Assign the nine pilot questions from [`Ask-the-Library-Pilot-Stress-Test-Question-Bank.docx`](Ask-the-Library-Pilot-Stress-Test-Question-Bank.docx). Its source is [`stress-test-question-bank.md`](stress-test-question-bank.md), with structured copy-ready fields in [`examples/stress-test-question-bank.json`](examples/stress-test-question-bank.json).
 - Use [`pilot-lead-distribution-runbook.md`](pilot-lead-distribution-runbook.md) to deliver the pilot without asking staff to install software or use the repository.
 
 ## Why this is the next step

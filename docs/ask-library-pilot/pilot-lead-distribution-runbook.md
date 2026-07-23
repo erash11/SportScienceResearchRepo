@@ -17,9 +17,10 @@ Use one of these access modes:
 1. Select three participants from at least two disciplines.
 2. Assign anonymous IDs `P01`, `P02`, and `P03`.
 3. Send each participant `participant-quick-start.md` or the shareable Word version.
-4. Schedule one 10-minute orientation and three question cycles per participant during the 14-day window.
-5. Agree on a realistic brief return time at orientation. Do not promise automated or immediate answers.
-6. Keep all private files under `pilot-data/ask-library/private/`.
+4. Assign one simple, one applied, and one complex question from the stress-test question bank to each participant.
+5. Schedule one 10-minute orientation and three question cycles per participant during the 14-day window.
+6. Agree on a realistic brief return time at orientation. Do not promise automated or immediate answers.
+7. Keep all private files under `pilot-data/ask-library/private/`.
 
 Recommended folder structure:
 
@@ -45,11 +46,12 @@ pilot-data/ask-library/private/
    ```
 
 2. Confirm the participant's anonymous ID.
-3. Ask the participant to state one real decision.
-4. Confirm that the question contains no identifying athlete information.
-5. Let the participant enter the question and context whenever possible.
-6. Save the downloaded request JSON under `private/requests/`.
-7. Validate the request:
+3. Open the participant's assigned question and context from the stress-test question bank.
+4. Ask whether the scenario is relevant to a current or recent decision in the participant's work. If not, replace it with another question at the same complexity tier.
+5. Confirm that the question contains no identifying athlete information.
+6. Let the participant enter the question and context whenever possible.
+7. Save the downloaded request JSON under `private/requests/`.
+8. Validate the request:
 
    ```powershell
    npm run pilot:request -- pilot-data/ask-library/private/requests/<request>.json
@@ -94,6 +96,24 @@ pilot-data/ask-library/private/
 
 8. On the participant's third brief, complete the reuse and friction questions.
 
+After each brief, use one additional verbal prompt without adding another scoring form:
+
+> What, if anything, is useful, wrong, missing, misapplied, or potentially unsafe for your practice?
+
+Capture the answer in the existing **missing or misapplied** feedback field.
+
+### Structured question assignment
+
+Use `Ask-the-Library-Pilot-Stress-Test-Question-Bank.docx` as the assignment sheet:
+
+- **P01 / Performance:** Q01 simple, Q02 applied, Q03 complex
+- **P02 / Athletic Medicine and Rehabilitation:** Q04 simple, Q05 applied, Q06 complex
+- **P03 / Nutrition, Recovery, and Wellbeing:** Q07 simple, Q08 applied, Q09 complex
+
+These generated questions reduce participant burden and give the pilot deliberate coverage. They do not replace the Decision Utility requirement. A participant must confirm that each scenario maps to a current or recent decision; otherwise, substitute another question at the same tier.
+
+The “intended stress” note is for the pilot lead only. It describes the capability being tested, not the answer the operator should produce.
+
 ### Friction controls
 
 - Keep one pilot lead as the single point of contact.
@@ -113,4 +133,3 @@ pilot-data/ask-library/private/
 - Any brief containing identifying athlete information
 
 If the pilot passes, a secure self-service experience can become the next development phase. It should not be introduced during this concierge test.
-

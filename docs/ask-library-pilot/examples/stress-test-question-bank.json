@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "bankId": "ATL-PILOT-STRESS-TEST-V1",
+  "title": "Ask the Library Pilot Stress-Test Question Bank",
+  "assignmentRule": "Assign one simple, one applied, and one complex question to each practitioner.",
+  "relevanceRule": "Before submission, the practitioner must confirm that the scenario is relevant to a current or recent decision in their work. If it is not, replace it with another question at the same complexity tier.",
+  "evaluationPrompt": "What, if anything, is useful, wrong, missing, misapplied, or potentially unsafe for your practice?",
+  "questions": [
+    {
+      "questionId": "Q01",
+      "discipline": "Performance",
+      "tier": "simple",
+      "shortTitle": "Short-turnaround training",
+      "practicalQuestion": "How should we adjust the next field session for high-minute collegiate team-sport athletes when the next competition is inside 72 hours?",
+      "decisionContext": {
+        "population": "Collegiate starters and high-minute players",
+        "sport": "Team sport",
+        "phase": "Between competitions (<72 hours)",
+        "outcome": "Preserve readiness while retaining essential tactical preparation",
+        "constraints": "Travel after the first competition; one field session; no individual medical data"
+      },
+      "pilotLeadOnly": {
+        "intendedStress": "Direct retrieval, concise practical direction, calibrated confidence, and resistance to unnecessary complexity."
+      }
+    },
+    {
+      "questionId": "Q02",
+      "discipline": "Performance",
+      "tier": "applied",
+      "shortTitle": "Preseason monitoring integration",
+      "practicalQuestion": "During a high-density preseason camp, how should staff combine recent external load, session RPE, wellness, and a stable neuromuscular measure to decide whether to maintain or reduce group training exposure?",
+      "decisionContext": {
+        "population": "Healthy collegiate team-sport athletes",
+        "sport": "Team sport",
+        "phase": "Repeated high-density preseason training days",
+        "outcome": "Decide when group exposure should be maintained or modified",
+        "constraints": "Group-level decision; mixed positions and training ages; daily measures are available but noisy"
+      },
+      "pilotLeadOnly": {
+        "intendedStress": "Integration of multiple imperfect measures, avoidance of a single magic threshold, and a clear group-versus-individual boundary."
+      }
+    },
+    {
+      "questionId": "Q03",
+      "discipline": "Performance",
+      "tier": "complex",
+      "shortTitle": "Congested-week subgroup planning",
+      "practicalQuestion": "How should a multidisciplinary staff structure a congested competition week when tactical preparation, recovery, top-up work for low-minute players, and modified exposure for returning athletes compete for limited field time?",
+      "decisionContext": {
+        "population": "Collegiate roster with high-minute, low-minute, and returning athletes",
+        "sport": "Team sport",
+        "phase": "Two competitions within five days",
+        "outcome": "Preserve competition readiness while maintaining appropriate exposure by subgroup",
+        "constraints": "Travel; one full-team field session; shared staffing; no universal recovery marker"
+      },
+      "pilotLeadOnly": {
+        "intendedStress": "Subgrouping, competing priorities, cross-domain synthesis, honest uncertainty, and avoidance of a universal plan."
+      }
+    },
+    {
+      "questionId": "Q04",
+      "discipline": "Athletic Medicine / Rehabilitation",
+      "tier": "simple",
+      "shortTitle": "In-season hamstring risk reduction",
+      "practicalQuestion": "Which exercise components should anchor an in-season hamstring injury-risk reduction program for healthy collegiate field-sport athletes when staff can devote only two short sessions per week?",
+      "decisionContext": {
+        "population": "Healthy collegiate field-sport athletes",
+        "sport": "Field sport",
+        "phase": "In-season",
+        "outcome": "Address modifiable hamstring injury risk without creating excessive soreness",
+        "constraints": "Fifteen minutes twice weekly; existing sprint exposure; limited equipment"
+      },
+      "pilotLeadOnly": {
+        "intendedStress": "Direct translation into a constrained program while avoiding prevention guarantees or false precision."
+      }
+    },
+    {
+      "questionId": "Q05",
+      "discipline": "Athletic Medicine / Rehabilitation",
+      "tier": "applied",
+      "shortTitle": "Late-stage field exposure",
+      "practicalQuestion": "How should late-stage running and change-of-direction exposure be progressed before return to full team participation after a lower-extremity injury?",
+      "decisionContext": {
+        "population": "Collegiate field-sport athletes in late-stage rehabilitation",
+        "sport": "Field sport",
+        "phase": "Individual field work to controlled team integration",
+        "outcome": "Restore sport-relevant exposure while monitoring the athlete's response",
+        "constraints": "No athlete-specific diagnosis; limited weekly field access; practice demands vary"
+      },
+      "pilotLeadOnly": {
+        "intendedStress": "Progression logic, sport applicability, monitoring, and refusal to invent an individual clearance threshold."
+      }
+    },
+    {
+      "questionId": "Q06",
+      "discipline": "Athletic Medicine / Rehabilitation",
+      "tier": "complex",
+      "shortTitle": "Conflicting return-to-sport signals",
+      "practicalQuestion": "When symptoms, strength, movement performance, workload tolerance, and sport demands do not all point in the same direction, how should staff organize the return-to-sport decision process without relying on one cutoff?",
+      "decisionContext": {
+        "population": "Collegiate athletes nearing return after lower-extremity injury",
+        "sport": "Field or court sport",
+        "phase": "Controlled participation to unrestricted participation",
+        "outcome": "Make a transparent and defensible progression decision",
+        "constraints": "Signals may conflict; much of the evidence is group-level; no diagnosis or individual clearance is requested"
+      },
+      "pilotLeadOnly": {
+        "intendedStress": "Evidence tension, decision organization, role boundaries, and avoidance of invented thresholds or implied clearance."
+      }
+    },
+    {
+      "questionId": "Q07",
+      "discipline": "Nutrition / Recovery / Wellbeing",
+      "tier": "simple",
+      "shortTitle": "Short-window recovery nutrition",
+      "practicalQuestion": "What should a practical post-competition recovery nutrition plan prioritize when collegiate athletes finish an evening competition and train again the next morning?",
+      "decisionContext": {
+        "population": "Collegiate team-sport athletes",
+        "sport": "Team sport",
+        "phase": "Less than a 14-hour recovery window",
+        "outcome": "Support refueling, rehydration, and sleep",
+        "constraints": "Travel meal; variable appetite; limited preparation time"
+      },
+      "pilotLeadOnly": {
+        "intendedStress": "Simple actionable priorities without overprecision or individualized clinical advice."
+      }
+    },
+    {
+      "questionId": "Q08",
+      "discipline": "Nutrition / Recovery / Wellbeing",
+      "tier": "applied",
+      "shortTitle": "Heat, hydration, and travel",
+      "practicalQuestion": "How should staff structure hydration and heat-acclimation support for collegiate athletes traveling from a temperate environment to compete in hot conditions with limited on-site preparation?",
+      "decisionContext": {
+        "population": "Collegiate team-sport athletes",
+        "sport": "Team sport",
+        "phase": "Five to seven days before a hot-weather away competition",
+        "outcome": "Reduce heat strain and preserve performance readiness",
+        "constraints": "Limited acclimation sessions; travel; variable sweat response; no laboratory testing for every athlete"
+      },
+      "pilotLeadOnly": {
+        "intendedStress": "Context transfer, operational constraints, monitoring, and appropriate treatment of individual variability."
+      }
+    },
+    {
+      "questionId": "Q09",
+      "discipline": "Nutrition / Recovery / Wellbeing",
+      "tier": "complex",
+      "shortTitle": "Late travel, sleep, and caffeine",
+      "practicalQuestion": "How should staff prioritize sleep, caffeine timing, recovery behaviors, and next-day training demands after a late away competition followed by early academic obligations?",
+      "decisionContext": {
+        "population": "Collegiate athletes",
+        "sport": "Team sport",
+        "phase": "Overnight travel and the following day",
+        "outcome": "Preserve next-day function without worsening subsequent sleep",
+        "constraints": "Fixed travel; fixed academic obligations; individual caffeine response; no medication advice"
+      },
+      "pilotLeadOnly": {
+        "intendedStress": "Competing outcomes, time sequencing, cross-domain evidence, and clear limits when no ideal solution exists."
+      }
+    }
+  ]
+}
