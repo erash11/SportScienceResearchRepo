@@ -21,7 +21,9 @@ The brief informs professional judgment. It does not diagnose, prescribe treatme
 ## Evidence and trust contract
 
 - V1 is grounded only in evidence resources already included in the Evidence Library.
-- All 549 published records may support retrieval, but every substantive claim must be checked against original source text before inclusion.
+- All published Evidence Library records may support retrieval, but every substantive claim must be checked against original source text before inclusion.
+- Reviewed Zotero publications may resolve original source pages through the read-only bridge; unreviewed Zotero
+  records, metadata-only records, and Reference Stubs are not Evidence Library sources.
 - Existing summaries and taxonomy are retrieval aids, not sufficient evidence for a claim.
 - Sources whose original text cannot be accessed may be presented as relevant leads but cannot support the synthesis.
 - If the library lacks sufficient relevant evidence, the result is a Coverage Gap rather than an answer supplemented by model knowledge or unreviewed web content.

@@ -9,6 +9,7 @@ import {
   validateBriefRequest,
   validateDecisionBrief,
 } from "../ask-library/pilot-core.mjs";
+import { zoteroSourceLocator } from "../library/publication-candidate.mjs";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -57,6 +58,71 @@ function readPdfPage(sourceFile, page) {
   return result.stdout;
 }
 
+function loadZoteroPublications() {
+  const publicationDir = path.join(repoRoot, "docs", "zotero-synthesis");
+  if (!fs.existsSync(publicationDir)) return new Map();
+  const publications = fs
+    .readdirSync(publicationDir)
+    .filter((name) => name.toLowerCase().endsWith(".json"))
+    .map((name) => readJson(path.join("docs", "zotero-synthesis", name)))
+    .filter((publication) => publication.status === "PUBLISHED");
+  return new Map(
+    publications.map((publication) => [
+      String(publication.libraryReview.paperId),
+      publication,
+    ]),
+  );
+}
+
+const zoteroPublicationByPaperId = loadZoteroPublications();
+
+function resolveLibrarySource(paper, source) {
+  const publication = zoteroPublicationByPaperId.get(String(paper.id));
+  if (publication) return zoteroSourceLocator(publication);
+  const decodedUrl = decodeURIComponent(String(paper.driveUrl || ""));
+  return decodedUrl.endsWith(String(source.sourceFile || ""))
+    ? source.sourceFile
+    : "";
+}
+
+function readZoteroPage(sourceLocator, page) {
+  const itemKey = sourceLocator.slice("zotero:".length);
+  if (!/^[A-Z0-9]{6,16}$/i.test(itemKey)) {
+    throw new Error(`Invalid Zotero source locator: ${sourceLocator}`);
+  }
+  const command = process.env.ZOTERO_BRIDGE_COMMAND;
+  if (!command) {
+    throw new Error(
+      "ZOTERO_BRIDGE_COMMAND must point to zotero-bridge.exe "
+      + "to audit Zotero-backed sources.",
+    );
+  }
+  const result = spawnSync(
+    command,
+    ["pages", itemKey, "--page", String(page)],
+    { encoding: "utf8", windowsHide: true },
+  );
+  if (result.status !== 0) {
+    throw new Error(
+      String(result.stderr || "").trim()
+      || String(result.stdout || "").trim()
+      || `zotero-bridge exited ${result.status}`,
+    );
+  }
+  const pages = JSON.parse(result.stdout);
+  const evidencePage = pages.find((entry) => entry.page === page);
+  if (!evidencePage?.text) {
+    throw new Error(`Zotero page ${page} was not available for ${itemKey}.`);
+  }
+  return evidencePage.text;
+}
+
+function readSourcePage(sourceLocator, page) {
+  return sourceLocator.startsWith("zotero:")
+    ? readZoteroPage(sourceLocator, page)
+    : readPdfPage(sourceLocator, page);
+}
+
 function cleanProcessMessage(value) {
   return String(value ?? "").replace(/\s+/g, " ").trim();
 }
@@ -84,7 +150,8 @@ async function run() {
     const papers = readJson("papers.json");
     const result = await auditDecisionBrief(brief, {
       papers,
-      readSourcePage: readPdfPage,
+      readSourcePage,
+      resolveLibrarySource,
     });
     exitOnInvalid(`${target} (${result.excerptsChecked} excerpts checked)`, result);
     return;
