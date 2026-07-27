@@ -6,6 +6,8 @@ import { fileURLToPath } from "node:url";
 import {
   approvePublicationCandidate,
   candidateConflicts,
+  expectedEvidenceLibraryId,
+  publicationPaperIdConflicts,
   publishedPaperFromPublication,
   validatePublicationCandidate,
   validateZoteroPublication,
@@ -89,16 +91,29 @@ if (command === "check") {
 
 if (command === "stage") {
   const candidate = readJson(target);
-  const result = validateCandidateAndConflicts(candidate);
+  const existingPublications = loadPublications();
+  const result = validateCandidateAndConflicts(candidate, existingPublications);
   if (!result.valid) {
     fail(`Candidate cannot be staged:\n- ${result.errors.join("\n- ")}`);
   }
+  const papers = readJson(papersPath);
+  const requestedPaperId = flag("--paper-id");
+  const expectedPaperId = expectedEvidenceLibraryId(
+    candidate,
+    papers,
+    existingPublications,
+  );
+  if (requestedPaperId !== expectedPaperId) {
+    fail(
+      `--paper-id must use the next reserved Evidence Library ID `
+      + `${expectedPaperId}.`,
+    );
+  }
   const publication = approvePublicationCandidate(candidate, {
-    paperId: flag("--paper-id"),
+    paperId: requestedPaperId,
     reviewedBy: flag("--reviewed-by"),
     reviewedOn: flag("--reviewed-on"),
   });
-  const papers = readJson(papersPath);
   if (papers.some((paper) => String(paper.id) === publication.libraryReview.paperId)) {
     fail(`Evidence Library ID ${publication.libraryReview.paperId} is already assigned.`);
   }
@@ -155,6 +170,9 @@ if (command === "apply") {
     staged.candidate,
     papers,
     otherPublications,
+  );
+  conflicts.push(
+    ...publicationPaperIdConflicts([staged, ...otherPublications]),
   );
   if (conflicts.length) {
     fail(`Publication conflicts with existing evidence:\n- ${conflicts.join("\n- ")}`);

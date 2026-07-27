@@ -9,7 +9,11 @@ import {
   validateBriefRequest,
   validateDecisionBrief,
 } from "../ask-library/pilot-core.mjs";
-import { zoteroSourceLocator } from "../library/publication-candidate.mjs";
+import {
+  assertZoteroSourceIdentity,
+  parseZoteroSourceLocator,
+  zoteroSourceLocator,
+} from "../library/publication-candidate.mjs";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -75,6 +79,7 @@ function loadZoteroPublications() {
 }
 
 const zoteroPublicationByPaperId = loadZoteroPublications();
+const verifiedZoteroSources = new Set();
 
 function resolveLibrarySource(paper, source) {
   const publication = zoteroPublicationByPaperId.get(String(paper.id));
@@ -86,10 +91,7 @@ function resolveLibrarySource(paper, source) {
 }
 
 function readZoteroPage(sourceLocator, page) {
-  const itemKey = sourceLocator.slice("zotero:".length);
-  if (!/^[A-Z0-9]{6,16}$/i.test(itemKey)) {
-    throw new Error(`Invalid Zotero source locator: ${sourceLocator}`);
-  }
+  const expected = parseZoteroSourceLocator(sourceLocator);
   const command = process.env.ZOTERO_BRIDGE_COMMAND;
   if (!command) {
     throw new Error(
@@ -97,9 +99,35 @@ function readZoteroPage(sourceLocator, page) {
       + "to audit Zotero-backed sources.",
     );
   }
+  if (!verifiedZoteroSources.has(sourceLocator)) {
+    const identityResult = spawnSync(
+      command,
+      ["show", expected.itemKey],
+      { encoding: "utf8", windowsHide: true },
+    );
+    if (identityResult.status !== 0) {
+      throw new Error(
+        String(identityResult.stderr || "").trim()
+        || String(identityResult.stdout || "").trim()
+        || `zotero-bridge exited ${identityResult.status}`,
+      );
+    }
+    assertZoteroSourceIdentity(
+      sourceLocator,
+      JSON.parse(identityResult.stdout),
+    );
+    verifiedZoteroSources.add(sourceLocator);
+  }
   const result = spawnSync(
     command,
-    ["pages", itemKey, "--page", String(page)],
+    [
+      "pages",
+      expected.itemKey,
+      "--page",
+      String(page),
+      "--attachment-key",
+      expected.attachmentKey,
+    ],
     { encoding: "utf8", windowsHide: true },
   );
   if (result.status !== 0) {
@@ -112,7 +140,9 @@ function readZoteroPage(sourceLocator, page) {
   const pages = JSON.parse(result.stdout);
   const evidencePage = pages.find((entry) => entry.page === page);
   if (!evidencePage?.text) {
-    throw new Error(`Zotero page ${page} was not available for ${itemKey}.`);
+    throw new Error(
+      `Zotero page ${page} was not available for ${expected.itemKey}.`,
+    );
   }
   return evidencePage.text;
 }

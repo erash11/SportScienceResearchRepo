@@ -4,6 +4,8 @@ import { fileURLToPath } from "node:url";
 
 import {
   candidateConflicts,
+  nextEvidenceLibraryId,
+  publicationPaperIdConflicts,
   publishedPaperFromPublication,
   taxonomyRecordFromPublication,
   validateZoteroPublication,
@@ -34,6 +36,28 @@ const publications = fs.existsSync(publicationDir)
     }))
   : [];
 const failures = [];
+failures.push(
+  ...publicationPaperIdConflicts(publications.map((entry) => entry.value)),
+);
+
+const stagedByPaperId = publications
+  .map((entry) => entry.value)
+  .filter((publication) => publication.status === "STAGED")
+  .sort(
+    (left, right) => Number(left.libraryReview?.paperId)
+      - Number(right.libraryReview?.paperId),
+  );
+let expectedStagedId = nextEvidenceLibraryId(papers);
+for (const publication of stagedByPaperId) {
+  const paperId = String(publication.libraryReview?.paperId || "");
+  if (paperId !== expectedStagedId) {
+    failures.push(
+      `${publication.publicationId}: staged paper ID ${paperId} must be `
+      + `the next reserved ID ${expectedStagedId}.`,
+    );
+  }
+  expectedStagedId = String(Number(expectedStagedId) + 1);
+}
 
 for (const { file, value } of publications) {
   const validation = validateZoteroPublication(value);

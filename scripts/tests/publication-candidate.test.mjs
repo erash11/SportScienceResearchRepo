@@ -3,7 +3,12 @@ import test from "node:test";
 
 import {
   approvePublicationCandidate,
+  assertZoteroSourceIdentity,
   candidateConflicts,
+  expectedEvidenceLibraryId,
+  nextEvidenceLibraryId,
+  parseZoteroSourceLocator,
+  publicationPaperIdConflicts,
   publishedPaperFromPublication,
   taxonomyRecordFromPublication,
   validatePublicationCandidate,
@@ -69,6 +74,31 @@ test("validates the producer-compatible candidate interface", () => {
   });
 });
 
+test("accepts schema-compatible fields in any JSON object order", () => {
+  const value = candidate();
+  const reordered = Object.fromEntries(Object.entries(value).reverse());
+  reordered.source = Object.fromEntries(Object.entries(value.source).reverse());
+  reordered.paper = Object.fromEntries(Object.entries(value.paper).reverse());
+  assert.deepEqual(validatePublicationCandidate(reordered), {
+    valid: true,
+    errors: [],
+  });
+});
+
+test("rejects private source URLs, non-string DOIs, and non-RFC3339 timestamps", () => {
+  const value = candidate();
+  value.publicSourceUrl = "https://127.0.0.1/private.pdf";
+  value.preparedAt = "July 24, 2026";
+  value.source.doi = 1000;
+  value.paper.doi = 1000;
+  const result = validatePublicationCandidate(value);
+  assert.equal(result.valid, false);
+  assert.match(result.errors.join("\n"), /valid public URL/);
+  assert.match(result.errors.join("\n"), /RFC 3339/);
+  assert.match(result.errors.join("\n"), /source\.doi must be a string/);
+  assert.match(result.errors.join("\n"), /paper\.doi must be a string/);
+});
+
 test("rejects unsupported taxonomy and invalid locator pages", () => {
   const value = candidate();
   value.taxonomy.sports = ["Quidditch"];
@@ -91,6 +121,68 @@ test("detects DOI and citation conflicts before staging", () => {
   assert.equal(conflicts.length, 2);
 });
 
+test("detects citation conflicts with another staged candidate", () => {
+  const stagedCandidate = candidate();
+  stagedCandidate.candidateId = "zotero-PAPER2-v11";
+  stagedCandidate.source.itemKey = "PAPER2";
+  stagedCandidate.source.itemVersion = 11;
+  stagedCandidate.source.doi = "10.1000/other";
+  stagedCandidate.paper.doi = "10.1000/other";
+  const staged = approvePublicationCandidate(stagedCandidate, {
+    paperId: "576",
+    reviewedBy: "Eric Rash",
+    reviewedOn: "2026-07-24",
+  });
+  const conflicts = candidateConflicts(candidate(), [], [staged]);
+  assert.equal(conflicts.length, 1);
+  assert.match(conflicts[0], /Citation already belongs/);
+});
+
+test("reserves stable IDs across staged publications", () => {
+  const staged = approvePublicationCandidate(candidate(), {
+    paperId: "576",
+    reviewedBy: "Eric Rash",
+    reviewedOn: "2026-07-24",
+  });
+  const duplicate = {
+    ...staged,
+    publicationId: "zotero-publication-PAPER2-v11",
+  };
+  assert.equal(nextEvidenceLibraryId([{ id: "575" }], [staged]), "577");
+  assert.match(
+    publicationPaperIdConflicts([staged, duplicate]).join("\n"),
+    /reserved by both/,
+  );
+});
+
+test("re-staging a candidate preserves its reserved ID", () => {
+  const staged = approvePublicationCandidate(candidate(), {
+    paperId: "576",
+    reviewedBy: "Eric Rash",
+    reviewedOn: "2026-07-24",
+  });
+  const laterCandidate = candidate();
+  laterCandidate.candidateId = "zotero-PAPER2-v11";
+  laterCandidate.source.itemKey = "PAPER2";
+  laterCandidate.source.itemVersion = 11;
+  const later = approvePublicationCandidate(laterCandidate, {
+    paperId: "577",
+    reviewedBy: "Eric Rash",
+    reviewedOn: "2026-07-25",
+  });
+
+  assert.equal(
+    expectedEvidenceLibraryId(candidate(), [{ id: "575" }], [staged, later]),
+    "576",
+  );
+  const newCandidate = candidate();
+  newCandidate.candidateId = "zotero-PAPER3-v12";
+  assert.equal(
+    expectedEvidenceLibraryId(newCandidate, [{ id: "575" }], [staged, later]),
+    "578",
+  );
+});
+
 test("approves, validates, and maps a staged candidate", () => {
   const publication = approvePublicationCandidate(candidate(), {
     paperId: "576",
@@ -106,5 +198,31 @@ test("approves, validates, and maps a staged candidate", () => {
     taxonomyRecordFromPublication(publication).taxonomySource,
     "zotero-paper-brief",
   );
-  assert.equal(zoteroSourceLocator(publication), "zotero:PAPER1");
+  const locator = "zotero:PAPER1@10#ATTACH1";
+  assert.equal(zoteroSourceLocator(publication), locator);
+  assert.deepEqual(parseZoteroSourceLocator(locator), {
+    itemKey: "PAPER1",
+    itemVersion: 10,
+    attachmentKey: "ATTACH1",
+  });
+  assert.deepEqual(
+    assertZoteroSourceIdentity(locator, {
+      key: "PAPER1",
+      version: 10,
+      attachments: [{ key: "ATTACH1" }],
+    }),
+    {
+      itemKey: "PAPER1",
+      itemVersion: 10,
+      attachmentKey: "ATTACH1",
+    },
+  );
+  assert.throws(
+    () => assertZoteroSourceIdentity(locator, {
+      key: "PAPER1",
+      version: 11,
+      attachments: [{ key: "ATTACH1" }],
+    }),
+    /no longer matches published version/,
+  );
 });

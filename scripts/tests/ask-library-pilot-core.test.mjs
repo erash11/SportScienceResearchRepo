@@ -195,7 +195,7 @@ test("audits a Zotero-backed source through injected source adapters", async () 
     sources: [
       {
         ...brief.sources[0],
-        sourceFile: "zotero:PAPER1",
+        sourceFile: "zotero:PAPER1@10#ATTACH1",
       },
     ],
   };
@@ -208,9 +208,9 @@ test("audits a Zotero-backed source through injected source adapters", async () 
   ];
   const result = await auditDecisionBrief(zoteroBrief, {
     papers,
-    resolveLibrarySource: async () => "zotero:PAPER1",
+    resolveLibrarySource: async () => "zotero:PAPER1@10#ATTACH1",
     readSourcePage: async (locator) => {
-      assert.equal(locator, "zotero:PAPER1");
+      assert.equal(locator, "zotero:PAPER1@10#ATTACH1");
       return "Fixture congestion had no impact on total distance covered.";
     },
   });

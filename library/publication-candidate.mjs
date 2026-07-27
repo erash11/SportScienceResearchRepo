@@ -65,13 +65,40 @@ function cleanString(value) {
 }
 
 function exactFields(value, expected) {
-  return isObject(value)
-    && JSON.stringify(Object.keys(value)) === JSON.stringify(expected);
+  if (!isObject(value)) return false;
+  const actual = Object.keys(value);
+  return actual.length === expected.length
+    && expected.every((field) => Object.hasOwn(value, field));
 }
 
 function pushString(errors, value, path, minimum = 1) {
   if (cleanString(value).length < minimum) {
     errors.push(`${path} must contain at least ${minimum} characters.`);
+  }
+}
+
+function isRfc3339Timestamp(value) {
+  return typeof value === "string"
+    && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})$/.test(value)
+    && !Number.isNaN(Date.parse(value));
+}
+
+function isPublicHttpUrl(value) {
+  if (typeof value !== "string") return false;
+  try {
+    const url = new URL(value);
+    const hostname = url.hostname.replace(/^\[|\]$/g, "").replace(/\.$/, "").toLocaleLowerCase();
+    return ["http:", "https:"].includes(url.protocol)
+      && !url.username
+      && !url.password
+      && hostname.includes(".")
+      && !hostname.includes(":")
+      && !/^\d+(?:\.\d+){3}$/.test(hostname)
+      && hostname !== "localhost"
+      && ![".localhost", ".local", ".internal", ".home.arpa", ".test", ".invalid"]
+        .some((suffix) => hostname.endsWith(suffix));
+  } catch {
+    return false;
   }
 }
 
@@ -107,7 +134,7 @@ export function validatePublicationCandidate(candidate) {
     return { valid: false, errors: ["Candidate must be a JSON object."] };
   }
   if (!exactFields(candidate, CANDIDATE_FIELDS)) {
-    errors.push("Candidate has unexpected fields or field order.");
+    errors.push("Candidate has missing or unexpected fields.");
   }
   if (candidate.schemaVersion !== PUBLICATION_CANDIDATE_SCHEMA_VERSION) {
     errors.push(
@@ -118,22 +145,17 @@ export function validatePublicationCandidate(candidate) {
     errors.push(`status must equal ${READY_FOR_LIBRARY_REVIEW}.`);
   }
   pushString(errors, candidate.candidateId, "candidateId", 12);
-  if (Number.isNaN(Date.parse(candidate.preparedAt))) {
-    errors.push("preparedAt must be an ISO-compatible timestamp.");
+  if (!isRfc3339Timestamp(candidate.preparedAt)) {
+    errors.push("preparedAt must be an RFC 3339 timestamp.");
   }
   pushString(errors, candidate.preparedBy, "preparedBy", 2);
-  try {
-    const url = new URL(candidate.publicSourceUrl);
-    if (!["http:", "https:"].includes(url.protocol)) {
-      errors.push("publicSourceUrl must use HTTP or HTTPS.");
-    }
-  } catch {
+  if (!isPublicHttpUrl(candidate.publicSourceUrl)) {
     errors.push("publicSourceUrl must be a valid public URL.");
   }
 
   const source = candidate.source;
   if (!exactFields(source, SOURCE_FIELDS)) {
-    errors.push("source has unexpected fields or field order.");
+    errors.push("source has missing or unexpected fields.");
   } else {
     if (source.kind !== "zotero") errors.push('source.kind must equal "zotero".');
     if (!/^[A-Z0-9]{6,16}$/i.test(cleanString(source.itemKey))) {
@@ -147,6 +169,9 @@ export function validatePublicationCandidate(candidate) {
       errors.push("source.pageCount must be a positive integer.");
     }
     pushString(errors, source.title, "source.title", 5);
+    if (typeof source.doi !== "string") {
+      errors.push("source.doi must be a string.");
+    }
     if (!Number.isInteger(source.year) || source.year < 1900 || source.year > 2100) {
       errors.push("source.year must be a plausible publication year.");
     }
@@ -158,7 +183,7 @@ export function validatePublicationCandidate(candidate) {
 
   const evidence = candidate.evidenceReview;
   if (!exactFields(evidence, EVIDENCE_REVIEW_FIELDS)) {
-    errors.push("evidenceReview has unexpected fields or field order.");
+    errors.push("evidenceReview has missing or unexpected fields.");
   } else {
     if (evidence.artifactType !== "paper-brief") {
       errors.push('evidenceReview.artifactType must equal "paper-brief".');
@@ -207,7 +232,7 @@ export function validatePublicationCandidate(candidate) {
 
   const paper = candidate.paper;
   if (!exactFields(paper, PAPER_FIELDS)) {
-    errors.push("paper has unexpected fields or field order.");
+    errors.push("paper has missing or unexpected fields.");
   } else {
     if (!Number.isInteger(paper.year) || paper.year < 1900 || paper.year > 2100) {
       errors.push("paper.year must be a plausible publication year.");
@@ -216,6 +241,9 @@ export function validatePublicationCandidate(candidate) {
       (name) => !["year", "doi"].includes(name),
     )) {
       pushString(errors, paper[field], `paper.${field}`, field === "citation" ? 10 : 20);
+    }
+    if (typeof paper.doi !== "string") {
+      errors.push("paper.doi must be a string.");
     }
     if (source && paper.year !== source.year) {
       errors.push("paper.year must match source.year.");
@@ -235,7 +263,7 @@ export function validatePublicationCandidate(candidate) {
 
   const taxonomy = candidate.taxonomy;
   if (!exactFields(taxonomy, TAXONOMY_FIELDS)) {
-    errors.push("taxonomy has unexpected fields or field order.");
+    errors.push("taxonomy has missing or unexpected fields.");
   } else {
     validateControlledList(errors, taxonomy.domains, "taxonomy.domains", TAXONOMY.domains);
     validateControlledList(
@@ -289,6 +317,58 @@ export function candidateConflicts(candidate, papers, publications = []) {
       conflicts.push(
         `DOI already belongs to publication ${publication.publicationId}.`,
       );
+    }
+    if (
+      citation
+      && normalizedIdentity(publication?.candidate?.paper?.citation) === citation
+    ) {
+      conflicts.push(
+        `Citation already belongs to publication ${publication.publicationId}.`,
+      );
+    }
+  }
+  return [...new Set(conflicts)];
+}
+
+export function nextEvidenceLibraryId(papers = [], publications = []) {
+  const assigned = [
+    ...(papers || []).map((paper) => Number(paper?.id)),
+    ...(publications || []).map(
+      (publication) => Number(publication?.libraryReview?.paperId),
+    ),
+  ].filter((value) => Number.isSafeInteger(value) && value > 0);
+  return String((assigned.length ? Math.max(...assigned) : 0) + 1);
+}
+
+export function expectedEvidenceLibraryId(
+  candidate,
+  papers = [],
+  publications = [],
+) {
+  const existing = publications.find(
+    (publication) => (
+      publication?.candidate?.candidateId === candidate?.candidateId
+    ),
+  );
+  return existing
+    ? cleanString(existing.libraryReview?.paperId)
+    : nextEvidenceLibraryId(papers, publications);
+}
+
+export function publicationPaperIdConflicts(publications = []) {
+  const owners = new Map();
+  const conflicts = [];
+  for (const publication of publications || []) {
+    const paperId = cleanString(publication?.libraryReview?.paperId);
+    if (!paperId) continue;
+    const owner = owners.get(paperId);
+    if (owner) {
+      conflicts.push(
+        `Evidence Library ID ${paperId} is reserved by both ${owner} `
+        + `and ${publication?.publicationId}.`,
+      );
+    } else {
+      owners.set(paperId, publication?.publicationId);
     }
   }
   return [...new Set(conflicts)];
@@ -418,5 +498,39 @@ export function taxonomyRecordFromPublication(publication) {
 }
 
 export function zoteroSourceLocator(publication) {
-  return `zotero:${publication.candidate.source.itemKey}`;
+  const source = publication.candidate.source;
+  return `zotero:${source.itemKey}@${source.itemVersion}#${source.attachmentKey}`;
+}
+
+export function parseZoteroSourceLocator(sourceLocator) {
+  const match = /^zotero:([A-Z0-9]{6,16})@([1-9]\d*)#([A-Z0-9]{6,16})$/i.exec(
+    cleanString(sourceLocator),
+  );
+  if (!match) {
+    throw new Error(`Invalid Zotero source locator: ${sourceLocator}`);
+  }
+  return {
+    itemKey: match[1],
+    itemVersion: Number(match[2]),
+    attachmentKey: match[3],
+  };
+}
+
+export function assertZoteroSourceIdentity(sourceLocator, item) {
+  const expected = parseZoteroSourceLocator(sourceLocator);
+  if (item?.key !== expected.itemKey || item?.version !== expected.itemVersion) {
+    throw new Error(
+      `Zotero item ${expected.itemKey} no longer matches published version `
+      + `${expected.itemVersion}.`,
+    );
+  }
+  if (
+    !Array.isArray(item?.attachments)
+    || !item.attachments.some((attachment) => attachment?.key === expected.attachmentKey)
+  ) {
+    throw new Error(
+      `Zotero attachment ${expected.attachmentKey} is unavailable for ${expected.itemKey}.`,
+    );
+  }
+  return expected;
 }
