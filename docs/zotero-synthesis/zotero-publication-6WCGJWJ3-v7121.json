@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "ask-library-zotero-publication.v1",
+  "publicationId": "zotero-publication-6WCGJWJ3-v7121",
+  "status": "PUBLISHED",
+  "libraryReview": {
+    "paperId": "587",
+    "reviewedBy": "Eric Rash",
+    "reviewedOn": "2026-07-28"
+  },
+  "publication": {
+    "status": "PUBLISHED",
+    "publishedOn": "2026-07-28"
+  },
+  "candidate": {
+    "schemaVersion": "ask-library-publication-candidate.v1",
+    "candidateId": "zotero-6WCGJWJ3-v7121",
+    "status": "READY_FOR_LIBRARY_REVIEW",
+    "preparedAt": "2026-07-28T22:54:23.105317Z",
+    "preparedBy": "Codex GPT-5.6 Sol (reviewed Paper Brief translation)",
+    "publicSourceUrl": "https://doi.org/10.1002/ksa.70475",
+    "source": {
+      "kind": "zotero",
+      "itemKey": "6WCGJWJ3",
+      "itemVersion": 7121,
+      "attachmentKey": "SELUWIAU",
+      "pageCount": 11,
+      "title": "Biomechanical phenotypes of 90° change of direction in football players: Unsupervised machine learning in anterior cruciate ligament injury prevention",
+      "doi": "10.1002/ksa.70475",
+      "year": 2026
+    },
+    "evidenceReview": {
+      "artifactType": "paper-brief",
+      "paperBriefPath": "Knowledge/library/research-papers/della-villa-2026-biomechanical-phenotypes-of-90-change-of-direction-in-football-players-unsupervised-machin.md",
+      "paperBriefSha256": "acc77883bc902c1bbde0c7b920932fa3aac5269a6fc27383050b1784edd8968a",
+      "fullTextReviewed": true,
+      "evidenceLocatorPages": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        9
+      ]
+    },
+    "paper": {
+      "year": 2026,
+      "citation": "Della Villa F., Ghibellini A., Buckthorpe M., Bononi L., Gabbrielli M., Grassi A., et al. Biomechanical phenotypes of 90° change of direction in football players: Unsupervised machine learning in anterior cruciate ligament injury prevention. Knee Surgery, Sports Traumatology, Arthroscopy. 2026;:ksa.70475. doi:10.1002/ksa.70475.",
+      "doi": "10.1002/ksa.70475",
+      "abstract": "This paper addresses the following question: Can unsupervised machine learning identify distinct 90° change-of-direction biomechanical phenotypes in a large cohort of healthy young soccer players? Participants: 1,002 competitive soccer players, age 16.3±2.8 years, including 264 females, free from severe musculoskeletal injury. Sport and level: Amateur and professional youth/young-adult soccer, age range 14–21 years. Design: Secondary cross-sectional analysis of the prospective CUTtheACL cohort. Exposure or intervention: Laboratory 90° cuts on artificial turf after warm-up/familiarization.",
+      "tldr": "Four clusters emerged with silhouette=.43. Cluster sizes were low-force/low-control n=289, low-force/high-control n=242, high-force/low-control n=229, and high-force/high-control n=242. Multivariable clustering can be a useful descriptive layer for organizing complex cutting profiles, but these labels should not trigger ACL-risk classification or individualized “prevention” prescriptions without reliability and prospective-outcome validation.",
+      "methods": "Design: Secondary cross-sectional analysis of the prospective CUTtheACL cohort. Exposure or intervention: Laboratory 90° cuts on artificial turf after warm-up/familiarization. Comparator: Four data-derived clusters rather than prespecified clinical groups. Measurements and outcomes: Three high-speed cameras, force platform, 2D kinematics, ground-reaction forces, speed/time variables, and Movement Analysis Test scores; 42 normalized biomechanical features entered clustering. Analysis: t-SNE dimensionality reduction, Ward agglomerative clustering, silhouette optimization, ARI stability/consensus analyses, random-forest threefold classification, and between-cluster tests.",
+      "findings": "Four clusters emerged with silhouette=.43. Cluster sizes were low-force/low-control n=289, low-force/high-control n=242, high-force/low-control n=229, and high-force/high-control n=242. Stability across high perplexities was ARI=.701, stability across random seeds was ARI=.717, and consensus with K-means was ARI=.658. Random-forest cross-validation predicted the cluster labels with precision .91–.95, recall .90–.94, and F1 .91–.94. Peak posterior GRF differed across clusters (1.0±0.3, 0.9±0.2, 1.3±0.3, and 1.5±0.4 N/BW; ηp²=.40, p<.001), illustrating the force dimension used to interpret phenotypes.",
+      "limitations": "Preplanned 90° cutting may not represent unplanned or varied in-game tasks; no strength or EMG data were collected. The 14–21-year soccer cohort limits transfer to adult professionals or American football. Dimensionality reduction can oversimplify individual strategies; each player was tested once, so phenotype test–retest reliability was unknown. Most importantly, no injury outcome was included; the clusters are descriptive movement phenotypes, not validated ACL-risk categories.",
+      "practicalImplications": "Multivariable clustering can be a useful descriptive layer for organizing complex cutting profiles, but these labels should not trigger ACL-risk classification or individualized “prevention” prescriptions without reliability and prospective-outcome validation. For collegiate American football, both task and population differ substantially, so any analogous workflow requires sport-specific data and external validation.",
+      "athleteDev": "For athlete development, multivariable clustering can be a useful descriptive layer for organizing complex cutting profiles, but these labels should not trigger ACL-risk classification or individualized “prevention” prescriptions without reliability and prospective-outcome validation. For collegiate American football, both task and population differ substantially, so any analogous workflow requires sport-specific data and external validation. Apply the finding within the population and setting described in the source rather than treating it as a universal threshold.",
+      "rtp": "For rehabilitation and return-to-sport decisions, multivariable clustering can be a useful descriptive layer for organizing complex cutting profiles, but these labels should not trigger ACL-risk classification or individualized “prevention” prescriptions without reliability and prospective-outcome validation. For collegiate American football, both task and population differ substantially, so any analogous workflow requires sport-specific data and external validation. Use the paper as one input to interdisciplinary judgment, not as a standalone clearance criterion or reinjury prediction rule."
+    },
+    "taxonomy": {
+      "domains": [
+        "Sports Medicine & Injury",
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Youth / Adolescent",
+        "Female Athletes",
+        "Injured Athletes",
+        "Healthy Athletes"
+      ],
+      "studyDesign": "Cross-sectional Study"
+    }
+  }
+}
