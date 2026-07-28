@@ -189,6 +189,35 @@ test("audits claim excerpts through the source-text adapter", async () => {
   assert.equal(result.excerptsChecked, 1);
 });
 
+test("audits a Zotero-backed source through injected source adapters", async () => {
+  const zoteroBrief = {
+    ...brief,
+    sources: [
+      {
+        ...brief.sources[0],
+        sourceFile: "zotero:PAPER1@10#ATTACH1",
+      },
+    ],
+  };
+  const papers = [
+    {
+      id: "448",
+      citation: brief.sources[0].citation,
+      driveUrl: "https://doi.org/10.1000/example",
+    },
+  ];
+  const result = await auditDecisionBrief(zoteroBrief, {
+    papers,
+    resolveLibrarySource: async () => "zotero:PAPER1@10#ATTACH1",
+    readSourcePage: async (locator) => {
+      assert.equal(locator, "zotero:PAPER1@10#ATTACH1");
+      return "Fixture congestion had no impact on total distance covered.";
+    },
+  });
+  assert.equal(result.valid, true);
+  assert.equal(result.excerptsChecked, 1);
+});
+
 test("fails the source audit when an excerpt cannot be located", async () => {
   const papers = [
     {

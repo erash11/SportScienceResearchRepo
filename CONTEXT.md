@@ -8,6 +8,11 @@ Shared language for curating health and performance evidence and translating it 
 A curated collection of source-grounded evidence resources approved for staff discovery and synthesis.
 _Avoid_: Paper archive, research database
 
+**Evidence Library Publication Candidate**:
+A source-verified synthesis proposed for admission to the Evidence Library. It requires accountable review,
+duplicate and taxonomy checks, and stable-ID assignment before publication.
+_Avoid_: Published paper, submission, automatic import
+
 **Ask the Library**:
 The decision-support experience that converts a staff question into a structured Decision Brief grounded in the Evidence Library.
 _Avoid_: Chatbot, answer engine

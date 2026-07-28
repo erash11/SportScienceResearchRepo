@@ -505,6 +505,12 @@ export async function auditDecisionBrief(
   {
     papers,
     readSourcePage,
+    resolveLibrarySource = (paper, source) => {
+      const decodedUrl = decodeURIComponent(cleanString(paper?.driveUrl));
+      return decodedUrl.endsWith(cleanString(source?.sourceFile))
+        ? cleanString(source?.sourceFile)
+        : "";
+    },
   },
 ) {
   const structural = validateDecisionBrief(brief);
@@ -533,8 +539,8 @@ export async function auditDecisionBrief(
     if (cleanString(paper.citation) !== cleanString(source.citation)) {
       errors.push(`Library source ${source.libraryId} citation does not match papers.json.`);
     }
-    const decodedUrl = decodeURIComponent(cleanString(paper.driveUrl));
-    if (!decodedUrl.endsWith(source.sourceFile)) {
+    const expectedSource = await resolveLibrarySource(paper, source);
+    if (cleanString(expectedSource) !== cleanString(source.sourceFile)) {
       errors.push(`Library source ${source.libraryId} sourceFile does not match its published reference.`);
     }
   }

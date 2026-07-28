@@ -42,6 +42,11 @@ The congested-week example simulates guided intake, one clarification, a Decisio
 
 Private pilot requests, briefs, audits, and scorecards belong under `pilot-data/ask-library/private/`, which Git ignores. Never commit participant questions or other private pilot data.
 
+Published Zotero-backed sources are admitted only through the reviewed candidate workflow in
+`docs/contracts/zotero-publication-candidate-v1.md`. Their private PDFs remain in Zotero. For original-source
+auditing, set `ZOTERO_BRIDGE_COMMAND` to the installed `zotero-bridge.exe`; the pilot CLI resolves the published
+paper ID to its versioned Zotero item and reads cached page text.
+
 ### Data Architecture
 
 Paper data has a single source:
@@ -78,6 +83,10 @@ Paper data has a single source:
 
 - **Batch import (AI agents):** Process selected PDFs from `SourcePapers/`, generate paper objects with the 13-field legacy schema, merge into `papers.json`, then run `npm run taxonomy:build`. IDs must be stable numeric strings; assign from the next unused ID and never reuse a removed ID. Do not use `Date.now()` for batch imports. Run `npm run audit` before publishing.
 - **Public submissions:** The site does not expose a submission control. Papers are added through the curated batch-import and review workflow above so the public interface does not imply that a submission will be published automatically.
+- **Reviewed Zotero candidates:** Validate with `npm run candidate:check -- <candidate.json>`, record accountable
+  approval with `npm run candidate:stage -- <candidate.json> --paper-id <id> --reviewed-by "<name>" --reviewed-on
+  <YYYY-MM-DD>`, and apply locally with `npm run candidate:apply -- <publication.json> --published-on
+  <YYYY-MM-DD>`. Applying runs audits and rolls back on failure; commit, push, and deploy remain separate actions.
 
 ## Paper Data Schema
 

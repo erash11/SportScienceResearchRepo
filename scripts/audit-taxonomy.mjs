@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { inferTaxonomy, TAXONOMY, TAXONOMY_VERSION, normalizePaper } from "../evidence-taxonomy.mjs";
+import { taxonomyRecordFromPublication } from "../library/publication-candidate.mjs";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const papers = JSON.parse(fs.readFileSync(path.join(repoRoot, "papers.json"), "utf8"));
@@ -33,6 +34,21 @@ if (fs.existsSync(screeningDir)) {
       if (metadata.taxonomySource !== "full-text-screening") failures.push(`published screening ID ${reviewed.publication.paperId} is not marked full-text-screening`);
       if (metadata.studyDesign !== reviewed.studyDesign) failures.push(`published screening ID ${reviewed.publication.paperId} lost its reviewed study design`);
       for (const field of ["domains", "audiences", "sports", "populations"]) if (JSON.stringify(metadata[field]) !== JSON.stringify(reviewed[field])) failures.push(`published screening ID ${reviewed.publication.paperId} lost reviewed ${field}`);
+    }
+  }
+}
+const zoteroSynthesisDir = path.join(repoRoot, "docs", "zotero-synthesis");
+if (fs.existsSync(zoteroSynthesisDir)) {
+  for (const file of fs.readdirSync(zoteroSynthesisDir).filter((name) => name.toLowerCase().endsWith(".json"))) {
+    const publication = JSON.parse(fs.readFileSync(path.join(zoteroSynthesisDir, file), "utf8"));
+    if (publication.status !== "PUBLISHED") continue;
+    const paperId = String(publication.libraryReview.paperId);
+    const metadata = metadataById.get(paperId);
+    const expected = taxonomyRecordFromPublication(publication);
+    if (!metadata) {
+      failures.push(`published Zotero ID ${paperId} has no taxonomy record`);
+    } else if (JSON.stringify(metadata) !== JSON.stringify(expected)) {
+      failures.push(`published Zotero ID ${paperId} lost reviewed taxonomy or provenance`);
     }
   }
 }
