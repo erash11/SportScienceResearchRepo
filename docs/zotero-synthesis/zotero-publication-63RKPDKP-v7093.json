@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "ask-library-zotero-publication.v1",
+  "publicationId": "zotero-publication-63RKPDKP-v7093",
+  "status": "PUBLISHED",
+  "libraryReview": {
+    "paperId": "609",
+    "reviewedBy": "Eric Rash",
+    "reviewedOn": "2026-07-28"
+  },
+  "publication": {
+    "status": "PUBLISHED",
+    "publishedOn": "2026-07-28"
+  },
+  "candidate": {
+    "schemaVersion": "ask-library-publication-candidate.v1",
+    "candidateId": "zotero-63RKPDKP-v7093",
+    "status": "READY_FOR_LIBRARY_REVIEW",
+    "preparedAt": "2026-07-28T22:54:36.758295Z",
+    "preparedBy": "Codex GPT-5.6 Sol (reviewed Paper Brief translation)",
+    "publicSourceUrl": "https://doi.org/10.1016/j.measurement.2023.112826",
+    "source": {
+      "kind": "zotero",
+      "itemKey": "63RKPDKP",
+      "itemVersion": 7093,
+      "attachmentKey": "ILT2Z37N",
+      "pageCount": 10,
+      "title": "Reliability and validity analysis of MediaPipe-based measurement system for some human rehabilitation motions",
+      "doi": "10.1016/j.measurement.2023.112826",
+      "year": 2023
+    },
+    "evidenceReview": {
+      "artifactType": "paper-brief",
+      "paperBriefPath": "Knowledge/library/research-papers/latreche-2023-reliability-and-validity-analysis-of-mediapipe-based-measurement-system-for-some-human-reh.md",
+      "paperBriefSha256": "c67e0efe73ecbce8c278d42f75da751a77bc19b0d98f7e89eca166e85591a04c",
+      "fullTextReviewed": true,
+      "evidenceLocatorPages": [
+        2,
+        4,
+        6,
+        7,
+        9
+      ]
+    },
+    "paper": {
+      "year": 2023,
+      "citation": "Latreche A., Kelaiaia R., Chemori A., Kerboua A. Reliability and validity analysis of MediaPipe-based measurement system for some human rehabilitation motions. Measurement. 2023;214:112826. doi:10.1016/j.measurement.2023.112826.",
+      "doi": "10.1016/j.measurement.2023.112826",
+      "abstract": "This paper addresses the following question: How reliable are MediaPipe-derived shoulder range-of-motion measurements, and how closely do they agree with a universal goniometer and digital angle ruler? Fifty healthy volunteers aged 21–42, mostly tested at the University of Skikda, performed active shoulder abduction, adduction, flexion, and extension. A physical therapist instructed participants and collected the reference-device measurements. Each healthy volunteer completed three MediaPipe measurements for reliability and one measurement with a clinical goniometer and digital angle ruler. MediaPipe BlazePose estimated 33 landmarks from RGB video, and joint angles were calculated geometrically.",
+      "tldr": "MediaPipe ICCs were 0.968 for abduction, 0.990 for adduction, 0.990 for extension, and 0.992 for flexion. Reported minimal detectable changes ranged from 1.046° for abduction to 1.864° for flexion. MediaPipe may be adequate for low-cost, constrained active shoulder ROM tracking when the environment, camera position, lighting, movement plane, and instructions match the validation setup.",
+      "methods": "Each healthy volunteer completed three MediaPipe measurements for reliability and one measurement with a clinical goniometer and digital angle ruler. MediaPipe BlazePose estimated 33 landmarks from RGB video, and joint angles were calculated geometrically. Reliability was summarized with ICC, SEM, and minimal detectable change; agreement was assessed with Bland–Altman mean bias and 95% limits of agreement.",
+      "findings": "MediaPipe ICCs were 0.968 for abduction, 0.990 for adduction, 0.990 for extension, and 0.992 for flexion. Reported minimal detectable changes ranged from 1.046° for abduction to 1.864° for flexion. Mean bias versus the universal goniometer ranged from −0.55° for abduction to −0.01° for extension. The widest reported 95% limits of agreement versus the goniometer were approximately −2.94° to 1.83° for abduction. The patient example showed serial knee-motion recordings, but it was an uncontrolled descriptive case and does not establish that the technology or rehabilitation caused improvement.",
+      "limitations": "Validation was limited to four active shoulder movements in healthy adults, with one therapist and one hardware/software setup. The paper reports only one reference-device measurement per participant, which prevents estimating reference-rater repeatability. Camera position and lighting affected detection; the system handled only one person per frame and was not tested for complex movements or arbitrary orientations. The article states that no indication of ethics approval was given, although participant consent is described. These findings do not validate sport-specific high-speed movement, lower-extremity kinetics, occlusion, multiple athletes, or clinical decision thresholds.",
+      "practicalImplications": "MediaPipe may be adequate for low-cost, constrained active shoulder ROM tracking when the environment, camera position, lighting, movement plane, and instructions match the validation setup. Treat the reported minimal detectable changes as study-specific, not universal. Before clinical or athlete use, verify device/version behavior, local repeatability, camera geometry, clothing and occlusion effects, and agreement against the program's reference method. The system should augment clinician review rather than independently diagnose progress or readiness.",
+      "athleteDev": "For athlete development, mediaPipe may be adequate for low-cost, constrained active shoulder ROM tracking when the environment, camera position, lighting, movement plane, and instructions match the validation setup. Treat the reported minimal detectable changes as study-specific, not universal. Before clinical or athlete use, verify device/version behavior, local repeatability, camera geometry, clothing and occlusion effects, and agreement against the program's reference method. The system should augment clinician review rather than independently diagnose progress or readiness. Apply the finding within the population and setting described in the source rather than treating it as a universal threshold.",
+      "rtp": "For rehabilitation and return-to-sport decisions, mediaPipe may be adequate for low-cost, constrained active shoulder ROM tracking when the environment, camera position, lighting, movement plane, and instructions match the validation setup. Treat the reported minimal detectable changes as study-specific, not universal. Before clinical or athlete use, verify device/version behavior, local repeatability, camera geometry, clothing and occlusion effects, and agreement against the program's reference method. The system should augment clinician review rather than independently diagnose progress or readiness. Use the paper as one input to interdisciplinary judgment, not as a standalone clearance criterion or reinjury prediction rule."
+    },
+    "taxonomy": {
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Healthy Athletes"
+      ],
+      "studyDesign": "Methodological / Validation Study"
+    }
+  }
+}

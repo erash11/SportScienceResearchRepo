@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "ask-library-zotero-publication.v1",
+  "publicationId": "zotero-publication-CL6RRZW4-v7136",
+  "status": "PUBLISHED",
+  "libraryReview": {
+    "paperId": "606",
+    "reviewedBy": "Eric Rash",
+    "reviewedOn": "2026-07-28"
+  },
+  "publication": {
+    "status": "PUBLISHED",
+    "publishedOn": "2026-07-28"
+  },
+  "candidate": {
+    "schemaVersion": "ask-library-publication-candidate.v1",
+    "candidateId": "zotero-CL6RRZW4-v7136",
+    "status": "READY_FOR_LIBRARY_REVIEW",
+    "preparedAt": "2026-07-28T22:54:34.896689Z",
+    "preparedBy": "Codex GPT-5.6 Sol (reviewed Paper Brief translation)",
+    "publicSourceUrl": "https://doi.org/10.48550/arxiv.2604.01491",
+    "source": {
+      "kind": "zotero",
+      "itemKey": "CL6RRZW4",
+      "itemVersion": 7136,
+      "attachmentKey": "2RSKVWPH",
+      "pageCount": 14,
+      "title": "Opponent-Adjusted Evaluation of NFL Pass Blocking and Pass Rushing Performance",
+      "doi": "10.48550/arXiv.2604.01491",
+      "year": 2026
+    },
+    "evidenceReview": {
+      "artifactType": "paper-brief",
+      "paperBriefPath": "Knowledge/library/research-papers/pipping-gamon-2026-opponent-adjusted-evaluation-of-nfl-pass-blocking-and-pass-rushing-performance.md",
+      "paperBriefSha256": "e32f2c87c28a82d18eb2764053fbec3d92ce6217be42aa69e91804a08c49a3cb",
+      "fullTextReviewed": true,
+      "evidenceLocatorPages": [
+        3,
+        7,
+        8,
+        12,
+        13
+      ]
+    },
+    "paper": {
+      "year": 2026,
+      "citation": "Pipping-Gamón J., Gebauer M., Lee V., Watts K., Wyner A.J. Opponent-Adjusted Evaluation of NFL Pass Blocking and Pass Rushing Performance. Source publication. 2026. doi:10.48550/arXiv.2604.01491.",
+      "doi": "10.48550/arxiv.2604.01491",
+      "abstract": "This paper addresses the following question: Can ridge-regularized Bradley–Terry models produce useful opponent-adjusted NFL pass-block and pass-rush ratings for binary wins and outcome severity? The analysis used 2021 NFL regular-season Hudl tracking data. After filtering, the dataset contained 153,138 blocker–rusher interactions from 33,283 pass plays in 266 games, involving 620 rushers and 348 blockers; 42.7% of interactions were labeled as double teams. The authors constructed a binary rusher win outcome based on becoming closer to the quarterback than the blocker within 2.5 seconds, plus a four-class outcome ordered as loss, win, hit, and sack. Two ridge-regularized Bradley–Terry models included blocker effects, rusher effects, and a double-team indicator.",
+      "tldr": "The win model improved holdout log loss by 0.0068 over the global baseline and 0.0014 over the stronger matchup baseline; both bootstrap intervals were positive. The severity model improved log loss by 0.0077 over the global baseline and 0.0015 over the matchup baseline, but the severity-versus-matchup interval included zero, making that comparison directional rather than decisive. The framework is best used as an opponent-adjusted analytic layer beside film and contextual grading.",
+      "methods": "The authors constructed a binary rusher win outcome based on becoming closer to the quarterback than the blocker within 2.5 seconds, plus a four-class outcome ordered as loss, win, hit, and sack. Two ridge-regularized Bradley–Terry models included blocker effects, rusher effects, and a double-team indicator. Models were evaluated on an ordered 80/20 holdout with log loss, compared against global and player-history matchup baselines, and assessed with game-level bootstrap resampling. AP All-Pro alignment was used as face validation, not as a gold-standard outcome.",
+      "findings": "The win model improved holdout log loss by 0.0068 over the global baseline and 0.0014 over the stronger matchup baseline; both bootstrap intervals were positive. The severity model improved log loss by 0.0077 over the global baseline and 0.0015 over the matchup baseline, but the severity-versus-matchup interval included zero, making that comparison directional rather than decisive. The severity model produced higher All-Pro rank AUC than its raw baseline in three of four role/accolade comparisons; enrichment gains were non-negative in all comparisons. Ratings measure efficiency within observed blocker–rusher engagements, not all-snap overall player value, and scores should not be compared across the win and severity models. Weekly trajectories were explicitly descriptive rather than predictive, with wider uncertainty early in the season when exposure was sparse.",
+      "limitations": "This is a preprint and had not completed peer review at the time of this record. The work is a 2026 preprint analyzing one NFL season. Its distance-based win label may not represent functional pressure quality, the severity mapping is only one possible value calibration, and a binary double-team flag incompletely represents chips, slides, and other help. Quarterback time-to-throw, play design, teammate effects, role specialization, and position hierarchy remain incompletely modeled. All-Pro comparison is face validation with few positives, not proof of personnel-value accuracy. Transfer to collegiate football requires validation against college tracking, schemes, rosters, and labeling practices.",
+      "practicalImplications": "The framework is best used as an opponent-adjusted analytic layer beside film and contextual grading. Small but consistent holdout gains support further validation; they do not justify treating the resulting leaderboard as ground truth. Staff should retain uncertainty intervals, minimum-exposure rules, and labels for protection structure, quarterback behavior, rush lane, play design, and role. A college implementation should be recalibrated and prospectively checked within its own data environment before informing high-stakes personnel decisions.",
+      "athleteDev": "For athlete development, the framework is best used as an opponent-adjusted analytic layer beside film and contextual grading. Small but consistent holdout gains support further validation; they do not justify treating the resulting leaderboard as ground truth. Staff should retain uncertainty intervals, minimum-exposure rules, and labels for protection structure, quarterback behavior, rush lane, play design, and role. A college implementation should be recalibrated and prospectively checked within its own data environment before informing high-stakes personnel decisions. Apply the finding within the population and setting described in the source rather than treating it as a universal threshold.",
+      "rtp": "The paper did not validate a rehabilitation or return-to-sport decision rule. Its findings may inform supporting training or monitoring during reconditioning, but it provides no standalone clearance threshold or progression criterion."
+    },
+    "taxonomy": {
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "studyDesign": "Methodological / Validation Study"
+    }
+  }
+}

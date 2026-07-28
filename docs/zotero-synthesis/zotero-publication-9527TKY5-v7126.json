@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "ask-library-zotero-publication.v1",
+  "publicationId": "zotero-publication-9527TKY5-v7126",
+  "status": "PUBLISHED",
+  "libraryReview": {
+    "paperId": "594",
+    "reviewedBy": "Eric Rash",
+    "reviewedOn": "2026-07-28"
+  },
+  "publication": {
+    "status": "PUBLISHED",
+    "publishedOn": "2026-07-28"
+  },
+  "candidate": {
+    "schemaVersion": "ask-library-publication-candidate.v1",
+    "candidateId": "zotero-9527TKY5-v7126",
+    "status": "READY_FOR_LIBRARY_REVIEW",
+    "preparedAt": "2026-07-28T22:54:27.386937Z",
+    "preparedBy": "Codex GPT-5.6 Sol (reviewed Paper Brief translation)",
+    "publicSourceUrl": "https://doi.org/10.1016/j.osnem.2026.100353",
+    "source": {
+      "kind": "zotero",
+      "itemKey": "9527TKY5",
+      "itemVersion": 7126,
+      "attachmentKey": "3US2ETDD",
+      "pageCount": 14,
+      "title": "Does online negativity influence performance? Investigating the impact of social media on male professional soccer players",
+      "doi": "10.1016/j.osnem.2026.100353",
+      "year": 2026
+    },
+    "evidenceReview": {
+      "artifactType": "paper-brief",
+      "paperBriefPath": "Knowledge/library/research-papers/winchester-2026-does-online-negativity-influence-performance-investigating-the-impact-of-social-media-on-m.md",
+      "paperBriefSha256": "5023fda1075dfca5cf7f100960f55a3307ae6c990e66520900b23d4c8a4fd12a",
+      "fullTextReviewed": true,
+      "evidenceLocatorPages": [
+        4,
+        6,
+        7,
+        10
+      ]
+    },
+    "paper": {
+      "year": 2026,
+      "citation": "Winchester S., Chang H.C.H. Does online negativity influence performance? Investigating the impact of social media on male professional soccer players. Online Social Networks and Media. 2026;54:100353. doi:10.1016/j.osnem.2026.100353.",
+      "doi": "10.1016/j.osnem.2026.100353",
+      "abstract": "This paper addresses the following question: Do sentiment and content features in fan comments posted before matches predict immediate match performance among English Premier League defenders? Participants: 156 male Premier League defenders contributing 2,814 player-match observations; 82 players had recoverable non-zero Instagram sentiment/content data. Sport and level: Men's professional soccer in the English Premier League. Design: Prospective observational panel study. Exposure or intervention: Aggregated pre-match Instagram-comment sentiment and content scores generated with VADER, LDA, and BART-based classification.",
+      "tldr": "The performance dataset contained 2,814 player-match observations from 156 defenders; after comment processing and match-level aggregation, 1,063 performances were paired with sentiment and content scores derived from 270,007 English-language comments. Across OLS models, sentiment and content scores had limited predictive power, with R² values from 0.012 for normalized yellow cards to 0.028 for passing-completion percentage. Staff should not treat online sentiment as a validated readiness or match-performance signal.",
+      "methods": "Design: Prospective observational panel study. Exposure or intervention: Aggregated pre-match Instagram-comment sentiment and content scores generated with VADER, LDA, and BART-based classification. Comparator: Within- and between-player differences in comment features; no randomized intervention. Measurements and outcomes: Errors, normalized yellow cards, second yellow cards, passing-completion percentage, and red cards from FBref. Analysis: OLS models, CatBoost regression with controls and lagged performance, SHAP feature attribution, and player fixed-effects models.",
+      "findings": "The performance dataset contained 2,814 player-match observations from 156 defenders; after comment processing and match-level aggregation, 1,063 performances were paired with sentiment and content scores derived from 270,007 English-language comments. Across OLS models, sentiment and content scores had limited predictive power, with R² values from 0.012 for normalized yellow cards to 0.028 for passing-completion percentage. CatBoost models did not explain errors, yellow cards, second yellow cards, or red cards beyond R² values of 0.00 to 0.02; the passing-completion model reached R² = 0.34, but sentiment/content features accounted for only approximately 13.53% of its explained variation. In player fixed-effects analysis, the apparent passing-completion associations disappeared: within-player R² fell to 0.008, and Mental Health Spread and Sentiment Volume were no longer significant. Five of 14 OLS-significant coefficients survived fixed-effects estimation, all for disciplinary outcomes; this is prospective within-player covariation and does not establish that comment content caused cards.",
+      "limitations": "Excluding non-English comments reduced the comment dataset by nearly 80%, limiting representation of the multilingual commentary received by Premier League players. The study could not determine whether players saw or read the analyzed comments, so measured comment content is an uncertain proxy for exposure. Repeated player-match observations were not independent; fixed effects addressed stable player characteristics but not unmeasured time-varying confounding. Restriction to Premier League defenders and a narrow performance-outcome set limits transfer to other positions, competitions, sports, wellbeing outcomes, and longer time horizons. The authors lacked data on social-media consumption, mental health, and pre-match psychological state, so mechanisms could not be tested.",
+      "practicalImplications": "Staff should not treat online sentiment as a validated readiness or match-performance signal. The broad null and low-predictive-power findings argue against adding scraped fan commentary to athlete monitoring for performance prediction. Social-media abuse can still matter for wellbeing even when immediate performance effects are not detected; support should therefore be athlete-centered and confidential, not inferred from card or passing outcomes. Any monitoring initiative would also require explicit ethical, privacy, platform-policy, and athlete-consent review.",
+      "athleteDev": "For athlete development, staff should not treat online sentiment as a validated readiness or match-performance signal. The broad null and low-predictive-power findings argue against adding scraped fan commentary to athlete monitoring for performance prediction. Social-media abuse can still matter for wellbeing even when immediate performance effects are not detected; support should therefore be athlete-centered and confidential, not inferred from card or passing outcomes. Any monitoring initiative would also require explicit ethical, privacy, platform-policy, and athlete-consent review. Apply the finding within the population and setting described in the source rather than treating it as a universal threshold.",
+      "rtp": "For rehabilitation and return-to-sport decisions, staff should not treat online sentiment as a validated readiness or match-performance signal. The broad null and low-predictive-power findings argue against adding scraped fan commentary to athlete monitoring for performance prediction. Social-media abuse can still matter for wellbeing even when immediate performance effects are not detected; support should therefore be athlete-centered and confidential, not inferred from card or passing outcomes. Any monitoring initiative would also require explicit ethical, privacy, platform-policy, and athlete-consent review. Use the paper as one input to interdisciplinary judgment, not as a standalone clearance criterion or reinjury prediction rule."
+    },
+    "taxonomy": {
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes"
+      ],
+      "studyDesign": "Methodological / Validation Study"
+    }
+  }
+}
