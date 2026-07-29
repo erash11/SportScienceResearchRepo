@@ -7,7 +7,12 @@ foreach ($folder in @("requests", "briefs", "audits", "feedback")) {
     New-Item -ItemType Directory -Force -Path (Join-Path $privateRoot $folder) | Out-Null
 }
 
-if (-not $env:ZOTERO_BRIDGE_COMMAND) {
+if ($env:ZOTERO_BRIDGE_COMMAND) {
+    $configuredBridge = Get-Command $env:ZOTERO_BRIDGE_COMMAND -ErrorAction SilentlyContinue
+    if (-not $configuredBridge) {
+        Write-Warning "ZOTERO_BRIDGE_COMMAND is set but cannot be resolved. Private Zotero retrieval will fail until the command is corrected."
+    }
+} else {
     $workspaceRoot = Split-Path -Parent $repoRoot
     $bridgeCommand = Join-Path $workspaceRoot "ZoteroInjestion\.venv\Scripts\zotero-bridge.exe"
 
