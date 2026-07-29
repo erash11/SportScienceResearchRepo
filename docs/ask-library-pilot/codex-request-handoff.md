@@ -20,7 +20,7 @@ Use this handoff only after the prototype has downloaded a real Pilot Request JS
 Move the downloaded `ATL-R-*.json` file to:
 
 ```text
-C:\Users\eric_rash\Desktop\DEV\SportScienceResearchRepo\pilot-data\ask-library\private\requests\
+<repo-root>\pilot-data\ask-library\private\requests\
 ```
 
 From the Research Repo, validate it:
@@ -41,7 +41,7 @@ In a Codex task, either:
 
 Then send:
 
-> Work in `C:\Users\eric_rash\Desktop\DEV\SportScienceResearchRepo`. Process the attached Ask the Library Pilot Request as private, de-identified material. Validate the request; create an On-Demand / Not Expert-Reviewed Decision Brief using only admissible Evidence Library sources; record claim-level excerpts and page locations; return a Coverage Gap rather than inventing support; run the brief validator and original-source excerpt audit; and save the finished brief JSON under `pilot-data/ask-library/private/briefs/`. Report the saved path and whether each gate passed. Do not promote the result to a Reviewed Brief.
+> Work in the repository root containing `START-ASK-THE-LIBRARY.cmd`. Process the attached Ask the Library Pilot Request as private, de-identified material. Validate the request; create an On-Demand / Not Expert-Reviewed Decision Brief using only admissible Evidence Library sources; record claim-level excerpts and page locations; return a Coverage Gap rather than inventing support; run the brief validator and original-source excerpt audit; and save the finished brief JSON under `pilot-data/ask-library/private/briefs/`. Report the saved path and whether each gate passed. Do not promote the result to a Reviewed Brief.
 
 If the file was not attached, replace “attached” with its exact local path.
 
