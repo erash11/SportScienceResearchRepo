@@ -161,6 +161,30 @@ function IntakeScreen({
         </p>
       </section>
 
+      <ol className="pilot-flow" aria-label="How the pilot works">
+        <li>
+          <span>1</span>
+          <div>
+            <strong>Staff asks</strong>
+            <small>Enter one de-identified question.</small>
+          </div>
+        </li>
+        <li>
+          <span>2</span>
+          <div>
+            <strong>Codex prepares</strong>
+            <small>The pilot lead gives Codex the saved question file.</small>
+          </div>
+        </li>
+        <li>
+          <span>3</span>
+          <div>
+            <strong>Staff reviews</strong>
+            <small>Read the finished answer and rate whether it helped.</small>
+          </div>
+        </li>
+      </ol>
+
       <div className="intake-ledger">
         <section className="question-sheet" aria-labelledby="question-heading">
           <div className="sheet-heading">
@@ -169,7 +193,7 @@ function IntakeScreen({
               <h2 id="question-heading">What decision are you facing?</h2>
             </div>
             <button className="text-action" type="button" onClick={onUseDemo}>
-              Use congested-week example
+              Load practice example
             </button>
           </div>
 
@@ -259,10 +283,10 @@ function IntakeScreen({
           <div className="intake-submit-row">
             <div className="privacy-note">
               <LockIcon />
-              <span>No data is sent. Non-demo questions save only through a local download.</span>
+              <span>This downloads a small question file. Nothing is sent yet.</span>
             </div>
             <button className="primary-action" type="button" onClick={onStart}>
-              {isDemo ? "Preview demo brief" : "Download pilot request"} <ArrowIcon />
+              {isDemo ? "Open practice answer" : "Save question for Codex"} <ArrowIcon />
             </button>
           </div>
         </section>
@@ -288,21 +312,21 @@ function IntakeScreen({
           </ol>
           <div className="library-pulse" aria-label="Current evidence library coverage">
             <div>
-              <strong>549</strong>
+              <strong>550</strong>
               <span>published sources</span>
             </div>
             <div>
-              <strong>142</strong>
+              <strong>143</strong>
               <span>full-text reviewed</span>
             </div>
           </div>
-          <p className="contract-footnote">Prototype counts reflect the July 22, 2026 repository audit.</p>
+          <p className="contract-footnote">Prototype counts reflect the July 28, 2026 repository audit.</p>
           <div className="brief-docket">
-            <span className="sheet-index light">Brief docket</span>
-            <h3>Deliver a completed brief</h3>
-            <p>Open an audited pilot JSON file. Invalid or policy-incomplete briefs will not render.</p>
+            <span className="sheet-index light">Finished answer</span>
+            <h3>Open Codex&apos;s finished answer</h3>
+            <p>After Codex returns a finished brief file, choose it here. Do not choose the question file.</p>
             <label className="docket-action">
-              Open audited brief
+              Choose finished answer file
               <input type="file" accept="application/json,.json" onChange={onOpenBrief} />
             </label>
             {importErrors.length > 0 && (
@@ -357,10 +381,10 @@ function RequestReadyScreen({ request, onDownload, onNewQuestion }) {
   return (
     <main id="top" className="focus-page">
       <section className="request-ready-sheet" aria-labelledby="request-ready-title">
-        <div className="section-kicker">Concierge pilot / Request captured</div>
-        <h1 id="request-ready-title">The request packet is ready.</h1>
+        <div className="section-kicker">Question saved</div>
+        <h1 id="request-ready-title">Now give this file to Codex.</h1>
         <p className="request-ready-intro">
-          The prototype did not send the question anywhere or generate an answer. Give the downloaded JSON packet to the pilot operator for library retrieval, synthesis, and claim auditing.
+          A file named <strong>{request.requestId}.json</strong> is in your Downloads folder. Attach that file to a Codex task. Codex will create the finished answer file.
         </p>
 
         <div className="request-receipt">
@@ -370,21 +394,21 @@ function RequestReadyScreen({ request, onDownload, onNewQuestion }) {
         </div>
 
         <ol className="request-next-steps">
-          <li>Keep the packet in the private, Git-ignored pilot folder.</li>
-          <li>Validate it with the pilot request command.</li>
-          <li>Return the audited brief in the approved Operational View.</li>
+          <li>Find the <strong>ATL-R-…json</strong> file in Downloads.</li>
+          <li>Attach it to Codex using the saved pilot instructions.</li>
+          <li>Return here and choose Codex&apos;s finished answer file.</li>
         </ol>
 
         <div className="request-ready-actions">
           <button className="primary-action" type="button" onClick={onDownload}>
-            Download again <ArrowIcon />
+            Download question file again <ArrowIcon />
           </button>
           <button className="back-action" type="button" onClick={onNewQuestion}>
-            Start another question
+            Enter another question
           </button>
         </div>
         <p className="clarification-note">
-          This concierge step tests staff utility and evidence integrity before Baylor authentication or automated generation is built.
+          Leave the prototype open. You do not need to restart it for the next question.
         </p>
       </section>
     </main>

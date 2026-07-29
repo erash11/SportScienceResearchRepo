@@ -55,12 +55,12 @@ The congested-week example is synthesized from full-text-reviewed published reco
 
 For any non-demo question, the interface downloads a de-identified pilot request packet instead of pretending to generate a brief. The packet remains on the local device until it is deliberately transferred to the pilot operator.
 
-The intake's **Open audited brief** control accepts a policy-valid Decision Brief JSON file. It renders a generic Operational View, exposes print / Save PDF delivery, and collects anonymous participant feedback as a local JSON download. Invalid or non-compliant briefs are stopped before rendering.
+The intake's **Choose finished answer file** control accepts a policy-valid Decision Brief JSON file. It renders a generic Operational View, exposes print / Save PDF delivery, and collects anonymous participant feedback as a local JSON download. Invalid or non-compliant briefs are stopped before rendering.
 
 ## Run
 
 ```powershell
-npm run prototype
+npm run pilot:start
 ```
 
 Build the isolated prototype with:

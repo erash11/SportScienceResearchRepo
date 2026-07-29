@@ -163,7 +163,20 @@ Run `npm run audit` for publication, taxonomy, full-text-screening, synthesis, a
 
 ## Ask the Library Pilot
 
-The isolated concierge-pilot interface runs with `npm run prototype`; it is not part of the public GitHub Pages build. Non-demo questions download de-identified request JSON. The operator validates a brief with `npm run pilot:brief -- <brief.json>` and `npm run pilot:audit-source -- <brief.json>`, then opens it through **Open audited brief** for local delivery, print / Save PDF, and anonymous feedback export. Validate exported feedback with `npm run pilot:feedback -- <feedback.json>`. Private pilot files belong only under the Git-ignored `pilot-data/ask-library/private/` tree.
+The isolated concierge-pilot interface starts by double-clicking `START-ASK-THE-LIBRARY.cmd` or running `npm run pilot:start`; it is not part of the public GitHub Pages build. **Open practice answer** always opens the canned congested-week example. It does not process the question entered on the main page. For a real pilot question, use **Save question for Codex**, which creates a de-identified `ATL-R-*.json` request packet.
+
+When a pilot request is attached to a Codex task or supplied by exact local path:
+
+1. Validate it with `npm run pilot:request -- <request.json>`.
+2. Draft an On-Demand / Not Expert-Reviewed brief under `pilot-data/ask-library/private/briefs/`.
+3. Use only admissible Evidence Library sources, with claim-level excerpts and page locations. Return a Coverage Gap rather than inventing support.
+4. Validate the brief with `npm run pilot:brief -- <brief.json>`.
+5. Check every excerpt against its original source with `npm run pilot:audit-source -- <brief.json>`.
+6. Report the brief path and gate results. A named human claim auditor must still confirm interpretation fidelity before delivery.
+
+The structured question-bank JSON is a copy source, not a request packet and not a brief. Do not try to open it in the prototype. **Choose finished answer file** accepts only the finished brief JSON after validation, source-excerpt audit, and the recorded human claim audit. The plain-language button does not change the operator requirement; the browser does not independently prove that the audits occurred.
+
+After the original participant reviews the brief, the prototype downloads anonymous feedback JSON. Validate it with `npm run pilot:feedback -- <feedback.json>`. A separate Domain Reviewer is required only for later promotion to a Reviewed Brief; normal pilot delivery remains On-Demand / Not Expert-Reviewed. Private pilot files belong only under the Git-ignored `pilot-data/ask-library/private/` tree.
 
 ### Batch Import — Known Filename Issues
 - **Curly apostrophes (U+2019):** Some source filenames contain `'` — agents use PowerShell wildcard copy workaround

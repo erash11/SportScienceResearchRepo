@@ -5,9 +5,11 @@
 
 ## Start here
 
+- Begin with [`START-HERE.md`](START-HERE.md). It reduces the entire workflow to **staff asks → Codex prepares → staff reviews** and gives the exact local files and buttons.
 - Share the ready-to-send [`Ask-the-Library-Pilot-Participant-Quick-Start.docx`](Ask-the-Library-Pilot-Participant-Quick-Start.docx) with pilot participants. The plain-text source is [`participant-quick-start.md`](participant-quick-start.md).
-- Assign the nine pilot questions from [`Ask-the-Library-Pilot-Stress-Test-Question-Bank.docx`](Ask-the-Library-Pilot-Stress-Test-Question-Bank.docx). Its source is [`stress-test-question-bank.md`](stress-test-question-bank.md), with structured copy-ready fields in [`examples/stress-test-question-bank.json`](examples/stress-test-question-bank.json).
+- Select three of the four discipline tracks in [`Ask-the-Library-Pilot-Stress-Test-Question-Bank.docx`](Ask-the-Library-Pilot-Stress-Test-Question-Bank.docx). Each selected track contributes one simple, one applied, and one complex question, preserving the nine-question pilot. Its source is [`stress-test-question-bank.md`](stress-test-question-bank.md), with structured copy-ready fields in [`examples/stress-test-question-bank.json`](examples/stress-test-question-bank.json).
 - Use [`pilot-lead-distribution-runbook.md`](pilot-lead-distribution-runbook.md) to deliver the pilot without asking staff to install software or use the repository.
+- Use [`codex-request-handoff.md`](codex-request-handoff.md) for the exact request-to-Codex prompt and file handoff.
 
 ## Why this is the next step
 
@@ -58,17 +60,25 @@ Private pilot material belongs under `pilot-data/ask-library/private/`, which Gi
 
 ### 1. Capture the request
 
-Run the approved local experience:
+Start the approved local experience by double-clicking `START-ASK-THE-LIBRARY.cmd` in the repository root. The command-line equivalent is:
 
 ```powershell
-npm run prototype
+npm run pilot:start
 ```
 
-Enter the Practical Question and only de-identified Decision Context. The pilot-enabled interface downloads a request packet for non-demo questions. Save it under:
+The main page has three different actions:
+
+- **Open practice answer** opens the same canned congested-week example every time. It is practice only and does not process the question entered on the page.
+- **Save question for Codex** packages the real question and Decision Context into a de-identified request JSON.
+- **Choose finished answer file** is used later for the finished answer JSON. It does not accept a request packet or the question-bank JSON.
+
+For a real question, copy an assigned Practical Question and its five Decision Context fields from the question bank, or enter another relevant de-identified question. Select **Save question for Codex** and save the resulting `ATL-R-*.json` file under:
 
 ```text
 pilot-data/ask-library/private/requests/
 ```
+
+The structured question-bank JSON is a copy source only. It is not itself a request packet and is not uploaded to the prototype.
 
 Validate it:
 
@@ -76,7 +86,11 @@ Validate it:
 npm run pilot:request -- pilot-data/ask-library/private/requests/<request>.json
 ```
 
-### 2. Prepare the Decision Brief
+As long as the prototype command remains running, select **New question** for the next request. There is no need to rerun the command for every question.
+
+### 2. Give the request to Codex and prepare the Decision Brief
+
+Attach the request JSON to a Codex task, drag it into the message, or provide its exact local path. Use the prompt in [`codex-request-handoff.md`](codex-request-handoff.md). The request is not sent automatically when it is downloaded.
 
 Use `examples/brief.example.json` as the structural template.
 
@@ -103,6 +117,8 @@ npm run pilot:audit-source -- pilot-data/ask-library/private/briefs/<brief>.json
 
 ### 3. Complete the human claim audit
 
+Codex can perform the structural validation and the mechanical original-source excerpt audit. That does not replace the named human claim audit.
+
 For every bottom line, direction, action, guardrail, and material limitation:
 
 - Is the cited excerpt present on the recorded page?
@@ -116,10 +132,10 @@ Do not deliver a brief with an unresolved critical failure.
 
 ### 4. Deliver and collect Use Signals
 
-Run the local prototype, select **Open audited brief**, and choose the validated brief JSON:
+Run the local prototype, select **Choose finished answer file**, and choose the finished brief JSON from `private/briefs/` only after validation, source-excerpt audit, and the human claim audit:
 
 ```powershell
-npm run prototype
+npm run pilot:start
 ```
 
 The Operational View renders the brief generically from that file. Use **Print / Save PDF** when a portable copy is needed. Preserve:
@@ -153,6 +169,8 @@ npm run pilot:feedback -- pilot-data/ask-library/private/feedback/<feedback>.jso
 ```
 
 Participant IDs must use the anonymous `P01` format. Feedback remains on the local device until the downloaded file is deliberately transferred to the pilot operator.
+
+The participant who asked the question is the pilot practitioner evaluating usefulness and fit. A separate Domain Reviewer is needed only if the brief is later promoted from On-Demand / Not Expert-Reviewed to a Reviewed Brief.
 
 ### 5. Score the pilot
 

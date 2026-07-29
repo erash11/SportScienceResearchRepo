@@ -2,7 +2,7 @@
 
 ## Participant quick start
 
-Ask the Library turns one practical health or performance question into a short, source-grounded Decision Brief. You do not need to install software, open GitHub, or use a command line. You will use the tool with the pilot lead on a shared laptop or through a short Baylor Teams screen-share session.
+Ask the Library turns one practical health or performance question into a short, source-grounded Decision Brief. You use the website; the pilot lead handles the files and Codex.
 
 ### Your role in the 14-day pilot
 
@@ -26,10 +26,11 @@ Ask the Library turns one practical health or performance question into a short,
 
 ### What happens during each session
 
-1. **Enter the question.** You or the pilot lead enters the de-identified question and relevant context.
-2. **Receive the brief.** The pilot lead searches the Evidence Library, prepares the Decision Brief, and checks its claims against the original sources.
-3. **Review the Operational View.** Focus first on the Bottom Line, Recommended Direction or Decision Boundary, Evidence Confidence, and Guardrails. Source excerpts and page locations remain available when you want to inspect the evidence.
-4. **Give brief feedback.** Indicate whether it was useful, how it affected the decision, whether the direction and confidence felt appropriate, what was missing, and how long it took to understand.
+1. **Ask.** Enter or paste one de-identified question, add the context that matters, and select **Save question for Codex**. The pilot lead handles the downloaded question file.
+2. **Read.** The pilot lead asks Codex to prepare and check the answer, then opens the finished brief for you. Start with the Bottom Line, Recommended Direction or Decision Boundary, Evidence Confidence, and Guardrails.
+3. **Rate.** Complete the short feedback form: Did it help? Did it affect the decision? What was missing? How long did it take to understand?
+
+That is your whole role: **ask, read, and rate**. You do not need to use Codex, manage JSON files, open GitHub, or run commands.
 
 ### How to interpret the brief
 
@@ -41,4 +42,3 @@ Ask the Library turns one practical health or performance question into a short,
 ### If identifying information is entered
 
 Stop the session and remove it. The question must be resubmitted using group-level or otherwise de-identified context before the pilot can continue.
-
