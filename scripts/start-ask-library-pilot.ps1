@@ -7,9 +7,15 @@ foreach ($folder in @("requests", "briefs", "audits", "feedback")) {
     New-Item -ItemType Directory -Force -Path (Join-Path $privateRoot $folder) | Out-Null
 }
 
-$bridgeCommand = "C:\Users\eric_rash\Desktop\DEV\ZoteroInjestion\.venv\Scripts\zotero-bridge.exe"
-if (Test-Path -LiteralPath $bridgeCommand) {
-    $env:ZOTERO_BRIDGE_COMMAND = $bridgeCommand
+if (-not $env:ZOTERO_BRIDGE_COMMAND) {
+    $workspaceRoot = Split-Path -Parent $repoRoot
+    $bridgeCommand = Join-Path $workspaceRoot "ZoteroInjestion\.venv\Scripts\zotero-bridge.exe"
+
+    if (Test-Path -LiteralPath $bridgeCommand) {
+        $env:ZOTERO_BRIDGE_COMMAND = $bridgeCommand
+    } else {
+        Write-Warning "Zotero bridge not found beside this repository. Set ZOTERO_BRIDGE_COMMAND before starting the pilot if private Zotero retrieval is required."
+    }
 }
 
 Set-Location -LiteralPath $repoRoot

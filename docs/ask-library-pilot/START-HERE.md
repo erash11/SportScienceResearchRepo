@@ -31,7 +31,7 @@ That is the participant's entire job.
 Double-click this file:
 
 ```text
-C:\Users\eric_rash\Desktop\DEV\SportScienceResearchRepo\START-ASK-THE-LIBRARY.cmd
+<repo-root>\START-ASK-THE-LIBRARY.cmd
 ```
 
 Keep the PowerShell window open. The prototype opens in the browser. You do **not** restart it for every question.
@@ -41,7 +41,7 @@ Keep the PowerShell window open. The prototype opens in the browser. You do **no
 The staff member can paste a question from:
 
 ```text
-C:\Users\eric_rash\Desktop\DEV\SportScienceResearchRepo\docs\ask-library-pilot\Ask-the-Library-Pilot-Stress-Test-Question-Bank.docx
+<repo-root>\docs\ask-library-pilot\Ask-the-Library-Pilot-Stress-Test-Question-Bank.docx
 ```
 
 They can also enter a different real, de-identified question. Complete the context fields, confirm that no identifying information is included, and select **Save question for Codex**.
@@ -58,7 +58,7 @@ This is the **question file**. It is not the answer.
 
 Attach the downloaded `ATL-R-...json` file to a Codex task and paste this request:
 
-> Work in `C:\Users\eric_rash\Desktop\DEV\SportScienceResearchRepo`. Process the attached Ask the Library Pilot Request as private, de-identified material. Validate the request; create an On-Demand / Not Expert-Reviewed Decision Brief using only admissible Evidence Library sources; record claim-level excerpts and page locations; return a Coverage Gap rather than inventing support; run the brief validator and original-source excerpt audit; and save the finished brief JSON under `pilot-data/ask-library/private/briefs/`. Report the saved path and whether each gate passed. Do not promote the result to a Reviewed Brief.
+> Work in the repository root containing `START-ASK-THE-LIBRARY.cmd`. Process the attached Ask the Library Pilot Request as private, de-identified material. Validate the request; create an On-Demand / Not Expert-Reviewed Decision Brief using only admissible Evidence Library sources; record claim-level excerpts and page locations; return a Coverage Gap rather than inventing support; run the brief validator and original-source excerpt audit; and save the finished brief JSON under `pilot-data/ask-library/private/briefs/`. Report the saved path and whether each gate passed. Do not promote the result to a Reviewed Brief.
 
 Codex will report the path to a finished file whose name should start with:
 
@@ -73,7 +73,7 @@ This is the **finished answer file**.
 Before the staff member sees the answer, the named pilot lead or claim auditor confirms that the cited excerpts support the important claims, the limits are honest, and there is no unresolved critical failure. Use the checklist in:
 
 ```text
-C:\Users\eric_rash\Desktop\DEV\SportScienceResearchRepo\docs\ask-library-pilot\pilot-lead-distribution-runbook.md
+<repo-root>\docs\ask-library-pilot\pilot-lead-distribution-runbook.md
 ```
 
 This check belongs to the pilot lead. The participant does not perform it.
@@ -89,7 +89,7 @@ Do not choose the `ATL-R-...json` question file.
 The staff member reads the Decision Brief and completes the feedback form. Save the downloaded feedback file under:
 
 ```text
-C:\Users\eric_rash\Desktop\DEV\SportScienceResearchRepo\pilot-data\ask-library\private\feedback
+<repo-root>\pilot-data\ask-library\private\feedback
 ```
 
 For another question, select **New question** in the prototype. Do not restart the prototype.
