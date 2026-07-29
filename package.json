@@ -7,6 +7,7 @@
     "preview": "vite preview",
     "prototype": "vite --config vite.prototype.config.js --open",
     "prototype:build": "vite build --config vite.prototype.config.js",
+    "pilot:start": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start-ask-library-pilot.ps1",
     "test:pilot": "node --test scripts/tests/ask-library-pilot-core.test.mjs",
     "test:publication": "node --test scripts/tests/publication-candidate.test.mjs",
     "pilot:check": "npm run test:pilot && node scripts/ask-library-pilot.mjs check-examples",

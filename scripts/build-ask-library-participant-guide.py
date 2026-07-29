@@ -275,10 +275,9 @@ def build_document():
     set_paragraph_shading(intro, GREEN)
     set_paragraph_border(intro, side="left", color=GOLD, size=24, space=6)
     intro_run = intro.add_run(
-        "No setup is required. Use the tool with the pilot lead on a shared "
-        "laptop or through a Baylor Teams screen share. Over 14 days, bring "
-        "three real questions, review each brief in about two minutes, and "
-        "complete about one minute of feedback."
+        "Your role is simple: ask, read, and rate. Enter one de-identified "
+        "question, read the finished answer, and complete about one minute of "
+        "feedback. The pilot lead handles Codex and all files."
     )
     set_run_font(intro_run, size=10.5, color=WHITE, bold=True)
 
@@ -334,32 +333,40 @@ def build_document():
     )
     set_run_font(example_text, size=9.5, color=INK)
 
-    document.add_heading("During the session", level=1)
+    document.add_heading("During the session: ask, read, rate", level=1)
     during_num = create_number_instance(document, before_abstract)
     add_numbered_item(
         document,
         during_num,
-        "Enter the question.",
-        "You or the pilot lead enters the de-identified question and only the context that could change the answer.",
+        "Ask.",
+        "Copy an assigned prompt or enter another de-identified question, add the context that matters, and select Save question for Codex. The pilot lead handles the downloaded file.",
     )
     add_numbered_item(
         document,
         during_num,
-        "Receive the brief.",
-        "The pilot lead searches the Evidence Library and checks the claims against original sources.",
+        "Read.",
+        "The pilot lead asks Codex to prepare and check the answer, then opens the finished brief. Start with Bottom Line, Recommended Direction or Decision Boundary, Evidence Confidence, and Guardrails.",
     )
     add_numbered_item(
         document,
         during_num,
-        "Read in decision order.",
-        "Start with Bottom Line, Recommended Direction or Decision Boundary, Evidence Confidence, and Guardrails. Inspect source excerpts when useful.",
+        "Rate.",
+        "Complete the short feedback form: Did it help? Did it affect the decision? What was missing? How long did it take to understand?",
     )
-    add_numbered_item(
-        document,
-        during_num,
-        "Give brief feedback.",
-        "Record usefulness, decision effect, clarity, confidence calibration, missing information, and time to understanding.",
+
+    role_note = document.add_paragraph()
+    role_note.paragraph_format.space_before = Pt(5)
+    role_note.paragraph_format.space_after = Pt(4)
+    role_note.paragraph_format.left_indent = Inches(0.16)
+    role_note.paragraph_format.right_indent = Inches(0.16)
+    role_note.paragraph_format.line_spacing = 1.1
+    set_paragraph_shading(role_note, SOFT_GREEN)
+    role_label = role_note.add_run("THAT IS YOUR WHOLE ROLE  ")
+    set_run_font(role_label, size=9, color=GREEN, bold=True)
+    role_text = role_note.add_run(
+        "You do not need to use Codex, manage JSON files, open GitHub, or run commands."
     )
+    set_run_font(role_text, size=9.5, color=INK, bold=True)
 
     document.add_heading("How to interpret the result", level=1)
     add_inline_paragraph(

@@ -308,7 +308,7 @@ def add_assignment_table(document):
     set_table_geometry(table, [1800, 3540, 4020])
     set_table_borders(table)
 
-    headers = ["Participant", "Practitioner area", "Assigned questions"]
+    headers = ["Domain track", "Best-fit practitioner", "Questions"]
     for index, text in enumerate(headers):
         cell = table.rows[0].cells[index]
         set_cell_shading(cell, GREEN)
@@ -321,16 +321,25 @@ def add_assignment_table(document):
     mark_header_row(table.rows[0])
 
     rows = [
-        ("P01", "Performance", "Q01 Simple · Q02 Applied · Q03 Complex"),
         (
-            "P02",
-            "Athletic Medicine / Rehabilitation",
-            "Q04 Simple · Q05 Applied · Q06 Complex",
+            "Physical Therapy",
+            "Physical therapist / rehabilitation lead",
+            "PT01 Simple · PT02 Applied · PT03 Complex",
         ),
         (
-            "P03",
-            "Nutrition / Recovery / Wellbeing",
-            "Q07 Simple · Q08 Applied · Q09 Complex",
+            "Performance Nutrition",
+            "Sports dietitian / performance nutritionist",
+            "PN01 Simple · PN02 Applied · PN03 Complex",
+        ),
+        (
+            "Sports Science",
+            "Sports scientist / performance analyst",
+            "SS01 Simple · SS02 Applied · SS03 Complex",
+        ),
+        (
+            "Sports Performance",
+            "Strength and conditioning / performance coach",
+            "SP01 Simple · SP02 Applied · SP03 Complex",
         ),
     ]
     for row_number, values in enumerate(rows):
@@ -435,9 +444,9 @@ def add_question_card(document, question):
     set_run_font(text_run, size=8.25, color=MUTED, italic=True)
 
 
-def add_domain_page(document, discipline, participant_id, questions):
+def add_domain_page(document, discipline, questions):
     document.add_page_break()
-    add_kicker(document, f"{participant_id} assignment / simple → applied → complex")
+    add_kicker(document, f"{discipline} track / simple → applied → complex")
 
     # Named domain-page-title override: Heading 2 semantics with larger display type.
     title = document.add_paragraph(style="Heading 2")
@@ -451,7 +460,7 @@ def add_domain_page(document, discipline, participant_id, questions):
     subtitle.paragraph_format.space_after = Pt(5)
     subtitle.paragraph_format.line_spacing = 1.1
     run = subtitle.add_run(
-        "Enter the Practical Question and all five Decision Context fields exactly as shown."
+        "Copy the Practical Question and all five Decision Context fields into the prototype."
     )
     set_run_font(run, size=10.5, color=GREEN, bold=True)
 
@@ -508,13 +517,21 @@ def audit_geometry(document):
 def build_document():
     bank = json.loads(SOURCE.read_text(encoding="utf-8"))
     questions = bank["questions"]
-    if len(questions) != 9:
-        raise ValueError("The minimum credible pilot requires exactly nine questions.")
+    if len(questions) != 12:
+        raise ValueError("The four domain tracks require exactly twelve questions.")
 
     expected_tiers = {"simple", "applied", "complex"}
+    expected_disciplines = {
+        "Physical Therapy",
+        "Performance Nutrition",
+        "Sports Science",
+        "Sports Performance",
+    }
     grouped = {}
     for question in questions:
         grouped.setdefault(question["discipline"], []).append(question)
+    if set(grouped) != expected_disciplines:
+        raise ValueError(f"Unexpected domain tracks: {set(grouped)}")
     for discipline, items in grouped.items():
         tiers = {item["tier"] for item in items}
         if tiers != expected_tiers:
@@ -557,9 +574,9 @@ def build_document():
     set_paragraph_shading(intro, GREEN)
     set_paragraph_border(intro, side="left", color=GOLD, size=24, space=6)
     run = intro.add_run(
-        "Nine ready-to-enter scenarios remove the burden of inventing pilot questions. "
-        "Each practitioner receives one simple, one applied, and one complex decision—"
-        "then evaluates whether the brief is accurate, relevant, useful, and safe for practice."
+        "Twelve ready-to-enter scenarios cover four practitioner domains. For the current "
+        "three-person pilot, select three matching tracks—nine submitted questions total. "
+        "Each participant receives one simple, one applied, and one complex decision."
     )
     set_run_font(run, size=10.5, color=WHITE, bold=True)
 
@@ -567,14 +584,14 @@ def build_document():
     add_numbered_step(
         document,
         1,
-        "Assign the three-question set.",
-        "Use the matrix below; enter the question and all five context fields exactly as written.",
+        "Select three domain tracks.",
+        "Match one track to each participant; keep the fourth as an alternate so the pilot remains nine questions.",
     )
     add_numbered_step(
         document,
         2,
-        "Confirm real-world relevance.",
-        "The participant must recognize the scenario as a current or recent decision. Replace an irrelevant scenario at the same tier.",
+        "Copy and confirm the question.",
+        "Enter the question and all five context fields, confirm real-world relevance, then select Save question for Codex.",
     )
     add_numbered_step(
         document,
@@ -588,15 +605,15 @@ def build_document():
 
     add_callout(
         document,
-        "Validity rule",
-        bank["relevanceRule"],
-        fill=SOFT_GOLD,
-        border=GOLD,
+        "Practitioner evaluation prompt",
+        bank["evaluationPrompt"],
+        fill=SOFT_GREEN,
+        border=GREEN,
     )
     add_callout(
         document,
-        "Practitioner evaluation prompt",
-        bank["evaluationPrompt"],
+        "File rule",
+        bank["usageNote"],
         fill=SOFT_GREEN,
         border=GREEN,
     )
@@ -613,12 +630,13 @@ def build_document():
     set_run_font(body, size=8.75, color=MUTED, italic=True)
 
     domain_assignments = [
-        ("Performance", "P01"),
-        ("Athletic Medicine / Rehabilitation", "P02"),
-        ("Nutrition / Recovery / Wellbeing", "P03"),
+        "Physical Therapy",
+        "Performance Nutrition",
+        "Sports Science",
+        "Sports Performance",
     ]
-    for discipline, participant_id in domain_assignments:
-        add_domain_page(document, discipline, participant_id, grouped[discipline])
+    for discipline in domain_assignments:
+        add_domain_page(document, discipline, grouped[discipline])
 
     audit_geometry(document)
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
