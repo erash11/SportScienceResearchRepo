@@ -312,15 +312,15 @@ function IntakeScreen({
           </ol>
           <div className="library-pulse" aria-label="Current evidence library coverage">
             <div>
-              <strong>550</strong>
+              <strong>600</strong>
               <span>published sources</span>
             </div>
             <div>
-              <strong>143</strong>
+              <strong>193</strong>
               <span>full-text reviewed</span>
             </div>
           </div>
-          <p className="contract-footnote">Prototype counts reflect the July 28, 2026 repository audit.</p>
+          <p className="contract-footnote">Prototype counts reflect the July 29, 2026 repository audit.</p>
           <div className="brief-docket">
             <span className="sheet-index light">Finished answer</span>
             <h3>Open Codex&apos;s finished answer</h3>
