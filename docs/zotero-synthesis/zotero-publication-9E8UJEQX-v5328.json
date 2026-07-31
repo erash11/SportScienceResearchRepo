@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "ask-library-zotero-publication.v1",
+  "publicationId": "zotero-publication-9E8UJEQX-v5328",
+  "status": "PUBLISHED",
+  "libraryReview": {
+    "paperId": "655",
+    "reviewedBy": "Eric Rash",
+    "reviewedOn": "2026-07-31"
+  },
+  "publication": {
+    "status": "PUBLISHED",
+    "publishedOn": "2026-07-31"
+  },
+  "candidate": {
+    "schemaVersion": "ask-library-publication-candidate.v1",
+    "candidateId": "zotero-9E8UJEQX-v5328",
+    "status": "READY_FOR_LIBRARY_REVIEW",
+    "preparedAt": "2026-07-31T22:30:30.192036Z",
+    "preparedBy": "Codex GPT-5.6 Sol (source-grounded draft reviewed by Eric Rash)",
+    "publicSourceUrl": "https://doi.org/10.3389/fneur.2020.576729",
+    "source": {
+      "kind": "zotero",
+      "itemKey": "9E8UJEQX",
+      "itemVersion": 5328,
+      "attachmentKey": "3EAARBFV",
+      "pageCount": 25,
+      "title": "Analysis and Biophysics of Surface EMG for Physiotherapists and Kinesiologists: Toward a Common Language With Rehabilitation Engineers",
+      "doi": "10.3389/fneur.2020.576729",
+      "year": 2020
+    },
+    "evidenceReview": {
+      "artifactType": "paper-brief",
+      "paperBriefPath": "Knowledge/library/research-papers/mcmanus-2020-analysis-and-biophysics-of-surface-emg-for-physiotherapists-and-kinesiologists-toward-a-co.md",
+      "paperBriefSha256": "3fb02d6f7eb4b0f4176f059dc9a39ef66893224315e351ecc370e4918283f992",
+      "fullTextReviewed": true,
+      "evidenceLocatorPages": [
+        15,
+        18,
+        20,
+        21
+      ]
+    },
+    "paper": {
+      "year": 2020,
+      "citation": "McManus, L., De Vito, G., & Lowery, M. M. (2020). Analysis and biophysics of surface EMG for physiotherapists and kinesiologists: Toward a common language with rehabilitation engineers. Frontiers in Neurology, 11, 576729. https://doi.org/10.3389/fneur.2020.576729",
+      "doi": "10.3389/fneur.2020.576729",
+      "abstract": "What foundational biophysics, acquisition, processing, interpretation, and educational principles are needed for physiotherapists and kinesiologists to use surface EMG appropriately? Participants: No original participant sample. Sport and level: Not sport-specific; examples span clinical rehabilitation and human movement. Training or return-to-play context: Measurement of muscle activation, movement patterns, local fatigue, and biofeedback. Inclusion and exclusion boundaries: Educational methods paper with examples and tutorial materials, not a systematic effectiveness review or diagnostic-accuracy study. Design: Narrative methods/tutorial article. Exposure or intervention: No original intervention; the article explains sEMG acquisition and analysis and provides sample data and code. Comparator: Conventional bipolar and array-based sEMG concepts, time- and frequency-domain features, and alternative acquisition/processing choices. Measurements and outcomes: Electrode placement, sampling, filtering, RMS/ARV amplitude, mean/median frequency, normalization, reporting, noise, crosstalk, and artifacts. Analysis: Conceptual synthesis of biophysics, engineering guidance, clinical examples, and accompanying tutorial code; no formal search or risk-of-bias method was reported.",
+      "tldr": "This methods paper provides a practical technical reference for collecting, processing, reporting, and interpreting surface electromyography in rehabilitation and applied performance settings. The authors recommend choosing inter-electrode distance for anatomical selectivity, preparing skin, following standardized placement guidance, sampling above 1,000 Hz, and applying anti-alias filtering before down-sampling. Interpretation should remain within the reviewed population, design, and applicability limits.",
+      "methods": "Design: Narrative methods/tutorial article. Exposure or intervention: No original intervention; the article explains sEMG acquisition and analysis and provides sample data and code. Comparator: Conventional bipolar and array-based sEMG concepts, time- and frequency-domain features, and alternative acquisition/processing choices. Measurements and outcomes: Electrode placement, sampling, filtering, RMS/ARV amplitude, mean/median frequency, normalization, reporting, noise, crosstalk, and artifacts. Analysis: Conceptual synthesis of biophysics, engineering guidance, clinical examples, and accompanying tutorial code; no formal search or risk-of-bias method was reported.",
+      "findings": "The authors recommend choosing inter-electrode distance for anatomical selectivity, preparing skin, following standardized placement guidance, sampling above 1,000 Hz, and applying anti-alias filtering before down-sampling. RMS and average rectified value are common sEMG amplitude summaries. Short analysis windows are required because the sEMG signal is non-stationary. Declining mean or median frequency during sustained isometric fatigue may reflect slower muscle-fiber conduction, but these features are also influenced by motor-unit synchronization and temperature. sEMG amplitude and frequency characteristics only permit inference about motor-unit activity and conduction velocity; they are not direct measures of individual motor units or muscle force.",
+      "limitations": "Conventional sEMG is limited to superficial muscles; recordings from small muscles are vulnerable to crosstalk, particularly with greater subcutaneous fat. Instrumentation, electrode position, anatomy, noise, and interference materially affect the signal. Comparisons across people, muscles, sessions, or electrode positions require an appropriate, reproducible normalization procedure. Additional transfer limitation (practitioner interpretation): the paper explains measurement principles but does not validate a specific protocol, device, fatigue threshold, or clinical decision rule for collegiate athletes.",
+      "practicalImplications": "Before using sEMG to support a performance or rehabilitation decision, write a reproducible acquisition and analysis protocol, document electrode location and signal processing, normalize to a defensible reference, and constrain the claim to what the feature can represent. Treat amplitude as a context-dependent signal feature, not a direct ranking of force, recruitment, or exercise quality.",
+      "athleteDev": "For athlete-development decisions, use this evidence only within the reviewed population and context. Before using sEMG to support a performance or rehabilitation decision, write a reproducible acquisition and analysis protocol, document electrode location and signal processing, normalize to a defensible reference, and constrain the claim to what the feature can represent. Treat amplitude as a context-dependent signal feature, not a direct ranking of force, recruitment, or exercise quality. Do not treat the study as a universal development pathway or benchmark.",
+      "rtp": "For rehabilitation and return-to-sport decisions, before using sEMG to support a performance or rehabilitation decision, write a reproducible acquisition and analysis protocol, document electrode location and signal processing, normalize to a defensible reference, and constrain the claim to what the feature can represent. Treat amplitude as a context-dependent signal feature, not a direct ranking of force, recruitment, or exercise quality. This study alone does not establish clearance criteria or a complete return-to-sport progression."
+    },
+    "taxonomy": {
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "studyDesign": "Narrative Review"
+    }
+  }
+}

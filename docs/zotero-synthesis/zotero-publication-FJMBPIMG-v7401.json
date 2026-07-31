@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "ask-library-zotero-publication.v1",
+  "publicationId": "zotero-publication-FJMBPIMG-v7401",
+  "status": "PUBLISHED",
+  "libraryReview": {
+    "paperId": "667",
+    "reviewedBy": "Eric Rash",
+    "reviewedOn": "2026-07-31"
+  },
+  "publication": {
+    "status": "PUBLISHED",
+    "publishedOn": "2026-07-31"
+  },
+  "candidate": {
+    "schemaVersion": "ask-library-publication-candidate.v1",
+    "candidateId": "zotero-FJMBPIMG-v7401",
+    "status": "READY_FOR_LIBRARY_REVIEW",
+    "preparedAt": "2026-07-31T22:30:40.539887Z",
+    "preparedBy": "Codex GPT-5.6 Sol (source-grounded draft reviewed by Eric Rash)",
+    "publicSourceUrl": "https://doi.org/10.2478/ijcss-2020-0001",
+    "source": {
+      "kind": "zotero",
+      "itemKey": "FJMBPIMG",
+      "itemVersion": 7401,
+      "attachmentKey": "WJ4IRLTX",
+      "pageCount": 23,
+      "title": "A development framework for decision support systems in high-performance sport",
+      "doi": "10.2478/ijcss-2020-0001",
+      "year": 2020
+    },
+    "evidenceReview": {
+      "artifactType": "paper-brief",
+      "paperBriefPath": "Knowledge/library/research-papers/schelling-2020-a-development-framework-for-decision-support-systems-in-high-performance-sport.md",
+      "paperBriefSha256": "72b33849595adb0c81c041cc24e91e722aefa5634a58133350840164f3b78bce",
+      "fullTextReviewed": true,
+      "evidenceLocatorPages": [
+        3,
+        5,
+        6,
+        7,
+        9,
+        12,
+        15,
+        16
+      ]
+    },
+    "paper": {
+      "year": 2020,
+      "citation": "Schelling, X., & Robertson, S. (2020). A development framework for decision support systems in high-performance sport. International Journal of Computer Science in Sport, 19(1), 1–23. https://doi.org/10.2478/ijcss-2020-0001",
+      "doi": "10.2478/ijcss-2020-0001",
+      "abstract": "What criteria and components should developers and sport organizations consider when developing or evaluating a decision-support system for high-performance sport? This is a narrative, conceptual framework paper, not an empirical study with participants, intervention groups, or observed outcomes. Its intended context is computer-based decision support for uncertain, repetitive, or information-intensive decisions in high-performance sport. The authors drew on decision-science, information-systems, and sport literature to adapt established evaluation concepts into a sport-specific development framework. The article explains candidate components and offers a proposed evaluation tool; it does not report a systematic search, formal consensus process, prospective validation, or comparative test of the framework.",
+      "tldr": "This conceptual paper provides a structured checklist for designing or evaluating sport decision-support systems, including the organizational, data-quality, error, interpretability, and complexity questions that should precede operational use. Conceptual proposition, not an empirical finding: the framework organizes evaluation into three overarching criteria—context satisfaction, output quality, and process efficiency—and six components: feasibility, delivered knowledge, decisional guidance, data quality, system error, and system complexity. Interpretation should remain within the reviewed population, design, and applicability limits.",
+      "methods": "The authors drew on decision-science, information-systems, and sport literature to adapt established evaluation concepts into a sport-specific development framework. The article explains candidate components and offers a proposed evaluation tool; it does not report a systematic search, formal consensus process, prospective validation, or comparative test of the framework.",
+      "findings": "Conceptual proposition, not an empirical finding: the framework organizes evaluation into three overarching criteria—context satisfaction, output quality, and process efficiency—and six components: feasibility, delivered knowledge, decisional guidance, data quality, system error, and system complexity. Feasibility includes organizational compatibility plus technical, financial, and legal requirements; the authors emphasize that data workflow and cross-department access can determine whether a system is practical. Decisional guidance should be designed around the target decision, intended use, timing, audience, directivity, invocation, and communication format, with enough interpretability for end users to understand discrepancies between expert judgment and model output. Output-quality review should address whether inputs represent the intended problem and whether the system introduces random error, systematic error, or bias through data, processing, or user interaction. The proposed evaluation tool asks developers and experts to weight and score the six components while checking their subcomponents. The authors explicitly state that future work must establish the framework’s utility and validity in high-performance sport environments.",
+      "limitations": "The framework is theory-informed but unvalidated; the paper provides no evidence that using it improves decisions, athlete outcomes, staff adoption, calibration, or organizational efficiency. The literature-selection process is not systematic or reproducible, and the paper does not quantify agreement among experts on the proposed criteria. The scoring tool's weights and 1–5 component ratings are proposed rather than empirically calibrated; a total score should not be treated as a validated threshold for deployment. The framework is broad and does not replace domain-specific validation, prospective monitoring, privacy review, security controls, or clinical governance for athlete-health decisions. Examples from high-performance sport illustrate transfer, but they do not demonstrate that any particular model is accurate or useful in collegiate American football.",
+      "practicalImplications": "Use the six components as a development and governance checklist: define the decision and accountable user, verify organizational and technical feasibility, specify how guidance will be interpreted, audit data representativeness and missingness, quantify relevant errors and bias, and prefer the least complex system that preserves decision value. Treat the evaluation score as a discussion aid, not evidence that a system is safe or effective; require local validation and outcome monitoring before operational reliance.",
+      "athleteDev": "For athlete development, use the six components as a development and governance checklist: define the decision and accountable user, verify organizational and technical feasibility, specify how guidance will be interpreted, audit data representativeness and missingness, quantify relevant errors and bias, and prefer the least complex system that preserves decision value. Treat the evaluation score as a discussion aid, not evidence that a system is safe or effective; require local validation and outcome monitoring before operational reliance. Preserve the study population and avoid converting one finding into a universal development pathway or benchmark.",
+      "rtp": "This study did not directly evaluate rehabilitation or return to sport. It provides no standalone clearance criterion, reinjury threshold, or validated return-to-play progression."
+    },
+    "taxonomy": {
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "studyDesign": "Narrative Review"
+    }
+  }
+}

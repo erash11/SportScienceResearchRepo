@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "ask-library-zotero-publication.v1",
+  "publicationId": "zotero-publication-64WUX2S4-v5903",
+  "status": "PUBLISHED",
+  "libraryReview": {
+    "paperId": "651",
+    "reviewedBy": "Eric Rash",
+    "reviewedOn": "2026-07-31"
+  },
+  "publication": {
+    "status": "PUBLISHED",
+    "publishedOn": "2026-07-31"
+  },
+  "candidate": {
+    "schemaVersion": "ask-library-publication-candidate.v1",
+    "candidateId": "zotero-64WUX2S4-v5903",
+    "status": "READY_FOR_LIBRARY_REVIEW",
+    "preparedAt": "2026-07-31T22:30:27.631788Z",
+    "preparedBy": "Codex GPT-5.6 Sol (source-grounded draft reviewed by Eric Rash)",
+    "publicSourceUrl": "https://doi.org/10.3758/s13423-017-1272-1",
+    "source": {
+      "kind": "zotero",
+      "itemKey": "64WUX2S4",
+      "itemVersion": 5903,
+      "attachmentKey": "EAR5ZVRZ",
+      "pageCount": 23,
+      "title": "Bayesian data analysis for newcomers",
+      "doi": "10.3758/s13423-017-1272-1",
+      "year": 2018
+    },
+    "evidenceReview": {
+      "artifactType": "paper-brief",
+      "paperBriefPath": "Knowledge/library/research-papers/kruschke-2018-bayesian-data-analysis-for-newcomers.md",
+      "paperBriefSha256": "6dfef52a8a24e96f587275e44a0986d2471254bd44d8aea3e8c63f7340bc7928",
+      "fullTextReviewed": true,
+      "evidenceLocatorPages": [
+        1,
+        9,
+        15,
+        20
+      ]
+    },
+    "paper": {
+      "year": 2018,
+      "citation": "Kruschke, J. K., & Liddell, T. M. (2018). Bayesian data analysis for newcomers. Psychonomic Bulletin & Review, 25(1), 155–177. https://doi.org/10.3758/s13423-017-1272-1",
+      "doi": "10.3758/s13423-017-1272-1",
+      "abstract": "What foundational ideas should a newcomer understand to interpret and use Bayesian parameter estimation and model comparison responsibly? This is a statistical tutorial/brief report, not an empirical participant study. Examples come largely from behavioral-science settings, but the principles apply to sport-science models when outcome definitions, priors, and decision thresholds are contextually justified. Conceptual tutorial using worked examples with minimal mathematical notation. It explains Bayesian parameter estimation, model comparison, null-value assessment, prior distributions, hierarchical models, and boundaries of what Bayesian analysis can solve. No systematic evidence search or comparative simulation study is reported; the artifact should be used as methodological guidance rather than effectiveness evidence.",
+      "tldr": "This tutorial provides a clear conceptual basis for interpreting posterior distributions, practical-equivalence decisions, prior information, and uncertainty in applied research. Posterior distributions directly express credible parameter values and uncertainty under the specified model and prior, rather than long-run properties of hypothetical repeated samples. Interpretation should remain within the reviewed population, design, and applicability limits.",
+      "methods": "Conceptual tutorial using worked examples with minimal mathematical notation. It explains Bayesian parameter estimation, model comparison, null-value assessment, prior distributions, hierarchical models, and boundaries of what Bayesian analysis can solve. No systematic evidence search or comparative simulation study is reported; the artifact should be used as methodological guidance rather than effectiveness evidence.",
+      "findings": "Posterior distributions directly express credible parameter values and uncertainty under the specified model and prior, rather than long-run properties of hypothetical repeated samples. A region of practical equivalence must be defined from the substantive theory and measurement context; it is a decision threshold, not a universal convention. The paper's HDI-plus-ROPE rule distinguishes practical rejection, practical acceptance, and an undecided state when the interval and ROPE overlap. Priors may be relatively innocuous when broad relative to the posterior in continuous estimation, but are consequential in model comparison and useful when grounded in prior, concurrent, or theoretical information. Bayesian analysis cannot remove bias from selected data or by itself solve selective reporting and replication problems.",
+      "limitations": "The tutorial presents one influential workflow, not a universal consensus for Bayesian decision-making. Posterior conclusions remain conditional on model structure, likelihood, prior, data quality, and computational adequacy. Default ROPEs or priors should not be copied into athlete-monitoring decisions without domain and measurement justification. Bayesian estimates do not repair poor sampling, invalid measurement, undisclosed analytic flexibility, or selective reporting. Decision thresholds require consequences and stakeholder context; statistical credibility is not identical to practical importance.",
+      "practicalImplications": "For sport-science analysis, report the full posterior and uncertainty, justify priors and practical-equivalence regions before seeing results where possible, and run sensitivity checks. Use hierarchical models to partially pool noisy athlete-level estimates when appropriate. Keep model output subordinate to measurement validity, decision costs, and transparent data provenance.",
+      "athleteDev": "For athlete-development decisions, use this evidence only within the reviewed population and context. For sport-science analysis, report the full posterior and uncertainty, justify priors and practical-equivalence regions before seeing results where possible, and run sensitivity checks. Use hierarchical models to partially pool noisy athlete-level estimates when appropriate. Keep model output subordinate to measurement validity, decision costs, and transparent data provenance. Do not treat the study as a universal development pathway or benchmark.",
+      "rtp": "This study did not directly evaluate rehabilitation or return to sport. It provides no standalone clearance criterion, reinjury threshold, or validated return-to-play progression."
+    },
+    "taxonomy": {
+      "domains": [
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "studyDesign": "Other"
+    }
+  }
+}
