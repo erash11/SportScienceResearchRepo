@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "ask-library-zotero-publication.v1",
+  "publicationId": "zotero-publication-F68IJ2W7-v3924",
+  "status": "PUBLISHED",
+  "libraryReview": {
+    "paperId": "663",
+    "reviewedBy": "Eric Rash",
+    "reviewedOn": "2026-07-31"
+  },
+  "publication": {
+    "status": "PUBLISHED",
+    "publishedOn": "2026-07-31"
+  },
+  "candidate": {
+    "schemaVersion": "ask-library-publication-candidate.v1",
+    "candidateId": "zotero-F68IJ2W7-v3924",
+    "status": "READY_FOR_LIBRARY_REVIEW",
+    "preparedAt": "2026-07-31T22:30:35.581306Z",
+    "preparedBy": "Codex GPT-5.6 Sol (source-grounded draft reviewed by Eric Rash)",
+    "publicSourceUrl": "https://doi.org/10.1093/comnet/cnaa036",
+    "source": {
+      "kind": "zotero",
+      "itemKey": "F68IJ2W7",
+      "itemVersion": 3924,
+      "attachmentKey": "8C9S2DM4",
+      "pageCount": 20,
+      "title": "An efficient dynamic Bayesian network classifier structure learning algorithm: application to sport epidemiology",
+      "doi": "10.1093/comnet/cnaa036",
+      "year": 2020
+    },
+    "evidenceReview": {
+      "artifactType": "paper-brief",
+      "paperBriefPath": "Knowledge/library/research-papers/peterson-2020-an-efficient-dynamic-bayesian-network-classifier-structure-learning-algorithm-application.md",
+      "paperBriefSha256": "552c0f1ec9ef3b90182124d0f5e17bfb2f4787823b8f6b05fe9efe42d12ac0c1",
+      "fullTextReviewed": true,
+      "evidenceLocatorPages": [
+        10,
+        11,
+        13,
+        15
+      ]
+    },
+    "paper": {
+      "year": 2020,
+      "citation": "Peterson, K. D. (2020). An efficient dynamic Bayesian network classifier structure learning algorithm: Application to sport epidemiology. Journal of Complex Networks, 8(4), cnaa036. https://doi.org/10.1093/comnet/cnaa036",
+      "doi": "10.1093/comnet/cnaa036",
+      "abstract": "Can the proposed Rista algorithm learn time-varying dynamic Bayesian network structures efficiently while retaining useful classification and topological performance, including in an authentic collegiate athlete-monitoring example? Participants: 286 NCAA Division I student-athletes (107 male, 179 female) from 14 teams. Sport and level: Multiple NCAA Division I sports; individual sports were not reported on the reviewed methods page. Training or return-to-play context: Weekly countermovement-jump monitoring during the 2017–2018 competitive season; the outcome was lower-extremity soft-tissue time-loss injury in week four. Inclusion and exclusion boundaries: The athlete dataset contained complete four-week time series; transfer to a specific sport, injury diagnosis, or longer forecasting horizon was not established. Design: Algorithm-development and validation study using simulated gene-network benchmarks plus a real-world athlete-monitoring exemplar. Exposure or intervention: Rista, a three-stage time-varying dynamic Bayesian network structure-learning approach, was applied to longitudinal data. Comparator: ARTIVA, TVDBN-0, and NsDbn algorithms. Measurements and outcomes: Weekly bilateral countermovement jumps on ForceDecks FD4000 platforms (1,000 Hz), 122 candidate features, and a binary week-four lower-extremity soft-tissue time-loss injury outcome; the athlete dataset included 52 injuries among 286 time series. Analysis: Classification accuracy, precision, recall, F1, Matthews correlation coefficient, runtime, topological recovery on known networks, and STERGM post-hoc assessment; continuous athlete features were discretized into five ordinal levels.",
+      "tldr": "This paper informs decisions about whether longitudinal athlete-monitoring data can support interpretable, time-varying injury-classification models and what validation limits must be addressed before operational use. Rista had the highest classification accuracy across the synthetic validation datasets and trained faster than the comparison algorithms, while ARTIVA generally achieved higher recall; the article does not establish prospective clinical utility from these benchmark comparisons. Interpretation should remain within the reviewed population, design, and applicability limits.",
+      "methods": "Design: Algorithm-development and validation study using simulated gene-network benchmarks plus a real-world athlete-monitoring exemplar. Exposure or intervention: Rista, a three-stage time-varying dynamic Bayesian network structure-learning approach, was applied to longitudinal data. Comparator: ARTIVA, TVDBN-0, and NsDbn algorithms. Measurements and outcomes: Weekly bilateral countermovement jumps on ForceDecks FD4000 platforms (1,000 Hz), 122 candidate features, and a binary week-four lower-extremity soft-tissue time-loss injury outcome; the athlete dataset included 52 injuries among 286 time series. Analysis: Classification accuracy, precision, recall, F1, Matthews correlation coefficient, runtime, topological recovery on known networks, and STERGM post-hoc assessment; continuous athlete features were discretized into five ordinal levels.",
+      "findings": "Rista had the highest classification accuracy across the synthetic validation datasets and trained faster than the comparison algorithms, while ARTIVA generally achieved higher recall; the article does not establish prospective clinical utility from these benchmark comparisons. For topological recovery, Rista underperformed ARTIVA across the reported synthetic datasets; for D3-100n, Rista accuracy/F1/MCC were 0.89/0.38/0.32 versus 0.92/0.40/0.34 for ARTIVA. The authors reported that Rista's topological performance deteriorated with small datasets and empirically suggested at least 25 time series per time point for meaningful reconstruction.",
+      "limitations": "The algorithm requires discretized data because its BIC scoring function does not accept continuous inputs. Rista was less accurate than ARTIVA for classification and topology in smaller datasets, and its performance depends on having adequate instances per time point. Additional transfer limitation (practitioner interpretation): the athlete application was a heterogeneous, retrospective exemplar with four weekly observations and a broad injury outcome; it does not validate individual-level injury prediction, causal risk factors, or deployment in collegiate American football.",
+      "practicalImplications": "Rista may be useful as an exploratory framework when a program has sufficiently large, repeated-measures datasets and needs time-sensitive, interpretable modelling. It should not be used as a stand-alone injury decision rule: deployment would require sport-specific prospective validation, calibration, discrimination and error-cost review, and safeguards against treating learned network edges as causal.",
+      "athleteDev": "For athlete-development decisions, use this evidence only within the reviewed population and context. Rista may be useful as an exploratory framework when a program has sufficiently large, repeated-measures datasets and needs time-sensitive, interpretable modelling. It should not be used as a stand-alone injury decision rule: deployment would require sport-specific prospective validation, calibration, discrimination and error-cost review, and safeguards against treating learned network edges as causal. Do not treat the study as a universal development pathway or benchmark.",
+      "rtp": "For rehabilitation and return-to-sport decisions, rista may be useful as an exploratory framework when a program has sufficiently large, repeated-measures datasets and needs time-sensitive, interpretable modelling. It should not be used as a stand-alone injury decision rule: deployment would require sport-specific prospective validation, calibration, discrimination and error-cost review, and safeguards against treating learned network edges as causal. This study alone does not establish clearance criteria or a complete return-to-sport progression."
+    },
+    "taxonomy": {
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Collegiate",
+        "Female Athletes",
+        "Male Athletes"
+      ],
+      "studyDesign": "Methodological / Validation Study"
+    }
+  }
+}
