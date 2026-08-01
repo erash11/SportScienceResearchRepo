@@ -120,7 +120,8 @@ const underrepresentedPopulation = (candidate) => candidate.populations.some((po
   "Female Athletes",
   "Healthy Athletes",
 ].includes(population));
-const underrepresentedDemographic = (candidate) => candidate.populations.some((population) => ["Female Athletes", "Youth / Adolescent"].includes(population));
+const femaleAthlete = (candidate) => candidate.populations.includes("Female Athletes");
+const youthAthlete = (candidate) => candidate.populations.includes("Youth / Adolescent");
 const namedSport = (candidate) => candidate.sports.some((sport) => sport !== "Mixed / General Sport");
 const primaryStudy = (candidate) => [
   "Randomized Controlled Trial",
@@ -137,7 +138,7 @@ function sortCandidates(rows) {
   return rows.sort((a, b) => b.priorityScore - a.priorityScore || a.title.localeCompare(b.title));
 }
 
-function fillFromPool(pilotDomain, pool, allocationBasis) {
+function fillFromPool(pilotDomain, pool, allocationBasis, fillRemainder = true) {
   const selection = selectionsByDomain.get(pilotDomain);
   const addUntil = (minimum, predicate) => {
     for (const candidate of pool) {
@@ -145,10 +146,12 @@ function fillFromPool(pilotDomain, pool, allocationBasis) {
       if (predicate(candidate)) addCandidate(candidate, pilotDomain, allocationBasis);
     }
   };
-  addUntil(1, underrepresentedDemographic);
+  addUntil(1, femaleAthlete);
+  addUntil(2, youthAthlete);
   addUntil(2, underrepresentedPopulation);
   addUntil(4, namedSport);
   addUntil(4, primaryStudy);
+  if (!fillRemainder) return;
   for (const candidate of pool) {
     if (selection.length >= targetPerDomain) break;
     addCandidate(candidate, pilotDomain, allocationBasis);
@@ -157,11 +160,11 @@ function fillFromPool(pilotDomain, pool, allocationBasis) {
 
 for (const pilotDomain of domainOrder) {
   const primaryPool = sortCandidates(candidates.filter((candidate) => candidate.primaryDomain === pilotDomain && !selectedFiles.has(candidate.sourceFile)));
+  fillFromPool(pilotDomain, primaryPool, "primary-title-match", false);
+  const secondaryPool = sortCandidates(candidates.filter((candidate) => candidate.domains.includes(pilotDomain) && candidate.primaryDomain !== pilotDomain && !selectedFiles.has(candidate.sourceFile)));
+  fillFromPool(pilotDomain, secondaryPool, "secondary-title-match", false);
   fillFromPool(pilotDomain, primaryPool, "primary-title-match");
-  if (selectionsByDomain.get(pilotDomain).length < targetPerDomain) {
-    const secondaryPool = sortCandidates(candidates.filter((candidate) => candidate.domains.includes(pilotDomain) && candidate.primaryDomain !== pilotDomain && !selectedFiles.has(candidate.sourceFile)));
-    fillFromPool(pilotDomain, secondaryPool, "secondary-title-match");
-  }
+  fillFromPool(pilotDomain, secondaryPool, "secondary-title-match");
   if (selectionsByDomain.get(pilotDomain).length < targetPerDomain) {
     throw new Error(`${pilotDomain} produced only ${selectionsByDomain.get(pilotDomain).length} eligible candidates; expected ${targetPerDomain}.`);
   }

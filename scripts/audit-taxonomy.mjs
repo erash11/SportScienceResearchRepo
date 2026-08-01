@@ -87,6 +87,8 @@ const wellbeingProbe = inferTaxonomy({ citation: "Athlete mental health help-see
 if (!wellbeingProbe.domains.includes("Athlete Wellbeing")) failures.push("mental-health wellbeing evidence did not map to Athlete Wellbeing");
 const ageGroupProbe = inferTaxonomy({ citation: "Recovery in under-20 male soccer players" });
 if (!ageGroupProbe.populations.includes("Youth / Adolescent")) failures.push("under-20 evidence did not map to Youth / Adolescent");
+const sexDifferenceProbe = inferTaxonomy({ citation: "Heart rate variability in concussed college athletes: biological sex differences" });
+if (!sexDifferenceProbe.populations.includes("Female Athletes")) failures.push("biological sex-difference evidence did not map to Female Athletes");
 
 const distributions = {
   domains: Object.fromEntries(TAXONOMY.domains.map((value) => [value, 0])),

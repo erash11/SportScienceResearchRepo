@@ -137,7 +137,7 @@ const POPULATION_RULES = [
   ["Collegiate", [/\bcolleg/i, /\buniversity athlete/i, /\bNCAA\b/i]],
   ["Youth / Adolescent", [/\byouth\b/i, /\badolescen/i, /\bteen/i, /high school/i, /\bchildren\b/i, /\bpediatric\b/i, /\b(?:u|under)[-\s]?(?:15|16|17|18|19|20)\b/i]],
   ["Adult / Recreational", [/\brecreational\b/i, /\bactive adult/i, /\badult athlete/i]],
-  ["Female Athletes", [/\bfemales?\b/i, /\bwomen\b/i, /\bwoman\b/i, /\bgirls\b/i]],
+  ["Female Athletes", [/\bfemales?\b/i, /\bwomen\b/i, /\bwoman\b/i, /\bgirls\b/i, /\b(?:biological\s+)?sex differences?\b/i]],
   ["Male Athletes", [/\bmales?\b/i, /\bmen\b/i, /\bman\b/i, /\bboys\b/i]],
   ["Injured Athletes", [/\binjured\b/i, /\binjury\b/i, /\bsurger/i, /\brehabilitat/i, /return.to.(sport|play)/i, /\bpatient/i]],
   ["Healthy Athletes", [/\bhealthy\b/i, /\buninjured\b/i, /\basymptomatic\b/i]],
