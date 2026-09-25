@@ -8,12 +8,12 @@ Read this first. Update it before ending every session.
 ## Current state
 - Baylor Athletics Health & Performance Evidence Library. Shared language lives in
   `CONTEXT.md`; durable trade-offs live in `docs/adr/`.
-- The public Evidence Library has 707 published records: 595 local-source records and
-  112 internal or external records. `SourcePapers/` holds 2,155 PDFs; 1,560 filenames
-  remain unrepresented. The next unused stable ID is 739. The most recent content
-  commits on 2026-08-01 published 55 reviewed local-source records and pilot batch 17.
-- Full-text screening and synthesis cover 17 batches: 204 screening decisions
-  (197 INCLUDE, 5 EXCLUDE, 2 DEGRADED), with 197 source-grounded records published.
+- The public Evidence Library has 712 published records: 600 local-source records and
+  112 internal or external records. `SourcePapers/` holds 2,155 PDFs; 1,555 filenames
+  remain unrepresented. The next unused stable ID is 744. Batch 18 published five
+  screened records on 2026-09-25 and excluded one editorial.
+- Full-text screening and synthesis cover 18 batches: 210 screening decisions
+  (202 INCLUDE, 6 EXCLUDE, 2 DEGRADED), with 202 source-grounded records published.
   The replenished shortlist has 96 unrepresented candidates, 12 per domain.
 - The reviewed Zotero publication workflow has 103 published records and no staged
   candidates. `npm run audit` passed all publication, taxonomy, screening, synthesis,

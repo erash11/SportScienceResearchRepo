@@ -1,7 +1,7 @@
 # Baylor Athletics Health & Performance Evidence Library Roadmap
 
 **Adopted:** July 21, 2026
-**Status:** Phase 3 implemented; Phase 4 Batches 01–12 published
+**Status:** Phase 3 implemented; Phase 4 Batches 01–18 published
 **Product name:** Baylor Athletics Health & Performance Evidence Library
 
 ## Decision
@@ -37,14 +37,14 @@ These counts supersede the older filename-filter estimate in `session.md`.
 
 The July 21 cleanup removed 26 verified duplicate rows, repaired the malformed source links, separated two records that had been assigned the wrong shared source, restored the previously unreadable workload paper from its PDF, corrected one DOI/citation, and completed the blank return-to-sport field.
 
-The baseline began at 407 canonical rows. After 12 full-text-reviewed pilot batches, the reproducible manifest at `docs/library-coverage-manifest.json` now reports:
+The baseline began at 407 canonical rows. After 18 full-text-reviewed pilot batches and reviewed Zotero admissions, the reproducible manifest at `docs/library-coverage-manifest.json` now reports:
 
-- 549 canonical published rows with 549 unique stable IDs
-- 540 local source-backed rows, 8 Baylor internal rows, and 1 DOI-backed external row
+- 712 canonical published rows with 712 unique stable IDs
+- 600 local source-backed rows and 112 internal or external rows, including 103 reviewed Zotero publications
 - no repeated or unresolved local source references
 - no missing required fields or schema mismatches
 - 2,155 PDFs representing 2,125 unique file contents
-- 536 unique local source contents represented and 1,589 unrepresented
+- 596 unique local source contents represented and 1,529 unrepresented
 - all five publication quality gates passing
 
 Run `npm run audit` before publication and `npm run audit:manifest` whenever the corpus or published library changes.
@@ -154,15 +154,21 @@ The UI applies OR logic within a filter dimension and AND logic across dimension
 - [x] Publish Batch 11 as stable IDs 552–563
 - [x] Full-text screen and audit Batch 12: 12 INCLUDE, 0 EXCLUDE, 0 DEGRADED
 - [x] Publish Batch 12 as stable IDs 564–575
+- [x] Screen and publish Batch 13: 11 INCLUDE, 1 DEGRADED
+- [x] Screen and publish Batch 14: 10 INCLUDE, 2 EXCLUDE
+- [x] Screen and publish Batch 15: 11 INCLUDE, 1 EXCLUDE
+- [x] Screen and publish Batch 16: 12 INCLUDE
+- [x] Screen and publish Batch 17: 11 INCLUDE, 1 DEGRADED
+- [x] Screen and publish Batch 18: 5 INCLUDE, 1 EXCLUDE
 - Include cross-sport and underrepresented population evidence intentionally; do not rely only on the existing backlog's distribution
 - Process in small audited batches with source, extraction, synthesis, and verification gates
 - Publish only after duplicate and schema checks pass
 
-The active queue is stored in `docs/pilot-expansion-shortlist.md` and `docs/pilot-expansion-shortlist.json`; durable batch decisions live under `docs/pilot-screening/`, and publication-ready records live under `docs/pilot-synthesis/`. Batches 01–12 verified and published 142 readable, eligible local sources, with two mislabeled sources excluded. Their reviewed primary-domain distribution is 37 Training & Performance, 30 Monitoring & Technology, 24 Sports Medicine & Injury, 17 Recovery & Readiness, 14 Rehabilitation & Return to Sport, 11 Nutrition & Hydration, 6 Athlete Wellbeing, and 3 Brain Health & Psychology.
+The active queue is stored in `docs/pilot-expansion-shortlist.md` and `docs/pilot-expansion-shortlist.json`; durable batch decisions live under `docs/pilot-screening/`, and publication-ready records live under `docs/pilot-synthesis/`. Batches 01–18 verified and published 202 readable, eligible local sources; six sources were excluded and two degraded. Review the batch records for source-specific decisions.
 
-After Batch 12 publication, the active queue contains 96 unrepresented title-screened candidates with 12 per pilot domain and no previously screened INCLUDE records awaiting synthesis. Primary-domain matches fill each domain first. Athlete Wellbeing currently requires seven explicitly labeled secondary-title matches because only five unrepresented candidates have it as their strongest title signal. Generic physical `stress` wording is excluded from the Wellbeing rule to prevent heat-stress and bone-stress false positives.
+After Batch 18 publication, the regenerated active queue contains 96 unrepresented title-screened candidates with 12 per pilot domain and no previously screened INCLUDE records awaiting synthesis. Primary-domain matches fill each domain first; secondary-title matches are explicitly labeled where needed. Generic physical `stress` wording is excluded from the Wellbeing rule to prevent heat-stress and bone-stress false positives.
 
-**Exit condition:** met. The library contains 540 distinct local source files plus nine internal or external records and now demonstrates reviewed breadth across all eight controlled domains.
+**Exit condition:** met. The library contains 600 distinct local source files plus 112 internal or external records and demonstrates reviewed breadth across all eight controlled domains.
 
 ### Phase 5 — Backfill and Operating Cadence
 
@@ -179,4 +185,4 @@ Use an evenly balanced first pilot—12 candidates in each of the eight domains�
 
 ## Next Gate
 
-Full-text screen Batch 13 from the replenished balanced queue, then convert only INCLUDE decisions into the next structured synthesis batch. A candidate enters synthesis only after source identity, eligibility, study-design, domain, sport/population, and duplicate-content checks pass. The next unused stable ID is 576. Run `npm run audit:screening` after recording a batch, `npm run synthesis:apply` to publish reviewed synthesis records, and `npm run pilot:shortlist` to replenish the queue.
+Full-text screen Batch 19 from the replenished balanced queue, then convert only INCLUDE decisions into the next structured synthesis batch. A candidate enters synthesis only after source identity, eligibility, study-design, domain, sport/population, and duplicate-content checks pass. The next unused stable ID is 744. Run `npm run audit:screening` after recording a batch, `npm run synthesis:apply` to publish reviewed synthesis records, and `npm run pilot:shortlist` to replenish the queue.

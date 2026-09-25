@@ -8,30 +8,30 @@ This queue contains 96 unrepresented, content-deduplicated local PDFs: 12 alloca
 
 ## Training & Performance
 
-1. **The acute effects of twenty four hours of sleep loss on the performance of national caliber male collegiate weightlifters** — Other — TITLE SCREENED<br>
-   `The acute effects of twenty four hours of sleep loss on the performance of national caliber male collegiate weightlifters.pdf`
-2. **The Dark Side of College Football** — Other — TITLE SCREENED<br>
-   `The Dark Side of College Football.pdf`
-3. **To train or not to train (on match day) - Influence of a priming session on match performance in competitive elite-level soccer** — Other — TITLE SCREENED<br>
-   `To train or not to train (on match day) - Influence of a priming session on match performance in competitive elite-level soccer.pdf`
-4. **Training load and injury risk in elite Rugby Union - The largest investigation to date** — Other — TITLE SCREENED<br>
-   `Training load and injury risk in elite Rugby Union - The largest investigation to date.pdf`
-5. **Weekly external load performance effects on sports injuries of male professional soccer players** — Other — TITLE SCREENED<br>
-   `Weekly external load performance effects on sports injuries of male professional soccer players.pdf`
-6. **Weekly programming of hamstring-related training contents in European professional soccer** — Other — TITLE SCREENED<br>
-   `Weekly programming of hamstring-related training contents in European professional soccer.pdf`
-7. **Reliability and Sensitivity of Nocturnal Heart Rate and Heart-Rate Variability in Monitoring Individual Responses to Training Load** — Methodological / Validation Study — TITLE SCREENED; secondary match, primary: Monitoring & Technology<br>
+1. **The Role of Speed, Change of Direction, and Momentum by Position and Starting Status in Division 1 Collegiate Football Players** — Other — TITLE SCREENED<br>
+   `The Role of Speed, Change of Direction, and Momentum by Position and Starting Status in Division 1 Collegiate Football Players.pdf`
+2. **Should I stay or should I go pro - Early NFL draft entry by NCAA FBS underclassmen** — Other — TITLE SCREENED<br>
+   `Should I stay or should I go pro - Early NFL draft entry by NCAA FBS underclassmen.pdf`
+3. **What Does Mental Rest Mean to Professional Athletes - A Study of National Football League Players** — Other — TITLE SCREENED<br>
+   `What Does Mental Rest Mean to Professional Athletes - A Study of National Football League Players.pdf`
+4. **Spatiotemporal kinematics during top speed sprinting in male intercollegiate track and field and team sport athletes** — Other — TITLE SCREENED<br>
+   `Spatiotemporal kinematics during top speed sprinting in male intercollegiate track and field and team sport athletes.pdf`
+5. **Acute Changes in Hamstring Injury Risk Factors After a Session of High-Volume Maximal Sprinting Speed Efforts in Soccer Players** — Other — TITLE SCREENED<br>
+   `Acute Changes in Hamstring Injury Risk Factors After a Session of High-Volume Maximal Sprinting Speed Efforts in Soccer Players.pdf`
+6. **Reliability and Sensitivity of Nocturnal Heart Rate and Heart-Rate Variability in Monitoring Individual Responses to Training Load** — Methodological / Validation Study — TITLE SCREENED; secondary match, primary: Monitoring & Technology<br>
    `Reliability and Sensitivity of Nocturnal Heart Rate and Heart-Rate Variability in Monitoring Individual Responses to Training Load.pdf`
-8. **Reliability and validity of the end range hamstring strength test with handheld dynamometry** — Methodological / Validation Study — TITLE SCREENED; secondary match, primary: Monitoring & Technology<br>
+7. **Reliability and validity of the end range hamstring strength test with handheld dynamometry** — Methodological / Validation Study — TITLE SCREENED; secondary match, primary: Monitoring & Technology<br>
    `Reliability and validity of the end range hamstring strength test with handheld dynamometry.pdf`
-9. **The test-retest reliability of force plate-derived parameters of the countermovement push-up as a power assessment tool** — Methodological / Validation Study — TITLE SCREENED; secondary match, primary: Monitoring & Technology<br>
+8. **The test-retest reliability of force plate-derived parameters of the countermovement push-up as a power assessment tool** — Methodological / Validation Study — TITLE SCREENED; secondary match, primary: Monitoring & Technology<br>
    `The test-retest reliability of force plate-derived parameters of the countermovement push-up as a power assessment tool.pdf`
-10. **Stem cell injections in knee osteoarthritis- a systematic review of the literature** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+9. **Stem cell injections in knee osteoarthritis- a systematic review of the literature** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `Stem cell injections in knee      osteoarthritis- a systematic review of the literature.pdf`
-11. **Strength training as superior, dose-dependent and safe prevention of acute and overuse sports injuries- a systematic review, qualitative analysis and metaanalysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+10. **Strength training as superior, dose-dependent and safe prevention of acute and overuse sports injuries- a systematic review, qualitative analysis and metaanalysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `Strength training as superior, dose-dependent and safe prevention of acute and overuse sports injuries- a systematic review, qualitative analysis and metaanalysis.pdf`
-12. **Systematic review of motion capture in virtual reality - Enhancing the precision of sports training** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+11. **Systematic review of motion capture in virtual reality - Enhancing the precision of sports training** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `Systematic review of motion capture in virtual reality - Enhancing the precision of sports training.pdf`
+12. **Talent Identification in Sport- A Systematic Review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+   `Talent Identification in Sport- A     Systematic Review.pdf`
 
 ## Sports Medicine & Injury
 
