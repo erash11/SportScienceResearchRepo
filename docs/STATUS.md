@@ -4,7 +4,8 @@ Read this first. Update it before ending every session.
 
 <!-- Verified against the pulled master branch, current manifest, audit commands, pilot
      files, GitHub issue state, and Pages status on 2026-09-25 (Windows). Detailed handoff:
-     docs/handoffs/2026-09-25-evidence-library-batch18-ask-library.md. -->
+     docs/handoffs/2026-09-25-evidence-library-batch18-ask-library.md (closeout addendum
+     updated 2026-09-26). -->
 
 ## Current state
 - Baylor Athletics Health & Performance Evidence Library. Shared language lives in
