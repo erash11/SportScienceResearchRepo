@@ -38,6 +38,7 @@ For EXCLUDE, the taxonomy, summary and `paper` fields may be null.
 - `doi`: the article's own DOI, exactly as printed, lowercase prefix "10.". Never use a DOI from the references.
 - `citation`: list authors as printed (surname + initials; use "et al." after 6 authors). Include volume, issue and pages only if they are printed for this article. Do not invent them.
 - `populations`: always add `Male Athletes` and/or `Female Athletes` when the sample's sex is stated. Add `Healthy Athletes` or `Injured Athletes` when health status is stated. Add the competition level (Professional / Elite, Collegiate, Youth / Adolescent, Adult / Recreational). Use `Mixed / Unspecified` only when the level really is mixed or unstated.
+- `studyDesign`: code scoping reviews with a described systematic search as `Systematic Review / Meta-analysis` (library precedent). Use `Narrative Review` only when no search method is described.
 - `primaryDomain`: the domain staff would browse to find this paper. Use Monitoring & Technology for papers whose main contribution is a measurement tool, test, device or monitoring method, including reliability, validity and test profiling.
 - If the abstract and the results/tables disagree, report the results/table values and note the conflict in `limitations`.
 
