@@ -38,28 +38,19 @@ Read this first. Update it before ending every session.
   2026-10-09.
 
 ## Next
-- **Backlog run in progress (cloud session, 2026-10-09).** Goal and rules: `docs/agents/goal-finish-library-and-ask.md`.
-  Work queue: every unscreened unique PDF in the manifest backlog (1,427 at start), 96 per batch, drafted by Haiku 5.5
-  and claim-audited by Opus 5.5 (`scripts/haiku-batch/`).
-- Open batch PRs (merge in order; each is stacked on the previous one):
-  - #9 Batches 19-26: 80 INCLUDE, IDs 744-823. Review `docs/pilot-screening/batches-19-26-review.md`.
-  - #10 Batches 27-34: 81 INCLUDE, IDs 824-904 (first manifest-backlog batch). Review `docs/pilot-screening/batches-27-34-review.md`.
-  - #11 Batches 35-42: 73 INCLUDE, IDs 905-977. Review `docs/pilot-screening/batches-35-42-review.md`.
-  - After all three merge: 946 records, next unused ID 978, 1,235 backlog PDFs left (of 1,427).
-- **Staged without a PR** (no 4th PR while 3 are unmerged), stacked in order on #11:
-  - `batch-43-49-staged`: 81 INCLUDE, IDs 978-1059 (1017 unused).
-  - `batch-50-56-staged`: 79 INCLUDE, IDs 1060-1138.
-  - `batch-57-64-staged` (Batches 57-63): 85 INCLUDE, IDs 1139-1223.
-  - `batch-64-71-staged` (Batches 64-71): 65 INCLUDE, 25 EXCLUDE, 6 DEGRADED, IDs 1224-1288.
-  - Open a PR for each staged branch as earlier PRs merge, in order.
-- With everything staged: 1,256 records, next unused ID 1289. Backlog left: about 754 of 1,427. Batch G (queue 7) is
-  half drafted; the run paused on the session usage limit and resumes after the reset.
-- `docs/needs-eric.md` (on the batch PR branches): the single list of operator actions: wrong PDFs on disk, DEGRADED
-  records needing a DOI, scope reversals, and published records that share a DOI.
-- **Ask the Library drafter: draft PR #12** (`npm run pilot:draft -- <request.json>`). Evaluated on the 12-question
-  stress-test bank with an independent Opus claim audit (`docs/ask-library-eval/` on that branch). Iteration 3 (v1.2,
-  full-text critic pass): 0 critical integrity failures, 12/12 briefs rated useful, all 12 pass `pilot:brief` and
-  `pilot:audit-source`. Iterations 1 and 2: 3 and 10 critical failures. Known limitation: briefs are long.
+- **Backlog run paused (cloud session, 2026-10-09).** Goal and rules: `docs/agents/goal-finish-library-and-ask.md`.
+  Pipeline: `scripts/haiku-batch/` (Haiku 5.5 drafts, Opus 5.5 claim audit), 96 PDFs per batch.
+- **Published on master (2026-10-09):** Batches 19-71 via PRs #9, #10, #11, #13, #14, #15 and #16. The library has
+  1,256 records; next unused ID 1289. `npm run audit` and `pilot:check` pass on master. Review files are
+  `docs/pilot-screening/batches-*-review.md`.
+- **Backlog left:** about 754 of 1,427 manifest-backlog PDFs. Batch G (queue 7) was half drafted when the run was
+  stopped; restart it from scratch with `scripts/haiku-batch/backlog.py`.
+- `docs/needs-eric.md`: the single list of operator actions: wrong PDFs on disk, DEGRADED records needing a DOI, scope
+  calls, and published records that share a DOI.
+- **Ask the Library drafter merged (PR #12):** `npm run pilot:draft -- <request.json>`. Evaluated on the 12-question
+  stress-test bank with an independent Opus claim audit (`docs/ask-library-eval/`). Iteration 3 (v1.2, full-text
+  critic pass): 0 critical integrity failures, 12/12 briefs rated useful, all 12 pass `pilot:brief` and
+  `pilot:audit-source`. Known limitation: briefs are long.
 - Still Eric's: name a pilot lead, pick 3 staff across 2+ disciplines, record human claim audits.
 
 ## Open questions
