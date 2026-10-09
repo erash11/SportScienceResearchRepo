@@ -1,0 +1,616 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-49-monitoring-technology",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Monitoring & Technology queue positions 2-96. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 2,
+      "sourceFile": "Clinically feasible dual-task detects residual post-concussion deficits after return-to-play.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 37153,
+        "doi": "10.1080/02640414.2024.2447666",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Brain Health & Psychology",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Sports Medicine",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "A prospective cohort of 20 athletes with concussion (mean age 16.9 years, 10 female) and 20 age-, sex- and sport-matched non-concussed controls, tested at 7 to 10 days post-injury and after a graduated return-to-play (RTP) protocol (about 30 days post-concussion). The concussion group was slower than controls on single-task and dual-task Expanded Timed Get Up and Go (ETGUG) at both time points, with the largest gap on dual-task at RTP (5.65 s, p < 0.001). Graded Symptom Checklist scores did not differ between groups at RTP.",
+      "limitations": "Only 20 per group, tested at several sites with an unequal interval between sessions, so the findings are preliminary. The paper does not test whether the residual deficits predict re-injury or later symptoms.",
+      "synthesisCaution": "Staff may treat a between-group difference in a 20-per-group study as a usable individual RTP threshold, but the paper does not provide cut-offs or individual reference values.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: RTP task-by-group interaction given as p = 0.001 only -> Table 2 value kept, text value (p < 0.001) noted in limitations; added within-group dual-task cost at RTP ('Concussion 4.46 +/- 1.60 ... 0.008*'; 'Control 1.67 ... 0.068') and control learning effect ('control group completed ST ETGUG significantly faster after RTP')",
+            "paper.methods: 'in a fixed order' -> single tasks were randomized and dual task followed ('The order of STs was randomized')",
+            "paper.limitations: added p-value conflict alongside the CI mismatch (Table 3 '(2.53, 8.78)' vs text '95% CI 2.56-8.74')",
+            "paper.rtp: 'Supports adding' -> framed as the authors' recommendation with no cut-off, since the evidence is a group difference",
+            "evidenceSummary: added RTP timing ('30.0 +/- 12.8 days post-concussion')"
+          ],
+          "residualConcerns": "Year is 2024 from the online-first date ('Published online: 27 Dec 2024'); no volume, issue or pages are printed, so the operator may update the citation when the issue is assigned. Inclusion allowed ages 12 to 49, though the sample mean was about 17. Concussion topic is clinically sensitive.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1049",
+        "synthesisBatch": "pilot-synthesis-batch-49",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 14,
+      "sourceFile": "Comparing the maximal horizontal deceleration demands between a novel acceleration to deceleration assessment and the 505 change of direction test.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 41670,
+        "doi": "10.55860/6dzjdy36",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Laboratory comparison in 19 recreationally trained, college-aged athletes (14 male, 5 female) who completed three 10-m acceleration-to-deceleration assessment (ADA) trials and four 505 trials, with deceleration metrics derived from a 100 Hz inertial measurement unit suit. Six of 12 deceleration metrics differed between tests, with the 505 showing greater average deceleration and braking force and longer stopping time and distance than the ADA, while stopping time and distance had poor-to-moderate reliability (ICC 0.13 to 0.56).",
+      "limitations": "The sample is small and recreationally trained with little prior experience of either test, and several metrics have poor reliability, so the paper does not establish which test is the better assessment. Table 3 contains an internally inconsistent confidence interval for average deceleration, and the abstract's reference to velocity reductions does not correspond to a reported metric.",
+      "synthesisCaution": "Staff could read the significant between-test differences as showing that one test measures deceleration ability better than the other, when the study shows only that the two tests produce different metric values in a small sample, and several of those metrics are unreliable.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr/practicalImplications: ADA described as a 'self-initiated' stop -> cued braking point with no fixed stopping point ('the ADA possesses a predetermined point at which subjects initiate the deceleration phase, with no predetermined stopping point'; timing gate 'made a distinct sound ... signal to initiate the deceleration phase')",
+            "paper.practicalImplications: 'compare averages across trials' was not a study recommendation -> refer to MD values as the authors advise ('Readers are encouraged to refer to the MD values presented in Table 2')",
+            "paper.limitations: added SEM computed 'between the three trials' although the 505 had four trials"
+          ],
+          "residualConcerns": "Table 3 CIs for average deceleration (mean diff -0.78, CI -0.91; 0.78; ES -2.46, CI -3.33; 1.88) are internally inconsistent; likely typographical sign errors. Design could alternatively be coded Methodological / Validation Study given the reliability aim; kept as Laboratory / Experimental Study because the primary aim is a between-test biomechanical comparison.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1050",
+        "synthesisBatch": "pilot-synthesis-batch-49",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 22,
+      "sourceFile": "Concussion injuries in sports and the role of instrumented mouthguards - A mini review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 48426,
+        "doi": "10.3389/fbioe.2025.1567429",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics",
+        "Performance"
+      ],
+      "sports": [
+        "American Football",
+        "Ice Hockey",
+        "Soccer",
+        "Rugby"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Youth / Adolescent",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative mini review of concussion in contact sports covering pathophysiology, prevalence and long-term effects, and the validity of instrumented mouthguards (iMGs) that measure head acceleration. The review cites one observational study with 1,302 concussions in 1,004 NFL players (2015 to 2019) and reports that iMG readings have low average error but high variability in some comparisons with helmet sensors, with sensitivity of 69.2% and positive predictive value of 80.3% in 915 female youth soccer players. It describes no systematic search.",
+      "limitations": "The review does not describe how sources were chosen, and it summarises validation studies that use different sensors, headforms and settings without pooling them. It cannot show that iMGs reduce concussion incidence or that their readings can diagnose concussion.",
+      "synthesisCaution": "Treating iMG head-impact readings as a concussion diagnosis or a reliable alarm, when the review states that iMG data alone cannot diagnose concussion and that the devices are still research tools.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: removed 'several cited studies are single-season or headform-based' attributed to the review, which the text does not state",
+            "screeningLimitations: 'pools validation studies' implied a meta-analysis -> summarises without pooling",
+            "paper.findings: HITS comparison was one study, not several ('In one study, 133 paired events were recorded during a high school football season'); 'supporting on-field use' -> authors' wording 'confirming their reliability for on-field use'",
+            "paper.abstract: 'research tools' conclusion attributed to the cited consensus statement ('According to a recent consensus statement, iMGs are still considered research tools')"
+          ],
+          "residualConcerns": "The review's claim that the youth soccer data confirm on-field reliability sits beside its statements that iMGs lack validity at high velocities; the record reports both as the authors state them.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1051",
+        "synthesisBatch": "pilot-synthesis-batch-49",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 28,
+      "sourceFile": "Consensus Head Acceleration Measurement Practices (CHAMP) - Origins, methods, transparency and disclose.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 29,
+        "extractedCharacters": 100838,
+        "doi": "10.1007/s10439-022-03025-9",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "American Football"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Consensus paper from the CHAMP group that describes how expert working groups drafted and voted on best-practice statements for measuring head acceleration. Statements were accepted at a March 2022 conference only with at least 80% agreement, and the paper introduces reporting checklists for five study types (laboratory validation, on-field deployment, video reconstruction, physical reconstruction and computational modeling). It also includes a checklist for disclosing industry involvement. The paper reports no new study data.",
+      "limitations": "The paper summarises expert consensus and reporting checklists rather than measured outcomes, so it cannot show that following the checklists improves accuracy. Several authors and the conference funders have ties to the National Football League and Football Research Inc.",
+      "synthesisCaution": "Staff could read a CHAMP checklist as a validation standard that makes a head-impact device accurate, when it only sets out what studies should report.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Conference funded by the NFL and Football Research Inc., and several authors (including one NFL employee) disclose NFL-related ties; this is stated in the record. Concussion-adjacent topic, so flagged high per policy although the paper gives no clinical guidance.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1052",
+        "synthesisBatch": "pilot-synthesis-batch-49",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 38,
+      "sourceFile": "Copenhagen five second squeeze a     valid indicator of sports related hip and groin function (1).pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 35933,
+        "doi": "10.1136/bjsports-2016-096675",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Injured Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Cross-sectional validation study of 667 subelite male football players (mean age 24) who rated groin pain from 0 to 10 during a five-second hip-adduction squeeze and completed the HAGOS. Squeeze pain correlated with lower HAGOS Sport scores (Spearman rho -0.61), change scores correlated with HAGOS Sport change scores (rho -0.51, 52 players), and test-retest concordance was 0.90 in 10 players with stable status.",
+      "limitations": "Reliability rests on 10 players and responsiveness on 52, and the reliability sample was restricted to players whose scores changed by 10 points or less. The validity of the pain-based categories for predicting injury or safe return to play was not tested, and subgroup analyses by diagnosis were post hoc and small.",
+      "synthesisCaution": "Staff could treat the NRS 6 or higher flag as a validated return-to-play threshold, when the study shows only a correlation with HAGOS Sport scores in football players and does not test injury or return-to-play outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: added Healthy Athletes; the construct-validity cohort was all eligible players from 40 teams, with and without groin pain",
+            "paper.findings: 'floor or ceiling effects were present in 4 of 39' could read as a positive finding -> 10%, below the predefined 15% threshold ('considered present if more than 15% of the players were reporting worst (0) or best (10) possible score'); added the early-season rho -0.79 in the 52-player subgroup",
+            "paper.limitations: added that change scores correlated more with HAGOS Symptoms (-0.64) than Sport (-0.51), and that the 52-player subgroup were players seeking clinical examination"
+          ],
+          "residualConcerns": "Level tagged Adult / Recreational: players were 'subelite' in Danish divisions 1-4, which is competitive amateur rather than recreational; no closer vocabulary value exists. The traffic-light cut-offs come from Thomee's pain monitoring model and are not validated against injury or return-to-play outcomes.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1053",
+        "synthesisBatch": "pilot-synthesis-batch-49",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 64,
+      "sourceFile": "Development of an Athlete Diet  Index for Rapid Dietary Assessment of Athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 32,
+        "extractedCharacters": 53908,
+        "doi": "10.1123/ijsnem.2019-0098",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Other Sport"
+      ],
+      "populations": [
+        "Female Athletes",
+        "Male Athletes",
+        "Professional / Elite",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "Mixed-methods development of an electronic 68-item Athlete Diet Index (ADI). Focus groups with 20 accredited sports nutritionists informed the items, a modified Delphi survey with 9 of them checked content, and a pilot with 15 athletes (13 female, 2 male) tested comprehension and relevance. All pilot athletes rated the tool easy or very easy to understand and relevant or very relevant, and the authors report content and face validity only.",
+      "limitations": "The study reports content and face validity only, with no scoring system, no comparison with established dietary methods and no reliability testing. The pilot had 15 athletes from a narrow range of sports (water polo and rowing), and the focus groups were drawn from elite institutes in Australia and New Zealand.",
+      "synthesisCaution": "Staff could assume the ADI measures diet quality or nutrient adequacy, but the study has no scoring matrix and no check against dietary records.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: '54 were modified' -> 'minor modifications were suggested for 54 items'",
+            "paper.athleteDev: listed 'training phase' as captured and implied staff could check intake against training demands -> Section B covers 'training load', 'nutrition and hydration practices around training, and sports supplement use'; no scoring matrix exists yet"
+          ],
+          "residualConcerns": "Year 2019 from the accepted-manuscript header ('Acceptance Date: May 15, 2019', '(c) 2019 Human Kinetics'); no volume, issue or pages printed.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1054",
+        "synthesisBatch": "pilot-synthesis-batch-49",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 68,
+      "sourceFile": "Differences Between Relative and        Absolute Speed and Metabolic Thresholds in Rugby League.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 38702,
+        "doi": "10.1123/ijspp.2016-0645",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Longitudinal observational study of 26 professional male National Rugby League players, with GPS data from 346 match files across the 2013 season. Distance above 30-15 IFT-derived ventilatory thresholds (VT1IFT, VT2IFT) and a relative metabolic power threshold (HPmetVT2) was compared with absolute speed and metabolic thresholds. Relative and absolute measures correlated strongly (r = .93 to .94), but the authors report that VT2IFT-based high-intensity running was 138 to 167% of absolute HIRTh running, depending on position.",
+      "limitations": "Data come from one competition and one squad of 26 players, so results may not transfer to other squads, levels or sports. Threshold values are estimated from a field test (30-15 IFT) rather than measured directly by gas analysis.",
+      "synthesisCaution": "Staff could read the 30-15 IFT-based VT2 thresholds as measured physiology, when the authors describe them as estimates from a field test.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added that the abstract labels the 138 to 167% values as 'increases' although the Table 2 ratios show them as percent of HIRTh distance; added the results vs discussion conflict for VT1IFT vs MIRTh ('most likely same distances' vs 'substantially less distance')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1055",
+        "synthesisBatch": "pilot-synthesis-batch-49",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 73,
+      "sourceFile": "Dimensionality Reduction for Countermovement Jump Metrics.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 4,
+        "extractedCharacters": 18032,
+        "doi": "10.1123/ijspp.2020-0606",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Combat Sports",
+        "Other Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Brief report applying principal component analysis and maximum likelihood factor analysis to countermovement jump variables from three existing cohorts recorded on three different devices: recreationally trained males (n = 16), competitive mixed martial arts athletes (n = 29) and junior elite Australian football players (n = 19). The authors report that about 90% of total variance was explained by 3 components in set 1 and 4 components in sets 2 and 3, and that 2 factors explained sets 1 and 2 with possibly 3 to 4 for set 3.",
+      "limitations": "The method is shown on three small samples with different devices and variable sets, and the authors state that component and factor content may not transfer across samples. The paper does not report reliability or validity of the individual variables.",
+      "synthesisCaution": "Staff could read the retained variables as the most important CMJ metrics, when the paper only shows which variables are redundant within three specific datasets, not which metrics predict performance or readiness.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: factor groupings stated as a firm result -> framed as the authors' interpretation ('the FA appears to generate factors defined by either output-type metrics ..., causal ..., or timing'); KMO range added from Table 1",
+            "year checked: 2021 is correct (ahead-of-print article, '(c) 2021 Human Kinetics', no issue year printed); citation keeps 'ahead of print'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1056",
+        "synthesisBatch": "pilot-synthesis-batch-49",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 84,
+      "sourceFile": "Does the operating tempeature of accelerometers affect data measurement during static and dynamic conditions in sports - A randomized-control trial.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 30260,
+        "doi": "10.1177/17543371231175545",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Youth / Adolescent",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Device-level comparison of WIMU PRO inertial units switched on early to reach the manufacturer's operating temperature (38-39 C) versus units switched on at session start, in a static docking-station trial and during a 60-minute U-16 small-sided soccer session with 14 male national-level players (age 15.8 +/- 0.8 years) each wearing one unit of each type. The authors report that internal temperature differed between groups for the first 31 minutes (static) and 20 minutes (dynamic), and resultant acceleration for the first 29 minutes (static) and 13 minutes (dynamic, per the results text). They report no significant difference in PlayerLoad (PLRT) dynamics or accumulated PLRT, although the environmental-temperature group had higher values.",
+      "limitations": "This is one device model from one manufacturer, using proprietary filtering, with no raw-data analysis. The procedures section states 58 devices while the abstract, design and group sizes (4 x 14) give 56, and each condition was a single session at about 28 C.",
+      "synthesisCaution": "Staff could read the abstract's statement that devices must reach 38-39 C 'regardless of the application' as applying to all accelerometer-derived loads, when the results show that PlayerLoad was not significantly affected and only the resultant acceleration vector was.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings/evidenceSummary/tldr: dynamic resultant acceleration differences 0-19 min (abstract) -> 0-13 min per results ('small effect size from minute 3 to minute 13'); conflict noted in limitations",
+            "limitations/screeningLimitations: device-count conflict misdescribed ('methods 58 and 28 static') -> procedures 58 vs abstract, design and 4 x 14 groups = 56; 28 static devices is consistent with 56",
+            "findings: added static PLRT result (p = 0.06, d = 0.19)",
+            "populations: kept Male Athletes, Youth / Adolescent, Healthy Athletes; wearers were national-level U-16 soccer players with no injuries ('All players were members of a national-level soccer team'), though the unit of analysis is the device",
+            "studyDesign: kept Methodological / Validation Study despite 'randomized-control trial' title; devices, not people, were randomized to conditions"
+          ],
+          "residualConcerns": "Title calls it a randomized-control trial but it is a device measurement study. Device count 56 vs 58 unresolved in text.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1057",
+        "synthesisBatch": "pilot-synthesis-batch-49",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 92,
+      "sourceFile": "Drop jump neuromuscular performance qualities associated with maximal horizontal deceleration ability in team sport athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 57005,
+        "doi": "10.1080/17461391.2021.1930195",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Rugby"
+      ],
+      "populations": [
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Cross-sectional study of 29 university team-sport athletes (23 men, 6 women) who completed drop jumps from 20 and 40 cm on force plates and a radar-measured maximal horizontal deceleration test after a 20 m sprint. Drop jump reactive strength index (RSI) and concentric mean force had large correlations with average deceleration (r = -0.54 to -0.61), and RSI and concentric mean force from both heights also separated the high and low deceleration groups (d = 1.20 to 1.40).",
+      "limitations": "The sample was small, mostly male, and drawn from one university squad, and the design is cross-sectional, so it cannot show that improving drop jump qualities would improve deceleration. Maximal sprint velocity correlated more strongly with deceleration (r = -0.76) than drop jump measures did, and the authors report only moderate-to-good reliability for the deceleration variables.",
+      "synthesisCaution": "Staff could treat drop jump RSI as a validated replacement for deceleration testing, when the paper only shows cross-sectional associations in 29 athletes and the authors call RSI an indirect marker that still needs longitudinal confirmation.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "sports: added Soccer and Rugby ('soccer, rugby league, rugby union and netball')",
+            "populations: added Healthy Athletes (excluded if injury 'prevented participation in sport or physical activity within the previous 3 months')",
+            "paper.limitations: injury-risk caveat was attributed to the authors -> labelled as not measured; clarified drop-height variability wording ('intra-and inter-participant variability')",
+            "paper.practicalImplications: removed 'rather than assuming one predicts the others', which the data do not support given VPeak r = -0.76 with HDEC"
+          ],
+          "residualConcerns": "Abstract reports DJ40 eccentric vs DJ20 concentric mean force r = 0.67, results report 0.66 and discussion 0.64; not used in the record. Year 2021 is from the accepted-author-version online date (19 May 2021); no issue year printed.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1058",
+        "synthesisBatch": "pilot-synthesis-batch-49",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 96,
+      "sourceFile": "EMBRAC~1.PDF",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 47512,
+        "doi": "10.1002/ejsc.12101",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Cross-sectional online survey of instrumented mouthguard (iMG) managers in men's and women's rugby union and league, conducted from May to July 2023, with 46 of 54 eligible managers (85%) completing an 18-question survey. Medical staff were most often seen as interested in iMG data (60% to 100% agreement), and the devices were seen as easy to use but uncomfortable for players.",
+      "limitations": "The findings describe managers' perceptions rather than measured player comfort, staff behaviour or athlete outcomes. The survey was reviewed for face validity only, and several authors are affiliated with World Rugby, which funded the study.",
+      "synthesisCaution": "Staff could read managers' view that the devices are easy to use and useful for welfare as evidence that iMG data improve player welfare or training decisions, when most managers said the data were rarely or never used for training load management.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed Male Athletes and Female Athletes because the sample is 46 iMG managers whose sex is not stated, not athletes; kept Professional / Elite for the competitions surveyed ('environments investigated (elite male and female, rugby union and league)')",
+            "paper.findings: merged two distinct themes into 'inconsistent wear' and omitted others -> player-wear barriers (comfort, size and fit; inconsistent use of un-instrumented mouthguards; negative impact on performance) separated from data-engagement barriers (lack of understanding, time constraints, players not consistently wearing, technology issues) per Table 1B and 1C",
+            "paper.findings: 'many men's managers disagreed' -> men's league majority, men's union many ('70% and 50% disagreed/strongly disagreed'; management '80% ... MRL, and 45% ... MRU')",
+            "paper.limitations: added that players and other staff were not surveyed and no reliability testing was done ('only the iMG managers were surveyed'; 'no reliability testing for the instrument was carried out')",
+            "paper.athleteDev: 'can only act on iMG data with coach support' overstated -> 'need to work with coaches' ('performance staff need to work as a multi-disciplinary team with the coaches'); coach interest low specified to men's environments (57% of WRU managers agreed coaches were interested)",
+            "paper.practicalImplications: replaced unsupported 'interpretation guide' with education on data use ('Continued education on how iMG data can be used is required')"
+          ],
+          "residualConcerns": "Sample is practitioners, not athletes; eligibility kept as INCLUDE because it is original research on athlete head-impact monitoring. Taxonomy has no staff population tag, so a reviewer should confirm Professional / Elite alone is the right tag (authors note the women's game is primarily amateur while calling all environments elite). Article states no conflicts despite World Rugby funding and World Rugby-affiliated authors.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1059",
+        "synthesisBatch": "pilot-synthesis-batch-49",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

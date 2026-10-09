@@ -22,7 +22,9 @@ def short(text, n=260):
 IDENTITY = re.compile(r"identity mismatch|different article|^the pdf is a|^the local pdf contains", re.I)
 mismatch = [(b, r) for b, r in rows if r["decision"] == "EXCLUDE" and IDENTITY.search(r.get("exclusionReason", ""))]
 degraded = [(b, r) for b, r in rows if r["decision"] == "DEGRADED"]
-scope = [(b, r) for b, r in rows if r["decision"] == "EXCLUDE" and (b, r) not in mismatch]
+DUP = re.compile(r"^(duplicate publication|already represented)", re.I)
+dups = [(b, r) for b, r in rows if r["decision"] == "EXCLUDE" and DUP.search(r.get("exclusionReason", ""))]
+scope = [(b, r) for b, r in rows if r["decision"] == "EXCLUDE" and (b, r) not in mismatch and (b, r) not in dups]
 
 def is_unreadable(r):
     return re.search(r"unreadable|could not open|no readable|truncated|scanned|image-only", r.get("degradedReason", ""), re.I)
@@ -40,7 +42,7 @@ out = [
     f"| DEGRADED: DOI not printed in the PDF | {sum(1 for _, r in degraded if not is_unreadable(r))} |",
     f"| DEGRADED: text unreadable or incomplete | {sum(1 for _, r in degraded if is_unreadable(r))} |",
     f"| Scope or editorial exclusions you may want to reverse | {len(scope)} |",
-    "| Published records sharing a DOI | see section 5 |",
+    "| Published records sharing a DOI | see section 6 |",
     "",
     "## 1. Wrong PDF on disk",
     "",
@@ -86,6 +88,15 @@ out += [
 ]
 for b, r in scope:
     out += [f"- **{r['sourceFile']}** ({b}): {short(r.get('exclusionReason'), 200)}"]
+out += [
+    "",
+    "## 5. Duplicates caught at screening",
+    "",
+    "The PDF is an article already published in the library. No action unless the note says the existing record "
+    "needs a correction; then **action:** approve correcting that record from the PDF.",
+    "",
+]
+out += [f"- **{r['sourceFile']}** ({b}): {short(r.get('exclusionReason'), 400)}" for b, r in dups] or ["- None."]
 papers = json.load(open(f"{R}/papers.json", encoding="utf8"))
 by_doi = {}
 for paper in papers:
@@ -95,7 +106,7 @@ for paper in papers:
 collisions = {doi: group for doi, group in by_doi.items() if len(group) > 1}
 out += [
     "",
-    "## 5. Published records that share a DOI",
+    "## 6. Published records that share a DOI",
     "",
     "Two or more published records carry the same DOI. Either the records are duplicates of one article, or one "
     "record has the wrong DOI. **Action:** open each source; if they are the same article, say which ID to retire "

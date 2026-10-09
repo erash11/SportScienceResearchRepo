@@ -39,8 +39,8 @@ This queue contains 89 unrepresented, content-deduplicated local PDFs: 12 alloca
    `Prevalence of Shoulder Labral Injury in Collegiate Football Players at the National Football League Scouting Combine.pdf`
 14. **Epidemiology of shoulder instability injuries in collision collegiate sports from 2009 to 2014** — Other — TITLE SCREENED<br>
    `Epidemiology of shoulder instability injuries in collision collegiate sports from 2009 to 2014.pdf`
-15. **Factors Associated with Persisting Post-Concussion Symptoms Among Collegiate Athletes and Military Cadets - Findings from the NCAA-DoD CARE Consortium** — Other — TITLE SCREENED<br>
-   `Factors Associated with Persisting Post-Concussion Symptoms Among Collegiate Athletes and Military Cadets - Findings from the NCAA-DoD CARE Consortium.pdf`
+15. **Immediate Removal From Activity After Sport-Related Concussion Is Associated With Shorter Clinical Recovery and Less Severe Symptoms in Collegiate Student-Athletes** — Other — TITLE SCREENED<br>
+   `Immediate Removal From Activity After Sport-Related Concussion Is Associated With Shorter Clinical Recovery and Less Severe Symptoms in Collegiate Student-Athletes.pdf`
 16. **SARS-CoV-2 infection increases the risk of muscle injury in professional male soccer players - A retrospective analysis of the Italian and Spani** — Other — TITLE SCREENED<br>
    `SARS-CoV-2 infection increases the risk of muscle injury in professional male soccer players - A retrospective analysis of the Italian and Spani.pdf`
 17. **Genetic Variants and Hamstring Injury in Soccer- An Association and Validation Study** — Methodological / Validation Study — TITLE SCREENED<br>
@@ -124,31 +124,31 @@ This queue contains 89 unrepresented, content-deduplicated local PDFs: 12 alloca
    `IOC Consensus Statement- Dietary        Supplements and the High-Performance Athlete.pdf`
 52. **Sports Dietitians Australia Position Statement- Nutrition for Exercise in Hot Environments** — Consensus / Position Statement — TITLE SCREENED<br>
    `Sports Dietitians Australia Position Statement- Nutrition for Exercise in Hot Environments.pdf`
-53. **Current Practice in the Measurement and Management of Vitamin D Status in Elite Sport and Parasport** — Other — TITLE SCREENED<br>
-   `Current Practice in the Measurement and Management of Vitamin D Status in Elite Sport and Parasport.pdf`
-54. **Meldonium supplementation in professional athletes - Career destroyer or lifesaver** — Other — TITLE SCREENED<br>
+53. **Meldonium supplementation in professional athletes - Career destroyer or lifesaver** — Other — TITLE SCREENED<br>
    `Meldonium supplementation in professional athletes - Career destroyer or lifesaver.pdf`
-55. **Rise of intravenous nutrition products among professional team sport athletes - Reasons to be concerned** — Other — TITLE SCREENED<br>
+54. **Rise of intravenous nutrition products among professional team sport athletes - Reasons to be concerned** — Other — TITLE SCREENED<br>
    `Rise of intravenous nutrition products among professional team sport athletes - Reasons to be concerned.pdf`
-56. **Seasonal changes in free 25-(OH)D and vitamin D metabolite ratios and their relationship with psychophysical stress markers in male professional football players** — Other — TITLE SCREENED<br>
+55. **Seasonal changes in free 25-(OH)D and vitamin D metabolite ratios and their relationship with psychophysical stress markers in male professional football players** — Other — TITLE SCREENED<br>
    `Seasonal changes in free 25-(OH)D and vitamin D metabolite ratios and their relationship with psychophysical stress markers in male professional football players.pdf`
-57. **The new challenge of sports nutrition - Accepting insect food as dietary supplements in professional athletes** — Other — TITLE SCREENED<br>
+56. **The new challenge of sports nutrition - Accepting insect food as dietary supplements in professional athletes** — Other — TITLE SCREENED<br>
    `The new challenge of sports nutrition - Accepting insect food as dietary supplements in professional athletes.pdf`
-58. **Summary of the 2024 Professionals in Nutrition for Exercise and Sport “10 Questions -10 Experts” Session—Hot Topics for the Paris Olympic Games** — Other — TITLE SCREENED<br>
+57. **Summary of the 2024 Professionals in Nutrition for Exercise and Sport “10 Questions -10 Experts” Session—Hot Topics for the Paris Olympic Games** — Other — TITLE SCREENED<br>
    `Summary of the 2024 Professionals in Nutrition for Exercise and Sport “10 Questions -10 Experts” Session—Hot Topics for the Paris Olympic Games.pdf`
-59. **Common questions and misconceptions about protein supplementation- What does the scientific evidence really show** — Other — TITLE SCREENED<br>
-   `Common questions and misconceptions about protein supplementation- What does the scientific evidence really show.pdf`
-60. **Considerations for the consumption of vitamin and mineral supplements in athlete populations** — Other — TITLE SCREENED<br>
-   `Considerations for the consumption of vitamin and mineral supplements in athlete populations.pdf`
+58. **Effects of an individualized vs standardized Vitamin D supplementation on the 24(OH)D level in athletes** — Other — TITLE SCREENED<br>
+   `Effects of an individualized vs standardized Vitamin D supplementation on the 24(OH)D level in athletes.pdf`
+59. **Effects of different Vitamin-C enriched collagen derivatives on collagen synthesis** — Other — TITLE SCREENED<br>
+   `Effects of different Vitamin-C   enriched collagen derivatives on collagen synthesis.pdf`
+60. **Ergogenic and Physiological Effects of Sports Supplements - Implications for Advertising and Consumer Information** — Other — TITLE SCREENED<br>
+   `Ergogenic and Physiological Effects of Sports Supplements - Implications for Advertising and Consumer Information.pdf`
 
 ## Brain Health & Psychology
 
-61. **Drill-Specific Head Impacts in Collegiate Football Practice- Implications for Reducing ‘‘Friendly Fire’’ Exposure** — Other — TITLE SCREENED<br>
-   `Drill-Specific Head Impacts in Collegiate Football Practice- Implications for Reducing ‘‘Friendly Fire’’ Exposure.pdf`
-62. **Risk of concussion after a targeting foul in collegiate American football** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+61. **Risk of concussion after a targeting foul in collegiate American football** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Risk of concussion after a targeting foul in collegiate American football.pdf`
-63. **Effect of diagnosed sleep disorders on baseline concussion symptom cognitive and baseline assessments in collegiate athletes** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+62. **Effect of diagnosed sleep disorders on baseline concussion symptom cognitive and baseline assessments in collegiate athletes** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Effect of diagnosed sleep disorders on baseline concussion symptom cognitive and baseline assessments in collegiate athletes.pdf`
+63. **Factors Associated with Persisting Post-Concussion Symptoms Among Collegiate Athletes and Military Cadets - Findings from the NCAA-DoD CARE Consortium** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+   `Factors Associated with Persisting Post-Concussion Symptoms Among Collegiate Athletes and Military Cadets - Findings from the NCAA-DoD CARE Consortium.pdf`
 64. **Tackle characteristics associated with concussion in elite men's rugby union - Unpicking the differences between tacklers and ball-carriers** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Tackle characteristics associated with concussion in elite men's rugby union - Unpicking the differences between tacklers and ball-carriers.pdf`
 65. **Observation of risk for concussion following 'lowering the helmet to initiate contact' penalities in the NFL** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
@@ -161,12 +161,12 @@ This queue contains 89 unrepresented, content-deduplicated local PDFs: 12 alloca
    `Multimodal Imaging of Retired Professional Contact Sport Athletes Does Not Provide Evidence of Structural and Functional Brain Damage.pdf`
 69. **Neurodiversity in elite sport - A systematic scoping review** — Narrative Review — TITLE SCREENED<br>
    `Neurodiversity in elite sport - A systematic scoping review.pdf`
-70. **Concussion and the sleeping brain** — Other — TITLE SCREENED<br>
-   `Concussion and the sleeping brain.pdf`
-71. **Considering the effects of cannabinoids and exercise on the brain - A narrative review** — Narrative Review — TITLE SCREENED<br>
-   `Considering the effects of cannabinoids and exercise on the brain - A narrative review.pdf`
-72. **Effects of Repetitive Head Impacts on a Concussion Assessment Battery** — Other — TITLE SCREENED<br>
+70. **Effects of Repetitive Head Impacts on a Concussion Assessment Battery** — Other — TITLE SCREENED<br>
    `Effects of Repetitive Head Impacts on a Concussion Assessment Battery.pdf`
+71. **Elevated brain temperature under severe heat exposure impairs cortical motor activity and executive function** — Other — TITLE SCREENED<br>
+   `Elevated brain temperature under severe heat exposure impairs cortical motor activity and executive function.pdf`
+72. **Epidemiological Principles in Claims of Causality - An Enquiry into Repetitive Head Impacts (RHI) and Chronic Traumatic Encephalopathy (CTE)** — Other — TITLE SCREENED<br>
+   `Epidemiological Principles in Claims of Causality - An Enquiry into Repetitive Head Impacts (RHI) and Chronic Traumatic Encephalopathy (CTE).pdf`
 
 ## Athlete Wellbeing
 
@@ -203,7 +203,7 @@ This queue contains 89 unrepresented, content-deduplicated local PDFs: 12 alloca
    `The validity and reliability of wearable microtechnology for intermittent team sports - A systematic review.pdf`
 87. **Heat Stroke Burden and Validity of Wearable Derived Core Temperature Estimation during Elite Military Training** — Other — TITLE SCREENED<br>
    `Heat Stroke Burden and Validity of Wearable Derived Core Temperature Estimation during Elite Military Training.pdf`
-88. **Does the operating tempeature of accelerometers affect data measurement during static and dynamic conditions in sports - A randomized-control trial** — Other — TITLE SCREENED<br>
-   `Does the operating tempeature of accelerometers affect data measurement during static and dynamic conditions in sports - A randomized-control trial.pdf`
-89. **Ready for impact - A validity and feasibility study of instrumented mouthguards (iMGs)** — Other — TITLE SCREENED<br>
+88. **Ready for impact - A validity and feasibility study of instrumented mouthguards (iMGs)** — Other — TITLE SCREENED<br>
    `Ready for impact - A validity and feasibility study of instrumented mouthguards (iMGs).pdf`
+89. **Validity and reliability of Strive Sense 3 for muscle activity monitoring during the squat exercise** — Methodological / Validation Study — TITLE SCREENED<br>
+   `Validity and reliability of Strive Sense 3 for muscle activity monitoring during the squat exercise.pdf`
