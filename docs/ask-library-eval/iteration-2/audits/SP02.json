@@ -1,0 +1,47 @@
+{
+  "questionId": "SP02",
+  "tier": "Limited",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "212 abstract p1 gives 36 team-seasons, 16 teams, 627 players and 18%/45%/72% of turnarounds with >85% runs. The 427 excerpt is a verbatim reprint of the same abstract, not independent support."},
+    {"claimId": "C2", "rating": "minor", "note": "Matches the abstract, but the data are descriptive (D-2 n = 480 player-turnarounds, 0 injuries) and the authors note CIs overlap: D-2 is preferable \"if this is that clear, considering the CIs overlaps, though\" (p9)."},
+    {"claimId": "C3", "rating": "supported", "note": "Verbatim abstract text (cited via the 427 reprint; the same sentence is on 212 p1)."},
+    {"claimId": "C4", "rating": "supported", "note": "473 p1: more match playing time gave higher accumulative weekly load, \"particularly at TD and HMLD (90-min and >60-min vs. <60-min and 0-min)\"."},
+    {"claimId": "C5", "rating": "supported", "note": "473 p2: \"only analysed training weeks where players had six days between successive matches\" (excerpt differs only in en dash in [12-14])."},
+    {"claimId": "C6", "rating": "supported", "note": "908 p1 abstract describes compensatory training as additional training that balances the load non-starters miss."},
+    {"claimId": "C7", "rating": "supported", "note": "908 p11: \"current approaches rely on trial and error. Caution is advised, and making definitive statements or recommendations is not advisable.\" The review also says the effect of starter status on fitness \"is not clearly observable\"."},
+    {"claimId": "C8", "rating": "supported", "note": "908 p8: \"the first factor to consider is the scenario or the weekly microcycle that players are approaching\"."},
+    {"claimId": "C9", "rating": "supported", "note": "694 abstract: 8 articles; five found higher match injury incidence with congestion (>=2 matches with <=4 days recovery), layoff typically shorter."},
+    {"claimId": "C10", "rating": "overstated", "note": "431 p6 cites previous research (refs 8, 20, 23, 24) that perceptual, neuromuscular, biochemical and immune markers \"return to baseline within 72 to 96 hours\"; it is not this study's finding. The study's own data showed postmatch wellness reduction unrelated to microcycle duration and \"unclear differences in perceptual wellness in the 2 days before each match, independent of microcycle duration\"."},
+    {"claimId": "C11", "rating": "supported", "note": "280 p14 and p8 match, including \"this finding remains preliminary\" because exposure adjustment may exaggerate exposure in early reinjury cases."},
+    {"claimId": "C12", "rating": "minor", "note": "280 p14 frames it conditionally: the high-risk pattern \"if replicable\" entails that match time be limited to the strict minimum; the conditional is dropped."},
+    {"claimId": "C13", "rating": "supported", "note": "396 p3 sentence matches; single-player case report."}
+  ],
+  "statementIssues": [
+    {"location": "actions[1]", "severity": "critical", "note": "Option B rests on \"recovery measures in elite Australian football took 72 to 96 hours to return to baseline\". The source says other studies found markers return \"within\" 72-96 h, and its own data found D-2 wellness unaffected by microcycle length. This recasts a cited upper bound as a required recovery window to argue against speed work."},
+    {"location": "evidenceTension", "severity": "critical", "note": "States the D-2 association \"points toward a near-maximal speed exposure\" for high-minute athletes. The D-2 authors (212 p9) say that for 3-5 day turnarounds D-2 exposures \"may only concern subs\", which is the subgroup guidance this question asks for. The brief omits it and implies the opposite, then builds the tension on the misattributed 72-96 h window."},
+    {"location": "evidenceConfidence.dimensions.consistency", "severity": "minor", "note": "Repeats the \"likely recovery window\" framing, which comes from the overstated C10."},
+    {"location": "actions[0]", "severity": "minor", "note": "\"Professional judgment (not tested...)\" is followed by \"as the review advises\"; the review does advise considering the microcycle (C8), so the label is contradictory. The review's point that starter status shows no clear effect on fitness is omitted."},
+    {"location": "actions[2]", "severity": "minor", "note": "Fixture-congestion injury data are squad-level, not specific to high-minute players; the link to individual high-minute athletes is an inference."},
+    {"location": "sources (427)", "severity": "minor", "note": "The NFL-PFATS update is a reprint of the 212 abstract and is presented as a second source for C1-C3, which can inflate apparent support."},
+    {"location": "leads", "severity": "minor", "note": "Leads (exercise-to-rest ratios in televised football, Wattbike test validity, transcriptomics) are labeled \"Relevant\" but do not address subgroup exposure in short turnarounds."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Limited fits: all evidence is observational, indirect, from professional soccer or AFL, with no test of subgroup dosing or weight-room work. No recommendation was given and actions are framed as options.",
+  "safetyIssues": [],
+  "criticalFailures": [
+    {"location": "C10 / actions[1]", "note": "Cited prior literature is presented as the study's finding, and \"return to baseline within 72 to 96 hours\" is recast as recovery taking 72-96 h to justify withholding speed work in a short turnaround; the study's own data found pre-match wellness unaffected by microcycle length."},
+    {"location": "evidenceTension", "note": "Applies the D-2 finding toward high-minute athletes when the source authors suggest that in 3-5 day turnarounds D-2 near-maximal exposures may only concern substitutes, the most decision-relevant subgroup statement in the pack, which the brief omits."}
+  ],
+  "useful": false,
+  "usefulnessScore": 2,
+  "usefulnessNote": "The brief is well structured, keeps returning athletes with clinicians, and is honest about compensatory training being trial and error. But on the central high-minute vs low-minute speed question it misses the source's subs-only suggestion for short turnarounds and builds its tension on a misattributed recovery window, so it could steer the speed-exposure decision the wrong way.",
+  "suggestedDrafterFixes": [
+    "Distinguish an author's own results from literature they cite in the introduction or discussion; do not attribute cited findings to the study.",
+    "Preserve the exact temporal relation in the source (\"within X h\" is an upper bound, not a required recovery duration).",
+    "For subgroup questions, search each source's discussion for explicit subgroup or turnaround-length guidance and surface it before inferring a direction.",
+    "Do not count a reprint or summary (for example a research update reproducing an abstract) as a separate source; cite the primary paper.",
+    "Carry conditional qualifiers (\"if replicable\", CI overlap) into claims.",
+    "Do not label a statement as professional judgment and attribute it to a source in the same sentence.",
+    "Drop off-topic leads instead of labeling them relevant."
+  ]
+}

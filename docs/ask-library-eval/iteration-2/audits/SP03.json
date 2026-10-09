@@ -1,0 +1,43 @@
+{
+  "questionId": "SP03",
+  "tier": "Limited",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "Abstract p1 matches: 36 team-seasons, 16 elite teams; 'no match hamstring injuries when > 95% MSS exposures occurred at D-2, while ... injuries still happened when players were not exposed at all'. Claim omits 'or when these exposures occurred at D-3 and/or earlier', which does not change meaning."},
+    {"claimId": "C2", "rating": "supported", "note": "p10 practical applications and p9 'if this is that clear, considering the CIs overlaps, though' support both halves. The authors also stress 'association does not imply causation' and 'the possibility of false positives should not be disregarded' (p10), which the brief carries as an association caveat."},
+    {"claimId": "C3", "rating": "supported", "note": "Verbatim from abstract p1."},
+    {"claimId": "C4", "rating": "supported", "note": "p1 and p9: 'this optimal chronic dose is likely specific to each population and context'."},
+    {"claimId": "C5", "rating": "supported", "note": "Abstract p1 matches, including 'MD-2 was the day that required the least stimuli (p < 0.05)'. The discussion (p6) attributes this to 'the peculiarity of the planning proposal used by the team', which supports the brief's single-team framing."},
+    {"claimId": "C6", "rating": "supported", "note": "Abstract p2 matches. The cohort is LaLiga123 (second division) players; 'professional soccer cohort' is accurate."},
+    {"claimId": "C7", "rating": "minor", "note": "Text is verbatim from p13. However, it is the authors' discussion of cited literature [61, 28], not a finding of their survey, while the claim says the study 'reports' it."},
+    {"claimId": "C8", "rating": "minor", "note": "Verbatim from p12. It is a discussion-level recommendation citing another paper [47] and sits in the MD+1/MD+2 section, not a result of the survey."},
+    {"claimId": "C9", "rating": "supported", "note": "Abstract p1 matches (24 outfield players, one team)."},
+    {"claimId": "C10", "rating": "supported", "note": "p9 practical applications: 'the MD-1, MD and MD+1 sessions could be the most appropriate sessions to try to compensate for the absence of competitive stimulus'. The note that outcomes were not tested is accurate."},
+    {"claimId": "C11", "rating": "supported", "note": "Abstract p1 matches. Congestion is defined there as two matches within 96 h or less."},
+    {"claimId": "C12", "rating": "supported", "note": "Abstract p1 matches, including the definition and the 'layoff duration was typically lower' qualifier."},
+    {"claimId": "C13", "rating": "supported", "note": "p17 limitation text matches."},
+    {"claimId": "C14", "rating": "supported", "note": "p6: 'There is no research-based evidence to manage travel fatigue in athletes'."},
+    {"claimId": "C15", "rating": "supported", "note": "p6 squad rotation bullet, verbatim."},
+    {"claimId": "C16", "rating": "supported", "note": "p2 introduction, correctly framed as the authors' summary of prior work."}
+  ],
+  "statementIssues": [
+    {"location": "actions[0]", "severity": "minor", "note": "The option drops two author caveats that bear on how it is used. Buchheit p9-10 says D-4 and D-3 'need to be tailored accordingly ... so that players do not reach D-2 with excessive levels of neuromuscular fatigue', and warns that MSS work the day after a heavy HSR D-3 'could expose players to a higher risk of injury during those sprints'. 'Short' and 'athletes expected to play' are drafter additions. The authors say that in 3-5 day turnarounds D-2 exposures 'may only concern subs'."},
+    {"location": "actions[0] + actions[1]", "severity": "minor", "note": "The two options are presented as alternatives. The brief does not flag the source's warning against combining a heavy mid-week high-speed day with D-2 maximal sprinting."},
+    {"location": "bottomLine / evidenceConfidence.directness / coverageGaps[0]", "severity": "minor", "note": "'The pack has no evidence on where to place strength sessions' is inaccurate. Gómez-Piqueras (743) p12 describes where professional teams place strength content: an MD-4 session 'designed to enhance various strength manifestations', with dominant hip/knee exercises used by most teams that day. That evidence is descriptive survey data, but it is present in the pack."},
+    {"location": "actions[3]", "severity": "minor", "note": "The commentary advises a criterion for when to propose rotations, 'probably before and not during the matches'. The title broadens this to setting 'rotation and modification criteria before the week starts', which is a modest drafter extension."},
+    {"location": "monitoring[1]", "severity": "minor", "note": "'Most elite players reached the match without such an exposure' is supported by Buchheit's conclusion (p10). It cites C3, which reports proportions of turnarounds, where 72% of 7-day turnarounds had >85% runs, so the cited claim does not carry the statement."},
+    {"location": "limitations[0]", "severity": "minor", "note": "'All sources study professional or elite male soccer' slightly misdescribes the commentary (14), which covers elite team sports generally."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Limited is appropriate: the evidence is observational and soccer-only, and the D-2 question is in genuine tension. recommendedDirection is null, and the speed-timing actions are framed as options with association caveats.",
+  "safetyIssues": [],
+  "criticalFailures": [],
+  "useful": true,
+  "usefulnessScore": 3,
+  "usefulnessNote": "A performance coach gets an honest picture: the D-2 versus mid-week speed debate, low-minute top-ups, a congestion definition, and clear gaps on readiness criteria and travel. Reservations: everything is professional male soccer, strength placement is wrongly called absent, and the option framing omits the source's fatigue-sequencing warning.",
+  "suggestedDrafterFixes": [
+    "When an action presents a source-derived option, carry the source's own implementation conditions (sequencing or fatigue prerequisites) into the action text, and do not add unsourced qualifiers such as 'short' or 'athletes expected to play'.",
+    "Before declaring a coverage gap, scan every pack source's discussion and results for the gap topic (for example strength placement), and say 'descriptive practice data only' rather than 'no evidence' when such data exist.",
+    "Distinguish a source's own findings from its discussion of cited literature in claim wording (for example 'the authors, citing prior work, note ...').",
+    "Make sure each monitoring or action statement is carried by the claim it cites; add the claim that actually contains the stated fact."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "questionId": "SS03",
+  "tier": "Moderate",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "Abstract: 42 professional AF players, 1 club; 'Sensitivity was calculated by dividing weekly CV% by test CV% to produce a signal to noise ratio.'"},
+    {"claimId": "C2", "rating": "supported", "note": "Abstract: 'All measures displayed acceptable sensitivity. Signal to noise ratio ranged from 1.3 to 11.1. Intraclass coefficients ranged from .30 to .97'. 'Acceptable' is defined in the paper as SNR 1.0-1.5, so several wellness items sit at the lower bound."},
+    {"claimId": "C3", "rating": "supported", "note": "Both excerpts verbatim from Tenan's abstract."},
+    {"claimId": "C4", "rating": "supported", "note": "Verbatim from the abstract."},
+    {"claimId": "C5", "rating": "supported", "note": "Abstract: n = 8, Hooper index +49.8% (ES 1.05), HRV possible trivial change. Comparison is high-load congested tournament versus a low-load training phase; Hooper items are scored 1 = 'very very good' to 7 = 'very very poor', so the increase means worse wellness."},
+    {"claimId": "C6", "rating": "minor", "note": "Abstract supports the wording, but the 3 consecutive matches were preseason A-League matches from 1 club, which the claim omits."},
+    {"claimId": "C7", "rating": "supported", "note": "Abstract: FT:CT reductions in medium and high load at 18 h and 'persisted at later postmatch time points than changes in jump height'."},
+    {"claimId": "C8", "rating": "supported", "note": "Abstract methods sentence reproduced accurately."},
+    {"claimId": "C9", "rating": "supported", "note": "Abstract result and conclusion reproduced; the discussion offers this as one of two possible explanations."},
+    {"claimId": "C10", "rating": "minor", "note": "Numbers correct; the effects are on wellness the day after each match, and the AP effect is per 1-unit PlayerLoadAP per minute."},
+    {"claimId": "C11", "rating": "supported", "note": "Fig. 1 caption, p5, places 'non-biological system-specific subjective ratings' between quadrants."},
+    {"claimId": "C12", "rating": "minor", "note": "First excerpt continues 'on player unavailability for training', which the claim drops; the rotation criterion is a squad-rotation suggestion in a commentary, not a monitoring-decision rule."}
+  ],
+  "statementIssues": [
+    {"location": "evidenceTension", "severity": "critical", "note": "'In 8 collegiate soccer players, wellness rose clearly during a congested schedule' reverses the direction: the Hooper index rose, and higher Hooper scores mean worse wellness (scale 1 'very very good' to 7 'very very poor'; authors describe 'impairment' in fatigue and soreness)."},
+    {"location": "recommendedDirection / actions[4]", "severity": "minor", "note": "Setting maintain/modify/investigate criteria before the week extrapolates a commentary's squad-rotation suggestion ('probably before and not during the matches'); action drops 'probably'. The professional-judgment label partly covers this."},
+    {"location": "bottomLine", "severity": "minor", "note": "'The evidence supports building the process from parts rather than relying on one readiness score' overstates; no cited source compares composite scores with separate indicators."},
+    {"location": "actions[3]", "severity": "minor", "note": "'Indicators can disagree without either one being wrong' is unlabeled inference; Rabbani concluded the Hooper index was more sensitive and recommended it over HRV."},
+    {"location": "guardrails[1]", "severity": "minor", "note": "'Do not combine indicators into one readiness score' restates the request's constraint as if evidence-based; cited studies show differential sensitivity, not harm from composites."},
+    {"location": "evidenceTension", "severity": "minor", "note": "'The Australian authors attribute their result to' the between-match gap is firmer than the source, which says it 'appears to be sufficient' and offers a second explanation."}
+  ],
+  "tierDefensible": false,
+  "tierNote": "Moderate is hard to defend. The drafter's own rationale says no source tests the integrated decision, and there is no evidence on false-alarm cost or multiple comparisons, two of the three elements the question names. Each component rests on one study (one AF club for noise, a didactic article for missing data, n = 8 and n = 18 for congested and CMJ evidence). The populations do not transfer well, and the drafter notes partial disagreement. Limited fits better, and at Limited the recommendedDirection would not be permitted.",
+  "safetyIssues": [],
+  "criticalFailures": [
+    {"location": "evidenceTension", "note": "The Rabbani wellness finding is applied in the wrong direction ('wellness rose'), when the Hooper index increase means wellness worsened under congestion."},
+    {"location": "evidenceConfidence.tier / recommendedDirection", "note": "A recommendation is given at Moderate when indirectness, single-study components and the missing evidence on false alarms support Limited, a tier that does not permit a recommendation."}
+  ],
+  "useful": false,
+  "usefulnessScore": 3,
+  "usefulnessNote": "The process steps (missing-data audit, SNR per tool, within-athlete z scores, load versus response columns, FT:CT alongside jump height) are practical and each traces to a source. But the reversed wellness direction concerns the exact congested-week scenario, and the Moderate tier overstates how far the evidence supports the overall process. With those fixed it would rate 4.",
+  "suggestedDrafterFixes": [
+    "For any scale-based instrument (Hooper index, Likert wellness, RPE), check the scoring direction in the methods and state the result as better or worse rather than 'rose' or 'fell'.",
+    "Add a tier gate: if the rationale says no source tests the decision itself and named parts of the question have no evidence, cap the tier at Limited and set recommendedDirection to null.",
+    "Do not turn a source's suggestion in another context (squad rotation) into support for a monitoring-decision rule without labeling it as professional judgment, and keep hedges such as 'probably'.",
+    "Carry design qualifiers (preseason matches, next-day wellness, per-minute load) into claims.",
+    "Avoid 'the evidence supports' language for conclusions that no cited source compared directly."
+  ]
+}

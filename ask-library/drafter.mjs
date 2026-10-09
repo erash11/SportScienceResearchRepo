@@ -8,7 +8,7 @@
 
 import { CONFIDENCE_TIERS, validateDecisionBrief } from "./pilot-core.mjs";
 
-export const DRAFTER_VERSION = "1.1.0";
+export const DRAFTER_VERSION = "1.2.0";
 
 const STOPWORDS = new Set(
   ("a about above after again against all am an and any are as at be because been before being below between both but by "
@@ -245,6 +245,48 @@ Return ONLY one JSON object, no prose before or after, with exactly these keys:
 }`;
 }
 
+// Second pass: a critic sees the draft plus the FULL text of every cited source and returns a corrected
+// draft. It targets the failure modes found in evaluation: findings attributed to the wrong study, dropped
+// comparators and author caveats, inverted scales, false "no evidence" statements, and inflated tiers.
+export function buildCriticPrompt(request, draft, fullSources) {
+  const sourceText = fullSources.map((source) => [
+    `=== FULL SOURCE libraryId=${source.libraryId} ===`,
+    `Citation: ${source.citation}`,
+    ...source.pages.map((text, i) => `--- page ${i + 1} ---\n${String(text).replace(/[ \t]+/g, " ").replace(/\n{3,}/g, "\n\n").trim()}`),
+  ].join("\n")).join("\n\n");
+  return `You are the claim auditor for an Ask the Library Decision Brief draft. Another model wrote it from selected passages. You now have the FULL original text of every source it cites. Correct the draft so that every statement is faithful to these sources, then return the corrected draft.
+
+PRACTICAL QUESTION
+${request.practicalQuestion}
+
+DECISION CONTEXT
+${Object.entries(request.decisionContext ?? {}).map(([key, value]) => `- ${key}: ${value || "(not given)"}`).join("\n")}
+
+DRAFT (JSON)
+${JSON.stringify(draft, null, 1)}
+
+FULL SOURCES
+${sourceText}
+
+CHECK EVERY CLAIM AND STATEMENT, IN THIS ORDER
+1. Attribution: is the finding the source's OWN result, or something the authors cite from earlier studies (introduction or discussion)? If cited, either reword the claim to say "the authors cite earlier work reporting..." or remove it. Never present cited background as the study's own data.
+2. Comparator and conditions: name what the result was compared with, the population, sample, session type, dose and timing. If the authors limit a finding to a subgroup or condition (for example "may only concern substitutes", "when rapid restoration is the priority", "if replicable"), the claim and every statement that uses it must carry that condition, and must not apply it to the group the authors steer away from.
+3. Scale direction: check how each scale is scored (for example the Hooper index: higher means worse). Fix any statement that reverses improvement and decline.
+3b. Truncation: an excerpt must not stop before a clause that changes its meaning (for example "... along with defined stage-specific criteria"). Extend or replace any excerpt whose cut drops a qualifier, and fix any claim or option built on the cut version.
+4. Significance: do not describe a non-significant, near-significant or pooled non-significant result as an effect.
+5. "No evidence" statements: for any statement that the library, the pack or the sources lack something, search ALL the full source text above. If a source does address it, replace the statement with a claim that reports what the source says (with a verbatim excerpt and page), or delete the statement.
+6. Missed key evidence: if a cited source contains numbers, thresholds, timings or criteria that directly answer the question (often in tables), add them as claims with verbatim excerpts and correct page numbers.
+7. Duplicates: if two sources report the same study (one reprints the other's abstract), do not count them as independent support.
+8. Tier: Higher needs several direct, consistent, good-quality sources that transfer to the context. Moderate needs at least two independent direct sources and a decision process the evidence actually tests; otherwise use Limited. At Limited or Coverage Gap, recommendedDirection must be null and actions must be framed as options. Evidence Tension that the context does not resolve means Limited.
+9. Every statement must cite claims that support it. Professional judgment that the evidence does not test must start with "Professional judgment (not tested by the cited evidence):".
+
+EXCERPT RULES
+Excerpts must be copied VERBATIM from one page of the full source text above, 8 to 45 words, no ellipses. Use the page number shown in the "--- page N ---" marker.
+
+OUTPUT
+Return ONLY the corrected draft as one JSON object with exactly the same keys as the input draft. Keep claim IDs stable where a claim survives; you may add new claims (C20, C21, ...). Plain language, no em dashes.`;
+}
+
 export function parseComposerJson(text) {
   const raw = String(text ?? "");
   const fenced = raw.match(/```(?:json)?\s*([\s\S]*?)```/);
@@ -467,7 +509,7 @@ export async function finalizeDraft({ draft, request, papersById, readPage, page
     claims: keptClaims,
     assumptions: (Array.isArray(draftClean.assumptions) ? draftClean.assumptions : []).map(String).filter(Boolean),
     coverageGaps,
-    leads: leads.map((lead) => ({ libraryId: String(lead.paper.id), citation: lead.paper.citation, note: "Relevant lead; original text not accessible to the drafter, so it supports no claim." })),
+    leads: leads.map((lead) => ({ libraryId: String(lead.paper.id), citation: lead.paper.citation, note: "Possible lead found by keyword match; not checked for relevance, and its original text was not accessible, so it supports no claim." })),
     drafter: {
       version: DRAFTER_VERSION,
       ...composer,

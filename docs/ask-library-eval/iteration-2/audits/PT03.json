@@ -1,0 +1,37 @@
+{
+  "questionId": "PT03",
+  "tier": "Limited",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "Abstract p1 gives these exact percentages. The discussion (p6) notes that most players (43%) did not reach stage 5, so the final-stage values describe a subset; the claim does not say so."},
+    {"claimId": "C2", "rating": "supported", "note": "Abstract p1: 97/100 followed, 84% RTC (100% vs 80%). The conclusion is quoted accurately."},
+    {"claimId": "C3", "rating": "supported", "note": "p6: 'The plateau in TD suggests that it is not a useful metric for RTC decision-making or for progressing through OFR.'"},
+    {"claimId": "C4", "rating": "supported", "note": "Figure 3 caption p3 and key-points box p8; these are author statements from a single case."},
+    {"claimId": "C5", "rating": "supported", "note": "July 2023 digest p25, the conclusions of the narrative review, verbatim."},
+    {"claimId": "C6", "rating": "supported", "note": "Abstract p1 verbatim. The authors note that 'the present observational study design precludes the examination of causal relationships'."},
+    {"claimId": "C7", "rating": "supported", "note": "Abstract p1 (36 team-seasons, 16 teams) and conclusions p10: 'should nevertheless be taken with caution, and the possibility of false positives should not be disregarded.'"},
+    {"claimId": "C8", "rating": "supported", "note": "Abstract p1 gives both rho values and the 58 players. The abstract also reports that >95% efforts showed no relationship (rho = -0.02); the claim omits this, which is relevant to the stated tension."},
+    {"claimId": "C9", "rating": "supported", "note": "p3: a secondhand citation of Malone et al., correctly attributed, with the Gaelic-football caveat."},
+    {"claimId": "C10", "rating": "supported", "note": "p3: secondhand statements correctly attributed as Shah et al. citing prior work."},
+    {"claimId": "C11", "rating": "supported", "note": "January 2023 digest p14: 63 articles, six sports, 9.4-fold higher in match than training (p=0.003)."},
+    {"claimId": "C12", "rating": "supported", "note": "Abstract p1 (24 professional players) states this verbatim."},
+    {"claimId": "C13", "rating": "supported", "note": "Survey p6, question 11: percentages match exactly, and the claim correctly says it describes practice, not prediction."}
+  ],
+  "statementIssues": [
+    {"location": "evidenceTension", "severity": "minor", "note": "The speed tension partly compares different thresholds. Buchheit's finding concerns >95% MSS, and Shah found no relationship between >95% efforts and eccentric strength (rho = -0.02), only for >90%. Stating this would shrink the apparent conflict."},
+    {"location": "evidenceTension / monitoring[3]", "severity": "minor", "note": "It sets 'can guide phase progression' against 'no evidence asymmetries increase injury risk'. These answer different questions, and the review concerns mostly pre-existing asymmetry, not post-injury asymmetry."},
+    {"location": "actions[0]", "severity": "minor", "note": "It does not say that the final-stage benchmarks come only from the subset who reached stage 5 (most players stopped earlier, p6)."},
+    {"location": "actions[3]", "severity": "minor", "note": "C12 (healthy players with more match time accumulate more weekly load) offers weak support for using team training as the intermediate step. The step itself is reasonable and the other cited claims carry it."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Limited fits: no source tests a 7–10 day structure or progress, hold or regress criteria. The evidence is from healthy players, a single-case study, an uncontrolled case series, a survey and digests. recommendedDirection is null, actions are framed as options, and the hold and regress rules are labeled as professional judgment.",
+  "safetyIssues": [],
+  "criticalFailures": [],
+  "useful": true,
+  "usefulnessScore": 4,
+  "usefulnessNote": "It gives practitioners concrete, source-backed benchmarks (final-stage on-field work against team and match percentages, with deceleration the largest gap). It also says total distance is not useful, suggests deliberate timing of near-maximal speed exposure with clear association caveats, and says to agree a multi-criterion panel. Decision ownership stays with clinicians. It honestly says no 7–10 day structure is tested, and it labels its hold and regress definitions as judgment.",
+  "suggestedDrafterFixes": [
+    "When framing an evidence tension, check that both sides use the same threshold or construct, and report null results at the matching threshold (for example, >95% showed no relationship).",
+    "Carry subset caveats (such as which participants contributed final-stage values) from the discussion into claims that report benchmark numbers.",
+    "Do not present 'useful for monitoring progression' and 'not a risk factor for injury' as conflicting unless the sources address the same question."
+  ]
+}

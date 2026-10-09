@@ -1,0 +1,61 @@
+{
+  "questionId": "PN03",
+  "tier": "Moderate",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "UEFA p1: \"a 'food first' philosophy (ie, food over supplements), is fundamental\"."},
+    {"claimId": "C2", "rating": "supported", "note": "UEFA p4: pre-match meal \"should be easily digestible to reduce the risk of gastrointestinal problems\"; comfort over \"rigid strategies focused solely on meeting CHO intake guidelines\"."},
+    {"claimId": "C3", "rating": "supported", "note": "UEFA p4 pairs education with \"practising pre-match fuelling in training or lower priority matches\"."},
+    {"claimId": "C4", "rating": "supported", "note": "UEFA p4; the source also lists acclimation status as a driver, which the claim omits without consequence."},
+    {"claimId": "C5", "rating": "supported", "note": "UEFA p11; the claim correctly keeps the heat/stressful-environment context and the no-specialist-support condition."},
+    {"claimId": "C6", "rating": "supported", "note": "UEFA Table p6, congested fixture row: 6-8 g/kg BM (per day) to replenish glycogen \"in the 48-72 hours period between games\"."},
+    {"claimId": "C7", "rating": "supported", "note": "UEFA p12, travel across time zones; reduced performance \"for up to 72 hours\", severity proportional to time zones crossed and cumulative sleep loss."},
+    {"claimId": "C8", "rating": "supported", "note": "UEFA p16; source specifies \"three or more players\" committing violations, the claim's \"multiple violations\" is an acceptable paraphrase."},
+    {"claimId": "C9", "rating": "supported", "note": "UEFA p9; context is bacterial contamination of food at venues such as \"the changing room or team bus\", so it is directly relevant to travel."},
+    {"claimId": "C10", "rating": "supported", "note": "562 p2 cites earlier studies as stated; claim is not cited by any statement."},
+    {"claimId": "C11", "rating": "overstated", "note": "562 p2 says dehydrated subjects \"had reduced glycogen stored in a manner close to being significant\" and that at 15 h \"water deprivation did not hinder normal glycogen resynthesis\"; the discussion (p13) says both studies found \"dehydration in the recovery did not impair muscle glycogen storage\". The claim drops the non-significance qualifier and the contrary longer-recovery finding."},
+    {"claimId": "C12", "rating": "supported", "note": "562 abstract p1: ten studies, p = 0.24, I2 = 91.88%."},
+    {"claimId": "C13", "rating": "supported", "note": "562 p13; the claim keeps the authors' hedged \"may\" language."},
+    {"claimId": "C14", "rating": "supported", "note": "729 abstract p1, verbatim with the authors' own caveat on insufficient RL-specific data."},
+    {"claimId": "C15", "rating": "supported", "note": "729 abstract p1, verbatim including the 80-120 kg body-mass framing."},
+    {"claimId": "C16", "rating": "supported", "note": "729 abstract p1, verbatim."},
+    {"claimId": "C17", "rating": "supported", "note": "729 abstract p1, verbatim."},
+    {"claimId": "C18", "rating": "supported", "note": "729 p13; note the same paragraph also reports a positive tart cherry trial in 16 soccer players, which the brief does not mention."},
+    {"claimId": "C20", "rating": "minor", "note": "401 p1 supports the content, but \"In that case study\" refers to removed claim C19, so the claim lacks its own description of the two-player AF design."},
+    {"claimId": "C21", "rating": "supported", "note": "473 abstract p1, 24 professional outfield players."},
+    {"claimId": "C22", "rating": "supported", "note": "738 abstract p1."},
+    {"claimId": "C23", "rating": "supported", "note": "738 abstract p1; >6 mg/kg SMD 0.11, p = 0.23."},
+    {"claimId": "C24", "rating": "supported", "note": "725 p4 conclusion and limitation on elite athletes."},
+    {"claimId": "C25", "rating": "supported", "note": "725 p4, verbatim."},
+    {"claimId": "C26", "rating": "supported", "note": "571 abstract p1."},
+    {"claimId": "C27", "rating": "supported", "note": "571 abstract p1; the brief's tension correctly flags that the recovery conclusion rests on one enzyme marker."},
+    {"claimId": "C28", "rating": "supported", "note": "777 p8: 6.9 h vs 2.7 h travel night vs 7.6 h home."},
+    {"claimId": "C29", "rating": "supported", "note": "777 abstract p1; recommendation is specific to overnight long-haul travel, which the claim keeps."},
+    {"claimId": "C30", "rating": "supported", "note": "560 p10, verbatim."},
+    {"claimId": "C31", "rating": "supported", "note": "729 p10, about young RL players."}
+  ],
+  "statementIssues": [
+    {"location": "actions[2]", "severity": "critical", "note": "States \"dehydration reduced short-term glycogen restoration in cited studies\"; the source says the 4 h effect was only \"close to being significant\" and that the cited studies concluded dehydration \"did not impair muscle glycogen storage\". The rehydration advice itself is sound, but the evidential basis is misstated."},
+    {"location": "evidenceTension", "severity": "minor", "note": "Repeats the C11 overstatement (\"cited studies found dehydration reduced short-term glycogen restoration\"). On polyphenols it cites only the null tart cherry RL study and omits the positive soccer tart cherry trial reported on the same page of the same review."},
+    {"location": "bottomLine", "severity": "minor", "note": "\"Playing time drives weekly load, so plans should reflect each athlete's actual load\" is presented as evidence-based. C21 is an association in one soccer team, and scaling nutrition to load is professional judgment. recommendedDirection labels it as judgment, but the bottomLine does not."},
+    {"location": "actions[0]", "severity": "minor", "note": "Gives \"6 to 8 g/kg BM carbohydrate\" without the per-day unit shown in the UEFA table."},
+    {"location": "monitoring[0]", "severity": "minor", "note": "The morning body weight, thirst and urine check comes from UEFA's heat and stressful-environment section for use without specialist support. Using it as a routine travel check is reasonable but unlabeled extrapolation."},
+    {"location": "guardrails[1]", "severity": "minor", "note": "\"Do not use alcohol as recovery hydration\" is broader than the source, which says only that beer is inadvisable as the sole rehydration source after a deficit of 1.5% body mass or more. The second sentence states the source accurately."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Moderate is defensible for the food-first fueling, fluid and pre-match meal core. That guidance rests on a consensus statement and a review that agree with each other, and the rationale states the gaps in population, travel and individualization. Supplement tension is acknowledged and the tier is not Higher.",
+  "safetyIssues": [],
+  "criticalFailures": [
+    {"location": "C11 / actions[2]", "note": "The claim drops the near-significant (non-significant) qualifier and the contrary 15 h finding. It turns a null-leaning finding into \"dehydration reduced short-term glycogen restoration in cited studies\" in an action."}
+  ],
+  "useful": true,
+  "usefulnessScore": 4,
+  "usefulnessNote": "A nutrition practitioner gets a usable food-first plan quickly: carbohydrate ranges for congested periods, pre and post-competition amounts, gut-comfort meal guidance, food-safety and supplement guardrails. Transferability limits are stated honestly. The hydration overstatement does not change the advice to rehydrate, so it does not mislead the decision. Subgroup individualization is clearly labeled as judgment.",
+  "suggestedDrafterFixes": [
+    "When an excerpt ends mid-sentence, read the rest of the sentence and the next one. Carry any significance qualifier (e.g. 'close to being significant', 'not significant') and any contrary finding into the claim.",
+    "Do not phrase a claim as an observed effect ('X reduced Y') when the source reports a non-significant or trend-level result. Use 'tended to' or 'non-significant' wording.",
+    "When a review reports both positive and null trials for an intervention, cite both in evidenceTension instead of only the side that fits the tension.",
+    "When a claim is removed, repair later claims that refer back to it ('In that case study') so each claim names its own study design and sample.",
+    "Keep units, including per-day, when copying dose ranges into actions.",
+    "Apply 'Professional judgment' labeling to bottomLine text as well as to recommendedDirection and actions."
+  ]
+}

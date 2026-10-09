@@ -1,0 +1,39 @@
+{
+  "questionId": "PN01",
+  "tier": "Limited",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "Both excerpts verbatim on p1 abstract of Kelly et al. 2020; population and 'may not be enough data' caveat preserved."},
+    {"claimId": "C2", "rating": "supported", "note": "Verbatim on p1; case study of 2 players with no control condition. Methods show the 2 g/kg prematch meal was eaten 4 hours before play, so it does not inform a 45-minute window (brief does not claim it does)."},
+    {"claimId": "C3", "rating": "minor", "note": "Excerpts are verbatim, but the claim is selectively incomplete. Kelly et al. p12 says 'Players could ingest caffeine 30-60 min prematch', and Silva et al. p2 says trials 'typically ingested <= 60 min (ranging from 5 to 60 min)' with ISSN guidance '<= 60 min prior to the activity'. 'About 1 hour' is therefore not a floor."},
+    {"claimId": "C4", "rating": "supported", "note": "Verbatim from Silva et al. 2025 abstract, p1."},
+    {"claimId": "C5", "rating": "supported", "note": "Verbatim from Esh et al. 2024 abstract, p1. The review covers mostly elite endurance athletes in heat, and the claim scopes it correctly."},
+    {"claimId": "C6", "rating": "supported", "note": "Verbatim background statements from Baker et al. 2023 intro, p1. These are cited consensus statements, not findings of the validation study, and the claim says so."},
+    {"claimId": "C7", "rating": "supported", "note": "Verbatim from Ashley et al. 2023 abstract, p1; the carryover was measured in urine color."},
+    {"claimId": "C8", "rating": "supported", "note": "Verbatim, p1. Results show AUC 0.55 and 0.49 for detecting %BML (not significant)."}
+  ],
+  "statementIssues": [
+    {"location": "bottomLine", "severity": "critical", "note": "States 'The library does not contain evidence on what to eat or drink in the final 45 minutes'. Yet cited source 729, Table 1 (p3), lists '20-30 g, 30-60 min prematch: Consume light snack/drink after warm-up, if hungry' and 'The closer to kick-off, the lower in fiber (i.e., high GI)'. The brief misses the most directly relevant guidance in its own source."},
+    {"location": "actions[3]", "severity": "critical", "note": "Says the caffeine timing (about 1 hour) 'is longer than the 45 minutes available here'. Kelly et al. p12 gives '30-60 min prematch', and Silva et al. p2 reports trials at 5 to 60 min, gum absorbing faster than capsules, and ISSN '<= 60 min'. The brief implies the timing evidence does not fit, which is the wrong direction."},
+    {"location": "guardrails[1]", "severity": "minor", "note": "Repeats the 'about 1 hour' framing. Silva et al. p4 also notes that caffeine before a morning session can enhance performance without compromising nighttime sleep, which is relevant here and omitted."},
+    {"location": "evidenceConfidence.dimensions.directness", "severity": "minor", "note": "'No source addresses ... very short pre-session windows' is contradicted by source 729 Table 1 (30-60 min light snack) and its caffeine text (30-60 min)."},
+    {"location": "whatCouldChange[1]", "severity": "minor", "note": "Asks for evidence on caffeine closer to the session. The cited reviews already describe ingestion at 30-60 min and 5-60 min."},
+    {"location": "actions[2]", "severity": "minor", "note": "'hydration deficits carried over ... mostly when there were less than 24 hours' paraphrases urine-color carryover in high school players in heat (WBGT ~31 C). The inference that a morning-after-evening session warrants a planned fluid approach is unlabeled but modest."},
+    {"location": "monitoring[0]", "severity": "minor", "note": "'Do not rely on urine measures alone' follows from C8 but rests on one high-school heat study; acceptable caution."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Limited is right: narrative reviews, a 2-player case study and heat/high-school hydration data, with no direct test. No recommendedDirection was given, which is correct. The rationale understates directness slightly by missing the 30-60 min guidance in source 729.",
+  "safetyIssues": [],
+  "criticalFailures": [
+    {"location": "bottomLine", "note": "Says the library has no guidance for the final 45 minutes. Cited source 729 Table 1 (p3) recommends a 20-30 g light snack/drink 30-60 min prematch, lower in fiber closer to kick-off."},
+    {"location": "actions[3]", "note": "Calls caffeine timing 'longer than the 45 minutes available'. The cited sources give 30-60 min (729 p12) and 5-60 min / '<= 60 min' (98 p2), so a practitioner would wrongly rule out a within-window option."}
+  ],
+  "useful": false,
+  "usefulnessScore": 2,
+  "usefulnessNote": "The brief is honest that nothing in the library tests intake in the final 45 minutes. But it omits the closest actionable content in its own sources: a small high-GI, low-fiber 20-30 g carbohydrate snack or drink 30-60 min out, caffeine at 30-60 min, and the note that morning caffeine spares sleep. A dietitian is left mainly with 'move fueling earlier', so the brief is marginal for the decision.",
+  "suggestedDrafterFixes": [
+    "Before claiming the library lacks evidence on a timing window, search each cited source's full text, including tables, for the window's numbers (e.g. '30-60 min', 'min prematch'), not only the abstract page.",
+    "When quoting a dose or timing from an abstract, check the body text for ranges that extend or qualify it, and report the full range.",
+    "Treat claims like 'X is longer than the window available' as comparative statements that need source support for the lower bound, not just a typical value.",
+    "Distinguish 'not tested by a trial' from 'not addressed by guidance' in the bottom line and directness rationale."
+  ]
+}

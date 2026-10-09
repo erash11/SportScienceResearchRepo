@@ -15,9 +15,11 @@ import { auditDecisionBrief, validateBriefRequest } from "../ask-library/pilot-c
 import {
   DRAFTER_VERSION,
   buildComposerPrompt,
+  buildCriticPrompt,
   buildEvidencePack,
   finalizeDraft,
   parseComposerJson,
+  localSourceFile,
   rankRecords,
 } from "../ask-library/drafter.mjs";
 
@@ -112,7 +114,7 @@ async function run() {
     sourceAvailable: (sourceFile) => fs.existsSync(sourcePath(sourceFile)),
   });
   const topScore = supportable[0]?.score ?? 0;
-  const relevantLeads = leads.filter((lead) => lead.score >= 0.6 * topScore);
+  const relevantLeads = leads.filter((lead) => lead.score >= 0.85 * topScore);
   const candidates = supportable.map((entry) => {
     const meta = taxonomyById.get(String(entry.paper.id));
     return {
@@ -136,7 +138,15 @@ async function run() {
   const fromDraft = option("--from-draft");
   const model = option("--model") || DEFAULT_MODEL;
   const raw = fromDraft ? fs.readFileSync(fromDraft, "utf8") : compose(prompt, model);
-  const draft = parseComposerJson(raw);
+  let draft = parseComposerJson(raw);
+  if (!process.argv.includes("--no-critic")) {
+    const cited = [...new Set((draft.claims ?? []).flatMap((claim) => (claim.evidence ?? []).map((item) => String(item.libraryId))))];
+    const fullSources = cited
+      .map((id) => papersById.get(id))
+      .filter((paper) => paper && localSourceFile(paper) && fs.existsSync(sourcePath(localSourceFile(paper))))
+      .map((paper) => ({ libraryId: String(paper.id), citation: paper.citation, pages: allPages(localSourceFile(paper)).map((page) => page.slice(0, 9000)) }));
+    draft = parseComposerJson(compose(buildCriticPrompt(request, draft, fullSources), model));
+  }
   const createdAt = new Date().toISOString();
   const { brief, validation } = await finalizeDraft({
     draft,
@@ -148,7 +158,7 @@ async function run() {
     createdAt,
     leads: relevantLeads,
     libraryReview: (paper) => taxonomyById.get(String(paper.id))?.reviewStatus || "Legacy published record; library summary not full-text reviewed",
-    composer: { composer: fromDraft ? "operator-supplied draft" : `claude -p (${model})`, sourcesInPack: pack.map((paper) => paper.libraryId) },
+    composer: { composer: fromDraft ? "operator-supplied draft" : `claude -p (${model})`, criticPass: !process.argv.includes("--no-critic"), sourcesInPack: pack.map((paper) => paper.libraryId) },
   });
 
   const out = option("--out") || path.join(repoRoot, "pilot-data", "ask-library", "private", "briefs", `${brief.briefId}.json`);

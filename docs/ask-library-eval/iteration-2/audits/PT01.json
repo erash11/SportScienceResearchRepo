@@ -1,0 +1,47 @@
+{
+  "questionId": "PT01",
+  "tier": "Limited",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "705 abstract p1, verbatim figures: 97 followed, 84% RTC (100% pro, 80% amateur), 10 reinjuries."},
+    {"claimId": "C2", "rating": "supported", "note": "705 abstract p1, verbatim conclusion and final-stage percentages relative to team training."},
+    {"claimId": "C3", "rating": "overstated", "note": "705 p2 reads: stage transition \"was driven by a continuous comparison between different drills subjected to the player and the way the knee and soft tissues responded to the given loads along with defined stage-specific criteria\". The claim drops \"along with defined stage-specific criteria\" and also omits that players came through \"a criteria-based rehabilitation process\"."},
+    {"claimId": "C4", "rating": "supported", "note": "705 p1 background and p2: frameworks \"are based on expert opinion and single-case study applications\"."},
+    {"claimId": "C5", "rating": "supported", "note": "396 p8; the case study itself reports step impulse asymmetry tracking (Figure 8)."},
+    {"claimId": "C6", "rating": "supported", "note": "396 p6, verbatim."},
+    {"claimId": "C7", "rating": "supported", "note": "696 abstract p1, a clinical commentary (Level of Evidence 5), with hedged 'might reduce'."},
+    {"claimId": "C8", "rating": "supported", "note": "696 Table 1 p6, Level 4 and RTS rows match."},
+    {"claimId": "C9", "rating": "minor", "note": "696 p5: the high-control start applies to the Level 3-4 multidirectional hop sequence (Square Hop first), not to hop testing in general. High-dynamic tests are first done qualitatively to assess movement quality and pain response."},
+    {"claimId": "C10", "rating": "supported", "note": "696 p5: benchmarks \"based on our experience in accordance with the literature\"."},
+    {"claimId": "C11", "rating": "minor", "note": "696 p3 says swelling \"should be controlled especially in the early functional phase. The swelling should not be more than +1%\". 'Especially' is narrowed to 'for' the early phase, which errs on the cautious side."},
+    {"claimId": "C12", "rating": "supported", "note": "696 p3, verbatim."},
+    {"claimId": "C13", "rating": "supported", "note": "696 Table 1 p6 and p8. The p8 text adds that from the start of ball training (RTS phase) there are no football-specific criteria for stress progression."},
+    {"claimId": "C14", "rating": "supported", "note": "395 p5 and p12."},
+    {"claimId": "C15", "rating": "supported", "note": "395 limitation, verbatim."},
+    {"claimId": "C16", "rating": "supported", "note": "564 p5 and p8. Associational design, worded as 'was followed by'."},
+    {"claimId": "C17", "rating": "supported", "note": "564 p8, verbatim."},
+    {"claimId": "C18", "rating": "minor", "note": "282 p10 also lists \"pain-free performance of high-intensity activities\" and \"absence of compensatory movement patterns\". The claim lists only strength and flexibility, so two directly relevant criteria are dropped."},
+    {"claimId": "C19", "rating": "supported", "note": "282 p10, verbatim."}
+  ],
+  "statementIssues": [
+    {"location": "actions[0]", "severity": "critical", "note": "Presents the ACL case series as the evidence for a 'tissue-response-led' option, as opposed to test-battery gating. The source says progression used tissue response \"along with defined stage-specific criteria\". The option also adds an unlabeled clinical gate (\"step up only after the current drill level is tolerated without a symptom or tissue flare\") that no source gives."},
+    {"location": "evidenceTension", "severity": "critical", "note": "The contrast (\"The ACL case series progressed on drill-to-drill tissue response. The ankle algorithm gates each level on predefined scores and tests\") is built on the C3 omission. Both sources combine response monitoring with defined criteria, so the stated difference in emphasis is largely manufactured."},
+    {"location": "actions[1]", "severity": "minor", "note": "Accurately reports the RTS gate. It does not note that the same authors say that once ball training starts there are no football-specific criteria and progression \"remains anecdotal or experience-based\"."},
+    {"location": "bottomLine", "severity": "minor", "note": "The criteria list omits pain-free high-intensity performance and absence of compensatory movement from the hamstring review (C18 context). Both are directly relevant to the decision."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Limited fits a level 4 case series, a single case, a level 5 commentary and indirect monitoring studies. None of these tests criteria at this transition. recommendedDirection is correctly null and the actions are framed as options.",
+  "safetyIssues": [],
+  "criticalFailures": [
+    {"location": "C3 / actions[0] / evidenceTension", "note": "Dropping \"along with defined stage-specific criteria\" recasts a criteria-plus-response protocol as tissue-response-only. That supports a symptom-only progression option and a false tension, and could change how a PT gates the step."}
+  ],
+  "useful": true,
+  "usefulnessScore": 3,
+  "usefulnessNote": "A PT gets an honest Limited brief with concrete candidate criteria (AFS gates, hop-test sequence, ROM symmetry, swelling check, deceleration shortfall) and correct guardrails that keep clearance with clinicians. Its framing of Option A versus Option B is misleading, and injury and sport transfer is weak. The core message, criteria plus tissue response rather than time, still holds.",
+  "suggestedDrafterFixes": [
+    "Before quoting a methods sentence, read it to its end. Never truncate qualifying clauses such as 'along with defined stage-specific criteria' that change what the method was.",
+    "Before building options or evidenceTension on a contrast between sources, check that each source actually lacks the element attributed to the other.",
+    "Label any added gate or threshold in an option (e.g. 'without a symptom or tissue flare') as professional judgment, or remove it at Limited tier.",
+    "When a source lists several criteria, carry the full list into the claim rather than the subset that fits the narrative.",
+    "When a framework's authors state where their criteria stop applying, put that statement next to the gate it qualifies."
+  ]
+}
