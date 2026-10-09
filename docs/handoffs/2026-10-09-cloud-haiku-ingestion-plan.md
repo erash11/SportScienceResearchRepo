@@ -39,3 +39,42 @@ Cloud session (claude.ai/code). This file carries this session's analysis and de
 ## Next
 1. Haiku calibration test (in progress this session). Results go to `docs/haiku-calibration/`.
 2. Depending on the results, scale ingestion with Haiku, or with Sonnet as the drafter.
+
+## Session outcome (closeout, 2026-10-09)
+
+**Done**
+- **Haiku 5.5 calibration passed.** Haiku was run blind on 32 already-decided papers. It caught all 6 source mix-ups and matched study design 22/22. The Opus judge rated 20 of its 22 drafts publishable as written, against 1 of 22 for the published records. Results are in `docs/haiku-calibration/`.
+- **Batches 19-26 are staged in draft PR #9** (branch `batch-19-26-staged`). The batch screened all 96 queue papers: 80 INCLUDE (IDs 744-823), 12 EXCLUDE and 4 DEGRADED. Haiku drafted each record and Opus corrected it against the source text (79 of 96 records were corrected).
+  - The branch also fixes published records 540 and 467.
+  - The shortlist builder and audit now handle the exhausted Athlete Wellbeing title pool. The next queue has 90 candidates.
+  - Every audit, the pilot check and the build pass.
+  - The review list is `docs/pilot-screening/batches-19-26-review.md` on that branch.
+- **Reusable pipeline added:** `scripts/haiku-batch/` (prepare, validate, assemble, plus both instruction sets).
+- **/goal prompt for finishing the project:** `docs/agents/goal-finish-library-and-ask.md`. The 1,274-character short prompt is at the top of the file.
+
+**Decisions**
+- Haiku 5.5 drafts and Opus 5.5 audits every claim. Rationale: the calibration showed fewer critical errors than the existing human-reviewed records.
+- Batch data reaches `master` only through PRs, because `master` deploys the public site. Docs and handoffs are pushed to `master` directly (Eric's choice).
+- At most 12 drafter and 12 verifier subagents run in parallel (Eric approved going above 5).
+
+**Next**
+1. Eric reviews PR #9: 7 scope calls, 4 wrong PDFs, 4 missing DOIs, 41 spot checks. Merging the PR publishes the batch.
+2. Start a fresh session with the /goal prompt. This session has unsubscribed from PR #9 and cancelled its check-in.
+
+**Files created or modified this session** (repo-relative)
+- On `master`:
+  - `docs/STATUS.md`
+  - `docs/handoffs/2026-10-09-cloud-haiku-ingestion-plan.md`
+  - `docs/haiku-calibration/` (README, drafts, judgments, instructions, keys, scores)
+  - `docs/agents/goal-finish-library-and-ask.md`
+  - `scripts/haiku-batch/` (`README.md`, `prepare.py`, `validate.py`, `assemble.py`, `drafting-instructions.md`, `verification-instructions.md`)
+- On `batch-19-26-staged`:
+  - `docs/pilot-screening/batch-19..26-*.json`
+  - `docs/pilot-synthesis/batch-19..26.json`
+  - `docs/pilot-synthesis/batch-03.json` and `batch-10.json` (the corrections)
+  - `papers.json`, `paper-taxonomy.json`, `docs/library-coverage-manifest.json`
+  - `docs/pilot-expansion-shortlist.{json,md}`
+  - `scripts/build-pilot-shortlist.mjs`, `scripts/audit-pilot-shortlist.mjs`
+  - `docs/pilot-screening/batches-19-26-review.md`
+
+**Memory note.** This cloud container has no `~/.claude/global-memory` or Tier A memory. On the next local session, record the decision "Haiku-draft + Opus-audit is the ingestion pipeline" in MEMORY.md.

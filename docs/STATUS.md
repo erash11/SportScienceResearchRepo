@@ -8,6 +8,9 @@ Read this first. Update it before ending every session.
      updated 2026-09-26, including the completed SecondBrain vault push). -->
 
 ## Current state
+- 2026-10-09 (cloud): Batches 19-26 (80 papers, IDs 744-823) are staged in draft PR #9 and waiting on
+  Eric's review. The public site still shows 712 records until the PR is merged. Haiku 5.5 drafting
+  with an Opus claim audit is the ingestion pipeline (`scripts/haiku-batch/`).
 - Baylor Athletics Health & Performance Evidence Library. Shared language lives in
   `CONTEXT.md`; durable trade-offs live in `docs/adr/`.
 - The public Evidence Library has 712 published records: 600 local-source records and
@@ -35,18 +38,29 @@ Read this first. Update it before ending every session.
   2026-10-09.
 
 ## Next
-- 2026-10-09 (cloud): Haiku 5.5 passed calibration (`docs/haiku-calibration/`). Batches 19-26
-  (80 papers, IDs 744-823) are staged in draft PR #9 (branch `batch-19-26-staged`). Review
-  `docs/pilot-screening/batches-19-26-review.md` on that branch, then merge to publish.
-  After merging, the next unused ID is 824 and the next queue has 90 candidates.
-- To finish the project in a fresh session, paste the prompt in
-  `docs/agents/goal-finish-library-and-ask.md`.
-- Run the planned 14-day, three-person/nine-question concierge pilot with a named lead
-  and recorded claim audits. Score Decision Utility and Evidence Integrity against the
-  approved gates before investing in an authenticated self-service workspace.
-- Continue full-text screening from the current 96-candidate queue, then synthesize
-  and publish only audited INCLUDE records. Prioritize the remaining corpus by Baylor
-  decision needs and establish named intake, review, and publishing ownership.
+- **Backlog run in progress (cloud session, 2026-10-09).** Goal and rules: `docs/agents/goal-finish-library-and-ask.md`.
+  Work queue: every unscreened unique PDF in the manifest backlog (1,427 at start), 96 per batch, drafted by Haiku 5.5
+  and claim-audited by Opus 5.5 (`scripts/haiku-batch/`).
+- Open batch PRs (merge in order; each is stacked on the previous one):
+  - #9 Batches 19-26: 80 INCLUDE, IDs 744-823. Review `docs/pilot-screening/batches-19-26-review.md`.
+  - #10 Batches 27-34: 81 INCLUDE, IDs 824-904 (first manifest-backlog batch). Review `docs/pilot-screening/batches-27-34-review.md`.
+  - #11 Batches 35-42: 73 INCLUDE, IDs 905-977. Review `docs/pilot-screening/batches-35-42-review.md`.
+  - After all three merge: 946 records, next unused ID 978, 1,235 backlog PDFs left (of 1,427).
+- **Staged without a PR** (no 4th PR while 3 are unmerged), stacked in order on #11:
+  - `batch-43-49-staged`: 81 INCLUDE, IDs 978-1059 (1017 unused).
+  - `batch-50-56-staged`: 79 INCLUDE, IDs 1060-1138.
+  - `batch-57-64-staged` (Batches 57-63): 85 INCLUDE, IDs 1139-1223.
+  - `batch-64-71-staged` (Batches 64-71): 65 INCLUDE, 25 EXCLUDE, 6 DEGRADED, IDs 1224-1288.
+  - Open a PR for each staged branch as earlier PRs merge, in order.
+- With everything staged: 1,256 records, next unused ID 1289. Backlog left: about 754 of 1,427. Batch G (queue 7) is
+  half drafted; the run paused on the session usage limit and resumes after the reset.
+- `docs/needs-eric.md` (on the batch PR branches): the single list of operator actions: wrong PDFs on disk, DEGRADED
+  records needing a DOI, scope reversals, and published records that share a DOI.
+- **Ask the Library drafter: draft PR #12** (`npm run pilot:draft -- <request.json>`). Evaluated on the 12-question
+  stress-test bank with an independent Opus claim audit (`docs/ask-library-eval/` on that branch). Iteration 3 (v1.2,
+  full-text critic pass): 0 critical integrity failures, 12/12 briefs rated useful, all 12 pass `pilot:brief` and
+  `pilot:audit-source`. Iterations 1 and 2: 3 and 10 critical failures. Known limitation: briefs are long.
+- Still Eric's: name a pilot lead, pick 3 staff across 2+ disciplines, record human claim audits.
 
 ## Open questions
 - Has a real concierge pilot occurred on another machine or outside this checkout?
