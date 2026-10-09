@@ -31,18 +31,19 @@ Read this first. Update it before ending every session.
   elsewhere. The pilot has not been established as completed or successful.
 - GitHub Pages reports the public site built, and the latest deployment workflow
   succeeded. The current branch is clean against `origin/master` after pull.
-- The roadmap and `CLAUDE.md` batch-progress sections still describe the older
-  549-record, 12-batch checkpoint; use the manifest and audits for current counts.
+- Roadmap and `CLAUDE.md` progress sections are current (712 records, Batch 18) as of
+  2026-10-09.
 
 ## Next
+- 2026-10-09 (cloud): Haiku 5.5 calibration test on 24 already-published papers before
+  scaling backlog ingestion. Plan and cost estimates:
+  `docs/handoffs/2026-10-09-cloud-haiku-ingestion-plan.md`.
 - Run the planned 14-day, three-person/nine-question concierge pilot with a named lead
   and recorded claim audits. Score Decision Utility and Evidence Integrity against the
   approved gates before investing in an authenticated self-service workspace.
 - Continue full-text screening from the current 96-candidate queue, then synthesize
   and publish only audited INCLUDE records. Prioritize the remaining corpus by Baylor
   decision needs and establish named intake, review, and publishing ownership.
-- Refresh the roadmap and `CLAUDE.md` progress/count sections from the current
-  manifest so future work does not restart at Batch 13 or reuse ID 576.
 
 ## Open questions
 - Has a real concierge pilot occurred on another machine or outside this checkout?
