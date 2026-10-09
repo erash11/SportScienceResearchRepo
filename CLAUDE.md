@@ -168,7 +168,7 @@ The isolated concierge-pilot interface starts by double-clicking `START-ASK-THE-
 When a pilot request is attached to a Codex task or supplied by exact local path:
 
 1. Validate it with `npm run pilot:request -- <request.json>`.
-2. Draft an On-Demand / Not Expert-Reviewed brief under `pilot-data/ask-library/private/briefs/`.
+2. Draft an On-Demand / Not Expert-Reviewed brief under `pilot-data/ask-library/private/briefs/`. `npm run pilot:draft -- <request.json>` does this automatically (`ask-library/drafter.mjs` + `scripts/ask-library-draft.mjs`): retrieval over published records, a Claude composer and full-text critic pass, then deterministic excerpt verification and confidence gating. Evaluation is in `docs/ask-library-eval/`.
 3. Use only admissible Evidence Library sources, with claim-level excerpts and page locations. Return a Coverage Gap rather than inventing support.
 4. Validate the brief with `npm run pilot:brief -- <brief.json>`.
 5. Check every excerpt against its original source with `npm run pilot:audit-source -- <brief.json>`.

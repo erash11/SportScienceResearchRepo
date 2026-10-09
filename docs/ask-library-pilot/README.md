@@ -90,7 +90,15 @@ As long as the prototype command remains running, select **New question** for th
 
 ### 2. Give the request to Codex and prepare the Decision Brief
 
-Attach the request JSON to a Codex task, drag it into the message, or provide its exact local path. Use the prompt in [`codex-request-handoff.md`](codex-request-handoff.md). The request is not sent automatically when it is downloaded.
+**Automated draft (recommended).** Run the drafter on the validated request:
+
+```powershell
+npm run pilot:draft -- pilot-data/ask-library/private/requests/<request>.json
+```
+
+It ranks published Evidence Library records, reads the original PDF pages, asks Claude (the `claude` CLI, no tools) to compose the brief, runs a second full-text critic pass, then verifies every excerpt against the original page text. Claims that cannot be verified are removed, statements that lose their support are removed, and the confidence gates are re-applied; if nothing survives, the result is a Coverage Gap. The brief is written to `pilot-data/ask-library/private/briefs/ATL-B-<id>.json`, and the command prints the `pilot:brief` and `pilot:audit-source` results. Options: `--model <id>` (default `claude-opus-5-5`, or `ATL_DRAFTER_MODEL`), `--no-critic`, `--pack-only <file>` (writes the prompt and evidence pack for another operator agent) and `--from-draft <file>` (finalizes that agent's JSON output through the same verification). Zotero-backed records are offered only as leads unless `ZOTERO_BRIDGE_COMMAND` is set. The draft still needs the human claim audit in step 3. Evaluation results are in `docs/ask-library-eval/`.
+
+**Manual draft.** Attach the request JSON to a Codex task, drag it into the message, or provide its exact local path. Use the prompt in [`codex-request-handoff.md`](codex-request-handoff.md). The request is not sent automatically when it is downloaded.
 
 Use `examples/brief.example.json` as the structural template.
 

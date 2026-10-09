@@ -76,7 +76,8 @@ function allPages(sourceFile) {
 function compose(prompt, model) {
   const result = spawnSync(
     "claude",
-    ["-p", "--model", model, "--tools", "", "--no-session-persistence", "--output-format", "text"],
+    // On Windows the CLI is a .cmd shim that must run through the shell, so the empty tool list is quoted.
+    ["-p", "--model", model, "--tools", process.platform === "win32" ? '""' : "", "--no-session-persistence", "--output-format", "text"],
     { input: prompt, encoding: "utf8", windowsHide: true, maxBuffer: 64 * 1024 * 1024, timeout: 15 * 60 * 1000, shell: process.platform === "win32" },
   );
   if (result.error) throw new Error(`Composer failed to start: ${result.error.message}`);
