@@ -1,0 +1,49 @@
+{
+  "questionId": "PN01",
+  "tier": "Limited",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "Matches the abstract (p1) verbatim: \"Competition nutrition should maximize glycogen availability by consuming 1-4 g/kg carbohydrate ... 1-4 hr preexercise for 80-120 kg players.\" Correctly framed as a review suggestion in young professional male RL."},
+    {"claimId": "C2", "rating": "supported", "note": "p1 abstract gives 6-8 g/kg/day and opens with \"there may not be enough data to provide RL-specific recommendations\"; p10 states \"Players should target high CHO availability for key training sessions and matches.\""},
+    {"claimId": "C3", "rating": "supported", "note": "p1 introduction sentence, citing refs 4-5; claim correctly marks it as the authors citing earlier work rather than the case report's own result."},
+    {"claimId": "C4", "rating": "supported", "note": "p1 abstract and p2 methods confirm 8 g/kg 24-h loading, a 2 g/kg CHO prematch meal 4 h before, and Player B's 88 g CHO via gels."},
+    {"claimId": "C5", "rating": "supported", "note": "Verbatim from the p1 abstract."},
+    {"claimId": "C6", "rating": "supported", "note": "p5: given the 2.5-10 h half-life, \"consuming caffeine before a morning competition or training session can enhance performance without compromising nighttime sleep.\" This is the review's reasoning, not a tested result, and the claim frames it as a statement by the review."},
+    {"claimId": "C7", "rating": "supported", "note": "p1 abstract states interindividual variation and that \"nutritional practitioners should assess their athletes individually\"."},
+    {"claimId": "C8", "rating": "supported", "note": "p1 introduction, citing ref 28; the claim correctly attributes the finding to an earlier study, not to Ashley's own data."},
+    {"claimId": "C9", "rating": "supported", "note": "p5: low sensitivity and specificity (ROC AUC 0.55 and 0.49, not significant); \"only 11.5% of %BML values greater than 2%\"; the p6 Practical Applications say multiple assessments may reduce misclassification. The authors also add that this \"is not unexpected as our subjects did not experience that level of %BML\", and the claim keeps that caveat."},
+    {"claimId": "C10", "rating": "supported", "note": "p6 discussion text matches. The ANOVA comparison was against the practice 8 to 9 AM interval only, but the claim repeats the authors' own summary."},
+    {"claimId": "C11", "rating": "supported", "note": "p5: post-to-next-pre BM difference not significant, very small effect size, \"athletes were able to adequately rehydrate between practices\"; the authors add that results might differ in less hydrated subjects."},
+    {"claimId": "C12", "rating": "supported", "note": "p6 range confirmed. Methods confirm 30 males, a post-graduate IMG Academy team, age 18 +/- 1, early-morning August practices at 29.3 C and 75% rh, ad libitum drinking."},
+    {"claimId": "C13", "rating": "supported", "note": "p1 editorial text, citing ref 5; the claim correctly frames it as an editorial citing earlier work."},
+    {"claimId": "C14", "rating": "supported", "note": "p3 of the caffeine review gives a trial range of 2.1-6 mg/kg at 5-60 min and the ISSN recommendation of 3-6 mg/kg at <=60 min; RL review p12 gives \"30-60 min prematch\", citing Goldstein et al. 2010 (the ISSN position stand)."},
+    {"claimId": "C15", "rating": "supported", "note": "Table 1 (p3) rows confirmed: 1-4 g/kg 1-4 hr prematch, \"The closer to kick-off, the lower in fiber (i.e., high GI)\"; 20-30 g at 30-60 min prematch, \"Consume light snack/drink after warm-up, if hungry\" (citing Thomas et al. 2016)."},
+    {"claimId": "C16", "rating": "supported", "note": "p3 matches. The gum absorption point cites ref 92."},
+    {"claimId": "C17", "rating": "supported", "note": "p2 matches, citing refs 26-32."},
+    {"claimId": "C18", "rating": "supported", "note": "p3 matches. The review also notes the opposite result in futsal simulated matches, and that the meta-analysis mostly used 3 mg/kg 60 min before; neither omission changes the claim."},
+    {"claimId": "C19", "rating": "supported", "note": "RL review p12 matches verbatim."},
+    {"claimId": "C20", "rating": "supported", "note": "p5: mean %BML 0.74-1.48% per outdoor practice, greatest after <24 h between practices, and equipment \"likely contributed\"."},
+    {"claimId": "C21", "rating": "supported", "note": "p6 \"good sensitivity and specificity for using Ucol to determine USG\". Results report AUC 0.85, sensitivity 82.5% and specificity 67.9%; \"good\" is the authors' word."},
+    {"claimId": "C22", "rating": "supported", "note": "Caffeine review p1, citing earlier work. The claim correctly signals that this is cited, not the review's own analysis."}
+  ],
+  "statementIssues": [
+    {"location": "bottomLine", "severity": "minor", "note": "\"caffeine trials used 3 to 6 mg/kg\" merges two figures. On p3 the trials used 2.1-6 mg/kg, and 3-6 mg/kg is the ISSN recommendation. This does not change a decision because the actions state the figures correctly."},
+    {"location": "actions[0]", "severity": "minor", "note": "\"raised muscle glycogen\" follows the authors' conclusion (\"Prematch CHO loading elevated muscle glycogen concentrations\"). However, the case report took no pre-loading baseline biopsy, so \"elevated\" means relative to typical team-sport values (300-600 mmol/kg dw), not a measured rise. The bridge to prior-day fueling is properly labeled as professional judgment."},
+    {"location": "actions[1]", "severity": "minor", "note": "The 20-30 g carbohydrate amount in the same Table 1 row (30-60 min prematch) is omitted, as is the 5-7 ml/kg fluid row (2-4 h prematch). This is defensible given the guardrail against fixed targets, but it reduces actionability."},
+    {"location": "evidenceTension", "severity": "minor", "note": "The 'tension' sets a cited NCAA prevalence figure against a high school measurement-validity finding. These are not truly conflicting results, but the professional-judgment conclusion is labeled and reasonable."},
+    {"location": "coverageGaps[4]", "severity": "minor", "note": "A scope and referral statement (professional judgment) is placed in coverageGaps rather than in guardrails. The content is appropriate; only its placement is wrong (the drafter moved it because it cited no claim)."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Limited is appropriate. No primary study tests intake within 45 min, low appetite or gut tolerance. The short-window content is review-level and drawn from professional rugby league and mixed-sport caffeine trials. recommendedDirection is null, as the tier requires. One could argue for a Coverage Gap on the core question, but the review-level options are honestly labeled.",
+  "safetyIssues": [],
+  "criticalFailures": [],
+  "useful": true,
+  "usefulnessScore": 4,
+  "usefulnessNote": "The brief is honest about the absence of direct evidence. Its options (prior-day fueling, a small low-fiber snack or drink if tolerated, optional caffeine with morning sleep reassurance, an individual hydration baseline, multi-measure hydration checks) are relevant and correctly caveated, and every bridge is labeled as professional judgment. The main drawbacks are that it is dense for a two-minute read and leaves out the table's concrete 20-30 g and 5-7 ml/kg figures, which a dietitian could use as reference points.",
+  "suggestedDrafterFixes": [
+    "When a bottomLine summarizes doses, keep the trial ranges and the guideline ranges distinct (for example 'trials 2.1-6 mg/kg; ISSN 3-6 mg/kg').",
+    "When citing a guideline table row for timing, carry the row's quantity and any adjacent fluid row as reference values, framed under the existing 'not fixed targets' guardrail.",
+    "Route claimless scope or referral cautions into guardrails labeled as professional judgment, not into coverageGaps.",
+    "Reserve evidenceTension for findings that actually conflict, not for a prevalence statistic set against a measurement-validity result.",
+    "Cap actions at three and shorten each to keep the brief within a two-minute read."
+  ]
+}

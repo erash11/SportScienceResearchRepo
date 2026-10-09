@@ -1,0 +1,50 @@
+{
+  "questionId": "PT01",
+  "tier": "Limited",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "p3 verbatim: progression requires 'passing three assessments' and 'The athlete remains at a rehabilitation level until each assessment ... is passed.'"},
+    {"claimId": "C2", "rating": "supported", "note": "p3 gives the <10 degree dorsiflexion rule for Levels 1-2, equal ROM for later levels, and swelling not more than +1% of the previous measurement. The source adds that swelling 'should be controlled especially in the early functional phase'."},
+    {"claimId": "C3", "rating": "supported", "note": "Table 1 (p6), Level 4 'athletic skills' entry: AFS>85/100, pass the clinical examination, pass Square Hop, Crossover Hop and modified 6 m timed Crossover Hop."},
+    {"claimId": "C4", "rating": "supported", "note": "p2 Methods match. The stage-specific criteria come from Buckthorpe et al (ref 10), and the brief says they come from a published program."},
+    {"claimId": "C5", "rating": "supported", "note": "Abstract (p1): case series, level 4, 97/100 followed up, 84% RTC (100% professional, 80% amateur), 10% ACL reinjury."},
+    {"claimId": "C6", "rating": "supported", "note": "Abstract figures (106/104/88/110/48%) are against team training demands. p8 confirms the comparison was with literature values because pre-injury GPS data were missing."},
+    {"claimId": "C7", "rating": "supported", "note": "p2 introduction, verbatim."},
+    {"claimId": "C8", "rating": "minor", "note": "p1 says there is 'increasing information on the progression criteria and methods to rehabilitate the neuromuscular system ... and restore ... functional capacities'. That is criteria and methods together, and it is background rather than this case's own finding. The claim attributes it to cited earlier work, so it is acceptable."},
+    {"claimId": "C9", "rating": "supported", "note": "p8 key points, verbatim. This is the authors' opinion from a single case, and the brief frames it that way."},
+    {"claimId": "C10", "rating": "supported", "note": "p8 key point, verbatim. It comes from the peak-intensity (mechanical work/min) comparison in Figure 5."},
+    {"claimId": "C12", "rating": "supported", "note": "p10 of the narrative review gives these as return-to-play criteria in the final rehabilitation stage. The brief correctly says they are return-to-play criteria, not progression criteria."},
+    {"claimId": "C13", "rating": "minor", "note": "The abstract (p1) says the approach 'might reduce' recurrence and 'Practical experiences ... demonstrate the feasibility'. 'Supported by their practical experience of feasibility' can read as if that experience supports reduced recurrence, when it supports feasibility only. The source is Level of Evidence 5."},
+    {"claimId": "C20", "rating": "supported", "note": "p5, verbatim: benchmarks set 'based on our experience in accordance with the literature'."},
+    {"claimId": "C21", "rating": "supported", "note": "p5 defines passing as LSI >90%. p7: 'the use of LSI remains debatable'."},
+    {"claimId": "C22", "rating": "supported", "note": "p5: high-dynamic jump tests in Levels 3 and 4 are first done qualitatively, so movement quality and pain response are assessed before quantitative testing."},
+    {"claimId": "C23", "rating": "supported", "note": "p2: there is 'a lack of a CPG or recommended assessments within the ongoing RTS phases until RTC'. p8: 'no football-specific (kicking) tests, nor criteria for football-specific stress progression'. The p8 context is the start of ball training."},
+    {"claimId": "C24", "rating": "supported", "note": "p7, verbatim. The context is ball and kicking work, where the authors say the clinical examination becomes 'all the more important'."},
+    {"claimId": "C25", "rating": "minor", "note": "p5: TD 'significantly increased from stage 1 to stage 2 ... but then plateaued toward stage 5'. 'Plateaued across stages' leaves out the early rise. The p6 interpretation is quoted accurately."},
+    {"claimId": "C26", "rating": "supported", "note": "Both p8 excerpts are verbatim and are the study's own conclusions."},
+    {"claimId": "C27", "rating": "supported", "note": "p4 gives 90% vs 71%, P = .016, and p6 gives the authors' uncertainty about the cause. The source is internally inconsistent: the p6 discussion says 86%, and Table 3 shows 30/34 for return at the same or higher level. The brief quotes the primary result correctly."},
+    {"claimId": "C28", "rating": "minor", "note": "p3: the benchmarks guided 'the run-based metabolic conditioning programming' (HIIT types and work:rest ratios), not running in general. 'Important (but not unique)' is a belief the authors cite from ref 14. The thresholds, the hamstring-graft context and the missing reference value are reported accurately."},
+    {"claimId": "C29", "rating": "supported", "note": "p6, verbatim. The source adds that the pain and asymmetry disappeared when the player ran on a softer pitch, which the brief leaves out without consequence."},
+    {"claimId": "C30", "rating": "supported", "note": "p8, verbatim."}
+  ],
+  "statementIssues": [
+    {"location": "bottomLine / limitations[2]", "severity": "minor", "note": "It says the ankle algorithm's criteria 'stop short of' the stage most like a higher-intensity field session. Table 1 does define entry criteria for Level 4, which includes sprinting and multidirectional work, and for RTS football-specific work (AFS>95, pass test battery). What the authors say is missing is criteria for progressing within football-specific stress and kicking. Option A presents the Level 4 criteria, so the overall picture is not distorted."},
+    {"location": "monitoring[0]", "severity": "minor", "note": "It places the +1% swelling check next to 'return to ball work'. The source sets that threshold within the clinical examination, with emphasis on the early functional phase, and links the examination to ball work only in general terms. The brief does flag the threshold as ankle-specific."},
+    {"location": "actions[3]", "severity": "minor", "note": "It describes the benchmarks as guiding 'running speed'. In the source they gate run-based HIIT types (for example, >70% isometric strength for Type 1 and 3 HIIT above 15 km/h). The single-case and graft-specific caveats are stated."},
+    {"location": "monitoring[1]", "severity": "minor", "note": "'Watch deceleration and change-of-direction exposure in particular' is a directive at Limited tier. It follows reasonably from C6, C26 and C10, but it is not labeled as professional judgment."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Limited fits: one level 4 case series, one single case, one level 5 expert algorithm and one low-quality narrative review, all in soccer and each injury-specific, with no source testing progression criteria. recommendedDirection is null. Actions are presented as descriptive options with caveats rather than a recommendation, and the professional-judgment items are labeled.",
+  "safetyIssues": [],
+  "criticalFailures": [],
+  "useful": true,
+  "usefulnessScore": 4,
+  "usefulnessNote": "A PT gets concrete, source-traceable criteria sets: a multi-domain pass or fail gate with numbers, response-driven staging, field asymmetry data and strength-linked speed gates. It also gets clear warnings about transferability, provenance and the deceleration shortfall. The brief is somewhat long for a two-minute read, and none of the evidence is from collegiate or court-sport athletes, which the brief states openly.",
+  "suggestedDrafterFixes": [
+    "When quoting an author's statement that criteria are missing for a phase, also state which adjacent levels the same source does define criteria for, so the gap is not overstated.",
+    "Keep the exact purpose of a numeric threshold, such as gating a HIIT type versus general running speed, when moving it from claim to action text.",
+    "When paraphrasing a trend (plateau, increase), include any earlier phase that behaved differently.",
+    "Keep feasibility evidence and effectiveness claims in separate clauses so 'supported by experience' cannot be read as supporting effectiveness.",
+    "Label monitoring directives that go beyond the cited findings as professional judgment, as is already done for actions and guardrails.",
+    "Do not attach a measurement threshold to a phase or context the source did not assign it to."
+  ]
+}
