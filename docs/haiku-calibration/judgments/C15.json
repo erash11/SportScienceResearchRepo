@@ -1,0 +1,43 @@
+{
+ "id": "C15",
+ "A": {
+  "critical": [],
+  "minor": [
+   {
+    "field": "abstract",
+    "issue": "Calls 154/1407 'players'. They are player-season entries (1561 entries over 7 seasons), although the source also uses 'players'."
+   },
+   {
+    "field": "limitations",
+    "issue": "'Injury data ... may lack mechanism and grade' is not a limitation the authors state."
+   }
+  ],
+  "verdict": "publishable",
+  "usefulness": 4
+ },
+ "B": {
+  "critical": [],
+  "minor": [
+   {
+    "field": "limitations",
+    "issue": "Adds fit and compliance as uncontrolled factors. The authors do not raise these."
+   },
+   {
+    "field": "athleteDev",
+    "issue": "Advice to integrate the brace in practice so stance and footwork adapt is extrapolated; the study excluded practice settings."
+   },
+   {
+    "field": "rtp",
+    "issue": "Suggests a brace as a post-injury risk-management component, which the study did not examine."
+   },
+   {
+    "field": "findings",
+    "issue": "Omits the 2015 season differences favouring non-bracers (overall and pass-block)."
+   }
+  ],
+  "verdict": "minor_edits",
+  "usefulness": 3
+ },
+ "better": "A",
+ "note": "Both are faithful and appropriately non-causal. A gives exact counts, rates, grades and the 2015 exception, while B is vaguer and adds extrapolated practice and RTS advice."
+}

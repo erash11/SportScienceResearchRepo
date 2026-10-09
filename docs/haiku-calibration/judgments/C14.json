@@ -1,0 +1,43 @@
+{
+ "id": "C14",
+ "A": {
+  "critical": [],
+  "minor": [
+   {
+    "field": "limitations",
+    "issue": "Mixes a reviewer note (the abstract vs results discrepancy) into the authors' limitations. Useful, but it should be labelled as a reviewer note."
+   },
+   {
+    "field": "findings",
+    "issue": "Cites SLHD as 48% from Table 3, but the results text says 58% (56/97 knee articles). A notes the Table 3 source but not this second inconsistency."
+   }
+  ],
+  "verdict": "publishable",
+  "usefulness": 4
+ },
+ "B": {
+  "critical": [],
+  "minor": [
+   {
+    "field": "findings",
+    "issue": "Reports isokinetic dynamometry in 73% of studies and the tldr calls it the most common test. Both come from the abstract, but the results say 44/114 (39%) and Table 3 ranks SLHD (48%) above iso-K (38%). The inconsistency is not flagged."
+   },
+   {
+    "field": "findings",
+    "issue": "'Two studies addressed ankle injury' follows the abstract, but the results section says 3 studies."
+   },
+   {
+    "field": "practicalImplications",
+    "issue": "Gives no benchmark values (85%/90% LSI, H:Q >70%) and does not say the suggested batteries are unvalidated."
+   },
+   {
+    "field": "athleteDev",
+    "issue": "Content is not derived from the review."
+   }
+  ],
+  "verdict": "minor_edits",
+  "usefulness": 3
+ },
+ "better": "A",
+ "note": "A catches the source's internal abstract/results discrepancies and gives benchmarks and caveats. B repeats the abstract's 73% isokinetic and 2-ankle-study figures, which conflict with the results section."
+}

@@ -1,0 +1,45 @@
+{
+ "id": "C12",
+ "A": {
+  "critical": [],
+  "minor": [
+   {
+    "field": "methods",
+    "issue": "Does not say the control group did volume- and intensity-matched circuit training, so the comparator is unclear."
+   },
+   {
+    "field": "findings",
+    "issue": "No effect sizes or pre/post values. It also omits that only 5 m, agility, deficit, AH and AG differed between groups after training (30 m and AQ did not)."
+   },
+   {
+    "field": "rtp",
+    "issue": "Suggests using the circuit in late reconditioning, which the study did not test."
+   }
+  ],
+  "verdict": "minor_edits",
+  "usefulness": 3
+ },
+ "B": {
+  "critical": [
+   {
+    "field": "athleteDev",
+    "claim": "\"although this was a single-group, single-team study\"",
+    "source_says": "\"They were randomly divided into two 16-person control and experimental groups.\""
+   }
+  ],
+  "minor": [
+   {
+    "field": "methods",
+    "issue": "Assigns the speed (2x/wk) and agility (3x/wk) sessions to the experimental group only. The source says only the targeted strength training was experimental-only, so whether controls also did speed/agility is ambiguous."
+   },
+   {
+    "field": "findings",
+    "issue": "Does not note that AQ did not differ between groups after training."
+   }
+  ],
+  "verdict": "minor_edits",
+  "usefulness": 4
+ },
+ "better": "B",
+ "note": "B is more precise and quantitatively correct (pre/post values, matched-circuit control, the no-injury caveat), but its athleteDev wrongly calls the randomised two-group trial a single-group study and needs a one-phrase fix. A is accurate but thinner."
+}

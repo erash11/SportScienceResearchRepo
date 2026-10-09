@@ -1,0 +1,43 @@
+{
+ "id": "C11",
+ "A": {
+  "critical": [],
+  "minor": [
+   {
+    "field": "tldr",
+    "issue": "Says MD-3/MD-4 came closest to match peaks but omits that MD+1 was also among the highest training-day WCS, as the source reports."
+   },
+   {
+    "field": "findings",
+    "issue": "Does not mention that the overall microcycle-length effect was small (omega_p^2 0.02-0.05), which the source gives alongside the larger effects on individual days."
+   }
+  ],
+  "verdict": "publishable",
+  "usefulness": 4
+ },
+ "B": {
+  "critical": [],
+  "minor": [
+   {
+    "field": "practicalImplications",
+    "issue": "Says to adjust targets by position, recent match minutes and day purpose. The study did not analyse position (listed as a limitation) or match minutes, and the authors' own recommendation (1-10 min WCS drills on MD-4/MD-3) is missing."
+   },
+   {
+    "field": "rtp",
+    "issue": "Gives return-to-play reconditioning guidance that the source does not study or support."
+   },
+   {
+    "field": "tldr",
+    "issue": "'Locally calibrated ... rather than fixed generic drill targets' is the reviewer's own interpretation, not an author conclusion."
+   },
+   {
+    "field": "abstract",
+    "issue": "Abstract gives no sample size or key result (these appear only in the tldr)."
+   }
+  ],
+  "verdict": "minor_edits",
+  "usefulness": 3
+ },
+ "better": "A",
+ "note": "Both records are accurate. A is more specific (thresholds, statistics, the authors' MD-4/MD-3 drill advice and the overtraining caveat), while B's practical fields are generic and partly extrapolated."
+}
