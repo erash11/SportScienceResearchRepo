@@ -2,16 +2,16 @@
   "schemaVersion": 2,
   "taxonomyVersion": "1.0.0",
   "selectionStrategy": {
-    "targetPapers": 89,
+    "targetPapers": 88,
     "allocation": "12 candidates per controlled pilot domain; strongest-domain matches are used before documented secondary-title matches. A domain whose title-matched pool is exhausted keeps every remaining candidate and is listed in domainShortfalls.",
     "domainShortfalls": {
-      "Athlete Wellbeing": 5
+      "Athlete Wellbeing": 4
     },
     "poolSignalAvailability": {
       "femaleAthlete": 0,
       "youthAdolescent": 0,
-      "namedSport": 172,
-      "underrepresentedPopulation": 47
+      "namedSport": 165,
+      "underrepresentedPopulation": 45
     },
     "evidencePriority": "Reviews, consensus statements, trials, longitudinal designs, and measurement studies rank ahead of lower-signal title matches.",
     "diversityPriority": "Each domain attempts to reserve places for named-sport evidence, underrepresented population signals, and identifiable primary studies.",
@@ -20,7 +20,7 @@
   },
   "screeningCounts": {
     "fullTextEligible": 0,
-    "titleScreened": 89
+    "titleScreened": 88
   },
   "domainCounts": {
     "Training & Performance": 12,
@@ -29,7 +29,7 @@
     "Recovery & Readiness": 12,
     "Nutrition & Hydration": 12,
     "Brain Health & Psychology": 12,
-    "Athlete Wellbeing": 5,
+    "Athlete Wellbeing": 4,
     "Monitoring & Technology": 12
   },
   "candidates": [
@@ -379,6 +379,32 @@
       "primaryDomain": "Sports Medicine & Injury",
       "allocationBasis": "primary-title-match",
       "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Collegiate"
+      ],
+      "studyDesign": "Other",
+      "priorityScore": 5,
+      "title": "Medical disqualification following concussion in collegiate student-athletes - Findings from the CARE Consortium",
+      "sourceFile": "Medical disqualification following concussion in collegiate student-athletes - Findings from the CARE Consortium.pdf",
+      "screeningStatus": "title-screened",
+      "metadataSource": "title-inference"
+    },
+    {
+      "queueOrder": 15,
+      "pilotDomain": "Sports Medicine & Injury",
+      "primaryDomain": "Sports Medicine & Injury",
+      "allocationBasis": "primary-title-match",
+      "domains": [
         "Sports Medicine & Injury"
       ],
       "audiences": [
@@ -389,40 +415,13 @@
         "Mixed / General Sport"
       ],
       "populations": [
-        "Collegiate"
+        "Collegiate",
+        "Injured Athletes"
       ],
       "studyDesign": "Other",
       "priorityScore": 5,
-      "title": "Epidemiology of shoulder instability injuries in collision collegiate sports from 2009 to 2014",
-      "sourceFile": "Epidemiology of shoulder instability injuries in collision collegiate sports from 2009 to 2014.pdf",
-      "screeningStatus": "title-screened",
-      "metadataSource": "title-inference"
-    },
-    {
-      "queueOrder": 15,
-      "pilotDomain": "Sports Medicine & Injury",
-      "primaryDomain": "Sports Medicine & Injury",
-      "allocationBasis": "primary-title-match",
-      "domains": [
-        "Sports Medicine & Injury",
-        "Recovery & Readiness",
-        "Brain Health & Psychology"
-      ],
-      "audiences": [
-        "Performance",
-        "Athletic Training",
-        "Sports Medicine"
-      ],
-      "sports": [
-        "Mixed / General Sport"
-      ],
-      "populations": [
-        "Collegiate"
-      ],
-      "studyDesign": "Other",
-      "priorityScore": 5,
-      "title": "Immediate Removal From Activity After Sport-Related Concussion Is Associated With Shorter Clinical Recovery and Less Severe Symptoms in Collegiate Student-Athletes",
-      "sourceFile": "Immediate Removal From Activity After Sport-Related Concussion Is Associated With Shorter Clinical Recovery and Less Severe Symptoms in Collegiate Student-Athletes.pdf",
+      "title": "No Clinical Predictors of Postconcussion Musculoskeletal Injury in College Athletes",
+      "sourceFile": "No Clinical Predictors of Postconcussion Musculoskeletal Injury in College Athletes.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -520,31 +519,6 @@
         "Mixed / General Sport"
       ],
       "populations": [
-        "Injured Athletes"
-      ],
-      "studyDesign": "Cohort Study",
-      "priorityScore": 9,
-      "title": "Early tendon morphology as a biomarker of long-term patient outcomes after surgical repair of Achilles tendon rupture - A prospective cohort study",
-      "sourceFile": "Early tendon morphology as a biomarker of long-term patient outcomes after surgical repair of Achilles tendon rupture - A prospective cohort study.pdf",
-      "screeningStatus": "title-screened",
-      "metadataSource": "title-inference"
-    },
-    {
-      "queueOrder": 20,
-      "pilotDomain": "Sports Medicine & Injury",
-      "primaryDomain": "Sports Medicine & Injury",
-      "allocationBasis": "primary-title-match",
-      "domains": [
-        "Sports Medicine & Injury"
-      ],
-      "audiences": [
-        "Athletic Training",
-        "Sports Medicine"
-      ],
-      "sports": [
-        "Mixed / General Sport"
-      ],
-      "populations": [
         "Mixed / Unspecified"
       ],
       "studyDesign": "Randomized Controlled Trial",
@@ -555,7 +529,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 21,
+      "queueOrder": 20,
       "pilotDomain": "Sports Medicine & Injury",
       "primaryDomain": "Sports Medicine & Injury",
       "allocationBasis": "primary-title-match",
@@ -576,6 +550,32 @@
       "priorityScore": 8,
       "title": "Recurrent Anterior Cruciate Ligament Tears in the National Football League A Case-Control Study",
       "sourceFile": "Recurrent Anterior Cruciate Ligament Tears in the National Football League A Case-Control Study.pdf",
+      "screeningStatus": "title-screened",
+      "metadataSource": "title-inference"
+    },
+    {
+      "queueOrder": 21,
+      "pilotDomain": "Sports Medicine & Injury",
+      "primaryDomain": "Sports Medicine & Injury",
+      "allocationBasis": "primary-title-match",
+      "domains": [
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "studyDesign": "Methodological / Validation Study",
+      "priorityScore": 7,
+      "title": "Limited Agreement on ACL Tear Location Between Arthroscopy and MRI - A Prospective Evaluation",
+      "sourceFile": "Limited Agreement on ACL Tear Location Between Arthroscopy and MRI - A Prospective Evaluation.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1165,33 +1165,6 @@
       "primaryDomain": "Recovery & Readiness",
       "allocationBasis": "primary-title-match",
       "domains": [
-        "Recovery & Readiness",
-        "Nutrition & Hydration"
-      ],
-      "audiences": [
-        "Performance",
-        "Nutrition",
-        "Research & Analytics"
-      ],
-      "sports": [
-        "Mixed / General Sport"
-      ],
-      "populations": [
-        "Mixed / Unspecified"
-      ],
-      "studyDesign": "Systematic Review / Meta-analysis",
-      "priorityScore": 12,
-      "title": "Effects of pre-sleep protein consumption on muscle-related outcomes - A systematic review",
-      "sourceFile": "Effects of pre-sleep protein consumption on muscle-related outcomes - A systematic review.pdf",
-      "screeningStatus": "title-screened",
-      "metadataSource": "title-inference"
-    },
-    {
-      "queueOrder": 45,
-      "pilotDomain": "Recovery & Readiness",
-      "primaryDomain": "Recovery & Readiness",
-      "allocationBasis": "primary-title-match",
-      "domains": [
         "Recovery & Readiness"
       ],
       "audiences": [
@@ -1212,7 +1185,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 46,
+      "queueOrder": 45,
       "pilotDomain": "Recovery & Readiness",
       "primaryDomain": "Recovery & Readiness",
       "allocationBasis": "primary-title-match",
@@ -1237,7 +1210,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 47,
+      "queueOrder": 46,
       "pilotDomain": "Recovery & Readiness",
       "primaryDomain": "Recovery & Readiness",
       "allocationBasis": "primary-title-match",
@@ -1262,7 +1235,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 48,
+      "queueOrder": 47,
       "pilotDomain": "Recovery & Readiness",
       "primaryDomain": "Recovery & Readiness",
       "allocationBasis": "primary-title-match",
@@ -1283,6 +1256,31 @@
       "priorityScore": 12,
       "title": "Overtraining in Resistance Exercise- An Exploratory Systematic Review and Methodological Appraisal of the Literature",
       "sourceFile": "Overtraining in Resistance   Exercise- An Exploratory Systematic Review and Methodological Appraisal of   the Literature.pdf",
+      "screeningStatus": "title-screened",
+      "metadataSource": "title-inference"
+    },
+    {
+      "queueOrder": 48,
+      "pilotDomain": "Recovery & Readiness",
+      "primaryDomain": "Recovery & Readiness",
+      "allocationBasis": "primary-title-match",
+      "domains": [
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "priorityScore": 12,
+      "title": "Salivary biomarkers of tactical athlete readiness - A systematic review",
+      "sourceFile": "Salivary biomarkers of tactical athlete readiness - A systematic review.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1524,8 +1522,8 @@
       ],
       "studyDesign": "Other",
       "priorityScore": 0,
-      "title": "Effects of an individualized vs standardized Vitamin D supplementation on the 24(OH)D level in athletes",
-      "sourceFile": "Effects of an individualized vs standardized Vitamin D supplementation on the 24(OH)D level in athletes.pdf",
+      "title": "Explaining variation in sweat sodium concentration - Effect of individual characteristics and exercise, environmental, and dietary factors",
+      "sourceFile": "Explaining variation in sweat sodium concentration - Effect of individual characteristics and exercise, environmental, and dietary factors.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1548,8 +1546,8 @@
       ],
       "studyDesign": "Other",
       "priorityScore": 0,
-      "title": "Effects of different Vitamin-C enriched collagen derivatives on collagen synthesis",
-      "sourceFile": "Effects of different Vitamin-C   enriched collagen derivatives on collagen synthesis.pdf",
+      "title": "Food first but not always food only - Recommendations for using dietary supplements in sport",
+      "sourceFile": "Food first but not always food only - Recommendations for using dietary supplements in sport.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1572,8 +1570,8 @@
       ],
       "studyDesign": "Other",
       "priorityScore": 0,
-      "title": "Ergogenic and Physiological Effects of Sports Supplements - Implications for Advertising and Consumer Information",
-      "sourceFile": "Ergogenic and Physiological Effects of Sports Supplements - Implications for Advertising and Consumer Information.pdf",
+      "title": "Food for thought - Physiological considerations for nutritional ergogenic",
+      "sourceFile": "Food for thought - Physiological considerations for nutritional ergogenic.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1610,34 +1608,6 @@
       "allocationBasis": "secondary-title-match",
       "domains": [
         "Sports Medicine & Injury",
-        "Brain Health & Psychology",
-        "Recovery & Readiness"
-      ],
-      "audiences": [
-        "Performance",
-        "Athletic Training",
-        "Sports Medicine"
-      ],
-      "sports": [
-        "Mixed / General Sport"
-      ],
-      "populations": [
-        "Collegiate"
-      ],
-      "studyDesign": "Other",
-      "priorityScore": 5,
-      "title": "Effect of diagnosed sleep disorders on baseline concussion symptom cognitive and baseline assessments in collegiate athletes",
-      "sourceFile": "Effect of diagnosed sleep disorders on baseline concussion symptom cognitive and baseline assessments in collegiate athletes.pdf",
-      "screeningStatus": "title-screened",
-      "metadataSource": "title-inference"
-    },
-    {
-      "queueOrder": 63,
-      "pilotDomain": "Brain Health & Psychology",
-      "primaryDomain": "Sports Medicine & Injury",
-      "allocationBasis": "secondary-title-match",
-      "domains": [
-        "Sports Medicine & Injury",
         "Brain Health & Psychology"
       ],
       "audiences": [
@@ -1654,6 +1624,34 @@
       "priorityScore": 5,
       "title": "Factors Associated with Persisting Post-Concussion Symptoms Among Collegiate Athletes and Military Cadets - Findings from the NCAA-DoD CARE Consortium",
       "sourceFile": "Factors Associated with Persisting Post-Concussion Symptoms Among Collegiate Athletes and Military Cadets - Findings from the NCAA-DoD CARE Consortium.pdf",
+      "screeningStatus": "title-screened",
+      "metadataSource": "title-inference"
+    },
+    {
+      "queueOrder": 63,
+      "pilotDomain": "Brain Health & Psychology",
+      "primaryDomain": "Sports Medicine & Injury",
+      "allocationBasis": "secondary-title-match",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Recovery & Readiness",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Collegiate"
+      ],
+      "studyDesign": "Other",
+      "priorityScore": 5,
+      "title": "Immediate Removal From Activity After Sport-Related Concussion Is Associated With Shorter Clinical Recovery and Less Severe Symptoms in Collegiate Student-Athletes",
+      "sourceFile": "Immediate Removal From Activity After Sport-Related Concussion Is Associated With Shorter Clinical Recovery and Less Severe Symptoms in Collegiate Student-Athletes.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1817,11 +1815,9 @@
       "primaryDomain": "Brain Health & Psychology",
       "allocationBasis": "primary-title-match",
       "domains": [
-        "Brain Health & Psychology",
-        "Sports Medicine & Injury"
+        "Brain Health & Psychology"
       ],
       "audiences": [
-        "Athletic Training",
         "Sports Medicine"
       ],
       "sports": [
@@ -1832,8 +1828,8 @@
       ],
       "studyDesign": "Other",
       "priorityScore": 0,
-      "title": "Effects of Repetitive Head Impacts on a Concussion Assessment Battery",
-      "sourceFile": "Effects of Repetitive Head Impacts on a Concussion Assessment Battery.pdf",
+      "title": "How Humans Run Faster - The Neuromechanical Contributions of Functional Muscle Groups to Running at Different Speeds",
+      "sourceFile": "How Humans Run Faster - The Neuromechanical Contributions of Functional Muscle Groups to Running at Different Speeds.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1856,8 +1852,8 @@
       ],
       "studyDesign": "Other",
       "priorityScore": 0,
-      "title": "Elevated brain temperature under severe heat exposure impairs cortical motor activity and executive function",
-      "sourceFile": "Elevated brain temperature under severe heat exposure impairs cortical motor activity and executive function.pdf",
+      "title": "Neuromechanics of the rate of force development",
+      "sourceFile": "Neuromechanics of the rate of force development.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1867,9 +1863,11 @@
       "primaryDomain": "Brain Health & Psychology",
       "allocationBasis": "primary-title-match",
       "domains": [
-        "Brain Health & Psychology"
+        "Brain Health & Psychology",
+        "Training & Performance"
       ],
       "audiences": [
+        "Performance",
         "Sports Medicine"
       ],
       "sports": [
@@ -1880,8 +1878,8 @@
       ],
       "studyDesign": "Other",
       "priorityScore": 0,
-      "title": "Epidemiological Principles in Claims of Causality - An Enquiry into Repetitive Head Impacts (RHI) and Chronic Traumatic Encephalopathy (CTE)",
-      "sourceFile": "Epidemiological Principles in Claims of Causality - An Enquiry into Repetitive Head Impacts (RHI) and Chronic Traumatic Encephalopathy (CTE).pdf",
+      "title": "Phytochemicals for Improving Aspects of Cognitive Function and Psychological State Potentially Relevant to Sports Performance",
+      "sourceFile": "Phytochemicals for Improving Aspects of Cognitive Function and Psychological State Potentially Relevant to Sports Performance.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1932,38 +1930,13 @@
       ],
       "studyDesign": "Other",
       "priorityScore": 0,
-      "title": "Evaluation of Executive Function and Mental Health in Retired Contact Sport Athletes",
-      "sourceFile": "Evaluation of Executive Function and Mental Health in Retired Contact Sport Athletes.pdf",
-      "screeningStatus": "title-screened",
-      "metadataSource": "title-inference"
-    },
-    {
-      "queueOrder": 75,
-      "pilotDomain": "Athlete Wellbeing",
-      "primaryDomain": "Brain Health & Psychology",
-      "allocationBasis": "secondary-title-match",
-      "domains": [
-        "Brain Health & Psychology",
-        "Athlete Wellbeing"
-      ],
-      "audiences": [
-        "Sports Medicine"
-      ],
-      "sports": [
-        "Mixed / General Sport"
-      ],
-      "populations": [
-        "Mixed / Unspecified"
-      ],
-      "studyDesign": "Other",
-      "priorityScore": 0,
       "title": "Media's effect on athletes' mental health",
       "sourceFile": "Media's effect on athletes' mental health.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 76,
+      "queueOrder": 75,
       "pilotDomain": "Athlete Wellbeing",
       "primaryDomain": "Recovery & Readiness",
       "allocationBasis": "secondary-title-match",
@@ -1990,7 +1963,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 77,
+      "queueOrder": 76,
       "pilotDomain": "Athlete Wellbeing",
       "primaryDomain": "Nutrition & Hydration",
       "allocationBasis": "secondary-title-match",
@@ -2018,7 +1991,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 78,
+      "queueOrder": 77,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2043,7 +2016,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 79,
+      "queueOrder": 78,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2068,7 +2041,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 80,
+      "queueOrder": 79,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2093,7 +2066,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 81,
+      "queueOrder": 80,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2118,7 +2091,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 82,
+      "queueOrder": 81,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2143,7 +2116,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 83,
+      "queueOrder": 82,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2168,7 +2141,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 84,
+      "queueOrder": 83,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2193,7 +2166,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 85,
+      "queueOrder": 84,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Sports Medicine & Injury",
       "allocationBasis": "secondary-title-match",
@@ -2221,7 +2194,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 86,
+      "queueOrder": 85,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2246,7 +2219,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 87,
+      "queueOrder": 86,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2272,7 +2245,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 88,
+      "queueOrder": 87,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2297,7 +2270,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 89,
+      "queueOrder": 88,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
