@@ -38,18 +38,22 @@ Read this first. Update it before ending every session.
   2026-10-09.
 
 ## Next
-- 2026-10-09 (cloud): Haiku 5.5 passed calibration (`docs/haiku-calibration/`). Batches 19-26
-  (80 papers, IDs 744-823) are staged in draft PR #9 (branch `batch-19-26-staged`). Review
-  `docs/pilot-screening/batches-19-26-review.md` on that branch, then merge to publish.
-  After merging, the next unused ID is 824 and the next queue has 90 candidates.
-- To finish the project in a fresh session, paste the prompt in
-  `docs/agents/goal-finish-library-and-ask.md`.
-- Run the planned 14-day, three-person/nine-question concierge pilot with a named lead
-  and recorded claim audits. Score Decision Utility and Evidence Integrity against the
-  approved gates before investing in an authenticated self-service workspace.
-- Continue full-text screening from the current 96-candidate queue, then synthesize
-  and publish only audited INCLUDE records. Prioritize the remaining corpus by Baylor
-  decision needs and establish named intake, review, and publishing ownership.
+- **Backlog run in progress (cloud session, 2026-10-09).** Goal and rules: `docs/agents/goal-finish-library-and-ask.md`.
+  Work queue: every unscreened unique PDF in the manifest backlog (1,427 at start), 96 per batch, drafted by Haiku 5.5
+  and claim-audited by Opus 5.5 (`scripts/haiku-batch/`).
+- Open batch PRs (merge in order; each is stacked on the previous one):
+  - #9 Batches 19-26: 80 INCLUDE, IDs 744-823. Review `docs/pilot-screening/batches-19-26-review.md`.
+  - #10 Batches 27-34: 81 INCLUDE, IDs 824-904 (first manifest-backlog batch). Review `docs/pilot-screening/batches-27-34-review.md`.
+  - After both merge: 873 records, next unused ID 905, about 1,331 backlog PDFs left.
+- Batches 35-42 (next 96 backlog PDFs) are being drafted and audited now. Per the goal rules, batch work pauses
+  when 3 batch PRs are unmerged.
+- `docs/needs-eric.md` (on the batch PR branches): the single list of operator actions: wrong PDFs on disk, DEGRADED
+  records needing a DOI, scope reversals, and published records that share a DOI.
+- **Ask the Library drafter** (`npm run pilot:draft -- <request.json>`) is on branch `ask-library-drafter`. Iteration 1
+  on the 12-question stress-test bank: all 12 briefs passed `pilot:brief` and `pilot:audit-source`, 11/12 rated useful
+  by an independent Opus claim audit, 3 critical integrity failures. Iteration 2 (drafter v1.1) is running.
+  Results go to `docs/ask-library-eval/`.
+- Still Eric's: name a pilot lead, pick 3 staff across 2+ disciplines, record human claim audits.
 
 ## Open questions
 - Has a real concierge pilot occurred on another machine or outside this checkout?
