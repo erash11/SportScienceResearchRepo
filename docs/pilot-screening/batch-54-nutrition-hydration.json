@@ -1,0 +1,633 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-54-nutrition-hydration",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Nutrition & Hydration queue positions 10-96. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 10,
+      "sourceFile": "Effect of Social Media on Diet, Lifestyle, and Performance of Athletes - A Review of Current Evidence.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 50449,
+        "doi": "10.1007/s13668-024-00526-y",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Coaching",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Review of 22 articles (original research, reviews, viewpoints and commentaries) identified by searching PubMed, Embase and Google Scholar, from 121 initial records (102 after removing duplicates). The authors report that social media is an influential source of diet, supplement and lifestyle information for athletes, with credibility concerns, and that evidence on its effects on athlete lifestyle and performance is scarce.",
+      "limitations": "The search covered three databases and English-language journal articles, and no quality appraisal of included studies is described. Many included studies are cross-sectional or qualitative, several sampled non-athletes, and the authors do not quantify effects.",
+      "synthesisCaution": "Staff could over-read the authors' statement that social media has a tremendous effect on athletes, which rests largely on studies of non-athlete populations and on supplement-use surveys rather than measured performance or health outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: 'evidence on social-media-delivered weight loss interventions is modest' misattributed the 'modest' rating -> it belongs to the Maher review of online social network health behavior interventions ('current evidence for such SM health interventions is modest'); Lozano-Chacon reported dietary SM interventions were 'Not all ... effective in promoting actual weight loss'"
+          ],
+          "residualConcerns": "studyDesign kept as Systematic Review / Meta-analysis under the library rule because a three-database search, PRISMA flow and multi-author screening are described, but the review includes viewpoints and commentaries, has no quality appraisal, and reads as a narrative review; a reviewer may prefer Narrative Review.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1113",
+        "synthesisBatch": "pilot-synthesis-batch-54",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 14,
+      "sourceFile": "Effect of personalized sodium replacement on fluid and sodium balance and thermophysiological strain during and after ultraendurance running in the heat.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 44528,
+        "doi": "10.1123/ijspp.2023-0295",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Double-blind randomized crossover trial in 9 ultraendurance runners (7 men, 2 women; age 38 years) who completed two 5-hour treadmill runs at 60% VO2max in 30 C heat, with sodium capsules replacing 100% of individually estimated sweat sodium losses or placebo. Sodium replacement did not change ad libitum water intake, net water balance or heat strain during exercise, but it raised plasma sodium more than placebo and was followed by higher fluid intake, higher urinary sodium and a more positive water balance after exercise.",
+      "limitations": "The sample was small (n = 9) and mixed in sex, the exercise lasted 5 hours at one intensity in a climate chamber, and sweat sodium and water balance were estimated indirectly. The authors' conclusion that sodium replacement had minimal impact on net water balance applies to the exercise period; Table 2 shows significantly better postexercise and total (exercise plus 24 hours) water balance with sodium.",
+      "synthesisCaution": "Staff could read the trial as showing that sodium replacement is unnecessary for hydration, when the 24-hour total water balance in Table 2 favored sodium replacement (P < .01).",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: '+265 vs -812 mL' was attributed to the next 24 hours -> it is the Total column covering exercise plus postexercise (Table 2 'Total ... +265 (645) -812 (622) <.01'); added postexercise balance +1532 vs +774",
+            "findings: added that net water balance during exercise did not differ (Table 2 '-1266 (766) -1586 (900) .10')",
+            "limitations: added replacement range ('117% (49%) (range 78%-231%)')",
+            "screeningLimitations/evidenceSummary: replaced 'source should be checked' with the checked table-versus-conclusion conflict"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1114",
+        "synthesisBatch": "pilot-synthesis-batch-54",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 21,
+      "sourceFile": "Effects of Different Vitamin-C Enriched Collagen Derivatives on Collagen Synthesis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 20,
+        "extractedCharacters": 34667,
+        "doi": "10.1123/ijsnem.2018-0385",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized, double-blind crossover in 10 recreationally active men (age 22.7 [5.2] y) who took placebo, 15 g gelatin, 15 g hydrolyzed collagen, or a gummy containing equal gelatin and collagen, then performed 6 min of jump rope. Serum PINP (a marker mainly of bone collagen synthesis) rose about 20% at 4 h after gelatin and hydrolyzed collagen and fell about 24% after the gummy, but none of the changes was statistically significant; amino acid rises at 1 h (n = 4) were similar across the three products.",
+      "limitations": "Ten men, one exercise bout and one post-exercise time point, with a PINP assay the authors say was affected by vitamin C; the amino acid arm had only four men. The study measured no tendon, ligament or muscle collagen outcome, so it cannot show any tissue-level effect.",
+      "synthesisCaution": "Staff could read the roughly 20% PINP rise as evidence that collagen products boost tendon or bone collagen synthesis, when no change was significant, PINP is an indirect bone marker, and the authors flag assay interference.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes removed ('Ten recreationally active males'; sample not described as athletes in the methods)",
+            "paper.findings: PINP spread labelled SD -> reported as ± values with the methods' 'Data are presented as mean ± standard error of the mean'; added that the amino acid result is from the n = 4 subgroup",
+            "paper.athleteDev: 'shows no performance or tissue-strength benefit' implied these were tested -> states no performance or tissue outcome was measured"
+          ],
+          "residualConcerns": "The Discussion and Conclusion state gelatin and hydrolyzed collagen 'similarly increase PINP' and 'increased PINP levels comparatively', and Figure 2 notes a 'strong trend' for gelatin, while the Results report no significant change; the record follows the Results. Spread statistic is ambiguous (methods say SEM, Figure 3 says SD for amino acids). The Discussion calls participants 'boxers and runners' while the methods say recreationally active males. Two different trial registrations are printed (NCT03357432 and ACTRN12616001092482). Acceptance date printed as February 14, 2018 with a 2018 DOI and 2019 copyright.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1115",
+        "synthesisBatch": "pilot-synthesis-batch-54",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 30,
+      "sourceFile": "Effects of an individualized vs standardized Vitamin D supplementation on the 24(OH)D level in athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 59514,
+        "doi": "10.3390/nu15224747",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Randomized intervention in 90 athletes (mean age 26 years, about 7.4 h training per week, indoor and outdoor sports) during a German winter. The 67 athletes with 25(OH)D below 30 ng/mL were randomized to an individualized loading dose (INDV), a standard 2000 IU daily dose (STAD) or no supplement (CON), and 23 sufficient athletes were monitored. The authors report that INDV had higher 25(OH)D on its calculated target day than STAD at 5 weeks (41.1 vs 32.5 ng/mL), but the two groups had similar means at 10 weeks (37.9 vs 38.1 ng/mL).",
+      "limitations": "A single winter cohort of athletes averaging 7.4 h training per week, with no performance or injury outcomes, and the main comparison was made at different time points (about 41 days for INDV versus 5 weeks for STAD). Blood was measured as capillary volumetric absorptive microsamples (VAMS) corrected to serum values, and the 'final' samples were taken at about 69 to 78 days rather than exactly 10 weeks.",
+      "synthesisCaution": "Staff could read the day-41 gap as proof that individualized dosing works better, when the two groups had similar 25(OH)D levels at 10 weeks and only 30% of the individualized group reached 40 ng/mL by then.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: added INDV decline (-3.2 ng/mL) during maintenance and SUF decline (-8.7 ng/mL); stated INDV second sample at 41 +/- 12 days",
+            "limitations: added group sizes for the 67 randomized athletes (Table 1: INDV 28, STAD 26, CON 13) and that 'final' samples were at 77 +/- 12 and 78 +/- 13 days (Table 2 note); clarified the weight CI includes zero",
+            "screeningLimitations: 'no elite athletes' reworded to the reported training volume (7.4 h/week) since elite status is not stated; added final-sample timing"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1116",
+        "synthesisBatch": "pilot-synthesis-batch-54",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 42,
+      "sourceFile": "Effects of melatonin ingestion on physical performance and biochemical responses following exhaustive running exercise in soccer players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 36768,
+        "doi": "10.5114/biolsport.2022.106385",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Youth / Adolescent",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Randomized, double-blind, placebo-controlled crossover trial in 13 professional soccer players (17.5 +/- 0.8 years), each tested once after 6 mg melatonin and once after placebo, before and after a running test to exhaustion at 100% maximal aerobic speed. Melatonin did not change physical performance (PLA 362.5 +/- 42.1 s; MEL 374.5 +/- 58.0 s; p = 0.19), but after exercise MDA rose only under placebo, and CK and LDH were lower after melatonin, as the authors report.",
+      "limitations": "Thirteen players, one 6 mg afternoon dose, and a single immediate post-exercise sample at 3 minutes. The study measured no delayed recovery or match-performance outcome, so it cannot show benefit for recovery across a congested schedule.",
+      "synthesisCaution": "Staff could read the lower CK, LDH and MDA as proof that melatonin improves performance or recovery, but the authors found no performance effect and measured only acute biomarkers.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: draft said the Abstract overstated GPx and uric acid -> GPx interaction was significant (F = 4.97, p < 0.05); the unsupported part is uric acid and total bilirubin, whose interactions were p > 0.05",
+            "findings: added that CK rose only under placebo, that HR max and RPE did not differ, and that uric acid and bilirubin rose only under placebo"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1117",
+        "synthesisBatch": "pilot-synthesis-batch-54",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 44,
+      "sourceFile": "Effects of pre-sleep protein consumption on muscle-related outcomes - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 22,
+        "extractedCharacters": 34781,
+        "doi": "10.1016/j.jsams.2020.07.016",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "PRISMA-guided systematic review (PubMed, ScienceDirect and Web of Science; searched to June 2020) of nine clinical trials in apparently healthy men: five acute studies of overnight muscle protein synthesis (three young, two older) and four 10 to 12 week training studies. The authors report that about 20 to 40 g of casein before sleep raised overnight protein synthesis in both groups, and that pre-sleep protein improved strength and muscle gains in young men with resistance training but not in older men.",
+      "limitations": "Nine small trials, with total protein intake unmatched between groups in most chronic studies, and the young-men resistance-training conclusion rests on a single trial. The participants were healthy, recreationally active or older men rather than athletes, and the acute outcomes do not establish muscle growth.",
+      "synthesisCaution": "Staff could read pre-sleep casein as a proven way to build muscle, but the chronic evidence is one confounded resistance-training trial plus endurance and older-adult studies, and the protein groups also ate more total protein.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes and Healthy Athletes tagged for non-athlete samples -> Adult / Recreational and Mixed / Unspecified (Table 1: 'Recreationally active volunteers' plus 'healthy elderly men')",
+            "findings: added that fractional synthesis rose in both older-men studies (Groen +55.2%, Kouw +33.3%), and labelled Snijders values as changes per Table 3"
+          ],
+          "residualConcerns": "Samples are recreationally active young men and healthy older men, not athletes; kept INCLUDE as exercise-training muscle evidence. Year 2020 is from the journal pre-proof; no volume or pages printed.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1118",
+        "synthesisBatch": "pilot-synthesis-batch-54",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 67,
+      "sourceFile": "Equivalent Hypertrophy and Strength Gains in A-Hydroxy-A-Methylbutyrate- or Leucine-supplemented Men.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 53106,
+        "doi": "10.1249/MSS.0000000000001752",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "A randomized, double-blind, 12-week trial in recreationally resistance-trained young men (30 recruited, 26 analyzed, 13 per group) on undulating periodized resistance training with an overreaching phase and taper. Both groups took 25 g whey protein plus 1.5 g HMB-calcium or 1.5 g leucine twice daily, and the authors report similar gains in fat- and bone-free mass (2.3 vs 2.6 kg), muscle thickness and cross-sectional area, total 1-RM strength (70 vs 80 kg) and peak power, with no between-group differences in hormones or CK. The one between-group effect was a larger peak-power decline with HMB during overreaching (P = 0.03).",
+      "limitations": "The trial had no non-supplemented or whey-only control group, so it compares HMB with leucine rather than with no supplement. The sample was small and non-athlete, and one author reports dairy-council funding and honoraria, so the findings apply only to similar trained young men.",
+      "synthesisCaution": "Staff could read the null HMB-versus-leucine result as proof that HMB has no value, when the design only shows no added benefit over leucine within a whey-protein regimen.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: tagged Male Athletes and Healthy Athletes -> removed; sample is recreationally trained men, not athletes (\"Participants were 26 recreationally trained (twice per week RT) men\")",
+            "methods/evidenceSummary: n described as 26 randomized -> 30 recruited, 26 analyzed (\"Of the 30 participants recruited, one dropped out ... leaving us with n = 13 per group\")",
+            "findings: implied leucine group lost 18 W of peak power -> HMB fell 39 +/- 74 W versus an 18 +/- 51 W change with leucine; discussion says decrement was 'not observed in the whey+leu group'",
+            "limitations: claimed abstract reports no differences 'at any phase' contradicting interaction -> abstract's no-difference claim covers mass and strength and simply omits the peak-power interaction; HMB regimen described accurately"
+          ],
+          "residualConcerns": "Sign of the leucine peak-power change during overreaching is not printed. Randomization timing relative to dropouts is not stated.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1119",
+        "synthesisBatch": "pilot-synthesis-batch-54",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 68,
+      "sourceFile": "Ergogenic and Physiological Effects of Sports Supplements - Implications for Advertising and Consumer Information.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 21,
+        "extractedCharacters": 66896,
+        "doi": "10.3390/nu17162706",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Coaching",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A narrative review, by the authors' own label, that compiles doses, protocols and reported effects for six Australian Institute of Sport category A supplements (caffeine, creatine, beta-alanine, nitrates, sodium bicarbonate and glycerol) from seven systematic reviews with meta-analyses and five position or consensus statements. The authors report broad agreement on doses and protocols and state that only caffeine and creatine hold EFSA-authorized health claims. Citing earlier label studies, they note that few marketed products comply with claim rules and propose advertising and labeling guidelines.",
+      "limitations": "The authors label the paper a narrative review with practical applications and state it was not a formal systematic review and did not follow PRISMA, so the search is only loosely described. It relies on secondary sources and does not test any protocol directly.",
+      "synthesisCaution": "Staff could read the dose and protocol tables as settled, individual-ready prescriptions, when the authors say effects vary by person, event and climate and that the tables reflect general consensus.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: Systematic Review / Meta-analysis -> Narrative Review (\"This study was a narrative review with practical applications\"; \"it was not a formal systematic review and did not follow PRISMA guidelines\"; search was a keyword PubMed query with prioritization, no systematic screening)",
+            "findings: presented product non-compliance as the authors' own finding -> attributed to cited prior label studies with the printed figures (\"only 2.78% of the evaluated products fully comply\" [4]; \"only 25% of the supplements analyzed on the market partially or fully comply\" [28])",
+            "methods: added search, timeframe and prioritization details from section 2"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1120",
+        "synthesisBatch": "pilot-synthesis-batch-54",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 74,
+      "sourceFile": "Evaluating the effects of increased protein intake on muscle strength, hypertrophy and power adaptations with concurrent training - A narrative review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 21,
+        "extractedCharacters": 106629,
+        "doi": "10.1007/s40279-021-01585-9",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of studies on protein intake during concurrent resistance and aerobic training. Acute studies had 8 to 39 participants, and longer programs of 4 weeks to 6 months had 19 to 63 participants per study, mostly in recreationally trained or sedentary adults.",
+      "limitations": "The review describes no database search or formal study selection, so the evidence base cannot be reproduced. Most included trials are small and short, and many longer trials had no resistance-only comparison group.",
+      "synthesisCaution": "Staff may read the lean mass gains from high protein as protection against strength or power interference, but the review finds no added strength or power benefit, even at twice the recommended intake.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "No volume, issue or pages are printed for this online-first version, so the citation gives Sports Medicine 2021 only. Sample-size ranges in evidenceSummary were checked against the table n values.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1121",
+        "synthesisBatch": "pilot-synthesis-batch-54",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 81,
+      "sourceFile": "Evidence-Based Supplements for the        Enhancement of Athletic Performance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 65223,
+        "doi": "10.1123/ijsnem.2017-0343",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative scholarly review with no sample of its own. It sorts performance supplements into established (caffeine, creatine, nitrate, beta-alanine, sodium bicarbonate), equivocal (sodium citrate, phosphate, carnitine) and developing groups, and describes the event types, proposed mechanisms and common protocols for each. The authors report robust performance benefits for the established group at stated doses and timings, and equivocal or limited evidence for the other two groups.",
+      "limitations": "No search method, selection criteria or appraisal method is described, so the choice of studies cannot be checked. The paper reports no original data, and the evidence tiers are the authors' narrative judgement.",
+      "synthesisCaution": "Staff may treat the 'established' label as a guarantee of benefit for their own athletes, when the review itself describes large individual variation in response and gastrointestinal side effects.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1122",
+        "synthesisBatch": "pilot-synthesis-batch-54",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 82,
+      "sourceFile": "Evidence-based nutritional approaches to enhance exercise adaptations.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 37682,
+        "doi": "10.1097/MCO.0000000000000975",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative opinion review with no sample of its own. It covers protein supplements, creatine monohydrate and caffeine for strength and power, and caffeine, beetroot juice (nitrate), sodium bicarbonate and beta-alanine for endurance and high-intensity performance. The authors report that higher protein intakes, creatine and peri-exercise caffeine enhance resistance training adaptations and strength or power, and that caffeine, nitrate, bicarbonate and beta-alanine favour endurance outcomes in the efforts cited.",
+      "limitations": "No search method or appraisal method is described, so the choice of evidence cannot be checked. The disclosures list paid research, consulting and donations from supplement companies for several authors.",
+      "synthesisCaution": "Staff may read the protocol table as a general prescription for their athletes, when the authors note that most studies used non-competitive athletes and mostly male participants.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1123",
+        "synthesisBatch": "pilot-synthesis-batch-54",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 96,
+      "sourceFile": "Exertional heat stroke - Nutritional considerations.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 85047,
+        "doi": "10.1113/EP090149",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review by five authors on how nutrition may influence exertional heat stroke (EHS) risk and pathophysiology in athletes, military personnel and occupational workers. It covers carbohydrate, hydration, glutamine, bovine colostrum, antioxidants, probiotics and arginine as possible protective strategies, and ergogenic aids and low energy availability as possible harmful factors. The authors note that carbohydrate, glutamine, colostrum, probiotics and arginine have not been directly tested against EHS in humans, and much of the supporting evidence comes from rodent heat stroke models and subclinical exercise-heat studies.",
+      "limitations": "No search method is described, and the review synthesizes mechanistic and subclinical exercise-heat studies, so its conclusions about EHS are indirect. Many protective findings come from rodent models, and the authors note that the protective strategies still need verification in actual EHS patients.",
+      "synthesisCaution": "Staff could read the carbohydrate, glutamine or colostrum findings as proven protection against heat stroke, when the review says EHS outcomes have not been tested directly in humans for these nutrients.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/limitations: 'none of the nutrients discussed has been directly tested' -> limited to carbohydrate, glutamine, colostrum, probiotics and arginine; the antioxidant section does not make that statement",
+            "paper.findings/practicalImplications: omitted carbohydrate counter-risk -> added 'carbohydrate supplementation may elevate EHS risk by increasing central drive'; added over-drinking caution from Table 1",
+            "paper.findings: caffeine phrasing -> 'there is no evidence of caffeine directly contributing to EHS'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1124",
+        "synthesisBatch": "pilot-synthesis-batch-54",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-56-monitoring-technology",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Monitoring & Technology queue positions 70-79. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 70,
+      "sourceFile": "Estimating muscle fiber type composition in elite athletes - A survey on current practices and perceived merit.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 45010,
+        "doi": "10.1123/ijspp.2024-0043",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A cross-sectional online survey of 446 coaches and sport-science or sports-medicine staff working with high-performance athletes (290 individual-sport, 104 team-sport and 52 both), on how they estimate athletes' muscle fiber-type composition (MFTC) and what they use it for. About 40% reported using MFTC for performance decisions, 65% relied mainly on experience, and jump tests were the second most common method (56%).",
+      "limitations": "The respondents are staff, not athletes, and the survey records practice and opinion, so it cannot show how accurate any estimation method is. Of 740 people who started the survey, 446 were analyzed, respondents were recruited through the authors' network by email and social media, were 88.6% male, and may be more academically engaged than typical practitioners.",
+      "synthesisCaution": "Staff could read the high rates of MFTC use as evidence that these estimates work, when the survey measures what experts do and believe, not whether the methods are valid.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Professional / Elite -> Mixed / Unspecified; respondents are staff, and their athletes ranged across world class 38.2%, elite 18.9%, national 25.3%, trained 17.7% (Table 2)",
+            "methods/screeningLimitations: added survey attrition (\"740 participants started the questionnaire with 32 being excluded as being athletes and 262 being excluded as only responding to the first questions\")",
+            "limitations: added generalizability and athlete-level mix"
+          ],
+          "residualConcerns": "Eligibility: a practitioner survey with no athlete data. Kept INCLUDE as original cross-sectional research on athlete performance practice, but a reviewer should confirm staff surveys are in scope.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1135",
+        "synthesisBatch": "pilot-synthesis-batch-56",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 73,
+      "sourceFile": "Evaluating the Threshold Theory -      Can head impact indicators help.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 42289,
+        "doi": "10.1249/MSS.0000000000001089",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate"
+      ],
+      "evidenceSummary": "Analysis of prospectively collected Head Impact Telemetry data from 185 Division I football players over eight seasons, with 283,348 recorded impacts and 24 physician-diagnosed concussions. Linear acceleration thresholds from 50 g to 120 g were tested for sensitivity, specificity and positive and negative predictive value.",
+      "limitations": "Only 24 concussions were diagnosed in one school, so the estimates are imprecise. The study tested HIT System data rather than the alerts of the commercial devices, and it did not test their validity or reliability.",
+      "synthesisCaution": "Staff may read the high specificity as a sign that a head impact indicator can rule concussion in or out, but positive predictive values stayed under 2% at every threshold, so most alerts are false positives.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Concussion diagnostics paper. The specificity range quoted (90.4% to 99.6%) applies to all impacts of 10 g or more; specificity is much lower (38.3% to 97.3%) when only impacts of 40 g or more are analyzed (Table 3). Sex of the sample is not stated, so no sex tag was added.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1136",
+        "synthesisBatch": "pilot-synthesis-batch-56",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 76,
+      "sourceFile": "Evaluation of Minimum Reporting Limits to Determine In-Competition Use of Stimulants.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 29426,
+        "doi": "10.1002/dta.3799",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Controlled administration study in 4 to 6 volunteers per drug, each taking one low, therapeutically relevant dose of amphetamine, methylphenidate or modafinil daily for five days. Urine, serum, dried blood spots and oral fluid were sampled during dosing and for 48 hours afterward, and a single-dose group of two men was followed to 96 hours.",
+      "limitations": "The participants were volunteers, not athletes, and the study covers three stimulants at low doses with small groups. The paper tests detection windows and matrices rather than athlete health or performance, so its relevance to sport is indirect.",
+      "synthesisCaution": "Staff may read a urine positive for a stimulant as proof of in-competition use, but a positive can come from use 48 to 96 hours earlier, even at low doses.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: issue missing -> 17(6):915-922 (download line prints '2025, 6'; footer 'Drug Testing and Analysis, 2025; 17:915-922')",
+            "paper.findings: single-dose results omitted -> added ('Urinary amphetamine concentrations declined below 50 ng/mL at the 72-h collection'; modafinil acid 'still above 50 ng/mL' at 96 h)"
+          ],
+          "residualConcerns": "Relevance judgment: participants were volunteers (aged 22 to 48), not athletes, and the outcome is anti-doping detection rather than athlete health or performance. Kept as INCLUDE because the library has included anti-doping evidence and the paper bears directly on athletes taking prescribed stimulants near competition. Medication topic. A reviewer should confirm anti-doping scope is wanted.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1137",
+        "synthesisBatch": "pilot-synthesis-batch-56",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 79,
+      "sourceFile": "Evidence of ostarine cross-contamination via sweat in 2 athletes sharing the same neoprene hamstring sleeves.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 31468,
+        "doi": "10.1016/j.cca.2024.119688",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Case report of two athletes. Athlete A had two low-level ostarine urine findings and negative hair and fingernail tests. Athlete B, who was abusing ostarine, had ostarine in hair (190 pg/mg) and nail clippings, and both athletes shared neoprene hamstring sleeves. Ostarine was detected at 3 to 142 pg/g across 12 sleeve samples.",
+      "limitations": "This is a single case with no controlled transfer experiment, so sweat transfer from the sleeves is plausible but not shown experimentally. The no-fault outcome is the sport authority's decision, which the authors report and quote but which was not independently tested. The paper concerns anti-doping rules, so its relevance to health or performance is indirect.",
+      "synthesisCaution": "Staff may read one documented case as a general risk from shared sport equipment. The paper describes an unusual case in which the sleeves were shared with a long-term abuser.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations and paper.limitations: 'the paper cites rather than presents' the authority decision -> the paper reports and quotes the USADA resolution ('The athlete did not face a period of ineligibility as no fault nor negligence was retained'), but it was not independently tested",
+            "paper.practicalImplications: framed as a single-case suggestion rather than a general rule"
+          ],
+          "residualConcerns": "Relevance judgment: a single anti-doping case report about drug transfer, not athlete health or performance. Kept as INCLUDE (case reports are eligible and the library has included anti-doping evidence); a reviewer should confirm scope. The authors' laboratory performed the defense testing.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1138",
+        "synthesisBatch": "pilot-synthesis-batch-56",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

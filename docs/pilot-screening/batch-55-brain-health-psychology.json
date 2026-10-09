@@ -1,0 +1,584 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-55-brain-health-psychology",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Brain Health & Psychology queue positions 9-94. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 9,
+      "sourceFile": "Effect of Sleep Duration and Concussion History on Neurocognitive Testing Symptoms for Post-injury States.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 36526,
+        "doi": "10.1097/JSM.0000000000001323",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Retrospective observational analysis of ImPACT and PCSS registry data from urban concussion centers in Colorado and Florida (2009 to 2019). The analytic sample was 5,349 student-athletes aged 12 to 22 at a post-concussion assessment, 2,671 with no prior concussion and 2,678 with one or more. Multivariable linear regression found that fewer hours of sleep were associated with higher total symptom scores in both groups, while individual symptoms were associated with sleep in both directions, and athletes without a prior concussion unexpectedly reported higher symptom scores.",
+      "limitations": "Self-reported sleep from one registry in two states, with a single post-injury assessment per athlete, limits generalizability and any causal reading. The paper does not fully explain why 5,349 of 11,564 registry records were analyzed, and concussion severity could not be adjusted for.",
+      "synthesisCaution": "Staff could read the sleep and symptom links as causal, as guidance on return-to-play timing, or treat the direction of individual symptom findings as settled.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: individual symptom associations reported without direction -> directions per Table 4 added, including positive associations for light sensitivity, numbness and slowed down in the prior-concussion group (Table 4: 'History 0.1504 0.03909 to 0.2616')",
+            "findings/evidenceSummary: added the unadjusted finding that athletes without prior concussion had higher symptom scores (Table 1: 21.5 (21.7) vs 15.1 (19.0), <0.0001)",
+            "limitations: generic note about directional disagreement -> specific Abstract/Results vs Table 4 conflicts (Results: 'symptoms that worsened with longer sleep: headache (b = -0.06533')"
+          ],
+          "residualConcerns": "Sleep was described as the primary dependent variable, so the regression coefficients are tiny and their direction must be read as association only. The abstract and results text are internally inconsistent on symptom directions.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1125",
+        "synthesisBatch": "pilot-synthesis-batch-55",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 12,
+      "sourceFile": "Effect of diagnosed sleep disorders on baseline concussion symptom cognitive and baseline assessments in collegiate athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 41974,
+        "doi": "10.1177/0363546520902701",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Cross-sectional study, analyzed as a matched case-control comparison, of 666 NCAA student-athletes at 30 collegiate sites in the CARE Consortium: 333 with a reported diagnosed sleep disorder and 333 matched controls. The sleep disorder group reported more symptoms on the BSI-18, PCSS and SCAT5 (for example PCSS 8.84 vs 4.04) and made fewer BESS errors (12.93 vs 14.52), but scored slightly lower on the SAC (26.86 vs 27.30); there were no ImPACT group differences.",
+      "limitations": "Sleep disorders were self-reported without type or treatment status, and ImPACT was completed by 148 of 333 sleep-disorder athletes compared with 273 of 333 controls. Effect sizes were small (partial eta-squared 0.008 to 0.065), and the group also differed on learning disability, ADHD and migraine history.",
+      "synthesisCaution": "Staff could read the symptom differences as clinically meaningful for individual athletes or as a reason to set separate baseline norms, when the authors judge the differences small and recommend only that sleep disorder history be considered when interpreting baseline and post-injury results.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Identity: the catalogued filename says 'cognitive and baseline assessments' where the printed title says 'Cognitive, and Balance Assessments'; all other words, topic and population match, so this is treated as a filename typo, but a reviewer should confirm. The night-before sleep comparison prints t572 = 2.10 with P = .087, which do not agree; the record reports the printed P value. Concussion baseline topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1126",
+        "synthesisBatch": "pilot-synthesis-batch-55",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 23,
+      "sourceFile": "Effects of Repetitive Head Impacts on a Concussion Assessment Battery.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 29,
+        "extractedCharacters": 45990,
+        "doi": "10.1249/MSS.0000000000001905",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "American Football",
+        "Soccer"
+      ],
+      "populations": [
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Prospective cohort of 38 NCAA Division I athletes (15 male football, 23 women's soccer) tested pre-season and post-season on six clinical concussion measures, with head impacts recorded across the season by helmet sensors (football) or headband sensors (soccer). Of 30 regression analyses, only three were significant: more impacts above 98 g was associated with worse Visual Memory and Tandem Gait in women's soccer and worse King-Devick time in football (R2 0.64 to 0.76). The authors conclude that repetitive head impacts did not produce clinically meaningful change across the battery.",
+      "limitations": "Small cohort with no non-contact control group, two different accelerometer systems that cannot be compared on magnitude, and no correction for 30 regression analyses. The significant associations are exploratory and cannot establish a causal or clinically meaningful effect of impacts.",
+      "synthesisCaution": "Staff could read the three significant associations as evidence of subtle visual or vestibular impairment from head impacts, when they are uncorrected for multiple testing and the authors' overall conclusion is no clinically meaningful change.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added that the >98 g predictor behind all three significant models had very low counts (Table 1: 'Number of Impacts > 98g 0.2±0.4' WSOC, '1.1±1.0' FB); removed the less informative 'single high-impact threshold' clause"
+          ],
+          "residualConcerns": "Concussion-related paper. Record otherwise matches the text; DOI 10.1249/MSS.0000000000001905 is the header DOI of this publish-ahead-of-print manuscript (2019).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1127",
+        "synthesisBatch": "pilot-synthesis-batch-55",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 32,
+      "sourceFile": "Effects of contact-collision sport history on gait in early to mid-adulthood.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 49478,
+        "doi": "10.1016/j.jshs.2022.12.004",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Rugby",
+        "American Football",
+        "Ice Hockey",
+        "Combat Sports",
+        "Soccer",
+        "Other Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Cross-sectional study of 113 adults (mean age 34.9 years, 53% female) in four groups of 27 to 29: non-athletes who were not active, active non-contact athletes, active former high-risk contact-sport athletes, and active former rugby players with prolonged repetitive head impact exposure. Using inertial sensors during single-task and dual-task walking, the authors report no significant group differences in any adjusted gait outcome, and career duration did not significantly predict gait in the contact-sport groups.",
+      "limitations": "The groups were small (27 to 29 each), mostly under 50 years old, and their physical activity was self-reported as yes or no, so the null results cannot show absence of effect. Career duration is a crude proxy for head impact exposure, and the study had few older or inactive former players.",
+      "synthesisCaution": "Staff could read the null gait results as proof that past contact-sport participation does not affect movement, when the design was cross-sectional, small and limited to physically active younger adults.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes, Female Athletes and Healthy Athletes removed because the sample mixed former athletes with non-athletes ('former non-contact/collision athletes and non-athletes who are not physically active') -> Adult / Recreational",
+            "limitations: sex imbalance described as the authors report it ('although not statistically significant'); added survivor/respondent bias and abstract over-generalization to neurobehavioral function"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1128",
+        "synthesisBatch": "pilot-synthesis-batch-55",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 52,
+      "sourceFile": "Elevated brain temperature under severe heat exposure impairs cortical motor activity and executive function.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 70643,
+        "doi": "10.1016/j.jshs.2023.09.001",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Crossover laboratory study of 11 healthy young males (21 to 35 years) who completed running or warm-water immersion to a rectal temperature of 39.5 C, a running trial with ice slurry, and a seated control, with MRI before and after each trial. The authors report that brain temperature rose with rectal temperature in exertional trials, that motor cortex activity fell after exertional and passive heating, and that Stroop accuracy fell only after passive heating.",
+      "limitations": "Eleven healthy young men (VO2peak 59 mL/kg/min) who are never described as athletes, in acute single-session laboratory exposures. Relevance to athletes is indirect: the results describe brain and Stroop task responses under exertional and passive heat, not sport performance.",
+      "synthesisCaution": "Staff could read the MRI changes as proof that heat impairs on-field decision-making, but the study measured short-term laboratory brain and task responses in 11 healthy men.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes, Healthy Athletes -> removed; sample never described as athletes ('Eleven healthy males between 21 and 35 years of age were recruited')",
+            "paper.citation: initials Loh KW, Lee JK -> Loh KWZ, Lee JKW (as printed 'Kelvin W.Z. Loh', 'Jason K.W. Lee')",
+            "findings: added that brain temperature stayed below rectal after passive heating and reaction times were faster after exercise trials",
+            "practicalImplications: 'Staff managing athletes' framing -> notes the sample was not athletes; ice-slurry claim tied to reported results",
+            "screeningLimitations: states indirect relevance to athletes"
+          ],
+          "residualConcerns": "Kept INCLUDE as exercise-performance relevant (exertional hyperthermia, sport journal), but participants are healthy non-athlete men; reviewer may judge relevance (c).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1129",
+        "synthesisBatch": "pilot-synthesis-batch-55",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 69,
+      "sourceFile": "Estimated age of first exposure to contact sports is not associated with greater symptoms or worse cognitive functioning in male US service academy athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 38023,
+        "doi": "10.1089/neu.2019.6571",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Ice Hockey",
+        "Soccer",
+        "Rugby",
+        "Combat Sports",
+        "Other Sport"
+      ],
+      "populations": [
+        "Collegiate",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "A cross-sectional analysis of pre-season baseline ImPACT scores from 889 male NCAA athletes at three US service academies, comparing contact sports (n = 591) with non-contact sports (n = 298) and splitting each group by estimated age of first exposure (below or at least 12 years). The group-by-exposure interaction was not significant for any ImPACT composite or for symptom severity (P = 0.090 to 0.955), and learning accommodation history was linked to lower visual motor speed.",
+      "limitations": "Age of first exposure was estimated from self-reported years in the primary sport and assumed continuous participation, and the design is cross-sectional, so it cannot show long-term cognitive effects. ImPACT may not be sensitive enough to detect small differences, and the paper reports no confidence intervals for the interaction terms, so a non-significant result does not rule out a small effect.",
+      "synthesisCaution": "Staff could read the null result as proof that early contact-sport exposure is harmless for later brain health, when the study only tested baseline cognition and symptoms in one cohort of collegiate men.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: N conflict framed only as analysis sample smaller -> noted that stated N = 891 conflicts with subgroup and sport counts summing to 889 (500 + 91 + 194 + 104; 591 contact + 298 non-contact); added ImPACT sensitivity, symptom under-reporting and author funding from ImPACT Applications",
+            "practicalImplications: learning accommodation presented as 'a more relevant factor' -> framed as a small-subgroup association relevant when interpreting baseline scores",
+            "screeningLimitations: added ImPACT sensitivity limit"
+          ],
+          "residualConcerns": "Concussion-adjacent topic; null result from baseline testing only. Two participants in the stated N = 891 are unaccounted for in the subgroup counts.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1130",
+        "synthesisBatch": "pilot-synthesis-batch-55",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 75,
+      "sourceFile": "Evaluation of Executive Function and Mental Health in Retired Contact Sport Athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 33179,
+        "doi": "10.1097/HTR.0000000000000423",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case-control Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football",
+        "Ice Hockey"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Case-control study of 21 retired professional NFL and NHL players (mean age 56) and 21 age-matched noncontact sport controls. Players rated themselves worse on 2 of 9 BRIEF-A executive function domains, but informants and objective executive function tests showed no group differences. Depression scores were within the normal range, but 7 of 21 contact sport players met the anxiety threshold, compared with none of the controls.",
+      "limitations": "The sample is small (21 per group), the volunteers may have joined because of mental health concerns, and no formal assessment of test effort was done. The authors state the sample is small and the results need replication.",
+      "synthesisCaution": "Staff may read the null objective results as proof that professional contact sport does not cause later executive decline. The study is small and underpowered, and the authors say the findings need replication.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: page range omitted -> added E1-E7 (pages printed E1 to E7; no volume or issue printed)",
+            "paper.limitations: claimed no direct measure of concussion exposure and authors' representativeness claim -> replaced with the control-group caveat ('These controls represent a superior aging population'; noncontact athletes 'significantly below the norm' on unusual beliefs)",
+            "paper.practicalImplications: 'clearly higher' -> 'more common' (BAI positive 7/21 vs 0/21, P=.003)"
+          ],
+          "residualConcerns": "Year: only the 2018 copyright line and E-page numbering are printed (online-first form); no volume or issue is printed, so 2018 was kept. Brain health topic linked to CTE debate. Sex of participants is not stated in this report, so no sex tag was added.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1131",
+        "synthesisBatch": "pilot-synthesis-batch-55",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 86,
+      "sourceFile": "Examination of reaction time deficits following concussion - A systematic review and meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 83073,
+        "doi": "10.1007/s40279-020-01281-0",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "American Football",
+        "Soccer"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Collegiate",
+        "Youth / Adolescent",
+        "Adult / Recreational",
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review (PRISMA, PROSPERO CRD42019119323) and random-effects meta-analysis of 60 studies with 9,688 participants and 214 reaction-time effects, most from athletes and mostly male samples. Acute (0 to 3 day) reaction-time deficits were medium-to-large in both between-subject (D+ = -0.73, 95% CI -0.99 to -0.46) and within-subject designs (D+ = -0.75, 95% CI -0.91 to -0.59). Between-subject deficits persisted at 21 to 59 days but were not significant at 80 to 365 days.",
+      "limitations": "Pooled effects were highly heterogeneous (I2 89% for acute effects), and the authors report significant funnel-plot asymmetry, so publication bias cannot be excluded. Only 9 of 29 author groups supplied the missing statistics, and the intermediate-term and long-term estimates rest on few effects.",
+      "synthesisCaution": "Staff may treat the 3-week deficit as a clinical recovery timeline, when the authors state that the clinical meaning of reaction-time deficits beyond typical recovery is unknown.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: 'all categories showed negative effects' qualified; ANAM within-subject D+ -0.3735, 95% CI -0.7736 to 0.0267 crosses zero",
+            "athleteDev: 'consider this when clearing athletes for reactive play' -> do not assume reaction time has normalised at clearance (authors give no clearance guidance)",
+            "Egger's test confirmed significant as drafted (between z = -4.7533, within z = -6.0697, p < 0.0001)"
+          ],
+          "residualConcerns": "Initial random-effects acute estimates (between -0.7170, within -0.8511) differ from the mixed-effects multilevel estimates reported in the abstract and Table 3 (-0.7279, -0.7472); the record uses the Table 3 values. Concussion topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1132",
+        "synthesisBatch": "pilot-synthesis-batch-55",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 88,
+      "sourceFile": "Examining whether loss of consciousness is associated with worse performance on the SCAT5 and slower clinical recovery after concussion in professional athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 56238,
+        "doi": "10.1089/neu.2022.0043",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Observational analysis of head impact events recorded across three National Rugby League seasons (2017 to 2019; 1,706 events), with SCAT5 data for 661 athletes and 255 medically diagnosed concussions. Post-match video review identified possible loss of consciousness (LOC) in 99 events (5.8%). In diagnosed concussions, players with possible LOC made more Maddocks errors, but did not differ on other SCAT5 components, and possible LOC was not associated with games missed or days to medical clearance.",
+      "limitations": "LOC was identified from post-match video clips and duration was timed by one author with a stopwatch, so the measurement is indirect and of uncertain reliability. The data come from one professional league over three seasons, and the SCAT5 is not independent of the diagnosis it helps to make.",
+      "synthesisCaution": "Staff may read 'LOC does not predict recovery' as meaning a brief LOC is clinically minor, when the same study found worse Maddocks orientation and memory answers in diagnosed concussions.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/abstract: 'Retrospective' removed (not stated in text) -> observational analysis of recorded events",
+            "methods: Cohen's d described as an effect size, not a test; possible LOC criteria stated fully",
+            "tldr: 'was more common' -> 'may be more common' (authors: 'might be more common than previously thought')",
+            "limitations: added abstract vs Table 2 conflict on concentration (p = 0.03 vs alpha 0.01)",
+            "practicalImplications: removed unsupported advice that Maddocks 'remain useful' and that LOC 'should be recorded by the examining clinician'; replaced with authors' statements",
+            "populations: confirmed no Male Athletes tag (sample sex not stated in text)"
+          ],
+          "residualConcerns": "Concussion and return-to-play topic. NRL and ImPACT Applications provided unrestricted philanthropic support to authors.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1133",
+        "synthesisBatch": "pilot-synthesis-batch-55",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 90,
+      "sourceFile": "Exercise is Medicine for Concussion.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text. Only reference-list DOIs appear. All other fields are complete and were filled from the readable text.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: Kurowski trial population not described -> added 'persistent symptoms for 4 to 16 wk after mild TBI', exercise-intolerant only, and 'greater rate of symptomatic improvement' wording",
+            "paper.practicalImplications: omitted the authors' test eligibility limits -> added 'only for patients without orthopedic or vestibular problems ... and only in those ... at low risk for cardiac disease' and the 80% to 90% dose with 5 to 10 bpm progression",
+            "paper.rtp: recovery criterion paraphrased loosely -> exact criterion 'voluntary exhaustion at >=80% of age predicted maximum HR for 20 min several days in a row without symptom exacerbation'"
+          ],
+          "residualConcerns": "DEGRADED only for missing own DOI (citation prints 1537-890X/1708/262-270, Curr Sports Med Rep 17(8) August 2018); operator can verify the DOI externally. Review is by the developers of the BCTT/BCBT.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 94,
+      "sourceFile": "Exercising more than 150 min per week after concussion is associated with sleep quality improvements.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 43207,
+        "doi": "10.1097/HTR.0000000000000918",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "Prospective observational cohort of 36 adolescents aged 10 to 17 years with concussion, who wore a wrist-worn activity tracker between a visit about 1 week after injury and a follow-up about 5 weeks after injury. The 15 adolescents who averaged more than 150 min/wk of aerobic exercise improved Pittsburgh Sleep Quality Index scores more than the 21 who averaged 150 min/wk or less (median change 5 [IQR 3, 7] vs 1 [0, 4]; P = .008), and each additional hour of weekly exercise was associated with 0.82 points more improvement (P = .005).",
+      "limitations": "The design is observational, so the association cannot be read as causation, and sleep was measured only by self-report. Seven of 43 enrolled adolescents were excluded, and the two exercise groups differed in age, sex and migraine history at a trend level.",
+      "synthesisCaution": "Staff could read this as showing that more than 150 min/wk of exercise improves sleep after concussion, when the groups were not randomized and the authors state that the direction of the relationship is unclear.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes, Female Athletes -> removed; sample is adolescent concussion clinic patients (26 of 36 sports-related), not an athlete sample with sex-specific tagging",
+            "paper.limitations: added that the abstract conclusion says exercise 'led to greater sleep quality improvements' while the Discussion says 'no causal inferences can be made'"
+          ],
+          "residualConcerns": "Journal header prints 'Vol. 00, No. 00, pp. 1-9' (online-first placeholder), omitted from citation; year 2023 from copyright line. Injured Athletes kept because 72% of concussions were sports-related, but not all participants were athletes.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1134",
+        "synthesisBatch": "pilot-synthesis-batch-55",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

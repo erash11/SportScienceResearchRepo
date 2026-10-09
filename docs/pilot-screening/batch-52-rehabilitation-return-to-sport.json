@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-52-rehabilitation-return-to-sport",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Rehabilitation & Return to Sport queue positions 2-91. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 2,
+      "sourceFile": "Early tendon morphology as a biomarker of long-term patient outcomes after surgical repair of Achilles tendon rupture - A prospective cohort study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 34564,
+        "doi": "10.1177/23259671231205326",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Prospective cohort analysis of 86 adults (77% male, mean age 39 years) who had acute surgical repair of an Achilles tendon rupture, drawn from a randomized trial of early functional mobilization. Ultrasound cross-sectional area (CSA) and tendon elongation (TE) were measured at 6 weeks, 6 months and 12 months and related to 12-month outcomes. A larger 6-week CSA ratio was associated with higher limb symmetry index (LSI) for maximum heel-rise height (R2 0.35, P < .001; AUC 0.82), and greater TE at 12 months was associated with lower LSI for total concentric work (R2 0.21, P = .001; AUC 0.71).",
+      "limitations": "The key associations come from 45 patients (6-week CSA ratio model) and 82 patients (12-month elongation model) in one cohort, with no external validation of the AUC values, and several secondary associations did not survive Bonferroni correction. The participants are surgically treated adults aged 18 to 75 whose athletic status and sport are not described, so the findings are not specific to athletes.",
+      "synthesisCaution": "Staff could read the 6-week CSA ratio as a validated clinical predictor that can guide return-to-sport decisions, when this is a single-cohort association that needs replication.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes, Female Athletes, Mixed / Unspecified -> Mixed / Unspecified (patients aged 18 to 75 after ATR repair; athletic status not reported)",
+            "screeningLimitations: '42 to 82 patients per model' -> exact model sizes (Table 3: n = 45 for 6-week CSA ratio, n = 82 for 12-month TE)",
+            "findings: added model sizes, noted 12-month TE was measured at the same visit as the outcome ('acceptable diagnostic capacity'), added third non-significant association (TE 12 mo with LSI HRHmax, P = .008)",
+            "limitations: added surgical-only sample and concurrent 12-month TE caveat ('whether TE exhibits a predictive capacity remains unclear')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1094",
+        "synthesisBatch": "pilot-synthesis-batch-52",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 3,
+      "sourceFile": "Eccentric training decreases paratendon capillary blood     flow and preserves paratendon oxygen saturation in chronic achilles     tendinopathy.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 38217,
+        "doi": "10.2519/jospt.2007.2296",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized controlled trial in 20 adults with chronic Achilles tendinopathy (eccentric training n = 15, control n = 5 using cryotherapy and relative rest), recruited partly through fitness clubs. The eccentric group trained daily for 12 weeks, and laser Doppler and spectroscopy measured paratendon blood flow, oxygen saturation and postcapillary venous filling pressure at 8 locations and 2 depths. Pain fell 48% within the eccentric group (VAS 4.1 to 2.1, P < .05), superficial (2 mm) blood flow fell within that group at 2 midportion sites, oxygen saturation did not change, and there was no significant between-group difference in capillary blood flow.",
+      "limitations": "The control group had only five patients and higher baseline pain (8.0 vs 4.1, P = .086), and many within-group tests were run without correction for multiple testing. The abstract and discussion describe deep-tissue and between-group effects that the results tables do not show, so the evidence is a small pilot-scale signal, not a confirmed effect on tendon microcirculation.",
+      "synthesisCaution": "Staff could read the paper as showing that eccentric training improves tendon blood flow compared with a control group, when the between-group blood flow difference was not significant.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed Male Athletes, Female Athletes, Injured Athletes -> Adult / Recreational (patients 'recruited by advertisements in the medical school and several fitness clubs'; not described as athletes)",
+            "findings: specified superficial (2 mm) depth for the flow decreases, added control pain change (8.0 to 5.5, P = .123) and control median flow drops (e.g., -58% medial distal midportion, not significant), kept 'no significant difference in capillary blood flow between the control and the eccentric-training group'",
+            "limitations: documented abstract vs results vs tables conflicts (abstract 'Deep paratendon blood flow decreased' and 'Deep ... filling pressures were significantly reduced'; discussion 'decreased significantly between the training groups versus the control group'; Tables 5-6 show only 2 mm within-group changes, filling pressure +27% and +9% at insertions)",
+            "screeningLimitations: added baseline pain values and discussion/between-group conflict",
+            "practicalImplications: pain reduction framed as within-group, not compared with control",
+            "athleteDev: removed unsupported suggestion that eccentric loading is a rehab option for active people (not a finding of this trial's between-group analysis)"
+          ],
+          "residualConcerns": "Internal inconsistencies in the source (abstract, discussion and tables disagree on depth and on a between-group effect) limit confidence; a reviewer may want to confirm the table-based reading.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1095",
+        "synthesisBatch": "pilot-synthesis-batch-52",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 19,
+      "sourceFile": "Effectiveness of conservative interventions after acute hamstrings injuries in athletes - A living systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 21,
+        "extractedCharacters": 99423,
+        "doi": "10.1007/s40279-022-01783-z",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Living systematic review (PROSPERO CRD42021268499) of 14 multi-arm studies (12 randomized, 2 non-randomized; 730 athletes, 89.6% male, ages 14 to 49, mostly soccer and track and field) comparing conservative treatments for acute hamstring injury. Data were not pooled; the authors report study-level mean differences and risk ratios narratively, and the GRADE certainty was very low for all outcomes. No intervention was superior for time to return to sport or full training, or for reinjury; the only signal was that eccentric lengthening (L-protocol vs C-protocol, two trials from one group) was associated with faster return to full training, and PRP did not consistently shorten time or reduce reinjury.",
+      "limitations": "The evidence base is small (one to three studies per comparison), at high risk of bias, and clinically heterogeneous, so no comparative effect can be confirmed. The review cannot establish the best rehabilitation protocol, dose, or return-to-sport criteria for any injury subtype.",
+      "synthesisCaution": "Staff could read the eccentric-lengthening signal as evidence for a faster return to full training, when it rests on two trials from one group with selection and detection bias and very low certainty.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: percentage conflict note covered only the C-protocol -> also notes Hamilton et al. text 6.7%/8.0% vs Table 2 '2/26 (7.7%)' and '3/28 (10.7%)'; 'a few participants' -> 'four participants' ('with four missing values (0.5%)')"
+          ],
+          "residualConcerns": "Some single-study estimates in Table 2 have CIs that exclude no effect (PATS vs STST reinjury RR 0.12, 0.02 to 0.84; PRP vs placebo TRFT MD 9.90, 8.56 to 11.24 in Bezuglov; PRP vs no injection 15.80, 2.77 to 28.83 in Hamid); the authors still conclude no intervention was superior because of bias and very low certainty, and the record follows that conclusion. Other text-vs-table percentage mismatches (Mendiguchia 4.0% vs 4.2%; Reurink 30.0% vs 30.6%) are minor. Year 2023 is the copyright year; no volume or pages are printed.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1096",
+        "synthesisBatch": "pilot-synthesis-batch-52",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 43,
+      "sourceFile": "Effects of photobiomodulation on pain and return to play of injured athletes - A systematic review and meta-analysis.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text, and the text contains no DOI at all. All other fields are complete; the operator can verify the DOI externally.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: hamstring trial return-to-sport times 23.1 +/- 9.1 vs 23.8 +/- 12.6 days are not printed -> 23 +/- 9 vs 24 +/- 13 days as in Table 1 ('LLLT (23 6 9 d) and placebo (24 6 13 d)'); added that the sample was male amateur athletes",
+            "practicalImplications: framed device and dosing advice as the authors' recommendation and added the printed frequency ('3-4x/week for at least 3-8 weeks')",
+            "populations: added Collegiate (Takenori 'College athletes') and Adult / Recreational (Stergioulas 'Recreational', Medeiros 'amateur athletes') alongside Mixed / Unspecified"
+          ],
+          "residualConcerns": "Kept DEGRADED: no DOI printed anywhere in the extracted text. Abstract says six RCTs were in the analysis, while the Discussion and limitations say the pain meta-analysis used 5 studies (five pain citations listed); the record reports both. Return-to-play evidence is two heterogeneous trials.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 91,
+      "sourceFile": "Exercise progression to incrementally load the Achilles tendon.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 30,
+        "extractedCharacters": 44016,
+        "doi": "10.1249/MSS.0000000000002459",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Laboratory biomechanics study of 8 healthy, recreationally active young adults (6 male, 2 female; mean age 30 years, no history of Achilles injury). Motion capture and force plate data were used in a musculoskeletal model to estimate Achilles tendon load during rehabilitation exercises, walking and running, and the exercises were ranked by a weighted loading index and sorted into four tiers. Peak tendon load ranged from 0.5 bodyweights (two-leg seated heel raise) to 7.3 bodyweights (single-leg forward and lateral hops), and single-leg hopping produced the greatest loading index values (0.904 to 0.924).",
+      "limitations": "The sample is eight healthy adults, not patients after Achilles rupture or tendinopathy, so the loads may not transfer directly. Tendon load is estimated from the ankle plantar flexion moment, and the exercise ranking depends on scaling weights chosen by the authors.",
+      "synthesisCaution": "Staff could treat the four-tier ranking as a validated, patient-ready progression, when it is a single-laboratory estimate in eight healthy adults that uses author-chosen weights.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes, Female Athletes, Healthy Athletes -> removed; sample is 'healthy adults' / 'recreationally-active young adults', not athletes",
+            "paper.limitations: '25 vs 30 exercises' framed as a discrepancy -> clarified that Table 1's 30 rows include walking, running and separate leading/trailing legs; added the Results-text vs Table 1 conflict for seated heel raise indices",
+            "paper.practicalImplications: 'check the rate of progression against symptoms' -> removed; the study did not measure symptoms",
+            "evidenceSummary: 7.3 BW attributed to forward hop only -> forward and lateral single-leg hops (Table 1: both 7.3)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1097",
+        "synthesisBatch": "pilot-synthesis-batch-52",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}
