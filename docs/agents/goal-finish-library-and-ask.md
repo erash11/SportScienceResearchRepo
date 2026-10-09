@@ -1,8 +1,23 @@
 # /goal prompt: finish the library and make Ask the Library pilot-ready
 
-Drafted 2026-10-09 (cloud session). Paste everything below the line into a new Claude Code session.
+Drafted 2026-10-09 (cloud session). `/goal` accepts at most 4,000 characters, so paste the **short prompt** (1,273 characters). It points the agent to the **full rules** below, which it reads from this file.
 
----
+## Short prompt (paste this)
+
+```
+/goal In erash11/SportScienceResearchRepo, finish the Evidence Library backlog and make Ask the Library pilot-ready. First read docs/agents/goal-finish-library-and-ask.md (full rules), CLAUDE.md, docs/STATUS.md and scripts/haiku-batch/README.md, and follow them. If PR #9 is open, subscribe and handle my comments first.
+
+Done when:
+A. Every unrepresented unique PDF in SourcePapers/ has a full-text decision, and every INCLUDE is published through draft PRs of about 96 papers, built with the scripts/haiku-batch pipeline (Haiku drafts, Opus claim audit). npm run audit passes.
+B. A "needs Eric" file lists every wrong-PDF and missing-DOI record with the action needed.
+C. npm run pilot:draft turns a request packet into a Decision Brief that uses only published library sources, returns a Coverage Gap instead of unsupported claims, and passes pilot:brief and pilot:audit-source.
+D. The drafter scores 0 critical integrity failures and at least 80% useful on the stress-test question bank (results in docs/ask-library-eval/).
+E. STATUS, roadmap, CLAUDE.md counts and a handoff are current.
+
+Never publish ungrounded claims, invent citations, or push batch data straight to master. Ask me before paid lookups or rule changes. When done, give me the pilot launch checklist.
+```
+
+## Full rules (referenced by the short prompt)
 
 ```
 /goal Finish the Baylor Health & Performance Evidence Library and make Ask the Library pilot-ready.
