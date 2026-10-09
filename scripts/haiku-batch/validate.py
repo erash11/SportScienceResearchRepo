@@ -16,7 +16,12 @@ for k, i in inp.items():
     if dec not in ("INCLUDE", "EXCLUDE", "DEGRADED"): bad.append((k, "decision", dec))
     if dec == "INCLUDE":
         txt = open(f"{W}/text/{k}.txt").read().lower(); d = (v["paper"].get("doi") or "").lower()
-        if not d or (d not in txt and d not in re.sub(r"\s+", "", txt)): bad.append((k, "doi not in text", d))
+        if d and d not in txt and d not in re.sub(r"\s+", "", txt):
+            # Layout text can split a DOI across a column break; check the reading-order extraction too.
+            import subprocess
+            raw = subprocess.run(["pdftotext", f"{R}/SourcePapers/{i['sourceFile']}", "-"], capture_output=True, text=True).stdout.lower()
+            if d not in re.sub(r"\s+", "", raw): bad.append((k, "doi not in text", d))
+        elif not d: bad.append((k, "doi not in text", d))
         if d.strip() in published_dois: bad.append((k, "DOI already published as ID", published_dois[d.strip()]))
         if not isinstance(v["paper"].get("year"), int): bad.append((k, "year"))
         for f in ("domains", "audiences", "sports", "populations"):
