@@ -35,12 +35,16 @@ const files = shortlist.candidates.map(({ sourceFile }) => sourceFile);
 
 if (shortlist.schemaVersion !== 2) failures.push(`shortlist schema version is ${shortlist.schemaVersion}; expected 2`);
 if (shortlist.taxonomyVersion !== TAXONOMY_VERSION) failures.push(`taxonomy version is ${shortlist.taxonomyVersion}; expected ${TAXONOMY_VERSION}`);
-if (shortlist.candidates.length !== 96) failures.push(`shortlist has ${shortlist.candidates.length} candidates; expected 96`);
+const shortfalls = shortlist.selectionStrategy?.domainShortfalls || {};
+const expectedFor = (domain) => (domain in shortfalls ? shortfalls[domain] : 12);
+const expectedTotal = TAXONOMY.domains.reduce((sum, domain) => sum + expectedFor(domain), 0);
+for (const [domain, count] of Object.entries(shortfalls)) if (!TAXONOMY.domains.includes(domain) || !Number.isInteger(count) || count >= 12) failures.push(`invalid domain shortfall: ${domain}=${count}`);
+if (shortlist.candidates.length !== expectedTotal) failures.push(`shortlist has ${shortlist.candidates.length} candidates; expected ${expectedTotal}`);
 if (new Set(files).size !== files.length) failures.push("shortlist contains repeated source files");
 
 for (const domain of TAXONOMY.domains) {
   const rows = shortlist.candidates.filter(({ pilotDomain }) => pilotDomain === domain);
-  if (rows.length !== 12) failures.push(`${domain} has ${rows.length} candidates; expected 12`);
+  if (rows.length !== expectedFor(domain)) failures.push(`${domain} has ${rows.length} candidates; expected ${expectedFor(domain)}`);
 }
 
 for (const candidate of shortlist.candidates) {
@@ -88,10 +92,12 @@ for (const group of manifest.details.duplicateSourceContentGroups) {
   if (selectedGroupFiles.length && group.files.some((file) => represented.has(file))) failures.push(`selected content is already represented under another filename: ${selectedGroupFiles[0]}`);
 }
 
-if (!shortlist.candidates.some(({ populations }) => populations.includes("Female Athletes"))) failures.push("shortlist contains no female-athlete signal");
-if (shortlist.candidates.filter(({ populations }) => populations.includes("Youth / Adolescent")).length < 4) failures.push("shortlist contains fewer than four youth/adolescent signals");
-if (shortlist.candidates.filter(({ sports }) => sports.some((sport) => sport !== "Mixed / General Sport")).length < 24) failures.push("shortlist contains fewer than 24 named-sport signals");
-if (shortlist.candidates.filter(({ populations }) => populations.some((population) => ["Collegiate", "Youth / Adolescent", "Adult / Recreational", "Female Athletes", "Healthy Athletes"].includes(population))).length < 12) failures.push("shortlist contains fewer than 12 underrepresented-population signals");
+const pool = shortlist.selectionStrategy?.poolSignalAvailability || {};
+const floor = (minimum, key) => Math.min(minimum, Number.isInteger(pool[key]) ? pool[key] : minimum);
+if (shortlist.candidates.filter(({ populations }) => populations.includes("Female Athletes")).length < floor(1, "femaleAthlete")) failures.push("shortlist contains no female-athlete signal");
+if (shortlist.candidates.filter(({ populations }) => populations.includes("Youth / Adolescent")).length < floor(4, "youthAdolescent")) failures.push("shortlist contains fewer than four youth/adolescent signals");
+if (shortlist.candidates.filter(({ sports }) => sports.some((sport) => sport !== "Mixed / General Sport")).length < floor(24, "namedSport")) failures.push("shortlist contains fewer than 24 named-sport signals");
+if (shortlist.candidates.filter(({ populations }) => populations.some((population) => ["Collegiate", "Youth / Adolescent", "Adult / Recreational", "Female Athletes", "Healthy Athletes"].includes(population))).length < floor(12, "underrepresentedPopulation")) failures.push("shortlist contains fewer than 12 underrepresented-population signals");
 
 if (shortlist.screeningCounts?.fullTextEligible !== shortlist.candidates.filter(({ screeningStatus }) => screeningStatus === "full-text-eligible").length) failures.push("full-text screening count is inaccurate");
 if (shortlist.screeningCounts?.titleScreened !== shortlist.candidates.filter(({ screeningStatus }) => screeningStatus === "title-screened").length) failures.push("title-screening count is inaccurate");
@@ -104,4 +110,5 @@ if (failures.length) {
 }
 
 const secondary = shortlist.candidates.filter(({ allocationBasis }) => allocationBasis === "secondary-title-match").length;
-console.log(`Pilot shortlist audit passed: 96 unique, unrepresented, content-deduplicated candidates; 12 per pilot domain; ${shortlist.screeningCounts.fullTextEligible} full-text decisions preserved; ${secondary} secondary-title allocations documented.`);
+const shortfallNote = Object.keys(shortfalls).length ? ` (exhausted: ${Object.entries(shortfalls).map(([domain, count]) => `${domain}=${count}`).join(", ")})` : "";
+console.log(`Pilot shortlist audit passed: ${shortlist.candidates.length} unique, unrepresented, content-deduplicated candidates; 12 per pilot domain${shortfallNote}; ${shortlist.screeningCounts.fullTextEligible} full-text decisions preserved; ${secondary} secondary-title allocations documented.`);

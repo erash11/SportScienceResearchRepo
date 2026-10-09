@@ -1,0 +1,553 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-20-sports-medicine-injury",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Sports Medicine & Injury shortlist positions 13-24. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 13,
+      "sourceFile": "Review of media representation of sport concussion and implications for youth sports.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 45045,
+        "doi": "10.1016/j.csm.2023.06.012",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "American Football"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Collegiate",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Narrative review pairing a content analysis of 20 freely accessible Google News articles on sport-related concussion (2012-2022) with a summary of research on concussion knowledge, reporting and parental attitudes. CTE was mentioned in 13 of 20 articles, retirement in 9, and 'mild' or 'minor' describing concussion in 7. The authors argue that media coverage often misrepresents concussion and may shape youth sport decisions, but they do not measure participation outcomes.",
+      "limitations": "The media sample was a random pick of 20 search results, so the term counts describe that sample and cannot measure overall media coverage. The literature summary is narrative and does not grade study quality, and the link between media and participation is inferred rather than tested.",
+      "synthesisCaution": "Reading the CTE and retirement counts as the typical media message, or treating the media-to-participation link as measured, when the sample is 20 articles and participation was not studied.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added the internal inconsistency ('retirement/retired athlete in 50%' in Discussion vs '9/20 articles' in Results)",
+            "populations: added Collegiate (a full section summarizes collegiate athlete reporting studies)"
+          ],
+          "residualConcerns": "Concussion topic. The record relies on secondary citations for all knowledge and reporting percentages; only the 20-article term counts are the authors' own data.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "753",
+        "synthesisBatch": "pilot-synthesis-batch-20",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 14,
+      "sourceFile": "Targeting Rule Implementation Decreases Neck Injuries in High School Football - A National Injury Surveillance Study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 22,
+        "extractedCharacters": 25913,
+        "doi": "10.1080/00913847.2021.1932630",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Other",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Retrospective analysis of NEISS emergency department records for US high school football players aged 14-18 with neck injuries, 2009-2019 (1,388 narrative-verified cases, national estimate 47,577, 98.8% male), comparing 2009-2013 with 2015-2019 around the 2014 NFHS targeting rule (2014 excluded). Average yearly neck injuries fell from 5,278 to 3,481 and helmet-to-helmet injuries from 851 to 508; injuries with no specified mechanism (67% of cases) also fell, from 3,546 to 2,265 per year, while the smaller named mechanisms did not change significantly.",
+      "limitations": "The design is a before-and-after surveillance comparison during a decade with a pre-existing decline in neck injuries, so the drop is an association and cannot establish causation; the authors also suggest awareness may have changed ED visits. Only ED-treated cases are captured, and 67% of cases had no specified mechanism, so much of the overall decrease is in unclassified injuries.",
+      "synthesisCaution": "Reading the drop as proof that the targeting rule caused fewer neck injuries, when awareness changes and other factors over the same period could contribute.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/paper.abstract: 'other mechanisms unchanged' omitted that unspecified-mechanism injuries (67% of cases) also fell significantly -> added ('Not specified mechanisms ... statistically significant (P=0.002) decrease ... from 3,546 to 2,265')",
+            "paper.findings: added the pre-existing decade-long decline (coefficient -0.0121, P=0.0003) and the 2019 rebound; clarified setting split applies to narratives that specified setting",
+            "screeningLimitations: added that much of the overall drop is in unclassified injuries and a background decline already existed; moved the 5,287 vs 5,278 discrepancy note to limitations only",
+            "paper.athleteDev: removed technique coaching advice ('head-up, non-targeting technique') that the study did not examine"
+          ],
+          "residualConcerns": "Cervical spine injury surveillance. Study design 'Other' kept for an NEISS before-after surveillance comparison; an operator may prefer Cross-sectional Study. Sex is 98.8% male with 1.2% female, tagged Male Athletes only.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "754",
+        "synthesisBatch": "pilot-synthesis-batch-20",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 15,
+      "sourceFile": "A systematic review of effects on ACL injury of soccer shoe outsoles, soccer playing field surfaces, and outsole-surface interface.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 54854,
+        "doi": "10.3390/encyclopedia4020057",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "PRISMA systematic review of 58 papers on how soccer outsoles, playing surfaces and the outsole-surface interface relate to ACL injury mechanics. The included evidence is mainly biomechanical, cadaver and surface-testing work, and the authors summarize that outsole type made little difference to traction except soft-ground and turf designs, while artificial turf generally gave higher rotational traction than natural grass.",
+      "limitations": "Most included evidence is laboratory, cadaver or surface-testing work, so the link to ACL injury rates is indirect. Epidemiological studies cannot separate surface effects from weather and exposure, and only SCI-indexed English-language journal papers were included.",
+      "synthesisCaution": "Reading the traction differences as evidence that a given boot or surface causes or prevents ACL injury, when the evidence is mostly mechanical and not linked to injury rates.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: presented the 30-50% figure without the contrary evidence -> added that 'Numerous epidemiologic research studies have found that artificial and natural grass turfs exhibit similar injury rates overall'",
+            "paper.limitations: added that AXIS appraisal results are not reported and that the abstract claim of dramatically increased ACL injuries on artificial surfaces is not supported in the body"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "755",
+        "synthesisBatch": "pilot-synthesis-batch-20",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 16,
+      "sourceFile": "Orthopaedic consequences of modern gladiators - A systematic review of lower extremity musculoskeletal issues in retired NFL players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 38,
+        "extractedCharacters": 52832,
+        "doi": "10.1080/00913847.2022.2119897",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "PRISMA systematic review of nine studies (16,593 retired NFL players, mean age 54.6 years) on lower extremity musculoskeletal outcomes after retirement. Arthritis prevalence was about 2.2 times that of age-matched US males, pooled osteoarthritis prevalence was about 37%, and retired players under 50 had roughly 14 to 16 times the general-population rate of hip or knee replacement.",
+      "limitations": "Included studies are mostly level III-IV surveys and institutional series with differing outcome definitions, and the review covers professional football only. Some figures differ between text and tables (under-50 TKA risk is 16.1 in the text and 16.4 in Table 7), and possible overlap between study populations could not be excluded.",
+      "synthesisCaution": "Reading the roughly 15-fold replacement risk as an individual player's risk, when it is a relative rate from mostly survey-based studies compared with general-population data.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 2.2-fold 'arthritis' ratio could be read as osteoarthritis -> noted the broad definition ('arthritis was defined as having a diagnosis of OA, rheumatoid arthritis, degenerative arthritis, or fibromyalgia') and that the 37% OA figure is body-wide"
+          ],
+          "residualConcerns": "Several included surveys (Davies, Golightly, Lynall, Pietrosimone, Song; about 2,400-2,700 players each) likely draw on overlapping retiree cohorts, so the 16,593 total probably counts some players more than once; the authors acknowledge overlap could not be assessed.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "756",
+        "synthesisBatch": "pilot-synthesis-batch-20",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 17,
+      "sourceFile": "Hamstring musculotendon mechanics of prospectively injured elite rugby athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 34690,
+        "doi": "10.1080/15438627.2023.2189115",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Case series of two elite male rugby union players who had hamstring musculotendon mechanics estimated during pre-season sprinting, using motion capture, force plates, hamstring MRI and an OpenSim musculoskeletal model. Both athletes later sustained hamstring injuries in competition. The biceps femoris long head had the greatest peak strain of the hamstring muscles in both athletes during late swing, and the highest force relative to muscle capacity in Athlete A.",
+      "limitations": "Only two athletes were studied, with no comparison group and no repeated measures over the season. The model used generic muscle inputs because subject-specific fibre length, tendon slack length and maximum force were not available, so the forces are estimates.",
+      "synthesisCaution": "Staff could read the two-athlete modelling results as a confirmed injury mechanism for the biceps femoris long head, when the authors present it as a hypothesis for future testing.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: abstract/table conflict on force relative to capacity not noted -> added (Table 1 Athlete B SM 110.89 vs BFlh 109.38 N/PCSA; abstract: \"BFlh also experienced the greatest musculotendon forces\")"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "757",
+        "synthesisBatch": "pilot-synthesis-batch-20",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 18,
+      "sourceFile": "Incidence of acute hamstring injuries in soccer - A systematic review of 13 studies involving more than 3800 athletes with 2 million sport exposure hours.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text (only reference-list DOIs appear), so doiMissing is true. The publication year is also not printed in the text (the only 2020 date is a 'Downloaded from' stamp), so year is left null for the operator to verify. Otherwise the text is complete.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: referred to a \"pooled range\" although no pooling was done -> \"reported range\" (\"Quantitative analysis was precluded ... we conducted a descriptive synthesis\")"
+          ],
+          "residualConcerns": "Text is the accepted manuscript with no printed DOI or publication year (copyright line reads ${year}); operator should verify JOSPT DOI and year externally. The Conclusions and Key Points say hamstring injuries were 5% to 13% of all injuries, while Results and Table 3 say 5% to 15%; the record uses 5% to 15%.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 19,
+      "sourceFile": "Calf muscle injury in elite athletics - An 8-season prospective cohort study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 23,
+        "extractedCharacters": 42355,
+        "doi": "10.1016/j.jsams.2025.08.019",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Track & Field"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Prospective observational cohort of 201 British Athletics World Class Programme athletes (109 male, 92 female), followed over eight seasons for 616 athlete-seasons. There were 85 indirect calf muscle injuries, 52 of them to the soleus, and the raw incidence was 0.14 medical-attention injuries per athlete-season. Older age and a higher count of previous lower-limb injuries were associated with higher medical-attention incidence, and sex was not.",
+      "limitations": "This is a single elite programme with 85 injuries, so subgroup comparisons are limited and results may not generalise to other athletes. Exposure was recorded per athlete-season rather than per 1000 hours, so rates cannot be compared directly with most other sports.",
+      "synthesisCaution": "Staff could read the age and previous-injury associations as causal risk factors for calf injury, when the design is observational and the time-loss result for previous injury was not significant.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "practicalImplications: recommended \"calf load management\", which the study did not examine -> authors' general suggestion to increase prevention efforts before April, with note that no strategy was tested (\"prevention efforts could be increased in anticipation of this stage of season\")",
+            "athleteDev: \"clustered in the months before\" -> \"peaked in April\" (\"CMI has a peak incidence in April\")"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "758",
+        "synthesisBatch": "pilot-synthesis-batch-20",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 20,
+      "sourceFile": "Return to match running performance after a hamstring injury in elite football - A single-centre retrospective cohort study.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(a) Source identity mismatch. The text is Calisti et al., 'Return-To-Sport Assessments After Anterior Cruciate Ligament Injury: Which Jump-Landing Test Is Sensitive to an ACL-Injury History Under Fatigued or NonFatigued Conditions?' (European Journal of Sport Science, 2025; DOI 10.1002/ejsc.12317). It is about ACL injury and jump-landing tests in 43 students, not the hamstring injury and match running performance study named in the filename.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 21,
+      "sourceFile": "Sprint running mechanics are associated with hamstring strain injury - A 6-month prospective cohort study of 126 elite male footballers.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 48622,
+        "doi": "10.1136/bjsports-2024-108600",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Prospective cohort of 126 professional male footballers from eight English clubs, who were scored on the 12-item Sprint Mechanics Assessment Score (S-MAS) from 2D slow-motion video. Of 118 players followed for six months, 92 were included in the final analysis and 14 sustained new sprint-related hamstring injuries. Players with a higher S-MAS had a higher rate of new sprint-related hamstring injury, with an adjusted incidence rate ratio of 1.33 (95% CI 1.01 to 1.76) per point.",
+      "limitations": "The S-MAS has not been validated against 3D motion capture, was scored by one blinded assessor, and was assessed with only 14 prospective injuries. Sensitivity (78.6%) and specificity (65.4%) at the 5.5 cut-off are modest, and the categorical comparison was not significant.",
+      "synthesisCaution": "Staff could treat a score above 5.5 as identifying players who will be injured, when about a third of uninjured players also exceed that cut-off, and the cut-off was derived from the same data.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: implied 92 players were followed -> 118 followed, 92 analysed after 7 lost to follow-up and 16 excluded (\"118 participants were followed ... leaving a total of 92 participants\")"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "759",
+        "synthesisBatch": "pilot-synthesis-batch-20",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 22,
+      "sourceFile": "Early vs delayed lengthening exercises for acute hamstring injury in male athletes - A randomized controlled clinical trial.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 57415,
+        "doi": "10.1136/bjsports-2020-103405",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Single-centre, blinded-assessor randomised trial in 90 male athletes (median age 26) with MRI-confirmed acute grade I or II hamstring injury, randomised to add lengthening exercises from day 1 of rehabilitation or after reaching 70% of maximal running speed. Of 88 analysed, 44 were in each group. Median return to sport was 23 days (IQR 16 to 35) early versus 33 days (IQR 23 to 40) delayed, with adjusted hazard ratio 0.95 (95% CI 0.56 to 1.60, p=0.84), and reinjury rates did not differ between groups.",
+      "limitations": "Loss to follow-up was 19% against a planned 10%, and the trial was designed to detect a 6.6-day difference, so it may be underpowered. Only men were included, only grade I or II MRI-confirmed strains were studied, and treating clinicians could not be blinded to group.",
+      "synthesisCaution": "Staff could read the 8-day median difference as evidence that early lengthening speeds return to sport, when the adjusted hazard ratio was 0.95 and the confidence interval spans both directions.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "practicalImplications: stated early lengthening can be started \"without increasing reinjury risk\" and should not be expected to shorten return meaningfully -> similar reinjury rates with few events and wide CIs, and a possible benefit not ruled out given underpowering (\"OR=0.94, 95% CI 0.18 to 5.0\"; \"potentially underpowered for a firm conclusion\")",
+            "limitations: added missing reinjury follow-up (\"Seventy of the 88 participants (80%) provided data on reinjury at 2 months and 63 of 88 (72%)\"); removed mean-vs-median comparison that was not a true discrepancy; trimmed to 3 sentences",
+            "rtp: \"did not change\" -> \"did not significantly change\""
+          ],
+          "residualConcerns": "Return-to-sport rehabilitation timing paper; reviewer should confirm the softened safety wording matches the authors' claim that early introduction \"is as safe as a delayed introduction\".",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "760",
+        "synthesisBatch": "pilot-synthesis-batch-20",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 23,
+      "sourceFile": "Placebo response and media attention in randomized clinical trials assessing cannabis-based therapies for pain - A systematic review and meta-analysis.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) Not relevant to athletes, sport, exercise performance or athlete health. The article is a systematic review and meta-analysis of placebo responses in cannabinoid trials for clinical pain in adults (neuropathic pain, multiple sclerosis and other pain), with no athlete population.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 24,
+      "sourceFile": "What is the evidence for and   validity of return to sport testing after ACL reconstruction surgery - A   systematic review and meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 48702,
+        "doi": "10.1007/s40279-019-01093-x",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Youth / Adolescent",
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review and meta-analysis of 18 studies (17 in the meta-analyses) of athletes after anterior cruciate ligament reconstruction who were tested with return-to-sport (RTS) test batteries. Across eight studies (876 patients), 23% passed the battery before returning to sport, and passing was associated with lower graft rupture risk (RR 0.40, 95% CI 0.23 to 0.69) but higher contralateral ACL injury risk (RR 3.35, 95% CI 1.52 to 7.37). The pooled risk of any subsequent ACL injury did not differ significantly (RR 0.80, 95% CI 0.27 to 2.3).",
+      "limitations": "Only five studies reported subsequent injury, two of them with more than 100 patients, and only one study linked passing to later return to sport. Test batteries, cut-offs, follow-up times and RTS definitions varied widely, so the pooled estimates are imprecise and heterogeneous.",
+      "synthesisCaution": "Staff could read the 60% lower graft rupture risk as proof that passing a battery protects the reconstructed ACL, when the same pass was linked to a much higher contralateral ACL injury risk and the overall ACL risk was not reduced.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: age range \"12 to 59\" not the authors' statement -> \"age limits typically ranged from 14 to 50 years\"; added the knee-injury RR CI inconsistency (Results \"RR = 0.28 (95% CI 0.04-0.94), p = 0.09\" vs Discussion \"from 93% reduction in risk to 21% increase in risk\")",
+            "paper.tldr: causal \"It lowers graft rupture risk\" -> \"Passing was associated with lower graft rupture risk\" (pooled observational risk ratios)",
+            "paper.rtp: \"Passing a battery at about 6 months\" -> \"Passing a battery\" (injury studies tested at varied times, e.g. Grindem \"Between 3 and 23 months\")"
+          ],
+          "residualConcerns": "Return-to-play clearance topic. The findings field reproduces the printed knee-injury CI (0.04 to 0.94), which conflicts with p = 0.09 and the Discussion; a reviewer may wish to check the original Fig. 4.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "761",
+        "synthesisBatch": "pilot-synthesis-batch-20",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

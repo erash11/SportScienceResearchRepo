@@ -1,0 +1,557 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-26-monitoring-technology",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Monitoring & Technology shortlist positions 85-96. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 85,
+      "sourceFile": "Statistical analysis and machine learning in college football - Insights from offensive efficiency, yards per play, and clustering play styles.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 33369,
+        "doi": "10.1007/978-3-031-89175-5_27",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Other",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate"
+      ],
+      "evidenceSummary": "Retrospective analysis of team-level college football statistics for seasons 2013 to 2023 (secondary dataset), using descriptive statistics, correlations, OLS regression, K-Means clustering and Random Forest regression. Offensive efficiency and yards per play were reported as the strongest predictors of wins (OLS R-squared 0.381; both coefficients 1.310, p < 0.001), and a Random Forest model predicted score margin with RMSE 6.82. Three play-style clusters were identified, with one high-efficiency cluster.",
+      "limitations": "The analysis uses team-level season aggregates with no athlete-level data, and the number of team-seasons is not reported. The offensive-efficiency and yards-per-play predictors are the same calculation in this paper, so the 'two significant predictors' result is not independent evidence.",
+      "synthesisCaution": "Staff could read the regression as showing that offensive efficiency and yards per play each drive wins, when the two variables are effectively identical and the win-correlation metrics such as total points are partly circular with winning.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: 'missing-data handling... not reported' was wrong -> missing values were filled 'with appropriate statistical measures (e.g., mean values for continuous variables)'",
+            "citation: '2025:433' replaced with editors and printed page range p. 433-446",
+            "limitations: clustering assumption restated as printed ('assumes clusters of similar shape and size')"
+          ],
+          "residualConcerns": "Low methodological transparency (sample size and train/test split not reported; two identical predictors entered in one OLS model). Team-level tactics paper with limited relevance to athlete health or individual performance.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "815",
+        "synthesisBatch": "pilot-synthesis-batch-26",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 86,
+      "sourceFile": "Is extensive cardiopulmonary screening useful in athletes with previous asymptomatic or mild SARS-CoV-2 infection.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 46388,
+        "doi": "10.1136/bjsports-2020-102789",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Cohort of 30 male professional soccer players at one Italian club, screened before resuming training with a cardiorespiratory and blood test battery. Eighteen had prior SARS-CoV-2 infection by IgG (6 asymptomatic, 12 mild symptoms) and 12 were negative. After recovery, no infected player had significant cardiovascular abnormalities and infected and uninfected players did not differ; within the infected subset with prior data (n = 15), most spirometry values fell and resting HR rose significantly versus the previous preseason, mostly within normal range. One infected player had raised troponin I, but cardiac MRI was normal.",
+      "limitations": "This is a single-team cohort of 30 men with no longitudinal follow-up, and the pre-infection comparison uses only 15 and 9 players. Cardiac MRI was done in only one player, and there were no pre-infection troponin or Holter values, so the troponin rise and Holter ectopy cannot be dated.",
+      "synthesisCaution": "Staff could take the conclusion that extensive screening is unnecessary as a general rule for all athletes after COVID-19, when it comes from one club with a small sample and the authors still recommend further testing for raised troponin.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: said FVC, FEV1, PEF, MVV 'and their percentages' all fell significantly -> FVC percent predicted was not significant (Table 4, p = 0.18)",
+            "evidenceSummary: 'only significant change was a fall in spirometry' omitted the significant rise in resting HR (53 to 65 bpm, p < 0.05)",
+            "limitations: 'Holter... limited to a few players' was wrong -> Holter done in all 18 COVID-19+ players but with no previous Holter data; CMR in one player",
+            "limitations: pre-infection subset restated as data available 'in 24 out of 30 players'",
+            "findings: added troponin 'normalised after 4 weeks' before training resumed"
+          ],
+          "residualConcerns": "Clinically sensitive cardiac return-to-training content from one small cohort of male professional soccer players; recommendations (CMR, rest until troponin normalises) are author opinion based on a single case.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "816",
+        "synthesisBatch": "pilot-synthesis-batch-26",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 87,
+      "sourceFile": "Validity of GPS technology to measure maximum velocity sprinting in elite sprinters.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text (no DOI string appears anywhere; only the journal citation 'J Strength Cond Res 37(12): 2438-2442, 2023' is printed). Operator may verify the DOI externally and upgrade the decision.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations/limitations: claimed the bias sign was 'opposite to the stated overestimation' -> sign is consistent with radar minus GPS (raw: radar 11.81 vs GPS 10.41 gives +1.40; GAM: radar 10.22 vs GPS 10.33 gives -0.11)",
+            "limitations: added that the column labelled '95% LOA' reports bias with 95% CI, not true limits of agreement (Table 1)",
+            "practicalImplications: removed 'timing gates' as a recommended criterion, which the paper does not recommend for Vmax",
+            "limitations: added author note that bias 'seemed' to increase with velocity"
+          ],
+          "residualConcerns": "DOI not printed in the text; operator should verify externally before upgrading from DEGRADED.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 88,
+      "sourceFile": "On the predictive validity of the National Football League combine - Does it forecast future success.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 83187,
+        "doi": "10.1080/02640414.2023.2207853",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "PRISMA systematic review of peer-reviewed studies on whether NFL Scouting Combine measures and medical findings predict later outcomes. From 1,954 records, 68 studies were included, with sample sizes from 14 to 5,506 and about half exceeding 500 participants. All 10 draft-position studies linked a faster 40-yard dash to better draft selection, and ACL injury and reconstruction were linked to worse draft position and fewer games and snaps, while results for other combine tests, career length and later playing performance were mixed.",
+      "limitations": "This is a narrative synthesis with no pooled effect estimates and no described quality appraisal, and the included studies use inconsistent outcomes and position groupings. Only three studies addressed career longevity and one addressed playing performance, so evidence on long-term success is thin.",
+      "synthesisCaution": "Staff could read the combine as a validated predictor of NFL success, when the review finds that its strongest links are to draft position and that results for later playing performance are mixed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/tldr/practicalImplications: ACL reconstruction stated as linked to shorter careers -> career-length study found 'isolated ACL reconstruction did not reduce a player's mean length of career', while meniscectomy and combined surgery did; other ACL studies linked it to worse draft pick, fewer games and lower snap percentage",
+            "rtp: added the Keller vs Provencher conflict ('no signs of diminished functional athletic performance' vs 'significantly lower snap percentage') and that career data exist only for linemen",
+            "screeningLimitations: removed unsupported 'mostly observational designs' -> no pooled estimates and no described quality appraisal",
+            "limitations: grey literature restated as printed (social media, websites, podcasts)"
+          ],
+          "residualConcerns": "Section 3.5.3 and section 3.6.4 of the review describe ACL effects on career length inconsistently; staff should read the primary studies before using injury history in decisions.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "817",
+        "synthesisBatch": "pilot-synthesis-batch-26",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 89,
+      "sourceFile": "Predicting severity of head collision events in elite soccer using preinjury data - A machine learning approach.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 31300,
+        "doi": "10.1097/JSM.0000000000001087",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Retrospective video-coded analysis of 263 head collision events (HCEs) from 231 matches at four elite international tournaments, 45 of them severe. Random forest models using 23 preinjury variables reached a mean AUC of 0.73 in the male dataset (215 HCEs) and 0.70 in the mixed male and female dataset. Injury mechanism and the preceding event ranked highest in importance, and corner kicks and throw-ins were significantly associated with severity in both datasets.",
+      "limitations": "Severity was coded from concussion signs seen on video, not from medical diagnosis, and only 6 severe HCEs occurred in women's matches, so no women-only model was built. Data come from elite international tournaments and may not generalize to other levels.",
+      "synthesisCaution": "Staff could read the corner-kick and throw-in result as a prediction of which players will be concussed; it describes coded severity of events in a small video dataset, not individual risk.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "tldr: implied head-to-head contact was linked to severity overall -> head-to-head plus knee-to-head was significant only in the male dataset ('not significant in the mixed dataset (P = 0.1113)')",
+            "methods: 'Two trained reviewers coded' -> 12 trained reviewers, two independently analyzing each match ('collected by 12 trained independent reviewers... Two reviewers independently analyzed match footage for all 231 games'); added HCE definition and predictor counts",
+            "limitations: added that accuracy comes from internal cross-validation only (authors: 'external validation will improve as more data are obtained')"
+          ],
+          "residualConcerns": "Concussion-related paper; severity is a video-sign proxy, not diagnosis. Practical fields correctly avoid presenting the model as a screening tool.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "818",
+        "synthesisBatch": "pilot-synthesis-batch-26",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 90,
+      "sourceFile": "Optimizing NFL Draft Selections with Machine Learning Classification.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 54608,
+        "doi": "10.3390/ai6090221",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate"
+      ],
+      "evidenceSummary": "Retrospective machine learning study using a public ESPN draft prospect dataset (about 13,000 prospects, with pre-2011 drafts removed). A random forest regressor trained on 2016 to 2019 drafts predicted pick number for the 2020 class with a Pearson correlation of about 0.94 and RMSPE of 0.41. In a simulated 2017 first round, a need-based strategy had mean absolute error 6.7 picks and a Top-3 score of 77.5, versus 8.8 picks and 71.9 for best-player-available, both compared with the real draft.",
+      "limitations": "Evaluation rests on predicting real draft slots, not on later player performance, so the study cannot show that the simulated picks would produce better NFL careers. The draft simulation was validated against a single 2017 first round, and trades were not modeled.",
+      "synthesisCaution": "Staff could read the results as proof that the model picks better players, when the paper measures agreement with what NFL teams actually did, which the authors note is not a measure of optimal selection.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "methods: 'modeling limited to drafts from 2019 or earlier' was ambiguous -> training on 2016-2019 drafts, testing on 2020 ('We used draft data from 2016-2019 as the training set and reserved the 2020 draft class as an independent test set'); added comparator models",
+            "findings/evidenceSummary: 'Top-3 accuracy 77.5%' -> Top-3 score, since it is a partial-credit score (Formula 4: 'the score of any other pick was proportional to how close it was'); added that RF beat DTR and SVM (Tables 5-6)",
+            "limitations: added possible train/simulation year overlap (2017 lies inside the training window and the simulation model's training years are not stated) and identical Table 7/Table 10 values"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "819",
+        "synthesisBatch": "pilot-synthesis-batch-26",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 91,
+      "sourceFile": "Prospective validation of 2B-Cool - Integrating wearables and individualized predictive analytics to reduce heat injuries.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 72876,
+        "doi": "10.1249/MSS.0000000000003093",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Prospective randomized crossover heat stress study in an environmental chamber with 22 healthy young adults (11 men, 11 women, mean age 20 years), each scheduled for four 7.5-hour treadmill trials; 82 of 88 trials were analyzed. The 2B-Cool smartwatch and smartphone system estimated core temperature with mean bias 0.16 C, MAE 0.39 C and RMSE 0.45 C against rectal temperature. Its early warning for 38.50 C had sensitivity 98% and specificity 81%, below the authors' own 90% specificity criterion, and no sex differences were found.",
+      "limitations": "Participants were healthy, fit young adults in a military-oriented protocol, not competitive athletes, tested in a controlled chamber with quasi-steady treadmill work. The authors state it is unclear how the system performs in stop-and-go activity such as American football, and two developers receive royalties from the technology.",
+      "synthesisCaution": "Staff could read the early-warning accuracy as proof the system will protect athletes in the field, when the paper shows performance only in a lab chamber with a treadmill protocol and explicitly says field validation is still needed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: horizon reported as abstract's 35 min -> results value 36 min ('effective prediction horizon of 36 min'); added that specificity (81%, 77%) and 39.20 C sensitivity (87%) missed the preset criterion ('we set the acceptance criteria for sensitivity and specificity to >90%')",
+            "limitations/screeningLimitations: added authors' caveat on stop-and-go sport ('it is not clear how the system would perform in stop-and-go activities... such as those in American Football') and non-exertional rises",
+            "practicalImplications: replaced unsupported 'support testing before field use' framing with findings-based guidance including false-alert expectation",
+            "athleteDev: removed unsupported advice on scheduling work in heat",
+            "evidenceSummary: noted randomized crossover and specificity shortfall"
+          ],
+          "residualConcerns": "Heat illness monitoring is clinically sensitive; sample is fit young adults in a military-style protocol, and population tag 'Healthy Athletes' is approximate.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "820",
+        "synthesisBatch": "pilot-synthesis-batch-26",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 92,
+      "sourceFile": "Concurrent Validity and Reliability of Sprinting Force–Velocity Profile Assessed With GPS Devices in Elite Athletes.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(a) Source identity mismatch. The filename names 'Concurrent Validity and Reliability of Sprinting Force-Velocity Profile Assessed With GPS Devices in Elite Athletes' (Clavel et al., IJSPP 2022), but the text is a different article: 'Concurrent Agreement and Test-Retest Reliability of a Global-Positioning-System Device for Measuring Maximal Horizontal Deceleration Ability in Elite Youth Academy Soccer Players' (Jones et al., IJSPP 2025, ahead of print). The named Clavel et al. paper appears only as reference 2 in the text.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "The text is Jones et al., IJSPP 2025 (doi 10.1123/ijspp.2024-0212), a GPS deceleration agreement study; the operator may want to locate the correct Clavel et al. PDF or catalogue this one under its real title.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 93,
+      "sourceFile": "A Review of the Validity and Reliability of Accelerometer-Based Metrics From Upper Back–Mounted GNSS Player Tracking Systems for Athlete Training Load Monitoring.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed anywhere in the extracted text, and the text contains no DOI at all. Everything else checks out, so the operator should verify the DOI externally and upgrade the decision if it is confirmed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "DOI absent from text (header shows only 'J Strength Cond Res 38(8): e460-e475, 2024'); operator should confirm the DOI externally before upgrading from DEGRADED.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 94,
+      "sourceFile": "Concurrent validity and test-retest reliability of VALD ForceDecks strength, balance, and movement assessment tests.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 30,
+        "extractedCharacters": 45496,
+        "doi": "10.1016/j.jsams.2024.04.014",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Repeated-measures validity and reliability study in which 16 healthy, physically active university students (10 men, 6 women, mean age 25.9 years) completed 12 strength, balance and movement tests on two sessions about 7 days apart. Portable ForceDecks dual force plates were stacked on laboratory force plates and recorded simultaneously. Vertical ground reaction force and centre of pressure agreed closely with the laboratory system (mean bias of -2 to -1 N and 0.1 mm or less), and about 79% of 674 discrete metrics had good or excellent validity.",
+      "limitations": "The sample was 16 physically active university students rather than competitive athletes, and reliability rests on two sessions about a week apart. The study was funded by VALD, results were reported to VALD as part of the funding arrangement, and the authors disclose relationships with VALD staff.",
+      "synthesisCaution": "Staff could read the high raw-signal accuracy as a guarantee that every ForceDecks metric is valid and reliable, when results varied by test and metric: shoulder isometric rate of force development agreed only moderately with the laboratory plates (15 to 18% difference) and quiet-stand COP metrics had poor reliability (ICC 0.21 to 0.43).",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution: shoulder isometric RFD described as performing 'poorly' -> moderate validity (Table 1: RFD-200ms 15-18% 'Moderate'); quiet-stand problem is reliability, not validity",
+            "athleteDev: clarified unclear wording about minimal detectable change",
+            "screeningLimitations: added that results were reported to VALD under the funding arrangement ('Results were reported to VALD as part of the funding arrangement')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "821",
+        "synthesisBatch": "pilot-synthesis-batch-26",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 95,
+      "sourceFile": "Measurement properties of upper extremity physical performance tests in athletes - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 18,
+        "extractedCharacters": 63977,
+        "doi": "10.1016/j.bjpt.2023.100575",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Rehabilitation & Return to Sport",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Systematic review (PRISMA, prospectively registered) of 15 studies with a pooled sample of 684 athletes, about 70.6% men, aged roughly 14.7 to 27.3 years, from recreational to elite levels. It rated the measurement properties of 13 upper extremity physical performance tests using the COSMIN checklist and a modified evidence-grading approach. The CKCUEST had sufficient inter-session reliability (moderate quality evidence) and sufficient intra-session reliability (high quality), the seated single-arm shot-put test had sufficient inter-session reliability (moderate quality), and the seated medicine ball throw had insufficient validity (moderate quality).",
+      "limitations": "Most primary studies were small, with doubtful methodological quality, so the quality of evidence was low for most tests. The sample was 70% men, the review excluded technology-dependent instruments, and the review does not report responsiveness or minimal important change for most tests.",
+      "synthesisCaution": "Staff could read the CKCUEST and shot-put tests as validated measures of shoulder strength or progress, when the CKCUEST's validity against isokinetic strength was rated insufficient (r 0.55 to 0.59), the shot-put's sufficient validity rests on one 30-person study (low quality), and no test has known responsiveness or minimal important change.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution: 'the review finds only reliability evidence' for CKCUEST and shot-put -> CKCUEST validity insufficient (r = 0.55 to 0.59) and shot-put validity sufficient but low quality ('strong and positive correlations (r = 0.73 to 0.83)... QoE was low')",
+            "findings: added CKCUEST insufficient validity and shot-put sufficient validity results from Table 3",
+            "tldr: 'based mainly on small studies rated as doubtful or low quality' -> CKCUEST intra-session evidence was high quality from very good studies",
+            "limitations: added that the Conclusion also misstates CKCUEST validity as sufficient ('The CKCUEST, Unilateral Seated Shot-Put Test, and Repetition to Failure Assessment Test demonstrated a low level of evidence of sufficient validity')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "822",
+        "synthesisBatch": "pilot-synthesis-batch-26",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 96,
+      "sourceFile": "The validity and reliability of commercially available resistance training monitoring devices - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 60,
+        "extractedCharacters": 160489,
+        "doi": "10.1007/s40279-020-01382-w",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review (PRISMA) of SPORTDiscus, Web of Science and Medline searched in August 2020, plus reference-list searching, yielding 44 studies: 36 assessed validity and 28 assessed reliability of commercially available portable devices that measure force, velocity or power in resistance training. Most studies used squats and bench press, and mean velocity was the most assessed output. Linear transducers showed the greatest accuracy against 3D motion capture or force plates, while accelerometers, smartphone apps and optic devices showed more variable validity and reliability.",
+      "limitations": "The search covered three databases and English-language journals, and most included studies were small validation or reliability studies, many without a gold-standard criterion. Reliability studies mostly did not separate technological from biological error, and Olympic weightlifting movements were barely studied.",
+      "synthesisCaution": "Staff could read linear transducers as accurate for every exercise and load, when validation work centres on the squat and bench press, rarely covers weightlifting movements, and only 10 of 19 linear transducer validity studies used a gold-standard criterion.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution: 'most validation work covers squats and bench press with a gold-standard criterion' (inverted) -> only 10 of 19 linear transducer validity studies used a gold standard ('Of the 19 studies that have assessed the validity of linear transducers, 10 utilised a gold-standard criterion')",
+            "practicalImplications: removed unsupported advice (same device per athlete, avoid cross-brand comparison); restated accelerometer and app advice as the review gives it ('accelerometers may best be used for the provision of feedback to enhance motivation... during ballistic, high-velocity exercises')",
+            "limitations: 'many used squats and bench press in a Smith machine' -> squat and bench press in free-weight or Smith machine form (11 of 19 linear transducer studies used free weights)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "823",
+        "synthesisBatch": "pilot-synthesis-batch-26",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}
