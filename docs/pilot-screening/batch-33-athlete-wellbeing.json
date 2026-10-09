@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-33-athlete-wellbeing",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Athlete Wellbeing backlog queue positions 56-56. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 56,
+      "sourceFile": "Acute effects of ad libitum use of commercially available cannabis products on the subjective experience of aerobic exercise - A crossover study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 76510,
+        "doi": "10.1007/s40279-023-01980-4",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Healthy Athletes",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Crossover laboratory study of 42 regular cannabis users (aged 21 to 39 years, mean 30.8) who ran on a treadmill for 30 minutes once after ad libitum use of a THC-dominant (n=31) or CBD-dominant (n=11) flower product and once without cannabis. Compared with the non-cannabis run, cannabis runs were rated higher for positive affect, enjoyment and runner's high symptoms (all P<0.001) and for exertion (P=0.04), with no significant difference in pain (P=0.45).",
+      "limitations": "A laboratory crossover with no placebo arm, no performance outcome, and an unbalanced, quasi-randomized CBD group of 11, in highly active regular cannabis users who already used cannabis with running. The participants are healthy recreational exercisers rather than athletes; the paper is kept as exercise-experience evidence relevant to athlete substance-use conversations.",
+      "synthesisCaution": "Reading the enjoyment and mood gains as a benefit of cannabis for exercise, or treating the THC and CBD differences as established, given an expectancy-prone design and only 11 CBD participants.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: added Healthy Athletes, Male Athletes, Female Athletes (Table 1: 'Male 28 (66.7%) Female 12 (28.6%)'; 'Participants were therefore all healthy habitual exercisers')",
+            "paper.methods: added randomized appointment order ('The order in which participants attended each exercise appointment ... was randomized'), that the die-roll assignment could be declined, and sample sex and activity level",
+            "paper.limitations: added text vs table conflicts (plasma THC 'M = 148 ng/mL' in Discussion vs Table 2 '114 (131)'; Figure 3 valence range '1 to 6' vs Feeling Scale '-5 to +5') and baseline expectancy data"
+          ],
+          "residualConcerns": "Relevance judgment: healthy recreational exercisers who regularly use cannabis, not athletes. Kept as INCLUDE because exercise experience and cannabis use are relevant to athlete wellbeing and substance-use education, but a reviewer may prefer EXCLUDE (c). Athlete tags applied by rule to non-athlete participants. Substance-use topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "889",
+        "synthesisBatch": "pilot-synthesis-batch-33",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

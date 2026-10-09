@@ -40,6 +40,7 @@ out = [
     f"| DEGRADED: DOI not printed in the PDF | {sum(1 for _, r in degraded if not is_unreadable(r))} |",
     f"| DEGRADED: text unreadable or incomplete | {sum(1 for _, r in degraded if is_unreadable(r))} |",
     f"| Scope or editorial exclusions you may want to reverse | {len(scope)} |",
+    "| Published records sharing a DOI | see section 5 |",
     "",
     "## 1. Wrong PDF on disk",
     "",
@@ -85,5 +86,25 @@ out += [
 ]
 for b, r in scope:
     out += [f"- **{r['sourceFile']}** ({b}): {short(r.get('exclusionReason'), 200)}"]
+papers = json.load(open(f"{R}/papers.json", encoding="utf8"))
+by_doi = {}
+for paper in papers:
+    doi = (paper.get("doi") or "").strip().lower()
+    if doi:
+        by_doi.setdefault(doi, []).append(paper)
+collisions = {doi: group for doi, group in by_doi.items() if len(group) > 1}
+out += [
+    "",
+    "## 5. Published records that share a DOI",
+    "",
+    "Two or more published records carry the same DOI. Either the records are duplicates of one article, or one "
+    "record has the wrong DOI. **Action:** open each source; if they are the same article, say which ID to retire "
+    "(IDs are never reused); if not, the wrong DOI will be corrected from the PDF in a follow-up batch.",
+    "",
+]
+for doi, group in sorted(collisions.items()):
+    out.append(f"- `{doi}`: " + "; ".join(f"ID {p['id']} ({short(p['citation'], 90)})" for p in group))
+if not collisions:
+    out.append("- None.")
 open(f"{R}/docs/needs-eric.md", "w", encoding="utf8").write("\n".join(out) + "\n")
-print(f"needs-eric.md: {len(mismatch)} mismatches, {len(degraded)} degraded, {len(scope)} scope calls")
+print(f"needs-eric.md: {len(mismatch)} mismatches, {len(degraded)} degraded, {len(scope)} scope calls, {len(collisions)} DOI collisions")

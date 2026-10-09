@@ -72,10 +72,10 @@ This queue contains 90 unrepresented, content-deduplicated local PDFs: 12 alloca
    `Return to play and risk of repeat concussion in collegiate football players- comparative analysis from the NCAA Concussion Study (1999–2001) and CARE Consortium (2014–2017).pdf`
 29. **Return to play guidelines after cervical spine injuries in American football athletes - A literature-based review** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Return to play guidelines after cervical spine injuries in American football athletes - A literature-based review.pdf`
-30. **A 4-year study of hamstring injury outcomes in elite track and field using the British Athletics rehabilitation approach** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
-   `A 4-year study of hamstring injury outcomes in elite track and field using the British Athletics rehabilitation approach.pdf`
-31. **Association of the British Athletic Muscle Injury Classification and anatomic location with return to full training and reinjury following hamstring injury in elite soccer** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+30. **Association of the British Athletic Muscle Injury Classification and anatomic location with return to full training and reinjury following hamstring injury in elite soccer** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Association of the British Athletic Muscle Injury Classification and anatomic location with return to full training and reinjury following hamstring injury in elite soccer.pdf`
+31. **Hamstring rehabilitation in elite track and field athletes - Applying the British Athletics Muscle Injury Classification in clinical practice** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+   `Hamstring rehabilitation in elite    track and field athletes - Applying the British Athletics Muscle Injury    Classification in clinical practice.pdf`
 32. **Clinical and biomechanical outcomes of rehabilitation targeting intersegmental control in athletic groin pain- prospective cohort of 205 patients** — Cohort Study — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Clinical and biomechanical outcomes of rehabilitation targeting intersegmental control in athletic groin pain- prospective cohort of 205 patients.pdf`
 33. **Validation of a Composite Outcome Score for Assessing Return to Sports After Achilles Tendon Repair** — Methodological / Validation Study — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
@@ -136,10 +136,10 @@ This queue contains 90 unrepresented, content-deduplicated local PDFs: 12 alloca
    `The new challenge of sports nutrition - Accepting insect food as dietary supplements in professional athletes.pdf`
 58. **Summary of the 2024 Professionals in Nutrition for Exercise and Sport “10 Questions -10 Experts” Session—Hot Topics for the Paris Olympic Games** — Other — TITLE SCREENED<br>
    `Summary of the 2024 Professionals in Nutrition for Exercise and Sport “10 Questions -10 Experts” Session—Hot Topics for the Paris Olympic Games.pdf`
-59. **A mixed methods investigation into athletic trainer and dietitian's nutrition practices for sport-related concussion patients** — Other — TITLE SCREENED<br>
-   `A mixed methods investigation into athletic trainer and dietitian's nutrition practices for sport-related concussion patients.pdf`
-60. **A White Paper on collagen hydrolyzates and ultrahydrolyzates - Potential supplements to support joint health in osteoarthritis** — Other — TITLE SCREENED<br>
-   `A White Paper on collagen hydrolyzates and ultrahydrolyzates - Potential supplements to support joint health in osteoarthritis.pdf`
+59. **Assessment of Nutrient Status in Athletes and the Need for Supplementation** — Other — TITLE SCREENED<br>
+   `Assessment of Nutrient Status in        Athletes and the Need for Supplementation.pdf`
+60. **Associations of Urine Specific Gravity With Body Mass Index and Lean Body Mass at the Population Level - Implications for Hydration Monit** — Other — TITLE SCREENED<br>
+   `Associations of Urine Specific Gravity With Body Mass Index and Lean Body Mass at the Population Level - Implications for Hydration Monit.pdf`
 
 ## Brain Health & Psychology
 
@@ -161,12 +161,12 @@ This queue contains 90 unrepresented, content-deduplicated local PDFs: 12 alloca
    `Multimodal Imaging of Retired Professional Contact Sport Athletes Does Not Provide Evidence of Structural and Functional Brain Damage.pdf`
 69. **Neurodiversity in elite sport - A systematic scoping review** — Narrative Review — TITLE SCREENED<br>
    `Neurodiversity in elite sport - A systematic scoping review.pdf`
-70. **A preliminary study of the effectiveness of an allostatic closed loop acoustic stimulation neurotechnology in the treatment of athletes with persisting post concussion symptoms** — Other — TITLE SCREENED<br>
-   `A preliminary study of the effectiveness of an   allostatic closed loop acoustic stimulation neurotechnology in the   treatment of athletes with persisting post concussion   symptoms.pdf`
-71. **Brain doping substances - Prohibited or not in sports** — Other — TITLE SCREENED<br>
+70. **Brain doping substances - Prohibited or not in sports** — Other — TITLE SCREENED<br>
    `Brain doping substances - Prohibited or not in sports.pdf`
-72. **Chronic Traumatic Encephalopathy Neuropathologic Change Is Not Associated With Suicide in Former Athletes** — Other — TITLE SCREENED<br>
+71. **Chronic Traumatic Encephalopathy Neuropathologic Change Is Not Associated With Suicide in Former Athletes** — Other — TITLE SCREENED<br>
    `Chronic Traumatic Encephalopathy Neuropathologic Change Is Not Associated With Suicide in Former Athletes.pdf`
+72. **Clenbuterol Abuse in Bodybuilding and Athletics - Unsupervised Use, Psychological Motivations, and Health Consequences** — Other — TITLE SCREENED<br>
+   `Clenbuterol Abuse in Bodybuilding and Athletics - Unsupervised Use, Psychological Motivations, and Health Consequences.pdf`
 
 ## Athlete Wellbeing
 
@@ -203,9 +203,9 @@ This queue contains 90 unrepresented, content-deduplicated local PDFs: 12 alloca
    `Validity of research based on public data in sports medicine - A quantitative assessment of anterior cruciate ligament injuries in the NFL.pdf`
 87. **The validity and reliability of wearable microtechnology for intermittent team sports - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `The validity and reliability of wearable microtechnology for intermittent team sports - A systematic review.pdf`
-88. **A systematic review and meta-analysis of wearable satellite system technology for liner sprint profiling - Technological innovations and practical applications** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `A systematic review and meta-analysis of wearable satellite system technology for liner sprint profiling - Technological innovations and practical applications.pdf`
-89. **Heat Stroke Burden and Validity of Wearable Derived Core Temperature Estimation during Elite Military Training** — Other — TITLE SCREENED<br>
+88. **Heat Stroke Burden and Validity of Wearable Derived Core Temperature Estimation during Elite Military Training** — Other — TITLE SCREENED<br>
    `Heat Stroke Burden and Validity of Wearable Derived Core Temperature Estimation during Elite Military Training.pdf`
-90. **Does the operating tempeature of accelerometers affect data measurement during static and dynamic conditions in sports - A randomized-control trial** — Other — TITLE SCREENED<br>
+89. **Does the operating tempeature of accelerometers affect data measurement during static and dynamic conditions in sports - A randomized-control trial** — Other — TITLE SCREENED<br>
    `Does the operating tempeature of accelerometers affect data measurement during static and dynamic conditions in sports - A randomized-control trial.pdf`
+90. **Assessing the Validity of Wearable Inertial Sensors in Evaluating Joint Kinetics and Hamstring Musculotendon Mechanics at Various Running Speeds** — Other — TITLE SCREENED<br>
+   `Assessing the Validity of Wearable Inertial Sensors in Evaluating Joint Kinetics and Hamstring Musculotendon Mechanics at Various Running Speeds.pdf`

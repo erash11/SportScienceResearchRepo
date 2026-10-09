@@ -1,0 +1,938 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-29-rehabilitation-return-to-sport",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Rehabilitation & Return to Sport backlog queue positions 3-93. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 3,
+      "sourceFile": "3.0-Teslas MRI Observation at Return to Play After Hamstring Injuries.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 36562,
+        "doi": "10.1097/JSM.0000000000001289",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer",
+        "Track & Field",
+        "Rugby",
+        "Volleyball",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Professional / Elite",
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Prospective observational, single-arm cohort (a substudy of a larger diffusion tensor imaging cohort) of 58 athletes, 56 male and 2 female, with an MRI-positive acute hamstring injury who were cleared for return to play. Baseline and return-to-play 3.0-T MRIs were graded with the modified Peetrons and BAMIC systems, and reinjuries were recorded for one year. The authors report edema in 95% and fibrosis-type low signal in 76% of MRIs at return to play, with 3 reinjuries (5%).",
+      "limitations": "This is an uncontrolled cohort with only 3 reinjuries, so no MRI feature could be analysed as a reinjury predictor. The sample was selected for MRI-positive injuries with a return-to-play scan within 10 days, and it was mostly male professional footballers.",
+      "synthesisCaution": "Staff could read the high rate of edema and fibrosis at return to play as a sign that players are not ready, when the paper shows only that these findings are common in athletes who were cleared and does not link them to reinjury.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Return-to-play clearance topic. Craniocaudal edema is labelled a mean with an IQR range in Table 3 (14.9 vs 7.4 cm). Sample levels are mixed (74% professional, 24% competitive, 2% recreational) and the minimum age is over 16.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "858",
+        "synthesisBatch": "pilot-synthesis-batch-29",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 5,
+      "sourceFile": "A 4-year study of hamstring injury outcomes in elite track and field using the British Athletics rehabilitation approach.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 49018,
+        "doi": "10.1136/bjsports-2020-103791",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Track & Field"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Prospective cohort of 70 hamstring injuries in 46 elite track and field athletes on the British Athletics World Class Programme (24 women and 22 men, mean age 24.6 ± 3.7 years), December 2015 to November 2019. All injuries had an MRI within 7 days and were managed with the British Athletics rehabilitation approach guided by BAMIC grading. The median time to return to full training was 17 days, with shorter times for grade 0 injuries and longer times for higher grades and intratendon class c injuries.",
+      "limitations": "The cohort had no comparison group, and the rehabilitation team was not blinded to MRI results, so the MRI-to-recovery associations may partly reflect the protocol. Reinjury was counted only as recurrence within 3 months of full training or exacerbation during rehabilitation, so the 2.9% figure is not comparable to 12-month reinjury rates.",
+      "synthesisCaution": "Staff could read the 2.9% reinjury rate as proof that the approach prevents reinjury, when the study has no control group, a short reinjury window and a single elite sprint-focused programme.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr: 'greater MRI oedema and tendon involvement' was imprecise because tendon length was not associated -> now names tendon cross-sectional area and loss of tension ('The length of intratendon injury was not associated with TRFT (p=0.16) but the CSA of tendon injury was')",
+            "paper.findings: 54% sprinting figure applies to the 59 injuries with recorded activity ('Activity during which injury occurred n=59 ... Sprinting 32 54') -> denominator added; class 2c/3c vs a/b wording aligned to reported class c comparisons",
+            "paper.practicalImplications: 'elite sprinters' -> 'elite track and field athletes' (13% of injuries were in endurance athletes)"
+          ],
+          "residualConcerns": "Abstract reports mean TRFT (18.6 days; 2c 34 days, 3c 48 days) while Table 4 reports medians (2c 35, 3c 51.5); record uses medians. Four further same-side injuries within 1 year at different locations were not counted as reinjuries under the 3-month definition.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "859",
+        "synthesisBatch": "pilot-synthesis-batch-29",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 10,
+      "sourceFile": "A Physiologically Based Approach to Prescribing Exercise Following a Sport‑Related Concussion.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 24,
+        "extractedCharacters": 88221,
+        "doi": "10.1007/s40279-019-01065-1",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Ice Hockey",
+        "Swimming & Diving"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Collegiate",
+        "Youth / Adolescent",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Narrative review of single-bout exercise physiology in healthy people and of exercise studies in concussed patients (Tables 1 to 5), drawn from PubMed and Google Scholar searches and reference lists. Concussed patients showed altered cerebral blood flow, higher heart rate and lower RR intervals during exertion, and symptom reduction with controlled aerobic exercise in the clinical studies tabulated (6 to 2413 participants). The authors propose a conservative low-intensity, short-duration subacute exercise prescription.",
+      "limitations": "The review is narrative, with no formal risk-of-bias appraisal, and the core physiology comes from small healthy-volunteer studies. Concussion-specific evidence is sparse, mostly observational, and mainly in males under 30, so the prescription is an extrapolation.",
+      "synthesisCaution": "Staff may treat the proposed heart-rate targets as validated clinical doses, when they are the authors' conservative extrapolation from healthy-person physiology and small concussion cohorts.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: 'Healthy Athletes' -> 'Adult / Recreational'; the healthy-person physiology studies were mostly recreationally active or untrained young adults ('recreationally active adults participated in a steady-state exercise session'), not athletes"
+          ],
+          "residualConcerns": "Clinically sensitive concussion paper. The HRmax targets differ between Section 4 (40 to 50% and 60 to 70%) and the Conclusions (40% and 60%); the record reports the Conclusions values and flags the conflict. Prescription is the authors' extrapolation, not a tested protocol.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "860",
+        "synthesisBatch": "pilot-synthesis-batch-29",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 20,
+      "sourceFile": "A cross-sport comparison of performance-based outcomes of professional athletes following primary microfracture of the knee.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 33906,
+        "doi": "10.1016/j.knee.2018.04.008",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Baseball / Softball",
+        "Basketball",
+        "American Football",
+        "Ice Hockey"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Injured Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Retrospective cohort of 131 male professional athletes (18 MLB, 34 NBA, 76 NFL, 3 NHL) who had primary unilateral knee microfracture between 1991 and 2015, identified from public sources. Each player was compared with his own pre-surgery season; 103 (78.6%) returned to a major league game, and 82 had performance scores analysed, with basketball and baseball players showing lower performance one season after surgery (-14.8% and -12.9%).",
+      "limitations": "The cases were found through public media reports, which may miss players and omit concomitant procedures, rehabilitation and diagnostic detail. Only men were studied, and the sport-level groups are small (3 NHL players, 18 MLB players), so between-sport contrasts are fragile.",
+      "synthesisCaution": "Staff could read the sport-by-sport performance differences as proof that microfracture outcomes depend on the sport, when the paper's own between-sport comparisons of change in performance were not significant.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: removed the claim that Table 2 sport-level return counts needed checking against the text (Table 2 18+28+54+3 = 103 matches '103 of 131'); added why 21 returners lacked performance scores",
+            "paper.athleteDev: 'usually return to a similar performance level, with the exception of basketball players in later seasons' omitted the significant first-season baseball drop -> now states baseball dropped then recovered, NFL no drop, NBA stayed lower"
+          ],
+          "residualConcerns": "Footnotes to Table 2 give 75.2% and 89.1% where the text gives 75.0% and 89.0%; trivial.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "861",
+        "synthesisBatch": "pilot-synthesis-batch-29",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 23,
+      "sourceFile": "A framework for clinicians to improve the decision-making process in return to sport.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 76475,
+        "doi": "10.1186/s40798-022-00440-z",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review, with a worked ACL example, that treats return-to-sport decisions as a decision-analysis problem and draws on decision theory, return-to-sport criteria and shared decision-making literature. It proposes a three-step framework (test selection and interpretation, checking for deviations from normative decision models, and shared decision-making with the athlete, coach and manager). The authors describe the supporting evidence as limited and cite few empirical studies of how clinicians actually decide.",
+      "limitations": "This is a non-systematic narrative review, so the literature selection is not reproducible and the framework has not been tested against outcomes. The worked tables are hypothetical examples (equal importance in Table 1, arbitrary weights and units in Table 2), so they cannot be read as evidence about decision quality.",
+      "synthesisCaution": "Staff could read the three-step framework as a validated protocol that improves return-to-sport decisions, when the authors present it as a conceptual aid whose benefit has not been tested.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations and paper.limitations: 'equal weights' applied to both tables -> Table 1 assumes equal importance but Table 2 uses importance weights (e.g., 'an importance of 3 and a utility value of 10 AU')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "862",
+        "synthesisBatch": "pilot-synthesis-batch-29",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 36,
+      "sourceFile": "A return to sport algorithm for acute hamstring   injuries.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 92071,
+        "doi": "10.1016/j.ptsp.2010.07.003",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Clinical commentary that proposes a three-phase, criteria-based return-to-sport algorithm for acute hamstring injuries. It tabulates the progression criteria and treatments of seven published hamstring rehabilitation programmes (Tables 1 and 2) and reviews the cited evidence for each proposed test and treatment. No sample or outcome data are reported, and the authors state the algorithm has not been validated.",
+      "limitations": "This is a 2010 clinical commentary (Masterclass) with no systematic search or appraisal of the cited evidence. It is kept as a clinical review because it tabulates the criteria and treatments of all seven published hamstring management programmes and reviews the evidence behind each proposed criterion, but the eligibility call is borderline.",
+      "synthesisCaution": "Staff could treat the proposed step criteria, such as the 10% strength asymmetry threshold or the 5-day check before sub-acute loading, as validated return-to-sport standards, when the authors state the algorithm is unvalidated.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations, paper.tldr, paper.rtp: claimed the algorithm's step details appear only in Figure 1 and could not be checked against the body text -> the body text does state several criteria ('If there are no problems after 5 days, the athlete can progress to the sub-acute phase'; 'the athlete needs to achieve a leg asymmetry of less than 10% in hamstring strength'; ASLR 'Good control without anterior pelvic tilt is required')",
+            "paper.findings: added that only three of the seven prior programmes use an objective criterion ('Only three of the seven studies mention an objective measure (i.e. isokinetic strength asymmetries)')",
+            "populations: Professional / Elite not supported (algorithm addresses athletes generally) -> Injured Athletes, Mixed / Unspecified",
+            "evidenceSummary, screeningLimitations: reworded to state why the article is kept as a clinical review and that the call is borderline"
+          ],
+          "residualConcerns": "Eligibility is borderline. The article calls itself a 'clinical commentary' (Masterclass) with no search method, which points to EXCLUDE (b), but it contains a structured tabular comparison of all seven published hamstring management programmes and a referenced review of evidence for each criterion, so I kept INCLUDE as a narrative review. A human reviewer should confirm. Return-to-play clearance topic; NSAID discussion included.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "863",
+        "synthesisBatch": "pilot-synthesis-batch-29",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 46,
+      "sourceFile": "AREALL~1.PDF",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 50400,
+        "doi": "10.1111/sms.14586",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Retrospective cohort of 91 MRI-confirmed hamstring injuries in 46 players from one professional men's rugby union club over five seasons (July 2015 to June 2021). Injuries with intramuscular tendon involvement (BAMIC 'c') had a longer median time to full training (81 days, IQR 38 to 112, against 18 days, IQR 14 to 24, without; log-rank hazard ratio 2.99, 95% CI 1.98 to 4.51), and neither intramuscular tendon nor T-junction involvement was significantly associated with subsequent injury (odds ratios 0.96 and 1.03, with wide confidence intervals).",
+      "limitations": "Players and clinicians were not blinded to MRI results, and the study used clinical notes from a single club, so time to full training may reflect that club's rehabilitation practice. Injuries with 7 days or less absence or no MRI were excluded, and 11 surgically managed injuries were included.",
+      "synthesisCaution": "Staff could read the threefold longer time to full training as a fixed property of the tendon injury, when clinicians and players were not blinded to MRI and the authors note that unblinded clinicians may manage these injuries more cautiously.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings: non-tendon group median was omitted ('IQR 14 to 24 days without') -> 'median time to return to full training was 18 days (inter-quartile range = 14-24 days) for the HMIs without'",
+            "synthesisCaution: 'rehabilitation was adjusted during the study' not supported -> unblinded clinicians may treat cautiously ('if a clinician is not blinded to the MRI findings, their natural bias would be to treat intramuscular tendon injuries more cautiously')",
+            "screeningLimitations: added inclusion of surgically managed cases ('Eleven cases that were managed with surgery were included')",
+            "citation: 'Persson UM' -> 'McCarthy Persson U' (author printed as 'Ulrik McCarthy Persson')",
+            "practicalImplications/athleteDev: T-junction 'should not by itself change the timeline' and 'did not show higher recurrence' softened to non-significant findings with small numbers and wide CIs (OR 1.03, 95% CI 0.30 to 3.99; 18 T-junction injuries)",
+            "limitations: added Discussion vs results conflict (24% vs 29% intramuscular tendon injuries)"
+          ],
+          "residualConcerns": "Abstract and results disagree on the key times (78 vs 81 days; T-junction 29 vs 27 against 24 vs 18 days) and the T-junction p value is misprinted; reviewer should confirm which values are correct.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "864",
+        "synthesisBatch": "pilot-synthesis-batch-29",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 48,
+      "sourceFile": "Ability to return to sports after early lateral ligament repair of the ankle in 147 elite athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 32911,
+        "doi": "10.1007/s00167-022-07270-2",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Soccer",
+        "Rugby",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Retrospective review of prospectively collected records of 147 elite athletes (89.1% male, mean age 24.4 years; 66% soccer and 21% rugby) who had a modified Broström repair for acute grade III lateral ligament injury from 2015 to 2019, with at least 2 years of follow-up, all by one surgeon. All athletes returned to pre-injury level with a median return time of 69 days (range 58 to 132), and 3 athletes (2%) re-injured the same ankle.",
+      "limitations": "The study has no control group, a single surgeon, no patient-reported outcome scores, and return dates taken from club medical staff. The subgroups with associated injuries are small (7 osteochondral lesions and 9 deltoid injuries), so their estimates are imprecise.",
+      "synthesisCaution": "Staff could apply the 69-day return as a standard timeline for all ankle sprains or treat surgery as the default, when the series covers only elite athletes with acute grade III injury treated by one surgeon and has no comparison group.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: added internal sex-count conflict ('One hundred and one patients (89.1%) were males' while n = 147) and small subgroup sizes",
+            "limitations/practicalImplications: added that the longer return with OLT and deltoid injury may partly reflect slower rehabilitation protocols ('patients with associated OLT and deltoid ligament injuries had a slower rehabilitation protocol ... which could delay the time needed to RTS')"
+          ],
+          "residualConcerns": "Sex split is internally inconsistent (101 males reported as 89.1% of 147). The authors describe a 2% re-injury rate 'by 2 years', but one of the three re-injuries occurred at 49 months. Return-to-play timeline paper for surgical cases.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "865",
+        "synthesisBatch": "pilot-synthesis-batch-29",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 49,
+      "sourceFile": "Abnormal lower limb biomechanics during a bilateral vertical jump despite the symmetry in single-leg vertical hop height in athletes after ACL reconstruction.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 42846,
+        "doi": "10.1177/23259671241230989",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Healthy Athletes",
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Controlled laboratory case-control study of 46 athletes after ACL reconstruction, all cleared to return to sport with a horizontal hop limb symmetry index above 90%, split by single-leg vertical hop symmetry (23 below 90%, 23 above 90%), plus 24 noninjured athletes performing a bilateral vertical jump. In the above 90% group the operated side still showed lower knee extension moment, higher hip extension moment, lower ankle plantarflexion moment and lower peak vertical ground-reaction force than the nonoperated side. Against controls, this group differed mainly in a lower knee internal rotation moment at peak vertical ground-reaction force, seen on both the operated and nonoperated sides.",
+      "limitations": "A single-institution laboratory study with 23 athletes per ACL subgroup, mixed graft types, no quadriceps strength data and no outcome follow-up. It shows mechanical differences at one time point and cannot support reinjury prediction or a return-to-sport cut-off.",
+      "synthesisCaution": "Reading a 90% or higher single-leg vertical hop limb symmetry index as proof of normal landing and jump mechanics, or treating these group differences as a reinjury risk threshold.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.abstract: said high-symmetry athletes showed abnormal mechanics 'compared with noninjured athletes' -> most deficits were operated vs nonoperated side; only knee internal rotation moment differed from controls ('the operated side in the high symmetry group showed a lower knee internal rotation moment compared with the control group (P = .016)')",
+            "evidenceSummary/paper.findings: added that the nonoperated side also had lower knee internal rotation moment than controls ('P = .016 and P = .040, respectively')",
+            "paper.methods: added that all ACLR athletes were cleared to return and had horizontal hop LSI above 90% ('were cleared to return to all high-level athletic activities by their surgeon')",
+            "paper.athleteDev: removed unsupported training-progression advice -> limited to what the force data show"
+          ],
+          "residualConcerns": "Competition level is unstated (Tegner 7 or higher, mean age about 22), so Mixed / Unspecified is used. Return-to-sport testing topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "866",
+        "synthesisBatch": "pilot-synthesis-batch-29",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 52,
+      "sourceFile": "Achilles tendon load is progressively increased with reductions in walking speed.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 44312,
+        "doi": "10.1249/MSS.0000000000001322",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Healthy Athletes",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Repeated-measures laboratory study of 33 healthy, recreationally active adults (16 women, 17 men) walking barefoot on a treadmill at slow (0.85 m/s), preferred (1.10 m/s) and fast (1.35 m/s) speeds in random order. Ultrasound transmission velocity in the right Achilles tendon fell with each increase in speed during stance (first minimum P=0.002, first peak P=0.007) but not swing, even though vertical ground reaction force peaks and loading rate rose.",
+      "limitations": "Participants were healthy recreationally active adults rather than athletes or patients, the speed range was narrow, and tendon load is inferred from an ultrasound velocity rather than measured directly. It is retained as evidence on Achilles tendon loading during rehabilitation-type walking, which is relevant to athlete tendon care but only indirectly.",
+      "synthesisCaution": "Treating the ultrasound velocity as direct proof that slow walking loads the Achilles tendon more, and applying that to rehabilitation or training progressions for injured athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: added Healthy Athletes, Male Athletes, Female Athletes per tagging rule ('Thirty-three healthy adults (16 female, 17 male)'; 'recreationally active based on self-report')",
+            "evidenceSummary/findings: added the first-peak velocity result (Table 4: 2255, 2232, 2212 m/s, P=0.007) and that swing values did not change",
+            "paper.limitations: added text vs table conflicts (stride duration described as 'longer' though Table 1 shows 1.27 to 1.01 s; PF1 -5.6 to -5.2 degrees)"
+          ],
+          "residualConcerns": "Relevance judgment: the sample is healthy recreational adults (university faculty), not athletes, and the outcome is walking-speed tendon loading. Kept as INCLUDE because it addresses Achilles tendon rehabilitation loading, but a reviewer may prefer EXCLUDE (c). Athlete tags are applied by rule to non-athlete participants.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "867",
+        "synthesisBatch": "pilot-synthesis-batch-29",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 74,
+      "sourceFile": "An 8-week neuromuscular training program after concussion reduces 1-year subsequent injury risk - A randomized clinical trial.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 52078,
+        "doi": "10.1177/03635465211069372",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Youth / Adolescent",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Pilot randomized clinical trial (Level 1 as printed) in which 27 athletes aged 12 to 18 years, recently concussed and cleared to return to play, were randomized to an 8-week neuromuscular training program (n = 11, twice weekly) or standard of care with no added program (n = 16). Over the following year, 4 of 11 (36%) intervention and 12 of 16 (75%) standard-of-care athletes had a sports-related time-loss injury, with an age- and sex-adjusted hazard ratio of 3.56 (95% CI, 1.11-11.49; P = .0334) for standard of care. Lower-extremity injury rates did not differ significantly.",
+      "limitations": "The trial is a single-site pilot with 27 analyzed athletes, a per-protocol primary analysis, self-reported monthly injury logs and an enrollment shortfall caused by COVID-19 (32 enrolled against a target of 40). The authors describe the findings as preliminary, and the wide confidence intervals, baseline group imbalances and non-significant lower-extremity result limit how firmly the injury-reduction effect can be stated.",
+      "synthesisCaution": "Staff could read the 36% versus 75% injury proportions as proof that the program prevents injury, when the sample is small, the analysis was per-protocol, and the authors call the findings preliminary.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: described the placeholder vaguely -> specifies it concerns the unadjusted lower-extremity incidence comparison ('Please insert results of statistical significant testing for this univariable association')",
+            "paper.limitations: added per-protocol reallocation of 2 athletes and ITT consistency ('placed into the standard-of-care group (per-protocol analysis)'; 'conclusions drawn from the intention-to-treat analysis are consistent')",
+            "paper.limitations and screeningLimitations: added baseline imbalance (Table 1: physical activity before evaluation 45% vs 19%; multiple concussions 45% vs 19%)"
+          ],
+          "residualConcerns": "Concussion and return-to-play topic. The source PDF contains an unfilled author/editor placeholder in Results; a reviewer may want to confirm whether a corrected version of record exists.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "868",
+        "synthesisBatch": "pilot-synthesis-batch-29",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 76,
+      "sourceFile": "An overview of blood flow restriction physiology and clinical considerations.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed anywhere in the extracted text (no DOI string appears in the text at all). All other fields are complete, so the record is held for the operator to verify the DOI externally.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: said the review presents both rhabdomyolysis views 'without resolving them' -> the review offers an interpretation based on protocols to failure ('Wernbom's referenced studies almost exclusively used protocols that required exertion to muscle failure')",
+            "paper.practicalImplications: gave only 40% AOP -> adds the 40% to 80% position-statement range and cardiovascular disagreement ('Other guidelines have recommended a target AOP of 40% to 80%'; Spranger et al 'advise caution')"
+          ],
+          "residualConcerns": "DOI not printed in the extracted text; operator should verify externally. Safety and VTE screening content is clinically sensitive.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 77,
+      "sourceFile": "Analysis of Return to Sport and    Weight Training After Repair of the Pectoralis Major Tendon.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 34396,
+        "doi": "10.1177/0363546519851506",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Male Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Retrospective case series (Level 4 as printed) of 44 men, mean age 39.6 years, who had pectoralis major tendon repair between 2010 and 2016 and were followed up at a mean of 51.1 months (of 60 eligible patients). Return to sport at any level was 97.7% (43/44), and 50.0% (22/44) returned at the same or better intensity. Self-reported one-repetition maximum barbell bench press fell by a mean of 23.3%, and 38.6% reported apprehension that affected lifting.",
+      "limitations": "This is an uncontrolled single-center series with 73.3% follow-up and no comparison group. Preinjury strength was self-reported and recalled, and the multivariable model was built from 44 patients with many candidate variables.",
+      "synthesisCaution": "Staff could read the 97.7% return-to-sport figure as the expected outcome, when only half returned at the same or better intensity and return was judged from patient report.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added the acute repair definition conflict ('<6 months from injury' in Methods vs 'Performed within 6 weeks from injury' in Table 3) and the contradictory direction for contralateral surgery in the Multivariate Analysis text",
+            "paper.limitations: added internally inconsistent clavicular head row (CI 1.144-4.221 with P = .237); kept Table 3 vs text CI conflict and 'only variable' Discussion conflict",
+            "paper.practicalImplications: 'these were the two associated factors' -> notes the text also reports acute repair and that the regression is unreliable"
+          ],
+          "residualConcerns": "Regression reporting in the source is internally inconsistent (Table 3 vs text CI for acute repair, contradictory direction for contralateral surgery, 6 months vs 6 weeks acute definition). Return-to-sport topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "869",
+        "synthesisBatch": "pilot-synthesis-batch-29",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 78,
+      "sourceFile": "Analysis of scapular kinematics and muscle activity by use of fine-wire electrodes during shoulder exercises.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 33430,
+        "doi": "10.1177/0363546520908604",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Descriptive laboratory study of 23 healthy young men (mean age 22.3 years) who performed four early shoulder rehabilitation exercises (inferior glide, low row, lawnmower and robbery). Three-dimensional scapular kinematics were recorded with fine-wire and surface EMG of eight scapular and rotator cuff muscles, normalized to % MVIC. In the pairwise tests, the lawnmower and robbery gave more rhomboid major and less pectoralis minor activity than the inferior glide and low row, more middle trapezius activity than the inferior glide only, and the low row produced the least infraspinatus activity (13% MVIC).",
+      "limitations": "Participants were healthy men who were not athletes and did no more than 4 hours a week of overhead activity, so no patients or injured athletes were tested. The study measured muscle activity and scapular position in one session, not tissue load, pain or rehabilitation outcomes.",
+      "synthesisCaution": "Staff could read the authors' exercise-selection advice (for example, avoiding the lawnmower and robbery in early rehabilitation) as tested in injured patients, when it is an extrapolation from muscle activity in healthy men.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary, paper.tldr, paper.findings: middle trapezius difference reported against both inferior glide and low row -> significant only vs inferior glide (Table 4: 'LR-LM: .608', 'LR-RB: .251'; 'IG-LM: .031', 'IG-RB: .009')",
+            "paper.limitations: added abstract vs Table 4 conflict on middle trapezius",
+            "populations: 'Adult / Recreational' -> 'Mixed / Unspecified' (participants were not described as athletes: 'did not perform overhead activities for more than 4 hours a week')",
+            "paper.findings: added posterior tilt for lawnmower only ('compared with a slight posterior tilt position for the lawnmower')"
+          ],
+          "residualConcerns": "Relevance check: participants were healthy non-athlete men, so 'Male Athletes' and 'Healthy Athletes' are vocabulary approximations. Kept INCLUDE because the exercises are framed as early rehabilitation after sports injury in AJSM, but a reviewer may decide the athlete link is too indirect.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "870",
+        "synthesisBatch": "pilot-synthesis-batch-29",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 85,
+      "sourceFile": "Anterior shoulder instability in the professional athlete - Return to competition, time to return, and career length.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 43322,
+        "doi": "10.1177/2325967120959728",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "American Football",
+        "Ice Hockey",
+        "Combat Sports",
+        "Baseball / Softball",
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Retrospective case series of 23 professional athletes (25 shoulders) who had surgery for anterior shoulder instability by one surgeon between 2007 and 2018. Of 23 athletes, 22 (96%; 95% CI 78-100%) returned to their previous competition level, at a mean of 4.5 months (range 3-8). Return time was similar for contact and noncontact athletes (4.1 vs 4.4 months), and play after surgery was shorter for contact athletes (3.8 vs 5.8 years, P>.05).",
+      "limitations": "A small single-surgeon series with no comparison group, and data drawn partly from public team and search websites. The authors note that recurrent instability after the follow-up period may have been missed, and the Latarjet and Bankart groups differed in bone loss and prior surgery.",
+      "synthesisCaution": "Staff may read the 96% return rate as a general success rate for professional athletes; the series is 23 athletes at one surgeon's practice. The shorter career for contact athletes is stated in the abstract, but the authors report it as not statistically significant (P>.05).",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: added the single recurrence and why that athlete did not return ('had a traumatic dislocation event with recurrent instability ... revised to an open Latarjet ... sustained an anterior cruciate ligament tear')",
+            "findings: added contact vs noncontact return times (4.1 vs 4.4 months, P>.05)",
+            "limitations: noted abstract/Discussion vs result conflict on career length ('contact athletes had shorter careers' vs 'P > .05')",
+            "sports: added the sports named in the cohort ('5 NFL football players, 5 National Hockey League hockey players ... 2 mixed martial artists ... 1 Major League Baseball player')"
+          ],
+          "residualConcerns": "Return-to-play clearance paper; career length data partly from public websites. The authors' claim that early mobilization allowed quicker return is not tested by this design.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "871",
+        "synthesisBatch": "pilot-synthesis-batch-29",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 91,
+      "sourceFile": "Are Anterior Cruciate Ligament–reconstructed Athletes More Vulnerable to Fatigue than Uninjured Athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 49185,
+        "doi": "10.1249/MSS.0000000000002143",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Controlled laboratory study comparing 21 athletes after anterior cruciate ligament reconstruction (ACLR) with 21 uninjured controls matched for age, gender and sport (6 women and 15 men in each group). Five unilateral landing tasks were recorded in 3D with EMG before and after a 5-minute match-simulation protocol (SAFT5) and analysed with statistical parametric mapping. Fatigue raised perceived exertion and reduced single-leg hop distance and lateral-rotation hop height in both groups with no group differences, and both groups landed in a more extended pattern; only two interactions were found, both in the ACLR leg: a larger postfatigue knee abduction moment during the lateral hop and a larger postfatigue thorax flexion angle during the vertical hop with 90 degrees of medial rotation.",
+      "limitations": "Only two group-by-fatigue interactions were found among many SPM comparisons, each in a single task. The fixed-demand protocol produced different fatigue levels between athletes, and athletes were tested once, about 8.5 months after surgery and within 2 weeks of their first full training session.",
+      "synthesisCaution": "Staff could read the two interaction effects as proof that ACLR athletes are more vulnerable to fatigue, when the authors conclude that the groups responded similarly overall and that their hypothesis was not confirmed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations/limitations: claimed the knee abduction interaction (P = 0.044) failed the Bonferroni threshold -> the methods apply 0.05/4 to post hoc tests ('For all parameters that had as significant interaction effect, we conducted post hoc tests... A Bonferroni correction'), and the post hoc test was P = 0.0069",
+            "paper.findings: thorax result conflated interaction P < 0.001 with the post hoc ES 0.55 window -> post hoc 72-106 ms, P = 0.012, ES = 0.55; added knee abduction post hoc P = 0.0069, ES 0.57 and control hop distance",
+            "evidenceSummary: 'reduced jump distance or height' -> specified single-leg hop and lateral-rotation hop height (90 M height P = 0.080, not significant)",
+            "paper.athleteDev: 'general fatigue management does not need to differ' was not supported -> restated as broadly similar responses with no intervention tested"
+          ],
+          "residualConcerns": "Return-to-sport testing topic. Sports listed as 'Football' (likely soccer, Belgian sample) but kept as Mixed / General Sport since the text does not specify. Minor text/table inconsistencies in time windows and P values.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "872",
+        "synthesisBatch": "pilot-synthesis-batch-29",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 93,
+      "sourceFile": "Are return to play times longer in lower limb muscle injuries involving the intramuscular tendon - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 55432,
+        "doi": "10.1016/j.jsams.2023.10.002",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Track & Field",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Systematic review with random-effects meta-analysis of nine studies of elite athletes (441 injuries in 319 athletes, 57 of them women), mostly retrospective cohorts, comparing return-to-play time for lower-limb muscle injuries with and without intramuscular tendon (IMT) involvement. The best-evidence synthesis found no strong evidence of an overall difference, but moderate evidence that a larger percentage of cross-sectional tendon disruption, MRI waviness and loss of tendon tension were associated with longer return-to-play times. The pooled estimate across seven studies (160 injuries, BAMIC 'b' vs 'c') favoured 'b' (Hedges g 0.67, 95% CI 0.20 to 1.15; mean difference 8.93 days, 95% CI 1.63 to 16.22; P = 0.002).",
+      "limitations": "Eight of nine studies were at high risk of bias, the pooled estimate has moderate heterogeneity (I2 = 36.6%), and its 95% prediction interval (-0.39 to 1.73) includes zero. The BAMIC 3b vs 3c subgroup rests on sparse data, and the search was limited to English-language publications.",
+      "synthesisCaution": "Staff could read the pooled BAMIC 'b' vs 'c' difference as a reliable prognosis for an individual athlete, when the authors say the pooled effect comes from high-risk-of-bias studies and the prediction interval crosses zero.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.athleteDev: 'these should not drive load decisions' was not in the paper -> restated as planning expected time lost with high-risk-of-bias caveat",
+            "paper.limitations: replaced fixed-effect note (not a limitation) with clinician-blinding bias ('only two of the included studies reported that the clinicians... were blinded'), recurrence inclusion, median-to-mean conversion, and a Table 4 vs Table 2 inconsistency for Tears et al. CSA",
+            "paper.findings: added muscle groups, 11 estimates and imprecise 3b vs 3c subgroup (0.64, 95% CI -0.13 to 1.40)",
+            "sports: added Soccer, Track & Field and Other Sport (Australian rules) from Table 2"
+          ],
+          "residualConcerns": "Return-to-play prognosis topic. Year 2023 from copyright line; volume and pages not printed in this version.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "873",
+        "synthesisBatch": "pilot-synthesis-batch-29",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}
