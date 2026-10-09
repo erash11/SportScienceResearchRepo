@@ -1,8 +1,32 @@
 # /goal prompt: finish the library and make Ask the Library pilot-ready
 
-Drafted 2026-10-09 (cloud session). Paste everything below the line into a new Claude Code session.
+Drafted 2026-10-09 (cloud session). `/goal` accepts at most 4,000 characters, so paste the **short prompt** (2,969 characters). It points the agent to the **full rules** below, which it reads from this file.
 
----
+## Short prompt (paste this)
+
+```
+/goal Finish the Baylor Evidence Library backlog and make Ask the Library pilot-ready, in erash11/SportScienceResearchRepo. Full rules: docs/agents/goal-finish-library-and-ask.md (read it first, with CLAUDE.md, docs/STATUS.md, docs/adr/, scripts/haiku-batch/README.md). If PR #9 is open, subscribe and work my review comments first.
+
+DONE WHEN:
+A. Every unique unrepresented PDF in SourcePapers/ (about 1,449; see docs/library-coverage-manifest.json) has an INCLUDE/EXCLUDE/DEGRADED decision in docs/pilot-screening/. Every INCLUDE is published via docs/pilot-synthesis/ + synthesis:apply. npm run audit passes.
+B. One "needs Eric" file lists every wrong-PDF identity mismatch and missing-DOI record, with the exact action for each.
+C. An Ask the Library drafter (npm run pilot:draft -- <request.json>) turns a request packet into an On-Demand Decision Brief that uses ONLY published library records and their PDFs (ADR 0002, 0009). It returns a Coverage Gap rather than unsupported claims, and passes pilot:brief and pilot:audit-source.
+D. The drafter is evaluated on docs/ask-library-pilot/examples/stress-test-question-bank.json by a separate Opus claim audit. Results go to docs/ask-library-eval/. Targets: 0 unresolved critical integrity failures and at least 80% of briefs useful. Iterate until met, or document why not.
+E. STATUS.md, the roadmap, CLAUDE.md counts and a dated handoff are current.
+
+METHOD:
+- Pipeline: scripts/haiku-batch (prepare.py --files, then Haiku 5.5 drafters, then Opus claim auditors, then validate.py, then assemble.py). Up to 12 drafters and 12 auditors at once, 8 papers each. Each agent gets its own helper folder.
+- Build queues from the manifest's unrepresented content groups (one canonical file per group). Set pilotDomain from the verified primaryDomain before assembly. Use stable, never-reused IDs starting at the manifest's nextUnusedId.
+- validate.py must print OK. No em dashes.
+- About 96 papers per draft PR, each with a review file (scope calls, identity mismatches, missing DOIs, high-priority spot checks). Master deploys publicly, so batch data goes only through PRs. Subscribe to each PR and keep working while I review.
+- After each batch: synthesis:apply, taxonomy:build, audit:manifest, audit, pilot:check, build. node_modules and dist are committed (Windows binaries); restore them after any Linux npm ci.
+
+NEVER: publish a claim not grounded in source text; invent a DOI, year or citation; commit private or athlete-identifying data; build auth or hosting (ADR 0010); make a paid lookup (e.g. Firecrawl) without my OK.
+
+ASK ME: when a batch PR is ready (keep going unless 3 are unmerged); when an eligibility rule needs changing or more than 15% of a batch is out-of-scope EXCLUDE; when the drafter misses targets after 3 iterations; when A-E are done, hand me the pilot launch checklist (pilot lead, 3 staff across 2+ disciplines, recorded human claim audits are mine). Update docs/STATUS.md after every batch.
+```
+
+## Full rules (referenced by the short prompt)
 
 ```
 /goal Finish the Baylor Health & Performance Evidence Library and make Ask the Library pilot-ready.
