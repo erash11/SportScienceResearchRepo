@@ -44,9 +44,10 @@ Read this first. Update it before ending every session.
 - Open batch PRs (merge in order; each is stacked on the previous one):
   - #9 Batches 19-26: 80 INCLUDE, IDs 744-823. Review `docs/pilot-screening/batches-19-26-review.md`.
   - #10 Batches 27-34: 81 INCLUDE, IDs 824-904 (first manifest-backlog batch). Review `docs/pilot-screening/batches-27-34-review.md`.
-  - After both merge: 873 records, next unused ID 905, about 1,331 backlog PDFs left.
-- Batches 35-42 (next 96 backlog PDFs) are being drafted and audited now. Per the goal rules, batch work pauses
-  when 3 batch PRs are unmerged.
+  - #11 Batches 35-42: 73 INCLUDE, IDs 905-977. Review `docs/pilot-screening/batches-35-42-review.md`.
+  - After all three merge: 946 records, next unused ID 978, 1,235 backlog PDFs left (of 1,427).
+- **Batch work is paused** because 3 batch PRs are unmerged (goal rule). It resumes as soon as #9 merges. The next
+  queue is lines 193+ of the backlog list built by the method in `scripts/haiku-batch/README.md`.
 - `docs/needs-eric.md` (on the batch PR branches): the single list of operator actions: wrong PDFs on disk, DEGRADED
   records needing a DOI, scope reversals, and published records that share a DOI.
 - **Ask the Library drafter** (`npm run pilot:draft -- <request.json>`) is on branch `ask-library-drafter`. Iteration 1
