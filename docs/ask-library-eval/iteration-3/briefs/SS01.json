@@ -1,0 +1,869 @@
+{
+  "schemaVersion": 1,
+  "briefId": "ATL-B-20261009-SS01",
+  "requestId": "ATL-R-20261009-SS01",
+  "version": 1,
+  "createdAt": "2026-10-09T04:37:11.361Z",
+  "status": "On-Demand",
+  "reviewStatus": "Not Expert-Reviewed",
+  "practicalQuestion": "How should a sports scientist decide whether a change in an athlete's countermovement-jump measure is large enough to treat as meaningful rather than normal measurement noise?",
+  "decisionContext": {
+    "population": "Healthy collegiate athletes monitored repeatedly",
+    "sport": "Team-sport performance program using the same force-platform system",
+    "phase": "Weekly in-season monitoring",
+    "outcome": "Distinguish a potentially meaningful within-athlete change from expected test variability",
+    "constraints": "Same protocol and metric; limited repeated trials; no diagnosis or readiness clearance is requested"
+  },
+  "evidenceConfidence": {
+    "tier": "Moderate",
+    "rationale": "Two independent studies measured CMJ test-retest noise with an explicit change-versus-noise method on the same commercial force-plate software. A professional Australian football study compared same-session test error with weekly in-season variation (signal-to-noise ratio). A force-plate validation study gave between-day SEM and minimal detectable change (MDC) values about 7 days apart. Two more studies reported jump-height variability. Reported jump-height noise ranges widely: CV 2.9% within one session, 3.9% for a same-session retest after training, 8.5% in a field study using a linear encoder, and a between-day MDC of 3.4 cm on a mean near 34 cm. The sources agree that noise depends on device, protocol, metric and setting, so estimating noise locally addresses this spread. No source tested collegiate athletes across in-season weeks, and none linked above-noise changes to performance or availability.",
+    "dimensions": {
+      "sourceReview": "One monitoring study of professional Australian footballers measured CMJ test-retest error (n = 18, retest 5 minutes apart after field training) and weekly variation (35 players, 206 tests) on ForceDecks. A validation study of the same force-plate system tested 16 physically active university students (10 men, 6 women) on two days about 7 days apart and reported SEM and MDC. A cross-sectional study of 27 male university team-sport athletes reported CMJ CV% from a single CMJ session. A field study of 23 professional and semi-professional Australian rules footballers measured CMJ height with an optical encoder, reported its own typical error (CV 8.5%), and grouped players using an 8% CV taken from earlier literature. Supporting studies covered an adductor squeeze test (same research group and club as the CMJ monitoring study, same-day retest), an upper-body push-up test in 10 male college athletes, a two-athlete comparison of two force-platform systems, and a 17-athlete experiment imposing four countermovement depths.",
+      "directness": "Partly direct. The professional Australian football study tests whether weekly CMJ variation exceeds test error in an in-season team program. The validation study gives between-day CMJ SEM and MDC on the same software, but in students rather than athletes. The university athlete and Australian rules studies report jump-height variability without a between-day force-plate design. The adductor and push-up studies only illustrate the same logic on other tests.",
+      "consistency": "Consistent on the method: a change should exceed test noise for that metric and setting. Less consistent on the size of that noise, which varies with retest design, device, metric and setting. Sources also differ on how to read a test whose CV exceeds the smallest worthwhile change: the adductor study treated changes beyond the CV as the more meaningful benchmark, while the Australian rules study concluded such variables could not detect practically important changes.",
+      "transferability": "Moderate. Athlete samples were mostly male professional or semi-professional Australian footballers and male university team-sport athletes. The only between-day force-plate CMJ data came from physically active university students, including 6 women, not athletes. No source studied collegiate athletes across in-season weeks on one system."
+    }
+  },
+  "bottomLine": {
+    "text": "Treat a within-athlete CMJ change as potentially meaningful only when it exceeds the test-retest noise for that metric, protocol and system. Express noise as typical error (CV% or SEM), or as an MDC (1.96 x sqrt(2) x SEM) when you want 95% confidence that a change is real. Reported jump-height noise varies widely: CV 2.9% within one session in university athletes, 3.9% for a same-session retest after training in professional Australian football, 8.5% in a field study using a linear encoder, and a between-day MDC of 3.4 cm (about 10% of a 34 cm mean) in university students. Other CMJ metrics ranged from 2.1% to 7.0% in the professional study. Because noise depends on device, protocol, metric and setting, a borrowed number may not fit your program.",
+    "claimIds": [
+      "C2",
+      "C8",
+      "C11",
+      "C19",
+      "C25",
+      "C26",
+      "C27"
+    ]
+  },
+  "recommendedDirection": {
+    "text": "Conditional on being able to run repeated tests under your normal weekly conditions: estimate typical error (CV% or SEM) for each CMJ metric you use, on your own system, software and protocol. Flag an athlete's change only when it exceeds that error, and use the MDC when you want 95% confidence that the change is real. Prefer metrics whose weekly variation is large relative to test error; in the professional Australian football study, a signal-to-noise ratio above 1.5 was described as giving more useful information.",
+    "claimIds": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C20",
+      "C21",
+      "C26"
+    ]
+  },
+  "actions": [
+    {
+      "title": "Measure your own noise",
+      "text": "Repeat the CMJ under your usual protocol on the same force-platform system and calculate CV% and SEM for each metric. In the professional Australian football study, the retest came 5 minutes after the first test, following a field training session, and the authors noted this was not the rested state recommended for assessing true reliability. The force-plate validation study retested about 7 days apart at the same time of day, using the mean of 3 trials. Test-retest error includes day-to-day human variation as well as device accuracy. Professional judgment (not tested by the cited evidence): a retest on a separate day, under normal weekly conditions, likely reflects week-to-week noise better than a same-session retest.",
+      "claimIds": [
+        "C3",
+        "C10",
+        "C22",
+        "C24"
+      ]
+    },
+    {
+      "title": "Pick a decision threshold and apply it consistently",
+      "text": "Compare each athlete's change with the typical error, or, for 95% confidence, with the MDC (1.96 x sqrt(2) x SEM). As one reference point, between-day CMJ jump height in university students had an SEM of 1.2 cm and an MDC of 3.4 cm. A smallest worthwhile change (SWC, 0.2 x SD) is a different benchmark. When test CV exceeded the SWC, the adductor study treated changes beyond the CV (6.3% vs SWC 5.0%) as more meaningful, while the Australian rules study concluded that variables with CV above SWC, including CMJ height (CV 8.5% vs SWC 1%), could not detect practically important changes. Because your stated outcome is separating change from test variability, a noise-based threshold fits; also check how your CV compares with your SWC.",
+      "claimIds": [
+        "C8",
+        "C13",
+        "C15",
+        "C25",
+        "C27"
+      ]
+    },
+    {
+      "title": "Choose metrics that can show a signal",
+      "text": "Calculate signal-to-noise ratio as weekly CV% divided by test CV%. In professional Australian football, mean concentric force (test CV 2.1%, SNR 2.3) and relative peak force (test CV 2.6%, SNR 2.5) showed the greatest capability to detect changes beyond test error, while jump height had a test CV of 3.9% and an SNR of 1.5. The authors rated SNR above 1.5 as good. Authors of a push-up reliability study caution that a reliable test is not necessarily the most effective for monitoring performance change.",
+      "claimIds": [
+        "C1",
+        "C5",
+        "C16",
+        "C19",
+        "C20",
+        "C21"
+      ]
+    },
+    {
+      "title": "Reduce noise within the session",
+      "text": "Use the mean of several trials where possible. One source suggests this may improve reliability, and other studies averaged six jumps or the middle three of five. Keep the same force-platform system and analysis software each week. A portable and a laboratory system differed by small percentages, with no fixed or proportional bias for jump height, RSImod or countermovement depth, but showed bias on other variables, and the authors still advise standardizing systems between testing occasions. Professional judgment (not tested by the cited evidence): with few trials available, keep the number of trials the same each week so noise estimates stay comparable.",
+      "claimIds": [
+        "C10",
+        "C14",
+        "C17",
+        "C26",
+        "C28",
+        "C30"
+      ]
+    }
+  ],
+  "monitoring": [
+    {
+      "label": "Countermovement depth",
+      "text": "Review countermovement depth next to jump height. In CrossFit athletes jumping at four imposed depths, jump height had a quadratic relationship with push-off distance, with an individual optimum; a 9 cm deviation from the optimum lowered jump height by a mean of only 0.6 cm. Professional judgment (not tested by the cited evidence): a large week-to-week change in depth may partly explain a change in jump height.",
+      "claimIds": [
+        "C18",
+        "C29"
+      ]
+    },
+    {
+      "label": "Signal-to-noise by metric",
+      "text": "Track weekly CV% against test CV% for each metric through the season to see which metrics carry useful signal in your program.",
+      "claimIds": [
+        "C1",
+        "C20",
+        "C21"
+      ]
+    },
+    {
+      "label": "Noise estimate validity",
+      "text": "Professional judgment (not tested by the cited evidence): re-estimate test error when the setting, protocol, device, software or squad changes. The cited sources report that reliability is specific to the test type and metric, that familiarization, training history and events between test days can affect it, and that analysis methods differ between force-plate systems.",
+      "claimIds": [
+        "C10",
+        "C26"
+      ]
+    }
+  ],
+  "guardrails": [
+    {
+      "text": "A change that exceeds noise suggests the measured change is probably real, not that its cause is known. The professional Australian football study did not relate its monitoring data to injury or performance, and noted that changes measured after training may reflect recent or chronic training. Professional judgment (not tested by the cited evidence): an above-noise change does not diagnose fatigue or injury and does not establish readiness or clearance. Interpret it with the wider staff and other information.",
+      "claimIds": [
+        "C22",
+        "C23"
+      ]
+    },
+    {
+      "text": "Do not compare CMJ values across different force-platform systems or analysis software as if they were interchangeable. One comparison found fixed or proportional bias on many variables, and its authors advise standardizing systems between testing occasions.",
+      "claimIds": [
+        "C17",
+        "C26",
+        "C28"
+      ]
+    },
+    {
+      "text": "Do not borrow thresholds from other tests, such as 6.3% for an adductor squeeze or 8 to 9% for a countermovement push-up. Those thresholds are specific to those tests and samples.",
+      "claimIds": [
+        "C15",
+        "C16"
+      ]
+    }
+  ],
+  "limitations": [
+    {
+      "text": "The samples were professional Australian footballers (CMJ retest n = 18), 16 physically active university students (10 men, 6 women), 27 male university team-sport athletes, 23 professional and semi-professional Australian rules footballers, 2 male recreational soccer players, 17 CrossFit athletes (3 women) and 10 male college athletes doing push-ups. The only between-day force-plate CMJ data came from students, not athletes, and no source tested CMJ noise in collegiate athletes across in-season weeks.",
+      "claimIds": [
+        "C11",
+        "C12",
+        "C16",
+        "C17",
+        "C18",
+        "C19",
+        "C24"
+      ]
+    },
+    {
+      "text": "Retest designs differ. The professional Australian football study retested after 5 minutes following a field training session. The university athlete study tested CMJ in one session and does not describe how its CV% values were derived. The Australian rules study does not describe the repeat used for its typical error and measured jump height with an optical encoder, not a force platform. Only the student validation study retested on separate days.",
+      "claimIds": [
+        "C3",
+        "C11",
+        "C22",
+        "C24",
+        "C27",
+        "C30"
+      ]
+    },
+    {
+      "text": "The 8% CMJ height cut-off used to group players in the Australian rules study was taken from earlier literature, although the same study reported its own CMJ height typical error of 8.5%.",
+      "claimIds": [
+        "C12",
+        "C27"
+      ]
+    }
+  ],
+  "whatCouldChange": [
+    {
+      "text": "Between-day CMJ test-retest data from collegiate athletes, including women, on the same system and protocol during the season would show which of the reported noise values applies.",
+      "claimIds": [
+        "C19",
+        "C24",
+        "C25",
+        "C27"
+      ]
+    },
+    {
+      "text": "Evidence linking above-noise CMJ changes to performance or availability outcomes would show whether reliable metrics are also useful for decisions. The professional Australian football authors state that they did not relate their monitoring data to injury or performance.",
+      "claimIds": [
+        "C16",
+        "C23"
+      ]
+    }
+  ],
+  "evidenceTension": {
+    "text": "Sources disagree on how large CMJ jump-height noise is: CV 2.9% within a single session in university athletes, 3.9% for a same-session retest after training in professional Australian football, 8.5% in a field study using an optical encoder, and a between-day MDC of 3.4 cm on a mean near 34 cm in university students. The professional Australian football authors also cite earlier laboratory research in college athletes reporting lower interday CVs (2.7% to 4.3%) for relative force and power, and attribute the difference to field versus laboratory testing. Separately, the adductor study and the Australian rules study read a CV larger than the SWC differently, which changes which athletes get flagged if SWC is used. Your stated outcome (separating change from test variability) points to a noise-based threshold, and estimating noise locally addresses the magnitude question for your own setting.",
+    "claimIds": [
+      "C6",
+      "C11",
+      "C13",
+      "C15",
+      "C19",
+      "C25",
+      "C27"
+    ]
+  },
+  "sources": [
+    {
+      "libraryId": "380",
+      "sourceFile": "Measurement Characteristics of Athlete Monitoring Tools in Professional Australian Football.pdf",
+      "citation": "Ryan S, Pacecca E, Tebble J, Hocking J, Kempton T, Coutts AJ. Measurement Characteristics of Athlete Monitoring Tools in Professional Australian Football. International Journal of Sports Physiology and Performance. 2020;15(4):457-463.",
+      "year": 2020,
+      "doi": "10.1123/ijspp.2019-0060",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Legacy published record; library summary not full-text reviewed"
+    },
+    {
+      "libraryId": "821",
+      "sourceFile": "Concurrent validity and test-retest reliability of VALD ForceDecks strength, balance, and movement assessment tests.pdf",
+      "citation": "Collings TJ, Lima YL, Dutaillis B, Bourne MN. Concurrent validity and test-retest reliability of VALD ForceDecks strength, balance, and movement assessment tests. J Sci Med Sport. 2024.",
+      "year": 2024,
+      "doi": "10.1016/j.jsams.2024.04.014",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Full-text screened and published"
+    },
+    {
+      "libraryId": "973",
+      "sourceFile": "Can CMJ Neuromuscular Performance Qualities Differentiate Maximal Horizontal Deceleration Ability in Team Sport Athletes.pdf",
+      "citation": "Harper DJ, Cohen DD, Carling C, Kiely J. Can countermovement jump neuromuscular performance qualities differentiate maximal horizontal deceleration ability in team sport athletes? Sports. 2020;8:76.",
+      "year": 2020,
+      "doi": "10.3390/sports8060076",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Full-text screened and published"
+    },
+    {
+      "libraryId": "23",
+      "sourceFile": "A Novel Method of Assessment for Monitoring Neuromuscular Fatigue Within Australian Rules Football Players.pdf",
+      "citation": "Garrett J, Graham SR, Eston RG, et al. A novel method of assessment for monitoring neuromuscular fatigue within Australian rules football players. Int J Sports Physiol Perform. 2019;14(3):414-420.",
+      "year": 2019,
+      "doi": "10.1123/ijspp.2018-0253",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Legacy published record; library summary not full-text reviewed"
+    },
+    {
+      "libraryId": "381",
+      "sourceFile": "Measurement Properties of an Adductor Strength-Assessment System in Professional Australian Footballers.pdf",
+      "citation": "Ryan S, Kempton T, Pacecca E, Coutts AJ. Measurement Properties of an Adductor Strength-Assessment System in Professional Australian Footballers. International Journal of Sports Physiology and Performance. 2019;14(2):256-259.",
+      "year": 2019,
+      "doi": "10.1123/ijspp.2018-0264",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Legacy published record; library summary not full-text reviewed"
+    },
+    {
+      "libraryId": "749",
+      "sourceFile": "The test-retest reliability of force plate-derived parameters of the countermovement push-up as a power assessment tool.pdf",
+      "citation": "Parry GN, Herrington LC, Horsley IG. The test-retest reliability of force plate-derived parameters of the countermovement push-up as a power assessment tool. Journal of Sport Rehabilitation. 2020;29(3):381-383.",
+      "year": 2020,
+      "doi": "10.1123/jsr.2018-0419",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Full-text screened and published"
+    },
+    {
+      "libraryId": "477",
+      "sourceFile": "Validity of the Hawkin Dynamics wireless dual force platform system against a piezoelectric laboratory grade system for vertical countermovement jump variables.pdf",
+      "citation": "Dos'Santos T, Evans DT, Read DB. Validity of the Hawkin Dynamics wireless dual force platform system against a piezoelectric laboratory grade system for vertical countermovement jump variables. Journal of Strength and Conditioning Research. 2024;38(6):1144-1148.",
+      "year": 2024,
+      "doi": "10.1519/JSC.0000000000004785",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Full-text screened and published"
+    },
+    {
+      "libraryId": "319",
+      "sourceFile": "Influence of countermovement depth on net force, push-off time, vertical impulse and performance during jumping.pdf",
+      "citation": "Pommerell F, Boyas S, Samozino P, Morel B, Begue J, Rahmani A, Peyrot N. Influence of countermovement depth on net force, push-off time, vertical impulse and performance during jumping. Journal of Electromyography and Kinesiology. 2024;79:102945.",
+      "year": 2024,
+      "doi": "10.1016/j.jelekin.2024.102945",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Legacy published record; library summary not full-text reviewed"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "text": "In professional Australian footballers from one club during a competition season (42 in the abstract), test-retest noise and weekly signal were collected. Sensitivity was calculated as weekly CV% divided by test CV% to give a signal-to-noise ratio.",
+      "evidence": [
+        {
+          "libraryId": "380",
+          "page": 1,
+          "excerpt": "Test-retest reliability (noise) and weekly variation (signal) data were collected from 42 professional Australian footballers from 1 club during a competition season."
+        },
+        {
+          "libraryId": "380",
+          "page": 1,
+          "excerpt": "Typical test error was reported as coefﬁcient of variation percentage (CV%) and intraclass coefﬁcients. Sensitivity was calculated by dividing weekly CV% by test CV% to produce a signal to noise ratio."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "text": "In team-sport testing, the authors define signal as individual change in response to training stimuli and noise as typical error from test-retest analysis. They describe meaningful changes as those that exceed the noise in the test.",
+      "evidence": [
+        {
+          "libraryId": "380",
+          "page": 1,
+          "excerpt": "“signal” refers to individual changes in a monitoring test in response to training stimuli (provided by a valid test), whereas “noise” is represented by the TE in the measurement (from test-retest reliability analysis)."
+        },
+        {
+          "libraryId": "380",
+          "page": 1,
+          "excerpt": "This information is important to coaches and scientists as it allows conﬁdent interpretation of athlete monitoring data by identifying meaningful changes (ie, those that exceed the “noise” in the test)."
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "text": "In the professional Australian football study, CMJ was tested once per week (72 h after a match) in an afternoon strength session after the main skills session, with a self-selected depth. The retest used an identical protocol on a main training day, with tests 5 minutes apart; each test was a 50% warm-up followed by 3 maximum-effort repetitions.",
+      "evidence": [
+        {
+          "libraryId": "380",
+          "page": 3,
+          "excerpt": "CMJ performance was assessed once per week (72 h postmatch) during a strength training session in the afternoon following the main skills session of the week"
+        },
+        {
+          "libraryId": "380",
+          "page": 3,
+          "excerpt": "Players held a wooden rod (12 × 1200 mm) across their shoulders and were instructed to choose a depth where they felt that they could jump as high as possible."
+        },
+        {
+          "libraryId": "380",
+          "page": 3,
+          "excerpt": "Test-retest reliability was conducted using an identical protocol in the afternoon of a main training day, with tests separated by 5 minutes of passive recovery."
+        },
+        {
+          "libraryId": "380",
+          "page": 3,
+          "excerpt": "Verbal cues were provided to prompt a 50% warm-up repetition, followed by 3 maximum effort repetitions from the same starting position."
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "text": "Across all monitoring tools in the professional Australian football study, not only CMJ, signal-to-noise ratio ranged from 1.3 to 11.1 and ICCs ranged from .30 to .97. All measures were judged to have acceptable sensitivity.",
+      "evidence": [
+        {
+          "libraryId": "380",
+          "page": 1,
+          "excerpt": "Results: All measures displayed acceptable sensitivity. Signal to noise ratio ranged from 1.3 to 11.1. Intraclass coefﬁcients ranged from .30 to .97 for all measures."
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "text": "In professional Australian football, concentric mean force (SNR 2.3) and relative peak force (SNR 2.5) showed the greatest capability among 5 CMJ variables to detect changes beyond test error, with low test CV% of 2.1 and 2.6. The authors suggested these may be the most responsive CMJ measures for professional Australian football teams to monitor.",
+      "evidence": [
+        {
+          "libraryId": "380",
+          "page": 5,
+          "excerpt": "The present study examined reliability and sensitivity of 5 CMJ variables, with concentric mean force (SNR: 2.3) and relative peak force (SNR: 2.5) displaying the greatest capability to detect changes that exceed the typical test error."
+        },
+        {
+          "libraryId": "380",
+          "page": 5,
+          "excerpt": "Interestingly, these 2 variables also displayed similarly low typical test error (CV%: 2.1 and 2.6, respectively) to those reported previously,20 suggesting they may be the most responsive CMJ measures for coaches and scientists of professional AF teams to monitor."
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "text": "The professional Australian football authors cite earlier research in college athletes reporting lower interday CVs than theirs, with test CV% of 2.7% to 4.3% for relative peak power, relative peak force and relative mean force. They suggest the difference may reflect their testing within a professional training environment, versus laboratory testing on 3 occasions over 7 days in the earlier work.",
+      "evidence": [
+        {
+          "libraryId": "380",
+          "page": 5,
+          "excerpt": "However, previous research in college athletes reported lower interday CVs than those reported in our study, with test CV% ranging from 2.7% to 4.3% in relative peak power, relative peak force, and relative mean force."
+        },
+        {
+          "libraryId": "380",
+          "page": 5,
+          "excerpt": "The differences in ﬁndings may be explained by the design of the present study in measuring CMJ performance within a professional AF training environment"
+        },
+        {
+          "libraryId": "380",
+          "page": 5,
+          "excerpt": "laboratory setting on 3 occasions during a 7-day period used in previous research.24"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "text": "In a force-plate validation and reliability study, within-participant measurement variability was quantified as SEM = total SD x sqrt(1 - ICC).",
+      "evidence": [
+        {
+          "libraryId": "821",
+          "page": 9,
+          "excerpt": "Measurement variability within a participant was quantified using standard error of measurement (SEM), where 𝑆𝐸𝑀 = 𝑡𝑜𝑡𝑎𝑙 𝑆𝐷√1 − 𝐼𝐶𝐶"
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "text": "The same study calculated the minimal detectable change, the smallest real difference between two testing time points, as MDC = 1.96 x sqrt(2) x SEM, using a 95% confidence interval.",
+      "evidence": [
+        {
+          "libraryId": "821",
+          "page": 9,
+          "excerpt": "The minimal detectable change (MDC) representing the smallest real difference between two testing time points was calculated using the SEM"
+        },
+        {
+          "libraryId": "821",
+          "page": 9,
+          "excerpt": "points was calculated using the SEM and the 95% confidence interval for detecting a change in scores beyond 0, where 𝑀𝐷𝐶 = 1.96 × √2 × 𝑆𝐸𝑀."
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "text": "The force-plate study authors, citing methodological work, state that knowing a test's test-retest reliability and MDC is important for judging whether longitudinal changes exceed expected variation in performance and sampling error.",
+      "evidence": [
+        {
+          "libraryId": "821",
+          "page": 5,
+          "excerpt": "Understanding the test-retest reliability and minimal detectable change of specific tests and metrics is important to determine whether longitudinal changes exceed the expected variation in performance and sampling error."
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "text": "The force-plate study authors note that test-retest reliability includes error beyond device accuracy, such as day-to-day human performance. Familiarization, training history and events between test days may affect it, and using the mean or peak of more trials may help improve it.",
+      "evidence": [
+        {
+          "libraryId": "821",
+          "page": 14,
+          "excerpt": "It is important to note that test-retest reliability contains multiple sources of measurement error beyond the device's accuracy, such as variation in human performance on separate days."
+        },
+        {
+          "libraryId": "821",
+          "page": 14,
+          "excerpt": "Familiarization with testing protocols, training history, or events that occur between testing days may all impact test-retest reliability. Performing more trials and taking the mean or peak of multiple trials may help improve reliability."
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "text": "In 27 male university team-sport athletes performing CMJs on vertical-axis force plates, the reported absolute reliability (CV%) was 2.9 for flight-time jump height, 2.9 for countermovement depth and 4.3 for RSI-mod. The paper does not describe how these CV% values were derived.",
+      "evidence": [
+        {
+          "libraryId": "973",
+          "page": 7,
+          "excerpt": "CV% Other CMJ-Height (cm) CMJ-Depth (cm) RSI-Mod Maximal jump height computed using the flight time Maximal displacement of countermovement Jump height (calculated from flight time) divided by contraction time 2.9 2.9 4.3"
+        },
+        {
+          "libraryId": "973",
+          "page": 1,
+          "excerpt": "Twenty-seven male university team sport athletes performed a CMJ on vertical axis force plates and a maximal horizontal deceleration following a 20 m maximal horizontal sprint acceleration."
+        },
+        {
+          "libraryId": "973",
+          "page": 5,
+          "excerpt": "The definition and absolute reliability (coefficient of variation, CV%) for each CMJ NMP variable are reported in Table 1."
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "text": "In 23 Australian rules football players (9 classed fatigued, 14 not), the authors used an 8% CMJ height CV taken from previous literature as the grouping cut-off. Scores below 92% of baseline were labeled fatigued.",
+      "evidence": [
+        {
+          "libraryId": "23",
+          "page": 10,
+          "excerpt": "participants were then categorized into ‘fatigued’ (n = 9) and ‘non-fatigued’ (n = 14) groups based on the 8% coefficient of variance (CV) reported in the previous literature for CMJH 3, 7."
+        },
+        {
+          "libraryId": "23",
+          "page": 10,
+          "excerpt": "That is, samples with a score of <92% of baseline were considered ‘fatigued’, while the remaining samples considered to be ‘non-fatigued’"
+        }
+      ]
+    },
+    {
+      "id": "C13",
+      "text": "In the Australian rules football study, the smallest worthwhile change was calculated as 0.2 x SD.",
+      "evidence": [
+        {
+          "libraryId": "23",
+          "page": 10,
+          "excerpt": "The smallest worthwhile change (SWC) was calculated as 0.2 x SD."
+        }
+      ]
+    },
+    {
+      "id": "C14",
+      "text": "In the Australian rules football study, the CMJ result analyzed was the average of six jumps.",
+      "evidence": [
+        {
+          "libraryId": "23",
+          "page": 6,
+          "excerpt": "The CMJ test was performed using previously established protocols 3 with the average of six CMJs used for analysis."
+        }
+      ]
+    },
+    {
+      "id": "C15",
+      "text": "For an adductor squeeze test in 18 professional Australian footballers retested on the same day (not a CMJ), a higher signal-to-noise ratio was described as preferable. Test CV (6.3%) exceeded the smallest worthwhile change (5.0%), and the authors concluded that changes exceeding the CV are more meaningful than the SWC.",
+      "evidence": [
+        {
+          "libraryId": "381",
+          "page": 1,
+          "excerpt": "Test-retest reliability data were collected from 18 professional Australian footballers from 1 club on the same day during the 2017 Australian Football League season."
+        },
+        {
+          "libraryId": "381",
+          "page": 1,
+          "excerpt": "A higher SNR ratio is preferable, because it indicates that a change in the measure can be detected given the typical noise associated with the test."
+        },
+        {
+          "libraryId": "381",
+          "page": 2,
+          "excerpt": "such SNRs are reﬂective of the CV of this system exceeding the calculated SWC, indicating that changes that exceed the CV (6.3%) are more meaningful than the SWC (5.0%)."
+        }
+      ]
+    },
+    {
+      "id": "C16",
+      "text": "In a countermovement push-up reliability study in 10 male college athletes (an upper-body test, not a CMJ), the authors, citing earlier work, state that smallest detectable differences separate meaningful change from measurement error. They suggest looking for force changes of 8% to 9% on that test and caution that tests deemed reliable are not necessarily the most effective for monitoring performance changes.",
+      "evidence": [
+        {
+          "libraryId": "749",
+          "page": 2,
+          "excerpt": "Smallest detectable differences (SDDs) allow practitioners to deduce meaningful changes in performance rather than changes due to measurement errors."
+        },
+        {
+          "libraryId": "749",
+          "page": 3,
+          "excerpt": "When assessing force, practitioners should be looking for changes from 8% to 9% in order to determine meaningful change,"
+        },
+        {
+          "libraryId": "749",
+          "page": 3,
+          "excerpt": "particularly if they are using CMPU to monitor training program effects and long-term athlete development because tests that are deemed reliable are not necessarily the most effective for monitoring performance changes."
+        }
+      ]
+    },
+    {
+      "id": "C17",
+      "text": "When a portable dual force-platform system was compared with a laboratory system in 2 male recreational soccer players, fixed bias appeared in 6 of 16 CMJ variables and proportional bias in 10 of 16.",
+      "evidence": [
+        {
+          "libraryId": "477",
+          "page": 1,
+          "excerpt": "Fixed bias was observed for 6 of 16 variables (peak and mean braking power, mean propulsion force, TTT, FT, and BW), while proportional bias was present for 10 of 16 variables"
+        },
+        {
+          "libraryId": "477",
+          "page": 1,
+          "excerpt": "HD force platforms were placed directly on top of 2 adjacent Kistler force platforms to simultaneously collect vertical ground reaction forces produced by 2 male recreational soccer players"
+        }
+      ]
+    },
+    {
+      "id": "C18",
+      "text": "In 17 CrossFit athletes (3 women) performing maximal CMJs at four imposed countermovement depths, push-off distance and maximal jump height showed a quadratic relationship, with an individual push-off distance that maximized jump height.",
+      "evidence": [
+        {
+          "libraryId": "319",
+          "page": 2,
+          "excerpt": "Seventeen CrossFit athletes (three women) participated in this study"
+        },
+        {
+          "libraryId": "319",
+          "page": 1,
+          "excerpt": "maximal countermovement jumps on two force-plates, with four different push-off distances induced by different countermovement depths."
+        },
+        {
+          "libraryId": "319",
+          "page": 1,
+          "excerpt": "Results confirmed that push-off distance and maximal jump height were related by a quadratic relationship, and that exists an individual push-off distance maximizing maximal jump height."
+        }
+      ]
+    },
+    {
+      "id": "C19",
+      "text": "In the professional Australian football study (CMJ test-retest n = 18), test CV% was 3.9 for jump height, 2.1 for mean concentric force, 7.0 for RSImod, 3.5 for relative peak power and 2.6 for relative peak force.",
+      "evidence": [
+        {
+          "libraryId": "380",
+          "page": 4,
+          "excerpt": "Countermovement jumps Jump height, cm Mean concentric force, N Reactive strength index modiﬁed, m/s Relative peak mechanical power, W/kg Relative peak force, N/kg"
+        },
+        {
+          "libraryId": "380",
+          "page": 4,
+          "excerpt": "18 18 18 18 18 3.9% (3.1-5.5) 2.1% (1.7-3.0) 7.0% (5.4-9.9) 3.5% (2.8-5.0) 2.6% (2.0-3.6)"
+        }
+      ]
+    },
+    {
+      "id": "C20",
+      "text": "In the same study (206 weekly CMJ tests), weekly CV% was 5.9 for jump height, 4.9 for mean concentric force, 13.5 for RSImod, 5.4 for relative peak power and 6.4 for relative peak force, giving SNRs of 1.5, 2.3, 1.9, 1.5 and 2.5. Jump height was rated acceptable and the others good.",
+      "evidence": [
+        {
+          "libraryId": "380",
+          "page": 2,
+          "excerpt": "CMJs, n = 206 Jump height, cm Mean concentric force, N Reactive strength index modiﬁed, m/s Relative peak mechanical power, W/kg Relative peak force, N/kg"
+        },
+        {
+          "libraryId": "380",
+          "page": 2,
+          "excerpt": "5.9 (5.4-6.6) 4.9 (4.5-5.5) 13.5 (12.2-15.2) 5.4 (4.9-6.1) 6.4 (5.8-7.2) 1.5 2.3 1.9 1.5 2.5 Acceptable Good Good Good Good"
+        }
+      ]
+    },
+    {
+      "id": "C21",
+      "text": "The professional Australian football study rated SNR below 1.0 as poor, 1.0 to 1.5 as acceptable and above 1.5 as good, adapted from other professional sports. The authors state that tests with SNR above 1.5 give practitioners more useful information.",
+      "evidence": [
+        {
+          "libraryId": "380",
+          "page": 4,
+          "excerpt": "SNRs were assessed as “poor” if <1.0, “acceptable” if 1.0 to 1.5, and “good” if >1.5, adapted from research in other professional sports."
+        },
+        {
+          "libraryId": "380",
+          "page": 5,
+          "excerpt": "While we classiﬁed tests with an SNR of 1.0 to 1.5 as acceptable, those that display an SNR of >1.5 will provide practitioners with more useful information when assessing changes in constructs of ﬁtness and fatigue."
+        }
+      ]
+    },
+    {
+      "id": "C22",
+      "text": "The professional Australian football authors note that CMJ test-retest data were collected after a field training session, not in the completely rested state recommended for assessing true reliability, which makes it difficult to determine causes of observed changes because recent or chronic training may influence them.",
+      "evidence": [
+        {
+          "libraryId": "380",
+          "page": 5,
+          "excerpt": "we were unable to collect CMJ and eccentric hamstring test data from athletes in a completely rested state (ie, after overnight rest), which is recommended for assessment of true reliability."
+        },
+        {
+          "libraryId": "380",
+          "page": 5,
+          "excerpt": "Indeed, this approach makes it difﬁcult to determine the causes for any observed changes in these measures, as they may be inﬂuenced by recent training (earlier in the day) or chronic training effects."
+        }
+      ]
+    },
+    {
+      "id": "C23",
+      "text": "The professional Australian football study did not relate its monitoring data to injury or performance outcomes, and the authors state that further work is needed to establish efficacy as monitoring tools.",
+      "evidence": [
+        {
+          "libraryId": "380",
+          "page": 5,
+          "excerpt": "The current study did not relate these monitoring data against outcome measures (ie, injury or performance); therefore, further work is required to establish their efﬁcacy as monitoring tools."
+        }
+      ]
+    },
+    {
+      "id": "C24",
+      "text": "The force-plate validation study tested 16 healthy, physically active university students (10 men, 6 women) in two identical sessions about 7 days apart at the same time of day, assessing between-day reliability from the mean of 3 repetitions.",
+      "evidence": [
+        {
+          "libraryId": "821",
+          "page": 6,
+          "excerpt": "Participants included 16 healthy individuals (10 males and six females) recruited from an Australian University student population during 2023."
+        },
+        {
+          "libraryId": "821",
+          "page": 7,
+          "excerpt": "Participants attended two identically structured testing sessions approximately 7 days apart and at the same time of day,"
+        },
+        {
+          "libraryId": "821",
+          "page": 9,
+          "excerpt": "Test-retest reliability of force plate metrics between days (~1 week apart) was assessed with intraclass coefficients (ICC) using a two-way random effects model, absolute agreement, and multiple measurements (ICC2,k, where k is the mean of 3 repetitions)"
+        }
+      ]
+    },
+    {
+      "id": "C25",
+      "text": "In that study's Table 1, countermovement jump height (impulse-momentum) averaged about 34 cm on both days, with ICC 0.97, SEM 1.2 cm and MDC 3.4 cm, based on the mean of 3 trials. MDCs ranged widely across metrics depending on units and reliability.",
+      "evidence": [
+        {
+          "libraryId": "821",
+          "page": 21,
+          "excerpt": "0.97 (0.92- 34 (7) 34 (8) Countermovement Jump"
+        },
+        {
+          "libraryId": "821",
+          "page": 21,
+          "excerpt": "1.2 3.4 Excellent 34 (8) 35 (8) 5% Good"
+        },
+        {
+          "libraryId": "821",
+          "page": 23,
+          "excerpt": "a Based on the mean of 3 trials per participant."
+        },
+        {
+          "libraryId": "821",
+          "page": 11,
+          "excerpt": "detectable changes between days ranged widely depending on the unit of measurement and metric reliability (Table 1)."
+        }
+      ]
+    },
+    {
+      "id": "C26",
+      "text": "The force-plate study authors state that validity and reliability are specific to the test type and metric, are heavily influenced by factors beyond the device, require strict protocols, and that analysis differences should be considered when comparing results across force-plate systems.",
+      "evidence": [
+        {
+          "libraryId": "821",
+          "page": 15,
+          "excerpt": "However, validity and reliability are specific to the test type and metrics selected and users need to be aware of these characteristics when planning testing and interpreting test results."
+        },
+        {
+          "libraryId": "821",
+          "page": 15,
+          "excerpt": "Metric validity and reliability are heavily influenced by factors beyond the device, and it is important users conduct testing with strict protocols."
+        },
+        {
+          "libraryId": "821",
+          "page": 5,
+          "excerpt": "Differences in analysis procedures should be considered when comparing test results and study findings based on different force plate systems."
+        }
+      ]
+    },
+    {
+      "id": "C27",
+      "text": "In the Australian rules football study, CMJ height was measured with an optical encoder, and typical error calculated across all 23 players was CV 8.5% against an SWC of 1%; the authors called this CV small. Because no variable had a CV smaller than its SWC, they concluded no variable in the study could detect practically important changes.",
+      "evidence": [
+        {
+          "libraryId": "23",
+          "page": 7,
+          "excerpt": "CMJ height (CMJH) performance was obtained for analysis via an optical encoder (GymAware Power Tool, Kinetic Performance Technologies, Canberra, Australia)"
+        },
+        {
+          "libraryId": "23",
+          "page": 10,
+          "excerpt": "Typical error of measurements (TE) were calculated using all twenty-three participants, expressed as a CV"
+        },
+        {
+          "libraryId": "23",
+          "page": 25,
+          "excerpt": "8.5 (7.1;10.8) 1% SRT (overall) PL1Dup (AU) 23"
+        },
+        {
+          "libraryId": "23",
+          "page": 11,
+          "excerpt": "Reliability statistics are shown in Table 5, with a small CV observed for CMJH."
+        },
+        {
+          "libraryId": "23",
+          "page": 15,
+          "excerpt": "No variables displayed CVs smaller than the SWC signifying that no variables within this study were capable of detecting practically important changes in performance."
+        }
+      ]
+    },
+    {
+      "id": "C28",
+      "text": "In the two-system comparison, jump height, RSImod and countermovement depth showed no fixed or proportional bias and percentage differences of 1.0 to 1.7%. The authors still advise standardizing the force-platform system between testing occasions.",
+      "evidence": [
+        {
+          "libraryId": "477",
+          "page": 4,
+          "excerpt": "Specifically, outcome (i.e., JH, RSImod) and strategy variable (countermovement depth) displayed no fixed or proportional bias, near perfect agreement, with negligible percentage differences (1.0-1.7%) (Tables 1 and 2)."
+        },
+        {
+          "libraryId": "477",
+          "page": 4,
+          "excerpt": "However, practitioners are still advised to standardize the force platform systems between testing occasions."
+        }
+      ]
+    },
+    {
+      "id": "C29",
+      "text": "In the countermovement-depth study, which used one jump per depth condition, a 9 cm deviation from each athlete's optimal push-off distance lowered maximal jump height by a mean of 0.6 cm.",
+      "evidence": [
+        {
+          "libraryId": "319",
+          "page": 2,
+          "excerpt": "To ensure participants could perform all jumps without fatigue, only one jump was asked per condition."
+        },
+        {
+          "libraryId": "319",
+          "page": 5,
+          "excerpt": "In our study, a similar deviation of 9 cm (11.9 ± 1.5 % of hPO) from optimal hPO led to a mean decrease of 0.6 ± 2.0 cm in hmax."
+        }
+      ]
+    },
+    {
+      "id": "C30",
+      "text": "In the university athlete study, testing took place mid-way through the university season, and CMJ was tested in a single session of five jumps 20 s apart, with the best and worst removed and the remaining three averaged.",
+      "evidence": [
+        {
+          "libraryId": "973",
+          "page": 3,
+          "excerpt": "All testing was conducted in December, which is mid-way through the University competitive sports season."
+        },
+        {
+          "libraryId": "973",
+          "page": 3,
+          "excerpt": "In the final session, participants completed CMJ testing."
+        },
+        {
+          "libraryId": "973",
+          "page": 5,
+          "excerpt": "Participants were instructed to perform a series of five CMJs interspersed with a 20 s recovery period."
+        },
+        {
+          "libraryId": "973",
+          "page": 6,
+          "excerpt": "removed and the average of the remaining three scores was used for analysis."
+        }
+      ]
+    },
+    {
+      "id": "C31",
+      "text": "The professional Australian football authors cite earlier research reporting CMJ CVs of 1.1% to 7.1% across jump variables in team-sport athletes.",
+      "evidence": [
+        {
+          "libraryId": "380",
+          "page": 2,
+          "excerpt": "CMJ performance has been shown to demonstrate acceptable measurement reliability in team sport athletes, with CV ranging from 1.1% to 7.1% across a range of jump variables."
+        }
+      ]
+    }
+  ],
+  "assumptions": [
+    "The specific CMJ metric was not named, so the brief covers common CMJ outcome and strategy metrics.",
+    "Limited repeated trials was read as only a few jumps per weekly session."
+  ],
+  "coverageGaps": [
+    "Between-day CMJ test-retest reliability in collegiate athletes, including female athletes, on a single force-platform system under in-season conditions",
+    "Evidence that CMJ changes exceeding typical error or MDC relate to performance, availability or other outcomes",
+    "Tested guidance on the minimum number of CMJ trials per session needed for a stable within-athlete noise estimate"
+  ],
+  "leads": [
+    {
+      "libraryId": "674",
+      "citation": "Thorpe, R. T., Atkinson, G., Drust, B., & Gregson, W. (2017). Monitoring fatigue status in elite team-sport athletes: Implications for practice. International Journal of Sports Physiology and Performance, 12(Suppl 2), S2-27–S2-34. https://doi.org/10.1123/ijspp.2016-0434",
+      "note": "Possible lead found by keyword match; not checked for relevance, and its original text was not accessible, so it supports no claim."
+    }
+  ],
+  "drafter": {
+    "version": "1.2.0",
+    "composer": "claude -p (claude-opus-5-5)",
+    "criticPass": true,
+    "sourcesInPack": [
+      "477",
+      "350",
+      "380",
+      "381",
+      "556",
+      "749",
+      "319",
+      "120",
+      "553",
+      "821",
+      "23",
+      "221",
+      "973",
+      "848"
+    ],
+    "claimsProposed": 31,
+    "claimsRemoved": 0,
+    "notes": []
+  }
+}
