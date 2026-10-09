@@ -8,9 +8,9 @@ Read this first. Update it before ending every session.
      updated 2026-09-26, including the completed SecondBrain vault push). -->
 
 ## Current state
-- 2026-10-09 (cloud): Batches 19-26 (80 papers, IDs 744-823) are staged in draft PR #9 and waiting on
-  Eric's review. The public site still shows 712 records until the PR is merged. Haiku 5.5 drafting
-  with an Opus claim audit is the ingestion pipeline (`scripts/haiku-batch/`).
+- 2026-10-09 (cloud): the public library has 1,332 records (Batches 19-79 published). The bullets below
+  dated 2026-09-25 are the pre-backlog baseline. Haiku 5.5 drafting with an Opus claim audit is the ingestion
+  pipeline (`scripts/haiku-batch/`).
 - Baylor Athletics Health & Performance Evidence Library. Shared language lives in
   `CONTEXT.md`; durable trade-offs live in `docs/adr/`.
 - The public Evidence Library has 712 published records: 600 local-source records and
@@ -38,13 +38,12 @@ Read this first. Update it before ending every session.
   2026-10-09.
 
 ## Next
-- **Backlog run paused (cloud session, 2026-10-09).** Goal and rules: `docs/agents/goal-finish-library-and-ask.md`.
-  Pipeline: `scripts/haiku-batch/` (Haiku 5.5 drafts, Opus 5.5 claim audit), 96 PDFs per batch.
-- **Published on master (2026-10-09):** Batches 19-71 via PRs #9, #10, #11, #13, #14, #15 and #16. The library has
-  1,256 records; next unused ID 1289. `npm run audit` and `pilot:check` pass on master. Review files are
-  `docs/pilot-screening/batches-*-review.md`.
-- **Backlog left:** about 754 of 1,427 manifest-backlog PDFs. Batch G (queue 7) was half drafted when the run was
-  stopped; restart it from scratch with `scripts/haiku-batch/backlog.py`.
+- **Backlog run active (cloud session, 2026-10-09).** Goal and rules: `docs/agents/goal-finish-library-and-ask.md`.
+  Eric's instruction (2026-10-09): merge batch PRs as they go. Pipeline: `scripts/haiku-batch/` (Haiku 5.5 drafts, Opus 5.5 claim audit), 96 PDFs per batch.
+- **Published on master (2026-10-09):** Batches 19-79 via PRs #9-#11 and #13-#17. The library has 1,332 records;
+  next unused ID 1365. `npm run audit` and `pilot:check` pass on master. Review files: `docs/pilot-screening/batches-*-review.md`.
+- **Backlog left:** 754 unscreened backlog PDFs (`python3 scripts/haiku-batch/backlog.py`). Batches 80-87 are being drafted
+  on branch `batch-80-87-staged` (IDs from 1365).
 - `docs/needs-eric.md`: the single list of operator actions: wrong PDFs on disk, DEGRADED records needing a DOI, scope
   calls, and published records that share a DOI.
 - **Ask the Library drafter merged (PR #12):** `npm run pilot:draft -- <request.json>`. Evaluated on the 12-question
