@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-85-brain-health-psychology",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Brain Health & Psychology queue positions 39-39. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 39,
+      "sourceFile": "Oxygen straight to the brain - An overview of hyperbaric oxygen therapy for a variety of brain morbidities.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text; the only DOIs present are in the reference list. All other content is complete. Relevance is borderline but not exclusion-level: the paper is published in Current Sports Medicine Reports and its first section covers concussion and post-concussion syndrome, although the treatment evidence comes from veterans, military personnel and general patients rather than athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: EXCLUDE (c) not relevant -> DEGRADED (own DOI not printed); the paper is in Current Sports Medicine Reports and covers concussion and post-concussion syndrome ('Current recommendations for concussion treatment involve initial rest ... mild aerobic exercise'), which is athlete-health relevant even though the trials are in veterans and patients",
+            "All taxonomy, summary and paper fields filled from the text; citation details as printed ('1537-890X/2304/130-136', 'Volume 23 Number 4 April 2024')",
+            "studyDesign: Narrative Review ('This narrative review of hyperbaric's utility'; no search described)"
+          ],
+          "residualConcerns": "Relevance is borderline: the PTSD and migraine sections are not sport-related and no athletes were studied. A reviewer may prefer EXCLUDE (c); if kept, the operator must verify the DOI externally. Clinically sensitive (concussion treatment).",
+          "spotCheckPriority": "high"
+        }
+      }
+    }
+  ]
+}

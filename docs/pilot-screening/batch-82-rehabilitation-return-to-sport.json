@@ -1,0 +1,553 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-82-rehabilitation-return-to-sport",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Rehabilitation & Return to Sport queue positions 7-84. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 7,
+      "sourceFile": "Nutritional Interventions to Attenuate Quadriceps Muscle Deficits following Anterior Cruciate Ligament Injury and Reconstruction.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 28,
+        "extractedCharacters": 135190,
+        "doi": "10.1007/s40279-025-02174-w",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Nutrition",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Review of the mechanisms of quadriceps atrophy after ACL injury and reconstruction, and of nutritional supplements that may counter it (amino acids and protein, creatine, omega-3, collagen and others). The authors searched Medline, Embase and CINAHL up to 2023 with manual reference checks, while stating that the search was not systematic. Of seven ACL-specific supplement studies cited (the largest with 72 patients), the text counts three as showing some benefit alongside rehabilitation and four as showing no effect, and most supporting data come from healthy volunteers in immobilisation models and older orthopaedic patients.",
+      "limitations": "The search was non-systematic, so relevant studies may be missing, and the ACL-specific evidence is small and mixed. The authors' phase-based supplementation plan is their own preliminary proposal and has not been tested in ACL populations.",
+      "synthesisCaution": "Staff could read the phase-based supplement plan, including the collagen peptide suggestion, as an established ACL protocol, when the review calls it preliminary, it rests on a few small and mixed ACL-specific trials plus data from other populations, and the first author declares a commercial interest in collagen peptides.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: Narrative Review -> Systematic Review / Meta-analysis (library rule: review describing a database search; Section 2 'we searched Medline, Embase and CINAHL databases ... up until 2023', although authors add 'the current review did not employ a systematic search strategy').",
+            "evidenceSummary/methods: reworded to describe the database search and the authors' non-systematic caveat without the 'narrative review' label.",
+            "paper.limitations: competing interest made specific (Declarations: 'M.J.S. is the owner of a company, Straight Up Performance, that produces supplements, including collagen peptides'); text vs Table 1 conflict on Lopez-Vidriero et al. (2019) kept and linked to the 3 vs 4 count; added no quality appraisal.",
+            "synthesisCaution: added the collagen competing interest."
+          ],
+          "residualConcerns": "Design code follows the library rule, but the authors explicitly say the search was not systematic and there is no selection or appraisal method; a reviewer may want a flag on this record. Text vs Table 1 conflict on Lopez-Vidriero et al. (2019) is unresolved from the source. Population tag 'Injured Athletes' kept because several ACL trials were in athletes, but the evidence base also includes non-athlete patients and healthy volunteers.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1383",
+        "synthesisBatch": "pilot-synthesis-batch-82",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 16,
+      "sourceFile": "Nutritional strategies in the rehabilitation of musculoskeletal injuries in athletes - A systematic integrative review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 25,
+        "extractedCharacters": 108743,
+        "doi": "10.3390/nu15040819",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Nutrition",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "PERSiST systematic integrative review of nutritional strategies during rehabilitation from musculoskeletal sports injury in athletes, searched June to October 2022 in PubMed, Scopus, PEDro and Google Scholar. It included 18 studies: five randomized trials (samples of 8 to 45), one cross-sectional study and 12 reviews, and the authors conclude that energy availability and protein intake are the main priorities.",
+      "limitations": "Only five randomized trials were included, with 8 to 45 participants each, and most of the other evidence is narrative reviews that the authors rate as low quality with high risk of bias. The stated inclusion rules (elite athletes over 18, rehabilitation from musculoskeletal sports injury) are not applied consistently: included studies cover adolescent fin swimmers, wheelchair athletes with spinal cord injury, a rib stress injury history survey that includes under-23 rowers, and reviews not limited to injured athletes.",
+      "synthesisCaution": "Staff may read the supplement sections as validated injury protocols; the authors say injury-specific trials are too few for firm conclusions, yet they still endorse creatine at 0.1 g/kg/day, and two authors hold creatine and supplement industry roles.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations, limitations: inclusion criteria ('elite/high-performance male and female athletes over 18 years'; exclusion of 'children ... physically active people'; 'focused solely on ... the rehabilitation process') vs included samples: Juhasz 'Injured adolescent male and female competitive fin swimmers', Flueck 'Swiss elite wheelchair indoor athletes with a spinal cord injury', Lundy rib stress injury history in rowers incl. 'under 23-year-old levels (n = 18)'",
+            "limitations, synthesisCaution: conflicts of interest expanded from 'two authors disclose ties to supplement companies' to the creatine-specific ties (MTX Corporation 'dietary supplements (including creatine)', 'honoraria for speaking about creatine', Alzchem 'Creatine for Health' board) and the authors' own creatine endorsement ('we adhere to this recommendation ... 0.1 g/kg/day'); APC funders DBSS and Galascreen are author affiliations",
+            "findings, practicalImplications: protein range 1.6-2.5 -> 'from 1.6 to 3 g/kg/day' as the review synthesises; added n per HMB arm and that the vitamin D trial is spinal cord injury",
+            "methods: added 2012-2022 date limit and record counts (3,736 to 18)",
+            "practicalImplications: HMB 'trial option' -> 'HMB cannot be confidently recommended to injured athletes'"
+          ],
+          "residualConcerns": "Inclusion inconsistencies mean the evidence is not limited to elite adult athletes in musculoskeletal rehabilitation. Authors' industry ties bear on the creatine recommendation. Issue number (4) is implied by the DOI but not printed, so it is left out of the citation.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1384",
+        "synthesisBatch": "pilot-synthesis-batch-82",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 24,
+      "sourceFile": "One week of single leg immobilization lowers muscle connective protein synthesis rates in healthy, young adults.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 40,
+        "extractedCharacters": 67409,
+        "doi": "10.1249/MSS.0000000000003342",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Within-person experimental study in which 30 healthy young men (24 ± 5 years) had one knee immobilized in a cast for 7 days, followed by 14 days of normal activity; 28 were analyzed for muscle connective protein synthesis, measured with deuterium oxide and muscle biopsies from both legs. Connective protein synthesis was lower in the immobilized leg during immobilization (1.07 ± 0.30 vs 1.48 ± 0.44 %/day) and rose to 1.48 ± 0.64 %/day during recovery, with several extracellular matrix mRNA changes after immobilization and recovery.",
+      "limitations": "The participants were healthy young men who were not athletes (people in structured resistance exercise programs were excluded), and the immobilization was a single 7-day cast on one leg. All participants took protein or peptide supplements as part of a parent trial, the 14-day recovery is reported as one average, and some reported numbers conflict (the discussion gives 25% lower synthesis where the means give about 28%; the abstract and results differ on which mRNA changes were significant and at what P value).",
+      "synthesisCaution": "Staff could read these results as a timeline for when an injured athlete can safely load a limb, when the study tested healthy non-athletes with a short cast and did not test any rehabilitation exercise, nutrition or return-to-sport criteria.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "athlete relevance: added that the sample was non-athlete men and that 'participation in a structured resistance exercise program' was an exclusion criterion; populations kept as Adult / Recreational with no athlete tags. INCLUDE kept because the paper addresses injury-related disuse and recovery of muscle tissue and strength.",
+            "limitations and screeningLimitations: added that all participants received milk protein concentrate or peptide supplements in the parent trial ('randomly allocated to supplement ... NPN_1; n=15 or MPC; n=15'), with no group effects found.",
+            "practicalImplications: 'normal activity restores synthesis' -> synthesis returned to the non-immobilized leg's level while 1RM 'remained lower compared with prior to immobilization (P < 0.002)'.",
+            "Checked numbers: FSR 1.07 vs 1.48 %/d, recovery 1.48 %/d, 1RM 56.7 to 49.5 to 52.9 kg, n = 28 and 25, and the abstract vs results mRNA discrepancy (abstract omits tenascin-C and gives P<0.001; results include tenascin-C with P<0.01) all match the text."
+          ],
+          "residualConcerns": "Non-athlete sample; relevance to athletes is by extrapolation to injury-related disuse. Year coded 2023 from the publish-ahead-of-print version; no final volume or pages are printed.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1385",
+        "synthesisBatch": "pilot-synthesis-batch-82",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 25,
+      "sourceFile": "Open fractures in National Football League athletes - Analyzing performance and return to sport.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 32463,
+        "doi": "10.51894/001c.87846",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Retrospective comparison of 95 NFL players (10 open, 85 closed) who had surgery for forearm, tibial shaft or ankle fractures, using public injury reports from the 2009 to 2018 seasons. Return to sport was 90% for open and 83.5% for closed fractures with no significant difference, and career duration and approximate value (AV) changes did not differ significantly between groups.",
+      "limitations": "Built from public reports with only 10 open fractures, so the non-significant comparisons cannot rule out meaningful differences. Fracture severity and soft-tissue injury could not be classified.",
+      "synthesisCaution": "Reading the non-significant comparisons as proof that open fractures carry the same prognosis as closed fractures.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: outlier description followed only the Discussion (infection) -> notes the Results name a preseason tibia re-fracture and an unrelated shoulder injury ('one athlete missed an additional year due to a tibia re-fracture in the preseason')",
+            "paper.limitations: added third text-vs-table conflict -> Discussion 'played the same number of seasons ... 2.4 vs 2.0 after' vs Table 3 post-injury seasons 2.4 vs 2.9 (P=0.60)",
+            "paper.rtp: 'does not apply to non-NFL athletes or high-energy mechanisms' overstated the authors -> 'may differ' ('results may differ in lower-level athletes or cases with high-energy mechanisms')"
+          ],
+          "residualConcerns": "Abstract states forearm patients returned 'at around 20.8 weeks', a figure not found in Table 2 (closed forearm mean 19.7, median 10.0; open forearm 43.0); not used in the record.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1386",
+        "synthesisBatch": "pilot-synthesis-batch-82",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 33,
+      "sourceFile": "Outcomes of Lisfranc injuries in the NFL.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 42820,
+        "doi": "10.1177/0363546516645082",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case-control Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Case-control study of 28 NFL players (11 offensive, 17 defensive) with Lisfranc injuries from 2000 to 2010, compared with control groups of 162 offensive and 535 defensive players who competed in 2005. The authors report that 26 of 28 players returned to NFL competition at a median of 11.1 months, and that changes in power ratings after return did not differ significantly from controls.",
+      "limitations": "Injuries were identified from NFL game summaries, injury reports and player profiles without examination or imaging, and the sample is small. The authors note the study may have been underpowered to detect a mild performance decline.",
+      "synthesisCaution": "Staff could read the non-significant performance change as proof that Lisfranc injury does not affect performance, when the authors say a mild decline may exist but was not detectable in this sample.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.abstract: no change scores given -> added change scores and IQRs with minus signs restored from Tables 3 and 4 ('-34.8 (-64.4 to 1.4)'); abstract text prints '234.8 (IQR, 264.4 to 1.4)' with minus signs lost",
+            "paper.findings: nonoperative return stated as 'returned sooner' -> framed as the authors' 'trend' likely reflecting severity, with n = 6 vs 22 ('this is more likely a potential surrogate for greater injury severity')",
+            "paper.limitations: added note on dropped minus signs in the abstract and higher preinjury DPR in the injured group (61.0 vs 44.0, P = .02)",
+            "paper.practicalImplications: 'about 11 months on average' -> 'median of about 11 months'; added caution on nonoperative comparison"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1387",
+        "synthesisBatch": "pilot-synthesis-batch-82",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 41,
+      "sourceFile": "PERSIS~1.PDF",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 25,
+        "extractedCharacters": 47833,
+        "doi": "10.1186/s13102-025-01435-5",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Injured Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Cross-sectional laboratory study of 42 male football players: 21 with a unilateral hamstring strain within the previous 6 months and 21 controls with no strain in that period. Surface EMG (%MVIC) of the biceps femoris long head, gluteus maximus, latissimus dorsi and iliocostalis lumborum was lower in the injured group in all four muscles during the Nordic hamstring curl, kettlebell swing and supine sliding leg curl (for example, biceps femoris 52.3 vs 76.8 %MVIC in the Nordic hamstring curl, p < 0.001, d = 2.08).",
+      "limitations": "A single-visit cross-sectional design cannot show whether lower activation came before or after the injury, and return-to-play status and exact time since injury were not reported. The sample is small, male and non-professional (a professional sports background was an exclusion criterion), with injured limbs compared against control dominant limbs.",
+      "synthesisCaution": "Staff could read these between-group differences as proof that deficits persist after return to play or that a specific exercise will lower reinjury risk.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "identityCheck: noted that PERSIS~1.PDF is a truncated 8.3 name and identity was matched from the text title and journal",
+            "screeningLimitations/methods: added that a professional sports background was an exclusion criterion ('Exclusion criteria ... professional sports background') and that RTP status was not reported",
+            "findings: added the per-exercise biceps femoris d values (2.08, 2.06, 2.07) and gluteus maximus KS values (92.6 vs 68.9, d = 1.87) from the results text; replaced 'd of about 2.1'",
+            "limitations: 'does not report time since injury' was inaccurate -> inclusion window 'within the previous 6 months' is reported, but exact time and RTP status are not; 'table means' -> results values (EMG data are reported in results text and figures, Table 1 is demographics only); hip-dominant claim clarified as true for GM, not BF",
+            "rtp: added that the study cannot support the 'even after return to play' claim"
+          ],
+          "residualConcerns": "Sport coded Soccer by inference: the sample is described only as 'football players', but the authors are Turkish and the introduction frames the injury problem with soccer data (UEFA, elite soccer teams). Competition level unstated beyond excluding professional backgrounds, so populations keep Mixed / Unspecified. Minor internal inconsistencies: abstract mean age 23.4 +/- 3.1 vs Table 1 group SDs of 2.30 and 2.54; control BMI 24.34 +/- 2.87 despite a 18.5-24.9 inclusion range; an exclusion for any lower-extremity injury in the previous year conflicts with the injured group's inclusion criterion. Article in press, so volume and pages are not yet assigned.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1388",
+        "synthesisBatch": "pilot-synthesis-batch-82",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 75,
+      "sourceFile": "Patellar tendon load progression during rehabilitation exercises - Implications for the treatment of patellar tendon injuries.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 49269,
+        "doi": "10.1249/MSS.0000000000003323",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Laboratory biomechanics study of 20 healthy adults (10 women, 10 men; 25.9 ± 5.7 years) performing 35 rehabilitation and sport-movement exercises. Patellar tendon force was estimated from inverse dynamics, and loading peak, impulse and rate were combined into a loading index, with the single-leg decline squat highest (0.747) and walking lowest (0.106) and three tiers reported.",
+      "limitations": "A sample of 20 healthy adults, with no patient, athlete or intervention outcomes, so the tiers show loading differences and not clinical benefit. Tendon force is model-estimated, and the index weights are set by the authors.",
+      "synthesisCaution": "Staff could read the tiers as a validated clinical progression for patients, when they come from healthy adults, a model-estimated tendon force and author-chosen index weights.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: omitted the authors' third limitation -> added that net knee moment 'neglects the potential effects of coactivation and force production by the hamstrings'; condensed to 3 sentences"
+          ],
+          "residualConcerns": "Relevance check: participants were 20 healthy non-athlete adults (18 to 40 yr, campus and community), but the exercises are rehabilitation and sport tasks aimed at patellar tendon disorders common in jumping athletes, so exclusion (c) does not apply; tagged Adult / Recreational with no athlete tags. Exercise labels differ between abstract and Table 1 (for example abstract 'single-leg countermovement jump (0.711)' vs table '1-Leg countermovement hop'; abstract 'running cut' vs 'Run-and-cut'), and Table 1 lists '1-Leg repeated lateral hops (regular)' twice (0.573 and 0.605); record uses table labels.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1389",
+        "synthesisBatch": "pilot-synthesis-batch-82",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 79,
+      "sourceFile": "People Are More Variable Than Their Hop Test Would Suggest - Hop Performance and Self-Reported Outcomes Over 11 Years Following ACL Reconstruction.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 56624,
+        "doi": "10.1111/sms.14727",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Prospective cohort of 124 adults (43 women; mean age 30.8 ± 8.7 years in Table 1) recruited one year after hamstring-autograft ACL reconstruction and followed to 11 years (72 completed). Self-reported KOOS pain and quality of life were stable on average, longer single-forward hop distance was modestly related to better later KOOS pain (0.06% per cm, 95% CI 0.02 to 0.10), and hop performance was not related to subsequent knee events (index-knee HR 0.99, 0.98 to 1.02).",
+      "limitations": "Single-centre cohort with loss to follow-up (52 of 124 missed the 11-year visit, more often men), no control group, and no adjustment for rehabilitation or return-to-sport testing. The associations are small and the authors judge them of questionable clinical importance.",
+      "synthesisCaution": "Staff could read the hop test as a reliable individual prognostic tool, when the authors found only group-level associations, large individual variability (ICC 0.67 for pain) and no link to future knee events.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: age '31 ± 8' (abstract) -> Table 1 value 30.8 ± 8.7 ('Age, years 30.8 (8.7)'); conflict noted in limitations",
+            "findings: '0.06% higher KOOS pain' -> '0.06% better KOOS pain score' (higher KOOS = less pain; 'better future KOOS-pain'); added side hop AME 0.10% and ICC 0.67; corrected change magnitudes (pain 'slight improvement at 3 and 5 years (2 and 3 point)', QOL '5-year follow-up = 10-point improvement')",
+            "methods: added that triple-crossover hop was dropped as a predictor ('highly correlated (r = 0.90)') and the time-varying return-to-sport covariate",
+            "limitations: kept 11 vs 12 contralateral conflict with the table note ('n = 1 sustained injury on index and contralateral knee'); added ~40% dropout, attrition bias and recall of events"
+          ],
+          "residualConcerns": "Sample is ACLR patients from two surgeons' practices, not identified athletes; tagged Mixed / Unspecified. Issue number appears only in the download banner ('2024, 9'), so it is omitted from the citation.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1390",
+        "synthesisBatch": "pilot-synthesis-batch-82",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 83,
+      "sourceFile": "Performance and return to sport afte open fracture in National Football League players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 28271,
+        "doi": "10.1177/23259671211027862",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Retrospective comparative series of 37 NFL players who sustained an open fracture between 1970 and 2018, identified from public records, each compared with one control matched on position, age, experience and preinjury performance. Thirty of 37 players (81%) returned to play in at least one NFL game after a mean of 9.3 ± 8.2 months. Career length, games per season and performance scores were similar to matched controls, and upper-extremity fractures returned faster than lower-extremity fractures (4.0 ± 4.8 vs 14.6 ± 7.4 months).",
+      "limitations": "Public records were the only source, so fracture type, Gustilo-Anderson grade, antibiotic use and time to surgery are unknown. With 37 cases the estimates are imprecise, and the upper-extremity advantage disappears when hand and finger fractures are excluded.",
+      "synthesisCaution": "Staff could apply the 81% return rate and similar career length to their own athletes, but this is a small NFL sample with selection and reporting bias and no patient-reported outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1391",
+        "synthesisBatch": "pilot-synthesis-batch-82",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 84,
+      "sourceFile": "Performance and survivorship of NFL players with pectoralis major injuries.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 39397,
+        "doi": "10.1016/j.asmr.2021.03.015",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Level III cohort study using publicly available NFL records from the 1998 to 2020 seasons, covering 258 pectoralis major injuries in 245 players. Of these, 126 (48.8%) were surgically repaired, and return to play was 78.6% after repair vs 95.7% after nonoperative care (P < .005), with mean return at 289.5 vs 47.4 days. Table 5 shows lower PER for overall defense and defensive backs in the first postinjury season and for defensive linemen and wide receivers in the second, and defensive linemen also had lower PFF grades in the second season.",
+      "limitations": "Injury grade and treatment were inferred from news reports and treatment type, and no nonoperative player had a grade III tear, so grade and treatment are confounded. Operatively treated players also had lower preinjury PER (P = .004), so the groups differed before injury, and PER is not defined for offensive linemen.",
+      "synthesisCaution": "Staff could read the paper as showing that surgical repair preserves career length and performance, but career length and performance comparisons are observational, confounded by injury grade, and the authors' 'career preserving' wording goes beyond the data.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings: said performance fell only for defensive linemen and wide receivers in season 2 -> Table 5 also shows first-season PER declines for overall defense (.32 to .28, P = .046) and defensive backs (.35 to .25, P = .049) ('PER scores were significantly lower for overall defensive players and defensive backs in the first post-injury seasons')",
+            "abstract, tldr, practicalImplications, athleteDev: removed 'only defensive linemen and wide receivers' framing to match Table 5",
+            "limitations: kept the abstract vs results career-length conflict as printed (abstract P < .001 for tears vs strains; results P = .540 by degree of injury) and added the Discussion vs Table 5 conflict"
+          ],
+          "residualConcerns": "Career length: the abstract says tears had shorter careers than strains (P < .001), but the results report no difference in retirement survival by degree of injury (P = .540). The record follows the results. A reviewer may want to check the PDF figure, since the text has no Kaplan-Meier figure for career length by grade. Volume and issue are not printed ('Vol -, No -'), so the citation gives only year and pages e1-e8.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1392",
+        "synthesisBatch": "pilot-synthesis-batch-82",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

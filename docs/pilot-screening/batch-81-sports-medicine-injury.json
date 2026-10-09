@@ -1,0 +1,745 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-81-sports-medicine-injury",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Sports Medicine & Injury queue positions 13-90. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 13,
+      "sourceFile": "Nutritional interventions to support acute mTBI recovery.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 26,
+        "extractedCharacters": 119840,
+        "doi": "10.3389/fnut.2022.977728",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Nutrition & Hydration",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Nutrition",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "American Football"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "PRISMA systematic review (PROSPERO CRD42021226819) of nutrition and nutritional interventions given within 14 days of mild traumatic brain injury in humans, searched to 6 January 2021. It included 11 mostly small studies, of which only two were in athletes (a pediatric sports concussion trial and an NCAA trial); the rest were in emergency, trauma, surgical and military patients, and no meta-analysis was possible. The authors state that nine studies reported positive recovery outcomes, but their own list of positive studies includes both DHA athlete trials, which were not statistically significant.",
+      "limitations": "Only two of 11 included studies were in athletes (n=40 and n=55), and both, along with a third omega-3 trial, are available only as abstracts with incomplete data. Most other studies were in general trauma, surgical or military populations, one citicoline trial was mainly moderate to severe and complicated TBI, and samples are small with varied interventions.",
+      "synthesisCaution": "Staff may treat the positive omega-3, N-acetyl cysteine and magnesium results as a basis for routine post-concussion nutrition, when the athlete trials were not statistically significant and most positive trials are small.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: added that the abstract claim 'consumed enough food ... within 96 h post mTBI had a reduced length of stay in hospital' is unsupported; Abdullah et al. is observational with intakes 'below estimated REQ amounts' and no LOS comparison, and the discussion only says tailored nutrition 'would facilitate ... reducing LOS'",
+            "limitations: 'about 20% of athletes were excluded' -> 7 of 62 excluded (Table 3: 'excluded (DHA, n = 6; placebo, n = 1)'); the 20% figure applies only to the DHA arm",
+            "limitations, evidenceSummary: 'rated positive despite no overall benefit' clarified as a quality rating; the authors' list of positive-outcome studies (5, 55, 56, 58-62) includes the two non-significant DHA athlete trials",
+            "findings: NAC result is for groups B + D combined vs placebo, not early treatment only (OR = 3.6, p = 0.006); cerebrolysin CASI gain was within-group, MMSE between groups 'not as significant (p = 0.111)'; added 50% magnesium dropout",
+            "screeningLimitations: noted both athlete trials are abstracts and that the citicoline trial was mainly complicated mild, moderate and severe TBI",
+            "practicalImplications: 'food and fluid intake' -> food intake with day-1 figures (fluid not measured); vitamin D benefits were at 12 weeks in a retrospective mixed-severity study"
+          ],
+          "residualConcerns": "Relevance: only 2 of 11 studies are in athletes, and the athlete-specific evidence is two null abstract-only DHA trials; INCLUDE kept because sport-related concussion is a stated focus and the review informs athlete brain health, but a reviewer may prefer EXCLUDE (c). The sports tag American Football rests on the pediatric trial (42.5% football); the NCAA trial is described as football players in Table 2 but includes 40% female athletes in Table 3. Clinically sensitive (concussion).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1370",
+        "synthesisBatch": "pilot-synthesis-batch-81",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 19,
+      "sourceFile": "Observation of risk for concussion following 'lowering the helmet to initiate contact' penalities in the NFL.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 27148,
+        "doi": "10.1016/j.jorep.2024.100347",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Descriptive observational study of publicly reported NFL concussion, penalty and play-count data from 2015 to 2022. Of 86 'lowering the helmet to initiate contact' penalties from 2018 to 2020, 3 (3.5%) were followed by a concussion, compared with a mean of 0.45% concussions per regular-season play. The authors report a significant downward linear trend in the concussion rate per play across 2015 to 2022 (R² = 0.575, p = 0.029), but no significant pairwise year-to-year differences after Bonferroni correction.",
+      "limitations": "Only three concussions followed these penalties, and the 3.5% is concussions per penalty while the 0.45% is game concussions per regular-season play, so the two rates have different denominators and were not compared statistically. The authors note that the penalty was regrouped under unnecessary roughness and that rule, equipment and reporting changes over the period were not controlled for.",
+      "synthesisCaution": "Staff could read the 3.5% figure as the concussion risk of a lowering-the-helmet play, or the falling trend as proof the penalty worked, when the 3.5% is per penalty, rests on three events, and the trend cannot be separated from other league changes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: 'all three were on defensive players hitting offensive players' was ambiguous about who was concussed -> the penalized players were defenders and the concussed players were offensive ('Of the affected, all were offensive players ... from a defensive back, defensive tackle, or linebacker attacking a member of the offense').",
+            "screeningLimitations and limitations: different-denominator comparison made explicit (3.5% = 'concussion events per total penalty'; 0.45% = 'number of concussion events per total play', game concussions in Table 2) and noted that no statistical test compares the two rates, although the abstract concludes incidence 'is greater'.",
+            "limitations: added internal inconsistency ('Despite only four total concussions during lowering the helmet plays' in the discussion vs 3 in Table 3) and the 2020 vs 2021 regrouping dates.",
+            "practicalImplications: self-contradictory 'When a player is penalized ... evaluate whether or not a foul is called' -> the authors' actual advice ('a thorough evaluation by medical staff, irrespective of whether a foul is called').",
+            "athleteDev: attributed the coaching advice to the authors and tied it to the three-event evidence base.",
+            "identityCheck: recorded that Q19 is the retained record and Q20 is the duplicate."
+          ],
+          "residualConcerns": "Concussion topic. The paper's headline comparison (3.5% per penalty vs 0.45% per play) is not like-for-like and rests on three events, and the text gives four concussions in one place. The trend analysis covers 8 annual points only. A reviewer should confirm the record does not present penalized plays as a measured risk ratio.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1371",
+        "synthesisBatch": "pilot-synthesis-batch-81",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 29,
+      "sourceFile": "Optimizing concussion care seeking - The influence of previous concussion diagnosis status on baseline assessment outcomes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 59185,
+        "doi": "10.1177/03635465221118089",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Collegiate",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Cross-sectional analysis of 29,934 CARE Consortium participants, college varsity athletes and military academy cadets, at preseason baseline testing from 2014 to 2018. Compared with no concussion history (77.0%), the 1,582 participants (5.3%) reporting at least one undiagnosed concussion had higher symptom severity (IRR 1.39) and BSI-18 scores (IRR 1.31), with worse results on 6 neurocognitive comparisons and better results on 2, and no differences on the SAC or BESS.",
+      "limitations": "Concussion history and diagnosis status were self-reported, diagnosis categories were collapsed, and the cross-sectional design cannot show that undiagnosed concussion caused the differences. The neurocognitive pattern was inconsistent across test platforms, which the authors acknowledge.",
+      "synthesisCaution": "Reading the group differences as proof that undiagnosed concussions cause lasting symptoms or cognitive deficits, when the history is self-reported and the design is cross-sectional.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: '2022;1-11' used online-first pagination (journal header shows placeholder 'Vol. XX, No. X, XXXX') -> year only",
+            "paper.methods: added the significance rule requiring at least a small effect ('95% CIs excluding 0.00 and at least a small effect size (0.20)') and that each neurocognitive platform was used at different sites",
+            "paper.findings: added IRRs vs the all-diagnosed group (Table 3: 1.38 and 1.39); neurocognitive list attributed to the Results text because Table 3 signs are garbled",
+            "paper.limitations: 'reaction time slower on CNS Vital Signs but faster on ANAM' followed the Discussion only -> notes Results list ANAM simple and procedural RT as worse; added abstract 1.38 vs table 1.39, subsample sizes, and garbled Table 3 signs (e.g. '21.23 (22.17 to 20.30)')",
+            "paper.practicalImplications: unsupported directive to add history questions -> authors' stated implication ('another factor that may affect performance (previous concussion diagnosis status)')"
+          ],
+          "residualConcerns": "Table 3 mean differences lost their minus signs in extraction (rendered as a leading '2'), so direction of individual neurocognitive effects could not be checked against the table; ANAM direction conflicts between Results and Discussion. Concussion topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1372",
+        "synthesisBatch": "pilot-synthesis-batch-81",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 32,
+      "sourceFile": "Outcome of turf toe injuries in NFL players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 24804,
+        "doi": "10.1053/j.jfas.2022.05.008",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Retrospective study (labelled a case series by the authors) of 67 NFL players with 71 turf toe injuries in the 2011 to 2014 seasons, identified from public online sources, with a comparison group of uninjured players. Among 16 offensive skill players with enough data, power ratings did not differ significantly before versus after injury (105.7 vs 115.5 per season, P=.53), or after injury versus 149 uninjured running backs and wide receivers (115.5 vs 99.2, P=.24).",
+      "limitations": "Data came from public online sources without clinical records, the performance comparison included only 16 players, and the power rating counts yards and touchdowns only. Non-significant results cannot rule out meaningful performance losses.",
+      "synthesisCaution": "Reading the numerically higher post-injury power ratings as evidence that turf toe improves performance; the authors note that a few productive players could skew the post-injury values.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: 'Case Report / Case Series' -> 'Cohort Study' (retrospective injured vs uninjured comparison of 149 controls, consistent with library coding of similar public-data NFL studies); authors' 'case series' label kept in evidenceSummary",
+            "paper.citation: '2022;1-5' was in-press pagination with placeholder volume ('000 (2022) 1-5') -> year only",
+            "paper.findings: added per-game P=.4 and control per-game comparison (8.1 vs 7.2, P=.27)",
+            "paper.limitations: added survivorship effect of the 200-point inclusion threshold (inference); reworded non-significant 'improvements' as no detectable change",
+            "paper.practicalImplications/rtp: 'offensive skill players' -> running backs and wide receivers (performance analysis 'done only on the offensive skills player's (WR's, RB's)'); 'needed operative repair' -> 'had'; added the injured-reserve player who did not return"
+          ],
+          "residualConcerns": "Design label departs from the authors' 'retrospective case series' (Level 4); reviewer may prefer to keep the authors' label.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1373",
+        "synthesisBatch": "pilot-synthesis-batch-81",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 34,
+      "sourceFile": "Overlapping mechanisms of exterional heat stroke and malignant hyperthermia - Evidence vs conjecture.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 50901,
+        "doi": "10.1007/s40279-020-01318-4",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of the pathophysiology, incidence, diagnosis and treatment of exertional heat stroke (EHS) and malignant hyperthermia (MH). It draws on case reports of awake MH (Table 1), in vitro contracture test (IVCT) protocols, and a triathlon incidence series (12 EHS cases among 68,557 starters, 1.74 per 10,000). No systematic search method is described.",
+      "limitations": "This is a narrative review with no described search, so the selection of evidence cannot be checked. Much of the mechanistic evidence comes from case reports and small series, and the authors state that the IVCT has not been validated for EHS.",
+      "synthesisCaution": "Staff could read the shared clinical features of EHS and MH as proof of a shared calcium-dysregulation mechanism, which the authors describe as unproven conjecture.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.athleteDev: listed 'prior heat illness' as an awake-MH risk factor -> replaced with the factors the text names ('family history of MH related to RyR1 mutations, pre-existing muscular conditions, recent or concurrent illness, or prior stress')",
+            "paper.findings: 'EHS trials' -> 'tested in EHS ... lack of clinical efficacy or mixed results'; cohort described without the conflicting count",
+            "Count conflict confirmed and kept in limitations: Table 1 lists '466 EHS patients in the French Armed Forces' while the text says 'Of the 454 subjects, 45.6% tested positive'"
+          ],
+          "residualConcerns": "The French cohort size is printed as 466 (Table 1) and 454 (text); the original Sagui et al. paper would settle which is correct. Volume and pages are not printed, so the citation has the year only.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1374",
+        "synthesisBatch": "pilot-synthesis-batch-81",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 38,
+      "sourceFile": "Overview of treatment options for mild traumatic brain injury - A literature review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 48619,
+        "doi": "10.7759/cureus.59021",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "American Football",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "Literature review with a described database search (PubMed, Embase and Medline, April 2012 to April 2022; 163 articles, 24 retained) of concussion treatment options, plus the Amsterdam 2022 consensus statement. It covers rest, a jugular vein compression collar, osteopathic manipulative medicine, herbal and drug treatments, hyperbaric oxygen, blood-flow-restricted interval training, aerobic exercise and vestibular rehabilitation. Several of the treatment trials it summarizes were in patients with traumatic brain injury, PTSD or persistent post-concussion symptoms rather than athletes, and some were pilot studies.",
+      "limitations": "The search is described only briefly and no quality appraisal is reported, so study selection cannot be checked. The herbal, drug, hyperbaric oxygen and vestibular rehabilitation evidence comes from trials in traumatic brain injury, PTSD or post-concussion patients rather than athletes, and the interval training and herbal studies are pilot studies whose results the review describes in efficacy terms.",
+      "synthesisCaution": "Staff could read the listed treatments as established concussion therapies, when the review itself says there is no definitive concussion treatment and that much of the evidence is limited.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed Injured Athletes -> Mixed / Unspecified, Youth / Adolescent; trials summarized include non-athlete TBI, PTSD and post-concussion patients (refs 9, 10, 11, 13, 20) and one adolescent concussion trial (ref 12)",
+            "paper.findings: vestibular return-to-play claim presented as a trial result -> attributed as a review statement citing a TBI patient trial, and added that both groups reached 'the same level of improvement' by the second follow-up; added that HBOT, drug, MLC901 and BFR results come from non-athlete or pilot studies; added Buckley et al. ('individuals who did not rest ... had a faster recovery')",
+            "paper.limitations, screeningLimitations: added pilot-study efficacy framing ('reduced concussive symptoms'; Table 1 'can be used to aid athletes in recovery') and the MLC901 pilot",
+            "paper.tldr: 'presents early aerobic exercise and vestibular rehabilitation as the clearest options' -> no ranking claimed; identifies the single adolescent RCT as the main athlete evidence",
+            "paper.practicalImplications: added caution that HBOT, herbal, drug and BFR options are not established athlete treatments",
+            "studyDesign kept as Systematic Review / Meta-analysis per library rule (database search described)"
+          ],
+          "residualConcerns": "Concussion content is clinically sensitive. The review mixes athlete and non-athlete evidence and describes pilot results in efficacy terms; medical staff should rely on the Amsterdam 2022 statement itself for return-to-play decisions.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1375",
+        "synthesisBatch": "pilot-synthesis-batch-81",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 71,
+      "sourceFile": "PREFER~1.PDF",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 28960,
+        "doi": "10.1016/j.asmr.2025.101161",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "This survey asked 51 of 97 identified NFL team knee surgeons (53%) for their preferred ACL reconstruction graft, augmentation, rehabilitation and bracing choices for hypothetical athletes: a 20-year-old starting running back and 25- and 35-year-old recreational athletes. Patellar tendon autograft was the most common choice in all three scenarios (94%, 65% and 39%), with quadriceps tendon second, and the authors report less hamstring autograft preference than in a 2014 survey. Results are descriptive percentages without advanced statistical analysis.",
+      "limitations": "The study measures stated surgeon preferences for hypothetical cases, not clinical outcomes, and the questionnaire was not validated. The 53% response rate, the exclusion of NCAA physicians and the small respondent group limit how far the results generalize.",
+      "synthesisCaution": "Staff could read the most common graft choice as evidence that patellar tendon autograft performs better than quadriceps or hamstring grafts, when the paper reports only what surgeons said they would choose.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed 'Injured Athletes'; the sample is NFL team surgeons answering about hypothetical patients, and the tagging rule bars athlete health-status tags for staff samples. Kept 'Professional / Elite' (NFL team setting and running back scenario) and 'Adult / Recreational' (the 25- and 35-year-old recreational athlete scenarios, also the rule's fallback for non-athlete samples).",
+            "paper.limitations: added that the brace answers total 50 ('Twelve (24%) formally recommend the use of a brace ... whereas 38 (76%) did not'), so 76% is of 50 not 51; noted the discussion's '>80%' supports the 84% results figure over the abstract's 96%.",
+            "identityCheck: stated that identity is matched from the text because the filename is a truncated 8.3 name, and that the DOI 10.1016/j.asmr.2025.101161 is printed on page 1 as the article's own.",
+            "All other numbers checked against the results text and verified: 51/97 (53%); 19.6 (SD 11.4) years; 103.9 (SD 46.6) ACLRs in 2022; BPTB 48 (94%), 33 (65%), 20 (39%); 35-year-old quad 13 (25%), hamstring 11 (22%); repair 2 (4%); AM portal 71%, retrograde 8 (16%), transtibial 7 (14%); team staff only 38 (75%); RTS tests 15 (29%), tests plus 9 months 13 (25%); hamstring 42.3% -> 8% and 45.3% -> 22%; transtibial 25% -> 14%."
+          ],
+          "residualConcerns": "The abstract's 96% for lateral augmentation conflicts with the results' 43 (84%); 96% equals the 49 of 51 who chose reconstruction over primary repair, so the abstract figure may be a transposition, but the paper does not say so. For the 25-year-old, the text says 33 (65%) 'of the surgeons who chose autograft' chose BPTB, yet 33/48 would be 69%, so the 65% appears to use all 51 respondents. The 'quadriceps tendon second in all scenarios' claim rests on the authors' statement and Figure 2 (about 19%); no count is printed for the 25-year-old quadriceps choice. The tagging of a surgeon sample with competition-level tags is a judgment call.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1376",
+        "synthesisBatch": "pilot-synthesis-batch-81",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 72,
+      "sourceFile": "Pain Medication Data from the 2021 and 2022 National Football League Prescription Drug Monitoring Program.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text. The text has no DOI string at all, so the record is complete except for the DOI.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "DOI: confirmed no own DOI is printed; the text has no 'doi' string or '10.' DOI anywhere (header shows only '1537-8918/2310/348-351', Current Sports Medicine Reports 23(10) October 2024), so DEGRADED with doiMissing true is correct.",
+            "paper.methods: data window ran 'through 1 week following the club's last game of the season', not through the last game; corrected.",
+            "identityCheck: noted the 'SPECIAL COMMUNICATION' label and why it does not make the paper a commentary.",
+            "All numbers checked against Tables 2 and 3 and the results text and verified (3142/3152 players; 14,903/14,880 prescriptions; 2207 (70.2%)/2189 (69.4%); NSAIDs 84.6%/85.5%; opioids 3.1%/2.7%, 319 (10.2%)/300 (9.5%) players; 576 unique opioid recipients; 17.7/18.4 tablets per opioid prescription). Citation details match the printed header."
+          ],
+          "residualConcerns": "Operator should look up the DOI externally to upgrade from DEGRADED. Medication topic: the authors' comparison with US population opioid data is indirect, which the record already flags. Sex of the sample is not stated in the text, so no sex tag was added.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 74,
+      "sourceFile": "Past-season, pre-season and in-season risk assessment of groin problems in male football players - A prospective full-season study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 41605,
+        "doi": "10.1136/bjsports-2020-102606",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Adult / Recreational",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Prospective 39-week in-season cohort of 245 male amateur football players from 17 teams, with pre-season and in-season measures. Of these players, 99 (40.4%) had a groin problem, and in the long-lever model past-season groin pain (RR 2.40, 95% credibility interval 1.52 to 3.74) and long-lever adductor squeeze strength (RR 0.65 per N·m/kg, 0.42 to 0.99) were associated with the risk, as reported from Bayesian logistic models.",
+      "limitations": "One convenience sample of amateur players, with associations estimated from Bayesian models and no causal test. Several split-model results, including age in the no-time-loss group, have credibility intervals that reach 1.00, and the time-loss analysis rests on only 35 time-loss problems.",
+      "synthesisCaution": "Staff could read the long-lever strength result as a proven prevention target, when it is an association in one amateur cohort with an interval close to 1 (0.42 to 0.99).",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: 'The abstract states that 245 players had past-season groin pain' -> abstract wording is ambiguous; n=245 is the whole sample and Table 1 gives 77 (31.4%) with past-season pain ('Players (n=245) suffering from groin pain during the past-season'); added text vs Table 2 interval conflict (1.52 to 3.54 vs 1.52 to 3.74) and abstract vs Table 3 age conflict",
+            "paper.findings: omitted the Table 3 long-lever split results -> added time-loss RR 0.50 (0.26 to 0.94) and no-time-loss RR 0.67 (0.43 to 1.04); clarified 35 is time-loss problems of 233 problems, not players ('233 in-season groin problems, of which 35 (15%) were groin problems with time loss')",
+            "paper.abstract: phrased strength result as lower long-lever strength linked to higher risk; citation: fixed missing space after 'et al.'; omitted placeholder '2021;0:1-7'"
+          ],
+          "residualConcerns": "Interval for past-season pain differs between results text (1.52 to 3.54) and Table 2 (1.52 to 3.74); table value used. Volume and pages not printed (Epub ahead of print).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1377",
+        "synthesisBatch": "pilot-synthesis-batch-81",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 77,
+      "sourceFile": "Pectoralis Major Injuries in the   National Football League.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 29711,
+        "doi": "10.1177/1941738119885867",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Retrospective cohort analysis of 211 pectoralis major injuries (132 strains, 79 ruptures) recorded in the NFL Injury Surveillance System over 15 seasons (2000 to 2014). Strain incidence was 0.41 and rupture incidence 0.25 per 10,000 athlete-exposures, and among 69 ruptures with treatment data, operatively treated players missed 146.7 ± 55.0 days versus 77.2 ± 72.9 days for players treated without surgery or with unknown treatment (P < 0.01).",
+      "limitations": "Retrospective surveillance data with assumed athlete-exposure denominators (53 players per team, 105 practices per year), no performance or functional outcomes, and reporting changes over the study period. The comparison group mixes nonoperative and unknown treatment, treatment was not randomised, and surgical indications for strains are unknown.",
+      "synthesisCaution": "Staff could read the longer time loss after surgery as an effect of surgery itself, when the operative group likely had more severe injuries, the comparison group includes unknown treatment, and the data show only an association.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/abstract/findings/tldr/rtp: comparison group described as nonoperative -> 'no surgery or unknown treatment' (Table 6 'No surgery/unknown 17 (24.64)')",
+            "methods/limitations: exposure denominators now stated as assumed (53 players per team, 105 practices per year) with the authors' note that 'fewer than 53 players may be exposed', so incidence is likely understated; added exclusion of offseason/conditioning and secondary injuries",
+            "limitations: added days-missed underestimation from injuries without return dates by the June 22, 2015 cutoff ('time-to-return statistics may show an artificially low amount of time lost')",
+            "practicalImplications: replaced 'tackling and contact load are a reasonable focus for review' with the reported contact-type pattern; citation: fixed spacing after 'et al.'"
+          ],
+          "residualConcerns": "Methods text says games missed while tables report days missed; days used. Player sex is not explicitly stated, so no sex tag was added. Volume and pages are placeholders ('vol. XX no. X') and omitted.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1378",
+        "synthesisBatch": "pilot-synthesis-batch-81",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 78,
+      "sourceFile": "Pectoralis major ruptures in the NFL - Incidence, RTP, and Performance Analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 28627,
+        "doi": "10.1177/23259671211018707",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Retrospective descriptive study of 63 season-ending pectoralis major ruptures in 58 NFL players from 2010 to 2018, identified from public reports. The paper reports a return-to-play rate of 85.7% (54/63, a rupture denominator although it is labelled as players), and among 35 players with at least 4 games in the seasons before and after injury, the mean Pro Football Focus grade did not change (65.10 before, 65.08 after; difference -0.02 ± 3.68, P = 0.99).",
+      "limitations": "Injuries were found from public sources rather than medical records, so grade, mechanism and exact treatment are uncertain and some cases may be missed, and rates were not normalised for position or exposure. The performance comparison covers only 35 players and is unadjusted, with no uninjured comparison group.",
+      "synthesisCaution": "Staff could read the 85.7% return rate and unchanged grades as proof that surgical repair restores performance, when treatment came from public reports (53 surgical, 10 undetermined), there was no comparison group, and the before-and-after sample is small.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: Other -> Case Report / Case Series (all-injured descriptive series with no comparison group; 'Descriptive epidemiology study')",
+            "limitations/evidenceSummary/rtp: players vs ruptures: 'reported as 54 of 63 ruptures in the table but as players in the text' -> both table header and text label 54/63 as players while 63 is the rupture count and 58 the player count ('returned to play in the NFL at a rate of 85.7% (54/63)'); added the 84.6% vs 52/63 inconsistency",
+            "limitations: 769% claim now explains it is a ratio of raw annual counts (7.0 vs 0.91) against a different study and case-finding method, and arithmetically a 669% increase ('a staggering 769% increase in total PM ruptures')",
+            "synthesisCaution: 'the paper has no treatment ... data' -> 53 surgical, 10 undetermined ('53 players underwent surgery, while the specific treatment for 10 of the injuries was not determined')",
+            "findings: added setting breakdown (training/lifting/offseason 11.1%) and surgery counts"
+          ],
+          "residualConcerns": "The 769% figure should not be cited. Cross-source check: the comparison study (10 ruptures, 2000 to 2010) used different case finding, and Q77 (Sahota et al., NFLISS) records 79 ruptures over 2000 to 2014, so the 'increase' may largely reflect ascertainment differences; this paper itself cites Sahota as consistent. Players' sex is not explicitly stated; no sex tag added.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1379",
+        "synthesisBatch": "pilot-synthesis-batch-81",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 86,
+      "sourceFile": "Performance effects of functional knee brace removal and prolonged use in healthy male athlete - Lower extremity power, acceleration, speed, and agility.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 41304,
+        "doi": "10.1016/j.jsams.2025.01.004",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Basketball",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Repeated-measures crossover study of 27 healthy male athletes (provincial basketball and national field hockey, mean age 19.4 years) wearing a functional knee brace. After 17.5 hours of brace use, athletes were assigned to brace removal (n = 12) or continued use for 21 hours (n = 15), and vertical jump, 2 m acceleration, 10 m sprint and T-test agility were compared with earlier sessions. Vertical jump changed by +2.7% after removal (P = 0.704) and +3.1% after continued use (P = 0.661), and none of the comparisons reached statistical significance.",
+      "limitations": "The two groups were small, and each was compared with a different earlier test session, so time, fatigue and familiarization are confounded; fatigue was not measured. Results come from healthy young male athletes with intact knees and do not show effects in ACL-injured athletes, women or other sports.",
+      "synthesisCaution": "Staff could read the reported percentage gains as evidence that a brace improves or preserves performance, when every comparison was non-significant and the paper's conclusion of improved performance goes beyond its own statistics.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: added underpowering from the paper's Table 2 power analysis (vertical jump power 0.394 at n = 10 and 0.719 at n = 20; agility 0.293 and 0.565), condensed to keep 3 sentences; non-significance framing kept ('Statistical significance was not achieved in the four performance tests')"
+          ],
+          "residualConcerns": "The paper's abstract, practical-implications box and conclusions describe 'improved performance', but every comparison is non-significant (P = 0.384 to 0.822). The record does not claim any performance gain. The journal volume and pages are placeholders ('xxx (xxxx) xxx-xxx'), so they are omitted.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1380",
+        "synthesisBatch": "pilot-synthesis-batch-81",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 89,
+      "sourceFile": "Performance-enhancing effects of inhaled medications - Implications for heart, muscle function, and doping detection in athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 22,
+        "extractedCharacters": 92115,
+        "doi": "10.3390/jfmk10040462",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of inhaled beta-2 agonists, corticosteroids and anticholinergics in athletes, covering cardiovascular effects, muscle and performance effects, WADA thresholds, notable doping cases and detection methods. The authors report that high or supratherapeutic inhaled doses improved strength or sprint outcomes in some trials, while standard inhaled salbutamol doses showed limited or no effect in non-asthmatic athletes. No new data were analysed.",
+      "limitations": "The review has no described search or quality appraisal, so its evidence base cannot be checked for completeness. Its performance claims rest mostly on small mechanistic and ergogenic trials that the authors describe as inconsistent.",
+      "synthesisCaution": "Staff could read the ergogenic and cardiovascular effects as applying to therapeutic inhaler use, when the review's own data place the clearest effects at supratherapeutic doses.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: said the review attributes 'the same rule' to the 2025 and 2026 lists -> now states it cites both lists for its regulatory details (S3 classification cites the 2025 list; urinary AAF thresholds cite 'Prohibited List 2026')",
+            "paper.practicalImplications: added the review's cited urine-threshold risk under exercise and dehydration ('1600 ug salbutamol inhaled post-exercise led to urinary concentrations exceeding 2000 ng/mL in dehydrated subjects')"
+          ],
+          "residualConcerns": "Medication and cardiac content; WADA dose and urine limits quoted from the review should be checked against the current Prohibited List before staff use. Issue number (4) appears only inside the DOI, so it was left out of the citation.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1381",
+        "synthesisBatch": "pilot-synthesis-batch-81",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 90,
+      "sourceFile": "Performance‐enhancing substances in sport - A scientometric review of 75 years of research.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 57710,
+        "doi": "10.1002/dta.3677",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Scientometric review of 4,330 English-language Scopus documents on performance-enhancing substances in sport, published from 1948 to 2023, from a search run on 9 March 2023. Document co-citation analysis of 193,076 references produced a network of 363 documents in seven thematic clusters, and the authors report that anabolic agents and peptide hormones have been studied most while contaminated supplements and emerging enhancers are less studied.",
+      "limitations": "The study maps publication volume and citation links, so it shows where research has concentrated and not how strong the evidence is for any substance. It relies on Scopus and English-language records only, and its search was run in March 2023.",
+      "synthesisCaution": "Staff could read cluster sizes and citation counts as evidence of which substances are most dangerous or most used, when they only show how often papers were written and cited.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: '2024;1-12' online-first page range of an unassigned issue (header 'Drug Test Anal. 2024;1-12', volume 0 in download line) -> removed placeholder pagination",
+            "paper.findings: added Table 2 value for Catlin et al. burst (16.61) and the six duplicate burst entries ('of the 51 documents, six were repeated entries')",
+            "paper.limitations: added text/table conflicts (Catlin burst 'citation burstness = 17.61' in text vs 16.61 in Table 2; cluster #10 'silhouette = 0.996' in text vs 0.986 in Table 1)",
+            "paper.methods: 'network chosen on modularity and silhouette values' -> chosen for 'most optimal structure' among g-index, TOP N and TOP N% networks; noted no quality appraisal",
+            "studyDesign: kept Systematic Review / Meta-analysis under library rule (described Scopus search string and PRISMA flowchart), although it is a bibliometric map rather than an evidence synthesis"
+          ],
+          "residualConcerns": "Design coding: this is a bibliometric/scientometric analysis, not a synthesis of effects; coded Systematic Review / Meta-analysis only because it reports a database search. One author (Rabin) is affiliated with WADA; no conflict declared.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1382",
+        "synthesisBatch": "pilot-synthesis-batch-81",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}
