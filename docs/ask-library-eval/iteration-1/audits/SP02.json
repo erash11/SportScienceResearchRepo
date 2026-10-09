@@ -1,0 +1,36 @@
+{
+  "questionId": "SP02",
+  "tier": "Limited",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "Casamichana abstract p1 verbatim. Sample was 24 players from a La Liga reserve squad (age 20 +/- 2), described by the authors as professional."},
+    {"claimId": "C2", "rating": "supported", "note": "p2: \"the present study only analysed training weeks where players had six days between successive matches.\""},
+    {"claimId": "C3", "rating": "supported", "note": "Buchheit 2023 abstract p1: \"18%, 45% and 72% of turnarounds with > 85% runs for 3, 5 and 7-turnarounds.\""},
+    {"claimId": "C4", "rating": "supported", "note": "Abstract p1 verbatim. Context the claim omits: D-2 n = 480 with 0 injuries, CIs overlap, and in 3-day turnarounds exposed sequences were all below 80."},
+    {"claimId": "C5", "rating": "minor", "note": "Text is accurate but is cited to the NFL-PFATS research digest (427 p6), which reprints the Buchheit abstract, rather than to the original study (212), which is also in the brief; this double-lists one study as two sources."},
+    {"claimId": "C6", "rating": "supported", "note": "Hecksteden 2026 Table 1, p8: Theme 1 \"When the risk of a subsequent injury is taken as the criterion, players generally return to early.\" Expert-judgement study."},
+    {"claimId": "C7", "rating": "supported", "note": "Table 1 p8, Subtheme 1.1, matches verbatim."},
+    {"claimId": "C8", "rating": "supported", "note": "Bellinger abstract p1: 34 elite male Australian football players; \"prematch perceived wellness does not relate to external match load.\""}
+  ],
+  "statementIssues": [
+    {"location": "actions[2]", "severity": "critical", "note": "Offers high-minute athletes the option of short near-maximal speed exposure, citing C4. The same source says that in 3- to 5-day turnarounds \"those D-2 exposures ... may only concern subs\" and that for starters \"residual fatigue from the previous match may increase injury risk during sprint training itself\" (p8-9). So the finding is applied to the subgroup the authors steer away from."},
+    {"location": "actions[1]", "severity": "minor", "note": "Suggests a near-max exposure \"about two days out\" without noting that in a 3-day turnaround D-2 is the day after the match (the source: \"when that day is either a D+1 (3-d turnaround)\"), or that 3-day data had fewer than 80 exposed sequences. It also misses the source's subs-versus-starters split, which answers the subgroup question directly."},
+    {"location": "actions[0]", "severity": "minor", "note": "Omits that the study team already gave <60-min and 0-min players an MD+1 compensatory session and still saw lower weekly load. That context bears on top-up decisions."},
+    {"location": "evidenceConfidence.dimensions.sourceReview", "severity": "minor", "note": "Calls the speed-exposure, return-to-play and wellness sources legacy records not full-text reviewed, but every source is marked fullTextReviewed: true."},
+    {"location": "monitoring[2]", "severity": "minor", "note": "Correctly labeled as professional caution. Note the source's direction: wellness did not predict match output, and recovery between matches appeared sufficient."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Limited is defensible: indirect, observational, non-collegiate evidence with no strength-exposure data. No recommendedDirection was given and actions are framed as options. One study is counted twice via a digest, which slightly inflates the apparent evidence base.",
+  "safetyIssues": [],
+  "criticalFailures": [
+    {"location": "actions[2]", "note": "Applies the D-2 near-max-speed association to high-minute athletes in a short turnaround, even though the cited source suggests such exposures in 3-5 day turnarounds may only concern substitutes and warns about residual match fatigue."}
+  ],
+  "useful": false,
+  "usefulnessScore": 3,
+  "usefulnessNote": "Well organized by subgroup and honest about gaps. Returning athletes are correctly kept inside clinician-led plans. But it misses the source's most decision-relevant point for this question (D-2 sprint exposure for subs, not starters, in short turnarounds) and suggests the opposite option for high-minute athletes.",
+  "suggestedDrafterFixes": [
+    "When a source gives subgroup- or context-specific qualifiers (starters vs substitutes, turnaround length), carry them into any action that uses the finding, and search the source's discussion for such qualifiers before assigning a finding to a subgroup.",
+    "Translate day-relative timing (D-2) into the question's window (for example, D-2 = MD+1 in a 72 h turnaround) and state the sample size behind that cell.",
+    "Cite original studies rather than digests that reprint their abstracts; dedupe sources that report the same study.",
+    "Generate the sourceReview dimension from the sources array so fullTextReviewed flags and the narrative cannot disagree."
+  ]
+}

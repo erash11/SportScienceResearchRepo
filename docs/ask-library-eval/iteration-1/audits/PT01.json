@@ -1,0 +1,34 @@
+{
+  "questionId": "PT01",
+  "tier": "Limited",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "Abstract: \"100 male 11-aside soccer players with ACLR undergoing a criteria-based rehabilitation process, concluding with a 5-stage OFR program.\""},
+    {"claimId": "C2", "rating": "supported", "note": "Numbers match the abstract (84% RTC, 100% vs 80%, ten reinjuries); the source labels itself a Level 4 case series, so 'uncontrolled' is fair."},
+    {"claimId": "C3", "rating": "supported", "note": "Matches the abstract (TD 106%, HID 104%, ACC 110%, DEC 48%); peak speed (88%) is omitted but this does not change the point."},
+    {"claimId": "C4", "rating": "supported", "note": "Near-verbatim from the abstract conclusion."},
+    {"claimId": "C5", "rating": "supported", "note": "Verbatim from the commentary abstract."},
+    {"claimId": "C6", "rating": "supported", "note": "Source says the approach \"might reduce\" recurrence and \"The effectiveness of this novel rehabilitation algorithm remains to be evaluated\"; the claim keeps this hedge."},
+    {"claimId": "C7", "rating": "supported", "note": "p6: \"transient episodes of knee pain (as a consequence of the meniscus surgery) delayed the return to running\"; the player was a Ligue 1 professional."},
+    {"claimId": "C8", "rating": "supported", "note": "p12 describes \"very large between-player differences\" and the need to monitor \"at the individual level\"; sample of 10 elite players is correct."},
+    {"claimId": "C9", "rating": "supported", "note": "p15 limitation, verbatim; the source adds that roughly 60 data points (6-8 weeks) are needed, which the action paraphrases correctly."},
+    {"claimId": "C10", "rating": "supported", "note": "Fifty male Division I players; discussion states \"prolonged exposure to higher intensities elicited higher baseline HRs 24h post-exercise\"; association wording is appropriate."},
+    {"claimId": "C11", "rating": "supported", "note": "Verbatim from the p8 limitations."}
+  ],
+  "statementIssues": [
+    {"location": "evidenceConfidence.dimensions.sourceReview", "severity": "minor", "note": "Says the Buchheit and Lacome records are legacy and not full-text reviewed, while the sources list marks all five fullTextReviewed true; the text contradicts itself."},
+    {"location": "evidenceConfidence.dimensions.transferability", "severity": "minor", "note": "Lacome et al. describe 10 'elite soccer players' at an elite club and do not explicitly state sex; 'elite male' is a likely but unstated inference."},
+    {"location": "actions[2]", "severity": "minor", "note": "Adds 'swelling', which no source mentions, but the action explicitly labels the symptom gate as professional caution, so this is acceptable."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Limited fits. One uncontrolled case series, one single-player case report and an untested expert algorithm, all in male soccer, cannot rank progression criteria. No Recommended Direction is given, and the actions are framed as options.",
+  "safetyIssues": [],
+  "criticalFailures": [],
+  "useful": true,
+  "usefulnessScore": 3,
+  "usefulnessNote": "Honest and quick to read. It says plainly that the library cannot rank criteria and offers sensible framing (criteria rather than time, deceleration lagging at 48% of team training, symptom response, no clearance from load targets). A PT will still lack the strength, hop and ROM criteria the question really asks about, and the coverage gap names them correctly.",
+  "suggestedDrafterFixes": [
+    "Generate the sourceReview dimension from the sources' fullTextReviewed flags so the narrative cannot contradict the source list.",
+    "Do not add population descriptors (such as sex) that the source does not state; write 'sex not reported' instead.",
+    "When the library cannot answer the core question, list the specific criteria families that are missing and point to the closest leads."
+  ]
+}

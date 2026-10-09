@@ -1,0 +1,44 @@
+{
+  "questionId": "SS03",
+  "tier": "Limited",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "380 abstract verbatim: 42 professional AF players from 1 club; SNR = weekly CV% / test CV%."},
+    {"claimId": "C2", "rating": "supported", "note": "380 results and conclusion verbatim, including SNR 1.3-11.1 and ICC .30-.97."},
+    {"claimId": "C3", "rating": "supported", "note": "380 conclusion verbatim, correctly scoped to professional Australian football."},
+    {"claimId": "C4", "rating": "minor", "note": "Numbers and sample (n = 8) are correct, but the claim does not say that a higher Hooper score means worse wellness (the scale runs from 1 'very very good' to 7 'very very poor'). That omission feeds the direction error in evidenceTension."},
+    {"claimId": "C5", "rating": "supported", "note": "778 p4: 'only one time point was used for data collection in the present study. This result confirms previous recommendations for computing a rolling average with at least three weekly time points.'"},
+    {"claimId": "C6", "rating": "minor", "note": "Accurate, but the 3 consecutive matches were preseason matches at one A League club ('across 3 consecutive preseason'), not a congested competitive schedule; the claim omits this."},
+    {"claimId": "C7", "rating": "supported", "note": "281 abstract: 'FT:CT provided a more sensitive measure of recovery' and hormones rose at 0.5 h 'with individual variability thereafter.'"},
+    {"claimId": "C8", "rating": "supported", "note": "431 abstract verbatim."},
+    {"claimId": "C9", "rating": "supported", "note": "431 abstract verbatim; the authors' between-match period is typically 6-8 days per the introduction."},
+    {"claimId": "C10", "rating": "supported", "note": "132 Fig. 1 caption on p5 matches, including subjective ratings 'positioned between quadrants'."},
+    {"claimId": "C11", "rating": "minor", "note": "Truncated: source continues 'decision making on player unavailability for training (65)'. The narrower purpose is dropped, but this does not change a decision."},
+    {"claimId": "C12", "rating": "supported", "note": "51 abstract: worst-case-scenario demands in 26 male players; 'Unexplained variance remained high (total distance R2 = 0.53 ...)'."},
+    {"claimId": "C13", "rating": "minor", "note": "Correctly attributed to the author and keeps 'could cause', but it passes on causal language from a single-team descriptive injury series with no comparison calendar. The brief's limitations do flag it as observational, one club."}
+  ],
+  "statementIssues": [
+    {"location": "evidenceTension", "severity": "critical", "note": "States 'Subjective wellness rose clearly during a congested collegiate soccer schedule.' The Hooper index rose, which on that 1-7 scale ('7' = 'very very poor') means wellness worsened. This reverses the direction of the finding. The 'tension' is also weak, because 431 tested whether prematch wellness predicted match load, not whether wellness responds to load."},
+    {"location": "bottomLine", "severity": "minor", "note": "'Indicators that have shown sensitivity during congestion' fits C4 only; the FT:CT evidence (C6, C7) comes from preseason matches, not congestion."},
+    {"location": "guardrails[1]", "severity": "minor", "note": "The referral-to-sports-medicine guardrail is appropriately labelled as professional caution, but it cites C11, which says nothing about clinical referral."},
+    {"location": "actions[2], actions[4]", "severity": "minor", "note": "Both cite C11 (monitoring should inform decision making) for content it does not address. Option A's 'more than one tool' rule is correctly labelled as untested professional caution."},
+    {"location": "guardrails[0]", "severity": "minor", "note": "Using C8 (prematch wellness did not predict match load) as a reason not to build a composite readiness score is a loose inference, though the guardrail is hedged."},
+    {"location": "sources[].fullTextReviewed", "severity": "minor", "note": "All sources are marked fullTextReviewed true, but only 778 is full-text screened per paper-taxonomy.json and the brief's own sourceReview dimension."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Limited is defensible. Sources support building blocks (noise thresholds, within-athlete baselines, load versus response, tool sensitivity), but none tests multi-indicator decision rules, false-alarm costs, multiple comparisons or missing data. Samples are small, single-club and mostly male. No recommendedDirection was given.",
+  "safetyIssues": [],
+  "criticalFailures": [
+    {"location": "evidenceTension", "note": "Reports that subjective wellness 'rose' under congestion; the source's Hooper index increase means wellness worsened (scale '1' very very good to '7' very very poor)."}
+  ],
+  "useful": true,
+  "usefulnessScore": 3,
+  "usefulnessNote": "Without the tension error this would be a 4. It sets out a clear, honest process (local noise thresholds, own-baseline comparison, separating load from response, weighting tools by demonstrated sensitivity), says plainly what the library does not test, and keeps decisions with staff. The reversed wellness direction sits in a secondary paragraph and the actions do not depend on it, but it must be corrected before delivery.",
+  "suggestedDrafterFixes": [
+    "For any inverted or composite scale (Hooper, RESTQ and similar), state which direction is worse in the claim, and describe results as 'worsened/improved' rather than 'rose/fell'.",
+    "Add a direction check step: for every statement describing change in a measure, confirm the direction against the source's scale definition.",
+    "Only describe findings as evidence tension when they address the same relationship; otherwise present them as complementary.",
+    "Do not cite a claim to support a statement it does not address; leave professional-caution statements uncited and labelled.",
+    "Carry setting qualifiers (preseason vs congested, competitive vs friendly) into claims when the brief's question depends on schedule context.",
+    "Set sources[].fullTextReviewed from the library's reviewStatus, consistent with the sourceReview dimension."
+  ]
+}

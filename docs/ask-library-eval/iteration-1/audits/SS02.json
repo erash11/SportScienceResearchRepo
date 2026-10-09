@@ -1,0 +1,38 @@
+{
+  "questionId": "SS02",
+  "tier": "Limited",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "Abstract conclusion of 718 matches verbatim: microcycle length 'had a significant effect on volume- and intensity-related external load variables, but no significant effect on perceived wellness was observed.'"},
+    {"claimId": "C2", "rating": "supported", "note": "431 abstract: 34 elite male players; 'trivial effects of match-day wellness z score on subsequent external match load metrics.'"},
+    {"claimId": "C3", "rating": "minor", "note": "Accurate, but the source specifies the outcome as 'Subjective Wellness z Score 1 Day Postmatch' per au/min of PlayerLoadAP; the claim drops the next-day timing and per-minute unit."},
+    {"claimId": "C4", "rating": "minor", "note": "Source says 'Decrements in various ASRM' (sleep quality, energy, soreness, recovery, mood), not all self-report measures; small generalisation. Sample (n = 10 adult male Olympic squad) is correct."},
+    {"claimId": "C5", "rating": "supported", "note": "Matches 719 abstract, including p = 0.02-0.07 and no clear match-load differences between tournaments."},
+    {"claimId": "C6", "rating": "supported", "note": "393 is labelled 'LEADING ARTICLE'; both excerpts are verbatim from the abstract."},
+    {"claimId": "C7", "rating": "supported", "note": "133 abstract: 45 professional AF players from 1 club; Daily PCA 'identified components representing external load, perceived wellness, and internal load.'"},
+    {"claimId": "C8", "rating": "supported", "note": "133 conclusion verbatim; results add 'Perceived soreness did not meet the redundancy threshold.'"},
+    {"claimId": "C9", "rating": "supported", "note": "423 p19 is a digest abstract of a Strength and Conditioning Journal article on choosing CMJ metrics by purpose; claim correctly labels it a digest."}
+  ],
+  "statementIssues": [
+    {"location": "evidenceTension", "severity": "minor", "note": "718 tested whether microcycle length changed wellness; 431 tested whether per-minute PlayerLoadAP predicted next-day wellness. These are different questions, so the 'disagreement' on whether load and wellness move together is partly manufactured, though the brief notes designs differ."},
+    {"location": "bottomLine", "severity": "minor", "note": "'Load can change without a wellness change' is a fair group-level paraphrase of 718, which compared microcycle lengths rather than individual high-load weeks."},
+    {"location": "guardrails[0]", "severity": "minor", "note": "The rugby sevens study shows self-report and HRV diverged; it does not show self-report is the more valid signal, and HRV is not a standardized neuromuscular test. Framed as 'by default', so it reads as caution rather than a rule."},
+    {"location": "actions[0]", "severity": "minor", "note": "Source says dashboards are biased when the 'missing completely at random' assumption is violated; 'not missing at random' is a narrower technical term (MNAR)."},
+    {"location": "coverageGaps[2]", "severity": "minor", "note": "States no evidence on neuromuscular test measurement error, but the library holds 380 (signal-to-noise for CMJ in professional AF), which was not in the retrieval pack. The gap describes the pack, not the library."},
+    {"location": "coverageGaps[4], coverageGaps[5]", "severity": "minor", "note": "A whatCouldChange item and the safety/scope guardrail were moved into coverageGaps by the drafter because they cited no claim, so the scope statement no longer appears as a guardrail."},
+    {"location": "sources[].fullTextReviewed", "severity": "minor", "note": "All sources are marked fullTextReviewed true, but the sourceReview dimension (and paper-taxonomy.json) shows only 718 and 719 are full-text screened; 431, 393, 133 and 423 are legacy records."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Limited fits: no source tests the load-up, wellness-down, neuromuscular-stable pattern; evidence is indirect, from professional or elite male athletes, and mixed. No recommendedDirection was given, and actions are framed as options.",
+  "safetyIssues": [],
+  "criticalFailures": [],
+  "useful": true,
+  "usefulnessScore": 3,
+  "usefulnessNote": "Gives a sensible, honestly caveated follow-up checklist (data completeness, individual baselines, wellness item breakdown, test metric purpose). It is weak on the core neuromuscular question, though: whether a 'stable' test result sits within measurement noise is the key interpretive step, and the only test-related evidence is a digest abstract, while a directly relevant library source (380) was not retrieved.",
+  "suggestedDrafterFixes": [
+    "Set sources[].fullTextReviewed from the library's reviewStatus, not from whether the drafter could read the PDF, so it matches the sourceReview dimension.",
+    "Allow uncited guardrails that are explicitly labelled as scope or professional caution, rather than moving the safety statement into coverageGaps.",
+    "Only describe two findings as evidence tension when they answer the same question; otherwise describe them as complementary evidence from different designs.",
+    "Word coverage gaps as 'the retrieved pack contains no...' unless the whole library was searched, and widen retrieval for measurement error and signal-to-noise terms when a question involves interpreting a 'stable' test.",
+    "Keep outcome timing (for example 'next-day wellness') and qualifiers such as 'various' items when paraphrasing results."
+  ]
+}

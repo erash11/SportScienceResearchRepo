@@ -1,0 +1,48 @@
+{
+  "questionId": "PN03",
+  "tier": "Moderate",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "minor", "note": "The source refers specifically to the pre-match meal (\"The pre-match meal should be easily digestible...\"), not match-day eating in general; the meaning is otherwise faithful."},
+    {"claimId": "C2", "rating": "supported", "note": "p4: \"Sweat rates vary greatly between players and are primarily influenced by the intensity of exercise, environmental conditions and acclimation status.\""},
+    {"claimId": "C3", "rating": "supported", "note": "p16, in the context of the WADA team-disqualification rule."},
+    {"claimId": "C4", "rating": "supported", "note": "p9: the '4 Cs' food hygiene passage, framed around storage and preparation of postmatch food, including the team bus."},
+    {"claimId": "C5", "rating": "supported", "note": "p2 background text matches (the verification script missed it only because of dash encoding); the claim correctly labels it as background from cited earlier studies."},
+    {"claimId": "C6", "rating": "supported", "note": "p13 discussion text, attributed correctly to the review authors' interpretation."},
+    {"claimId": "C7", "rating": "supported", "note": "Abstract (18 studies, 13 in the meta-analysis) and the p13 limitation match."},
+    {"claimId": "C8", "rating": "supported", "note": "Abstract wording matches, including the hedge \"there may not be enough data to provide RL-specific recommendations\"."},
+    {"claimId": "C9", "rating": "supported", "note": "Verbatim from the abstract."},
+    {"claimId": "C10", "rating": "supported", "note": "Verbatim from the abstract; 'potentially' is preserved."},
+    {"claimId": "C11", "rating": "supported", "note": "p13 conclusions, verbatim."},
+    {"claimId": "C12", "rating": "minor", "note": "Accurate, but the same paragraph first reports a positive tart cherry study (\"tart cherry may accelerate recovery from prolonged, repeated sprint activity\"), and the brief omits it. That is selective, though the claim itself is true."},
+    {"claimId": "C13", "rating": "supported", "note": "p4 conclusion: no clinically relevant reduction of DOMS, moderate to low-quality evidence."},
+    {"claimId": "C14", "rating": "supported", "note": "p4: \"tart cherry juice caused mild gastrointestinal distress in one of 26 participants\"."},
+    {"claimId": "C15", "rating": "supported", "note": "p4, verbatim."},
+    {"claimId": "C16", "rating": "overstated", "note": "The numbers are correct (66% vs 24%, 115 vs 98 min) but the drafter removed the excerpt supporting them. The claim also drops the key confounder: \"Player A ... consumed water only during match play, whereas player B ... consumed 88 g CHO via CHO gels\", and the authors suggest CHO feeding may spare glycogen. Presented alone, it implies minutes explain the difference."},
+    {"claimId": "C17", "rating": "supported", "note": "Abstract conclusion, verbatim."},
+    {"claimId": "C18", "rating": "minor", "note": "Both excerpts are accurate. The sleep-disruption sentence is general background, and the >3 days advice applies to overnight long-haul (international) travel, which the brief's own assumption of domestic travel makes irrelevant."},
+    {"claimId": "C19", "rating": "supported", "note": "p8 discussion; the authors' interpretation, supported by a citation and hedged with 'likely'."},
+    {"claimId": "C20", "rating": "minor", "note": "The source says \"Only Glutathione Peroxidase (GPx) secretion increased\" across all analysed outcomes, not 'among recovery outcomes'; the overall point that the recovery conclusion rests on thin data is fair."},
+    {"claimId": "C21", "rating": "supported", "note": "Abstract: 14 athletes, randomized crossover, and the stated conclusion."}
+  ],
+  "statementIssues": [
+    {"location": "actions[0]", "severity": "minor", "note": "Uses C16 to support 'Plan larger carbohydrate portions for high-minute athletes' without saying in the action that the higher-minute player also took no carbohydrate during the match. The confounder appears only in limitations[1]. The g/kg ranges in C8/C9 scale with body mass, not minutes, so minutes-based scaling rests mainly on the confounded case study."},
+    {"location": "bottomLine / evidenceConfidence.dimensions.consistency / evidenceTension", "severity": "minor", "note": "States that recovery supplements show little or no benefit and sets evidenceTension to null, yet the melatonin meta-analysis concludes \"melatonin supplementation improves post-exercise recovery\" and the rugby league review reports a positive tart cherry trial. This tension exists, and the brief should name it instead of folding it away; the cautious direction is still reasonable."},
+    {"location": "monitoring[2]", "severity": "minor", "note": "Cites the long-haul rugby study for travel and sleep even though the brief assumes domestic travel without large time-zone shifts; the transfer is not stated."},
+    {"location": "actions[3]", "severity": "minor", "note": "'Confirm meal times with the hotel' and 'shelf-stable snacks' are operational advice not drawn from the sources; the action admits the storage methods are untested, which is acceptable."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Moderate is generous but defensible for the narrow, high-agreement core (food first, early carbohydrate and fluid after games, easily digested pre-match food, caution with supplements), backed by a consensus statement. Directness and transferability are weak, and the unacknowledged supplement tension argues for keeping the direction tightly conditional, which it mostly does.",
+  "safetyIssues": [],
+  "criticalFailures": [
+    {"location": "C16 (used in actions[0] and bottomLine)", "note": "Overstated: attributes the larger glycogen drop to minutes played and omits that only the other player consumed 88 g carbohydrate during the match. The limitations section partly offsets this, but it supports a fueling decision (scaling carbohydrate to minutes)."}
+  ],
+  "useful": true,
+  "usefulnessScore": 3,
+  "usefulnessNote": "A performance dietitian gets a sensible, food-first travel plan structure, concrete post-game g/kg starting ranges, food hygiene and supplement-risk guardrails, all with clear transferability caveats. The minutes-scaling rationale is weakly evidenced, and nothing covers low-minute or returning athletes, fixed hotel menus or refrigeration, which the coverage gaps admit. The C16 problem does not reverse the overall plan.",
+  "suggestedDrafterFixes": [
+    "When a verification step removes an excerpt, remove or rewrite the claim content that excerpt supported (here the 66% vs 24% figures) instead of keeping unexcerpted numbers in the claim.",
+    "For case studies and small comparisons, require the claim to state any co-varying condition between the groups (for example, in-match carbohydrate) whenever the brief draws a causal or dosing inference from the difference.",
+    "Scan each paragraph that holds an excerpted null finding for contrary findings in the same source, and populate evidenceTension when sources or authors conclude in opposite directions.",
+    "Keep source wording scope (pre-match meal, overnight long-haul travel) in claims, and flag when the brief's own assumptions make a source's context not transfer."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "questionId": "PN01",
+  "tier": "Limited",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "Abstract of 729 p1 states the 1-4 g/kg CHO plus 0.25 g/kg protein, 1-4 hr preexercise guidance for 80-120 kg players under 'Competition nutrition'; the claim keeps the population and competition qualifiers."},
+    {"claimId": "C2", "rating": "supported", "note": "729 p1: 'Although there may not be enough data to provide RL-specific recommendations...' matches the claim."},
+    {"claimId": "C3", "rating": "supported", "note": "401 p1: two elite male forwards, 24-h loading of 8 g/kg plus 2 g/kg prematch meal; pre-match glycogen 656 and 544 mmol/kg dw; authors say the level 'appears sufficient'. Case-study nature is stated."},
+    {"claimId": "C4", "rating": "supported", "note": "98 p1 abstract: 'ingesting ~3-6 mg/kg about 1 h before the onset of exercise.'"},
+    {"claimId": "C5", "rating": "supported", "note": "98 p1 abstract states response 'can vary interindividually and depend on the conditions of the exercise session'."},
+    {"claimId": "C6", "rating": "supported", "note": "32 p2 (three early-morning pre-season practices) and p6 (range 2.35% loss to 0.47% gain) match. Players were a post-graduate team drinking a 6% CHO-electrolyte drink ad libitum during practice, which the brief notes in limitations."},
+    {"claimId": "C7", "rating": "supported", "note": "32 p1 introduction text cited correctly as background consensus, not a study finding."},
+    {"claimId": "C8", "rating": "supported", "note": "233 p1 abstract: 'Sensitivity and specificity for using Ucol or USG to determine BM changes was not significant.' 31 male high school players in heat."},
+    {"claimId": "C9", "rating": "supported", "note": "233 p1: '%BML was significantly greater (p = 0.001 to 0.024) after 2-a-day practices.'"}
+  ],
+  "statementIssues": [
+    {"location": "evidenceConfidence.dimensions.sourceReview", "severity": "minor", "note": "Says 'Four relevant sources' and then lists five, and calls them 'legacy or review records' while every source is marked fullTextReviewed: true. This is an internal inconsistency, not a fidelity error."},
+    {"location": "actions[2]", "severity": "minor", "note": "Limiting caffeine to 'athletes already using it' is professional judgment that is not labeled as such. The source gives only general dose and timing guidance and individual variability."},
+    {"location": "monitoring[1]", "severity": "minor", "note": "Applying the two-a-day finding to 'morning sessions that follow an evening or same-day session' is an extrapolation from hot high school preseason practices and is not labeled as inference."},
+    {"location": "monitoring[0]", "severity": "minor", "note": "'Body mass change gives more information than urine checks alone' is a reasonable reading because the study used body mass as the criterion, but the study did not compare informativeness directly."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Limited fits. No source tests intake inside 45 minutes, low appetite, or collegiate athletes. recommendedDirection is correctly null, and the actions are written as caveated options rather than a recommendation.",
+  "safetyIssues": [],
+  "criticalFailures": [],
+  "useful": true,
+  "usefulnessScore": 3,
+  "usefulnessNote": "The brief is honest and fast to read. It says clearly that the library cannot answer the 45-minute, low-appetite question and why. It gives usable framing: timing guidance assumes longer windows, caffeine timing, individual fluid plans, and body mass rather than urine checks. It offers little the practitioner can act on for the actual short window, and the hydration studies are only loosely related to pre-session intake.",
+  "suggestedDrafterFixes": [
+    "Cross-check confidence-dimension text against the sources array (counts and fullTextReviewed status) before emitting.",
+    "When an option, filter or monitoring rule goes beyond the cited finding (for example 'only for athletes already using it' or applying a result to a different session pattern), label it explicitly as professional judgment or inference.",
+    "Prefer sources in the pack that address the specific constraint (short window, appetite, GI tolerance) and say plainly when hydration-monitoring evidence is only adjacent to the question."
+  ]
+}

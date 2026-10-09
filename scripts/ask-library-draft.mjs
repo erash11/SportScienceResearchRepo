@@ -108,9 +108,11 @@ async function run() {
   const papersById = new Map(papers.map((paper) => [String(paper.id), paper]));
 
   const { queryTokens, supportable, leads } = rankRecords(request, papers, taxonomyById, {
-    limit: 14,
+    limit: 16,
     sourceAvailable: (sourceFile) => fs.existsSync(sourcePath(sourceFile)),
   });
+  const topScore = supportable[0]?.score ?? 0;
+  const relevantLeads = leads.filter((lead) => lead.score >= 0.6 * topScore);
   const candidates = supportable.map((entry) => {
     const meta = taxonomyById.get(String(entry.paper.id));
     return {
@@ -120,13 +122,13 @@ async function run() {
       pages: allPages(entry.sourceFile),
     };
   });
-  const pack = buildEvidencePack(candidates, queryTokens, { maxPapers: 12 });
-  const prompt = buildComposerPrompt(request, pack, leads);
+  const pack = buildEvidencePack(candidates, queryTokens, { maxPapers: 14 });
+  const prompt = buildComposerPrompt(request, pack, relevantLeads);
 
   const packOnly = option("--pack-only");
   if (packOnly) {
     fs.mkdirSync(path.dirname(path.resolve(packOnly)), { recursive: true });
-    fs.writeFileSync(packOnly, JSON.stringify({ requestId: request.requestId, drafterVersion: DRAFTER_VERSION, prompt, pack: pack.map(({ libraryId, citation }) => ({ libraryId, citation })), leads: leads.map((lead) => lead.paper.id) }, null, 2));
+    fs.writeFileSync(packOnly, JSON.stringify({ requestId: request.requestId, drafterVersion: DRAFTER_VERSION, prompt, pack: pack.map(({ libraryId, citation }) => ({ libraryId, citation })), leads: relevantLeads.map((lead) => lead.paper.id) }, null, 2));
     console.log(`Wrote composer prompt and evidence pack (${pack.length} sources) to ${packOnly}`);
     return;
   }
@@ -144,7 +146,8 @@ async function run() {
     pageCount,
     briefId: briefIdFor(request.requestId),
     createdAt,
-    leads,
+    leads: relevantLeads,
+    libraryReview: (paper) => taxonomyById.get(String(paper.id))?.reviewStatus || "Legacy published record; library summary not full-text reviewed",
     composer: { composer: fromDraft ? "operator-supplied draft" : `claude -p (${model})`, sourcesInPack: pack.map((paper) => paper.libraryId) },
   });
 

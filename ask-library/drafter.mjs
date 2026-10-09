@@ -8,7 +8,7 @@
 
 import { CONFIDENCE_TIERS, validateDecisionBrief } from "./pilot-core.mjs";
 
-export const DRAFTER_VERSION = "1.0.0";
+export const DRAFTER_VERSION = "1.1.0";
 
 const STOPWORDS = new Set(
   ("a about above after again against all am an and any are as at be because been before being below between both but by "
@@ -140,7 +140,7 @@ export function pagePassages(pageText, page, size = 900) {
 
 // Choose the most query-relevant passages from each candidate paper, always keeping the
 // opening of page 1 so the composer sees the abstract and study design.
-export function buildEvidencePack(candidates, queryTokens, { perPaperChars = 9000, maxPapers = 12 } = {}) {
+export function buildEvidencePack(candidates, queryTokens, { perPaperChars = 11000, maxPapers = 14 } = {}) {
   const papers = [];
   for (const candidate of candidates) {
     const pages = candidate.pages ?? [];
@@ -181,7 +181,7 @@ export function buildComposerPrompt(request, pack, leads = []) {
     `=== SOURCE libraryId=${paper.libraryId} ===`,
     `Citation: ${paper.citation}`,
     `Study design (library taxonomy): ${paper.studyDesign || "unknown"}; populations: ${paper.populations.join(", ") || "unspecified"}; sports: ${paper.sports.join(", ") || "unspecified"}`,
-    `Library provenance: ${paper.provenance}`,
+    `Library record review status: ${paper.provenance} (this describes the library summary only; the passages below are original source text)`,
     `Library summary (retrieval aid only, NOT citable): ${paper.recordSummary}`,
     ...paper.passages.map((passage) => `--- page ${passage.page} ---\n${passage.text}`),
   ].join("\n")).join("\n\n");
@@ -218,7 +218,14 @@ HOW TO WRITE THE BRIEF
    Material Evidence Tension (sources disagree in a way that matters) prevents Higher. If tension is unresolved by context, use Limited.
 6. Be honest about transferability: name the populations actually studied (sex, level, sport) when they differ from the Decision Context.
 7. Return-to-sport and clinical questions: the brief may inform criteria and monitoring, but must include a guardrail that progression and clearance decisions stay with the treating clinicians.
-8. Plain language, short sentences, no em dashes, no markdown inside strings. Aim for a brief a practitioner can read in about two minutes: 2-5 actions, 1-4 monitoring items, 2-4 guardrails, 1-4 limitations, 1-3 whatCouldChange.
+8. Keep each source's own conditions and caveats. If the authors say a finding applies only to some athletes, settings or turnarounds, or warn against a use, carry that into the claim and do not apply the finding to the group the authors steer away from. Carry important confounds (for example, one group also received a supplement) into the claim text.
+9. Every factual statement in bottomLine, recommendedDirection, actions, monitoring and guardrails must trace to a cited claim. When a statement is professional judgment that the cited evidence does not test, start it with "Professional judgment (not tested by the cited evidence):" so the reader can tell the difference. Do not stretch a finding from one session type, sport or population into a general rule.
+10. When the question asks how to quantify or decide (thresholds, formulas, reference values, doses, timing), include the specific values and formulas the sources report, with their population and test conditions, as claims.
+11. Check the direction of every scale before describing change (for example, on the Hooper index a higher score means worse wellness; for sprint time lower is better). Say "worsened" or "improved" only when the source's own scale or wording establishes it.
+11b. Look actively for Evidence Tension: if sources disagree, or one source reports a benefit another does not find, describe it in evidenceTension rather than leaving it null.
+12. In evidenceConfidence and limitations, describe sources by design, sample and population. Do not call any source "unreviewed" or "not full-text reviewed": every claim in this brief is checked against the original text.
+13. coverageGaps lists only evidence the library is missing for this question. Do not put scope disclaimers there; put those in guardrails or limitations with claim support.
+14. Plain language, short sentences, no em dashes, no markdown inside strings. Aim for a brief a practitioner can read in about two minutes: 2-5 actions, 1-4 monitoring items, 2-4 guardrails, 1-4 limitations, 1-3 whatCouldChange.
 
 OUTPUT
 Return ONLY one JSON object, no prose before or after, with exactly these keys:
@@ -298,7 +305,7 @@ function stripDashes(value) {
 // Turn a composer draft into a brief that satisfies the pilot contract. `readPage(sourceFile,
 // page)` returns original page text. Any claim whose excerpts cannot be found is removed, and
 // statements that lose all support are removed with it.
-export async function finalizeDraft({ draft, request, papersById, readPage, pageCount, briefId, createdAt, leads = [], composer = {} }) {
+export async function finalizeDraft({ draft, request, papersById, readPage, pageCount, briefId, createdAt, leads = [], composer = {}, libraryReview = () => "" }) {
   const notes = [];
   const draftClean = stripDashes(draft ?? {});
   const keptClaims = [];
@@ -334,9 +341,13 @@ export async function finalizeDraft({ draft, request, papersById, readPage, page
       evidence.push(found);
       usedSources.set(String(paper.id), { paper, sourceFile });
     }
-    if (evidence.length && String(claim.text ?? "").trim().length >= 10) {
+    const proposed = statementList(claim.evidence).length;
+    if (evidence.length && evidence.length < proposed) {
+      // The claim text may rest on the excerpt that failed, so a partly verified claim is removed.
+      notes.push(`Removed claim ${claim.id}: ${proposed - evidence.length} of ${proposed} excerpts could not be verified.`);
+    } else if (evidence.length && String(claim.text ?? "").trim().length >= 10) {
       keptClaims.push({ id: String(claim.id), text: String(claim.text).trim(), evidence });
-    } else {
+    } else if (!evidence.length) {
       notes.push(`Removed claim ${claim.id}: no verified original-source excerpt.`);
     }
   }
@@ -423,7 +434,9 @@ export async function finalizeDraft({ draft, request, papersById, readPage, page
       citation: paper.citation,
       year: Number(paper.year),
       doi: paper.doi ?? "",
+      // Every excerpt below was matched against this source's original page text for this brief.
       fullTextReviewed: true,
+      libraryRecordReview: libraryReview(paper),
     }));
 
   const rationale = String(draftClean.evidenceConfidence?.rationale ?? "").trim();
