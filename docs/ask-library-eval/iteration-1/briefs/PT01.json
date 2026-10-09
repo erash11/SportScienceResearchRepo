@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 1,
+  "briefId": "ATL-B-20261009-PT01",
+  "requestId": "ATL-R-20261009-PT01",
+  "version": 1,
+  "createdAt": "2026-10-09T03:22:04.180Z",
+  "status": "On-Demand",
+  "reviewStatus": "Not Expert-Reviewed",
+  "practicalQuestion": "Which criteria should a physical therapist prioritize when deciding whether a collegiate field- or court-sport athlete is ready to progress from controlled rehabilitation drills to a higher-intensity field or court session?",
+  "decisionContext": {
+    "population": "Collegiate athlete in late-stage lower-extremity rehabilitation",
+    "sport": "Field or court sport",
+    "phase": "Planned progression from controlled drills to higher-intensity individual work",
+    "outcome": "Make a defensible next-step progression decision while monitoring response",
+    "constraints": "De-identified scenario; no diagnosis or clearance request; available evidence is primarily group-level"
+  },
+  "evidenceConfidence": {
+    "tier": "Limited",
+    "rationale": "No source in the pack compares progression criteria or tests which ones predict a safe step up to higher-intensity field or court work. The closest evidence is one uncontrolled case series and one single-player case report after ACL reconstruction in male soccer, plus an untested expert algorithm for ankle sprains. Monitoring evidence comes from healthy male athletes. The evidence can frame options but cannot rank criteria.",
+    "dimensions": {
+      "sourceReview": "Mixed. Two sources were full-text screened (Picinini case series, Flore commentary); the Buchheit case report and Lacome study are legacy records not full-text reviewed. Wittels was full-text screened.",
+      "directness": "Indirect. Sources describe criteria-based staged programs and field loads but do not test which criteria should gate progression.",
+      "consistency": "No material disagreement, but too few comparable sources to judge consistency.",
+      "transferability": "Low to moderate. Studied groups were male professional and amateur soccer players after ACL reconstruction, professional soccer players after ankle sprain, elite male soccer players, and healthy male Division I American football players. None studied collegiate court-sport athletes or women in late-stage rehabilitation."
+    }
+  },
+  "bottomLine": {
+    "text": "This library cannot say which criteria should be prioritized. The closest evidence, mostly from male soccer players after ACL reconstruction or ankle sprain, supports staged progression based on criteria rather than time alone, attention to symptom response, and comparing planned field loads with team training references. Whether any specific criterion predicts a safe step up is untested here.",
+    "claimIds": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ]
+  },
+  "recommendedDirection": null,
+  "actions": [
+    {
+      "title": "Option: gate progression on criteria, not time alone",
+      "text": "In an ACL case series, rehabilitation was criteria-based and ended with a 5-stage on-field program. An ankle sprain commentary notes that rehab is often time-based and proposes criteria-based progression, but says only that this might reduce recurrence. The specific criteria and thresholds are not tested in this pack.",
+      "claimIds": [
+        "C1",
+        "C5",
+        "C6"
+      ]
+    },
+    {
+      "title": "Option: compare the planned session with team training references",
+      "text": "In the ACL case series, final-stage on-field loads roughly matched team training for several running metrics, but deceleration distance reached only 48%. Final-stage loads stayed low compared with match play. Deceleration and braking exposure may deserve specific attention when planning a higher-intensity session.",
+      "claimIds": [
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "title": "Option: treat symptom response as a gate",
+      "text": "In one professional soccer player after ACL reconstruction, transient knee pain delayed the return to running. The evidence does not test symptom thresholds; using pain or swelling response to the current drills as a gate is professional caution.",
+      "claimIds": [
+        "C7"
+      ]
+    },
+    {
+      "title": "Option: track individual response with heart-rate data",
+      "text": "In elite soccer players, heart-rate responses to the same external load varied substantially between players, which supports individual rather than group monitoring. That method needs weeks of prior data, so it may not suit an athlete returning from injury. In healthy college football players, more time at high intensity was linked with higher next-day baseline heart rate.",
+      "claimIds": [
+        "C8",
+        "C9",
+        "C10"
+      ]
+    }
+  ],
+  "monitoring": [
+    {
+      "label": "Symptom response",
+      "text": "Check pain and joint response during and after the session. This is professional caution informed by one case report, not a tested criterion.",
+      "claimIds": [
+        "C7"
+      ]
+    },
+    {
+      "label": "Deceleration and high-intensity exposure",
+      "text": "If GPS is available, note deceleration and high-intensity exposure relative to team training references, since deceleration lagged most in the ACL case series.",
+      "claimIds": [
+        "C3"
+      ]
+    },
+    {
+      "label": "Next-day heart rate",
+      "text": "Next-day baseline heart rate may help flag incomplete recovery after more time at high intensity. This was shown only in healthy male football players and is not a validated progression criterion.",
+      "claimIds": [
+        "C10",
+        "C11"
+      ]
+    }
+  ],
+  "guardrails": [
+    {
+      "text": "Professional caution: this brief informs criteria and monitoring only. Progression and clearance decisions stay with the treating clinicians and team physician.",
+      "claimIds": [
+        "C1",
+        "C6"
+      ]
+    },
+    {
+      "text": "Do not read the 84% return-to-competition rate as proof that a given set of criteria works. The case series had no comparison group, and 10% of players had an ACL reinjury.",
+      "claimIds": [
+        "C2"
+      ]
+    },
+    {
+      "text": "Do not use team-training load references as a clearance target. Even completing all five stages left workloads low compared with match play.",
+      "claimIds": [
+        "C4"
+      ]
+    }
+  ],
+  "limitations": [
+    {
+      "text": "Studied populations were male soccer players (professional and amateur), one professional soccer player, and healthy male college football players. No source studied collegiate court-sport athletes or women.",
+      "claimIds": [
+        "C1",
+        "C7",
+        "C8",
+        "C10",
+        "C11"
+      ]
+    },
+    {
+      "text": "No source compares criteria or tests thresholds. The ankle algorithm is an expert proposal whose benefit is stated only as possible.",
+      "claimIds": [
+        "C2",
+        "C6"
+      ]
+    },
+    {
+      "text": "The direct sources address ACL reconstruction and lateral ankle sprain. Transfer to other lower-extremity injuries is uncertain.",
+      "claimIds": [
+        "C1",
+        "C5"
+      ]
+    }
+  ],
+  "whatCouldChange": [
+    {
+      "text": "Studies that test which criteria predict a safe step up to higher-intensity work in collegiate field- or court-sport athletes could support a conditional recommendation.",
+      "claimIds": [
+        "C2",
+        "C6"
+      ]
+    },
+    {
+      "text": "Evidence in female athletes and court sports would improve transferability.",
+      "claimIds": [
+        "C11"
+      ]
+    }
+  ],
+  "evidenceTension": null,
+  "sources": [
+    {
+      "libraryId": "705",
+      "sourceFile": "High Return to Competition Rate After On-Field Rehabilitation in Competitive Male Soccer Players After ACL Reconstruction - GPS Tracking in 100 Consecutive Cases.pdf",
+      "citation": "Picinini F, Della Villa F, Tallent J, et al. High Return to Competition Rate After On-Field Rehabilitation in Competitive Male Soccer Players After ACL Reconstruction: GPS Tracking in 100 Consecutive Cases. Orthopaedic Journal of Sports Medicine. 2025;13(3):23259671251320093.",
+      "year": 2025,
+      "doi": "10.1177/23259671251320093",
+      "fullTextReviewed": true
+    },
+    {
+      "libraryId": "696",
+      "sourceFile": "A rehabilitation algorithm after lateral ankle sprains in professional soccer - An approach based on clinical practice guidelines.pdf",
+      "citation": "Flore Z, Hambly K, De Coninck K, Welsch G. A Rehabilitation Algorithm After Lateral Ankle Sprains in Professional Football (Soccer): An Approach Based on Clinical Practice Guidelines. International Journal of Sports Physical Therapy. 2024;19(7):910-922.",
+      "year": 2024,
+      "doi": "10.26603/001c.120205",
+      "fullTextReviewed": true
+    },
+    {
+      "libraryId": "396",
+      "sourceFile": "Monitoring the reconditioning of the injured football player with field-based measures - A case study following ACL reconstruction.pdf",
+      "citation": "Buchheit M, Sandua M, Gray A, Hader K, Monnot D, Volante J, Delafosse F. Monitoring the reconditioning of the injured football player with field-based measures: A case study following ACL reconstruction. Aspetar Sports Medicine Journal. 2023:374-381.",
+      "year": 2023,
+      "doi": "",
+      "fullTextReviewed": true
+    },
+    {
+      "libraryId": "395",
+      "sourceFile": "Monitoring Players’ Readiness Using Predicted Heart Rate Responses to Football Drills.pdf",
+      "citation": "Lacome M, Simpson B, Broad N, Buchheit M. Monitoring players' readiness using predicted heart rate responses to football drills. International Journal of Sports Physiology and Performance. 2018;13(10):1273-1280.",
+      "year": 2018,
+      "doi": "10.1123/ijspp.2018-0026",
+      "fullTextReviewed": true
+    },
+    {
+      "libraryId": "564",
+      "sourceFile": "Recovery of the autonomic nervous system following football training among Division I collegiate football athletes - The influence of intensity and time.pdf",
+      "citation": "Wittels SH, Renaghan E, Wishon MJ, Wittels HL, Chong S, Wittels ED, et al. Recovery of the Autonomic Nervous System Following Football Training Among Division I Collegiate Football Athletes: The Influence of Intensity and Time. Heliyon. 2023;9(7):e18125.",
+      "year": 2023,
+      "doi": "10.1016/j.heliyon.2023.e18125",
+      "fullTextReviewed": true
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "text": "In a case series of male soccer players after ACL reconstruction, players went through a criteria-based rehabilitation process that ended with a 5-stage on-field program.",
+      "evidence": [
+        {
+          "libraryId": "705",
+          "page": 1,
+          "excerpt": "soccer players with ACLR undergoing a criteria-based rehabilitation process, concluding with a 5-stage OFR program."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "text": "In that uncontrolled case series, 84% returned to competition, with higher rates in professionals (100%) than amateurs (80%), and 10% sustained an ACL reinjury.",
+      "evidence": [
+        {
+          "libraryId": "705",
+          "page": 1,
+          "excerpt": "with a median time of 2.3 years after ACLR and 84% RTC, with higher rates in professionals (100%) than amateurs (80%). Ten (10%) players sustained an ACL reinjury."
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "text": "In the final on-field stage of that case series, loads roughly aligned with team training for total distance, high-intensity distance, and acceleration distance, but deceleration distance reached only 48% of team training demands.",
+      "evidence": [
+        {
+          "libraryId": "705",
+          "page": 1,
+          "excerpt": "in the final OFR stage aligned with team training demands for the total distance (TD) (106%), high-intensity distance (HID) (104%), peak speed (PS) (88%), acceleration distance (ACC) (110%), and deceleration distance (DEC) (48%)"
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "text": "The authors concluded that completing all five on-field stages almost prepared players for team training demands, but workloads remained low compared with match play.",
+      "evidence": [
+        {
+          "libraryId": "705",
+          "page": 1,
+          "excerpt": "five OFR stages almost prepared them for team training demands; however, workloads remain low compared to match play."
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "text": "A clinical commentary reports that rehabilitation after lateral ankle sprain in professional football players is often still time-based and relies on clinicians' anecdotal experience.",
+      "evidence": [
+        {
+          "libraryId": "696",
+          "page": 1,
+          "excerpt": "The rehabilitation after LAS in professional football players is often still time-based and relies on anecdotal experience of clinicans."
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "text": "The same commentary proposes that a criteria-based approach might reduce the high recurrence rate after lateral ankle sprain in professional football players; this benefit is not tested.",
+      "evidence": [
+        {
+          "libraryId": "696",
+          "page": 1,
+          "excerpt": "The use of a criteria-based rehabilitation approach might reduce the high recurrence rate after LAS in professional football players"
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "text": "In a single-player case report of a professional soccer player after ACL reconstruction, transient episodes of knee pain linked to meniscus surgery delayed the return to running.",
+      "evidence": [
+        {
+          "libraryId": "396",
+          "page": 6,
+          "excerpt": "In the present case, transient episodes of knee pain (as a consequence of the meniscus surgery) delayed the return to running"
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "text": "In 10 elite soccer players, the relationship between external load and heart-rate response varied substantially between players, which the authors say highlights the need to monitor training loads at the individual level.",
+      "evidence": [
+        {
+          "libraryId": "395",
+          "page": 5,
+          "excerpt": "The first aim of the present paper was to quantify in 10 elite soccer players the"
+        },
+        {
+          "libraryId": "395",
+          "page": 12,
+          "excerpt": "the need for practitioners to assess and monitor training loads at the individual level."
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "text": "The authors note that their heart-rate monitoring approach cannot be used with players who have only limited historical data.",
+      "evidence": [
+        {
+          "libraryId": "395",
+          "page": 15,
+          "excerpt": "the present monitoring approach can’t be used with players with only limited historical data"
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "text": "In fifty male Division I football athletes, prolonged exposure to higher training intensities was associated with higher baseline heart rates 24 hours after exercise.",
+      "evidence": [
+        {
+          "libraryId": "564",
+          "page": 1,
+          "excerpt": "and function in Division I football athletes. Fifty, male football athletes were included in this"
+        },
+        {
+          "libraryId": "564",
+          "page": 5,
+          "excerpt": "Specifically, prolonged exposure to higher intensities elicited higher baseline HRs 24h post-exercise."
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "text": "The authors state that including only males from one collegiate sport reduces the generalizability of their findings to other sports and to female athletes.",
+      "evidence": [
+        {
+          "libraryId": "564",
+          "page": 8,
+          "excerpt": "Second, the study included only males playing one collegiate sport which reduces the generalizability of our findings to other sports implementing similar training programs and female athletes."
+        }
+      ]
+    }
+  ],
+  "assumptions": [
+    "The specific lower-extremity injury is unknown, so ACL and ankle sprain evidence was treated as the closest available analog.",
+    "Concussion, hamstring risk-factor, nutrition, sleep, and healthy-athlete agility sources were judged not relevant to this progression decision and were not used."
+  ],
+  "coverageGaps": [
+    "No study comparing or validating specific progression criteria (strength, hop tests, range of motion, symptoms) for stepping up from controlled drills to higher-intensity field or court work.",
+    "No evidence in collegiate court-sport athletes or female athletes in late-stage lower-extremity rehabilitation.",
+    "No evidence on progression criteria for lower-extremity injuries other than ACL reconstruction and lateral ankle sprain."
+  ],
+  "leads": [
+    {
+      "libraryId": "677",
+      "citation": "West, S. W., Clubb, J., Torres-Ronda, L., Howells, D., Leng, E., Vescovi, J. D., Carmody, S., Posthumus, M., Dalen-Lorentsen, T., & Windt, J. (2021). More than a metric: How training load is used in elite sport for athlete management. International Journal of Sports Medicine, 42(4), 300–306. https://doi.org/10.1055/a-1268-8791",
+      "note": "Relevant lead; original text not accessible to the drafter, so it supports no claim."
+    },
+    {
+      "libraryId": "582",
+      "citation": "Myszka S., Yearby T., Davids K. <i>Being Water</i> : how key ideas from the practice of Bruce Lee align with contemporary theorizing in movement skill acquisition. Sport, Education and Society. 2024;29(4):451-467. doi:10.1080/13573322.2022.2160701.",
+      "note": "Relevant lead; original text not accessible to the drafter, so it supports no claim."
+    },
+    {
+      "libraryId": "620",
+      "citation": "Myslinski T., Kiely J., Gabbett T., Park G. The Indirect Contact ACL Injury Cascade: Why Current Prevention Falls Short. Sports Health: A Multidisciplinary Approach. 2026;:19417381261457125. doi:10.1177/19417381261457125.",
+      "note": "Relevant lead; original text not accessible to the drafter, so it supports no claim."
+    },
+    {
+      "libraryId": "6",
+      "citation": "Baylor Applied Sport Science. Wearable Resistance Training Program Review: Exogen for Football.",
+      "note": "Relevant lead; original text not accessible to the drafter, so it supports no claim."
+    },
+    {
+      "libraryId": "636",
+      "citation": "Comyns, T., & Flanagan, E. P. (2013). Applications of the session rating of perceived exertion system in professional rugby union. Strength & Conditioning Journal, 35(6), 78–85. https://doi.org/10.1519/SSC.0000000000000015",
+      "note": "Relevant lead; original text not accessible to the drafter, so it supports no claim."
+    }
+  ],
+  "drafter": {
+    "version": "1.0.0",
+    "composer": "claude -p (claude-opus-5-5)",
+    "sourcesInPack": [
+      "396",
+      "705",
+      "696",
+      "395",
+      "564",
+      "412",
+      "569",
+      "401",
+      "574",
+      "407",
+      "282",
+      "439"
+    ],
+    "claimsProposed": 11,
+    "claimsRemoved": 0,
+    "notes": []
+  }
+}
