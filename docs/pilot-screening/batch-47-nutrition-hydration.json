@@ -1,0 +1,708 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-47-nutrition-hydration",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Nutrition & Hydration queue positions 5-93. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 5,
+      "sourceFile": "Collagen peptide supplementation for pain and function - Is it effective.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 31154,
+        "doi": "10.1097/MCO.0000000000000870",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Rehabilitation",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A narrative review of mechanistic, animal, in vitro and human studies on collagen peptide supplementation and connective tissue turnover, pain, function, strength and body composition in active and aging adults. The authors report that recent work shows improved pain and function in some trials and gains in strength and body composition when collagen is combined with resistance training, with mixed results across studies. No search method is described.",
+      "limitations": "No search strategy or study selection method is described, so the evidence base cannot be checked for completeness. The human pain and function claims rest on a small number of trials, including the authors' own trial, which is cited only as conference proceedings and used a supplement from the manufacturer that funds their collagen research.",
+      "synthesisCaution": "Staff may treat collagen as a tendon or pain treatment that works on its own, when the review's own examples show benefits mainly alongside training or rehabilitation and several trials were null.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'several key trials come from the authors' own lab' -> one lab trial reported in two conference abstracts (refs 3 and 4: 'Proceedings of the Eighteenth International Society of Sports Nutrition (ISSN) Conference')",
+            "paper.limitations: added conference-abstract status, funding detail ('PB Leiner manufactures gelatins and collagen peptides, and is the manufacturer of SOLUGEL ... used in studies completed in our lab') with 'There are no conflicts of interest', and the internal tension between 'does not support muscle hypertrophy gains' and reported lean mass gains"
+          ],
+          "residualConcerns": "Relevance: the review addresses active and aging adults with connective tissue injury and includes resistance training trials in untrained and resistance-trained people, so it was kept as INCLUDE, but most cited human data are not from athletes. Funding by a collagen manufacturer.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1031",
+        "synthesisBatch": "pilot-synthesis-batch-47",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 7,
+      "sourceFile": "Common questions and misconceptions about protein supplementation- What does the scientific evidence really show.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 31,
+        "extractedCharacters": 112138,
+        "doi": "10.1080/15502783.2024.2341903",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A narrative review answering 11 common questions about protein supplementation, drawing on human trials, meta-analyses, reviews and position statements. Its main conclusions are that high protein intakes show no kidney or bone harm in healthy exercise-trained adults, that protein does not necessarily add body fat, and that 20 to 30 g of high-quality protein per meal is sufficient for most people. No systematic search method is described.",
+      "limitations": "No search strategy, inclusion criteria or evidence grading is described, so study selection cannot be checked. The authors disclose ties to the International Society of Sports Nutrition and to supplement companies, and some conclusions rest on a small number of studies.",
+      "synthesisCaution": "Staff may treat the review's 'no evidence of harm' and '20 to 30 g per meal' conclusions as settled for every athlete, when the review itself says the answer depends on physiological state, training load and age.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: 3 authors then et al. and abbreviated journal -> first 6 authors then et al. and journal name as printed ('Journal of the International Society of Sports Nutrition, 21:1, 2341903')",
+            "paper.limitations: made industry ties specific ('JA is the CEO of the International Society of Sports Nutrition ... receives grants from companies that sell ... protein-containing sports nutrition products'; 'AF is an inventor of EAA-based compositions') and added the plant protein inconsistency ('up to 53% or 75% more plant-based protein' vs '~ 20-40% more plant protein')"
+          ],
+          "residualConcerns": "Industry ties: the lead author runs the society that owns the journal and receives protein-industry grants, and several authors have supplement industry funding or EAA patents; the 'no evidence of harm' conclusions apply to healthy exercise-trained adults only.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1032",
+        "synthesisBatch": "pilot-synthesis-batch-47",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 32,
+      "sourceFile": "Considerations for the consumption of vitamin and mineral supplements in athlete populations.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 56042,
+        "doi": "10.1007/s40279-023-01875-4",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Narrative review (Sports Medicine review article) that describes deficiency risk in athletes, a five-domain nutrition assessment framework, and key vitamins and minerals (iron, B vitamins, vitamin D, calcium, zinc, vitamin C), with a section on female athletes. It draws on previously published meta-analyses and trials; it reports no new sample. Its main points are that iron supplementation in iron-deficient non-anaemic athletes showed no change in performance in meta-analysis, and that supplementation should follow a deficiency assessment.",
+      "limitations": "The review describes no literature search method, so the selection of evidence cannot be checked. Its supplement and female-athlete guidance rests on small or mechanistic studies, and the work was supported by a sports nutrition company's institute.",
+      "synthesisCaution": "Staff could read the vitamin C, zinc or vitamin D findings as grounds for routine supplementation, when the review says supplements should follow an assessment of deficiency and consider dose, timing and monitoring.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: stress fracture data attributed to athletes only -> athletes and military personnel ('meta-analyses of male and female athletes and military personnel'); vitamin C finding expanded to 'oxidative stress and inflammatory response to a single bout of exercise'",
+            "paper.limitations: 'Few studies classify menstrual status' -> none did ('not one study was able to classify and report menstrual status according to best practice guidelines')",
+            "paper.practicalImplications: 6-month iron checks stated as only when compromise is known -> 'at 6-month intervals, especially in cases of known iron compromise'; replaced unsupported framing with the review's listed supplementation considerations"
+          ],
+          "residualConcerns": "Industry-supported narrative review: part of a GSSI (PepsiCo) supplement, with GSSI funding attendance and an honorarium; no search method described. Volume and pages are not printed in the text, so they are omitted.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1033",
+        "synthesisBatch": "pilot-synthesis-batch-47",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 34,
+      "sourceFile": "Contaminants in dietary supplements - Toxicity, doping risk, and current regulation.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 53113,
+        "doi": "10.1123/ijsnem.2023-0263",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Narrative review of the literature on undeclared contaminants in dietary supplements, including anabolic steroids, stimulants, diuretics, SARMs, growth hormone-releasing peptides and cobalt, together with EU and US regulation. The authors cite product-testing studies, such as one in which 23 of 24 UK fitness-shop supplements contained steroids, and a 2003 to 2020 analysis in which supplements were named as the source in 26% of positive doping tests, with evidence found in about half of those cases.",
+      "limitations": "The literature search is described only as exhaustive, with no databases, dates, selection criteria or quality appraisal reported. Much of the cited contamination evidence comes from product testing of a limited number of products, so it does not establish how common contamination is across the market.",
+      "synthesisCaution": "Staff could read the review's contamination figures as the risk in all supplements, when the authors' own 15% to 20% figure refers only to steroid contamination in a limited set of products.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: claimed authors say third-party testing 'reduces but does not remove' risk -> authors say testers 'greatly reduce the risk of contamination'; the not-a-full-guarantee caveat applies to cGMP certification ('the cGMP certification does not fully guarantee the absence of substances')"
+          ],
+          "residualConcerns": "Year 2024 taken from the ahead-of-print header ('First Published Online: Apr. 23, 2024', '(c) 2024 Human Kinetics'); no volume, issue or pages are printed. Design kept as Narrative Review: 'exhaustive literature search' with no databases or criteria, and the authors call it a narrative review.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1034",
+        "synthesisBatch": "pilot-synthesis-batch-47",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 50,
+      "sourceFile": "Current Practice in the Measurement and Management of Vitamin D Status in Elite Sport and Parasport.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 47563,
+        "doi": "10.1002/ejsc.12305",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "A survey of 74 practitioners supporting Tier 4 to 5 (elite and world-class) athletes in 26 sports and parasports in the UK (48), US (15), Europe (5), Australia (5) and Asia (1), with items validated by a Delphi panel of seven experts. About a quarter of respondents (24%) did not test athletes' vitamin D status, and 89.5% (n = 51) of those who did test did not know which analytical method was used. Supplementation decisions were most often reported as a joint support-team responsibility (47%) or the respondent's sole responsibility (44%), with thresholds ranging from below 30 to below 100 nmol/L.",
+      "limitations": "This is a self-reported practitioner survey recruited through social media and email, so it describes practice and perceptions, not athletes' vitamin D status or outcomes. Most respondents were nutritionists or dietitians (64 of 74), and the sample is skewed to UK respondents (48 of 74).",
+      "synthesisCaution": "Staff could read the authors' view that most practitioners are receiving unreliable 25(OH)D data as a measured finding, but the survey did not test assay accuracy and reports only what respondents said they do.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes and Female Athletes removed -> Professional / Elite only; the sample is practitioners, not athletes ('Of the sample, 69% of practitioners worked predominantly with male athletes')",
+            "screeningLimitations/limitations: nutritionists and dietitians count corrected 46 -> 64 (Table 2: Nutritionist 46, Dietician 18)",
+            "paper.limitations: added the conflicting decision-maker breakdown ('club doctor (n = 26, 38%) ... (n = 34, 47%) ... 44% (n = 32)'); kept 74 vs 73 respondent conflict ('we collected data from 73 practitioners')",
+            "paper.athleteDev: 'athletes often do not adhere' softened to barrier themes from open-ended responses ('Lack of compliance/adherence to supplementation')",
+            "paper.citation: punctuation normalised to house style"
+          ],
+          "residualConcerns": "74 vs 73 respondents and two inconsistent decision-maker breakdowns are internal to the paper; 97% (n = 71) fits a denominator of 73 rather than 74.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1035",
+        "synthesisBatch": "pilot-synthesis-batch-47",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 54,
+      "sourceFile": "DAILYU~1.PDF",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 41,
+        "extractedCharacters": 53333,
+        "doi": "10.1249/MSS.0000000000003842",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "A randomised, double-blind, placebo-controlled trial in 36 healthy, physically active adults (17 males, 19 females) who took 150 mg/day of a broad-spectrum CBD oil (n = 31) or placebo (n = 5) for 10 weeks; only the CBD group was statistically analysed. After 10 weeks, CBG and CBDV were detected in 42% and 68% of pre-exercise urine samples, and urinary CBD, CBG, CBDV, 6-OH-CBD and 7-OH-CBD were reported to rise after a fasted 90-minute moderate-intensity exercise bout. No delta-9-THC or its metabolites were detected.",
+      "limitations": "Only one product was tested, dosing was self-administered, and the placebo arm (n = 5) was not analysed, so the exercise effect is a within-group pre to post comparison with no non-exercise control. Participants were physically active adults not competing under WADA rules, not athletes.",
+      "synthesisCaution": "Staff could read this as proof that every CBD product carries the same doping risk or that exercise itself drives a positive test, but only one broad-spectrum product was tested, CBD isolates were not studied, and the exercise effect had no non-exercise comparison.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes, Female Athletes and Healthy Athletes removed -> Adult / Recreational ('no participants were competing in any sports that were signatories to the WADA Code')",
+            "evidenceSummary/screeningLimitations/synthesisCaution: noted only the CBD group was analysed and the exercise effect is within-group with no non-exercise control ('The PLA groups plasma and urine data were not formally statistically analysed')",
+            "paper.findings: added 7-COOH-CBD non-significant ('no significant effect of time on 7-COOH-CBD (F2.458, P = 0.128)')",
+            "paper.limitations: added 'both groups' wording conflict ('indicating both groups showed a significant increase'), CBDV means falling ('68% of pre-exercise samples (26 +/- 55 ng.ml-1) and 84% of post-exercise samples (10 +/- 63 ng.ml-1)'), duplicated plasma 7-OH-CBD entry, and industry funding ('Graeme Close received a research grant from Naturecan Ltd, a manufacturer of CBD products')",
+            "paper.methods: clarified unbalanced allocation and exercise intensity ('~55% of the final wattage achieved')"
+          ],
+          "residualConcerns": "Several internal statistical inconsistencies (P values, duplicated plasma statistics, CBDV mean decrease vs reported increase, 'both groups' wording). The manuscript is the unedited publish-ahead-of-print version. Industry funding from a CBD manufacturer.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1036",
+        "synthesisBatch": "pilot-synthesis-batch-47",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 59,
+      "sourceFile": "Determinants of food choice in athletes - A systematic scoping review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 22,
+        "extractedCharacters": 89634,
+        "doi": "10.1186/s40798-022-00461-8",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Ice Hockey",
+        "American Football",
+        "Rugby",
+        "Endurance Sport",
+        "Track & Field",
+        "Gymnastics",
+        "Combat Sports"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Collegiate",
+        "Professional / Elite",
+        "Adult / Recreational",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "Systematic scoping review (PRISMA-ScR) of 15 studies on the individual and interpersonal determinants of food choice in athletes aged 16 or older. Eleven databases were searched from September to November 2020 and updated in March 2021. The 15 studies were 7 qualitative and 8 quantitative (including theses), and none were longitudinal or interventional. The authors report that health, performance and nutritional attributes recurred across studies, and that competition phase, experience, sport culture and nationality influenced priorities.",
+      "limitations": "This is a scoping review with no pooled analysis, and the library rule for described searches codes it as Systematic Review / Meta-analysis. Only one included study linked food choice to diet quality (one competition meal), and only one study focused on female athletes. Reporting quality varied, with qualitative scores of 10 to 20 out of 21 and quantitative scores of 8 to 22 out of 32.",
+      "synthesisCaution": "Staff could read the listed determinants as a ranked list of what drives their own athletes' food choices, but the review maps which factors studies reported and does not rank their importance or link them to diet quality.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: 'The authors recommend the validated Athlete Food Choice Questionnaire for this purpose' (practitioner profiling) -> authors recommend validated tools 'such as the AFCQ' to researchers and say 'further testing of reliability and application with specific sports and in different cultures is warranted'"
+          ],
+          "residualConcerns": "Design coded Systematic Review / Meta-analysis per library precedent for scoping reviews with a described systematic search (PRISMA-ScR, 11 databases, OSF protocol, dual screening); there is no pooled analysis.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1037",
+        "synthesisBatch": "pilot-synthesis-batch-47",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 65,
+      "sourceFile": "Dietary Supplements for Health,                        Adaptation, and Recovery in Athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 33,
+        "extractedCharacters": 84486,
+        "doi": "10.1123/ijsnem.2017-0340",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Scholarly narrative review of dietary supplements that may support health, exercise adaptation and recovery in athletes, covering creatine monohydrate, HMB, omega-3 fatty acids, vitamin D, probiotics, gelatin or collagen, curcumin and tart cherry juice. The authors recommend creatine for recovery and adaptation to intense training and during extreme inactivity, and state that most placebo-controlled probiotic trials show fewer upper respiratory tract infections. They do not recommend HMB at present and describe the evidence for omega-3, vitamin D, gelatin or collagen and anti-inflammatory products as limited or preliminary.",
+      "limitations": "No search method is described, so the choice of studies cannot be reproduced. Many cited studies are small and use different protocols and outcomes, and several findings come from animal or preliminary human data.",
+      "synthesisCaution": "Staff could read the review's recommendations as firm guidance for all athletes, including creatine for concussion, when several rest on preliminary, animal or pediatric open-label data or apply only to specific situations such as vitamin D deficiency or extreme inactivity.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: vitamin D sentence said low status was linked to 'a 20% lower stress fracture rate' -> supplementation (800 IU D3 plus 2000 mg calcium) reduced stress fracture incidence by 20% ('reduced stress fracture incidence by 20% (Lappe et al. 2008)'); creatine sentence aligned to the 7 of 15 muscle-damage review",
+            "paper.limitations and synthesisCaution: added that the mTBI recommendation for creatine rests on 'two open-label trials in children' plus animal data"
+          ],
+          "residualConcerns": "Concussion-adjacent content: the authors' summary says creatine 'could be recommended' for mTBI on very limited evidence; the record flags this.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1038",
+        "synthesisBatch": "pilot-synthesis-batch-47",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 66,
+      "sourceFile": "Dietary supplement and food contaminations and their implications for doping controls.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 21,
+        "extractedCharacters": 89078,
+        "doi": "10.3390/foods9081012",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of published case reports, administration studies and surveys on dietary supplement, medicine and food contamination with doping agents. The authors report that 14.8% of 634 supplements in a 2004 study contained undeclared anabolic steroids, falling to 0.7% of 597 products in a later study. They also describe a 2015 case in which 11 weightlifters tested positive after using a supplement with unlabeled stanozolol.",
+      "limitations": "No systematic search is described, so the selection of cases may be incomplete and not reproducible. Causal proof linking a positive test to a specific contaminated product or food is often lacking, as the authors acknowledge.",
+      "synthesisCaution": "Staff could read the cited cases or the 2004 figure of 14.8% as the current contamination rate for supplements in general, when the cases are selected examples and the later repeat survey found 0.7%.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'Anabolic agents, stimulants and diuretics were the substances most often found' -> anabolic agents and stimulants ('In particular anabolic androgenic steroids (AAS) and stimulants have been frequently found'); 'analgesic' specified as ibuprofen",
+            "paper.limitations and synthesisCaution: removed 'the review gives no prevalence estimate'; the review cites supplement-use prevalence (e.g. '64% of 527 surveyed elite athletes') and contamination rates ('14.8% (=94)', '0.7%')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1039",
+        "synthesisBatch": "pilot-synthesis-batch-47",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 67,
+      "sourceFile": "Dietary supplements as a major cause of anti-doping rule violations.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 41711,
+        "doi": "10.3389/fspor.2022.868228",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Adult / Recreational",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Retrospective review of anti-doping records from Anti-Doping Norway, covering all 192 analytical anti-doping rule violations (ADRVs) from 2003 to 2020. Athletes claimed a dietary supplement was the source in 49 cases (26%), and evidence supported this in 27 (14%). Stimulants were linked to 24 of the 27 supported cases, and multi-ingredient pre-workout supplements were the likely source in 20.",
+      "limitations": "This is a case series from one national anti-doping agency, with no denominator of supplement users, so it estimates the share of cases rather than the risk per user. Causal attribution relied on committee and investigator judgment.",
+      "synthesisCaution": "Staff could read the 14 to 19% share as the share of all doping positives caused by supplements in every sport and country, when it comes from one national agency's case files.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: added Female Athletes and Adult / Recreational; sex is stated ('predominantly men (93%, n = 25 of 27)') and 17 of 27 were 'Recreational athletes'",
+            "paper.limitations: methylhexanamine conflict restated: abstract and results text say 16, Table 2 says 17, and 17 is the value consistent with the 24 stimulant cases; removed the claim that the discussion also says 16 (it says 'About 60%')",
+            "paper.findings: clarified the year trend ('ranged from 0 to 36%, with no clear trend') and label cover names ('labeled with geranium')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1040",
+        "synthesisBatch": "pilot-synthesis-batch-47",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 79,
+      "sourceFile": "Does a broad‐spectrum cannabidiol supplement improve performance in a 10-min cycler ergometer performance test.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 35966,
+        "doi": "10.1002/ejsc.12116",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized, double-blind, placebo-controlled independent-groups study of healthy recreationally active adults. Of 24 recruited, 22 were analysed (CBD n = 10, placebo n = 12; 11 men and 11 women). Participants took 150 mg/day of a broad-spectrum CBD oil or a placebo oil for 3 weeks and completed a 10-minute cycle ergometer time trial before and after. The authors report no significant group-by-time effect for mean power (p = 0.32) or RPE (p = 0.19), and no changes in heart rate or blood lactate between groups.",
+      "limitations": "Small groups (10 and 12 participants) with a mixed-sex sample that was too small for a sex analysis, one 10-minute cycling test, and a single 3-week dose. The product maker provided financial support for the work, and the product contained trace cannabinoids other than CBD.",
+      "synthesisCaution": "Staff could read this as showing that CBD has no analgesic or recovery benefit, when the paper tests only performance and RPE in a 10-minute cycling test in recreational adults, and does not measure pain or recovery.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added that both removed participants were in the CBD group ('Both participants were in the experimental group (CBD)'), making the analysis per protocol",
+            "checked: DOI printed in header ('DOI: 10.1002/ejsc.12116'); year 2024 and pages 1-8 from 'Eur J Sport Sci. 2024;1-8'; p values match Results"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1041",
+        "synthesisBatch": "pilot-synthesis-batch-47",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 91,
+      "sourceFile": "Drinking Strategies- Planned                        Drinking Versus Drinking to Thirst.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 32735,
+        "doi": "10.1007/s40279-017-0844-6",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of programmed drinking versus drinking to thirst during exercise, drawing on the author's earlier review of 34 endurance dehydration studies (60 observations), ad libitum drinking studies in running and cycling, and modelled sweat-loss predictions. The author reports that 41 of 60 observations (68%) showed significantly impaired endurance performance at 2% or greater body mass loss, and that ad libitum drinking commonly led to body mass losses above 2% in marathon field data.",
+      "limitations": "No systematic search method is described, and the sweat-loss predictions come from modelling that the author notes is not designed for sport or sport clothing. The review is general exercise hydration rather than athlete-specific data, and the supplement was funded by the Gatorade Sports Science Institute, with the author receiving an honorarium from it.",
+      "synthesisCaution": "Staff could read the 2% body mass threshold as a loss every athlete reaches and suffers from, when the author stresses that reaching 2% takes time and depends on environment, intensity, duration and body size, and that impairment occurs 'in many conditions (e.g., warmer, longer, more intense)', not all.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution: implied the author treats the 2% threshold itself as variable -> the threshold is fixed but whether it is reached depends on conditions ('fluid loss of 2% body mass takes time to accumulate and will be dependent on the environment, exercise intensity, and duration')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1042",
+        "synthesisBatch": "pilot-synthesis-batch-47",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 93,
+      "sourceFile": "Drugs and Supplements in Athletic Injury Recovery and Performance - WADA Perspective.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 65906,
+        "doi": "10.1007/978-3-031-58351-3_313",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Nutrition",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative book chapter reviewing the WADA prohibited substance and method categories, the Athlete Biological Passport, and sports nutrition guidance from bodies such as ACSM, the IOC and ISSN. The chapter reports that anabolic agents were 40% of the adverse analytical findings in WADA's 2021 report (from 241,430 samples), and that only caffeine, creatine, nitrate, beta-alanine and sodium bicarbonate have shown ergogenic effects among the many supplements marketed to athletes.",
+      "limitations": "This is a narrative chapter with no described search method, so its evidence statements cannot be checked against a defined literature set. Its sources were accessed in early 2023 while the chapter is dated 2025, and the adverse finding figures come from one WADA report that the chapter says can include Therapeutic Use Exemption findings.",
+      "synthesisCaution": "Staff could treat this chapter's summary of prohibited classes as a complete guide to what is banned for their athletes, when the chapter draws on a 2023 WADA list and sport-specific rules must be checked against the current list.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Book chapter (narrative clinical review, chapter 16 of Sports Injuries, Springer 2025); pages 243-259 confirmed from running page headers (first page 243, last header 259). DOI is the chapter DOI printed on page 243. Medication and doping content, so flagged high for spot check; prohibited-list details reflect WADA 2023 sources.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1043",
+        "synthesisBatch": "pilot-synthesis-batch-47",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

@@ -24,9 +24,11 @@ for pid in sorted(inputs):
     if not os.path.exists(p): sys.exit(f'missing verified {pid}')
     recs[pid]=clean(json.load(open(p)))
 nid=NEXT_ID; out={}; review=[]
-for i,dom in enumerate(DOM_ORDER):
-    bn=FIRST_BATCH+i; sb=f'batch-{bn}-{slug(dom)}'; syb=f'pilot-synthesis-batch-{bn}'
+bn=FIRST_BATCH-1
+for dom in DOM_ORDER:
     ids=[k for k in sorted(inputs) if inputs[k]['pilotDomain']==dom]
+    if not ids: continue  # a domain with no papers in this queue gets no batch number
+    bn+=1; sb=f'batch-{bn}-{slug(dom)}'; syb=f'pilot-synthesis-batch-{bn}'
     q=[inputs[k]['queueOrder'] for k in ids]
     scr=[];syn=[]
     for k in ids:
