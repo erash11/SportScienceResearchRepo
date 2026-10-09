@@ -45,18 +45,21 @@ function sourcePath(sourceFile) {
 }
 
 const pageCache = new Map();
-function readPage(sourceFile, page) {
-  const key = `${sourceFile}#${page}`;
+// mode "layout" matches the audit's historical extraction; "raw" keeps reading order on two-column pages.
+function extractPage(sourceFile, page, mode) {
+  const key = `${sourceFile}#${page}#${mode}`;
   if (!pageCache.has(key)) {
-    const result = spawnSync("pdftotext", ["-f", String(page), "-l", String(page), "-layout", sourcePath(sourceFile), "-"], {
-      encoding: "utf8",
-      windowsHide: true,
-      maxBuffer: 64 * 1024 * 1024,
-    });
+    const args = ["-f", String(page), "-l", String(page), ...(mode === "layout" ? ["-layout"] : []), sourcePath(sourceFile), "-"];
+    const result = spawnSync("pdftotext", args, { encoding: "utf8", windowsHide: true, maxBuffer: 64 * 1024 * 1024 });
     if (result.error?.code === "ENOENT") throw new Error("pdftotext is not installed or is not on PATH.");
     pageCache.set(key, result.status === 0 ? result.stdout : "");
   }
   return pageCache.get(key);
+}
+
+// Verification text: both extractions, so an excerpt quoted in reading order or in layout order is found.
+function readPage(sourceFile, page) {
+  return `${extractPage(sourceFile, page, "layout")}\n\f\n${extractPage(sourceFile, page, "raw")}`;
 }
 
 const countCache = new Map();
@@ -70,7 +73,7 @@ function pageCount(sourceFile) {
 
 function allPages(sourceFile) {
   const total = pageCount(sourceFile);
-  return Array.from({ length: total }, (_, i) => readPage(sourceFile, i + 1));
+  return Array.from({ length: total }, (_, i) => extractPage(sourceFile, i + 1, "raw"));
 }
 
 function compose(prompt, model) {
@@ -139,6 +142,13 @@ async function run() {
   const fromDraft = option("--from-draft");
   const model = option("--model") || DEFAULT_MODEL;
   const raw = fromDraft ? fs.readFileSync(fromDraft, "utf8") : compose(prompt, model);
+  const saveDrafts = option("--save-drafts");
+  const save = (name, text) => {
+    if (!saveDrafts) return;
+    fs.mkdirSync(saveDrafts, { recursive: true });
+    fs.writeFileSync(path.join(saveDrafts, `${request.requestId}.${name}.txt`), text);
+  };
+  save("composer", raw);
   let draft = parseComposerJson(raw);
   if (!process.argv.includes("--no-critic")) {
     const cited = [...new Set((draft.claims ?? []).flatMap((claim) => (claim.evidence ?? []).map((item) => String(item.libraryId))))];
@@ -146,7 +156,9 @@ async function run() {
       .map((id) => papersById.get(id))
       .filter((paper) => paper && localSourceFile(paper) && fs.existsSync(sourcePath(localSourceFile(paper))))
       .map((paper) => ({ libraryId: String(paper.id), citation: paper.citation, pages: allPages(localSourceFile(paper)).map((page) => page.slice(0, 9000)) }));
-    draft = parseComposerJson(compose(buildCriticPrompt(request, draft, fullSources), model));
+    const critic = compose(buildCriticPrompt(request, draft, fullSources), model);
+    save("critic", critic);
+    draft = parseComposerJson(critic);
   }
   const createdAt = new Date().toISOString();
   const { brief, validation } = await finalizeDraft({

@@ -1,0 +1,753 @@
+{
+  "schemaVersion": 1,
+  "briefId": "ATL-B-20261009-SS03",
+  "requestId": "ATL-R-20261009-SS03",
+  "version": 1,
+  "createdAt": "2026-10-09T04:19:12.820Z",
+  "status": "On-Demand",
+  "reviewStatus": "Not Expert-Reviewed",
+  "practicalQuestion": "When workload, wellness, neuromuscular, and schedule-based indicators disagree during a congested week, how should the sports science process account for measurement error, individual baselines, and the cost of false alarms before recommending whether training should be maintained, modified, or investigated further?",
+  "decisionContext": {
+    "population": "Collegiate roster with different positions, minutes, and training histories",
+    "sport": "Team sport using multiple monitoring systems",
+    "phase": "Congested competition week",
+    "outcome": "Produce a transparent decision-support process rather than a single readiness score",
+    "constraints": "Missing data; multiple comparisons; limited time for retesting; staff must distinguish group planning from individual follow-up"
+  },
+  "evidenceConfidence": {
+    "tier": "Limited",
+    "rationale": "Several sources directly address parts of the process: measurement noise against weekly signal, individual baselines, measure sensitivity after matches or during a congested schedule, and bias from missing data. No source tests a process for combining disagreeing indicators into a maintain, modify or investigate decision, so the tier cannot be Moderate. No source tests the cost of false alarms in team-sport monitoring. Most samples are professional or elite Australian football or soccer players, mostly male. The one congested-schedule study had 8 collegiate soccer players, and the wellness and match output study had mostly 6 to 8 days between matches.",
+    "dimensions": {
+      "sourceReview": "Original text was checked for every claim. Designs include a reliability and sensitivity study in 42 professional Australian footballers, a retrospective mixed-model study in 34 elite male Australian football players across two seasons, a study of 18 elite football players around 3 preseason matches, a congested-schedule study in 8 collegiate soccer players, a 14-day pre-season observational study in 17 NCAA Division III American football players, a leading article on missing wearable data in collegiate American football, an expert commentary, a framework report, and a laboratory heat-stress validation study.",
+      "directness": "Direct for measurement error, individual baselines and missing data. Indirect for integrating disagreeing indicators, which rests on expert commentary, a conceptual model and one pre-season study linking different load metrics to different recovery measures. Very indirect for false-alarm costs, which come only from a heat-illness warning system.",
+      "consistency": "Sources agree that measures and even items within a questionnaire differ in sensitivity, and that individual responses vary. Wellness tracked a congested schedule in one study but did not relate to subsequent match output in another where matches were mostly 6 to 8 days apart. These studies ask different questions under different schedules, so the tension is largely explained by context but not tested within a congested week.",
+      "transferability": "Mostly elite or professional male athletes in Australian football and soccer. One small collegiate soccer sample, one small collegiate American football pre-season sample and one collegiate American football missing-data example. No female or mixed-sex team-sport rosters, and no multi-system congested-week decision studies."
+    }
+  },
+  "bottomLine": {
+    "text": "The evidence points toward a process built on each measure's own noise, each athlete's own baseline, and explicit checks for missing data, rather than a single readiness score. Measures differed in sensitivity. In 8 collegiate soccer players, a wellness questionnaire changed more than a single-time-point HRV reading during a congested schedule. In 18 elite football players after preseason matches, FT:CT reductions persisted longer than changes in jump height. In 17 collegiate American football players, different recovery measures tracked different load measures. No source tests how to combine disagreeing indicators or what a false alarm costs in team sport, so those steps rest on professional judgment.",
+    "claimIds": [
+      "C1",
+      "C4",
+      "C6",
+      "C7",
+      "C10",
+      "C13",
+      "C16",
+      "C22"
+    ]
+  },
+  "recommendedDirection": null,
+  "actions": [
+    {
+      "title": "Option: know each measure's noise before reading change",
+      "text": "In 42 professional Australian footballers, sensitivity was weekly CV% divided by test CV%, giving signal to noise ratios from 1.3 to 11.1, with ratios above 1.5 rated good. The authors frame this as a way to identify meaningful changes, those that exceed the noise in the test. Staff could run the same comparison on their own tools and treat changes inside a tool's test error as uncertain rather than as alarms.",
+      "claimIds": [
+        "C1",
+        "C22"
+      ]
+    },
+    {
+      "title": "Option: read wellness against each athlete's baseline and weight items by sensitivity",
+      "text": "Wellness can be expressed relative to each athlete, as with the within-individual z scores used in 34 elite male Australian football players, whose authors suggest using relative changes to interpret individual responses. In professional Australian football, soreness and stress were the most sensitive wellness items, and the authors advise caution when reading changes in sleep quality, motivation and fatigue. In 8 collegiate soccer players, HRV taken at a single time point changed only trivially during a congested schedule. Those authors note that earlier studies used values from multiple time points and say their result confirms earlier recommendations for a rolling average of at least three weekly time points.",
+      "claimIds": [
+        "C2",
+        "C19",
+        "C20",
+        "C4",
+        "C5"
+      ]
+    },
+    {
+      "title": "Option: pick the more sensitive variable within a test",
+      "text": "In 18 elite football players from one A-League club around 3 preseason matches, FT:CT from a countermovement jump was a more sensitive recovery measure than jump height, and its reductions persisted at later time points. The authors suggest assessing FT:CT at least 42 hours postmatch to help inform training prescription. Salivary hormones showed substantial individual variability after the acute postmatch response, and the authors question the value of regular salivary hormone monitoring given this variability and cost.",
+      "claimIds": [
+        "C6",
+        "C7",
+        "C25",
+        "C8",
+        "C26"
+      ]
+    },
+    {
+      "title": "Option: audit missing data before trusting the dashboard",
+      "text": "Wearable data are commonly missing because of equipment malfunction or non-compliance. In 75 collegiate American football players wearing sleep rings, the data likely violated the missing completely at random assumption, response rates fell across the season, and weekend game days were poorly captured, so the data captured were potentially from players who were not traveling. When data are not missing completely at random, averages and dashboards are biased, and the author says practitioners should insist on missing data analyses and imputation as needed. Professional judgment (not tested by the cited evidence): record missingness as a reason to investigate rather than as a normal reading.",
+      "claimIds": [
+        "C9",
+        "C17",
+        "C18",
+        "C10"
+      ]
+    },
+    {
+      "title": "Option: set decision criteria and separate load from response in advance",
+      "text": "Expert commentary says workload monitoring should assist and inform decisions on player unavailability for training, recommends simplifying reported information, and suggests a clear criterion for proposing player rotations, probably set before rather than during matches. A quadrant model separates load from response and places subjective ratings between the metabolic and neuromuscular domains. In 17 collegiate American football players during pre-season, next-day RSI was influenced by sRPE load while next-day perceived recovery appeared more influenced by mechanical load, and the authors suggest a combination of load and recovery metrics may be needed. Professional judgment (not tested by the cited evidence): agree before the week which signals trigger a group plan change and which trigger individual follow-up, to limit chasing multiple comparisons.",
+      "claimIds": [
+        "C12",
+        "C13",
+        "C16"
+      ]
+    }
+  ],
+  "monitoring": [
+    {
+      "label": "Signal versus noise log",
+      "text": "For each tool, keep its test error next to weekly variation so staff can see whether a flagged change exceeds measurement noise.",
+      "claimIds": [
+        "C1",
+        "C22"
+      ]
+    },
+    {
+      "label": "Missingness pattern",
+      "text": "Track who is missing data and when. In the collegiate American football example, missingness rose across the season and weekend game days were poorly captured. Professional judgment (not tested by the cited evidence): in a congested week, check travel and game days first.",
+      "claimIds": [
+        "C9",
+        "C17",
+        "C18"
+      ]
+    },
+    {
+      "label": "Paired load and response",
+      "text": "Pair each load measure with a response measure, for example sRPE load with RSI, or mechanical load with perceived recovery and CMJ FT:CT, so disagreement can be read as load without response or response without load.",
+      "claimIds": [
+        "C6",
+        "C13",
+        "C16"
+      ]
+    }
+  ],
+  "guardrails": [
+    {
+      "text": "Do not assume a single prematch wellness score predicts match output. In elite Australian football with mostly 6 to 8 days between matches, match-day wellness had trivial effects on subsequent external match load, and the authors suggest that recovery period likely restored wellness. Whether this holds within a congested week was not tested. The same authors still promote wellness monitoring, read relative to each player.",
+      "claimIds": [
+        "C3",
+        "C23",
+        "C19"
+      ]
+    },
+    {
+      "text": "The only evidence on alarm threshold trade-offs comes from a laboratory heat-illness warning system, which reported 98% sensitivity, 81% specificity and 0.12 false alarms per hour at a 38.50°C threshold, and whose authors accepted lower specificity for higher sensitivity in military field training. Professional judgment (not tested by the cited evidence): do not borrow alarm thresholds from such settings for team-sport readiness decisions.",
+      "claimIds": [
+        "C14",
+        "C15",
+        "C24"
+      ]
+    }
+  ],
+  "limitations": [
+    {
+      "text": "Most samples are professional or elite Australian football or soccer players, mostly male. The only congested-schedule study had 8 collegiate soccer players. The collegiate American football load and recovery study had 17 players in pre-season. The wellness and match output study had mostly 6 to 8 days between matches.",
+      "claimIds": [
+        "C1",
+        "C2",
+        "C4",
+        "C6",
+        "C16",
+        "C23"
+      ]
+    },
+    {
+      "text": "The load and response frameworks and the reporting recommendations come from expert commentary and models, not from studies that test decision outcomes. The reliability study did not relate its monitoring data to injury or performance outcomes.",
+      "claimIds": [
+        "C12",
+        "C13",
+        "C21"
+      ]
+    },
+    {
+      "text": "False-alarm trade-offs appear only in a laboratory heat-stress study of a wearable warning system, which does not transfer directly to team-sport readiness decisions.",
+      "claimIds": [
+        "C14",
+        "C15",
+        "C24"
+      ]
+    }
+  ],
+  "whatCouldChange": [
+    {
+      "text": "Larger collegiate samples, or HRV measured as a rolling average, could change the finding that wellness was more sensitive than HRV to a congested schedule.",
+      "claimIds": [
+        "C4",
+        "C5"
+      ]
+    },
+    {
+      "text": "Professional judgment (not tested by the cited evidence): local test-retest data showing a low signal to noise ratio for a tool would argue for down-weighting that tool in this team's process.",
+      "claimIds": [
+        "C1"
+      ]
+    }
+  ],
+  "evidenceTension": {
+    "text": "In 8 collegiate soccer players, the Hooper index (higher scores mean worse wellness) rose more clearly than single-time-point HRV during a congested schedule compared with a low-load training week. In 34 elite male Australian football players, match-day wellness had trivial effects on subsequent external match load, but matches were mostly 6 to 8 days apart, which the authors suggest likely restored wellness. The studies ask different questions under different schedules, so wellness may track accumulated load in a congested week while saying little about output after normal recovery. Whether prematch wellness predicts output within a congested week was not tested.",
+    "claimIds": [
+      "C3",
+      "C4",
+      "C23"
+    ]
+  },
+  "sources": [
+    {
+      "libraryId": "380",
+      "sourceFile": "Measurement Characteristics of Athlete Monitoring Tools in Professional Australian Football.pdf",
+      "citation": "Ryan S, Pacecca E, Tebble J, Hocking J, Kempton T, Coutts AJ. Measurement Characteristics of Athlete Monitoring Tools in Professional Australian Football. International Journal of Sports Physiology and Performance. 2020;15(4):457-463.",
+      "year": 2020,
+      "doi": "10.1123/ijspp.2019-0060",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Legacy published record; library summary not full-text reviewed"
+    },
+    {
+      "libraryId": "431",
+      "sourceFile": "No Influence of Prematch Subjective Wellness Ratings on External Load During Elite Australian Football Match Play.pdf",
+      "citation": "Bellinger PM, Ferguson C, Newans T, Minahan CL. No Influence of Prematch Subjective Wellness Ratings on External Load During Elite Australian Football Match Play. International Journal of Sports Physiology and Performance. 2020;(Ahead of Print):1-7. doi:10.1123/ijspp.2019-0395",
+      "year": 2020,
+      "doi": "10.1123/ijspp.2019-0395",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Legacy published record; library summary not full-text reviewed"
+    },
+    {
+      "libraryId": "778",
+      "sourceFile": "Monitoring collegiate soccer players during a congested match schedule- Heart rate variability versus subjective wellness measures.pdf",
+      "citation": "Rabbani A, Karami Baseri M, Reisi J, Clemente FM, Kargarfard M. Monitoring collegiate soccer players during a congested match schedule: Heart rate variability versus subjective wellness measures. Physiology & Behavior. 2018;194:527-531.",
+      "year": 2018,
+      "doi": "10.1016/j.physbeh.2018.07.001",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Full-text screened and published"
+    },
+    {
+      "libraryId": "281",
+      "sourceFile": "Identification of Sensitive     Measures of Recovery After External Load From Football Match Play.pdf",
+      "citation": "Rowell, A. E., Aughey, R. J., Hopkins, W. G., Stewart, A. M., & Cormack, S. J. (2017). Identification of sensitive measures of recovery after external load from football match play. International Journal of Sports Physiology and Performance, 12(7), 969–976.",
+      "year": 2017,
+      "doi": "10.1123/ijspp.2016-0522",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Legacy published record; library summary not full-text reviewed"
+    },
+    {
+      "libraryId": "393",
+      "sourceFile": "Missing data in sport science - A didactic example using wearables in American football.pdf",
+      "citation": "Tenan MS. Missing Data in Sport Science: A Didactic Example Using Wearables in American Football. Sports Med. 2023.",
+      "year": 2023,
+      "doi": "10.1007/s40279-023-01829-w",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Legacy published record; library summary not full-text reviewed"
+    },
+    {
+      "libraryId": "14",
+      "sourceFile": "A commentary of factors related to player availability and its influence on performance in elite team sports.pdf",
+      "citation": "Calleja-González J, Mallo J, Cos F, et al. A commentary of factors related to player availability and its influence on performance in elite team sports. Front Sports Act Living. 2023;4:1077934.",
+      "year": 2023,
+      "doi": "10.3389/fspor.2022.1077934",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Legacy published record; library summary not full-text reviewed"
+    },
+    {
+      "libraryId": "132",
+      "sourceFile": "Data everyhwere, insight nowhere - A practical quadrant-based model for monitoring training load vs response in elite football.pdf",
+      "citation": "Buchheit M, Hader K. Data everywhere, insight nowhere: a practical quadrant-based model for monitoring training load vs. response in elite football. Sport Performance & Science Reports. 2025;258(May):v1.",
+      "year": 2025,
+      "doi": "",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Legacy published record; library summary not full-text reviewed"
+    },
+    {
+      "libraryId": "820",
+      "sourceFile": "Prospective validation of 2B-Cool - Integrating wearables and individualized predictive analytics to reduce heat injuries.pdf",
+      "citation": "Laxminarayan S, Hornby S, Belval LN, Giersch GEW, Morrissey MC, Casa DJ, et al. Prospective Validation of 2B-Cool: Integrating Wearables and Individualized Predictive Analytics to Reduce Heat Injuries. Med Sci Sports Exerc. 2023;55(4):751-764.",
+      "year": 2023,
+      "doi": "10.1249/MSS.0000000000003093",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Full-text screened and published"
+    },
+    {
+      "libraryId": "493",
+      "sourceFile": "Relationship between training load and recovery in collegiate American football players during pre-season training.pdf",
+      "citation": "Jagim AR, Wright GA, Camic CL, Kisiolek JN, Luedke J, Oliver JM, Fischer KM, Jones MT. Relationship between training load and recovery in collegiate American football players during pre-season training. Science and Medicine in Football. 2021;5(4):330-338.",
+      "year": 2021,
+      "doi": "10.1080/24733938.2020.1863455",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Full-text screened and published"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "text": "In 42 professional Australian footballers from one club, sensitivity was calculated as weekly CV% divided by test CV% to give a signal to noise ratio. All measures showed acceptable sensitivity, with signal to noise ratios from 1.3 to 11.1. Ratios of 1.0 to 1.5 were rated acceptable and above 1.5 good.",
+      "evidence": [
+        {
+          "libraryId": "380",
+          "page": 1,
+          "excerpt": "Test-retest reliability (noise) and weekly variation (signal) data were collected from 42 professional Australian footballers from 1 club during a competition season."
+        },
+        {
+          "libraryId": "380",
+          "page": 1,
+          "excerpt": "Sensitivity was calculated by dividing weekly CV% by test CV% to produce a signal to noise ratio. Results: All measures displayed acceptable sensitivity. Signal to noise ratio ranged from 1.3 to 11.1."
+        },
+        {
+          "libraryId": "380",
+          "page": 4,
+          "excerpt": "“acceptable” if 1.0 to 1.5, and “good” if >1.5, adapted from research"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "text": "In 34 elite male Australian football players, perceived wellness was analyzed as a within-individual z score alongside external match load and contextual factors using linear mixed models.",
+      "evidence": [
+        {
+          "libraryId": "431",
+          "page": 1,
+          "excerpt": "A total of 34 elite male Australian football players completed a subjective wellness questionnaire in the days leading into the match"
+        },
+        {
+          "libraryId": "431",
+          "page": 1,
+          "excerpt": "The relationships between perceptions of wellness (within-individual z score), external match load, and contextual factors (match result, match location, and between-matches recovery duration) were analyzed using linear mixed models."
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "text": "In the same elite Australian football study, mixed-effect models showed trivial effects of match-day wellness z score on subsequent external match load metrics.",
+      "evidence": [
+        {
+          "libraryId": "431",
+          "page": 1,
+          "excerpt": "Mixed-effect linear models revealed trivial effects of match-day wellness z score on subsequent external match load metrics."
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "text": "In 8 collegiate soccer players, the Hooper index (scored so that higher means worse wellness) showed a moderate increase of 49.8% after a congested match schedule compared with a low-load training phase, and showed a moderately higher sensitivity than Ln rMSSD to the congested schedule.",
+      "evidence": [
+        {
+          "libraryId": "778",
+          "page": 1,
+          "excerpt": "to compare their sensitivity to a congested match schedule in collegiate soccer players (n = 8)."
+        },
+        {
+          "libraryId": "778",
+          "page": 1,
+          "excerpt": "While the Hooper index showed an almost certainly moderate increase (+49.8%, [33.9; 67.5%]), ES, 1.05 [0.76; 1.34],"
+        },
+        {
+          "libraryId": "778",
+          "page": 1,
+          "excerpt": "The Hooper index showed a moderately higher sensitivity than Ln rMSSD to a congested match schedule"
+        },
+        {
+          "libraryId": "778",
+          "page": 3,
+          "excerpt": "scale (with ‘1’ and ‘7’ representing ‘very very good’ and ‘very very poor’"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "text": "In that collegiate soccer study, heart rate variability was collected at only one time point. The authors note that earlier studies used multiple time points and say their result confirms earlier recommendations for computing a rolling average with at least three weekly time points.",
+      "evidence": [
+        {
+          "libraryId": "778",
+          "page": 4,
+          "excerpt": "whereas only one time point was used for data collection in"
+        },
+        {
+          "libraryId": "778",
+          "page": 4,
+          "excerpt": "computing a rolling average with at least three weekly time points for"
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "text": "In 18 elite football players from one A-League club measured before and after 3 consecutive preseason matches, jump height was reduced immediately postmatch, but FT:CT provided a more sensitive measure of recovery.",
+      "evidence": [
+        {
+          "libraryId": "281",
+          "page": 1,
+          "excerpt": "CMJ performance and salivary hormones were measured in 18 elite football players before (27, 1 h) and after (0.5, 18, 42, 66, 90 h) 3 consecutive matches."
+        },
+        {
+          "libraryId": "281",
+          "page": 1,
+          "excerpt": "kg) from 1 Australian A League club across 3 consecutive preseason"
+        },
+        {
+          "libraryId": "281",
+          "page": 1,
+          "excerpt": "Although jump height was reduced immediately postmatch, FT:CT provided a more sensitive measure of recovery."
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "text": "In the same elite football study, reductions in FT:CT persisted at later postmatch time points than changes in jump height.",
+      "evidence": [
+        {
+          "libraryId": "281",
+          "page": 1,
+          "excerpt": "Reductions in FT:CT persisted at later postmatch time points than changes in jump height."
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "text": "In the same elite football study, match play induced an acute hormonal response with substantial individual variability thereafter.",
+      "evidence": [
+        {
+          "libraryId": "281",
+          "page": 1,
+          "excerpt": "Football match play induces an acute hormonal response with substantial individual variability thereafter."
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "text": "A leading article reports that data are commonly missing from training sessions because of equipment malfunction or athlete non-compliance, and uses an American football example to show that real-world data can violate the missing completely at random assumption.",
+      "evidence": [
+        {
+          "libraryId": "393",
+          "page": 1,
+          "excerpt": "it is common for data to be missing from a particular training session due to equipment malfunction, athlete non-compliance, etc."
+        },
+        {
+          "libraryId": "393",
+          "page": 1,
+          "excerpt": "The goal of this leading article is to show how real-world data can violate the ‘missing completely at random’ assumption in an American Football example"
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "text": "The same article states that violating the missing completely at random assumption results in a biased dashboard, whether data are shown as simple averages or higher-level analytics, and that practitioners should insist on missing data analyses and imputation as needed.",
+      "evidence": [
+        {
+          "libraryId": "393",
+          "page": 1,
+          "excerpt": "Whether data are aggregated on a dashboard as simple histograms and averages or with higher-level analytics, violating the ‘missing completely at random’ assumption results in a biased dashboard."
+        },
+        {
+          "libraryId": "393",
+          "page": 1,
+          "excerpt": "Practitioners need to insist that dashboard developers perform missing data analyses and impute data as needed so valid data-driven decisions can be made."
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "text": "The same commentary recommends having a clear criterion for when to propose player rotations, probably set before and not during matches.",
+      "evidence": [
+        {
+          "libraryId": "14",
+          "page": 6,
+          "excerpt": "Having a clear criterion to clarify when to propose player rotations (probably before and not during the matches)."
+        }
+      ]
+    },
+    {
+      "id": "C13",
+      "text": "A practical model for elite football categorizes monitoring tools by physiological domain (metabolic vs neuromuscular) and by purpose (load vs acute response and adaptation). It places subjective ratings such as sRPE, sleep, fatigue, mood and recovery between quadrants because they likely relate to both domains.",
+      "evidence": [
+        {
+          "libraryId": "132",
+          "page": 5,
+          "excerpt": "Quadrant-based representation of available monitoring tools and metrics categorized by physiological domain (metabolic vs. neuromuscular) and purpose (load vs. acute response & adaptation)."
+        },
+        {
+          "libraryId": "132",
+          "page": 5,
+          "excerpt": "subjective ratings such as sRPE (load) and sleep, fatigue, mood, or recovery (response) are positioned between quadrants, as they likely reflect, influence or are associated with both metabolic and neuromuscular domains."
+        }
+      ]
+    },
+    {
+      "id": "C14",
+      "text": "The 2B-Cool wearable warning system was validated in a crossover heat stress study in an environmental chamber with 11 men and 11 women aged about 20 years.",
+      "evidence": [
+        {
+          "libraryId": "820",
+          "page": 1,
+          "excerpt": "We performed a crossover heat stress study in an environmental chamber, involving 11 men and 11 women (mean ± SD age = 20 ± 2 yr)"
+        }
+      ]
+    },
+    {
+      "id": "C15",
+      "text": "In the context of U.S. military field training, the 2B-Cool authors describe flexibility to modulate the warning threshold to increase sensitivity to heat illness at the expense of ending a training exercise early for certain Service members, and call lower specificity for higher sensitivity an acceptable tradeoff in that setting.",
+      "evidence": [
+        {
+          "libraryId": "820",
+          "page": 9,
+          "excerpt": "gives us the flexibility to modulate the threshold to increase"
+        },
+        {
+          "libraryId": "820",
+          "page": 9,
+          "excerpt": "sensitivity to heat illness and minimize casualties at the ex-"
+        },
+        {
+          "libraryId": "820",
+          "page": 9,
+          "excerpt": "pense of ending a training exercise early for certain Service"
+        },
+        {
+          "libraryId": "820",
+          "page": 12,
+          "excerpt": "tradeoff to help reduce the risk of heat illnesses in the U.S."
+        }
+      ]
+    },
+    {
+      "id": "C16",
+      "text": "In 17 NCAA Division III American football players (6 linemen, 11 non-linemen) over a 14-day pre-season, next-day reactive strength index was influenced by sRPE load, while next-day perceived recovery appeared more influenced by mechanical load. The authors conclude that a combination of training load and recovery metrics may be needed to monitor each player's fatigue and readiness.",
+      "evidence": [
+        {
+          "libraryId": "493",
+          "page": 2,
+          "excerpt": "Seventeen athletes (Linemen, n = 6; Non-linemen, n = 11) participated in the 14-day study"
+        },
+        {
+          "libraryId": "493",
+          "page": 2,
+          "excerpt": "Next-day RSI values were influenced by sRPE load while next-day PRS appears to be more influenced by ML."
+        },
+        {
+          "libraryId": "493",
+          "page": 2,
+          "excerpt": "A combination of training load and recovery metrics may be needed to monitor the fatigue and state of readiness of each player."
+        }
+      ]
+    },
+    {
+      "id": "C17",
+      "text": "In the American football example, 75 of 109 athletes given sleep rings had at least 66% of data recorded. Little's test indicated the data likely violated the missing completely at random assumption, and the response rate decreased across the season.",
+      "evidence": [
+        {
+          "libraryId": "393",
+          "page": 2,
+          "excerpt": "sleep quantity. Of these 109 athletes, 75 had at least 66%"
+        },
+        {
+          "libraryId": "393",
+          "page": 3,
+          "excerpt": "Little’s test indicated that the data likely violated the"
+        },
+        {
+          "libraryId": "393",
+          "page": 3,
+          "excerpt": "Response rate significantly decreased across time (Fig. 1)."
+        }
+      ]
+    },
+    {
+      "id": "C18",
+      "text": "The author explains that with a day-of-week missingness pattern like theirs, a team playing nearly all games on Saturday or Sunday misses much of the data around games, and the data captured are potentially from players who are not traveling.",
+      "evidence": [
+        {
+          "libraryId": "393",
+          "page": 5,
+          "excerpt": "all of its games on Saturday or Sunday, you are not capturing"
+        },
+        {
+          "libraryId": "393",
+          "page": 5,
+          "excerpt": "capturing is potentially for players that are not traveling"
+        }
+      ]
+    },
+    {
+      "id": "C19",
+      "text": "The elite Australian football authors still promote subjective wellness assessment during the season, and suggest considering wellness responses in the context of each player using relative changes in wellness.",
+      "evidence": [
+        {
+          "libraryId": "431",
+          "page": 6,
+          "excerpt": "such, we would still promote the use of subjective wellness"
+        },
+        {
+          "libraryId": "431",
+          "page": 6,
+          "excerpt": "is important to consider wellness responses in the context of"
+        },
+        {
+          "libraryId": "431",
+          "page": 6,
+          "excerpt": "each player, and we suggest using relative changes in wellness"
+        }
+      ]
+    },
+    {
+      "id": "C20",
+      "text": "In the professional Australian football reliability study, perceived soreness and stress were the most sensitive wellness elements, and the authors advise interpreting changes in sleep quality, motivation and fatigue with relative caution.",
+      "evidence": [
+        {
+          "libraryId": "380",
+          "page": 5,
+          "excerpt": "Perceived soreness and stress are the most sensitive elements"
+        },
+        {
+          "libraryId": "380",
+          "page": 4,
+          "excerpt": "week; therefore, coaches and scientists should interpret changes in"
+        },
+        {
+          "libraryId": "380",
+          "page": 4,
+          "excerpt": "sleep quality, motivation, and fatigue with relative caution."
+        }
+      ]
+    },
+    {
+      "id": "C21",
+      "text": "The same authors recommend that changes exceeding the test error in these measures be interpreted alongside other monitoring data. The study did not relate the monitoring data to injury or performance outcomes.",
+      "evidence": [
+        {
+          "libraryId": "380",
+          "page": 5,
+          "excerpt": "proaches; therefore, it is recommended that changes exceeding"
+        },
+        {
+          "libraryId": "380",
+          "page": 5,
+          "excerpt": "the TE in the measures reported in this study be interpreted alongside"
+        },
+        {
+          "libraryId": "380",
+          "page": 5,
+          "excerpt": "The current study did not relate these monitoring data"
+        }
+      ]
+    },
+    {
+      "id": "C22",
+      "text": "The reliability study authors present signal to noise ratio analysis as a method of assessing monitoring tools, and explain that it identifies meaningful changes, those that exceed the noise in the test.",
+      "evidence": [
+        {
+          "libraryId": "380",
+          "page": 1,
+          "excerpt": "Signal to noise ratio analysis is a novel method of assessing measurement characteristics of monitoring tools."
+        },
+        {
+          "libraryId": "380",
+          "page": 1,
+          "excerpt": "meaningful changes (ie, those that exceed the “noise” in the test)."
+        }
+      ]
+    },
+    {
+      "id": "C23",
+      "text": "In the elite Australian football wellness study, between-match recovery periods were mostly 6 to 8 days (four 6-day, thirty 7-day, six 8-day, one 14-day and one 15-day), and the authors suggest this recovery duration is likely sufficient to restore wellness.",
+      "evidence": [
+        {
+          "libraryId": "431",
+          "page": 2,
+          "excerpt": "6-day, thirty 7-day, six 8-day, one 14-day, and one 15-day"
+        },
+        {
+          "libraryId": "431",
+          "page": 6,
+          "excerpt": "current study, it is likely that the between-match recovery duration"
+        }
+      ]
+    },
+    {
+      "id": "C24",
+      "text": "In the 2B-Cool laboratory study, the early-warning system at a 38.50°C core temperature threshold yielded 98% sensitivity, 81% specificity, a 35-minute prediction horizon and 0.12 false alarms per hour.",
+      "evidence": [
+        {
+          "libraryId": "820",
+          "page": 1,
+          "excerpt": "The early-warning system results for a 38.50°C threshold yielded a 98% sensitivity, an 81% specificity, a prediction horizon of 35 min, and a false alarm rate of 0.12 events per hour."
+        }
+      ]
+    },
+    {
+      "id": "C25",
+      "text": "The elite football authors suggest practitioners assess FT:CT from a countermovement jump at least 42 hours postmatch to help inform training prescription.",
+      "evidence": [
+        {
+          "libraryId": "281",
+          "page": 7,
+          "excerpt": "should consider assessing this variable from a CMJ at least 42 hours"
+        }
+      ]
+    },
+    {
+      "id": "C26",
+      "text": "The same authors state that the substantial individual variability and cost of analysis of the hormonal response raise questions about the value of regular salivary hormone monitoring in A-League football.",
+      "evidence": [
+        {
+          "libraryId": "281",
+          "page": 7,
+          "excerpt": "individual variability and cost of analysis of hormonal response"
+        },
+        {
+          "libraryId": "281",
+          "page": 7,
+          "excerpt": "raise questions regarding the utility of regular monitoring of salivary"
+        }
+      ]
+    }
+  ],
+  "assumptions": [
+    "Assumed the team already collects some mix of GPS or accelerometer load, sRPE, a wellness questionnaire, HRV and countermovement jumps.",
+    "Assumed staff can run at least a brief test-retest session on their own athletes outside the congested week to estimate measurement error."
+  ],
+  "coverageGaps": [
+    "Studies that test a decision process for combining disagreeing workload, wellness, neuromuscular and schedule indicators against athlete outcomes",
+    "Evidence on the costs and consequences of false alarms in team-sport readiness monitoring",
+    "Methods for handling multiple comparisons when many daily metrics are screened at once",
+    "Evidence on whether prematch wellness predicts match output within a congested week",
+    "Congested-week monitoring evidence in female or mixed-sex collegiate rosters"
+  ],
+  "leads": [
+    {
+      "libraryId": "664",
+      "citation": "Rebelo, A., Bishop, C., Thorpe, R. T., Turner, A. N., & Gabbett, T. J. (2026). Monitoring training effects in athletes: A multidimensional framework for decision-making. Sports Medicine, 56(7), 1603–1624. https://doi.org/10.1007/s40279-026-02417-4",
+      "note": "Possible lead found by keyword match; not checked for relevance, and its original text was not accessible, so it supports no claim."
+    },
+    {
+      "libraryId": "665",
+      "citation": "Robertson, S., Bartlett, J. D., & Gastin, P. B. (2017). Red, amber, or green? Athlete monitoring in team sport: The need for decision-support systems. International Journal of Sports Physiology and Performance, 12(Suppl 2), S2-73–S2-79. https://doi.org/10.1123/ijspp.2016-0541",
+      "note": "Possible lead found by keyword match; not checked for relevance, and its original text was not accessible, so it supports no claim."
+    },
+    {
+      "libraryId": "636",
+      "citation": "Comyns, T., & Flanagan, E. P. (2013). Applications of the session rating of perceived exertion system in professional rugby union. Strength & Conditioning Journal, 35(6), 78–85. https://doi.org/10.1519/SSC.0000000000000015",
+      "note": "Possible lead found by keyword match; not checked for relevance, and its original text was not accessible, so it supports no claim."
+    }
+  ],
+  "drafter": {
+    "version": "1.2.0",
+    "composer": "claude -p (claude-opus-5-5)",
+    "criticPass": true,
+    "sourcesInPack": [
+      "14",
+      "281",
+      "270",
+      "820",
+      "778",
+      "431",
+      "50",
+      "493",
+      "415",
+      "132",
+      "51",
+      "380",
+      "61",
+      "393"
+    ],
+    "claimsProposed": 26,
+    "claimsRemoved": 1,
+    "notes": [
+      "Removed unverifiable excerpt for C11 (library 14, page 5).",
+      "Removed claim C11: 1 of 3 excerpts could not be verified.",
+      "Dropped unverified claim references from limitations[1].",
+      "Dropped unverified claim references from actions[4].",
+      "Removed guardrails[0]: none of its supporting claims survived verification."
+    ]
+  }
+}
