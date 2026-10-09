@@ -8,6 +8,9 @@ Read this first. Update it before ending every session.
      updated 2026-09-26, including the completed SecondBrain vault push). -->
 
 ## Current state
+- 2026-10-09 (cloud): Batches 19-26 (80 papers, IDs 744-823) are staged in draft PR #9 and waiting on
+  Eric's review. The public site still shows 712 records until the PR is merged. Haiku 5.5 drafting
+  with an Opus claim audit is the ingestion pipeline (`scripts/haiku-batch/`).
 - Baylor Athletics Health & Performance Evidence Library. Shared language lives in
   `CONTEXT.md`; durable trade-offs live in `docs/adr/`.
 - The public Evidence Library has 712 published records: 600 local-source records and
