@@ -1,0 +1,619 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-23-nutrition-hydration",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Nutrition & Hydration shortlist positions 49-60. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 49,
+      "sourceFile": "Cross-validation of the safe supplement screener (S3) predicting consistent third-party-tested nutritional supplement use in NCAA Division I athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 57210,
+        "doi": "10.3389/fnut.2024.1519544",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "A cross-sectional online survey of 725 NCAA Division I athletes from eight Pac-12 athletic departments, with 662 supplement users analysed. The original S3 algorithm classified inconsistent third-party-tested (TPT) supplement users with AUC 0.67 at the 60% cut-off, with sensitivity 68% and specificity 51% in Table 4. A stepwise model added TPT logo recognition and having a name, image, likeness (NIL) deal as predictors, with AUC 0.73 at the 60% cut-off, sensitivity 85% and specificity 40% in Table 6.",
+      "limitations": "The data are self-reported from one conference, and the new predictors come from an exploratory stepwise model fitted and tested on the same dataset, so they need independent validation. The screener misclassifies many consistent users as high risk, which limits its use as an individual screening tool.",
+      "synthesisCaution": "Staff could treat the S3 screener as a reliable way to identify athletes at risk of unintentional doping, when the specificity reported here means many low-risk athletes are flagged and the NIL and logo findings are unvalidated associations.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: said the Discussion claims higher specificity only -> now notes the Discussion reverses both sensitivity and specificity versus Table 6 ('similar but lower sensitivity and higher specificity'); added disclosed award to FW for S3 development; dropped redundant 29% statistic"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "785",
+        "synthesisBatch": "pilot-synthesis-batch-23",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 50,
+      "sourceFile": "Characterizing hydration practices in healthy young recreationally active adults - Is there utility in first morning urine sampling.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 42397,
+        "doi": "10.1123/ijsnem.2022-0203",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Female Athletes",
+        "Male Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "An observational diagnostic-accuracy study in 67 healthy young adults (38 women, 29 men, mean age 20 years) who kept diet logs and collected 24-hour urine for 5 days, then gave one first morning urine (FMU) sample. FMU osmolality and specific gravity correlated weakly to moderately with prior 24-hour and 5-day hydration markers, and an FMU osmolality of 710 mOsm/kg or more identified a previous 24-hour urine osmolality above 500 mOsm/kg with AUC, sensitivity and specificity all above 80% (positive likelihood ratio 5.9). FMU colour showed little utility.",
+      "limitations": "Participants were not athletes, exercised under 2.5 hours a week and avoided exercise for 12 hours before visits, so the criteria describe habitual free-living hydration rather than hydration around training, sweat loss or heat. FMU was sampled once, water intake was self-reported, and the criterion values were derived and tested in the same sample.",
+      "synthesisCaution": "Staff could apply the 710 mOsm/kg FMU cut-off directly to athletes before training, when it was derived in non-athlete young adults without recent exercise and the authors say the criteria still need larger-scale validation.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: EXCLUDE (c) not relevant -> INCLUDE. The paper is a hydration-monitoring validation study in a sport nutrition journal whose stated purpose is detecting underhydration 'prior to competition/training'; a non-athlete sample limits generalisability but does not make it irrelevant under rule (c), consistent with Q53 (15 non-athlete men) being included",
+            "all taxonomy, summary and paper fields: null -> written from the source; DOI 10.1123/ijsnem.2022-0203 printed in header; year 2023 from 'First Published Online: May 24, 2023' (ahead of print, no volume or pages)"
+          ],
+          "residualConcerns": "Relevance call is a judgement: the sample is non-athletes who exercised under 2.5 h/week and the operator may prefer to keep EXCLUDE (c). Key AUC/sensitivity/specificity values for most FMU comparisons are only in Figures 2 and 3, which did not extract; only the >80% statement and +LR 5.9 are quoted from text.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "786",
+        "synthesisBatch": "pilot-synthesis-batch-23",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 51,
+      "sourceFile": "Role of sports psychology and sports nutrition in return to play from musculoskeletal injuries in professional soccer an interdisciplinary approach.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 50639,
+        "doi": "10.1080/17461391.2020.1792558",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Nutrition & Hydration",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Nutrition"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A narrative review and framework paper by an interdisciplinary author group, reporting no original sample. It summarises evidence for the acute injury and functional recovery phases of musculoskeletal injury return to play in professional soccer, and proposes where sports psychology and sports nutrition can be placed within a physician-led milestone model. The authors state that the value of an interdisciplinary approach compared with single-discipline care remains uncertain and needs empirical testing.",
+      "limitations": "The text does not describe a systematic literature search, so the selection of evidence cannot be checked. The recommendations combine the authors' practical experience with research, and no outcome data show that adding psychology or nutrition improves recovery, return-to-play timing or re-injury.",
+      "synthesisCaution": "Staff could read the paper's specific supplement doses and milestone timelines as validated protocols for their own players, when they are the authors' suggestions drawn from limited studies and club practice.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: three authors then et al. -> first six authors then et al., per house rule; journal abbreviated",
+            "paper.limitations: 'employed by a sports nutrition company' -> 'employees of the Gatorade Sports Science Institute, a division of PepsiCo' (disclosure statement); added that Figure 1 timelines are 'estimations only based on FC Barcelona data and clinical experience'",
+            "paper.findings: added that supplement examples come from immobilisation and laboratory studies (e.g. fish oil in 'active females' during limb immobilisation; creatine 'not shown to successfully preserve lean muscle mass during immobilization')"
+          ],
+          "residualConcerns": "Return-to-play framework paper; doses (creatine loading, 5 g fish oil, collagen 15-20 g) are author suggestions, not tested in injured players.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "787",
+        "synthesisBatch": "pilot-synthesis-batch-23",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 52,
+      "sourceFile": "Nutrition for the prevention and treatment of injuries in track and field athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 61400,
+        "doi": "10.1123/ijsnem.2018-0290",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Track & Field"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "A scholarly narrative review by four sport and exercise scientists that summarises epidemiology of injuries in elite track and field and the evidence on nutrition for muscle, bone, tendon and ligament injury. It reports no new sample. The authors state that most muscle evidence comes from laboratory muscle-damage models, that there are no placebo-controlled trials of nutrition after a true muscle injury, and that the bone and tendon evidence is largely extrapolated from other populations, animal models or small studies.",
+      "limitations": "The review does not describe a systematic search, and much of the cited nutrition evidence is from laboratory muscle damage, animal, or small case studies rather than elite athletes with true injuries. Several claims about gelatin and collagen rest on one crossover study and on unpublished engineered-ligament data.",
+      "synthesisCaution": "Staff could read the suggested doses in Table 1 and the protein, gelatin and omega-3 recommendations as proven injury treatments, when the authors describe them as having limited direct evidence in injured athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "The authors' conclusion is more confident than their evidence (e.g. gelatin 'may reduce the risk of injury or accelerate return to play'); the record correctly frames this as limited and indirect.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "788",
+        "synthesisBatch": "pilot-synthesis-batch-23",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 53,
+      "sourceFile": "Hydration Marker Diagnostic   Accuracy to Identify Mild Intracellular and Extracellular Dehydration.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 41011,
+        "doi": "10.1123/ijsnem.2019-0022",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A randomised crossover laboratory study in 15 healthy young men, who completed euhydration, exercise-induced intracellular dehydration (48 h fluid restriction) and furosemide-induced extracellular dehydration trials, each producing mild body mass loss of about 2%. Thirst on a 0-9 scale and urine osmolality each had ROC-AUC of at least 0.78 for both dehydration types. Using a common threshold of 4 or more on the thirst scale, sensitivity was 99% and specificity 87% for intracellular dehydration, and 71% and 87% for extracellular dehydration (Table 4).",
+      "limitations": "The sample was 15 young men, the dehydration was induced artificially in a thermoneutral laboratory, and the thresholds were derived and tested on the same data without independent validation. The authors note that thirst may be altered in women, older adults, people taking medications that cause dry mouth, and in heat, so the thirst threshold may not transfer to those groups.",
+      "synthesisCaution": "Staff could treat the thirst 0-9 threshold of 4 as a validated field test for all athletes, when it was tested in 15 young men under controlled laboratory dehydration and the extracellular accuracy is only moderate.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: added Healthy Athletes ('15 young healthy men'; exclusion of disease and medication)",
+            "paper.practicalImplications: urine osmolality as a simple 'second check' -> notes its Youden thresholds differ by dehydration type (Table 4: >595 ID, >341 ED), so no single urine osmolality cut-off covers both; added urine colour to the ID-only markers"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "789",
+        "synthesisBatch": "pilot-synthesis-batch-23",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 54,
+      "sourceFile": "Coingestion of carbohydrate and protein on muscle glycogen synthesis after exercise - A meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 45989,
+        "doi": "10.1249/MSS.0000000000002476",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A systematic review and random-effects meta-analysis of 20 crossover studies (23 intervention groups; 176 participants, 158 men and 18 women) comparing carbohydrate-plus-protein with carbohydrate alone for muscle glycogen synthesis after exercise. The overall effect was 0.13 (95% CI -0.04 to 0.29), not significant. When the carbohydrate-plus-protein drink contained more energy than carbohydrate alone, the effect was 0.26 (95% CI 0.04 to 0.49), and when energy was matched it was -0.05 (95% CI -0.23 to 0.13).",
+      "limitations": "The pooled studies are small, mostly male, laboratory-based crossover trials with substantial heterogeneity (I2 = 71%), and the energy subgroup effect rests on 13 non-isocaloric groups. Publication bias was detected overall and in the non-isocaloric subgroup (P = 0.03), driven by positive studies, so the positive subgroup estimate may be inflated.",
+      "synthesisCaution": "Staff could read the energy-based positive finding as proof that adding protein improves recovery or performance, when the overall effect was null, glycogen synthesis was not shown to change performance, and the positive finding depends on extra energy rather than on protein alone.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: said pooled effects are 'sensitive to ... assumptions' about imputed correlations -> removed; the authors ran sensitivity analyses at r = 0.50 and 0.90 and found 'no difference in our results'; publication bias now stated as overall and non-isocaloric",
+            "paper.practicalImplications: 'athletes taking 1.2 g/kg/h should not expect protein to add unless total energy rises' (not what the subgroups test) -> describes the add-on vs replace-at-equal-energy findings and flags the 0.9 + 0.3 g/kg/h recommendation as the authors' extrapolation"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "790",
+        "synthesisBatch": "pilot-synthesis-batch-23",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 55,
+      "sourceFile": "Efectiveness of Education Interventions Designed to Improve Nutrition Knowledge in Athletes- A Systematic Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 18,
+        "extractedCharacters": 74369,
+        "doi": "10.1007/s40279-019-01157-y",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Collegiate",
+        "Youth / Adolescent",
+        "Professional / Elite",
+        "Female Athletes",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "A systematic review of 32 manuscripts (13 randomised controlled trials and 19 single-arm pre/post studies) testing nutrition education for athletes, with 2,180 participants (mean age 17.4 years, 66% female, mostly US university-level). Knowledge was measured with a scored questionnaire, and 30 of 35 interventions (85.7%) showed significant gains, with RCT intervention groups rising 19.2% versus 2.2% in controls. Only 15.6% of studies used a well-validated knowledge tool.",
+      "limitations": "The included studies are short, mostly single-arm, often unblinded, and measure knowledge rather than dietary behaviour or performance. Most knowledge tools had limited validation, and only two studies assessed retention at follow-up, so the review cannot identify the most effective education method or dose.",
+      "synthesisCaution": "Staff could read the large knowledge gains as proof that a nutrition education programme changes what athletes eat or how they perform, when the review measured only knowledge scores from mostly unvalidated questionnaires.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: 'pooled effect size of 1.72 is strongly affected by one study with ES 17.1' was an unsupported inference -> states that no meta-analysis was done ('meta-analysis was not conducted') and effect sizes ranged widely; 'non-blinded design' clarified ('no study attempted to blind participants, main outcomes or conceal intervention assignment')",
+            "paper.practicalImplications: removed generic 'check content against current guidance'; added the authors' recommendation to validate the knowledge instrument first and the handout-only comparison finding",
+            "paper.rtp: 'included athletes were healthy and training' not stated (one study included athletes with physical disabilities) -> removed"
+          ],
+          "residualConcerns": "Paper reports inconsistent counts of significant interventions (30 of 35 in Results/abstract; 27 of 32 studies and 29 of 35 in Discussion); record uses the Results figure.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "791",
+        "synthesisBatch": "pilot-synthesis-batch-23",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 56,
+      "sourceFile": "Interaction Between Caffeine and Creatine When Used as Concurrent Ergogenic Supplements_- A Systematic Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 52318,
+        "doi": "10.1123/ijsnem.2021-0262",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "A PRISMA systematic review of 10 placebo-controlled randomised trials (eight crossover, two parallel) with 170 healthy participants (157 men, 13 women), mostly aged 18 to 25, who were physically active or trained. Acute caffeine after creatine loading did not reduce the benefit in three studies, one study found that only acute caffeine helped, and chronic combined use gave mixed results: one study reported synergy, two reported interference and three reported no interaction. Eight of the ten trials were rated low risk of bias.",
+      "limitations": "Eight of the ten trials had fewer than 20 participants, the protocols and exercise tests varied widely, and the review did not pool effects statistically. The chronic-use conclusions rest on very few small trials, so the review cannot give a dose or timing recommendation for concurrent use.",
+      "synthesisCaution": "Staff could read the finding that creatine loading does not blunt acute caffeine as a general green light for stacking the two supplements daily, when the chronic-use evidence is conflicting and drawn from small trials.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: said acute caffeine could be used 'without ... loss of creatine benefit' -> those three studies tested whether creatine loading blunted caffeine's effect ('ingestion of CAF maintained its ergogenic effect despite the previous intake of CRE loading'); doses corrected to the 5-6 mg/kg used in those trials",
+            "populations: Mixed / Unspecified -> Adult / Recreational (participants were mostly 'physically active' adults aged 18-25)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "792",
+        "synthesisBatch": "pilot-synthesis-batch-23",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 57,
+      "sourceFile": "Peri-operative protein or amino acid supplementation for total joint arthroplasty - A systematic review and meta-analysis.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) not relevant to athletes, sport, exercise performance or athlete health. The review pools 19 studies of protein or amino acid supplementation in total knee and hip arthroplasty patients (903 patients, mostly older adults with osteoarthritis); no athletes are studied, and sport is referenced only as a comparison literature in the discussion.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 58,
+      "sourceFile": "Supplementation of probiotics and   its effects on physically active individuals and athletes - Systematic   review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 59208,
+        "doi": "10.1123/ijsnem.2018-0227",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Healthy Athletes",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Systematic review of 24 controlled trials with 1,680 healthy adults who exercise, including athletes and physically active people (67.5% male, mean age 30.9 years). Five studies reported fewer respiratory symptoms or illness episodes with probiotics, several others found no effect, and most studies found no effect on immune or inflammatory markers. The authors judged the performance evidence weak.",
+      "limitations": "No pooled analysis was performed, so the conclusions rest on narrative comparison of trials. The included trials were small and used different strains, doses, durations and outcomes, and several mixed recreational and elite athletes.",
+      "synthesisCaution": "Staff could read the mixed respiratory-symptom results as proof that probiotics prevent illness in athletes, when the trials were small and varied widely in product and protocol.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: sex of sample stated but not tagged -> added Male Athletes and Female Athletes ('most of them being male (n = 1,134, 67.5%)')",
+            "findings: respiratory count understated other positive trials -> notes authors cite six studies for 'five articles' and that West 2014 and Gleeson 2011 also reported fewer episodes",
+            "limitations: added conflict between abstract/discussion claim of improved immunologic markers and results ('Most studies did not find the effects of probiotic supplementation on immunity')"
+          ],
+          "residualConcerns": "Source internally inconsistent on respiratory and immune counts; staff summary relies on the results section.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "793",
+        "synthesisBatch": "pilot-synthesis-batch-23",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 59,
+      "sourceFile": "The paradoxical effect of creatine monohydrate on muscle damage markers - A systematic review and meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 23,
+        "extractedCharacters": 78808,
+        "doi": "10.1007/s40279-022-01640-z",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Nutrition",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Healthy Athletes",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Systematic review and meta-analysis of 23 parallel-group placebo-controlled trials (469 healthy participants, about 10% female, mean age about 24 years) of creatine monohydrate around muscle-damaging exercise. After a single bout, creatine was associated with lower indirect damage markers at 48-90 h (SMD -1.09, p = 0.03) but not at 24-36 h; after several weeks of training, damage markers were higher with creatine at 24 h (SMD 0.95, p = 0.04). Muscle force and soreness differences were not significant.",
+      "limitations": "Participants ranged from sedentary and older adults to trained athletes, the sample was about 90% male, and protocols and markers varied widely with high heterogeneity. Several subgroup estimates rest on few studies, and the chronic-training effect was not significant at 48 h (p = 0.06).",
+      "synthesisCaution": "Staff could read the chronic-training reversal as proof that creatine increases muscle damage in athletes, when it rests on few small studies and the authors call for confirmation.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations/limitations: 'Most participants were untrained or recreationally active' was wrong -> Table 1 shows about 13 of 23 studies in trained or athlete samples (e.g. 'M, ironman triathletes', 'Elite rowers', 'M, trained athletes') alongside sedentary and older samples",
+            "tldr/practicalImplications: 'reduce markers for a day or two' -> acute reduction was significant only at 48-90 h ('significantly greater in the placebo group for the acute training response (p = 0.03)'; 24-36 h p = 0.45)",
+            "findings: inflammation reported as lower alongside oxidative stress -> inflammation differences were not significant ('no significant inter-group differences were evident (p > 0.05)'); added that soreness was not significant",
+            "methods: quality rated by one author, not two ('The second author (AKR) rated each study'); databases named; Egger's test limited to outcomes with ten or more studies",
+            "populations: added Male Athletes and Female Athletes (sex stated, females 10.4%)"
+          ],
+          "residualConcerns": "Source labels some pairwise comparisons inconsistently; the chronic-training subgroup rests on few studies.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "794",
+        "synthesisBatch": "pilot-synthesis-batch-23",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 60,
+      "sourceFile": "Dietary inorganic nitrate as an ergogenic aid - An expert consensus derived via the modified Delphi technique.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 22,
+        "extractedCharacters": 95348,
+        "doi": "10.1007/s40279-022-01701-3",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "A modified Delphi consensus of 12 expert panel members voted over three rounds on 222 statements about dietary nitrate as an ergogenic aid. Consensus (over 80% agreement) was reached for 39 statements (20 yes, 19 no), and 134 statements (60.4%) were judged to have insufficient evidence. Agreed points included benefit at low to moderate aerobic fitness, doses of 8-16 mmol acutely or 4-16 mmol/day chronically taken 2-4 h before exercise, and safety of acute doses up to about 16 mmol.",
+      "limitations": "This is expert opinion from 12 panelists, not a systematic evidence synthesis, and most of the 222 statements had no consensus. The panel reported little clinical-population experience and no consensus on sex, age or specific sports.",
+      "synthesisCaution": "Staff could read the recommended doses and timing as proven for their athletes, when the panel reached consensus on only 39 of 222 statements and judged most of the evidence insufficient.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "practicalImplications: 'Staff should not expect benefit in highly trained athletes above about 60 ml/kg/min' overstated a non-consensus point -> the panel reached no consensus for that group; authors say effects 'appear to be diminished in highly trained individuals'",
+            "athleteDev: 'the panel did not support benefit' -> panel reached no consensus; authors judge effects diminished",
+            "practicalImplications: added authors' safety advice ('athletes may be best advised to consume nitrate in the form of beetroot juice or other vegetable-derived products ... rather than via nitrate salts')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "795",
+        "synthesisBatch": "pilot-synthesis-batch-23",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

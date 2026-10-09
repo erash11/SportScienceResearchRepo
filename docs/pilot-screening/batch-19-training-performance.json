@@ -1,0 +1,550 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-19-training-performance",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Training & Performance shortlist positions 1-12. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 1,
+      "sourceFile": "The Role of Speed, Change of Direction, and Momentum by Position and Starting Status in Division 1 Collegiate Football Players.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text (no DOI string appears in the text at all). Everything else is complete and readable; the operator may verify the DOI externally.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 2,
+      "sourceFile": "Should I stay or should I go pro - Early NFL draft entry by NCAA FBS underclassmen.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) not athlete health or performance evidence: the article is a sports-economics study of the NFL draft-entry decision by NCAA FBS underclassmen. Games played and team wins are used as human capital and option-value proxies for a labor-market choice, not as athlete performance or health outcomes. Identity check passed (the text is this article and the DOI 10.1177/15270025231222632 is printed on page 1), so this is a judgment call the operator may override.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 3,
+      "sourceFile": "What Does Mental Rest Mean to Professional Athletes - A Study of National Football League Players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 84573,
+        "doi": "10.1016/j.psychsport.2025.103029",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Qualitative Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Brain Health & Psychology",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Qualitative description study in which 16 male NFL players from eight franchises (13 African American, 3 White; mean age 26.5 years) were interviewed once, for 13 to 45 minutes, about mental rest. Codebook thematic analysis tested the Eccles-Kazmier model of mental rest, which was built on college athletes. Players described sleep and wakeful resting, and six of seven wakeful resting experiences in the model were found; departures were that job precarity and family income pressure drove constant thinking about football, and that public recognition prevented switching off in public places.",
+      "limitations": "The study is based on one interview per player, a convenience sample, and one analyst, so it describes players' experiences and cannot estimate how common any experience is. It does not measure recovery, performance, injury or health.",
+      "synthesisCaution": "Staff could read the players' statements that poor mental rest hurts concentration, performance and health as measured effects, when they are the players' own perceptions from interviews.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: 'no escape ... were not in the model' read as new resting experiences -> reworded as departures from the model (authors: 'We also found no evidence of previously undocumented mental resting experiences').",
+            "practicalImplications: comparative claim that rest at home 'may help more than rest days spent in public' and off-season advice not tested -> limited to the authors' applied suggestions ('brainstorm resting activities', 'easiest integration points', 'audit of third place locations')."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "744",
+        "synthesisBatch": "pilot-synthesis-batch-19",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 4,
+      "sourceFile": "Spatiotemporal kinematics during top speed sprinting in male intercollegiate track and field and team sport athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 41480,
+        "doi": "10.1080/14763141.2024.2423281",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Track & Field",
+        "Soccer",
+        "Baseball / Softball",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Collegiate",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Single-session study of 98 injury-free male varsity athletes from three universities: 28 track and field athletes and 70 team sport athletes (41 lacrosse, 18 soccer, 11 baseball). Each athlete's fastest of two 40 m sprints was filmed in the 30 to 40 m zone and analysed in 2D. Across all athletes, contact time, step rate, step length, flight length and duty factor correlated meaningfully with top speed (|r| or |rho| 0.51 to 0.78), while flight time and contact length were weakly correlated. In matched subgroups at about 9.3 m/s (slow track, n = 14; fast team sport, n = 22), team sport athletes had longer contact time and contact length, shorter flight time and flight length, and a higher duty factor, with similar step rate and step length.",
+      "limitations": "The study is cross-sectional with a single 2D sagittal-plane video view, one rater, only male athletes, and running shoes instead of spikes, and the subgroup comparison has small samples (n = 14 and 22). It measured top speed but not force, energy cost, joint angles, game performance or injury, so it cannot show that either running pattern is more effective or safer.",
+      "synthesisCaution": "Staff could take the team sport running pattern as a faster or better technique to train toward, when the paper shows only that the two groups reached similar top speeds by different mechanics and did not test whether either pattern is better.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: said no 'performance' outcome was measured, but top speed was measured -> now says no game performance or injury outcome.",
+            "limitations: added sneakers instead of spikes ('track spikes were not permitted for TF athletes') and the 7.2 kg body-mass difference between subgroups.",
+            "athleteDev: 'avoid coaching a single flight-based target' went beyond the data -> now notes the authors' point that interventions toward a track model 'might correspond with increases in top speed'."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "745",
+        "synthesisBatch": "pilot-synthesis-batch-19",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 5,
+      "sourceFile": "Acute Changes in Hamstring Injury Risk Factors After a Session of High-Volume Maximal Sprinting Speed Efforts in Soccer Players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 51205,
+        "doi": "10.1177/19417381241283814",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Adult / Recreational",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Prospective observational case series of 15 healthy, trained male amateur soccer players (age 21.0 years, no myotendinous injury in the prior 6 months) who skipped regular training during testing. Each completed 10 maximal 40 m sprints with 3 minutes of rest, and sprint, strength, range of motion, pelvic tilt and muscle damage markers were measured at baseline and at 24, 48 and 72 hours. Top speed (V0) stayed reduced through 48 hours (9.05 to 8.65 m/s, ES -0.71), 30 m sprint time was slower at 48 and 72 hours (4.83 s vs 5.11 s at 72 hours, ES 0.59), posterior chain strength stayed reduced through 48 hours (non-dominant leg) and 72 hours (dominant leg), and CK and soreness rose; the pelvic tilt change was not significant (P = 0.06) and range of motion did not change significantly.",
+      "limitations": "This is a single-group study with no control condition, a sample of 15 amateur players, and no injury outcome, so the changes cannot be attributed to the sprint session alone and do not show that the risk factors predict hamstring injury. The authors describe it as a pilot study.",
+      "synthesisCaution": "Staff could read the non-significant pelvic tilt trend and the overall 'altered risk factors' claim as proof that sprinting changes pelvic structure and raises injury risk, when the tilt change was not significant and no structure or injury was measured.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "practicalImplications: 'Plan recovery ... for at least 48 to 72 hours' implied a tested minimum -> 'up to 48 to 72 hours', with 72 hours noted as the last time point.",
+            "findings/evidenceSummary: 'fell at 48 hours' -> 'reduced through 48/72 hours' (source: 'decreases ... were detected until 48 hours ... and 72 hours'); 30 m time at 48 h added; noted players refrained from regular training.",
+            "athleteDev: 'allow time before the next high-speed exposure' -> states the study did not test timing of the next exposure."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "746",
+        "synthesisBatch": "pilot-synthesis-batch-19",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 6,
+      "sourceFile": "Reliability and Sensitivity of Nocturnal Heart Rate and Heart-Rate Variability in Monitoring Individual Responses to Training Load.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 37376,
+        "doi": "10.1123/ijspp.2022-0145",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Two sub-studies of recreational male and female runners (mean age 36) using wearable nocturnal heart rate and HRV recordings. In 15 runners, nights after two identical low-intensity sessions were compared (ICC 0.97 to 0.98 for HR, 0.92 to 0.97 for LnRMSSD, 0.91 to 0.96 for LnHF). In 23 runners, the night after a 3000 m test was compared with the night after a rest day, and HR rose while LnRMSSD and LnHF fell in the 4-hour and full-night segments but not in the morning segment.",
+      "limitations": "The reliability sample was 15 runners and the sensitivity sample was 23, both recreational, from a single protocol with one maximal test. Only subjective readiness to train was used as an external reference, so the study does not show that the changes predict performance, injury or overreaching.",
+      "synthesisCaution": "Staff could take the high ICCs as proof that nocturnal HRV is a sensitive monitor of training readiness, when the sensitivity data come from one maximal test in recreational runners and the only readiness reference was a single subjective 0 to 10 rating.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution: 'the link to readiness is a single correlation' -> correlations were found for LnRMSSD and LnHF in 4H and FULL (e.g., LnHF 4H r = .61); the limit is that readiness was one subjective rating."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "747",
+        "synthesisBatch": "pilot-synthesis-batch-19",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 7,
+      "sourceFile": "Reliability and validity of the end range hamstring strength test with handheld dynamometry.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 25902,
+        "doi": "10.26603/001c.94011",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Reliability and validity study in 20 healthy, active participants (recreational runners to elite track and field) tested with a handheld dynamometer in a lengthened hamstring position and with an isokinetic Biodex, on two days 7 to 10 days apart. Handheld dynamometer scores correlated strongly with the Biodex (r = 0.87 right, 0.911 left), intra-rater ICC was 0.91 to 0.93 and inter-rater ICC was 0.71 to 0.83. Authors report SEM of 8.2% to 8.5% for intra-rater testing and 11.2% to 16.1% for inter-rater testing.",
+      "limitations": "The sample was small (n = 20) and included no injured athletes, so the test has not been validated for detecting post-injury deficits or readiness to return to play. Reliability was tested with two testers of different sex and experience, and the first day was not blinded.",
+      "synthesisCaution": "Staff could treat any change on this test as a real rehabilitation change, when the intra-rater minimal detectable difference is about 24% to 26% and inter-rater differences are larger still.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: 'no systematic bias' was attached to the HHD vs Biodex comparison -> it refers to test days and testers ('no systematic bias between any of the dynamometer tests, with respect to separate test days and testers'); added Bland-Altman mean differences of 12 N and 22 N.",
+            "limitations: added convenience sample including hospital employees ('employed by departments of the hospital or were from local sporting clubs') and that sex is not reported."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "748",
+        "synthesisBatch": "pilot-synthesis-batch-19",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 8,
+      "sourceFile": "The test-retest reliability of force plate-derived parameters of the countermovement push-up as a power assessment tool.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 4,
+        "extractedCharacters": 17428,
+        "doi": "10.1123/jsr.2018-0419",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Test-retest reliability study in 10 male college athletes with at least 1 year of Olympic lifting training, who completed 3 maximal countermovement push-ups on force plates on two occasions 7 days apart. Paired t tests found no significant differences between sessions for any measure. Reliability was moderate to very high across derived parameters (ICC 0.88 to 0.98, CV 1.7% to 14.1%), with smallest detectable differences of 7.5% for peak force and 8.6% for mean force, while rate of force development had poor reliability (CV 14.1%, ICC 0.88).",
+      "limitations": "The sample is small (n = 10), all male, and in one laboratory with a single protocol, so the reliability estimates may not transfer to other populations or test set-ups. The study does not test sensitivity to training change or relate the measures to sport performance.",
+      "synthesisCaution": "Staff could read high ICCs as meaning the push-up can detect training change, when the study only tested two sessions in 10 men; rate of force development fell outside acceptable reliability and impulse, although reliable by ICC and CV, needed about a 26% change to exceed measurement error.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution: 'only peak and mean force were reliable here' was wrong -> flight time, PF, MF and impulse had 'moderate to high reliability (CV = 1.7%-6.9%, ICC = .96-.98)'; only RFD was 'outside acceptable standards'.",
+            "findings/practicalImplications: impulse described as reliable by ICC/CV but with SDD 26.1%; vague 'use impulse changes only after larger changes are confirmed' replaced with the 26% figure.",
+            "tldr: 'so they can be used to track upper-body power' -> notes responsiveness was not tested (authors: 'tests that are deemed reliable are not necessarily the most effective for monitoring performance changes').",
+            "limitations: added abstract vs table CV range conflict and internally inconsistent Table 1 SEM/SDD values."
+          ],
+          "residualConcerns": "Table 1 values do not reconcile with the stated SEM and SDD formulas (e.g., mean force SEM 1.7 N vs SDD 50.3 N; flight time SDD 0.0), so the SDD percentages may be unreliable; a reviewer should decide whether to cite them.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "749",
+        "synthesisBatch": "pilot-synthesis-batch-19",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 9,
+      "sourceFile": "Stem cell injections in knee      osteoarthritis- a systematic review of the literature.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) Not relevant to athletes: the included trials enrolled patients with knee osteoarthritis (mostly patients having surgery or other knee treatment), not athletes. The athlete link appears only in the introduction, which notes high osteoarthritis prevalence among retired elite athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Borderline relevance call. The review is published in BJSM by sports medicine authors, funded partly by the Dutch National Olympic Committee, and frames knee osteoarthritis as common in retired elite athletes, but every included trial enrolled general knee osteoarthritis patients (mean ages about 38-57) and no athlete data are reported. An operator who treats regenerative-injection questions from athletes or former athletes as in scope could reasonably switch this to INCLUDE; the DOI 10.1136/bjsports-2016-096793 is printed on every page.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 10,
+      "sourceFile": "Strength training as superior, dose-dependent and safe prevention of acute and overuse sports injuries- a systematic review, qualitative analysis and metaanalysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 52149,
+        "doi": "10.1136/bjsports-2018-099078",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Youth / Adolescent",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Systematic review, qualitative analysis and meta-analysis of six randomised controlled trials of strength training for sports injury prevention, with 7738 participants aged 12-40 years, mostly soccer players plus military recruits. The cluster-adjusted pooled relative risk was 0.338 (95% CI 0.238 to 0.480) with I2 = 0%, and a post hoc meta-regression linked higher weekly volume and intensity to larger injury reductions.",
+      "limitations": "Only six trials were pooled, with different populations, injury definitions and programmes, and the dose-response result is an association across trials from a post hoc analysis. The review includes only English-language peer-reviewed reports.",
+      "synthesisCaution": "Reading the pooled 66% reduction as applying to any sport or any strength programme, when the dose-response is a post hoc, across-trial association.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: '10% increase ... about 4.3 percentage points lower injury risk' was ambiguous -> stated as the pooled relative risk falling from 0.338 to 0.295 ('4.3 percentage point (and 13% relative) risk reduction, from RR 0.338 ... to RR 0.295')",
+            "paper.athleteDev: 'season-long injury prevention plan' overstated programme length (four of six trials ran 10-14 weeks) -> pre-season or in-season plans",
+            "populations: added Youth / Adolescent ('4564 female adolescent players', '54 youth elite players')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "750",
+        "synthesisBatch": "pilot-synthesis-batch-19",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 11,
+      "sourceFile": "Systematic review of motion capture in virtual reality - Enhancing the precision of sports training.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 23,
+        "extractedCharacters": 89600,
+        "doi": "10.3233/AIS-230198",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Basketball",
+        "Soccer",
+        "Other Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review (PRISMA-guided) of 54 studies on motion capture combined with virtual reality in sports training, drawn from 987 records published 2018-2023. The authors summarize applications in fitness, cognitive and mental training, sport-specific training, team tactics and rehabilitation, mostly from small pilot or experimental studies, and report no pooled effect estimate.",
+      "limitations": "No pooled effects or per-study risk of bias results are reported, so the strength of individual findings cannot be judged from the review. Many included studies are small, and several involve non-athlete populations such as stroke or cerebral palsy patients.",
+      "synthesisCaution": "Reading the review as evidence that VR motion capture improves athletic performance, when it maps a technology landscape with mostly pilot-level findings.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "751",
+        "synthesisBatch": "pilot-synthesis-batch-19",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 12,
+      "sourceFile": "Talent Identification in Sport- A     Systematic Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 57339,
+        "doi": "10.1007/s40279-017-0803-2",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Gymnastics",
+        "Rugby"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Youth / Adolescent",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "PRISMA systematic review of 20 longitudinal or retrospective studies (1990-2015) comparing performance variables between highly skilled and less-skilled elite athletes, most often in soccer, gymnastics and rugby league. The authors report that results were highly variable: sprint ability separated skill levels in eight studies, many other variables did not, and studies combining physical, psychological and sport-specific measures were the ones most often finding predictive value.",
+      "limitations": "Only 20 studies met the strict criteria, mostly from Europe and mostly male samples, so conclusions about female and younger athletes are weak. Skill-level definitions and study designs differed widely, so the review cannot identify reliable predictors.",
+      "synthesisCaution": "Treating 'little is known' as proof that talent cannot be identified, or treating the sprint result as a validated selection test.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'the four mixed-measurement studies were the ones that most often found predictive utility' -> authors report all four found some predictive utility ('It was likely no coincidence that all four of these studies [50-53] found some predictive utility')"
+          ],
+          "residualConcerns": "The text is internally inconsistent: one mixed-measurement study (Figueiredo [52]) is described as unable to find any variable discriminating the top two skill groups, yet the discussion says all four found predictive utility.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "752",
+        "synthesisBatch": "pilot-synthesis-batch-19",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

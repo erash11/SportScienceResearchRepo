@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-48-brain-health-psychology",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Brain Health & Psychology queue positions 24-82. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 24,
+      "sourceFile": "Concussion symptoms among athletes - Preinjury factors predict postinjury factors.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 51945,
+        "doi": "10.1097/HTR.0000000000000562",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Sports Medicine",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Retrospective analysis of 290 high school and collegiate-aged athletes (168 aged 14 to 17, 122 aged 18 to 21) from a northern California concussion surveillance programme (2008 to 2017), using preseason and post-injury Post-Concussion Symptom Scale scores taken on average 3 days after injury. Preinjury cognitive-sensory symptoms and female sex predicted the postinjury cognitive-migraine-fatigue factor in the combined sample, sleep-arousal symptoms predicted somatic and sleep factors in 14 to 17 year olds, and affective symptoms predicted affective and somatic factors in 18 to 21 year olds.",
+      "limitations": "The design is retrospective and uses raw symptom scores from one programme, without control for activity, sleep, medication, effort or honesty of reporting. The models explain a modest share of variance, with adjusted R-squared mostly between 0.06 and 0.14, so they cannot predict an individual athlete's symptoms.",
+      "synthesisCaution": "Using these predictors as a prognostic score for an individual athlete, when the study is exploratory and explains only a small share of the variation in postinjury symptoms.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.methods: 'Preinjury PCSS scores were grouped into four preinjury and four postinjury symptom factors' -> pre- and postinjury scores grouped using a previously published factor structure ('As identified from Kontos et al'); added corrected alpha value ('corrected alpha level P = .0083')",
+            "paper.limitations: added that the reported P = .009 exceeds the paper's own corrected alpha, and that the Discussion and Conclusion overstate predictors relative to Table 5 ('predicted by cognitive-sensory preinjury symptoms for both age groups'; 'with premorbid affective complaints predicted affective, sleep, and somatic' vs Table 5 18-21 y: Affective, Somatic)"
+          ],
+          "residualConcerns": "The 18 to 21 year old affective-to-somatic result (P = .009, or .008 in the abstract) may not meet the paper's own Bonferroni threshold of .0083; the record still reports it as the authors do but flags it.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1044",
+        "synthesisBatch": "pilot-synthesis-batch-48",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 33,
+      "sourceFile": "Considering the effects of cannabinoids and exercise on the brain - A narrative review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 26,
+        "extractedCharacters": 115030,
+        "doi": "10.3390/sports13090320",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of 243 references (PubMed and Google Scholar searches, mostly from 2010 onward) on overlapping effects of the endocannabinoid system and exercise on brain-relevant inflammation, cerebrovascular function and neuroplasticity. The authors report that most included work is mechanistic, that direct cannabinoid-exercise interaction studies are limited, and that CBD given with strenuous training in athletes showed little evidence of an anti-inflammatory effect in the cited trials.",
+      "limitations": "The search was broad and author-led, with no inclusion criteria or formal quality appraisal, and the authors acknowledge the potential bias of a narrative approach. Most mechanistic support comes from animal, cell and general population studies rather than athletes.",
+      "synthesisCaution": "Staff could read the review as showing that cannabinoids and exercise combine to protect the athlete brain, when the authors describe that interaction as untested and speculative.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.methods: said no quality appraisal at all -> informal quality check by journal credibility and method-result alignment ('verified the methodological quality of included references by considering the academic journal credibility')",
+            "paper.rtp: described a case report and a case series as two sources -> one cited source [136], described as both a case series and a case report in the text ('a case series suggested that administration of CBD ... supported recovery in females experiencing post-concussion syndrome [136]')",
+            "screeningLimitations: added absence of inclusion criteria"
+          ],
+          "residualConcerns": "Design kept as Narrative Review: keyword search with two-author title/abstract screening but no inclusion criteria or systematic protocol, and the authors call it narrative. Funding note: related projects of one author are funded by the NFL and NFL Players Association Joint Pain Management Committee; conflicts declared none.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1045",
+        "synthesisBatch": "pilot-synthesis-batch-48",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 43,
+      "sourceFile": "Creatine supplementation and brain health.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 45550,
+        "doi": "10.3390/nu13020586",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Professional / Elite",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "Short narrative review of creatine supplementation and brain health, covering brain creatine levels, cognition, sleep deprivation and mental fatigue, and mild traumatic brain injury. The authors report that human studies show possible brain creatine increases of about 5 to 10 percent, mixed cognitive results, and only limited human data on mild traumatic brain injury (mainly in children), with supporting evidence otherwise from animal models.",
+      "limitations": "No search method is described, so the selection of studies cannot be checked. The authors note that human brain creatine responses are small, that protocols and populations vary widely, and that the mild traumatic brain injury evidence rests mainly on animal and theoretical data.",
+      "synthesisCaution": "Staff could read the mild traumatic brain injury section as support for routine creatine use after concussion, when the authors say that human trials are still scarce and that their own advice for high-risk groups is a judgment rather than a tested recommendation.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.athleteDev: omitted null soccer findings -> added ('no effect was observed on passing accuracy in non-stressed soccer players')",
+            "paper.practicalImplications: did not state the authors' own position on high-risk groups -> added it with its stated basis ('encouraging supplementation for populations who are at high risk for mTBI might be considered more prudent')"
+          ],
+          "residualConcerns": "Relevance call: general-population review; kept as INCLUDE because it covers athlete cognition (rugby, mountain biking, soccer) and concussion. Three of four authors declare ties to a creatine manufacturer (AlzChem). Concussion content.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1046",
+        "synthesisBatch": "pilot-synthesis-batch-48",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 81,
+      "sourceFile": "Does increased core temperature alter cognitive performance during exercise-induced heat strain - A narrative review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 18,
+        "extractedCharacters": 83301,
+        "doi": "10.1152/japplphysiol.00070.2023",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Training & Performance",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Review of 31 studies (27 with extractable core temperature data) that measured cognitive performance and core temperature during exercise under heat stress, using a systematic search of CINAHL, Embase and PubMed to 11 May 2022 with PRISMA reporting and PROSPERO registration. The 31 studies included 499 participants (mean 16 per study, 41 females in eight studies). The authors report that core temperature change alone did not reliably predict cognitive performance, that changes above 1 C were needed to affect performance across the three domains, and that accuracy measures were more affected than response time.",
+      "limitations": "The authors did not run a meta-analysis, core temperature data could be extracted for only 27 studies, and tasks and protocols were heterogeneous. All 31 studies were rated as having a moderate overall risk of bias (some concerns) on the Cochrane tool.",
+      "synthesisCaution": "Staff could read the reviewed tasks (reaction time, memory recall, Stroop) as proven heat-sensitive measures, when the authors say many tasks were tested only once or at small core temperature changes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: athlete sex tags on a mixed recreational, well-trained, military and occupational sample -> Adult / Recreational, Mixed / Unspecified ('recreationally (n = 18) or well-trained (n = 11)')",
+            "evidenceSummary/methods: databases listed as 'PubMed, CINAHL and other' -> CINAHL, Embase and PubMed ('Three online databases were used')",
+            "evidenceSummary: 'typical 16 participants' -> mean 16, 499 participants total ('499 participants within the 31 studies (M = 16)')",
+            "screeningLimitations/limitations: risk of bias 'mostly some concerns or unclear' -> all studies moderate ('all studies returned a moderate risk of bias result')",
+            "methods: effect sizes 'calculated for 27 studies' -> per cognitive task at peak core temperature difference; 27 refers to core temperature extraction",
+            "studyDesign: kept Systematic Review / Meta-analysis despite 'narrative review' title; PRISMA, PROSPERO and a described database search (library precedent)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1047",
+        "synthesisBatch": "pilot-synthesis-batch-48",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 82,
+      "sourceFile": "Does mental fatigue negatively affect outcomes of functional performance tests.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 38,
+        "extractedCharacters": 55419,
+        "doi": "10.1249/MSS.0000000000002323",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized counterbalanced crossover study in 14 healthy adults (4 women, 10 men; age 22 +/- 1 years) who completed a 90-minute 100% incongruent Stroop task (mental fatigue) and a 90-minute documentary (control). Functional performance tests (single-leg hop, countermovement jump, Y-Balance test, and the Reactive Balance Test) were done before and after each task. The authors report that subjective mental fatigue rose after the Stroop task, and that Reactive Balance Test accuracy fell from 91.11% to 86.16% after mental fatigue but was 91.62% after control (interaction p = 0.023 in the results text). No condition by time interaction was found for the single-leg hop, countermovement jump, Y-Balance test, or Reactive Balance Test reaction time.",
+      "limitations": "Only 14 participants, each tested once per condition in a laboratory, with no physiological or neurophysiological measures; the Stroop and Eriksen-Flanker tasks did not show a behavioural decline. The sample was healthy, physically active adults rather than athletes, and the only affected outcome was one accuracy measure.",
+      "synthesisCaution": "Staff could read the drop in Reactive Balance Test accuracy as evidence that mentally fatigued athletes are injury-prone or not ready to return to sport, but the study did not measure injury, athletes, or return-to-play decisions.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes, Female Athletes, Healthy Athletes on a non-athlete sample -> Adult / Recreational ('Fourteen healthy participants... physical activity 3322.9 MET-min/week')",
+            "findings: added small condition effects for SLH and CMJ favouring control ('A condition effect was observed for the SLH... and the CMJ')",
+            "athleteDev: removed extrapolation to meetings and video sessions; tied to the 90-minute Stroop finding and noted no athlete testing",
+            "screeningLimitations: added that the Eriksen-Flanker task also showed no behavioural decline"
+          ],
+          "residualConcerns": "Statistics report F(1.0, 12.0) for functional tests, which implies 13 participants analysed rather than 14; the paper does not explain this. Abstract p = 0.024 vs results p = 0.023 for the RBT accuracy interaction.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1048",
+        "synthesisBatch": "pilot-synthesis-batch-48",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

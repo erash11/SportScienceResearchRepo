@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-40-brain-health-psychology",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Brain Health & Psychology queue positions 7-89. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 7,
+      "sourceFile": "Association between magnetic resonance imaging use and recovery time following concussion - A CARE consortium study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 35781,
+        "doi": "10.1080/15438627.2025.2453684",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Propensity-matched cohort of 90 NCAA student-athletes with sport-related concussion from four CARE Consortium Advanced Research Core sites: 45 had a research MRI within 72 h and 45 matched athletes did not (82% male). Multivariable Cox models adjusted for SCAT total symptom severity found no significant difference in time to return-to-play initiation (median 10 vs 7 days; HR 0.75, 95% CI 0.28 to 1.21) or to unrestricted return to play (median 17 vs 12 days; HR 0.77, 95% CI 0.29 to 1.26).",
+      "limitations": "The matched sample is small (45 pairs drawn from 2,072 eligible athletes), so the confidence intervals are wide and do not exclude a large delay in recovery. The study is limited to contact-sport NCAA athletes, is mostly male, and could not establish whether the MRI or the symptom assessment came first.",
+      "synthesisCaution": "Staff could read the non-significant result as proof that an MRI does not affect recovery; the confidence intervals do not rule out a substantial delay, and the authors' conclusion goes further than the data allow.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: vague note that CIs are 'not symmetric on the log-hazard scale' -> stated that they are symmetric on the linear HR scale (0.75 +/- 0.47; 0.77 +/- 0.48), so likely computed on the HR scale; added the <24 h (Table 2 footnote 'Post-injury scores collected <24 hours') vs '>24 h post-SRC' (discussion) inconsistency",
+            "paper.findings: added Table 3 p values (0.23 and 0.30)"
+          ],
+          "residualConcerns": "Concussion paper. The authors conclude 'MRI use post-SRC does not affect recovery' from a non-significant result in 45 matched pairs with wide intervals; the record frames this as no significant association, not evidence of no effect. The likely HR-scale CI computation should be confirmed by a reviewer.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "958",
+        "synthesisBatch": "pilot-synthesis-batch-40",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 18,
+      "sourceFile": "Attention-deficit_hyperactivity                       disorder in elite athletes- a narrative review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 48208,
+        "doi": "10.1136/bjsports-2019-100713",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Narrative review of the literature on the diagnosis, prevalence, performance effects, comorbidity and management of ADHD in elite athletes, drawn from a database search by one author plus reference lists. The authors estimate ADHD prevalence in student and elite athletes at about 7% to 8%, and report that 101 Major League Baseball players (about 8.4%) received therapeutic use exemptions for ADHD medication in the 2017 to 2018 cycle. The review does not report a pooled or quantitative analysis.",
+      "limitations": "The search method is not systematic: no inclusion criteria, quality appraisal or pooled analysis are reported. Much of the supporting evidence comes from general-population, child or non-athlete studies, and the athlete-specific literature is sparse.",
+      "synthesisCaution": "Staff could read the 7% to 8% prevalence as a measured figure for their own athletes, when the authors present it as an estimate built on sparse and mixed sources.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Citation is the online-first version ('Br J Sports Med 2019;0:1-5', epub ahead of print, first published 16 May 2019); final volume and pages are not printed. Content touches stimulant medication, cardiac and heat risk, so flagged for clinical spot check.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "959",
+        "synthesisBatch": "pilot-synthesis-batch-40",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 25,
+      "sourceFile": "Baseline Concussion Clinical Measures Are Related to Sensory Organization and Balance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 40553,
+        "doi": "10.1249/MSS.0000000000001789",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Sports Medicine",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Retrospective cross-sectional analysis of baseline concussion assessments in 207 NCAA Division I varsity athletes (mean age 19.3 years, 65% male, 25% with a concussion history). Faster reaction time and better executive function were associated with higher Sensory Organization Test composite and vestibular ratio scores, and faster reaction time alone was associated with the visual ratio; sex, concussion history and symptom severity did not contribute to the models.",
+      "limitations": "Baseline-only data from one institution, mostly male and mostly contact or collision sport athletes, so the results may not generalize or reflect post-injury status. The models explained modest variance (R2 0.10 to 0.18).",
+      "synthesisCaution": "Reading the cognition and balance link as evidence that cognitive testing predicts concussion risk or recovery, which a baseline cross-sectional study cannot show.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'Reaction time alone explained 12% of the variance in the composite score' -> reaction time added 11% and executive function 6% after covariates (Table 4 change in R2 0.11 and 0.06; 'their respective contributions of 11% and 6%')"
+          ],
+          "residualConcerns": "Concussion-related paper; all other claims, DOI, citation and metadata checked against the text and found accurate.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "960",
+        "synthesisBatch": "pilot-synthesis-batch-40",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 45,
+      "sourceFile": "Bipolar and psychotic disorders in elite athletes- a narrative review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 61517,
+        "doi": "10.1136/bjsports-2019-100685",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance",
+        "Coaching",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Narrative review of diagnosis, prevalence, performance impact and management of bipolar and psychotic disorders in elite athletes, defined as professional, Olympic or collegiate level. One author searched five databases (repeated November 2018), screened 420 references, and retained 12 that met the criteria, supplemented by related references. The authors find no reliable prevalence data and little athlete-specific treatment evidence, so most recommendations rest on expert opinion and general population guidance.",
+      "limitations": "The evidence base is small, with 12 references meeting criteria and no athlete-specific medication trials. Search and selection were done by one author with no quality appraisal, so the review is a structured narrative rather than a systematic synthesis.",
+      "synthesisCaution": "Staff could take the medication tables as sport-specific prescribing guidance, when the authors describe them as expert opinion extrapolated from general population care.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.athleteDev: 'performance staff should treat them as early warning signs and refer, not adjust training alone' was not stated in the source -> source-based statement that overactivity may be obscured by training and that 'Vigorous exercise may even precipitate or perpetuate mania ... elite athletes with bipolar disorder may be limited in the maximum amount of exercise they can safely undertake'"
+          ],
+          "residualConcerns": "Clinically sensitive: medication tables (Table 4) are expert opinion only. Other claims, DOI, year and the 12-of-420 search description checked against the text.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "961",
+        "synthesisBatch": "pilot-synthesis-batch-40",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 87,
+      "sourceFile": "Chronic Traumatic Encephalopathy Neuropathologic Change Is Not Associated With Suicide in Former Athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 50602,
+        "doi": "10.1111/sms.70086",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review and critique of a 2025 systematic review and meta-analysis, adding other postmortem and cohort studies on CTE neuropathologic change (CTE-NC) and suicide in former athletes. Of the four postmortem studies used for the suicide analysis, the largest (Daneshvar, 631 former football players) reported suicide less frequent in donors with CTE-NC (13.7% vs 26.3%), while McKee (2023) found no difference (52.4% vs 60.7%). The author concludes that the best available evidence shows CTE-NC is not associated with depression, suicidality or suicide.",
+      "limitations": "The literature is selected non-systematically by a single author whose own studies are among those reviewed, and the postmortem samples are small, selected brain-donor series. The author's Table 1 shows mixed directions across eight comparisons, and the largest study reports a significant inverse association, which is not the same as no association.",
+      "synthesisCaution": "Staff could read not associated with suicide as settled evidence that CTE does not affect suicide risk, when the author's own table shows mixed direction and the samples are brain donors rather than living athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "decision: confirmed INCLUDE as Narrative Review, not a commentary (labeled 'REVIEW'; synthesizes eight postmortem studies, additional postmortem studies and nine cohort studies with a comparison table)",
+            "limitations: draft said the review does not reconcile the inverse association (author does discuss it: 'less likely, not more likely') -> replaced with actual internal conflicts: Iverson 2023 row '4/10' vs text 'There were no cases of definitive CTE-NC ... 10 cases ... rated as having features'; Daneshvar OR 0.64 (CI 0.30-0.71) vs counts 62/451 and 46/180",
+            "findings: added suicidality-during-life data (29.5% vs 33.7%) and specified which small series showed higher rates",
+            "practicalImplications: draft framed its own 'not established either way' answer -> author's actual advice (convey CISG knowledge gap, 'instill hope and confidence that with treatment they can improve')",
+            "populations: removed Professional / Elite and Adult / Recreational -> Mixed / Unspecified (brain donors span amateur, youth, professional and military)",
+            "screeningLimitations: added single-author selection and disclosed forensic consulting"
+          ],
+          "residualConcerns": "Clinically sensitive (suicide). Single-author critique with disclosed forensic and NFL-funded work; the library should not present its no-association conclusion as settled. Table counts partly mix definitive CTE-NC with 'features'.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "962",
+        "synthesisBatch": "pilot-synthesis-batch-40",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 89,
+      "sourceFile": "Chronic traumatic encephalopathy research viewed in the public domain - What makes headlines.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 36263,
+        "doi": "10.1080/02699052.2020.1725843",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A PubMed search (15 October 2018) identified 270 publications on CTE in sport, 1987 to 2018. Most (60%) lacked primary data collection, 39% concluded a contact sport-CTE association, 19% concluded no association and 41% were neutral. In multivariable regression, higher Altmetric scores were linked to primary data collection, CTE in the title, and football discussion, and JIF was linked to higher scores only among association-concluding papers.",
+      "limitations": "The outcome is online attention (Altmetric scores), not athlete health, so the paper cannot show which CTE findings are correct. It used one database, and the coding of conclusions and football mention involved judgment.",
+      "synthesisCaution": "Staff may read the Altmetric results as evidence that contact sport causes CTE or that the CTE literature is biased, when the paper only describes how that literature is publicized.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: added the JIF interaction OR, which the draft omitted (\"3-point-increase ORAdjusted = 2.11; 95%CI = 1.24-3.59\")",
+            "limitations: the identical ORs appear in the abstract, results and Table 2 alike, so 'check against Table 2' was replaced with a note that all three print the same values; added the Table 1 footnote conflict (\"No/neutral included 110 publications positing no association and 51 remaining neutral\" vs text \"19% concluded no association and 41% remained neutral\")"
+          ],
+          "residualConcerns": "Design is coded Systematic Review / Meta-analysis because the authors call it a systematic PubMed review, but it is a bibliometric analysis of attention scores with no exclusion criteria. One author (Solomon) discloses consulting for the NFL Health and Safety Department. The no-association vs neutral split conflicts between text and Table 1 footnote.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "963",
+        "synthesisBatch": "pilot-synthesis-batch-40",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

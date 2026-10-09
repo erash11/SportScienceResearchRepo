@@ -1,0 +1,905 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-50-training-performance",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Training & Performance queue positions 1-92. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 1,
+      "sourceFile": "Early Warning of Suspected Doping   from Biological Passport Based on Multivariate Trends.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(a) source identity mismatch. The filename names 'Early Warning of Suspected Doping from Biological Passport Based on Multivariate Trends'. The text is a different article: Daniels D, Roshan D, Lewis NA, et al. 'Early Warning System for Player Recovery? A Series of Case Studies Illustrating the Application of Individualised Adaptive Reference Ranges in the Longitudinal Blood Monitoring of English Premier League Soccer Players.' Biomarkers, accepted author version posted online 27 Feb 2025, DOI 10.1080/1354750X.2025.2473724. It is an original investigation applying individualised adaptive reference ranges to point-of-care C-reactive protein data from EPL players in the 2019-2020 season.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [
+            "exclusionReason: expanded description of the article actually in the file (authors, journal, online date, study type); decision unchanged"
+          ],
+          "residualConcerns": "The correct doping-passport PDF needs to be located; the soccer CRP article in this file may be worth cataloguing separately under its own filename.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 6,
+      "sourceFile": "Effect of Individual Environmental Heat-Stress Variables on Training and Recovery in Professional Team Sport.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 38546,
+        "doi": "10.1123/ijspp.2019-0837",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Prospective field study of 45 male professional Australian Rules football players over an 8-week preseason, giving 579 outdoor training observations. Ambient temperature, relative humidity and solar radiation were recorded each session and related to GPS external load, heart rate and RPE, and to well-being and heart-rate variability over the following 48 hours, using mixed-effects models. Solar radiation was associated with less distance and less high-speed running during training, and relative humidity with higher RPE and stress; higher ambient temperature was associated with more distance and high-speed running.",
+      "limitations": "The design is observational, from one club, in heat-acclimatized players during one Australian summer, so the associations cannot be read as causal or generalized to other squads or climates. Recovery effects were mostly null, and heart-rate variability was measured once daily, so the recovery findings are weak.",
+      "synthesisCaution": "Staff could read the paper as showing that solar radiation and humidity cause a fixed loss of work capacity, when the effects are model-based associations within one club's training sessions.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: temperature effect on distance reported as the results-text value only (19.2 m/min; 95% CI, 18.0 to 21.4 m/min; P < .001) instead of giving both values; abstract 19.7 conflict kept in limitations",
+            "findings: added humidity body mass loss (-215 g) and temperature-linked rises in mean HR (4.8 bpm) and RPE (0.3 AU) so the 'more work with higher temperature' result is not read in isolation",
+            "limitations: added convenience sample and single subtropical site; clarified which value is reported"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1060",
+        "synthesisBatch": "pilot-synthesis-batch-50",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 16,
+      "sourceFile": "Effect of velocity loss during squat training on neuromuscular performance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 67575,
+        "doi": "10.1111/sms.13967",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized trial in 33 young men (physically active sports science students with 1 to 3 years of resistance training, injury-free) who completed 8 weeks of squat training at the same relative loads, with sets stopped at 10%, 30% or 45% velocity loss (n = 11 per group after one dropout per group). All groups improved squat strength and muscle endurance; the only significant group by time interaction was for countermovement jump, where the 10% group (11.9%) gained more than the 45% group, and sprint changes favored the 10% group descriptively (-2.4% vs -1.8% and -0.5%) without a significant interaction. No EMG change was significant in any group.",
+      "limitations": "Participants were physically active students rather than competitive athletes, all were men, and there was no non-training control group. Strength was estimated from a load-velocity equation rather than measured directly, and the Abstract and Discussion describe jump and sprint advantages for the 10% group more broadly than the between-group statistics support.",
+      "synthesisCaution": "Staff could read the 10% velocity-loss result as an optimal set-stopping rule for all athletes, when the study used one exercise, young recreational men and an 8-week period.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed Male Athletes and Healthy Athletes because participants were 'physically active sports science students', not athletes; kept Adult / Recreational",
+            "findings/evidenceSummary/tldr: sprint advantage for 10% stated as if established -> no significant interaction for sprint ('A significant \"time x group\" interaction (p < 0.05) was only found for CMJ'); VL45% did not improve sprint ('except in sprint performance')",
+            "limitations: added the Abstract sprint claim to the Abstract-versus-Results conflict",
+            "practicalImplications/athleteDev: removed claims of larger sprint gains"
+          ],
+          "residualConcerns": "Sample is physically active students rather than athletes.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1061",
+        "synthesisBatch": "pilot-synthesis-batch-50",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 17,
+      "sourceFile": "Effect_of_time_zone_and_game_time_changes_on_team.17.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "Extracted text is unreadable: text/Q17.txt contains only five form-feed characters (1 character extracted from a 5-page PDF). No title, author, DOI, methods, or results can be read, so identity and eligibility cannot be checked against the filename (which describes a study of time zone and game time changes on team performance). Needs re-extraction or a manual read of the PDF.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Source text is unreadable (5 form-feed characters from a 5-page PDF). Identity, eligibility, year and DOI cannot be checked; needs re-extraction or OCR before any record can be written.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 18,
+      "sourceFile": "Effectiveness of Accentuated Eccentric Loading - Contingent on Concentric Load.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 37211,
+        "doi": "10.1123/ijspp.2019-0769",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Crossover laboratory study of 21 resistance-trained men (age 24.0 [4.2] y) who completed back-squat sets with accentuated eccentric loading (AEL, 120% 1-RM eccentric via weight releasers) or traditional loading at 65% and 80% 1-RM. At 65%, AEL was followed by faster eccentric velocity and greater eccentric power, and faster concentric velocity and higher mean power in repetitions 3 and 4; at 80%, eccentric power was greater but concentric velocity and power did not improve. The authors report higher concentric peak force after AEL at both loads (187.8 N at 65%; 133.8 N at 80%).",
+      "limitations": "This is a single-session acute study with no training outcome, follow-up, or sport task, so it cannot show chronic adaptation. It tests one exercise (back squat) with weight releasers at two concentric loads in healthy men.",
+      "synthesisCaution": "Staff could read the 65% concentric gain as a general AEL benefit for squat training, when the same protocol gave no concentric velocity or power gain at 80% 1-RM and the effect was measured within one session.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes, Healthy Athletes, Mixed / Unspecified -> Adult / Recreational (sample is 'Resistance-trained men (N = 21)', not athletes)",
+            "paper.practicalImplications: 'first repetition after weight release may be slower with AEL' generalised a finding seen only at 80% -> limited to 80% concentric mean velocity ('concentric mean velocity of repetition 1 was lower after AEL80 compared with TRA80')"
+          ],
+          "residualConcerns": "Table 1 shows a significant protocol-by-repetition interaction for concentric mean power at 80% (F2,40 = 14.53, P < .01) while the Discussion says no concentric power increase occurred at 80%; the record follows the Discussion and flags this in limitations. Abstract gives P = .01 and Results P < .01 for concentric peak force at 65%.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1062",
+        "synthesisBatch": "pilot-synthesis-batch-50",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 24,
+      "sourceFile": "Effects of Resistance and Speed on Electromyographic Activity of Thigh and Gluteal Muscles in Elite Athletes throughout Resisted Sprint Running.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 53,
+        "extractedCharacters": 84674,
+        "doi": "10.1249/MSS.0000000000003689",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Track & Field",
+        "Rugby",
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Within-session comparison of 37 injury-free elite athletes (27 women, 10 men; track and field, rugby sevens and bobsleigh) who sprinted 40 m unresisted and against robotic horizontal resistance equal to 25% and 75% of body mass (sled-equivalent). Surface EMG from eight thigh and gluteal muscles, modelled against normalised speed, showed hamstring stance-phase activity rising with speed (+17.9% unresisted) and falling with resistance, with quadriceps showing the opposite pattern. Biceps femoris long head showed the largest speed-related increase and semitendinosus the largest resistance-related decrease among the hamstrings.",
+      "limitations": "Acute, single-session EMG study with surface electrodes, two resistance levels, a fixed condition order (unresisted, then 25%, then 75%), and conditions compared at normalised rather than absolute speed. Sprint distance differed by condition (40, 25 and 20 m), 12 of 49 recruited athletes were excluded, and the sample mixed sex and sports, so the results describe activation patterns, not training adaptation or neural drive.",
+      "synthesisCaution": "Staff could read these EMG patterns as proof that resisted sprints selectively train the quadriceps or specific hamstring heads, or as a basis for return-to-sport progression, when the study is a single session in injury-free athletes and measures no training or injury outcome.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: 'et al.' after 5 authors -> 6 authors listed (adds Hollville E) per house rule",
+            "paper.tldr: 'In elite sprinters' -> sample is track and field, rugby sevens and bobsleigh athletes ('elite track and field (10 females and 5 males), rugby seven (14 females and 5 males) and bobsleigh (3 females)')",
+            "paper.athleteDev: 'the resistance chosen should match the acceleration phase being trained' was untested prescriptive advice -> states this was not tested",
+            "paper.findings: added Table 2 range and that the 60% to 66% proportions were not significant ('Only the ST and SM muscles presented no significant change in the R75 condition'); late-swing BFlh claim scoped to the unresisted sprint-phase comparison",
+            "screeningLimitations: added fixed condition order (authors note no crossover design) and 49 recruited, 37 analysed",
+            "sports: Mixed / General Sport -> Track & Field, Rugby, Other Sport (bobsleigh)"
+          ],
+          "residualConcerns": "Results text says BFlh stance proportion went 'from 97% in R0 to 74% in R75' but Table 2 shows BFlh R0 = 100 (97 is BFsh). Discussion claims 'consistent increases ... for 90% of the participants', which overstates Table 2. The authors' practical suggestions (earlier resisted sprinting after hamstring injury; GMed-focused exercises) are untested and are flagged as such in the record.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1063",
+        "synthesisBatch": "pilot-synthesis-batch-50",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 37,
+      "sourceFile": "Effects of forearm wearable resistance during accelerated sprints - From a standing start position.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 36942,
+        "doi": "10.1080/02640414.2021.1943185",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Track & Field"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Collegiate",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Acute within-athlete comparison in 14 healthy male track and field athletes (age 20.6 years, 100 m best 11.40 s) doing 30 m sprints from a standing two-point start, unloaded versus with 2 percent body mass forearm wearable resistance. The authors report no significant change in 10 m or 30 m sprint time, a significant drop in step frequency in acceleration phases 2 and 3, and no significant kinetic differences.",
+      "limitations": "This is a single-session study with 14 athletes and no training intervention, so it cannot show training adaptations or long-term overload benefit. The abstract's step velocity result is not supported by the step velocity values in Table 2.",
+      "synthesisCaution": "Staff could read the lower step frequency as proof that forearm loading overloads sprint mechanics, but this was an acute effect and the paper does not test whether training with these loads improves sprint performance.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: added Adult / Recreational alongside Collegiate; participants described as 'recreational track and field male athletes' and as 'healthy collegiate male individuals'",
+            "paper.methods: specified one unloaded and two loaded trials with the fastest loaded trial analysed ('The one UL trial, and the fastest FWR trials were used')",
+            "paper.findings: replaced draft percentages with Table 2 values; clarified contact/flight time and step length changes were non-significant",
+            "paper.limitations: added that starred step frequency effect size CIs include zero and contact time CIs exclude zero, further table/text conflicts",
+            "paper.practicalImplications: 'did not noticeably slow' -> 'did not significantly slow' (mean times were 0.04 s slower)"
+          ],
+          "residualConcerns": "Statistical reporting is internally inconsistent (abstract step velocity claim vs Table 2; CIs vs significance flags). Competition level is described as both recreational and collegiate.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1064",
+        "synthesisBatch": "pilot-synthesis-batch-50",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 38,
+      "sourceFile": "Effects of four different velocity-based training programming models on strength gains and physical performance.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text; the only DOI present (10.1055/a-1171-2287) is a reference-list citation to a different paper.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "decision: DEGRADED confirmed; only DOI in text is reference-list 10.1055/a-1171-2287, header shows 'J Strength Cond Res XX(X): 000-000, 2020' with no own DOI",
+            "populations: removed Male Athletes and Healthy Athletes -> Adult / Recreational; participants were 'physically active sport science students', not athletes",
+            "paper.findings: 'constant group trained with heavier absolute loads than the others' -> slower average MPV and higher mean relative intensity (Table 2: MRI-MPV ~67.5% vs ~62.5% 1RM); CMJ range made exact (2.0 to 4.2 cm)",
+            "paper.limitations: 'no untrained control group' -> no non-training control group",
+            "paper.athleteDev: removed unsupported 'athlete preference' framing; noted untested in athletes and higher frequencies"
+          ],
+          "residualConcerns": "Own DOI needs external lookup before upgrade. Online-first year 2020 used (issue year not printed).",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 39,
+      "sourceFile": "Effects of horizontally vs vertically loaded resistance exercises on performance and muscle architecture.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 45380,
+        "doi": "10.23736/S0022-4707.24.16218-4",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Six-week randomized training study in 19 resistance-trained adults (15 men, 4 women), with 10 in a horizontally loaded program (hip thrust, reverse hyperextension, horizontal jumps) and 9 in a vertically loaded program (squat, step-up, vertical jumps), both with equal total repetitions. Group by time interactions favored horizontal training for 1RM hip thrust (Table III means +21.0 versus +1.8 percent) and standing long jump (+7.0 versus +1.0 percent), and vertical training for 1RM squat (+9.0 versus -0.3 percent) and vastus medialis thickness (+4.0 versus -9.0 percent), with no interaction for countermovement jump or 20 m sprint.",
+      "limitations": "The groups were small (9 and 10 analyzed, below the 11 per group planned) and the program lasted only six weeks. Many reported statistics are internally inconsistent or implausible (text versus table percentages, an effect size of 0.998, p-values that do not match their F or r values, and muscle thickness reported in mm at values near 1.5 to 4), so exact magnitudes should not be relied on.",
+      "synthesisCaution": "Staff could read the program differences as established transfer to sport performance, but sprint and vertical jump outcomes did not differ between programs, participants were not athletes, and the statistical reporting has multiple errors.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed Male Athletes and Female Athletes -> Adult / Recreational; sample was 'Nineteen resistance-trained individuals', not athletes",
+            "evidenceSummary/findings: replaced text-only percentages with Table III/IV means per abstract-vs-table rule (hip thrust +21.0 vs +1.8%, squat +9.0 vs -0.3%, SLJ +7.0 vs +1.0%, VM thickness +4.0 vs -9.0%) and noted the text values",
+            "paper.abstract: 'Vertical jump improved similarly in both groups' -> only a time main effect (P = 0.047), changes below the stated 5.4 cm minimal difference",
+            "paper.limitations/screeningLimitations: added implausible statistics (eta2 0.998; F = 10.946 with P = 0.050; r = -0.487 with P = 0.004 in n = 19; muscle thickness in 'mm' at 1.4-4.2), abstract vs Methods group characteristics conflict",
+            "paper.practicalImplications/athleteDev: removed claim that both programs improved vertical jump similarly as a positive finding"
+          ],
+          "residualConcerns": "Statistical reporting in this paper has multiple errors; magnitudes are uncertain. Muscle thickness units appear to be cm mislabeled as mm.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1065",
+        "synthesisBatch": "pilot-synthesis-batch-50",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 41,
+      "sourceFile": "Effects of low load resistance training with vascular     occlusion on the mechanical properties of muscle and tendon.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text and no DOI appears in the reference list. All other fields are complete; the operator can verify the DOI externally.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes and Healthy Athletes tagged for a non-athlete sample -> Mixed / Unspecified ('Nine healthy young men ... voluntarily participated')",
+            "findings/tldr: added that patellar tendon stiffness and CSA did not change in either protocol ('the stiffness values of the patella tendon did not change after training for both protocols'); MVC and stiffness between-protocol p values reworded as not significant",
+            "limitations: added PCSA table-vs-text discrepancy (table 75.6 to 81.3 LLO, 74.5 to 79.0 HL vs text 6.1% LLO and 7.5% HL)",
+            "screeningLimitations/athleteDev: stated that the sample is non-athletes of unstated training status"
+          ],
+          "residualConcerns": "Text and Table 1 disagree on relative gains in muscle volume and PCSA (the text values look swapped or computed per participant). Kept DEGRADED: no DOI printed anywhere in the text. Sample is healthy young men, not athletes; retained as exercise-training evidence under the relevance rule.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 45,
+      "sourceFile": "Effects of recent cannabis consumption on eye-tracking and pulillometry.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) not relevant to athletes, sport, exercise performance or athlete health. The study is a pilot of eye-tracking and pupillometry after inhaled recreational cannabis in 159 cannabis users and 30 controls, with no athlete sample, no sport or exercise outcome, and no athlete framing in the text.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Identity confirmed (Frontiers in Neuroscience 2024, DOI 10.3389/fnins.2024.1358491). Exclusion (c) upheld: sample is cannabis users recruited from dispensaries and controls; the only sport link is the authors' concussion-clinic affiliation and concussion references, with no athlete, sport or exercise framing.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 46,
+      "sourceFile": "Effects of resistance exercise combined with vascular     occlusion on muscle function in athletes..pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 29304,
+        "doi": "10.1007/s00421-001-0561-5",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Three-group experimental study of 17 young male elite rugby players over 8 weeks (twice weekly): low-intensity knee extension at about 50% 1RM with vascular occlusion (LIO, n = 6), the same load without occlusion (LI, n = 6), and a control group that did not train (n = 5). The LIO group improved isometric and isokinetic knee extension strength (isokinetic gain 14.3% vs 3.2% in LI, averaged across velocities), quadriceps cross-sectional area (+12.3%, p = 0.002) and fatigue resistance, while the LI group showed no significant strength change.",
+      "limitations": "Only 5 to 6 players per group, with no randomization described, MRI measured in the occlusion group only, and no tendon or injury outcome. Results come from one 8-week block in highly trained players and may not transfer to other athletes or to injury settings.",
+      "synthesisCaution": "Staff could read this as proof that occlusion training is a better strength method than heavy loading, but the study compared occlusion with a light-load control only and did not test heavy training.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "practicalImplications/athleteDev: implied a between-group size comparison -> size was measured in the occlusion group only ('Measurements were made only for the LIO group'); strength and endurance comparisons kept",
+            "year: checked, 2002 is correct (journal header 'Eur J Appl Physiol (2002) 86: 308-314'; accepted 2001, online 16 January 2002)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1066",
+        "synthesisBatch": "pilot-synthesis-batch-50",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 50,
+      "sourceFile": "Electromyographic Comparison of Flywheel Inertial Leg Curl and Nordic Hamstring Exercise Among Soccer Players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 33388,
+        "doi": "10.1123/ijspp.2019-0921",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Within-subject crossover laboratory study of 15 male amateur soccer players (age 22.9 years) who performed five repetitions each of the Nordic hamstring exercise and the flywheel inertial leg curl. The authors report similar biceps femoris and semitendinosus activation in the lower eccentric phase and higher flywheel activation in the lower concentric phase (for example, 20% to 35% higher in the semitendinosus).",
+      "limitations": "Fifteen amateur men, a single session and surface EMG only. The study shows muscle activation, not strength gains, performance or injury outcomes.",
+      "synthesisCaution": "Staff may treat higher concentric activation as evidence that the flywheel leg curl prevents hamstring injury, but the study did not measure injuries or training outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: omitted that NHE was non-significantly higher in lower eccentric phase -> added ('nonsignificantly higher in all parts ... for the NHE (ES ranging from 0.08 to 0.61)')",
+            "limitations: added arm push-off in NHE concentric phase, which affects the concentric comparison ('all subjects ... had to use their arms to push off')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1067",
+        "synthesisBatch": "pilot-synthesis-batch-50",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 55,
+      "sourceFile": "Elusive ‘usual’ warm-up in injury prevention trials - The problem of comparing apples to beans.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial. It discusses under-reporting of the 'usual' warm-up in injury prevention trials using three example trials, with no original methods or structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Article is labelled 'Editorial' in the header; own DOI 10.1136/bjsports-2024-108761 printed. Exclusion (b) confirmed.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 57,
+      "sourceFile": "Enhancement of Mood but not Performance in Elite Athletes With Transcranial Direct-Current Stimulation.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 36877,
+        "doi": "10.1123/ijspp.2018-0473",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Endurance Sport",
+        "Swimming & Diving"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Crossover, counterbalanced, sham-controlled, double-blind laboratory study of 8 healthy male elite triathletes. Each athlete received 20 minutes of active anodal tDCS over the motor cortex (C3, 2 mA) or sham on separate days, then an 800-m freestyle swim test. Vigor on the Brunel Mood Scale was higher with active tDCS after stimulation (P = .018) and after swimming (P = .022), but 800-m time did not differ (596 s active vs 599 s sham; P = .346).",
+      "limitations": "Only 8 men were tested before the competition season, with a single stimulation protocol and a cephalic electrode montage, so the result cannot be generalized to women, other sports or other tDCS settings. No measures of cortical excitability or brain activity were taken, and the condition order was counterbalanced but randomization is not described.",
+      "synthesisCaution": "Staff could read the vigor result as a performance benefit, but the swim time did not improve and the mood effect comes from a small sample.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations/screeningLimitations: said performance was judged by magnitude-based inference rather than a significance test -> paired t test (P = .346) plus MBI ('paired Student t tests'); added that order was counterbalanced with no randomization described",
+            "findings: added that other BRUMS domains had no condition effect and adverse-effect results ('Tingling 8 / 8')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1068",
+        "synthesisBatch": "pilot-synthesis-batch-50",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 58,
+      "sourceFile": "Enhancing athletic performance with complex contrast training - A Delphi study of elite strength and conditioning coaches.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 62036,
+        "doi": "10.1177/17479541241272256",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Three-round Delphi survey of elite strength and conditioning coaches (38 in round one, 36 men and 2 women; 37 and 34 in later rounds) on how they prescribe complex contrast training for team sport athletes. Of 139 statements, 31 reached the 80% agreement threshold (27 in round two, 4 in round three), including four sets per pairing, 3 to 4 repetitions at 85-90% 1RM with two repetitions in reserve for the strength exercise, and bodyweight to 30% 1RM for the power exercise.",
+      "limitations": "The evidence is coach opinion from 34 to 38 respondents, mostly in Australia and New Zealand, with no athlete outcome data, so it describes practice rather than effectiveness. Athlete characteristics are not reported.",
+      "synthesisCaution": "Staff could read a coach consensus on typical settings as proof that complex contrast training improves performance or saves time; the study measured opinion, not outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: placeholder '2024;0(0):1-13' -> removed",
+            "findings/abstract/practicalImplications: omitted preparatory-phase consensus ('Prep phase (late pre-season) * 86.5%'), strength-exercise repetition consensus ('Three * ... Four *') and one in-season session per week -> added",
+            "limitations: added Table 2 vs Discussion vs Conclusions conflicts on repetitions and on inter-set rest ('Consensus was not met regarding the recommended rest period duration' vs '2-3 min *')",
+            "evidenceSummary: clarified round sizes 38/37/34"
+          ],
+          "residualConcerns": "Table 2 star count gives about 30 consensus items against the stated 31; one star may be lost in extraction. Study design coded as Consensus / Position Statement for a Delphi survey of practice.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1069",
+        "synthesisBatch": "pilot-synthesis-batch-50",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 59,
+      "sourceFile": "Enhancing team sports performance - A case study of the optimal post-warm-up time window.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 41844,
+        "doi": "10.1007/s11332-024-01258-w",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Collegiate",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Single-day repeated-measures study with no control group in 19 college athletes (basketball, football, handball, swimming or fitness). Countermovement jump, 20-m sprint, handgrip and saliva markers were measured before a team-sport warm-up and at 5 and 10 minutes after it. Jump height rose from 0.35 to 0.38 m at 5 minutes and stayed at 0.37 m at 10 minutes, and 20-m sprint time improved from 3.83 s to 3.60 s at 5 minutes, then 3.68 s at 10 minutes.",
+      "limitations": "Without a control group or a repeat session, the changes cannot be separated from time, test order, learning or measurement drift, and sex and competition level of the 19 athletes are not reported. The reported body mass (6.787 ± 11.57 kg) is implausible and suggests a reporting error.",
+      "synthesisCaution": "Staff could read the 5-10 minute window as a proven timing rule for kickoff, or the 5 to 10 minute sprint slowing as a real decline, but there was no control group and the 5 vs 10 minute sprint difference was not significant.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "athleteDev/practicalImplications/tldr: treated non-significant 5 to 10 min sprint slowing as meaningful and recommended kickoff timing -> stated not significant ('95% CI = 0.07 [-0.01, 0.16]'; post hoc only 'a, b')",
+            "abstract: 'saliva markers showed sympathetic activation' stated as fact -> authors' interpretation; added handgrip non-significance",
+            "findings: added trivial CMJ 5 vs 10 difference and amylase per protein unchanged ('did not present differences')",
+            "limitations: added handgrip '~2 kg' wording conflict and body mass error"
+          ],
+          "residualConcerns": "Sex of participants and competition level not reported; 'fitness activities' participants may not all be athletes.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1070",
+        "synthesisBatch": "pilot-synthesis-batch-50",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 60,
+      "sourceFile": "Ensuring scientific rigor in research - Why sports-related publicly obtained data fall short.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial. The text is a Foot & Ankle Orthopaedics editorial-board statement on publicly obtained data. It has no original methods and no structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 61,
+      "sourceFile": "Epidemiological Principles in Claims of Causality - An Enquiry into Repetitive Head Impacts (RHI) and Chronic Traumatic Encephalopathy (CTE).pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Opinion piece. The article is labelled 'Current Opinion' and describes itself as a 'counterpoint' appraising a single 2022 narrative review (Nowinski et al., Front Neurol) that applied the Bradford Hill criteria to repetitive head impacts and CTE. It describes no search strategy or structured review method of its own; its tables re-summarise the cases cited in that review. The topic is relevant, so the exclusion rests on the article type.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [
+            "exclusionReason: removed note to verifier; confirmed article type ('CURRENT OPINION'; 'Our counterpoint presents an appraisal of the published article')"
+          ],
+          "residualConcerns": "Borderline type call: a 20-page Sports Medicine Current Opinion with an extended critical appraisal of the CTE causation evidence could be read as a narrative review. Excluded because it self-identifies as an opinion counterpoint with no review method. Clinically sensitive (concussion/CTE).",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 72,
+      "sourceFile": "Evaluating a 14-week neck strengthening protocol for neuromuscular indicators associated with head and neck trauma.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 35662,
+        "doi": "10.1016/j.smhs.2024.04.002",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "A single-group, pre-post pilot in 18 healthy college-aged adults (9 men, 9 women, 18 to 29 years; 20 consented, 2 withdrew) who trained for 14 weeks with a helmet-mounted neck-strengthening device, with no control group. Individual pre and post rate of force development values rose for every participant with data, and rate of force development increased across sessions (about 0.13 per session, P < 0.001). The reported pre-post P values (for example cervical extension P = 0.010, left lateral flexion P = 0.009) come from regressing post scores on pre scores, so they test whether pre predicts post rather than whether scores increased.",
+      "limitations": "The study has no control group, a small pilot sample, and a statistical approach that tests the association between pre and post scores rather than the size of the change. It measured neck strength and force development, not concussion or brain injury, and participant counts do not match across sections.",
+      "synthesisCaution": "Staff could read the protocol as reducing concussion risk, or read the abstract's '4.344 and 5.978 times higher' as fourfold gains, when those figures are regression slopes from an outlier-removed model and no injury or brain outcome was measured.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings/evidenceSummary: P values for isometric strength and RFD presented as pre-post increases -> they test the slope of post regressed on pre (\"Yi = mu + beta Xi + ei ... Xi as the ith subject's pre-program ... measurement\"), so they show association, not change; change evidence restated from per-session slopes and individual values in Tables 5 and 6",
+            "populations: removed Healthy Athletes, Male Athletes, Female Athletes -> Adult / Recreational; sample is 'a wide-range of healthy college-aged population who reported participating in various fitness and athletic events', not an athlete cohort",
+            "tldr/athleteDev: 'raised isometric neck strength in two directions' -> isometric evidence described as mixed, no mean change reported",
+            "synthesisCaution: added that abstract 'times higher' figures are regression slopes from an outlier-removed model",
+            "limitations: kept participant-count conflict, one-sided P, outlier dependence and undisclosed patent (ref 19, 'McDaniel AT, Schroeder LH. Portable Isometric Neck Assessment System and Method. US Patent 63/105,623'); added misinterpreted slopes",
+            "confidence: high -> medium"
+          ],
+          "residualConcerns": "Concussion-adjacent: the authors claim the protocol may help prevent mTBI without injury data. The statistical method does not quantify change, and the conflict statement omits the authors' patent on the assessment tool. Citation has no volume or pages (article in press, 2024).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1071",
+        "synthesisBatch": "pilot-synthesis-batch-50",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 83,
+      "sourceFile": "Evolving the Control-Chaos Continuum - Part 1 – Translating Knowledge to Enhance On-Pitch Rehabilitation.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Clinical commentary, labelled as such by the journal ('[ clinical commentary ]'; 'N/A for a clinical commentary submission'). Part 1 of 2 proposes an updated control-chaos continuum framework for on-pitch rehabilitation in elite soccer from the authors' experience and selected literature. It states 'There are no data in this manuscript', describes no search or appraisal method, and its Key Results are the authors' own framework, so it is not a structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [
+            "exclusionReason: tightened wording and added the journal label and data statement as evidence (decision unchanged)"
+          ],
+          "residualConcerns": "Judgement call: the paper has a structured abstract (Clinical Question, Key Results) and many citations, but no described review method or data. A reviewer who treats JOSPT clinical commentaries as clinical reviews could argue for INCLUDE as Narrative Review.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 84,
+      "sourceFile": "Evolving the Control-Chaos Continuum - Part 2—Shifting “Attention” to Progress On-Pitch Rehabilitation.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Clinical commentary, labelled as such by the journal ('[ clinical commentary ]'; patient involvement 'Not applicable for a clinical commentary'). Part 2 of 2 applies the revised control-chaos continuum phase by phase to on-pitch rehabilitation in elite soccer, with the authors' recommended drills, monitoring and progression. It states 'There are no data in this manuscript' and describes no search or appraisal method, so it is not a structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [
+            "exclusionReason: added the journal label and data statement as evidence (decision unchanged)",
+            "identityCheck: DOI location 'header' -> first page citation line"
+          ],
+          "residualConcerns": "Same judgement call as Part 1 (Q83): framework-style clinical commentary with no data or review method; a reviewer could argue it is a clinical review.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 89,
+      "sourceFile": "Exercise collapse associated with sickle cell trait - From consensus to confusion.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial/discussion piece. The text is a 'Discussion' article by O'Connor and Walsh responding to two recent publications. It has no original methods and no structured review of evidence; its own wording calls it 'this discussion/editorial'.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 92,
+      "sourceFile": "Exercise with blood flow restriction - An updated evidence       based approach for enhanced muscular development.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 67606,
+        "doi": "10.1007/s40279-014-0288-1",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Rehabilitation",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Review article by four sport and exercise scientists giving evidence-based recommendations for blood flow restriction (BFR) training. It summarizes studies of BFR with low-load resistance exercise (about 20 to 40% 1RM), BFR at rest, and BFR with walking or cycling, in mostly small samples of untrained, older, rehabilitation and athletic participants. It reports that BFR with low-load resistance exercise enhances hypertrophy and strength, and that BFR alone can attenuate disuse atrophy during immobilization.",
+      "limitations": "No search method is described, so the selection of studies cannot be checked. Several pressure and cuff recommendations rest on unpublished laboratory data or on small studies, and the authors state that the circumference-based pressure guidance has not been tested for training adaptation.",
+      "synthesisCaution": "Staff could read BFR with low-load training as a substitute for heavy strength training for athletes, when the review reports smaller 1RM gains with BFR alone (8.7%) than with high-load (19.9%) or combined training (15.3%) in one study and recommends adding BFR to high-load training rather than replacing it.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Healthy Athletes and Adult / Recreational -> removed; this is a review spanning clinical, elderly, untrained and athletic cohorts, not an athlete sample",
+            "synthesisCaution: 'evidence in well-trained athletes is still limited' -> review actually says well-trained athletes can benefit; reworded to the Yasuda comparison ('19.9 and 15.3 %... higher than in the BFR group (8.7 %)')",
+            "paper.limitations: 'strength gains described as small in relation to muscle size' -> 'percentage increase in 1RM strength is not larger than the increase in muscle size'; added untested circumference pressures and 30-60 s vs 30-45 s rest inconsistency"
+          ],
+          "residualConcerns": "Year 2014 taken from the Springer copyright line; no volume, issue or pages are printed (online-first).",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1072",
+        "synthesisBatch": "pilot-synthesis-batch-50",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

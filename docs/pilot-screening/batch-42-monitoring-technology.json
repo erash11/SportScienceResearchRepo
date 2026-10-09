@@ -1,0 +1,673 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-42-monitoring-technology",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Monitoring & Technology queue positions 1-93. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 1,
+      "sourceFile": "Assessing isometric kicking force and post-match responses using the Kicker test.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 40671,
+        "doi": "10.1080/02640414.2022.2065772",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Youth / Adolescent",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Two-part study. Part A tested inter-session reliability of a novel isometric hip flexion plus knee extension test (the Kicker, on a ForceFrame) in 20 recreational-or-higher participants (13 male, 7 female) across three sessions. Part B measured Kicker force at 24, 48 and 72 h after competitive matches in 17 male academy soccer players, after a familiarisation week; the authors report reliability as high (ICC 0.91 to 0.98) and force as suppressed versus baseline at every post-match time point in both limbs.",
+      "limitations": "The reliability and post-match samples were different groups, the post-match group was a convenience sample (81 data points), and external load was not measured. Outcomes were not linked to injury or return to play, and no testing went beyond 72 h.",
+      "synthesisCaution": "Staff could read the 'monitoring tool' conclusion as an injury-risk or return-to-play criterion; the study shows post-match suppression in healthy academy players, not predictive validity or injured-athlete thresholds.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: claimed the abstract reliability figures conflict with Table 1 -> no conflict; the abstract reports post-familiarisation values ('After familiarisation ... ICC >0.95; typical error <14 N, CV <6%') which match the session 2 to 3 rows (ICC 0.95 to 0.98, TE 9.5 to 13.6 N, CV 3.7 to 5.3%, MDC 26 to 38 N)",
+            "paper.practicalImplications: CV threshold presented as staff guidance -> attributed to the authors ('may interpret Kicker force changes that exceed the CV% of 5.3% as real') with MDC95 added and the untested load-modification use flagged",
+            "populations: Professional / Elite -> Youth / Adolescent for the 17 academy players (age 18.0 +/- 0.8 y, guardian consent for under-18s)"
+          ],
+          "residualConcerns": "Post-match effect sizes are small (d -0.26 to -0.43) and the n per time point drops to 10 to 11 at +72 h.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "966",
+        "synthesisBatch": "pilot-synthesis-batch-42",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 2,
+      "sourceFile": "Assessing the Validity of Wearable Inertial Sensors in Evaluating Joint Kinetics and Hamstring Musculotendon Mechanics at Various Running Speeds.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 50,
+        "extractedCharacters": 70000,
+        "doi": "10.1249/MSS.0000000000003786",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Performance",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Validation study in 18 healthy, recreationally active adults (13 men, 5 women) who ran on an instrumented treadmill at 70% to 100% of maximal speed. Inverse-dynamics musculoskeletal models were run on IMU (Xsens) and optical motion capture (Vicon) data; the authors report good to excellent waveform agreement for hip and knee moments in swing, for hamstring tendon strain and velocity, and for hamstring muscle forces (median CMC 0.88 to 0.98), with the IMU system overestimating peak hip extension moment at higher speeds.",
+      "limitations": "One IMU system and one optical system were compared, in 18 recreationally active adults rather than trained athletes, on a treadmill, with joint moments and forces compared in swing phase only and a mean maximal speed of 7.44 m/s. The paper does not test the system against injury, return to running, or overground field conditions.",
+      "synthesisCaution": "Staff could read the hamstring force and strain results as proof that IMU data can monitor hamstring injury risk; the study shows agreement with optical capture in healthy adults, not injury prediction or field-ready accuracy at high speed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr/practicalImplications/athleteDev: said peak hamstring force agreement worsened at high speed -> limits of agreement for BFLH and SM force were widest at the slowest speed and narrowest at the fastest ('LoA for peak BFLH and SM MT forces was highest at the slowest running speed (BFLH: 1.2 BW; SM: 0.85 BW) and lowest at the fastest')",
+            "paper.practicalImplications: endorsed hamstring velocity without caveat -> IMU 'systematic overestimation of peak lengthening velocity ... for BFLH, SM, and ST' (BFLH relative bias about 16%)",
+            "screeningLimitations/limitations: 'maximum speed of 7.44 m/s' -> mean maximal speed 7.44 +/- 0.89 m/s (range 6.00 to 9.00); added hip bias 0.47 vs 0.49 inconsistency; kept N/m vs Nm/kg abstract unit note",
+            "sports: Track & Field -> Mixed / General Sport (participants were 'recreationally active' adults, no sport stated)"
+          ],
+          "residualConcerns": "Most continuous-metric values sit in supplemental figures not included in the text; CMC values were checked against the results narrative only.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "967",
+        "synthesisBatch": "pilot-synthesis-batch-42",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 3,
+      "sourceFile": "Assessing the cumulative effect of long-term training load on the risk of injury in team sports.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 50444,
+        "doi": "10.1136/bmjsem-2022-001342",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Performance",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Soccer",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Professional / Elite",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "Simulation study built on sRPE values from a Norwegian Premier League football dataset (36 male players), comparing seven methods for modelling cumulative training load across seven simulated load-injury relationships (250 simulated players over 300 days, 1900 simulations). The distributed lag non-linear model (DLNM) had the lowest RMSE and AIC for absolute load in most scenarios; an illustrative application to 205 Norwegian elite youth handball players (471 health problems) found no statistically significant effects (p >= 0.8).",
+      "limitations": "The main evidence is a simulation in which the authors assumed the load-injury relationships, so method rankings depend on those shapes. The handball application had 64% missing sRPE values, few covariates and no causal design, and the authors present it only as an illustration.",
+      "synthesisCaution": "Staff could read the DLNM output as evidence that a specific load level or lag causes health problems; the handball effects were not significant and the simulated relationships were assumed by the authors.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.athleteDev: framed as guidance for practitioners tracking cumulative load -> framed as guidance for analysts modelling load-injury data, matching the paper's aim ('determine how to model training load when assessing its cumulative effect') and noting ACWR/week-to-week failures ('failed to discover a relationship ... under the Constant scenario')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "968",
+        "synthesisBatch": "pilot-synthesis-batch-42",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 14,
+      "sourceFile": "Athlete monitoring perspectives of sports coaches and support staff - A scoping review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 20,
+        "extractedCharacters": 78242,
+        "doi": "10.1177/17479541241247131",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Coaching",
+        "Performance",
+        "Research & Analytics",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Rugby",
+        "Swimming & Diving",
+        "Gymnastics",
+        "Track & Field",
+        "Endurance Sport",
+        "Other Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Scoping review (JBI methodology, PRISMA-ScR) of 42 primary studies identified from 4,381 records in English-language databases searched to September 2022. The studies asked coaches and support staff about their knowledge, perceptions and practice of athlete monitoring, mostly through questionnaires and interviews, and most were from the UK, Australia and Ireland at national or international level.",
+      "limitations": "The review uses no formal quality appraisal, data were extracted by one reviewer, and the search was limited to English and to particular terms. Participant characteristics were poorly reported, so it is unclear whether perspectives differ by role or athlete level.",
+      "synthesisCaution": "Staff could read the findings as proof that athlete monitoring reduces injury or improves performance, but the review maps what coaches and support staff believe and report, and the effectiveness ratings are self-perceptions.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "practicalImplications: 'perceived effectiveness is lower than expected' stated as a general finding -> limited to the studies that compared expected and perceived effectiveness ('the expected effectiveness was statistically significantly higher than the perceived effectiveness ... football'; gymnastics 39%/35% vs more than 85%)",
+            "athleteDev: generic advice about new metrics not drawn from the review -> replaced with practices the review reports (ASRM as 'conversation starter' and 'early alert system') and a statement that no performance effect was tested",
+            "sports: removed Basketball, which appears only in a reference title, not in the review body"
+          ],
+          "residualConcerns": "Study design coded as Systematic Review / Meta-analysis for a scoping review with systematic search and no quality appraisal; the taxonomy has no scoping-review code, so the operator may prefer Other.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "969",
+        "synthesisBatch": "pilot-synthesis-batch-42",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 21,
+      "sourceFile": "Awareness and Perceived Value of Eye Tracking Technology for Concussion Assessment among Sports Medicine Clinicians A Multinational Study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 42062,
+        "doi": "10.1080/00913847.2019.1645577",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Cross-sectional online survey of 171 sports medicine clinicians from 32 countries, distributed from January to December 2017 via professional associations and social media. Only 11% of respondents had worked with eye tracking, about 12% used it in practice, and 77% used no eye movement tool beyond their own clinical assessment. Respondents reported observing eye movement deficits in about 30% of their concussed patients, and 49% saw potential benefit in eye tracking.",
+      "limitations": "The survey measured clinician awareness, use and perceptions, not diagnostic accuracy, and the response rate could not be calculated. The sample was small and mostly from South Africa, Europe and North America, so the authors could not make regional comparisons.",
+      "synthesisCaution": "Staff could read the low use and benefit ratings as evidence that eye tracking is unreliable, when the survey did not test the tool's validity or accuracy.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: claimed a conflict between 12% use and 11% experience (these are different questions; 12% use matches '88% ... did not use eye tracking') -> replaced with the real discrepancy versus diagnostic tool use ('only 5% (n = 8) used an eye tracking device or saccadometer')",
+            "paper.methods: listed athletic trainers among respondents, which the results do not report -> respondent mix as printed ('sport physicians, therapists, general practitioners, neuropsychologists'; sport physicians 46%)",
+            "paper.findings: removed the duplicated 12% use statement and the pupil light reflex figure, which is the share of respondents who checked it, and stated that the 29.9% deficit figure comes only from respondents who checked eye movements ('respondents who reported looking at the eye movements ... observed at least one deficit in 29.9 +/- 23.3% of patients')"
+          ],
+          "residualConcerns": "Sample is clinicians, not athletes. Concussion topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "970",
+        "synthesisBatch": "pilot-synthesis-batch-42",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 33,
+      "sourceFile": "Beyond the Yard Line - Accommodating Rounded Sports Data in Statistical Models.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 24,
+        "extractedCharacters": 47768,
+        "doi": "10.1080/00031305.2025.2604812",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Statistical methods study using 2023 NFL regular-season rushing data for running backs. A single-player Bayesian model (Bijan Robinson, 193 carries) and a hierarchical model (133 running backs, 10,223 carries) compared a rounded-normal and a rounded asymmetric Laplace model for recorded yardage. The authors report that the rounded asymmetric Laplace model fit better (single-player DIC 1134.6 vs 1247.6; multi-player DIC 57,780.5 vs 62,399.7) and was the better choice for the right-skewed data.",
+      "limitations": "The evidence concerns how recorded yardage is modeled, not whether any model changes athlete outcomes or injury risk. Results rest on one season of NFL rushing data, with passing and receiving yardage not analysed and the authors acknowledging unmodeled record-keeping rules.",
+      "synthesisCaution": "Staff could over-read the covariate estimates (for example, game seconds remaining or home-field status) as established performance effects, when they are weak model-based associations from one league and one season.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: '8 of 12 fixed effects had credible intervals excluding zero' stated flatly -> noted that the authors count down squared as 'nearly' (Table 2 CI -0.10, 0.00)",
+            "paper.limitations: removed extraction-artifact notes (garbled MCMC counts, accepted author version) that are not study limitations; clarified 4.7% refers to plays 'recorded as 1 yard-to-go', only 'a subset' of which lose gains"
+          ],
+          "residualConcerns": "MCMC iteration counts appear in the extracted text as '105' and '205' (likely 10^5 and 2x10^5 after superscripts were lost); not used in the record. Text is the accepted author version posted 22 Dec 2025 with no volume or pages.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "971",
+        "synthesisBatch": "pilot-synthesis-batch-42",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 57,
+      "sourceFile": "Calculating acute-chronic workload      ratios using exponentially weighted moving averages provides a more      sensitive indicator of injury likelihood than rolling averages.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 36592,
+        "doi": "10.1136/bjsports-2016-097152",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Two-season cohort of 59 elite Australian Football League players from one club (92 individual seasons), with GPS workloads and 40 non-contact time-loss injuries (18 preseason, 22 in-season). The authors report that an acute:chronic workload ratio (ACWR) above 2.0 was linked to higher injury risk under both the rolling-average and the exponentially weighted moving average (EWMA) models, that EWMA gave lower ACWR values at moderate to very high ranges, and that EWMA explained more of the variance in injury for most GPS variables.",
+      "limitations": "The evidence comes from one club over two seasons with 40 injuries, so the findings may not generalise, and the authors note the risk of type I error from multiple models. The Methods name the 2.0 or above range as the reference group, but the Results compare each range with 1.0 to 1.49, so the reference group is unclear.",
+      "synthesisCaution": "Staff could read the EWMA model as a proven better injury predictor, when this study only compared the two ACWR calculations in one squad and did not test whether either one predicts injuries in a new squad.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "practicalImplications, athleteDev: moderate-speed distance and player load described as linked to injury under both models -> only total distance was significant under both models in both phases; the rolling-average model had no significant preseason links other than total distance and in-season links only for total distance, high-speed distance and player load ('No other significant relationships were observed between the rolling averages ACWR and injury likelihood during the preseason period')",
+            "athleteDev: 'build chronic load' advice framed as a finding -> labelled as the authors' advice, not tested here",
+            "evidenceSummary: EWMA 'explained more of the variance' stated without qualification -> 'for most GPS variables' (Table 1: in-season high-speed and very high-speed distance differences not significant)",
+            "citation: added issue 9 printed in the article URL ('content/51/9/749')"
+          ],
+          "residualConcerns": "The Methods name ACWR 2.0 or above as the reference group, while the Results compare against 1.0 to 1.49; EWMA risk ratios have very narrow CIs (for example 21.28, 95% CI 20.02 to 22.62) from only 40 injuries, which a reviewer may want to treat cautiously.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "972",
+        "synthesisBatch": "pilot-synthesis-batch-42",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 59,
+      "sourceFile": "Can CMJ Neuromuscular Performance Qualities Differentiate Maximal Horizontal Deceleration Ability in Team Sport Athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 66134,
+        "doi": "10.3390/sports8060076",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Collegiate",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Cross-sectional study of 27 male university team-sport athletes (soccer, rugby league and rugby union) who completed a 20 m sprint-to-deceleration test measured by radar and a countermovement jump (CMJ) on force plates. Athletes were split at the median into high and low groups on average deceleration (HDEC) and on horizontal braking impulse (HBI). The authors report that concentric peak force, mean force and mean power were higher in the high HDEC group, that velocity and power variables differed most for HBI, and that only concentric mean power differed significantly for both measures.",
+      "limitations": "The design is cross-sectional with 13 to 14 athletes per group, so it shows differences between groups and not whether training changes these qualities. Nineteen CMJ variables were compared for each deceleration definition without a stated correction for multiple testing, so single-variable p values are fragile.",
+      "synthesisCaution": "Staff could read the CMJ concentric variables as causes of better horizontal deceleration and train toward them, when the design only shows that these variables differ between groups at one time point.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'About 29 comparisons' -> 19 CMJ variables per definition (Table 3 and Table 4 each list 7 concentric, 5 eccentric, 4 eccentric-deceleration and 3 other variables)",
+            "limitations: added Table 2 body-mass inconsistency (high/low HDEC 72.7 and 80.7 kg, high/low HBI 85.2 and 68.1 kg vs whole sample 'body mass: 73.0 ± 14.7 kg')",
+            "populations: added Healthy Athletes ('excluded ... if they had suffered any kind of musculoskeletal injury ... within the previous 3 months')",
+            "sports: added Soccer and Rugby ('soccer, rugby league, rugby union')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "973",
+        "synthesisBatch": "pilot-synthesis-batch-42",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 60,
+      "sourceFile": "Can Player Tracking Devices Monitor Changes in Internal Response During Multidirectional Running .pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 40057,
+        "doi": "10.1080/02701367.2022.2092049",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Collegiate",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Repeated-measures study of 12 university-standard team-sport athletes (7 men, 5 women; rugby, football, hockey and netball) who completed linear and multidirectional running trials in random order. The authors report that multidirectional running gave more accelerations and decelerations, more time at high metabolic power, and higher summated heart rate and blood lactate, while linear running gave more high-speed distance. Integrated ratios using time at high metabolic power were similar between trials, while high-speed ratios differed.",
+      "limitations": "Twelve athletes, pooled across sexes and sports, in one trial per condition, is a small sample for comparing metrics. The high-metabolic-power ratio results are non-significant differences (p of 0.246 or more), which the authors read as evidence that the metric better reflects internal response, and the multidirectional trial also lasted longer, which may have contributed to its higher summated heart rate and total oxygen uptake.",
+      "synthesisCaution": "Staff could read the non-significant ratio results as proof that time at high metabolic power tracks internal load better than high-speed distance, when the study tested neither metric against a validated criterion and the ratio comparison only shows no detectable difference.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "tldr, abstract: high metabolic power ratios described as having 'matched' or been 'similar to' the internal response -> stated as no significant difference between trials (p >= 0.246), with the 'better reflects' reading attributed to the authors",
+            "screeningLimitations, limitations: added that the multidirectional trial lasted longer (Table 1 duration 1428.3 vs 1381.7 s, p = 0.002), a possible contributor to higher summated HR and total VO2",
+            "populations: added Healthy Athletes (participants 'completed a health questionnaire to ensure no contradictions to exercise')"
+          ],
+          "residualConcerns": "The core conclusion rests on non-significant ratio differences in 12 athletes; Figure 1 ratio values are not in the extracted text, so only the abstract's p >= 0.246 could be checked.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "974",
+        "synthesisBatch": "pilot-synthesis-batch-42",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 77,
+      "sourceFile": "Causes of Different Force–Velocity Relationships in Sprint Running Depending on Horizontal Loads and Profiling Methods.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 67841,
+        "doi": "10.1249/MSS.0000000000003629",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Track & Field",
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Repeated-measures laboratory study of 12 males (9 sprinters and 3 soccer players, age 20.9 ± 2.2 years), each doing one unresisted and five resisted sprints (4 to 12 kg) on a 50-m force plate system. Force-velocity plots overlapped across loads during acceleration but dipped near maximal velocity, and with the single-trial method F0 rose and the slope became more negative as load increased (unresisted F0 7.26 N/kg, 12 kg 8.67 N/kg). The multiple-trial method gave lower F0 (6.08 N/kg) and a less negative slope (-0.60 vs -0.71 N/kg per m/s) than the unresisted single-trial method.",
+      "limitations": "The sample is 12 men, and loads were run in a fixed ascending order; the authors argue trial order did not affect results but could not measure fatigue, so they cannot exclude it as a cause of the force drop near maximal velocity. Only step-averaged data were analysed, and the cause of the large forces at very low velocities was not identified.",
+      "synthesisCaution": "Staff could read the advice against multiple-trial profiling as a general verdict, when the paper supports it only for over-ground, step-averaged sprint data from this force-plate and loading set-up.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: draft said authors acknowledge trial order could contribute; authors state 'it is assumed that trial order did not affect the results' but 'we cannot completely exclude the possibility that certain fatigue effects caused attenuation'",
+            "findings: adjusted R2 0.964 belongs to the unresisted single-trial linear profile, not a linear fit to pooled data (0.977, Table 2); added lower Pmax for multiple-trial method and non-significant load effect on Pmax"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "975",
+        "synthesisBatch": "pilot-synthesis-batch-42",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 85,
+      "sourceFile": "Changing the criteria applied to acceleration and deceleration efforts changes the types of player actions detected (1).pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 38325,
+        "doi": "10.1080/24733938.2022.2137575",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Observational match analysis of 22 elite male Australian football players across two 2019 matches, using 10-Hz GNSS data and synchronized video to label 1,178 high acceleration and deceleration efforts (threshold 3 m/s2) by the player action at the time. Linear movement and jumps were the most common actions for high accelerations, and stops and being tackled for high decelerations. Higher commencing speed was associated with a longer time above the deceleration threshold (0.14 s per 1 m/s).",
+      "limitations": "Two matches from one team, with the GNSS device's validity taken from manufacturer testing and no peer-reviewed validation. Action labels depend on video coding and a single 3 m/s2 threshold, so the findings describe this sample and threshold only.",
+      "synthesisCaution": "Staff could read the action labels as what drives efforts for their own team, when the sample was one elite team over two matches and the labels change with the minimum duration chosen.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: 'most efforts exceeded the threshold for 0.3 s or less' -> true for accelerations (228/268) but about half of decelerations (446/904) by the Results counts; added P values and CI ('Jump ... 0.022', 'Tackle ... 0.003', 'Commencing speed 0.14 s 0.12 0.16')",
+            "limitations: added internal conflicts ('46 ± 8 efforts per player per match' vs 'total of 1178'; duration counts sum to 1,172; Discussion 'majority of high acceleration and deceleration efforts occurred with ... (≤0.3 s)')",
+            "tldr: claimed short efforts are spikes and long efforts resemble linear movement or stopping as findings -> restated as observed action mix plus the authors' 0.5 s suggestion",
+            "practicalImplications: commencing-speed training advice attributed to the authors and marked untested"
+          ],
+          "residualConcerns": "Effort counts in the Methods and Results do not reconcile; Table 2 lists only four acceleration actions. Table 3 and Table 5 threshold labels contain sign/unit typos.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "976",
+        "synthesisBatch": "pilot-synthesis-batch-42",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 93,
+      "sourceFile": "Classification of lower body strength qualities - A data-driven approach.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 24,
+        "extractedCharacters": 114202,
+        "doi": "10.1177/17479541251314131",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A systematic literature search (Google Scholar, MEDLINE, SportDiscus, Cochrane and CINAHL, completed September 2024, English only, no date limit) plus reference-list checks identified studies of multi-joint, weight-bearing or isometric lower-body tests in athletes or resistance-trained people that reported a statistical relationship between metrics. Using r, R2 and component loading, the authors grouped metrics into five proposed domains: reactive dynamic, unloaded dynamic, loaded dynamic, early isometric and maximal isometric. Most metrics within a task category shared more than 50% of variance, and many metrics across categories shared less than 49%. No meta-analysis was performed.",
+      "limitations": "Test methods, calculation methods and populations differed widely, so the shared-variance values are not directly comparable across studies. The five domains are a proposal that the authors say needs direct empirical testing, and most included studies used cross-sectional data.",
+      "synthesisCaution": "Staff may treat the five domains as established, separate qualities and cut a test battery to one test per domain, when the groupings depend heavily on how each metric is calculated and on the population tested.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: added the stated exception that unloaded ballistic timing and outcome metrics shared only about 1-10% variance, and that they were merged into one domain because evidence was insufficient (\"there remains insufficient evidence to fully recognize this group of metrics as a unique domain\")",
+            "limitations: added the authors' uncertainty on loaded ballistic tasks (\"It is therefore unclear where loaded ballistic tasks should be categorized\") and the VALD Performance PhD funding note that conflicts with the no-funding statement"
+          ],
+          "residualConcerns": "Partial PhD funding from VALD Performance, a force-plate vendor, is disclosed in the acknowledgements but not in the funding or conflict statements. Large Tables 1 and 2 were spot-checked rather than read row by row.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "977",
+        "synthesisBatch": "pilot-synthesis-batch-42",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

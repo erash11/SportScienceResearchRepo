@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-71-monitoring-technology",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Monitoring & Technology queue positions 17-93. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 17,
+      "sourceFile": "Hyperhydration Induced Decrease in Urinary Luteinizing Hormone Concentrations of Male Athletes may be Compensated by Specific Gravity Adjustment in Doping Control Analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 28,
+        "extractedCharacters": 49844,
+        "doi": "10.1123/ijsnem.2018-0213",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Nutrition",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Laboratory study, funded by WADA, in 7 healthy, recreationally active men (mean age 38 years) who ingested 20 mL/kg of water (Phase A) and a sports drink (Phase B) on 3 consecutive days, with all urine collected over 72 hours and a 24-hour baseline collection. Measured urinary LH fell after hyperhydration (mean 4.24 and 4.74 IU/L vs baseline, P < 0.001), and 24.6% (water) and 15.6% (sports drink) of first-24-hour samples fell below the former 1.0 IU/L threshold, versus none at baseline. Adjusting LH to a specific gravity of 1.020 brought values back near baseline (P = 0.08 and 0.86), while creatinine-based adjustment did not correct the dilution.",
+      "limitations": "Seven participants and pooled sample-level statistics limit precision, and diet was not standardized. The study tests interpretation of an anti-doping marker, not any health or performance outcome, and no androgen or LH-altering drug was given.",
+      "synthesisCaution": "Staff could read this as evidence that drinking large volumes can explain a low LH result in any athlete, when it shows a short-lived dilution effect in 7 recreational men that specific gravity adjustment largely corrects.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: EXCLUDE (c) -> INCLUDE. Doping-control interpretation in athletes is athlete health evidence, and the library already includes anti-doping detection studies (e.g. CBD urine detection, supplement contamination). Participants are 'healthy recreational athletes' (Table 1 inclusion criteria).",
+            "taxonomy, summary and paper fields: null -> written from full text ('Seven healthy, recreationally active, non-smoking Caucasian male participants (n=7)'; 'Phase A: P = 0.08, Phase B: P = 0.86').",
+            "paper.year: 2018 (accepted manuscript, '(c)2018 Human Kinetics', forthcoming issue not yet assigned).",
+            "limitations: noted baseline LH conflict (abstract 7.11 +/- 5.42 IU/L vs results 7.72 +/- 5.42 IU/L)."
+          ],
+          "residualConcerns": "Decision depends on treating doping-control methodology as athlete health evidence for consistency with prior anti-doping inclusions; operator may prefer exclusion (c). Accepted-manuscript version: no volume or pages printed. Baseline LH value conflict (7.11 vs 7.72 IU/L) is unresolved in the source.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1282",
+        "synthesisBatch": "pilot-synthesis-batch-71",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 47,
+      "sourceFile": "Inertial measurement unit analysis for providing greater diagnostic value during the modified 5-0-5 change of direction test.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 40739,
+        "doi": "10.36905/jses.2023.02.07",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Female Athletes",
+        "Professional / Elite",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Reliability and association study in 10 elite female netball athletes from the New Zealand premiership, who completed three trials per leg of a modified 5-0-5 change-of-direction test on three sessions seven days apart. Foot-mounted IMU insoles measured maximum speed, peak acceleration, peak deceleration and ground contact time alongside timing gates. Most inter-session CVs were under 10 percent and most ICCs were 0.81 to 0.96, with one ICC of 0.57 (left peak deceleration), and higher peak acceleration was strongly associated with faster total time (r = -0.95 in Table 2).",
+      "limitations": "The sample is 10 athletes from one competition setting, so the correlations have wide uncertainty. The study shows reliability and association only, with no criterion validity against force plates or motion capture, and the reported sign of several correlations is inconsistent between the abstract, text and Table 2.",
+      "synthesisCaution": "Staff could take the high correlation between peak acceleration and total time as proof that the insole measures a cause of faster change of direction, or as validated against a gold standard, when the study shows only association in 10 athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations/limitations: removed the claim that correlations 'pool trials and legs ... so they are not independent'; the text says left and right legs were pooled after no differences were found, and Table 2 significance levels are consistent with n = 10 athlete-level values. Replaced with small-sample uncertainty.",
+            "evidenceSummary/findings: added correlation direction from Table 2 ('5-0-5 total ... -0.95**' with peak acceleration; '-0.91**' with max speed), so higher peak acceleration goes with faster (shorter) total time; ICC range stated as 0.81 to 0.96 per Results.",
+            "paper.limitations: documented sign and ICC conflicts precisely (abstract 'ICC = 0.57 - 0.94' vs Table 1 0.96; 'r = 0.95' vs Table 2 '-0.95'; split 5 'r = ... 0.68' vs Table 2 '-0.68'; CV 14.4 vs 14.5 percent). Previous wording said the abstract value was 'positive', but the abstract gives no sign."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1283",
+        "synthesisBatch": "pilot-synthesis-batch-71",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 49,
+      "sourceFile": "Infrared thermography in exercise physiology - The dawning of exercise radiomics.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 20,
+        "extractedCharacters": 81298,
+        "doi": "10.1007/s40279-019-01210-w",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Review of infrared thermography (IRT) studies during endurance, incremental and resistance exercise, found by a PubMed and Google Scholar search for 1992 to 2018 plus reference lists, with the authors' own illustrative case experiments. The authors report 10 endurance studies (n = 99 in total), 12 incremental-test studies (213 participants) and 11 resistance-exercise studies (209 heterogeneous participants). Skin temperature fell early in endurance and incremental exercise and then rose after exercise, while the direction of change in resistance exercise was inconsistent across studies.",
+      "limitations": "The authors call it a narrative review: it uses one search string in PubMed and Google Scholar, with no quality appraisal or pooled analysis. The included studies are small and differ in camera, region of interest, timing and participants, and the case experiments involve one to three people each.",
+      "synthesisCaution": "Staff could read the proposed 'surface radiation pattern' as a validated marker of blood flow, core temperature or fatigue, when the authors present it as a hypothesis for future testing.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: 'Healthy Athletes' and 'Adult / Recreational' tagged although included studies mix athletes, trained and untrained people -> Mixed / Unspecified only (Tables 1-3 list 'healthy', 'untrained', 'elite cyclists', 'sportsmen').",
+            "findings: said Psr had not been reported for resistance exercise -> the authors' own resistance cases showed a different venous Psr ('IRT revealed different Psr compared to EE and XT, which has not been described in the literature for RE so far'); resistance tally made explicit (7 rise, 3 fall, 1 no change).",
+            "screeningLimitations/limitations: 'one database query' -> one search string applied in PubMed and Google Scholar ('were applied in PubMed and Google Scholar')."
+          ],
+          "residualConcerns": "Authors self-label it a 'narrative review', but it prints a full search string, date limits and eligibility criteria, so it is coded Systematic Review / Meta-analysis under the library rule. Q52 (search named but no string or criteria) is coded Narrative; a human should confirm the two are consistent with precedent.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1284",
+        "synthesisBatch": "pilot-synthesis-batch-71",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 58,
+      "sourceFile": "Innovations in the assessment of skeletal muscle health - A glimpse into the future.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 69834,
+        "doi": "10.1055/a-2242-3226",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A narrative review of newer in vivo methods for assessing skeletal muscle health: dynamic ultrasound, tensiomyography, blood flow restriction occlusion pressure, serological neoepitope biomarkers, ultrasound echo intensity, body composition and bioimpedance, and muscle pain. It reports no pooled data or original sample; where it quotes reliability studies, the samples are small (for example, n = 13 males for pulsed-wave Doppler occlusion pressure, ICC 0.796, and n = 10 for an algorithm-based device, ICC above 0.953).",
+      "limitations": "The search is described only as PubMed and Google Scholar searches for recent publications, with no criteria, screening or quality grading, so it is coded as a narrative review and the selection cannot be reproduced. Athlete-specific evidence is thin, and most examples come from clinical, older and general populations.",
+      "synthesisCaution": "Staff could read the listed techniques as validated tools for athlete monitoring, when the authors say several lack validity data (algorithm-based occlusion pressure), are early-stage (neoepitope biomarkers), or have unclear benefit (trigger-point MRI).",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: said the authors describe raw bioimpedance values as 'not without error' -> that phrase refers to algorithm-based occlusion pressure; the authors present raw bioimpedance parameters as a way around prediction-equation error ('it is becoming increasingly common to directly evaluate the raw bioelectric parameters')",
+            "screeningLimitations: removed drafter note asking the verifier to confirm the design; narrative review coding confirmed (no criteria or screening described)"
+          ],
+          "residualConcerns": "Relevance to athletes is thin: a methods review drawing mostly on clinical, older and general populations, with athlete mentions limited to TMG, bioimpedance vectors and localized BIA. Kept as INCLUDE since it is a narrative review in a sports medicine journal with athlete-performance framing; a reviewer may judge it out of scope. No volume or pages printed (online 2024).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1285",
+        "synthesisBatch": "pilot-synthesis-batch-71",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 75,
+      "sourceFile": "Is Physiological Equivalent Temperature superior to Wet-Bulb Globe Temperature.PDF",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 39266,
+        "doi": "10.1136/bjsports-2019-100632",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Observational analysis of eight annual Gothenburg half marathons (2010-2017, 357,896 starters), comparing how well PET, UTCI and WBGT explained yearly rates of ambulance-required assistance and collapses. PET explained the most variance (R2 = 0.72 for ambulance assistances and 0.71 for collapses, p = 0.008 for both), followed by UTCI (0.64) and WBGT (0.56, p = 0.031 and 0.033). The authors conclude PET is a better predictor, while noting that eight data points give limited power.",
+      "limitations": "The analysis uses eight race-level data points and an ecological design, so the R2 values are imprecise and cannot be read as individual risk. WBGT was calculated from modelled globe temperature rather than measured on site, and PET and UTCI were calculated from meteorological data, not measured on runners.",
+      "synthesisCaution": "Staff could read this single-race, eight-year comparison as proof that PET should replace WBGT for race-day heat decisions, when the authors themselves call for further investigation before any change.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: '2020;0:1-7' is the online-first placeholder ('Br J Sports Med 2020;0:1-7', 'Epub ahead of print') -> removed, no real volume or pages printed.",
+            "populations: added Male Athletes and Female Athletes; sex of participants is stated ('the majority (66%) of the runners are men').",
+            "paper.practicalImplications: day-before PET rise presented as warranting extra planning -> framed as a two-year observation and hypothesis ('large increase from the day before the race seems to have an impact', 2010 vs 2013 only).",
+            "paper.athleteDev: 'WBGT may understate heat stress' -> made explicit that this is relative to PET ('Compared with the PET, the WBGT index underestimated heat stress')."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1286",
+        "synthesisBatch": "pilot-synthesis-batch-71",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 84,
+      "sourceFile": "Joint-level determinants of the dynamic strength index implications for testing and monitoring.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 33863,
+        "doi": "10.1080/14763141.2022.2131614",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Female Athletes",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Study of 8 female NCAA Division I lacrosse players who performed three isometric mid-thigh pulls and three countermovement jumps with motion capture and force plates. The hip joint-level dynamic strength index correlated with the ground reaction force index (r = 0.738, p = 0.037), while ankle and knee did not. Joint-level indices were significantly higher than the force-based index at all three joints, by mean differences of 34.3, 62.1 and 111.5 for ankle, knee and hip.",
+      "limitations": "Eight participants, one sex, one sport and one isometric joint position, so the correlations are imprecise (hip 95% CI 0.147 to 0.976). The authors describe the results as based on a small sample and call for caution.",
+      "synthesisCaution": "Staff could take the joint-level index values as usable strength targets, when the authors say they are hard to interpret and of questionable practical use.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.athleteDev: 'force-based DSI relates only loosely to hip-level strength expression' -> reversed; hip was the only joint correlated ('only the hip DSINJM was correlated with DSIGRF'); ankle and knee were not",
+            "paper.practicalImplications: 'Keep using the ground reaction force DSI with its existing interpretation' (not supported) -> the paper says DSIGRF 'provides limited information about joint-specific strength capacity'",
+            "paper.limitations: removed 'The authors note the sample-size calculation assumed very large correlations, which this study cannot confirm' (not stated by authors)",
+            "paper.findings: 'good to excellent' reliability -> 'excellent' (all ICC 0.960 to 0.993, >0.9 = excellent); added ankle and knee r values and Hedges g range",
+            "paper.rtp: 'did not include injured athletes' -> health status not reported (not stated in text)",
+            "paper.tldr: 'a research measure for now, not a monitoring target' -> attributed to authors' conclusion",
+            "evidenceSummary: 'percentage points' -> mean differences as reported ('difference = 34.3 [8.8, 59.7]')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1287",
+        "synthesisBatch": "pilot-synthesis-batch-71",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 93,
+      "sourceFile": "Limited Agreement on ACL Tear Location Between Arthroscopy and MRI - A Prospective Evaluation.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 35384,
+        "doi": "10.1177/23259671251397389",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Prospective cohort study (diagnosis) of 174 patients aged 14 to 66 (mean 25.4 years) with full-thickness ACL tears who underwent reconstruction at one institution between August 2022 and March 2024. The authors report agreement between preoperative MRI and arthroscopic tear location (modified Sherman classification) in 43.1 percent of cases overall and 95.5 percent for type III tears, with arthroscopy finding more proximal tears than MRI. Older age was associated with type I tears on both assessments, and sex and BMI were not significantly associated with tear type.",
+      "limitations": "The cohort is from a single institution and is not described as athletes, so the findings may not transfer to athletic populations. Radiologist agreement was moderate (kappa 0.41), the senior author arbitrated about 29 percent of MRI reads, and the surgeons' arthroscopic calls were not video-reviewed.",
+      "synthesisCaution": "Staff could read the 95.5 percent type III agreement as meaning an MRI midsubstance read is trustworthy, when MRI called 117 tears type III against 44 at arthroscopy, and the cohort is single-center ACL surgery patients of unstated athletic status.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: removed 'MRI reads of midsubstance tears ... may be relied on for that category'; 95.5 percent is agreement within arthroscopic type III tears, while MRI called type III in '67.2% of patients (117/174)' versus '25.8% (44/174)' at arthroscopy",
+            "paper.tldr and synthesisCaution: clarified the meaning of the 95.5 percent type III agreement",
+            "paper.limitations: the P=.038 clustered comparison is reported in the results text ('When clustering different groups ... odds ratio of 0.35 ... P = .038'), not as a Table 6 entry; added that surgeons 'were not blinded to the MRI scans'",
+            "populations: confirmed no athlete tags; patients aged 14 to 66 undergoing ACLR, athletic status not reported"
+          ],
+          "residualConcerns": "Abstract states no association with injury mechanism while results report P=.038 for one clustered comparison. Table 6 MRI rows appear internally inconsistent (noncontact row shows 0.0 percent type I), possibly mislabelled rows in the source.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1288",
+        "synthesisBatch": "pilot-synthesis-batch-71",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

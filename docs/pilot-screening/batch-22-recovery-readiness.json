@@ -1,0 +1,684 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-22-recovery-readiness",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Recovery & Readiness shortlist positions 37-48. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 37,
+      "sourceFile": "Heart rate variability in concussed college athletes - Follow-up study and biological sex differences.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 67524,
+        "doi": "10.3390/brainsci13121669",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football",
+        "Basketball",
+        "Volleyball"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Injured Athletes",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Prospective longitudinal before-after cohort of 169 college student-athletes (55 girls) who had baseline symptom testing, with HRV recorded mainly in football and basketball players; 30 (8 girls) had a concussion and were retested a mean of 3.5 days after injury and again at return to play. RMSSD, VLF and HF showed no time effect, but relative high-frequency power (%HF) showed a time by position by sex interaction (P = .022), with girls higher than boys at return to play, a comparison based on only 2 girls at that time point.",
+      "limitations": "The concussed sample is small (30 athletes, 8 girls), the girls' HRV trajectory rests on 1 to 8 athletes per time point, and the study had no control group retested over time. It cannot support HRV for concussion detection or return-to-play clearance, and the sex-specific pattern is exploratory.",
+      "synthesisCaution": "Staff may read the sex difference in %HF at return to play as a validated sex-specific recovery marker, when it rests on 2 girls and the authors themselves call for caution.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/methods: 'retested within 72 hours' -> mean 3.5 days, two athletes after more than a month ('the first post-concussion assessment was 3.46 (SD: 2.35) days after')",
+            "evidenceSummary/methods: HRV was mandatory only for football and basketball, optional for others ('The HRV test was optional for lower-risk sports athletes')",
+            "tldr: framed on 169 athletes -> framed on the 30 concussed athletes who were followed"
+          ],
+          "residualConcerns": "Concussion paper. Sex-specific HRV findings rest on 1 to 2 girls per time point; the paper's conclusion that HRV disruptions follow concussion is stronger than the null RMSSD, VLF and HF time effects support.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "773",
+        "synthesisBatch": "pilot-synthesis-batch-22",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 38,
+      "sourceFile": "Short term effects of two different recovery strategies on muscle contractile properties in healthy active men - A randomised cross-over study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 44629,
+        "doi": "10.1080/02640414.2021.2010978",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomised cross-over trial in 28 healthy active men (mean age 28 years) who completed a fatigue protocol of quadriceps exercise at 8RM and then 15 minutes of hot-water immersion (42 degrees C), cold-water immersion (10 degrees C) or passive rest, with a one-week washout between conditions. Hot immersion produced a larger increase in relativised muscle displacement than cold immersion immediately after recovery (+4.02 mm, P = .001), and higher relativised velocity of deformation than cold immersion immediately, at 15 minutes and at 45 minutes (P from .001 to less than .0001).",
+      "limitations": "Outcomes were tensiomyography measures of vastus medialis contractile properties over one hour, with no performance or strength test after recovery. The sample was men described as healthy and active rather than as athletes, and the findings cannot be applied to women or to recovery outcomes such as soreness or readiness.",
+      "synthesisCaution": "Staff may read the faster-recovery conclusion as proof that hot immersion improves performance or recovery, when the study measured muscle contractile properties only and included no exercise performance test.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: said results at P = .008 failed the P < .01 threshold -> only P = .015 fails; P = .008 (HWI vs rest at 45 min) meets it ('P values < 0.01 were considered statistically significant')",
+            "findings: added comparisons with passive rest (HWI higher only at 45 min, P = .008; CWI lower at 15 min, P = .005)",
+            "limitations: added that the cross-over was analysed with condition as a between-subject factor (F(2,81)) and that baseline Dmr was higher in the HWI condition",
+            "practicalImplications: unclear wording ('should not use these findings to choose cold immersion less often') -> rewritten to match findings"
+          ],
+          "residualConcerns": "Analysis treated a 28-person cross-over as 84 independent observations, which may overstate significance.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "774",
+        "synthesisBatch": "pilot-synthesis-batch-22",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 39,
+      "sourceFile": "Effects of external counterpulsation on post-exercise recovery in elite rugby league players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 23,
+        "extractedCharacters": 41464,
+        "doi": "10.1123/ijspp.2018-0682",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Randomised, placebo-controlled crossover study of 7 elite National Rugby League players (mean age 19.5 years) who completed two 60-minute pre-season conditioning sessions 48 hours apart, each followed by 30 minutes of external counterpulsation or an identical placebo. Peak and accumulated cycling peak power rose from pre-exercise after counterpulsation (+11% and +14%, P = .028 and .027) with no change after placebo, and the testosterone to cortisol ratio was above baseline and placebo at 5 hours.",
+      "limitations": "With 7 players, plasma results from 6, and many outcomes tested at P ≤ .05 without multiplicity correction, the study is a proof-of-concept signal. The reported between-condition power effect is not supported by a reported interaction test, and the conditioning session was not game-like.",
+      "synthesisCaution": "Staff may read the power gains and reduced inflammation in the abstract as proof that the device improves performance or recovery, when the sample was seven players, the power comparison rests on within-condition change, and the device manufacturer funded the grant.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: added that the no-pressure placebo and large comfort difference ('placebo (8.7±1.1) compared with ECP (1.4±5.1) (p=0.011)') make participant blinding unlikely",
+            "findings: clarified that the alpha-amylase to IgA change had no condition or interaction effect ('without condition or interaction effects') and added the T:C interaction P = .015"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "775",
+        "synthesisBatch": "pilot-synthesis-batch-22",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 40,
+      "sourceFile": "Heavy Hitters, Light Sleepers - Collision Frequency and Locomotor Load on Sleep Architecture in Professional Rugby Union Players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 62637,
+        "doi": "10.1002/ejsc.70052",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Retrospective study of 13 male professional rugby union players (7 forwards, 6 backs) across three 2023 Super Rugby matches, with 20 post-match nights of wearable forehead sleep recording linked to video-coded collisions and GPS load in a mixed-effects model. Each additional collision was associated with about 4 minutes less total sleep (P = .006) and about 2 minutes less REM sleep (P < .001), while more total distance was linked to more REM sleep (+6 minutes per 500 m, P = .014) and more high-speed distance to less (-7 minutes per 100 m, P = .020).",
+      "limitations": "The analysis covers 13 players and 20 post-match nights with no comparison nights, and the wearable is not laboratory polysomnography. Many models were tested without multiplicity correction, and location is confounded with travel, time zone and kick-off time, so the associations cannot be separated from other match-day factors.",
+      "synthesisCaution": "Staff may read the per-collision minute losses as a precise causal effect on sleep and recovery, when they come from 20 nights in 13 players, with no non-match comparison and no test of next-day function.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "citation: added issue number printed in the source ('2025, 9')",
+            "limitations: added uncontrolled caffeine, alcohol and sleep disorders (authors' stated limitations), confounding of home location with the only 19:00 kick-off, and collisions tracking minutes played (finishers 10 ± 4 vs starters 21 ± 13)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "776",
+        "synthesisBatch": "pilot-synthesis-batch-22",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 41,
+      "sourceFile": "Immediate Effects of Overnight Long-Haul Travel on Physical and Cognitive Performance and Sleep in Professional Male Rugby Union Players (a 2-Part Study).pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 43040,
+        "doi": "10.1123/ijspp.2024-0328",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Brain Health & Psychology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Prospective observational study of 43 professional male rugby union players across two overseas trips, Part I (n = 24, Perth to Tokyo, +1 time zone) and Part II (n = 24, Perth to Johannesburg, -6 time zones). Sleep (actigraphy), drop-jump and multirebound-jump performance, psychomotor vigilance and visual analog fatigue scales were measured before, during and after travel. The authors report that travel cut sleep during the trip by 219 to 334 minutes, reduced drop-jump reactive strength index until the third morning after arrival, and slowed psychomotor vigilance and raised mental fatigue during travel, with cognitive scores back near baseline the morning after the first hotel night.",
+      "limitations": "Two separate small samples on different routes, so the parts cannot be pooled, and the Part II baseline was taken in the afternoon while the arrival test was taken in the morning, which limits the cognitive comparison. Recovery was not tracked until jump performance returned to baseline, so the full recovery time is unknown.",
+      "synthesisCaution": "Staff may read the 3-day arrival rule as a general travel standard, when it comes from one team on two specific routes and the authors state the two trips cannot be interpreted together.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "sports: Mixed / General Sport -> Rugby (professional rugby union players)",
+            "paper.findings: claimed Part I sleep on first arrival night was still below home -> not significantly different (Table 2: HOME 421, AWAY 1 490 min); added P = .002 for day 1 RSI and P = .017 for mental fatigue",
+            "paper.abstract: attributed the 3-day jump decrement to 'the longer time-zone shift' -> it came from Part I, +1 time zone ('travel in part I primarily induced travel fatigue due to minimal circadian shift (+1 TZ)')",
+            "paper.limitations: noted abstract (-7%) vs results (-8%) day 1 RSI discrepancy"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "777",
+        "synthesisBatch": "pilot-synthesis-batch-22",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 42,
+      "sourceFile": "Monitoring collegiate soccer players during a congested match schedule- Heart rate variability versus subjective wellness measures.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 35601,
+        "doi": "10.1016/j.physbeh.2018.07.001",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Collegiate"
+      ],
+      "evidenceSummary": "Within-group study of eight collegiate soccer players (21.1 +/- 3.4 years) during a two-week phase of training sessions (low load) and a four-match tournament (high load). Hooper wellness index and its subsets, Ln rMSSD and SDNN from a smartphone app, and session RPE were recorded. The authors report that session RPE rose by 148% and the Hooper index rose by 50% (effect size 1.05), while Ln rMSSD and SDNN showed only trivial changes, and changes in the Hooper index tracked changes in session RPE more closely than Ln rMSSD did.",
+      "limitations": "Only eight players from one team were studied at a single time point per phase, with no external load measure and an unclear sex composition, so the findings are a small, preliminary comparison of two monitoring tools. Heart rate variability was taken on one morning per phase rather than as a rolling average, which the authors note may explain the weak response.",
+      "synthesisCaution": "Staff may conclude that heart rate variability is useless for monitoring, when this study tested single morning readings in eight players and the authors note that rolling averages were not evaluated.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications and paper.athleteDev: framed the comparison as daily readings and recommended daily questionnaires -> the study compared measures at one time point after each four-day phase ('when \"one time point\" is the only option available')",
+            "paper.tldr: 'raised ... sleep ... ratings' -> 'worsened self-rated sleep' (higher Hooper scores mean poorer wellness)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "778",
+        "synthesisBatch": "pilot-synthesis-batch-22",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 43,
+      "sourceFile": "Evaluating methods for imputing missing data from longitudinal monitoring of athlete workload.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 50396,
+        "doi": "10.52082/jssm.2021.188",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Basketball"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Female Athletes",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Secondary analysis of one season of jump count and RPE workload from 93 sub-elite high school basketball players (45 female, 48 male, mean age 16.4 years) across eight teams. Ten single and machine-learning imputation methods were tested by removing 1% of known values and measuring error (RMSE). The team machine learning model had the lowest error (8.5 jumps/hour and 1.1 RPE points), followed by the team mean for the same session (11.7 jumps/hour and 1.4 RPE points). Season jump count and season sRPE remained strongly correlated in the original and multiply imputed datasets (r = 0.74 original, 0.79 pooled).",
+      "limitations": "The findings come from one season, eight teams and one wearable jump counter, and only player-sessions with full participation were used. Errors were estimated by repeatedly removing 1% of known values (effective missingness 7.7% to 49.4% per team), so accuracy may differ for teams with larger real gaps, which reached 93% of full-participation sessions.",
+      "synthesisCaution": "Staff may treat imputed values as measured workload, even though the best method still erred by about 8.5 jumps per hour (about 27% of the example team's jump rate) and about 1 RPE point per session; only the season-level association was preserved.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations and paper.limitations: said errors were measured on 1% of known values rather than real gaps -> every known value was imputed by removing 1% at a time, with effective missingness 7.7% to 49.4% per team (Table 2)",
+            "synthesisCaution: claimed imputed values 'only partly reproduce the original data' (not stated) -> uses the reported error size ('about 27% of the known jump rate') and notes only the season association was preserved",
+            "paper.findings: individual machine learning was tied next best for both jumps and RPE, not just RPE; added the rise in season totals after imputation (Table 4)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "779",
+        "synthesisBatch": "pilot-synthesis-batch-22",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 44,
+      "sourceFile": "Symptoms of Overtraining in Resistance Exercise - International Cross-Sectional Survey.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 39631,
+        "doi": "10.1123/ijspp.2019-0825",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Other Sport",
+        "Rugby",
+        "Track & Field"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Online anonymous survey of 605 competitive athletes from resistance-based sports (mainly powerlifting, bodybuilding, weightlifting and strongman, plus rugby, CrossFit, sprint and field events and American football), 452 male and 153 female, from club to international level. Of these, 70.9% reported a past unexplained decrease in performance, most often lasting 1 week to 1 month (43.8%). General fatigue was the most frequent self-reported symptom (35.7%), and 92.5% of athletes with a performance decline also reported non-training stressors.",
+      "limitations": "This is a self-selected, convenience online survey in which performance decline and symptoms were self-reported and recalled, with no clinical or performance verification and no control for repeat entries. Its cross-sectional design cannot show that any symptom comes before overtraining, and the study was not designed to separate overreaching from overtraining.",
+      "synthesisCaution": "Staff may read the most common symptom, fatigue, as a predictive warning sign, when the authors state that no symptom profile could predict or distinguish overtraining conditions in this survey.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added that athletes reporting no decline ended the survey at section 3 ('The survey concluded at section 3 for subjects who indicated that they have never experienced an unexplained decline'), so stressor and muscle-failure frequencies have no comparison group",
+            "sports and evidenceSummary: added rugby, track and field and other strength sports, and American football (Table 2)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "780",
+        "synthesisBatch": "pilot-synthesis-batch-22",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 45,
+      "sourceFile": "Effects of muscle fatigue on exercise-induced hamstring muscle damage - A three-armed randomized controlled trial.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 74899,
+        "doi": "10.1007/s00421-023-05234-z",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Recovery & Readiness",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Male Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Three-arm randomized controlled trial in 24 resistance-trained men aged 18 to 35 (8 per group). Groups performed one eccentric hamstring damage session (6 x 10 isokinetic eccentric leg curls) either alone, after one acute fatigue set immediately before, or after four fatigue sessions over eight days. Muscle damage markers (peak torque, thickness, stiffness, contractility, range of motion, pain and creatine kinase) were measured before, after, 1 hour after and for 72 hours. The authors report that the fatigued groups did not show more damage than the control group, although the acute fatigue group did less eccentric work (6,836 J versus 9,293 J, P = .005).",
+      "limitations": "The sample was small (8 per group), limited to men aged 18 to 35, and the study used indirect damage markers rather than injuries. Residual fatigue was not measured directly before the damage session, and the authors could not confirm that residual fatigue was established before the damage session, so the test of residual fatigue is weak.",
+      "synthesisCaution": "Staff may read the null damage result as showing that fatigue does not raise hamstring injury risk, when the trial measured indirect damage markers after a single laboratory session in resistance-trained men and did not measure injuries.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "sports: Soccer -> Mixed / General Sport (participants were resistance-trained men, not soccer players; soccer was only the rationale)",
+            "populations: Mixed / Unspecified -> Adult / Recreational, Healthy Athletes added (18 to 35 years, at least two sessions per week, acute lower-limb injuries excluded)",
+            "paper.findings: interactions implied group differences -> 'Simple main effects for group were not significant at any time point'",
+            "paper.limitations: noted the Perspective section's claim of increased susceptibility conflicts with the reported comparable damage",
+            "paper.practicalImplications: removed garbled clause about fatigue raising damage risk"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "781",
+        "synthesisBatch": "pilot-synthesis-batch-22",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 46,
+      "sourceFile": "Getting the most out of intensie longitudinal data - a methodological review of workload-injury studies.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 94167,
+        "doi": "10.1136/bmjopen-2018-022626",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Sports Medicine",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Systematic search (six systematic reviews and one consensus statement) identified 34 prospective cohort studies of team-sport athletes that collected more than 20 workload observations per athlete and examined workload and injury. The studies were published from 2003 to 2016, covered rugby league, soccer, Australian football, cricket, rugby union and others, and included an average of 96 athletes (median 46), mostly male. The authors report that regression (22 of 34) and correlation (10 of 34) were the most common methods, and that only three studies (under 10%) used time-to-event or multilevel models suited to repeated measures.",
+      "limitations": "This review assesses how the statistical methods in the included studies matched the data, and does not pool injury or workload effects. Its search may have missed eligible studies, and its ratings of method fit are qualitative, so it cannot show whether any study's conclusions are correct.",
+      "synthesisCaution": "Staff may read this review as proof that high or spiked workloads cause injury, when it only shows how the workload-injury studies were analysed and does not estimate injury risk.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: GEEs 'appeared in five studies' -> six (five logistic, one Poisson; 'GEEs were used most commonly (six studies)')",
+            "paper.findings: 'Most studies aggregated daily workloads into weekly' -> 16 of 34 summed into weekly measures, with 32 collecting daily data"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "782",
+        "synthesisBatch": "pilot-synthesis-batch-22",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 47,
+      "sourceFile": "Counteracting mental fatigue for athletes - A systematic review of the interventions.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 57520,
+        "doi": "10.1186/s40359-023-01476-w",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer",
+        "Basketball",
+        "Tennis",
+        "Swimming & Diving",
+        "Endurance Sport",
+        "Other Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Systematic review of 10 randomized controlled trials of athletes (316 in the text; Table 2 counts sum to about 335) testing interventions to counter mental fatigue before sport-specific tasks. Interventions were autonomy support (1 study), person-fit (2), virtual nature exposure (1), brief mindfulness (1) and anodal transcranial direct current stimulation (tDCS, 5). Each non-tDCS approach improved or protected a sport-specific outcome in its study, tDCS improved performance in three of five studies, and physiological and RPE measures were mostly unchanged; no meta-analysis was done because of heterogeneity.",
+      "limitations": "The evidence rests on 10 trials, mostly small, that used different interventions, tasks and sports, so each intervention was tested in one to five studies. The authors did not pool results, and most included athletes were not professionals or elite.",
+      "synthesisCaution": "Staff may read the review as showing that several interventions reliably counter mental fatigue in sport, when each was tested in only one to five small trials, tDCS failed in two of its five, and the authors' discussion overstates tDCS as positive in four studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary, paper.findings, tldr: tDCS 'improved in four of its five studies' -> three of five; Moreira et al. found no shooting effect ('p = 0.651') in addition to the 800 m swim null result",
+            "paper.limitations: replaced generic notes with the internal discussion/results conflict on tDCS and noted person-fit was a level comparison, not a manipulated intervention",
+            "paper.findings: added that nature exposure did not change decision accuracy (p = 0.91)",
+            "paper.practicalImplications and synthesisCaution: reflect mixed tDCS evidence"
+          ],
+          "residualConcerns": "The paper reports 316 participants with 279 female and 37 male, while Table 2 sums to about 335 with a male majority; the record reports both.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "783",
+        "synthesisBatch": "pilot-synthesis-batch-22",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 48,
+      "sourceFile": "Dry Needling in Sports and Sport Recovery - A Systematic Review with an Evidence Gap Map.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 34,
+        "extractedCharacters": 110032,
+        "doi": "10.1007/s40279-025-02175-9",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training",
+        "Research & Analytics",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "PRISMA 2020 systematic review with an evidence gap map of 24 studies (17 randomized experimental studies and 7 case reports) in 580 athletes across 13 sports, mostly talent or development-level and highly trained or national-level athletes. Searches of PubMed, Scopus and Web of Science ran to January 2024, with reference-list searching. The authors report that dry needling reduced pain in injured or pain-affected athletes in most studies, while effects on strength, range of motion and performance were inconsistent and small in healthy athletes.",
+      "limitations": "The evidence is small and heterogeneous, with mostly unblinded designs (blinding of participants and therapists in 18% of studies, allocation concealment in 41%), no cohort studies, and no meta-analysis. Dosing and adverse-event reporting were inconsistent, with only 3 of 24 studies reporting adverse effects.",
+      "synthesisCaution": "Staff may read the review's conclusion of general effectiveness and safety as established, when only 3 of 24 studies reported any adverse effects and most studies had weak blinding.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: removed attribution of the three-database limit to the authors (not in their limitations section); added that tabulated pain changes are mostly within-group pre to post, and that the review reads lower pressure pain thresholds as pain relief",
+            "paper.practicalImplications: removed 'delivered by qualified practitioners' (not stated in the review)"
+          ],
+          "residualConcerns": "The review interprets reduced pressure pain thresholds (e.g., Benito-de-Pedro 2.63 to 1.94; Walsh 4.3 to 10.7% reductions) as pain improvement, and Table 4 labels a 'significant' difference with p > 0.05. A reviewer should confirm how the pain evidence is summarized. Adverse events included syncope in two participants and one chest-pain episode.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "784",
+        "synthesisBatch": "pilot-synthesis-batch-22",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

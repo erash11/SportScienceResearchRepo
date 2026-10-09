@@ -1,0 +1,491 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-45-rehabilitation-return-to-sport",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Rehabilitation & Return to Sport queue positions 16-76. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 16,
+      "sourceFile": "Comparison of eccentric hamstring strength and asymmetry at return-to-sport after hamstring strain injury among those who did and did not re-inj.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 30328,
+        "doi": "10.1016/j.ptsp.2022.11.006",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "American Football",
+        "Track & Field",
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Collegiate",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Analysis of routinely collected records of 60 NCAA Division I athletes (11 women; American football, track and soccer) with an index hamstring strain, drawn from a larger prospective injury-surveillance study, tested with the NordBord at return to sport and followed for same-limb re-injury over 3 months. Eight athletes (13%) re-injured within 1 month and 11 (18%) within 3 months, and peak eccentric force and between-limb asymmetry at return to sport did not differ between those who did and did not re-injure (Table 2 Mann-Whitney P 0.47 to 0.96).",
+      "limitations": "The re-injury counts are small (8 and 11), so the null comparisons cannot exclude a meaningful difference, and the single-university sample comes from one testing protocol. Subgroup comparisons were run only for the moderate injury group.",
+      "synthesisCaution": "Staff could read the null result as showing that eccentric strength at return to sport does not matter for re-injury, when the study tested one time point with only 8 to 11 re-injuries.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/paper.methods: 'Retrospective analysis' is not the paper's wording -> analysis of routinely collected records with HSI 'collected as part of a larger prospective, observational study'",
+            "paper.findings: added that no women re-injured (Table 1 'Females ... Re-injured 0 (0%)')",
+            "paper.limitations: added mean testing delay (6.8 ± 7.8 days) and that the abstract matches Table 2 for asymmetry p values",
+            "studyDesign: kept 'Cohort Study' over the paper's label 'Design: Cross-sectional study' because the methods describe exposure at RTS and re-injury tracked over the following 3 months"
+          ],
+          "residualConcerns": "Text vs Table 3 p values for the moderate group (0.49/0.48 vs 0.89/0.79) and text vs Table 2 asymmetry p values (>=0.43 vs 0.91/0.96) disagree; record reports table values. Design label conflict (paper says cross-sectional). Clinically relevant to return-to-sport decisions.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1018",
+        "synthesisBatch": "pilot-synthesis-batch-45",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 23,
+      "sourceFile": "Concussion recovery time, return-to-play protocols, and mandated sit-out periods among adult amateur contact field sports - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 56569,
+        "doi": "10.1007/s11845-025-04242-6",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "American Football",
+        "Rugby",
+        "Soccer",
+        "Other Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Systematic review (PRISMA and PERSiST) of English-language studies from 2015 to 2024 on adult amateur field contact sport athletes with suspected or diagnosed concussion, searched in May 2024 in five databases. Nineteen studies (58 datasets), mostly of US collegiate athletes, covered American football, field hockey, lacrosse, ladies Gaelic football, rugby, soccer and sprint football; median recovery times ranged from 6.5 to 37 days across datasets. RTP protocols ranged from 5 to 21 days (most commonly 7 days, 31 of 58 datasets), and mandated sit-out periods from no same-day return to 21 days (most commonly no same-day return, 25 of 58).",
+      "limitations": "All included studies were rated with an observational-study quality tool, 8 of 19 were rated fair quality and 6 had level 3 evidence, sport-specific samples were sometimes under 10, and several sports have only one study. Recovery times reflect differing protocols, policies, compliance and medical access, so the review cannot give a single expected recovery time for any sport.",
+      "synthesisCaution": "Quoting one sport's median recovery time as the expected return time for an athlete, when the review shows wide variation within and between sports that may reflect sit-out rules, protocols, compliance and medical access.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'Most included studies were observational with a fair or lower quality rating' -> 8 of 19 fair, 11 good (Table 1)",
+            "populations: added Collegiate (Table 2: most samples are 'Collegiate Athletes (National Collegiate Athletic Association)')",
+            "paper.findings: 'mandated sit-out periods up to 21 days in rugby and ladies Gaelic football' -> extended sit-outs of 11 to 21 days only in rugby and ladies Gaelic football, rugby union longest at 21 ('ranging from 11 to 21 days'; ladies Gaelic football 15 days in Table 3)",
+            "evidenceSummary/paper.rtp/paper.findings: median range 'about 6 to 37' -> 6.5 to 37 days ('a median RTP between 6.5 and 37 days')",
+            "paper.tldr/synthesisCaution/paper.athleteDev: 'rules strongly shape' and 'the review shows the figures depend on' overstated -> may shape ('may affect SRC recovery but should be considered alongside other confounding variables'; 'it is difficult to discern the full impact')",
+            "paper.methods: added single-reviewer title and abstract screening and single-reviewer bias rating ('Title and abstract screening were completed on Covidence by a single reviewer')",
+            "paper.limitations: added abstract vs results study-count conflicts ('American football (10/19' vs 'A total of 11/19 (58.0%) studies'; 'lacrosse (9/19' vs 'A total of 9/15')"
+          ],
+          "residualConcerns": "Year 2026 taken from the copyright line ('Royal Academy of Medicine in Ireland 2026'); received and accepted dates are 2025 and no volume or issue is printed, so confirm the issue year. Field hockey longest recovery is 34 days in the abstract but a 37-day median in Table 3.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1019",
+        "synthesisBatch": "pilot-synthesis-batch-45",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 44,
+      "sourceFile": "Criteria for Progressing        Rehabilitation and Determining Returnto-Play Clearance Following      Hamstring   Strain Injury- A Systematic Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 48220,
+        "doi": "10.1007/s40279-016-0667-x",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Track & Field"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Professional / Elite",
+        "Collegiate",
+        "Adult / Recreational",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Systematic review of nine studies with 601 athletes who had acute hamstring strain injury confirmed within 10 days, with at least 6 months of re-injury follow-up. The authors report that rehabilitation progression was mostly based on pain-free limits, that clinical assessments and performance tests were the most common return-to-play criteria, and that studies using isokinetic dynamometry had mean return-to-play times of 12 to 25 days while the Askling H-test had the lowest re-injury rates (1.3 to 3.6 percent).",
+      "limitations": "The included studies differed in injury severity, diagnosis method, rehabilitation and definition of return-to-play time, and study quality ranged widely (10 to 18 of 22 on the modified checklist). Several group comparisons are based on very few studies, and the H-test findings come from two studies by the same author.",
+      "synthesisCaution": "Staff could read the cross-study comparison of return-to-play times and re-injury rates as evidence that one criterion causes a better outcome, when the authors say the studies are not comparable enough to show that.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: endorsed isokinetic testing without the authors' caveat -> added ('the ability of isokinetic dynamometry to assess the risk of initial and recurrent HSI at the individual level has been shown to be limited')",
+            "sports: added Soccer and Track & Field (included cohorts of elite footballers and elite track and field athletes)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1020",
+        "synthesisBatch": "pilot-synthesis-batch-45",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 45,
+      "sourceFile": "Criteria for return to running after anterior cruciate ligament reconstruction- a scoping review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 51954,
+        "doi": "10.1136/bjsports-2017-098602",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Scoping review of 201 studies of primary anterior cruciate ligament reconstruction (ACLR) that reported criteria for starting to run. Time was the most common criterion, with a median of 12 postoperative weeks (IQR 3.3 weeks, range 5 to 39 weeks). Fewer than one in five studies used clinical, strength or performance-based criteria, the most common being full knee range of motion or above 95 percent of the non-injured knee, pain below 2 on a visual analogue scale, isometric or isokinetic limb symmetry index above 70 percent, and hop test limb symmetry index above 70 percent.",
+      "limitations": "Scoping reviews describe reported criteria and do not test whether those criteria are safe or effective, and the included studies were not appraised for risk of bias. The authors also note that the reports rarely state whether running at 12 weeks was safe.",
+      "synthesisCaution": "Staff could read the median 12-week time point as a standard for when running is safe, when the authors say no universal timeline exists and that the safety of running at that point is unknown.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: placeholder volume and pages '2018;0:1-9' -> removed (printed as 'Br J Sports Med 2018;0:1-9', an online-first placeholder)",
+            "evidenceSummary: 'knee range of motion or 95 percent' and omission of isokinetic criterion -> 'full knee RoM or >95% of the non-injured knee' and 'isokinetic quadriceps and hamstring strength LSI>70%' added",
+            "paper.findings: most common strength criterion given as isometric quadriceps LSI only -> both isometric quadriceps LSI>80% (n=3) and isokinetic quadriceps and hamstrings LSI>70% (n=4)",
+            "paper.limitations: added source mix, absence of bias appraisal, and internal count inconsistencies ('Strength ... (n=31, 16%)'; 'Only 17 articles (7%) used performance-based criteria')"
+          ],
+          "residualConcerns": "Scoping review coded as Systematic Review / Meta-analysis per library precedent (systematic search described). Population is ACLR patients, not exclusively athletes.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1021",
+        "synthesisBatch": "pilot-synthesis-batch-45",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 46,
+      "sourceFile": "Criteria-based return to sport   decision making following lateral ankle sprain injury - A systematic  review  and narrative synthesis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 99085,
+        "doi": "10.1007/s40279-019-01071-3",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review of prospective studies that used a criteria-based return-to-sport decision process after lateral ankle sprain. The search of seven databases (to 23 November 2018) identified 948 articles, and no study met the criteria, so no pooled results were produced. The authors instead provide a narrative synthesis of questionnaires, clinical tests and functional tests used in ankle sprain studies and propose variables for a future decision framework.",
+      "limitations": "The review includes no studies with outcome data, so it cannot show that any criterion is valid, safe or effective. The proposed decision framework is a theoretical synthesis that the authors say requires consensus and prospective testing.",
+      "synthesisCaution": "Staff could read the proposed framework as an evidence-based return-to-sport protocol, when the authors state that no rigorous evidence fills it and that its variables are untested.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: 'search covered published English-language and peer-reviewed sources only' -> English-language restriction is not stated; only peer-reviewed restriction kept ('Only published articles in peer-reviewed journals were considered for full-text inclusion')",
+            "paper.methods: 'reported following PRISMA-P' -> protocol developed in line with PRISMA-P ('was developed in line with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses Protocols (PRISMA-P)')"
+          ],
+          "residualConcerns": "Empty systematic review: zero studies met inclusion, so all substantive content is the authors' narrative synthesis and proposed framework. Kept as INCLUDE and coded Systematic Review / Meta-analysis; a reviewer may prefer Narrative Review for browsing purposes.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1022",
+        "synthesisBatch": "pilot-synthesis-batch-45",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 51,
+      "sourceFile": "Current concepts in Achilles tendon ruptures.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 47753,
+        "doi": "10.1016/j.cpm.2023.09.001",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Basketball"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "This narrative review covers the anatomy, diagnosis, conservative and surgical treatment, and rehabilitation of acute and chronic Achilles tendon ruptures, drawing on earlier RCTs, meta-analyses and cohorts. No search method is described. Its main synthesis is that recent studies show similar re-rupture rates for surgical and nonsurgical treatment when early functional rehabilitation is used, including a 10-RCT meta-analysis with a 1.7% risk difference (P=.45).",
+      "limitations": "With no described search, the choice of studies cannot be checked, and the review relies on the authors' reading of trials from different eras. Athlete-specific outcomes are limited to a few examples, such as a WNBA cohort.",
+      "synthesisCaution": "Staff could read the 'similar re-rupture rates' conclusion as settling surgery versus casting for their athletes, but the review does not grade the evidence and the cited trials mix ages, activity levels and treatment eras.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Adult / Recreational and Professional / Elite -> Mixed / Unspecified; the review covers general patients, with athlete data limited to cited examples",
+            "sports: trimmed to Mixed / General Sport and Basketball; soccer, football and volleyball appear only in a cited epidemiology study",
+            "paper.citation: house-style formatting ('Clin Podiatr Med Surg 41 (2024) 153-168')",
+            "paper.rtp: added the unrestricted-return criteria ('Drop countermovement jump Limb Symmetry Index 90%') and kept WNBA wording to the text ('23.5% of players failing to return to the sport following the injury')",
+            "paper.practicalImplications: attributed open repair indication to the authors ('it is well accepted in the literature that open repair ... is indicated')"
+          ],
+          "residualConcerns": "The Soroceanu 10-RCT meta-analysis is cited in the text as reference 36, which is a different paper (Reito et al); reference 47 is Soroceanu.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1023",
+        "synthesisBatch": "pilot-synthesis-batch-45",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 53,
+      "sourceFile": "Current implementation and barriers to using blood flow restriction training - Insights from a survey of allied health practitioners.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed anywhere in the extracted text (online-first JSCR version, 'J Strength Cond Res XX(X): 000-000, 2023'). All other sections are complete.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: EXCLUDE (c, borderline) -> DEGRADED; BFR exercise prescription for injury rehabilitation is exercise and rehabilitation practice relevant to rehab staff ('Most practitioners prescribe BFR exercise for musculoskeletal rehabilitation clients (91.6%)'; 'Sporting environment 66 (21.4%)'; JSCR, keywords include 'sports medicine'), but no own DOI is printed",
+            "doiMissing: true with degradedReason; extracted text contains no DOI at all",
+            "all taxonomy, summary and paper fields written from the full text"
+          ],
+          "residualConcerns": "Scope is a judgement call: the survey targets clinicians working with clinical or older populations, not athletes; a reviewer may prefer EXCLUDE (c). DOI must be verified externally before upgrading to INCLUDE. Two authors have commercial BFR education interests.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 60,
+      "sourceFile": "Determinants of return to play after the nonoperative   management of hamstring injuries in athletes - A systematic   review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 37237,
+        "doi": "10.1177/0363546515617472",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Track & Field",
+        "Soccer",
+        "American Football",
+        "Rugby",
+        "Other Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Male Athletes",
+        "Female Athletes",
+        "Professional / Elite",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Systematic review of 24 studies (CINAHL, MEDLINE, Embase and EBM Reviews searched in June 2014; 914 unique records screened) on prognostic factors for return to play after nonoperative management of acute hamstring injuries in athletes. Only 4 studies were randomised trials, and most were Oxford level 4. The authors summarise clinical, MRI, ultrasound and rehabilitation factors associated with longer or shorter recovery, and some results conflicted between studies.",
+      "limitations": "The synthesis is narrative, with no pooled estimates, and the search ended in June 2014. The text states that study sample sizes 'ranged between 1421 and 39717 athletes', which is implausible for the included studies and looks like an extraction or typesetting error, so no sample-size range is reported here.",
+      "synthesisCaution": "Staff could treat each listed prognostic factor as a validated predictor and set return-to-play timelines from it, when most factors come from single studies with inconsistent results.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: '...in one study of 80 athletes' came from the reference-list title, not the review text -> removed; added recreational-level sport and >1 day to walk pain free, which the review lists as longer-recovery factors",
+            "paper.athleteDev: suggested L-protocol could inform training hamstring work -> review covers rehabilitation only and measures no performance outcomes",
+            "screeningLimitations: clarified the implausible printed sample-size range ('ranged between 1421 and 39717 athletes') as a likely extraction or typesetting error"
+          ],
+          "residualConcerns": "Printed sample-size range '1421 and 39717 athletes' is implausible; a human may want to check the PDF. Return-to-play paper with mostly level 4 evidence; '.1 week' and '.1 day' in the text are extraction artefacts of '>1'.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1024",
+        "synthesisBatch": "pilot-synthesis-batch-45",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 76,
+      "sourceFile": "Do Self‑Myofascial Release Devices Release Myofascia Rolling Mechanisms- A Narrative Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 50118,
+        "doi": "10.1007/s40279-019-01149-y",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of studies on foam rollers, roller massagers and balls, covering trigger point evidence, tissue stiffness, blood flow, remote (non-local) effects and reflex studies. The authors argue there is insufficient evidence that releasing myofascial restrictions is the main mechanism, and that neural, pain-modulatory, circulatory and local thixotropic mechanisms better fit the data. Most trials they cite used healthy active participants.",
+      "limitations": "This is a narrative review with no described systematic search or risk-of-bias appraisal, so its conclusions reflect the authors' judgement of mechanistic studies, many of which are small. The PubMed hit counts it reports describe how often the terms are used, not the strength of the evidence.",
+      "synthesisCaution": "Staff could take this to mean rolling has no effect on tissue, when the review argues only that breaking up adhesions is unlikely to be the main mechanism, and reports measured stiffness and blood flow changes after rolling.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: 'longer rolling (120 s) reduced repetitions, so keep bouts short' -> all durations reduced repetitions ('120 s of rolling decreased the number of knee extension repetitions by 14%, the 90 and 60 s of rolling also decreased repetition numbers by 8-9%'), so the short-bout advice was unsupported",
+            "paper.methods: PubMed hit counts described as illustrating term usage, not as the review's search",
+            "sourceFile reset byte-identical to inputs.json (non-breaking hyphen preserved)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1025",
+        "synthesisBatch": "pilot-synthesis-batch-45",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

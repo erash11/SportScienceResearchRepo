@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-46-recovery-readiness",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Recovery & Readiness queue positions 29-89. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 29,
+      "sourceFile": "Consensus on the Use of Therapeutic Interventions in Pain Management, Recovery, and Athletic Performance - A Delphi Study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 34045,
+        "doi": "10.26603/001c.129968",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Athletic Training",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Four-round Delphi survey of licensed physical therapists and certified athletic trainers with at least 1,000 hours of athletic-population practice in the prior five years. Of 94 eligible respondents, 74 completed round 1 and 32 completed round 4. In round 4, at least 70% of respondents would consider local heat, local cryotherapy, local vibration or percussive therapy in several circumstances, with local cryotherapy for acute joint pain and local heat for chronic joint and chronic soft tissue pain at 100%; local infrared therapy never reached the threshold. The authors define 'consideration' as selecting 'in some instances' or 'in most instances'.",
+      "limitations": "The study measures clinician opinion about when to consider five modalities, not patient outcomes or effects on recovery or performance. The sample is small, attrition was substantial, most respondents were men and white, and two authors are employed by a company that makes devices using these modalities.",
+      "synthesisCaution": "Staff could read the 'consideration' percentages as evidence that these modalities work for recovery or pain, when they only show how often clinicians would use them.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: omitted vibration and percussive therapy before activity (75.0% each) and cryotherapy for chronic joint pain (87.5%) -> added (Table 1 'Preparation for Physical Activity ... 75.0%* 75.0%*'); added that infrared never met threshold; reworded 81.3% item ('percussive therapies should rarely be used, when applied directly to the joint, in cases of acute joint pain (81.3% consensus')",
+            "paper.limitations: clarified the text vs Table 1 consensus conflict ('there was no consensus (>70% agreement) reached regarding any of the interventions ... it was decided that consensus on when participants would consider ... would be reported'); added conclusion vs Table 1 conflict for recovery (conclusion '2) percussive, local vibration, and local cryotherapy in recovery' vs Table 1 68.8%)",
+            "paper.tldr: added vibration and percussive before activity",
+            "evidenceSummary: corrected 100% cells to include chronic soft tissue heat and noted infrared never met threshold"
+          ],
+          "residualConcerns": "Two authors are employed by Therabody Inc., which makes devices using these modalities, and the other four accepted honorariums (source not stated); this is noted in screeningLimitations. The conclusion's recovery recommendation for percussive and vibration therapy is not supported by Table 1.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1026",
+        "synthesisBatch": "pilot-synthesis-batch-46",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 37,
+      "sourceFile": "Cool water immersion reduces postexercise quadriceps femoris muscle perfusion more than cold water immersion.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 50420,
+        "doi": "10.1249/MSS.0000000000002898",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized, parallel-group laboratory trial in 30 healthy, recreationally active men (10 per group, covariate adaptive randomization) who cycled to a core temperature of 38°C, then received 10 minutes of 8°C or 22°C water immersion or seated rest. Using oxygen-15 labeled water PET, the authors report that 22°C immersion reduced global quadriceps perfusion by 2.5 mL per 100 g per minute versus control (95% CI -3.9 to -1.1), beyond their predefined 0.75 threshold, while 8°C immersion did not reach that threshold for global perfusion.",
+      "limitations": "Ten participants per group, with perfusion measured only 10 minutes after immersion, so effects over longer periods are not known. Participants were recreationally active men rather than trained athletes, and deep muscle shivering was not measured directly, so the proposed mechanism is not confirmed.",
+      "synthesisCaution": "Staff could read this as showing that 22°C water is the better recovery choice after exercise, when the study measured blood flow for 10 minutes in 10 men per group and did not measure recovery outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: Laboratory / Experimental Study -> Randomized Controlled Trial ('participants were randomly allocated to one of the three conditions: 8°C water immersion, 22°C water immersion, or a control ... using covariate adaptive randomization')",
+            "evidenceSummary and paper.methods: added randomized allocation and the 10-minute post-immersion PET timing ('commenced 10 min after immersion')",
+            "paper.limitations: added baseline imbalance (Table 1 VO2peak 51.1/49.7/41.9; body fat 10.4/12.3/16.1%) and 'no multiplicity adjustment'"
+          ],
+          "residualConcerns": "Coded as RCT because allocation to two immersion arms and a rest control was random; the outcome is a short-term physiological mechanism (muscle perfusion), not a recovery or performance outcome, so a reviewer may prefer Laboratory / Experimental Study. Population tagged Adult / Recreational, Male, Healthy: participants were recreationally active volunteers, not competitive athletes.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1027",
+        "synthesisBatch": "pilot-synthesis-batch-46",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 72,
+      "sourceFile": "Dim light sleep tight and wake up bright Sleep optimization in athletes by means of light regulation.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 45509,
+        "doi": "10.1080/17461391.2020.1722255",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized within-subject crossover trial in 26 recreational athletes (14 female, 12 male, aged 19 to 32). Each person completed a light-regulation week (30 minutes of morning light from goggles, and amber-lens glasses for three hours before bed) and a control week, with sleep measured by diary and wrist actigraphy. In the 8 athletes who kept strict sleep-wake schedules, self-reported sleep onset latency was 17 minutes shorter with light regulation, with better sleep quality. In the 25-athlete dataset, latency was 8 minutes shorter, and no actigraphy measure differed between conditions.",
+      "limitations": "Protocol adherence was low, so the strict-schedule group is only 8 athletes and the two datasets were built after adherence was assessed. Sleep was mainly self-reported, and actigraphy did not detect any change.",
+      "synthesisCaution": "Staff could read the 8 to 17 minute latency gain as an established sleep benefit for athletes, when it is a subjective result from a small crossover study with poor adherence, and objective sleep did not change.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.abstract: 'goggles were uncomfortable and adherence was low' -> low adherence was to the sleep-wake schedule ('Due to low protocol adherence regarding the fixed sleep-wake schedules'); light goggles 'rated as rather uncomfortable'",
+            "paper.practicalImplications: 'goggles and glasses were rated uncomfortable' -> amber glasses were rated more comfortable than transparent glasses (6.31 vs 6.00, ns); only the light goggles were rated uncomfortable, and evening glasses were hard to wear for 3 hours ('16 out of 350 nights excluded')",
+            "paper.limitations: added that combined components cannot be separated ('impossible to draw conclusions regarding independent intervention components')",
+            "studyDesign: kept Randomized Controlled Trial for a randomized, counterbalanced within-subject crossover with a clear-glasses control week, consistent with library precedent for randomized crossover trials"
+          ],
+          "residualConcerns": "First author and one co-author list Philips affiliations; the disclosure statement reports no conflict.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1028",
+        "synthesisBatch": "pilot-synthesis-batch-46",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 86,
+      "sourceFile": "Does wet-cupping therapy improve repeated sprint ability, perceived wellness, and rating of perceived exertion in young active males.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 38675,
+        "doi": "10.1016/j.smhs.2023.09.007",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Single-arm study of 49 healthy, moderately active adult men (age 28 +/- 5 years; police officers training about four times a week) who completed a control session and a session 24 hours after wet-cupping therapy, in counterbalanced randomized order two weeks apart. Repeated sprint ability (six 35-m sprints), Hooper wellness scores and session RPE were measured. In Table 1, maximum, mean and minimum power were higher after cupping (mean differences 30.8 to 68.6 W, p = 0.001, effect sizes 0.5 to 0.6), perceived sleep and stress ratings and RPE improved (effect sizes 0.6 to 1.1), and fatigue and soreness did not differ.",
+      "limitations": "Single-group design with no sham or blinded comparator, and the control session was not a sham treatment, so expectation effects are possible. Outcomes were measured once, 24 hours after treatment, and no biological mechanism (for example nitric oxide or lactate) was measured.",
+      "synthesisCaution": "Staff could read the authors' call for WCT as an 'effective ergogenic aid' as proven, when the design had no sham arm, no blinding, and a single 24-hour measurement in police-officer volunteers.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes, Healthy Athletes on a police-officer sample -> Adult / Recreational ('the recruited participants were not athletes')",
+            "evidenceSummary/findings: reported Table 1 p-values and effect sizes for power outcomes instead of mixing abstract values (Table 1: max 68.64 W, p 0.001, ES 0.6; min 30.76 W, ES 0.5; mean 43.32 W, ES 0.6)",
+            "limitations: spelled out the abstract vs Table 1 conflicts (power p-values and ESs, sleep ES 0.85 vs 0.9)"
+          ],
+          "residualConcerns": "Table 1 labels mean differences as post-cupping minus control, yet wellness and RPE differences are positive although the authors say ratings were lower (better) after cupping; the sign convention is inconsistent. Control and cupping sessions were 'counter-balanced and randomized' two weeks apart, so carryover is possible.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1029",
+        "synthesisBatch": "pilot-synthesis-batch-46",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 89,
+      "sourceFile": "Dose-response relationship between evening exercise and sleep.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 49052,
+        "doi": "10.1038/s41467-025-58271-x",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Retrospective cohort of 14,689 physically active adults (73.8% men) who wore a WHOOP wrist device for one year, giving 4,084,354 person-nights. Later exercise timing and higher strain (summated heart rate zone score) were associated, in a dose-dependent pattern, with later sleep onset, shorter sleep, lower device-derived sleep percentage, higher nocturnal resting heart rate and lower nocturnal HRV.",
+      "limitations": "Observational, device-based data with no control for light exposure, caffeine or alcohol, and the sample was physically active adults rather than athletes, so it cannot show athlete performance or injury effects. Two authors are WHOOP employees, the device did not detect sleep attempts (so sleep onset latency was not measured), and sleep quality is a device-derived percentage rather than a validated questionnaire.",
+      "synthesisCaution": "Staff could read the 4-hour cut-off as safe for recovery overall, but it applies to sleep outcomes, and the authors still report slightly lower nocturnal HRV when exercise ended 6 to 10 hours before habitual sleep onset.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: sex of sample stated but no sex tags -> added Male Athletes and Female Athletes ('10,845 [73.83%] men'); participants are WHOOP subscribers selected as physically active adults, kept as Adult / Recreational"
+          ],
+          "residualConcerns": "Eligibility: participants are physically active WHOOP subscribers (>=50 logged exercises), not athletes; included as exercise/recovery evidence under criterion (c). Two authors are WHOOP employees. Abstract's 'not associated with changes in sleep' for >=4 h is the authors' summary; tables show small significant differences at -4 h and earlier.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1030",
+        "synthesisBatch": "pilot-synthesis-batch-46",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

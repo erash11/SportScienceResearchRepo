@@ -24,9 +24,11 @@ for pid in sorted(inputs):
     if not os.path.exists(p): sys.exit(f'missing verified {pid}')
     recs[pid]=clean(json.load(open(p)))
 nid=NEXT_ID; out={}; review=[]
-for i,dom in enumerate(DOM_ORDER):
-    bn=FIRST_BATCH+i; sb=f'batch-{bn}-{slug(dom)}'; syb=f'pilot-synthesis-batch-{bn}'
+bn=FIRST_BATCH-1
+for dom in DOM_ORDER:
     ids=[k for k in sorted(inputs) if inputs[k]['pilotDomain']==dom]
+    if not ids: continue  # a domain with no papers in this queue gets no batch number
+    bn+=1; sb=f'batch-{bn}-{slug(dom)}'; syb=f'pilot-synthesis-batch-{bn}'
     q=[inputs[k]['queueOrder'] for k in ids]
     scr=[];syn=[]
     for k in ids:
@@ -47,7 +49,7 @@ for i,dom in enumerate(DOM_ORDER):
         scr.append(r)
         ver=v.get('verification') or {}
         review.append({'qid':k,'batch':bn,'domain':dom,'decision':dec,'paperId':syn[-1]['paper']['id'] if dec=='INCLUDE' else '','title':inp['sourceFile'][:-4],'status':ver.get('status'),'priority':ver.get('spotCheckPriority'),'changes':ver.get('changes',[]),'concerns':ver.get('residualConcerns','')})
-    out[f'docs/pilot-screening/{sb}.json']={'schemaVersion':1,'batchId':sb,'screenedOn':TODAY,'screeningScope':f'Full-text source, eligibility, taxonomy, and synthesis-readiness review of {dom} shortlist positions {min(q)}-{max(q)}. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).','decisionDefinitions':{'INCLUDE':'Eligible for evidence extraction and synthesis after full-text review.','EXCLUDE':'Not eligible; exclusion reason required.','DEGRADED':'A required source or verification element was unavailable.'},'records':scr}
+    out[f'docs/pilot-screening/{sb}.json']={'schemaVersion':1,'batchId':sb,'screenedOn':TODAY,'screeningScope':f'Full-text source, eligibility, taxonomy, and synthesis-readiness review of {dom} queue positions {min(q)}-{max(q)}. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).','decisionDefinitions':{'INCLUDE':'Eligible for evidence extraction and synthesis after full-text review.','EXCLUDE':'Not eligible; exclusion reason required.','DEGRADED':'A required source or verification element was unavailable.'},'records':scr}
     if syn: out[f'docs/pilot-synthesis/batch-{bn}.json']={'schemaVersion':1,'batchId':syb,'sourceScreeningBatch':sb,'preparedOn':TODAY,'records':syn}
 json.dump(out,open(f'{B}/assembled.json','w'),indent=1); json.dump(review,open(f'{B}/review.json','w'),indent=1)
 import collections

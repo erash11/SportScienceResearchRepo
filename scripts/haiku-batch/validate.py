@@ -1,7 +1,10 @@
 """Validate verified records before assembly. Usage: python3 scripts/haiku-batch/validate.py <workdir>"""
-import json, re, sys
+import json, re, sys, unicodedata
 W = sys.argv[1]; T = json.load(open(f"{W}/taxonomy.json"))
 inp = {x["id"]: x for x in json.load(open(f"{W}/inputs.json"))}
+import os
+R = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+published_dois = {(p.get("doi") or "").strip().lower(): p["id"] for p in json.load(open(f"{R}/papers.json")) if p.get("doi")}
 norm = lambda s: re.sub(r"\s+", " ", s.replace("\xa0", " ")).strip()
 bad = []
 for k, i in inp.items():
@@ -13,7 +16,15 @@ for k, i in inp.items():
     if dec not in ("INCLUDE", "EXCLUDE", "DEGRADED"): bad.append((k, "decision", dec))
     if dec == "INCLUDE":
         txt = open(f"{W}/text/{k}.txt").read().lower(); d = (v["paper"].get("doi") or "").lower()
-        if not d or (d not in txt and d not in re.sub(r"\s+", "", txt)): bad.append((k, "doi not in text", d))
+        # OCR scans can add diacritics to DOI letters (e.g. "ÍJSPP"); compare accent-folded text too.
+        fold = lambda t: "".join(c for c in unicodedata.normalize("NFKD", t) if not unicodedata.combining(c))
+        if d and d not in txt and d not in re.sub(r"\s+", "", txt) and d not in fold(re.sub(r"\s+", "", txt)):
+            # Layout text can split a DOI across a column break; check the reading-order extraction too.
+            import subprocess
+            raw = subprocess.run(["pdftotext", f"{R}/SourcePapers/{i['sourceFile']}", "-"], capture_output=True, text=True).stdout.lower()
+            if d not in re.sub(r"\s+", "", raw): bad.append((k, "doi not in text", d))
+        elif not d: bad.append((k, "doi not in text", d))
+        if d.strip() in published_dois: bad.append((k, "DOI already published as ID", published_dois[d.strip()]))
         if not isinstance(v["paper"].get("year"), int): bad.append((k, "year"))
         for f in ("domains", "audiences", "sports", "populations"):
             if not v.get(f): bad.append((k, "empty", f))

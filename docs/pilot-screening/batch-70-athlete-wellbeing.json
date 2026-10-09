@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-70-athlete-wellbeing",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Athlete Wellbeing queue positions 29-29. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 29,
+      "sourceFile": "Implementing exposure limits for players in contact team sports - Review of principles and practices.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 33657,
+        "doi": "10.3389/fspor.2025.1593766",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer",
+        "Rugby"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Narrative review applying UK occupational exposure-limit principles to professional contact team sports such as football and rugby union. It reviews the evidence on post-career neurological disease and knee osteoarthritis in retired players, and notes that three Industrial Injuries Advisory Council reviews found the evidence insufficient to prescribe these conditions as occupational diseases. The author concludes that current evidence cannot confirm or reject these health concerns for professional contact sport.",
+      "limitations": "No systematic search method is described, and the review is by a single author who is employed by a consultancy, as disclosed in the conflict statement. Much of the post-career evidence comes from retrospective studies that were not designed to examine occupational health questions, so it cannot establish exposure-response relationships.",
+      "synthesisCaution": "Staff could read the existing game-involvement and heading limits as evidence-based protection against long-term disease, but the paper states that the heading limit was introduced under the Precautionary Principle and that its effect on long-term health is not confirmed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'Evidence ... is limited and inconsistent' omitted that studies did report higher prevalence -> added ('lower limb osteoarthritis (OA) has been shown to be more prevalent among retired professional footballers ... and neurological disease more prevalent among retired professional rugby and football players'), the heading exposure-response studies, and the heading limit's Precautionary Principle basis.",
+            "domains: added Brain Health & Psychology (neurodegenerative disease and heading limits are central topics)."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1281",
+        "synthesisBatch": "pilot-synthesis-batch-70",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

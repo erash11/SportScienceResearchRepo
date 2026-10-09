@@ -21,3 +21,5 @@ Check, in order:
 Set `spotCheckPriority: "high"` when you changed the decision, made a substantive claim correction, the paper is clinically sensitive (concussion, cardiac, medication, return-to-play clearance), or residual concerns remain.
 
 Keep the house style: 1-3 plain sentences per field, no em dashes, no generic advice. Do not rewrite fields that are already accurate.
+
+Omit placeholder citation strings (for example `2018;0:1-9`, `0(0)`, `Vol 00`). Write only to `verified/<ID>.json` and your own `helpers/<your-folder>/`.

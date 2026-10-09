@@ -1,0 +1,869 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-53-recovery-readiness",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Recovery & Readiness queue positions 8-93. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 8,
+      "sourceFile": "Effect of Previous-Day Alcohol Ingestion on Muscle Function and Performance of Severe-Intensity Exercise.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 36247,
+        "doi": "10.1123/ijspp.2020-0790",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Athletic Training",
+        "Nutrition",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Within-subject crossover laboratory study of 12 recreationally active Kinesiology students (6 men, 6 women), not described as athletes. On two beverage visits in counterbalanced order, participants drank either a standardized alcohol dose (1.09 g/kg fat-free mass, about 3.8 standard drinks) or a flavored water placebo, then completed next-morning jump, isometric pull, biceps curl and fatigue tests and a constant-power cycle test to exhaustion. Time to exhaustion was 11% shorter after alcohol (181 vs 203 s, P = .03, Cohen d 0.61), while jump, isometric and biceps curl measures did not differ significantly.",
+      "limitations": "Twelve recreationally active students is a small, non-athlete sample, the study was not powered to test sex differences, and the endpoint was a laboratory cycle test rather than sport performance. Participants were generally able to tell when they had drunk alcohol, and the single controlled dose may not match typical drinking before competition.",
+      "synthesisCaution": "Staff could read the cycle-test result as showing that drinking the night before impairs athletes' sport performance in general, when only one lab protocol was impaired and the other measures did not change.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes, Female Athletes, Adult / Recreational -> Adult / Recreational ('recreationally active Kinesiology students'; not athletes)",
+            "evidenceSummary/methods: 'On two evenings' -> beverage visits; methods state 'Consumption of the beverage commenced between 12:00 and 2:30 PM' while abstract says 'in the evening'; conflict noted in limitations",
+            "evidenceSummary/practicalImplications: removed 'heavy' dose wording; dose is 'the equivalent of 3.8 standard drinks', peak BAC 0.09 g/dL",
+            "findings: added accumulated O2 uptake decrease (P = .01) and nonsignificant MAOD (P = .34) and mean response time (P = .07)",
+            "athleteDev: reframed authors' anaerobic advice as their recommendation, noting MAOD was not affected ('-3%, P = .34')",
+            "screeningLimitations: noted non-athlete sample"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1098",
+        "synthesisBatch": "pilot-synthesis-batch-53",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 11,
+      "sourceFile": "Effect of cold‐water immersion treatment on recovery from exercise‐induced muscle damage in the hamstring.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 50683,
+        "doi": "10.1002/ejsc.12235",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized controlled trial in 18 healthy adult women (age 21.7 years, not described as athletes), assigned to cold-water immersion (14 C, 14 min, at 1, 25, 49, 73 and 97 h after exercise; n = 9) or seated rest (n = 9), after 100 maximal isokinetic eccentric hamstring contractions. The authors report that the immersion group had higher maximal voluntary isometric contraction on days 4 and 5 (89.3% vs 77.6% and 94.0% vs 82.1%, apparently percent of baseline), lower delayed-onset muscle soreness from day 2 (15.4 vs 52.4 mm on day 2) and better straight leg raise on days 2 to 5.",
+      "limitations": "The sample was 18 healthy adult women who are not described as athletes, so athlete sex and health tags are not applied. Findings come from one protocol on one hamstring, so they cannot be assumed for male or competitive athletes. The plasma myoglobin values are reported as percentage declines that cannot be declines, so that outcome cannot be used.",
+      "synthesisCaution": "Staff could read this as proof that cold-water immersion speeds recovery of athletic performance or hamstring injury rehabilitation, when the trial measured soreness, isometric strength and flexibility in untrained women after a single eccentric exercise bout.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed Female Athletes and Healthy Athletes because participants were 'Eighteen healthy adult women' not described as athletes; kept Adult / Recreational",
+            "screeningLimitations/tldr/athleteDev: 'untrained women' is not stated in the text -> 'healthy adult women not described as athletes'",
+            "findings: clarified myoglobin values look like percent of baseline ('436.3% ... significantly greater rate of Mb concentration decline than that of the CG (4362.1%')",
+            "findings: DOMS difference ran from day 2 to day 5 ('From the second day to the fifth day ... significantly higher'), not day 2 only",
+            "limitations: added the unexplained 'double-blind experimental design' claim"
+          ],
+          "residualConcerns": "Sample is non-athlete women; inclusion rests on exercise-recovery relevance. Myoglobin reporting is internally impossible as printed and the DOMS palpation site (rectus femoris) is inconsistent with a hamstring outcome.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1099",
+        "synthesisBatch": "pilot-synthesis-batch-53",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 20,
+      "sourceFile": "Effectiveness of recovery strategies after training and competition in endurance athletes - An umbrella review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 83422,
+        "doi": "10.1186/s40798-024-00724-6",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Nutrition"
+      ],
+      "sports": [
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Umbrella review of 22 systematic reviews and meta-analyses (PROSPERO CRD42021260509) of recovery strategies after training in endurance athletes, rated with AMSTAR 2 (19 of 22 low or moderate quality). After restricting to endurance-athlete studies with a control or placebo group, 63 primary studies with 1,100 athletes were analysed (60 passive, 3 active recovery, none proactive). The authors found no recovery strategy with consistent benefit; for the eight studies assessing 8 to 24 h after training they describe cryotherapy and compression garments as promising, but only one of the eleven Table 3 effect sizes (cold water immersion for cyclist sprint performance, ES 1.01, 95% CI 0.16 to 1.86) has a confidence interval that excludes zero.",
+      "limitations": "The review rests on secondary reviews of mostly low to moderate quality and on few studies per strategy, with only eight studies addressing the 8 to 24 h window, mainly in runners and cyclists. Outcomes and protocols varied widely, so the review cannot identify a best strategy, dose, or timing for endurance athletes.",
+      "synthesisCaution": "Staff could read the compression and cryotherapy results as established recovery tools for endurance athletes, when they come from a handful of small studies, mostly in male runners and cyclists, and every compression garment estimate in Table 3 has a confidence interval crossing zero.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed Healthy Athletes (health status is not stated; only adult recreational to elite endurance athletes and exclusion of injury-recovery reviews)",
+            "paper.findings: 'graduated compression stockings and tights improved strength and jump at 24 h' stated as fact -> attributed to the authors, with Table 3 showing only one CI excluding zero ('Vaile et al. ... 1.01 0.16 1.86'); massage 'affected muscle soreness only' -> positive in two of four studies ('two ... showed a positive effect of massage on muscle soreness, while the other two found a non-significant effect')",
+            "evidenceSummary and synthesisCaution: 'several confidence intervals' -> only one of eleven Table 3 CIs excludes zero, and all compression garment CIs cross zero"
+          ],
+          "residualConcerns": "The Discussion's cryotherapy counts ('three studies showed large effects (ES 0.57 to 1.01) and four showed low effects (0.1 to 0.17)') do not match Table 3 or the Results statement of ES 0.33 to 3.00 across four cryotherapy studies. The authors' conclusion that compression and cryotherapy are promising is not supported by statistically clear estimates in Table 3.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1100",
+        "synthesisBatch": "pilot-synthesis-batch-53",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 22,
+      "sourceFile": "Effects of Nightly Electronic Device Restriction and Morning Bright Light on Sleep, Mood, and Performance Among Elite Athletes (1).pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text (no DOI appears anywhere in text/Q22.txt; the reference list contains none for this article). Everything else is readable and complete, so all fields are filled and doiMissing is true. The operator may verify the DOI externally and upgrade the decision.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added post-randomization exclusions ('randomly assigned to the INT or CON group, with 19 members each ... 13 athletes were excluded, leaving 25') and the abstract vs Results P value conflict for reaction time (abstract 'p = 0.016', Table 3 '0.001') and RJ height (abstract 'p = 0.001', Table 3 '< 0.001'); removed the actigraphy-vs-self-report sentence to keep the field to 3 sentences (it remains in practicalImplications)"
+          ],
+          "residualConcerns": "DEGRADED only because the article's own DOI is not printed (confirmed: no DOI string for this article anywhere in the text; journal citation 39(11):1155-1162, 2025 is printed). Operator can verify the DOI externally and upgrade to INCLUDE.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 25,
+      "sourceFile": "Effects of Sleep Deprivation on the    Acute Skeletal Muscle Recovery after Exercise.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 33,
+        "extractedCharacters": 41870,
+        "doi": "10.1249/MSS.0000000000002137",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized crossover trial in 10 healthy, recreationally active men (mean age 24.5 years) with no weight-training experience. After an eccentric knee extensor damage protocol, each man completed 48 h of total sleep deprivation or normal sleep, with at least 4 weeks between conditions. The authors report that isometric strength changed similarly in both conditions, while 24-h cortisol, IGF-1 and the cortisol to total testosterone ratio were higher during sleep deprivation.",
+      "limitations": "Ten men in one laboratory protocol that combined extreme sleep loss with a severe damage model, so the results do not describe training or competition conditions. The strength result is a null finding in a small sample, and the 24-h IL-6 difference was not significant (P = 0.08).",
+      "synthesisCaution": "Staff could read the hormone and IL-6 changes as proof that sleep loss slows muscle recovery, when isometric strength recovery did not differ between conditions and no performance outcome was measured.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes and Healthy Athletes removed because the sample was untrained men, not athletes -> Adult / Recreational only ('recreationally active males who did not have any weight-training experience and did not complete more than two exercise sessions per week')",
+            "practicalImplications: said 'one night of total sleep loss' -> 48 h of total sleep deprivation ('followed by 48 h of total sleep deprivation and 12 h of normal sleep')",
+            "evidenceSummary: added that participants had no weight-training experience"
+          ],
+          "residualConcerns": "Abstract states IL-6 increased only in DEPRIVATION and that MVC increased; Results show no between-condition IL-6 difference (24-h AUC P = 0.08) and an MVC decrease with partial recovery. Record follows the Results and notes the conflict in limitations.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1101",
+        "synthesisBatch": "pilot-synthesis-batch-53",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 26,
+      "sourceFile": "Effects of Vibration and Non-Vibration Foam Rolling on Recovery after Exercise with Induced Muscle Damage .pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text; no DOI string appears anywhere in the text. Operator should verify the DOI externally.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes, Female Athletes and Healthy Athletes removed because the sample was healthy active volunteers, not athletes ('Thirty-eight healthy individuals ... considered active') -> Adult / Recreational",
+            "findings/tldr: said both protocols produced within-group changes in pressure pain threshold -> only the vibration group shows significant pre to post PPT change in Table 2 (NVFR post values lack the 'b' marker); added the passive VAS values and the 78% hip range estimate",
+            "limitations/screeningLimitations/evidenceSummary: hip range claim described precisely as a 'likely' (78/22/1) magnitude-based effect without a significant interaction (Table 5) rather than unsupported; noted F = 2.741 with P = 0.01 inconsistency and unclear Table 3 between-group estimate for quadriceps contraction VAS",
+            "practicalImplications: 'in the 48 h after' -> rolling applied at 48 h with outcomes measured immediately after treatment",
+            "decision: DEGRADED with doiMissing confirmed; no DOI string appears anywhere in the text"
+          ],
+          "residualConcerns": "DOI must be verified externally before upgrade. Reported between-group statistics are internally inconsistent (F2,35 = 2.741 reported with p = 0.01), and the abstract overstates PPT and hip ROM effects relative to the tables.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 27,
+      "sourceFile": "Effects of a 20-Min Nap Post Normal and Jet Lag Conditions on P300 Components in Athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 45215,
+        "doi": "10.1055/a-0599-0888",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Randomized crossover laboratory trial in highly trained young male athletes: 20 were recruited, 16 participated (mean age 22.2 years) and 14 had usable P300 data. Each man completed normal sleep or a simulated 5-hour phase advance, each followed by a 20-minute nap or a rest period, then subjective alertness ratings, auditory oddball P300 testing and attention tests. The authors report that the nap increased frontal P300 amplitude in both conditions, while shortened parietal P300 latency, better subjective alertness and faster divided-attention reaction time were seen only after normal sleep.",
+      "limitations": "A small laboratory study with 14 to 16 men and no sport performance outcome, so any link to athletic performance is inferred. The nap by condition interaction for P300 latency was not significant, and the rest condition was not in darkness while the nap condition was.",
+      "synthesisCaution": "Staff could read these brain-response and reaction-time changes as proof that naps improve athletes' performance, when no sport performance was measured and the authors' claim that vigilance is necessary for athletic performance was not tested.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: 'Only 16 men were recruited' -> 20 recruited, 4 excluded for sleep disturbances, 16 participated, 14 in P300 analysis ('Twenty young highly trained male athletes were recruited, of whom sixteen participated'; 'Two subjects with poor quality evoked potential data were excluded')",
+            "methods/evidenceSummary: added recruitment flow and nap times (13:00 normal, 08:00 phase advance)",
+            "screeningLimitations/limitations: added that rest was not in darkness while naps were ('Subjects were not submitted to darkness, contrary to nap condition'); clarified latency non-significance is the interaction term"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1102",
+        "synthesisBatch": "pilot-synthesis-batch-53",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 28,
+      "sourceFile": "Effects of a 30 min nap opportunity on cognitive and short duration high intensity performances and mood states after a partial sleep deprivation.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 48979,
+        "doi": "10.1080/02640414.2020.1793651",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Within-subjects laboratory experiment in 14 healthy, physically active male students (mean age 20.5 years; two others dropped out with injuries) tested in four counterbalanced sessions: normal sleep (22:00 to 06:00) or partial sleep deprivation (sleep 22:00 to 03:00), each with or without a 30-minute nap opportunity at 13:00. At 18:00 the authors measured vigilance, simple reaction time, mood, and six 30-second 5-m shuttle runs; vigilance, reaction time, shuttle distance, fatigue index, anxiety, fatigue, confusion and depression were better after the nap under both sleep conditions, while vigour improved with the nap only after sleep deprivation.",
+      "limitations": "A small laboratory study of one partial night of sleep loss in non-athlete students, using a non-sport-specific shuttle test, so it cannot show effects on competition or repeated sleep loss. The abstract overstates the vigour result, the Discussion and Conclusions contradict the Results on blood lactate, and several reported effect sizes are implausibly large (for example d = 17.1 for vigilance), so summaries need checking against the Results.",
+      "synthesisCaution": "Staff could read the shuttle-run gains as a proven performance boost, when the gain after normal sleep was trivial in total distance (d = 0.17) and the outcome was a lab shuttle test rather than sport performance.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes and Healthy Athletes removed because the sample was physically active students, not athletes ('fourteen healthy and physically active male students'; authors: 'conclusions ... are specific to healthy and physically active male students') -> Adult / Recreational",
+            "screeningLimitations: said the abstract disagrees on blood lactate -> it is the Discussion and Conclusions that contradict the Results ('no-significant change was observed in physiological parameters'); added implausible effect sizes",
+            "practicalImplications: 'Gains on the shuttle test were trivial to small after normal sleep' -> peak distance gain after normal sleep was moderate (d = 0.6); total distance trivial (d = 0.17)",
+            "findings: added peak distance results and the nap effect on lactate after sleep deprivation (p = 0.0009)",
+            "evidenceSummary/methods/limitations: added two injury dropouts ('due to injuries, two participants could not complete'); vigour benefit limited to sleep deprivation",
+            "limitations: noted d = 17.1 / 16.83 vigilance effect sizes and duplicated fatigue index ANOVA values (F = 80.6, 50.4 as for total distance)"
+          ],
+          "residualConcerns": "Reporting quality is weak: implausible effect sizes, duplicated ANOVA rows, impossible abstract BMI (232.8 kg/m2), and Discussion statements that contradict the Results on lactate. A reviewer may want to treat the effect magnitudes cautiously.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1103",
+        "synthesisBatch": "pilot-synthesis-batch-53",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 29,
+      "sourceFile": "Effects of acute sleep loss on physical performance - A systematic and meta-analytical review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 22,
+        "extractedCharacters": 93877,
+        "doi": "10.1007/s40279-022-01706-y",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review and multilevel random-effects meta-analysis of 69 publications (77 studies, 227 outcome measures, n = 959, 89% male) comparing exercise performance after acute sleep loss of 6 hours or less with normal sleep. The authors report an overall reduction of 7.56% (95% CI -11.9 to -3.13%, I2 = 98.1%), with the largest reduction in skill tasks (-20.9%) and smaller reductions in strength (-2.85%) and speed/power endurance (-2.90%).",
+      "limitations": "Pooled estimates are highly heterogeneous, most outcomes came from short laboratory studies with male-predominant samples, and sleep quality was rarely measured. Several subgroup estimates rest on very few outcomes or single studies, so the advice on sleep pattern and time of day is less secure than the overall effect.",
+      "synthesisCaution": "Staff could read the advice to prefer early restriction and morning exercise as tested rules, when early restriction still had a -5.85% point estimate with a wide interval, the pooled morning effect was also significant (-5.42%), and AM versus PM was never compared directly.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes, Female Athletes and Healthy Athletes removed because included studies were healthy adults of unreported training status, not specifically athletes ('human studies on adult ... men and women with no known medical conditions'; 'nor explore the influence of participant training status') -> Mixed / Unspecified",
+            "tldr: 'the drop grew with time awake' stated generally -> limited to restriction protocols (all-protocol meta-regression -0.09, p = 0.095; Table 4)",
+            "limitations: corrected claim that the Results say morning tasks were largely unaffected (Section 3.2: 'sleep loss had a consistent negative influence on performance when tasks were performed in both the AM and PM'); added non-significant all-protocol meta-regression and ~11% female",
+            "athleteDev: replaced generic 'build planned sleep loss into schedules' advice and '0.4% per hour for many protocols' with the protocol-specific slopes from Table 4",
+            "synthesisCaution: clarified why early-restriction and morning advice is inference"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1104",
+        "synthesisBatch": "pilot-synthesis-batch-53",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 31,
+      "sourceFile": "Effects of cold-water immersion compared with other recovery modalities on athletic performance following acute strenuous exercise in physically active participants.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 69135,
+        "doi": "10.1007/s40279-022-01800-1",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review with pooled and stratified meta-analysis of 28 randomized or crossover trials (search to September 2022) comparing cold-water immersion with other recovery methods after strenuous exercise in sport or physically active participants. The authors report that cold-water immersion reduced muscle soreness at 24 h (SMD 0.29, 95% CI 0.02 to 0.56) and 48 h (SMD 0.31, 0.05 to 0.57), with non-significant pooled effects on power, strength, flexibility and perceived recovery.",
+      "limitations": "Most included trials were small and mostly male, only 1 of 28 was rated high quality (24 acceptable, 3 low), only two adequately randomised, and heterogeneity exceeded 80% for most strength and flexibility analyses. Most stratified comparisons were non-significant, and the dose-response claims about water temperature and duration are reported inconsistently, so they cannot be relied on.",
+      "synthesisCaution": "Staff could read cold-water immersion as broadly superior for recovery, when the significant pooled effects were small and limited to muscle soreness, and the power, strength and creatine kinase results were null or non-significant.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes, Female Athletes and Healthy Athletes removed because included samples were sport or 'deemed physically active' participants, not exclusively athletes -> Mixed / Unspecified",
+            "screeningLimitations: 'rated low to moderate quality' -> 1 high, 24 acceptable, 3 low quality ('Only one (3%) study was classified as being of high quality, 24 (86%) ... acceptable'); heterogeneity range corrected (I2 up to 95.1% in Table 3, not 89%)",
+            "tldr: 'mostly small or non-significant' -> all pooled power, strength, flexibility, perceived recovery and CK effects were non-significant (Table 2)",
+            "limitations: added abstract/Key Points overstatement of stratified superiority and Discussion 1 h DOMS claim (Table 2 DOMS 1 h P = 0.12); clarified CK sign convention conflict",
+            "athleteDev: resistance-training adaptation caution attributed to the authors and marked as not tested in this review"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1105",
+        "synthesisBatch": "pilot-synthesis-batch-53",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 34,
+      "sourceFile": "Effects of external pneumatic compression device vs static compression garment on peripheral circulation and markers of sports performance and r.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 57534,
+        "doi": "10.1007/s00421-022-04953-z",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized parallel-group trial in 30 healthy, active males (about 23 years) who did 100 drop jumps, then received a single 30-minute partial-leg external pneumatic compression (EPC) treatment, a static compression (SC) garment, or no treatment (CTL). Jump height, soreness, pressure pain threshold, blood flow and isokinetic torque did not differ between conditions, while squat jump propulsive force and power at 24 and/or 48 hours were higher in EPC and SC than in CTL.",
+      "limitations": "Participants were active recreational exercisers, not competitive athletes, and the sample was 30 men tested only up to 48 hours after a single damaging bout. The authors report no significant between-condition difference for countermovement jump, and the abstract's claim of EPC-specific benefit is not supported by the between-condition results.",
+      "synthesisCaution": "Staff could read the 'more consistent jump performance' conclusion as an EPC-specific recovery benefit, and the paper reports only EPC and SC against control, with no significant between-condition countermovement jump differences.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed Male Athletes and Healthy Athletes -> Adult / Recreational only; sample was 'Thirty healthy, active males' exercising at least 3 days per week, not athletes",
+            "paper.findings: 'countermovement jump braking measures changed over time in control and SC but not in EPC' -> braking force fell within CTL and SC (braking power changed within CTL only per text); added that jump height did not differ",
+            "paper.limitations: 'device was supplied and funded by MAS Holdings, the manufacturer' -> funding from MAS Holdings, device made by MAS Design Inc (supply not stated); noted mislabeled braking/propulsive power in results text"
+          ],
+          "residualConcerns": "Results paragraph for the CMJ propulsive power interaction (p = 0.030) describes within-CTL changes in 'braking power', which looks like a labeling error in the source.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1106",
+        "synthesisBatch": "pilot-synthesis-batch-53",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 35,
+      "sourceFile": "Effects of far infrared radiation lamp therapy on recovery from muscle damage induced by eccentric exercise.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 42675,
+        "doi": "10.1080/17461391.2023.2185163",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Two sham-controlled experiments, each with 24 healthy sedentary young women (12 per group), in which elbow flexors (Study 1) or knee flexors (Study 2) were damaged by eccentric exercise and then given a 30-minute far-infrared (FIR) lamp or sham treatment at 1, 25, 49, 73 and 97 hours. The authors report that changes in strength, soreness, creatine kinase and proprioception at 24 to 120 hours were smaller with FIR, and that maximal voluntary contraction (MVC) torque returned to baseline by 72 hours with FIR but not with sham.",
+      "limitations": "Participants were young sedentary women, not athletes, and the damage model was a laboratory eccentric protocol with 12 women per group in each study. Groups were formed by stratifying baseline MVC torque rather than by stated randomization, and one Methods sentence gives 12 participants per study while the abstract and sample-size section give 24.",
+      "synthesisCaution": "Staff could take the 'faster recovery than other therapies' claim as a head-to-head superiority finding, but the comparison is with other studies and no trial compared FIR directly with other modalities.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed Female Athletes and Healthy Athletes -> Adult / Recreational; sample was '24 healthy sedentary women' per study, not athletes",
+            "paper.limitations: 'Methods state 12 participants per study while the abstract states 24' -> Methods sentence says 12 per study but the abstract and sample-size paragraph both say 24 per study, n = 12/group; added unrecorded hormone status (author limitation) and the Discussion's own ~60% soreness figure",
+            "screeningLimitations: clarified 12 per group and the 12 vs 24 conflict; matched allocation not randomized"
+          ],
+          "residualConcerns": "Sample-size wording is internally inconsistent (12 vs 24 per study); 24 per study with 12 per group is the most consistent reading. Allocation by MVC stratification, not randomization, so design coded Laboratory / Experimental Study.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1107",
+        "synthesisBatch": "pilot-synthesis-batch-53",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 40,
+      "sourceFile": "Effects of long-haul transmeridian travel on physiological, sleep, perceptual and mood markers in Olympic team support staff.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 70052,
+        "doi": "10.1080/07420528.2022.2139186",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Observational study of nine Irish Olympic team support staff (two men, seven women; mean age 34.3 years) followed from the week before to 15 days after an eastward eight-time-zone flight to Japan. Perceived jet lag was elevated for six days, morning salivary cortisol fell 66 percent on day 1, sleep was shorter on days 2, 3 and 6, and evening mood worsened on days 2 and 3, with most measures back to baseline by about day 7.",
+      "limitations": "Participants were nine support staff (physiotherapists, administrators, performance managers, a strength coach and a physiologist), not athletes, so the link to athlete health is indirect, and the single-group observational design has no comparison group. Many outcomes were tested across many time points, and sample collection was unsupervised.",
+      "synthesisCaution": "Staff could read the evening mood changes as evidence that evening work performance suffers after travel, but the study measured mood and sleep only, not work performance.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed Male Athletes and Female Athletes; sample was 'Nine Olympic team support staff (2 M/7 F)', not athletes. Kept Professional / Elite for the Olympic team setting",
+            "screeningLimitations: removed reference to sex tags; named staff roles",
+            "paper.limitations: corrected cortisol conflict description (abstract 'seven days for ... physiological markers', Results back to BL on C6); added baseline-period caveat and Discussion's C5 sAA mention",
+            "paper.practicalImplications: 'may need about a week of reduced load' -> authors' recommendation to plan work program around about a week of recovery ('pay attention to their work program during the first seven days')",
+            "paper.methods: added unsupervised collection and averaged baseline",
+            "studyDesign: kept Cohort Study (prospective single-group repeated-measures follow-up against own baseline; authors call it 'observational descriptive')"
+          ],
+          "residualConcerns": "Sample is support staff, not athletes; Professional / Elite tag reflects the Olympic setting, not athlete competition level. Design could alternatively be coded Case Report / Case Series given n = 9 descriptive follow-up.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1108",
+        "synthesisBatch": "pilot-synthesis-batch-53",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 47,
+      "sourceFile": "Effects of thermal interventions on skeletal muscle adaptations and regeneration - Perspectives on epigenetics - A narrative review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 25,
+        "extractedCharacters": 127641,
+        "doi": "10.1007/s00421-024-05642-9",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review, with no search method described, of cold and heat interventions and skeletal muscle adaptation. It draws on repeated cold-water and whole-body cryotherapy studies in healthy, athletic and sedentary adults, repeated heat studies in humans and rodents, and animal and human work on atrophy and regeneration after injury. The authors conclude that repeated cold after resistance exercise blunts hypertrophy and isometric strength gains, while heat is promising for limiting atrophy and for some strength and endurance gains in trained athletes, though not yet definitive for muscle mass.",
+      "limitations": "The review does not describe how studies were searched or selected, so its coverage cannot be audited. Much of the mechanistic and regeneration evidence comes from rats and mice, and the human heat trials are few and small.",
+      "synthesisCaution": "Staff could read the cold-blunts-gains conclusion as a rule for all cold use, but it rests mainly on repeated cold after resistance training, and the authors call for dose-specific human studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed Healthy Athletes and Injured Athletes -> Mixed / Unspecified (review mixes athletes, sedentary and immobilized healthy volunteers, and rodents; immobilization studies used healthy volunteers, not injured athletes)",
+            "rtp/findings: draft said a single human heat study during immobilization -> two (Hafen et al. 2019 diathermy; Labidi et al. 2024 whole-body heat 'prevented the decrease in maximal isometric strength of the plantar flexors')",
+            "findings: added the archery finding ('shooting performance and postural stability decreased after HWI') and that cold did not blunt endurance adaptations in several studies; 'biweekly' clarified as twice weekly",
+            "practicalImplications: removed unsupported 'reserve it for short-term soreness control'; muscle temperature advice restated as the authors' ('ensure that the muscle temperature reaches 39 C')"
+          ],
+          "residualConcerns": "'Biweekly' in the source is interpreted as twice weekly; confirm if precision matters.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1109",
+        "synthesisBatch": "pilot-synthesis-batch-53",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 54,
+      "sourceFile": "Elite athletes' and support staffs' experiences and perceptions of long-haul travel, and the self-management strategies they use.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 56433,
+        "doi": "10.1177/17479541231170080",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Cross-sectional online survey of 88 Irish high-performance athletes (n=50) and support staff (n=38) who had flown more than 8 hours for training or competition in the previous two years. Most reported that long-haul travel hindered physical performance (86.4%) and increased illness or injury risk (86.4%), with fatigue and sleep disruption the most common symptoms.",
+      "limitations": "Retrospective self-report up to two years after travel, a subset of 88 of 144 respondents, and symptoms recorded only for three days after the flight. The findings describe perceptions in one national sample, not measured performance.",
+      "synthesisCaution": "Staff could read the 86% who perceived a performance or injury cost, or the authors' suggestion that strategies were effective, as measured outcomes, but these are self-reported perceptions from a retrospective survey with no comparison group.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: placeholder volume and issue string -> removed",
+            "findings: added 27.3% self-reported illness/injury and time-zone link to recovery time",
+            "limitations: added female reporting bias noted by authors and that strategy appropriateness was not assessed",
+            "practicalImplications/synthesisCaution: flags authors' unsupported inference that quick recovery shows strategies are effective ('suggest that the self-management strategies ... are effective')"
+          ],
+          "residualConcerns": "Sample mixes 50 athletes with 38 support staff; Male/Female Athletes tags reflect the athlete subset. Table 1 percentages are internally inconsistent in the source (e.g. '50 (58.8)').",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1110",
+        "synthesisBatch": "pilot-synthesis-batch-53",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 77,
+      "sourceFile": "Evening Alpha-Lactalbumin Supplementation Alters Sleep Architecture and Reduces Morning Reaction Time in an Athletically Trained Population With Sleep Difficulties.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 52984,
+        "doi": "10.1123/ijsnem.2024-0094",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Double-blind, randomized, counterbalanced crossover trial in 19 trained adults with sleep difficulties (11 female), defined as exercising at least 3 days and 5 hours per week. Each person took 40 g alpha-lactalbumin or 40 g collagen 2 hours before bed on three consecutive nights in a sleep laboratory, with sleep measured by a dry-EEG headband and the first night excluded as adaptation. The primary outcome, sleep onset latency, did not differ, while NREM stage 2 rose, REM fell and three morning reaction-time tasks improved.",
+      "limitations": "The sample was small, the setting was a tightly controlled laboratory, and collagen may not be an inert control. The trial lasted three nights, and it did not measure sport performance.",
+      "synthesisCaution": "Staff may read the faster laboratory reaction times as evidence of better next-day sport performance, but the trial did not measure sport performance and found no change in sleep onset.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes, Female Athletes, Mixed / Unspecified -> Adult / Recreational (sample is 'trained participants' exercising >=3 days and >=5 hr per week, not athletes)",
+            "evidenceSummary/findings: null primary outcome not flagged -> stated ('no differences observed in the primary variable of interest (sleep latency)')",
+            "paper.findings: added higher morning stress ratings with ALAC ('muscular stress (CON 1.9, ALAC 2.3; p = .02) and overall stress in the morning (CON 1.4, ALAC 2.1; p < .01)')",
+            "paper.limitations: added first-night exclusion, median control sleep latency of 13 min, and in-kind product supply by Agropur",
+            "paper.practicalImplications and athleteDev: 'athletes' -> 'trained people/adults' to match the sample"
+          ],
+          "residualConcerns": "Small crossover trial with many outcomes and no reported multiplicity correction across cognitive tasks.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1111",
+        "synthesisBatch": "pilot-synthesis-batch-53",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 93,
+      "sourceFile": "Exercise-induced muscle damage - Mechanism, assessment and nutritional factors to accelerate recovery.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 24,
+        "extractedCharacters": 138424,
+        "doi": "10.1007/s00421-020-04566-4",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Nutrition & Hydration",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Nutrition",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Narrative review by five authors covering exercise-induced muscle damage (EIMD) after endurance and resistance exercise in recreational and competitive athletes, its assessment methods, sex and age differences, and nutritional strategies for recovery. The diet and supplement evidence comes from a limited number of studies, some in rodents, and the authors conclude that protein, creatine and polyphenols appear efficacious for recovery while noting inconsistent results for creatine and polyphenols. The review finds no consensus that any diet is advantageous for recovery.",
+      "limitations": "No search method is described, so the choice of studies cannot be checked. Much of the cited resistance exercise evidence comes from untrained participants, and several diet and supplement statements rest on rodent work or single studies.",
+      "synthesisCaution": "Staff could read the review's support for protein, creatine and polyphenols as settled recovery benefit, when the cited studies are mixed (for example, quercetin showed no effect in high-volume and ultra-endurance exercise) and the authors say the creatine mechanism is unclear.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes, Female Athletes -> removed; review, not a sex-specified athlete sample",
+            "evidenceSummary/screeningLimitations/limitations/rtp: 'small studies'/'small samples' -> removed; the review reports no sample sizes for most studies; replaced with 'untrained participants' ('most experimental studies have been conducted on untrained women')",
+            "evidenceSummary: authors' conclusion understated -> 'evidence to suggest ... protein, creatine and polyphenols are efficacious in enhancing recovery'",
+            "synthesisCaution/limitations: 'mechanisms unclear' for creatine and beta-alanine -> creatine 'precise mechanism ... still not clear'; beta-alanine antioxidant evidence 'albeit in animal models'"
+          ],
+          "residualConcerns": "Year 2021 from the copyright line (received 2020); no volume, issue or pages printed.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1112",
+        "synthesisBatch": "pilot-synthesis-batch-53",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}
