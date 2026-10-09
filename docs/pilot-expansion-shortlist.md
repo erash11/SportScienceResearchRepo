@@ -37,22 +37,22 @@ This queue contains 88 unrepresented, content-deduplicated local PDFs: 12 alloca
 
 13. **Prevalence of Shoulder Labral Injury in Collegiate Football Players at the National Football League Scouting Combine** — Other — TITLE SCREENED<br>
    `Prevalence of Shoulder Labral Injury in Collegiate Football Players at the National Football League Scouting Combine.pdf`
-14. **Medical disqualification following concussion in collegiate student-athletes - Findings from the CARE Consortium** — Other — TITLE SCREENED<br>
-   `Medical disqualification following concussion in collegiate student-athletes - Findings from the CARE Consortium.pdf`
-15. **No Clinical Predictors of Postconcussion Musculoskeletal Injury in College Athletes** — Other — TITLE SCREENED<br>
+14. **No Clinical Predictors of Postconcussion Musculoskeletal Injury in College Athletes** — Other — TITLE SCREENED<br>
    `No Clinical Predictors of Postconcussion Musculoskeletal Injury in College Athletes.pdf`
+15. **Playing Experience and Position Influence Injury Risk Among NCAA Division I Collegiate Footballers** — Other — TITLE SCREENED<br>
+   `Playing Experience and Position     Influence Injury Risk Among NCAA Division I Collegiate Footballers.pdf`
 16. **SARS-CoV-2 infection increases the risk of muscle injury in professional male soccer players - A retrospective analysis of the Italian and Spani** — Other — TITLE SCREENED<br>
    `SARS-CoV-2 infection increases the risk of muscle injury in professional male soccer players - A retrospective analysis of the Italian and Spani.pdf`
-17. **Genetic Variants and Hamstring Injury in Soccer- An Association and Validation Study** — Methodological / Validation Study — TITLE SCREENED<br>
-   `Genetic Variants and Hamstring Injury in Soccer- An Association and Validation Study.pdf`
-18. **Timing return to competition - A prospective registration of 45 different types of severe injuries in Germany's highest soccer league** — Other — TITLE SCREENED<br>
+17. **Timing return to competition - A prospective registration of 45 different types of severe injuries in Germany's highest soccer league** — Other — TITLE SCREENED<br>
    `Timing return to competition - A prospective registration of 45 different types of severe injuries in Germany's highest soccer league.pdf`
+18. **Recurrent Anterior Cruciate Ligament Tears in the National Football League A Case-Control Study** — Case-control Study — TITLE SCREENED<br>
+   `Recurrent Anterior Cruciate Ligament Tears in the National Football League A Case-Control Study.pdf`
 19. **The “Strengthen your ankle” program to prevent recurrent injuries- A randomized controlled trial aimed at long-term effectiveness** — Randomized Controlled Trial — TITLE SCREENED<br>
    `The “Strengthen your ankle” program to prevent recurrent injuries- A randomized controlled trial aimed at long-term effectiveness.pdf`
-20. **Recurrent Anterior Cruciate Ligament Tears in the National Football League A Case-Control Study** — Case-control Study — TITLE SCREENED<br>
-   `Recurrent Anterior Cruciate Ligament Tears in the National Football League A Case-Control Study.pdf`
-21. **Limited Agreement on ACL Tear Location Between Arthroscopy and MRI - A Prospective Evaluation** — Methodological / Validation Study — TITLE SCREENED<br>
+20. **Limited Agreement on ACL Tear Location Between Arthroscopy and MRI - A Prospective Evaluation** — Methodological / Validation Study — TITLE SCREENED<br>
    `Limited Agreement on ACL Tear Location Between Arthroscopy and MRI - A Prospective Evaluation.pdf`
+21. **Low Ankle-GO Score while returning to sport after lateral ankle sprain leads to a 9-fold increased risk of recurrence - A two-year prospective cohort study** — Cohort Study — TITLE SCREENED<br>
+   `Low Ankle-GO Score while returning to sport after lateral ankle sprain leads to a 9-fold increased risk of recurrence - A two-year prospective cohort study.pdf`
 22. **Risk factors for acute ankle sprains in field-based, team contact sports - A systematic review of prospective etiological studies** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `Risk factors for acute ankle sprains in field-based, team contact sports - A systematic review of prospective etiological studies.pdf`
 23. **Is the acute-chronic workload ratio associated with risk of time loss injury in professional team sports - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
@@ -72,20 +72,20 @@ This queue contains 88 unrepresented, content-deduplicated local PDFs: 12 alloca
    `Return to play and risk of repeat concussion in collegiate football players- comparative analysis from the NCAA Concussion Study (1999–2001) and CARE Consortium (2014–2017).pdf`
 29. **Return to play guidelines after cervical spine injuries in American football athletes - A literature-based review** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Return to play guidelines after cervical spine injuries in American football athletes - A literature-based review.pdf`
-30. **Hamstring rehabilitation in elite track and field athletes - Applying the British Athletics Muscle Injury Classification in clinical practice** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
-   `Hamstring rehabilitation in elite    track and field athletes - Applying the British Athletics Muscle Injury    Classification in clinical practice.pdf`
-31. **Return to play in professional football players following traumatic cervical spine injury - Expert opinions from the National Football League spine surgeons** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+30. **Return to play in professional football players following traumatic cervical spine injury - Expert opinions from the National Football League spine surgeons** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Return to play in professional football players following traumatic cervical spine injury - Expert opinions from the National Football League spine surgeons.pdf`
+31. **The British Athletics Muscle Injury Classification grading system as a predictor of return to play following hamstrings injury in professional soccer players** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+   `The British Athletics Muscle Injury Classification grading system as a predictor of return to play following hamstrings injury in professional soccer players.pdf`
 32. **Validation of a Composite Outcome Score for Assessing Return to Sports After Achilles Tendon Repair** — Methodological / Validation Study — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Validation of a Composite Outcome Score for Assessing Return to Sports After Achilles Tendon Repair.pdf`
-33. **Hamstring muscle stiffness in athletes with and without anterior cruciate ligament reconstruction history - A retrospective study** — Cohort Study — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
-   `Hamstring muscle stiffness in athletes with and without anterior cruciate ligament reconstruction history - A retrospective study.pdf`
-34. **Longitudinal changes in quadriceps morphology over the first 3 months after anterior cruciate ligament reconstruction** — Cohort Study — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+33. **Longitudinal changes in quadriceps morphology over the first 3 months after anterior cruciate ligament reconstruction** — Cohort Study — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Longitudinal changes in quadriceps morphology over the first 3 months after anterior cruciate ligament reconstruction.pdf`
-35. **Muscle activation during rehabilitation on artificial turf vs sand after cruciate ligament surgery - A case series** — Case Report / Case Series — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+34. **Muscle activation during rehabilitation on artificial turf vs sand after cruciate ligament surgery - A case series** — Case Report / Case Series — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Muscle activation during rehabilitation on artificial turf vs sand after cruciate ligament surgery - A case series.pdf`
-36. **Substance misuse in elite athletes - Early detection, brief intervention and referral to treatment** — Other — TITLE SCREENED<br>
+35. **Substance misuse in elite athletes - Early detection, brief intervention and referral to treatment** — Other — TITLE SCREENED<br>
    `Substance misuse in elite athletes - Early detection, brief intervention and referral to treatment.pdf`
+36. **Low prevalence of cardiac abnormalities in competitive athletes at return to play after COVID-19** — Other — TITLE SCREENED<br>
+   `Low prevalence of cardiac abnormalities in competitive athletes at return to play after COVID-19.pdf`
 
 ## Recovery & Readiness
 
@@ -134,21 +134,21 @@ This queue contains 88 unrepresented, content-deduplicated local PDFs: 12 alloca
    `The new challenge of sports nutrition - Accepting insect food as dietary supplements in professional athletes.pdf`
 57. **Summary of the 2024 Professionals in Nutrition for Exercise and Sport “10 Questions -10 Experts” Session—Hot Topics for the Paris Olympic Games** — Other — TITLE SCREENED<br>
    `Summary of the 2024 Professionals in Nutrition for Exercise and Sport “10 Questions -10 Experts” Session—Hot Topics for the Paris Olympic Games.pdf`
-58. **Explaining variation in sweat sodium concentration - Effect of individual characteristics and exercise, environmental, and dietary factors** — Other — TITLE SCREENED<br>
-   `Explaining variation in sweat sodium concentration - Effect of individual characteristics and exercise, environmental, and dietary factors.pdf`
-59. **Food first but not always food only - Recommendations for using dietary supplements in sport** — Other — TITLE SCREENED<br>
-   `Food first but not always food only - Recommendations for using dietary supplements in sport.pdf`
-60. **Food for thought - Physiological considerations for nutritional ergogenic** — Other — TITLE SCREENED<br>
-   `Food for thought - Physiological considerations for nutritional ergogenic.pdf`
+58. **Improvement of Functional Ankle Properties Following Supplementation with Specific Collagen Peptides in Athletes with Chronic Ankle Instability** — Other — TITLE SCREENED<br>
+   `Improvement of Functional Ankle Properties Following Supplementation with Specific Collagen Peptides in Athletes with Chronic Ankle Instability .pdf`
+59. **Improving sleep quality to enhance athletic activity - The role of nutrition and supplementation - A mini-short review** — Other — TITLE SCREENED<br>
+   `Improving sleep quality to enhance athletic activity - The role of nutrition and supplementation - A mini-short review.pdf`
+60. **Monitoring Dietary Supplements for Undeclared Diuretics as a Strategy for Preventing Unintentional Doping** — Other — TITLE SCREENED<br>
+   `Monitoring Dietary Supplements for Undeclared Diuretics as a Strategy for Preventing Unintentional Doping.pdf`
 
 ## Brain Health & Psychology
 
 61. **Risk of concussion after a targeting foul in collegiate American football** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Risk of concussion after a targeting foul in collegiate American football.pdf`
-62. **Factors Associated with Persisting Post-Concussion Symptoms Among Collegiate Athletes and Military Cadets - Findings from the NCAA-DoD CARE Consortium** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
-   `Factors Associated with Persisting Post-Concussion Symptoms Among Collegiate Athletes and Military Cadets - Findings from the NCAA-DoD CARE Consortium.pdf`
-63. **Immediate Removal From Activity After Sport-Related Concussion Is Associated With Shorter Clinical Recovery and Less Severe Symptoms in Collegiate Student-Athletes** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+62. **Immediate Removal From Activity After Sport-Related Concussion Is Associated With Shorter Clinical Recovery and Less Severe Symptoms in Collegiate Student-Athletes** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Immediate Removal From Activity After Sport-Related Concussion Is Associated With Shorter Clinical Recovery and Less Severe Symptoms in Collegiate Student-Athletes.pdf`
+63. **Medical disqualification following concussion in collegiate student-athletes - Findings from the CARE Consortium** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+   `Medical disqualification following concussion in collegiate student-athletes - Findings from the CARE Consortium.pdf`
 64. **Tackle characteristics associated with concussion in elite men's rugby union - Unpicking the differences between tacklers and ball-carriers** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Tackle characteristics associated with concussion in elite men's rugby union - Unpicking the differences between tacklers and ball-carriers.pdf`
 65. **Observation of risk for concussion following 'lowering the helmet to initiate contact' penalities in the NFL** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
@@ -199,9 +199,9 @@ This queue contains 88 unrepresented, content-deduplicated local PDFs: 12 alloca
    `Validity of research based on public data in sports medicine - A quantitative assessment of anterior cruciate ligament injuries in the NFL.pdf`
 85. **The validity and reliability of wearable microtechnology for intermittent team sports - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `The validity and reliability of wearable microtechnology for intermittent team sports - A systematic review.pdf`
-86. **Heat Stroke Burden and Validity of Wearable Derived Core Temperature Estimation during Elite Military Training** — Other — TITLE SCREENED<br>
-   `Heat Stroke Burden and Validity of Wearable Derived Core Temperature Estimation during Elite Military Training.pdf`
-87. **Ready for impact - A validity and feasibility study of instrumented mouthguards (iMGs)** — Other — TITLE SCREENED<br>
+86. **Ready for impact - A validity and feasibility study of instrumented mouthguards (iMGs)** — Other — TITLE SCREENED<br>
    `Ready for impact - A validity and feasibility study of instrumented mouthguards (iMGs).pdf`
-88. **Validity and reliability of Strive Sense 3 for muscle activity monitoring during the squat exercise** — Methodological / Validation Study — TITLE SCREENED<br>
+87. **Validity and reliability of Strive Sense 3 for muscle activity monitoring during the squat exercise** — Methodological / Validation Study — TITLE SCREENED<br>
    `Validity and reliability of Strive Sense 3 for muscle activity monitoring during the squat exercise.pdf`
+88. **Validity of force-velocity profiling assessed with a pneumatic leg press device** — Other — TITLE SCREENED<br>
+   `Validity of force-velocity profiling assessed with a pneumatic leg press device.pdf`

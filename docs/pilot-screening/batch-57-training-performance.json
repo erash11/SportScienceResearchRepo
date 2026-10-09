@@ -1,0 +1,952 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-57-training-performance",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Training & Performance queue positions 2-94. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 2,
+      "sourceFile": "Exploring the acute cardiovascular effects of flotation-REST.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) not relevant to athletes, sport or exercise performance: the sample is 37 clinically anxious participants with high anxiety sensitivity and 20 non-anxious comparison participants in a within-subjects Floatation-REST versus nature-film crossover. Athletes are never studied; sport and exercise terms appear only in reference-list titles.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: said 'athlete or sport appears only in the reference list' -> 'athlete' does not appear anywhere and sport/exercise terms appear only in reference titles; decision (c) confirmed ('37 clinically anxious participants with high levels of anxiety sensitivity and 20 non-anxious comparison participants')"
+          ],
+          "residualConcerns": "Exclusion is correct for this paper. The reference list cites a separate float study in trained men after resistance exercise (Med Sci Sports Exerc 2022;54:1371-1381) that may be worth sourcing if Floatation-REST for recovery is of interest.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 7,
+      "sourceFile": "Explosive is not a term defind in the international system of units and should not be used to describe neuromuscular performance.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) commentary/opinion without a structured review of evidence: the article argues that the term 'explosive' should be abandoned in sport science and recommends alternative terminology. Its only search is an informal PubMed/Medline term check (June 2021, no strategy or criteria reported), and its data are illustrative force-plate traces from one MVC and one countermovement jump. The text is otherwise a conceptual terminology argument.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Judgment call: the authors call the article a 'critical review', and it explains force-time measures (peak force, RFD, impulse, take-off velocity) with illustrative data from one resistance-trained man (MVC) and one female handball player (countermovement jump). Exclusion (b) was kept because the purpose is a terminology recommendation ('we recommend abolishing the term explosive') rather than a structured review of athlete health or performance evidence; the only literature search is an informal June 2021 PubMed term check. A reviewer could reasonably reclassify it as a Narrative Review under Monitoring & Technology. Own DOI 10.47206/ijsc.v3i1.210 is printed if it is ever included.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 18,
+      "sourceFile": "Fatigue and human performance - An updated framework.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 25,
+        "extractedCharacters": 143203,
+        "doi": "10.1007/s40279-022-01748-2",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review that updates the Enoka and Duchateau fatigue framework by adding cognitive performance fatigue and perceived cognitive fatigue, and by adding determinants such as effort perception, affective valence, self-regulation and time perception. It draws on studies of motor and cognitive tasks in healthy, older and clinical (for example multiple sclerosis) populations. No sample is analysed, and the review does not describe a search method.",
+      "limitations": "The review is narrative, with no described search strategy, and the updated framework is a conceptual proposal that the authors say still needs testing. Most cited evidence is from laboratory tasks, and athletes are referred to only in the introduction.",
+      "synthesisCaution": "Staff could read the framework as a validated model that shows how to diagnose fatigue in a given athlete, when the authors present it as a conceptual structure for future research.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: said the AX test produced a larger rise in perceived cognitive fatigue overall -> the highest VAS rise was in the individualised TloadDback condition; the AX test gave a larger rise in fatigue and fall in vigor on the Brunel Mood Scale ('with the highest increase in the individualized TloadDback task condition. However, the AX continuous performance test induced a higher increase')",
+            "paper.findings: said voluntary activation fell more under higher cognitive load -> the larger reduction was in dual-task vs single motor task conditions ('higher reduction in muscle activation of the knee extensors ... in the dual-task conditions compared to the single motor task condition'); TTE only 'tended to be shorter' for high vs low load",
+            "paper.tldr: 'neither alone explains the other' -> restated as interdependent with no single determining factor (authors' wording)",
+            "paper.practicalImplications: tied the separate-change point to the cited evidence and flagged laboratory origin of dual-task findings"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1139",
+        "synthesisBatch": "pilot-synthesis-batch-57",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 21,
+      "sourceFile": "Fiber-type traps - Revisiting common misconceptions about skeletal muscle fiber types with application to motor control, biomechanics, physiology, and biology.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 82162,
+        "doi": "10.1152/japplphysiol.00337.2023",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review (J Appl Physiol REVIEW, described by the authors as a synthesis and perspective piece) on three common assumptions about skeletal muscle fibre types, drawing on animal and human studies. The authors conclude that myosin isoform does not predict oxidative capacity, that fibre cross-sectional area is not a reliable marker of fibre type, and that whole-muscle force cannot be inferred from myosin isoform. No new data are presented and no search method is described.",
+      "limitations": "The review has no described search method and much of the cited evidence comes from rat, mouse, cat and other animal muscle. It is aimed at muscle researchers and modellers and gives no athlete data or training guidance.",
+      "synthesisCaution": "Staff could read the paper as saying fibre type does not matter for performance, when the authors state that fast fibres do generate moderately higher specific force at the single-fibre level and argue only against generalising fibre-type associations across muscles, species, sexes and scales.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: EXCLUDE (c) not relevant -> INCLUDE as Narrative Review; the paper is a J Appl Physiol REVIEW on muscle fibre type, force-generating capacity and fibre size, which underpin exercise performance, and it lists exercise science and athletic performance among its targets ('linked fiber-type phenotype or changes to disease or athletic performance')",
+            "paper: null -> full record written from text; DOI 10.1152/japplphysiol.00337.2023 printed in header ('First published November 23, 2023; doi:10.1152/japplphysiol.00337.2023'); year 2024 from 'J Appl Physiol 136: 109-121, 2024'"
+          ],
+          "residualConcerns": "Relevance judgement call: the paper is basic muscle physiology aimed at researchers and modellers, with little direct athlete content. A reviewer may prefer to keep the original exclusion under (c).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1140",
+        "synthesisBatch": "pilot-synthesis-batch-57",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 24,
+      "sourceFile": "Finding the sweet spot via personalised Achilles tendon training- the future is within reach.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial. The text is labelled Editorial in Br J Sports Med (2019;53:11-12) and sets out the authors' propositions for personalised Achilles tendon training, with no original methods or structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 25,
+      "sourceFile": "Flywheel resistance training promotes unique muscle architectural and performance‐related adaptations in young adults.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 70145,
+        "doi": "10.1002/ejsc.12215",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized, non-exercise-controlled 10-week trial in 31 physically active young adults (18 to 30 y) allocated to volume-matched total-body traditional resistance training (TRT, n=12), flywheel resistance training (FWRT, n=11), or a habitual-activity control (CON, n=8). Both training groups increased maximal isometric torque and fat-free mass compared with CON, with no TRT versus FWRT difference in those outcomes. TRT produced larger free-weight squat and bench 1RM gains than FWRT, while FWRT increased fascicle length, countermovement jump and broad jump relative to CON.",
+      "limitations": "Groups of 8 to 12 that the authors say were not powered for all comparisons or for sex-specific effects. Several modality-specific and region-specific claims rest on one training group differing from CON while the two training groups did not differ directly.",
+      "synthesisCaution": "Reading the proximal versus distal vastus lateralis hypertrophy split as proof that flywheel and traditional training build different muscle regions, when the direct FWRT versus TRT comparisons for those regions were not significant.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 1RM sentence implied the +79.3 kg and +21.8 kg CON contrasts were the TRT versus FWRT differences and said FWRT beat CON on flywheel 3Wmax only -> now gives TRT versus FWRT (+43.28 kg squat, +15.62 kg bench), FWRT squat 1RM gain versus CON (+36.04 kg, p=0.002) and no FWRT bench gain versus CON (p=0.25)",
+            "paper.limitations: added CI/p inconsistency for FWRT MVIT (\"+56.07 Nm [-27.92-140.08], d = 1.35, p = 0.023\")"
+          ],
+          "residualConcerns": "MVIT SDs in Table 3 (e.g. 387.7 (1.7)) look implausible and the FWRT MVIT CI crosses zero while p=0.023; abstract reports MVIT p<=0.021 versus 0.014 and 0.023 in results.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1141",
+        "synthesisBatch": "pilot-synthesis-batch-57",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 32,
+      "sourceFile": "Forces experienced at different levels of the musculoskeletal system during horizontal decelerations.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 61892,
+        "doi": "10.1080/02640414.2024.2428086",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Laboratory study of 15 recreational team-sport athletes (12 men, 3 women) who performed maximal horizontal decelerations after a sprint, with 161 trials analysed. Motion capture, force plates and an OpenSim musculoskeletal model estimated ground reaction forces, joint moments, joint contact forces and muscle forces. Peak vertical and anteroposterior ground reaction forces averaged 4.48 and -1.67 body weights, and nine of twelve modelled muscles acted eccentrically during ground contact.",
+      "limitations": "The sample is small and recreational (mostly men), and muscle and contact forces are modelled estimates rather than direct measurements. The findings apply only to the first or second braking step after a maximal sprint, and the authors state that individualized training recommendations cannot be made.",
+      "synthesisCaution": "Treating modelled muscle and contact forces as measured tissue loads, and using group averages to prescribe individual training or to judge injury risk, which the authors say the data do not support.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [
+            "No field changes. Checked the six versus four times conflict: abstract says GRFs 'especially in the horizontal direction, were up to six times' running, while the Discussion gives vertical '~1.5-3 times (up to 6.3 BW)' and horizontal 'up to four times (1.9 BW)'; the draft already reports the Discussion values and flags the conflict in limitations",
+            "Checked sample (15 recreational team-sport athletes, 12 males and 3 females, healthy and injury free for six months), 161 trials, peak GRFs, joint contact forces, tibialis anterior and tendon forces against Results and Table 1"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1142",
+        "synthesisBatch": "pilot-synthesis-batch-57",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 34,
+      "sourceFile": "From Tissue to System - What Constitutes an Appropriate Response to Loading.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 107374,
+        "doi": "10.1007/s40279-024-02126-w",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Rehabilitation & Return to Sport",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review, with a PubMed keyword search and hand-checking of related systematic reviews and meta-analyses, of how muscle, tendon, bone and cartilage respond to training load and how long each takes to recover. The authors propose a conceptual recovery framework and an athlete monitoring model, with example polarized microcycles for an individual and a team sport. The review reports no new data and no pooled effect size.",
+      "limitations": "The authors call it a narrative review and describe no formal study selection, risk-of-bias appraisal or pooled analysis. The recovery timelines are the authors' synthesis, and several of them rest on animal, laboratory or small studies.",
+      "synthesisCaution": "Staff could apply the review's refractory periods (for example, 48 h for reactive tendons and 4 to 8 h for a bone-loading window) as fixed rules for every athlete, when the authors describe them as typical timelines with wide individual variation.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: Systematic Review / Meta-analysis -> Narrative Review ('In this narrative review'; PubMed keyword search plus hand-checking, no systematic screening, flow or appraisal)",
+            "populations: removed Healthy Athletes and Injured Athletes -> Mixed / Unspecified only; there is no study sample, and the cited evidence mixes athletes, patients and animal studies",
+            "paper.citation: author list reformatted to surname + initials and journal abbreviated; no volume or pages are printed for this article"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1143",
+        "synthesisBatch": "pilot-synthesis-batch-57",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 49,
+      "sourceFile": "Genetic variants in myostatin and its receptors promote elite athlete status.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 49456,
+        "doi": "10.1186/s12864-023-09869-2",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case-control Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Endurance Sport",
+        "Track & Field",
+        "Swimming & Diving",
+        "Combat Sports",
+        "Volleyball",
+        "Ice Hockey",
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Genetic association study that sequenced MSTN, ACVR2A and ACVR2B in 102 elite Polish athletes and 41 controls, then genotyped two variants in 330 athletes and 365 controls. The whole-cohort comparisons were not significant after correction, but the authors report genotype associations with competition level and discipline, most strongly for MSTN rs11333758 deletion homozygotes in high-elite and mixed-sport high-elite athletes.",
+      "limitations": "The positive results come from stratified subgroup analyses with small cells, and Bonferroni correction covered only the two genotyped variants, not the many models and subgroups tested. Athletes and controls differ in age and sex composition, and the design cannot show that these genotypes predict or cause elite status.",
+      "synthesisCaution": "Staff could read these MSTN and ACVR2A genotype patterns as a talent or selection marker, when the study is a small, subgroup-driven association study with no predictive accuracy reported.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: called the subgroup analyses 'post hoc', which the paper does not state -> 'stratified subgroup analyses', and added that Bonferroni correction covered only the two genotyped variants ('All reported p-values were corrected for the number of variants genotyped')",
+            "paper.limitations: added the limited multiple-testing correction, the gap to the authors' own sample size target ('minimum group size of 329 participants per group'), and that the abstract's high-elite ACVR2A claim was non-significant ('overdominant model p = 0.067')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1144",
+        "synthesisBatch": "pilot-synthesis-batch-57",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 52,
+      "sourceFile": "Gluteal Muscle Forces during Hip-Focused Injury Prevention and Rehabilitation Exercises.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 56772,
+        "doi": "10.1249/MSS.0000000000003091",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer",
+        "Rugby",
+        "Other Sport"
+      ],
+      "populations": [
+        "Female Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Within-participant laboratory study of 14 female footballers aged 18 to 32, performing eight hip-focused exercises with body weight and with a 12RM load. Gluteal muscle forces were estimated with an EMG-informed neuromusculoskeletal model rather than measured in vivo; the split squat, single-leg RDL and single-leg hip thrust ranked highest for gluteus maximus, and 12RM loading increased peak force for every exercise by varying amounts.",
+      "limitations": "Forces are model estimates from a generic musculoskeletal model with male-based moment arms, in 14 female players in one short test series, so the rankings cannot be assumed to hold for male athletes or to be measured forces. The study reports no training, strength or injury outcomes.",
+      "synthesisCaution": "Staff could read the force rankings as proof that an exercise trains a given gluteal muscle or reduces injury risk, when the study measures modelled forces in a single session and reports no training or injury outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: stated only that forces 'cannot be validated directly in vivo' -> now says the model was verified only against joint moments and EMG ('model predictions were verified using experimentally measured joint moments and muscle surface EMG signals'), not against measured muscle force",
+            "paper.practicalImplications: framed rankings as modelled and added that some loaded exercises produced less force than body weight ones ('body weight single-leg squat has higher peak gluteus medius muscle force than loaded side-lying leg raises')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1145",
+        "synthesisBatch": "pilot-synthesis-batch-57",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 54,
+      "sourceFile": "Greater effects by performing a small number of eccentric contractions daily than a larger number of them once a week.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 55119,
+        "doi": "10.1111/sms.14220",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Non-randomized parallel-group training study of 36 healthy university students (24 men, 12 women) with no recent arm resistance training, placed in three groups of 12 for four weeks of maximal eccentric elbow flexor contractions: six contractions once a week, six on five days a week, or five sets of six once a week. Group-by-time interactions were significant, and only the five-day group showed significant within-group strength gains (about 9 to 14%, small effect sizes), while the five-day and once-weekly 30-contraction groups both increased biceps and brachialis thickness by about 8 to 10%.",
+      "limitations": "Allocation to groups is not described as random, groups are small (12 each), and the participants were young adults rather than athletes. Thickness changes did not differ significantly between the two high-volume groups, and thickness change may reflect swelling as well as hypertrophy.",
+      "synthesisCaution": "Staff could read this as showing that daily eccentric work builds more strength in athletes than weekly work, when it is a four-week, small, non-randomized study of untrained young adults training the elbow flexors only.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: 'Parallel-group' -> 'Non-randomized parallel-group' ('They were placed to one of the three groups'); added that strength gains were within-group with small effect sizes ('d = 0.33' to 'd = 0.49')",
+            "paper.tldr: 'raised strength more than the same weekly total done once a week' implied a reported pairwise between-group difference -> now states only the five-day group gained significantly",
+            "paper.findings: added the significant interactions and effect sizes; labelled 10.3% as the Results value",
+            "paper.limitations: added variable post-test timing ('measurements were taken at 5 (n = 4), 6 (n = 6), 7 (n = 4), 8 (n = 1), or 9 (n = 2) days') and that the 10.4% figure appears in both Abstract and Discussion",
+            "citation: removed online-first placeholder \";00:1-n\" (operator cleanup)"
+          ],
+          "residualConcerns": "The citation keeps the printed early-view volume placeholder ('Scand J Med Sci Sports. 2022;00:1-13'); final volume and pages are not printed in the text.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1146",
+        "synthesisBatch": "pilot-synthesis-batch-57",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 56,
+      "sourceFile": "Growing Trend of Novel or Experimental Substances Not Approved for Human Use Sold as Consumer Products Poses Threat to Athletes, Service Members, and Public Health.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Perspective piece: an opinion and commentary article with no described methods and no structured review of evidence. Its stated data source is 'personal observations or publications available in PubMed', and it frames open questions rather than reviewing the evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 57,
+      "sourceFile": "Hamstring Eccentric Strengthening   Program- Does Training Volume Matter-.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 42691,
+        "doi": "10.1123/ijspp.2018-0947",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Professional / Elite",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Nineteen elite U19 soccer players were block-randomised to start either a low-volume (1 set; 10 repetitions per week) or high-volume (4 sets; 40 repetitions per week) eccentric-biased hamstring programme for 6 in-season weeks, then crossed over after a 1-week break. Knee-flexor eccentric strength rose about 11% in both groups by mid-training, and biceps femoris long head and semimembranosus fascicle length rose about 4 to 6% (possible to likely small), with no clear between-group difference in these changes.",
+      "limitations": "There was no no-training control group, so the study compares two eccentric doses rather than training against none. Samples were small (9 and 10 players), both exercises were given together, and the study measured strength and fascicle length, not injuries.",
+      "synthesisCaution": "Staff could read 'low volume is as effective' as evidence that 10 repetitions per week prevents hamstring injury, when the trial did not measure injury.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added that the design compares two doses with no no-training control and uses magnitude-based inference, and noted that Table 1 group baseline values and Table 2 PRE values are swapped between groups (Table 1 low volume strength 326.4 (48.1) vs Table 2 low volume PRE 325 (26))",
+            "paper.athleteDev: replaced 'the authors suggest this may maintain adaptations' with the phase 2 data it rests on ('There was no substantial changes between MID and POST')"
+          ],
+          "residualConcerns": "Study design kept as Randomized Controlled Trial (block randomization, crossover of two doses) though there is no untrained control. Sex of the players is not stated, so no sex tag was added. Table 1 and Table 2 baseline values appear to have swapped group labels.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1147",
+        "synthesisBatch": "pilot-synthesis-batch-57",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 61,
+      "sourceFile": "Hamstring Muscle-Tendon Geometric Adaptations to Resistance Training Using the Hip Extension and Nordic Hamstring Exercises.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 42672,
+        "doi": "10.1111/sms.14728",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Secondary analysis of a three-arm randomised controlled trial in 30 recreationally active men (10 per group: control, Nordic, hip extension) who trained twice weekly for 10 weeks, with MRI of both thighs before and after. Hip extension increased the BFlh muscle volume-to-interface area ratio more than the Nordic (mean difference 0.10, 95% CI 0.01 to 0.19) and control (0.12, 0.03 to 0.22) groups, and BFlh interface area did not change between groups.",
+      "limitations": "Ten men per group and one 10-week programme limit power and generalisability, and tendon material properties were not measured. The abstract places the semimembranosus free tendon difference against control, while the Results and Discussion place it against hip extension.",
+      "synthesisCaution": "Staff could read the hip extension BFlh ratio result as evidence of lower injury risk, when the link to musculotendinous junction strain is a hypothesis the study did not test.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary, paper.findings: hip extension vs Nordic CI 0.007 (abstract) -> 0.01 (Results: 'mean difference = 0.10, 95% CI = 0.01-0.19, p = 0.03'); interface area wording -> no between-group difference",
+            "paper.findings: named the semimembranosus free tendon comparator as hip extension per Results ('larger training-induced increase in the Nordic exercise versus the hip extension group') and 'within the SEM'",
+            "paper.limitations: added the abstract vs Results CI conflict and the Discussion statement of BFlh mid-muscle change after Nordic training that the Results do not report"
+          ],
+          "residualConcerns": "Several internal inconsistencies: abstract vs Results comparator for the semimembranosus tendon effect; the relative-CSA post hoc BFlh region (77-81%) lies outside the reported main-effect region (60-68%); Discussion and Results differ on which exercise grew BFlh mid-muscle.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1148",
+        "synthesisBatch": "pilot-synthesis-batch-57",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 62,
+      "sourceFile": "Hamstring Strain injuries Are we Heading in the Right   Direction.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial or commentary: the article is printed under the BJSM 'Editorial' heading on every page and offers a selective critique of the hamstring risk-factor literature plus a proposed conceptual model. It describes no search, selection or appraisal method, so it is not a structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [
+            "exclusionReason: confirmed decision (b) and removed the drafter's note asking the verifier to confirm"
+          ],
+          "residualConcerns": "Borderline: the piece is externally peer reviewed, runs 5 pages and calls itself a review of risk-factor evidence ('The purposes of this article are to review the scientific evidence regarding risk factors'), so it could be read as a short narrative review. Excluded because it is published as an Editorial with no described review method and its central contribution is a conceptual model. If included, its own DOI 10.1136/bjsm.2010.081695 is printed.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 67,
+      "sourceFile": "Hamstring injuries and predicting return to play -   bye-bye MRI.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial. A short BJSM editorial arguing that MRI has little value for predicting return to play after hamstring injury. It has no original methods and no structured review of evidence; it refers to a prior systematic review by the same group.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 69,
+      "sourceFile": "Hamstring injury rehabilitation and prevention of   reinjury using lengthened state eccentric training - A new   concept.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Clinical commentary (labelled 'CLINICAL COMMENTARY', Level of Evidence 5). It summarizes selected literature and proposes an untested rehabilitation protocol and manual muscle test, with no original methods and no structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: DEGRADED (coded as narrative review) -> EXCLUDE (b); the article is labelled 'CLINICAL COMMENTARY' and states 'The purpose of this clinical commentary is to examine the risk factors... and propose a unique rehabilitation strategy', with no search method or structured evidence review",
+            "taxonomy, summary and paper fields: set to null for an excluded record",
+            "doiMissing: kept true; no DOI for this article is printed in the text"
+          ],
+          "residualConcerns": "If the library later decides to admit clinical commentaries that propose protocols, the draft content would need correction (for example the draft reversed the H-test measurement detail: the original H-test used an electrogoniometer, and the authors substituted a tape measure).",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 75,
+      "sourceFile": "Hamstring strength and architectural adaptations following inertial flywheel resistance training.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 43516,
+        "doi": "10.1016/j.jsams.2020.04.007",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomised, stratified intervention in 20 healthy, recreationally active males (10 per group), who completed 6 weeks of flywheel leg-curl training followed by 4 weeks of detraining. One group trained with a conventional unilateral prescription and the other with an eccentric bias, in which only one leg performed the eccentric phase. The eccentric-bias group's trained biceps femoris long head fascicles lengthened by 14 +/- 5%, and strength and rate of force development did not change in either group.",
+      "limitations": "The sample was recreationally active men, not athletes, so the results cannot be taken as athlete-specific evidence. Strength was tested bilaterally while training was unilateral, fascicle length was estimated from a 2D ultrasound equation, and only one hamstring muscle was measured.",
+      "synthesisCaution": "Staff could read the fascicle lengthening as a hamstring injury-prevention effect, but the study did not measure injury and the eccentric-bias gain was lost within 4 weeks.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: '2020 (online, in press)' -> 'J Sci Med Sport. 2020.' (article in press, 'Journal of Science and Medicine in Sport xxx (2020) xxx-xxx'; no volume or pages printed)",
+            "paper.limitations: added that groups trained at different moments of inertia ('0.05 kg.m being used throughout their program. The ECC group trained with a moment of inertia equaling 0.1 kg.m')"
+          ],
+          "residualConcerns": "Eligibility check: sample is recreationally active non-athlete men; kept INCLUDE because the outcome (hamstring architecture after eccentric training) is exercise-performance and injury-prevention relevant, and no athlete population tags are applied. RCT label reflects the authors' 'randomised, stratified training intervention' with two active groups and no non-training control group.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1149",
+        "synthesisBatch": "pilot-synthesis-batch-57",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 77,
+      "sourceFile": "Hamstrings Muscle Architecture and Morphology Following 6 Weeks of an Eccentrically-Biased Romanian Deadlift or Nordic Hamstring Exercise Intervention.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 51,
+        "extractedCharacters": 73876,
+        "doi": "10.1249/MSS.0000000000003701",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Single-blinded randomised trial in 32 physically active young adults (15 women, 17 men; mean age 20.8 years), who were assigned to a 6-week eccentrically biased Romanian deadlift (n=16) or Nordic hamstring exercise (n=16) programme, followed by 2 weeks of detraining. Across both groups, biceps femoris long head fascicle length rose by 0.80 cm (9%) after training and PA fell by 1.2 degrees (10%), and both returned toward baseline after detraining. Neither FL, PA nor muscle thickness differed between groups.",
+      "limitations": "The sample was physically active university students and club soccer players, not a defined athlete group, and the trial ran for only 6 weeks with no untrained control group. Imaging was of the dominant limb only, with a single sonographer, and the authors acknowledge the Romanian deadlift is not fully eccentric, so the two exercises were not matched for concentric work.",
+      "synthesisCaution": "Staff could read 'no difference between exercises' as proof the two are interchangeable for hamstring injury prevention, when the study measured architecture only and found the BFlh regional hypothesis not supported.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: '2025 (published ahead of print)' -> 'Med Sci Sports Exerc. 2025. Published ahead of print.'",
+            "screeningLimitations: 'Ultrasound measures were reliable but estimated' -> measures were direct EFOV ultrasound on the dominant limb; added no untrained control group",
+            "paper.tldr, paper.practicalImplications: 'architectural gains faded' / 'Gains faded' applied to all outcomes -> FL and PA returned to baseline while ACSA remained elevated ('The ACSA remained greater at detraining compared to baseline ... p = 0.04')",
+            "paper.practicalImplications: removed choosing 'on tolerance, equipment and athlete preference', which the study did not measure",
+            "paper.limitations: added the internal CI inconsistencies ('mean difference = -0.43 cm2 [0.10, 0.76]'; 'mean difference = -0.06 [-0.12, 0.25] cm'); replaced reliability-cohort note"
+          ],
+          "residualConcerns": "Accepted manuscript (published ahead of print) contains confidence intervals whose signs or bounds do not match the point estimates; the final version may differ.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1150",
+        "synthesisBatch": "pilot-synthesis-batch-57",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 79,
+      "sourceFile": "Hamstrings hypertrophy is specific to the training exercise - Nordic hamstring vs lengthend state eccentric training.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 57,
+        "extractedCharacters": 75526,
+        "doi": "10.1249/MSS.0000000000003490",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Controlled training trial in 42 healthy young males with no systematic training in the previous 18 months (48 enrolled, 6 withdrew). Control allocation (n=14) was by schedule availability, and training participants were randomised to 12 weeks (34 sessions) of Nordic hamstring training (NHT, n=14) or lengthened state eccentric training on a weight-stack machine (LSET, n=14). MRI-measured hamstring volume rose by 18% after LSET and 11% after NHT, with no change in controls, and BFlh volume rose by 19% after LSET and 5% after NHT, an NHT change that did not differ from controls.",
+      "limitations": "Participants were untrained young men, not athletes, and the control group was allocated by schedule rather than randomly. The two training regimes differed in several ways, so the study cannot attribute the differences to one variable, and no sprint, performance or injury outcome was measured.",
+      "synthesisCaution": "Staff could read the BFlh hypertrophy difference as proof that LSET protects against hamstring strain or improves sprinting, but the paper measured neither outcome and its own conclusion goes beyond the data.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: '2024 (published ahead of print)' -> 'Med Sci Sports Exerc. 2024. Published ahead of print.'",
+            "evidenceSummary, paper.findings: added that NHT BFlh and SM volume changes did not differ from controls ('the changes in these muscles did not differ between NHT and CON (LSD 0.053<=P<=0.949)') and that controls also had a +2% aponeurosis increase ('CON (+2%; P=0.030)')",
+            "evidenceSummary: made the allocation explicit (controls by schedule, training arms randomised; 48 enrolled, 6 withdrew)",
+            "paper.limitations: added learning effects in controls ('Maximum isometric and concentric torque increased in all groups including CON ... suggesting some learning effects')"
+          ],
+          "residualConcerns": "Eligibility check: untrained non-athlete men; kept INCLUDE as hamstring training adaptation evidence, with no athlete population tags. Design label kept as Randomized Controlled Trial because LSET versus NHT allocation was random, but the no-training control arm was allocated by schedule availability, so comparisons with controls are non-randomised.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1151",
+        "synthesisBatch": "pilot-synthesis-batch-57",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 84,
+      "sourceFile": "Heat Acclimation by Post-Exercise Hot Water Immersion in the Morning Reduces Thermal Strain During Morning and Afternoon Exercise-Heat-Stress.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 22,
+        "extractedCharacters": 42967,
+        "doi": "10.1123/ijspp.2017-0620",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "A controlled laboratory study in which 10 recreationally active males (age 23 plus or minus 4 years) completed a 40-minute treadmill run at 65% VO2max in heat (33 C) before and after six consecutive days of post-exercise hot water immersion (40 C) performed in the morning. Tests were run in the morning (09:45) and mid-afternoon (14:45) on the same day. Resting rectal temperature fell by 0.34 plus or minus 0.24 C in the morning and 0.27 plus or minus 0.23 C in the afternoon (P = 0.002), and end-exercise rectal temperature fell by 0.47 and 0.43 C (P = 0.001), with no interaction between heat acclimation and time of day.",
+      "limitations": "The sample is 10 recreationally active men, not trained athletes, and includes no women. Only one post-exercise immersion protocol was tested, with no separate control group; the authors cite data from an earlier thermoneutral-immersion study for comparison.",
+      "synthesisCaution": "Staff could read the result as proof that hot water immersion works as well as exercise heat acclimation for trained athletes, but the study tested recreational men and did not compare the two methods.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: added 'ahead of print' and abbreviated journal ('This article will be published in a forthcoming issue'; no volume or pages printed)",
+            "paper.findings: added that whole-body sweat rate, RER and plasma volume did not change ('No differences were observed from PRE to POST for measure of RER and WBSR')",
+            "paper.limitations: noted the RER contradiction in the Results (listed under both 'Main effects for the time of day' and 'no main effects')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1152",
+        "synthesisBatch": "pilot-synthesis-batch-57",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 92,
+      "sourceFile": "Higher cardiovascular risk factor burden associated with cumulative concussion history and age-related differences.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(a) source identity mismatch: the filename names a study of cardiovascular risk factor burden, cumulative concussion history and age, but the extracted text is a different article: Ekstrand J, Hagglund M, Walden M, et al. 'Higher level of communication between the medical staff and the performance staff is associated with a lower hamstring injury burden: a substudy on 14 teams from the UEFA Elite Club Injury Study', BMJ Open Sport & Exercise Medicine 2025;11:e002182 (DOI 10.1136/bmjsem-2024-002182). It is a questionnaire plus injury-surveillance substudy of 14 male professional football teams (2019/2020 to 2022/2023) and contains no mention of concussion or cardiovascular risk factors.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [
+            "exclusionReason: added authors and study description of the article actually in the file"
+          ],
+          "residualConcerns": "The text in the file (Ekstrand et al. 2025 hamstring communication substudy) could be catalogued separately under its own filename; the concussion and cardiovascular risk article named by the filename needs to be sourced.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 94,
+      "sourceFile": "Higher vs. Lower Intensity Strength Training Taper- Effects on Neuromuscular Performance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 22,
+        "extractedCharacters": 40451,
+        "doi": "10.1123/ijspp.2018-0489",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized crossover study of 11 strength-trained men (21 years, deadlift 1.9 times body weight) who completed two four-week strength blocks, each followed by a one-week taper with about 70% lower volume and either higher (+5.9%) or lower (-8.5%) intensity. Pooled countermovement jump height rose from 38.0 cm before training to 39.3 cm after training and 40.0 cm after the taper, isometric mid-thigh pull relative force rose from 34.7 to 35.9 N/kg over the training block only, and no statistically significant differences were found between the two tapers.",
+      "limitations": "Eleven men with no untapered control, so changes over the study cannot be attributed to tapering alone. Intensity changes differed slightly from the targets, the result for a higher-intensity taper was a non-significant trend, and dynamic strength was not measured.",
+      "synthesisCaution": "Staff could take the authors' 'tendency' toward the higher-intensity taper as evidence that heavier tapers work better, when no between-taper difference was statistically significant.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr and athleteDev: said the taper improved isometric force -> IMTP improved only from T1 to T2 (before the taper) and was not significantly changed across the taper ('There was no significant difference in any isometric strength measure from post-training to post-taper')",
+            "evidenceSummary/abstract: clarified IMTP gain was over the training block only and CMJ improved T2 to T3 (p = 0.002)",
+            "paper.findings: clarified the 0.43/0.37/0.30 effect sizes are within-taper T3 vs T1, not between-taper comparisons",
+            "paper.practicalImplications: tied advice to the tested taper rather than 'before a key session'",
+            "paper.limitations: added self-directed aerobic/conditioning training ('Participants could perform their habitual aerobic or conditioning focused training')"
+          ],
+          "residualConcerns": "Design coded as Randomized Controlled Trial because taper order was randomized in a crossover; there was no no-taper control. Participants are strength-trained men, not identified as athletes, so no athlete tags were added.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1153",
+        "synthesisBatch": "pilot-synthesis-batch-57",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

@@ -1,0 +1,452 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-63-monitoring-technology",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Monitoring & Technology queue positions 5-86. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 5,
+      "sourceFile": "Exploring the interplay between metabolic power and equivalent distance in training games and official matches in soccer - A machine learning approach.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 80864,
+        "doi": "10.3389/fphys.2023.1230912",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Retrospective methodological study of 21 elite male Serie A soccer players over one season, using metabolic power and equivalent distance index from 4,269 training games (GPEXE GPS) and 380 official matches (STATS SportVU optical tracking). Four machine learning classifiers separated training games from matches (Table 2 AUC 0.89 to 0.98), overall intensity did not differ between the two, and metabolic-power-based training load correlated with Edwards' heart-rate training load (individual r = 0.59 to 0.87, team r = 0.75, p < 0.001).",
+      "limitations": "This is a retrospective convenience sample from one squad over one season, which the authors call a case study. Training games and matches were measured with different tracking systems and the classes were heavily imbalanced (about 92% training games), so high classification accuracy may partly reflect these features rather than true differences in movement demands.",
+      "synthesisCaution": "Staff could read the classifier results as showing that training games should copy the exact metabolic power and equivalent distance composition of matches, a recommendation the paper makes but does not test.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary, paper.methods: described all data as GPS-derived -> matches came from STATS SportVU optical tracking and training games from GPEXE GPS ('Match analysis was conducted using the STATS SportVU system'; 'GPS pro2 at 18-Hz (GPEXE)' for training sessions)",
+            "paper.limitations, screeningLimitations: added measurement-system confound and class imbalance (4,269 vs 380, majority-class accuracy about 92%) which limit what the reported accuracy shows",
+            "paper.findings: added team correlation r = 0.75 (Table 3 'Team 3692 0.75') and the null area-per-player correlation ('r = 0.06... p > 0.05')",
+            "paper.tldr, paper.practicalImplications, paper.athleteDev: removed advice to track the mix of load because session types separated, which overstated a possibly confounded classifier result; Table 2 vs abstract conflict check confirmed draft values were correct"
+          ],
+          "residualConcerns": "The measurement-system and class-imbalance concerns are the auditor's reading of the reported methods and counts, not stated by the authors. Paper does not report per-class MP or EDI values, so the direction of any difference is unknown.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1217",
+        "synthesisBatch": "pilot-synthesis-batch-63",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 10,
+      "sourceFile": "FORCE-~1.PDF",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 45675,
+        "doi": "10.1080/02640414.2021.1920128",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Cross-sectional correlational study of 41 professional male footballers from two Danish Super League teams (mean age 22.1 years). Force-velocity-power (FVP) profiles were derived from maximal 30 m sprint acceleration, squat jump and loaded hip thrust, with paired subsets of n = 26 to 32 per comparison. Pmax correlated between sprint and squat jump (r = 0.73, P < 0.001) and between squat jump and hip thrust (r = 0.44, P = 0.01), but not between sprint and hip thrust (r = 0.18, P = 0.36). F0, V0 and SFv were not significantly correlated between any pair of tasks.",
+      "limitations": "The sprint profile uses split times rather than direct velocity measurement, and the hip thrust profile uses video-derived velocity, so the derived variables carry method-specific error. The sample is a homogeneous group of elite male footballers, and the sub-samples differ in size, so the correlations do not show that any test predicts sprint performance or training response.",
+      "synthesisCaution": "Staff could read the Pmax correlation between hip thrust and squat jump as evidence that hip thrust profiling tracks sprint capacity, when the study found no sprint to hip thrust correlation.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "practicalImplications: 'each can be used as a partial indicator of the other for power' overstated a moderate correlation in 26 players -> reports r = 0.73 (n = 26) and the absent F0/V0 relationships (Table 1)",
+            "identity: confirmed; truncated filename FORCE-~1.PDF consistent with title 'Force-velocity-power profiling of maximal effort sprinting, jumping and hip thrusting'; DOI 10.1080/02640414.2021.1920128 printed in header",
+            "all other numbers checked against Tables 1 to 3 and Methods (n = 41; paired n = 26, 29, 32; r range -0.19 to 0.20, P >= 0.27)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1218",
+        "synthesisBatch": "pilot-synthesis-batch-63",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 26,
+      "sourceFile": "Focused review of sleep wearable technology and its application in sports performance.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text. Only reference-list DOIs appear. All other fields are complete, so the operator may verify the DOI externally.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: 'trusting the athlete and looking for other causes' is not in the text -> now follows Table 2 ('Validate athlete's subjective feelings of poor sleep even if the wearable states that they are getting good sleep. There may be opportunities to improve sleep.')",
+            "decision: DEGRADED confirmed; no DOI for this article is printed (header shows only '1537-8918/2406/171-176'), all printed DOIs are in the reference list"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 35,
+      "sourceFile": "From data to action - A scoping review of wearable technologies and biomechanical assessments informing injury prevention strategies in sport.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 68353,
+        "doi": "10.1186/s13102-023-00783-4",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "American Football",
+        "Soccer",
+        "Basketball",
+        "Volleyball",
+        "Rugby",
+        "Endurance Sport",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Collegiate",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Scoping review, following PRISMA-ScR, of 21 primary studies (participants 11 to 232) on wearable and biomechanical technologies used in athletes for training and injury prevention. Accelerometers were used in 14 studies, GPS in 11 and force plates in 7, and Player Load was a primary outcome in 10. The authors map devices, variables and uses, and do not pool effects or weigh study quality.",
+      "limitations": "No formal risk-of-bias assessment was done; a basic relevance and rigor check did not affect inclusion, so the 21 studies are summarized without quality weighting. Only 9 of 21 studies (43%) reported device validity or reliability, and the devices differ widely.",
+      "synthesisCaution": "Staff could read Player Load and the acute:chronic workload ratio as validated injury predictors, when the included studies mostly report associations and the review draws no pooled conclusion about injury prediction.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations, paper.methods, paper.limitations: 'did not appraise study quality' -> no formal risk-of-bias assessment; a basic quality check was done but did not affect inclusion ('a basic quality check was conducted ... did not influence the inclusion of sources')",
+            "paper.citation: author list reformatted to surname + initials"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1219",
+        "synthesisBatch": "pilot-synthesis-batch-63",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 42,
+      "sourceFile": "GPS derived workload metrics and injury risk in team-based field sports - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 80508,
+        "doi": "10.4085/1062-6050-473-19",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Athletic Training",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer",
+        "Rugby",
+        "American Football",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite",
+        "Collegiate",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "Systematic review of PubMed-indexed original studies (January 2009 to May 2019) that used GPS-derived workload metrics as predictors of injury in team-based field-sport athletes. The 22 included studies covered 1136 athletes, 2045 injuries and 40 team-seasons, all male; a meta-analysis was not possible because of heterogeneity. The authors report that many workload metrics were associated with injury in individual studies, but no metric was consistently associated with injury across sports.",
+      "limitations": "Most included studies analysed one team over one season, and the review states that injury definitions, workload metrics and statistical methods varied widely. Five studies used magnitude-based inference, and the authors note that none of the studies came close to the sample sizes needed for even one load-related predictor.",
+      "synthesisCaution": "Staff could read a single significant workload threshold, such as an acute:chronic ratio above 2.0, as a validated injury limit that applies across squads, when the review concludes that the evidence is inconclusive and the thresholds did not generalise.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations, paper.limitations: sample-size statement made precise (\"None of the studies in this review came close to those sample sizes\" for 1, 5 or 10 predictors); 'several' MBI studies -> five (\"the authors of 5 studies12,13,15,16,29 used magnitude-based inferences\")",
+            "paper.findings: 'many studies reported magnitude-based inferences' -> five studies",
+            "paper.limitations: added the internal inconsistency in per-sport study counts (text \"10 studies of Australian rules football, 6 of soccer, and 5 of rugby and 1 study each of Gaelic football and American football\" vs 22 studies and Table 2)",
+            "paper.practicalImplications: replaced generic 'use alongside other monitoring information' with the authors' point that unvalidated models give descriptive associations; described the four-tier availability scheme as stated",
+            "paper.citation: house author format and abbreviated journal"
+          ],
+          "residualConcerns": "The text is an online-first version (pages printed as 000-000), so final pagination is not available. The review reports 1136 athletes, while Table 2 participant counts sum to 1137. Per-sport study counts are internally inconsistent; the record avoids per-sport counts.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1220",
+        "synthesisBatch": "pilot-synthesis-batch-63",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 76,
+      "sourceFile": "Hamstring to quadriceps fatigue      ratio offers new and different muscle function information than the      conventional non-fatigued ratio.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 54794,
+        "doi": "10.1111/sms.12891",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Single-session study of 35 professional soccer players, who completed a 30-repetition isokinetic knee extension and flexion fatigue test at 300 deg/s during preseason. The authors compared the conventional hamstring-to-quadriceps ratio (M-H:QCR, mean 0.70) with ratios calculated in fatigue from repetitions 28, 29 and 30 (1.25-1.38), and with several fatigue index methods. Fatigue ratios were larger than the conventional ratio (significant for repetitions 28 and 30) and were weakly or not correlated with it (r=.39 for the repetition-30 ratio; rs=0.25-0.27, non-significant, for repetitions 28 and 29).",
+      "limitations": "The test-retest reliability of the fatigue ratio was not assessed, and eccentric hamstring strength was not measured. The fatigue ratio is a ratio of fatigue indices rather than a peak-strength ratio, so its size is not directly comparable with the conventional value.",
+      "synthesisCaution": "Staff could read the larger fatigue ratio as evidence of higher injury risk or a better return-to-sport test, but the study does not test either, and it has no injury outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: placeholder page line '2017;1-12' removed -> 'Scand J Med Sci Sports. 2017.' (no volume printed)",
+            "evidenceSummary, paper.findings: r=.39 was attributed to the 'last-three-repetition ratio' and all fatigue ratios to p<.01 -> r=.39 is for Fatigue Ratio30, rs=0.25-0.27 (non-significant) are for Fatigue Ratio28 and 29, and Fatigue Ratio29 vs M-H:QCR was not significant ('statistical analysis revealed no significant differences between M-H:QCR and Fatigue Ratio29')"
+          ],
+          "residualConcerns": "Sex of the players is not stated in the text, so no sex tag is applied.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1221",
+        "synthesisBatch": "pilot-synthesis-batch-63",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 83,
+      "sourceFile": "Heart rate variability activity in soccer athletes after a musculoskeletal injury.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 29788,
+        "doi": "10.2340/jrm.v56.24969",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Adult / Recreational",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A longitudinal study (labelled a cohort study) of 15 male semi-professional soccer players aged 21 to 33 years (mean 29.4) from three clubs, each with a recent musculoskeletal injury. Heart rate variability was recorded standing with a Polar H10 chest strap and m200 watch within 72 hours of injury (T1) and 5 to 7 days after full return to play (T2). Compared with T2, T1 showed lower LF power in normalized units (69.5 vs 83.7, p = 0.001), higher HF power in normalized units (30.5 vs 16.3, p = 0.001) and a lower LF/HF ratio (median 2.81 vs 5.42, p = 0.001); HF power in ms2 differed (p = 0.017) and LF power in ms2 did not (p = 0.233).",
+      "limitations": "There was no control group and no pre-injury baseline, so the T1 to T2 change cannot be separated from injury, recovery, training status or time. Injuries were mixed and included traumatic ones (fracture, dislocation, sprains) as well as muscle tears, and the sample is small.",
+      "synthesisCaution": "Staff could read the HRV shifts as an early-warning signal for overuse injury, but HRV was measured only after injury, so the study cannot show that HRV predicts injury or that it can guide return to play.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings, evidenceSummary: 'HF power (ms2) was higher at T1' not supported by Table II -> medians 205.36 (T1) vs 218.18 (T2), p = 0.017",
+            "populations: Professional / Elite -> Adult / Recreational ('semi-professional soccer clubs', 14 of 15 trained three times weekly)",
+            "paper.limitations: replaced the claim that the outlier exclusion contradicts n = 15 -> one athlete excluded ('Initial data analysis excluded one athlete because he was statistically determined to be an outlier') with the recruited number not reported; 15 analysed",
+            "screeningLimitations, paper.limitations: added that injuries included traumatic ones (peroneal fracture, glenohumeral dislocation), although the authors frame HRV for detecting non-traumatic injury"
+          ],
+          "residualConcerns": "Competition level is semi-professional, which has no exact taxonomy value; tagged Adult / Recreational (library precedent is mixed). Table II effect sizes and the HF ms2 IQRs look implausible.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1222",
+        "synthesisBatch": "pilot-synthesis-batch-63",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 85,
+      "sourceFile": "Heat Stroke Burden and Validity of Wearable Derived Core Temperature Estimation during Elite Military Training.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 22,
+        "extractedCharacters": 27642,
+        "doi": "10.1080/00913847.2023.2190729",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A retrospective study of 1,364 Air Force Special Warfare trainees (1,351 men, 12 women) monitored from January to September 2021 with a Zephyr Bioharness wearable estimate of core temperature (ECT) during outdoor training. Of 47,058 daily peak ECT readings, 499 (1.1%) were flagged above 39.7 C, and 10 exertional heat stroke cases were confirmed by a physician with rectal temperature and CNS assessment (0.8 per 1,000 person-months). Eight of the 10 cases had peak ECT below 39.7 C, giving 20% sensitivity, 98.9% specificity, a positive likelihood ratio of 18.93 (95% CI 5.5 to 65.6) and a negative likelihood ratio of 0.81 (95% CI 0.6 to 1.1), and the authors report low agreement between ECT and rectal temperature.",
+      "limitations": "The sample is military trainees rather than athletes, and only 10 heat stroke cases (one a recurrence in the same trainee) were confirmed, so sensitivity is imprecise. Rectal temperature was taken only when CNS signs appeared, so non-flagged trainees were not checked against a reference measure.",
+      "synthesisCaution": "Staff could read this as evidence that all wearable core temperature estimates fail, when it tested one heart-rate-based device in one military training program with 10 cases.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: sex conflict restated with Table 2 evidence -> Table 2 lists one case as '22, F', matching the abstract '9 males, 1 female', against Results '100% males'",
+            "screeningLimitations, paper.limitations: added that one of the 10 cases is a recurrence in the same trainee (Table 2 '* (recurrence of episode with same trainee)')",
+            "paper.findings: added peak rectal (39.4 to 42.2 C) and ECT (37.8 to 40.6 C) ranges from Table 2",
+            "populations: Professional / Elite -> Mixed / Unspecified; the sample is military trainees, not competitive athletes (library precedent tags military samples Mixed / Unspecified)",
+            "screeningLimitations: replaced 'readings may not be simultaneous' with the verifiable point that only trainees with CNS signs had rectal temperature measured",
+            "paper.rtp: added that all cases had 'Gradual RTT' with no protocol described"
+          ],
+          "residualConcerns": "Clinically sensitive (exertional heat stroke). The paper is an accepted manuscript with no volume or pages. Table 1 sex counts (1,351 M, 12 F) sum to 1,363, not 1,364, and some Fahrenheit conversions in Table 2 are wrong (41.6 C given as 102.5 F).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1223",
+        "synthesisBatch": "pilot-synthesis-batch-63",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 86,
+      "sourceFile": "Height restrictions for dual-energy x-ray absorptiometry - What are our options for body composition and bone health precision.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text; the text contains no DOI string at all. All other sections are present. The operator may verify the DOI externally and upgrade the decision.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: removed the claimed 14.35% vs 4.35% arithmetic conflict; the extraction renders '+' as '1' (Table 1 LP 'precision difference' 10.55%, 10.25%, 10.63% = +0.55, +0.25, +0.63 matching abstract '0.25-0.63%'), so 14.35% is +4.35%",
+            "paper.findings: 'BMC CV rose ... (significant, p < 0.001)' misattributed significance to the CV -> paired t-tests compared tissue values ('Paired t-tests compared the mean tissue values'); added significant FM difference on HA and BMC on LP, with trivial effect sizes",
+            "screeningLimitations, paper.limitations: 'non-athlete adults' not stated -> general adults, overweight on mean BMI, all under 193 cm; athlete status not reported",
+            "paper.abstract: 'BMC error rose to about 4 to 5%' -> added up to 4.35% error"
+          ],
+          "residualConcerns": "DEGRADED only because no DOI is printed; the operator should verify it externally. Year 2024 is from the ahead-of-print header (J Strength Cond Res XX(X), 2024).",
+          "spotCheckPriority": "normal"
+        }
+      }
+    }
+  ]
+}
