@@ -50,10 +50,10 @@ Read this first. Update it before ending every session.
   queue is lines 193+ of the backlog list built by the method in `scripts/haiku-batch/README.md`.
 - `docs/needs-eric.md` (on the batch PR branches): the single list of operator actions: wrong PDFs on disk, DEGRADED
   records needing a DOI, scope reversals, and published records that share a DOI.
-- **Ask the Library drafter** (`npm run pilot:draft -- <request.json>`) is on branch `ask-library-drafter`. Iteration 1
-  on the 12-question stress-test bank: all 12 briefs passed `pilot:brief` and `pilot:audit-source`, 11/12 rated useful
-  by an independent Opus claim audit, 3 critical integrity failures. Iteration 2 (drafter v1.1) is running.
-  Results go to `docs/ask-library-eval/`.
+- **Ask the Library drafter: draft PR #12** (`npm run pilot:draft -- <request.json>`). Evaluated on the 12-question
+  stress-test bank with an independent Opus claim audit (`docs/ask-library-eval/` on that branch). Iteration 3 (v1.2,
+  full-text critic pass): 0 critical integrity failures, 12/12 briefs rated useful, all 12 pass `pilot:brief` and
+  `pilot:audit-source`. Iterations 1 and 2: 3 and 10 critical failures. Known limitation: briefs are long.
 - Still Eric's: name a pilot lead, pick 3 staff across 2+ disciplines, record human claim audits.
 
 ## Open questions
