@@ -50,8 +50,10 @@ Read this first. Update it before ending every session.
   - `batch-43-49-staged`: 81 INCLUDE, IDs 978-1059 (1017 unused).
   - `batch-50-56-staged`: 79 INCLUDE, IDs 1060-1138.
   - `batch-57-64-staged` (Batches 57-63): 85 INCLUDE, IDs 1139-1223.
+  - `batch-64-71-staged` (Batches 64-71): 65 INCLUDE, 25 EXCLUDE, 6 DEGRADED, IDs 1224-1288.
   - Open a PR for each staged branch as earlier PRs merge, in order.
-- With everything staged: 1,191 records. Backlog left: about 850 of 1,427. Batches 64+ are in progress.
+- With everything staged: 1,256 records, next unused ID 1289. Backlog left: about 754 of 1,427. Batch G (queue 7) is
+  half drafted; the run paused on the session usage limit and resumes after the reset.
 - `docs/needs-eric.md` (on the batch PR branches): the single list of operator actions: wrong PDFs on disk, DEGRADED
   records needing a DOI, scope reversals, and published records that share a DOI.
 - **Ask the Library drafter: draft PR #12** (`npm run pilot:draft -- <request.json>`). Evaluated on the 12-question
