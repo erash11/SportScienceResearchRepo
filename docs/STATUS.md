@@ -46,10 +46,12 @@ Read this first. Update it before ending every session.
   - #10 Batches 27-34: 81 INCLUDE, IDs 824-904 (first manifest-backlog batch). Review `docs/pilot-screening/batches-27-34-review.md`.
   - #11 Batches 35-42: 73 INCLUDE, IDs 905-977. Review `docs/pilot-screening/batches-35-42-review.md`.
   - After all three merge: 946 records, next unused ID 978, 1,235 backlog PDFs left (of 1,427).
-- **Staged without a PR** (no 4th PR while 3 are unmerged): `batch-43-49-staged`, Batches 43-49, 81 INCLUDE,
-  IDs 978-1059 (1017 unused). Batches 50+ are being drafted and audited. Open a PR for each staged branch as earlier
-  PRs merge, in order.
-- Backlog left after the staged batches: about 1,040 of 1,427.
+- **Staged without a PR** (no 4th PR while 3 are unmerged), stacked in order on #11:
+  - `batch-43-49-staged`: 81 INCLUDE, IDs 978-1059 (1017 unused).
+  - `batch-50-56-staged`: 79 INCLUDE, IDs 1060-1138.
+  - `batch-57-64-staged` (Batches 57-63): 85 INCLUDE, IDs 1139-1223.
+  - Open a PR for each staged branch as earlier PRs merge, in order.
+- With everything staged: 1,191 records. Backlog left: about 850 of 1,427. Batches 64+ are in progress.
 - `docs/needs-eric.md` (on the batch PR branches): the single list of operator actions: wrong PDFs on disk, DEGRADED
   records needing a DOI, scope reversals, and published records that share a DOI.
 - **Ask the Library drafter: draft PR #12** (`npm run pilot:draft -- <request.json>`). Evaluated on the 12-question
