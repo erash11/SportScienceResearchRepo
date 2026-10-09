@@ -1,0 +1,439 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-75-recovery-readiness",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Recovery & Readiness queue positions 2-91. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 2,
+      "sourceFile": "Local heat therapy to accelerate recovery after exercise-induced muscle damage.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 47023,
+        "doi": "10.1249/JES.0000000000000230",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of mechanistic and experimental work on local heat therapy after strenuous eccentric exercise, drawing on cell, animal and human studies. The authors report that heat therapy speeds recovery of fatigue resistance and glycogen resynthesis in some studies, and that it may improve blood flow, mitochondrial function and soreness, with most human data from exercise-naive or recreationally active participants.",
+      "limitations": "No literature search method is described, so the selection of studies cannot be checked. Much of the mechanistic evidence comes from cultured cells, rodents and pigs, and the authors state that translation to competitive athletes is unclear.",
+      "synthesisCaution": "Staff may read the proposed mechanisms (glycogen, blood flow, mitochondria) as proven pathways to faster recovery in athletes, when the review presents them as hypotheses supported mostly by non-athlete or non-eccentric studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: 'one study cited by the authors (Kim et al., 2019)' -> identified as the authors' own study and added its reported statistic ('*Main effect of treatment (P = 0.02)')",
+            "findings: added the null protein-synthesis result the review reports (Fuchs et al.: 'did not increase myofibrillar protein synthesis rates') so the record is not one-sided"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1333",
+        "synthesisBatch": "pilot-synthesis-batch-75",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 26,
+      "sourceFile": "Managing travel fatigue and jet lag in athletes - A review and consensus statement.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 22,
+        "extractedCharacters": 82365,
+        "doi": "10.1007/s40279-021-01502-0",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "A 26-member expert panel (14 men, 12 women, from 11 countries) combined a literature search with two or three rounds of anonymous voting, using 80% agreement for most items and 75% for jet lag recommendations. The output is travel toolboxes for pre-flight, in-flight and post-flight management of travel fatigue and jet lag. The authors state the evidence base is thin, so the recommendations are weak and rest mainly on laboratory physiology and expert opinion.",
+      "limitations": "The recommendations are expert consensus, and the authors state that the strength of recommendation is limited by the lack of athlete trials. The authors also caution that jet lag calculators and apps have not been validated for elite sport.",
+      "synthesisCaution": "Staff may read the toolbox as tested guidance on light, melatonin and sleep timing, when the authors present it as consensus built on weak evidence with no athlete-specific trials.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Recommendations involve exogenous melatonin and, in Fig. 6, short-acting hypnotics; the dosing and timing figures and Table 4 are not in the extracted text, so medication guidance should be checked against the PDF before staff use.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1334",
+        "synthesisBatch": "pilot-synthesis-batch-75",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 39,
+      "sourceFile": "Medications for Sleep Schedule              Adjustments in Athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 31748,
+        "doi": "10.1177/1941738117743205",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Clinical review of melatonin, caffeine and sedative-hypnotic sleep aids used to shift athletes' sleep schedules around travel and competition, based on MEDLINE keyword searches with no stated inclusion criteria. The authors state that very few studies test these agents in athletes, so recommendations draw largely on shift workers, aircrew and other travellers. Of the two athlete melatonin trials cited, one (12 soccer players) found lower physical performance at 08:00 after morning melatonin with no differences at 12:00 or 16:00, and the other concluded that melatonin taken before nocturnal sleep was unlikely to affect morning performance.",
+      "limitations": "The search is a keyword MEDLINE search with no inclusion criteria or quality appraisal, so it is coded as a narrative review, which is a judgement call. Athlete-specific evidence is a handful of small studies, and the guidance relies on non-athlete populations.",
+      "synthesisCaution": "Staff could read the timing table as an established athlete protocol, when the athlete evidence is two small melatonin trials and the recommendations are inferred mainly from shift workers and travellers.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/synthesisCaution/findings: 'the one athlete trial cited' is wrong; the text also cites Atkinson et al 2001, a double-blind placebo-controlled athlete trial ('They concluded that any significant effect on morning performance was unlikely') -> two athlete trials described",
+            "paper.practicalImplications: 'Caffeine taken late in the day should be avoided before evening competition' contradicts the review ('its use shortly before performance is acceptable'; Table 1 'Prior to competition if needed for ergogenic effects') -> reframed as a sleep trade-off; added energy drink and ramelteon points",
+            "paper.citation: added printed pages 35-39 (page numbers 35 to 39 printed; 'vol. 10 no. 1')",
+            "paper.athleteDev: 'Test any sleep aid in training before using it on competition day' not in text -> individualisation advice ('customized care is necessary')",
+            "paper.limitations: added conflict between the soccer trial result and its authors' conclusion",
+            "populations: removed Professional / Elite; the review addresses athletes generally with level unstated"
+          ],
+          "residualConcerns": "Medication guidance; doses and timings in the table come from non-athlete evidence.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1335",
+        "synthesisBatch": "pilot-synthesis-batch-75",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 62,
+      "sourceFile": "Multidimensional Monitoring of        Recovery Status and Implications for Performance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 24,
+        "extractedCharacters": 55469,
+        "doi": "10.1123/ijspp.2017-0669",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Monitoring & Technology",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Invited brief review of recovery monitoring in elite and professional athletes, organized into biological (cardiac, biochemical, hormonal and immunological), psychological (MTDS, POMS, RESTQ-Sport, ARSS and SRSS) and social (DALDA) approaches. It describes no literature search, study selection or quantitative synthesis.",
+      "limitations": "The review describes no search, selection or appraisal method, so its coverage and balance cannot be checked. It is the accepted, non-copyedited manuscript, and no volume or page numbers are printed.",
+      "synthesisCaution": "Staff could treat the review's thresholds, such as a testosterone/cortisol ratio drop of more than 30% or three days of 'worse than normal' DALDA answers, as validated cut-offs for action, when the review presents them as drawn from single cited sources.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1336",
+        "synthesisBatch": "pilot-synthesis-batch-75",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 76,
+      "sourceFile": "Napping behavior, daytime sleepiness, and arousal in high performance athletes and non-athlete controls.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 46592,
+        "doi": "10.1080/02640414.2023.2281158",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Athlete Wellbeing",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Female Athletes",
+        "Male Athletes",
+        "Mixed / Unspecified",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Cross-sectional online survey of 158 athletes (76 team, 80 individual sport, at least semi-elite) and 82 non-athlete controls who were active but not competing. Athletes and controls were compared on napping, sleep quality, daytime sleepiness and pre-sleep arousal using ANCOVA, chi-square and logistic regression. Nap prevalence did not differ significantly between athletes (51.3%) and non-athletes (36.6%), and among athletes, higher daytime sleepiness and lower pre-sleep cognitive arousal were associated with napping.",
+      "limitations": "Napping was measured with a single self-report item, and sleep and sleepiness were self-reported (PSQI, ESS), so the study cannot show causation or objective sleep. The control group was about seven years older and was not closely matched on lifestyle, and the authors acknowledge that women were over-represented in the athlete sample.",
+      "synthesisCaution": "The paper's proposed pathway from night-time sleep to daytime sleepiness to napping is a hypothesis from cross-sectional associations, so staff should not read the arousal findings as proof that lowering arousal will help athletes nap or recover.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: the 4.2-point arousal difference was attributed to athletes; it comes from the combined sample ('Figure 1 ... in a combined sample of athletes (n = 158) and non-athletes (n = 82)'; 'These effects were independent of athlete/non-athlete status') -> attributed correctly; added the athlete-only PSAS-C OR 0.95 from Table 3",
+            "limitations: added the 76 + 80 = 156 vs 158 subgroup count inconsistency ('team (n = 76) and individual (n = 80) sport athletes')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1337",
+        "synthesisBatch": "pilot-synthesis-batch-75",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 77,
+      "sourceFile": "Napping in high performance athletes sleepiness or sleepability.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 26,
+        "extractedCharacters": 46951,
+        "doi": "10.1080/17461391.2020.1743765",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Endurance Sport",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Professional / Elite",
+        "Collegiate",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Two-visit laboratory study with 30 participants: 10 elite athletes, 10 sub-elite university athletes and 10 non-athlete controls, each given a single 20-minute polysomnography nap opportunity at 15:00 on an adaptation trial and an experimental trial. Sleep latency was compared across groups with regression models, with 15:00 sleepiness (KSS) or prior-night total sleep time added as covariates. Elite athletes fell asleep faster than controls in both trials (10.4 vs 16.3 minutes in the adaptation trial; 7.9 vs 13.7 minutes in the experimental trial), and Table 2 shows the elite difference remained p<0.05 in each adjusted model.",
+      "limitations": "Only 10 people per group were studied, and the authors note reduced power and unstable group means in the experimental trial. Pre-trial training was not controlled, the sample was mostly endurance athletes from a single university population, and the study measured sleep latency rather than sleepability or arousal directly.",
+      "synthesisCaution": "The abstract's 'all p<0.05' holds only for the elite group in Table 2: the sub-elite TST-adjusted difference in the experimental trial was p=0.07, the text reports the KSS-adjusted experimental model overall as non-significant (p=0.07), and the printed sub-elite KSS-adjusted confidence interval (9.6, 0.05) reaches 0.05. Staff should not read this as proof that athletes have a trait ability to nap on demand.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: 'on both nights' -> trials (daytime naps); added Table 2 adjusted results for elite (mean differences -5.9 and -5.9 adaptation, -5.9 and -5.8 experimental, each <0.05)",
+            "synthesisCaution, limitations: draft implied the abstract's '(all p<0.05)' was wrong overall; the abstract claim is about elite athletes and Table 2 supports it for elite. Now states what Table 2 shows: sub-elite TST-adjusted experimental '-4.5 (-9.5, -0.5) 0.07', KSS-adjusted experimental model 'non-significant (F(3,26) = 2.63; p=0.07)', and sub-elite KSS CI printed '(9.6, 0.05)'",
+            "limitations: draft said Table 2 gives KSS p=0.051; the trailing 1 is a footnote marker, so the value is 0.05. Removed that claim",
+            "findings, limitations: draft said high-sleep-tendency percentages used 'denominators of 15 and 16'; the counts (2/8/5 and 2/6/8 of 10) match the text percentages, and Table 2 percentages are shares of all high-tendency participants. Rewritten with counts",
+            "findings: added sub-elite adaptation comparison values ('mean = 8.0 min; t=-3.60; p = 0.001')"
+          ],
+          "residualConcerns": "Table 2 adjusted confidence intervals for the experimental trial are printed without minus signs and one interval upper bound is 0.05, so the sub-elite KSS-adjusted significance (p<0.05 in text) should be checked against the published version.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1338",
+        "synthesisBatch": "pilot-synthesis-batch-75",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 86,
+      "sourceFile": "Neuromuscular Fatigue and Recovery after Heavy Resistance, Jump, and Sprint Training.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 54651,
+        "doi": "10.1249/MSS.0000000000001733",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Track & Field"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A within-subject crossover study in which 10 male athletes (university or national standard, intermittent sport or track and field) completed heavy-resistance, jump and sprint sessions performed with maximal intent, one week apart in randomized order. Neuromuscular function was measured before and up to 72 h after each session using femoral nerve and motor cortex stimulation. All three sessions produced fatigue that took up to 72 h to resolve, with potentiated twitch force still reduced at 48 h after every session.",
+      "limitations": "The sample is 10 men, each session used one exercise at high volume, and the sessions could not be matched for training load, so between-session comparisons are cautious. Neuromuscular measures came only from isometric knee extension, and the authors note that voluntary activation has questionable validity as a measure of central fatigue.",
+      "synthesisCaution": "Staff could read the finding that central fatigue was not the main driver as meaning that heavy or sprint sessions need no recovery planning, when maximal force and twitch force were still reduced 48 h after every session.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.athleteDev: 'perceived fatigue and soreness for up to 72 hours' -> significant for 24 to 48 h only (Table 1: 72 h values not marked significant; 'persisted for 48 h after STR ... and 24 h after JUMP')",
+            "paper.tldr: 'most measures reduced for up to 72 hours' -> reduced at 48 h and recovered by 72 h (Table 2)",
+            "paper.findings: 'average decrements over the 48-hour period' clarified as impaired for 48 h with average decrements of 8%, 7%, 6% ('impaired for 48 h after all training, with decrements in MVC force of 8%, 7%, and 6% on average')",
+            "paper.tldr and practicalImplications: 'support' -> 'partial support' ('The data provide partial support for the idea ... separated by at least 48 h')",
+            "screeningLimitations: 'quadriceps-focused exercise' was inaccurate for sprinting -> measures limited to isometric knee extension",
+            "synthesisCaution: aligned with the 48 h force and twitch deficits"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1339",
+        "synthesisBatch": "pilot-synthesis-batch-75",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 91,
+      "sourceFile": "Night Games and Sleep- Physiological, Neuroendocrine, and Psychometric Mechanisms.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 37908,
+        "doi": "10.1123/ijspp.2016-0809",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Observational crossover study of 12 netball athletes (mean age 19.2 years, all in national representative age-group teams) comparing an evening international game (6 pm start) with a time-matched rest day 10 days later. Sleep was measured with diaries and wrist actigraphy, with cortisol, urinary catecholamines, core temperature and psychometric questionnaires also collected. After the game, sleep duration and sleep efficiency were lower and wake times earlier, while adrenaline and noradrenaline were higher, and these hormone changes did not correlate with sleep.",
+      "limitations": "The sample is 12 athletes from a convenience sample, and the two conditions were one game and one rest day with the rest day always 10 days after the game, so the conditions were not counterbalanced. The design is observational, so it shows association between the game and sleep changes, not the mechanisms behind them.",
+      "synthesisCaution": "Staff may read the hyperarousal correlation (rs = -0.611) as a screening test that predicts which athletes will sleep poorly, when it is a correlation in 12 athletes with no prediction model.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: 'Other' -> 'Cohort Study' (observational, no intervention assigned: 'An observational cross-over design was employed')",
+            "identityCheck: now names Q92 and Q93 as excluded duplicates with the same DOI",
+            "limitations: the degrees-of-freedom point labelled as Inference; load point merged ('it may be beneficial for future research to explore the match day load')",
+            "practicalImplications: tied the null hormone/temperature result to the roughly 3-hour game-to-bed gap ('when sleep is more than 3 hours postcompetition') and attributed the hyperarousal advice to the authors"
+          ],
+          "residualConcerns": "Minor abstract/table mismatch: rest-day pregame adrenaline is 12.90 in the abstract and 12.91 in Table 1. Sex of the 12 athletes is not stated, so no sex tag was added. Study design coding (Cohort Study for a within-subject observational game vs rest day comparison) has no library precedent; reviewer may prefer Other.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1340",
+        "synthesisBatch": "pilot-synthesis-batch-75",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

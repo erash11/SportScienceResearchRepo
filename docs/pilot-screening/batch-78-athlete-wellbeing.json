@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-78-athlete-wellbeing",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Athlete Wellbeing queue positions 37-83. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 37,
+      "sourceFile": "Media's effect on athletes' mental health.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 45279,
+        "doi": "10.1016/j.csm.2023.06.022",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate",
+        "Female Athletes",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Narrative clinical review of how traditional and social media affect the mental health of elite, collegiate and professional athletes. It covers media obligations by competition level, coverage of female and minoritized athletes, and the stress of media attention, drawing on a systematic review of 13 general-population studies and small qualitative studies of elite athletes. No search method is described, and the authors state that research specific to athletes' mental health and social media is scarce.",
+      "limitations": "No search strategy or quality appraisal is reported. Most of the cited evidence comes from general-population studies, small qualitative samples or news cases, so the review cannot estimate how common media-related mental health problems are in athletes.",
+      "synthesisCaution": "Staff could read the high-profile examples, such as withdrawals and fines, as evidence of how common media-related mental health harm is in athletes, when the review gives no prevalence data and calls the athlete-specific evidence scarce.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: 'watch for signs of stress ... such as avoiding reporters or changes in behaviour after high-profile losses' is not supported; the text describes athletes 'isolating themselves from reporters to focus on competing' as a response, and losses as a trigger for team problems -> reframed as check-in timing around high-attention periods",
+            "paper.tldr: 'coverage of ... athletes from minoritized backgrounds is often less equal' -> stereotyped coverage and online abuse ('more covert ethnic and racial biases still occur'; Serena Williams 'received an overwhelming number of abusive posts')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1349",
+        "synthesisBatch": "pilot-synthesis-batch-78",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 83,
+      "sourceFile": "Neurodiversity in elite sport - A systematic scoping review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 50989,
+        "doi": "10.1136/bmjsem-2023-001575",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Track & Field",
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "A systematic scoping review (PRISMA-ScR, six databases searched to 12 May 2023, plus reference-list checks) of 23 studies on neurodivergence in elite sport, mainly ADHD with one autism study and one on specific learning disorders. The included studies were 10 observational studies, 4 systematic or narrative reviews, 6 commentary or position statements and 3 qualitative studies. Most were US college athlete work on ADHD and concussion or medication, and the authors found no intervention studies.",
+      "limitations": "Title and abstract screening was done by one author, with a second reviewer checking 10% of articles, and grey literature was excluded, so relevant studies may have been missed. The evidence is mostly ADHD in US college athletes, so it cannot describe neurodivergent athletes in other sports, levels or countries.",
+      "synthesisCaution": "Staff could read the review as showing that ADHD is more common in elite athletes or gives a competitive advantage, when the authors state that prevalence data are limited and any advantage is unconfirmed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Clinically sensitive themes (ADHD stimulant medication and concussion management) are summarised from included papers only; the review gives no clinical guidance of its own.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1350",
+        "synthesisBatch": "pilot-synthesis-batch-78",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

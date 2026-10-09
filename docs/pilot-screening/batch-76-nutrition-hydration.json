@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-76-nutrition-hydration",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Nutrition & Hydration queue positions 11-79. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 11,
+      "sourceFile": "Low carbohydrate availability impairs hypertrophy and anerobic performance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 27791,
+        "doi": "10.1097/MCO.0000000000000934",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review in Current Opinion in Clinical Nutrition and Metabolic Care, with no described search method. It combines acute 24-hour diet studies, a systematic review of 13 studies lasting 21 to 84 days (Coleman et al.), an 8-week study in competitive bodybuilders, and a narrative review of muscle glycogen and high-intensity performance. The authors report that low-carbohydrate intake increased branched-chain amino acid oxidation and reduced myogenic factor transcription in acute work, that strength was not reduced across studies of 2 to 84 days, and that muscle glycogen below about 200 mmol/kg dry weight reduced supramaximal exercise capacity.",
+      "limitations": "No search method or study-quality appraisal is described, so the selection of evidence cannot be checked. Most mechanistic evidence is acute, many of the body composition studies did not control energy intake, and no long-term controlled trial of over 90 days is cited.",
+      "synthesisCaution": "Staff may read the acute amino acid and marker changes as proof that low-carbohydrate diets impair hypertrophy in athletes, when the review itself says the effect may be blunted and cannot be separated from negative energy balance.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: 'Healthy Athletes' applied to a narrative review whose evidence comes from healthy active adults, bodybuilders, cell culture and mouse models -> removed, leaving Mixed / Unspecified ('healthy, normal weight active participants')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1341",
+        "synthesisBatch": "pilot-synthesis-batch-76",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 23,
+      "sourceFile": "Making Sense of Muscle Protein Synthesis_- A Focus on Muscle Growth During Resistance Training.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 71853,
+        "doi": "10.1123/ijsnem.2021-0139",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "This narrative review critically evaluates whether acute muscle protein synthesis (MPS) responses to resistance exercise and nutrition predict muscle hypertrophy during resistance training. It draws on studies in mainly untrained young men, including Mitchell et al. (23 men, 16 weeks), which found no correlation between acute myofibrillar MPS and quadriceps volume change, and Damas et al. (10 men, 10 weeks), where MPS measured at weeks 3 and 10 but not week 1 correlated with muscle size change. The authors conclude that acute MPS does not predict individual hypertrophy, although it can support group-level inferences.",
+      "limitations": "No search strategy is described, so study selection cannot be checked, and the conclusions rest on a small number of studies with 10 to 36 participants each. Every study in the review's Table 1 enrolled untrained participants, so the statement that acute MPS translates to hypertrophy only in trained individuals is extrapolated from later-phase measurements in previously untrained men, not from trained athletes.",
+      "synthesisCaution": "Staff could take the authors' point that acute MPS differences are not quantitatively transferable and dismiss protein-source or dose comparisons entirely, when the authors say such studies remain useful for group-level and qualitative decisions.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations and paper.limitations: removed the unlabeled claim that Brook et al. and Reidy et al. contradict the authors' training-status view; the text presents these as consistent ('These data are consistent with recent studies that reported associations... over 3... and 12 weeks'). Replaced with the checkable point that every Table 1 study enrolled untrained participants",
+            "paper.findings: added the authors' group-level qualification ('multiple examples of studies in which the acute response of MPS does predict the average hypertrophy on a group level') and recast the 100% figure as variability the authors note"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1342",
+        "synthesisBatch": "pilot-synthesis-batch-76",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 40,
+      "sourceFile": "Meldonium supplementation in professional athletes - Career destroyer or lifesaver.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 35433,
+        "doi": "10.7759/cureus.63634",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of the proposed biochemical mechanisms of meldonium, a substance on the WADA prohibited list, and of its possible cardioprotective effects in athletes. The mechanistic evidence comes mainly from animal and cell studies, and the human trials cited are in heart failure and stable angina patients rather than athletes. No search method is described.",
+      "limitations": "No search strategy or appraisal of study quality is reported. The mechanistic argument rests largely on animal models, and the review cites no human data from athletes on performance or cardiac outcomes.",
+      "synthesisCaution": "Staff could read the authors' argument that meldonium may be justified as a protective supplement for athletes as evidence-based, when the cited human trials are in heart failure and angina patients and the review reports no athlete data on safety, performance or cardiac outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution: sharpened to the authors' own advocacy ('there may be legitimate arguments for the justification of the use of substances like meldonium as protective supplements for athletes')",
+            "paper.limitations: added that the authors' claims ('can significantly improve aerobic endurance'; 'no negative effects of meldonium administration in athletes have been demonstrated') are not supported by data in the review",
+            "paper.practicalImplications: 'prohibited substance in competition' made consistent with the text's S4 listing ('Since 2016, meldonium has been included by WADA on the S4 list of metabolic modulators') and advises confirming current status"
+          ],
+          "residualConcerns": "Prohibited substance with cardiac claims; the review's framing favours use, so a human reviewer should confirm the record's cautions are adequate.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1343",
+        "synthesisBatch": "pilot-synthesis-batch-76",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 48,
+      "sourceFile": "Methodologies for Investigating        Performance Changes With Supplement Use.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 66996,
+        "doi": "10.1123/ijsnem.2017-0325",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Research & Analytics",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A scholarly review of how performance supplement studies should be designed, controlled and interpreted, with examples from caffeine, bicarbonate, beetroot juice, creatine and beta-alanine research. It covers crossover and parallel designs, blinding, confounding variables, combined and repeated supplement use, and whether small performance changes matter in competition. No search method is described, and no pooled effect sizes are presented.",
+      "limitations": "The review gives methodological guidance and examples rather than a systematic search or pooled effects, so it cannot estimate how well any supplement works. Its examples are illustrative and the selection method is not described.",
+      "synthesisCaution": "Staff could read the review's design advice as evidence that a given supplement works, when it is about how studies should be designed and interpreted.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings/practicalImplications/athleteDev: 'suggest reporting individual responses' -> authors warn individual-response analyses are 'frequently marred by the failure ... to distinguish normal day-to-day variability' and suggest repeated trials; added percentage change with 90 to 95% confidence limits"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1344",
+        "synthesisBatch": "pilot-synthesis-batch-76",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 79,
+      "sourceFile": "Navigating the Risks Beyond the Label - Unpacking Global Nutritional Supplement Safety.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 33,
+        "extractedCharacters": 193233,
+        "doi": "10.1123/ijsnem.2025-0177",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Scholarly regional review of nutritional supplement use, legislation, education and third-party testing (TPT) for athletes in six world regions, written by 20 co-authors with two to three per region. Regional studies were identified by each co-author group with no predetermined search instructions, using search engines such as PubMed and Google Scholar, with studies from 2014 to 2025 preferred. Reported supplement use ranged from 7% to 100% across studies, and the authors describe TPT as concentrated in Europe, North America and Australia/New Zealand.",
+      "limitations": "No systematic search, screening or quality appraisal was done, and the regional studies differ in design, athlete tier and recall period, so prevalence figures cannot be compared directly. Some content is anecdotal, context fields in Tables 3, 4 and 5 were first populated with ChatGPT and then checked by the authors, and the authors state the overview is not comprehensive.",
+      "synthesisCaution": "The 7% to 100% supplement-use range reflects different sports, tiers and time frames, so staff should not read it as a benchmark for their own athletes or as evidence that a specific product is safe because it is certified.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: '22 co-authors' -> 20 (author list has 20 names; the 22 is the affiliation count)",
+            "screeningLimitations: 'Table 4 context fields were drafted with ChatGPT' -> Tables 3, 4 and 5 ('For Tables 3, 4, and 5, ChatGPT (OpenAI) was employed to assist in the preliminary step of populating (missing) information for the context fields')",
+            "limitations: added conflict-of-interest disclosures ('Stratton has previously consulted for and is currently employed by a company that sells dietary supplements'; Saunders and Jagim report supplement-company support)"
+          ],
+          "residualConcerns": "Kept Narrative Review: the methods say co-authors used 'common search engines (such as PubMed and Google Scholar)' with 'No predetermined search instructions', which is not a described search method. A reviewer applying the database-search rule strictly might code it Systematic Review / Meta-analysis.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1345",
+        "synthesisBatch": "pilot-synthesis-batch-76",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

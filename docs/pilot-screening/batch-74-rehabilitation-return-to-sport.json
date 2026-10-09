@@ -1,0 +1,626 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-74-rehabilitation-return-to-sport",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Rehabilitation & Return to Sport queue positions 6-95. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 6,
+      "sourceFile": "London International Consensus and Delphi study on hamstring injuries Part 3 - Rehabilitation, running and return to sport.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 124299,
+        "doi": "10.1136/bjsports-2021-105384",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Modified Delphi consensus with a literature review and a 46-invited expert panel (35 responded in round 1), a consensus meeting of 15 experts, and a round 2 survey of 99 respondents (of 112 invited) voting on rehabilitation, running and return-to-sport statements at a 70% threshold. Agreement reached 70% or more on individualising exercise order and dosage, progressing by adaptation required, symptoms and healing stage, pain-free sprinting as a criterion for return to play (96.7%), and a multidisciplinary return-to-sport process involving all stakeholders (98.3%), while flexibility and range-of-motion criteria (45.0% to 67.9%, depending on statement), strength benchmarks (66.1%) and adjuncts such as blood flow restriction (68.9%) did not.",
+      "limitations": "This is expert opinion from a small, mostly UK-based panel with few women and no athletes, and the literature the authors reviewed was small and heterogeneous. Agreement reflects the panel's practice and is not evidence that any specific rehabilitation sequence, load or test improves outcomes.",
+      "synthesisCaution": "Staff may treat the high agreement percentages as proof that a specific progression or return-to-sport protocol works, when the statements describe agreed principles and the authors call for research on dosage, timing and criteria.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings, evidenceSummary: 96.2%/88.9%/90.7% described as bases for 'rehabilitation loading' -> corrected to the voted statement on 'The order and speed of progression of exercises... will depend on'; 98.3% statement reworded to its Table 3 wording ('involves all stakeholders ideally')",
+            "limitations: added text 2/39 vs Table 4 33:2 women conflict and discussion vs table conflicts (adjuncts 67.8% vs 68.9%; Askling H-test 56.1% vs 57.6%; athlete apprehension 98.6% vs 98.3%), kept abstract 88.2% and 40% flags; added that athletes were not included",
+            "populations: 'Professional / Elite' -> 'Mixed / Unspecified' because the consensus does not restrict its recommendations to elite athletes (only the meeting panel worked in elite sport); matches Parts 1 and 2"
+          ],
+          "residualConcerns": "Many small text vs table discrepancies throughout the discussion (e.g. kinetic chain 90.2% vs 90.5%, mild pain with running 83.1% vs 83.9%); table values are used. Return-to-sport criteria are expert opinion, not validated tests. Citation omits the placeholder '2023;0:1-17'.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1322",
+        "synthesisBatch": "pilot-synthesis-batch-74",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 8,
+      "sourceFile": "Longitudinal changes in quadriceps morphology over the first 3 months after anterior cruciate ligament reconstruction.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 48356,
+        "doi": "10.1249/MSS.0000000000003359",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Prospective longitudinal cohort of 20 people with anterior cruciate ligament reconstruction (ACLR) and 12 healthy controls, scanned by ultrasound at baseline, 1 month and 3 months. In the ACLR limb, echo intensity (poorer muscle quality) rose about 9% to 12% from baseline at both follow-ups with no change between 1 and 3 months, while vastus lateralis cross-sectional area fell 25% at 1 month and rose 18% from 1 to 3 months. A larger first-month loss of vastus lateralis size went with a larger rise in echo intensity (r = -0.584), but changes from 1 to 3 months were not correlated.",
+      "limitations": "The sample is small (20 ACLR, 12 controls), the participants are not described as athletes, and no strength or functional outcome was measured. Group differences in echo intensity were not significant after Bonferroni correction, and rehabilitation and control-group activity were not standardized.",
+      "synthesisCaution": "Staff may read the rise in echo intensity as proof that muscle quality causes the persistent quadriceps weakness after ACLR, when the study is observational and did not measure strength or function.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary, findings, abstract, tldr: 'changes in quality and size were not correlated' -> VL baseline to 1 month changes were correlated ('r = -0.584, P = 0.007'); only RF first-month and all 1 to 3 month changes were uncorrelated",
+            "findings: 'not significant after Bonferroni correction' -> echo intensity did not differ between groups at any time point (RF P = 0.313/0.232 unadjusted), with the MCID comparison retained",
+            "limitations: removed the unsupported claim that COVID-19 caused participants to miss the three visits (text says COVID stopped the 6-month assessment: 'only one participant completed the 6-month assessment'); added the abstract vs results correlation conflict and the Figure 5 caption vs text conflict on VL CSA vs controls",
+            "practicalImplications: tied the independence claim to the 1 to 3 month interval"
+          ],
+          "residualConcerns": "Abstract and results disagree on whether EI and CSA changes were correlated; figure captions give MCID values (0.55, 1.36 cm2) that do not match the text for each muscle. Participants are not described as athletes.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1323",
+        "synthesisBatch": "pilot-synthesis-batch-74",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 12,
+      "sourceFile": "Low prevalence of cardiac abnormalities in competitive athletes at return to play after COVID-19.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 32764,
+        "doi": "10.1016/j.jsams.2022.10.015",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Professional / Elite",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Single-centre cross-sectional study of 219 competitive athletes (59% male, median age 23) assessed before return to play after COVID-19, using ECG, blood tests, echocardiography, maximal cardiopulmonary exercise testing (CPET), 24-hour Holter and cardiac MRI when clinically indicated. Two athletes (0.9%) had acute myocarditis on CMR, and uncommon premature ventricular contractions (PVCs) were found at CPET in 20 athletes (9%). The authors report that all athletes had good exercise capacity and that CPET added value to return-to-play evaluation.",
+      "limitations": "There is no comparison group and pre-infection data exist for only about half the cohort, so the link between infection and arrhythmia cannot be shown and the study was not designed to measure the diagnostic yield of CPET or Holter. The cohort was young, mostly Caucasian and mildly symptomatic, so the findings may not apply to older athletes or more severe disease.",
+      "synthesisCaution": "Staff may read the 0.9% myocarditis figure as a general return-to-play risk, when it reflects one institute's protocol, a mostly mild-disease cohort and CMR used only on clinical indication.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: level was mixed (36% Olympic, 64% national or regional) -> added Mixed / Unspecified alongside Professional / Elite ('Seventy-nine (36%) were Olympic athletes, while the other 64% were national or regional-level athletes')",
+            "practicalImplications: stated the findings 'support adding CPET and 24-hour Holter' -> reframed as the authors' argument, noting the study 'was not designed to assess the diagnostic yield of CPET and ECG Holter monitoring' and had no comparison group",
+            "rtp: 'should not be taken to exclude myocarditis' stated as a finding -> reframed as a limit of the design because 'CMR was not performed in all athletes'; added 'newly diagnosed' to the two temporarily withdrawn athletes"
+          ],
+          "residualConcerns": "Cardiac return-to-play paper. The source has internal count conflicts already listed in limitations (9.5%/21 vs 9%/20 PVCs; three vs five restricted athletes; one vs four pericardial effusions; NSVT 1.4% vs 1.6%). Online-first version with no volume or pages; year 2022 taken from the online-first copyright.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1324",
+        "synthesisBatch": "pilot-synthesis-batch-74",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 13,
+      "sourceFile": "Low rate of return to pre-injury sport level in athletes after cartilage surgery- a 10-year follow-up study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 36053,
+        "doi": "10.1007/s00167-018-5255-1",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Soccer",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Injured Athletes",
+        "Professional / Elite",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Prospective case series of 31 male competitive athletes (mean age 22.6 years) with focal osteochondral lesions of the distal femur treated with arthroscopic hyaluronan-based matrix-assisted autologous chondrocyte transplantation (MACT), followed yearly for up to 10 years. IKDC subjective score rose from 40.3 to 81.7 at 12 months and stayed between about 87 and 90 through 10 years, and 64.5% returned to a competitive level and 58.1% to their pre-injury level at some follow-up point. Previous surgery was the strongest factor associated with returning to the same level (p = 0.010).",
+      "limitations": "This is an uncontrolled case series of 31 patients with level IV evidence and no imaging of the repaired tissue. The regression estimates (for example an odds ratio of 25.13 for previous surgery) are unstable at this sample size, and the comparison with return rates from other studies is not like-for-like.",
+      "synthesisCaution": "Staff may read the 58% same-level return as a general failure rate for cartilage surgery in athletes, when it is an uncontrolled series of 31 patients whose comparison with other studies is not like-for-like.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations and limitations: claimed the number of patients at each follow-up was not stated so falling percentages 'may partly reflect changing numbers' -> removed; 31 patients were 'prospectively followed at 1-year intervals' and 61.3/45.2/35.5% correspond to 19/14/11 of 31",
+            "findings: omitted age and BMI factors and the multivariate result -> added 92.3% return in athletes under 20, BMI p = 0.001, and that previous surgery and BMI were retained in the multivariate model ('previous surgery [p = 0.029...] and BMI [p = 0.032...] were the most influencing factors')",
+            "practicalImplications, rtp: added older age as a factor linked to lower return ('patient age represented a prognostic factor (p < 0.0005)')"
+          ],
+          "residualConcerns": "Online-first record with no volume or pages printed; year 2018 from the copyright and acceptance date.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1325",
+        "synthesisBatch": "pilot-synthesis-batch-74",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 25,
+      "sourceFile": "Managing lower limb muscle reinjuries in athletes - From risk factors to return to play strategies.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 65593,
+        "doi": "10.3390/jfmk8040155",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Adult / Recreational",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Narrative review of lower limb muscle reinjury, mainly in football players, built from PubMed, Scopus and Web of Science searches and the authors' judgement of relevance. It reports reinjury rates of 12% to 43% across sports, with age and prior injury at the same site as the main nonmodifiable risk factors. The authors describe reinjury as more common in amateurs (48.4%) than professionals (16.2%), citing cohort and epidemiological studies.",
+      "limitations": "The authors state the review is not systematic, and the text gives no search window and no in-depth quality or risk-of-bias appraisal. The AI section describes potential uses and cites models without showing their validation in this paper.",
+      "synthesisCaution": "Staff may treat the list of prevention and return-to-play measures as a validated protocol, when several of the cited measures rest on limited or expert-based evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.methods: 'follows no strict protocol' framed as the authors' own statement -> reworded to the authors' contrast with systematic reviews ('While the latter follows a strict protocol and criteria for study inclusion')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1326",
+        "synthesisBatch": "pilot-synthesis-batch-74",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 31,
+      "sourceFile": "Maximum-Speed Single-Leg Bridge Test for Concentric Functional Assessment and Exercise in an Athlete with Recurrent Hamstring Strain Injuries - A Case Report.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 28443,
+        "doi": "10.26603/001c.134124",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Collegiate",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Case report of one 21-year-old male university rugby player on his fourth hamstring strain recurrence, assessed with a maximum-speed single-leg bridge test and then used as a two-month home training exercise. The authors report that buttock-raising speed improved 76% (0.83 to 1.46 m/s) and height 84% (0.19 to 0.35 m) after the intervention, with gains maintained after 1.5 months of detraining.",
+      "limitations": "This is a single athlete with no control group and a short follow-up, and the same test serves as both the outcome measure and the training exercise. The paper reports no return-to-play or re-injury outcome after the intervention.",
+      "synthesisCaution": "Staff could treat the test as validated for return-to-play decisions, or the gains as proven to prevent recurrence, when this is one athlete with a two-month intervention and no recurrence follow-up.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: no strength or flexibility difference placed at two months -> at one month, as the text states ('at one month post-injury ... there was no difference ... in isometric knee flexor strength and flexibility'); added uninjured-side comparison values and detraining values from Table 1",
+            "paper.limitations: added that improvements cannot be separated from natural healing without a control, and flagged the Table 1 AKET values (23.0 vs 14.0) that conflict with the text's 'no difference'",
+            "paper.practicalImplications: 'reduced sets' -> 'reduced the protocol', since the text reports both a set reduction and a repetitions-per-set reduction"
+          ],
+          "residualConcerns": "Table 1 AKET values conflict with the text's statement of no flexibility difference; check against the PDF. The record touches return-to-play criteria for recurrent hamstring injury from a single case.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1327",
+        "synthesisBatch": "pilot-synthesis-batch-74",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 60,
+      "sourceFile": "Movement variability and loading characteristics in athletes with athletic groin pain - Changes after successful return to play and compared with uninjured athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 65038,
+        "doi": "10.1177/23259671221125159",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer",
+        "Rugby",
+        "Basketball",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Injured Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Pre- and post-rehabilitation laboratory study of 36 athletes with athletic groin pain, compared with 36 uninjured athletes matched for age, level and sport, who performed 10 continuous lateral hurdle hops over a hurdle with 3D motion capture and force plates. Group and time comparisons used statistical parametric mapping, t tests and a permutation analysis.",
+      "limitations": "This is a single-site laboratory comparison of one hopping task, with no re-injury or sport outcomes after return to play, and the uninjured group was tested only once. The authors describe the athletes as subelite, which has no exact population tag, so Adult / Recreational was used.",
+      "synthesisCaution": "Staff could read the normalized ground-force results as proof that rehabilitation restored healthy loading and reduced re-injury risk, when the study measured one hop task in 36 athletes and tracked no re-injury or sport outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: implied rehabilitation changed ground-force measures -> added that pre-to-post vGRF changes were non-significant ('nonsignificant changes of small to moderate effect size were observed in the 3 vGRF variables'); eccentric peak force and RFD kept as trends, not reductions",
+            "limitations: added non-significant within-group vGRF change and abstract vs Table 1 age conflict (27.5 vs 25.9 years)",
+            "practicalImplications: 'track ... since these ... no longer differed' -> notes within-group change was not significant; jump mats attributed to the authors",
+            "rtp: 'matched controls' -> 'no longer significantly different'; HAGOS: only PA and QOL said to remain below -> all subscales except Symptoms and Marx remained significantly lower than controls (PA and QOL were the ones below the reference range)"
+          ],
+          "residualConcerns": "Clinical return-to-play population; authors' own conclusion that vGRF measures 'normalised' leans on loss of significance rather than significant change.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1328",
+        "synthesisBatch": "pilot-synthesis-batch-74",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 67,
+      "sourceFile": "Muscle activation during rehabilitation on artificial turf vs sand after cruciate ligament surgery - A case series.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 4,
+        "extractedCharacters": 15844,
+        "doi": "10.1016/j.apunsm.2020.06.004",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Female Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Descriptive case series of two female youth soccer players (aged 17 and 13) rehabilitating after ACL surgery, monitored with a 6-channel surface EMG mesh over six sessions, three on artificial turf and three on sand. The authors report that player 1's left hamstring was the most active muscle in the posterior chain, and that player 2's left quadriceps was more active than the right on most days. They conclude the antagonist of the injured leg was most active in both players regardless of surface, although Table 1 does not show this on every day.",
+      "limitations": "Two athletes, no statistical testing, and EMG values reported as absolute percentages with no described normalisation method. The results cannot show a surface effect or a general pattern in ACL rehabilitation.",
+      "synthesisCaution": "Staff could treat the antagonist-activation pattern as a general rehabilitation finding, but it comes from two players and the authors themselves say more cases are needed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "In-press version: 'Apunts Sports Med. 2020;xxx(xx):xxx' placeholders, so no volume or pages are cited. The authors' 'antagonist' framing is internally inconsistent across the two cases; the limitations field records this.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1329",
+        "synthesisBatch": "pilot-synthesis-batch-74",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 87,
+      "sourceFile": "Neuromuscular training improves biomechanical deficits at the knee in ACL reconstructed athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 38043,
+        "doi": "10.1097/JSM.0000000000000723",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Healthy Athletes",
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A cohort study of 18 athletes after anterior cruciate ligament reconstruction (ACLR; 8 men, 10 women, about 8 months after surgery) and 10 uninjured control athletes (4 men, 6 women), all of whom completed a 12-session neuromuscular training program. In the ACLR group, drop vertical jump knee flexion angle at initial contact rose from 17.2 to 24.3 degrees and knee flexion moment fell from 0.48 to 0.36 Nm/kg, while frontal-plane measures did not change. After training, ACLR athletes landed with less knee abduction (more adduction) at initial contact than controls (group effect P=0.002), so the group difference was not a valgus deficit in the ACLR group.",
+      "limitations": "There was no untrained ACLR comparison group, so the sagittal-plane changes cannot be separated from time or natural recovery. The control group was small (n=10) and was compared only after training. Strict screening selected a high-functioning cohort, and the study measured a single double-leg drop jump, not sport tasks or re-injury.",
+      "synthesisCaution": "Staff could read the sagittal-plane changes as evidence that this training lowers second ACL injury risk, when the paper measured landing mechanics in a small pre-post cohort without an untrained ACLR group and did not track re-injury.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "frontal-plane direction: draft framed 'more knee adduction than controls' as a residual deficit ('they still landed with more knee adduction') -> controls had the larger abduction angle, so ACLR athletes showed less abduction (valgus), not a worse frontal-plane position ('The control group ... demonstrated a larger knee abduction angle than the ACLR group'; Table 3 footnote: 'athletes with ACLR landed with more knee adduction angle at initial contact than the control group')",
+            "evidenceSummary, abstract, methods: did not state that controls also completed the program -> added ('Each athlete from the ACLR and control group completed the 12-session NMT program')",
+            "paper.findings: added limb main effect for peak knee flexion moment (1.82 vs 1.55 Nm/kg, P=0.005)",
+            "paper.practicalImplications: removed advice implying ACLR athletes had a residual valgus or adduction deficit; noted screening excluded medial knee collapse",
+            "paper.rtp: 'supports adding neuromuscular training' -> 'suggests' (pre-post cohort without untrained ACLR group)",
+            "populations: added Healthy Athletes for the uninjured control athletes",
+            "paper.limitations: noted that Results-text and Table 3 abduction values do not reconcile in the extraction; numbers omitted, direction kept"
+          ],
+          "residualConcerns": "Knee abduction angle values are garbled in extraction: the Results text gives control 2.33 and ACLR '20.24' (likely -0.24) degrees, while Table 3 initial-contact values (about 2.4 and 2.2 for ACLR, '20.6' and 0.17 for controls, signs lost) appear to swap magnitudes. All sources agree on direction (ACLR less abduction, more adduction). A reviewer should check the signs and values in the PDF.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1330",
+        "synthesisBatch": "pilot-synthesis-batch-74",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 88,
+      "sourceFile": "Neurosciences and Sports Rehabilitation in ACLR - A Narrative Review on Winning Alliance Strategies and Connecting the Dots.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 22,
+        "extractedCharacters": 101176,
+        "doi": "10.3390/jfmk10020119",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Brain Health & Psychology",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Basketball"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Youth / Adolescent",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A narrative review of neuroplasticity, sensorimotor and technology-based rehabilitation after anterior cruciate ligament reconstruction (ACLR). The authors draw on peer-reviewed literature from PubMed, Scopus and Web of Science and present a conceptual 'Neuroplastic Adaptation Trident Model' with three pathways, citing it to an earlier published framework (Machan and Krupps, 2021). The review reports no pooled data and no new study results, and it cites individual studies of biofeedback, virtual reality and robotics.",
+      "limitations": "The search is described only by database name, with no search terms, date limits, inclusion criteria or quality appraisal, so the selection of evidence cannot be reproduced. Its central framework is an untested conceptual model, and several examples come from single studies or from populations that are not ACLR patients.",
+      "synthesisCaution": "Staff could read the Trident Model and the cited robotic, VR and biofeedback examples as proven ways to reduce reinjury, when the authors present the model as a theoretical framework and do not show that these technologies lower reinjury rates.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary and paper.methods: presented the Trident Model as the authors' own proposal -> the text introduces it 'which we call the Neuroplastic Adaptation Trident Model' but cites it [54] to 'Machan, T.; Krupps, K. The Neuroplastic Adaptation Trident Model: A Suggested Novel Framework for ACL Rehabilitation. Int. J. Sports Phys. Ther. 2021'",
+            "screeningLimitations and paper.rtp: removed wording implying the framework is the review's original contribution"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1331",
+        "synthesisBatch": "pilot-synthesis-batch-74",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 95,
+      "sourceFile": "No Association Between Fibrosis on Magnetic Resonance Imaging at Return to Play and Hamstring Reinjury Risk.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 35711,
+        "doi": "10.1177/0363546515572603",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Soccer",
+        "Track & Field",
+        "Other Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Male Athletes",
+        "Professional / Elite",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Cohort study of 108 consecutive athletes aged 18 to 50 years with grade 1 or 2 hamstring injuries, pooled from two platelet-rich plasma trials (Dutch and Qatari cohorts, 2009 to 2014). MRI was done within 5 days of injury and within 7 days of return to play, and athletes were followed for reinjury for one year. Fibrosis was present at return to play in 38% of athletes, and reinjury occurred in 24% of those with and without fibrosis (HR 0.95, 95% CI 0.43 to 2.1).",
+      "limitations": "With only 26 reinjuries the analysis has limited power, and the authors estimate that about 200 reinjuries would be needed to detect a small to moderate association. The fibrosis grading had no reliability data and no histological check, and the two cohorts used different MRI protocols and return-to-play criteria.",
+      "synthesisCaution": "Staff may read 'no association with reinjury' as evidence that fibrosis is harmless and can be ignored in return-to-play decisions, when the study was too small to rule out a moderate effect.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "methods: 'two radiologists ... scored' -> each MRI scored by one of two radiologists ('Each MRI was assessed by 1 of 2 radiologists')",
+            "limitations: garbled Table 2 note (the 12 initial-MRI fibrosis cases are a finding, not an error) -> the actual Table 2 conflict: Qatari grade column '45 (43)/63 (57)' repeats the total for a cohort of n = 45; added missing reliability and histology limits ('no data are available on the reliability', 'correlation with histopathological data is lacking')",
+            "limitations: confirmed volume IQR conflict (abstract '1.5-3.9 cm3' vs Table 3 '0.5-3.9')",
+            "populations: removed Female Athletes (3 of 108 were female, all in the Dutch cohort; 'Sex, male/female 105 (97)/3 (3)'), which would mislead browsing",
+            "practicalImplications: removed 'does not support delaying clearance because of fibrosis', which overstated an underpowered null result"
+          ],
+          "residualConcerns": "Female Athletes tag removed on judgment because the sample is 97% male; restore if library policy is to tag any stated female participants.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1332",
+        "synthesisBatch": "pilot-synthesis-batch-74",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}
