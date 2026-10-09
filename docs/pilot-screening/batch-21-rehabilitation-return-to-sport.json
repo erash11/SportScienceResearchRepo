@@ -1,0 +1,656 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-21-rehabilitation-return-to-sport",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Rehabilitation & Return to Sport shortlist positions 25-36. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 25,
+      "sourceFile": "Return to play after rotator cuff tear in National Football League athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 30760,
+        "doi": "10.1016/j.jseint.2023.03.024",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A Level IV case series (prognosis) using publicly available data on 29 NFL players who sustained a rotator cuff tear between 2000 and 2019. 23 of 29 (79%) returned to play, after an average of 198 days, with a performance score ratio of 1.0 as reported by the authors. Players who returned were younger (26.7 vs 30.3 years) and had shorter pre-injury careers (4.0 vs 7.5 years), while operative (n=24) and nonoperative (n=5) cohorts did not differ in return rate.",
+      "limitations": "The data came from public third-party sources rather than medical records, and the sample is 29 players with only 6 non-returners. Tear type, size, pattern and surgical details are unavailable, so treatment comparisons cannot be interpreted.",
+      "synthesisCaution": "Staff could read the roughly 80% return rate as a reliable prognosis for an individual athlete, when this is a small, mostly surgical cohort from one professional league.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: sex tag missing -> added Male Athletes ('each player serving as his own control')",
+            "tldr/rtp: 'lower odds for players over 30' implied a tested age cutoff -> reported as mean age difference with 4 of 6 non-returners over 30 ('4 of the 6 players who did not RTP were over the age of 30')",
+            "abstract: causal 'treatment type did not change return rates' -> 'did not differ' ('no significant difference (p>0.05) in RTP rates')",
+            "findings: added operative 19/24 and nonoperative 4/5 counts and the 1.0 performance score ratio (Table II)",
+            "limitations: added text vs Table II P value conflict for return rate (p = 0.95 vs 0.97)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "762",
+        "synthesisBatch": "pilot-synthesis-batch-21",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 26,
+      "sourceFile": "Return to play after shoulder                                 instability in National Football League          athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 27325,
+        "doi": "10.1016/j.jse.2017.07.027",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A Level III retrospective cohort study of 83 NFL players who had an in-season shoulder instability event between 2006 and 2014 (72 dislocations, 11 subluxations), with age-, size- and position-matched controls for career outcomes. 77 of 83 (92.8%) returned to regular-season play, and 46% of those who returned had a recurrent instability event. Surgery was associated with fewer recurrences (26% vs 55%, P=.021) and a longer recurrence-free interval (14.7 vs 2.5 weeks, P=.050), and operative players returned after a median of 39.3 weeks compared with 2.3 weeks nonoperatively.",
+      "limitations": "Injury and return data came from public internet sources rather than medical records, and treatment was not randomized, so surgery and nonoperative groups differ in ways the study cannot adjust for. Direction of instability and surgical procedure were not recorded.",
+      "synthesisCaution": "Staff could read the 92.8% return rate as a guarantee of return for an athlete with a shoulder instability event, when returns were measured only at the NFL level and the surgical comparison is observational.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: sex tag missing -> added Male Athletes ('if he was drafted to the NFL')",
+            "practicalImplications: 'Staff should expect a reduction in games played per season after injury' -> reduction stated as not different from matched controls ('no differences in games, seasons, or Pro Bowl selections after RTP', Table III)",
+            "findings: added subluxation vs dislocation results ('median, 0.0 vs. 3.0 weeks; P = .029'; '1.5 vs. 5.0 weeks; P = .044') and control comparison",
+            "limitations: added conflict between abstract conclusion and Results on subluxation recurrence ('There was no difference in the incidence of recurrent instability events between players sustaining a dislocation vs. subluxation') and treatment-selection confounders ('right arm (P = .027) ... later part of the season (P = .013)')",
+            "athleteDev: removed implication that per-season games loss is injury-specific"
+          ],
+          "residualConcerns": "Authors use causal language ('Surgical stabilization ... decreases the chances of a second instability event') for a nonrandomized comparison; the record frames it as an association.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "763",
+        "synthesisBatch": "pilot-synthesis-batch-21",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 27,
+      "sourceFile": "Return to play rates in NFL wide receivers and running backs after ACL reconstruction - An updated analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 30687,
+        "doi": "10.1177/2325967120974743",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A retrospective descriptive epidemiology study of 76 NFL running backs and wide receivers who had ACL reconstruction between the 2009-10 and 2015-16 seasons, with 36 matched uninjured controls for the performance analysis. 47 of 76 (61.8%) returned to play, at a mean of 13.6 months. Wide receivers who returned had lower receptions per game, yards per reception and receiving touchdowns than before injury and than matched controls after injury, while running backs had a within-group fall in yards per rush but did not differ from controls.",
+      "limitations": "Injury data came from public reports and the control group was built to approximate opportunity rather than to represent a true intervention. Concomitant injuries, surgical technique, and rehabilitation details were unavailable, and only players with recorded statistics entered the performance analysis.",
+      "synthesisCaution": "Staff could read the 62% return rate as a stable benchmark for all skill players, when it comes from one window of seasons and the study does not measure why players did not return.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: 'Among WRs who returned (n=36)' wrong -> 36 is the whole RTP performance group of RBs and WRs ('RTP Group (n = 36)', Table 2)",
+            "findings/evidenceSummary: RB post-injury performance did not differ from controls ('there was no difference in yards per rush, rushes per game, or rushing touchdowns per season in RTP group compared with the control group') -> stated",
+            "tldr: 'matched uninjured teammates' -> 'matched uninjured controls' (controls from same team or same division)",
+            "findings: added RB median 12 months and the 47-month outlier",
+            "populations: added Male Athletes ('he will not be ready to RTP')",
+            "rtp: added that return timing partly reflects the season calendar (Discussion on injury timing)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "764",
+        "synthesisBatch": "pilot-synthesis-batch-21",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 28,
+      "sourceFile": "Suggestions from the field for return to sports   participation following ACL reconstruction - American Football.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Labeled clinical commentary (Therapy, level 5) presenting the authors' suggestions from clinical experience, with no original methods and no structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: INCLUDE -> EXCLUDE (b); the article is headed '[ clinical commentary ]', 'LEVEL OF EVIDENCE: Therapy, level 5', with recommendations framed as 'we feel' and 'Based on clinical experience', and no structured evidence review; VERIFY rules state commentaries are not eligible",
+            "findings: FMS criterion incomplete -> 'score of 14 or higher, without asymmetries or pain'; added knee function questionnaire criterion",
+            "evidenceSummary/screeningLimitations: removed borderline-inclusion wording to match the exclusion",
+            "Taxonomy and paper fields retained, corrected, in case the operator reinstates it as a clinical review"
+          ],
+          "residualConcerns": "Borderline: the piece reads like a practice-guidance clinical review with 38 references. Operator should confirm whether JOSPT clinical commentaries are treated as excluded commentaries or as eligible clinical reviews.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 29,
+      "sourceFile": "Platelet-Poor Plasma for the Treatment of Acute Hamstring Muscle Injuries in Collegiate Football Athletes - A Cohort Study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 22093,
+        "doi": "10.1097/JSM.0000000000001305",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A retrospective, uncontrolled cohort of 20 consecutive male Division I or III collegiate football players with an acute grade 3b hamstring strain (modified BAMIC, ultrasound) treated with an ultrasound-guided platelet-poor plasma injection between 2021 and 2022. Players returned to full unrestricted sport at a mean of 29.4 days after the injection (SD 7.2), or 34.6 days after injury, VAS pain fell from 4.8 to 0.7 at 2 weeks (P<.001), and no recurrence was recorded within 12 months.",
+      "limitations": "There was no comparison group, the sample was 20 injured players from one clinic and one physician, and all injuries were grade 3b. The cohort cannot separate the injection's effect from natural recovery or from the rehabilitation given to all patients.",
+      "synthesisCaution": "Staff could read the paper as showing that platelet-poor plasma speeds return to play, when the study has no control group and the authors describe the findings as preliminary.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "practicalImplications: 'may consider PPP ... as a candidate treatment, given the short return times' overstated an uncontrolled series -> framed as an early signal that does not justify adoption ('Future high-level, comparative studies are needed')",
+            "evidenceSummary: added 34.6 days post-injury and grading method ('29.4 days post-PPP injection and 34.6 days postinjury')",
+            "limitations: added author disclosure ('R. C. Kruse, MD is a consultant for Lipogems')"
+          ],
+          "residualConcerns": "Injection treatment with no control group; check that practical wording stays non-promotional.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "765",
+        "synthesisBatch": "pilot-synthesis-batch-21",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 30,
+      "sourceFile": "Multiple Concussions Increase Odds   and Rate of Lower Extremity Injury in National Collegiate Athletic   Association Athletes After Return to Play.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 32903,
+        "doi": "10.1177/0363546519872502",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "American Football",
+        "Basketball",
+        "Soccer",
+        "Other Sport"
+      ],
+      "populations": [
+        "Collegiate",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A Level 3 retrospective matched cohort of 48 male NCAA Division I athletes with multiple concussions, each matched to one athlete with a single concussion and one with no concussion history, from a single institution (2001 to 2016). After return to play, 75% of the multiple-concussion group had a lower extremity injury, compared with 52% and 56% of the other groups (P=.049), and the multiple-concussion group had higher odds of injury over the full study period (OR 3.00 vs single concussion; OR 1.66 vs no concussion) and a shorter time to injury.",
+      "limitations": "This is a small, single-institution, retrospective study built from roster and injury records, with no prospective measures of neuromuscular function. The 90-day comparison was not significant, and the study cannot show that concussion causes the extra lower extremity injuries.",
+      "synthesisCaution": "Staff could read the findings as proof that multiple concussions cause lower extremity injury and justify stricter return-to-play protocols, when the paper finds an association that may reflect player behavior or other confounders.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: 'the foot was the most common site of excess injury' misdescribed Table 2 (knee and thigh were more common in all groups) -> foot injuries more frequent in the multiple-concussion group ('Foot 23 4 1 .001')",
+            "findings: added that 1-year results were similar and 90-day results were not significant, and SC vs NC did not differ (Table 3)",
+            "limitations: 1-year conflict extended to MC vs NC (text 1.66 vs Table 3 1.83 (1.20-2.79)); added exposure-time concern and the prior-injury secondary analysis ('no significant differences were found among the 3 groups')"
+          ],
+          "residualConcerns": "Concussion topic. Group membership depends on sustaining a later concussion, which links group to time in sport; causality cannot be inferred.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "766",
+        "synthesisBatch": "pilot-synthesis-batch-21",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 31,
+      "sourceFile": "Predictors of early return to sport after surgical repair of proximal hamstring complex injuries in professional athletes - A prospective study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 43636,
+        "doi": "10.1177/03635465231225486",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Rugby",
+        "Track & Field",
+        "Gymnastics",
+        "Combat Sports",
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A prospective cohort (labeled a Level 4 case series in the abstract) of 64 professional athletes, 82.8% male, who had surgical repair of a proximal hamstring complex injury between 2002 and 2022, with 1-year follow-up in all. 78.1% returned to their preinjury competition level at a mean of 6.2 months, 98.4% returned to sport at all, and the complication rate was 4.7%. In multivariable Cox analysis, male sex (HR 2.91), isolated semimembranosus injury (HR 3.86) and proximal intratendinous rupture (HR 5.18) were associated with return at the preinjury level.",
+      "limitations": "The study is single-center with no control group, and the sample is small and heterogeneous across sports. Return-to-level was judged from activity scales and self-report rather than objective performance, and the durability of return was not recorded.",
+      "synthesisCaution": "Staff could treat the favorable predictors as individual prognostic rules, such as expecting a poor return for a female athlete with a complete tear, when the subgroups are small and the HRs come from one surgeon's series.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: complication breakdown added ('1 (1.6%) case of a superficial infection and 2 (3.1%) cases of rerupture'); reference categories for HRs stated (Table 5)",
+            "limitations: added empty-cell issue ('Semimembranosus 0 (0.0)' and 'Proximal intratendinous rupture 0 (0.0)' in reduced group, Table 4) and only 11 women",
+            "practicalImplications: 'lower odds' -> lower likelihood vs stated reference groups"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "767",
+        "synthesisBatch": "pilot-synthesis-batch-21",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 32,
+      "sourceFile": "Pain-free vs pain-threshold rehabilitation following acture hamstring strain injury - A randomized controlled trial.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 72531,
+        "doi": "10.2519/jospt.2020.8895",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Other Sport",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A single-center randomized controlled trial in which 43 men with an acute hamstring strain were allocated to a pain-free (n=22) or pain-threshold (pain 4/10 or less, n=21) standardized rehabilitation program, with 6 months of reinjury follow-up. Median time to return-to-play clearance was 15 days (95% CI 13 to 17) in the pain-free group and 17 days (95% CI 11 to 24) in the pain-threshold group (HR 0.75, 95% CI 0.40 to 1.40, P=.37). The pain-threshold group had greater recovery of knee flexor strength at 90/90 degrees and a larger fascicle length gain from baseline to 2-month follow-up, and reinjuries were similar (2 per group).",
+      "limitations": "Injury was confirmed by clinical assessment without MRI, the sample was small (43 men, no women presented), and the trial was not powered for reinjury. Six-month follow-up had missing data (4 pain-free participants could not be contacted) and the 4/10 pain threshold is an arbitrary choice.",
+      "synthesisCaution": "Staff could read the trial as showing that pain-threshold rehabilitation is safe and speeds return, when the primary outcome was not faster and the reinjury data are too sparse to show safety.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings/evidenceSummary: 'BFLH fascicle length was greater in the pain-threshold group by 0.91 cm' -> the change from baseline to 2-month follow-up was greater ('The difference in BFLH fascicle length from the initial clinical assessment to 2-month follow-up was significantly greater ... by an average of 0.91 cm'); added no difference at RTP clearance (95% CI -0.29, 0.78)",
+            "findings: added that 0/0 strength gains did not differ (95% CI -6%, 20%)",
+            "athleteDev: attributed greater 90/90 strength to exercise-specific criteria, which both groups used -> attributed to the pain-threshold group",
+            "limitations: added power note ('based on an effect size of 1.2')"
+          ],
+          "residualConcerns": "Return-to-play clearance and reinjury topic; three of four reinjuries occurred within 2 months of clearance, and the authors question the clearance criteria.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "768",
+        "synthesisBatch": "pilot-synthesis-batch-21",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 33,
+      "sourceFile": "Pulsed red and blue photobiomodulation for the treatment of thigh contusions and soft tissue injury - A randomized controlled trial.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 36536,
+        "doi": "10.1123/jsr.2022-0334",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Single-blinded randomized controlled trial with 46 healthy participants enrolled and 44 analysed (22 per group). After a standardized tennis-ball strike to the thigh, the active pulsed red and blue light patch group raised 180°/s peak torque and average power above baseline by day 4 (+8.9% and +16.8%), while the placebo group stayed below baseline; 60°/s average power also favoured the active group.",
+      "limitations": "The contusion was an experimental model in healthy participants whose athletic status is not reported, and outcomes were isokinetic strength and power over 4 days only. The study cannot show effects on pain, tissue healing, function or return to sport.",
+      "synthesisCaution": "Staff may read the 'standard of care' conclusion as proof of benefit for real injuries, when the evidence is one induced bruise in healthy participants followed for 4 days.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: manufacturer affiliation not mentioned -> added that two of four authors are affiliated with CareWear Corp, the device maker ('3CareWear Corp, Reno, NV, USA')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "769",
+        "synthesisBatch": "pilot-synthesis-batch-21",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 34,
+      "sourceFile": "MRI findings prior to return to play as predictors of reinjury in professional athletes - A novel decision-making tool.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 44426,
+        "doi": "10.1186/s13244-022-01341-1",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Soccer",
+        "Basketball",
+        "Rugby",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Injured Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Retrospective observational study of 59 male professional athletes (mostly soccer, plus futsal, basketball and rugby) with a first acute lower-limb muscle injury who were cleared to return to play; 9 (15.2%) were reinjured within 2 months. Baseline MRI did not predict reinjury, but a control MRI within 7 days before return to play showed that a transverse or mixed connective tissue gap, intermuscular oedema and a callus gap were associated with reinjury, and athletes with two or more of five signs accounted for 6 of the 9 reinjuries.",
+      "limitations": "This is a single-club, retrospective study with only 9 reinjuries, and the risk groups were derived and tested in the same 59 athletes with no external validation. It cannot show that acting on the MRI signs reduces reinjury, and it does not cover women, other muscle groups or other sports in depth.",
+      "synthesisCaution": "Staff may treat the 'high risk' category as a validated cut-off for clearing or holding athletes, when it is a small, unvalidated prognostic signal from one club.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "citation: only 5 authors listed before et al. -> 6 authors per house rule (added Yanguas X)",
+            "limitations: added that the authors describe it as a pilot study ('In this pilot study of professional athletes')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "770",
+        "synthesisBatch": "pilot-synthesis-batch-21",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 35,
+      "sourceFile": "Return to play and performance after opertive treatment of Achilles tendon rupture in elite male athletes - A scoping review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 42009,
+        "doi": "10.1136/bjsports-2021-104835",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Basketball",
+        "American Football",
+        "Baseball / Softball",
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Injured Athletes",
+        "Professional / Elite",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Scoping review of PubMed-indexed studies of elite athletes (professional or NCAA Division I) who returned after operative Achilles tendon repair, with 13 studies and 709 athletes from the NBA, NFL, MLB, NCAA football and professional soccer. Return rates ranged from 61% to 100% across leagues, and NBA studies consistently reported lower player efficiency rating after return, while NFL, NCAA football and soccer results were mixed and MLB showed no significant decline. No study examined non-operative management in elite athletes.",
+      "limitations": "This is a scoping review of one database with no pooled analysis, so it maps the evidence rather than estimating effects. Performance measures differed across sports and studies, most follow-up covered only the first few seasons, and all athletes were male.",
+      "synthesisCaution": "Staff may read the high return rates as a promise of normal performance, when the review shows that performance declines in several sports, especially basketball, and that the data cover only the first few seasons.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "citation: only 5 authors listed before et al. -> 6 authors per house rule (added Abrams GD)",
+            "practicalImplications: calf strength and volume deficit presented as an elite-athlete finding -> attributed to the general-population evidence the review cites ('the existing evidence in non-elite athletes and the general population')"
+          ],
+          "residualConcerns": "Scoping review coded as Narrative Review because the taxonomy has no scoping category; it used a systematic PubMed search with two screeners but no protocol, pooling or quality grading.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "771",
+        "synthesisBatch": "pilot-synthesis-batch-21",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 36,
+      "sourceFile": "Return-to-Play for Elite Athletes With Genetic Heart Diseases Predisposing to Sudden Cardiac Death.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 44012,
+        "doi": "10.1016/j.jacc.2023.05.059",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes",
+        "Professional / Elite",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Multicenter retrospective case series of 76 elite athletes (50 NCAA Division I, 26 professional; 28% women) diagnosed with a sudden-death-predisposing genetic heart disease, most often hypertrophic cardiomyopathy (53%) or long QT syndrome (26%). Most were initially disqualified (55 of 76, 72%), but after specialist evaluation and shared decision making 69 of 76 (91%) returned to play with organisational support, and during follow-up there was 1 exertional and 2 nonexertional breakthrough cardiac events and no deaths.",
+      "limitations": "This is a retrospective case series with no comparison group, few women and few contact-sport athletes, and a cohort largely referred to four specialist centers. The event rates are descriptive and cannot establish incidence or show that return to play is safe for all athletes with these conditions.",
+      "synthesisCaution": "Staff may read the low event rate as proof that elite athletes with these conditions are safe to play, when the cohort was self-selected, screened by specialists, and too small to estimate risk precisely.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings: '69 (91%) of those who could return' -> 69 of 76 (91%) of the whole cohort ('69 of 76 (91%) athletes elected to RTP and were supported by their sports organization')",
+            "findings: '8 had ICDs placed for secondary prevention and continued to play' and 'Over 200 athlete-years' reworded to what the text reports (24 played with an ICD, 8 secondary prevention)",
+            "limitations: added internal conflict between 'cumulative follow-up of 200 athlete-years' and 'mean follow-up 7 ± 6 years' for 76 athletes",
+            "citation: 6 authors before et al. (added Newman DB)"
+          ],
+          "residualConcerns": "Clinically sensitive cardiac return-to-play paper. Follow-up duration is internally inconsistent (200 athlete-years vs mean 7 years), so event rates per athlete-year cannot be trusted. Several authors report industry consulting (none involved in the study per the disclosure).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "772",
+        "synthesisBatch": "pilot-synthesis-batch-21",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

@@ -91,6 +91,14 @@ const candidates = [...canonicalCandidates].map((sourceFile) => {
   };
 }).filter((candidate) => candidate && candidate.priorityScore >= 0);
 
+const underrepresentedSignal = (candidate) => candidate.populations.some((population) => ["Collegiate", "Youth / Adolescent", "Adult / Recreational", "Female Athletes", "Healthy Athletes"].includes(population));
+const poolSignalAvailability = {
+  femaleAthlete: candidates.filter((candidate) => candidate.populations.includes("Female Athletes")).length,
+  youthAdolescent: candidates.filter((candidate) => candidate.populations.includes("Youth / Adolescent")).length,
+  namedSport: candidates.filter((candidate) => candidate.sports.some((sport) => sport !== "Mixed / General Sport")).length,
+  underrepresentedPopulation: candidates.filter(underrepresentedSignal).length,
+};
+
 const selectedFiles = new Set();
 const selectionsByDomain = new Map(TAXONOMY.domains.map((domain) => [domain, []]));
 
@@ -148,7 +156,7 @@ function fillFromPool(pilotDomain, pool, allocationBasis, fillRemainder = true) 
   };
   addUntil(1, femaleAthlete);
   addUntil(2, youthAthlete);
-  addUntil(2, underrepresentedPopulation);
+  addUntil(3, underrepresentedPopulation);
   addUntil(4, namedSport);
   addUntil(4, primaryStudy);
   if (!fillRemainder) return;
@@ -158,6 +166,7 @@ function fillFromPool(pilotDomain, pool, allocationBasis, fillRemainder = true) 
   }
 }
 
+const domainShortfalls = {};
 for (const pilotDomain of domainOrder) {
   const primaryPool = sortCandidates(candidates.filter((candidate) => candidate.primaryDomain === pilotDomain && !selectedFiles.has(candidate.sourceFile)));
   fillFromPool(pilotDomain, primaryPool, "primary-title-match", false);
@@ -165,8 +174,10 @@ for (const pilotDomain of domainOrder) {
   fillFromPool(pilotDomain, secondaryPool, "secondary-title-match", false);
   fillFromPool(pilotDomain, primaryPool, "primary-title-match");
   fillFromPool(pilotDomain, secondaryPool, "secondary-title-match");
-  if (selectionsByDomain.get(pilotDomain).length < targetPerDomain) {
-    throw new Error(`${pilotDomain} produced only ${selectionsByDomain.get(pilotDomain).length} eligible candidates; expected ${targetPerDomain}.`);
+  const selectedCount = selectionsByDomain.get(pilotDomain).length;
+  if (selectedCount < targetPerDomain) {
+    domainShortfalls[pilotDomain] = selectedCount;
+    console.warn(`${pilotDomain} title pool exhausted: ${selectedCount} of ${targetPerDomain} candidates.`);
   }
 }
 
@@ -176,7 +187,9 @@ const output = {
   taxonomyVersion: TAXONOMY_VERSION,
   selectionStrategy: {
     targetPapers: selected.length,
-    allocation: `${targetPerDomain} candidates per controlled pilot domain; strongest-domain matches are used before documented secondary-title matches.`,
+    allocation: `${targetPerDomain} candidates per controlled pilot domain; strongest-domain matches are used before documented secondary-title matches. A domain whose title-matched pool is exhausted keeps every remaining candidate and is listed in domainShortfalls.`,
+    domainShortfalls,
+    poolSignalAvailability,
     evidencePriority: "Reviews, consensus statements, trials, longitudinal designs, and measurement studies rank ahead of lower-signal title matches.",
     diversityPriority: "Each domain attempts to reserve places for named-sport evidence, underrepresented population signals, and identifiable primary studies.",
     screenedPaperPolicy: "Every full-text INCLUDE decision remains selected under its reviewed primary domain; EXCLUDE and DEGRADED records are not selectable.",

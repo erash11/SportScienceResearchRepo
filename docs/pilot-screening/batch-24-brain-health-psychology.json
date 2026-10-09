@@ -1,0 +1,583 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-24-brain-health-psychology",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Brain Health & Psychology shortlist positions 61-72. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 61,
+      "sourceFile": "Repetitive Head Impacts in Youth    Football- Description and Relationship to White Matter Structure.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 38813,
+        "doi": "10.1177/1941738119865264",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football",
+        "Swimming & Diving"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "Prospective cohort of males aged 8-12 in youth tackle football (35) and age-matched swimmers (12), with diffusion tensor MRI before and after one season. Football players sustained 1,905 recorded head impacts, and there was no group-by-time change in fractional anisotropy (FA). Within the football group, a larger total magnitude of lateral impacts correlated with a larger increase in left cingulate FA (r = 0.40, p = 0.03).",
+      "limitations": "This is a small pilot cohort with no sample-size estimate, so the non-significant group comparisons are weak evidence of no change. The one significant correlation came from several region and impact measures, and no multiple-comparison correction is reported; it does not show whether the FA change is adaptive or harmful.",
+      "synthesisCaution": "Staff could read the lateral-impact and cingulate FA correlation as evidence that youth football damages the brain, when the paper says the meaning of that change is unknown and the group differences were not significant.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "practicalImplications: implied practice contact was riskier -> per-session rates were equal ('1.5 head impacts per game and 1.5 head impacts per practice'); practice share reflects 31 practices vs 7 games",
+            "practicalImplications: added caution that the Shockbox high-g share (15.8% at 80 g or more) was far higher than prior youth studies (2.3% and 0.3%)",
+            "athleteDev: removed unsupported 'can inform contact planning' framing"
+          ],
+          "residualConcerns": "Youth head-impact imaging study; correlation came from multiple ROIs and impact metrics without reported multiplicity correction.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "796",
+        "synthesisBatch": "pilot-synthesis-batch-24",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 62,
+      "sourceFile": "Static and Dynamic Cognitive Performance in Youth and Collegiate Athletes With Concussion.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 30008,
+        "doi": "10.1097/JSM.0000000000000779",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Youth / Adolescent",
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Cross-sectional study of 94 athletes with concussion, tested a mean of 5.1 days after injury while still symptomatic (51% female, mean age 17.1 years), and 97 uninjured controls. Concussed athletes completed fewer responses while standing and walking, and were less accurate only while walking, on backward spelling (81.2% vs 89.8%, p = 0.049) and reverse months (95.8% vs 98.2%, p = 0.031). Standing accuracy did not differ between groups.",
+      "limitations": "This is a single-time-point cross-sectional study from one clinic and one university, with no follow-up of recovery and no sensitivity or specificity analysis. The accuracy differences were modest and near the significance threshold, and concussed athletes had more prior concussions than controls.",
+      "synthesisCaution": "Staff could read these group differences as a validated concussion test that can clear or diagnose an athlete, when the study tested only symptomatic athletes within 10 days and did not measure diagnostic accuracy or recovery over time.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: sex stated (51% and 40% female) -> added Male Athletes and Female Athletes",
+            "findings: added that overall accuracy did not differ while walking (Table 2: 90.5% vs 94.4%, P = 0.15) or standing (P = 0.11)",
+            "limitations: added fixed task order ('All participants completed the single-task condition first') and borderline per-task p-values"
+          ],
+          "residualConcerns": "Concussion assessment paper; per-task accuracy differences are borderline and unadjusted across forms.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "797",
+        "synthesisBatch": "pilot-synthesis-batch-24",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 63,
+      "sourceFile": "Smooth Pursuit Velocity After a Season of Repetitive Head Impacts in American Football Players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 47308,
+        "doi": "10.1001/jamaophthalmol.2025.2935",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football",
+        "Swimming & Diving"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Collegiate",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Single-center cohort of 25 male Division I football players, split into high-dose (11) and low-dose (14) groups by instrumented mouthguard head-impact totals, and 10 noncontact controls. Smooth pursuit velocity was measured at preseason, midseason and postseason. Velocity did not change over the season and no head-impact metric correlated with it, but high-dose players were slower than controls before the season (10.01 vs 15.60 deg/s) and both player groups were slower than controls at midseason.",
+      "limitations": "The sample is small, drawn from one team, and the design is exploratory. Controls were not matched for sex or sport and were tested at different times, and the group differences before the season mean any season effect cannot be separated from pre-existing differences.",
+      "synthesisCaution": "Staff could read the flat seasonal change as reassurance that head impacts do not affect eye movement or brain function, when the high-dose group already differed from controls before the season and the sample is small.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "methods: added that dose groups were assigned after the season by 50th-percentile split ('Players above the 50% percentile in total impacts, PLA, and PAA in each season were considered high-dose')",
+            "tldr: 'pre-existing differences are a likely explanation' -> attributed to authors' speculation ('possibly due to prior contact sport history')",
+            "limitations: added that controls were tested over shorter intervals (mean 37 days between visits vs about 84 and 59 days for players)"
+          ],
+          "residualConcerns": "Source reports inconsistent mean differences and P values between abstract, Table and Figure 3 caption; head-impact brain-health topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "798",
+        "synthesisBatch": "pilot-synthesis-batch-24",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 64,
+      "sourceFile": "Motivation and methods for a first population-based case-control study of traumatic brain injury (TBI) and chronic traumatic encephalopathy (CTE).pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) editorial or opinion piece. The text describes itself as 'This editorial aims to describe how a population-based case-control study of whether TBI causes CTE could be conducted.' It proposes a study design and recruitment plan for a future study, reports no original data or completed methods, and is not a structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 65,
+      "sourceFile": "Age of First Exposure to Contact Sports Is Not Associated With Worse Later-In-Life Brain Health in a Cohort of Community-Dwelling Older Men.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 41726,
+        "doi": "10.1097/JSM.0000000000001251",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "This cross-sectional survey study included 69 community-dwelling men (mean age 70.5 years, SD 8.0) with at least one year of contact sport participation, recruited from a memory research registry. Men whose age of first exposure to contact sport was before 12 years (n=24) were compared with those first exposed at 12 or older (n=45). The authors report no differences in depression, anxiety, general health, motor symptoms or functional status, and in adjusted models early exposure was associated with lower cognitive complaint (BC-CCI) and neurobehavioral symptom (NSI) scores (both P=0.03).",
+      "limitations": "Data are from a self-report survey with no clinical, neuropsychological or imaging assessment, and the sample is 69 men with the early-exposure group at n=24, so the study is underpowered for small differences and cannot establish causation. Findings do not generalize to women, to people still playing, or to people with major neurological or psychiatric disease.",
+      "synthesisCaution": "Staff could read the lower symptom scores in the early-exposure group as a protective effect of early contact sport, when the unadjusted comparisons were not significant and the design cannot show cause.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "799",
+        "synthesisBatch": "pilot-synthesis-batch-24",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 66,
+      "sourceFile": "Sleep Architecture Immediately After a Sport-Related Concussion Sustained During a Professional Rugby Union Match - A Retrospective Case Study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 22382,
+        "doi": "10.1123/ijspp.2025-0091",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "This retrospective case study followed one 22-year-old professional rugby union forward through four nights of home polysomnography: a pre-injury baseline, the night of a sport-related concussion, the second night after injury (with westward travel across three time zones), and a recovered night 24 days later. On the night of injury the player slept under 6 hours with reduced N3 (19% vs 22% to 37%) and REM sleep (18% vs 20% to 32%) compared with the other nights. Sleep stayed fragmented on the second night, and oxygen saturation and heart rate variability were lower and respiratory events higher on the injury and second nights.",
+      "limitations": "This is a single player (N=1) with an opportunistic, retrospective design and only one pre-injury baseline night, so it cannot separate concussion effects from travel, pre-injury short sleep, medication or caffeine use, which were not recorded. It cannot show how sleep changes relate to symptoms or recovery time in other athletes.",
+      "synthesisCaution": "Staff could take a single player's acute sleep disruption as an established pattern for all concussed athletes, or treat the travel and sleep-apnea findings as proven causes of slower recovery.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "The journal header labels the article 'BRIEF REVIEW' although the content is a single-player retrospective case study; classified as Case Report / Case Series. Concussion topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "800",
+        "synthesisBatch": "pilot-synthesis-batch-24",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 67,
+      "sourceFile": "Validity of research based on publicly obtained data in sports medicine - A quantitative assessment of concussions in the National Football League.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 41513,
+        "doi": "10.1177/19417381231167333",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "This PRISMA systematic review identified 20 concussion studies in NFL players that used publicly obtained data (such as fantasy and media sites), published 2014 to 2020. Twelve of these were compared with the NFL's electronic health record injury database for 2015 to 2019. The public-data studies captured on average 70.0% (range 20.1% to 90.2%) of the concussions in that database, over-represented running backs and quarterbacks, under-represented offensive linemen, defensive backs and linebackers, and reported 55% of concussions on offensive plays versus 44% in the league data.",
+      "limitations": "The comparison uses the NFL injury database as the reference standard, and most public-data studies covered seasons such as 2012 to 2015 while the NFL comparison counts are annual averages from 2015 to 2019, so capture rates mix data quality with differences in study period. The included studies varied widely in periods, sources and inclusion rules, and the review cannot give the true NFL concussion incidence.",
+      "synthesisCaution": "Staff could read the 70% capture figure as a precise accuracy estimate for any public-data study, when individual studies ranged from 20% to 90% and the figure only applies to NFL concussion counts.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.rtp and paper.limitations: said diagnostic details were 'rarely' reported -> none were ('No manuscript meeting the inclusion criteria provided any specific detail as to how concussions were diagnosed')",
+            "screeningLimitations and paper.limitations: added period mismatch (PODS seasons mostly 2012-2015 compared with NFL annual averages from 2015-2019; 'the average number of concussions per year was calculated as a comparison') and author conflicts of interest (NFL employee/consultants)",
+            "paper.limitations: removed PRISMA arithmetic remark (trivial flow-diagram discrepancy, not decision relevant)",
+            "populations: added Male Athletes (NFL players, 'the position he played')"
+          ],
+          "residualConcerns": "Capture-rate denominators come from a different time window than most included studies; reviewer may want to confirm framing. Concussion topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "801",
+        "synthesisBatch": "pilot-synthesis-batch-24",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 68,
+      "sourceFile": "Does reducing the height of the tackle through law change in elite men's rugby union reduce the incidence of concussion - A controlled study in 126 games.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 34677,
+        "doi": "10.1136/bjsports-2019-101557",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "This prospective observational cohort study compared 90 Championship matches played under standard tackle laws with 36 Championship Cup matches (126 games in total) played with the maximum tackle height lowered from the shoulder line to the armpit line, across 12 English men's teams in 2018/19. Lowering the tackle height reduced head and neck contact by ball carriers (RR 0.70, 95% CI 0.58 to 0.84) and reduced upright tackles, but overall concussion incidence did not differ (RR 1.31, 95% CI 0.85 to 2.01). Tacklers had a higher concussion incidence under the lowered tackle height (RR 1.90, 95% CI 1.05 to 3.45).",
+      "limitations": "The two comparison periods were different competitions with different squad priorities, not randomized or concurrent controls, and the study was not powered for concussion outcomes. Concussion counts were small (61 vs 32), two rounds shaped the result, and reporting rose about 20% across the study period.",
+      "synthesisCaution": "Staff could read the tackle-behaviour changes as evidence that the law reduces concussion, when concussion incidence did not fall and tacklers were concussed more often under the lower tackle height.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: garbled claim 'tacklers may be at greater risk when they are concussed under the new rule' -> tacklers had higher concussion incidence and propensity ('in tacklers both concussion incidence and propensity increased significantly')",
+            "paper.athleteDev: said the law change altered the number of tackles and game events -> fewer events per game came from lower ball-in-play time, and per minute of ball in play there were no differences ('Expressing game events per minute of Ball-in-Play, there were no differences'); replaced with the observed technique shifts"
+          ],
+          "residualConcerns": "With the two outlier rounds removed the overall concussion RR was 0.92 (0.55 to 1.52); the tackler-specific increase rests on small counts. Concussion topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "802",
+        "synthesisBatch": "pilot-synthesis-batch-24",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 69,
+      "sourceFile": "The importance of language in describing concussions - A qualitative analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 34799,
+        "doi": "10.1002/pmrj.13256",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Qualitative Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Sports Medicine",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "This cross-sectional secondary qualitative analysis used 94 semistructured phone interviews from 2017 with high school athletes, coaches, educators, parents and one athletic director across 19 US states. Each participant was coded for perceived concussion severity (minimum, moderate or maximum) and for whether they used the word brain when describing concussion. Participants who rated concussion as maximally severe used brain language more often (56%) than those rating it moderate (23%) or minimum (5%), with the association significant overall (P<.001) and among coaches (P=.002) but not in other groups.",
+      "limitations": "The interviews were collected for curriculum development rather than this question, with one interviewer and a post hoc coding scheme, and the sample is a convenience sample of 94 people, so the findings describe patterns in these interviews rather than general beliefs. The design cannot show that brain terminology changes severity perceptions or reporting behavior.",
+      "synthesisCaution": "Staff could take the link between brain wording and perceived severity as proof that changing the language coaches use will increase concussion reporting, when reporting was not measured.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: ORs below 1 were described as 'higher odds' for the maximum group without explaining the reference -> stated that maximum severity is the reference and lower ORs mean lower odds in minimum/moderate groups ('with \"severe\" concussion severity as the default level'); added CIs",
+            "paper.practicalImplications: framed brain-language advice as following from an association, not a demonstrated effect",
+            "populations: added Male Athletes and Female Athletes (participants 55% male, 45% female)"
+          ],
+          "residualConcerns": "Most of the 94 participants were coaches, parents and educators rather than athletes, and the sex split applies to all participants; population tags are approximate. Concussion topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "803",
+        "synthesisBatch": "pilot-synthesis-batch-24",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 70,
+      "sourceFile": "Determinants of anxiety in elite athletes- a systematic review and meta-analysis.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(a) Source identity mismatch. The filename names a systematic review and meta-analysis on determinants of anxiety in elite athletes, but the extracted text is a different article: Anderson et al., Determining the True Incidence of Glenohumeral Instability Among Players in the National Football League (Orthopaedic Journal of Sports Medicine, 2023), a descriptive epidemiology study of shoulder instability in NFL players. The word anxiety does not appear anywhere in the text.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "The source PDF holds the wrong article (Anderson et al. 2023, NFL glenohumeral instability, OJSM, DOI 10.1177/23259671231198025). The correct anxiety meta-analysis PDF should be located; the shoulder-instability paper could be screened separately if wanted.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 71,
+      "sourceFile": "Neurocognitive Deficits Associated                        With ADHD in Athletes- A Systematic Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 40798,
+        "doi": "10.1177/1941738117751387",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "This systematic review of 17 studies (published 2013 to 2017, mostly high school and collegiate athletes with a mean age of about 15 years) examined whether athletes with ADHD have more neurocognitive deficits, concussion, symptom reporting and slower recovery. The authors report ADHD prevalence of 4.2% to 8.1% in the abstract, lower ImPACT composite scores in several studies (mostly small differences), more symptom reporting, and more frequent prior concussion in six studies, while two studies found no difference in concussion history. The data were synthesized narratively, without pooled analysis.",
+      "limitations": "The review pooled no data and relied on published summaries with inconsistent adjustment for confounders such as age, education and prior concussion, and ADHD was often self-reported or chart-based. Most included studies were cross-sectional or case-control, only two were prospective, and the findings cannot be generalized to adults or to higher-level competition.",
+      "synthesisCaution": "Staff could treat ADHD as an established reason to expect lower baseline or post-concussion test scores, when the score differences were small and not consistent across studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary and paper.findings: 'higher concussion risk' -> more frequent prior concussion history, since the supporting studies were mostly cross-sectional history comparisons and the authors state this 'raises the question of causality'",
+            "evidenceSummary: age description corrected to mean about 15 years ('Mean reported age of participants was 15 years (range, 15-19 years)')",
+            "populations: added Male Athletes and Female Athletes ('All studies reported a greater percentage of male (52%-89%) versus female participants')"
+          ],
+          "residualConcerns": "Clinically sensitive (concussion testing and stimulant medication). Stimulant evidence is conflicting across four studies; the abstract's 'no evidence' statement differs from Iverson et al reporting higher concussion history with medication.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "804",
+        "synthesisBatch": "pilot-synthesis-batch-24",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 72,
+      "sourceFile": "Role of advanced neuroimaging,      fluid biomarkers and genetic testing in the assessment of sport-related      concussion- a systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 82167,
+        "doi": "10.1136/bjsports-2016-097447",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "This systematic review searched literature from 2000 to 2016 for studies of advanced neuroimaging, fluid biomarkers and genetic testing within 6 months of sport-related concussion, and included 98 studies (76 neuroimaging or electrophysiology, 16 biomarker, 6 genetic). The authors report that neuroimaging showed concussion-related changes across modalities, that 11 of 16 biomarker papers found significant blood marker alterations, and that genetic studies provided proof of concept only. They rated the evidence for clinical use as low for all three areas, citing small samples and high risk of bias.",
+      "limitations": "The review is a narrative synthesis of heterogeneous small studies with no pooled estimates, and most included samples were male, collegiate, or football or ice hockey players, with few preinjury baselines. Its search ends in 2016 and is limited to English-language articles, so it cannot reflect later evidence.",
+      "synthesisCaution": "Staff could read the reported group-level differences in imaging or blood markers as proof that these tests can diagnose concussion or guide return to play, when the authors rate clinical evidence as low.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: implied that all 76 neuroimaging studies reported significant effects -> significant effects were shown by each modality, with varying directions and some null results ('opposite patterns or null results have been reported'); added modality counts and non-discriminating biomarkers",
+            "populations: added Male Athletes and Female Athletes (included studies list M and M/F samples)"
+          ],
+          "residualConcerns": "Clinically sensitive (concussion diagnosis and return to play). Evidence is current only to December 2016.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "805",
+        "synthesisBatch": "pilot-synthesis-batch-24",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

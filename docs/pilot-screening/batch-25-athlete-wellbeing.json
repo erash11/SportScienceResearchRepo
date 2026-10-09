@@ -1,0 +1,547 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-25-athlete-wellbeing",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Athlete Wellbeing shortlist positions 73-84. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 73,
+      "sourceFile": "Athlete mental health help-seeking - A systematic review and meta-analysis of rates, barriers and facilitators.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 48,
+        "extractedCharacters": 103369,
+        "doi": "10.1016/j.psychsport.2023.102586",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "A systematic review and random-effects meta-analysis of 22 studies of current elite, collegiate or professional athletes, with 11 studies (N=3,415) contributing to the pooled help-seeking rate. The pooled proportion of athletes seeking formal mental health help was 22.4% (95% CI 16.2 to 30.2, I2=95.7%), and barriers and facilitators were synthesised qualitatively across the included studies.",
+      "limitations": "The help-seeking rates come from cross-sectional, self-report surveys with very high heterogeneity and mixed study quality, so the pooled estimate is imprecise and not a population benchmark. Barriers and facilitators are mostly from small qualitative samples, with only six studies reporting facilitators, and the evidence is English-language and mainly North American, European and Australian.",
+      "synthesisCaution": "Staff could over-read the 22.4% figure as the share of athletes who need help and do not get it, when symptom status was rarely measured and the included studies used different help-seeking time frames.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: inferred that athletes do not use referral pathways from the 22.4% rate, which is not conditioned on need -> reframed as barriers suggesting referral may not ensure uptake (\"understanding of help-seeking behaviour and rates amongst those who may most require support is limited\")",
+            "paper.citation: author format -> house style surname + initials"
+          ],
+          "residualConcerns": "Discussion states team-sport-only samples had lower help-seeking via meta-regression, but Results describe subgroup analyses with overlapping 95% CIs; the record follows the Results.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "806",
+        "synthesisBatch": "pilot-synthesis-batch-25",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 74,
+      "sourceFile": "Athlete mental health and wellbeing during the transition into elite sport - Strategies to prepare the system.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(a) source identity mismatch: the filename names a paper on athlete mental health and wellbeing during the transition into elite sport, but the text is Kittel et al., 'Athlete perceptions of in-person training, extended reality and video technologies for perceptual-cognitive development: A qualitative exploration of developmental American football quarterbacks' perspectives' (International Journal of Sports Science & Coaching, 2026). No part of the text addresses mental health or the transition into elite sport.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "The filename's intended article (mental health during the transition into elite sport) needs its correct PDF sourced; the stored file is Kittel et al. 2026 (DOI 10.1177/17479541251407997) on quarterback perceptual-cognitive training.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 75,
+      "sourceFile": "Reciprocal relationships between sleep quality, mental health and the quality of life in elite athletes - A pilot study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 64465,
+        "doi": "10.5114/biolsport.2026.154147",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Athlete Wellbeing",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Combat Sports"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Cross-sectional online survey of 118 Tunisian elite athletes (39 female, 50 world class), using the PSQI, ISI, ESS, DASS-21, WHOQOL-BREF and sleep-hygiene questions. Sixty-two percent reported low or very low sleep quality, and regression linked higher insomnia severity and negative emotions with poorer sleep and lower quality of life; female and younger athletes had poorer sleep, and individual-sport athletes had more daytime sleepiness and lower quality of life.",
+      "limitations": "This is a single self-report survey of one national sample, mostly combat athletes in the individual-sport group, so it cannot show which way the sleep, mood and quality-of-life links run. The authors call it a pilot study, and subgroups are small (only 16 athletes were over 25).",
+      "synthesisCaution": "Staff could read the 'reciprocal' relationships as proof that poor sleep causes low mental health and quality of life, when all variables were measured at one time point.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: listed 'evening caffeine' and 'screen use in bed' as linked habits, but the survey measured daily caffeine/soda counts and total daily screen minutes -> soda intake, later bedtimes and longer daily screen time (\"screen duration: t = 1.98, ß = 0.14\"; \"soda beverages: t = 2.37, ß = 0.17\")",
+            "paper.limitations: 'mostly Tunisian' -> entirely Tunisian sample; heat effect attributed to the authors' explanation (\"might be time-of-year related, due to the environmental factors\")"
+          ],
+          "residualConcerns": "Internal inconsistencies in the source: data were collected in September 2022 but the ethics approval is dated 01/03/2024; the Results text says 60% had SOL of 30 min or longer while Table 1 shows 16.1%; mean age 20.1 +/- 0.64 years is implausible for a range of 18 to 37.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "807",
+        "synthesisBatch": "pilot-synthesis-batch-25",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 76,
+      "sourceFile": "TeamWellX - Leveraging genetic algorithms to optimize team health and well-being toward sustainable game development and strategy.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) not relevant to athlete health or performance: this is a SoftwareX software publication describing a genetic-algorithm and XGBoost tool for building NFL rosters from Madden video-game player ratings and salary data. It reports no athlete health, wellbeing, training or performance outcomes; 'well-being' appears only as a team-management goal in the abstract and conclusion.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 77,
+      "sourceFile": "Toxic leadership in high-performance sports and its consequences for mental health and performance - A scoping review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 28,
+        "extractedCharacters": 90429,
+        "doi": "10.1080/1750984X.2025.2457038",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Coaching",
+        "Performance",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Youth / Adolescent",
+        "Collegiate"
+      ],
+      "evidenceSummary": "A PRISMA-ScR scoping review of 26 peer-reviewed, English-language empirical studies (2004 to 2023) of toxic or abusive leadership in elite sport, mostly from North America and Europe. Fourteen studies used interviews and six used questionnaires, and one survey of 995 Canadian national team athletes found that 75% had experienced some form of maltreatment.",
+      "limitations": "This is a scoping review, so it describes the evidence without pooling results or grading study quality. Definitions of toxic leadership varied, only four studies defined it clearly, and most of the evidence comes from retrospective interviews and cross-sectional surveys.",
+      "synthesisCaution": "Staff could read the review as showing that toxic leadership causes mental health problems, injury and dropout, when most of the evidence is retrospective interviews and cross-sectional surveys.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr: called mental health, injury and dropout the 'most consistent' consequences, but injury rests on one study -> mental health most often reported, fewer studies for dropout, one for injury (\"toxic leadership was linked to physical injuries (Smits et al., 2017)\")",
+            "paper.practicalImplications: presented suggested solutions as supported by the review -> labelled as suggestions from included studies, noting \"we could not identify many empirically evaluated recommendations\"; added the source of the prevalence claim (Willson et al. 2022b, 75% of 995)",
+            "paper.citation: author format -> house style surname + initials"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "808",
+        "synthesisBatch": "pilot-synthesis-batch-25",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 78,
+      "sourceFile": "Effect of mindfulness-based programs on elite athlete mental health - A systematic review and meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 68416,
+        "doi": "10.1136/bjsports-2022-105596",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate",
+        "Youth / Adolescent",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "A systematic review and random-effects meta-analysis of 12 randomised controlled trials with 613 current or former elite athletes (313 in mindfulness-based programmes, 300 controls; 75% male). Programmes improved anxiety (g=-0.87, 6 studies), stress (g=-0.91, 5 studies) and psychological well-being (g=0.96, 5 studies) compared with controls, with an overall mental health effect of g=-0.75 across 9 studies, while the depression effect was large but not statistically significant.",
+      "limitations": "The pooled evidence rests on 12 small trials (about 26 athletes per condition) with moderate overall risk of bias, high heterogeneity and suspected publication bias for depression, distress and mindfulness. Most outcomes were self-reported, the sample was mostly male with few para-athletes, and the subgroup and meta-regression analyses were exploratory.",
+      "synthesisCaution": "Staff could read these pooled effects as proof that mindfulness programmes treat clinical mental health disorders in athletes, when the trials used self-reported symptom scales with no clinical assessments, the review could not separate clinical from subclinical symptoms, and the depression effect was not significant.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution: 'mostly non-clinical samples' is not stated in the text -> no clinical assessments and clinical vs subclinical effects could not be separated (\"no data available from clinical assessments\"; \"not possible ... to identify the effects MBPs had on clinical versus subclinical symptoms\")",
+            "paper.practicalImplications: 'staff should not expect the programme to reduce depression' overstated a non-significant 3-trial result -> evidence inconclusive, not to be relied on as a depression treatment (g=-0.90, k=3, p=0.13); dropout restated with attrition figures (4% vs 9%) and delivery advice attributed to the authors"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "809",
+        "synthesisBatch": "pilot-synthesis-batch-25",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 79,
+      "sourceFile": "Mental health in elite athletes - A systematic review of suicidal behavior as compared to the general population.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 18,
+        "extractedCharacters": 68520,
+        "doi": "10.1007/s40279-024-01998-2",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "A systematic review of 22 cross-sectional studies (2023 search) of suicidal ideation, attempt or completion in varsity, professional, national or Olympic athletes, with 10 studies comparing athletes with non-athletes or the general population. Suicidal ideation averaged 14.5% in professional or international athletes (6.9% to 18% across four studies) and 4.8% in collegiate athletes (3.7% to 6.5% across three studies), and most comparison studies found athletes at lower risk than non-athletes.",
+      "limitations": "All 22 studies were cross-sectional, so the review cannot show causes or changes over time, and the pooled figures are sample-weighted averages rather than a meta-analysis. Definitions, questionnaires and populations varied widely, only two studies reported suicide attempts, and the race, sex and competitive-level findings rest on few studies.",
+      "synthesisCaution": "Staff could read the 14.5% ideation average for professional athletes as a prevalence estimate, when it is driven by one study of 774 athletes that reported 18%, and the figures come from different questionnaires and death records.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr/findings: presented male sex, non-white race and older age as consistent risk factors -> noted mixed results (Fig. 2; race: \"three found no significant difference between races and two found white athletes to have reduced\" rates; age: one study younger, two older, one age 30-50)",
+            "paper.practicalImplications: flagged-factor list now caveated as resting on few or conflicting studies; injury/retirement null findings noted as based on one to two studies",
+            "paper.athleteDev: removed generic advice to monitor higher-level athletes, which rests on one study (Sun et al., top-8 ranked athletes)"
+          ],
+          "residualConcerns": "Clinically sensitive topic (suicide). The source's abstract lists 'athletic level' both as a risk factor to watch and as showing limited effect; the record reflects the body text.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "810",
+        "synthesisBatch": "pilot-synthesis-batch-25",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 80,
+      "sourceFile": "Breaking a taboo- why the International Olympic Committee convened experts to develop a consensus statement on mental health in elite athletes.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) editorial or commentary: this is a 4-page BJSM editorial by Hainline and Reardon that accompanies the IOC consensus statement on mental health in elite athletes. It presents no original methods and no structured review of evidence of its own; it describes the consensus statement's background and recommendations. The consensus statement itself is a separate article and is not in this text.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 81,
+      "sourceFile": "Psychosocial factors and sport injuries - Meta-analysis      for prediction and prevention.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 59431,
+        "doi": "10.1007/s40279-016-0578-x",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Adult / Recreational",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review and meta-analysis of 48 published prospective or experimental studies (161 effect sizes for injury prediction; 7 psychological intervention studies for prevention) using traumatic injury definitions. Stress responses (r = 0.27, 80% CI 0.20 to 0.33, k = 4) and history of stressors (r = 0.13, 80% CI 0.11 to 0.15, k = 72) had the strongest associations with injury rates, and a path model (7.3% of injury variance explained) suggested stress response mediated the other psychosocial effects. The seven prevention studies had a pooled effect of d = -0.63 (80% CI -0.88 to -0.38) favouring fewer injuries in intervention groups.",
+      "limitations": "The prediction associations are small, and the stress-response path rests on only four effect sizes, so the mediation result is tentative. The prevention pool is seven studies with mostly small samples and no measured mechanisms, so it cannot show how the interventions reduced injury.",
+      "synthesisCaution": "Staff could read the pooled prevention effect as proof that psychological programmes will reduce injury in their own squad, when it rests on seven mostly small studies (two quasi-experimental) with moderate heterogeneity, and the psychosocial predictors explain very little of injury risk.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution: 'mostly non-randomised in places' was inaccurate -> five of seven prevention studies were RCTs or matched RCTs, two quasi-experimental (Table 2)",
+            "limitations: 'one effect size came from outside sport' -> path model used estimates 'from a meta-analysis performed outside the sport context' for empty correlation cells"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "811",
+        "synthesisBatch": "pilot-synthesis-batch-25",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 82,
+      "sourceFile": "Management of mental health emergencies in elite athletes- a narrative review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 59892,
+        "doi": "10.1136/bjsports-2019-100691",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Narrative review by an international author group. A database search for mental health emergencies in athletes found 96 articles, reduced to 5 relevant papers, and none of these addressed elite athletes. The authors therefore combined the sparse sport literature with non-sporting evidence-based and consensus-based guidelines. One reported dataset covers the London 2012 Olympic psychiatry service: 12 referrals, of which 4 were mental health emergencies (unpublished IOC/Cognacity data).",
+      "limitations": "The review has no systematic search of sport-specific evidence and includes only English-language papers, with one author running the search. Its management recommendations are extrapolated from general and non-sporting guidance, so they cannot show what works for elite athletes.",
+      "synthesisCaution": "Staff could take the action-plan and management steps as sport-validated protocols, when the paper states that they are extrapolated from non-sporting guidelines and expert opinion.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/methods: 'IOC consensus meeting input' as a method was not stated -> methods describe supplementary search by all authors plus non-sporting literature; IOC meeting appears only in acknowledgements",
+            "limitations: 'unpublished service records reported in a single sentence' -> 'unpublished IOC/Cognacity data'",
+            "findings: 'hierarchical de-escalation' clarified as de-escalation first, then oral before parenteral medication ('oral medications, which typically should be considered before parenterally administered drugs')"
+          ],
+          "residualConcerns": "Clinically sensitive (suicidality, pharmacological sedation). Medication content is guideline extrapolation, not sport evidence; the record correctly avoids naming drug doses.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "812",
+        "synthesisBatch": "pilot-synthesis-batch-25",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 83,
+      "sourceFile": "Mental health of elite sport coaches and entourage.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 47397,
+        "doi": "10.1016/j.csm.2023.06.005",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Narrative review of the sparse literature on mental health in elite coaches and high-performance support staff (entourage), plus a summary of the authors' earlier survey. That Australian survey of 78 coaches and 174 entourage staff (March to May 2020) found probable caseness in 43.6% of coaches and 40.1% of entourage, high psychological distress in 10.3% and 15.5%, and risky alcohol use in 48.1% and 39.0%, with no significant differences between the two groups. The authors report that caseness, distress and sleep disturbance rates were similar to published elite athlete samples, while risky drinking was higher than in athletes (25.8%).",
+      "limitations": "The review rests on a small, scattered evidence base, with most participants being men and measures and cut-offs varying across studies. Its central survey is a single cross-sectional sample collected during COVID-19 lockdowns, so it cannot establish prevalence or causes.",
+      "synthesisCaution": "Staff could read the coach and entourage percentages as reliable prevalence estimates for their own organisation, when they come from one small cross-sectional survey in one country during the pandemic.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: 'rates broadly similar to elite athletes' omitted the exception -> risky drinking higher than athlete samples ('relative to published athlete samples (25.8%)')",
+            "athleteDev: 'coach and staff wellbeing affects the environment athletes train in' was not stated -> review's stated rationale that coaches and entourage are 'best placed... to observe changes' in athletes"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "813",
+        "synthesisBatch": "pilot-synthesis-batch-25",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 84,
+      "sourceFile": "The Mental Health of Elite-Level Coaches - A systematic scoping review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 30,
+        "extractedCharacters": 113350,
+        "doi": "10.1186/s40798-023-00655-8",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Systematic scoping review (PRISMA-ScR) of six databases searched to September 2022, identifying 42 peer-reviewed studies of elite-level coaches (29 quantitative, 10 qualitative, 3 mixed methods; 4,576 participants, about 73% male). Of the included studies, 40% addressed wellbeing and 76% addressed mental ill-health, mostly burnout (50% of studies). Reported depressive symptoms ranged from 14% to 44% across studies, psychological distress from 10.3% to 19.3%, and preliminary evidence linked poorer mental health to reduced coaching effectiveness.",
+      "limitations": "This is a descriptive scoping review with no statistical pooling, so its prevalence ranges are not a pooled estimate. Quality appraisal was done by one reviewer, 79% of studies scored 60% or below on the MMAT, and all prevalence studies scored 60% or below, were mostly cross-sectional (89%) and mostly had fewer than 100 participants (67%).",
+      "synthesisCaution": "Staff could read the coaching-effectiveness link as established, when the authors describe it as preliminary and based on only a handful of studies, most of which examined it secondarily.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'most included studies were cross-sectional with fewer than 100 participants' overgeneralised -> applies to prevalence studies ('majority of prevalence studies were cross-sectional (89%)... less than 100 participants (67%)'); overall only 19/42 cross-sectional",
+            "screeningLimitations: 'most prevalence studies scoring 60% or below' -> 'all studies measuring the prevalence of mental ill-health registered quality appraisal scores of 60% or below'; 79% of all studies",
+            "findings: added the 14.1% New Zealand depressive-symptom figure so the reported range is not one-sided",
+            "limitations: added that 5 included items were professional abstracts or an editorial letter"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "814",
+        "synthesisBatch": "pilot-synthesis-batch-25",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}
