@@ -1,0 +1,935 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-72-training-performance",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Training & Performance queue positions 7-94. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 7,
+      "sourceFile": "Long-Term Links between Physical Activity and Sleep Quality.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) Not relevant to athletes, sport, exercise performance or athlete health: a three-wave university student cohort (827 students, mean age 19.0, 73.9% female) on general physical activity, sleep quality and emotion regulation. Sports club involvement is measured only as a covariate, and there is no athlete-specific sample or performance outcome.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [
+            "identityCheck: added the citation details and own DOI printed in the text ('Med. Sci. Sports Exerc., Vol. 50, No. 12, pp. 2418-2424, 2018'; 'DOI: 10.1249/MSS.0000000000001706'); decision and exclusion reason unchanged"
+          ],
+          "residualConcerns": "Borderline relevance call: a general university-student cohort (827 students, 73.88% female) using self-reported physical activity frequency and sleep, with sports club involvement only as a covariate. EXCLUDE (c) is kept because there is no athlete sample or performance outcome, but a reviewer may judge physical-activity-and-sleep evidence in scope.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 14,
+      "sourceFile": "Lower Limb Joint Mechanics during Maximal Accelerative and Decelerative Running.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 55,
+        "extractedCharacters": 70311,
+        "doi": "10.1249/MSS.0000000000003445",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Laboratory study of 20 recreationally active adults (10 men, 10 women; mean age 25 years) performing three maximal-effort accelerations and three unanticipated decelerations, with motion capture, force plates and inverse dynamics. Net lower-limb joint work was positive in acceleration (hip 0.48, knee 0.37, ankle 0.74 J/kg) and negative in deceleration (hip -0.73, knee -0.65, ankle -0.54 J/kg), and the peak hip extension moment was about -5.0 N m/kg in deceleration versus -1.9 in acceleration.",
+      "limitations": "Participants were recreationally active adults tested in a laboratory with a cross-sectional design, so the findings cannot be generalised to elite or previously injured athletes and cannot test injury risk. Only 20 participants were included, and the paper reports no sex-specific or strategy-specific analysis.",
+      "synthesisCaution": "Staff may read the hamstring, groin, calf and ACL comments in the discussion as evidence that these movements cause injury, when the authors state that injury risk was beyond the scope of the study and these links are inferred from joint loads.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: said differences were 'for each joint at p < 0.001 except knee positive work', which mixed net, positive and negative work and attached a z value without context -> separated net work (all p < 0.001), positive work (hip and ankle p < 0.001, knee p = 0.014 not significant at p < 0.01) and negative work (all p < 0.001) per Table 1"
+          ],
+          "residualConcerns": "Accepted manuscript, published ahead of print; no volume or pages printed.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1289",
+        "synthesisBatch": "pilot-synthesis-batch-72",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 15,
+      "sourceFile": "Lower body blood flow restriction training may induce remote muscle strength adaptations in%c2%a0an%c2%a0active unrestricted arm.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 47178,
+        "doi": "10.1007/s00421-018-3806-2",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Performance",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized two-group training study of 24 recreationally active young men (12 with blood flow restriction [BFR] during leg training, 12 non-BFR controls) over 8 weeks, with bicep curls in the dominant arm only. The BFR group's trained arm gained 2.5 +/- 0.4 kg in elbow flexion 1-RM (mean +/- SEM), versus 0.8 +/- 0.4 kg in its untrained arm and 0.6 +/- 0.3 kg in the controls' trained arm, and knee extension 1-RM rose 16.3 +/- 1.3 kg versus 8.3 +/- 1.6 kg in controls. Muscle cross-sectional area changes did not differ between groups for the legs or the trained arm.",
+      "limitations": "Participants were healthy, recreationally active young men rather than athletes, the sample was 12 per group, and only one leg site was scanned, so the null muscle-size result is weakly tested. The trained arm was always the dominant arm, so limb dominance is confounded with training.",
+      "synthesisCaution": "Staff may read the trained-arm strength gain as evidence that leg BFR training strengthens an arm that is not trained, when the untrained arm did not differ from controls and the effect was seen only in an arm that also trained.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: said 'the BFR group also gripped the machine handles' and 'the authors could not rule out a contribution from these factors' -> both groups were permitted to grip ('Participants were permitted to grip the handles... for both training and testing'), and the authors 'expect the overall impact... to be negligible'; cuff-sitting is linked to the knee flexion result",
+            "limitations: added the abstract/methods duration conflict ('completed 7-weeks of resistance training' vs 20 sessions with post-testing 'in week 8')"
+          ],
+          "residualConcerns": "Online-first record with no volume or pages printed; year 2018 from the copyright line.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1290",
+        "synthesisBatch": "pilot-synthesis-batch-72",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 17,
+      "sourceFile": "Lowest perceived exertion in the late morning due to effects of the endogenous circadian system.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 3,
+        "extractedCharacters": 7922,
+        "doi": "10.1136/bjsports-2018-099148",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Ten healthy adults (six female, mean age 52 years) completed a forced desynchrony protocol in dim light, with 15 minutes of mild-intensity cycling at 50% predicted maximal heart rate after each waking episode. Borg RPE was recorded at 3, 8 and 13 minutes and analysed by circadian phase. The authors report that RPE for the same workload was lowest in the late morning (about 10:45 AM) and highest during the biological night (about 3:45 AM), a variation of about 1 SD.",
+      "limitations": "The sample was small, non-athletic and tested only mild-intensity cycling, so the findings cannot be applied directly to high-intensity or sport-specific training. The paper is a research letter with a brief methods and results section and does not report a p-value in the text.",
+      "synthesisCaution": "Staff could read this as proof that athletes find late-morning training easier, but the authors only suggest that this might hold for athletes doing high-intensity exercise.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "decision: checked under rules (b) and (c) and kept INCLUDE. It is a research letter, but it reports original methods and results (forced desynchrony, n = 10), and RPE during exercise is exercise-performance evidence, so (b) and (c) do not apply",
+            "paper.citation: removed placeholder pagination 'pp. 1-2' (text prints 'Br J Sports Med 2018;0:1-2' and 'Month 2018 Vol 0 No 0'); online first 23 Feb 2018",
+            "paper.practicalImplications: softened 'the study shows this can shift perceived effort' for athletes, since the sample was non-athletic middle-aged adults (52 +/- 2 years) and the phases compared include the biological night"
+          ],
+          "residualConcerns": "Non-athlete sample (healthy middle-aged adults, 6 of 10 female) with mild exercise only; relevance to athletes is indirect. A human may judge it too far from athlete populations for the library.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1291",
+        "synthesisBatch": "pilot-synthesis-batch-72",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 22,
+      "sourceFile": "MSU - Athlete Engineering Newsletter - Vol. 1 Issue 2.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Newsletter, not a research article or structured review. The text is a 4-page Mississippi State University Athlete Engineering newsletter (Vol. 1, Issue 2, October 2021) with features on a STRIVE sensor comparison (17 participants), a helmet response-time study (18 NCAA Division 1 football players), the Bully Car and a profile of an NFL strength coach. The studies are summarized in a few sentences without methods sections, statistics or references, and the piece is not peer reviewed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: 'It presents no methods of its own' was inaccurate; the newsletter does summarize partner studies with sample sizes ('17 participants performed three total trials'; '18 NCAA Division 1 football student-athletes') but without methods, statistics or references. EXCLUDE (b) kept. Also corrected 'a profile of a coach' to an NFL strength coach (Tampa Bay Buccaneers)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 24,
+      "sourceFile": "Managing Fatigue in Team Sports - A Brief Review of Concurrent Training Effects Within the Microcycle.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed anywhere in the extracted text, and the text contains no DOI strings at all. The article is otherwise complete and readable, so all fields are filled in; the operator may verify the DOI externally and upgrade the decision to INCLUDE.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'one set per exercise, three times a week, at 70-85% 1RM can improve strength in trained athletes' -> 'a single set per session performed 3 times per week... at high intensity (load >70% 1RM) and a high perception of effort'. The text gives no 85% upper bound and does not say 'trained athletes'",
+            "decision: DEGRADED confirmed; no DOI string appears anywhere in the text. Citation details (Strength Cond J 47(5), October 2025, pages 589-600) confirmed from page headers"
+          ],
+          "residualConcerns": "DOI must be verified externally before upgrade to INCLUDE.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 27,
+      "sourceFile": "Many pieces to the Puzzle - A new holistic workload approach to designing practice in sports.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 65514,
+        "doi": "10.1186/s40798-023-00575-7",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Conceptual review article that builds a training-design framework from representative learning design and perception-action theory, with no new data. It proposes four characteristics (physical and cognitive fidelity, physical and cognitive demand) and five training categories, illustrated with a hypothetical seven-day microcycle. The authors state that the framework does not prescribe how representative design should be applied.",
+      "limitations": "The paper contains no empirical data, and the framework and its categories are untested in athletes. The authors note there are no purpose-built subjective scales for cognitive workload in sport and that objective measures are generally unsuited to dynamic sport settings.",
+      "synthesisCaution": "Staff could treat the hypothetical microcycle and the five categories as a validated planning method, when the authors present them as a framework awaiting practical testing.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'no validated subjective or objective measure of cognitive workload exists' overstated -> no purpose-built subjective scales, objective measures generally unsuited ('there are no clear purpose-built subjective scales for measuring cognitive workload in sporting environments')",
+            "paper.tldr: 'Highly match-like training transfers well' stated as fact -> framed as the authors' theoretical argument ('should facilitate greater transfer of skills and learning')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1292",
+        "synthesisBatch": "pilot-synthesis-batch-72",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 29,
+      "sourceFile": "Marketing of unproven and unapproved regenerative medicine therapies.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Guest editorial in Sports Health (Rodeo, 2024) on direct-to-consumer marketing of unproven regenerative medicine products. It contains no original methods and no structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 32,
+      "sourceFile": "Measuring head acceleration like a CHAMP.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Short introductory commentary on the CHAMP head-acceleration consensus series. It summarizes the consensus process and encourages use of the reporting guidelines, but it contains no original methods, no structured review of evidence, and no consensus statement of its own.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Head-impact measurement topic (concussion-adjacent). Text is a short accepted-manuscript commentary introducing the CHAMP consensus series; the consensus papers themselves are in Ann Biomed Eng and could be sought separately.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 36,
+      "sourceFile": "Mechanisms of mechanical overload-induced skeletal muscle hypertrophy - Current understanding and future directions.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 80,
+        "extractedCharacters": 473984,
+        "doi": "10.1152/physrev.00039.2022",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of the mechanisms behind mechanical overload-induced skeletal muscle hypertrophy, drawing on rodent models and human resistance training studies. The authors present mTORC1 signalling, ribosome biogenesis and satellite cell-mediated myonuclear accretion as the best supported mechanisms, and summarise 20 mechanisms in a table that grades the evidence and lists knowledge gaps for each. No search method is described.",
+      "limitations": "The review does not describe how sources were selected, and many mechanisms rest on preliminary or animal evidence, as the authors' own mechanism table shows. It is a basic-science review with no athlete-specific sample, so its links to training prescription are indirect.",
+      "synthesisCaution": "Staff could read the list of mechanisms as a set of training targets, when the authors state that future work must still establish which mechanisms are required for hypertrophy rather than merely coinciding with it, and several are rated as not well elucidated.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: 'rate the evidence for about 20 further mechanisms ... most of them incompletely established' -> the table covers 20 mechanisms in total, including the 3-4 core ones (Table 1 has 20 rows)",
+            "paper.findings: draft said microRNAs, ECM remodelling, angiogenesis and mTORC1-independent signalling have 'less or preliminary evidence'; Table 1 marks these ':::' (several laboratories show changes) and text says 'a large body of evidence suggests that angiogenesis is needed to optimize skeletal muscle hypertrophy' -> now mixed/incomplete evidence, with the five '???' mechanisms named",
+            "synthesisCaution: 'most may only coincide with it' overstated -> authors say investigations will 'confirm or refute which of the discussed mechanisms are obligatory for (rather than coinciding with)' hypertrophy",
+            "paper.limitations: added synergist ablation caveat ('this model does not resemble the physiological stimulus provided through progressive resistance training') and author industry funding (S.M.P. 'US National Dairy Council, Dairy Farmers of Canada')",
+            "paper.practicalImplications: removed unsupported 'supplement' example; added text-supported points on hormones ('postexercise endocrine responses ... do not correlate with ... long-term hypertrophic outcomes'), NSAIDs ('1,200 mg/day of ibuprofen blunts increases in leg muscle volume by 50%' but 'findings are mixed and seemingly age dependent') and cold-water immersion",
+            "confidence: medium -> high after reading the full 45-page body (pages 2679-2723) in chunks; pages 2724-2757 are references"
+          ],
+          "residualConcerns": "The practical NSAID point rests on mixed human trials summarised by the review; a reviewer may prefer to omit it.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1293",
+        "synthesisBatch": "pilot-synthesis-batch-72",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 43,
+      "sourceFile": "Mental fatigue impairs sprint and jump performance in team sport athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 21,
+        "extractedCharacters": 44369,
+        "doi": "10.1016/j.jsams.2023.10.016",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Basketball"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "A randomized, counterbalanced within-participant laboratory study in 18 healthy male amateur club players (basketball 6, handball 7, football 5; age 25 +/- 5 years; performance level 2, trained/development) who completed a 30-minute Stroop task or watched a documentary before a repeated sprint test, a repeated jump test and countermovement jumps. After the Stroop task, mean directional sprint time was longer (P = 0.032), sprint decrement was greater (P = 0.027), and mean jump height was lower in the repeated jump test (P = 0.009, d = 0.60). Linear sprint times, peak sprint times, peak jump heights and countermovement jump height did not differ between conditions.",
+      "limitations": "The study is a single small sample of amateur men at one performance level, and several key comparisons sit close to P = 0.05. The discussion quotes percentage changes (9% slower directional sprints, 58% greater jump decrement) that are not given as values in the results text, and the text is a journal pre-proof that may change before publication.",
+      "synthesisCaution": "Staff could read this as showing that mental fatigue reduces sprint and jump performance in general, when only directional repeated sprints and repeated jumps were affected.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Mixed / Unspecified -> Adult / Recreational ('recruited from amateur basketball ... clubs', 'performance level 2 (trained/development)')",
+            "sports: added Basketball (6 of 18 players)",
+            "paper.methods: '12-sprint directional repeated sprint test' -> 12 maximal 20-m sprints with 10 m linear and 10 m directional phases ('12 maximal 20-m (10-m linear + 10-m directional) repeated sprints')",
+            "evidenceSummary/limitations: added amateur level and that only male clubs were available",
+            "paper.practicalImplications: removed unsupported advice to separate cognitive load from drills; now reports the authors' own recommendation",
+            "screeningLimitations: percentage changes described as not given as values in the results text rather than absent from results"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1294",
+        "synthesisBatch": "pilot-synthesis-batch-72",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 44,
+      "sourceFile": "Mental fatigue impairs tackling technique in amateur rugby union players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 39552,
+        "doi": "10.1123/ijspp.2023-0159",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "A randomized, counterbalanced crossover study in 20 male amateur rugby union players (age 21.4 +/- 2.6 years) who made 24 tackles on a tackle simulator after a passive-rest control and after a 30-minute Stroop task with 5-minute top-ups. Across both shoulders, technical proficiency was lower after the Stroop task at set 2 (6.91 vs 7.30 AU, P = 0.009) and set 3 (6.88 vs 7.34 AU, P = 0.002). The between-condition difference was significant for the non-dominant shoulder at sets 2 and 3 and not for the dominant shoulder.",
+      "limitations": "The study used one simulator, one video assessor (blinding to condition is not reported) and 20 high-level senior amateur players tested at the end of the season. Baseline proficiency was higher in the Stroop condition than control (7.47 vs 7.08 AU, P = 0.009), so part of the later between-condition difference reflects a decline from a higher starting point.",
+      "synthesisCaution": "Staff could read this as proof that mental fatigue degrades tackling in matches, when it was a simulator test with small effect sizes (0.29 to 0.49).",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution: effect size range 0.30 to 0.49 -> 0.29 to 0.49 (nondominant set 2 'ES = 0.29 small')",
+            "screeningLimitations/limitations: removed claim that the discussion does not address the baseline difference (results state 'After the MF protocol, this was reversed'); added authors' stated limits on Stroop ecological validity and other levels"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1295",
+        "synthesisBatch": "pilot-synthesis-batch-72",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 49,
+      "sourceFile": "Methods matter - Exploring the too much too soon theory - Part 1 causal questions in sports injury research.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Conceptual methods piece. The text is labelled 'Education review' and is the first part of a BJSM methods series; it sets out four causal research questions on the 'too much, too soon' theory and argues for subgroup-focused questions using a hypothetical illustration (Figure 1: 'the content of the figure is only used for concept illustration'). It has no original methods and no search, selection or appraisal of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [
+            "exclusionReason: clarified wording and quoted the figure note; decision unchanged (consistent with prior exclusions of conceptual methods pieces such as 'Current Opinion' study-design papers)"
+          ],
+          "residualConcerns": "Borderline label: the journal calls it an 'Education review'. It reviews no evidence, so exclusion (b) was kept, but a reviewer could treat it as a methodological narrative review.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 50,
+      "sourceFile": "Mixing the Sheep and the Goats - Reframing the Interpretation of Acceleration Data in Sport.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Labelled 'INVITED COMMENTARY' (IJSPP, ahead of print 2025). It argues for continuous, individualised analysis of acceleration data. Its figures are conceptual illustrations, and although an ethics statement mentions retrospectively analysed team data, no methods, sample or results are reported, and there is no structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [
+            "exclusionReason: 'reports no original dataset' -> notes the ethics statement ('The data were collected in the usual framework of training and competition monitoring ... analyzed retrospectively') while no methods or results are reported; decision unchanged"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 55,
+      "sourceFile": "Monitoring of Post-match Fatigue in Professional Soccer- Welcome to the Real World.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Opinion piece. The text is labelled 'Current Opinion' and says it 'intends to debate' the need for post-match fatigue monitoring and critique the literature. It presents the authors' experience and reasoning, with no original data and no structured review of evidence (no search, selection or appraisal of studies).",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 57,
+      "sourceFile": "More than a metric - How training load is used in elite sport for athlete management.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial. The text calls itself an editorial that pools the authors' experience across team and individual sports. It has no original methods and no structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "The journal page header labels the article 'Review', but the text calls itself an editorial ('In this editorial we highlight...') pooling author experience, with no search method or original data. EXCLUDE (b) kept.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 65,
+      "sourceFile": "Multiscale hamstring muscle adaptations following 9 weeks of eccentric training.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 58809,
+        "doi": "10.1016/j.jshs.2024.100996",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Single-group longitudinal intervention with no control group: 12 recreationally active adults (5 male, 7 female) completed 9 weeks of supervised Nordic hamstring exercise (NHE) training, then 3 weeks of detraining. The authors report biceps femoris long-head fascicle length increases of 19% (central) and 33% (distal), calculated serial sarcomere number increases of 25% and 49%, muscle volume up 8% and knee flexion strength up 40%.",
+      "limitations": "No control group, 12 participants, and sparse sarcomere data (9 and 6 participants pre-training, 5 (central) and 4 (distal) after detraining, with detraining sarcomere data excluded from statistics). Serial sarcomere number is calculated from fascicle and sarcomere length rather than counted, the participants were recreationally active adults rather than athletes, and no injury outcome was measured.",
+      "synthesisCaution": "Staff could read the calculated serial sarcomere number increase as proof that the hamstring is protected from injury, but sarcomere length did not change significantly and the authors state the injury link needs further study.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: detraining sarcomere sample order reversed ('4 and 5') -> 5 central and 4 distal ('from 5 and 4 participants after detraining')",
+            "paper.practicalImplications: 'strength stayed higher' implied no loss -> strength decreased with detraining but remained above pre-training ('A decrease in eccentric strength was observed after the detraining phase (p = 0.006), although eccentric strength remained higher')"
+          ],
+          "residualConcerns": "Article-in-press version: no volume, issue or pages printed. Second author printed as 'Anoosha Pai S'; surname format should be checked against the published record.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1296",
+        "synthesisBatch": "pilot-synthesis-batch-72",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 66,
+      "sourceFile": "Muscle activation differences during eccentric hamstring exercises.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(a) Source identity mismatch: the text is a different article. Its title is 'Muscle performance but not biomechanics associate with second knee injury in a matched cohort of athletes who passed functional return-to-sport criteria after ACL reconstruction' (Knee Surgery, Sports Traumatology, Arthroscopy, 2025, DOI 10.1002/ksa.70245). It contains no eccentric hamstring exercise or muscle activation content. The catalogued filename may belong to a different paper; the text may be eligible under its own filename.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [
+            "exclusionReason: text title quoted as 'associated' -> 'associate' as printed ('Muscle performance but not biomechanics associate with second knee injury'). Identity mismatch confirmed: the text is a case-control study of 11 reinjured athletes after ACLR with matched controls; 'eccentric' and 'Nordic' do not occur, and hamstring appears only as isokinetic strength testing and graft type."
+          ],
+          "residualConcerns": "The correct PDF for 'Muscle activation differences during eccentric hamstring exercises' needs to be located. The ACLR second-injury paper on disk (DOI 10.1002/ksa.70245) may be worth cataloguing under its own title.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 69,
+      "sourceFile": "Muscle forces and fascicle behavior during three hamstring exercises.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 65632,
+        "doi": "10.1111/sms.14158",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Male Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Within-subject laboratory study of 10 male athletes (mean age 23.2 years) at recreational or subnational level, who performed the Nordic hamstring curl, single-leg Roman chair hold and single-leg deadlift in one session, with the two loaded exercises after a separate 1RM session. Muscle forces were estimated with an OpenSim musculoskeletal model, and biceps femoris long-head fascicle length was measured by ultrasound. The authors report the Nordic curl gave the greatest fascicle excursion and the highest peak hamstring forces, while mean eccentric forces were generally higher in the Nordic curl and Roman chair than in the deadlift.",
+      "limitations": "Acute, single-session measures in 10 men with no training outcome. Muscle forces are model estimates, the Roman chair and deadlift were done at a 1RM load rather than typical training loads, fascicle lengths were extrapolated beyond a 60 mm ultrasound field of view, and deadlift fascicle data could not be analysed for three participants.",
+      "synthesisCaution": "Staff may treat the acute fascicle and force differences as proof that the Nordic curl builds longer fascicles better than the other two exercises, but no training adaptation was measured.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: drafter note about table extraction removed -> source-stated limitations (1RM loads, 60 mm field of view extrapolation, three deadlift participants not analysed: 'during the DL we were unable to analyse data from three subjects')",
+            "paper.practicalImplications: said Nordic curl gave larger fascicle lengthening than both other exercises -> significant only versus the deadlift (Table 1: NHC vs RCH 12.6 (-1.6 to 26.7), not significant)",
+            "paper.limitations: added abstract versus Table 1 conflict on fascicle lengthening versus the Roman chair"
+          ],
+          "residualConcerns": "Population tags treat the 10 men (recreational or subnational soccer, American football and athletics) as athletes; a reviewer may prefer Adult / Recreational only.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1297",
+        "synthesisBatch": "pilot-synthesis-batch-72",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 70,
+      "sourceFile": "Muscle morphological changes and enhanced sprint running performance - A 1-year observational study of well-trained sprinters.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 60797,
+        "doi": "10.1002/ejsc.12155",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Track & Field"
+      ],
+      "populations": [
+        "Collegiate",
+        "Male Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Observational pre-post study of 23 male collegiate athletes (16 sprinters over 100 to 400 m, 4 long or triple jumpers and 3 decathletes) who continued their own daily training for one year without intervention. The authors report that 100 m sprint velocity increased (median 8.55 to 8.70 m/s; p < 0.001) and that relative volumes of six thigh and trunk muscles increased, including the biceps femoris long head and semitendinosus. Only the change in relative semitendinosus volume correlated with the change in 50-60 m velocity (rho = 0.591, p = 0.018).",
+      "limitations": "No control group, 6 of 29 recruited athletes dropped out (including for severe musculoskeletal injuries), two sprint tests only, and wind was higher at the second test (median +0.60 to +1.40 m/s), so the sessions are not directly comparable. The only significant muscle-speed correlation was for one muscle, the Spearman analysis cannot adjust for confounders, and the sample is male collegiate athletes, mostly 100 to 400 m runners.",
+      "synthesisCaution": "Staff could read semitendinosus hypertrophy as the cause of faster 50-60 m speed and target it directly, but this is one correlation in 23 athletes with no control group and changing wind conditions.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: added attrition omitted from the draft ('Twenty-nine well-trained male collegiate sprinters were recruited ... six athletes dropped out of this study due to severe musculoskeletal injuries, COVID-19 infection, and withdrawal'). All numbers, p-values and the single significant correlation (rho = 0.591, p = 0.018) checked against Table 1 and Results."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1298",
+        "synthesisBatch": "pilot-synthesis-batch-72",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 78,
+      "sourceFile": "Narrative Review - The role of circadian rhythm on sports performance, hormonal regulation, immune system function, and injury prevention in ath.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 20,
+        "extractedCharacters": 117910,
+        "doi": "10.1016/j.heliyon.2023.e19636",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Performance",
+        "Nutrition",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Review the authors call narrative, of circadian rhythm in athletes covering performance by time of day, hormones, immune function, injury, nutrition and sex differences. The authors searched PubMed, Scopus and Web of Science (core collection) with five keyword groups for English-language, peer-reviewed work up to July 2023, and synthesized the findings narratively. No counts of records screened, no study appraisal and no meta-analysis are reported.",
+      "limitations": "The search is described only by databases, keywords and a date limit, with no study counts, screening steps or quality appraisal, although the authors say they used PRISMA elements. Much of the cited evidence comes from animal, laboratory or non-athlete studies, and the review admits it lacks signaling-pathway and training-model evidence.",
+      "synthesisCaution": "The abstract's conclusion says the interaction between insufficient sleep and time of day on performance 'has been established in this study', but the paper is a review with no original data and only cites other studies on this point, so staff should not treat its time-of-day and sleep claims as proven for their athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: Narrative Review -> Systematic Review / Meta-analysis under the library rule, because a database search is described ('a comprehensive search was conducted in PubMed, Scopus, and Web of Science (core collection) databases')",
+            "synthesisCaution, abstract, limitations: kept and sharpened the flag on the unsupported 'has been established in this study' conclusion; the paper reports 'No data was used for the research described in the article'",
+            "methods, evidenceSummary, tldr: authors' 'narrative review' label kept as description, library coding explained",
+            "athleteDev: removed 'especially for power and technical work' because the review gives conflicting peak times ('muscle power and anaerobic capacity, which appear to peak in the early hours of the morning' vs evening anaerobic peaks)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1299",
+        "synthesisBatch": "pilot-synthesis-batch-72",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 80,
+      "sourceFile": "Neurocognitive and Neuromuscular Rehabilitation Techniques after ACL Injury, Part 1 - Optimizing Recovery in the Acute Post-Operative Phase- A Clinical Commentary.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Clinical commentary (journal label 'Clinical Commentary/Current Concept Review', Level of Evidence 5) that proposes a rehabilitation framework from cited studies and clinical experience, with no search method, original data or structured review of evidence. Excluded for consistency with the Part 2 companion paper (Q81) and library precedent for clinical commentaries.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: INCLUDE as Narrative Review -> EXCLUDE under rule (b); 'Clinical Commentary/Current Concept Review', 'The purpose of this clinical commentary is to outline a proposed comprehensive approach', 'Level of Evidence: 5', and no search method",
+            "conflict of interest checked: 'No funding was provided for this manuscript. Kevin Wilk serves on the medical advisory board for BlazePods and receives educational grant funds from Quickboard. No other relevant author disclosures.' The draft's statement (lead author, BlazePods advisory board, QuickBoard grant funds) was accurate; Senaptec is also featured but carries no disclosure",
+            "taxonomy, summary and paper fields set to null for EXCLUDE"
+          ],
+          "residualConcerns": "Identity matches and own DOI 10.26603/001c.124945 is printed (IJSPT 2024;19(11):1373-1385), so this is purely an eligibility call. The drills prominently feature BlazePods and QuickBoard, products tied to the lead author's disclosed interests, and the senior author's claim of improved outcomes is unquantified. If the library admits clinical commentaries, the draft record was otherwise accurate and could be reused.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 81,
+      "sourceFile": "Neurocognitive and Neuromuscular Rehabilitation Techniques after ACL injury - Part 2 - Maximizing Performance in the Advanced Return to Sport Phase.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Clinical commentary without original methods or a structured review of evidence. The article is labelled 'Clinical Commentary/Current Concept Review', calls itself 'Part 2 of this clinical commentary', reports Level of Evidence 5, and describes no search method, inclusion criteria or appraisal.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: INCLUDE as Narrative Review -> EXCLUDE under rule (b); the text is a clinical commentary with no search method or structured evidence review ('Clinical Commentary/Current Concept Review'; 'The purpose of Part 2 of this clinical commentary is to offer strategies'; 'Level of Evidence 5')",
+            "studyDesign, taxonomy, summary and paper fields: set to null for EXCLUDE"
+          ],
+          "residualConcerns": "Identity matches the filename and the own DOI 10.26603/001c.126270 is printed, so this is a pure eligibility call. If the library later decides to admit clinical commentaries, the draft record would need re-checking before reuse.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 84,
+      "sourceFile": "Neuromechanics of the rate of force development.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 42777,
+        "doi": "10.1249/JES.0000000000000306",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A review article that argues the rate of motor unit recruitment is the main determinant of maximal rate of force development (RFD) across healthy individuals. It combines previously published motor unit recordings from 20 men, a reanalysis of spike frequency adaptation in 242 motor neurons, computer simulations, force data from three muscle groups, and a modelled 4-week strength training study in which maximal force rose but RFD did not. No literature search method is described.",
+      "limitations": "The paper mixes review, simulation and reanalysis of earlier data, and most motor unit recordings come from one muscle (tibialis anterior) in small samples of healthy adults who are not described as athletes. Its claims for sport and training are therefore indirect, and the author notes that other muscles may differ.",
+      "synthesisCaution": "Staff could take the recruitment-rate explanation as established for athletes and use it to prescribe RFD training, when the data come from healthy adults, mostly one muscle, and simulations.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "relevance: confirmed eligible under rule (c); RFD is an exercise performance construct, the article is in Exercise and Sport Sciences Reviews and discusses strength training adaptations (Fig. 4: 'Training interventions that maximize strength or speed'), although no athletes were studied",
+            "confidence: high -> medium because evidence to sport is indirect",
+            "evidenceSummary and paper.findings: omitted the 4-week training analysis -> added ('Despite significant changes in maximal force after 4 wk of training at high forces, we observed no changes in the rate of force development')",
+            "paper.findings: 'increasing the recruitment interval ... than increasing initial discharge rate' -> 'varying', matching the simulation ranges (20 to 200 ms; 60 to 220 pps)",
+            "paper.practicalImplications: advised focusing on the first 50 ms, which the author attributes to previous studies and argues against -> continuous-signal analysis ('should not be assessed in time windows but rather as a continuous signal')",
+            "paper.athleteDev: added the strength-training finding and kept the caution on generalising"
+          ],
+          "residualConcerns": "Relevance is indirect: basic neuromuscular physiology in healthy, non-athlete adults (mostly tibialis anterior), with participant details only in cited earlier studies. A reviewer may judge whether the library wants mechanistic reviews of this kind.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1300",
+        "synthesisBatch": "pilot-synthesis-batch-72",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 89,
+      "sourceFile": "New insights into preventing injuries and illnesses among elite athletics athletes.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial. The text is a 3-page BJSM editorial (Edouard, Alonso and Branco, 2018) that summarises three other studies and gives practical tips. It reports no original methods and no structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 92,
+      "sourceFile": "Night Games- Physiological,              Neuroendocrine and Psychometric Mechanisms to Explain Poor       Sleep.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "Duplicate: this is the accepted, not-copyedited manuscript of the same article retained as Q91 (Juliff L, Peiffer JJ, Halson S; IJSPP; same DOI 10.1123/ijspp.2016-0809), filed under another filename. Q91, the typeset ahead-of-print version, is kept as the library record.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: INCLUDE -> EXCLUDE (duplicate of Q91; both print 'DOI: https://doi.org/10.1123/ijspp.2016-0809' and identical authors and abstract)",
+            "taxonomy and paper fields: set to null for the excluded duplicate"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 93,
+      "sourceFile": "Night Games_ Physiological, Neuroendocrine and Psychometric Mechanisms to Explain Poor Sleep.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "Duplicate: this is the accepted, not-copyedited manuscript of the same article retained as Q91 (Juliff L, Peiffer JJ, Halson S; IJSPP; same DOI 10.1123/ijspp.2016-0809), filed under another filename. Q91, the typeset ahead-of-print version, is kept as the library record.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: INCLUDE -> EXCLUDE (duplicate of Q91; both print 'DOI: https://doi.org/10.1123/ijspp.2016-0809' and identical authors and abstract)",
+            "taxonomy and paper fields: set to null for the excluded duplicate"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 94,
+      "sourceFile": "Nighttime smartphone use, sleep quality, and mental health - Investigating a complex relationship.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) Not relevant to athletes, sport, exercise performance or athlete health. The text is an original study (Andersen et al., Sleep, 2023, zsad256) of nighttime smartphone use, sleep quality and mental health in three Danish SmartSleep samples aged 16 to 89 years overall (a random Population Sample aged 18 to 50, a Citizen Science Sample aged 16 and over, and a Clinical Sample of young women aged 18 to 25). No athletes are studied, and the only athlete reference is in the reference list.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: sample ages misstated ('adults 16 to 89 years in the Population and Citizen Science samples') -> Population Sample 18 to 50, Citizen Science 16 and over ('a random sample of Danish adults between 18 and 50 years'); decision unchanged"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-77-brain-health-psychology",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Brain Health & Psychology queue positions 41-64. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 41,
+      "sourceFile": "Mental Fatigue Impairs Endurance Performance- A Physiological Explanation.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 64171,
+        "doi": "10.1007/s40279-018-0946-9",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "This theoretical review proposes that adenosine accumulating in the brain during prolonged cognitive work raises perceived exertion and reduces motivation during later endurance exercise. It draws on animal pharmacology, caffeine studies, sleep deprivation work and brain imaging, and contains no new data or described search method. The authors state that the adenosine hypothesis has not been tested directly in humans.",
+      "limitations": "No original data or systematic search are reported, so the paper generates a hypothesis rather than establishing a mechanism. Much of the supporting evidence comes from animal and pharmacological work, and the authors say direct human measurement is not yet possible.",
+      "synthesisCaution": "Staff could read the adenosine mechanism as established, when the authors present it as an untested hypothesis.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: said no appropriate self-report measure of motivation exists -> self-report is the only measure available and is prone to bias ('As currently no other measure of motivation is available')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1346",
+        "synthesisBatch": "pilot-synthesis-batch-77",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 42,
+      "sourceFile": "Mental Fatigue Negatively Impacts Cognitive and Physical Performance Outcomes - A Large-Scale Randomized Crossover Trial.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 81158,
+        "doi": "10.1249/MSS.0000000000003852",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "A randomized, counterbalanced crossover trial in 117 healthy adults aged 18 to 50 (57 women; 32 +/- 9 years), comparing a 45-minute individualized Stroop task with a self-chosen documentary before a 6-minute GoNoGo task and a 20-minute cycling time trial. After the Stroop task, GoNoGo reaction time was slower, time-trial cadence was lower (87 vs 88 rpm, P = 0.042, d = 0.22) and time-trial distance showed only a trend (12.6 vs 12.8 km, P = 0.059, d = 0.20). Mental fatigue, physical fatigue and RPE were higher during the time trial after the Stroop task, and sleepiness was higher overall in the Stroop condition.",
+      "limitations": "The distance result is a trend and the cadence effect is small, so the conclusion that physical performance was impaired is stronger than the data. The text reports 117 participants in the baseline table and 104 who completed all steps, and the analysed sample is not stated clearly.",
+      "synthesisCaution": "Staff could read this as showing that a demanding cognitive task reduces endurance performance, when the only performance effects were small and the distance result was a trend.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings: sleepiness reported as higher during the time trial -> higher overall in the Stroop condition ('significant overall higher sleepiness value in the Stroop task condition'); added unchanged lactate and motivation",
+            "populations: Mixed / Unspecified -> Adult / Recreational (healthy non-athlete adults 18 to 50)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1347",
+        "synthesisBatch": "pilot-synthesis-batch-77",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 64,
+      "sourceFile": "Multimodal Imaging of Retired Professional Contact Sport Athletes Does Not Provide Evidence of Structural and Functional Brain Damage.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 41773,
+        "doi": "10.1097/HTR.0000000000000422",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football",
+        "Ice Hockey"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Multimodal 3 tesla MRI substudy comparing 21 retired professional contact sport athletes with 21 age-matched noncontact sport athletes, using structural, diffusion, susceptibility, spectroscopy and perfusion sequences. Group comparisons were ANCOVA adjusted for age, body mass index and education, reported with effect sizes and 95% confidence intervals.",
+      "limitations": "With 21 per group the study had low power, which the authors acknowledge, so a null result does not show the groups are alike. The athletes' concussion history and cognitive test results are not reported in this paper, and sex is stated only for the contact group.",
+      "synthesisCaution": "Staff could read the title as proof that retired contact athletes have no brain damage, when the study was too small to detect moderate group differences and did not report their concussion histories.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: removed trivial 'TR/TR' typo note; added that several CIs exclude zero with non-significant adjusted P values and moderate to large perfusion effect sizes (Table 4, e.g. accumbens MTT CI 169.5 to 1353.7, P = .210, d = 0.97), and that the MCI subgroup comparison is asserted but not shown",
+            "practicalImplications: reworded the individual-use sentence so it does not rest on the null group result"
+          ],
+          "residualConcerns": "Concussion and brain-health topic. Title and conclusion state 'no evidence of damage' from an underpowered null result; internal CI/P inconsistencies in Tables 3 and 4 suggest reporting problems.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1348",
+        "synthesisBatch": "pilot-synthesis-batch-77",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

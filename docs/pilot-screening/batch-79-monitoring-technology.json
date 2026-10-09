@@ -1,0 +1,776 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-79-monitoring-technology",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Monitoring & Technology queue positions 1-75. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 1,
+      "sourceFile": "Load-velocity relationship variables to assess the maximal neuromuscular capacities during the back squat exercise.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 38492,
+        "doi": "10.1177/19417381211064603",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Combat Sports"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Repeated-measures validation study in 24 male national-level wrestlers who completed a 1RM session and four load-velocity sessions across concentric-only and eccentric-concentric Smith-machine back squats. Between-session reliability was high for Aline (CV 2.58% to 4.37%; ICC 0.97 to 0.99), while L0 and v0 had acceptable CVs (5.08% to 9.01%) but ICCs (0.45 to 0.91) that fell below the paper's own 0.80 threshold for all v0 conditions and one L0 condition. L0 correlated very largely with 1RM (r = 0.87 to 0.88) and Aline nearly perfectly with Pmax (r = 0.98 to 0.99).",
+      "limitations": "A single small sample of male national-level wrestlers tested on a Smith machine. Validity was examined only for L0 and Aline against 1RM and Pmax, not for v0 or against sport performance or injury outcomes.",
+      "synthesisCaution": "Staff may read the authors' conclusion that v0 is acceptably reliable as license to track it, although every v0 ICC in Table 1 (0.45 to 0.72) is flagged by the paper's own criteria as unacceptable.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary, abstract, findings: v0 (and one L0 condition) described as acceptably reliable -> reported that all v0 ICCs (0.45 to 0.72) and L0 ecc-con average ICC (0.77) fall below the paper's own threshold (Table 1 footnote: 'Boldfaced numbers indicate an unacceptable reliability (CV > 10%, or ICC < 0.80)')",
+            "synthesisCaution: reframed around the authors' 'acceptable' wording conflicting with their own table criteria",
+            "limitations: added age range note (participants under 18 with guardian consent) and the authors' versus table reliability conflict",
+            "practicalImplications: tightened v0 advice to match ICC values"
+          ],
+          "residualConcerns": "Authors' narrative and conclusion call L0 and v0 reliability 'acceptable' while their own table flags v0 ICCs as unacceptable; record reports the table. Sample includes some participants under 18, tagged Professional / Elite as national-level competitors. No volume or pages printed (vol. XX), so citation has year only.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1351",
+        "synthesisBatch": "pilot-synthesis-batch-79",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 9,
+      "sourceFile": "Low Ankle-GO Score while returning to sport after lateral ankle sprain leads to a 9-fold increased risk of recurrence - A two-year prospective cohort study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 41833,
+        "doi": "10.1186/s40798-024-00693-w",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Prospective cohort of 64 active patients with a recent lateral ankle sprain, each tested with the Ankle-GO score about two months after injury. Of 54 who responded to a recurrence survey at two years, 18 (33.3%) reported a recurrent sprain, and those patients scored lower at two months (5.4 vs 9.1 points, p = 0.002; AUC 0.75). A score below 8 points was associated with higher recurrence odds (OR 8.6, 95% CI 2 to 37.2) in multivariable logistic regression.",
+      "limitations": "Only 18 recurrences were observed, the 8-point cut-off was derived and tested in the same 54 patients without external validation, and 15% were lost to follow-up. Recurrence was captured by a single survey at two years, so number, severity and timing of re-sprains are unknown.",
+      "synthesisCaution": "Staff may read the nine-fold figure as a validated return-to-sport threshold, when it is an in-sample odds ratio with a very wide confidence interval from a small cohort.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Sex labels conflict in the source: Methods give 36 women and 28 men, Table 1 gives men/women 36/28, the abstract gives 23 men and 31 women of the 54 analysed, and Table 3 (women/men) lists 4/14 reinjured and 19/17 not reinjured. On the Table 3 labels the reinjury proportion is lower in women, which contradicts the reported women OR of 3.8. No sex tags were applied. A reviewer should confirm the sex split against the published article before using the sex finding.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1352",
+        "synthesisBatch": "pilot-synthesis-batch-79",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 21,
+      "sourceFile": "MRI radiomics for hamstring stain injury identification and return to sport classification - A pilot study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 56452,
+        "doi": "10.1007/s00256-023-04449-7",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "American Football",
+        "Track & Field",
+        "Soccer"
+      ],
+      "populations": [
+        "Collegiate",
+        "Injured Athletes",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "This pilot study used MRI from 32 Division 1 collegiate athletes (25 male, 7 female, mean age 19.6 years) who had an acute hamstring strain injury, scanned within 7 days of injury. Radiomics features from four hamstring muscles were fed to cross-validated support vector classifiers to separate injured from uninjured limbs and to classify time to return to sport. The authors report that combined DTI and T2-weighted features best separated injured from uninjured limbs (accuracy 0.842, AUC 0.844) and that all features combined gave the best binary return-to-sport classification at a 25-day cutoff (accuracy 0.953, AUC 0.958).",
+      "limitations": "The sample of 32 is small, and performance was estimated only by cross-validation within the same cohort without a separate external test set. Return to sport was defined by clinical clearance, and the authors did not compare the classifiers with clinical tests, so the findings cannot show added value over current decisions.",
+      "synthesisCaution": "Staff could read the high accuracy values as proof that MRI radiomics can set a safe return-to-sport date for an individual athlete, when they come from a 32-athlete cross-validated pilot with no external validation.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: removed the drafter's explanation that the text's 0.93 F1 'matches the binary DTI value in Table 3', which guesses the source of the error; now reports both printed values and flags the conflict",
+            "paper.findings: added that DTI-T2w was not significantly better than DTI or All ('does not provide statistically significantly higher performance than the combination of all the DTI maps-based features or DTI, T2w, and T1w features'); replaced the accuracy CI with SDs for accuracy and AUC from Table 3",
+            "paper.limitations: added further printed conflicts ('between 14 to 42 days (2-4 weeks, n = 14)'; Table 1 primary muscle counts 1+19+3+3 = 26 vs BAMIC grade > 0 count 28) and removed the data-availability sentence to keep length"
+          ],
+          "residualConcerns": "Multiclass weighted F1 conflict (0.93 in text vs 0.721 in Table 4) cannot be resolved from the text. Return-to-sport classification is clinically sensitive; performance comes only from internal cross-validation on 32 athletes.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1353",
+        "synthesisBatch": "pilot-synthesis-batch-79",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 30,
+      "sourceFile": "Maximal Strength in Relation to Force and Velocity Patterns During Countermovement Jumps.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 33119,
+        "doi": "10.1123/ijspp.2020-0552",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Collegiate",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Cross-sectional correlational study of 19 female Division I lacrosse players, who completed up to three maximal countermovement jumps and three maximal isometric midthigh pulls in one off-season session, with force and velocity time series reduced by principal components analysis. Midthigh pull peak force correlated with a force-time pattern (PC2, rho 0.544, P = .016) and a center-of-mass velocity pattern (PC2, rho 0.634, P = .004). It did not correlate with discrete jump variables, including jump height (rho 0.308, P = .199).",
+      "limitations": "The sample is 19 women from one team in a single session, so the associations may not generalize to other athletes or times of year. The paper reports many correlations and describes no correction for multiple comparisons, so the significant patterns need replication.",
+      "synthesisCaution": "Staff could treat the waveform patterns as a validated test profile that replaces jump height, when this is one cross-sectional sample and the patterns were not tracked across training or fatigue.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.methods and evidenceSummary: 'up to three' isometric midthigh pulls -> three maximal IMTP trials, single off-season session ('2 submaximal effort IMTP and 3 maximal effort IMTP'; 'testing for each athlete was completed within one session')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1354",
+        "synthesisBatch": "pilot-synthesis-batch-79",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 33,
+      "sourceFile": "Mechanical and metabolic power in accelerated running - Part 2 - Team sports.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 60572,
+        "doi": "10.1007/s00421-023-05286-1",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Other",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Retrospective analysis of GPS data from 549 observations of 29 outfield players across 38 official matches of one professional Italian Serie B team in the 2020-2021 season. The authors compare counts of acceleration events above 2.5 m/s2 with counts of mechanical power events (external power above 80% of each player's acceleration-speed profile) and metabolic power events, and they report that mechanical power events were 1.61 times the acceleration count for players who completed the match.",
+      "limitations": "The data come from one team in one season, with no outcome data linking event counts to performance or injury. The 15-minute trends are affected by substitutions and tactics, which the authors acknowledge.",
+      "synthesisCaution": "Staff could read the 1.61 ratio as a general property of soccer matches, when it comes from one squad and depends on the chosen 80% power threshold and on each player's starting speed and position.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.methods: profiles described as built 'from in-situ sprints' -> built in situ from match GPS data, 320 profiles from 24 players with role averages for 5 ('A total of 320 in situ ASPs ... obtained from 24 different players'); metabolic event threshold made explicit ('MP > VO2', 'assumed to be 18 W/kg')",
+            "paper.limitations: added undisclosed-in-draft conflict of interest ('CO and PEdP are scientific consultants for Exelio SRL, the company which provided the GPS units')",
+            "paper.athleteDev: 'his own profile' -> 'their own'; player sex is not stated in the text",
+            "populations: checked; sex not stated, so no sex tags (kept Professional / Elite only)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1355",
+        "synthesisBatch": "pilot-synthesis-batch-79",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 46,
+      "sourceFile": "Metabolic Power in Team Sports - Part 1- An Update.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 36484,
+        "doi": "10.1055/a-0592-7660",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "A theoretical update of a GPS-based model that estimates energy cost and metabolic power in team sports by treating accelerated running as uphill running. The update adds separate energy costs for walking and running and an air-resistance term, and gives an illustrative whole-match result about 14% lower than the earlier approach, using average data for 497 Serie A players (data cited as in preparation). The paper contains no new comparison with measured energy expenditure, and refers to the accompanying Part 2 paper for estimates of oxygen consumption.",
+      "limitations": "The paper is theoretical, so the model's accuracy is not tested here, and the match figures rest on an unpublished dataset cited as in preparation. The authors declare a commercial interest in the GPS system the model is built into.",
+      "synthesisCaution": "Staff could treat the model's energy values as measured energy expenditure, when they are estimates from GPS speed and acceleration under stated assumptions.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/abstract: 'validation is reported in Part 2' -> paper has no new comparison with measured values and refers to Part 2 for oxygen consumption estimates ('the effective O2 consumption can also be obtained, as shown in the accompanying paper')",
+            "paper.practicalImplications/athleteDev: removed 'later validation work' framing; now cites the paper's own data-acquisition cautions and assumptions",
+            "populations: Mixed / Unspecified -> Professional / Elite (illustrative data from 497 Serie A players)"
+          ],
+          "residualConcerns": "Authors declare a commercial interest in the GPEXE system.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1356",
+        "synthesisBatch": "pilot-synthesis-batch-79",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 47,
+      "sourceFile": "Metabolic Power in Team Sports - Part 2- Aerobic and Anaerobic Energy Yields.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 41132,
+        "doi": "10.1055/a-0592-7219",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A methodological paper that compares GPS-derived estimates of metabolic power and oxygen uptake with a portable metabolic cart across walking, constant running and three sprint protocols. Estimated oxygen uptake was close to measured values for walking, about 20% higher for constant running and about 15% lower for intermittent running. The paper also reports match-level high- and low-intensity bouts for 497 Serie A players, with the data cited as in preparation.",
+      "limitations": "The abstract's average difference of about 10% comes from one typical subject in the body text, and the number of subjects in the new protocol experiment is not stated. The match results and much of the validation data rest on work cited as in preparation, so they cannot be checked from this text.",
+      "synthesisCaution": "Staff could read the GPS estimates as measured oxygen uptake, when the model was about 15% to 20% off in some protocols.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr: said the model estimated oxygen uptake 'in soccer'; the validation protocols were walking, running and sprint tests, not soccer play -> reworded",
+            "paper.methods: added the 9-subject preliminary shuttle-run data ('a preliminary set of data was collected on a group of 9 subjects') and that the later experiment's sample size is not stated",
+            "paper.limitations: 'pre-exercise oxygen uptake' -> resting oxygen uptake measured in the recovery periods ('the last 30 s of every period of resting recovery ... about 46 %')"
+          ],
+          "residualConcerns": "The Thieme header labels the article 'Review'; it mixes theory with preliminary validation data, so the Methodological / Validation coding is a judgment. Authors have a commercial link (Exelio srl, GPEXE).",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1357",
+        "synthesisBatch": "pilot-synthesis-batch-79",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 52,
+      "sourceFile": "Monitoring Dietary Supplements for Undeclared Diuretics as a Strategy for Preventing Unintentional Doping.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 41867,
+        "doi": "10.3390/pr13010079",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Nutrition",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Analytical method development and validation study. A gradient HPLC-UV method for furosemide, torasemide and hydrochlorothiazide was validated to ICH guidance (linearity R2 above 0.999 over 3.125 to 50 µg/mL; intra-day CV 0.18 to 1.48%; inter-day CV 0.52 to 2.04%; spiked-supplement recovery 95.5 to 102.7%). It was applied to 10 purchased supplements, in which one herbal product marketed for weight loss contained undeclared furosemide at 1210 µg per capsule (mean of three replicates).",
+      "limitations": "No athletes or human samples were studied, so the evidence concerns laboratory method performance and a 10-product screen with one positive result. All 10 products were weight-loss or detox supplements bought in Bulgaria, not sports supplements, so the screen cannot estimate how often products used by athletes are contaminated.",
+      "synthesisCaution": "Staff could read the single contaminated product (1 of 10) as a measure of how often supplements contain undeclared diuretics, when 10 products are too few to estimate prevalence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations/paper.methods/paper.limitations: added that all 10 products were weight-loss or detox supplements ('All these products were promoted as beneficial for weight loss and detoxification'), not sports supplements",
+            "paper.limitations: added that no mass-spectrometry confirmation of the positive sample is reported (identification by HPLC-UV only)"
+          ],
+          "residualConcerns": "Medication-related content (diuretics). The positive finding rests on HPLC-UV retention time and one product; no confirmatory LC-MS/MS is described.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1358",
+        "synthesisBatch": "pilot-synthesis-batch-79",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 53,
+      "sourceFile": "Monitoring Training Effects in Athletes - A multidimensional framework for decision-making.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "Duplicate publication: this article (DOI 10.1007/s40279-026-02417-4) is already published in the Evidence Library as ID 664, a reviewed Zotero publication. The local PDF was screened and drafted, then excluded at assembly to avoid a duplicate record.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "The paper states the cited Thorpe et al. anchor in two directions ('a 1-unit decrease in perceived fatigue was associated with a ~400-m increase in high-speed running the day prior' and 'a 400-m increase in high-speed running was associated with a 1-unit improvement in perceived fatigue'); the record uses neutral wording. Co-author Thorpe is first author of that cited study. No volume or pages printed (online article, accepted 25 February 2026).",
+          "spotCheckPriority": "normal",
+          "decisionChanged": true
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 54,
+      "sourceFile": "Monitoring external workload with wearable technology after anterior cruciate ligament reconstruction - A scoping review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 53216,
+        "doi": "10.1177/23259671231191134",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Scoping review (PRISMA-ScR) of 20 studies, from a February 2023 search of eight databases, that used wearable devices to measure external workload after anterior cruciate ligament reconstruction (ACLR). The included studies covered 935 participants (603 with ACLR, 332 healthy controls), 69% female, 77% physically active and 23% athletes, mostly measured during free-living daily activity with accelerometers. The authors report lower daily steps or moderate to vigorous physical activity (MVPA) in several ACLR groups than controls, and between-limb differences in some studies, but no formal quality appraisal was done.",
+      "limitations": "No quality appraisal was conducted, and the review did not assess the validity or reliability of the outcomes it lists. Most included studies were cross-sectional, several had very small groups (for example 5 to 7 per group, and one case report), and only one study used GPS and one used pressure insoles, so most findings rest on accelerometer step counts and MVPA.",
+      "synthesisCaution": "Staff may read the lower daily steps and MVPA seen in ACLR groups as an indicator of reinjury risk or return-to-sport readiness, when the review found no evidence that these measures predict future ACL injury.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: listed 'Peng' as a fifth author -> four authors; 'Hossein Rouhani, PhD, Peng' is a credential",
+            "identityCheck: removed claim that the author list is cut off",
+            "populations: removed 'Injured Athletes'; participants were mostly physically active non-athletes ('77% were as physically active; 23% were athletes'), so only Mixed / Unspecified fits the tagging rule",
+            "paper.findings: added that some studies found no group difference (Davis-Wilson: 'no significant differences in daily steps or MVPA'; Ezzat: no MVPA difference)",
+            "paper.practicalImplications: removed unsupported advice to use limb comparisons and age guidance 'rather than a single cut-off' -> authors' caution ('should exercise caution when interpreting wearable technology outcomes')"
+          ],
+          "residualConcerns": "A reviewer may want an ACLR or injured tag for findability; the sample is mostly physically active non-athletes. Table 1 labels the rugby study 'Elite rugby union' while Table 3 says 'rugby league'; the record says 'rugby'.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1359",
+        "synthesisBatch": "pilot-synthesis-batch-79",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 58,
+      "sourceFile": "More than metrics - The role of socio-environmental factors in determining the success of athlete monitoring.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 53326,
+        "doi": "10.1080/02640414.2024.2330178",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Cross-sectional online survey of 30 UK sport science and medicine practitioners (40% of 75 invited) who worked with tier 3 to 5 Olympic and Paralympic athletes, run in 2017/18. At the Bonferroni-corrected alpha, a reported scientific underpinning correlated with feedback to athletes and with action taken on meaningful change, and feedback and athlete education each correlated with perceived adherence; the link between scientific underpinning and confidence in self-report sensitivity was only a trend. Free-text answers were grouped into themes.",
+      "limitations": "This is a perception survey with a 40% response rate and no athlete-level data or outcome measures, so it cannot show whether monitoring changes adherence, performance or injury. The sample is one country, collected in 2017/18.",
+      "synthesisCaution": "Staff could read the correlations as proof that feedback or a scientific basis drives athlete adherence, when the paper shows only associations between practitioners' perceptions.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: listed confidence in self-report measures as linked to scientific underpinning without noting p = 0.049 missed the corrected alpha of 0.017 -> now described as a trend, and added the significant athlete education-adherence correlation (rS(22) = 0.547, p = 0.006)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1360",
+        "synthesisBatch": "pilot-synthesis-batch-79",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 59,
+      "sourceFile": "Motion Capture Technologies for Athletic Performance Enhancement and Injury Risk Assessment - A Review for Multi-Sport Organizations.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 25,
+        "extractedCharacters": 89839,
+        "doi": "10.3390/s25144384",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Basketball",
+        "Volleyball",
+        "Soccer",
+        "Rugby",
+        "American Football",
+        "Baseball / Softball",
+        "Swimming & Diving",
+        "Gymnastics",
+        "Track & Field"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Review of motion capture validation, comparative and implementation studies from 2015 to 2025, found through PubMed, SPORTDiscus and Web of Science searches. The authors included 82 of 234 full-text articles, covering optical, inertial (IMU) and markerless systems in indoor court, aquatic and outdoor field settings, and used them to propose a tiered purchasing framework.",
+      "limitations": "The authors call this a narrative review, but a database search is described, so it is coded as a systematic review; no risk-of-bias appraisal or pooled analysis is reported, and it should not be read as a meta-analysis. Its accuracy figures are ranges taken from other studies, and female-specific and long-term reliability data are sparse.",
+      "synthesisCaution": "Staff could take the abstract's 2 to 8 degree IMU accuracy as a general figure for any IMU system, when it comes from Xsens MVN validation studies and other cited IMU studies report joint-angle RMSEs of about 10 degrees at the hip in running and 8 to 28 degrees sagittal and up to 117 degrees transverse for APDM Opals in dynamic tasks.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: said the abstract's 2 to 8 degree IMU accuracy 'summarizes its own recommendations' -> it is attributed to Xsens MVN validation studies ('Xsens MVN has been validated ... with a joint angle accuracy of 2-8 degrees ... [30-32]'), and the conflict is with larger errors from other IMU studies",
+            "synthesisCaution: vague '10 to over 100 degrees' -> specific cited values (Xsens hip ~10.1 degrees; APDM Opal sagittal 8.11-28.37, transverse 5.08-116.75 degrees)",
+            "findings: added APDM Opal sagittal range and dynamic tasks; named Theia3D as the markerless source; swimming figures no longer attributed to a single study",
+            "practicalImplications: foundation phase presented as IMU 'plus' markerless -> text says 'investing in either of the following'",
+            "athleteDev: conservative thresholds tied to the review's stated reason (artifact and measurement error)"
+          ],
+          "residualConcerns": "Authors call this a narrative review but describe a database search (986 records, 82 included); coded Systematic Review / Meta-analysis per library precedent, though inclusion used prioritization and no appraisal. Several recommended products are named; framework is the authors' judgment, not tested.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1361",
+        "synthesisBatch": "pilot-synthesis-batch-79",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 61,
+      "sourceFile": "Moving beyond velocity derivatives - Using GPS data to extract sequential movement patterns at different levels of rugby league match-play.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 24,
+        "extractedCharacters": 35977,
+        "doi": "10.1080/17461391.2022.2027527",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Observational analysis of ball-in-play GPS data from 11 rugby league matches in 2019 (four regular Super League, three Super League semi-finals or finals, four international), all recorded with the same 10 Hz device model. The sequential movement pattern framework found 121 patterns, and linear discriminant analysis and Kruskal-Wallis tests compared competition levels; the number of players is not reported.",
+      "limitations": "This is a descriptive comparison of 11 matches from one season with no athlete outcome data, so it cannot show that the patterns cause differences in performance or injury. Opta event data were used only to remove ball-out-of-play periods, and the patterns were not aligned with match events, so what each pattern represents on the field is not established.",
+      "synthesisCaution": "Staff could read the movement-pattern differences as proof that international rugby league needs more high-speed training, when the study compared 11 matches and tested no training or outcome measures.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: 'GPS data from one device' -> same device model ('recorded with the same microtechnology device (Optimeye S5...)'), added ball-in-play restriction and that player numbers are not reported",
+            "screeningLimitations: 'do not check against video or event data' -> Opta event data were used to split ball in play vs out of play, but patterns were not aligned with match events (authors list this as future work)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1362",
+        "synthesisBatch": "pilot-synthesis-batch-79",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 72,
+      "sourceFile": "Myostatin inhibitory peptides in sports drug testing.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 50822,
+        "doi": "10.1002/dta.3473",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Analytical method development and validation study for detecting six myostatin inhibitory peptides (three derived from the myostatin propeptide, three from follistatin) in doping control serum by protein precipitation and LC-HRMS/MS, characterized against WADA guidelines. Using commercial serum and samples from 10 healthy volunteers (5 male, 5 female), the authors report specific detection with estimated detection limits of 3 to 9 ng/mL, recoveries mostly of 20% to 48% (about 8% for Peptide 8a), and several serum metabolites that could serve as extra detection targets.",
+      "limitations": "Validation used spiked serum and plasma only; none of these peptides has been given to humans, so no post-administration samples exist and real detection windows and sensitivity are unknown. Several peptides degraded within an hour or two in serum, and the work has no athlete participants or performance or health outcomes.",
+      "synthesisCaution": "Staff could read this as evidence that myostatin inhibitory peptides build muscle or are already reliably caught in testing, but it only shows a spiked-sample assay, and the muscle effects cited come from mouse studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: EXCLUDE (c) -> INCLUDE, applying the library precedent that doping-control methodology is athlete health evidence (Q17, batches 64-71 review). The paper is explicitly framed for sports drug testing ('a proactive development of detection assays is of utmost importance to deter athletes from misusing such compounds') and validated 'according to current WADA guidelines'.",
+            "taxonomy, summary and paper fields: null -> written from the full text (LOD 'ranged from 3 to 9 ng/mL'; recovery 'from 20% to 48% for most of the analytes ... Peptide 8a ... only 8%'; stability per Table 3).",
+            "populations: Mixed / Unspecified, because the only human samples are serum and plasma from 10 healthy volunteers (5 male, 5 female) of unstated athletic status, plus commercial serum."
+          ],
+          "residualConcerns": "Inclusion rests on the anti-doping precedent; the operator may still prefer exclusion (c) because there are no athlete participants or outcomes. Volume, issue and pages are not printed ('Drug Test Anal. 2023;1-11'), so the citation carries year only. Table 3 labels some linearity values R and one R2, and the text quotes both r above 0.97 and r2 of at least 0.974; the record reports only r above 0.97.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1363",
+        "synthesisBatch": "pilot-synthesis-batch-79",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 75,
+      "sourceFile": "NOVELN~1.PDF",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 64623,
+        "doi": "10.1177/23259671251317223",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Review the authors call narrative, of quantitative MRI (qMRI) and shear wave elastography (SWE) for knee and shoulder soft tissue, including meniscus, ACL graft, cartilage and rotator cuff. The authors searched PubMed only, in October 2022, using four keyword phrases, and included cohort studies, reviews, book chapters and trials with no reported screening counts or appraisal. They conclude that qMRI and SWE may improve early detection and post-treatment assessment, while noting that most cited applications are early-stage.",
+      "limitations": "The search was a single-database PubMed keyword search run in October 2022, about two years before acceptance, with no screening counts or quality appraisal. Most cited studies are small, several are animal (sheep, goat, pig, horse) or in vitro, and athlete relevance is indirect: the populations are orthopaedic patients (ACL reconstruction, meniscal repair, rotator cuff and Achilles injury) and athletes appear only in one SWE passage and one illustrative image of a college basketball player.",
+      "synthesisCaution": "Staff could over-read the qMRI and SWE examples as validated diagnostic tools for athletes, when the authors state that UTE-T2* and T1rho mapping are not yet FDA-approved, that SWE is FDA approved but not yet widely used for musculoskeletal tissue, and that SWE results depend on operator, machine and cutoff values.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: Narrative Review -> Systematic Review / Meta-analysis under the library rule, because a database search is described ('A literature search was performed in October 2022 via PubMed using the following keywords')",
+            "synthesisCaution: draft said T2*, T1rho and SWE are 'not yet established for routine use'; text says 'T2* mapping using an ultrashort echo acquisition and T1r mapping are not yet FDA-approved' and 'SWE is FDA approved but is not yet widely implemented' -> corrected",
+            "screeningLimitations: athlete relevance made explicit; content is orthopaedic patient imaging, with athletes only in 'persistent changes in SWE tendon stiffness after repetitive loading as seen in athletes' and the Figure 8 'asymptomatic college basketball player'",
+            "evidenceSummary, methods: kept authors' 'narrative review' label as description; added that no screening counts or appraisal are reported",
+            "limitations: added author industry disclosures (GE Healthcare, Siemens Healthineers, Samsung)"
+          ],
+          "residualConcerns": "Athlete relevance is indirect (ACL reconstruction, meniscal repair and tendon imaging in patients, plus animal models). Kept INCLUDE because the tissues and injuries are core sports-medicine content and the journal is sports medicine, but a reviewer may prefer EXCLUDE (c) if the library requires athlete samples. The text header says 'Original Research' while the Study Design line says 'Review'.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1364",
+        "synthesisBatch": "pilot-synthesis-batch-79",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}
