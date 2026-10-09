@@ -39,6 +39,8 @@ Read this first. Update it before ending every session.
   (80 papers, IDs 744-823) are staged in draft PR #9 (branch `batch-19-26-staged`). Review
   `docs/pilot-screening/batches-19-26-review.md` on that branch, then merge to publish.
   After merging, the next unused ID is 824 and the next queue has 90 candidates.
+- To finish the project in a fresh session, paste the prompt in
+  `docs/agents/goal-finish-library-and-ask.md`.
 - Run the planned 14-day, three-person/nine-question concierge pilot with a named lead
   and recorded claim audits. Score Decision Utility and Evidence Integrity against the
   approved gates before investing in an authenticated self-service workspace.
