@@ -1,0 +1,42 @@
+{
+  "questionId": "SP03",
+  "tier": "Limited",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "Abstract p1 matches verbatim (36 team-seasons, 16 teams, 627 players, 96 injuries). Authors add that CIs overlap and the design 'precludes the examination of causal relationships'; the brief carries this as association-only elsewhere."},
+    {"claimId": "C2", "rating": "supported", "note": "p4: 'Only the data of players who played the match that ended the current turnaround were used for analysis.'"},
+    {"claimId": "C3", "rating": "supported", "note": "p9: 'this optimal chronic dose is likely specific to each population and context'."},
+    {"claimId": "C4", "rating": "minor", "note": "Source p10 also names which days (D-4 and D-3) and why ('so that players do not reach D-2 with excessive levels of neuromuscular fatigue'); the claim drops this useful specifics but does not distort it."},
+    {"claimId": "C5", "rating": "supported", "note": "Abstract p1 verbatim, 23 La Liga players, 2017/18, 28 microcycles, p<0.05."},
+    {"claimId": "C6", "rating": "supported", "note": "Abstract p1: 'the MD-2 was the day that required the least stimuli from the players (p < 0.05)'."},
+    {"claimId": "C7", "rating": "supported", "note": "p13 verbatim. Source is an observational survey of S&C coaches; the brief labels it practice-focused, which is fair."},
+    {"claimId": "C8", "rating": "supported", "note": "Abstract p2 verbatim; 23 LaLiga123 players."},
+    {"claimId": "C9", "rating": "supported", "note": "p12 conclusion and abstract p2 both say training WCS 'did not meet the demands of MD' and that 1-10 min drills on MD-4 'may be useful'."},
+    {"claimId": "C10", "rating": "supported", "note": "p12 verbatim. Context is the MD+1/MD+2 section and the recommendation is cited to another reference [47], not tested in this survey."},
+    {"claimId": "C11", "rating": "minor", "note": "Abstract p1: the 'workload indices' are weekly training monotony and strain derived from body load and metabolic power in 21 Iranian Premier League players, not raw load volume; differences also held mid- and end-season."},
+    {"claimId": "C12", "rating": "supported", "note": "Abstract p1 verbatim (Hedges g 0.12, p=0.134)."},
+    {"claimId": "C13", "rating": "supported", "note": "Abstract p1 verbatim. Congestion is defined as at least two matches with 4 days or less recovery, which differs from the one-competition week assumed in this brief."},
+    {"claimId": "C14", "rating": "supported", "note": "p6 bullet verbatim; expert commentary."},
+    {"claimId": "C15", "rating": "supported", "note": "p6: 'There is no research-based evidence to manage travel fatigue in athletes, and low-quality evidence exists for effective interventions to recover from jet lag'."},
+    {"claimId": "C16", "rating": "supported", "note": "p3: 'practitioners have shifted to believe there is no magic number or threshold ... ACWR should be contextualized with other information (e.g., readiness)'."},
+    {"claimId": "C17", "rating": "supported", "note": "p2 Case 1 verbatim. The source also speculates that concurrent upper-body strength and endurance work during lower-body restriction predisposed six of seven pec major injuries (p4), which the claim does not capture."}
+  ],
+  "statementIssues": [
+    {"location": "guardrails[0]", "severity": "minor", "note": "'Avoid compensating with unplanned overload in the unrestricted body region' is advice not stated in C17; the source's own speculation (concurrent upper-body endurance/strength work, biweekly PR bench attempts) could support a version of it but was not claimed. Should be labeled professional caution or backed by a claim."},
+    {"location": "evidenceConfidence.dimensions.sourceReview", "severity": "minor", "note": "Says several sources are legacy records without full-text review, but every source is marked fullTextReviewed true; also lists 9 sources while 10 are cited (484 is a third single-team study)."},
+    {"location": "monitoring[1]", "severity": "minor", "note": "'This shows who needs top-up exposure and who needs recovery' is an inference beyond C10/C11, which describe a load gap and a recommendation for limited-minute players only."},
+    {"location": "guardrails[2]", "severity": "minor", "note": "Congestion evidence uses 2+ matches within 4 days or less recovery; applying it to a single-competition week with travel is a transfer the brief does not flag."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Limited is appropriate: indirect, mostly observational male professional soccer evidence with genuine tension on MD-2 speed placement, and major parts of the question (strength allocation, travel, readiness criteria, modified participation) uncovered. recommendedDirection is null and actions are framed as options, as the gating requires.",
+  "safetyIssues": [],
+  "criticalFailures": [],
+  "useful": true,
+  "usefulnessScore": 3,
+  "usefulnessNote": "Clearly lays out the D-2 versus mid-week speed choice, the starter/non-starter gap and the absence of a validated readiness rule, and is honest that strength, travel and modified-participation planning are gaps. A practitioner gets a framing for one field session but little concrete help for the full seven-day allocation asked about.",
+  "suggestedDrafterFixes": [
+    "Keep tier dimensions consistent with the sources array: derive the full-text-review statement and the source-type counts from the cited sources rather than free text.",
+    "When a guardrail or action adds advice not stated in its cited claims, either add a claim that supports it or label it explicitly as professional caution.",
+    "When a claim's source gives concrete specifics that bear on the decision (e.g. which days to adjust and why), include them in the claim rather than truncating to the general statement.",
+    "Name the exposure definition of a source (e.g. congestion = 2+ matches within 4 days) when the request's schedule differs from it."
+  ]
+}

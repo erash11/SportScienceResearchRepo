@@ -16,6 +16,8 @@ import {
 } from "../library/publication-candidate.mjs";
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+// ATL_LIBRARY_ROOT audits against another checkout's papers.json and SourcePapers/ (for example a staged batch branch).
+const libraryRoot = path.resolve(process.env.ATL_LIBRARY_ROOT || repoRoot);
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(path.resolve(repoRoot, filePath), "utf8"));
@@ -34,7 +36,7 @@ function exitOnInvalid(label, result) {
 }
 
 function resolveSourceFile(sourceFile) {
-  const sourceRoot = path.resolve(repoRoot, "SourcePapers");
+  const sourceRoot = path.resolve(libraryRoot, "SourcePapers");
   const resolved = path.resolve(sourceRoot, sourceFile);
   if (!resolved.startsWith(`${sourceRoot}${path.sep}`)) {
     throw new Error("Source file resolves outside SourcePapers.");
@@ -45,11 +47,10 @@ function resolveSourceFile(sourceFile) {
   return resolved;
 }
 
-function readPdfPage(sourceFile, page) {
-  const sourcePath = resolveSourceFile(sourceFile);
+function extractPdfPage(sourcePath, page, layout) {
   const result = spawnSync(
     "pdftotext",
-    ["-f", String(page), "-l", String(page), "-layout", sourcePath, "-"],
+    ["-f", String(page), "-l", String(page), ...(layout ? ["-layout"] : []), sourcePath, "-"],
     { encoding: "utf8", windowsHide: true },
   );
 
@@ -60,6 +61,13 @@ function readPdfPage(sourceFile, page) {
     throw new Error(cleanProcessMessage(result.stderr) || `pdftotext exited ${result.status}.`);
   }
   return result.stdout;
+}
+
+// Both the layout and the reading-order extraction count as the page's original text: layout mode
+// interleaves the columns of two-column articles, so a verbatim sentence may exist only in reading order.
+function readPdfPage(sourceFile, page) {
+  const sourcePath = resolveSourceFile(sourceFile);
+  return `${extractPdfPage(sourcePath, page, true)}\n\f\n${extractPdfPage(sourcePath, page, false)}`;
 }
 
 function loadZoteroPublications() {
@@ -177,7 +185,7 @@ async function run() {
 
   if (command === "audit-source" && target) {
     const brief = readJson(target);
-    const papers = readJson("papers.json");
+    const papers = JSON.parse(fs.readFileSync(path.join(libraryRoot, "papers.json"), "utf8"));
     const result = await auditDecisionBrief(brief, {
       papers,
       readSourcePage,

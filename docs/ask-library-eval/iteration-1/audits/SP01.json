@@ -1,0 +1,34 @@
+{
+  "questionId": "SP01",
+  "tier": "Limited",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "Abstract p1: 15 active male amateur soccer players; \"Significant reductions in theoretical maximal horizontal velocity (P < 0.01 ...) and performance (P = 0.02 ...) were observed for 48 and 72 hours after H-VMSSE.\" Design is a prospective observational case series (Level 4)."},
+    {"claimId": "C2", "rating": "supported", "note": "Matches abstract p1 verbatim, including small effect sizes and both legs."},
+    {"claimId": "C3", "rating": "supported", "note": "Abstract p1 of Jukic 2020 meta-analysis (32 studies, healthy adults): greater velocity/power and mitigated decline during (SMD 0.83-1.97) and after RT (SMD 0.58)."},
+    {"claimId": "C4", "rating": "supported", "note": "Cormier p22-23 (printed 21-22): \"utilising methods such as OPL and VBT may be optimal for sessions with less TUT, shorter session times, whilst maximising power and velocity throughout.\""},
+    {"claimId": "C5", "rating": "supported", "note": "Cormier p22 states recovery \"may be hindered for up to 72 h ... or more\" after a match and weekly concurrent volume may hinder maintaining power and speed; correctly framed as the review's statement citing other work."},
+    {"claimId": "C6", "rating": "supported", "note": "Cormier p25: mixed training \"characterised by relatively lighter loads moved at higher velocities which may be beneficial in crucial in-season periods\"; hedging preserved."},
+    {"claimId": "C7", "rating": "supported", "note": "Ross 2025 abstract p1: 12 practitioners; strategies included \"micro-dosing of the resistance training stimulus, utilisation of isometric exercise during fixture congestion periods.\""},
+    {"claimId": "C8", "rating": "supported", "note": "Rowell 2017 abstract p1: 18 elite (A-League, preseason) players, \"Reductions in FT:CT persisted at later postmatch time points than changes in jump height\" and FT:CT \"a more sensitive measure of recovery.\""}
+  ],
+  "statementIssues": [
+    {"location": "bottomLine; actions[0]", "severity": "minor", "note": "Generalizes from a high-volume maximal sprinting session to \"high-volume maximal efforts/work\" in general; the source tested only repeated maximal sprints, not resistance or power work. The action does flag that dose is professional judgment."},
+    {"location": "evidenceConfidence.dimensions.sourceReview", "severity": "minor", "note": "Says five full-text sources but lists four types, and calls one record a legacy record not full-text reviewed, while all five sources are marked fullTextReviewed: true. Internal inconsistency in provenance reporting."},
+    {"location": "monitoring[1]", "severity": "minor", "note": "Watching within-session velocity or power drop is reasonable and is labeled as caution, not a validated threshold; acceptable."},
+    {"location": "coverageGaps", "severity": "minor", "note": "Contains moved guardrail/scope text (\"This brief informs professional judgment...\", medical-restriction handling) that is not a coverage gap; structural, not an integrity problem."},
+    {"location": "leads", "severity": "minor", "note": "Leads (creatine and sleep deprivation, HRV norms, ACL rehab single case, inter-limb asymmetry) are labeled relevant but are not relevant to a pre-competition session; adds noise."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Limited is appropriate: no source tests a session 48 h before competition; evidence is indirect (sprint-session fatigue, acute set-structure effects, review opinion, practitioner interviews). No recommendedDirection was given and actions are framed as options.",
+  "safetyIssues": [],
+  "criticalFailures": [],
+  "useful": true,
+  "usefulnessScore": 4,
+  "usefulnessNote": "A strength coach gets a clear, honest set of options (low maximal-intent volume, cluster sets, light fast loads, micro-dosing) with each one's transfer limits stated. It cannot give the dose constraints asked for, but says so plainly.",
+  "suggestedDrafterFixes": [
+    "Keep the claim's exercise modality when generalizing in statements (sprinting is not resistance work), or say explicitly that the transfer is an inference.",
+    "Generate the sourceReview dimension from the sources array so counts, design types and fullTextReviewed flags cannot disagree.",
+    "Do not move scope or safety disclaimers into coverageGaps; keep a separate field or keep them as uncited professional-caution statements.",
+    "Filter leads by topical relevance to the question before listing them as relevant."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "questionId": "SP01",
+  "tier": "Limited",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "p7: \"With each incremental increase in velocity loss protocol (30% > 20% > 10%), moderate increases in B[La] were observed (~1.7-1.9 mmol/L)\"; 12 team-sport athletes, 5 sets back squat at ~0.70 m/s. Within-session measure only."},
+    {"claimId": "C2", "rating": "supported", "note": "p9 recommends smaller thresholds (e.g., 10%) \"when high amounts of neuromuscular and metabolic fatigue are not favourable (e.g., close to competition...)\". Correctly framed as author recommendation."},
+    {"claimId": "C3", "rating": "supported", "note": "p9: implemented \"by asking athletes to note exercise velocity during the warm up and the first repetition of each set\"."},
+    {"claimId": "C4", "rating": "minor", "note": "Verbatim from the abstract, but the discussion (p22) adds that the post-session effect (SMD 0.58) was \"much lower\" than within-session effects, \"suggesting that the rate of post-session recovery might not be as affected\". The brief does say the 48 h effect is untested."},
+    {"claimId": "C5", "rating": "minor", "note": "p22 says \"Moderate GRADE evidence\" of lower post-RT mechanical fatigue \"as indicated by less jump height loss or less velocity loss against a fixed load (SMD: 0.58)\"; claim drops the velocity-loss alternative and the small-effect caveat."},
+    {"claimId": "C6", "rating": "supported", "note": "p1 abstract lists micro-dosing and isometric exercise during fixture congestion; 12 practitioners (11 S&C, 1 physio). p7 adds n = 7 discussed isometrics."},
+    {"claimId": "C7", "rating": "minor", "note": "Source is hedged (\"It could be argued here that a tendency to remove the eccentric stimulus...\") and the concern (p7-8) is detraining over 1-4 weeks and hamstring injury risk, not next-match readiness."},
+    {"claimId": "C8", "rating": "supported", "note": "Abstract matches; protocol was 10 x 40 m maximal sprints with 3-min rest in amateur male players, prospective case series (Level 4)."},
+    {"claimId": "C9", "rating": "supported", "note": "Abstract and p9 limitations: \"this study should be considered a pilot study due to the limited sample size\"."},
+    {"claimId": "C10", "rating": "minor", "note": "Values are main effects for time pooled across the float and control recovery conditions (p5), and significance at +48 h is not stated; CMJ height was -7% at +48 h. Protocol was 6 x 10 squats starting at 80% 1RM."},
+    {"claimId": "C11", "rating": "supported", "note": "p22-23: OPL \"can optimise power development in elite athletes concurrently with sport specific-training and matches possibly due to...\" and OPL/VBT \"may be optimal for sessions with less TUT, shorter session times\"."}
+  ],
+  "statementIssues": [
+    {"location": "bottomLine", "severity": "minor", "note": "\"left measurable deficits 48 hours later\" is fair for the sprint study but the squat study reports only pooled descriptive % change at +48 h without stated significance."},
+    {"location": "evidenceConfidence.dimensions.transferability", "severity": "minor", "note": "\"No sample is ... female\" is not checked for the 32-study meta-analysis of healthy adults or the team-sport power review; state only for the primary studies."},
+    {"location": "evidenceTension / whatCouldChange[1]", "severity": "minor", "note": "The interview authors' eccentric concern is about multi-week detraining and hamstring injury risk; framing it as a readiness question slightly shifts the source's point."},
+    {"location": "actions[0]", "severity": "minor", "note": "OPL is not expanded or explained, which reduces usefulness for a coach reading quickly."},
+    {"location": "coverageGaps[3]", "severity": "minor", "note": "A scope/safety statement was moved into coverageGaps by the drafter's post-processing; it is not a coverage gap."},
+    {"location": "leads", "severity": "minor", "note": "All five leads (inter-limb asymmetry, ACL differential learning case, creatine and sleep deprivation, HRV norms, parasympathetic reactivation) are labeled \"Relevant lead\" but are not relevant to pre-competition strength-power dosing."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Limited is appropriate: no source tests a session 48 h before competition, the residual-fatigue studies use high-volume protocols, and samples are small. No recommendation is given (recommendedDirection is null) and actions are framed as options.",
+  "safetyIssues": [],
+  "criticalFailures": [],
+  "useful": true,
+  "usefulnessScore": 4,
+  "usefulnessNote": "Gives a coach usable, honestly labeled levers (about 10% velocity-loss cap, cluster/rest-redistribution sets, keep volume well below the high-volume protocols, count practice sprinting) and is clear that none is tested at 48 h out. It offers no set/rep dose, which the library cannot support.",
+  "suggestedDrafterFixes": [
+    "When quoting an abstract effect, scan the discussion for the authors' own qualification of that effect (e.g. smaller post-session effects) and carry it into the claim.",
+    "For time-course results, state whether values are pooled across conditions and whether the late time point was statistically different from baseline.",
+    "Limit population statements (none female, none collegiate) to sources whose samples were actually checked.",
+    "Do not label leads \"Relevant\" unless their title or summary matches the question; drop off-topic leads.",
+    "Do not move uncited guardrails into coverageGaps; keep scope/safety text in a dedicated field.",
+    "Expand acronyms (OPL, VBT) on first use in practitioner-facing text."
+  ]
+}

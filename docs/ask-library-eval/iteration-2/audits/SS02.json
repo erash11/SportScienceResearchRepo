@@ -1,0 +1,39 @@
+{
+  "questionId": "SS02",
+  "tier": "Limited",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "Matches the abstract conclusion verbatim. Wellness was linked to the day after each session; effects on load were small (partial eta squared mostly 0.002-0.06), which the claim does not need to state."},
+    {"claimId": "C2", "rating": "supported", "note": "Abstract: 'trivial effects of match-day wellness z score on subsequent external match load metrics' in 34 elite male players."},
+    {"claimId": "C3", "rating": "minor", "note": "Numbers correct, but the source specifies wellness 'on the day following each match' and 'every 1-unit increase in PlayerLoadAP per minute'; it also found higher high-speed distance associated with higher wellness (+0.26 z), which tempers a simple 'more load, worse wellness' reading."},
+    {"claimId": "C4", "rating": "supported", "note": "Reproduces the abstract. Context: the ES range cited for self-report comes from the domestic tournament; international self-report decrements coincided with travel, and about 80% of players individually showed LnRMSSD drops beyond the SWC after the domestic event."},
+    {"claimId": "C5", "rating": "supported", "note": "Abstract: n = 10; 'No clear differences in internal or external match-load parameters were observed between tournaments'."},
+    {"claimId": "C6", "rating": "supported", "note": "Abstract confirms 45 players, 1 club, 2018 season, Daily PCA components for external load, perceived wellness and internal load."},
+    {"claimId": "C7", "rating": "supported", "note": "Abstract conclusion verbatim; soreness did not meet the redundancy threshold."},
+    {"claimId": "C8", "rating": "supported", "note": "Digest p19 abstract: the article 'discusses how the metrics selected ... may differ' by purpose. Claim keeps the hedged 'may differ'."},
+    {"claimId": "C9", "rating": "supported", "note": "Digest p16: 26 AFL players with prior HSI, MAE 5.77-7.14%, player random effect strongly influenced decrement and within-week change."},
+    {"claimId": "C10", "rating": "supported", "note": "Abstract: 37 professional players, 8-week mesocycle, week-to-week variation 1244-2248 m total distance versus the first microcycle. Authors also note within-player same-day variability was more consistent."},
+    {"claimId": "C11", "rating": "supported", "note": "Table 1 (p12): robust scaling with median and IQR at the individual level for training load in male professional (German 4th division) soccer."},
+    {"claimId": "C12", "rating": "supported", "note": "Both excerpts verbatim from the abstract. The underlying example is collegiate (West Virginia University) American football, which the claim does not mention."}
+  ],
+  "statementIssues": [
+    {"location": "bottomLine", "severity": "minor", "note": "'A stable test result and worse wellness can both be real signals' is unlabeled inference; no cited source measured a neuromuscular test alongside wellness. Also 'can move independently' leans on a PCA with orthogonal rotation, which separates components by construction."},
+    {"location": "evidenceConfidence.rationale / limitations[0]", "severity": "minor", "note": "States no source studies collegiate athletes, but Tenan's example uses collegiate American football data ('this cohort of data from Collegiate American' football). Harmless for the decision but inaccurate."},
+    {"location": "actions[0]", "severity": "minor", "note": "'if they are not missing at random' should be 'not missing completely at random' (MCAR); the source says MAR data also bias deletion-based summaries. '7-day summaries' is an extrapolation of 'simple histograms and averages or higher-level analytics'."},
+    {"location": "actions[3]", "severity": "minor", "note": "'The CMJ article states metric choice depends on test purpose' is slightly firmer than the abstract's 'discusses how the metrics ... may differ'."},
+    {"location": "guardrails[0] / actions[2]", "severity": "minor", "note": "Rugby sevens divergence is presented as self-report versus HRV under similar load, but the authors attribute the international HRV drop to travel and sleep disruption, and self-report also fell with travel; the divergence is clean only for the domestic event at group level."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Limited fits: no source tests the three-way pattern, samples are professional/elite male team-sport cohorts, and load-wellness links are inconsistent. recommendedDirection is null and actions are framed as options with professional-judgment labels.",
+  "safetyIssues": [],
+  "criticalFailures": [],
+  "useful": true,
+  "usefulnessScore": 4,
+  "usefulnessNote": "Gives a sports scientist a concrete, quick follow-up checklist (data completeness, individual baselines, item-level wellness, test error and individual change) and is honest that the neuromuscular-test evidence is indirect. Little direct help on interpreting the stable neuromuscular result itself, which is the library's gap.",
+  "suggestedDrafterFixes": [
+    "Label interpretive sentences in the bottom line (for example 'both can be real signals') as inference when no cited source measured the combination.",
+    "When a source's sample matches the requested population (here a collegiate cohort), say so in the claim and do not state that no source covers that population.",
+    "Use the source's exact technical term for statistical assumptions (MCAR versus MAR) rather than a paraphrase that changes meaning.",
+    "Carry timing and unit qualifiers (next-day wellness, per-minute load) and offsetting findings from the same model into claims about load-wellness associations.",
+    "When using a study as an example of divergence, note the authors' own explanation for the divergence (for example travel) if it limits the inference."
+  ]
+}

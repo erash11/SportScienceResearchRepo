@@ -1,0 +1,46 @@
+{
+  "questionId": "PN02",
+  "tier": "Moderate",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "729 p1 abstract matches, including the competition and 80-120 kg qualifiers."},
+    {"claimId": "C2", "rating": "supported", "note": "729 p10: 'During the preparatory phase, aggressive CHO refeeding of 1.0-1.2 g/kg/hr for the first 4 hr may be useful when recovery between sessions is less than 8 hr (Burke et al., 2011).' The claim drops 'preparatory phase' but keeps 'may be useful'."},
+    {"claimId": "C3", "rating": "supported", "note": "729 p10: 'Alternatively, an initial feed of 1.0-1.2 g/kg CHO within 1 hr following training plus 0.6-1.0 g/kg every 2 hr for 6 hr (Thomas et al., 2016) may suit.'"},
+    {"claimId": "C4", "rating": "supported", "note": "729 p1 abstract states the 80-180 g (1.0-1.5 g/kg) CHO plus 20-67 g protein, 0-2 hr postexercise wording exactly."},
+    {"claimId": "C5", "rating": "minor", "note": "The source says 'more transporters in the gastrointestinal tract being utilized', not carbohydrate being utilized. The underlying evidence is trained cyclists after glycogen-depleting exercise (Fuchs et al.), not rugby players. The practical point (multiple-transportable CHO reduced upper GI distress) is correctly conveyed in actions[3]."},
+    {"claimId": "C6", "rating": "supported", "note": "730 p6: 'CHO consumption during exercise to train the gut to better absorb and tolerate intake during matches.' This is about intake during exercise, and the action uses it only as a rehearsal principle."},
+    {"claimId": "C7", "rating": "supported", "note": "730 p6: 'sliding scale of 3-8 g/kg BM/day depending on the specific training scenario, fixture schedule and player-specific training goals.'"},
+    {"claimId": "C8", "rating": "minor", "note": "729 p11 states sodium 'equal to or greater than that of the sweat lost (20-80 mmol/L) is required to maintain positive fluid balance'. It sits in the general training/competition fluid paragraph after a sentence on recovery, so 'recovery fluids' narrows the context slightly."},
+    {"claimId": "C9", "rating": "supported", "note": "562 p13 states this verbatim, hedged with 'may', and the claim keeps the hedge."},
+    {"claimId": "C10", "rating": "supported", "note": "233 p1 abstract: 31 male high school players, 7 outdoor practices, greater carryover after 2-a-days, 'Athletes must replenish fluids during and between practices to remain euhydrated.'"},
+    {"claimId": "C11", "rating": "supported", "note": "233 p1 abstract matches."},
+    {"claimId": "C12", "rating": "supported", "note": "32 p2: 'Normative data suggest that the range in sweating rate in American football is ~0.5 to 4 L/h'. Correctly attributed as cited normative data."},
+    {"claimId": "C13", "rating": "supported", "note": "32 p1 and p6 match (30 male athletes, 29.3 C, 75% rh, range 2.35% loss to 0.47% gain)."},
+    {"claimId": "C14", "rating": "supported", "note": "401 p1 conclusion: 'CHO feeding may also spare muscle glycogen use'. This rests on one player per condition, which the brief states in limitations."},
+    {"claimId": "C15", "rating": "supported", "note": "203 p1 matches (185 players, observational). The players were Turkish university players, which the brief does not mention."},
+    {"claimId": "C16", "rating": "supported", "note": "562 p4 matches; 9 of 18 articles involved endurance-trained males, consistent with the transferability dimension."},
+    {"claimId": "C17", "rating": "supported", "note": "729 p10: a 'nutrition table' in dressing rooms with fruits, juices, cereal bars and milk drinks 'could encourage adequate consumption' in early recovery."},
+    {"claimId": "C18", "rating": "supported", "note": "730 p5: 'gym and field-based training sessions may not always be delivered in a systematic and structured sequence. The order of these can influence players' habitual macronutrient intake'."}
+  ],
+  "statementIssues": [
+    {"location": "evidenceConfidence.rationale", "severity": "minor", "note": "Credits the UEFA statement with 'consistent between-session refuelling and sodium guidance', but the cited UEFA claims (C6, C7, C18) give only train-the-gut, daily 3-8 g/kg, and session-order points. The between-session numbers and the sodium figure come from the single rugby league review."},
+    {"location": "evidenceConfidence.dimensions.sourceReview", "severity": "minor", "note": "Calls the 233, 32, 203 and 401 records 'legacy entries without full-text review', which contradicts fullTextReviewed: true in the sources array."},
+    {"location": "coverageGaps[1]", "severity": "minor", "note": "Says no readable source text gives a fluid replacement volume per kg lost. 729 p11, the same page as C8, states 'players should consume approximately 1.25-1.5 L/kg BM lost (Sawka et al., 2007)'. This is an actionable omission, not a misstatement of a cited claim."},
+    {"location": "actions[1]", "severity": "minor", "note": "'The more aggressive pattern ... may carry more gastrointestinal load' is not stated by the source and is not labeled as inference."},
+    {"location": "actions[4]", "severity": "minor", "note": "The low-carbohydrate finding (C15) comes from Turkish collegiate players and 3-day self-report records. Extrapolating it to US campus dining should be flagged as a transferability limit."},
+    {"location": "guardrails[2]", "severity": "minor", "note": "Using habitual dietary sodium (C15) to temper sweat-sodium replacement (C8) mixes two different quantities. This is acceptable as caution, but the reasoning is not drawn from either source."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Moderate is at the generous edge. The specific between-session doses come from one narrative review in professional male rugby league, restating ACSM and Burke guidance, with no test of the lift-then-practice sequence. The direction is consistent across sources, conditional, and faithful to them, so Moderate with a conditional recommendation is defensible. Limited would also have been reasonable.",
+  "safetyIssues": [],
+  "criticalFailures": [],
+  "useful": true,
+  "usefulnessScore": 4,
+  "usefulnessNote": "A strength or nutrition practitioner gets a clear, per-kg, two-option refuelling plan for a gap of less than 8 hours. It pairs fluid and sodium replacement with body mass checks and gives honest GI and transferability caveats, all readable in about two minutes. It would be stronger if it had included the 1.25-1.5 L/kg rehydration volume that the library actually contains.",
+  "suggestedDrafterFixes": [
+    "Before declaring a coverage gap, scan the full text of pages already cited (and adjacent pages) for directly relevant quantities.",
+    "In the confidence rationale, credit each source only with what its cited claims actually say.",
+    "Cross-check confidence-dimension text against the sources array's fullTextReviewed flags.",
+    "Paraphrase mechanism excerpts faithfully and carry the underlying population when a review reports another study (for example cyclists inside a rugby league review).",
+    "Label comparative inferences (for example which feeding pattern carries more GI load) as professional judgment, and note country or setting when applying a study to a US collegiate context."
+  ]
+}

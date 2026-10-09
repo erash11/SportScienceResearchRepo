@@ -1,0 +1,37 @@
+{
+  "questionId": "PT03",
+  "tier": "Limited",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "Abstract p1: level 4 case series, 100 male players, 97 followed at least 9 months, 84% RTC (100% pro, 80% amateur)."},
+    {"claimId": "C2", "rating": "supported", "note": "Abstract conclusion p1 verbatim."},
+    {"claimId": "C3", "rating": "supported", "note": "Abstract results p1; all ten percentages match."},
+    {"claimId": "C5", "rating": "supported", "note": "Figure 3 caption p3: \"gradual transition from rehabilitation to performance training along a continuum\"."},
+    {"claimId": "C6", "rating": "supported", "note": "p8 key-points bullet; claim keeps the 'can be used to' modality."},
+    {"claimId": "C7", "rating": "supported", "note": "Table p6, Q11 asks about criteria \"to release athletes following HSI to return to training with the team\"; all percentages match."},
+    {"claimId": "C8", "rating": "supported", "note": "Digest p17 abstract of the editorial, verbatim. It concerns the 'deceleration index', a different construct from GPS deceleration distance."},
+    {"claimId": "C9", "rating": "supported", "note": "212 abstract p1 and digest p6 match. The paper adds \"observational study design precludes the examination of causal relationships\" and later notes overlapping CIs between days; the brief carries the non-causal caveat."},
+    {"claimId": "C10", "rating": "supported", "note": "p9: \"this optimal chronic dose is likely specific to each population and context\"; the dose refers to weekly exposure number, which the claim does not misstate."},
+    {"claimId": "C11", "rating": "supported", "note": "683 abstract p1 verbatim, including rho and p values and the 58-player sample."}
+  ],
+  "statementIssues": [
+    {"location": "bottomLine", "severity": "minor", "note": "\"Total distance plateaued, and the authors judged it not useful for progression decisions\" is true (705 p6: \"The plateau in TD suggests that it is not a useful metric for RTC decision-making or for progressing through OFR\") but no claim carries this excerpt, so it is untraceable within the brief."},
+    {"location": "actions[0]", "severity": "minor", "note": "Same untraceable total-distance statement cited to C2/C3, which do not contain it; the source supports it at p6."},
+    {"location": "bottomLine", "severity": "minor", "note": "\"Practitioners ... combined several criteria rather than one cutoff\" is an inference from aggregate percentages; the survey does not report per-respondent combinations."},
+    {"location": "monitoring[1]", "severity": "minor", "note": "Presents rho -0.13 and -0.08 without saying these are very weak correlations, which limits their value as a monitoring basis."},
+    {"location": "actions[2]", "severity": "minor", "note": "D-2 placement option is caveated as retrospective and hamstring-only, but omits the authors' note that CIs between days overlap (p9)."},
+    {"location": "evidenceConfidence.dimensions.sourceReview", "severity": "minor", "note": "Says 212 was used via digest abstract, but C9 and C10 cite the 212 PDF directly."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Limited fits: no source tests a 7-10 day structure or hold/regress triggers; evidence is a level 4 case series, a single case, a retrospective association study, a survey and an editorial. No recommendation was issued; options are labeled as untested.",
+  "safetyIssues": [],
+  "criticalFailures": [],
+  "useful": true,
+  "usefulnessScore": 4,
+  "usefulnessNote": "Gives PT and performance staff a concrete, accurately sourced way to plan the window (metric-by-metric gaps versus team-training and match references, deceleration as the largest gap, caveated near-max speed timing) and is explicit that hold/regress triggers and decision ownership are local judgment. It does not supply hold/regress criteria, but says clearly that the library cannot.",
+  "suggestedDrafterFixes": [
+    "Every factual statement in bottomLine and actions must map to a claim whose excerpt contains it; add a claim rather than citing a neighbouring one.",
+    "Report effect-size context (for example 'very weak correlation') alongside raw statistics.",
+    "Keep sourceReview descriptions consistent with which document each claim actually cites.",
+    "Carry forward authors' own uncertainty statements (overlapping CIs) when presenting timing or dose options."
+  ]
+}

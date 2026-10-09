@@ -1,0 +1,535 @@
+{
+  "schemaVersion": 1,
+  "briefId": "ATL-B-20261009-PT02",
+  "requestId": "ATL-R-20261009-PT02",
+  "version": 1,
+  "createdAt": "2026-10-09T03:43:57.750Z",
+  "status": "On-Demand",
+  "reviewStatus": "Not Expert-Reviewed",
+  "practicalQuestion": "How should symptoms, strength, movement quality, and sport-specific running or cutting exposure be combined when deciding whether to advance a collegiate athlete from individual rehabilitation to modified team practice?",
+  "decisionContext": {
+    "population": "Collegiate athlete returning after a lower-extremity injury",
+    "sport": "Field or court sport",
+    "phase": "Individual rehabilitation to modified team participation",
+    "outcome": "Organize a transparent progress-or-hold decision using several relevant signals",
+    "constraints": "Signals may be collected on different days; team demands vary; medical decision authority remains with the care team"
+  },
+  "evidenceConfidence": {
+    "tier": "Limited",
+    "rationale": "No source tests how to combine symptoms, strength, movement quality and running or cutting exposure for the step from individual rehabilitation to modified team practice. The relevant sources are one systematic review of lower extremity return to sport testing, an international expert consensus on hamstring injuries, a case series of soccer players after ACL reconstruction, a single-player case study, a narrative review of asymmetry, and a small Lisfranc case series. They point in a similar general direction but disagree on how much weight asymmetry should carry.",
+    "dimensions": {
+      "sourceReview": "Designs are a systematic review of 114 test studies, an expert Delphi consensus, two uncontrolled case series, one single-player case study and a narrative review abstract. None is a controlled comparison of decision rules.",
+      "directness": "Indirect. Most sources address final return to sport or on-field rehabilitation, not the specific entry point to modified team practice, and none combines signals into a tested rule.",
+      "consistency": "Sources agree that several domains should be assessed and that no single standard criterion exists. They conflict on using limb asymmetry to guide progression.",
+      "transferability": "Evidence is mostly from ACL reconstruction and soccer, often male and professional, plus hamstring experts and a small recreational Lisfranc series. No source studies collegiate field or court athletes or female athletes directly."
+    }
+  },
+  "bottomLine": {
+    "text": "The library has no study that tests a combined progress-or-hold rule for moving from individual rehabilitation to modified team practice. The available sources support looking at several signals rather than one, progressing on capacity and symptoms, and not treating any single strength value, hop test or asymmetry number as decisive. Because the evidence is thin and indirect, the options below are choices for the care team, not a recommended rule.",
+    "claimIds": [
+      "C1",
+      "C3",
+      "C4",
+      "C7",
+      "C8",
+      "C10",
+      "C13",
+      "C14"
+    ]
+  },
+  "recommendedDirection": null,
+  "actions": [
+    {
+      "title": "Option A: Test-battery checklist",
+      "text": "Organize the decision around a battery that includes quadriceps strength (handheld dynamometry where isokinetic testing is not available), more than one hop test, and patient reported outcomes including psychological measures. The source review found no standardized criterion and no test study that followed athletes after clearance for re-injury, so a checklist structures the conversation but is not a validated gate.",
+      "claimIds": [
+        "C1",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ]
+    },
+    {
+      "title": "Option B: Capacity and symptom guided progression",
+      "text": "Progress running and cutting exposure based on capacity and symptoms, with pain thresholds that depend on the activity and pain-free criteria for sprinting, as an expert hamstring consensus recommends. Professional judgment (not tested by the cited evidence): applying this hamstring-specific consensus to other lower-extremity injuries is an extrapolation.",
+      "claimIds": [
+        "C7",
+        "C9",
+        "C11"
+      ]
+    },
+    {
+      "title": "Option C: Staged field exposure with field-based monitoring",
+      "text": "Use staged on-field rehabilitation before team practice and track running mechanics in the field, as in an ACL case series with a 5-stage program and a single-player case study that used GPS-embedded sensors to guide phase progression. Interpret any asymmetry values cautiously because asymmetry measures are task-specific and fluctuate over time.",
+      "claimIds": [
+        "C10",
+        "C12",
+        "C13",
+        "C14"
+      ]
+    },
+    {
+      "title": "Common step for any option: date and label each signal",
+      "text": "Professional judgment (not tested by the cited evidence): because signals are collected on different days and asymmetry measures fluctuate in magnitude and direction over time, record the date, test and conditions for each signal and repeat key measures before the decision rather than combining stale values.",
+      "claimIds": [
+        "C14"
+      ]
+    }
+  ],
+  "monitoring": [
+    {
+      "label": "Symptoms",
+      "text": "Track pain response to specific running and cutting activities rather than a single global pain rule. In the case study, transient knee pain delayed the return to running, and in a small Lisfranc series most athletes still had some residual pain with their sport after returning.",
+      "claimIds": [
+        "C7",
+        "C11",
+        "C17"
+      ]
+    },
+    {
+      "label": "Strength",
+      "text": "Measure quadriceps strength with a consistent method, which the review authors describe as of vital importance for knee cases. Strength benchmarks did not reach agreement in the hamstring consensus, and in the Lisfranc series return to sport was tied to regaining almost full ankle plantar flexion strength, so the relevant muscle group depends on the injury.",
+      "claimIds": [
+        "C3",
+        "C8",
+        "C16"
+      ]
+    },
+    {
+      "label": "Movement quality and asymmetry",
+      "text": "Combine hop tests with field measures of running mechanics. A single hop test has low sensitivity for limb asymmetry when used alone, and asymmetry measures are task-specific and poorly correlated with each other.",
+      "claimIds": [
+        "C4",
+        "C10",
+        "C14"
+      ]
+    },
+    {
+      "label": "Running and cutting exposure",
+      "text": "Document how far the athlete has progressed through staged field work toward the demands of the setting they are entering. Experts orient the end goal of rehabilitation to the demands and capacity required for match play.",
+      "claimIds": [
+        "C9",
+        "C13"
+      ]
+    }
+  ],
+  "guardrails": [
+    {
+      "text": "Progression and clearance decisions stay with the treating clinicians and the care team. This brief only organizes signals; the sources report no standardized return to sport criterion and no test validated against later re-injury.",
+      "claimIds": [
+        "C1",
+        "C6"
+      ]
+    },
+    {
+      "text": "Do not use any single strength value, hop result or asymmetry percentage as an automatic pass or fail gate. Strength benchmarks lacked expert agreement, and asymmetry measures fluctuate over time and are poorly correlated with each other.",
+      "claimIds": [
+        "C4",
+        "C8",
+        "C14",
+        "C15"
+      ]
+    },
+    {
+      "text": "Do not treat group return rates as an individual prediction. The 84% return to competition and 10% ACL reinjury figures come from one uncontrolled case series of soccer players.",
+      "claimIds": [
+        "C13"
+      ]
+    }
+  ],
+  "limitations": [
+    {
+      "text": "Populations differ from the decision context. Most return to sport test studies involved ACL reconstruction, the case series and case study involved soccer players after ACL reconstruction, the consensus involved hamstring injuries, and the Lisfranc series was small.",
+      "claimIds": [
+        "C2",
+        "C7",
+        "C10",
+        "C13",
+        "C17"
+      ]
+    },
+    {
+      "text": "None of the test studies in the systematic review followed athletes after clearance to see whether passing tests related to re-injury, and the on-field programs were reported without a comparison group.",
+      "claimIds": [
+        "C6",
+        "C13"
+      ]
+    },
+    {
+      "text": "The evidence questioning asymmetry comes from a narrative review abstract about asymmetry in sport generally, not from athletes progressing after injury.",
+      "claimIds": [
+        "C14",
+        "C15"
+      ]
+    }
+  ],
+  "whatCouldChange": [
+    {
+      "text": "A prospective study in collegiate field or court athletes that links multi-domain criteria at entry to team practice with later setbacks or re-injury could support a recommended rule.",
+      "claimIds": [
+        "C1",
+        "C6"
+      ]
+    },
+    {
+      "text": "Evidence showing whether post-injury asymmetry values in field running or hop tests predict outcomes would resolve the current disagreement about using asymmetry to guide progression.",
+      "claimIds": [
+        "C10",
+        "C14",
+        "C15"
+      ]
+    }
+  ],
+  "evidenceTension": {
+    "text": "A single-player ACL case study describes step impulse asymmetries from GPS-embedded sensors as usable to guide phase progression, while a narrative review reports that asymmetry measures fluctuate in magnitude and direction, are poorly correlated with each other, and have no evidence linking pre-existing asymmetry to injury risk. Separately, the return to sport testing review describes quadriceps strength as of vital importance for knee cases, while a hamstring expert panel did not reach agreement on strength benchmarks. These differences partly reflect different injuries and settings, and the pack does not resolve them.",
+    "claimIds": [
+      "C10",
+      "C14",
+      "C15",
+      "C3",
+      "C8"
+    ]
+  },
+  "sources": [
+    {
+      "libraryId": "711",
+      "sourceFile": "Lower extremity return to sport testing - A systematic review.pdf",
+      "citation": "Smiley T, Dallman J, Long R, et al. Lower Extremity Return to Sport Testing: A Systematic Review. The Knee. 2024;50:115-146.",
+      "year": 2024,
+      "doi": "10.1016/j.knee.2024.07.021",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Full-text screened and published"
+    },
+    {
+      "libraryId": "421",
+      "sourceFile": "NFL-PFATS Sports Science Research Update - April 2023.pdf",
+      "citation": "NFL-PFATS. Sports Science Research Update: April 2023. 2023.",
+      "year": 2023,
+      "doi": "",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Legacy published record; library summary not full-text reviewed"
+    },
+    {
+      "libraryId": "396",
+      "sourceFile": "Monitoring the reconditioning of the injured football player with field-based measures - A case study following ACL reconstruction.pdf",
+      "citation": "Buchheit M, Sandua M, Gray A, Hader K, Monnot D, Volante J, Delafosse F. Monitoring the reconditioning of the injured football player with field-based measures: A case study following ACL reconstruction. Aspetar Sports Medicine Journal. 2023:374-381.",
+      "year": 2023,
+      "doi": "",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Legacy published record; library summary not full-text reviewed"
+    },
+    {
+      "libraryId": "705",
+      "sourceFile": "High Return to Competition Rate After On-Field Rehabilitation in Competitive Male Soccer Players After ACL Reconstruction - GPS Tracking in 100 Consecutive Cases.pdf",
+      "citation": "Picinini F, Della Villa F, Tallent J, et al. High Return to Competition Rate After On-Field Rehabilitation in Competitive Male Soccer Players After ACL Reconstruction: GPS Tracking in 100 Consecutive Cases. Orthopaedic Journal of Sports Medicine. 2025;13(3):23259671251320093.",
+      "year": 2025,
+      "doi": "10.1177/23259671251320093",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Full-text screened and published"
+    },
+    {
+      "libraryId": "425",
+      "sourceFile": "NFL-PFATS Sports Science Research Update - July 2023.pdf",
+      "citation": "Professional Football Athletic Trainers Society. NFL-PFATS Sports Science Research Update - July 2023. Sports Science Research Update. 2023.",
+      "year": 2023,
+      "doi": "",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Legacy published record; library summary not full-text reviewed"
+    },
+    {
+      "libraryId": "707",
+      "sourceFile": "Return to sport after surgical   treatment of Lisfranc injuries in athletes - A retrospective case series.pdf",
+      "citation": "Vopat BG, Vopat ML, van Dijk PAD, et al. Return to Sport after Surgical Treatment of Lisfranc Injuries in Athletes: A Retrospective Case Series. Kansas Journal of Medicine. 2019;12(4):141-145.",
+      "year": 2019,
+      "doi": "10.17161/kjm.v12i4.13262",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Full-text screened and published"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "text": "A systematic review that included 114 of 19,189 screened studies concluded that, even with the large ACL literature, there is no standardized return to sport criterion.",
+      "evidence": [
+        {
+          "libraryId": "711",
+          "page": 1,
+          "excerpt": "Even with the enormous amount of literature that exists regarding ACL injuries and testing there is no standardized criterion for"
+        },
+        {
+          "libraryId": "711",
+          "page": 1,
+          "excerpt": "Of 19,189 studies, 114 (0.6%) studies published prior to May of 2024 met inclusion"
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "text": "In that review, 82% of studies analyzed return to sport after ACL reconstruction, and the most common test was isokinetic dynamometry, used in 73% of studies.",
+      "evidence": [
+        {
+          "libraryId": "711",
+          "page": 1,
+          "excerpt": "Furthermore, 82% specifically analyzed RTS following ACL reconstruction. The most common RTS test was isokinetic dynamometry testing which is seen in 73% of studies."
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "text": "The review authors report that most authors agree quadriceps strength is of vital importance, and that several studies validate handheld isometric dynamometry against isokinetic testing for clinics without isokinetic equipment.",
+      "evidence": [
+        {
+          "libraryId": "711",
+          "page": 26,
+          "excerpt": "Majority of authors agree that quadriceps strength in particular is of vital importance. Because the gold standard (iso-kinetic testing) not being available in most clinics, several studies validate the use of handheld isometric dynamometry against isokinetic."
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "text": "The review authors consider hop tests a necessary functional test before return to sport, but report that the SLHD hop test has low sensitivity for identifying limb asymmetry when used in isolation, although it correlates strongly with knee extensor strength.",
+      "evidence": [
+        {
+          "libraryId": "711",
+          "page": 26,
+          "excerpt": "Secondly, hop tests are considered a widely necessary functional movement capability test that needs to be assessed prior to RTS."
+        },
+        {
+          "libraryId": "711",
+          "page": 26,
+          "excerpt": "The SLHD demonstrates low sensitivity when used in isolation while attempting to identify limb asymmetry prior to RTS; however, it does have a strong correlation with knee extensor strength."
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "text": "The review authors recommend psychological patient reported outcomes for hip and ankle cases, as with the knee.",
+      "evidence": [
+        {
+          "libraryId": "711",
+          "page": 26,
+          "excerpt": "As with the knee, psychological patient reported outcomes should be unitized for both the hip and ankle as well."
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "text": "The review authors note that none of the included test studies followed athletes after return to sport clearance to assess re-injury rates.",
+      "evidence": [
+        {
+          "libraryId": "711",
+          "page": 27,
+          "excerpt": "but none of them followed athletes once given RTS clearance to assess re-injury rates."
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "text": "An international expert Delphi consensus on hamstring injuries recommends progressing rehabilitation based on capacity and symptoms, with pain thresholds that depend on the activity, except that pain-free criteria were supported for sprinting (85.5% agreement).",
+      "evidence": [
+        {
+          "libraryId": "421",
+          "page": 17,
+          "excerpt": "This panel recommends rehabilitation progress based on capacity and symptoms, with pain thresholds dependent on activity, except pain-free criteria supported for sprinting (85.5%)."
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "text": "In the same hamstring consensus, with a consensus threshold set at 70%, benchmarks for flexibility (40%) and strength (66.1%) did not reach agreement.",
+      "evidence": [
+        {
+          "libraryId": "421",
+          "page": 17,
+          "excerpt": "Benchmarks for flexibility (40%) and strength (66.1%) and adjuncts to rehabilitation (68.9%) did not reach agreement."
+        },
+        {
+          "libraryId": "421",
+          "page": 17,
+          "excerpt": "Consensus threshold was set a priori at 70%. Expert response rates were 35/46 (76%) (first round)"
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "text": "The hamstring consensus panel recommends individualized rehabilitation based on the athlete, sporting demands, involved muscles and injury type and severity, and experts focus on the demands and capacity required for match play when deciding the rehabilitation end goal and return to sport timing (89.8% agreement each).",
+      "evidence": [
+        {
+          "libraryId": "421",
+          "page": 17,
+          "excerpt": "This consensus panel recommends individualized rehabilitation based on the athlete, sporting demands, involved muscle(s) and injury type and severity (89.8%)."
+        },
+        {
+          "libraryId": "421",
+          "page": 17,
+          "excerpt": "Experts focus on the demands and capacity required for match play when deciding the rehabilitation end goal and timing of RTS (89.8%)."
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "text": "In a case study of one professional soccer player after ACL reconstruction, the authors state that GPS-embedded inertial measurement unit analytics add sport-specific information on stride mechanics and step impulse asymmetries that can be used to guide phase progression.",
+      "evidence": [
+        {
+          "libraryId": "396",
+          "page": 8,
+          "excerpt": "invaluable sport-specific information to monitor stride mechanics and step impulse asymmetries throughout the rehabilitation process, that can be used to guide phase progression"
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "text": "In that single-player case, transient episodes of knee pain related to meniscus surgery delayed the return to running.",
+      "evidence": [
+        {
+          "libraryId": "396",
+          "page": 6,
+          "excerpt": "In the present case, transient episodes of knee pain (as a consequence of the meniscus surgery) delayed the return to running"
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "text": "The case study authors describe the return to sport process as a gradual transition from rehabilitation to performance.",
+      "evidence": [
+        {
+          "libraryId": "396",
+          "page": 3,
+          "excerpt": "The return to sport process involves a gradual transition from rehabilitation to performance"
+        }
+      ]
+    },
+    {
+      "id": "C13",
+      "text": "In a case series of soccer players after ACL reconstruction who completed a criteria-based rehabilitation process ending with a 5-stage on-field program, 84% of followed players returned to competition (100% of professionals, 80% of amateurs) and 10% sustained an ACL reinjury.",
+      "evidence": [
+        {
+          "libraryId": "705",
+          "page": 1,
+          "excerpt": "soccer players with ACLR undergoing a criteria-based rehabilitation process, concluding with a 5-stage OFR program."
+        },
+        {
+          "libraryId": "705",
+          "page": 1,
+          "excerpt": "with a median time of 2.3 years after ACLR and 84% RTC, with higher rates in professionals (100%) than amateurs (80%). Ten (10%) players sustained an ACL reinjury."
+        }
+      ]
+    },
+    {
+      "id": "C14",
+      "text": "A narrative review of bilateral asymmetry in sport, summarized in a 2023 research digest, reports that asymmetry assessments are highly task-, metric-, individual- and sport-specific, fluctuate significantly over time in magnitude and direction, and tend to be poorly correlated with each other and with general performance measures.",
+      "evidence": [
+        {
+          "libraryId": "425",
+          "page": 25,
+          "excerpt": "Assessments of bilateral asymmetries are highly task-, metric-, individual-, and sport-specific; fluctuate significantly in time (in magnitude and, more importantly, in direction); and tend to be poorly correlated among themselves, as well as with general performance measures."
+        }
+      ]
+    },
+    {
+      "id": "C15",
+      "text": "The same narrative review reports that injuries tend to accentuate bilateral asymmetries but that there is no evidence pre-existing asymmetries increase injury risk.",
+      "evidence": [
+        {
+          "libraryId": "425",
+          "page": 25,
+          "excerpt": "While injuries tend to accentuate bilateral asymmetries, there is no evidence that pre-existing asymmetries increase injury risk."
+        }
+      ]
+    },
+    {
+      "id": "C16",
+      "text": "In a small retrospective series of athletes after surgical repair of ligamentous Lisfranc injuries, patients were able to return to sport when they had regained almost full ankle plantar flexion strength.",
+      "evidence": [
+        {
+          "libraryId": "707",
+          "page": 2,
+          "excerpt": "patients were able to return to sport when they"
+        },
+        {
+          "libraryId": "707",
+          "page": 2,
+          "excerpt": "had regained almost full ankle plantar flexion strength and perform"
+        }
+      ]
+    },
+    {
+      "id": "C17",
+      "text": "In that Lisfranc series, 10 of 11 athletes were available for at least one year of follow-up, and the majority also experienced some residual pain with their sport.",
+      "evidence": [
+        {
+          "libraryId": "707",
+          "page": 2,
+          "excerpt": "of which 91% (10/11) were available for at least one year of follow-"
+        },
+        {
+          "libraryId": "707",
+          "page": 1,
+          "excerpt": "However, the majority of the patients also experienced some residual pain with their respective sport."
+        }
+      ]
+    }
+  ],
+  "assumptions": [
+    "The specific lower-extremity injury was not stated, so ACL, hamstring and Lisfranc evidence was treated as indirect analogues.",
+    "Modified team practice was treated as roughly equivalent to the end of on-field rehabilitation and the start of the return to train phase described in the sources."
+  ],
+  "coverageGaps": [
+    "No study tests a combined decision rule using symptoms, strength, movement quality and running or cutting exposure at the step from individual rehabilitation to modified team practice.",
+    "No evidence in collegiate athletes, female athletes, or court sports for this transition.",
+    "No evidence on how to align or weight signals collected on different days.",
+    "No validated running or cutting exposure targets for entry to modified team practice.",
+    "The original text of the control-chaos continuum load planning paper (libraryId 591) was not accessible and may be a relevant lead."
+  ],
+  "leads": [
+    {
+      "libraryId": "582",
+      "citation": "Myszka S., Yearby T., Davids K. <i>Being Water</i> : how key ideas from the practice of Bruce Lee align with contemporary theorizing in movement skill acquisition. Sport, Education and Society. 2024;29(4):451-467. doi:10.1080/13573322.2022.2160701.",
+      "note": "Relevant lead; original text not accessible to the drafter, so it supports no claim."
+    },
+    {
+      "libraryId": "591",
+      "citation": "Taberner M., Allen T., O'keefe J., Cohen D. Contextual considerations using the ′control-chaos continuum′ for return to sport in elite football - Part 1: Load planning. Physical Therapy in Sport. 2022;53:67-74. doi:10.1016/j.ptsp.2021.10.015.",
+      "note": "Relevant lead; original text not accessible to the drafter, so it supports no claim."
+    },
+    {
+      "libraryId": "603",
+      "citation": "Moore S.R., Bruinvels G., Smith-Ryan A.E. Menstrual Cycle Phase–Based Strength & Conditioning Training for Elite Team Sport Female Athletes. Strength & Conditioning Journal. 2024. doi:10.1519/SSC.0000000000000879.",
+      "note": "Relevant lead; original text not accessible to the drafter, so it supports no claim."
+    },
+    {
+      "libraryId": "630",
+      "citation": "Arede, J., Zhou, R., Singh, H., & Schöllhorn, W. I. (2025). Applying differential learning during rehabilitation after anterior cruciate ligament injury: A basketball single-case study. Healthcare, 13(24), 3247. https://doi.org/10.3390/healthcare13243247",
+      "note": "Relevant lead; original text not accessible to the drafter, so it supports no claim."
+    },
+    {
+      "libraryId": "578",
+      "citation": "Akkus C, Pakoz B, Gultekinler BD, Turgut E. Mapping the evidence on dual-task training in musculoskeletal injury rehabilitation: a systematic review. Research in Sports Medicine. 2026:1–36. doi:10.1080/15438627.2026.2673035.",
+      "note": "Relevant lead; original text not accessible to the drafter, so it supports no claim."
+    }
+  ],
+  "drafter": {
+    "version": "1.1.0",
+    "composer": "claude -p (claude-opus-5-5)",
+    "sourcesInPack": [
+      "396",
+      "705",
+      "425",
+      "703",
+      "711",
+      "707",
+      "395",
+      "496",
+      "325",
+      "700",
+      "400",
+      "374",
+      "420",
+      "421"
+    ],
+    "claimsProposed": 17,
+    "claimsRemoved": 0,
+    "notes": []
+  }
+}

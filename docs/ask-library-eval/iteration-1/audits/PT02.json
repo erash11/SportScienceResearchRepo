@@ -1,0 +1,36 @@
+{
+  "questionId": "PT02",
+  "tier": "Limited",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "Abstract conclusion (p1): \"there is no standardized criterion for RTS clearance\"; claim drops 'for clearance' but meaning is unchanged."},
+    {"claimId": "C2", "rating": "supported", "note": "Verbatim from the abstract results, p1."},
+    {"claimId": "C3", "rating": "supported", "note": "Verbatim from the Limitations section, PDF p27."},
+    {"claimId": "C4", "rating": "supported", "note": "Verbatim from Discussion, PDF p26 (Figs 2-4)."},
+    {"claimId": "C5", "rating": "supported", "note": "PDF p26: \"psychological patient reported outcomes should be unitized for both the hip and ankle as well\"."},
+    {"claimId": "C6", "rating": "supported", "note": "Abstract p1 matches: level 4 case series, 97 followed, 84% RTC (100% pro, 80% amateur), 10 ACL reinjuries."},
+    {"claimId": "C7", "rating": "supported", "note": "p6 (journal p379) verbatim; the same page links a step-impulse asymmetry episode to knee pain that stopped running for a few days."},
+    {"claimId": "C8", "rating": "supported", "note": "p8 key-points bullet: sensor analytics \"can be used to guide phase progression and day-to-day programming\"; claim correctly frames it as the authors' statement."},
+    {"claimId": "C9", "rating": "supported", "note": "n=10 elite players (p5); p14 frames the post-injury use as hypothetical (\"while still hypothetical given the low number of players\"), which 'suggested' adequately conveys."},
+    {"claimId": "C10", "rating": "supported", "note": "Limitations, p15, verbatim."},
+    {"claimId": "C11", "rating": "supported", "note": "Digest p25 abstract of a narrative review, verbatim. Note the review concerns asymmetry in general sport populations, not post-injury rehabilitation."},
+    {"claimId": "C12", "rating": "supported", "note": "Abstract p1: 87% of previous function; \"majority of the patients also experienced some residual pain with their respective sport\"."}
+  ],
+  "statementIssues": [
+    {"location": "actions[2]", "severity": "minor", "note": "Says the authors described using sensors to track asymmetries \"that guide phase progression\"; the source says they \"can be used to guide\" progression, a proposal rather than a tested practice."},
+    {"location": "limitations[1]", "severity": "minor", "note": "\"None ... follows outcomes after a combined criterion is applied\" slightly understates 705, which did follow RTC and reinjury after a criteria-based process, though without comparison."},
+    {"location": "monitoring[1]", "severity": "minor", "note": "The asymmetry digest (C11) addresses asymmetry in general sport populations; applying it to post-injury limb-symmetry interpretation is a transfer the brief does not flag."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Limited is appropriate: no source tests a combination rule, evidence is a systematic review, uncontrolled ACL case series and single case. No recommendation was given (recommendedDirection null) and actions are framed as descriptive options.",
+  "safetyIssues": [],
+  "criticalFailures": [],
+  "useful": true,
+  "usefulnessScore": 3,
+  "usefulnessNote": "Honest and accurate about the gap, with clear guardrails keeping clearance with clinicians. It underuses the most decision-relevant evidence in its own sources: 705 reports final-stage on-field GPS outputs versus team-training demands (TD 106%, HID 104%, PS 88%, ACC 110%, DEC 48%), which directly informs readiness for modified team practice, and 396 notes cutting and deceleration are hard to reach in individual phases. Movement quality is barely addressed.",
+  "suggestedDrafterFixes": [
+    "When a source reports outputs relative to the target activity (for example field loads versus team-training demands), surface them for questions about advancing to that activity.",
+    "Cover each signal named in the practical question (here movement quality) or state explicitly that the pack has nothing on it.",
+    "Preserve modal verbs from source text ('can be used to guide') rather than converting proposals into described practice.",
+    "Flag when evidence about a general population (healthy-athlete asymmetry) is applied to an injured or rehabilitation population."
+  ]
+}

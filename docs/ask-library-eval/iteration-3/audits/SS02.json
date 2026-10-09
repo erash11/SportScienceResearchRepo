@@ -1,0 +1,46 @@
+{
+  "questionId": "SS02",
+  "tier": "Limited",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "Verbatim on p2 and correctly labeled as cited background (ref 24), not the study's own data."},
+    {"claimId": "C2", "rating": "supported", "note": "Abstract conclusion, n = 31 (p2), the short-microcycle caveat and the team-level caution (p4) all match. Sex is not reported in the source, and the claim does not assert it."},
+    {"claimId": "C3", "rating": "supported", "note": "p3 results: LnSleep and LnEnergy decrements 'in response to both tournaments and international travel (p < 0.05)'; LnRMSSD decrements 'only ... international tournament (p = 0.02-0.07)'; match loads not different. Methods p2 confirm adult males."},
+    {"claimId": "C4", "rating": "supported", "note": "Introduction text on p2, citing ref 17, correctly attributed as cited background."},
+    {"claimId": "C5", "rating": "supported", "note": "p2 sample, p6 'decrease in CMJ could not be explained by any of the external load variables', and p1 individual-prediction statement all match."},
+    {"claimId": "C6", "rating": "supported", "note": "Verbatim limitation on p8. The authors add that match load and recovery 'might have been different from an official, within-season match'."},
+    {"claimId": "C7", "rating": "supported", "note": "p1: 45 players, 1 club, 2018 season. 'Perceived soreness represents a distinct element' is the authors' conclusion. It follows from soreness not meeting the PCA redundancy threshold."},
+    {"claimId": "C8", "rating": "supported", "note": "p1 conclusion and p3 discussion match. The authors cite Govus et al. as American Football (the reference title says American college football)."},
+    {"claimId": "C9", "rating": "supported", "note": "z score formula on p2 and the 'relative changes in wellness (ie, wellness z scores)' suggestion on p6-7 match."},
+    {"claimId": "C10", "rating": "supported", "note": "p1 results and p6 'Clinical implications' (individual baseline TL profile) match. The claim correctly frames the suggestion as being for injury prevention."},
+    {"claimId": "C11", "rating": "supported", "note": "All excerpts are verbatim. Little's test violated MCAR (p3). 'Athletes may tire of completing surveys' is a general example in the introduction, and the claim attributes it to the author's commentary, not to a finding."},
+    {"claimId": "C12", "rating": "supported", "note": "p8 and the p11 key message match. This is expert-framework content, which the brief labels as such elsewhere."},
+    {"claimId": "C20", "rating": "supported", "note": "p4: ES -0.75, -0.68, -0.68 (most likely) and -0.25 (likely) at 72 h."},
+    {"claimId": "C21", "rating": "supported", "note": "Verbatim from the p1 abstract conclusion."},
+    {"claimId": "C22", "rating": "minor", "note": "Accurate as stated, but it leaves out the authors' other next-day finding: higher high-speed distance was associated with higher wellness (p3: '0.26 ± 0.10 increase'). That finding is relevant when external load is elevated."},
+    {"claimId": "C23", "rating": "supported", "note": "Verbatim on p3."},
+    {"claimId": "C24", "rating": "supported", "note": "p3: best of three to five jumps; 'Data from our lab show a CV of 4.7%'."},
+    {"claimId": "C25", "rating": "supported", "note": "p3 statistics and results text match (group SWC ±3%, individual SWC 0.5 × baseline CV)."},
+    {"claimId": "C26", "rating": "supported", "note": "p3 discussion matches, including DC-Post1 not being significant and about 80% of players exceeding the individual SWC."},
+    {"claimId": "C28", "rating": "supported", "note": "Table 5 (p9) jump-test note, correctly framed as the authors' expert rating."},
+    {"claimId": "C29", "rating": "supported", "note": "p10, citing Neupert 2024, attributed as cited work."},
+    {"claimId": "C30", "rating": "supported", "note": "p8 limitation and the speculative relative-match-load sentence match. 'Without testing it' is accurate."}
+  ],
+  "statementIssues": [
+    {"location": "actions[0]", "severity": "minor", "note": "Says sleep data were 'not missing at random'. The source shows only a violation of 'missing completely at random' (Little's test), and MNAR is a distinct technical term. The step to load, wellness and test entries is a reasonable extrapolation, but it is not labeled as professional judgment."},
+    {"location": "evidenceTension", "severity": "minor", "note": "'Most AFL match load metrics were also unrelated to next-day wellness, although PlayerLoadAP was' leaves out that high-speed distance went the opposite way (higher load, better next-day wellness). Including it would strengthen the context-dependence point."},
+    {"location": "evidenceConfidence.rationale", "severity": "minor", "note": "'Self-reported and HRV responses did not move together' is slightly stronger than the source. The authors report LnRMSSD reductions 'preceded by travel-related decrements in perceived sleep quality and energy' and co-occurring reductions on several days. The divergence was partial (the bottomLine's 'can move apart' is accurate)."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Limited is appropriate. No source tests the load-up, wellness-down, neuromuscular-test-stable pattern. The evidence is indirect (HRV rather than a neuromuscular test; a post-season non-official match for CMJ), mixed on how wellness and load relate, and drawn from professional or semiprofessional male samples. recommendedDirection is null. Follow-up options are offered as labeled professional judgment without endorsing one, which the tier permits.",
+  "safetyIssues": [],
+  "criticalFailures": [],
+  "useful": true,
+  "usefulnessScore": 4,
+  "usefulnessNote": "A sports scientist gets a clear bottom line in under two minutes: don't treat a stable test as settling the question, and follow up individually against each athlete's baseline. The brief adds concrete checks (data completeness, wellness items, test typical error, timing relative to matches) and honest coverage gaps on collegiate and female athletes and on smallest worthwhile change (SWC) for neuromuscular tests. Several actions rest mostly on labeled professional judgment or tangential sources (sleep-wearable missingness, hamstring injury load), which limits evidential weight.",
+  "suggestedDrafterFixes": [
+    "When summarizing a study's 'most metrics unrelated' result, also report any significant association that goes in the opposite direction to the one highlighted, especially when it bears on the requested scenario.",
+    "Keep statistical terms exact when paraphrasing claims into actions (for example, 'not missing completely at random' must not become 'not missing at random').",
+    "When describing divergence between subjective and objective markers, state where they co-moved as well as where they diverged, rather than summarizing as 'did not move together'.",
+    "Label the extension of a source's lesson to a different data type (for example, sleep-wearable missingness to load, wellness and test entries) as professional judgment."
+  ]
+}

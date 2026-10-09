@@ -1,0 +1,33 @@
+{
+  "questionId": "SS01",
+  "tier": "Moderate",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "Abstract p1 verbatim: 42 professional Australian footballers, 1 club; 'Sensitivity was calculated by dividing weekly CV% by test CV% to produce a signal to noise ratio.'"},
+    {"claimId": "C2", "rating": "supported", "note": "Abstract p1 verbatim. Table 1 gives CMJ jump height weekly CV 5.9% and SNR 1.5 ('Acceptable'), which the brief could have reported."},
+    {"claimId": "C3", "rating": "supported", "note": "p5 and p14 verbatim."},
+    {"claimId": "C4", "rating": "supported", "note": "p9: MDC = 1.96 x sqrt(2) x SEM; ICC2,k with k the mean of 3 repetitions. Sample was 16 healthy individuals, which the brief never states."},
+    {"claimId": "C5", "rating": "supported", "note": "Abstract p1 verbatim: 18 players, same-day test-retest, 'CV exceeded the smallest worthwhile change on both limbs'."},
+    {"claimId": "C6", "rating": "supported", "note": "Abstract p1 verbatim; p2 confirms 'A total of 10 male college athletes'."},
+    {"claimId": "C7", "rating": "minor", "note": "Counts are verbatim from p1, but the same abstract reports differences of 3.4% or less and near-perfect correlations and concludes the Hawkin system is a valid alternative; the claim gives only the bias side."},
+    {"claimId": "C8", "rating": "minor", "note": "Abstract p1 verbatim, but the population (17 CrossFit athletes with deliberately induced depth conditions) is not named in the claim."},
+    {"claimId": "C9", "rating": "supported", "note": "Abstract p1 verbatim; 82 NCAA Division I football athletes."}
+  ],
+  "statementIssues": [
+    {"location": "limitations[0]", "severity": "minor", "note": "Calls source 380 'a legacy record not full-text reviewed', and the sourceReview dimension says the same for several sources, yet every source is marked fullTextReviewed true. Internal inconsistency."},
+    {"location": "evidenceConfidence.dimensions.transferability", "severity": "minor", "note": "Omits the force-plate reliability source's population (16 healthy individuals), the source that carries the MDC method and the 3-repetition point."},
+    {"location": "recommendedDirection / actions[1]", "severity": "minor", "note": "Tells staff to compute a minimal detectable change but does not give the formula the cited source uses (MDC = 1.96 x sqrt(2) x SEM, p9), a small omission that reduces actionability."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Moderate is defensible for a methodological recommendation: all sources agree that a meaningful change must exceed test-retest error for that metric, and one source applies SNR directly to weekly CMJ. Transferability to collegiate athletes is limited and the brief keeps the recommendation hedged as a method, not a threshold.",
+  "safetyIssues": [],
+  "criticalFailures": [],
+  "useful": true,
+  "usefulnessScore": 4,
+  "usefulnessNote": "A sports scientist gets a clear, correct procedure (local test-retest, per-metric CV/SEM/MDC, compare weekly change, hold system and protocol constant) with appropriate caveats in under two minutes. It would be stronger with the MDC formula and the reported CMJ reference values (jump height test CV 3.9%, SNR 1.5 in pro AFL) as context.",
+  "suggestedDrafterFixes": [
+    "Derive full-text-review statements in limitations and dimensions from the sources array so they cannot contradict fullTextReviewed flags.",
+    "When a cited source gives the exact computation behind a recommended method (e.g. an MDC formula), include it in the claim and the action.",
+    "State the population and design for every claim (sample size and athlete type), including validation studies.",
+    "When quoting bias or error findings, also report the source's magnitude and conclusion so the caution is not one-sided."
+  ]
+}

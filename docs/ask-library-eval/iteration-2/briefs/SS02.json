@@ -1,0 +1,479 @@
+{
+  "schemaVersion": 1,
+  "briefId": "ATL-B-20261009-SS02",
+  "requestId": "ATL-R-20261009-SS02",
+  "version": 1,
+  "createdAt": "2026-10-09T03:50:50.061Z",
+  "status": "On-Demand",
+  "reviewStatus": "Not Expert-Reviewed",
+  "practicalQuestion": "How should sports science staff interpret a week in which external load is elevated, athlete-reported wellness worsens, but a standardized neuromuscular test remains stable?",
+  "decisionContext": {
+    "population": "Collegiate team-sport athletes",
+    "sport": "In-season training and competition monitoring",
+    "phase": "Review of the current seven-day microcycle",
+    "outcome": "Decide what follow-up is warranted before changing group or individual training exposure",
+    "constraints": "Measures have different error and timing; individual baselines vary; no single measure is designated as the gold standard"
+  },
+  "evidenceConfidence": {
+    "tier": "Limited",
+    "rationale": "No source in the pack tests the exact pattern of higher external load, worse wellness and a stable neuromuscular test, and none studies collegiate athletes. Several sources show that load, self-report and objective markers can move independently or form separate constructs. The link between load and wellness is not consistent across sources. Evidence on neuromuscular tests is indirect.",
+    "dimensions": {
+      "sourceReview": "Every claim is checked against original source text. Designs include observational cohorts in professional soccer and Australian football, a retrospective study of one rugby sevens team, a principal-component analysis of one club's monitoring data, a leading article on missing data, and abstracts reproduced in a research digest.",
+      "directness": "Indirect. The sources show that measures can diverge or capture different constructs. None tests how to interpret the three-way pattern in this question or which follow-up improves decisions.",
+      "consistency": "Mixed. In professional soccer, microcycle length changed external load but not perceived wellness. In elite Australian football, one match load metric was associated with reduced wellness.",
+      "transferability": "Low to moderate. Samples are professional or elite, mostly male, in soccer, Australian football and rugby sevens. The neuromuscular data come from a CMJ article abstract and from AFL players with prior hamstring injury. No collegiate or female samples."
+    }
+  },
+  "bottomLine": {
+    "text": "The library has no study of this exact pattern. Nearby evidence suggests external load, perceived wellness and objective markers can move independently. In professional soccer, microcycle length changed external load but not perceived wellness. In one rugby sevens team, self-report fell after both tournaments, while heart rate variability changed only after the international one, with no clear difference in match load. In Australian football, wellness and external load fell into separate components, and soreness was distinct from general wellness. A stable test result and worse wellness can both be real signals. Follow-up should check data completeness, each athlete's own baseline, and which wellness items changed before anyone changes exposure.",
+    "claimIds": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C11",
+      "C12"
+    ]
+  },
+  "recommendedDirection": null,
+  "actions": [
+    {
+      "title": "Check data quality before interpreting",
+      "text": "Confirm how many wellness and test entries are missing this week and why. Missing data are common and can bias dashboard averages if they are not missing at random. This applies to group means and to 7-day summaries.",
+      "claimIds": [
+        "C12"
+      ]
+    },
+    {
+      "title": "Compare each athlete to their own baseline",
+      "text": "Express this week's load and wellness relative to each athlete's typical range, as studies have done with within-individual z scores or median and interquartile range scaling. Also check whether the elevated load is outside normal week-to-week variation. In professional soccer, the same session types varied substantially from week to week.",
+      "claimIds": [
+        "C3",
+        "C10",
+        "C11"
+      ]
+    },
+    {
+      "title": "Option A: treat worse wellness as a separate signal and gather more information",
+      "text": "Self-report and an objective marker diverged under similar match loads in rugby sevens. Wellness also formed a separate construct from external load in Australian football. One option is item-level review of wellness, especially soreness reported separately, and a conversation with affected athletes before any exposure change. Professional judgment (not tested by the cited evidence): this option keeps group exposure unchanged while information is gathered.",
+      "claimIds": [
+        "C4",
+        "C5",
+        "C6",
+        "C7"
+      ]
+    },
+    {
+      "title": "Option B: review the neuromuscular test before relying on its stability",
+      "text": "Check which test metrics are being tracked and whether they suit fatigue monitoring. The CMJ article states metric choice depends on test purpose. Check whether the change you could detect is larger than the test's error. In AFL players with prior hamstring injury, player-level differences strongly influenced post-game strength change. Professional judgment (not tested by the cited evidence): a stable group mean may hide individual changes.",
+      "claimIds": [
+        "C8",
+        "C9"
+      ]
+    },
+    {
+      "title": "Option C: targeted individual adjustment rather than a group change",
+      "text": "Professional judgment (not tested by the cited evidence): if only some athletes show worse wellness relative to their own baseline, staff may consider individual adjustments rather than changing group exposure. The cited studies did not test whether either approach changes outcomes.",
+      "claimIds": [
+        "C3",
+        "C11"
+      ]
+    }
+  ],
+  "monitoring": [
+    {
+      "label": "Wellness by item, not only total",
+      "text": "Track soreness separately from fatigue, sleep, stress and mood. In Australian football, soreness was a distinct element of perceived wellness.",
+      "claimIds": [
+        "C6",
+        "C7"
+      ]
+    },
+    {
+      "label": "Individual-relative load and wellness",
+      "text": "Use within-athlete scaling to judge whether this week's load and wellness are unusual for that athlete.",
+      "claimIds": [
+        "C3",
+        "C11"
+      ]
+    },
+    {
+      "label": "Neuromuscular test metric and error",
+      "text": "Record which metric is used and its known error. Look at individual changes, not only the group mean.",
+      "claimIds": [
+        "C8",
+        "C9"
+      ]
+    },
+    {
+      "label": "Data completeness",
+      "text": "Log missing entries and their likely reasons alongside the dashboard values.",
+      "claimIds": [
+        "C12"
+      ]
+    }
+  ],
+  "guardrails": [
+    {
+      "text": "Do not treat any single measure as decisive. In rugby sevens, self-report and heart rate variability moved differently with no clear difference in match load. The constraints also note that no measure is designated as the gold standard.",
+      "claimIds": [
+        "C4",
+        "C5"
+      ]
+    },
+    {
+      "text": "Do not apply the reported load ranges or effect sizes as thresholds for collegiate athletes. They come from professional or elite samples in other sports and describe those settings only.",
+      "claimIds": [
+        "C3",
+        "C10"
+      ]
+    },
+    {
+      "text": "Professional judgment (not tested by the cited evidence): this brief does not diagnose, clear or restrict any athlete. Pain, illness signs or wellbeing concerns raised during follow-up go to the medical and mental health staff, who own those decisions.",
+      "claimIds": [
+        "C4",
+        "C7"
+      ]
+    }
+  ],
+  "limitations": [
+    {
+      "text": "All load and wellness studies used professional or elite athletes in soccer, Australian football or rugby sevens. Several samples were male. None were collegiate.",
+      "claimIds": [
+        "C1",
+        "C2",
+        "C5",
+        "C6",
+        "C10"
+      ]
+    },
+    {
+      "text": "No source measured external load, wellness and a standardized neuromuscular test together and tested how to act on a divergence. The closest evidence on divergence used heart rate variability, not a neuromuscular test, in a team of 10 players.",
+      "claimIds": [
+        "C4",
+        "C5"
+      ]
+    },
+    {
+      "text": "Neuromuscular test evidence is indirect: an abstract about CMJ metric selection and a strength test in AFL players with prior hamstring injury, both reproduced in a research digest.",
+      "claimIds": [
+        "C8",
+        "C9"
+      ]
+    }
+  ],
+  "whatCouldChange": [
+    {
+      "text": "A collegiate study that tracks external load, wellness items and a neuromuscular test in the same athletes, and reports how divergent patterns relate to later outcomes, could support a firmer direction.",
+      "claimIds": [
+        "C1",
+        "C4"
+      ]
+    },
+    {
+      "text": "Local data on the typical error of the specific neuromuscular test and wellness scale used here would show whether 'stable' and 'worse' exceed measurement noise.",
+      "claimIds": [
+        "C9",
+        "C11"
+      ]
+    }
+  ],
+  "evidenceTension": {
+    "text": "In professional soccer, microcycle length changed external load but had no significant effect on perceived wellness. In elite Australian football, match PlayerLoad in the anteroposterior vector was associated with reduced subjective wellness, and match-day wellness had trivial effects on later match load. The studies measured different exposures, so they may not directly conflict. They do show the link between external load and wellness is not consistent, so elevated load alone cannot explain worse wellness.",
+    "claimIds": [
+      "C1",
+      "C2",
+      "C3"
+    ]
+  },
+  "sources": [
+    {
+      "libraryId": "718",
+      "sourceFile": "Effect of the length of the microcycle on the daily external load, fatigue, sleep quality, stress, and muscle soreness of professional soccer players - A full-season study.pdf",
+      "citation": "Effect of the length of the microcycle on the daily external load, fatigue, sleep quality, stress, and muscle soreness of professional soccer players: A full-season study. Sports Health. 2022;15(5):695-699.",
+      "year": 2022,
+      "doi": "10.1177/19417381221131531",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Full-text screened and published"
+    },
+    {
+      "libraryId": "431",
+      "sourceFile": "No Influence of Prematch Subjective Wellness Ratings on External Load During Elite Australian Football Match Play.pdf",
+      "citation": "Bellinger PM, Ferguson C, Newans T, Minahan CL. No Influence of Prematch Subjective Wellness Ratings on External Load During Elite Australian Football Match Play. International Journal of Sports Physiology and Performance. 2020;(Ahead of Print):1-7. doi:10.1123/ijspp.2019-0395",
+      "year": 2020,
+      "doi": "10.1123/ijspp.2019-0395",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Legacy published record; library summary not full-text reviewed"
+    },
+    {
+      "libraryId": "719",
+      "sourceFile": "Effects of consecutive domestic and international tournaments on heart rate variability in an elite rugby sevens team.pdf",
+      "citation": "Effects of consecutive domestic and international tournaments on heart rate variability in an elite rugby sevens team. Journal of Science and Medicine in Sport. 2019;22(5):616-621.",
+      "year": 2019,
+      "doi": "10.1016/j.jsams.2018.11.022",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Full-text screened and published"
+    },
+    {
+      "libraryId": "133",
+      "sourceFile": "Data Reduction Approaches to Athlete Monitoring in Professional Australian Football.pdf",
+      "citation": "Ryan S, Kempton T, Coutts AJ. Data Reduction Approaches to Athlete Monitoring in Professional Australian Football. International Journal of Sports Physiology and Performance. 2020;(Ahead of Print). DOI: 10.1123/ijspp.2020-0083",
+      "year": 2020,
+      "doi": "10.1123/ijspp.2020-0083",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Legacy published record; library summary not full-text reviewed"
+    },
+    {
+      "libraryId": "423",
+      "sourceFile": "NFL-PFATS Sports Science Research Update - February 2023.pdf",
+      "citation": "NFL-PFATS. Sports Science Research Update: February 2023. 2023.",
+      "year": 2023,
+      "doi": "",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Legacy published record; library summary not full-text reviewed"
+    },
+    {
+      "libraryId": "909",
+      "sourceFile": "Between microcycle variaiblity of external soccer training loads through the evaluation of a contemporary periodization training model CUPs.pdf",
+      "citation": "Owen A, Weston M, Clancy C. Between-microcycle variability of external soccer training loads through the evaluation of a contemporary periodisation training model 'CUPs'. International Journal of Sports Science & Coaching. 2024.",
+      "year": 2024,
+      "doi": "10.1177/17479541241251424",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Full-text screened and published"
+    },
+    {
+      "libraryId": "236",
+      "sourceFile": "Forecasting football injuries by combining screening, monitoring and machine learning.pdf",
+      "citation": "Hecksteden, A., Schmartz, G. P., Egyptien, Y., aus der Fünten, K., Keller, A., & Meyer, T. (2022). Forecasting football injuries by combining screening, monitoring and machine learning. Science and Medicine in Football. https://doi.org/10.1080/24733938.2022.2095006",
+      "year": 2022,
+      "doi": "10.1080/24733938.2022.2095006",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Legacy published record; library summary not full-text reviewed"
+    },
+    {
+      "libraryId": "393",
+      "sourceFile": "Missing data in sport science - A didactic example using wearables in American football.pdf",
+      "citation": "Tenan MS. Missing Data in Sport Science: A Didactic Example Using Wearables in American Football. Sports Med. 2023.",
+      "year": 2023,
+      "doi": "10.1007/s40279-023-01829-w",
+      "fullTextReviewed": true,
+      "libraryRecordReview": "Legacy published record; library summary not full-text reviewed"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "text": "In a full-season study of professional soccer players, microcycle length had a significant effect on volume- and intensity-related external load variables, but no significant effect on perceived wellness was observed.",
+      "evidence": [
+        {
+          "libraryId": "718",
+          "page": 1,
+          "excerpt": "The length of the microcycle had a significant effect on volume- and intensity-related external load variables, but no significant effect on perceived wellness was observed."
+        },
+        {
+          "libraryId": "718",
+          "page": 1,
+          "excerpt": "Regarding the perceived wellness, the length of the microcycle had no effect on these variables, and there were no significant interactions between the length and the day of the microcycle."
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "text": "In 34 elite male Australian football players, match-day wellness z score had trivial effects on subsequent external match load metrics.",
+      "evidence": [
+        {
+          "libraryId": "431",
+          "page": 1,
+          "excerpt": "A total of 34 elite male Australian football players completed a subjective wellness questionnaire in the days leading into the match"
+        },
+        {
+          "libraryId": "431",
+          "page": 1,
+          "excerpt": "Mixed-effect linear models revealed trivial effects of match-day wellness z score on subsequent external match load metrics."
+        }
+      ]
+    },
+    {
+      "id": "C3",
+      "text": "In the same Australian football cohort, wellness was analysed as a within-individual z score. Match PlayerLoad in the anteroposterior vector was associated with reduced subjective wellness (-0.15 ± 0.06 z score), and a match win was associated with increased wellness (0.30 ± 0.13 z score).",
+      "evidence": [
+        {
+          "libraryId": "431",
+          "page": 1,
+          "excerpt": "The relationships between perceptions of wellness (within-individual z score), external match load, and contextual factors (match result, match location, and between-matches recovery duration) were analyzed using linear mixed models."
+        },
+        {
+          "libraryId": "431",
+          "page": 1,
+          "excerpt": "Match result (win) and PlayerLoad in the anteroposterior vector (au·min−1) were associated with an increased (estimate ± SE: 0.30 ± 0.13 z score) and reduced subjective wellness (−0.15 ± 0.06 z score), respectively."
+        }
+      ]
+    },
+    {
+      "id": "C4",
+      "text": "In an elite rugby sevens team, decrements in various athlete self-report measures (ASRM) were observed after both a domestic and an international tournament (ES -0.80 to -1.73, p < 0.05). LnRMSSD heart rate variability effects relative to baseline were only observed in response to the international tournament (ES -0.89 to -1.21, p = 0.02 to 0.07).",
+      "evidence": [
+        {
+          "libraryId": "719",
+          "page": 1,
+          "excerpt": "Decrements in various ASRM were observed in response to both tournaments (ES = −0.80 ± 0.91 to −1.73 ± 1.03, p < 0.05)"
+        },
+        {
+          "libraryId": "719",
+          "page": 1,
+          "excerpt": "LnRMSSD were only observed in response to the international tournament (ES = −0.89 ± 0.92 to −1.21 ± 0.96, p = 0.02-0.07)"
+        }
+      ]
+    },
+    {
+      "id": "C5",
+      "text": "In this study of 10 Olympic-level rugby sevens players who recorded post-waking LnRMSSD, no clear differences in internal or external match-load parameters were observed between the two tournaments.",
+      "evidence": [
+        {
+          "libraryId": "719",
+          "page": 1,
+          "excerpt": "Olympic-level rugby sevens players (n = 10) recorded post-waking natural logarithm of the root mean square of successive differences (LnRMSSD)"
+        },
+        {
+          "libraryId": "719",
+          "page": 1,
+          "excerpt": "No clear differences in internal or external match-load parameters were observed between tournaments (ES = −0.35 ± 0.88 to 0.13 ± 0.88, p > 0.05)."
+        }
+      ]
+    },
+    {
+      "id": "C6",
+      "text": "In 45 professional Australian footballers from 1 club during the 2018 AFL season, analysis of daily monitoring measures identified separate components representing external load, perceived wellness, and internal load.",
+      "evidence": [
+        {
+          "libraryId": "133",
+          "page": 1,
+          "excerpt": "Data were collected from 45 professional Australian footballers from 1 club during the 2018 Australian Football League season."
+        },
+        {
+          "libraryId": "133",
+          "page": 1,
+          "excerpt": "The Daily PCA identiﬁed components representing external load, perceived wellness, and internal load."
+        }
+      ]
+    },
+    {
+      "id": "C7",
+      "text": "In the same Australian football cohort, the authors concluded that perceived soreness represents a distinct element of a player's perception of wellness.",
+      "evidence": [
+        {
+          "libraryId": "133",
+          "page": 1,
+          "excerpt": "Perceived soreness represents a distinct element of a player’s perception of wellness."
+        }
+      ]
+    },
+    {
+      "id": "C8",
+      "text": "A research digest reproducing the abstract of a Strength and Conditioning Journal article states that the CMJ metrics selected for monitoring may differ depending on whether the test is used as a proxy for performance, for neuromuscular fatigue monitoring, or for return-to-performance testing in injured athletes.",
+      "evidence": [
+        {
+          "libraryId": "423",
+          "page": 19,
+          "excerpt": "the metrics selected to monitor during CMJ testing may differ when aiming to use it as a proxy for athletic performance, as part of neuromuscular fatigue monitoring, or as part of a test battery for return to performance in injured athletes."
+        }
+      ]
+    },
+    {
+      "id": "C9",
+      "text": "In a digest abstract of a study of 26 AFL players with a previous hamstring strain injury, the post-game hamstring strength test had an acceptable level of error (MAE 5.77 to 7.14%). Player as a random effect strongly influenced post-game strength decrement and within-week strength change.",
+      "evidence": [
+        {
+          "libraryId": "423",
+          "page": 16,
+          "excerpt": "This study sought to investigate post-game hamstring strength recovery of 26 Australian Football League (AFL) players with a previous hamstring strain injury (HSI) across an AFL season."
+        },
+        {
+          "libraryId": "423",
+          "page": 16,
+          "excerpt": "an acceptable level of error (MAE = 5.77-7.14%). Player as a random effect strongly influenced post-game strength decrement and within-week strength change"
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "text": "In 37 professional soccer players across an 8-week in-season mesocycle, substantial week-to-week variation in external load was evident for each of four training session classifications compared with the first microcycle, ranging from 1244 m to 2248 m for total distance.",
+      "evidence": [
+        {
+          "libraryId": "909",
+          "page": 1,
+          "excerpt": "Thirty-seven professional soccer players participated in this observational study which took place across the clubs’ initial 8-week in-season mesocycle of the 2022/23 season."
+        },
+        {
+          "libraryId": "909",
+          "page": 1,
+          "excerpt": "When compared to the ﬁrst microcycle, substantial week-to-week variation was evident for each of the four training session classiﬁcations, ranging from 1244 m to 2248 m for total distance"
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "text": "In a football injury-forecasting study combining screening and monitoring data, the authors applied robust scaling with median and interquartile range at the individual level to indicate how high or low training load was for the individual player.",
+      "evidence": [
+        {
+          "libraryId": "236",
+          "page": 12,
+          "excerpt": "To get an indication of how high or low training load is for the individual player, a robust scaling with median and interquartile range was applied on the individual level."
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "text": "A leading article using an American football wearable example states that data are commonly missing from training sessions due to equipment malfunction or athlete non-compliance. It states that violating the missing completely at random assumption results in a biased dashboard, whether data are shown as simple averages or with higher-level analytics.",
+      "evidence": [
+        {
+          "libraryId": "393",
+          "page": 1,
+          "excerpt": "it is common for data to be missing from a particular training session due to equipment malfunction, athlete non-compliance, etc."
+        },
+        {
+          "libraryId": "393",
+          "page": 1,
+          "excerpt": "Whether data are aggregated on a dashboard as simple histograms and averages or with higher-level analytics, violating the ‘missing completely at random’ assumption results in a biased dashboard."
+        }
+      ]
+    }
+  ],
+  "assumptions": [
+    "The standardized neuromuscular test is assumed to be a jump or strength test such as a CMJ, because the context does not name it.",
+    "Elevated load and worse wellness are assumed to be judged against team or individual norms for the current season.",
+    "Wellness is assumed to be a multi-item questionnaire that includes soreness."
+  ],
+  "coverageGaps": [
+    "Studies in collegiate team-sport athletes linking external load, wellness and neuromuscular test responses",
+    "Studies that measure all three markers together and test how to act when they diverge",
+    "Evidence on which follow-up actions after a divergent week change availability, performance or injury outcomes",
+    "Female athlete samples for load and wellness divergence",
+    "Typical error or smallest meaningful change for common neuromuscular tests in collegiate athletes"
+  ],
+  "leads": [],
+  "drafter": {
+    "version": "1.1.0",
+    "composer": "claude -p (claude-opus-5-5)",
+    "sourcesInPack": [
+      "718",
+      "431",
+      "719",
+      "393",
+      "909",
+      "520",
+      "423",
+      "236",
+      "132",
+      "89",
+      "251",
+      "133",
+      "213",
+      "329"
+    ],
+    "claimsProposed": 12,
+    "claimsRemoved": 0,
+    "notes": []
+  }
+}

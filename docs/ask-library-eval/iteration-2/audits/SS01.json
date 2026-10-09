@@ -1,0 +1,41 @@
+{
+  "questionId": "SS01",
+  "tier": "Moderate",
+  "claimVerdicts": [
+    {"claimId": "C1", "rating": "supported", "note": "Abstract p1 matches. The methods report 45 players; the abstract says 42."},
+    {"claimId": "C2", "rating": "supported", "note": "Abstract p1 matches. Table 1 shows CMJ jump height had SNR 1.5, the lowest of the CMJ variables (mean concentric force 2.3, relative peak force 2.5). The brief omits this, but the claim is accurate."},
+    {"claimId": "C3", "rating": "minor", "note": "p5 sentence continues 'with test CV% ranging from 2.7% to 4.3% in relative peak power, relative peak force, and relative mean force'. The comparison concerns force and power variables, not jump height, and the authors attribute the gap to testing inside a professional training environment. The brief uses it in a jump-height noise tension."},
+    {"claimId": "C4", "rating": "supported", "note": "Abstract p1 matches; correctly labeled as an adductor test."},
+    {"claimId": "C5", "rating": "supported", "note": "Abstract p1 matches. The discussion confirms 'changes that exceed the CV (6.3%) are more meaningful than the SWC (5.0%)'."},
+    {"claimId": "C6", "rating": "supported", "note": "p9 formulas match. Reliability there was between days, about 1 week apart."},
+    {"claimId": "C7", "rating": "supported", "note": "p14 text matches."},
+    {"claimId": "C8", "rating": "supported", "note": "p5 text matches."},
+    {"claimId": "C9", "rating": "supported", "note": "p3 and p10 match. The 8% CV is taken from previous literature, not measured in this study, and the brief says so."},
+    {"claimId": "C10", "rating": "supported", "note": "p6 and p10 match."},
+    {"claimId": "C11", "rating": "minor", "note": "Values match Table 1 (p7). The methods (p5-6), however, show these CVs are within-session trial-to-trial values: five CMJs 20 s apart, best and worst removed. They are not between-day noise. The claim presents them as CMJ noise without that context."},
+    {"claimId": "C12", "rating": "minor", "note": "Bias counts match the abstract. The claim omits the same sentence's conclusion that 'percentage differences were ≤3.4%' and that the system 'can be considered a valid alternative ... particularly [for] JH'. Jump height itself showed no fixed or proportional bias."}
+  ],
+  "statementIssues": [
+    {"location": "bottomLine / recommendedDirection", "severity": "minor", "note": "The 'published CMJ height noise values range from 2.9% to 8%' fallback pairs a within-session trial CV (Harper, 2.9%) with an 8% literature value. It omits the pack's directly relevant between-day data: Collings Table 1 gives CMJ jump height SEM 1.2 cm and MDC 3.4 cm, about 10% of a 34 cm mean, tested about 7 days apart. Ryan gives jump height test CV 3.9% and weekly CV 5.9%. Using 2.9% as a weekly fallback would over-flag change. limitations[1] partly hedges this, so it is not counted as critical."},
+    {"location": "recommendedDirection / actions[0]", "severity": "minor", "note": "'Exceeds that noise, using either the CV% or MDC' presents two thresholds as interchangeable. MDC = 1.96 x sqrt(2) x SEM is about 2.8 times the typical error, so the choice roughly triples the flagging threshold. The brief should say so."},
+    {"location": "limitations[1]", "severity": "minor", "note": "Says the excerpt 'does not state whether the CV was within one session or between days'. The full text (p5-6) does state it: five jumps in one session. Since the source is marked fullTextReviewed, this should have been resolved."},
+    {"location": "limitations[0] / evidenceConfidence.sourceReview", "severity": "minor", "note": "The population list omits Collings' 16 healthy university-population adults (10 male, 6 female). This is the only mixed-sex, between-day CMJ reliability sample in the pack, and it is the one most relevant to the stated cohort."},
+    {"location": "evidenceTension", "severity": "minor", "note": "Uses Ryan's note on lower interday CVs in college athletes as jump-height evidence. The source comparison concerned force and power variables."},
+    {"location": "actions[2]", "severity": "minor", "note": "'SNR from 1.3 to 11.1' is the range across all measures. For CMJ variables it was 1.5 to 2.5, and jump height was lowest at 1.5. That is the metric-selection detail the action needs."},
+    {"location": "guardrails[1] / actions[3]", "severity": "minor", "note": "Bias is reported without its small magnitude (≤3.4%) or the authors' conclusion of validity. The caution against mixing systems is still reasonable, given noise of about 3-4%."}
+  ],
+  "tierDefensible": true,
+  "tierNote": "Moderate is defensible. The methods evidence (CV, SWC, MDC, SNR) is direct and consistent across sources, and the recommendation is conditional on local estimation. Transfer to weekly collegiate monitoring is limited, which the brief acknowledges.",
+  "safetyIssues": [],
+  "criticalFailures": [],
+  "useful": true,
+  "usefulnessScore": 3,
+  "usefulnessNote": "A sports scientist gets a sound, actionable process: measure local typical error or MDC on the same system and protocol, compare change against it, and check SNR. Usefulness is reduced because the brief leaves out the pack's most decision-relevant numbers: between-day jump-height MDC of 3.4 cm, and Ryan's 3.9% test CV with SNR 1.5. Its fallback range also leans on a within-session CV.",
+  "suggestedDrafterFixes": [
+    "For reliability or noise values, always extract and state the design (within-session trials, same-day retest, or between-day interval) from the methods. Do not compare or pool values across designs.",
+    "When a source table reports the exact metric in question (for example CMJ jump height SEM/MDC or test CV and SNR), prefer that number over abstract-level ranges across all measures.",
+    "When offering alternative thresholds (CV versus MDC), state their relative size so the practitioner understands the decision consequence.",
+    "When a source's limitation sentence continues past the excerpt, read to the end of the sentence and keep the variable scope (for example 'in relative peak power, relative peak force ...').",
+    "Carry a source's headline conclusion (for example 'valid alternative, differences ≤3.4%') alongside any selective finding such as bias counts."
+  ]
+}
