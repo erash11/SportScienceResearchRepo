@@ -13,7 +13,7 @@ Goal D: run `npm run pilot:draft` on all 12 questions in `docs/ask-library-pilot
 | 1 | v1.0: retrieval, one composer call, excerpt verification and gating | 12/12 | 3 (3 briefs) | 11/12 (92%) | Failures: an omitted confound, a finding applied to the group the authors steered away from, an inverted wellness scale. |
 | 2 | v1.1: prompt rules for caveats, scales, provenance, strict claim removal | 12/12 | 10 (6 briefs) | 8/12 (67%) | Worse. False "no evidence" statements about content outside the passages shown, dropped comparators and conditions, cited background presented as own results, tiers too high. |
 | 3 (void) | v1.2 with a layout-only verifier | not audited | | | Two-column PDFs broke verification; see `iteration-3-void/README.md`. |
-| **3** | **v1.2: full-text critic pass, verification against layout and reading-order text** | **12/12** | **0** | **12/12 (100%)** | All briefs scored 4/5. 314 claims, 309 supported, 5 minor, none overstated or unsupported. |
+| **3** | **v1.2: full-text critic pass, verification against layout and reading-order text** | **12/12** | **0** | **12/12 (100%)** | All briefs scored 4/5. 358 claims: 345 supported, 13 minor, none overstated or unsupported. |
 
 Both targets are met at iteration 3. Library: the 946-record state on the batch PR branches (`ATL_LIBRARY_ROOT`), so some cited records go live only when PRs #9-#11 merge.
 
