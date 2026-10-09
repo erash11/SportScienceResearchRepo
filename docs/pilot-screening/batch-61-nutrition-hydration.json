@@ -1,0 +1,546 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-61-nutrition-hydration",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Nutrition & Hydration queue positions 1-89. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 1,
+      "sourceFile": "Explaining variation in sweat sodium concentration - Effect of individual characteristics and exercise, environmental, and dietary factors.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 57203,
+        "doi": "10.1152/japplphysiol.00391.2022",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Retrospective stepwise multiple regression of 1,944 whole-body sweat sodium tests from 1,304 athletes and recreational exercisers, plus a 48-test controlled laboratory cycling subset. Higher energy expenditure was associated with higher sweat sodium, and testing in warm months (a proxy for heat acclimatization) with lower sweat sodium; the models explained 17-23% of the variation in whole-body sweat sodium concentration.",
+      "limitations": "Pooled retrospective service data with heat acclimatization estimated from season, field energy expenditure estimated by wearable devices, and a male-majority sample. Only 48 tests come from a controlled protocol, and most variation in sweat sodium was left unexplained.",
+      "synthesisCaution": "Staff could read these models as a way to predict an individual athlete's sweat sodium, when they explain only 17-23% of the variation and the authors say individual patch testing is still needed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary, paper.tldr, paper.findings: direction of the season effect was not stated and 'warm season' could be read as raising sweat sodium -> now states warm-season tests were associated with lower sweat sodium ('tests in warm months were associated with lower sweat [Na+]')",
+            "paper.findings: added that model 3 R2 is unadjusted and that relative VO2max was non-significant ('adjusted r2 for models 1 and 2 and nonadjusted for model 3')"
+          ],
+          "residualConcerns": "Study funded by and authors employed by Gatorade Sports Science Institute (PepsiCo). Signs of T values were lost in text extraction; directions were taken from the Discussion and Conclusion.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1205",
+        "synthesisBatch": "pilot-synthesis-batch-61",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 9,
+      "sourceFile": "FOOD-D~1.PDF",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 101526,
+        "doi": "10.1080/10408398.2023.2209192",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Rehabilitation & Return to Sport",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of food-derived bioactive peptides (from meat, marine, dairy, egg, vegetable and fruit sources) and their proposed effects on skeletal muscle injury, covering protein synthesis (PI3K/Akt/mTOR), oxidative stress, inflammation, cartilage, tendon and recovery. Most of the evidence discussed is from cell, animal and in vitro work, with a small number of human studies cited, including exercise studies in healthy or physically active young men and a collagen peptide study in Achilles tendinopathy patients. No systematic search method is described.",
+      "limitations": "The review gives no search strategy, study selection or quality appraisal, so its selection of evidence cannot be checked. Most mechanisms come from cell and rodent models, and the authors state that human trials are needed before dietary recommendations can be made.",
+      "synthesisCaution": "Staff could read the mechanistic pathways and in vitro peptide data as proof that a specific peptide speeds muscle injury recovery in athletes, when the authors say that human clinical confirmation is still required.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/athleteDev: 'resistance-trained men' not supported -> 'healthy or physically active young men' (\"40 healthy male volunteers\"; \"young physically active men\")",
+            "findings: draft said authors conclude human trials are needed, omitting their stronger claim -> now reports both (\"intake was a good and safe way to improve the skeletal muscle function\"; \"most of the research ... is still in the laboratory stage\")",
+            "limitations: 'peptide stability' was not an open problem the authors list -> industrial separation, allergy, in vivo safety (\"may cause allergic reactions\"; \"In vivo activity and safety tests of peptides must be carried out\")",
+            "rtp: tendon examples are not only patient or animal studies -> includes healthy men (Jerger et al.)",
+            "identity: confirmed; truncated filename FOOD-D~1.PDF consistent with 'Food-derived bioactive peptides...' title on cover and first page; DOI 10.1080/10408398.2023.2209192 printed in header"
+          ],
+          "residualConcerns": "Relevance is borderline: a food-science review whose content is mostly cell, rodent and in vitro peptide chemistry. It is framed around sport muscle injury (\"latent in any sport event\") so INCLUDE was kept, but a reviewer may prefer EXCLUDE under criterion (c). Year 2023 is from the online-first date; no volume or pages are printed.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1206",
+        "synthesisBatch": "pilot-synthesis-batch-61",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 27,
+      "sourceFile": "Food first but not always food only - Recommendations for using dietary supplements in sport.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 87351,
+        "doi": "10.1123/ijsnem.2021-0335",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Narrative review with no sample, proposing a working definition of 'food first' and six criteria (FFNFO) for when a food-only approach may not be optimal for athletes. The authors summarize evidence for carbohydrate, caffeine, nitrate, creatine, beta-alanine, sodium bicarbonate, protein, iron and several immune-related supplements, citing meta-analyses, a Cochrane review and consensus statements. They conclude that supplements may be justified in these situations if they are batch tested and used with a risk-management strategy.",
+      "limitations": "The review describes no search method, so the selection of evidence cannot be reproduced or checked. Several immune-related recommendations draw on general-community, heavy-exerciser or military data, and the authors note that supplements aimed at boosting immune resistance have shown little if any benefit in athletes.",
+      "synthesisCaution": "Reading 'food first but not always food only' as support for supplement use in general, when the review limits its support to a small set of supplements and makes batch testing and risk management conditions.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: grouped caffeine with doses 'impractical to reach from food' -> caffeine problem is dose variability ('caffeine content of commercially available coffee beverages is extremely varied (15-254 mg per serving)')",
+            "paper.findings, screeningLimitations: 'immune-targeted supplements have shown little benefit in athletes' overgeneralized -> limited to resistance-targeted supplements ('supplements targeted toward improving immune resistance have shown little if any benefit'), with tolerogenic supplements framed for specific scenarios per Table 2",
+            "paper.practicalImplications: 'discussed case by case, since the evidence of benefit in athletes is limited' -> scenario-specific use per Table 2",
+            "paper.year: checked; only 2022 printed ('(c) 2022 Human Kinetics', 'First Published Online: Mar. 12, 2022', Ahead of Print), so 2022 kept"
+          ],
+          "residualConcerns": "Text is the ahead-of-print version with no volume, issue or pages; the final issue citation should be confirmed externally.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1207",
+        "synthesisBatch": "pilot-synthesis-batch-61",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 28,
+      "sourceFile": "Food for thought - Physiological considerations for nutritional ergogenic.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 74192,
+        "doi": "10.1111/sms.14307",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Brief narrative review with no sample, setting out three physiological checkpoints for an orally ingested ergogenic aid: surviving first-pass metabolism, producing a meaningful rise in systemic concentration, and interacting with the target tissue. The authors use creatine, beta-alanine and dietary nitrate as examples that meet these checkpoints and taurine, carnitine and pyruvate as examples that do not. They also discuss mouth rinsing and practical study-design factors, including human variability, dosing, training status, sex and placebo effects.",
+      "limitations": "No search method is described, and the examples are chosen to illustrate the authors' framework rather than to assess each supplement systematically. Several points on mouth rinsing, sex differences and placebo effects rest on a limited set of cited studies that the review does not grade.",
+      "synthesisCaution": "Treating a supplement that passes the three checkpoints as proven to improve performance, when the review frames the checkpoints as a reason to test efficacy experimentally rather than as evidence of benefit.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'Taurine and carnitine raised plasma levels without a corresponding rise in muscle content or performance' -> carnitine raised plasma only modestly ('modest increases of ~30% in the blood... no increases in skeletal muscle carnitine') and performance was not reported for carnitine; ~20% muscle rise after ~6 months noted in text",
+            "paper.findings: mouth rinsing overgeneralized -> caffeine rinse effect on athletic performance 'less convincing, as some studies suggest an improvement and others show no effect'; added sex finding for nitrate ('women do not experience the ergogenic effects of dietary nitrate')",
+            "citation: removed online-first placeholder \";00:1-n\" (operator cleanup)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1208",
+        "synthesisBatch": "pilot-synthesis-batch-61",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 29,
+      "sourceFile": "Food‑First Approach to Enhance the Regulation of Post‑exercise Skeletal Muscle Protein Synthesis and Remodeling.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 55378,
+        "doi": "10.1007/s40279-018-1009-y",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review, with no sample, of protein quality, the food matrix and post-exercise muscle protein synthesis (MPS). The authors contrast the leucine trigger hypothesis from isolated proteins with whole-food studies, reporting that skim milk gave greater early (0 to 2 h) post-exercise MPS than beef, and that whole eggs gave a greater post-exercise MPS response than egg whites. They conclude that food matrix effects are plausible but not yet established.",
+      "limitations": "No search method is described, and the case for food matrix effects rests on a small number of acute comparison studies in healthy young men (milk versus beef, whole egg versus egg white, whole versus fat-free milk), one of them from the authors' own group. The authors state that the mechanisms are unknown and that the matrix hypothesis still requires rigorous testing.",
+      "synthesisCaution": "Reading the whole-food advantage as established for muscle growth, when the review itself describes it as a hypothesis built on a few comparison studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'mostly from the authors' own group' -> only the whole egg study is described as the authors' group ('Our research group has recently contributed'); the milk versus beef study is attributed to 'van Loon's research group'",
+            "paper.limitations: 'some matrix studies were done at rest' -> specified these were casein co-ingestion studies with single milk components that did not augment MPS ('these studies were conducted at rest')",
+            "paper.year: checked; '(c) The Author(s) 2019' is the only year printed, so 2019 kept; no volume, issue or pages are printed"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1209",
+        "synthesisBatch": "pilot-synthesis-batch-61",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 33,
+      "sourceFile": "From Food Supplements to Functional Foods - Emerging Perspectives on Post-Exercise Recovery Nutrition.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 29,
+        "extractedCharacters": 132291,
+        "doi": "10.3390/nu16234081",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Self-described narrative review of post-exercise recovery nutrition, based on keyword Boolean searches of PubMed, Web of Science and Google Scholar (English-language, 2000 to 2024) with selection by relevance and an informal quality review. The authors group the studies by protein, carbohydrate, BCAA, creatine, electrolyte, dairy, anti-inflammatory food and omega-3 themes. No pooled sample or effect size is reported.",
+      "limitations": "The authors describe the quality appraisal as informal, with no structured risk-of-bias assessment or PRISMA-style selection flow. The text itself reports mixed or inconclusive evidence for several claims, so the review cannot establish which recovery nutrients work best.",
+      "synthesisCaution": "Staff could read the review's causal and mechanistic statements (for example, that inflammation is a causal driver of recovery, or that BCAAs lower injury risk) as settled, when the cited evidence is mixed and largely short-term.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: Systematic Review / Meta-analysis -> Narrative Review ('This review follows a narrative approach'; selection 'based on their relevance' with an 'informal quality review', no systematic screening or flow)",
+            "evidenceSummary: clarified that it is a self-described narrative review with relevance-based selection; the abstract's phrase 'systematic search' is not backed by systematic screening",
+            "paper.citation: author list reformatted to surname + initials house style"
+          ],
+          "residualConcerns": "The abstract describes 'a systematic search', but the Methodology section calls the review narrative with relevance-based selection and informal appraisal.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1210",
+        "synthesisBatch": "pilot-synthesis-batch-61",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 38,
+      "sourceFile": "Fruit‑Derived Polyphenol Supplementation for Athlete Recovery and Performance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 21,
+        "extractedCharacters": 107830,
+        "doi": "10.1007/s40279-018-0998-x",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of fruit-derived polyphenol supplementation (cherry, pomegranate, blueberry, blackcurrant, grape, cocoa) for exercise performance and recovery. It draws mainly on small crossover and randomized trials in recreationally active to trained adults. No search method, inclusion criteria or pooled effect size is reported.",
+      "limitations": "No search strategy, selection criteria or quality appraisal is described, so the choice of studies cannot be reproduced. Many cited trials are small, and the authors describe the performance evidence as early and mixed.",
+      "synthesisCaution": "Staff could read the acute 300 mg (performance) and more than 1000 mg per day (recovery) doses as established effective doses, when the authors describe the performance evidence as limited and the recovery evidence as largely from small trials, many on Montmorency cherry.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'Pomegranate and blueberry trials gave mixed results' -> pomegranate trials mostly showed faster strength recovery with soreness reduced in only one study, and the single blueberry trial showed faster knee extensor strength recovery ('Only Trombold et al. [115] found that pomegranate supplementation reduced muscle soreness'; McLeay 'enhanced recovery of knee extensor strength')",
+            "paper.findings: added that cherry soreness effects were found in half of eight studies ('reduced in half of these studies')",
+            "paper.citation: author list reformatted to surname + initials, journal abbreviated; no volume or pages are printed"
+          ],
+          "residualConcerns": "Gatorade Sports Science Institute supplement; first author received a GSSI honorarium for writing it.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1211",
+        "synthesisBatch": "pilot-synthesis-batch-61",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 51,
+      "sourceFile": "Glutamine Supplementation - A Possible Strategy to Help Mitigate Health Risks of Heat-Related Illness.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 101942,
+        "doi": "10.1155/jnme/1638244",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of the literature on glutamine and exertional heat illness, covering intestinal permeability, immune and cytokine responses, antioxidant defence, hydration and fatigue. Most of the mechanistic support comes from animal and cell studies, and the human supplementation trials it cites give inconsistent results on gut permeability, cytokines and performance.",
+      "limitations": "No search strategy or study selection method is described, so the review cannot be treated as systematic. Its populations mix athletes, workers and military personnel, and most mechanistic evidence is from animals and cells.",
+      "synthesisCaution": "Staff could read the review's suggested glutamine doses (0.15 to 0.30 g/kg/day, split before and after heat exposure) as an established heat-illness protocol, when they are the authors' own suggestions based on raising plasma glutamine, not on trials showing fewer heat illnesses.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: added 'use only under medical supervision', which the paper does not say -> removed; now ties the split-dose and bolus advice to what the review reports ('Acute dosing at or above 0.90 has been linked to GI discomfort')",
+            "paper.limitations: added that the authors' dose range rests on plasma glutamine responses ('as these amounts increased glutamine levels without adverse effects'), sits below the 0.90 g/kg doses behind the permeability results, and that no cited study measured heat illness; noted reliance on the authors' own trials",
+            "synthesisCaution: clarified that the dosing suggestions are based on plasma glutamine, not on prevented heat illness"
+          ],
+          "residualConcerns": "The review contains a unit slip (0.15 g/kg twice described as 'a total of 0.30 g/day'); the record uses g/kg throughout.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1212",
+        "synthesisBatch": "pilot-synthesis-batch-61",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 87,
+      "sourceFile": "High Prevalence of Cannabidiol Use Within Male Professional Rugby Union and League Players - A Quest for Pain Relief and Enhanced Recover.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 35457,
+        "doi": "10.1123/ijsnem.2020-0151",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Nutrition",
+        "Performance"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "An anonymous online survey of 517 male professional rugby players (67% union, 33% league; mean age 25) from 25 of 30 invited clubs in the 2019 to 2020 season. Of respondents, 91% (472) were aware of CBD, and 133 players had used it (26% reported as current 8% plus previous 18%). Use was higher in union than league (p = .004), did not differ by position (p = .760) and was higher in the oldest age group (p < .001); users mainly cited recovery or pain (80%) and sleep (78%), and 67% perceived a benefit, most often for sleep (41%) rather than recovery or pain (14%).",
+      "limitations": "This is a self-reported cross-sectional survey with no product testing or outcome measurement, and team-level use varied from 5% to 70%, so prevalence may not generalize beyond participating clubs. Perceived benefits are anecdotal and could be placebo effects, as the authors note.",
+      "synthesisCaution": "Staff could read the 26% use rate as proof that CBD is effective or safe for recovery, when the paper reports only what players say they used and believed it did.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary, paper.findings: '26% of the 472 aware players' arithmetic does not hold -> 133 users is 26% of 517 and 28% of 472 ('Of the 472 players aware of CBD, 339 had never used CBD'); conflict noted in limitations",
+            "evidenceSummary, paper.findings, tldr: added the perceived-benefit breakdown ('improved sleep (41%), recovery/pain (14%)'), which the draft omitted though 80% used CBD for recovery/pain",
+            "paper.limitations: abstract vs Results conflict on whom the information-source percentages describe; 67% benefit appears in the Results as well as the Discussion",
+            "paper.findings: added that 79% believed products were batch tested while 'only one appeared to be tested'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1213",
+        "synthesisBatch": "pilot-synthesis-batch-61",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 89,
+      "sourceFile": "High protein plant-based diet vs a protein-matched omnivorous diet to support resistance training adaptations - A comparison between habitual vegans and omnivores.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 59969,
+        "doi": "10.1007/s40279-021-01434-9",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Non-randomized, parallel-group 12-week intervention in which 19 habitual vegans and 19 omnivores (healthy young men, physically active but not resistance trained) completed supervised twice-weekly leg resistance training, with protein raised to 1.6 g/kg/day by soy or whey supplements. Both groups improved leg lean mass (about 1.2 kg each), rectus femoris and vastus lateralis cross-sectional area, type I and II fiber area and leg-press 1RM, with no group-by-time interactions or between-group differences in change.",
+      "limitations": "Groups were formed by habitual diet rather than randomized, the trial was retrospectively registered, and muscle biopsy data come from only 11 per group. The results apply to untrained young men on a supplemented diet, not to trained athletes, women, or a whole-food-only plant diet.",
+      "synthesisCaution": "Staff could read this as proof that vegan diets are equivalent to mixed diets for training gains, when the vegan group reached the protein target only with about 58 g/day of soy isolate and the authors caution that whole foods alone would be hard to match.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: Other -> Laboratory / Experimental Study (supervised non-randomized parallel-group training intervention; no better taxonomy value for a non-randomized trial)",
+            "screeningLimitations: removed claim that the sample was smaller than planned -> power calculation needed 17 per group, 23 targeted for dropouts, 19 completed ('yielded an estimate of n = 17 per group'); added retrospective registration ('Retrospectively registered')",
+            "methods: added sample-size context and mixed-model analysis",
+            "limitations: removed 'planned 23, completed 19' framing; added retrospective registration, 24-h recall reliance, and 41 vs 39 g/day whey discrepancy ('~ 41 g day-1 in OMN' vs 'OMN: 39 +/- 17 g')",
+            "evidenceSummary: added rectus femoris and fiber-type outcomes and 'no group-by-time interactions'"
+          ],
+          "residualConcerns": "Design coding is a judgment call: a non-randomized trial comparing self-selected diet groups under a common training and supplementation protocol; a reviewer may prefer Cohort Study or Other. Abstract vs results discrepancies (1RM and RF CSA changes, Table 1 leg lean mass) are noted in limitations.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1214",
+        "synthesisBatch": "pilot-synthesis-batch-61",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

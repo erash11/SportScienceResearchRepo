@@ -1,0 +1,686 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-59-rehabilitation-return-to-sport",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Rehabilitation & Return to Sport queue positions 4-95. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 4,
+      "sourceFile": "Exploring the factors involved in being Ready to return to sport following a concussion.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 51579,
+        "doi": "10.1097/JSM.0000000000001101",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Qualitative Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Coaching"
+      ],
+      "sports": [
+        "Ice Hockey",
+        "American Football",
+        "Rugby",
+        "Soccer",
+        "Basketball"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Qualitative study using semistructured videoconference interviews with 22 stakeholders in contact and collision sports, including 4 formerly concussed athletes, 5 coaches, 5 athletic therapists, 4 physiotherapists, 1 nurse practitioner and 3 sports medicine physicians. Participants described physical, behavioral, psychological and social factors in being ready to return to sport, with external pressures (21/22) and cognitive appraisals (22/22) the most frequently mentioned themes.",
+      "limitations": "Only four athletes were interviewed, the sample was largely Canadian ice hockey stakeholders, and the counts report how many participants raised each theme rather than how common each factor is. The findings are stakeholder perceptions and do not validate any readiness test or criteria.",
+      "synthesisCaution": "Staff could treat the listed behavioral, psychological and social factors as validated readiness criteria, when they are themes from interviews that the authors say need testing in larger samples.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: issue number omitted -> added (4) ('Volume 33 Number 4 July 2023')",
+            "paper.findings: social theme on interactions with teammates/roommates was missing -> added ('teammates/roommates (7/22)')",
+            "paper.practicalImplications: 'these topics are best raised through direct, private conversation' was a prescription the study does not test -> now reports what participants described ('the athlete may not give full information'; coach quote on talking 'in private')"
+          ],
+          "residualConcerns": "Population tag judgment: the sample is 22 stakeholders, of whom only 4 are formerly concussed athletes (2 male, 2 female, symptom-free and returned to play at interview). 'Injured Athletes' was kept because the evidence concerns concussed athletes and the 4 athletes are concussion survivors; Male/Female Athletes tags were not added because the sample is mostly clinicians and coaches. A reviewer may prefer to drop 'Injured Athletes'. Concussion return-to-sport topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1186",
+        "synthesisBatch": "pilot-synthesis-batch-59",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 12,
+      "sourceFile": "Factors Associated With Psychological Readiness to Return to Sport After Anterior Cruciate Ligament Reconstruction Surgery.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 35108,
+        "doi": "10.1177/0363546518773757",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Cross-sectional study of 635 athletes (389 male, 246 female; mean age 28 years) who had hamstring-graft ACL reconstruction and were cleared to return to sport. Psychological readiness was measured with the ACL-RSI about 12 months after surgery. Only 158 (25%) had returned to competitive sport. Higher ACL-RSI scores were associated with better IKDC subjective knee scores, younger age, male sex, higher preinjury sport frequency, greater limb symmetry and a shorter injury-to-surgery interval in univariate analysis, and IKDC score and age explained 37% of the variance in the multivariate model.",
+      "limitations": "The cross-sectional design means causal direction cannot be established. The cohort came from one metropolitan clinic and the follow-up window was 11 to 24 months, so the findings may not generalise.",
+      "synthesisCaution": "Staff could read the sex difference as proof that female athletes are less psychologically ready, when sex was significant only in univariate analysis and did not remain in the multivariate model.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "methods: May 2011 to February 2013 was the surgery period, not the review period (\"attended a private orthopaedic clinic after ACLR surgery between May 2011 and February 2013 by 1 of 3 surgeons\") -> reworded",
+            "all coefficients checked against Tables 1 to 3 (extraction renders minus signs as '2', e.g. '20.1' = -0.1); sex significant in full-cohort and non-returner univariate models only, not in any multivariate model",
+            "identity: title matches filename; DOI 10.1177/0363546518773757 printed on page 1"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1187",
+        "synthesisBatch": "pilot-synthesis-batch-59",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 13,
+      "sourceFile": "Factors Associated With a Return to   Preinjury Level of Sport Performance After Anterior Cruciate Ligament   Reconstruction Surgery.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 32666,
+        "doi": "10.1177/0363546519865537",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Prospective cohort of 222 patients (132 male, 90 female) who had primary ACL reconstruction, had returned to their preinjury sport (an eligibility criterion) and completed a 12-month assessment, followed to a mean of 3 years (range 2 to 4). Athletes were mainly Australian Rules football, netball, soccer and basketball players, with 9 professionals. At follow-up, 135 (61%) reported that they could perform as well as before injury, with similar rates in males (59%) and females (63%). Psychological readiness (ACL-RSI) at 12 months was the only factor that stayed significant in the multivariate logistic model (OR 1.03 per point, 95% CI 1.01 to 1.04).",
+      "limitations": "Only patients who had returned to sport were eligible, so the 61% applies to returners, not to everyone after ACL reconstruction. Return to performance was a single self-reported yes or no question, the cohort came from one clinic, 82% of survey responders had complete data, and the exact timing of return was not recorded.",
+      "synthesisCaution": "Staff could read psychological readiness as a proven cause of return to performance, when the study shows an association with a self-rated outcome in an observational cohort.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/abstract/tldr/rtp/screeningLimitations: draft omitted that a return to preinjury sport was an eligibility criterion (\"Eligibility criteria ... and a return to preinjury sport\"), so 61% was presented as a rate for all patients -> restricted to returners",
+            "methods: added surgery dates (June 2014 to July 2016), graft split (98% hamstring, 2% patellar tendon) and eligibility criteria",
+            "findings: added 63% overall classification; corrected ACL-RSI univariate P to .0001 as in Table 2",
+            "practicalImplications: 'can be used as a marker of which athletes are likely to feel they are back' overstated discrimination -> notes 26% identification of non-returners"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1188",
+        "synthesisBatch": "pilot-synthesis-batch-59",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 31,
+      "sourceFile": "Force and Power Testing During Anterior Cruciate Ligament Reconstruction Rehabilitation - A World-Wide Survey of Current Practices.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 18,
+        "extractedCharacters": 85025,
+        "doi": "10.1007/s40279-025-02374-4",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "International anonymous online survey of 1,154 practitioners from 78 countries who assess patients after anterior cruciate ligament reconstruction (ACLR). Respondents used a mean of 3.6 testing devices, with 157 device combinations recorded, and 46.4% used device testing as criteria-based progression while 21.9% used time alone. Force plates, isokinetic dynamometers, the Nordic hamstring device and hand-held dynamometers were associated with higher self-perceived testing quality (R2=0.21).",
+      "limitations": "This is a self-reported practice survey with no response rate, and the authors state its validity and reliability were not established. Most respondents were from Europe and North America and in private practice, and the authors note that more engaged practitioners may be overrepresented, so the findings describe reported practice rather than measured patient outcomes.",
+      "synthesisCaution": "Reading the link between more devices and higher self-rated testing quality as evidence that more testing improves patient outcomes, when the survey measured perceived quality and the authors note self-serving bias.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: 'eccentric strength was assessed by only about 10% of the whole sample' -> specified via the isokinetic dynamometer ('Only 20% of those using IKD, and as such 10% of the whole sample assessed eccentric strength'); the Nordic device was used for eccentric testing by others",
+            "paper.practicalImplications: removed unsupported advice ('chosen against a stated criterion rather than copied from a peer')",
+            "paper.athleteDev: RFD and work 'analysed by around a third of respondents' -> placed in the isokinetic dynamometer metrics context where the text reports it",
+            "populations: confirmed Mixed / Unspecified only; respondents are practitioners, not athletes, so no athlete sex or health tags"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1189",
+        "synthesisBatch": "pilot-synthesis-batch-59",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 40,
+      "sourceFile": "Fundamentals of individual loading for strength training after knee injuries.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 35047,
+        "doi": "10.1016/j.orthtr.2023.10.008",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Athletic Training",
+        "Performance",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review and special-issue article on strength training after knee trauma and surgery, covering arthrogenic muscle inhibition, eccentric actions, sensor-based and biochemical monitoring, and psychological factors. It proposes an extended table of load parameters for orthopedic rehabilitation. No search method, sample or pooled effect is described.",
+      "limitations": "No literature search, selection process or quality appraisal is described, so the evidence base cannot be checked. The load parameters in Table 2 are the authors' proposals and are not tested against rehabilitation outcomes in the text.",
+      "synthesisCaution": "Staff could read the Table 2 load and recovery parameters, such as avoiding 1RM testing or the 24 to 84 hour recovery times between sessions, as validated rehabilitation protocols, when the review presents them as proposals and the recovery figures are general training values, not rehabilitation-specific ones.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution: '48 to 72 hours between sessions' is not in the text -> Table 2 gives 'Untrained people need about 72 to 84 hours, strength-trained athletes about 48 hours, and highly trained athletes 24 to 48 hours'",
+            "paper.practicalImplications: 'Alternate concentric and eccentric work' -> practice movement reversal ('practice the alternation between concentric and eccentric muscle action (movement reversal)'); added the advice against training to momentary muscular failure; deep squat advice aligned to 'unsuitable ... particularly during and after rehabilitation' in sports that do not need them",
+            "paper.citation: author list reformatted to surname + initials"
+          ],
+          "residualConcerns": "No study sample; 'Injured Athletes' reflects the target population (people after knee trauma or surgery), not a sample.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1190",
+        "synthesisBatch": "pilot-synthesis-batch-59",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 65,
+      "sourceFile": "Hamstring injuries - A paradigm for return to play.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 58453,
+        "doi": "10.1055/s-0043-1778027",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "American Football",
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Narrative review of hamstring injury anatomy, classification, MRI and ultrasound imaging, management, return-to-play (RTP) decisions and prevention, with a focus on professional soccer and American football. Cited data include the UEFA Elite Club Injury Study and an MRI cohort of 255 UEFA hamstring injuries, where grade 2 injuries needed on average about 6 more days to RTP than grade 1 injuries.",
+      "limitations": "No search method is described, so the choice of cited evidence cannot be audited. Much of the prognostic and prevention evidence is observational or drawn from particular clubs, leagues or teams.",
+      "synthesisCaution": "Staff may read an MRI grade as an individual RTP date, but the cited correlations are group-level and the review says RTP depends on many factors beyond imaging.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "sports: Baseball / Softball removed; baseball is only listed among sports where hamstring injuries are common, with no data discussed",
+            "practicalImplications: softened the Nordic recommendation to the survey association the review reports ('teams using the NHE program for all or most of their players had fewer hamstring injuries')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1191",
+        "synthesisBatch": "pilot-synthesis-batch-59",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 68,
+      "sourceFile": "Hamstring injuries, from the clinic to the field - A narrative review discussing exercise transfer.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 57485,
+        "doi": "10.1123/ijspp.2024-0049",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Brief narrative review of whether hamstring exercises transfer to swing-phase mechanics and running performance. It compares eccentric exercise, mainly the Nordic hamstring curl, with isometric, flywheel, lumbopelvic, sprint and bounding approaches. The authors report that only eccentric exercise has been shown, in a small number of prospective studies, to change swing-phase kinematics after training.",
+      "limitations": "No search method is described, and the authors note that the kinematic evidence is limited to a small number of studies. Conclusions about the alternative exercises rest mainly on theory, biomechanical modelling and cross-sectional EMG.",
+      "synthesisCaution": "Staff may read the review as showing that Nordic curl training transfers to running, when the authors say only one study has tested transfer to swing-phase mechanics.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: lumbopelvic training was described as having limited evidence for changes in running mechanics -> one cited study did report kinematic change ('reduced anterior pelvic tilt by ~5 degrees during swing'), but no change in knee moments or injury risk was shown"
+          ],
+          "residualConcerns": "Year 2024 is the online-first (ahead of print) year; no volume or issue is printed in this version.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1192",
+        "synthesisBatch": "pilot-synthesis-batch-59",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 71,
+      "sourceFile": "Hamstring muscle injury in the athlete - State of the art.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 86592,
+        "doi": "10.1136/jisakos-2017-000145",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "American Football",
+        "Baseball / Softball",
+        "Rugby",
+        "Track & Field",
+        "Other Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Professional / Elite",
+        "Collegiate",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "State-of-the-art review of hamstring injury epidemiology, risk factors, classification, imaging, platelet-rich plasma, exercise rehabilitation, return to sport and prevention across soccer, American football, Australian rules, rugby, baseball and track. Epidemiology is drawn from UEFA, NFL, AFL, Premier League, NCAA and MLB data, alongside randomized and cohort studies cited by the authors.",
+      "limitations": "No systematic search or quality grading is described. Several topics, including PRP, fatigue and muscle imbalance, rest on evidence the review itself calls limited or inconclusive.",
+      "synthesisCaution": "Staff may treat the 11+ and Nordic hamstring exercise evidence as directly transferable to their own sport, though much of it comes from soccer and the review notes poor program compliance.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "abstract: 'strongest support' was the drafter's ranking -> the review says the 11 and 11+ reduce HSI 'when the programme is properly implemented and compliance is adequate' and that the literature 'does not substantiate the use of PRP'",
+            "populations: added Collegiate (cited NCAA data and the 11+ trial in male collegiate soccer players)"
+          ],
+          "residualConcerns": "Year is the issue year 2021 (J ISAKOS 2021;6:170-181); the article was first published online 12 November 2020.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1193",
+        "synthesisBatch": "pilot-synthesis-batch-59",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 73,
+      "sourceFile": "Hamstring rehabilitation in elite    track and field athletes - Applying the British Athletics Muscle Injury    Classification in clinical practice.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 84107,
+        "doi": "10.1136/bjsports-2017-098971",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Track & Field"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Two-part clinical review by the British Athletics medical and sport science team describing its approach to hamstring injury rehabilitation in elite track and field athletes. The approach is organised around the British Athletics Muscle Injury Classification (BAMIC) MRI classes (myofascial, muscle-tendon junction and intratendinous) and draws on cited literature and clinical practice. The paper reports no sample size or quantitative outcome data for the approach.",
+      "limitations": "No literature search method is described and no patient outcomes are reported, so the recommendations rest on clinical reasoning and cited work. The authors' statement that an internal injury audit shows a marked reduction in re-injury rates is not quantified in the text.",
+      "synthesisCaution": "Staff could read the class-specific progressions as a validated protocol with proven re-injury reduction, when the paper offers clinical reasoning and an unquantified audit claim.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: placeholder '2019;0:1-13' (Epub ahead of print page line) removed -> 'Br J Sports Med. 2019.'",
+            "paper.rtp: said the paper gives no return-to-sport timelines -> now reports the approximate RTFT timeframes in Table 3 ('Approx. Days 5-10', 'Approximately Days 14-28', 'Approximately Weeks 6-9') and the Nordbord pre-injury criterion, labelled as expert estimates"
+          ],
+          "residualConcerns": "Expert-practice review with no outcome data; the re-injury audit claim is unquantified. Online-first version (2019;0) so final volume and pages are not printed in this text.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1194",
+        "synthesisBatch": "pilot-synthesis-batch-59",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 82,
+      "sourceFile": "Heal pain - Plantar fasciitis - Revision 2023.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 39,
+        "extractedCharacters": 191853,
+        "doi": "10.2519/jospt.2023.0303",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A 2023 revision of the Academy of Orthopaedic Physical Therapy and American Academy of Sports Physical Therapy clinical practice guideline for heel pain and plantar fasciitis. For physical therapy interventions, the panel ran a systematic review of RCTs and systematic reviews (MEDLINE, CINAHL, Cochrane Library and PEDro, December 2012 to March 2023), graded evidence by level and gave graded recommendations; risk factor, diagnosis and examination recommendations were restated from 2014. The authors state that plantar fasciitis accounts for about 15% of foot pathology in the general population, occurs most often between ages 40 and 60, and has a reportedly higher incidence among runners.",
+      "limitations": "The guideline is a consensus document and reports no single study sample. Its recommendations rest on the trials it reviewed, and the text does not report athlete-specific outcomes. ESWT, corticosteroid injection and PRP were placed outside the scope of physical therapy practice and were reviewed in scoping form only.",
+      "synthesisCaution": "Staff could read the grade A and B recommendations as proof that a treatment works for their athletes, when the guideline reports no outcomes for athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr and paper.findings: night splint recommendation lacked its qualifier -> 'for individuals with heel pain/plantar fasciitis who consistently have pain with the first step in the morning'",
+            "paper.findings: electrotherapy wording 'a grade D option to replace with' -> grade D is conflicting evidence ('Clinicians may use manual therapy, stretching, and foot orthoses instead of electrotherapeutic modalities'); added grade E education recommendation",
+            "evidenceSummary: added that the systematic review covered intervention RCTs and SRs only, prior recommendations were restated, and incidence 'is reportedly higher among runners'"
+          ],
+          "residualConcerns": "No library precedent for clinical practice guidelines; coded as Consensus / Position Statement, although the intervention recommendations rest on a systematic review of RCTs and could be coded Systematic Review / Meta-analysis. Recommendations are not athlete-specific.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1195",
+        "synthesisBatch": "pilot-synthesis-batch-59",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 90,
+      "sourceFile": "High speed runing during match-play before and after return from hamstring injury in professional soccer.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 30168,
+        "doi": "10.1111/sms.14219",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Retrospective analysis of match tracking and medical records for 38 male outfield professional players (1,426 match observations) in the Qatar Stars League, each of whom started and played at least 45 minutes in at least 10 consecutive official matches before and after a first hamstring injury. Post-injury maximal speed was 0.25 km/h lower (95% CI -0.38 to -0.12), high-speed running 43 m lower (95% CI -56 to -30 m) and sprint distance 22 m lower (95% CI -29 to -16 m), and the authors state these differences could not be distinguished from normal match-to-match variation.",
+      "limitations": "Only players who met the 10-consecutive-start rule were included (about 88% of injuries were excluded), which the authors describe as a likely best-case sample. The data come from one league, men only, with no standardized pre- and post-injury fitness tests, and the analysis did not adjust for layoff length.",
+      "synthesisCaution": "Staff could read the small reductions as proof that players are returning at reduced capacity or are at higher re-injury risk, when the authors state the changes were within normal match-to-match variation and the study did not measure re-injury.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: removed the placeholder volume and page string printed on the online-first header -> journal and year only",
+            "evidenceSummary and methods: '10 consecutive full starts' -> started and played at least 45 minutes in at least 10 consecutive official matches ('played a minimum 45 min in at least 10 consecutive official matches as starters'); added 38 of 306 screened injuries",
+            "practicalImplications: reworded so advice follows from the within-variation finding and the authors' standardized-assessment recommendation"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1196",
+        "synthesisBatch": "pilot-synthesis-batch-59",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 95,
+      "sourceFile": "High‐density electromyography activity in various hamstring exercises.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 39732,
+        "doi": "10.1111/sms.13303",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer",
+        "Rugby",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Adult / Recreational",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Laboratory study of 19 young male amateur athletes from soccer, Gaelic football and rugby, none with a history of hamstring injury, who performed nine hamstring exercises at 12-repetition maximum while 15-channel high-density EMG recorded the semitendinosus and biceps femoris long head. Activity was normalized to maximal voluntary contraction, and the authors report that the balance between the two muscles and the proximal-distal pattern depended on the exercise and, in some exercises, on whether the phase was eccentric or concentric.",
+      "limitations": "The sample was 19 amateur men, and the authors note the results may not apply to injured or professional athletes. The study used surface EMG, which is prone to cross-talk, and it measured muscle activity only, with no strength, adaptation or injury outcomes.",
+      "synthesisCaution": "Staff could read higher EMG activity as proof that an exercise will strengthen the hamstrings or prevent injury, when the study measured only muscle activity during a single session.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: removed the placeholder page string printed on the online-first header -> journal and year only",
+            "paper.tldr: 'exercises do not load the hamstrings equally' / 'match the muscle emphasis wanted' overstated EMG as load and muscle selectivity -> most between-muscle differences were trivial or small and only 45HE was BFlh-dominant ('Hip extension was the only BF-dominant exercise')",
+            "paper.limitations: added 12RM load context and the eccentric/concentric order inconsistency for 45HE between results text and Table 1"
+          ],
+          "residualConcerns": "The discussion lists UHC among exercises with higher ST than BFlh concentric activity, but Table 1 shows UHC concentric as trivial and BB as small; the record follows Table 1.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1197",
+        "synthesisBatch": "pilot-synthesis-batch-59",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

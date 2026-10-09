@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-60-recovery-readiness",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Recovery & Readiness queue positions 3-91. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 3,
+      "sourceFile": "Exploring the effect of long naps on handball performance and heart rate variability.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 36296,
+        "doi": "10.1055/a-1551-8054",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Crossover repeated-measures study of 11 male collegiate handball players, who completed a handball-specific test (turnaround runs, a loaded 10-m run and shooting) after no nap, a 20-min nap and a 60-min nap in random order. Nap condition had no significant effect on any performance measure; after the long nap only, higher RMSSD during the nap correlated with faster loaded 10-m run time (rho = -0.929).",
+      "limitations": "This is a small, all-male sample from one university club, and the correlations are exploratory with 10 to 11 athletes per condition and several tests. The abstract and the Results disagree on the PSQI correlation, and the Discussion claims performance benefits that the condition comparisons in Table 2 do not show.",
+      "synthesisCaution": "Staff could read the PSQI-accuracy correlation as proof that long naps help athletes who sleep poorly, when the condition effects were null and the correlation rests on a handful of athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: said 'no significant effect of nap condition or trial' -> only the condition effect and condition-by-trial interaction were reported as non-significant ('Nap conditions and trials showed no significant interaction effects... no significant condition effect')",
+            "paper.findings, paper.abstract, evidenceSummary: correlation directions were unstated -> PSQI (higher = poorer sleep) correlated positively with accuracy and higher RMSSD went with faster load run time ('Higher PSQI scores indicate poorer sleep quality')",
+            "paper.findings: post-nap KSS comparison was across all three conditions (Friedman), not only short vs long",
+            "paper.limitations: Discussion claim corrected to quote it accurately ('likely more beneficial for 10-m turnaround runs') and contrasted with Table 2 (long nap 12.52 s vs short nap 12.35 s, no significant effect); added the abstract's unsupported 'significant benefit' claim",
+            "screeningLimitations: removed 'values need checking against the full paper' since the full text was checked; conflict now stated",
+            "paper.practicalImplications, paper.athleteDev: 'weak' correlation replaced with 'exploratory' (rho = 0.658 is not weak; the problem is sample size and multiple tests)"
+          ],
+          "residualConcerns": "Abstract and Discussion overstate the findings relative to the Results; the record follows the Results and tables.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1198",
+        "synthesisBatch": "pilot-synthesis-batch-60",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 8,
+      "sourceFile": "Extended match time exacerbates fatigue and impacts physiological responses in male soccer players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 40,
+        "extractedCharacters": 60215,
+        "doi": "10.1249/MSS.0000000000003021",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Nutrition",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Experimental field study in 20 competitive male soccer players (age 20.1 +/- 1.4 years) who each played a 120-minute game in two trials, with GPS, heart rate, performance tests and muscle biopsies at baseline, 90 and 120 minutes. Compared with the first 90 minutes, extra time showed lower total distance per minute (9.7%), maximal speed (10.1%) and accelerations and decelerations, further declines in repeated-sprint and jump performance, and muscle glycogen falling from 266 to 186 mmol/kg dry weight.",
+      "limitations": "Extra time is compared with the same match's first 90 minutes, so it is confounded with cumulative time on the pitch, and a repeated-sprint test and biopsies were done just before extra time. Analyses pool up to 30 observations from 20 players across two trials, sample sizes differ by outcome (n = 30, 25, 19 and 11), and the abstract, tables and discussion disagree on several values.",
+      "synthesisCaution": "Staff could read this as showing that any extra period of soccer exaggerates fatigue, when the study compares only one 30-minute extension within a 120-minute match with the first 90 minutes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.methods, evidenceSummary: 'pooled data from the first two games of each trial' misread the design -> first game of each of two trials (40 observations = 2 trials x 20 players; 'supplementation took place after game 1'), 30 with complete data",
+            "paper.findings, evidenceSummary, paper.athleteDev: high-intensity running 11.6% was presented as a firm decrease -> Table 2 does not flag it as significant (no '#') and ES = 0.19 [-0.31; 0.70]; sprinting -0.8% added",
+            "paper.findings: '76% of fibers' (Discussion) -> Results values 82% ST and 78% FT completely or almost empty at 120 min; added ammonia +191% and glycerol +137% vs baseline from Results",
+            "paper.limitations: added Table 2 vs Results significance conflict, fiber-depletion value conflict, glycogen-RSA correlation conflict (Results r = -0.56 vs Discussion 'which we failed to shown'), and pooled non-independent observations",
+            "paper.tldr, paper.abstract: aligned with Table 2 significant outcomes"
+          ],
+          "residualConcerns": "Many internal inconsistencies between abstract, Results text, tables and Discussion in this accepted, unedited (publish-ahead-of-print) manuscript; the record follows Tables and Results. Study supported by UEFA. Volume and pages were not printed in this version.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1199",
+        "synthesisBatch": "pilot-synthesis-batch-60",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 20,
+      "sourceFile": "Fatigue management in Olympic athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 68368,
+        "doi": "10.1080/02640410802702186",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Nutrition & Hydration",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Nutrition",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Narrative review of practical methods for monitoring and managing fatigue in Olympic athletes. It covers training-load quantification (session RPE and TRIMP), questionnaires (POMS and DALDA), performance tests, blood and saliva markers, sleep, nutrition, hydration, and short-term recovery modalities. No new sample is analysed; the review draws on studies in trained and elite athletes, and it concludes that adequate nutrition, hydration and rest are the most effective recovery strategies.",
+      "limitations": "The review does not describe a search method, so the selection of evidence cannot be checked. The authors state that recovery research rarely includes elite athletes, and that questionnaire evidence comes mostly from short training periods.",
+      "synthesisCaution": "Staff could read the review's coverage of massage, stretching, ice, hydrotherapy and active recovery as evidence that these methods aid recovery, when the authors' summary table lists no evidence of benefit for them and only possible benefit for compression garments.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution and paper.practicalImplications: grouped compression with weakly supported methods -> Table I: 'Compression garments may confer benefits'; other modalities 'No evidence of benefit'",
+            "paper.findings: 'no single blood or saliva marker reliably identifies overreaching' -> added the authors' qualifier that the 'plasma cortisol/testosterone ratio is generally considered to be a good indicator of the overreached state'",
+            "paper.findings: active recovery reported only as speeding lactate removal -> added 'efficacy of active recovery in facilitating short-term recovery and improving subsequent performance is questionable'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1200",
+        "synthesisBatch": "pilot-synthesis-batch-60",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 41,
+      "sourceFile": "Fundamentals or icing on Top of the Cake - A narrative review of recovery strategies and devices for athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 64488,
+        "doi": "10.3390/sports11110213",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching",
+        "Nutrition"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of recovery strategies and devices, with no search method described. The authors rank strategies by the level of meta-analytic and systematic review evidence, from foam rolling and compression garments to sauna, massage guns and occlusion cuffs, which they place at a lower level. No sample is studied; the review draws on previously published studies and reviews.",
+      "limitations": "No systematic search or study selection process is described, so the evidence ranking cannot be reproduced. Much of the cited evidence measures perceived soreness and range of motion, and the authors state that performance and chronic effects are less clear.",
+      "synthesisCaution": "Staff could read the evidence tiers as proof that the higher-ranked strategies improve performance, when the review reports that gains in soreness and range of motion rarely translated into performance.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: author list in MDPI style (\"Driller, M.; Leabeater, A.\") -> surname plus initials in house style (\"Driller M, Leabeater A\")"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1201",
+        "synthesisBatch": "pilot-synthesis-batch-60",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 53,
+      "sourceFile": "Greater Effect of East versus West              Travel on Jet Lag, Sleep, and Team Sport Performance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 68325,
+        "doi": "10.1249/MSS.0000000000001374",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Prospective repeated-measures field study of 10 physically trained men, aged 20.6 years on average, who travelled from Australia to Qatar (westward, 8 time zones) and back (eastward), with testing at 0900 and 1700 h over four days before, after the outbound trip and after the return trip. East travel reduced sleep, raised jet lag, fatigue and motivation scores, and slowed 20-m sprint on day 2 compared with west travel, while Yo-Yo IR1 distance fell after east travel on day 1 but rose after west travel.",
+      "limitations": "The sample is 10 physically trained university men rather than competitive team athletes, the travel direction order was not counterbalanced, and interindividual variation was large. Sleep was measured by wrist monitors and diaries without polysomnography, and only large effect sizes are reported.",
+      "synthesisCaution": "Staff could read the 96-hour pre-competition arrival suggestion as an established rule for team sport athletes, when it is the authors' extrapolation from CMJ recovery in 10 trained university men and arrival timing was never tested.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added that the Discussion also says west travel had 'no effect' on sleep, contradicting Results (worse jet lag, function and motivation vs BASE: 'WEST compared with BASE (P < 0.05)'), that the 96-h recommendation is extrapolated from CMJ ('suggest a 96-h recovery timeline for explosive lower-body power') and was never tested, and that arrival time differed by direction",
+            "paper.findings: replaced 'fatigue' rating with the measured 'function (fatigue and mental performance)' composite and added that sprint and CMJ fell after both directions",
+            "paper.practicalImplications and athleteDev: removed the implication that west travel is benign; stated the 96-h rule is untested",
+            "synthesisCaution: specified the 96-h rule is extrapolated from CMJ recovery and arrival timing was not tested"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1202",
+        "synthesisBatch": "pilot-synthesis-batch-60",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 80,
+      "sourceFile": "Hamstrings passive and active shear modulus - Implications of conventional static stretching and warmup.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 48230,
+        "doi": "10.1016/j.jsams.2024.02.006",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Sports Medicine",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Two lab experiments in 40 physically active adult men without hamstring injury history (20 per experiment). Shear wave elastography measured passive and 20% MVIC active shear modulus of four hamstring muscles before and after a 5-minute static stretching protocol or a running-style warm-up. Stretching reduced knee flexion MVIC by 18.3% and produced opposite changes in biceps femoris short head (increase) and semimembranosus (decrease) active shear modulus. The warm-up left passive shear modulus unchanged and produced a small drop in semitendinosus active shear modulus within measurement error.",
+      "limitations": "The sample was physically active men rather than athletes, and the study measured only acute changes within minutes of each protocol. Shear modulus was measured at one contraction level, and muscle temperature and tendon properties were not measured, so the functional meaning of the changes is unknown.",
+      "synthesisCaution": "Staff could read the shear-modulus shifts as proof that stretching changes which hamstring muscle works, or as a basis for choosing stretches to target one muscle, when the paper only shows acute elastographic changes and says their functional effect is unclear.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: '2024 (online, in press)' -> 'J Sci Med Sport. 2024.' (journal header 'xxx (xxxx) xxx-xxx'; no volume or pages printed)",
+            "paper.methods, paper.limitations: added that the two protocols were tested in separate groups without a control condition, and that the authors label the design 'observational cross-sectional study'; studyDesign kept as Laboratory / Experimental Study because both experiments are acute pre-post interventions",
+            "paper.findings: added that the 1.4% warm-up torque increase was statistically significant but trivial ('p = 0.03; d = 0.06') and the direction of each muscle's stretching response"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1203",
+        "synthesisBatch": "pilot-synthesis-batch-60",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 91,
+      "sourceFile": "Higher Levels of Morning and Daytime Light Exposure Associated with Positive Sleep Indices in Professional Team Sport Athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 47284,
+        "doi": "10.2147/NSS.S471017",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Observational study of 17 male professional Australian football players, tracked for 14 days during pre-season with wrist actigraphy and collar-worn light sensors, plus questionnaires at the end. Correlations found morning light linked to longer total sleep time (r = 0.26), daytime light to better subjective sleep quality (r = 0.48), and evening light to higher ASSQ sleep-problem scores (r = 0.52); other light and sleep or well-being links were not significant.",
+      "limitations": "One club, 17 men and a correlational design, so the links cannot show that light changes sleep. Light was measured by a collar-worn sensor rather than at the eye, and the 14-day pre-season window may not reflect other periods.",
+      "synthesisCaution": "Staff could read the evening-light result as proof that bright light before bed causes poorer sleep and build interventions on it, when it is a correlation in 17 players with no light intervention.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added unpublished light-sensor validation ('Unpublished observations from our laboratory indicate...') and consumer actigraphy device (Fitbit Charge 5); clarified the p = 0.05 vs 'Statistical significance was set at p < 0.05' issue"
+          ],
+          "residualConcerns": "Authors label r = 0.48 as 'small' and r = 0.52 as 'strong', which does not match their own stated thresholds; the record avoids those labels. Cross-sectional coding is reasonable for a 14-day observational monitoring window with end-of-period questionnaires.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1204",
+        "synthesisBatch": "pilot-synthesis-batch-60",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

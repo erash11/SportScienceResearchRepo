@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-62-brain-health-psychology",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Brain Health & Psychology queue positions 81-88. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 81,
+      "sourceFile": "Heads Up for creatine supplementation and its potential applications for brain health and function.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 98027,
+        "doi": "10.1007/s40279-023-01870-9",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A narrative review, with no search method described, of creatine supplementation and brain bioenergetics, cognition, traumatic brain injury (TBI) including concussion, neurodegenerative and neuromuscular diseases, and mood disorders, with attention to possible sex and age differences. The authors conclude that long-term high-dose creatine can raise brain creatine and may improve cognition and memory, mainly in older adults or under metabolic stress such as sleep deprivation, and shows promise for TBI symptoms, muscular dystrophy, depression and anxiety, but not Parkinson's disease or ALS. Much of the cited evidence comes from rodent models, small human trials and clinical patient groups.",
+      "limitations": "This is a narrative review with no described search or appraisal method, and the authors declare creatine-industry ties and GSSI (PepsiCo) funding. Athlete-specific evidence is limited to one study of 10 elite male rugby players under sleep deprivation, and the human TBI evidence is mainly a single open-label trial in 39 children and adolescents.",
+      "synthesisCaution": "Staff could read the TBI section as support for giving creatine to treat or protect against sport concussion, when the human evidence is one open-label pediatric trial in hospital TBI patients and the rest is animal work.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: EXCLUDE (c) -> INCLUDE as Narrative Review, consistent with library precedent (ID 1046, Roschel et al. 'Creatine Supplementation and Brain Health', included as Narrative Review in Brain Health & Psychology); this is a Sports Medicine review that covers sport concussion and sleep-deprived rugby players ('including concussions in children')",
+            "taxonomy, evidenceSummary, screeningLimitations, synthesisCaution and all paper text fields: filled from the full text (were null)",
+            "paper.citation: journal abbreviated to Sports Med.; no volume or pages are printed in the text, so none added"
+          ],
+          "residualConcerns": "Relevance is borderline: most evidence is animal, older-adult or clinical. Included for consistency with ID 1046. Clinically sensitive concussion content; the Key Points claim that creatine 'improves aspects of recovery from traumatic brain injury in children' rests on a single open-label trial. Authors have creatine-industry ties and the paper is GSSI-funded.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1215",
+        "synthesisBatch": "pilot-synthesis-batch-62",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 88,
+      "sourceFile": "High prevalence of prior contact sports play and concussion among orthopedic and neurosurgical department chairs.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 38469,
+        "doi": "10.3171/2018.1.PEDS17640",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A cross-sectional email survey of US orthopedic (107) and neurosurgery (74) department chairs about their own high school and college contact sport play and lifetime concussion history, compared with historical male population norms. About half responded (49 orthopedic and 48 neurosurgery chairs on high school sport); high school contact sport play was 65.3% and 47.9% versus a 27.74% norm, college contact sport 44.7% and 21.7% versus 1.44%, and at least one concussion 42.6% and 42.4% versus a 12% norm (all p < 0.01). After assuming all nonrespondents had not played or been concussed, every result except high school contact sport play stayed significant.",
+      "limitations": "The sample is surgeons recalling their youth sport and concussion history, not current athletes, with self-report, moderate response rates and possible self-selection of sport-interested respondents. Population norms come from 1970s to 1980s male participation data and a general TBI prevalence estimate, and only one respondent was female.",
+      "synthesisCaution": "Staff could read this as evidence that youth contact sport or concussion does not harm long-term brain function, but the study measured only career attainment in a highly selected group and did not assess cognitive or health outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: EXCLUDE (c) -> INCLUDE as Cross-sectional Study; the paper studies youth contact sport participation and sport-related concussion and their relation to later careers, which meets the lenient relevance bar the library applied to the creatine brain-health review (ID 1046)",
+            "taxonomy, evidenceSummary, screeningLimitations, synthesisCaution and all paper text fields: filled from the full text (were null)",
+            "paper.citation: no volume or pages printed ('J Neurosurg Pediatr April 27, 2018'), so none added"
+          ],
+          "residualConcerns": "Relevance is borderline: no current athletes were sampled and outcomes are recall of past sport and concussion among surgeons. A reviewer may prefer EXCLUDE (c). Concussion topic is clinically sensitive. Population tagged Mixed / Unspecified because the sample is not athletes.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1216",
+        "synthesisBatch": "pilot-synthesis-batch-62",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}
