@@ -2,6 +2,9 @@
 import json, re, sys
 W = sys.argv[1]; T = json.load(open(f"{W}/taxonomy.json"))
 inp = {x["id"]: x for x in json.load(open(f"{W}/inputs.json"))}
+import os
+R = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+published_dois = {(p.get("doi") or "").strip().lower(): p["id"] for p in json.load(open(f"{R}/papers.json")) if p.get("doi")}
 norm = lambda s: re.sub(r"\s+", " ", s.replace("\xa0", " ")).strip()
 bad = []
 for k, i in inp.items():
@@ -14,6 +17,7 @@ for k, i in inp.items():
     if dec == "INCLUDE":
         txt = open(f"{W}/text/{k}.txt").read().lower(); d = (v["paper"].get("doi") or "").lower()
         if not d or (d not in txt and d not in re.sub(r"\s+", "", txt)): bad.append((k, "doi not in text", d))
+        if d.strip() in published_dois: bad.append((k, "DOI already published as ID", published_dois[d.strip()]))
         if not isinstance(v["paper"].get("year"), int): bad.append((k, "year"))
         for f in ("domains", "audiences", "sports", "populations"):
             if not v.get(f): bad.append((k, "empty", f))

@@ -1,0 +1,231 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-32-brain-health-psychology",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Brain Health & Psychology backlog queue positions 4-38. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 4,
+      "sourceFile": "50 years of research on the psychology of sport injury - A consensus statement.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 83155,
+        "doi": "10.1007/s40279-024-02045-w",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Consensus statement by a panel of seven sport injury psychology experts, built from a non-exhaustive literature search from the 1980s to the present across PsycINFO, PsycARTICLES, SPORTDiscus, Web of Science Core Collection and the Cochrane Library. The panel organised its recommendations into injury risk, rehabilitation and return to sport, and rated evidence quality with a modified GRADE approach. No primary data were collected.",
+      "limitations": "The authors state the statement is not an exhaustive or systematic review, so the recommendations cannot be traced to a complete body of studies, and the evidence grades are the panel's own judgments. For return to sport, the panel notes that most studies were cross-sectional, retrospective or qualitative.",
+      "synthesisCaution": "Staff could treat these recommendations as settled guidelines with systematic-review backing, when several areas rest on low-to-moderate quality evidence and small intervention studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: database list omitted PsycARTICLES -> added ('PsycINFO, PsycARTICLES, SPORTDiscus, Web of Science Core Collection and the Cochrane Library')"
+          ],
+          "residualConcerns": "Table 2 has 12 risk-reduction studies; one (Noh 2007) reports reduced injury burden rather than injury counts, and Kerr and Goss report Cohen's d. Interventions in Table 2 also include relaxation, goal setting and CBT, not only stress management and mindfulness.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "885",
+        "synthesisBatch": "pilot-synthesis-batch-32",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 24,
+      "sourceFile": "A genome-wide association study for concussion risk.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 35,
+        "extractedCharacters": 52723,
+        "doi": "10.1249/MSS.0000000000002529",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case-control Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Genome-wide association study using electronic health records and genotypes from two general-population cohorts of European ancestry (Kaiser Permanente Research Bank and UK Biobank), with 4,064 concussion cases and 291,472 controls. Two SNPs reached genome-wide significance: rs144663795 in SPATA5 (OR 2.91 per allele, p = 9.7x10-11) and rs117985931 in PLXNA4 (OR 3.59, p = 3.97x10-9, close to the 7.7x10-9 threshold). None of the previously reported candidate genes (ApoE, BDNF, DRD4, SLC17A7, NGF) replicated.",
+      "limitations": "The cohorts are not athletes, and the authors could not tell whether concussions came from sport or from falls, vehicle accidents or other causes. Cases were defined from diagnosis codes with no clinical detail, the findings have not been replicated, and the lead author is CEO of a sports-injury genetic testing company.",
+      "synthesisCaution": "Staff could read the two markers as a basis for genetic screening or return-to-play decisions in athletes, when they come from unreplicated general-population data and the risk alleles are rare (1.4% and 0.13%).",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: EXCLUDE (c, not relevant to athletes) -> INCLUDE; concussion is a core athlete-health outcome, the paper is published in Medicine & Science in Sports & Exercise and explicitly addresses athletes, return-to-play and candidate genes from athlete studies; the general-population sample is handled in screeningLimitations and synthesisCaution",
+            "all taxonomy, summary and paper fields: null -> written from the source text; DOI '10.1249/MSS.0000000000002529' printed on the title page; year 2020 from 'Accepted for Publication: 28 September 2020' and 'Copyright 2020' (publish ahead of print)",
+            "studyDesign: Case-control Study (EHR-defined cases vs controls in a GWAS)"
+          ],
+          "residualConcerns": "Decision is a judgement call: the sample is general-population biobank data, not athletes, and the operator may prefer exclusion under rule (c). The text reports conflicting sex/height/weight results attributed to RPGEH and KPRB, which appear to be the same cohort. The lead author's genetic testing company is a conflict of interest. Clinically sensitive (concussion).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "886",
+        "synthesisBatch": "pilot-synthesis-batch-32",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 28,
+      "sourceFile": "A narrative review of psychiatric features of traumatic encephalopathy syndrome as conceptualized in the 20th century.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 79678,
+        "doi": "10.3389/fneur.2023.1214814",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Combat Sports"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of clinical case descriptions of 155 boxers from 21 articles published between 1928 and 1999, coded by two authors for psychiatric, neuropsychiatric and neurological features. Depression was documented in 11.0% of cases, suicidality in 0.6% (one case), anxiety in 3.9% and personality change in 25.2%, with 34.8% having any psychiatric or neuropsychiatric problem and 6.5% described as primarily psychiatric.",
+      "limitations": "The rates come from historical case reports that recorded a feature only when the author mentioned it, so the figures are not prevalence estimates. The review's main argument about the 2021 TES criteria also rests on a separate brain-donor study that it does not analyse itself.",
+      "synthesisCaution": "Staff could read the low documented rates of depression and suicidality as evidence that these problems are absent from boxers, when the case reports simply did not record them for most cases.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Professional / Elite -> Mixed / Unspecified; cases are 'current and former boxers' including amateur and professional cases, with level often unstated",
+            "paper.limitations: unknown/not mentioned range 46.5% to 87.7% -> 44.5% to 87.7% (Table 5, substance use unknown 44.5%)"
+          ],
+          "residualConcerns": "Clinically sensitive (CTE/TES diagnosis). Authors declare NFL and other sport-body research funding and forensic expert testimony work; the review's central inference also leans on a separate brain-donor study (Mez et al.) not analysed here. Male sex inferred from boxers described as men; the eight non-boxer cases including two women were excluded from analysis.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "887",
+        "synthesisBatch": "pilot-synthesis-batch-32",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 38,
+      "sourceFile": "A review of the personality traits in post-concussion syndrome.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 45043,
+        "doi": "10.1007/s13760-023-02466-w",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Youth / Adolescent",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Review of 16 studies on whether personality traits relate to post-concussion syndrome (PCS) after mild traumatic brain injury, using a database search to April 2023, dual screening, a quality assessment and a narrative synthesis. Most samples are general mTBI populations, some are children, adolescents or sport-related concussion samples, and three are healthy volunteers without injury. The authors report that resilience, emotional reserve and lower somatic trait anxiety were linked to better outcomes, while anxiety sensitivity, pain catastrophizing and helplessness were linked to worse outcomes.",
+      "limitations": "Most included samples are non-athlete mTBI populations, several are healthy volunteers, and sport-related samples are a small subset that is not analysed separately. Reporting is inconsistent (databases, table entries), the studies vary in design and measures, and the authors acknowledge small samples and reliance on self-report.",
+      "synthesisCaution": "Staff could read the personality-trait findings as validated athlete concussion risk factors or screening cut-offs, when the evidence comes mainly from non-athlete mTBI samples and the traits were not studied as sport screening tools.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: Narrative Review -> Systematic Review / Meta-analysis (methods describe a database search strategy, dual independent screening, a selection flowchart and Cochrane/Newcastle-Ottawa quality assessment, with narrative synthesis)",
+            "evidenceSummary, screeningLimitations, paper.limitations: added that three included samples are healthy volunteers without injury (Table 1: '80 healthy adults', '96 healthy participants', '75 male volunteers')",
+            "paper.limitations: corrected the 329-athlete note (the discussion does call [28] a meta-analysis; the problem is that its Table 1 row repeats the Wood et al. results, e.g. 'anxiety sensitivity and alexithymia, as compared to controls (p = 0.005)'), added abstract claims not supported in the text and the duplicate reference [13] in Table 1",
+            "paper.findings: removed the p = 0.001 attached to parental anxiety (Table 1 gives p = 0.001 both for ADHD and for parental anxiety, and contradicts itself) and added the 332-athlete sport-related concussion resilience finding ('lower resilience determined delayed recovery, aggravated symptoms')",
+            "paper.practicalImplications: draft attributed a brief assessment of pain catastrophizing to the authors -> restated the traits the authors actually recommend ('Psychological resilience, somatic trait anxiety, embitterment, and mistrust should be taken into consideration'); the psychological-care point is limited to Grubenhoff et al. in children",
+            "populations: added Mixed / Unspecified since most samples are non-athletes"
+          ],
+          "residualConcerns": "Relevance is borderline: concussion is athlete health, but only about three of 16 samples are sport-related, and three are healthy volunteers. Kept INCLUDE. The review's reporting quality is poor (internal inconsistencies listed in limitations), and calling it systematic may overstate its rigour. Clinically sensitive concussion topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "888",
+        "synthesisBatch": "pilot-synthesis-batch-32",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

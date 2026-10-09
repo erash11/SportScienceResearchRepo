@@ -1,0 +1,886 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-34-monitoring-technology",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Monitoring & Technology backlog queue positions 9-96. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 9,
+      "sourceFile": "A New Method to Individualize     Monitoring of Muscle Recovery in Athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 25,
+        "extractedCharacters": 44150,
+        "doi": "10.1123/ijspp.2016-0120",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Swimming & Diving",
+        "Endurance Sport",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Professional / Elite",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "Methodological validation study. Priors and repeated-measures variation for creatine kinase (CK) and urea were estimated from 1758 routine measurements in 883 squad athletes, and the individualized classifier was tested in 14 junior elite triathletes and swimmers over five weekly microcycles. Individualized CK cut-offs gave lower test-pass (0.180 vs 0.333) and test-fail (0.074 vs 0.317) error rates than group-based cut-offs, with the CK test-fail difference significant; urea differences were not significant.",
+      "limitations": "The classifier was tested in 14 athletes, with eight Monday CK values excluded when they exceeded the preceding Friday value, and the reference standard was a training-schedule, questionnaire and training-log classification rather than an objective marker. The evidence supports CK only, and the Monte Carlo intervals were simulated from male data alone.",
+      "synthesisCaution": "Staff may read the CK result as proof that individualized cut-offs work in general, when it comes from 14 junior athletes, one marker and five weeks of data, and urea did not reach significance.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: framed the same-data group comparator as a weakness -> removed; the authors built it from the same data 'to avoid overestimating the potential benefit of individualization'; added the 8 excluded Monday values ('In total 8 values were excluded')",
+            "synthesisCaution: 'non-independent comparator' -> replaced with sample, marker and duration limits"
+          ],
+          "residualConcerns": "Sex split printed as 'nine male, four female' for 14 athletes; text p-values for CK are swapped relative to Table 3 (table values used).",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "890",
+        "synthesisBatch": "pilot-synthesis-batch-34",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 16,
+      "sourceFile": "A brief review of the literature for published dual-energy x-ray absorptiometry protocols for athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 33492,
+        "doi": "10.1177/19417381231208204",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Nutrition",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Brief literature review of 14 articles (reviews, position statements and cohort-type studies, evidence levels 3 to 5) on DXA protocols for body composition in athletes, from PubMed and Google Scholar searches of 2012 to 2022. Twelve of the 14 studies used or recommended phantom quality-assurance scans, and only one study (Nana et al, 2015) gave a full athlete scan protocol and only one (Hind et al, 2018) gave reporting guidance.",
+      "limitations": "The search used two databases, one reviewer extracted the data, and no formal quality appraisal is described. Most included studies had small, mixed samples and no athlete-specific reference values, so the protocols cannot be applied to a specific sport with confidence.",
+      "synthesisCaution": "Staff may treat the recommended protocol as a validated athlete standard, when the authors say DXA validation in athletes is still incomplete and no athlete reference values exist.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: claimed the text counts (6 reviews, 3 position statements) do not match Table 1 -> removed; Table 1 lists 6 reviews and 3 position statements when the two 'Review and position statement' entries are counted in both groups; added non-athlete samples and the first-50-hits search",
+            "practicalImplications: 'overnight fast' -> 'Athletes should be fasting with no fluid intake on the morning of the DXA'; hydration 'checked by specific gravity analysis on a urine sample'",
+            "athleteDev: 'food, fluid and training effects' -> food, fluid and daily activity; Nana 2013 found '1 hour of strength training depicted trivial changes'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "891",
+        "synthesisBatch": "pilot-synthesis-batch-34",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 17,
+      "sourceFile": "A cherry tree ripe for picking - The relationship between the acute-chronic workload ratio and health problems.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text (no DOI appears anywhere in the extracted text). No publication year, volume or pages are printed either; the copyright line shows an unfilled '${year}' placeholder and the only date is a site download stamp (January 29, 2021).",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "primaryDomain: Training & Performance -> Monitoring & Technology (main contribution is a critique of a load-monitoring method, ACWR)",
+            "paper.year: null -> 2021 (no publication year printed; 2021 taken from the download stamp 'January 29, 2021' so the field is an integer)",
+            "paper.findings: strongest-association sentence implied text and figure describe the same combination -> now states the text names coupled 7:21 EWMA pre-defined low-to-high (OR 5.27) while Figure 1 gives that combination OR 0.87 and assigns 5.28 to 7:28 NC RA Z; added new non-contact injuries 2/36",
+            "paper.limitations: added the text-versus-figure conflict on the strongest association; kept the Table 2 count conflicts",
+            "degradedReason: noted the unfilled '${year}' copyright placeholder"
+          ],
+          "residualConcerns": "No DOI, volume, pages or publication year are printed in this accepted-manuscript text. The year 2021 is a placeholder from the download stamp and must be verified externally along with the DOI. The paper's own tables, figure and text disagree on several counts.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 18,
+      "sourceFile": "A comparison between%c2%a0the%c2%a0force–velocity relationships of%c2%a0unloaded and%c2%a0sled-resisted sprinting- single vs. multiple trial methods.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 41690,
+        "doi": "10.1007/s00421-017-3796-5",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Track & Field"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Cross-sectional comparison of two methods for profiling sprint force-velocity relationships in 27 male athletes (track and field n=15, mixed-code recreational n=12; age 26 +/- 5 years, all uninjured for more than 3 months). Each athlete completed 6 or 7 sprints, one unloaded and the rest towing a sled at 20-120% body mass, and the multiple-trial relationships were compared with those from a single unloaded acceleration. Theoretical maximal velocity and optimal velocity agreed closely (r = 0.99), while maximal power, maximal force and optimal load showed strong correlations (r = 0.71-0.84) with large error.",
+      "limitations": "The data were pooled from an earlier concept study, the loading was applied in a fixed incremental order, and only 27 men were tested on one surface, so the results cannot be generalised to women, to other surfaces or to trained sprinters. The study tests agreement between two ways of measuring the same mechanics and does not test whether training at a given load changes sprint performance.",
+      "synthesisCaution": "Staff could read the close agreement in velocity as proof that a single sprint can prescribe a sled load that trains a specific phase of acceleration, when the authors describe that transfer as a theory the study did not test.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "892",
+        "synthesisBatch": "pilot-synthesis-batch-34",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 21,
+      "sourceFile": "A deep learning algorithm for automatic 3D segmentation and quantification of hamstrings musculotendon injury from MRI.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 59986,
+        "doi": "10.1038/s41598-025-16926-1",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Research & Analytics",
+        "Athletic Training"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Injured Athletes",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Validation study of two 3D U-Net models that segment hamstring muscles, tendons and edema from T1 and T2 MRI, tested against manual segmentation on 28 scans from 18 male Division I collegiate American football players (22 hamstring injuries, time of injury and return to sport). AI volumes correlated with ground truth for edema volume (R = 0.97) and for the hamstring muscles (R >= 0.92), with the biceps femoris-semitendinosus joint tendon the weakest (R = 0.42), and edema volume and the percentage of muscle impacted rose with clinical BAMIC grade.",
+      "limitations": "The validation set is small (28 scans from 18 athletes), covers only young male football players, and has no BAMIC grade 4. The AI under-segmented edema and tendons with significant bias, and the authors developed and tested the models with a company that processed the data, so the method is not yet shown to predict return to sport.",
+      "synthesisCaution": "Staff could read the high correlation for edema volume (R = 0.97) as proof that the AI measures edema accurately, when the average error was large and the AI systematically under-segmented edema.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.methods: 'Validation used 28 scans from two sites excluded from training' -> notes three validation subjects came from training sites (Table 1 'Site 1, already trained'; 'along with three subjects from training sites')",
+            "paper.tldr: removed 'in under a minute' (methods say 'Deployment was under 10 min per scan'; discussion says '< 1 min')",
+            "paper.limitations: added the abstract muscle R >= 0.99 vs results R > 0.92 conflict, the processing-time conflict and the training-site subjects"
+          ],
+          "residualConcerns": "Most authors are employees or advisors of Springbok Analytics, which processed and analysed all data.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "893",
+        "synthesisBatch": "pilot-synthesis-batch-34",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 30,
+      "sourceFile": "A new field-test for assessing the medial and lateral hamstring strength at long-muscle length.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 46348,
+        "doi": "10.1016/j.jbmt.2024.11.013",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer",
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Cross-sectional laboratory study of 36 healthy amateur male athletes (age 23.2 +/- 3 years) who performed isometric knee flexion with a hand-held dynamometer, with surface EMG of biceps femoris long head and semitendinosus, at 30, 60 and 90 degrees of knee flexion in medial, neutral and lateral tibial rotation. Tibial position significantly affected strength and muscle activation; strength reliability was high (ICC 0.87 to 0.97) but EMG reliability was low to moderate (ICC 0.22 to 0.73).",
+      "limitations": "The study uses 36 healthy volunteers with no injured comparison group, so it cannot show how the test performs after hamstring injury or ACL reconstruction. EMG reliability was low to moderate, so the activation findings are weaker than the strength findings.",
+      "synthesisCaution": "Staff could read the abstract's 'ICC >0.87' as reliability for hamstring activation, when that figure applies only to hand-held strength and EMG reliability was low to moderate.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "sports: Mixed / General Sport -> Soccer, Rugby ('active in a variety of explosive sports (soccer and rugby)')",
+            "paper.methods: reliability 'between two trials' -> two test sessions 'the same day, with a 30-min break interval'; added sport participation of the sample",
+            "paper.limitations: added same-day-only reliability; reworded abstract-percentage discrepancy as not reported in results"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "894",
+        "synthesisBatch": "pilot-synthesis-batch-34",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 31,
+      "sourceFile": "A novel multifactorial hamstring screening protocol - Association with hamstring muscle injuries in professional soccer - A prospective cohort study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 50620,
+        "doi": "10.5114/biolsport.2022.112084",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Single-season prospective cohort pilot in Finnish premier league football: 161 players from nine teams were recruited, 95 professional male players were analysed after pre-season screening with an 11-test hamstring protocol, and 69 also completed mid-season screening. In univariable Cox models, no single test was associated with the 17 new hamstring injuries over the whole season, but maximal horizontal force (F0) was associated with the 14 injuries between the two screens (HR 4.02, 95% CI 1.08 to 15.0, p = 0.04).",
+      "limitations": "The sample is small, with 17 injuries over the season and 14 in the pre-to-mid window, so the estimates are imprecise and the authors describe the study as a pilot. The direction of the F0 association is reported inconsistently, and the Methods describe adjusted models while Table 4 is labelled univariable, so the finding cannot be taken at face value.",
+      "synthesisCaution": "Staff could read the F0 result as evidence that sprint force predicts hamstring injury and build a F0 testing programme around it, when one pilot association with a wide confidence interval does not establish prediction and the authors call for replication.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary and paper.abstract: '95 players completed pre-season and mid-season testing' -> 161 recruited, 95 analysed after pre-season screening, 69 completed both ('73% of the 95 players who completed the pre-season screening session also completed the mid-season screening session (n = 69)')",
+            "paper.practicalImplications: removed inference that incidence data 'point to sprint exposure as the area to focus on'; study tested no exposure intervention"
+          ],
+          "residualConcerns": "F0 direction is unclear: HR 4.02 is above 1 yet the text says 'lower F0 was significantly associated'; the HR scaling or coding is not reported. Methods say the Cox models were adjusted for team, age, height, body mass and previous HMI while Table 4 is headed 'Univariable analysis'. Injury definition includes cramp/spasm without structural lesion.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "895",
+        "synthesisBatch": "pilot-synthesis-batch-34",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 34,
+      "sourceFile": "A practitioner s guide to isometric hip adduction and abduction test selection - Maximal force, asymmetry, and muscle activity comparisons between assessment positions.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 46116,
+        "doi": "10.1080/02640414.2024.2432792",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Ice Hockey"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Within-subject laboratory comparison of five isometric hip adduction and abduction positions in 20 male ice hockey athletes from one national-level team (mean age 28.2 years). Seated and supine 45-degree hip flexion positions gave higher relative peak force and torque than the two ankle-based positions, and the unilateral ankle position showed the largest adduction asymmetry (symmetry angle 3.4 ± 3.3%). Adduction-to-abduction ratio and surface EMG also differed by position, as the author reports them.",
+      "limitations": "Testing was a single session with two trials per position, so reliability is within-session only, and there is no injury or recovery follow-up. Only male athletes from one team were tested, so the position rankings may not transfer to other sports, women or injured athletes.",
+      "synthesisCaution": "Staff could treat the author's suggested adduction-to-abduction threshold of below 1.20 for the supine knee 0-degree position, or the choice of the bilateral ankle position for rehabilitation monitoring, as validated cut-offs, when the study measured neither injury risk nor recovery.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution: 'supine knee position' was ambiguous (two supine knee positions) -> specified supine knee 0-degree ('if utilising the SK0 assessment position, practitioners should consider applying a higher ADD:ABD threshold (<1.20)')",
+            "paper.methods: EMG normalisation described as 'each muscle's maximal activity' -> clarified it was the highest RMS across the five positions, RASUT for rectus abdominis ('setting the highest RMS value achieved by the athlete for each muscle across all five assessment positions as the 100%EMGmax')",
+            "paper.limitations: added second Table 2 vs text conflict (text: 'significantly greater ADD SA and ADD:ABD SA were observed in the SAUNI position compared to all other positions'; Table 2 SK45 ADD:ABD SA carries no 'd' flag)"
+          ],
+          "residualConcerns": "Population tagged Professional / Elite; the text describes a national-level Australian Ice Hockey League team without stating professional status.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "896",
+        "synthesisBatch": "pilot-synthesis-batch-34",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 40,
+      "sourceFile": "A simple on-field fast knee-flexion test to assess acute knee flexor fatigue.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 42870,
+        "doi": "10.1007/s00421-025-05732-2",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Methodological study of a simple field test that uses a shin-mounted inertial sensor to measure peak knee-flexion angular acceleration during prone fast knee flexions. Fourteen amateur football players (13 male, 1 female; age 23.1 ± 2.3 years) were tested before and 20 s after fourteen maximal 40 m sprints, and after recovery. The authors report good reliability (ICC 0.79 to 0.86; CV 2.7 to 3.6%) and a drop of about 12% in peak angular acceleration after sprinting.",
+      "limitations": "This is a single-session study of 14 amateur players, one of them a woman, with reliability tested only within the session and no injury or recovery outcomes. Electromyography was not recorded, so the knee-flexor origin of the signal is inferred.",
+      "synthesisCaution": "Staff could read the test as a validated hamstring-injury or return-to-play tool, when the study had 14 amateur players, tested fatigue only on the same day, and found a link to unfatigued sprint speed that was not significant once the one female player was removed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings, paper.abstract: said both measures 'recovered only partly' -> acceleration recovery was not significantly different from pre ('recovery values were not significantly different from the pre-sprint values (p = 0.08, d = 0.66)'), while sprint 15 remained slower than sprint 1 (p = 0.002)",
+            "paper.findings: added that sprint-time analyses used 13 players because participant 7 did not sprint maximally after recovery"
+          ],
+          "residualConcerns": "Fig 4b relation (unfatigued acceleration vs first sprint time) depends on the one female player (p = 0.03 with her, p = 0.08 without); the draft already flags this and the fatigue relation (Fig 4a) stays significant without her.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "897",
+        "synthesisBatch": "pilot-synthesis-batch-34",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 42,
+      "sourceFile": "A systematic review and meta-analysis of wearable satellite system technology for liner sprint profiling - Technological innovations and practical applications.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text; the only DOI-like strings are reference-list links. Operator may verify the DOI externally and upgrade the decision.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Mixed / Unspecified only -> added Male Athletes and Female Athletes because Table 1 reports the percentage of women in each included study (e.g. 'Cormier et al (14) 15 100', 'Alphin et al (2) 24 100'); level remains mixed (recreationally trained to elite)"
+          ],
+          "residualConcerns": "DOI not printed in the text (header shows only 'J Strength Cond Res XX(X): 000-000, 2023'); operator should verify the DOI externally before upgrading from DEGRADED.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 50,
+      "sourceFile": "Acceleration and Deceleration Profiles - Comparison Between the 5-0-5 Test and Seasonal Peak Player Performance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 51728,
+        "doi": "10.3390/sports14010009",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Methodological study of 19 national-level under-23 Portuguese football players (goalkeepers excluded) who completed two valid repetitions of the 5-0-5 change-of-direction test wearing a 10 Hz GPS unit. Variables expressed as a percentage of each player's season peak showed good within-session repeatability (ICC 0.76 to 0.85), while absolute deceleration (ICC -0.49) and absolute re-acceleration (ICC 0.29) values were poor, and starting acceleration correlated moderately with season peak acceleration (r = 0.48 to 0.50).",
+      "limitations": "A single-team convenience sample of 19 players tested once in preseason, with intra-session repeatability only and no inter-session reliability. GPS acceleration is less accurate during sharp turns, so the test's peak values are not a validated ceiling for maximal capacity.",
+      "synthesisCaution": "Treating the 5-0-5 peak values as a validated measure of each player's maximum acceleration or deceleration, or using absolute deceleration and re-acceleration values as individual targets, when the repeatability data are poor for those variables and the well-repeated normalized values depend on season peaks only known afterwards.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings/tldr: only absolute re-acceleration was listed as poorly repeatable -> absolute deceleration was also poor (Table 1 DEC_COD Absolute 'ICC -0.49 [-2.90-0.44]')",
+            "paper.limitations: removed claimed conflict that the Discussion calls d=0.76 small (the Discussion statement is ambiguous and the best-repetition d=0.49 is small on the authors' scale) -> added Table 5 value for best deceleration and note that normalization uses season peaks known only afterwards",
+            "paper.practicalImplications/athleteDev: advice to express values as a percentage of season peak and to set deceleration targets from the test was not usable prospectively and contradicted the poor absolute deceleration repeatability -> reworded to what the data support",
+            "populations: added Male Athletes (authors state results should not be generalized to 'female players')"
+          ],
+          "residualConcerns": "Sex is implied rather than stated directly. ICC values in the Results text and Table 1 differ slightly (e.g., ACC_S distance 0.75 vs 0.78).",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "898",
+        "synthesisBatch": "pilot-synthesis-batch-34",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 51,
+      "sourceFile": "Accuracy of the region of limb stability in predicting risk of lower limb injury.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 27,
+        "extractedCharacters": 36261,
+        "doi": "10.1249/MSS.0000000000002384",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Prospective-style cohort of 104 Division I collegiate football players across three seasons, each tested before its season with an inertial-sensor single-leg stance measure (ROLS) and followed for one season. The 34 players who needed surgery for a lower limb injury had a lower ROLS symmetry index than the 70 who did not (65.58% vs 82.86%), with an AUC of 0.80 (95% CI 0.71 to 0.88) for the symmetry index and 0.72 for the injured-limb value alone.",
+      "limitations": "A single-university cohort with no independent validation sample, and an outcome limited to lower limb injuries that needed surgery. The text contains several conflicting counts and values, so the Results tables were used, and the classification accuracy is in-sample.",
+      "synthesisCaution": "Reading the ROLS symmetry index as a validated injury predictor or a return-to-play tool, when it was tested in one cohort and predicted only surgical injuries.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added the declared commercial interest ('Dr. Gailey and Dr. Kim are involved and/or stand to gain commercially from the development of this product') and the inconsistent and/or wording of the classification rules"
+          ],
+          "residualConcerns": "The confusion-matrix accuracy (0.92, sensitivity 0.94, specificity 0.91) looks high relative to an AUC of 0.80 and the overlapping group distributions (SI 65.58 +/- 16.46 vs 82.86 +/- 14.75), and the counts do not reconcile (33 vs 34 injured); a reviewer may want to treat the classification figures with extra caution. Sex is not stated, so no sex tag was added.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "899",
+        "synthesisBatch": "pilot-synthesis-batch-34",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 71,
+      "sourceFile": "Alternative Methods of Determining Hamstrings-to-Quadriceps Ratios- a Comprehensive Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 77432,
+        "doi": "10.1186/s40798-019-0185-0",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "This review (Sports Medicine - Open, 2019) summarises studies from 1998 to 2018 that used alternative hamstrings-to-quadriceps (H:Q) ratios: angle-specific torque, rate of torque development, fatigue index, muscle size and muscle activation. It draws on 27 studies found through PubMed, Web of Science and SPORTDiscuss, with 44 further references, and reports no pooled analysis. Many included studies are small, with samples of about 9 to 40 people, and the authors conclude there is not enough evidence to use any alternative ratio as a clinical injury-prediction tool.",
+      "limitations": "The search is not systematic: no protocol, no PRISMA flow, no quality appraisal, and the search closed in September 2018. Most underlying studies are small and cross-sectional, so the review cannot show whether any ratio predicts injury.",
+      "synthesisCaution": "Staff could take the review's description of alternative H:Q ratios as validated screening tools or set normative cut-offs for them, when the authors say these ratios lack reliability data, normative values and prospective injury evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: 'track within the same athlete using the same protocol' was generic advice not drawn from the review -> replaced with the review's familiarisation recommendation ('the use of AST H:Q ratio requires greater familiarization of the concentric and eccentric isokinetic test')",
+            "paper.limitations: clarified that the cited 4 to 5 times and 17 times risk figures concern conventional H:Q imbalances, not alternative ratios; added that only two alternative methods have reliability data ('the reliability of only two alternative methods ... (AST and RTD) has been investigated'); condensed from five sentences to three"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "900",
+        "synthesisBatch": "pilot-synthesis-batch-34",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 75,
+      "sourceFile": "An analysis of positional generic and individualized speed thresholds within the most demanding phases of match play in the English Premier League.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 52916,
+        "doi": "10.1123/ijspp.2023-0063",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Retrospective observational analysis of optical tracking data from 17 male professional outfield players at one English Premier League club over the 2019-20 and 2020-21 seasons (76 official league matches; 633 full or nearly full match data points). Maximal 1-, 3-, 5- and 10-minute running outputs were compared across five positions using generic (5.5 m/s high-speed running) and individualized (maximal aerobic speed, MAS) thresholds. The authors report that central defenders had the lowest outputs on most measures, and that MAS-based distances were more similar between central midfielders, wide midfielders and fullbacks than high-speed running distances were.",
+      "limitations": "The data come from one club, with 17 players and a median of 39 usable match records per player, and the tracking system (Second Spectrum) has no published reliability or validity study. The individualized metrics depend on a shuttle test and a derived sprint speed, so the positional comparisons describe this squad and tracking system only.",
+      "synthesisCaution": "Staff could read the claim that individualized thresholds are 'more precise and comparable' as shown by this study, when the paper did not test precision or measurement error and rests on one squad and one tracking system.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: effect size comparison lacked its criterion -> 'under the maximum HSR criterion' ('maximum effect size differences ... under the maximum HSR criterion')",
+            "paper.practicalImplications: 'lower outputs ... across all measures' -> 'most measures' (sprint distance differences were not significant in several windows, Table 3: 'there was no significant difference in sprint distance'); target-setting attributed to the authors"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "901",
+        "synthesisBatch": "pilot-synthesis-batch-34",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 80,
+      "sourceFile": "Analyzing activity and injury - Lessons learned from the acute-chronic workload ratio.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 56409,
+        "doi": "10.1007/s40279-020-01280-1",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review and critique of the acute:chronic workload ratio (ACWR), the load-monitoring metric used to relate training load to injury risk. The authors argue that the conventional ratio is a mathematically coupled proportion, that exponentially weighted averages create an initial-load problem (about 50 days to converge in their example), and that the injury-risk bands widely cited from an IOC consensus statement rest on sparse, discretized and biased data. They propose causal-inference alternatives. The paper presents illustrative calculations and a causal framework, not new cohort data.",
+      "limitations": "No literature search or selection method is described, so the sources cannot be checked for balance. The alternative causal methods are proposed but not tested on athlete data, so the paper critiques the ACWR without showing that its replacements perform better.",
+      "synthesisCaution": "Staff could take the critique as proof that load monitoring has no value, when the paper argues against using the ACWR bands causally and for prescribing load, not against monitoring training load itself.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: 'the authors favor the uncoupled form' -> uncoupled avoids the bound but still 'requires strong assumptions'; authors prefer 'to model acute and chronic loads as separate variables'",
+            "paper.practicalImplications: 50-day convergence stated as general -> 'in their example' ('the two ACWRs will converge after around 50 days')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "902",
+        "synthesisBatch": "pilot-synthesis-batch-34",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 82,
+      "sourceFile": "Annual Banned‐Substance Review 17th Edition—Analytical Approaches in Human Sports Drug Testing 2023-2024.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 26,
+        "extractedCharacters": 150538,
+        "doi": "10.1002/dta.3835",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Annual narrative review of literature published October 2023 to September 2024 on analytical approaches in human sports drug testing, organized by WADA Prohibited List class. It covers new or improved detection methods, metabolism and elimination studies, and gene doping detection, with the authors identifying anabolic agents, peptide hormones and gene doping detection as core areas. Many of the cited studies are laboratory method development or small controlled administration studies.",
+      "limitations": "This is a review of analytical chemistry and doping-control literature, not of athlete health or performance outcomes, so it cannot show what these substances do to athletes. Its detection windows and sensitivity figures come from specific laboratories, matrices and small administration studies, and no search protocol or inclusion criteria are reported.",
+      "synthesisCaution": "Staff could read a detection window or a new method as proof that a substance will be found or that a positive result reflects doping; the review itself stresses contamination, cross-contamination and exposure scenarios as real confounders.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: gene doping work labelled 'proof of principle' by authors -> proof-of-concept mouse studies ('As a proof-of-concept, mice received an injection')",
+            "All other numbers checked against text (42% AAFs, >86% AAS, 14 days methyltestosterone metabolites, roxadustat 6 of 7 at 184-540 days, rEPO >=168 h, DBS vs urine microdose)."
+          ],
+          "residualConcerns": "Relevance is arguable: this is an analytical-chemistry anti-doping review with no athlete health or performance outcomes. Kept INCLUDE because sports drug testing is directly sport-related, but a reviewer may prefer EXCLUDE (c). The sourceFile value keeps the em dash from the catalogued filename so it still matches the file; no other field contains one.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "903",
+        "synthesisBatch": "pilot-synthesis-batch-34",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 86,
+      "sourceFile": "Anthropometric-based predictive equations developed with multi-component models for estimating body composition in athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 58841,
+        "doi": "10.1007/s00421-024-05672-3",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Performance",
+        "Nutrition",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Rugby",
+        "American Football",
+        "Basketball",
+        "Volleyball",
+        "Swimming & Diving",
+        "Combat Sports",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Review of 29 studies (2,194 participants) that developed anthropometric prediction equations for body composition in athletes against multicomponent reference models. It identified 40 equations: 36 applicable to males, 17 to females, 26 for fat mass, 10 for fat-free mass, three for appendicular lean soft tissue and one for skeletal muscle mass. Thirteen were for mixed-sport athletes and the rest for specific sports.",
+      "limitations": "The review did not assess the quality or accuracy of the equations, and the authors note that accuracy at the individual level is uncertain because some equations lack a validation group. Most equations used DXA as the reference, and the authors note that DXA models disagree with each other.",
+      "synthesisCaution": "Staff could assume any listed equation is valid for their athletes; the review lists equations without assessing their quality by sample size or model performance, and some lack a validation group.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution: 'many were built on small samples from one sport, sex or playing group' is not stated in the text -> 'the quality of the equations was not assessed based on sample size or the performance of the developed predictive models'; other counts (29 studies, 2194 participants, 40 equations, 36 male/17 female, 26 FM/10 FFM/3 ALST/1 SMM, PRISMA-ScR, search 1 October 2024) checked and accurate."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "904",
+        "synthesisBatch": "pilot-synthesis-batch-34",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 96,
+      "sourceFile": "Assessing Deceleration Performance - Methodological and Practical Considerations.pdf",
+      "decision": "EXCLUDE",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: 'some reliability data come from small groups of athletes' was not stated as a limitation -> replaced with MRD external-load caveat (Table 2: 'External load... could change deceleration kinetics and kinematics') and declared conflicts ('Ola Eriksrud is a shareholder in 1080 Motion AB. Philip Graham-Smith is a shareholder in VALD Performance Ltd')",
+            "paper.athleteDev: 'it drives both performance and injury risk' overstated causation -> 'links to performance and to high braking forces associated with injury risk'"
+          ],
+          "residualConcerns": "Author conflicts of interest with a device manufacturer discussed in the review.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "exclusionReason": "Duplicate publication: this article (DOI 10.1007/s40279-025-02339-7) is already published in the Evidence Library as ID 644, a reviewed Zotero publication. The local PDF was screened and drafted, then excluded at assembly to avoid a duplicate record."
+    }
+  ]
+}

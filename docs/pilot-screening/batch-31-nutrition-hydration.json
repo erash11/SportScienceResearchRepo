@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-31-nutrition-hydration",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Nutrition & Hydration backlog queue positions 27-65. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 27,
+      "sourceFile": "A mixed methods investigation into athletic trainer and dietitian's nutrition practices for sport-related concussion patients.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 56811,
+        "doi": "10.1177/20597002231198616",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Convergent mixed-methods survey of athletic trainers (1,465 accessed the survey, 1,048 completed it) and dietitians (51 accessed, 25 completed it), recruited through professional organisations. Open-ended responses were coded using consensual qualitative research, and closed items were summarised with descriptive statistics, so the results describe reported practice rather than athlete outcomes.",
+      "limitations": "This is a descriptive, cross-sectional survey of clinicians with a low response rate and an unvalidated instrument. It cannot show whether any nutrient or nutrition practice prevents concussion or improves recovery.",
+      "synthesisCaution": "Staff could read the high share of dietitians who report recommending nutrition after concussion as evidence that these practices work, when the authors say the research does not support them.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.abstract: said most respondents did not use nutrition for prevention or post-concussion care -> limited to athletic trainers; authors state dietitians 'were more frequently using nutrition for concussion prevention, recommendations, and changes than not'",
+            "paper.tldr: said few athletic trainers use nutrition to manage patients after concussion -> 28.5% yes plus 22.7% sometimes offer recommendations (Table 3), so about half offer some advice",
+            "paper.methods and limitations: 'unvalidated' instrument -> new survey with expert 'face and content validity' review and no reliability analysis",
+            "paper.practicalImplications: claim that respondents described advice as coming from physicians or dietitians -> interprofessional collaboration theme and authors' suggestion that ATs and dietitians collaborate"
+          ],
+          "residualConcerns": "Concussion topic. The Results text says AT barriers for post-concussion recommendations were mainly scope and infrastructure, but Tables 3 and 4 show lack of clinician knowledge as the most selected; the record follows the tables.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "881",
+        "synthesisBatch": "pilot-synthesis-batch-31",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 32,
+      "sourceFile": "A potential role exists for nutritional interventions in the chronic phase of mild traumatic brain injury, concussion and sports-related concussion - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 33,
+        "extractedCharacters": 100592,
+        "doi": "10.3390/nu15173726",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review (PROSPERO CRD42021277780, PRISMA) of nine studies of nutrition or dietary interventions in adults with symptoms lasting at least one month after mild traumatic brain injury, concussion or sport-related concussion, including what the authors describe as five randomised trials. Interventions were omega-3 fatty acids, melatonin, Enzogenol, MLC901, a ketogenic diet and phytocannabinoids, and heterogeneity meant the findings were synthesised narratively without a meta-analysis.",
+      "limitations": "The nine included studies are small and varied (RCT samples ranged from 7 to 78), two lacked a control group, and most outcomes are symptom or self-report measures. With so few trials and possible publication bias, the review cannot establish whether any nutrient improves recovery.",
+      "synthesisCaution": "Staff could read the title's 'potential role' and the favourable results of some trials as evidence that these supplements aid concussion recovery, when the authors stress the lack of interventions, small samples and possible publication bias.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations and synthesisCaution: 'the review found no adequately powered trial' is not stated in the text -> lack of interventions, small samples (RCTs 'ranged from 7 to 78'), 'possible publication bias'",
+            "paper.findings: 'omega-3 studies were uncontrolled' -> multi-component programmes (supplements plus education or diet and coaching) where effects could not be attributed to omega-3; ketogenic results framed as 'may benefit' in a feasibility study",
+            "paper.limitations: specified Kemp et al. as the seven-participant study; added that some trials included moderate and severe TBI ('Some included moderate and severe TBIs in the overall cohort studied')"
+          ],
+          "residualConcerns": "Concussion and supplement topic. The review says five RCTs but cites four references for them, and attributes the single sensitivity analysis to different Theadom studies in two places. Most participants were non-athletes; only two studies were entirely sporting populations (retired NFL players, college-aged athletes).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "882",
+        "synthesisBatch": "pilot-synthesis-batch-31",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 61,
+      "sourceFile": "Acute myocardial infarction following dry scooping of a pre-workout supplement in a healthy young man of African origin - A case report.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 23672,
+        "doi": "10.1177/2050313X241261157",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Single case report of a previously healthy 25-year-old recreational gym user (weightlifting and aerobics, 2 h a day, 5 days a week) who developed an anterolateral STEMI about an hour after a gym session, after 8 months of a caffeine-containing multi-ingredient pre-workout supplement and 3 days of dry scooping. Angiography showed a thrombotic occlusion of the proximal left anterior descending artery without atherosclerosis, treated with a drug-eluting stent, and the initial echocardiogram showed anterior wall hypokinesia with an ejection fraction of 68%.",
+      "limitations": "One patient, so no causal link can be established, and the supplement's contents and intake were not verified beyond the patient's report. The authors state that the cause of the thrombus is uncertain and suggest but do not prove supplement-induced coronary spasm.",
+      "synthesisCaution": "Staff could read this as proof that dry scooping causes heart attacks, when it is one case with an uncertain cause and an unverified supplement history.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed Healthy Athletes, since the subject is a patient with an acute MI described only as 'previously healthy'; kept Male Athletes and Adult / Recreational (recreational gym user)",
+            "findings/rtp: added follow-up echo result ('preserved EF with limited residual hypokinesia on the anterior wall')",
+            "evidenceSummary: added exercise context ('2 h/day, 5 times a week ... weightlifting and aerobics') and initial anterior wall hypokinesia"
+          ],
+          "residualConcerns": "Cardiac case with an uncertain cause; the supplement history and dosing (claimed 'two single-serving scoops per day' dry) are self-reported and the product was not analysed.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "883",
+        "synthesisBatch": "pilot-synthesis-batch-31",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 65,
+      "sourceFile": "Adulteration of sports supplements with anabolic steroids - From innocent athlete to vicious cheater.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 30,
+        "extractedCharacters": 121092,
+        "doi": "10.3390/nu17193146",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "This narrative review (Nutrients, 2025) describes how anabolic steroids and prohormones are added to protein and other dietary supplements, how they appear in anti-doping tests, and which masking agents change the steroid profile. It draws on published studies and WADA documents, with no new sample; the review reports cited figures such as 228 of 248 adulterated supplements containing testosterone or other anabolic steroids, as cited from earlier work.",
+      "limitations": "The search was not systematic: the authors used PubMed, Google Scholar and ScienceDirect with keyword combinations and describe no protocol or quality appraisal. The review cannot estimate how common adulteration is in current supplement products.",
+      "synthesisCaution": "Staff could read the review's cited adulteration rates as the current risk for any supplement on the market, when the figures come from earlier, selected product testing.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: only 3 authors before et al. -> first 6 authors per house rule (Puscasiu D, Flangea C, Vlad D, Popescu R, Vlad CS, Barac S, et al.)",
+            "paper.tldr: 'recommends checking supplements before important competitions' is not in the text (the 'before important sports competitions' phrase refers to routine lab analyses) -> replaced with the conclusion's advice ('recommend only DS that are free from contamination')",
+            "paper.athleteDev: removed unsupported 'independent test before important competitions' advice and the redundant 'Performance Application:' label -> 'only using controlled DS under supervision of a sports medicine doctor'",
+            "paper.practicalImplications: removed 'check products before use when a competition is important' -> conclusion wording; named the prescribed drugs the text gives ('anxiolytics and antidepressants')",
+            "paper.findings: miconazole was not reported to reduce the T/E ratio -> split ketoconazole ('reductions in the urinary elimination of testosterone, A, ETIO, and the T/E ratio') from miconazole ('decreases in urinary concentrations of A, ETIO')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "884",
+        "synthesisBatch": "pilot-synthesis-batch-31",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

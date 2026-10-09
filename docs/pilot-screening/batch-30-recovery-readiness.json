@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-30-recovery-readiness",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Recovery & Readiness backlog queue positions 6-66. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 6,
+      "sourceFile": "A Causal and Replication Analysis of Claims that Jet Lag Affects Team Sport Performance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 29,
+        "extractedCharacters": 48107,
+        "doi": "10.1093/aje/kwaf120",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Other",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate"
+      ],
+      "evidenceSummary": "Observational analysis of 6,245 NCAA football games from nine seasons (2013 to 2022, omitting 2020) across 131 teams, using hours gained or lost in travel as the exposure and beating the Las Vegas consensus spread as the outcome. The authors fitted a generalized additive model with independence weights and used randomization inference, and they also replicated two NFL analyses on the collegiate data. The causal effect was compatible with no effect (P=0.133), and the replications were also compatible with the null.",
+      "limitations": "Hours gained or lost in travel is a proxy for jet lag, since sleep and circadian measures were not available. The estimates are imprecise by the authors' own account, and the text does not report a confidence interval for the causal effect.",
+      "synthesisCaution": "Staff could read this as proof that jet lag does not affect performance, when it is a non-significant result from one collegiate dataset using a travel proxy, and the authors describe the causal estimates as imprecise.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "DOI 10.1093/aje/kwaf120 appears in the text only inside the OUP download URL ('academic.oup.com/aje/advance-article/doi/10.1093/aje/kwaf120/8158079'); the trailing /8158079 is the OUP article path, not part of the DOI. No labelled DOI line is printed, so an operator should confirm the DOI externally. Text is the accepted submitted manuscript, so volume and pages are not available. Study design 'Other' could arguably be a retrospective observational (cohort-type) analysis of games.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "874",
+        "synthesisBatch": "pilot-synthesis-batch-30",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 8,
+      "sourceFile": "A Narrative Review of the Impact of Sleep on Athletes - Sleep Restriction Causes and Consequences, Monitoring, and Interventions.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 36982,
+        "doi": "10.7759/cureus.76635",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate",
+        "Youth / Adolescent",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of case studies, observational studies, randomized trials, systematic reviews and meta-analyses on sleep in athletes, searched in PubMed, the Cochrane Library and Google Scholar up to July 2024. It covers the prevalence and causes of short or poor sleep, links to performance, injury, concussion and recovery, and monitoring and intervention options such as sleep extension, sleep hygiene, light and pharmacological approaches.",
+      "limitations": "The review gives no search terms, inclusion criteria or quality appraisal, so study selection and the strength of each claim cannot be checked. Several claims rest on self-reported or small studies, and some citations do not match the claims they support.",
+      "synthesisCaution": "Staff could read the injury, performance and recovery links as established causal effects, when the review mostly summarizes associations from self-report and small studies, and some findings are attributed to references that do not support them.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Review discusses medication (melatonin, zolpidem, eszopiclone, benzodiazepines) and concussion, citing a benzodiazepine-exercise systematic review for the melatonin and sedative-hypnotic claims; the record correctly avoids drug recommendations. Red-light therapy is attributed to Bonnar et al. in the text but to Altarriba-Bartes et al. in Table 4.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "875",
+        "synthesisBatch": "pilot-synthesis-batch-30",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 19,
+      "sourceFile": "A comparison of foam rolling and vibration foam rolling on the quadriceps muscle function and mechanical properties.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 49368,
+        "doi": "10.1007/s00421-021-04619-2",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomised crossover laboratory study in which 21 physically active men (mean age 25.2 years) completed 3 x 1 min of quadriceps foam rolling with a vibrating or non-vibrating roller on separate days, in random order. Hip extension range of motion rose by 3.3 degrees only after vibration rolling (time x group interaction P < 0.01), knee extensor MVIC peak torque rose in both conditions without a significant difference between them, and rectus femoris shear modulus fell in both.",
+      "limitations": "The study measured changes immediately after a single session in healthy men, with no follow-up and no injured or female participants. The roller comparison rests mainly on one range-of-motion interaction, and the abstract and tables do not agree on design and rectus femoris values.",
+      "synthesisCaution": "Staff could read the vibration-roller range gain as proof that vibration rolling is the more effective warm-up tool, when the authors' own strength and stiffness comparisons between the two rollers were not significant.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: 'not expect either roller to change passive stiffness' contradicted the rectus femoris shear modulus drop -> now limited to passive resistive torque and vastus lateralis/medialis stiffness",
+            "paper.limitations: clarified that Table 1 values match the reported percentage drops ('-7.23 kPa; -23.2%') rather than the kPa figures"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "876",
+        "synthesisBatch": "pilot-synthesis-batch-30",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 22,
+      "sourceFile": "A delayed evening meal enhances sleep quality in young rugby players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 41686,
+        "doi": "10.1123/ijsnem.2022-0014",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "Randomised crossover study of 12 male rugby players aged 15.8 years, who spent five consecutive days with dinner at 19:00 and five with dinner at 21:00 (bedtime fixed at 22:30), separated by a two-week washout, with polysomnography on days 0 and 3 of each condition. On day 3, total sleep time was 24 minutes longer and sleep efficiency 4.8 points higher with the later dinner, with less wake after sleep onset and fewer awakenings and microarousals, while the sleep latency difference was not significant (p = .065).",
+      "limitations": "Only 12 adolescents were studied in one boarding school, with polysomnography on two nights per condition and no follow-up, so the results may not transfer to adult or adult-level players. The study measured sleep only, not performance, recovery or training outcomes.",
+      "synthesisCaution": "Staff could read the sleep gains as proof that later dinners improve sleep quality in all athletes, when the study tested one shift in one small group of adolescents over a short period.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: removed 'unblinded' (blinding is not described in the text) and specified one comparison night per condition",
+            "paper.practicalImplications: 'did not include athletes with diagnosed sleep disorders' -> exclusion was obstructive sleep apnea syndrome (Berlin questionnaire); 'steady' -> 'consolidate'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "877",
+        "synthesisBatch": "pilot-synthesis-batch-30",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 33,
+      "sourceFile": "A practical guide to improve sleep and performance in athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 62735,
+        "doi": "10.1177/17479541231201105",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Nutrition",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Narrative review of strategies to improve sleep and sleep-related performance in athletes, drawing on athlete studies and general-population research. It proposes 10 practical recommendations covering education, sleep screening, banking sleep, napping, light and sleep hygiene, jet lag, chronotype-based training times, and caffeine and supplement use. No new data were collected and no pooled effect estimates are reported.",
+      "limitations": "The text does not describe a systematic search, inclusion criteria or study quality appraisal, so the choice of evidence cannot be reproduced. Many cited athlete studies are small, short-term or observational, and the authors state that more rigorous athlete studies are needed.",
+      "synthesisCaution": "Staff could read the ranked list of 10 recommendations as proven athlete-specific protocols, when much of the supporting evidence comes from general populations or small athlete samples.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Funding note: the article is based on a presentation to the GSSI Expert Panel with an honorarium from GSSI, and the first author declares links to Gainful Nutrition, Gatorade and Absolute Rest (stated as not relevant). Year 2023 is from the online version (volume 0(0), pages 1-12).",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "878",
+        "synthesisBatch": "pilot-synthesis-batch-30",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 59,
+      "sourceFile": "Acute floatation-REST improves perceived recovery after a high intensity resistance exercise stress in trained men.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 55699,
+        "doi": "10.1249/MSS.0000000000002906",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Healthy Athletes",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Within-subject crossover study of 11 healthy resistance-trained men who completed six sets of 10 back squats at 80% 1RM, followed by 1 h of floatation-REST in one block and a seated control with a nature documentary in the other, with markers measured over 48 h. Floatation reduced muscle soreness across recovery (P = 0.035; greatest difference immediately after, 36% lower than control, P = 0.002), improved fatigue and mood change scores over the treatment hour, and showed a smaller testosterone decline and a return of norepinephrine to baseline immediately after treatment, with no differences in damage markers, inflammation or jump performance.",
+      "limitations": "Eleven men with one session per condition, and the authors note only large effects were detectable at this size. Treatment order was counterbalanced by enrolment rather than randomised, the control was a seated sensory-stimulating session so expectancy and novelty effects cannot be separated, and participants reported more negative affect after exercise in the floatation block (P = 0.003) before treatment began.",
+      "synthesisCaution": "Staff could read the abstract's claim of enhanced performance readiness as a performance benefit, but no jump outcome differed between floatation and control, and the gains were in perceived soreness, fatigue and mood.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings/evidenceSummary: 'soreness was lower after floatation at every post-exercise time point' -> lower across recovery (P = 0.035), per-time-point differences not reported ('significantly attenuated muscle soreness across recovery (P = 0.035)')",
+            "findings: testosterone 'higher immediately after floatation' -> smaller decline at P1R ('the degree of testosterone decline at P1R was significantly greater in the control condition')",
+            "screeningLimitations/limitations: added post-exercise baseline imbalance in negative affect ('participants experienced increased negative affect (P = 0.003, ES = 1.26)' in the float block after AHREP) and abstract-results conflict for fatigue P (0.001 vs 0.008)",
+            "studyDesign: checked drafter note; kept Laboratory / Experimental Study because the crossover was counterbalanced by enrolment, not randomised"
+          ],
+          "residualConcerns": "Norepinephrine was elevated at +48 h in the floatation block only (Table 1, 1.79 vs 1.41 nmol/L), which the authors do not discuss.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "879",
+        "synthesisBatch": "pilot-synthesis-batch-30",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 66,
+      "sourceFile": "Advances in Non-Pharmacological Strategies for DOMS - A Scoping and Critical Review of Recent Evidence.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 43158,
+        "doi": "10.3390/jfmk10040452",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "This scoping review (J Funct Morphol Kinesiol, 2025) maps non-pharmacological treatments for delayed onset muscle soreness (DOMS) in athletes from 2020 to 2025 across PubMed, Scopus and Web of Science. The authors state that 23 or 25 studies were included, a discrepancy noted below, and report a narrative synthesis with PEDro, AMSTAR 2 and ROBIS quality ratings and no pooled analysis. Reported results are mostly from small trials, including percussive massage, whole-body cryotherapy, whole-body vibration and polyphenol supplementation, with several null results for electrical stimulation and aqua cycling.",
+      "limitations": "The review has no registered protocol and no pooled analysis, and it applies quality tools to only some studies. Its own inclusion criteria and its evidence table do not agree, so the body of evidence it describes cannot be cleanly reproduced.",
+      "synthesisCaution": "Staff could take the review's 'most effective protocol' of delayed cryosauna, percussive massage and polyphenols as established, when it rests on individual small trials and the review says no formal meta-analysis was done.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added that Table 2 has 23 rows with Hotfiel et al. (2018) [7] entered twice (22 unique studies), and that the Li 2025 percussive massage trial [26] and Cheng 2025 [27] cited in the discussion are absent from the evidence matrix; confirmed the drafter's 25 vs 23 flag ('Twenty-five studies met the inclusion criteria' vs Table 1 'Studies included in qualitative synthesis 23') and the Wiecha protocol flag (ref 11: 'A Protocol for an Umbrella and Mapping Systematic Review')",
+            "studyDesign: Other -> Systematic Review / Meta-analysis (operator rule: scoping reviews with a systematic search follow library precedent)"
+          ],
+          "residualConcerns": "studyDesign is 'Other' because the taxonomy has no scoping-review value; another verified scoping review (Q15) was coded 'Systematic Review / Meta-analysis'. This one has no registered protocol and loose selection reporting, so 'Other' was kept, but a reviewer may want a consistent rule.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "880",
+        "synthesisBatch": "pilot-synthesis-batch-30",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}
