@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-41-athlete-wellbeing",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Athlete Wellbeing queue positions 15-95. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 15,
+      "sourceFile": "Athletes are not at greater risk for death by suicide - A review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 86628,
+        "doi": "10.1111/sms.14316",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "American Football",
+        "Soccer",
+        "Rugby",
+        "Basketball",
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Narrative review of original studies, systematic reviews and consensus statements from PubMed and Embase, published in English or German to March 2022, with 42 studies in the flow diagram. Most cited studies reported lower or similar suicide rates among professional, collegiate and former athletes compared with the general population, for example a standardised mortality ratio of 0.47 (95% CI 0.24-0.82) in about 3,400 former NFL players with five or more seasons. A general-population meta-analysis of 17 studies linked concussion or mild TBI to roughly twice the suicide risk (relative risk 2.03, 95% CI 1.47-2.80), although absolute risk stayed below 1%.",
+      "limitations": "This is a narrative review with study selection by two authors' consensus, no formal quality scoring described, and only two databases searched. Suicide is rare, many included studies are cross-sectional or small, and several rate comparisons are not adjusted for confounders, so the evidence cannot establish a precise comparison with the general population.",
+      "synthesisCaution": "Staff could take the title at face value and conclude that athletes need less suicide screening, but the review finds lower rates in many studies while identifying specific risks such as concussion, anabolic steroid misuse, injury and retirement.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary, findings: concussion meta-analysis presented as athlete evidence without context -> noted it covers over 7 million people (not athlete-specific) and that absolute risk was under 1% ('the actual risk for completed suicide was still less than 1% (0.5%-0.59%)')",
+            "findings: added the within-collegiate comparison showing higher suicide incidence in American football athletes than in soccer, track/cross-country, baseball and swimming (RR 3.27; 95% CI 1.65-6.5)",
+            "evidenceSummary: 'Most reported lower suicide rates' -> 'lower or similar' ('the rates usually appear to be lower or at least similar')"
+          ],
+          "residualConcerns": "Clinically sensitive topic (suicide, concussion). Narrative review with consensus-based study selection and no quality appraisal; the title's conclusion should not be applied to subgroups such as American football or power sports athletes, where the review reports higher rates.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "964",
+        "synthesisBatch": "pilot-synthesis-batch-41",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 95,
+      "sourceFile": "Clenbuterol Abuse in Bodybuilding and Athletics - Unsupervised Use, Psychological Motivations, and Health Consequences.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 44722,
+        "doi": "10.7759/cureus.84904",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Other Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A narrative review, with no search method described, that combines pharmacology, horse, rat and other animal studies, human trials and case reports, anti-doping and food-safety material, and news reports on clenbuterol use in bodybuilding and athletics. It cites a study in healthy young men showing a 21% rise in resting metabolic rate and a 39% rise in fat oxidation, and case reports of myocardial infarction and myocarditis, including one at 40 micrograms per day for one week. Animal data are cited for cardiac hypertrophy, muscle fibre-type shifts and reduced aerobic performance.",
+      "limitations": "No search strategy, databases, dates or inclusion criteria are described, so the selection of evidence cannot be checked. Much of the cited harm evidence comes from animals, case reports and older pharmacokinetic work, and the review contains an internal contradiction about human studies.",
+      "synthesisCaution": "Staff may treat the review's list of cardiac and metabolic harms as established effects at typical athlete doses, when most of the cited harm evidence comes from case reports, animal studies and contaminated or high-dose exposures.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "tldr: 'heart attacks and arrhythmias even at low doses' narrowed to the cited cases; the 40 microgram per day case was diagnosed as myocarditis (\"Cardiac MRI showed delayed epicardial enhancement and cardiac edema, consistent with myocarditis\")",
+            "limitations: confirmed the human-studies contradiction against reference 1 and added two further internal inconsistencies (\"Initially created for veterinary use\" vs \"originally developed as a bronchodilator for the treatment of asthma in 1977\"; half-life \"approximately 35 hours\" vs \"~25-35 hours\")"
+          ],
+          "residualConcerns": "Clinically sensitive (cardiac toxicity, medication misuse, anti-doping). The review is a low-rigor narrative review; harm claims rest largely on case reports and animal data.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "965",
+        "synthesisBatch": "pilot-synthesis-batch-41",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

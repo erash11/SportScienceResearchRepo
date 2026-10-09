@@ -1,0 +1,488 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-38-recovery-readiness",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Recovery & Readiness queue positions 8-92. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 8,
+      "sourceFile": "Association between sports injuries and sleep as measured by sleep actigraphy - A scoping review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 28,
+        "extractedCharacters": 40957,
+        "doi": "10.1080/00913847.2026.2626259",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Rugby",
+        "Track & Field",
+        "Endurance Sport",
+        "American Football",
+        "Combat Sports",
+        "Tennis",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Youth / Adolescent",
+        "Collegiate",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "PRISMA-ScR scoping review (systematic search, no meta-analysis) of 17 peer-reviewed studies with 455 athletes (23% female) from adolescent, college and elite levels, in about 10 sports, that measured sleep with wrist actigraphy and reported injury or performance outcomes. Of seven studies on injury, four (57%) linked poorer sleep metrics to more injuries; all eight performance studies linked poorer sleep to worse performance, with mixed findings for sprint and sport-specific accuracy measures.",
+      "limitations": "No formal risk-of-bias or quality appraisal was done, and the included studies differed in sport, sleep metric and performance measure. Only seven studies addressed injury (one a case study), and the searches were last updated in January 2025.",
+      "synthesisCaution": "Staff could read the performance links as established causal effects of sleep loss; the review maps associations from small, varied studies, and it describes the injury evidence as inconclusive.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: Other -> Systematic Review / Meta-analysis (PRISMA-ScR scoping review with a systematic multi-database search; the evidenceSummary states it is a scoping review with no quality appraisal and no meta-analysis)",
+            "sports: added American Football (Burke 2020 college football), Combat Sports (Peacock 2018 MMA), Tennis (Vitale 2021) and Other Sport (Australian football, rowing, Paralympic) from Table 1",
+            "paper.limitations: kept the conclusion-vs-results conflict but specified the adult studies with positive findings (Silva 2020 elite soccer, age 26.5; Nedelec 2019 case study; Silva 2022 Paralympic, age 33.7) and that the abstract says 'no consensus'; added sample range"
+          ],
+          "residualConcerns": "Design code is a judgment call: the taxonomy has no scoping-review value, and 'Systematic Review / Meta-analysis' may imply an appraisal this review did not do. A reviewer may prefer 'Other'.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "942",
+        "synthesisBatch": "pilot-synthesis-batch-38",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 26,
+      "sourceFile": "Baseline sleep characteristics in NCAA Division 1 collegiate athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 29321,
+        "doi": "10.1097/JSM.0000000000001205",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Prospective observational study of 82 varsity athletes at one NCAA Division I university (47 male, 35 female, nine teams) who wore a WHOOP 4.0 band for at least 14 nights and completed the Epworth Sleepiness Scale and Single-Item Sleep Quality Scale; data were averaged per athlete. Mean total sleep time was 409 minutes (about 6.8 hours). Men had longer wake time after sleep onset than women (55.0 vs 43.7 minutes, P = 0.020), and the authors report no other significant sex differences.",
+      "limitations": "Single-institution sample of 82 athletes across nine teams with unequal group sizes, and no adjustment for training, competition or academic timing. The device maker funded the study and employs three authors, which limits how independently the device data can be read.",
+      "synthesisCaution": "Treating the 6.8-hour average as evidence that these athletes are sleep-deprived or as a performance target, since the study did not measure performance, injury or illness.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: '2024;00:1-6' placeholder volume and five authors before et al. -> placeholder removed and six authors listed before et al. (text prints 'Volume 00 Number 00'; Holmes KE is sixth author)",
+            "studyDesign: Cohort Study -> Cross-sectional Study (per-person means of sleep data with no follow-up outcome: 'The data were aggregated via means per person')",
+            "evidenceSummary: added per-athlete aggregation",
+            "paper.limitations: 'the abstract states no conflicts' -> 'the article states the authors report no conflicts'; added that the authors' conclusions about <6 h sleep and performance exceed the data (no performance outcome measured; mean TST 6.8 h)"
+          ],
+          "residualConcerns": "Device maker funded the study and employs three authors. Volume, issue and pages were placeholders in the source (online-first), so the operator may want to add final pagination if verified externally.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "943",
+        "synthesisBatch": "pilot-synthesis-batch-38",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 47,
+      "sourceFile": "Blood Flow Restricted Electrical Stimulations to Prevent or Attenuate Symptoms of Muscle Damage.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 34568,
+        "doi": "10.1080/15438627.2022.2132862",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Within-subject study in 18 young adults (9 female, 9 male; mean age 21 years; athletic status not reported) who completed eccentric elbow flexion to failure with both arms, then 20 minutes of 5 Hz electrical stimulation (E-STIM) with or without blood flow restriction (BFR) immediately and 24 hours later. Eccentric exercise increased discomfort and muscle thickness and reduced isometric strength (278 N to 232 N at 48 h), with no interaction between condition and time on any outcome (BF10 0.154 to 0.279) and no condition main effect on strength or muscle thickness (BF10 0.208 and 0.388).",
+      "limitations": "There was no control arm and no BFR-only arm, so the study cannot show that either treatment beats no treatment. Athletic status was not reported, and the protocol used elbow flexors only with treatment given at 0 and 24 h, so results may not transfer to other muscles or timings.",
+      "synthesisCaution": "Staff could read 'no added benefit of BFR' as evidence that E-STIM or BFR works for soreness, when the study compared the two treatments only against each other.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: 'Male Athletes' and 'Female Athletes' removed because participants were not described as athletes ('18 individuals (9 females)'; no training status reported) -> Mixed / Unspecified",
+            "evidenceSummary: 'Bayes factors for condition effects below 0.28' contradicts the results (muscle thickness condition effect BF10 = 0.388) -> interaction BF10 0.154 to 0.279 and condition effects 0.208 and 0.388",
+            "paper.findings: condition effect BF10 0.388 presented as no effect -> labelled inconclusive per the stated thresholds ('A BF10 of <0.33 ... moderate ... support for the null')",
+            "paper.limitations: added the abstract vs results conflict on Bayes factors",
+            "paper.methods: added counterbalancing for limb dominance"
+          ],
+          "residualConcerns": "Non-athlete sample of young adults with athletic status unreported; included because the outcome is recovery from exercise-induced muscle damage. Operator may prefer to judge relevance.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "944",
+        "synthesisBatch": "pilot-synthesis-batch-38",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 55,
+      "sourceFile": "Brief cycles of lower limb occlusion accelerate recovery kinetics in soccer players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 37992,
+        "doi": "10.1080/00913847.2020.1785260",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Healthy Athletes",
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Single-blind (tester-blinded), placebo-controlled randomized crossover in 12 male semiprofessional soccer players, with sessions 7 days apart. After a simulated match (Loughborough Intermittent Shuttle Test), intermittent lower-limb occlusion (three 5-minute cycles at 50 mmHg above systolic) was compared with a 20 mmHg placebo. Compared with placebo, occlusion gave higher MVC at 0, 24 and 48 h, faster sprints at 24 and 48 h, lower soreness at 0 and 24 h, and lower CK at 0 and 24 h, with no condition by time interaction for squat or countermovement jump.",
+      "limitations": "Twelve players from one team, with no non-cuff control, and the cuff pressure difference let players partly tell the conditions apart. Reliability was low for sprint time (ICC 0.69, CV 11.2%) and CK (ICC 0.70), and the abstract describes lower LDH over recovery while the results report a difference only at 0 h.",
+      "synthesisCaution": "Staff could read this as proof that occlusion speeds recovery in general, when it is a single small study in semiprofessional players measured over 72 hours, with mixed results across measures.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings/abstract/athleteDev/tldr: draft implied IVO protected jump performance vs placebo -> no significant time x condition interaction for SJ ('F4,40 = 2.45, p = 0.06') or CMJ ('F4,40 = 1.75, p = 0.15'); jump effect now framed as not different between conditions",
+            "limitations: abstract vs results conflict now covers both jumps and LDH ('LDH activity at 0 h was higher in PLA compared to IVO'); blinding wording matches source ('difficult to blind subjects')",
+            "evidenceSummary: clarified single-blind meant tester-blinded ('the tester was blind to the protocol interventions')",
+            "populations: kept Professional / Elite for a 'semiprofessional Tunisian senior squad' (no semiprofessional category exists)"
+          ],
+          "residualConcerns": "Semiprofessional players coded Professional / Elite by nearest category; a reviewer may prefer Adult / Recreational. Citation has no volume or pages because only the online-first version (2020) is printed. Jump ANOVA df (F4,40) suggest 11 players analysed for jumps versus 12 enrolled, not explained in text.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "945",
+        "synthesisBatch": "pilot-synthesis-batch-38",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 61,
+      "sourceFile": "Can We Trust Them - An Expert Evaluation of Large Language Models to Provide Sleep and Jet Lag Recommendations for Athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 63118,
+        "doi": "10.1007/s40279-025-02303-5",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Two-phase expert evaluation in which 20 sleep and jet lag experts (10 women, 10 men; mean age 43.9 years) rated answers from ChatGPT-3.5, ChatGPT-4 and Google Bard to 10 sleep and 10 jet lag questions on a 6-point appropriateness scale, summarised as content validity ratios (CVR); ratings were repeated after 8 weeks, and only the first-round ratings were analysed for validity. The authors report that 60 to 90% of sleep answers reached a valid CVR for each model with no significant differences between models, that for jet lag only ChatGPT-4's answers were valid (CVI 0.68) while ChatGPT-3.5 reached validity on 10% and Google Bard on none, and that inter-rater reliability was low (Fleiss' kappa 0.17 to 0.26) while intra-rater agreement was high.",
+      "limitations": "No athletes or coaches rated the answers, the model outputs were produced once in early 2024, and the authors note that these models have since changed. Inter-rater agreement was low, and the abstract's kappa range (0.21 to 0.39) conflicts with Table 3 (0.17 to 0.26), so the table values are used here.",
+      "synthesisCaution": "Staff could read the study as showing that ChatGPT-4 is a reliable source of sleep advice, when sleep answers did not differ significantly between models and the experts disagreed substantially about what counted as appropriate.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "methods: answers generated 'in January to June 2024' -> submitted on the same day, 25 January 2024 (study ran January to June 2024); added rater blinding",
+            "findings: Google Bard jet lag answers 'most often criticised for ... clear mistakes (21%)' -> 'too few information' was the most common category, and Bard had the most 'clear mistakes' among models (21% vs 13% and 6%)",
+            "findings, evidenceSummary: added ChatGPT-3.5 jet lag validity of 10% and ChatGPT-4 > ChatGPT-3.5 for jet lag (p = 0.0017); noted that only T1 data were analysed ('only the data from T1 were used for all subsequent analyses')"
+          ],
+          "residualConcerns": "Abstract kappa range (0.21 to 0.39) is the 'minimal' category band, not the observed values in Table 3 (0.17 to 0.26). The Key Points claim ChatGPT-4 was better on sleep, but sleep CVR did not differ between models. Model versions tested are now outdated.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "946",
+        "synthesisBatch": "pilot-synthesis-batch-38",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 70,
+      "sourceFile": "Cannabis use for exercise recovery in trained individuals - A survey study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 41145,
+        "doi": "10.1186/s42238-023-00198-5",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "An anonymous online survey of 111 regular cannabis users who also exercised regularly (59% women, 39% men, 2% non-binary; mean age 31 years), recruited through social media, word of mouth and flyers. Most reported aerobic training (85%) or resistance training (85%), and the authors report that 93% felt CBD and 87% felt THC aided their recovery. The authors describe the study as exploratory and found no significant correlation between motives for use and self-reported recovery.",
+      "limitations": "This is a self-selected, self-reported survey of recreational exercisers with no objective recovery measures, no comparison group and a small, mostly Midwest US sample. Subgroup counts do not reconcile (85% of 111 reported aerobic training but n = 72 is used for aerobic trainers; 22 reported CBD use for recovery but only 20 are classed as CBD users), and the denominator for the 93% and 87% figures is not stated.",
+      "synthesisCaution": "Staff could read widespread agreement that cannabis helps recovery as evidence that it works, when the study records only what regular users believe and does not measure recovery or compare with non-users.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: 'did not record whether respondents were athletes' -> questionnaire asked about 'exercise with a team' but competition level is not reported; added internal count conflicts and the Discussion vs Results conflict on women CBD users ('women CBD users preferred a higher intensity resistance exercise' vs Discussion 'higher for aerobic activity')",
+            "screeningLimitations: added unreconciled subgroup counts (n = 72 vs 85% of 111; 22 CBD-for-recovery vs 20 CBD users)",
+            "paper.practicalImplications: removed generic advice to track soreness, sleep and performance trends, which the paper does not address; added reported negative effects ('got too high (n = 16), too sleepy (n = 14), heart racing (n = 12)')",
+            "paper.athleteDev: specified subgroup intensity differences as reported in Results and Table 2"
+          ],
+          "residualConcerns": "Sample is recreational exercisers, not athletes; kept INCLUDE because exercise recovery is in scope. Populations use Male/Female Athletes tags per house rule although respondents are exercisers.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "947",
+        "synthesisBatch": "pilot-synthesis-batch-38",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 78,
+      "sourceFile": "Causes of sleep deprivation in competative athletes - A scoping review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 35630,
+        "doi": "10.1016/j.scispo.2023.01.008",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Rugby",
+        "Basketball",
+        "Endurance Sport",
+        "Swimming & Diving",
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "PRISMA-ScR scoping review of PubMed, MEDLINE and EBSCO (2015 to April 2022) that kept 16 peer-reviewed studies of competitive athletes, mostly observational designs such as cohort, cross-sectional, actigraphy and questionnaire studies. Causes were grouped as short-term (travel, night performance, and factors before, during and after competition) and long-term (concussion history). The authors report that travel, night training or matches, and competition itself were linked to shorter or poorer sleep in most of the studies, and that concussion history was associated with insomnia, short sleep and sleep disturbance.",
+      "limitations": "The review did not assess study quality, and most included designs are observational, so the causes it lists are associations rather than tested causes. Its suggestions on napping, relaxation and sleep hygiene are not tested by any of the included studies.",
+      "synthesisCaution": "Staff could read the review's list of causes as proof that travel or night training causes sleep loss in their own athletes, when the included studies are associations from specific teams and sports.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: draft stated travel was linked to lower sleep duration without noting the contrary result ('Stevens et al. [19] stated no changes in sleep quality across the study and an increase in sleep duration') and the cricket null finding ('Only one study [18] reported no change in pre-competition sleep patterns')",
+            "practicalImplications: attributed suggestions to the authors and labelled them untested",
+            "rtp: added that Murdaugh et al. examined sleep during recovery from concussion ('insufficient sleep ... impacted migraine, and cognitive and neuropsychological symptoms')"
+          ],
+          "residualConcerns": "Table 1 lists Stevens et al. as showing decreased sleep duration on the flight while the text reports increased duration; the review text is internally inconsistent here.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "948",
+        "synthesisBatch": "pilot-synthesis-batch-38",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 90,
+      "sourceFile": "Chronotype, sleep hygiene, and sleep characteristics among athletes of different disciplines.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 55025,
+        "doi": "10.1055/a-2421-9310",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Cross-sectional online survey of 280 Italian athletes (113 female, 167 male; aged 18 to 40) registered with Italian sport federations during the 2022/2023 season, using the MEQ, PSQI and SHI. 55.4% were good sleepers (PSQI below 5) and 16.1% had poor sleep hygiene (SHI 35 or higher); individual-sport athletes had lower PSQI and SHI scores and earlier sleep timing than team-sport athletes, and elite athletes had better sleep efficiency and lower latency and WASO than non-elite athletes. PSQI correlated with SHI (r = 0.43) and MEQ with SHI (r = -0.35).",
+      "limitations": "Sleep was measured only by self-report questionnaires, not actigraphy or polysomnography, and the cross-sectional design cannot show that sport type or competition level causes the sleep differences. Naps, sleeping arrangements and second jobs were not controlled.",
+      "synthesisCaution": "Staff may treat the sport and competition-level differences as causes and change training schedules for a whole group, when these are small questionnaire differences in one cross-sectional sample.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: the Discussion-Results conflict is narrower than drafted; Table 2 shows team vs individual differences only in PSQI, SHI, MEQ, bedtime and wake-up time, not TST, SE, SL or WASO (\"no significant differences in the quantitative and qualitative sleep parameters\" vs PSQI p = 0.006)",
+            "limitations: added PSQI-MEQ conflict (Discussion \"did not detect a correlation between PSQI and MEQ\" vs Fig. 3 \"r = -0.23, p < 0.001\")",
+            "findings: added 44.6% poor sleepers, 36-minute bedtime difference and small effect sizes from Table 2",
+            "athleteDev: removed 'especially for team and elite groups', which is unsupported because elite athletes slept better"
+          ],
+          "residualConcerns": "Table 2 is garbled in the extracted text; group assignment of significance markers was inferred from the Results prose. Wake-up time difference is given as 28 minutes in Results and 26 minutes in Discussion.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "949",
+        "synthesisBatch": "pilot-synthesis-batch-38",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 92,
+      "sourceFile": "Circadian variation in coaches' decision-making in the National Football League's evening games.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "Duplicate publication: the same article (DOI 10.1080/07420528.2024.2393880) is already published as library ID 111 from a second copy of the PDF whose filename differs only by a curly apostrophe. Excluded at assembly.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "evidenceSummary: the moderation analysis used all 5,360 games with game time as a continuous moderator, not only evening games (\"increases ... as the longitudinal degrees traveled westward increases from games played at 16:24h or later\")",
+            "limitations: clarified that 18:00 is the group definition and 16:24 is the Johnson-Neyman significance threshold, so they are not in conflict",
+            "practicalImplications: removed unsupported advice to review fourth-down decision support; replaced with the authors' stated recommendations (\"prioritize offering the earlier game time slots to teams traveling westwards\"; interventions \"should not only be targeted at players but also support staff\")",
+            "decision: INCLUDE -> EXCLUDE (duplicate of published ID 111)"
+          ],
+          "residualConcerns": "The sample is visiting-team game records reflecting coaches, not athletes. Table 1 prints unexplained odds ratios (1.26, 1, 0.95).",
+          "spotCheckPriority": "normal"
+        }
+      }
+    }
+  ]
+}

@@ -2,16 +2,16 @@
   "schemaVersion": 2,
   "taxonomyVersion": "1.0.0",
   "selectionStrategy": {
-    "targetPapers": 90,
+    "targetPapers": 89,
     "allocation": "12 candidates per controlled pilot domain; strongest-domain matches are used before documented secondary-title matches. A domain whose title-matched pool is exhausted keeps every remaining candidate and is listed in domainShortfalls.",
     "domainShortfalls": {
-      "Athlete Wellbeing": 6
+      "Athlete Wellbeing": 5
     },
     "poolSignalAvailability": {
       "femaleAthlete": 0,
       "youthAdolescent": 0,
-      "namedSport": 186,
-      "underrepresentedPopulation": 50
+      "namedSport": 175,
+      "underrepresentedPopulation": 49
     },
     "evidencePriority": "Reviews, consensus statements, trials, longitudinal designs, and measurement studies rank ahead of lower-signal title matches.",
     "diversityPriority": "Each domain attempts to reserve places for named-sport evidence, underrepresented population signals, and identifiable primary studies.",
@@ -20,7 +20,7 @@
   },
   "screeningCounts": {
     "fullTextEligible": 0,
-    "titleScreened": 90
+    "titleScreened": 89
   },
   "domainCounts": {
     "Training & Performance": 12,
@@ -29,7 +29,7 @@
     "Recovery & Readiness": 12,
     "Nutrition & Hydration": 12,
     "Brain Health & Psychology": 12,
-    "Athlete Wellbeing": 6,
+    "Athlete Wellbeing": 5,
     "Monitoring & Technology": 12
   },
   "candidates": [
@@ -804,36 +804,6 @@
       "allocationBasis": "secondary-title-match",
       "domains": [
         "Sports Medicine & Injury",
-        "Training & Performance",
-        "Rehabilitation & Return to Sport"
-      ],
-      "audiences": [
-        "Performance",
-        "Athletic Training",
-        "Sports Medicine",
-        "Rehabilitation"
-      ],
-      "sports": [
-        "Soccer"
-      ],
-      "populations": [
-        "Professional / Elite",
-        "Injured Athletes"
-      ],
-      "studyDesign": "Other",
-      "priorityScore": 7,
-      "title": "Association of the British Athletic Muscle Injury Classification and anatomic location with return to full training and reinjury following hamstring injury in elite soccer",
-      "sourceFile": "Association of the British Athletic Muscle Injury Classification and anatomic location with return to full training and reinjury following hamstring injury in elite soccer.pdf",
-      "screeningStatus": "title-screened",
-      "metadataSource": "title-inference"
-    },
-    {
-      "queueOrder": 31,
-      "pilotDomain": "Rehabilitation & Return to Sport",
-      "primaryDomain": "Sports Medicine & Injury",
-      "allocationBasis": "secondary-title-match",
-      "domains": [
-        "Sports Medicine & Injury",
         "Rehabilitation & Return to Sport"
       ],
       "audiences": [
@@ -856,7 +826,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 32,
+      "queueOrder": 31,
       "pilotDomain": "Rehabilitation & Return to Sport",
       "primaryDomain": "Sports Medicine & Injury",
       "allocationBasis": "secondary-title-match",
@@ -870,20 +840,21 @@
         "Rehabilitation"
       ],
       "sports": [
-        "Mixed / General Sport"
+        "American Football"
       ],
       "populations": [
+        "Professional / Elite",
         "Injured Athletes"
       ],
-      "studyDesign": "Cohort Study",
-      "priorityScore": 9,
-      "title": "Clinical and biomechanical outcomes of rehabilitation targeting intersegmental control in athletic groin pain- prospective cohort of 205 patients",
-      "sourceFile": "Clinical and biomechanical outcomes of rehabilitation targeting intersegmental control in athletic groin pain- prospective cohort of 205 patients.pdf",
+      "studyDesign": "Other",
+      "priorityScore": 7,
+      "title": "Return to play in professional football players following traumatic cervical spine injury - Expert opinions from the National Football League spine surgeons",
+      "sourceFile": "Return to play in professional football players following traumatic cervical spine injury - Expert opinions from the National Football League spine surgeons.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 33,
+      "queueOrder": 32,
       "pilotDomain": "Rehabilitation & Return to Sport",
       "primaryDomain": "Sports Medicine & Injury",
       "allocationBasis": "secondary-title-match",
@@ -911,7 +882,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 34,
+      "queueOrder": 33,
       "pilotDomain": "Rehabilitation & Return to Sport",
       "primaryDomain": "Sports Medicine & Injury",
       "allocationBasis": "secondary-title-match",
@@ -938,7 +909,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 35,
+      "queueOrder": 34,
       "pilotDomain": "Rehabilitation & Return to Sport",
       "primaryDomain": "Sports Medicine & Injury",
       "allocationBasis": "secondary-title-match",
@@ -961,6 +932,33 @@
       "priorityScore": 7,
       "title": "Longitudinal changes in quadriceps morphology over the first 3 months after anterior cruciate ligament reconstruction",
       "sourceFile": "Longitudinal changes in quadriceps morphology over the first 3 months after anterior cruciate ligament reconstruction.pdf",
+      "screeningStatus": "title-screened",
+      "metadataSource": "title-inference"
+    },
+    {
+      "queueOrder": 35,
+      "pilotDomain": "Rehabilitation & Return to Sport",
+      "primaryDomain": "Sports Medicine & Injury",
+      "allocationBasis": "secondary-title-match",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Sports Medicine",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes"
+      ],
+      "studyDesign": "Case Report / Case Series",
+      "priorityScore": 2,
+      "title": "Muscle activation during rehabilitation on artificial turf vs sand after cruciate ligament surgery - A case series",
+      "sourceFile": "Muscle activation during rehabilitation on artificial turf vs sand after cruciate ligament surgery - A case series.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1008,8 +1006,8 @@
       ],
       "studyDesign": "Other",
       "priorityScore": 5,
-      "title": "Baseline sleep characteristics in NCAA Division 1 collegiate athletes",
-      "sourceFile": "Baseline sleep characteristics in NCAA Division 1 collegiate athletes.pdf",
+      "title": "Objective measures of strain and subjective muscle soreness differ between positional groups and season phases in American college football",
+      "sourceFile": "Objective measures of strain and subjective muscle soreness differ between positional groups and season phases in American college football.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1032,8 +1030,8 @@
       ],
       "studyDesign": "Other",
       "priorityScore": 5,
-      "title": "Objective measures of strain and subjective muscle soreness differ between positional groups and season phases in American college football",
-      "sourceFile": "Objective measures of strain and subjective muscle soreness differ between positional groups and season phases in American college football.pdf",
+      "title": "Recovery practices in Division 1 collegiate athletes in North America",
+      "sourceFile": "Recovery practices in Division 1 collegiate athletes in North America.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1056,8 +1054,8 @@
       ],
       "studyDesign": "Other",
       "priorityScore": 5,
-      "title": "Recovery practices in Division 1 collegiate athletes in North America",
-      "sourceFile": "Recovery practices in Division 1 collegiate athletes in North America.pdf",
+      "title": "Season long heart rate variability tracking reveals autonomic imbalance in American college football players",
+      "sourceFile": "Season long heart rate variability tracking reveals autonomic imbalance in American college football players.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1548,8 +1546,8 @@
       ],
       "studyDesign": "Other",
       "priorityScore": 0,
-      "title": "Assessment of Nutrient Status in Athletes and the Need for Supplementation",
-      "sourceFile": "Assessment of Nutrient Status in        Athletes and the Need for Supplementation.pdf",
+      "title": "Common questions and misconceptions about protein supplementation- What does the scientific evidence really show",
+      "sourceFile": "Common questions and misconceptions about protein supplementation- What does the scientific evidence really show.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1572,8 +1570,8 @@
       ],
       "studyDesign": "Other",
       "priorityScore": 0,
-      "title": "Associations of Urine Specific Gravity With Body Mass Index and Lean Body Mass at the Population Level - Implications for Hydration Monit",
-      "sourceFile": "Associations of Urine Specific Gravity With Body Mass Index and Lean Body Mass at the Population Level - Implications for Hydration Monit.pdf",
+      "title": "Considerations for the consumption of vitamin and mineral supplements in athlete populations",
+      "sourceFile": "Considerations for the consumption of vitamin and mineral supplements in athlete populations.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1815,9 +1813,11 @@
       "primaryDomain": "Brain Health & Psychology",
       "allocationBasis": "primary-title-match",
       "domains": [
-        "Brain Health & Psychology"
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
       ],
       "audiences": [
+        "Athletic Training",
         "Sports Medicine"
       ],
       "sports": [
@@ -1828,8 +1828,8 @@
       ],
       "studyDesign": "Other",
       "priorityScore": 0,
-      "title": "Brain doping substances - Prohibited or not in sports",
-      "sourceFile": "Brain doping substances - Prohibited or not in sports.pdf",
+      "title": "Concussion and the sleeping brain",
+      "sourceFile": "Concussion and the sleeping brain.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1850,10 +1850,10 @@
       "populations": [
         "Mixed / Unspecified"
       ],
-      "studyDesign": "Other",
+      "studyDesign": "Narrative Review",
       "priorityScore": 0,
-      "title": "Chronic Traumatic Encephalopathy Neuropathologic Change Is Not Associated With Suicide in Former Athletes",
-      "sourceFile": "Chronic Traumatic Encephalopathy Neuropathologic Change Is Not Associated With Suicide in Former Athletes.pdf",
+      "title": "Considering the effects of cannabinoids and exercise on the brain - A narrative review",
+      "sourceFile": "Considering the effects of cannabinoids and exercise on the brain - A narrative review.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1863,9 +1863,11 @@
       "primaryDomain": "Brain Health & Psychology",
       "allocationBasis": "primary-title-match",
       "domains": [
-        "Brain Health & Psychology"
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
       ],
       "audiences": [
+        "Athletic Training",
         "Sports Medicine"
       ],
       "sports": [
@@ -1876,8 +1878,8 @@
       ],
       "studyDesign": "Other",
       "priorityScore": 0,
-      "title": "Clenbuterol Abuse in Bodybuilding and Athletics - Unsupervised Use, Psychological Motivations, and Health Consequences",
-      "sourceFile": "Clenbuterol Abuse in Bodybuilding and Athletics - Unsupervised Use, Psychological Motivations, and Health Consequences.pdf",
+      "title": "Effects of Repetitive Head Impacts on a Concussion Assessment Battery",
+      "sourceFile": "Effects of Repetitive Head Impacts on a Concussion Assessment Battery.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1911,32 +1913,6 @@
     {
       "queueOrder": 74,
       "pilotDomain": "Athlete Wellbeing",
-      "primaryDomain": "Sports Medicine & Injury",
-      "allocationBasis": "secondary-title-match",
-      "domains": [
-        "Sports Medicine & Injury",
-        "Athlete Wellbeing"
-      ],
-      "audiences": [
-        "Athletic Training",
-        "Sports Medicine"
-      ],
-      "sports": [
-        "Mixed / General Sport"
-      ],
-      "populations": [
-        "Mixed / Unspecified"
-      ],
-      "studyDesign": "Other",
-      "priorityScore": 0,
-      "title": "Assessment of medical cannabis and health-related quality of life",
-      "sourceFile": "Assessment of medical cannabis and health-related quality of life.pdf",
-      "screeningStatus": "title-screened",
-      "metadataSource": "title-inference"
-    },
-    {
-      "queueOrder": 75,
-      "pilotDomain": "Athlete Wellbeing",
       "primaryDomain": "Brain Health & Psychology",
       "allocationBasis": "secondary-title-match",
       "domains": [
@@ -1960,7 +1936,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 76,
+      "queueOrder": 75,
       "pilotDomain": "Athlete Wellbeing",
       "primaryDomain": "Brain Health & Psychology",
       "allocationBasis": "secondary-title-match",
@@ -1985,7 +1961,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 77,
+      "queueOrder": 76,
       "pilotDomain": "Athlete Wellbeing",
       "primaryDomain": "Recovery & Readiness",
       "allocationBasis": "secondary-title-match",
@@ -2012,7 +1988,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 78,
+      "queueOrder": 77,
       "pilotDomain": "Athlete Wellbeing",
       "primaryDomain": "Nutrition & Hydration",
       "allocationBasis": "secondary-title-match",
@@ -2040,7 +2016,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 79,
+      "queueOrder": 78,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2065,7 +2041,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 80,
+      "queueOrder": 79,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2090,7 +2066,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 81,
+      "queueOrder": 80,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2115,7 +2091,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 82,
+      "queueOrder": 81,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2140,7 +2116,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 83,
+      "queueOrder": 82,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2165,7 +2141,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 84,
+      "queueOrder": 83,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2190,7 +2166,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 85,
+      "queueOrder": 84,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2215,7 +2191,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 86,
+      "queueOrder": 85,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Sports Medicine & Injury",
       "allocationBasis": "secondary-title-match",
@@ -2243,7 +2219,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 87,
+      "queueOrder": 86,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2268,7 +2244,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 88,
+      "queueOrder": 87,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2294,7 +2270,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 89,
+      "queueOrder": 88,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2319,18 +2295,15 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 90,
+      "queueOrder": 89,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
       "domains": [
-        "Monitoring & Technology",
-        "Sports Medicine & Injury"
+        "Monitoring & Technology"
       ],
       "audiences": [
         "Performance",
-        "Athletic Training",
-        "Sports Medicine",
         "Research & Analytics"
       ],
       "sports": [
@@ -2341,8 +2314,8 @@
       ],
       "studyDesign": "Other",
       "priorityScore": 6,
-      "title": "Assessing the Validity of Wearable Inertial Sensors in Evaluating Joint Kinetics and Hamstring Musculotendon Mechanics at Various Running Speeds",
-      "sourceFile": "Assessing the Validity of Wearable Inertial Sensors in Evaluating Joint Kinetics and Hamstring Musculotendon Mechanics at Various Running Speeds.pdf",
+      "title": "Ready for impact - A validity and feasibility study of instrumented mouthguards (iMGs)",
+      "sourceFile": "Ready for impact - A validity and feasibility study of instrumented mouthguards (iMGs).pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     }

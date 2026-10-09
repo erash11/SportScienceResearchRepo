@@ -1,0 +1,846 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-35-training-performance",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Training & Performance queue positions 5-91. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 5,
+      "sourceFile": "Assessment of medical cannabis and health-related quality of life.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) Not relevant to athletes, sport, exercise performance or athlete health. The study is a retrospective case series of 3148 patients at Australian medical cannabis clinics (mean age 55.9 years; chronic non-cancer pain, cancer pain, insomnia, anxiety) measuring SF-36 quality of life. No athletes or sport-specific population are studied.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 6,
+      "sourceFile": "Assisted or unassisted Nordic Hamstring Exercise - Resistance exercise determinants at a glance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 48003,
+        "doi": "10.1080/14763141.2021.1893376",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Track & Field"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Secondary analysis of a published cohort of 16 male regional-to-national sprinters (mean age 21.6 years) with no thigh or knee injury in the previous three years. Each completed assisted (rope-controlled harness) and unassisted Nordic hamstring exercise sets of 3 x 3 repetitions on an IsoMed2000 dynamometer operating in isometric mode with high-speed video, and two-way repeated-measures ANOVA compared the two modes. Assisted reps showed lower peak moment and higher impulse, time under tension and range to downward acceleration, and unassisted reps showed large within-session fatigue (rep 1 vs rep 9: impulse -41%, time under tension -29%, fractional angular velocity +79%).",
+      "limitations": "The sample is small and mixed in performance level, the design is a single-session comparison of execution measures, and no strength, fascicle length, sprint or injury outcome was measured. The authors also note that the assisted protocol needs extra equipment and is less practical on the field.",
+      "synthesisCaution": "Staff could read 'assisted is better' as proof of greater hamstring strength or injury protection; the study shows better execution quality and fatigue patterns, and the authors state that adaptation and injury effects remain untested.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: claimed the abstract says mode effects were absent for peak moment and hip flexion, conflicting with Table 1 -> no conflict; the abstract says all parameters differed 'favouring assisted execution, except for peak moments and maximal hip flexion', i.e. those two did not favour assisted (Table 2: PM favours unassisted, HFmax 'Draw'); Table 1 mode p < 0.001 for both",
+            "paper.findings: added that all mode effects were significant, the 7 to 9 degree smaller hip flexion with assistance, and the exact exceptions for between-participant variability ('except for APM and HFmax')",
+            "evidenceSummary: 'isokinetic-style dynamometer' -> 'isometrically operating dynamometer IsoMed2000'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "905",
+        "synthesisBatch": "pilot-synthesis-batch-35",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 9,
+      "sourceFile": "Association of COL12A1 rs970547 polymorphism with elite athlete status.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 33012,
+        "doi": "10.3390/biomedicines10102495",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case-control Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Track & Field",
+        "Endurance Sport",
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Case-control genetic association study of the COL12A1 rs970547 variant in 293 Lithuanian elite athletes (sprint/power, endurance and football) and 287 non-athlete controls, with a positive-selection analysis using whole-genome data from 50 Lithuanian individuals. The authors report that the T allele and TT genotype were over-represented in athletes overall (C allele 20.0% vs 33.3% in controls, p < 0.05), with the lowest C allele frequencies in sprint/power athletes (16.9%) and footballers (19.4%).",
+      "limitations": "The study examines a single SNP in one ethnic group, with modest subgroup sizes and no phenotype, performance or injury data. The control group departs from Hardy-Weinberg equilibrium (p = 0.00005), which the authors attribute possibly to stratification, so the allele comparisons cannot be read as clean evidence of a performance effect.",
+      "synthesisCaution": "Staff could read the T allele as a performance or talent marker, but the paper reports only group-level allele frequencies, and the authors say the association needs replication in other populations before any interpretation.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "906",
+        "synthesisBatch": "pilot-synthesis-batch-35",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 19,
+      "sourceFile": "Autoregulation in resistance training - Addressing the inconsistencies.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 69792,
+        "doi": "10.1007/s40279-020-01330-8",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review, published in Sports Medicine, that proposes a conceptual framework for autoregulation of resistance training based on the fitness-fatigue model. It reviews common methods (repetitions in reserve, velocity-based training, countermovement jump thresholds, flexible nonlinear periodization) and reports no new participant data. The authors report that some studies favored velocity-based training over percentage-based loading for strength and jump height, while one study of well-trained individuals found no significant differences between flexible nonlinear periodization and a matched program.",
+      "limitations": "The paper is a conceptual review with no pooled analysis or original data, and the framework has not been tested as a whole. The authors state that much of the evidence for specific methods is limited, including cross-sectional studies for stopping-velocity approaches and research largely confined to weightlifting, cycling and powerlifting.",
+      "synthesisCaution": "Staff could treat the proposed framework as validated, when the authors describe it as a conceptual tool whose effectiveness and feasibility in practice still need testing.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Year 2020 from the copyright line; no volume, issue or pages are printed in this version.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "907",
+        "synthesisBatch": "pilot-synthesis-batch-35",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 20,
+      "sourceFile": "Avoiding the Edge Before It Is Too Late - When Is Pain a Sign of Injury in Athletes.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial. The text is labelled 'Editorial' and presents a proposed framework and argument ('We propose', 'we argue') with no original methods, data or structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 23,
+      "sourceFile": "BUCCAL~1.PDF",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) Not relevant to athletes, sport, exercise performance or athlete health. The text is a randomized trial of buccal cannabidiol for postoperative pain after arthroscopic rotator cuff repair in opioid-naive patients aged 18 to 75 (mean age 58.2 and 57.1 years by group); it never mentions athletes, sport or activity level. Borderline only because it appears in AJSM; the operator may wish to confirm this call.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [
+            "exclusionReason: added the printed group mean ages (Table 2: 'Age, y 58.2 +/- 8.8' vs '57.1 +/- 10.1') to support the relevance call"
+          ],
+          "residualConcerns": "Relevance call upheld: general orthopaedic sample with no athlete, sport or activity-level information. If the library later widens its scope to include sports medicine pharmacology, note this is a medication trial (CBD; anti-doping status not discussed) and would need clinical review. Year 2022 is from the online-first copyright line ('AJSM Vol. XX, No. X, XXXX').",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 24,
+      "sourceFile": "Balancing the load - A narrative review with methological implications of compensatory training strategies for non-starting soccer players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 74466,
+        "doi": "10.5114/biolsport.2024.139071",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate",
+        "Youth / Adolescent",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Narrative review of studies comparing starting and non-starting soccer players on match load and physical fitness, and of studies on compensatory (top-up) training, based on a literature search described by the authors. Adjusted for playing time, 11 studies of male youth and senior players reported higher values for non-starters in standardized total distance, while two reported no difference, and absolute totals were generally higher for starters. The authors describe compensatory training studies as few and mostly descriptive, with no experimental trials of effects on fitness or injury risk.",
+      "limitations": "This is a non-systematic narrative review with no quality appraisal or pooled analysis, and the authors note that most included studies are descriptive, small and drawn from few teams. Speed thresholds, playing-time standardization and match definitions differ across studies, which limits comparison.",
+      "synthesisCaution": "Staff could read the higher per-minute running values for non-starters as proof that top-up training closes the load gap, when the authors say its effects on fitness and injury risk are not yet established.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: Spanish high-speed running values were presented without context -> stated they come from day-after-match compensatory training by substitutes ('the training regimen of the day following the match'; '0.49 +/- 0.31 km' to '1.3 +/- 0.54 km') and that the authors judge this short of full-match exposure",
+            "paper.rtp: replaced the hamstring-injury-risk sentence with the review's actual return-to-play content (Table 1 Scenario A: 'first match after return to play from a hamstring injury, grade 2'), labelled as an illustrative example"
+          ],
+          "residualConcerns": "The source text gives conflicting high-speed running thresholds for the Spanish study (21 to 24 km/h in one sentence, 12 to 24 km/h in the next); values were reported without a threshold.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "908",
+        "synthesisBatch": "pilot-synthesis-batch-35",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 27,
+      "sourceFile": "Basics must improve to reduce the burden of hamstring muscle injuries.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial. The two-page piece is labelled 'Editorial' and summarises the London International Consensus and Delphi study on hamstring injuries, whose methods and consensus statements are published separately (refs 5 to 7). It has no original methods or structured review of its own.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 30,
+      "sourceFile": "Better way to determine the     acute_chronic workload ratio 2016.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Letter or commentary. This is a two-page BJSM 'PostScript' correspondence that proposes exponentially weighted moving averages for acute:chronic load ratios and illustrates them with a worked example from a prior letter. It has no original study methods or structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: 'three-page' -> 'two-page' (citation line 'Br J Sports Med 2016;0:1-2'; third page is a publisher cover sheet)"
+          ],
+          "residualConcerns": "Decision unchanged. The EWMA method it proposes is widely used in load monitoring, so staff may expect it in the library; under the eligibility rules it remains a correspondence.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 31,
+      "sourceFile": "Between microcycle variaiblity of external soccer training loads through the evaluation of a contemporary periodization training model CUPs.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 33283,
+        "doi": "10.1177/17479541241251424",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Observational study of 37 elite male professional soccer players from one Scottish Premier League club, using GPS data from 564 training sessions across eight in-season microcycles of the 2022/23 season. Mixed linear models compared each matchday-classified session with microcycle 6, and the authors report large week-to-week differences for total distance (lower to upper limits of about 1244 to 2248 m) and high-intensity distance, with more stable loads on MD-1.",
+      "limitations": "A single club with a small sample and no comparison group or alternative periodisation model, so the study cannot show whether the CUPs model caused the pattern of loads. The variability measure is the spread of model estimate limits rather than a standard deviation, and the abstract's high-intensity distance range omits the 375 m value reported for MD-3.",
+      "synthesisCaution": "Reading the more consistent same-weekday loads as proof that the CUPs model produces stable training stimulus, since the study has no control condition.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: '2024;0(0):1-11' placeholder volume/issue -> removed (text prints 'International Journal of Sports Science & Coaching 0(0)')",
+            "paper.limitations: 'which they suggest may explain much of the variation' -> 'may explain the variation' ('may be due to positional differences and changes in playing personnel'); added unbalanced sessions per player ('median number of training sessions 14, range 1-31') and the authors' causal claim for CUPs"
+          ],
+          "residualConcerns": "Online-first record with placeholder volume and pages; operator may add final pagination if verified externally.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "909",
+        "synthesisBatch": "pilot-synthesis-batch-35",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 32,
+      "sourceFile": "Beyond the Scoreboard - Redefining performance staff assessment in elite sports organizations.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) Not athlete health or performance evidence. This Sport Performance & Science Reports piece (SPSR 210, November 2023) is a social-media-recruited survey of 51 elite-sport practitioners about how support staff and departments are evaluated and which staff KPIs they rate as relevant. It reports practitioner opinions only and measures no athlete health or performance outcome. Borderline: if the operator decides organizational practice surveys are in scope, it would still be DEGRADED because no DOI for the article is printed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [
+            "exclusionReason: clarified rationale and noted that no own DOI is printed (only reference-list DOIs), so an override to inclusion would be DEGRADED with doiMissing"
+          ],
+          "residualConcerns": "Eligibility judgement call. The survey has original methods and is set in elite sport (player availability, RTP collaboration KPIs), but its outcomes are staff-evaluation opinions, not athlete evidence. Operator should confirm scope.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 41,
+      "sourceFile": "Big bones mean big muscles - An MRI-based dataset of muscle-bone-body size relationships across 70 human muscles of the upper limb, trunk, and lower limb.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) Not athlete evidence. The sample is 102 active, healthy adults aged 19-50 (49 male, 53 female) recruited so that heights and masses reflect the US population; participants were not recruited on athletic background, training or activity data were not collected, and no performance or sport outcome was measured. Athletic performance is named only as a possible future application. Borderline call: the operator may override if the whole-body muscle reference data is wanted for staff use.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: described sample as 'healthy adults aged 18-50' -> 'active, healthy' adults with observed range 19-50, not recruited on athletic background and with no training data collected ('One hundred and two active, healthy subjects'; 'We did not collect training or physical activity data')",
+            "identityCheck: added the article's own DOI printed on page 1 (doi:10.1152/japplphysiol.00772.2025)"
+          ],
+          "residualConcerns": "Decision upheld but borderline: a J Appl Physiol muscle morphology reference dataset in active, healthy non-athletes, from authors employed by Springbok Analytics (a commercial MRI muscle analysis company). If the operator wants normative muscle-volume and muscle-bone scaling data for athlete MRI comparison, it could be re-screened as a Monitoring & Technology cross-sectional study. Own DOI is printed, so it would not be DEGRADED.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 43,
+      "sourceFile": "Biomechanical and neuromuscular performance requirements of horizontal deceleration - A review with implications for randome intermittent multi-directional sports.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 34,
+        "extractedCharacters": 134230,
+        "doi": "10.1007/s40279-022-01693-0",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Basketball",
+        "Rugby"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Review of the biomechanics and neuromuscular determinants of horizontal deceleration in random intermittent multi-directional sports, using PubMed, MEDLINE, Google Scholar and reference searches to November 2021. It reports braking forces up to 2.7 times the total ground reaction force of the first steps of a maximal acceleration, highest in the first 50 ms of stance, and links deceleration ability to braking force control and attenuation, with eccentric quadriceps strength, reactive strength and braking technique as candidate determinants.",
+      "limitations": "The review is narrative, and most determinant evidence is cross-sectional, so causal links and training effects are not established. The authors also note that most deceleration tests are pre-planned, while match decelerations are largely unanticipated.",
+      "synthesisCaution": "Staff could treat the listed determinants (such as quadriceps eccentric strength) as proven causes of better deceleration, when the review itself says causality cannot be assumed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: 'Healthy Athletes' removed because health status is not stated; eligibility was 'physically active participants (no restrictions on age)' across mixed levels -> Mixed / Unspecified",
+            "paper.athleteDev: advice to compare each athlete with their own history was not in the source -> states only that normative data are lacking ('the development of a greater database of normative data that practitioners can use')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "910",
+        "synthesisBatch": "pilot-synthesis-batch-35",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 46,
+      "sourceFile": "Black box prediction methods in sports medicine deserve a red card for reckless practice - A change of tactics is needed to advance athlete care.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Opinion piece. The article is a Sports Medicine Current Opinion that argues for transparency in prediction models. It has no original methods and no structured review of evidence; its citations support argument rather than a systematic appraisal.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Exclusion (b) upheld: the article labels itself a 'Current Opinion' that argues a position; it has no search strategy, inclusion criteria or appraisal, so it is not a structured review of evidence.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 50,
+      "sourceFile": "Blood flow restriction - Methods and apparatus still matter.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial. This Br J Sports Med editorial sets out reporting recommendations for BFR research (Table 1). It has no original methods and no structured review of evidence of its own.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 51,
+      "sourceFile": "Blood flow restriction training- a novel approach to augment clinical rehabilitation- how to do it.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial. This Br J Sports Med editorial gives practical BFR prescription advice for clinical rehabilitation. It cites a meta-analysis but has no original methods and no structured review of its own.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 54,
+      "sourceFile": "Breaking Boundaries - Exploring performance enhancement and anti-doping testing in sports.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Commentary. This Clinical Chemistry Q&A is an expert panel discussion of doping and anti-doping testing. It has no original methods and no structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 56,
+      "sourceFile": "Caffeine Powder, Placebos for Athletes, and Muscle Breakdowns.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Commentary. This 'Pearls and Pitfalls' column in Current Sports Medicine Reports comments on caffeine powder, placebo effects and rhabdomyolysis outbreaks. It has no original methods and no structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 63,
+      "sourceFile": "Can improving postoperative sleep speed up surgical recovery.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) not relevant to athletes, sport, exercise performance or athlete health. This overview article (Sleep Science, 2024; doi 10.1055/s-0044-1785522) discusses postoperative sleep disturbance in general surgical, ICU, cardiac and elderly patients, with no athlete population, no sport surgery and no described search method. The only sport-related items are an author affiliation (Sports Training Center) and one reference on circadian misalignment in professional football players, cited for a general statement about circadian rhythm.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [
+            "exclusionReason: 'which the text does not use as evidence' -> the football-player reference (ref 1) is cited once for a general circadian statement; added that no search method is described"
+          ],
+          "residualConcerns": "Exclusion on relevance is a judgment; criterion (b) could also apply because the piece is an unstructured overview with no search method. Several references appear unrelated to the claims they support (for example ref 9 on phospholipases and ref 13 on compulsory sterilization), so the article would be low quality even if relevance were reconsidered.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 65,
+      "sourceFile": "Cannabidiol for musculoskeletal regenerative medicine.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) not relevant to athletes: a general narrative minireview of cannabidiol for chronic musculoskeletal disorders (osteoarthritis, back pain, myofascial pain, tendinopathy) and regenerative medicine in the general adult population. Athletes appear only in passing (tendinopathy is 'more frequent in athletes' and WADA rules for elite athletes are mentioned in one paragraph); no athlete sample or sport-specific finding is reported.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Borderline relevance call: a general musculoskeletal regenerative-medicine minireview of CBD (osteoarthritis, back pain, myofascial pain, tendinopathy) with athletes mentioned only in passing. Exclusion is consistent with Q23 (general-patient CBD rotator cuff trial excluded under (c)). A sports medicine reviewer may override if general MSK reviews are wanted.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 66,
+      "sourceFile": "Cannabidiol in sports - Insights on how CBD could improve performance and recovery.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) opinion piece: the article is labelled 'TYPE Opinion' in the text (Frontiers in Pharmacology 2023, doi 10.3389/fphar.2023.1210202). It is a discussion of CBD for athlete sleep, stress, inflammation and pain, built on selected citations, with no stated search strategy, no original data and no structured review of evidence. Its own text calls the evidence 'insufficient' and 'contradictory'.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 68,
+      "sourceFile": "Cannabis and sport - A world anti-doping perspective.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) editorial: the article is labelled 'EDITORIAL' (Addiction 2023; DOI 10.1111/add.16315). It summarises the WADA committee discussion that kept cannabis on the prohibited list, with no original methods and no structured review of evidence of its own.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "identityCheck: 'Hudzik and 27 co-authors' -> 'Hudzik and 14 co-authors' (15 authors listed, Hudzik to Kinahan)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 69,
+      "sourceFile": "Cannabis containing THC impairs 20-min cycling time trial performance irrespective of the method of inhalation.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 55538,
+        "doi": "10.1152/japplphysiol.00757.2023",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Coaching"
+      ],
+      "sports": [
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "A semirandomized crossover laboratory study in 14 habitual cannabis users (9 men, 5 women; tier 1 or 2 athletes, mean age 23 years) who completed a control visit and three inhalation conditions: smoked THC-predominant cannabis, vaporized THC-predominant cannabis, and vaporized CBD-predominant cannabis. Each visit included 10 minutes of cycling at 100 W followed by a 20-minute all-out time trial, with gas exchange, heart rate and RPE recorded. THC-containing cannabis raised submaximal heart rate by 14 to 18 beats/min and reduced mean time-trial power versus control and CBD, while CBD-predominant cannabis had no significant effect on time-trial power.",
+      "limitations": "The study is small, lab-based and single-session per condition, the control visit always came first, and there was no placebo or blinding. Blood cannabinoid levels and intoxication were not measured, and participants chose their own inhalation technique, so the dose taken was not controlled.",
+      "synthesisCaution": "Staff could read the 5 to 8 percent power loss as a general effect of cannabis on athletic performance, when it comes from 14 habitual users in one lab cycling test, with one product and one dose per condition.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: heart rate deltas described as vs 'control and CBD' -> deltas are relative to control, with significance vs both control and V-CBD ('Change scores for each condition are reported relative to the control condition'); added that maximal HR, RPE and pacing did not differ",
+            "paper.limitations: learning-effect sentence misattributed and 'mixed for sex' presented as a limitation -> reworded to the authors' argument ('we observed the highest power outputs during the 20-min time trial in our control visit, which could actually argue for an underestimation'); added no blinding ('Neither researchers nor participants were blinded')",
+            "screeningLimitations: added no blinding"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "911",
+        "synthesisBatch": "pilot-synthesis-batch-35",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 72,
+      "sourceFile": "Cardiac Arrest and Neurologic Recovery - Insights from the Case of Mr  Damar Hamlin.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) not relevant to athletes, sport or athlete health as a subject: a general review of out-of-hospital cardiac arrest care (targeted temperature management, neuroprognostication, neurorehabilitation). The only athlete content is the opening news case of one professional footballer; the article gives no athlete-specific, sport-setting or sport-medicine analysis. Borderline call: the on-field resuscitation context could be judged relevant to a sports medicine team, so the operator may wish to override.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Borderline relevance call kept as EXCLUDE (c): the text is a general Annals of Neurology review of out-of-hospital cardiac arrest care (chain of survival, TTM, neuroprognostication, neurorehabilitation) that uses news reports of the Hamlin on-field arrest as a hook, with no sport-specific emergency planning, athlete data or return-to-play content. A sports medicine reviewer may reasonably override to INCLUDE (Narrative Review, American Football) given the on-field resuscitation framing; DOI 10.1002/ana.26619, Ann Neurol 2023;00:1-6.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 80,
+      "sourceFile": "Challenges in Developing Evidence-Based Practice in High-Performance Sport.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial. This IJSPP editorial by Aaron J. Coutts discusses how to develop evidence-based practice in high-performance sport and the journal's role. It reports no original methods and no structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 83,
+      "sourceFile": "Changes in the Load–Velocity Profile Following Power- and Strength-Oriented Resistance-Training Programs.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 37694,
+        "doi": "10.1123/ijspp.2019-0840",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized two-arm training study (no untrained control) of 30 physically active men assigned to a power-oriented group (countermovement jump and bench-press throw at 40% 1RM) or a strength-oriented group (squat and bench press at 70% to 90% 1RM), with 8 sessions over 4 weeks. Velocity at 30, 60 and 90% 1RM was measured for squat and bench press before and after training. The power group moderately increased squat velocity across loads (effect sizes 0.70 to 0.93) while the strength group changed trivially to small (0.00 to 0.35), but no group-by-time interaction was significant.",
+      "limitations": "No untrained control group and a single 4-week program. Group-by-time interactions were not significant (squat P at least .07; bench press P at least .12), so between-group differences rest on effect sizes alone.",
+      "synthesisCaution": "Staff could read the abstract's between-group claim as proof of a training-specific effect, when the group-by-time interactions were not statistically significant.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: 'Randomized Controlled Trial' -> 'Laboratory / Experimental Study' (two randomized active arms, no untrained control; authors: 'A longitudinal pre-post design was used to compare ... 2 resistance training programs')",
+            "findings: squat 60% change '+5.7%' (computed from rounded means) -> +4.6% as printed in Figure 1; added 30% and 90% percent changes",
+            "findings: added that time main effects were significant only at 60% and 90% 1RM for squat and at no load for bench press ('main effect of time was not significant at any % 1RM for the BP'); added CI crossing zero for the bench 30% effect",
+            "evidenceSummary/athleteDev: stated the non-significant interactions and limited the profile shift to the squat"
+          ],
+          "residualConcerns": "Design coding is a judgment call: randomized comparison of two active programs could be called an RCT with an active comparator; coded as Laboratory / Experimental because there is no untrained control and the authors describe a pre-post design. Year 2020 is from the ahead-of-print copyright line; no volume/pages printed.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "912",
+        "synthesisBatch": "pilot-synthesis-batch-35",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 84,
+      "sourceFile": "Changes of Power Output and Velocity During Successive Sets of the Bench Press with Different Duration of Eccentric Movement.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 40015,
+        "doi": "10.1123/ijspp.2019-0164",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized crossover laboratory study of 33 healthy, strength-trained men (bench-press 1RM 107.4 kg, 2.2 years of training). Each man performed three sets of one bench-press repetition at 70% 1RM, 5 minutes apart, with either a 2-second or 6-second eccentric phase. With the 2-second tempo, peak and mean power rose across sets (peak 671.6, 702.3 and 713.1 W), while with the 6-second tempo only set 2 peak power exceeded sets 1 and 3 (587.9 vs 565.7 and 563.1 W); bar velocity did not change across sets with either tempo.",
+      "limitations": "Only three one-repetition sets with a single 5-minute rest, and no non-potentiating control condition. The 1RM was measured only at the 2-second tempo, so set-to-set changes cannot be cleanly attributed to potentiation rather than warm-up or technique.",
+      "synthesisCaution": "Staff could read the rising power across sets as proof that one set potentiates the next and should be programmed that way, when the study had no control condition and one rest interval.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: added set 2 mean power and reported P and d values ('p=0.04; d=0.83', 'p=0.03; d=0.88')",
+            "limitations: added second internal conflict, Discussion VPEAK values for ECCMED ('0.70 ± 0.15m/s ... 0.69 ± 0.13m/s ... 0.68 ± 0.13m/s') match Table 2 (6/0/X/0), not Table 1; added authors' PAP vs SSC caveat",
+            "practicalImplications: flagged that the conclusion 'slow tempo of movement may be preferable for the development of maximal strength' was not tested"
+          ],
+          "residualConcerns": "Accepted manuscript with several table/text inconsistencies; statistics reporting is thin (single P and d quoted for multiple pairwise comparisons). Year 2019 from acceptance/copyright; final volume and pages not printed.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "913",
+        "synthesisBatch": "pilot-synthesis-batch-35",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 91,
+      "sourceFile": "Circadian rhythm in sportspersons and athletic performance - A mini review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 46,
+        "extractedCharacters": 192998,
+        "doi": "10.1080/07420528.2024.2305663",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A narrative mini review that describes a keyword search of PubMed, Google Scholar and Scopus over roughly the last two decades. It tabulates about 100 original studies (Table 1, some with samples as small as 6 participants) and about 29 reviews (Table 2), and summarizes evidence that peak athletic performance varies by time of day and chronotype, and that sleep loss, naps, melatonin, core temperature and jet lag affect performance. The authors note that some studies do not agree with their conclusions.",
+      "limitations": "This is a narrative mini review: a keyword search of three databases is described, but no inclusion criteria, screening process or quality appraisal, and conflicting studies are not weighed formally. Its conclusions cannot be treated as a pooled or systematic estimate.",
+      "synthesisCaution": "Staff may read the time-of-day and chronotype effects as settled and rebuild training schedules around them, when the cited studies are mostly small, single-sport and often contradictory.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: Systematic Review / Meta-analysis -> Narrative Review; the paper is titled a mini review and describes only keyword searches with no inclusion criteria or screening (\"The words ... were used as keywords in different combinations while searching these online databases\")",
+            "screeningLimitations: rewritten to match the Narrative Review code",
+            "findings: sleep deprivation effects corrected to those listed (\"reaction time, accuracy, vigor, submaximal strength, endurance, and cognition\"), 'power' removed; nap evidence attributed to the cited 30-minute nap studies rather than unspecified small samples; time-of-day window stated as 13:00 to 20:00 per text",
+            "athleteDev: removed claim that the review supports testing at several times of day, which it does not state"
+          ],
+          "residualConcerns": "The design call departs from the literal rule that Narrative Review is used only when no search method is described; a keyword search is described but no selection method. Large tabular content (about 102 original studies, 29 reviews) was spot-checked, not read row by row.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "914",
+        "synthesisBatch": "pilot-synthesis-batch-35",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}
