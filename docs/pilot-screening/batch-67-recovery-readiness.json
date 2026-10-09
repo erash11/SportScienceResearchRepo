@@ -1,0 +1,677 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-67-recovery-readiness",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Recovery & Readiness queue positions 6-79. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 6,
+      "sourceFile": "How does sleep help recovery from exercise-induced muscle injuries.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 45142,
+        "doi": "10.1016/j.jsams.2021.05.007",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of sleep physiology, sleep in elite athletes and soldiers, the phases of muscle regeneration, and the effects of sleep loss and sleep extension on muscle repair. It draws mainly on rodent studies and human endocrine studies of sleep extension, and it reports that sleep loss may slow regeneration through catabolic hormone and inflammatory changes. The authors state there is no direct human evidence on sleep and recovery from muscle injury.",
+      "limitations": "No systematic search is described, so the selection of sources cannot be checked. Much of the mechanistic support comes from animal models and from healthy-volunteer endocrine data rather than injured athletes.",
+      "synthesisCaution": "Staff could read the IGF-1 and inflammation pathways as proof that sleep extension speeds muscle injury recovery, when the review presents them as hypotheses.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1260",
+        "synthesisBatch": "pilot-synthesis-batch-67",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 10,
+      "sourceFile": "How much sleep does an elite athlete need.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 43019,
+        "doi": "10.1123/ijspp.2020-0896",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Observational study of 175 elite athletes (30 women) from 12 individual and team sports, who gave their self-assessed sleep need and wore a wrist activity monitor with a sleep diary for about 12 nights during normal training. Athletes needed 8.3 hours to feel rested, but averaged 6.7 hours of habitual sleep, a deficit of 96 minutes, and 71% fell short by an hour or more.",
+      "limitations": "This is a single-cohort, cross-sectional design with a single-question measure of sleep need and wrist-monitor estimates of sleep. It cannot show why athletes sleep less or whether changing sleep improves performance.",
+      "synthesisCaution": "Staff may read the 96-minute average deficit as a measure of performance loss, but the study did not measure performance or health outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "practicalImplications: said training start times were linked to longer sleep -> training times were not measured; only sleep onset/offset timing was associated with duration, and schedule changes are the authors' suggestions ('this is a question that is yet to be empirically investigated')",
+            "practicalImplications: '22:00 to 22:30 bedtimes' -> sleep onset times ('sleeps that start between 22:00 and 22:30 h'); added the 5.5 to 11 h range of reported need",
+            "tldr: 'coaches can use these results as normative sleep targets' -> attributed to the authors and timing framed as association",
+            "limitations: added the 12-sport text vs 14-sport Table 1 discrepancy"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1261",
+        "synthesisBatch": "pilot-synthesis-batch-67",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 13,
+      "sourceFile": "How to manage travel fatigue and jet lag in athletes - A systematic review of interventions.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 69659,
+        "doi": "10.1136/bjsports-2019-101635",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Nutrition",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Systematic review (PROSPERO CRD42019126852, PRISMA) of experimental and observational studies of non-pharmacological and pharmacological interventions for travel fatigue and jet lag, searched from inception to March 2019 (updated July 2019). It included 22 articles (8 non-randomised, 14 randomised) and found no studies on travel fatigue; 12 athlete-specific jet lag studies were found, and some categories used healthy-population studies.",
+      "limitations": "The athlete-specific evidence is small, heterogeneous and mostly low or very low quality by GRADE, and a meta-analysis was judged not feasible. Several intervention categories rely on healthy non-athlete populations.",
+      "synthesisCaution": "Staff may read the positive jet lag results for exercise, melatonin and light as proven protocols for athletes, when the authors grade the athlete evidence as low to very low quality.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: sleep summary omitted the authors' conclusion -> added ('does not support the use of sleep interventions for reducing jet lag symptoms')",
+            "findings: light 'contrasting results' -> specified the uncontrolled positive study vs the RCT in 22 elite female soccer players with no benefit",
+            "findings: 'Most grades were very low to low' -> separated athlete-specific grades (very low to low) from healthy-population stimulant and melatonin analogue grades (moderate, GRADE +++)",
+            "limitations: clarified that the 'mostly very low' observation applies to athlete-specific ratings",
+            "practicalImplications, athleteDev: light exposure was presented as a well-studied option -> light had 2 studies with contrasting results; exercise is the most-studied athlete option ('Judiciously timed outdoor training sessions could be used')",
+            "citation: removed placeholder '2020;0:1-11' (online-first page numbering) -> 'Br J Sports Med. 2020.'"
+          ],
+          "residualConcerns": "Pharmacological content (melatonin, sedatives, stimulants, glucocorticoids). Sex tags rely on the athlete-specific studies (male soccer, female soccer); several categories rely on healthy non-athlete samples.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1262",
+        "synthesisBatch": "pilot-synthesis-batch-67",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 24,
+      "sourceFile": "Impact of evening blue light exposure timing on sleep, motor, and cognitive performance in young athletes with intermediate chronotype.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 46968,
+        "doi": "10.5114/biolsport.2025.146787",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "Randomized crossover study of 16 healthy male adolescent athletes (age 15.1 years) from sports clubs. Each participant watched a neutral tablet video in four evening conditions (no exposure, 19:30 to 21:00, 21:00 to 22:30, and 22:30 to 00:00) in random order, with 72-hour washouts. Total sleep time was 465.5 minutes in control versus 442.0 and 428.5 minutes after the two later exposures, and sleep latency rose from 20.1 to 31.4 minutes after the latest window.",
+      "limitations": "The sample of 16 is small, sleep was self-reported by questionnaire only, and training load and diet were not controlled. The paper has reporting errors: selective attention is analysed as F(2,26) although four conditions and 16 participants imply F(3,45), the reference list contains a leftover generated sentence ('Here are the remaining references (21-45) formatted according to Biology of Sport's guidelines'), and many in-text citation numbers do not match the list.",
+      "synthesisCaution": "Staff could read the melatonin and prefrontal mechanisms and the '51% variance' figures as established, when the study measured neither melatonin nor brain activity, and its screen-curfew, blue-light-filter and glasses advice was not tested.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations/limitations: described the reference-list artefact exactly ('21. Here are the remaining references (21-45) formatted according to Biology of Sport's guidelines'), gave a concrete in-text mismatch example ('Phillips et al. [39]' not in list), and added that sleep was questionnaire-only with bedtime fixed at 00:00.",
+            "paper.tldr: 'shows an association with timing' (understates a randomized crossover) -> limits stated as small sample and single-night exposure.",
+            "paper.practicalImplications: 'before early-morning training' -> 'next-morning skill sessions' (tests ran 10:00-12:00); added that 19:30-21:00 exposure did not differ from control (Table 1).",
+            "synthesisCaution: added that screen-curfew, filter and glasses advice was untested."
+          ],
+          "residualConcerns": "Reporting quality concerns: a generated-text artefact in the reference list, mismatched in-text citations, and a degrees-of-freedom error (F2,26) suggest weak editorial checking; consider whether the record should carry a quality flag. Mechanism and 'variance explained' claims are not tested by the study.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1263",
+        "synthesisBatch": "pilot-synthesis-batch-67",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 26,
+      "sourceFile": "Impact of long-haul airline travel on athletic performance and recovery - A critical review of the literature.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 107173,
+        "doi": "10.1113/EP091831",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative critical review of studies of athletes and physically active participants who travelled west or east across four or more time zones, with real or simulated flights. It summarizes aerobic, anaerobic, strength and power, perceptual, sleep and jet lag outcomes in a table of studies. The authors conclude that anaerobic and strength measures are negatively affected, endurance evidence is equivocal, eastbound travel is generally more disruptive, and no particular recovery time can be established.",
+      "limitations": "The text describes no systematic search, databases or study selection process, so the evidence base cannot be checked for completeness. Much of the evidence comes from small, mixed or simulated-travel studies that use different tests and test times, which the authors note limits comparison.",
+      "synthesisCaution": "Staff could apply the rule of 0.5 day per time zone westbound and 1 day eastbound as a fixed recovery timeline, but the authors state that this rule does not apply to all athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: 'Expect anaerobic and strength measures to be reduced for up to about 3 to 4 days' read as an upper bound -> framed as the authors' estimate with their conclusion that recovery 'may need more than 3 days to be restored'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1264",
+        "synthesisBatch": "pilot-synthesis-batch-67",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 27,
+      "sourceFile": "Impact-Induced Muscle Damage and Contact Sports- Etiology, Effects on Neuromuscular Function and Recovery, and the Modulating Effects of Adaptation and Recovery Strategies.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 49463,
+        "doi": "10.1123/ijspp.2017-0268",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Rehabilitation",
+        "Coaching"
+      ],
+      "sports": [
+        "Rugby",
+        "American Football",
+        "Other Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Brief narrative review of impact-induced muscle damage (IIMD) from collisions in contact sports, compared with exercise-induced muscle damage (EIMD). It draws on simulated-collision studies in contact-sport athletes, a rugby match study, animal contusion and drop-mass models, and EIMD recovery research. The authors report reduced power and sprint performance after simulated collisions in controlled studies, but inconsistent blood marker and soreness responses, and they judge the evidence on adaptation to IIMD equivocal.",
+      "limitations": "No search method is described, and the review draws heavily on animal models and on EIMD recovery studies that are extrapolated to contact exposure. The controlled human IIMD studies often included wrestling, high-intensity running or other damaging exercise, which the authors note may confound results.",
+      "synthesisCaution": "Staff could apply EIMD recovery timelines to collision exposure, but the authors state that the time course of IIMD is not established and may differ from EIMD.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1265",
+        "synthesisBatch": "pilot-synthesis-batch-67",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 35,
+      "sourceFile": "Improving sleep quality to enhance athletic activity - The role of nutrition and supplementation - A mini-short review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 51956,
+        "doi": "10.3390/nu17111779",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Performance",
+        "Nutrition",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Mini-short narrative review (Nutrients, 2025) of sleep physiology, the effects of sleep loss on athletes, and the evidence on nutrition, supplements (caffeine, magnesium, melatonin, tryptophan, ashwagandha, apigenin) and exercise for sleep. No search method or sample is described, and most cited evidence comes from non-athlete trials or reviews. The authors conclude that the literature on supplements, exercise and sleep in sport is conflicting.",
+      "limitations": "No systematic search is described, so the selection of studies cannot be checked, and the review is not a systematic appraisal. Most cited sleep and supplement studies were conducted in non-athletes, and the authors themselves say there are few studies on nutrition and sleep in athletes.",
+      "synthesisCaution": "Staff could take the doses listed for melatonin, tryptophan, ashwagandha and chamomile apigenin as proven protocols for athletes, when they come from general-population trials that the review does not test in athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "practicalImplications: 'a light final training session might support sleep before competition' -> 'a final taper session with exercises to improve sleep' inside a training program; the text does not mention competition",
+            "findings: magnesium survey result restated as supplement users vs controls ('no differences compared to the control group in sleep duration'); added the authors' Mediterranean low-glycemic, tryptophan-rich diet conclusion; glycemic-index evidence restated as differing between sedentary people and athletes",
+            "tldr: 'Evening caffeine is the clearest sleep disruptor' reframed so it does not omit the authors' dietary conclusion",
+            "athleteDev/rtp: removed redundant field-label prefixes"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1266",
+        "synthesisBatch": "pilot-synthesis-batch-67",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 39,
+      "sourceFile": "Inadequate sleep and muscle                        strength- Implications for resistance training - Copy.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 52141,
+        "doi": "10.1016/j.jsams.2018.01.012",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Rugby",
+        "Combat Sports",
+        "Endurance Sport",
+        "Other Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review (PRISMA, five databases, EPHPP quality rating) of 17 studies of sleep deprivation or sleep restriction and resistance exercise performance or hormonal responses, in athletes and non-athletes. The authors report that one night of sleep deprivation had little effect on muscle strength, that consecutive nights of restriction reduced force output in multi-joint but not single-joint movements, and that hormonal findings conflicted. They rated 13 studies as moderate and 4 as weak quality.",
+      "limitations": "Only 17 studies were included, most with small samples and none rated strong, and only a small number involved athletes, mostly with severe restriction (3 h) or deprivation (more than 60 h). Few studies included women, and none measured muscle adaptation to training over time.",
+      "synthesisCaution": "Staff could read the abstract conclusion that inadequate sleep impairs strength in compound lifts as a general rule, when the multi-night evidence is one study of 8 trained men, one night of deprivation usually left strength unchanged, and the caffeine and group-training suggestions rest on one or two studies each.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: 'one night of restriction reduced 1RM in some lifts in trained men' was wrong; 1RM fell in Reilly and Piercy after three nights ('decreased one repetition maximum (RM) strength for leg press and deadlift ... Maximal bench press strength decreased after the third night only'); one-night effects were the rugby workload drop and afternoon-only strength loss after early waking",
+            "methods: removed 'shift-type schedules'; 'No shiftwork studies identified in the original search ... were therefore excluded'",
+            "limitations/synthesisCaution: abstract overstatement reframed against the authors' own statement that the review 'is limited by only one study of consecutive nights of sleep restriction existing and only two studies implementing a resistance training session'",
+            "tldr/practicalImplications: multi-night finding flagged as one study of 8 men",
+            "citation: marked article in press (no volume or pages printed); athleteDev/rtp prefixes removed"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1267",
+        "synthesisBatch": "pilot-synthesis-batch-67",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 68,
+      "sourceFile": "Intraindividual variability in sleep among athletes  - A systematic review of definitions, operationalizations, and key correlates.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 45688,
+        "doi": "10.1111/sms.14453",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Rugby",
+        "Swimming & Diving"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Preregistered systematic review (PRISMA 2020) of six databases searched to April 2022, with narrative synthesis of 16 observational studies that included 937 athletes aged about 15 to 36 years across mixed and single sports and competition levels. An explicit definition of sleep variability was given in only four studies, and most studies measured variability as deviation from each athlete's typical level, usually with intraindividual standard deviation or coefficient of variation. The authors rated the overall quality of the evidence as moderate.",
+      "limitations": "The synthesis is narrative, with no pooled estimates, and the evidence base is 16 small, mostly observational studies with no sample size justification and often unreported missing data. The review cannot show whether any level of sleep variability affects performance, health or recovery.",
+      "synthesisCaution": "Staff could treat the authors' proposed working definition of sleep variability as an established standard, when the authors describe the concept as in its infancy and the definition as a proposal that has not been tested.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: placeholder '2023;00:1-10' removed -> 'Scand J Med Sci Sports. 2023.' (text prints 'Scand J Med Sci Sports. 2023;00:1-10')",
+            "paper.limitations: 'search covered published work and dissertations only' -> no search for unpublished work such as preprints ('no direct contact with individual researchers for unpublished work, such as preprints'); 'only two studies described variability in relation to determinants or outcomes' was a misreading -> determinants/outcomes 'in its infancy'; added SD/CV weaknesses",
+            "paper.methods: added two-author screening with Research Screener and bespoke tool",
+            "paper.findings: definition paraphrase aligned with text; 'sample size justification poor' -> absent (100% poor)",
+            "paper.athleteDev: 'found little evidence linking variability to performance' -> did not synthesise such links"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1268",
+        "synthesisBatch": "pilot-synthesis-batch-67",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 71,
+      "sourceFile": "Investigating the sleep habits in individual and team-sport athletes using the Athlete Sleep Behavior Questionnaire and the Pittsburgh Sleep Qua.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 29508,
+        "doi": "10.5935/1984-0063.20210031",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Basketball",
+        "Rugby",
+        "Swimming & Diving",
+        "Tennis",
+        "Golf",
+        "Track & Field",
+        "Combat Sports",
+        "Endurance Sport",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Cross-sectional online survey of 407 elite adult athletes (237 male, 170 female) from 16 sports, comprising 137 individual-sport and 270 team-sport athletes, who completed the Athlete Sleep Behavior Questionnaire (ASBQ) and the Pittsburgh Sleep Quality Index (PSQI). Individual-sport athletes reported longer self-reported total sleep time (7 h 57 min vs 7 h 40 min) and higher sleep efficiency (91.1% vs 88.6%), with small effect sizes (d about 0.3), while PSQI global scores did not differ. Team-sport athletes had a higher ASBQ global score (44.3 vs 42.6, indicating poorer sleep behaviours), with more stimulant use, alcohol within 4 hours of bed and travel disrupting routines.",
+      "limitations": "The sample is a convenience sample recruited through social media and sporting bodies across nine countries, with rugby union alone contributing 138 athletes, and sleep is self-reported. The cross-sectional design cannot explain why the groups differ, the significant effect sizes are small (d 0.23 to 0.38), and the paper does not describe any correction for the many item-level comparisons.",
+      "synthesisCaution": "Staff could read these small group differences as showing that team-sport athletes sleep poorly as a group, when the data are self-reported, cross-sectional and drawn from a convenience sample.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: effect size range 'd 0.23 to 0.32' -> 'd 0.23 to 0.38' (Table 3 stimulant item 'd 0.38 small')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1269",
+        "synthesisBatch": "pilot-synthesis-batch-67",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 72,
+      "sourceFile": "Irregular sleep-wake patterns in student-athletes exposed to early morning training.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 55044,
+        "doi": "10.1080/02640414.2025.2452726",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Observational study of 21 male student-athletes from one university rugby union team, who wore wrist actigraphy for two weeks (October 2023) during the competitive season. Nights before morning training (starts 06:30 to 07:00) had about 1.8 hours less median total sleep than nights before free mornings (5.86 vs 7.66 h), and sleep started and ended earlier. The median Sleep Regularity Index was 67.0 (IQR 17.0), and lower regularity was associated with more cumulative sleep including naps, and with later sleep onset and offset.",
+      "limitations": "This is one team of 21 men over two weeks, using wrist actigraphy with a reported specificity of 45% against polysomnography. The design is observational, academic timetables and off-campus travel were not controlled, and no performance or health outcomes were measured.",
+      "synthesisCaution": "Staff could read the irregular sleep as caused by early training alone, but the design is observational and the authors note that academic timetables and off-campus travel were not controlled.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations/paper.limitations: claimed conflict between Results text (00:53, 03:12) and Table 2 (23:07, 05:45) removed; the text values are differences in hh:mm ('earlier sleep onset (00:53), and earlier sleep offset (03:12)'), matching Table 2 (00:00 minus 23:07; 08:57 minus 05:45) and the abstract (0.9 hr, 3.2 hr)",
+            "paper.findings: added onset/offset differences, nights under 7 h (93/109 vs 41/121), UK Biobank reference for 10th percentile, chronotype correlation (r = .52) and no association with nocturnal TST (r = -.01)",
+            "paper.practicalImplications: 'both can be irregular even when average sleep looks acceptable' (not shown; median TST 6.67 h below recommendations) -> timing shifted by up to about 3 h"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1270",
+        "synthesisBatch": "pilot-synthesis-batch-67",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 79,
+      "sourceFile": "Is reaction time altered by mental or physical exertion.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 60336,
+        "doi": "10.1007/s00421-019-04124-7",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomised crossover laboratory study in which 13 healthy, active men (mean age 25.2 years, 6.0 h/week of physical activity) completed three sessions: 14 minutes of serial subtraction (mental effort), intermittent biceps contractions to task failure (muscle effort, about 11 minutes), or a 20-minute movie (control). Simple reaction time, premotor time and electromechanical delay (EMD) were measured before and after each session. Reaction time and premotor time did not change in any condition, while EMD rose after muscle effort (+17% with electrical stimulation, P = 0.001) and maximal voluntary torque fell by 17.7%.",
+      "limitations": "The sample was 13 healthy, recreationally active men rather than athletes, and reaction time was taken from only three trials before and two after each protocol, which the authors note reduced reliability and prevented time-on-task analysis. Mental fatigue was not measured directly in the study; the task's ability to induce it was checked with self-report in a separate pilot study of 21 people, and motivation was not measured.",
+      "synthesisCaution": "Staff could read the unchanged simple reaction time after fatigue as evidence that athletes stay fully reactive when tired, when the study used few trials, a non-athlete sample, and a simple task with a single visual stimulus.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: 'an unchanged reaction time alone does not show a loss of readiness' inverted the intended point -> an unchanged reaction time is not proof the person is unaffected (RFD0-100 fell 42.3% after muscle effort while reaction time did not change).",
+            "screeningLimitations: clarified trial counts ('three trials before the fatigue protocol and two trials after') and that the limited trials 'decreased the reliability'."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1271",
+        "synthesisBatch": "pilot-synthesis-batch-67",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

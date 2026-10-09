@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-69-brain-health-psychology",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Brain Health & Psychology queue positions 7-67. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 7,
+      "sourceFile": "How mental health affects injury risk and outcomes in athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 49520,
+        "doi": "10.1177/19417381231179678",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Clinical review that searched PubMed for peer-reviewed studies, with no systematic methods described. It summarises prevalence of mental health disorders in athletes, cohort and survey studies linking anxiety, depression and stress to later injury, and evidence that injury worsens mental health and recovery. The authors conclude that mental health and injury risk are closely linked, and that stigma and limited resources restrict care.",
+      "limitations": "The review uses a single-database PubMed search with no stated inclusion criteria or quality appraisal, so its selection of studies cannot be checked. Most injury-link evidence comes from observational cohorts and surveys, so causal direction cannot be established.",
+      "synthesisCaution": "Staff could read the anxiety-injury associations as evidence that screening athletes for mental health will prevent injury, when the cited data are observational.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: 'mostly small observational cohorts and surveys' -> 'mostly observational cohorts and surveys' (cited samples range up to 'nearly 200,000 undergraduate students').",
+            "paper.athleteDev: 'Mood, anxiety and stress were associated with poorer competition performance' -> depression and performance failure in swimmers, and depressive symptoms or stress with illness time loss ('Depression was significantly associated with performance failure at the competition'; 'significantly associated with future sports incapacity ... because of illness'). Anxiety-performance links are not reported."
+          ],
+          "residualConcerns": "Clinically sensitive (mental health, concussion risk, psychiatric medication). studyDesign kept as Narrative Review: the only method is 'We searched PubMed for pertinent peer-reviewed studies' with no screening.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1277",
+        "synthesisBatch": "pilot-synthesis-batch-69",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 14,
+      "sourceFile": "How to tackle mental fatigue - A systematic review of potential countermeasures and their underlying mechanisms.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 30,
+        "extractedCharacters": 120996,
+        "doi": "10.1007/s40279-022-01678-z",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Training & Performance",
+        "Nutrition & Hydration",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Nutrition",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review (PRISMA) of randomised and non-randomised controlled studies of acute countermeasures against mental fatigue, searched in PubMed, Web of Science and PsycINFO to 7 March 2022. It included 33 studies with 1012 healthy adults aged 18 to 50 (about 53% male where reported), most with cognitive or sport-type performance outcomes, and found that most countermeasures improved behavioural or subjective markers.",
+      "limitations": "The included samples were healthy adults aged 18 to 50, mostly not described as athletes, and most outcomes were cognitive or laboratory tasks. Most studies were rated high risk of bias (25 of 33), sample sizes were small, and no meta-analysis was possible.",
+      "synthesisCaution": "Staff may read caffeine or odour results from small laboratory trials in healthy adults as proven ways to protect athletes' performance under mental fatigue.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'healthy adults rather than athletes' -> healthy adults aged 18 to 50, mostly not described as athletes (some included trials tested cyclists, soccer players or swimmers per the reference list)",
+            "limitations: fixed run-on sentence punctuation",
+            "practicalImplications: clarified the evidence base is mostly small laboratory trials"
+          ],
+          "residualConcerns": "Relevance: the review covers healthy adults generally, not athletes specifically; kept INCLUDE because many outcomes are exercise or sport performance (endurance, 20 km cycling time trial, swimming). Includes pharmacological content (caffeine, modafinil).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1278",
+        "synthesisBatch": "pilot-synthesis-batch-69",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 61,
+      "sourceFile": "Intermediary role of mental toughness beliefs on the relationship between pain self-efficacy and fear avoidance in Elite injured athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 41641,
+        "doi": "10.1186/s13102-025-01171-w",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Coaching",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Soccer",
+        "Basketball",
+        "Track & Field",
+        "Volleyball",
+        "Combat Sports",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes",
+        "Collegiate"
+      ],
+      "evidenceSummary": "A cross-sectional online survey (Google Forms, February to June 2024) of 172 injured elite and competitive athletes in Lebanon, 103 male and 69 female, mean age 22.9 years, recruited through a university sports federation. Fear avoidance (AFAQ), pain self-efficacy (PSEQ) and mental toughness (SMTQ) were analysed with t-tests, ANOVA and correlation coefficients. Fear avoidance was negatively correlated with mental toughness (r = -0.47) and pain self-efficacy (r = -0.44), and mental toughness was positively correlated with pain self-efficacy (r = 0.36 in the Abstract; 0.37 in Results).",
+      "limitations": "Only bivariate correlations and group comparisons were run, with no mediation or regression analysis, so the 'intermediary role' in the title is not tested. The sample was small and non-random, recruited through one university sports federation, with uneven sport representation (for example, 17 boxers and 17 futsal players), and 'football' is not defined, so it is coded as soccer.",
+      "synthesisCaution": "Staff could read these correlations as showing that mental toughness reduces fear avoidance, or that pain self-efficacy drives return to sport, when the design is cross-sectional and the mediation claim in the title was never tested.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Professional / Elite -> Collegiate (recruited through the 'Fédération Sportive Universitaire du Liban'; sample is elite or competitive by training hours only, ages 18-30)",
+            "paper.athleteDev: reported 10+ h training effect (38.5 vs 36.9) as a finding -> flagged as coming from an inconsistent Table 4 row (training-hours SMTQ and AFAQ values identical: '36.92 ... 36.92', '38.48 ... 38.48')",
+            "paper.limitations: added Table 4 inconsistency and conflict between youngest-group highest SMTQ and Discussion claim 'increasing age ... associated with higher scores of MT'",
+            "paper.practicalImplications: 'authors recommend mental training' -> authors' untested conclusion 'Incorporating MT and PSE training yields benefits that outweigh any associated risk'",
+            "paper.findings: removed age and training-hours results from findings; reordered return-to-sport comparisons"
+          ],
+          "residualConcerns": "Table 4 age and training-hours rows appear to contain data errors. Competition level is mixed (elite and competitive by weekly hours, recruited via a university federation); Collegiate tag is a judgement. Sport 'football' is undefined.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1279",
+        "synthesisBatch": "pilot-synthesis-batch-69",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 67,
+      "sourceFile": "Intersection of race and socioeconomic status on concussion recovery among NCAA student-athletes - A CARE Consortium Study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 77415,
+        "doi": "10.1249/MSS.0000000000003258",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Rehabilitation & Return to Sport",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Analysis of prospectively collected CARE Consortium data from 22,819 NCAA varsity athletes (2014 to 2020), including 4,614 first sport-related concussions (SRC). Race was not associated with return to learn or with time to start the return to play (RTP) protocol in multivariable Cox models; Black athletes had a higher hazard of reaching unrestricted RTP (adjusted HR 1.17, 95% CI 1.05 to 1.31), and non-Black/non-White athletes a lower hazard of completing the RTP protocol (adjusted HR 0.83, 95% CI 0.71 to 0.97), compared with White athletes. Household income was described but not entered into the recovery models.",
+      "limitations": "Household income is self-reported and was not modelled, so the paper cannot show how income and race combine to affect recovery. Race was grouped as White, Black and non-Black/non-White, which merges several different groups, and most injured athletes were White.",
+      "synthesisCaution": "Staff could read the race differences in RTP timing as evidence of biased or unequal care, but the median differences were about 1 day, the authors offer several untested explanations (contact sport participation, concussion knowledge, pressure to return), and the design cannot identify the cause.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'time to asymptomatic was the only predictor of RTL significant after adjustment' -> also sex in the >=20 symptom-change stratum (Table 3: 'Male 1.31 1.11, 1.53', P = 0.001); added ~1 day median differences",
+            "synthesisCaution: authors did not state differences are of 'uncertain clinical relevance' (that phrasing applies to RTL: 'likely not statistically or clinically relevant'); reworded to median ~1 day differences and untested explanations",
+            "paper.limitations: clarified 2,464 (Methods text) vs 2,646 (abstract, Tables 1C/2B) and per-outcome Ns 2,334/2,083/2,267; added ethnicity not analysed",
+            "paper.practicalImplications: removed 'monitoring symptom resolution remains the most useful step' (not tested) -> prolonged symptoms as a flag for academic support"
+          ],
+          "residualConcerns": "Sample size discrepancy 2,464 vs 2,646 in source. In Table 4 the Black vs White HR for iRTP is 1.13 (1.01, 1.27) though the overall race term is p = 0.09; records follow the authors' overall-term interpretation. Concussion and RTP topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1280",
+        "synthesisBatch": "pilot-synthesis-batch-69",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

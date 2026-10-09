@@ -2,16 +2,16 @@
   "schemaVersion": 2,
   "taxonomyVersion": "1.0.0",
   "selectionStrategy": {
-    "targetPapers": 88,
+    "targetPapers": 87,
     "allocation": "12 candidates per controlled pilot domain; strongest-domain matches are used before documented secondary-title matches. A domain whose title-matched pool is exhausted keeps every remaining candidate and is listed in domainShortfalls.",
     "domainShortfalls": {
-      "Athlete Wellbeing": 4
+      "Athlete Wellbeing": 3
     },
     "poolSignalAvailability": {
       "femaleAthlete": 0,
       "youthAdolescent": 0,
-      "namedSport": 151,
-      "underrepresentedPopulation": 44
+      "namedSport": 147,
+      "underrepresentedPopulation": 41
     },
     "evidencePriority": "Reviews, consensus statements, trials, longitudinal designs, and measurement studies rank ahead of lower-signal title matches.",
     "diversityPriority": "Each domain attempts to reserve places for named-sport evidence, underrepresented population signals, and identifiable primary studies.",
@@ -20,7 +20,7 @@
   },
   "screeningCounts": {
     "fullTextEligible": 0,
-    "titleScreened": 88
+    "titleScreened": 87
   },
   "domainCounts": {
     "Training & Performance": 12,
@@ -29,7 +29,7 @@
     "Recovery & Readiness": 12,
     "Nutrition & Hydration": 12,
     "Brain Health & Psychology": 12,
-    "Athlete Wellbeing": 4,
+    "Athlete Wellbeing": 3,
     "Monitoring & Technology": 12
   },
   "candidates": [
@@ -114,33 +114,6 @@
       "allocationBasis": "primary-title-match",
       "domains": [
         "Training & Performance",
-        "Sports Medicine & Injury"
-      ],
-      "audiences": [
-        "Performance",
-        "Athletic Training",
-        "Sports Medicine"
-      ],
-      "sports": [
-        "Soccer"
-      ],
-      "populations": [
-        "Injured Athletes"
-      ],
-      "studyDesign": "Other",
-      "priorityScore": 4,
-      "title": "Implementing Strength Training Strategies for Injury Prevention in Soccer - Scientific Rationale and Methodological Recommendations",
-      "sourceFile": "Implementing Strength Training Strategies for Injury Prevention in Soccer - Scientific Rationale and Methodological Recommendations.pdf",
-      "screeningStatus": "title-screened",
-      "metadataSource": "title-inference"
-    },
-    {
-      "queueOrder": 5,
-      "pilotDomain": "Training & Performance",
-      "primaryDomain": "Training & Performance",
-      "allocationBasis": "primary-title-match",
-      "domains": [
-        "Training & Performance",
         "Sports Medicine & Injury",
         "Rehabilitation & Return to Sport"
       ],
@@ -164,7 +137,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 6,
+      "queueOrder": 5,
       "pilotDomain": "Training & Performance",
       "primaryDomain": "Training & Performance",
       "allocationBasis": "primary-title-match",
@@ -184,6 +157,30 @@
       "priorityScore": 4,
       "title": "Parametric modeling and analysis of NFL run plays",
       "sourceFile": "Parametric modeling and analysis of NFL run plays.pdf",
+      "screeningStatus": "title-screened",
+      "metadataSource": "title-inference"
+    },
+    {
+      "queueOrder": 6,
+      "pilotDomain": "Training & Performance",
+      "primaryDomain": "Training & Performance",
+      "allocationBasis": "primary-title-match",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "studyDesign": "Other",
+      "priorityScore": 4,
+      "title": "Pectoralis major ruptures in the NFL - Incidence, RTP, and Performance Analysis",
+      "sourceFile": "Pectoralis major ruptures in the NFL - Incidence, RTP, and Performance Analysis.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -537,8 +534,7 @@
       ],
       "audiences": [
         "Athletic Training",
-        "Sports Medicine",
-        "Research & Analytics"
+        "Sports Medicine"
       ],
       "sports": [
         "Mixed / General Sport"
@@ -546,10 +542,10 @@
       "populations": [
         "Mixed / Unspecified"
       ],
-      "studyDesign": "Methodological / Validation Study",
+      "studyDesign": "Cohort Study",
       "priorityScore": 7,
-      "title": "Limited Agreement on ACL Tear Location Between Arthroscopy and MRI - A Prospective Evaluation",
-      "sourceFile": "Limited Agreement on ACL Tear Location Between Arthroscopy and MRI - A Prospective Evaluation.pdf",
+      "title": "Low Ankle-GO Score while returning to sport after lateral ankle sprain leads to a 9-fold increased risk of recurrence - A two-year prospective cohort study",
+      "sourceFile": "Low Ankle-GO Score while returning to sport after lateral ankle sprain leads to a 9-fold increased risk of recurrence - A two-year prospective cohort study.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -573,8 +569,8 @@
       ],
       "studyDesign": "Cohort Study",
       "priorityScore": 7,
-      "title": "Low Ankle-GO Score while returning to sport after lateral ankle sprain leads to a 9-fold increased risk of recurrence - A two-year prospective cohort study",
-      "sourceFile": "Low Ankle-GO Score while returning to sport after lateral ankle sprain leads to a 9-fold increased risk of recurrence - A two-year prospective cohort study.pdf",
+      "title": "Playing football on artificial turf as a risk factor for fifth metatarsal stress fracture - A retrospective cohort study",
+      "sourceFile": "Playing football on artificial turf as a risk factor for fifth metatarsal stress fracture - A retrospective cohort study.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -610,35 +606,6 @@
       "primaryDomain": "Sports Medicine & Injury",
       "allocationBasis": "primary-title-match",
       "domains": [
-        "Sports Medicine & Injury",
-        "Recovery & Readiness"
-      ],
-      "audiences": [
-        "Performance",
-        "Athletic Training",
-        "Sports Medicine",
-        "Research & Analytics"
-      ],
-      "sports": [
-        "Mixed / General Sport"
-      ],
-      "populations": [
-        "Professional / Elite",
-        "Injured Athletes"
-      ],
-      "studyDesign": "Systematic Review / Meta-analysis",
-      "priorityScore": 17,
-      "title": "Is the acute-chronic workload ratio associated with risk of time loss injury in professional team sports - A systematic review",
-      "sourceFile": "Is the acute-chronic workload ratio associated with risk of time loss injury in professional team sports - A systematic review.pdf",
-      "screeningStatus": "title-screened",
-      "metadataSource": "title-inference"
-    },
-    {
-      "queueOrder": 24,
-      "pilotDomain": "Sports Medicine & Injury",
-      "primaryDomain": "Sports Medicine & Injury",
-      "allocationBasis": "primary-title-match",
-      "domains": [
         "Sports Medicine & Injury"
       ],
       "audiences": [
@@ -656,6 +623,33 @@
       "priorityScore": 17,
       "title": "Recurrent and subsequent injuries in professional and elite sport - A systematic review",
       "sourceFile": "Recurrent and subsequent injuries in professional and elite sport - A systematic review.pdf",
+      "screeningStatus": "title-screened",
+      "metadataSource": "title-inference"
+    },
+    {
+      "queueOrder": 24,
+      "pilotDomain": "Sports Medicine & Injury",
+      "primaryDomain": "Sports Medicine & Injury",
+      "allocationBasis": "primary-title-match",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes"
+      ],
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "priorityScore": 14,
+      "title": "Musculoskeletal Injury Risk After Sport-Related Concussion A Systematic Review and Meta-analysis",
+      "sourceFile": "Musculoskeletal Injury Risk After Sport-Related Concussion A Systematic Review and Meta-analysis.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1176,8 +1170,8 @@
       ],
       "studyDesign": "Systematic Review / Meta-analysis",
       "priorityScore": 12,
-      "title": "How to manage travel fatigue and jet lag in athletes - A systematic review of interventions",
-      "sourceFile": "How to manage travel fatigue and jet lag in athletes - A systematic review of interventions.pdf",
+      "title": "Overtraining in Resistance Exercise- An Exploratory Systematic Review and Methodological Appraisal of the Literature",
+      "sourceFile": "Overtraining in Resistance   Exercise- An Exploratory Systematic Review and Methodological Appraisal of   the Literature.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1201,8 +1195,8 @@
       ],
       "studyDesign": "Systematic Review / Meta-analysis",
       "priorityScore": 12,
-      "title": "How to tackle mental fatigue - A systematic review of potential countermeasures and their underlying mechanisms",
-      "sourceFile": "How to tackle mental fatigue - A systematic review of potential countermeasures and their underlying mechanisms.pdf",
+      "title": "Salivary biomarkers of tactical athlete readiness - A systematic review",
+      "sourceFile": "Salivary biomarkers of tactical athlete readiness - A systematic review.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1212,7 +1206,8 @@
       "primaryDomain": "Recovery & Readiness",
       "allocationBasis": "primary-title-match",
       "domains": [
-        "Recovery & Readiness"
+        "Recovery & Readiness",
+        "Training & Performance"
       ],
       "audiences": [
         "Performance",
@@ -1226,8 +1221,8 @@
       ],
       "studyDesign": "Systematic Review / Meta-analysis",
       "priorityScore": 12,
-      "title": "Intraindividual variability in sleep among athletes - A systematic review of definitions, operationalizations, and key correlates",
-      "sourceFile": "Intraindividual variability in sleep among athletes  - A systematic review of definitions, operationalizations, and key correlates.pdf",
+      "title": "Sleep Interventions Designed to Improve Athletic Performance and Recovery- A Systematic Review of Current Approaches",
+      "sourceFile": "Sleep Interventions Designed to                        Improve Athletic Performance and Recovery- A   Systematic        Review    of         Current    Approaches.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1237,10 +1232,12 @@
       "primaryDomain": "Recovery & Readiness",
       "allocationBasis": "primary-title-match",
       "domains": [
-        "Recovery & Readiness"
+        "Recovery & Readiness",
+        "Nutrition & Hydration"
       ],
       "audiences": [
         "Performance",
+        "Nutrition",
         "Research & Analytics"
       ],
       "sports": [
@@ -1251,8 +1248,8 @@
       ],
       "studyDesign": "Systematic Review / Meta-analysis",
       "priorityScore": 12,
-      "title": "Overtraining in Resistance Exercise- An Exploratory Systematic Review and Methodological Appraisal of the Literature",
-      "sourceFile": "Overtraining in Resistance   Exercise- An Exploratory Systematic Review and Methodological Appraisal of   the Literature.pdf",
+      "title": "The impact of dietary factors on the sleep of athletically trained populations - A systematic review",
+      "sourceFile": "The impact of dietary factors on the sleep of athletically trained populations - A systematic review.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1276,8 +1273,8 @@
       ],
       "studyDesign": "Systematic Review / Meta-analysis",
       "priorityScore": 12,
-      "title": "Salivary biomarkers of tactical athlete readiness - A systematic review",
-      "sourceFile": "Salivary biomarkers of tactical athlete readiness - A systematic review.pdf",
+      "title": "The influence of exercise-induced fatigue on inter-limb asymmetries - A systematic review",
+      "sourceFile": "The influence of exercise-induced fatigue on inter-limb asymmetries - A systematic review.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1324,63 +1321,13 @@
       ],
       "studyDesign": "Consensus / Position Statement",
       "priorityScore": 10,
-      "title": "International Association of Athletics Federations Consensus Statement 2019- Nutrition for Athletics",
-      "sourceFile": "International Association of Athletics Federations Consensus Statement 2019- Nutrition for Athletics.pdf",
-      "screeningStatus": "title-screened",
-      "metadataSource": "title-inference"
-    },
-    {
-      "queueOrder": 51,
-      "pilotDomain": "Nutrition & Hydration",
-      "primaryDomain": "Nutrition & Hydration",
-      "allocationBasis": "primary-title-match",
-      "domains": [
-        "Nutrition & Hydration",
-        "Training & Performance"
-      ],
-      "audiences": [
-        "Performance",
-        "Nutrition"
-      ],
-      "sports": [
-        "Mixed / General Sport"
-      ],
-      "populations": [
-        "Mixed / Unspecified"
-      ],
-      "studyDesign": "Consensus / Position Statement",
-      "priorityScore": 10,
-      "title": "IOC Consensus Statement- Dietary Supplements and the High-Performance Athlete",
-      "sourceFile": "IOC Consensus Statement- Dietary        Supplements and the High-Performance Athlete.pdf",
-      "screeningStatus": "title-screened",
-      "metadataSource": "title-inference"
-    },
-    {
-      "queueOrder": 52,
-      "pilotDomain": "Nutrition & Hydration",
-      "primaryDomain": "Nutrition & Hydration",
-      "allocationBasis": "primary-title-match",
-      "domains": [
-        "Nutrition & Hydration"
-      ],
-      "audiences": [
-        "Nutrition"
-      ],
-      "sports": [
-        "Mixed / General Sport"
-      ],
-      "populations": [
-        "Mixed / Unspecified"
-      ],
-      "studyDesign": "Consensus / Position Statement",
-      "priorityScore": 10,
       "title": "Sports Dietitians Australia Position Statement- Nutrition for Exercise in Hot Environments",
       "sourceFile": "Sports Dietitians Australia Position Statement- Nutrition for Exercise in Hot Environments.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 53,
+      "queueOrder": 51,
       "pilotDomain": "Nutrition & Hydration",
       "primaryDomain": "Nutrition & Hydration",
       "allocationBasis": "primary-title-match",
@@ -1404,7 +1351,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 54,
+      "queueOrder": 52,
       "pilotDomain": "Nutrition & Hydration",
       "primaryDomain": "Nutrition & Hydration",
       "allocationBasis": "primary-title-match",
@@ -1428,7 +1375,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 55,
+      "queueOrder": 53,
       "pilotDomain": "Nutrition & Hydration",
       "primaryDomain": "Nutrition & Hydration",
       "allocationBasis": "primary-title-match",
@@ -1453,7 +1400,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 56,
+      "queueOrder": 54,
       "pilotDomain": "Nutrition & Hydration",
       "primaryDomain": "Nutrition & Hydration",
       "allocationBasis": "primary-title-match",
@@ -1477,7 +1424,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 57,
+      "queueOrder": 55,
       "pilotDomain": "Nutrition & Hydration",
       "primaryDomain": "Nutrition & Hydration",
       "allocationBasis": "primary-title-match",
@@ -1501,57 +1448,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 58,
-      "pilotDomain": "Nutrition & Hydration",
-      "primaryDomain": "Nutrition & Hydration",
-      "allocationBasis": "primary-title-match",
-      "domains": [
-        "Nutrition & Hydration"
-      ],
-      "audiences": [
-        "Nutrition"
-      ],
-      "sports": [
-        "Mixed / General Sport"
-      ],
-      "populations": [
-        "Mixed / Unspecified"
-      ],
-      "studyDesign": "Other",
-      "priorityScore": 0,
-      "title": "Improvement of Functional Ankle Properties Following Supplementation with Specific Collagen Peptides in Athletes with Chronic Ankle Instability",
-      "sourceFile": "Improvement of Functional Ankle Properties Following Supplementation with Specific Collagen Peptides in Athletes with Chronic Ankle Instability .pdf",
-      "screeningStatus": "title-screened",
-      "metadataSource": "title-inference"
-    },
-    {
-      "queueOrder": 59,
-      "pilotDomain": "Nutrition & Hydration",
-      "primaryDomain": "Nutrition & Hydration",
-      "allocationBasis": "primary-title-match",
-      "domains": [
-        "Nutrition & Hydration",
-        "Recovery & Readiness"
-      ],
-      "audiences": [
-        "Performance",
-        "Nutrition"
-      ],
-      "sports": [
-        "Mixed / General Sport"
-      ],
-      "populations": [
-        "Mixed / Unspecified"
-      ],
-      "studyDesign": "Other",
-      "priorityScore": 0,
-      "title": "Improving sleep quality to enhance athletic activity - The role of nutrition and supplementation - A mini-short review",
-      "sourceFile": "Improving sleep quality to enhance athletic activity - The role of nutrition and supplementation - A mini-short review.pdf",
-      "screeningStatus": "title-screened",
-      "metadataSource": "title-inference"
-    },
-    {
-      "queueOrder": 60,
+      "queueOrder": 56,
       "pilotDomain": "Nutrition & Hydration",
       "primaryDomain": "Nutrition & Hydration",
       "allocationBasis": "primary-title-match",
@@ -1574,6 +1471,102 @@
       "priorityScore": 0,
       "title": "Monitoring Dietary Supplements for Undeclared Diuretics as a Strategy for Preventing Unintentional Doping",
       "sourceFile": "Monitoring Dietary Supplements for Undeclared Diuretics as a Strategy for Preventing Unintentional Doping.pdf",
+      "screeningStatus": "title-screened",
+      "metadataSource": "title-inference"
+    },
+    {
+      "queueOrder": 57,
+      "pilotDomain": "Nutrition & Hydration",
+      "primaryDomain": "Nutrition & Hydration",
+      "allocationBasis": "primary-title-match",
+      "domains": [
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "studyDesign": "Other",
+      "priorityScore": 0,
+      "title": "Navigating the Risks Beyond the Label - Unpacking Global Nutritional Supplement Safety",
+      "sourceFile": "Navigating the Risks Beyond the Label - Unpacking Global Nutritional Supplement Safety.pdf",
+      "screeningStatus": "title-screened",
+      "metadataSource": "title-inference"
+    },
+    {
+      "queueOrder": 58,
+      "pilotDomain": "Nutrition & Hydration",
+      "primaryDomain": "Nutrition & Hydration",
+      "allocationBasis": "primary-title-match",
+      "domains": [
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "studyDesign": "Other",
+      "priorityScore": 0,
+      "title": "Nutritional and Supplementation Strategies to Prevent and Attenuate Exercise-Induced Muscle Damage- a Brief Review",
+      "sourceFile": "Nutritional and Supplementation Strategies to Prevent and Attenuate Exercise-Induced Muscle Damage- a Brief Review.pdf",
+      "screeningStatus": "title-screened",
+      "metadataSource": "title-inference"
+    },
+    {
+      "queueOrder": 59,
+      "pilotDomain": "Nutrition & Hydration",
+      "primaryDomain": "Nutrition & Hydration",
+      "allocationBasis": "primary-title-match",
+      "domains": [
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "studyDesign": "Other",
+      "priorityScore": 0,
+      "title": "Nutritional priorities, practices and preferences of athletes and active individuals in the context of new product development in the sports nutrition sector",
+      "sourceFile": "Nutritional priorities, practices and preferences of athletes and active individuals in the context of new product development in the sports nutrition sector.pdf",
+      "screeningStatus": "title-screened",
+      "metadataSource": "title-inference"
+    },
+    {
+      "queueOrder": 60,
+      "pilotDomain": "Nutrition & Hydration",
+      "primaryDomain": "Nutrition & Hydration",
+      "allocationBasis": "primary-title-match",
+      "domains": [
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "studyDesign": "Other",
+      "priorityScore": 0,
+      "title": "Periodized Nutrition for Athletes",
+      "sourceFile": "Periodized Nutrition for        Athletes.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1610,11 +1603,9 @@
       "allocationBasis": "secondary-title-match",
       "domains": [
         "Sports Medicine & Injury",
-        "Recovery & Readiness",
         "Brain Health & Psychology"
       ],
       "audiences": [
-        "Performance",
         "Athletic Training",
         "Sports Medicine"
       ],
@@ -1626,8 +1617,8 @@
       ],
       "studyDesign": "Other",
       "priorityScore": 5,
-      "title": "Immediate Removal From Activity After Sport-Related Concussion Is Associated With Shorter Clinical Recovery and Less Severe Symptoms in Collegiate Student-Athletes",
-      "sourceFile": "Immediate Removal From Activity After Sport-Related Concussion Is Associated With Shorter Clinical Recovery and Less Severe Symptoms in Collegiate Student-Athletes.pdf",
+      "title": "Medical disqualification following concussion in collegiate student-athletes - Findings from the CARE Consortium",
+      "sourceFile": "Medical disqualification following concussion in collegiate student-athletes - Findings from the CARE Consortium.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1652,8 +1643,8 @@
       ],
       "studyDesign": "Other",
       "priorityScore": 5,
-      "title": "Medical disqualification following concussion in collegiate student-athletes - Findings from the CARE Consortium",
-      "sourceFile": "Medical disqualification following concussion in collegiate student-athletes - Findings from the CARE Consortium.pdf",
+      "title": "Primary and secondary risk factors associated with concussion symptom clusters in collegiate athletes - Results from the NCAA-DoD Grand Alliance CARE Consortium",
+      "sourceFile": "Primary and secondary risk factors associated with concussion symptom clusters in collegiate athletes - Results from the NCAA-DoD Grand Alliance CARE Consortium.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
@@ -1830,37 +1821,13 @@
       ],
       "studyDesign": "Other",
       "priorityScore": 0,
-      "title": "How Humans Run Faster - The Neuromechanical Contributions of Functional Muscle Groups to Running at Different Speeds",
-      "sourceFile": "How Humans Run Faster - The Neuromechanical Contributions of Functional Muscle Groups to Running at Different Speeds.pdf",
-      "screeningStatus": "title-screened",
-      "metadataSource": "title-inference"
-    },
-    {
-      "queueOrder": 71,
-      "pilotDomain": "Brain Health & Psychology",
-      "primaryDomain": "Brain Health & Psychology",
-      "allocationBasis": "primary-title-match",
-      "domains": [
-        "Brain Health & Psychology"
-      ],
-      "audiences": [
-        "Sports Medicine"
-      ],
-      "sports": [
-        "Mixed / General Sport"
-      ],
-      "populations": [
-        "Mixed / Unspecified"
-      ],
-      "studyDesign": "Other",
-      "priorityScore": 0,
       "title": "Neuromechanics of the rate of force development",
       "sourceFile": "Neuromechanics of the rate of force development.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 72,
+      "queueOrder": 71,
       "pilotDomain": "Brain Health & Psychology",
       "primaryDomain": "Brain Health & Psychology",
       "allocationBasis": "primary-title-match",
@@ -1886,16 +1853,17 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 73,
-      "pilotDomain": "Athlete Wellbeing",
-      "primaryDomain": "Sports Medicine & Injury",
-      "allocationBasis": "secondary-title-match",
+      "queueOrder": 72,
+      "pilotDomain": "Brain Health & Psychology",
+      "primaryDomain": "Brain Health & Psychology",
+      "allocationBasis": "primary-title-match",
       "domains": [
-        "Sports Medicine & Injury",
         "Brain Health & Psychology",
-        "Athlete Wellbeing"
+        "Training & Performance",
+        "Sports Medicine & Injury"
       ],
       "audiences": [
+        "Performance",
         "Athletic Training",
         "Sports Medicine"
       ],
@@ -1903,17 +1871,17 @@
         "Mixed / General Sport"
       ],
       "populations": [
-        "Injured Athletes"
+        "Mixed / Unspecified"
       ],
       "studyDesign": "Other",
-      "priorityScore": 2,
-      "title": "How mental health affects injury risk and outcomes in athletes",
-      "sourceFile": "How mental health affects injury risk and outcomes in athletes.pdf",
+      "priorityScore": 0,
+      "title": "Relationship between cognitive performance and lower extremity biomechanics - Implications for sports-related concussion",
+      "sourceFile": "Relationship between cognitive performance and lower extremity biomechanics - Implications for sports-related concussion.pdf",
       "screeningStatus": "title-screened",
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 74,
+      "queueOrder": 73,
       "pilotDomain": "Athlete Wellbeing",
       "primaryDomain": "Brain Health & Psychology",
       "allocationBasis": "secondary-title-match",
@@ -1938,7 +1906,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 75,
+      "queueOrder": 74,
       "pilotDomain": "Athlete Wellbeing",
       "primaryDomain": "Recovery & Readiness",
       "allocationBasis": "secondary-title-match",
@@ -1965,7 +1933,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 76,
+      "queueOrder": 75,
       "pilotDomain": "Athlete Wellbeing",
       "primaryDomain": "Nutrition & Hydration",
       "allocationBasis": "secondary-title-match",
@@ -1993,7 +1961,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 77,
+      "queueOrder": 76,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2018,7 +1986,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 78,
+      "queueOrder": 77,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2043,7 +2011,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 79,
+      "queueOrder": 78,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2068,7 +2036,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 80,
+      "queueOrder": 79,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2093,7 +2061,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 81,
+      "queueOrder": 80,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2118,7 +2086,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 82,
+      "queueOrder": 81,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2143,7 +2111,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 83,
+      "queueOrder": 82,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2168,7 +2136,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 84,
+      "queueOrder": 83,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Sports Medicine & Injury",
       "allocationBasis": "secondary-title-match",
@@ -2196,7 +2164,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 85,
+      "queueOrder": 84,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2221,7 +2189,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 86,
+      "queueOrder": 85,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2246,7 +2214,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 87,
+      "queueOrder": 86,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",
@@ -2271,7 +2239,7 @@
       "metadataSource": "title-inference"
     },
     {
-      "queueOrder": 88,
+      "queueOrder": 87,
       "pilotDomain": "Monitoring & Technology",
       "primaryDomain": "Monitoring & Technology",
       "allocationBasis": "primary-title-match",

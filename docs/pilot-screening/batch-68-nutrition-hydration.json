@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-68-nutrition-hydration",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Nutrition & Hydration queue positions 19-64. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 19,
+      "sourceFile": "IOC Consensus Statement- Dietary        Supplements and the High-Performance Athlete.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 22,
+        "extractedCharacters": 124744,
+        "doi": "10.1123/ijsnem.2018-0020",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "International Olympic Committee consensus statement, co-published with the British Journal of Sports Medicine, on the use, evidence and risks of dietary supplements for high-performance athletes. It identifies caffeine, creatine, nitrate, sodium bicarbonate and possibly beta-alanine as the performance supplements with adequate support, and it describes contamination and anti-doping risk. The paper reports no new data and no described search method, and the authors note that data from elite athletes are almost entirely absent.",
+      "limitations": "The statement is expert consensus, so the strength of each conclusion depends on the cited reviews and trials, many of which the authors describe as small or of low quality. Most performance evidence comes from healthy adults rather than elite athletes.",
+      "synthesisCaution": "Staff could treat the short list of supplements with good evidence as safe or necessary for their athletes, when the statement makes use conditional on individual response, trial in training, and anti-doping risk.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: creatine dosing read as alternatives ('20 g/day for 5 to 7 days, or 3 to 5 g/day') -> loading then maintenance ('Loading-phase: ~20 g/day ... Maintenance-phase: 3-5 g/day').",
+            "paper.findings: 'the immune table rates vitamin D and probiotics as the most promising' -> attributed to the authors' text ('the most promising candidates ... are vitamin D and probiotics'); Table 4 also gives vitamin C moderate support.",
+            "paper.citation: removed '(ahead of print)' placeholder; no volume or pages are printed for this IJSNEM version."
+          ],
+          "residualConcerns": "Ahead-of-print IJSNEM version co-published with BJSM (April 2018, Vol 52, Issue 7); the IJSNEM DOI is the one printed on this copy.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1272",
+        "synthesisBatch": "pilot-synthesis-batch-68",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 31,
+      "sourceFile": "Implicit doping attitude and athletes' accuracy in avoiding unintentional doping when being offered beverages with banned performance-enhancing substances.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 28,
+        "extractedCharacters": 42305,
+        "doi": "10.1016/j.jsams.2025.04.009",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Cross-sectional study of 681 athletes (47.1% female, mean age 28.2 years) from Hong Kong, Australia and the United Kingdom, who completed a smartphone single-category implicit association test and a 32-item canned-beverage sorting task for banned substances. More positive implicit doping attitude was associated with lower sorting accuracy (beta = -.09, t[641] = -2.35, p = .02, R2 = .029), and the authors report that the association held after controlling for society, gender, age, education, sport type and sport level.",
+      "limitations": "The single-occasion cross-sectional design cannot show causal or predictive links. Most athletes competed at regional or state level, the beverage task used only broad banned-substance categories, and the implicit attitude explained only about 3% of variance.",
+      "synthesisCaution": "Staff could read the association as evidence that doping attitude predicts athletes' real-world doping risk, but the study measured a small association in one smartphone task and did not measure real consumption.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: 'the beverage task used broad substance categories, so athletes' knowledge may have affected results' reversed the authors' point -> categories were used to limit the influence of knowledge ('we did not use technical names of banned-performance substances ... Instead, we only used categories as these are more widely known'); added pre-proof status ('Journal Pre-proof')."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1273",
+        "synthesisBatch": "pilot-synthesis-batch-68",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 32,
+      "sourceFile": "Improved Postexercise Rehydration With a Milk Permeate-Based Sports Drink.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 62877,
+        "doi": "10.1123/ijsnem.2025-0067",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized crossover trial in 12 healthy young adults (4 women) who trained at least twice per week, lost 2% of body weight through cycling and walking in 29.9 degrees C heat, then drank 150% of their loss over the first hour of a 4-hour rehydration period. The four trials compared a traditional sports drink, a high-potassium sports drink, a milk permeate-based sports drink (MPSD) and water. MPSD gave higher net fluid balance than the other drinks at 180 min (-0.38% +/- 0.3%) and 240 min (-0.66% +/- 0.3%) and lower cumulative urine output than the high-potassium drink and water, while the traditional sports drink gave greater plasma volume restoration.",
+      "limitations": "Twelve non-athlete adults and one heat protocol limit generalizability. The drinks differ in several ways at once (osmolality, sugar type, erythritol and potassium), so the cause of the effect cannot be isolated, and the study was funded by the National Dairy Council.",
+      "synthesisCaution": "Staff could read MPSD as a superior rehydration drink for athletes in general, but the advantage was modest, fluid balance stayed negative in every trial, and the study used 12 adults in one heat protocol.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings and evidenceSummary: MPSD cumulative urine volume called lower than all drinks -> results text says lower than HKSD and water only ('MPSD led to lower cumulative urine output compared with HKSD and W'); abstract-results conflict noted in limitations.",
+            "paper.limitations: funding and conflicts not stated -> added National Dairy Council funding and senior author consulting ('The study was funded by a grant from the National Dairy Council'; 'scientific consultation to the American Beverage Association, Unilever, Pepsico, The Coca-Cola Company').",
+            "paper.citation: 3 authors before et al. -> first 6 authors as the house rule requires.",
+            "paper.practicalImplications: 'should not be chosen for fast early plasma volume restoration' softened to what the data show; evidenceSummary/screeningLimitations: noted participants were trained adults, not athletes ('healthy young women and men'; 'training at least twice per week')."
+          ],
+          "residualConcerns": "Industry funding (National Dairy Council) for a test of a commercial milk permeate drink (GoodSport); the abstract overstates the urine volume result relative to the results text.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1274",
+        "synthesisBatch": "pilot-synthesis-batch-68",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 34,
+      "sourceFile": "Improvement of Lower-Body Resistance-Exercise Performance With Blood-Flow Restriction Following Acute Caffeine Intake.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 32816,
+        "doi": "10.1123/ijspp.2018-0224",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Nutrition",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Double-blind, randomized, placebo-controlled crossover study in 22 trained men (mean age 23.4 years, low habitual caffeine users) who took 6 mg/kg caffeine or placebo one hour before three sets of unilateral knee extension at 30% 1RM with blood flow restriction (BFR) to failure. The authors report more total repetitions with caffeine (44.5 vs 35.0, p = .001) and higher post-exercise blood lactate (7.8 vs 6.0 mmol/L, p = .03), with lower pain ratings in sets 2 and 3 and no difference in perceived exertion.",
+      "limitations": "The participants were resistance-trained men (bodybuilding training), not competitive athletes, and the outcome was a single unilateral knee-extension test in one session. Plasma caffeine was not measured, and the subgroup analysis by whether caffeine was correctly identified was post hoc with 9 and 13 participants.",
+      "synthesisCaution": "Staff could read the repetition gain as evidence that caffeine improves strength or muscle gain with BFR training, when the study measured acute repetitions to failure in one exercise and did not test long-term adaptation.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: kept Adult / Recreational only; participants were men 'trained in bodybuilding for at least 12 months', not athletes, so no athlete sex or health tags",
+            "limitations: Table 1 1RM '87.2 (61.1)' kept as an apparent typo (30% 1RM is 26.2 (2.5) kg)",
+            "citation: marked as ahead of print ('International Journal of Sports Physiology and Performance, (Ahead of Print)'; no volume or pages printed)",
+            "findings: added that set 3 was not significant and the authors' note that higher lactate may reflect 'the greater work performed'",
+            "athleteDev/rtp: removed redundant field-label prefixes"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1275",
+        "synthesisBatch": "pilot-synthesis-batch-68",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 62,
+      "sourceFile": "Intermittent Fasting and Its    Effects on Athletic Performance- A Review.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text. The text shows only the journal name, ISSN, volume, issue, pages and copyright line, with no DOI. The operator may verify the DOI externally and upgrade the decision.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "identityCheck and paper.citation: title given as 'Intermittent Fasting and Athletic Performance: A Review' (running header) -> full printed title 'Intermittent Fasting and Its Effects on Athletic Performance: A Review'",
+            "paper.practicalImplications: removed unsupported advice to 'check training quality during fasting blocks' and softened 'should expect' to the authors' 'need to be aware of the negative or neutral effects'",
+            "paper.limitations: reframed Abstract vs mouse-study point; the 'no benefit' statement refers to human performance studies"
+          ],
+          "residualConcerns": "DEGRADED for missing DOI only; no DOI is printed anywhere in the text (only '1537-890X/1807/266-269'). Operator may verify externally.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 64,
+      "sourceFile": "International Association of Athletics Federations Consensus Statement 2019- Nutrition for Athletics.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 68654,
+        "doi": "10.1123/ijsnem.2019-0065",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Track & Field",
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Youth / Adolescent",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "An International Association of Athletics Federations consensus statement written by 16 sports nutrition authors, built on event-group reviews of sprints, jumps and throws, middle distance, distance, and ultradistance running. It presents 12 themes, including periodisation, energy availability, protein, fluid, carbohydrate for training and racing, illness, injury, supplements, special environments, special populations, travel and special diets. It reports no new data; its numeric targets, such as protein of 1.3-1.7 g/kg/day for athletes aiming to maintain or gain weight, are the authors' summary of existing evidence.",
+      "limitations": "The statement reports no search strategy, evidence grading or consensus procedure, so the strength of each recommendation is not graded. Several themes concern athletes in general or special populations rather than a studied sample.",
+      "synthesisCaution": "Staff could treat the numeric targets as fixed rules for every athlete, when the statement is expert consensus that asks for individualised, periodised plans and many targets are guidance rather than tested outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: 'treat deficiency only under medical supervision' -> only intravenous or intramuscular iron requires medical supervision; dietary counselling and oral iron are also options ('These latter options must only be undertaken in a medical setting')",
+            "paper.limitations: removed unsupported claim that special-diet and fasting recommendations 'rest on limited specific evidence'; replaced with sections the text describes as early or needing investigation",
+            "paper.athleteDev: 'describes most supplements as offering at most a marginal gain' -> 'majority of performance products lack evidence'; five supplements 'may achieve a marginal performance gain' (Table 5)"
+          ],
+          "residualConcerns": "Ahead-of-print version; no volume or pages printed.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1276",
+        "synthesisBatch": "pilot-synthesis-batch-68",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

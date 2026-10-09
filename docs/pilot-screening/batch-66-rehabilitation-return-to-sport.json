@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-66-rehabilitation-return-to-sport",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Rehabilitation & Return to Sport queue positions 16-88. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 16,
+      "sourceFile": "Hyperbaric Oxygen Therapy in Sports Musculoskeletal Injuries.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 28,
+        "extractedCharacters": 45336,
+        "doi": "10.1249/MSS.0000000000002257",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of the mechanisms, safety and human and animal evidence for hyperbaric oxygen therapy (HBOT) in sports musculoskeletal injuries, with no search method described. It covers eight human trials, mostly in induced delayed-onset muscle soreness (DOMS), with sample sizes of about 6 to 16 per group, plus animal and in vitro studies on muscle, ligament and tendon healing.",
+      "limitations": "No search method is described, so the review may not be complete. The human trials are small, mostly on induced soreness rather than clinical injuries, and several had blinding and baseline problems.",
+      "synthesisCaution": "Staff may read the mechanistic and animal findings as evidence that HBOT speeds return to play, when the authors state the human evidence is scarce and inconsistent.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "practicalImplications: 'central oxygen toxicity' -> oxygen toxicity, CNS and pulmonary ('two main concerns ... (A) barotrauma ... and (B) oxygen toxicity')",
+            "findings: added the authors' conclusion ('The last meta-analysis and systematic review still stands which had suggested that HBOT is ineffective for Delayed muscle soreness')",
+            "athleteDev: replaced 'Not applicable' stub with a plain statement of scope",
+            "year: confirmed 2019 (accepted 13 December 2019, Copyright 2019, publish-ahead-of-print version; no final issue citation printed)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1256",
+        "synthesisBatch": "pilot-synthesis-batch-66",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 46,
+      "sourceFile": "Individuals with an ACL reconstructed knee display atypical whole body movement strategies but normal knee robustness during side-hop landings.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 52064,
+        "doi": "10.1177/0363546520910428",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Controlled laboratory study of 32 people with an ACL-reconstructed knee (hamstring graft, median 16 months after surgery, all returned to previous activity level or sport) and 32 age- and sex-matched asymptomatic controls aged 17 to 34 (8 men and 24 women per group). Motion capture and force plates recorded standardized rebound side-hop landings, and knee robustness was measured with a finite helical axis method. Knee robustness was lowest just after initial contact and did not differ between groups or legs, but the reconstructed group had greater hip and knee flexion at initial contact than controls, and the reconstructed leg had a 12 percent knee flexor strength deficit.",
+      "limitations": "The reconstructed group came mainly from one regional orthopaedic clinic, each group had 32 people, and sport and competition level are described only by Tegner and activity scores. Each person was tested once, so the atypical strategies cannot be linked to reinjury or attributed to reconstruction alone.",
+      "synthesisCaution": "Staff could read the atypical landing strategies as proof that the reconstructed knee is being protected, or that these strategies cause reinjury, when the paper shows only cross-sectional differences and says the link to reinjury is unclear.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: 'Case-control Study' -> 'Laboratory / Experimental Study' (printed 'Study Design: Controlled laboratory study'; a single-session biomechanical comparison of ACLR vs matched controls, not outcome-based case sampling).",
+            "populations: kept 'Mixed / Unspecified' only; participants are described as 'individuals' (ACLR group cleared to 'a return to previous activity level/sports', controls recruited by advertisement), not as athletes, so no athlete sex, health-status or level tags. Sex (8:24 male:female per group) added to evidenceSummary instead.",
+            "paper.findings: added between-group peak moments ('ACLR group demonstrated greater peak moments than the CTRL group for hip flexion (10% greater), knee flexion (7% greater), and knee internal rotation (30% greater)') and the 7 percent knee flexion moment value; previous text omitted them.",
+            "screeningLimitations/limitations: 'small sample' and 'cross-sectional' reworded to 32 per group and single-session comparison.",
+            "paper.tldr: 'these athletes' -> 'these patients' (sample not described as athletes)."
+          ],
+          "residualConcerns": "Design label choice (Laboratory / Experimental vs Cross-sectional) is a judgement; the comparison is observational. Return-to-sport relevance is real but population is not confirmed as athletes.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1257",
+        "synthesisBatch": "pilot-synthesis-batch-66",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 66,
+      "sourceFile": "Interrogating cortical representations in elite athletes with persistent posterior thigh pain - New targets for intervention.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 38117,
+        "doi": "10.1016/j.jsams.2020.07.003",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Track & Field",
+        "Tennis",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Injured Athletes",
+        "Healthy Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Cross-sectional study of 14 male professional athletes with persistent posterior thigh pain after a hamstring injury and 14 pain-free athlete controls matched for age, sport, BMI and level. Patients were less accurate at localising touch on the affected leg and slower on lower-limb left/right judgements for the affected leg; two-point discrimination thresholds did not differ between groups. Auditory detection was lower for the affected leg (86.4% vs 100%) on visual inspection only, because no statistical test could be run.",
+      "limitations": "This is a small convenience sample of very elite athletes in a cross-sectional design, so it cannot show whether the deficits cause or result from persistent pain. The abstract reports p < 0.01 for the auditory task, but the Results state the planned Wilcoxon test was unsuitable and report no test, so that difference is descriptive only.",
+      "synthesisCaution": "Staff could read these sensory and spatial deficits as proof that they drive slow recovery from hamstring injury and should be trained, but the paper only shows an association in one cross-sectional sample.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/abstract/tldr/findings: auditory detection deficit stated as a finding -> flagged as descriptive only ('the 100% scores and lack of variance ... rendered Wilcoxon signed rank test unsuitable'); abstract p < 0.01 has no test in Results",
+            "methods: 'one planned test was changed' -> planned Wilcoxon for auditory task not run, post hoc ultrasound test added; added 2007 to 2017 collection and blinded examiner",
+            "limitations: added no multiple-comparison correction ('no corrections were applied for multiple analyses')"
+          ],
+          "residualConcerns": "Abstract claims p < 0.01 for all comparisons including the auditory task, which the Results say was not tested; records now treat the auditory result as descriptive. Team sports of most participants are not named in the text.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1258",
+        "synthesisBatch": "pilot-synthesis-batch-66",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 88,
+      "sourceFile": "Kinematic and electromyographic analysis of the Askling L‐Protocol for hamstring training.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 44482,
+        "doi": "10.1111/sms.13288",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Track & Field",
+        "Rugby",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Laboratory study of 11 physically active adults (5 women, 6 men; 5 competitive and 6 recreational sport participants, free of hamstring injury for 6 months) who each performed 10 repetitions of the three Askling L-Protocol exercises. Surface EMG from four muscles and motion capture showed higher hamstring activity in the glider and diver than the extender, with biceps femoris and semitendinosus peaking at 55 to 60% MVC in the glider as the hip began to extend. The extender mainly stretched the hamstrings with low activity.",
+      "limitations": "Eleven participants, one leg measured, a single session, and no injured participants. The synergy analysis is a descriptive index, and the study did not measure strength, hypertrophy or return to sport.",
+      "synthesisCaution": "Staff could read the EMG levels as proof that the protocol reduces re-injury or speeds return to sport, when this study measured only muscle activity in healthy participants.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: glider 55 to 60% MVC peaks presented without phase -> occur 'at the beginning of the concentric phase'; added eccentric-phase peaks (Results 'about 35% MVC' vs Discussion 'peak activation around ... 40% (GL)')",
+            "paper.findings: diver gluteus maximus 'about 50%' -> average 47.50% with maximal 83.79% MVC; added significance of RMS comparisons and BF GL > DV in eccentric phase",
+            "paper.practicalImplications: implied glider/diver are strong eccentric loads -> submaximal, lower than NHE ('close to 100% MVC') and sprinting; removed 'choose exercises according to the aim' generic advice",
+            "paper.athleteDev: added lower activation than sprinting and NHE",
+            "paper.abstract: 'maximal hamstring contractions' -> peak activation up to 60% MVC, work point attributed to authors",
+            "paper.limitations: noted Results vs Discussion conflict on eccentric-phase peaks",
+            "populations: added Mixed / Unspecified because 5 participants were competitive and 6 recreational",
+            "evidenceSummary: added injury-free status and timing of the glider peak"
+          ],
+          "residualConcerns": "Participants are described as physically active individuals who regularly engage in sport (athletics, tag rugby, hurling); athlete tags were kept on that basis, but the abstract calls them 'healthy individuals'.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1259",
+        "synthesisBatch": "pilot-synthesis-batch-66",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}
