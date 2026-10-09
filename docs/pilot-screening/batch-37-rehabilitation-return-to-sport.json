@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-37-rehabilitation-return-to-sport",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Rehabilitation & Return to Sport queue positions 22-96. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 22,
+      "sourceFile": "BEWARE~1.PDF",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text (no DOI appears anywhere in the extracted text). The text is the JOSPT accepted manuscript: the copyright line reads 'Copyright (c) ${year}' as an unfilled placeholder and no volume, issue or pages are printed, so year is null; the only date is the download stamp of February 26, 2024. The operator should verify DOI and year externally.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: claimed Table 2 recreational quadriceps p-values conflict with the text -> removed; the first difference column is versus preoperative (recreational quad vs preop: 3 months p = 1.00, 4.5 months p = 0.18, 6 months p < 0.001, consistent with the text; the significant 0.023 and 0.004 values are versus the previous time point)",
+            "paper.limitations: called the abstract 2.99 Nm/kg versus Table 2 3.05 Nm/kg a mismatch -> explained as adjusted model estimate versus unadjusted table mean ('strength is presented as unadjusted values (mean+/-SD)')",
+            "paper.findings: replaced the unadjusted table means with the reported model estimates and added the 9-month percentage gains ('nearly 9% in quadriceps strength, and 10% in hamstrings')",
+            "screeningLimitations: presented the non-significant survivorship analysis as a weakness -> it supported analysing the full dataset; added falling n per time point (554 at 3 months to 198 at 9 months, Figure 1)",
+            "paper.methods: model covariates listed 'activity level, age and height' as adjustments -> activity level was a fixed effect of interest, covariates age and height; added Tegner 5 or higher and bilateral training of the uninvolved limb",
+            "degradedReason: added that the text is an accepted manuscript with an unfilled '${year}' copyright placeholder"
+          ],
+          "residualConcerns": "DOI and publication year must be verified externally (JOSPT accepted manuscript, downloaded February 2024). Table 2 extraction is column-interleaved; column assignment was inferred from the arithmetic of the means (for example 3.05 - 2.92 = 0.13 matches the first column, 0.12, versus preoperative). Return-to-sport relevance: check that staff do not take uninvolved-limb values as a clearance threshold.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 35,
+      "sourceFile": "Biceps femoris compensates for semitendinosus after ACL reconstruction with a hamstring autograft - A muscle fMRI study in male soccer players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 57338,
+        "doi": "10.1177/03635465211003309",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Injured Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Controlled laboratory study comparing male soccer players cleared for return to play after ACL reconstruction with a semitendinosus autograft against healthy controls, using muscle functional MRI (T2 shift) before and after a standardized prone leg-curl. In the analysed sample (23 ACLR players, 29 controls), the biceps femoris long head showed a larger relative T2 shift in the ACLR group (13.92% vs 8.48%, P = .003) and the semitendinosus a smaller one (19.97% vs 25.32%, P = .049), with the operated leg showing the same pattern against the contralateral leg.",
+      "limitations": "The study measures exercise-related T2 shift, a proxy for muscle activity, during one prone leg-curl session, not sprinting or kicking. The between-group difference is a cross-sectional association, so it cannot show that the graft caused the altered pattern or that it changes injury risk.",
+      "synthesisCaution": "Staff could over-read the BF compensation finding as proof of a causal graft effect on hamstring injury or performance, when the study measured one exercise bout and reports that the link to injury risk is unverified.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: framed 30 vs 30 as an abstract-versus-results conflict over analysed samples -> abstract gives the allocated sample (30 + 30), results analyse 23 + 29 ('the data of 52 of the 60 originally recruited participants were used')",
+            "paper.limitations: removed the claim that the authors list T2 half-life timing as a limitation (it is a methods rationale; the post scan was within 1 minute) and the rehabilitation item; added the authors' subjective-exertion limitation and the concomitant procedures ('In 18 patients, a lateral extra-articular tenodesis was performed')"
+          ],
+          "residualConcerns": "Competition level is mixed (national and 1st to 4th provincial Belgian levels), so 'Mixed / Unspecified' is used. Volume and pages are not printed in this version (AJSM Vol. XX), so the citation gives year only. The 8 excluded participants are not described in the extracted text beyond a flow diagram reference.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "937",
+        "synthesisBatch": "pilot-synthesis-batch-37",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 48,
+      "sourceFile": "Blood Flow Restriction Training Prior to and After Anterior Cruciate Ligament Reconstruction - A Scoping Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 32,
+        "extractedCharacters": 114167,
+        "doi": "10.3390/jfmk10040450",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "PRISMA-ScR scoping review of 15 randomized and quasi-randomized trials (12 RCTs, 3 quasi-RCTs) with 417 patients after ACL reconstruction with autograft (285 male, 132 female), comparing blood flow restriction resistance training (BFR-RT) with non-BFR training before (5 studies) or after (9 studies; 1 in both phases) surgery. The authors report that no BFR-RT arm was less effective than its comparator on any outcome except greater knee pain in one study, with superior BFR outcomes in 2 of 5 preoperative and 5 of 9 postoperative studies; no pooled analysis was done.",
+      "limitations": "No pooled effect estimate was calculated because of heterogeneous outcomes and reporting, and the median PEDro score was 6.87 with blinding not achieved in most studies. None of the studies used blood flow restriction endurance training, and the authors note that most participants were young and healthy.",
+      "synthesisCaution": "Staff could read the conclusions as showing BFR-RT is superior before ACL surgery, when the discussion reports superior outcomes in only 2 of 5 preoperative studies and most studies found comparable results.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.rtp: 'It does not measure return to sport' was wrong -> two trials reported return-to-activity time ('Jack et al. demonstrated a significant reduction in the time to return to sports by 1.4 months ... Curran et al. found no significant differences between BFR-HL and HL-RT')",
+            "paper.findings: added the return-to-sport result and specified that the faster knee-pain reduction came from three BFR-LL vs HL-RT trials",
+            "paper.limitations: added that data extraction was not possible for several studies and the knee-pain vs muscle-pain inconsistency",
+            "paper.practicalImplications: 'written cuff pressure protocol' -> pressure individualised to limb occlusion pressure as the review recommends; added thromboembolism screening note; softened home-based statement to 'less significant improvements' as written"
+          ],
+          "residualConcerns": "Conclusions overstate study-level findings (drafter note confirmed and retained in limitations and synthesisCaution). The return-to-sport benefit rests on a single trial. The authors also call this 'the first systematic review' although it is a PRISMA-ScR scoping review; studyDesign kept as Systematic Review / Meta-analysis as the closest vocabulary value.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "938",
+        "synthesisBatch": "pilot-synthesis-batch-37",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 49,
+      "sourceFile": "Blood Flow Restriction Training for        Postoperative Lower-Extremity Weakness- A Report of Three Cases.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text; only reference-list content and no DOI for this article appear. All other fields are readable and complete.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution: '186% total-work gain' -> 186% surplus over the uninvolved limb; the actual improvement was 398.50% (Table 2: 'j186.18%' final deficit, '398.50%' improvement)",
+            "limitations: added that two of three patients were soldiers ('active duty male soldier'); kept note that 'significant gains' were not statistically tested",
+            "DOI: confirmed no own DOI printed (only '1537-890X/1704/119Y122' and journal header); DEGRADED with doiMissing true retained"
+          ],
+          "residualConcerns": "Operator should verify the DOI externally to upgrade from DEGRADED. Table 1 labels peak torque in Joules as printed.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 58,
+      "sourceFile": "Calf strains in athletes - A narrative review of management, injury grading, and return to sport.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 55419,
+        "doi": "10.1186/s40798-025-00960-4",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Adult / Recreational",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Self-described narrative review with a systematic PubMed and Scopus search (to June 2024 per the abstract, to 10 October 2025 per the Methods) of imaging and injury grading for return to sport after calf strains. Eleven studies were included, 7 of them retrospective, mostly MRI or ultrasound studies in professional Australian football, rugby, American football and running populations. The authors report return-to-play times from 2 to 102 days, longer recovery with aponeurotic or tendon involvement than with myofascial injury, and that no single imaging factor or grading system predicts return to play.",
+      "limitations": "The included evidence is small, mostly retrospective and heterogeneous in imaging protocols and return-to-play definitions, so it cannot establish prognostic thresholds. The review is labelled narrative but describes a systematic search, and the search date conflicts between the abstract (June 2024) and the Methods (October 2025).",
+      "synthesisCaution": "Staff could read the imaging grades as reliable return-to-play predictors, when the authors state that no imaging factor determines return to play and that clinical assessment remains the gold standard.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: 2 to 102 days and mean 39 ± 18 days both attributed to 'Green et al., Scand J Med Sci Sports 2020' -> text cites both to ref 13, but Table 2 gives 2-102 days for Green et al. [13] index injuries and 'Mean 39 ± 18 days' for Pedret et al. [8]; conflict now stated",
+            "findings: removed unsupported publication years and journal attributions for Green and Sergot studies",
+            "citation: seven authors listed, so the first six are now given before 'et al.' (added Kindle B)",
+            "studyDesign: Narrative Review -> Systematic Review / Meta-analysis under the library rule, since a systematic search is described ('A systematic search was conducted'; 'we employed systematic search strategies')",
+            "limitations: added the MRI-study count conflict ('Eight of 11 studies utilized MRI' vs 'Out of the nine studies using MRI')",
+            "methods: screening by four investigators (R.P.R., W.T., R.R.C., B.F.) instead of 'several'"
+          ],
+          "residualConcerns": "Design coding is a judgment call: the authors call this a narrative review but describe a systematic search, so a reviewer may prefer Narrative Review. The review also discusses acute management (NSAID timing, DVT and compartment syndrome red flags) that is expert opinion rather than synthesized evidence. Return-to-play content is clinically sensitive.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "939",
+        "synthesisBatch": "pilot-synthesis-batch-37",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 75,
+      "sourceFile": "Case Report - A time-course observation of reductions in lean body mass following surgery in Elite Rugby Union.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text. The only DOIs present are in the reference list. Everything else is readable and complete, so all fields are filled in and doiMissing is set to true for external DOI verification.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: added Male Athletes ('his physical characteristics')",
+            "citation: journal name 'Science Performance and Science Reports' -> 'Sport Performance & Science Reports' with report number 240 as printed ('SPSR - 2024 | October | 240 | v1'); removed 'Dr.' handling",
+            "practicalImplications: added authors' point that losses 'irrespective of interventions ... may have to be accepted by the player and MDT' and tightened wording",
+            "limitations: noted that return-to-training body composition claim rests on skinfolds and body mass only"
+          ],
+          "residualConcerns": "Decision kept DEGRADED: no article DOI printed anywhere in the text (only reference DOIs). Text vs table conflicts (3.1% vs 3.0% lean mass loss; FM% values inconsistent with FM kg and body mass) are noted in limitations. Food diary timing is described inconsistently (July pre-season vs 7 days post-surgery).",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 86,
+      "sourceFile": "Characteristics and outcomes of athletes with slow recovery from sports-related concussion - A CARE Consortium Study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 41794,
+        "doi": "10.1212/WNL.0000000000206853",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Collegiate",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Prospective multisite observational cohort of 1,751 concussed male and female collegiate varsity athletes and service-academy cadets, assessed at baseline and at five postinjury time points through 6 months. Slow recovery (399 athletes, 22.8%) was defined as at least 14 days to the asymptomatic point and/or 24 days to return to play; this group was more often female, had more prior concussions, higher postinjury symptom scores and lower compliance with daily symptom checks than typical recoverers. Within the slow group, Kaplan-Meier estimates show 77.6% returned to play by 60 days and 10.6% had not returned by 180 days.",
+      "limitations": "The slow-recovery cut-offs were set from the cohort's own timing distribution, so the group is defined by time, and the study covers collegiate varsity athletes only. Seventy-three athletes were censored, 46% of postinjury BSI values were missing in the slow group, and no baseline or postinjury measure predicted return to play within that group at P<.05.",
+      "synthesisCaution": "Staff may read the 77.6% and 10.6% figures as the expected timeline for an individual athlete, when they describe a time-selected group of collegiate athletes, and no predictor was found to say which athlete will be slow.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings: added prior concussion history difference (Table 1: 0.72 vs 0.59, p 0.03), cadet participants, P values and C-statistics; 'fewer symptom checks' -> 'lower compliance with daily checks' (Table 1: 'Percent compliance with daily checks')",
+            "limitations: added internal conflicts ('83.4% (n = 349) returned to play within 90 days' vs 349/399 = 87.5%; Discussion 'injured in noncontact or limited contact sport' vs Table 1 sport category p 0.12) and imputation of 292 athletes",
+            "rtp: removed 'a delayed course does not mean loss of sport' generalization; added flattening after about 60 days (authors: 'the probability curve for successful RTP flattens')"
+          ],
+          "residualConcerns": "Clinically sensitive (concussion return to play). Prognosis figures come from a time-selected collegiate group with censoring and imputation.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "940",
+        "synthesisBatch": "pilot-synthesis-batch-37",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 96,
+      "sourceFile": "Clinical and biomechanical outcomes of rehabilitation targeting intersegmental control in athletic groin pain- prospective cohort of 205 patients.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 44581,
+        "doi": "10.1136/bjsports-2016-097089",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Soccer",
+        "Rugby",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Prospective, uncontrolled case series of 205 consecutive male patients with athletic groin pain (mean age 24.9 years), mostly Gaelic football and hurling players, treated with a three-level rehabilitation programme focused on intersegmental control. Of 150 patients with repeat HAGOS scores, all six subscales improved (effect sizes 0.59 to 1.78), and 73% (150 of 205) returned to play pain-free after a mean of 9.9 weeks. In 112 patients with repeat 3D cutting analysis, the largest changes were greater trunk side flexion and pelvic rotation towards the direction of travel (effect sizes 0.79 and 0.76), with smaller changes in joint angles, moments and work.",
+      "limitations": "The study has no control group and was not randomised, and 27% were lost before the repeat HAGOS, with a further 14% returning to play without the final 3D test, so the outcomes cannot be attributed to the programme alone. The title calls it a prospective cohort, but the abstract and Discussion call it a prospective case series, which fits the single-arm design.",
+      "synthesisCaution": "Staff may treat the 73% pain-free return rate and 9.9-week return time as proof that intersegmental control rehabilitation beats anatomically specific protocols, when the study has no control group and the authors say a randomised comparison is still needed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: Cohort Study -> Case Report / Case Series; single-arm uncontrolled series that the authors twice describe as a case series (\"in this prospective case series\"; \"not prospective case series as in this case\")",
+            "limitations: removed the claimed abstract vs Results conflict on trunk side flexion; 'reductions in ipsilateral trunk side flexion' and 'greater trunk side flexion towards the direction of intended travel' describe the same change (Table 4 \"Contralateral side flexion Post>Pre\"); removed the HAGOS 0.6-1.7 vs 0.59-1.78 point, which is rounding; kept the squeeze ES conflict; added competing interest",
+            "findings/evidenceSummary: largest cutting change is thorax side flexion (ES 0.79 in Table 4), not pelvic rotation (0.76)",
+            "rtp: clearance criteria corrected; squeeze and 3D testing were used for further follow-up, not clearance (\"Patients were cleared to RTP ... once they had passed through the three rehabilitation levels and demonstrated symptom-free completion of linear A and B and multidirectional drills\")"
+          ],
+          "residualConcerns": "Clinically relevant to return-to-play decisions. The authors' conclusion that the programme allowed faster return than previous trials is a cross-study comparison without a control group. Sports Surgery Clinic operates the groin pain programme studied.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "941",
+        "synthesisBatch": "pilot-synthesis-batch-37",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

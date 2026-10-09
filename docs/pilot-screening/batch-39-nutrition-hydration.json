@@ -1,0 +1,445 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-39-nutrition-hydration",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Nutrition & Hydration queue positions 4-76. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 4,
+      "sourceFile": "Assessment of Nutrient Status in        Athletes and the Need for Supplementation.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 20,
+        "extractedCharacters": 107198,
+        "doi": "10.1123/ijsnem.2017-0338",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Scholarly (narrative) review, not a systematic review, of how to assess an athlete's nutrient status before recommending supplements, using the anthropometric, biochemical, clinical, dietary and environmental (A-E) framework. The authors summarise the validity and error of dietary recall, food records, food frequency questionnaires and diet histories, body composition methods, biomarkers for key nutrients, clinical signs, food-drug interactions and environmental factors, with tables of cut-offs and limits. No sample is analysed.",
+      "limitations": "The paper is a narrative review that does not describe how sources were selected or graded, and it gives no supplement-specific effect data. Many reference ranges come from general-population or non-athlete sources, which the authors say may not suit well-trained athletes.",
+      "synthesisCaution": "Staff could read the framework as a basis for choosing supplements; the paper argues that assessment comes first and supplements cannot replace an adequate diet, and it does not recommend specific products or doses.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'standard errors' -> 'standard errors of estimate' (Table 3 'SEE = 2-3%' DXA, 'SEE = 1.8%' BOD POD); ferritin 'rises' -> 'may be artificially raised in response to a strenuous exercise session'",
+            "paper.practicalImplications: added the authors' '5-day to 8-day period' reference point and replaced 'alongside training load ... inflammation' with the exercise and hydration effects the text describes",
+            "paper.rtp: removed unsupported suggestion that the review could inform a nutrition check during recovery"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "950",
+        "synthesisBatch": "pilot-synthesis-batch-39",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 13,
+      "sourceFile": "Associations of Urine Specific Gravity With Body Mass Index and Lean Body Mass at the Population Level - Implications for Hydration Monit.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 38865,
+        "doi": "10.1123/ijsnem.2021-0140",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "American Football",
+        "Rugby"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Cross-sectional secondary analysis of 3,634 US adults (1,784 men, 1,850 women) from NHANES 2007-2008, testing whether quintiles of BMI and estimated lean body mass (LBM) were associated with spot urine specific gravity (USG) at or above 1.020 and 1.025, adjusted for dietary moisture and sodium. Men and women in the fifth quintile of BMI or LBM had higher odds of elevated USG than those in the first quintile (OR 2.00 to 3.68), except for BMI and USG of 1.025 or more in men, and LBM was modestly more strongly associated with USG than fat mass.",
+      "limitations": "The sample is a general adult population, not athletes, and the author states the goal was not to identify who was truly hypohydrated, so the data show that USG rises with body size but cannot show false-positive rates against a reference hydration measure. LBM was estimated from equations, and USG came from a single random spot sample taken at different times of day.",
+      "synthesisCaution": "Staff could read this as evidence that large athletes flagged by USG cutoffs are not really dehydrated, but the study had no athletes and no reference measure of hydration, and it does not supply body-size-specific thresholds.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: EXCLUDE (c) not relevant to athletes -> INCLUDE; the paper is original research in a sport nutrition journal whose stated purpose is hydration monitoring, and it discusses direct implications for athletes ('athletes from sports in which large body sizes and high amounts of LBM are the norm (e.g., American football, rugby...')",
+            "evidenceSummary, screeningLimitations, synthesisCaution, paper: null -> full record written from the source text",
+            "domains/audiences/sports: expanded to include Monitoring & Technology, Athletic Training, Sports Medicine, American Football and Rugby as the author's named applications",
+            "confidence: high -> medium because of the non-athlete sample"
+          ],
+          "residualConcerns": "Borderline eligibility: the sample is a general adult population with no athletes. Included because the question (USG cutoffs vs body size) is a direct athlete hydration-monitoring issue and the author explicitly applies it to large-body sports such as American football; operator may still prefer EXCLUDE (c). Population tags use Mixed / Unspecified only because the athlete-specific tags do not fit a general adult sample.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "951",
+        "synthesisBatch": "pilot-synthesis-batch-39",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 16,
+      "sourceFile": "Athletes can benefit from increased intake of EPA and DHA - Evaluating the evidence.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 18,
+        "extractedCharacters": 87676,
+        "doi": "10.3390/nu15234925",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "American Football",
+        "Rugby",
+        "Soccer",
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Narrative review by four authors on the effects of EPA and DHA relevant to athletes, covering status (Omega-3 Index), cognition and concussion biomarkers, muscle recovery after injury, soreness, training adaptation, safety and dosing. The review does not describe a systematic search, and the human trials it summarises vary in size and design, including a 10-week resistance-training study in recreational exercisers and several small trials in American football players.",
+      "limitations": "This is a narrative review with no described systematic search, study selection or quality appraisal, and it cites several studies by the authors (for example refs 22, 26 and 79). Most athlete trials are small, short or in recreational samples, and the review itself notes that the evidence is heterogeneous and often lacks adequate dose or duration.",
+      "synthesisCaution": "Staff could read the review's conclusion as evidence that EPA and DHA improve athletic performance or protect muscle after injury in athletes, but the performance and muscle findings come from small, mixed-quality trials and some animal or young-women studies, and the review itself says more research is needed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: garbled 'effects on performance do not always translate to improved physical performance' -> effects on oxygen kinetics, cycling efficiency or peak oxygen uptake 'do not translate into improved physical performance as such'",
+            "practicalImplications: 'choosing products with a declared EPA and DHA content' (not in text) -> 'look for a high content of EPA or DHA or both'; added the IOC dose of 'about 2 g of EPA + DHA daily'"
+          ],
+          "residualConcerns": "Supplement recommendation paper partly authored by researchers whose own trials are cited (refs 22, 26, 79); concussion biomarker and return-to-play statements rest on small American football and mTBI trials.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "952",
+        "synthesisBatch": "pilot-synthesis-batch-39",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 28,
+      "sourceFile": "Beneficial effects of oral and topical sodium bicarbonate during a battery of team sport specific exercise tests in recreationally trained male.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 21,
+        "extractedCharacters": 57200,
+        "doi": "10.1080/15502783.2023.2216678",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Randomized, double-blind, placebo-controlled crossover trial in 14 recreationally trained male team sport athletes (mean age 26.5 years), who completed oral sodium bicarbonate, topical PR Lotion or placebo before countermovement jumps, 8 x 25 m repeated sprints and the Yo-Yo IR2 test. Yo-Yo IR2 distance was 94 m (21%) greater after oral bicarbonate than placebo (P = 0.009), while the topical lotion (+31 m, P = 0.084) and jump results did not differ significantly; oral and topical treatments both reduced total repeated sprint time by about 2%.",
+      "limitations": "Only 14 athletes from mixed sports completed a single-dose, single-session protocol, so the findings cannot show effects across a season or in match play. Half of participants identified the topical lotion, which weakens the blinding for that arm.",
+      "synthesisCaution": "Treating topical PR Lotion as an established alternative to oral bicarbonate, when it did not change blood buffering, its Yo-Yo result was not significant and its menthol-based mechanism is speculation.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'raised pre-test blood bicarbonate by about 5 to 6.5 mmol/L' -> 5.3 to 6.5 mmol/L versus placebo across pre-exercise time points (+5.3 pre-warm-up, +5.8 pretest, +6.5 pre-Yo-Yo); added no significant oral vs lotion sprint difference and the specific sprints with lower RPE",
+            "paper.limitations: added that expectations were higher for the lotion ('Expectations were higher for SB-LOTION (median: 3.0) compared with SB-ORAL (median: 1.0)')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "953",
+        "synthesisBatch": "pilot-synthesis-batch-39",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 29,
+      "sourceFile": "Benefits of a plant-based diet and considerations for the athlete.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 89119,
+        "doi": "10.1007/s00421-022-04902-w",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Invited narrative review of the literature on plant-based (vegan by default) diets for health and exercise performance, covering protein quality, creatine, iron, zinc, calcium, vitamin D, vitamin B12, beta-alanine, carbohydrate and energy intake. The authors conclude that a well-planned, whole-food plant-based diet neither hinders nor aids athletic performance, while health benefits likely come from more fruit, vegetables and whole grains rather than from avoiding animal products.",
+      "limitations": "The review describes no systematic search or appraisal method, so the selection of evidence cannot be checked. The authors note that much of the health evidence is epidemiological and that performance evidence, especially for strength and power, is limited.",
+      "synthesisCaution": "Reading the review as showing that a plant-based diet is superior, or inferior, for performance, when the authors conclude it is neither and the evidence for strength and power is limited.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: 'the performance studies are small and vary in quality' -> not stated in text; replaced with the authors' statement that strength and power evidence is limited ('limited evidence is available characterizing the impact of a PB diet on anaerobic, strength, or power performance')",
+            "paper.practicalImplications: 'creatine (about 5 g per day) may help plant-based athletes in team sports' -> creatine may be considered for short, high-intensity performance, with 5 g/day linked to optimal tissue saturation ('supplementation of creatine might be considered to optimize short-duration, high-intensity exercise performance in those following a PB diet'; '5 g/day is associated with optimal tissue saturation'); dietitian wording aligned to text"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "954",
+        "synthesisBatch": "pilot-synthesis-batch-39",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 40,
+      "sourceFile": "Bidirectional link between exercise and the gut microbiota.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 79900,
+        "doi": "10.1249/JES.0000000000000343",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review in Exercise and Sport Sciences Reviews of animal and human studies on exercise, gut microbiota and exercise capacity, summarised in a table. The authors report that exercise is associated with gut microbial changes in rodents, general adult cohorts, training studies and athlete cohorts (for example professional rugby players, elite rowers, professional and amateur cyclists, ultraendurance triathletes and NCAA swimmers). The evidence that microbiota depletion reduces exercise capacity comes from germ-free and antibiotic-treated mice, and the one human probiotic trial cited (V. atypica, n = 7 crossover) found no performance difference.",
+      "limitations": "The review does not describe a systematic search or appraisal method. The causal performance evidence is almost entirely from mice, while the human and athlete studies cited are mostly small cross-sectional or short training studies of microbial composition, not performance.",
+      "synthesisCaution": "Staff could over-read the mouse evidence that microbiota depletion reduces endurance, or the distinct microbiota of elite athletes, as proof that changing the gut microbiota improves human athletic performance, when the only human probiotic trial cited found no effect.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary, screeningLimitations, synthesisCaution: draft said human studies were only observational cohorts of sedentary or active adults, older men and children and that few athlete studies exist -> review also covers training interventions and multiple athlete cohorts (Table 1: 'Professional rugby players', 'elite Irish athletes', 'Division I NCAA collegiate swimmers', cyclists, triathletes)",
+            "paper.findings: added the conflicting antibiotic finding ('ABX did not hinder performance improvements induced by endurance training', Hutchinson) and the null human V. atypica crossover trial ('Exhaustion times and anaerobic capacity were not significantly different')",
+            "paper.tldr and athleteDev: aligned with the null human trial; confidence medium -> high",
+            "decision: INCLUDE retained; topic is exercise capacity and athlete microbiota, which meets the relevance criterion despite mostly animal mechanistic evidence"
+          ],
+          "residualConcerns": "Relevance is borderline because the causal evidence is mostly from mice, but the review addresses exercise performance and includes several athlete cohorts, so INCLUDE was kept.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "955",
+        "synthesisBatch": "pilot-synthesis-batch-39",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 53,
+      "sourceFile": "Brain doping substances - Prohibited or not in sports.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 57766,
+        "doi": "10.5114/biolsport.2025.150047",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "PRISMA-based systematic review of PubMed studies on substances linked to 'brain doping', plus a review of 32 Polish online supplement stores in 2023. Nine studies were included: seven randomized crossover trials (authors class four as trained or highly trained samples, one of them experienced gamers, and three as recreational) and two case reports. Of the 120 synthetic supplement ingredients found, 26 were prohibited, 49 non-prohibited and 45 of unclear status.",
+      "limitations": "Only nine studies were included, most with small samples, and only two trials included women. The market scan is a single 2023 snapshot of Polish retailers, and the 'unclear' status calls rest on the authors' own judgment of chemical and biological similarity.",
+      "synthesisCaution": "Staff could read 'brain doping' as a list of proven cognitive or performance enhancers, when the authors conclude the term is mainly a marketing tool with little scientific basis.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/limitations: 'trained (4)' included Sowinski 2021 whose sport level is 'Not applicable experienced gamers' (Table 2); Bunn 2018 is listed as recreational in text but 'trained' in Table 2 and later discussion -> noted",
+            "tldr/findings: 'None of the studies improved exercise capacity' -> only four studies measured it ('Only four of the selected studies evaluated the impact of supplementation on physical performance')",
+            "populations: added Male Athletes and Female Athletes (sex stated; 'Only two of the seven studies included female participants')",
+            "studyDesign: kept Systematic Review / Meta-analysis; literature arm follows PRISMA with dual screening, market scan is an added component"
+          ],
+          "residualConcerns": "Hybrid design: a small PRISMA review plus a non-systematic market classification; most of the paper's practical content comes from the market scan, not the review.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "956",
+        "synthesisBatch": "pilot-synthesis-batch-39",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 76,
+      "sourceFile": "Case Study- Fatal Exertional Rhabdomyolysis Possibly Related to Drastic Weight Cutting.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 4,
+        "extractedCharacters": 23468,
+        "doi": "10.1123/ijsnem.2018-0087",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Nutrition",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Combat Sports"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Male Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Single-case report of a previously healthy 26-year-old amateur mixed martial artist with sickle cell trait. Before his first bout he cut from 104.3 kg to 77.1 kg (26.1% of body mass) over 3 months, mostly in the final week; he then cut 5 kg in a sauna within 24 hours of weigh-in for his second bout 6 weeks later, collapsed in the final round, developed exertional rhabdomyolysis with renal failure, refractory hyperkalemia, disseminated intravascular coagulation and ARDS, and died. The authors believe dehydration from weight cutting in a person with sickle cell trait set the stage for the event and describe three earlier combat sports deaths linked to exertional sickling.",
+      "limitations": "This is one death, with no autopsy result reported and no measured hydration status before the bout. The link between weight cutting and the fatal outcome is the authors' inference from the clinical course.",
+      "synthesisCaution": "Staff could read this single fatal case as showing that weight cutting causes rhabdomyolysis deaths in all combat athletes, when the case also involved sickle cell trait and the causal link is an inference.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: draft said he 'cut 5 kg before his first bout'; the 5 kg sauna cut was before his second and final bout ('he had to cut only 5 kg (11 lbs) for his second and final bout 6 weeks later'); the 26.1% loss preceded the first bout",
+            "evidenceSummary: clarified sequence of the 26.1% cut (first bout) and the 5 kg cut (fatal second bout)",
+            "practicalImplications: screening framed as authors' suggestion ('suggests a potential role for sickle cell trait screening') with the stated NCAA policy scrutiny, not 'worth studying'",
+            "athleteDev: removed generic advice not in text"
+          ],
+          "residualConcerns": "Fatal case; causal attribution to weight cutting is the authors' belief. Sickle cell trait and dehydration cannot be separated.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "957",
+        "synthesisBatch": "pilot-synthesis-batch-39",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

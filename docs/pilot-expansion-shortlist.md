@@ -1,8 +1,8 @@
 # Balanced Expansion Pilot Screening Queue
 
-This queue contains 90 unrepresented, content-deduplicated local PDFs: 12 allocated to each controlled pilot domain.
+This queue contains 89 unrepresented, content-deduplicated local PDFs: 12 allocated to each controlled pilot domain.
 
-**Screening progress:** 0 full-text eligible; 90 awaiting full-text review.
+**Screening progress:** 0 full-text eligible; 89 awaiting full-text review.
 
 > Primary-domain matches are used first. A secondary-title match is allowed only where the primary title pool is too sparse to fill a balanced domain, and is labeled below.
 
@@ -72,29 +72,29 @@ This queue contains 90 unrepresented, content-deduplicated local PDFs: 12 alloca
    `Return to play and risk of repeat concussion in collegiate football players- comparative analysis from the NCAA Concussion Study (1999–2001) and CARE Consortium (2014–2017).pdf`
 29. **Return to play guidelines after cervical spine injuries in American football athletes - A literature-based review** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Return to play guidelines after cervical spine injuries in American football athletes - A literature-based review.pdf`
-30. **Association of the British Athletic Muscle Injury Classification and anatomic location with return to full training and reinjury following hamstring injury in elite soccer** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
-   `Association of the British Athletic Muscle Injury Classification and anatomic location with return to full training and reinjury following hamstring injury in elite soccer.pdf`
-31. **Hamstring rehabilitation in elite track and field athletes - Applying the British Athletics Muscle Injury Classification in clinical practice** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+30. **Hamstring rehabilitation in elite track and field athletes - Applying the British Athletics Muscle Injury Classification in clinical practice** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Hamstring rehabilitation in elite    track and field athletes - Applying the British Athletics Muscle Injury    Classification in clinical practice.pdf`
-32. **Clinical and biomechanical outcomes of rehabilitation targeting intersegmental control in athletic groin pain- prospective cohort of 205 patients** — Cohort Study — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
-   `Clinical and biomechanical outcomes of rehabilitation targeting intersegmental control in athletic groin pain- prospective cohort of 205 patients.pdf`
-33. **Validation of a Composite Outcome Score for Assessing Return to Sports After Achilles Tendon Repair** — Methodological / Validation Study — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+31. **Return to play in professional football players following traumatic cervical spine injury - Expert opinions from the National Football League spine surgeons** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+   `Return to play in professional football players following traumatic cervical spine injury - Expert opinions from the National Football League spine surgeons.pdf`
+32. **Validation of a Composite Outcome Score for Assessing Return to Sports After Achilles Tendon Repair** — Methodological / Validation Study — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Validation of a Composite Outcome Score for Assessing Return to Sports After Achilles Tendon Repair.pdf`
-34. **Hamstring muscle stiffness in athletes with and without anterior cruciate ligament reconstruction history - A retrospective study** — Cohort Study — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+33. **Hamstring muscle stiffness in athletes with and without anterior cruciate ligament reconstruction history - A retrospective study** — Cohort Study — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Hamstring muscle stiffness in athletes with and without anterior cruciate ligament reconstruction history - A retrospective study.pdf`
-35. **Longitudinal changes in quadriceps morphology over the first 3 months after anterior cruciate ligament reconstruction** — Cohort Study — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+34. **Longitudinal changes in quadriceps morphology over the first 3 months after anterior cruciate ligament reconstruction** — Cohort Study — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Longitudinal changes in quadriceps morphology over the first 3 months after anterior cruciate ligament reconstruction.pdf`
+35. **Muscle activation during rehabilitation on artificial turf vs sand after cruciate ligament surgery - A case series** — Case Report / Case Series — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+   `Muscle activation during rehabilitation on artificial turf vs sand after cruciate ligament surgery - A case series.pdf`
 36. **Substance misuse in elite athletes - Early detection, brief intervention and referral to treatment** — Other — TITLE SCREENED<br>
    `Substance misuse in elite athletes - Early detection, brief intervention and referral to treatment.pdf`
 
 ## Recovery & Readiness
 
-37. **Baseline sleep characteristics in NCAA Division 1 collegiate athletes** — Other — TITLE SCREENED<br>
-   `Baseline sleep characteristics in NCAA Division 1 collegiate athletes.pdf`
-38. **Objective measures of strain and subjective muscle soreness differ between positional groups and season phases in American college football** — Other — TITLE SCREENED<br>
+37. **Objective measures of strain and subjective muscle soreness differ between positional groups and season phases in American college football** — Other — TITLE SCREENED<br>
    `Objective measures of strain and subjective muscle soreness differ between positional groups and season phases in American college football.pdf`
-39. **Recovery practices in Division 1 collegiate athletes in North America** — Other — TITLE SCREENED<br>
+38. **Recovery practices in Division 1 collegiate athletes in North America** — Other — TITLE SCREENED<br>
    `Recovery practices in Division 1 collegiate athletes in North America.pdf`
+39. **Season long heart rate variability tracking reveals autonomic imbalance in American college football players** — Other — TITLE SCREENED<br>
+   `Season long heart rate variability tracking reveals autonomic imbalance in American college football players.pdf`
 40. **Monitoring of Post-match Fatigue in Professional Soccer- Welcome to the Real World** — Other — TITLE SCREENED<br>
    `Monitoring of Post-match Fatigue in Professional Soccer- Welcome to the Real World.pdf`
 41. **Predicting Future Perceived Wellness in Professional Soccer- The Role of Preceding Load and Wellness** — Other — TITLE SCREENED<br>
@@ -136,10 +136,10 @@ This queue contains 90 unrepresented, content-deduplicated local PDFs: 12 alloca
    `The new challenge of sports nutrition - Accepting insect food as dietary supplements in professional athletes.pdf`
 58. **Summary of the 2024 Professionals in Nutrition for Exercise and Sport “10 Questions -10 Experts” Session—Hot Topics for the Paris Olympic Games** — Other — TITLE SCREENED<br>
    `Summary of the 2024 Professionals in Nutrition for Exercise and Sport “10 Questions -10 Experts” Session—Hot Topics for the Paris Olympic Games.pdf`
-59. **Assessment of Nutrient Status in Athletes and the Need for Supplementation** — Other — TITLE SCREENED<br>
-   `Assessment of Nutrient Status in        Athletes and the Need for Supplementation.pdf`
-60. **Associations of Urine Specific Gravity With Body Mass Index and Lean Body Mass at the Population Level - Implications for Hydration Monit** — Other — TITLE SCREENED<br>
-   `Associations of Urine Specific Gravity With Body Mass Index and Lean Body Mass at the Population Level - Implications for Hydration Monit.pdf`
+59. **Common questions and misconceptions about protein supplementation- What does the scientific evidence really show** — Other — TITLE SCREENED<br>
+   `Common questions and misconceptions about protein supplementation- What does the scientific evidence really show.pdf`
+60. **Considerations for the consumption of vitamin and mineral supplements in athlete populations** — Other — TITLE SCREENED<br>
+   `Considerations for the consumption of vitamin and mineral supplements in athlete populations.pdf`
 
 ## Brain Health & Psychology
 
@@ -161,51 +161,49 @@ This queue contains 90 unrepresented, content-deduplicated local PDFs: 12 alloca
    `Multimodal Imaging of Retired Professional Contact Sport Athletes Does Not Provide Evidence of Structural and Functional Brain Damage.pdf`
 69. **Neurodiversity in elite sport - A systematic scoping review** — Narrative Review — TITLE SCREENED<br>
    `Neurodiversity in elite sport - A systematic scoping review.pdf`
-70. **Brain doping substances - Prohibited or not in sports** — Other — TITLE SCREENED<br>
-   `Brain doping substances - Prohibited or not in sports.pdf`
-71. **Chronic Traumatic Encephalopathy Neuropathologic Change Is Not Associated With Suicide in Former Athletes** — Other — TITLE SCREENED<br>
-   `Chronic Traumatic Encephalopathy Neuropathologic Change Is Not Associated With Suicide in Former Athletes.pdf`
-72. **Clenbuterol Abuse in Bodybuilding and Athletics - Unsupervised Use, Psychological Motivations, and Health Consequences** — Other — TITLE SCREENED<br>
-   `Clenbuterol Abuse in Bodybuilding and Athletics - Unsupervised Use, Psychological Motivations, and Health Consequences.pdf`
+70. **Concussion and the sleeping brain** — Other — TITLE SCREENED<br>
+   `Concussion and the sleeping brain.pdf`
+71. **Considering the effects of cannabinoids and exercise on the brain - A narrative review** — Narrative Review — TITLE SCREENED<br>
+   `Considering the effects of cannabinoids and exercise on the brain - A narrative review.pdf`
+72. **Effects of Repetitive Head Impacts on a Concussion Assessment Battery** — Other — TITLE SCREENED<br>
+   `Effects of Repetitive Head Impacts on a Concussion Assessment Battery.pdf`
 
 ## Athlete Wellbeing
 
 73. **How mental health affects injury risk and outcomes in athletes** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `How mental health affects injury risk and outcomes in athletes.pdf`
-74. **Assessment of medical cannabis and health-related quality of life** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
-   `Assessment of medical cannabis and health-related quality of life.pdf`
-75. **Evaluation of Executive Function and Mental Health in Retired Contact Sport Athletes** — Other — TITLE SCREENED; secondary match, primary: Brain Health & Psychology<br>
+74. **Evaluation of Executive Function and Mental Health in Retired Contact Sport Athletes** — Other — TITLE SCREENED; secondary match, primary: Brain Health & Psychology<br>
    `Evaluation of Executive Function and Mental Health in Retired Contact Sport Athletes.pdf`
-76. **Media's effect on athletes' mental health** — Other — TITLE SCREENED; secondary match, primary: Brain Health & Psychology<br>
+75. **Media's effect on athletes' mental health** — Other — TITLE SCREENED; secondary match, primary: Brain Health & Psychology<br>
    `Media's effect on athletes' mental health.pdf`
-77. **Nighttime smartphone use, sleep quality, and mental health - Investigating a complex relationship** — Other — TITLE SCREENED; secondary match, primary: Recovery & Readiness<br>
+76. **Nighttime smartphone use, sleep quality, and mental health - Investigating a complex relationship** — Other — TITLE SCREENED; secondary match, primary: Recovery & Readiness<br>
    `Nighttime smartphone use, sleep quality, and mental health - Investigating a complex relationship.pdf`
-78. **Role of ketogenic diet on body composition, physical health, psychosocial well-being and sports performance in athletes - A scoping review** — Narrative Review — TITLE SCREENED; secondary match, primary: Nutrition & Hydration<br>
+77. **Role of ketogenic diet on body composition, physical health, psychosocial well-being and sports performance in athletes - A scoping review** — Narrative Review — TITLE SCREENED; secondary match, primary: Nutrition & Hydration<br>
    `Role of ketogenic diet on body composition, physical health, psychosocial well-being and sports performance in athletes - A scoping review.pdf`
 
 ## Monitoring & Technology
 
-79. **Moving beyond velocity derivatives - Using GPS data to extract sequential movement patterns at different levels of rugby league match-play** — Other — TITLE SCREENED<br>
+78. **Moving beyond velocity derivatives - Using GPS data to extract sequential movement patterns at different levels of rugby league match-play** — Other — TITLE SCREENED<br>
    `Moving beyond velocity derivatives - Using GPS data to extract sequential movement patterns at different levels of rugby league match-play.pdf`
-80. **Physiological and biomechanical monitoring in American football players - A scoping review** — Narrative Review — TITLE SCREENED<br>
+79. **Physiological and biomechanical monitoring in American football players - A scoping review** — Narrative Review — TITLE SCREENED<br>
    `Physiological and biomechanical monitoring in American football players - A scoping review.pdf`
-81. **Under pressure - Integrating machine learning to qantify clutch moments in American football** — Other — TITLE SCREENED<br>
+80. **Under pressure - Integrating machine learning to qantify clutch moments in American football** — Other — TITLE SCREENED<br>
    `Under pressure - Integrating machine learning to qantify clutch moments in American football.pdf`
-82. **Reliability of three landmine-punch-throw variations and their load-velocity relationships performed with the dominant and nondominant hands** — Methodological / Validation Study — TITLE SCREENED<br>
+81. **Reliability of three landmine-punch-throw variations and their load-velocity relationships performed with the dominant and nondominant hands** — Methodological / Validation Study — TITLE SCREENED<br>
    `Reliability of three landmine-punch-throw variations and their load-velocity relationships performed with the dominant and nondominant hands.pdf`
-83. **The Modified-Athletic Shoulder Test - Reliability and validity of a new on-field assessment tool** — Methodological / Validation Study — TITLE SCREENED<br>
+82. **The Modified-Athletic Shoulder Test - Reliability and validity of a new on-field assessment tool** — Methodological / Validation Study — TITLE SCREENED<br>
    `The Modified-Athletic Shoulder Test - Reliability and validity of a new on-field assessment tool.pdf`
-84. **The Reliability of Individualized Load–Velocity Profiles** — Methodological / Validation Study — TITLE SCREENED<br>
+83. **The Reliability of Individualized Load–Velocity Profiles** — Methodological / Validation Study — TITLE SCREENED<br>
    `The Reliability of Individualized Load–Velocity Profiles.pdf`
-85. **The Reliability, Bias, Differences, and Agreement Between Velocity Measurement Devices During the Hang Clean Pull** — Methodological / Validation Study — TITLE SCREENED<br>
+84. **The Reliability, Bias, Differences, and Agreement Between Velocity Measurement Devices During the Hang Clean Pull** — Methodological / Validation Study — TITLE SCREENED<br>
    `The Reliability, Bias, Differences, and Agreement Between Velocity Measurement Devices During the Hang Clean Pull.pdf`
-86. **Validity of research based on public data in sports medicine - A quantitative assessment of anterior cruciate ligament injuries in the NFL** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+85. **Validity of research based on public data in sports medicine - A quantitative assessment of anterior cruciate ligament injuries in the NFL** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Validity of research based on public data in sports medicine - A quantitative assessment of anterior cruciate ligament injuries in the NFL.pdf`
-87. **The validity and reliability of wearable microtechnology for intermittent team sports - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+86. **The validity and reliability of wearable microtechnology for intermittent team sports - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `The validity and reliability of wearable microtechnology for intermittent team sports - A systematic review.pdf`
-88. **Heat Stroke Burden and Validity of Wearable Derived Core Temperature Estimation during Elite Military Training** — Other — TITLE SCREENED<br>
+87. **Heat Stroke Burden and Validity of Wearable Derived Core Temperature Estimation during Elite Military Training** — Other — TITLE SCREENED<br>
    `Heat Stroke Burden and Validity of Wearable Derived Core Temperature Estimation during Elite Military Training.pdf`
-89. **Does the operating tempeature of accelerometers affect data measurement during static and dynamic conditions in sports - A randomized-control trial** — Other — TITLE SCREENED<br>
+88. **Does the operating tempeature of accelerometers affect data measurement during static and dynamic conditions in sports - A randomized-control trial** — Other — TITLE SCREENED<br>
    `Does the operating tempeature of accelerometers affect data measurement during static and dynamic conditions in sports - A randomized-control trial.pdf`
-90. **Assessing the Validity of Wearable Inertial Sensors in Evaluating Joint Kinetics and Hamstring Musculotendon Mechanics at Various Running Speeds** — Other — TITLE SCREENED<br>
-   `Assessing the Validity of Wearable Inertial Sensors in Evaluating Joint Kinetics and Hamstring Musculotendon Mechanics at Various Running Speeds.pdf`
+89. **Ready for impact - A validity and feasibility study of instrumented mouthguards (iMGs)** — Other — TITLE SCREENED<br>
+   `Ready for impact - A validity and feasibility study of instrumented mouthguards (iMGs).pdf`

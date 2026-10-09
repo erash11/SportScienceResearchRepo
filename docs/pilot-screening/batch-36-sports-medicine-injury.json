@@ -1,0 +1,1230 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-36-sports-medicine-injury",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Sports Medicine & Injury queue positions 10-94. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 10,
+      "sourceFile": "Association of the British Athletic Muscle Injury Classification and anatomic location with return to full training and reinjury following hamstring injury in elite soccer.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 36264,
+        "doi": "10.1136/bmjsem-2020-001010",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Retrospective observational cohort of 36 male first-team players at one English club over eight seasons (five in the Premier League, three in the Championship), with 61 MRI-confirmed acute hamstring muscle injuries graded by the British Athletic Muscle Injury Classification (BAMIC). Injuries involving the intramuscular tendon (BAMIC c, n = 13) had a longer time to return to full training (Kruskal-Wallis mean rank reported as 36 vs 24 days, p = 0.013) and a higher reinjury rate (38.5% vs 12.5% without tendon involvement, p = 0.031), with the overall median time to full training at 18 days (range 2-103).",
+      "limitations": "This is one club over eight seasons with 13 tendon-involvement injuries (only three grade 3c), and 12 players contributed two or more injuries, so injuries are not independent. The return-to-training decision was not blinded to MRI findings, and the overall BAMIC-reinjury association was not significant (p = 0.083).",
+      "synthesisCaution": "Staff could treat intramuscular tendon involvement as a reliable predictor of an individual player's return date or reinjury, but the study is a small single-club association and the reported ranks and distal biceps femoris pattern are descriptive.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary, abstract: club described as Premier League for all eight seasons -> Premier League 2011-2016 and Championship 2016-19 ('English Premier League 2011-2016 and The English Football League Championship 2016-19')",
+            "evidenceSummary: mean rank presented as days without qualification -> labelled as Kruskal-Wallis mean rank reported as days",
+            "rtp: only the 2c median cited -> added the 3c median of 15 days (range 9-63) so the tendon group is not read as uniformly longer ('Players with 2c and 3c injuries in this study had a median TRFT of 37 days and 15 days, respectively')",
+            "screeningLimitations: added that only three grade 3c injuries were seen"
+          ],
+          "residualConcerns": "Authors report Kruskal-Wallis mean ranks as days, which is statistically unusual; Table 1 labels 'Study participants' as 61 although 36 players are described. Return-to-training timing is clinically used, so a human check of the rtp field is advised.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "915",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 11,
+      "sourceFile": "Associations between cognitive function and ACL injury-related biomechanics - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 55550,
+        "doi": "10.1177/19417381221146557",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Systematic review (PRISMA-P, PROSPERO-registered) of six cross-sectional studies with 15 to 40 participants each, pairing a neurocognitive test with a cognitively challenging cutting or jump-landing task and a biomechanical measure. Five of six studies found that worse cognitive performance was associated with biomechanics linked to ACL loading during unanticipated or dual-task movements, one study found no interaction, and the pooled evidence was not meta-analysed.",
+      "limitations": "All six included studies are small, cross-sectional and use different cognitive tests and tasks, so the evidence shows associations in movement patterns rather than injury outcomes. Three studies were rated high quality and external validity was scored low across studies (mean 1 of 2).",
+      "synthesisCaution": "Staff could read these associations as showing that a cognitive screen identifies athletes at risk of ACL injury, but all included studies are cross-sectional with no injury outcomes, and the authors note that prospective studies are still needed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "abstract, findings: Giesche et al. presented as a separate third category ('one reported mixed directions') -> clarified it is one of the five positive studies ('Among these 5 articles, the only exception to this trend was represented in Giesche et al')",
+            "synthesisCaution: 'authors call for prospective studies before any screening use' -> authors note prospective studies are still needed ('additional prospective studies are necessary'); screening-use wording was not in the text"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "916",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 12,
+      "sourceFile": "Associations between hamstring fatigue and sprint kinematics during a simulated soccer match.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 35,
+        "extractedCharacters": 48089,
+        "doi": "10.1249/MSS.0000000000002753",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Male Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Within-subject repeated-measures study in 10 healthy amateur male footballers, who completed a 90-minute football-specific running protocol (SAFT90) with hamstring maximal voluntary torque (MVT), rate of torque development (RTD) and 20 m sprint kinematics measured before and after each 15-minute segment. Hamstring MVT fell by about 14% from start to end of the protocol and sprint time rose by 7.5%, knee angle at peak knee extension became smaller (more extension) between halves, and within-person MVT loss was associated with these kinematic changes.",
+      "limitations": "Ten amateur players in a laboratory-style protocol with repeated maximal efforts, so the fatigue may be greater than in professional matches. The sprint kinematic changes are group-level effects with modest or non-significant within-half results, and no injury outcomes were collected.",
+      "synthesisCaution": "Staff could take the fatigue-related change in sprint kinematics as a validated hamstring injury risk marker and set substitution or load thresholds from it, but the authors state that no threshold has been established and the study has no injury data.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: 'lower knee extension angle at peak knee extension' (could be read as less extension) -> knee angle at peak knee extension became smaller, meaning more extension (Table 2: 31.2 to 26.4 degrees; half effect -2.7, p < 0.001; authors: 'increases of peak knee extension')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "917",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 17,
+      "sourceFile": "Attention-deficit-hyperactivity disorder-related self-reported symptoms are associated with elevated concussion symptomatology.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 59576,
+        "doi": "10.1123/jsep.2021-0225",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Injured Athletes",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Cross-sectional study of 99 individuals (mean age 13.6 years, range 7.0 to 18.0; 45 female) assessed 4 to 44 days after concussion at a pediatric sports medicine clinic. Parent-rated inattentive ADHD symptoms were associated with more concussion symptoms endorsed on the SCAT5 (B = 0.06 per percentile point, p = .004) and greater symptom severity (B = 0.24, p = .003), after adjusting for covariates. ADHD diagnosis and hyperactive-impulsive symptoms were not associated with either outcome.",
+      "limitations": "Single-time-point, cross-sectional design with no preinjury baseline, so the link cannot be read as causal or as a predictor of recovery time. The text describes the sample as individuals at a sports medicine clinic and does not state that all were athletes.",
+      "synthesisCaution": "Staff could read the inattentive ADHD association as evidence that these symptoms predict slower recovery, which this cross-sectional study did not test.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.methods: said the SCAT5 'was completed with the participant' -> parents or guardians completed SCAT5, ADHD-IV and BRIEF in consultation with participants ('Parents/legal guardians were provided with the symptom inventory and asked to respond to each item in consultation with participants')",
+            "paper.limitations: added that all measures were parent-completed despite the 'self-reported' title, and noted the prose vs Table 2 coefficient conflict for inattentive symptom count (prose 'B = -1.62', Table 2 '0.06 [0.02, 0.10]')"
+          ],
+          "residualConcerns": "Sample is pediatric sports medicine clinic patients; the text does not state they were athletes or how injuries occurred, so the Injured Athletes, Male Athletes and Female Athletes tags are inferred.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "918",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 34,
+      "sourceFile": "Biceps femoris aponeurosis size - A potential risk   factor for strain injury.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 32630,
+        "doi": "10.1249/MSS.0000000000000550",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Cross-sectional imaging and strength study of 30 healthy, recreationally active young men (age 20.7 +/- 2.6 years) who were not in systematic strength or power training. MRI measured biceps femoris long head (BFlh) proximal aponeurosis area and muscle size, and isometric and eccentric knee flexor torque were measured on a dynamometer. Aponeurosis area varied more than fourfold (7.5 to 33.5 cm2) but was not correlated with BFlh ACSAmax (r = 0.04, P = 0.83) or with knee flexor strength (isometric r = 0.28, P = 0.13).",
+      "limitations": "The sample was 30 healthy, recreationally active men, not trained athletes, and the study does not measure hamstring strain injury, so the injury-risk link is an untested inference. The correlations are cross-sectional and the authors state the knee axis and in vivo strength assumptions as limitations.",
+      "synthesisCaution": "Staff could over-read the conclusion that individuals with a small aponeurosis are at increased hamstring strain risk, which the study did not test because no injuries were recorded.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.methods: isometric test was described as 'hip at 60 degrees' -> isometric used hip and knee angles of 40 and 30 degrees on the custom dynamometer; the 60 degree hip angle applies to the eccentric Con-Trex test ('with hip and knee joint angles of 40 and 30, respectively'; 'with a hip angle of 60')",
+            "paper.limitations: removed the aponeurosis width point, which is a critique of a prior method rather than a limitation of this study; kept the authors' stated limitations"
+          ],
+          "residualConcerns": "Participants were untrained recreationally active men; 'Healthy Athletes' and 'Adult / Recreational' are the closest available population tags. The authors' conclusion about injury risk is speculative and not tested.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "919",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 36,
+      "sourceFile": "Biceps femoris long head muscle and aponeurosis geometry in males with and without a history of hamstring strain injury.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 48187,
+        "doi": "10.1111/sms.14619",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Injured Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Retrospective cross-sectional MRI study of 26 recreationally active or sub-elite adult males who play running-based sports: 13 with a unilateral hamstring strain injury in the previous 24 months who had returned to pre-injury activity, and 13 without a history. The authors compared biceps femoris long head (BFlh) muscle and proximal aponeurosis geometry between injured limbs, their uninjured contralateral limbs and control limbs. Previously injured limbs had larger proximal aponeurosis volume (P = .019, effect size 0.46) and a smaller muscle-to-aponeurosis volume ratio (P = .029, effect size 0.43) than control limbs, with no difference from the contralateral limb.",
+      "limitations": "Design is cross-sectional and retrospective, so the study cannot show whether the geometry preceded or resulted from injury. The sample is small, drawn from three earlier studies with different MRI protocols, and time since injury varied from 2 to 24 months.",
+      "synthesisCaution": "Staff could over-read the larger aponeurosis volume as a risk marker for hamstring strain or re-injury, when the authors state that no prospective evidence links aponeurosis geometry to injury risk.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.methods: added that 4 of 13 injured participants had non-BFlh injuries ('Nine of the 13 previously injured participants had sustained their injury to the BFlh') and blinded segmentation",
+            "paper.limitations: added the authors' points on heterogeneous severity (1 to 24 weeks), unknown injury site, power of 0.7, and the sensitivity analysis restricted to BFlh injuries"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "920",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 37,
+      "sourceFile": "Biceps femoris long head stiffens after 2 weeks of training cessation in highly trained sprinters.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 35585,
+        "doi": "10.1007/s00421-024-05536-w",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Coaching",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Track & Field"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Controlled, non-randomised intervention in 28 healthy male track-and-field sprinters (age 20.0 +/- 1.2 years, at least three years of sprint training) allocated to matched groups. Starting immediately after the last competition of the season, 14 stopped all training for 2 weeks and 14 continued coach-prescribed training 5 days per week, and passive biceps femoris long head (BFlh) shear-wave speed was measured with ultrasound elastography before and after. In the training-cessation group, shear-wave speed rose from 4.75 to 5.00 m/s (P less than 0.001), it did not change in the training-continuation group (4.90 to 4.93 m/s, P = 0.521), and the group-by-time interaction was significant.",
+      "limitations": "The study measures passive shear-wave speed as a proxy for stiffness in one muscle over 2 weeks, with no injury or performance outcomes. Groups were matched rather than randomised, and the continuation group was not a no-training control.",
+      "synthesisCaution": "Staff could over-read the stiffness increase as evidence that detraining causes hamstring strain injury or impairs sprint performance, when the authors state that neither link was assessed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary and paper.methods: added that allocation was matched, not randomised, and that cessation 'started immediately after the last competition of the season' (post-season context); added the significant group-by-time interaction",
+            "studyDesign: kept 'Laboratory / Experimental Study' as the closest code for a non-randomised controlled intervention; it is not an RCT and not an observational cohort"
+          ],
+          "residualConcerns": "Design code is a judgment call (non-randomised controlled intervention has no exact taxonomy value). Competition level is not stated beyond 'highly trained' with World Athletics points about 960 to 985, so 'Mixed / Unspecified' is used. No volume or pages printed (online article).",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "921",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 38,
+      "sourceFile": "Biceps femoris muscle-tendon strain during an entire overground sprint acceleration - A biomechanical explanation for hamstring injuries in the acceleration phase.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 42840,
+        "doi": "10.1080/14763141.2024.2353233",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Single-session biomechanical study in 21 male semi-professional soccer players (age 22.9 +/- 2.9 years) who performed two maximal 40 m sprints on grass. Inertial motion capture (17 sensors) was run through scaled OpenSim musculoskeletal models to estimate hamstring muscle-tendon strain over 16 steps. Peak biceps femoris long head strain (9.03 +/- 1.42%) exceeded semitendinosus (6.09 +/- 1.62%) and semimembranosus (6.10 +/- 1.43%), fell slightly as step number increased, and across the 16 step means correlated with anterior pelvic tilt (r = -0.86).",
+      "limitations": "Strain values are model estimates, because muscle activation and force were not measured, and no hamstring injuries were recorded. Players with a past hamstring strain were not excluded, and the sample is semi-professional, so the results describe strain patterns in healthy sprinting rather than injury causation.",
+      "synthesisCaution": "Staff could over-read the title's claim of a biomechanical explanation for acceleration-phase injuries, since the study estimated modelled strain in uninjured players and did not link strain to injury.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: 'Professional / Elite' -> 'Adult / Recreational' (sample is 'semi-professional soccer players', not elite)",
+            "paper.findings: 'pelvic orientation was the segment with the largest effect' -> only pelvis was significant and femur was not ('Femur -0.01 ... 0.45'); clarified r = -0.86 is from a regression of step means ('across all 16 steps')",
+            "paper.limitations: removed the vague statement about model fitting; added the step-mean basis of the correlation, inclusion of players with prior hamstring strain, and the unexplained sign of the pelvic tilt relationship"
+          ],
+          "residualConcerns": "The text reports negative estimates and r = -0.86 for anterior pelvic tilt yet concludes that high anterior pelvic tilt induces high BFLH strain; likely a sign convention, but a human should check Figure 3. Semi-professional level has no exact population tag; 'Adult / Recreational' was chosen over 'Professional / Elite'.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "922",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 39,
+      "sourceFile": "Bidirectional interplay between traumatic brain injury and cardiovascular dysfunction in athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 18,
+        "extractedCharacters": 78875,
+        "doi": "10.3390/jcm14217712",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of clinical, epidemiological, experimental and mechanistic studies on sport-related brain injury and cardiovascular outcomes. The authors searched PubMed and Google Scholar with a Boolean string, screened titles, abstracts and full texts by two reviewers, and synthesised findings narratively because the studies were too heterogeneous to pool. The review reports, for example, that individuals with moderate-to-severe TBI have up to a two-fold excess risk of incident hypertension, coronary disease, myocardial infarction and stroke that persists for at least a decade.",
+      "limitations": "The review has no formal risk-of-bias appraisal or quantitative synthesis, and it includes animal and mechanistic work alongside human data. Many statements about athletes come from populations such as retired football players, so the strength of each claim varies and the review does not grade it.",
+      "synthesisCaution": "Staff could over-read the proposed heart rate variability-guided return-to-play approach as an evidence-based protocol, when the review itself says that clinical evidence is scarce and the approach is a research priority.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: clarified that the 25 to 35% cardiac complication figure comes from general moderate-to-severe TBI cohorts, not athletes ('In human cohorts, 25-35% of patients with moderate-to-severe TBI develop...'), and that the HRV and baroreflex changes are the authors' summary"
+          ],
+          "residualConcerns": "Clinically sensitive (concussion, cardiac, return to play). The review has internal inconsistencies a reviewer may want to note: the acute concussion section refers to 'Immediately after SCA' (likely meaning SRC), and bradyarrhythmia is described as '>60 beats/min'. Much of the athlete-specific claim set rests on mechanistic, animal and non-athlete TBI data.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "923",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 42,
+      "sourceFile": "Biologics for skeletal muscle healing - The role of senescence and platelet-based treatment modalities.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 61272,
+        "doi": "10.1016/j.otsm.2020.150754",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of skeletal muscle repair, the role of cellular senescence in impaired regeneration with aging, and evidence for platelet-rich plasma (PRP) and platelet-poor plasma (PPP) in muscle healing. The authors identified 9 registered clinical trials (results posted for 4), 5 in vitro studies and 10 preclinical studies, and report that PRP has short-term pain and return-to-play signals in a few clinical trials while PPP has almost no in vivo or clinical testing.",
+      "limitations": "The review is narrative, and its literature search is described only in general terms with no databases, dates or screening rules given. Most of the mechanistic and treatment evidence comes from cell and animal models, and the authors state that no concise conclusion on PRP effects in muscle can be drawn.",
+      "synthesisCaution": "Staff could read the trial signals for faster return to play as proof that PRP shortens muscle-injury recovery, when the review itself reports small, mixed trials and a non-significant 2-year result in one of them.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: 'et al.' added after a list of only 6 authors -> full 6-author list as printed (Oberlohr, Lengel, Hambright, Whitney, Evans, Huard)",
+            "paper.practicalImplications: 'the review found no animal or clinical trial that used [PPP] as the investigational treatment' -> no preclinical study used PPP, but 2 clinical trials included it ('the remaining 2 studies compare the effects of PPP and PRP as an investigational treatment (NCT03618979 and NCT01812564)')"
+          ],
+          "residualConcerns": "Authors disclose conflicts (one has financial interests in ProofPoint Biologics and Vail Valley Surgery Centers; another receives royalties from Cook Myosite). Citation shows the in-press placeholder volume '00' as printed; operator may want final volume/pages verified externally. Platelet-based injection is a medical treatment topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "924",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 44,
+      "sourceFile": "Biomechanical impact of soccer shoe outsole design on knee joint during cutting movements.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 3,
+        "extractedCharacters": 6843,
+        "doi": "10.1080/19424280.2025.2494664",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Within-subject laboratory study in 17 healthy male soccer players performing 45-degree dribbling sidestep cuts in two randomly ordered shoes, with 8 or 9 forefoot studs. The 9-stud shoe (ATM2) had a higher dynamic traction coefficient (0.34 vs 0.27, p<0.05) and higher knee valgus (0.98 vs 0.83 N·m·BW-1) and internal rotation (1.16 vs 0.79 N·m·BW-1) moments (p<0.05), with no significant difference in peak vertical ground reaction force or the other knee moments.",
+      "limitations": "This is a two-page conference abstract with brief methods, no effect sizes and no angle data, so the methods cannot be checked in full. It tested healthy male players, one cutting task and one approach angle, and it did not measure injury or stability.",
+      "synthesisCaution": "Staff could read the traction gain as a safer or better stud layout, when the study shows higher knee moments with more studs and does not show any injury or stability benefit.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added that the ATM1/ATM2 labels are never explicitly mapped to 8 and 9 studs (mapping inferred from listing order), and that participant characteristics and trial counts are not reported"
+          ],
+          "residualConcerns": "Kept as INCLUDE, not DEGRADED: the abstract has introduction, methods, results with a full table of means, SDs and p-values, and conclusions, so no critical section is missing, although angle data mentioned in the discussion are unreported. The purpose statement says 'ankle joints' while all outcomes are knee measures (likely a typo in the source). ATM1/ATM2 to stud-count mapping is inferred.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "925",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 52,
+      "sourceFile": "Brachial plexus injuries in the contact athlete - A narrative review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 43841,
+        "doi": "10.21037/aoj-24-67",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "American Football",
+        "Rugby",
+        "Ice Hockey",
+        "Combat Sports"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Professional / Elite",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of English-language literature from inception to October 2024 (PubMed, Cochrane Review, Google Scholar) on brachial plexus injuries in contact athletes, from transient neuropraxia ('burners' or 'stingers') to neurotmesis. The authors report a 49% to 65% prevalence of neuropraxia among career football players in cross-sectional studies, and most neuropraxic injuries resolve within minutes to hours. Severe injuries rest mainly on case series and cohort studies.",
+      "limitations": "This is a narrative, not systematic, review: sources were selected by consensus of three co-authors and no quality appraisal is reported. Evidence for severe injuries is small case series, and the literature is weighted toward football and rugby in English-speaking countries.",
+      "synthesisCaution": "Staff could treat the 2 to 3 week threshold or the same-game return for burners as validated return-to-play rules, when the review presents them as clinical guidance drawn mostly from cohort studies and case series.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed 'Collegiate' (collegiate players appear only in reference titles, body text cites NFL and football players generally) -> added 'Mixed / Unspecified'",
+            "practicalImplications: scapular winging reframed as a sign raising suspicion of root avulsion ('a root avulsion or pre-ganglionic injury should be suspected'); collars note now states they reduce hyperextension but not passive lateral flexion ('demonstrated by laboratory studies to significantly reduce hyperextension')"
+          ],
+          "residualConcerns": "Clinically sensitive return-to-play and concussion-screening guidance; same-game return is described as 'frequently possible', not a validated criterion.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "926",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 62,
+      "sourceFile": "Can human growth hormone accelerate tendon and ligament injury recovery.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 28046,
+        "doi": "10.1177/19417381241245938",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "In vitro basic science study in which tendon and ligament fibroblasts from 24 patients (13 ligament cells from knee arthroplasty and 11 tendon cells from hamstring ACL reconstruction) were exposed to human growth hormone (HGH) in single-dose and sustained-dose models. Proliferation was measured at days 4 and 7, and collagen production at day 14. The authors report that HGH did not improve proliferation at most doses, that several doses reduced proliferation, and that collagen production was similar or lower than controls.",
+      "limitations": "This is cell culture work, with cells from non-athlete surgical patients, so it cannot show what HGH does to tendon or ligament healing in people. The Methods give a dose range up to 100 µg/mL while the Abstract gives up to 10 µg/mL, the Abstract says only 100 ng/mL matched or improved sustained-dose ligament proliferation although 10 µg/mL also increased it at day 4, and the power calculation text is unclear.",
+      "synthesisCaution": "Staff could read the study as proof that HGH harms tendon or ligament healing in athletes, when it measured cell proliferation and collagen in a dish, with no animal or clinical outcome.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations, screeningLimitations: added the abstract-results conflict on sustained-dose ligament proliferation (Abstract: 'only the 100 ng/mL concentration demonstrated at least statistically similar or improved proliferation'; Results: '10 µg/mL [104.6%, P < 0.01]) exhibited increased cellular proliferation')",
+            "findings: added sustained-dose tendon reductions at day 4 ('1 µg/mL (97.41%, P = 0.05) and 100 µg/mL (88.5%, P = 0.01)') and condensed to three sentences",
+            "limitations: funder statement corrected to both sponsors (ST Li foundation and Pfizer) having no stated role"
+          ],
+          "residualConcerns": "Medication topic (HGH, a prohibited substance in sport, though the text does not discuss anti-doping). The text is an online-first version (vol XX) so no volume or pages are printed.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "927",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 64,
+      "sourceFile": "Can the workload-injury                        relationship be moderated by improved strength, speed     and                repeatedsprint     qualities_  - Copy.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 38465,
+        "doi": "10.1016/j.jsams.2018.01.010",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Coaching"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Two-season observational cohort of 40 male amateur hurling players from one team, with session-RPE training loads, 93 time-loss injuries, and tests of relative lower-body strength (3RM trap-bar deadlift), 5-, 10- and 20-m sprint times and repeated-sprint ability. The authors report that moderate weekly loads (1400 to 1900 AU) carried lower injury odds than low loads in both phases, that large week-to-week load increases raised injury odds, and that stronger, faster and better repeated-sprint players had lower injury odds at higher loads.",
+      "limitations": "This is a single-team observational study of 40 amateur players with odds ratios reported within load and quality bands, and no interaction test is described, so the word 'moderated' in the title rests on stratified comparisons. The text is an accepted manuscript without volume or page numbers, and some Abstract figures and Table statistics are internally inconsistent.",
+      "synthesisCaution": "Staff could read the strength, speed and repeated-sprint results as proven causes of lower injury risk that training will reduce, when this is an observational single-team analysis in which the tested qualities were associated with, not shown to protect against, injury.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: removed 'Cut-offs differ (1000 AU in the Results, >550 AU in Table 1)' -> these are two different analyses, both stated in the Results ('Large absolute weekly changes in load (>=1000 AU)' and 'larger week to week changes (>550AU to 1000 AU)')",
+            "limitations: specified the Abstract vs Table 2 CI conflicts (Abstract 10-m CI 2.11-4.13 vs Table 2.71-4.12; 5-m 2.33-3.87 vs 2.23-3.87) and added Table 1 ORs with CIs excluding 1 but p > 0.4",
+            "practicalImplications: prescriptive targets ('Keep week-to-week load increases well below 1000 AU, aim for 1400 to 1900 AU') -> reported as associations in this amateur squad usable only as starting flags",
+            "athleteDev: removed implication that more strength and speed work before higher loads will protect players -> noted the authors' causal claim ('improved strength ... will reduce subsequent injury risk') was not tested"
+          ],
+          "residualConcerns": "Accepted manuscript, not the final typeset version; statistics in Table 1 are internally inconsistent (CIs excluding 1 with non-significant p values), so effect sizes should be checked against the published version.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "928",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 67,
+      "sourceFile": "Cannabinoid therapy in athletics - A review of current cannabis research to evaluate potential real-world cannabinoid applications in sport.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 27,
+        "extractedCharacters": 145553,
+        "doi": "10.1007/s40279-024-02094-1",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Recovery & Readiness",
+        "Brain Health & Psychology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate"
+      ],
+      "evidenceSummary": "A narrative review of cannabis and cannabinoid research for athletes, covering inflammation, pain and opioid-sparing effects, concussion, mental health, performance, product routes and sport regulation. The review reports that human athlete trials of CBD give inconsistent results on muscle damage and recovery markers, and that THC trials range from no effect to impaired vigorous exercise performance when inhaled. Much of the anti-inflammatory, neuroprotective and anti-concussion evidence it cites is preclinical.",
+      "limitations": "The review does not report a structured search method, inclusion criteria or quality appraisal, so study selection cannot be checked. Its key human data come from small, heterogeneous trials with different products, doses and populations, and the authors say the athlete evidence is limited.",
+      "synthesisCaution": "Staff could read the review's mechanistic, anti-inflammatory and concussion sections as proof that cannabinoids speed athlete recovery or protect the brain, when the review itself says the human athlete data do not show this.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: did not flag the review's internal conflict on the 60 mg CBD study -> added ('reduction in creatine kinase and myoglobin within a 72-h window after 60 mg of CBD' vs 'CBD did not improve objective markers of muscle recovery such as creatine kinase'); findings keep the more detailed recovery-section account",
+            "paper.limitations: removed unsupported paraphrase that authors say trials 'vary too much to compare'; the text says 'Vast discrepancies exist' and 'Study findings only apply to the specifics of that study', which remains reflected elsewhere"
+          ],
+          "residualConcerns": "Clinically sensitive (concussion, pain, medication content). Narrative Review coding kept although a database search is named, because no screening or inclusion process is described. Year 2024 is from the accepted/copyright date; no volume or pages printed (online-first).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "929",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 71,
+      "sourceFile": "Cannabis, cannabidiol and tetrahydrocannabinol in sport - An overview.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "Publication year and journal details not printed: the text is an accepted manuscript (not copyedited) whose own DOI (10.1111/imj.15724) appears only in the 'Please cite this article as' notice, with no journal name, year, volume, issue or pages. The operator should supply the year and journal from the publisher record before upgrading; the content is otherwise an INCLUDE-eligible narrative review on sport.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: journal name 'Internal Medicine Journal' is not printed in the text (only the DOI prefix imj) -> removed and noted as not printed",
+            "evidenceSummary: 'three small CBD trials in trained and untrained men' -> first trial was '23 male and female trained weight lifters' and second '16 (14 male 2 female)'",
+            "degradedReason: clarified that the article's own DOI is printed (doiMissing false) and that journal name as well as year is missing"
+          ],
+          "residualConcerns": "Year is null because no publication year is printed (internal dates point to 2022 but are not a publication date). Operator should confirm year and journal externally. Contains cardiac adverse-effect content.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 73,
+      "sourceFile": "Cardiac cycle timing and contractility following acute sport-related concussion.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 27308,
+        "doi": "10.1080/15438627.2022.2102918",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football",
+        "Soccer",
+        "Basketball",
+        "Ice Hockey"
+      ],
+      "populations": [
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Within-subject study of 12 university athletes (9 male, 3 female) assessed about 3 days after a diagnosed sport-related concussion and compared with their own pre-season baseline. A sensor on the sternum recorded 1 minute of supine cardiac cycle data. Median systolic time fell from 298 ms to 276 ms (p = 0.034) and median atrial systole force rose from 10 mG to 13 mG (p = 0.013); the other timing and contractility measures did not change significantly.",
+      "limitations": "There is no control group, the sample is 12 athletes, and 13 variables were tested with no stated correction for multiple comparisons. The sensor was not compared with echocardiography in this study, so the cardiac measures are not validated against a reference method.",
+      "synthesisCaution": "Staff could read the two significant changes as proof of subclinical cardiac dysfunction or reduced stroke volume after concussion, which the study did not measure.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: added funding and proprietary-algorithm disclosure omitted in draft ('We would like to thank LLA Technologies Inc. and Mitacs Inc. for supporting this research'; 'an in-house, independent (proprietary) algorithm (LLA Technologies Inc.)')"
+          ],
+          "residualConcerns": "Concussion and cardiac topic; all numbers checked against Table 1 and match.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "930",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 74,
+      "sourceFile": "Cardiovascular effects of doping substances, commonly prescribed medications and ergogenic aids in relation to sports - EAPC Position Paper.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 113682,
+        "doi": "10.1093/eurjpc/zwab198",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Athlete Wellbeing",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Nutrition",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Position statement from the EAPC sport cardiology and exercise section, updating a 2006 statement, based on a review of published evidence rather than a pooled sample. It covers anabolic agents, growth hormone, stimulants, erythropoietin and other oxygen-carrying agents, beta-blockers, anticoagulants, psychoactive and anti-inflammatory drugs, and legal supplements. The authors report that anabolic steroid use is associated with cardiomyopathy and left ventricular dysfunction, and that stimulants, ephedra-contaminated products and energy drinks carry documented arrhythmia and blood pressure risks, while many supplements are listed as having no established cardiovascular data.",
+      "limitations": "This is an expert narrative statement, and the text does not describe a search strategy or a grading of evidence. Much of the cited human evidence comes from small studies, athlete self-report, or polydrug users, and several agents have little or no human cardiovascular data.",
+      "synthesisCaution": "Staff could read 'Unknown' in the supplement table as 'safe', when the statement means that no cardiovascular data were available.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "primaryDomain: Athlete Wellbeing -> Sports Medicine & Injury (paper is about cardiovascular adverse effects of drugs and supplements; Athlete Wellbeing kept as secondary)",
+            "audiences: added Athletic Training",
+            "practicalImplications: removed unsupported advice to 'check ingredient lists for energy drinks and fat burners'; now reflects stated advice ('physicians should always discuss with the athletes', 'Use products by established manufacturers', 'contamination rates reported between 12% and 58%')",
+            "athleteDev: draft implied only caffeine and creatine had performance evidence and omitted that AAS, blood doping and rhEPO improve performance in trials; now lists all seven supplements named ('caffeine, creatine, carbohydrate drinks/gels/bars, b-alanine, bicarbonate, nitrate (beetroot juice), and proteins')"
+          ],
+          "residualConcerns": "Medication and cardiac topic. Numeric claims (6-20 times mortality, ~30% cardiovascular, >9 mg/kg caffeine) checked against text.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "931",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 79,
+      "sourceFile": "Cervical Intervertebral Disc Degeneration and Low Cervical Extension Independently Associated With a History of Stinger Syndrome.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 27920,
+        "doi": "10.1177/2325967117735830",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Cross-sectional study of 49 male players from the first division of the Japanese collegiate football league, split by a questionnaire, interview and health-record history of at least one stinger in the past year (19 stinger, 30 control). The authors compared disc degeneration on T2-weighted MRI (Pfirrmann grade 3 defined as CIDD) with neck range of motion and isometric strength. CIDD was found in 68% of the stinger group and 30% of controls (P < .01), and cervical extension range was lower in the stinger group (50.9 vs 60.2 degrees, P < .01), with neck strength not different between groups.",
+      "limitations": "The cross-sectional design cannot show direction or causality, and the sample is small (19 stinger cases). Stinger history was based on self-report and a health record check, which may be subject to recall error.",
+      "synthesisCaution": "Staff could read the disc and extension-range findings as predicting who will get stingers, when the study is cross-sectional and only shows that the two features are associated with a past history.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/tldr: stinger history is defined over the past year ('an episode ... resulting from a collision in the past year'), not any past stinger",
+            "findings: added position split ('5 offense and 14 defense players suffered from stinger syndrome'), effect size d = 0.83 and the adjusted CI for extension ROM (0.87-0.99)",
+            "limitations: clarified the lumbar labelling ('The severity of lumbar disc degeneration was graded as 1 to 5') as a likely slip given the discussion, noted post-season measurement and 0.3-T MRI; Table 7 CI anomaly kept"
+          ],
+          "residualConcerns": "Table 7 crude OR CI (1.46-5.06) is internally impossible as printed. The CIDD threshold reads 'Pfirrmann grades of 3' and likely lost a symbol (grade 3 or higher); all degenerated discs were grade 3, so results are unaffected.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "932",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 81,
+      "sourceFile": "Changes in health related parameters associated with sports performance enhancement drugs.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 49386,
+        "doi": "10.1055/a-1960-2543",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Case series of eight male competitive bodybuilders (age 30 to 35) who self-administered anabolic-androgenic steroids and other performance drugs during a 6-month preparation, with monthly fasting blood tests and body composition measures. Compared with 100 NHANES reference men, Table 2 marks significant differences for total cholesterol (lower), HDL-C (lower), AST, ALT, bilirubin, BUN (higher) and body fat (lower), and the authors state that all parameters except LDL-C sat in normal physiological ranges. Body mass rose from about 105 to 109 kg while body fat fell toward the essential range (below 5%, per the authors).",
+      "limitations": "Eight self-selected men with no untreated comparison group, unverified drug quality and doses reported only as ranges, so drug effects cannot be separated from diet, training and the preparation itself. The reference group is a general population sample rather than a matched athlete comparison.",
+      "synthesisCaution": "Staff could read the paper as showing these drugs are safe for health, when it is a small uncontrolled case series whose authors state that long-term effects are not established.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings: omitted total cholesterol from the significant differences -> added (Table 2 marks TC 4.15 vs 5.17 with *; Results: 'significant differences ... in the level of TC, HDL, AST, ALT, bilirubin, BUM and % BF')",
+            "evidenceSummary: 'most values stayed within physiological ranges' -> authors' actual claim stated ('all the parameters studied (besides LDL-C) reside in normal physiological ranges')",
+            "limitations: claimed the text describes TC as not different -> reframed as the TG section's apparent typo ('no statistically significant differences in TC levels' under Changes in serum triglycerides) and added the normal-range vs high-range contradiction for AST, ALT, BUN",
+            "practicalImplications: generic monitoring advice -> limited to markers the data flag"
+          ],
+          "residualConcerns": "Paper describes and reports self-administered doping regimens including 2,4-DNP; authors conclude no immediate harm despite AST/ALT about 3 to 4 times reference. Several internal inconsistencies in text and tables. No journal volume/pages printed (online-first 2022).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "933",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 82,
+      "sourceFile": "Changes in muscle architecture of     biceps femoris induced by eccentric strength training with Nordic    hamstring  exercise.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 32264,
+        "doi": "10.1111/sms.12877",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Single-group pre-post study of 23 recreational men with no lower-limb injury in the prior 12 months, who completed 8 weeks of nordic hamstring exercise (NHE) and then 4 weeks of detraining. Biceps femoris long head architecture was measured by 2D ultrasound at weeks 1, 9 and 13. By week 9, fascicle length rose 23.9% and muscle thickness 7.7% while pennation angle fell 14.8% (all P<.001); after detraining, fascicle length and muscle thickness fell and pennation angle rose, with fascicle length still numerically above baseline (no week 1 vs week 13 test reported).",
+      "limitations": "No control group, and architecture was measured with 2D ultrasound using an estimated fascicle length equation, so values depend on that model. The sample was recreational men only, and no strength, performance or injury outcome was measured.",
+      "synthesisCaution": "Staff could read the architectural change as proof that NHE prevents hamstring injuries, when the study measured muscle structure only and had no control group or injury outcome.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: placeholder volume '2017;00:1-7' -> '2017;1-7' (header prints 'Scand J Med Sci Sports. 2017;1-7.')",
+            "evidenceSummary: 'fascicle length stayed above baseline' implied a tested difference -> marked numerical only, no M1 vs M3 comparison reported",
+            "findings: added significance for detraining changes (Table 3: ##P<.001 FL, #P<.05 MT vs M2)",
+            "practicalImplications: 'needs no equipment' -> requires a partner (Methods: 'requires the assistance of a partner'); maintenance claim attributed to authors",
+            "SEM vs SD checked: Tables 1 and 3 captions say mean±SEM, but values (age 25.2±3.3, FL 8.17±1.83 for n=23) are consistent with SD; limitation note retained"
+          ],
+          "residualConcerns": "Dispersion statistic labeling (SEM vs SD) is ambiguous in the source; do not quote spread values as SEM without checking.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "934",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 88,
+      "sourceFile": "Chronic changes in muscle architecture and aponeurosis structure following calf muscle strain injuries.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 57865,
+        "doi": "10.1111/sms.14472",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Observational cross-sectional study of 10 people (7 men, 3 women; mean age 45) with a previous chronic calf strain, studied about 4 years after injury on average. Dynamic 2D ultrasound and EMG of the medial gastrocnemius were compared between injured and uninjured calves at rest and during unilateral heel rise. The injured distal muscle showed a larger pennation angle increase during contraction (12.4 degrees more than the uninjured side, P=.01), a thicker aponeurosis, curved fascicles and higher relative soleus EMG (P=.04); the authors hypothesize that some distal fibers are not actively contracting.",
+      "limitations": "No healthy control group, since the uninjured side served as the comparison, and fascicle length was estimated by linear extrapolation that the authors note neglects curvature. Only six participants had mid-belly recordings, and the injury history varied widely.",
+      "synthesisCaution": "Staff could read the curved fascicles as proof that the injured calf muscle is permanently inactive, when the study is cross-sectional in 10 people and the inactivity explanation is the authors' hypothesis.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: placeholder volume '2023;00:1-13' -> '2023;1-13' (header prints 'Scand J Med Sci Sports. 2023;00:1-13.')",
+            "findings: added F2 pennation difference (12.1 degrees, p = 0.005), video F1 fascicle difference (11.9 mm, p = 0.009), n = 6 for mid-belly, and no MVC strength difference ('The strength output during the MVC was not different')",
+            "limitations: added EMG electrode placement at mid-belly ('not the site of the injury')"
+          ],
+          "residualConcerns": "Figure 9C caption says 'Ratio of GM to SOL' while the text reports SOL to GM; direction in the record follows the text.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "935",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 94,
+      "sourceFile": "Classification of myo-connective tissue injuries for severity grading and return to play prediction - A scoping review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 40,
+        "extractedCharacters": 72105,
+        "doi": "10.1016/j.jsams.2024.07.016",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "American Football",
+        "Track & Field"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "PRISMA-ScR scoping review of Medline and SPORTDiscus (1 January 2010 to 19 April 2022) that screened 13,426 records and included 37 studies: 20 original studies (17 of them cohort studies) and 17 reviews. It identified 24 classifications of acute non-contact muscle injury in sporting adults, mostly developed for hamstring or other lower-limb injuries. Time to return to play was the most reported outcome, and higher grades were linked to longer return times in several studies of the BAMIC, modified Peetrons, Munich and Cohen classifications, although reporting was sparse.",
+      "limitations": "This scoping design includes no critical appraisal, and most original studies are retrospective cohorts, so the evidence is low level. Only classifications linked to prognosis or return to play were included, and inter-rater agreement at screening was weak (weighted kappa 0.22 and 0.39) before discussion resolved disagreements.",
+      "synthesisCaution": "Staff may treat a higher grade as a reliable predictor of an individual athlete's return date, when the authors find the grade-to-return link inconsistent, driven by extreme grades, and not accurate enough to predict time to return to play.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: added that Table 4 rates modified Peetrons and Cohen evidence as \"Conflictual evidence for an increase of TTRTP with higher grades\" and that \"correlations appeared to be driven by extreme grades\"",
+            "sports: Other Sport replaced with Track & Field, since included studies cover elite track and field (BAMIC studies)"
+          ],
+          "residualConcerns": "Pre-proof copy without volume or pages; verify citation against version of record. Clinically relevant to return-to-play timing.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "936",
+        "synthesisBatch": "pilot-synthesis-batch-36",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}
