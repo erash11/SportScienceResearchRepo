@@ -1,0 +1,637 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-84-nutrition-hydration",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Nutrition & Hydration queue positions 3-96. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 3,
+      "sourceFile": "Nutrient intake, meal timing and sleep in elite male Australian football players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 35372,
+        "doi": "10.1016/j.jsams.2020.06.011",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Prospective cohort study of 36 elite male Australian Football League players over 10 consecutive pre-season days, with wrist actigraphy and sleep diaries for sleep and photo food diaries for intake. In generalised linear mixed models with covariates, higher total daily protein intake (g/kg) was associated with more wake after sleep onset (+4.0 min, P = 0.013) and lower sleep efficiency (-0.7%, P = 0.006), and higher evening sugar intake (g/kg) was associated with less total sleep time (-5.1 min, P = 0.027) and less wake after sleep onset (-1.0 min, P = 0.005).",
+      "limitations": "The design is observational, so the associations cannot show that changing diet or meal timing would change sleep, and the sample is 36 players from one club. Sleep was estimated from actigraphy and diaries, and the food-recording app has not been validated against weighed food records.",
+      "synthesisCaution": "Staff could read the evening sugar and meal-timing associations as proof that changing evening intake improves sleep, when the study measured associations only and did not test any dietary change.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added a third abstract/text vs table conflict: Discussion says '4-min decrease in SOL for every 1-g kg-1 increase' in evening protein, while Table 2 gives -2.2 (P = 0.016) and Results say 2 min; noted MealLogger is not validated against weighed food diaries.",
+            "paper.findings: added table-supported evening sugar and sleep efficiency (+0.2%, P = 0.021) and evening energy and SOL (5.0, P = 0.011) associations."
+          ],
+          "residualConcerns": "Abstract vs table conflicts confirmed: total daily energy and SOL is reported significant in the abstract (p = 0.01) but Table 1 gives P = 0.116; the significant SOL association is for evening energy (Table 2). Record follows the table values.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1397",
+        "synthesisBatch": "pilot-synthesis-batch-84",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 4,
+      "sourceFile": "Nutrition for Travel- from Jetlag to Catering.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 24,
+        "extractedCharacters": 54723,
+        "doi": "10.1123/ijsnem.2018-0278",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Track & Field"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Scholarly narrative review of travel nutrition for high-performance athletes, with a focus on track and field. It covers jetlag (melatonin, caffeine, meal timing and composition), eating and fluid intake during travel, travel hygiene and illness, and catering in new environments. It reports, citing earlier work, that illness rises two- to threefold with travel across more than five hours' time difference, and that 5% of athletes at the Rio 2016 Olympic Games reported illness.",
+      "limitations": "No search strategy, selection criteria or appraisal method is described, so the evidence base cannot be checked. Many statements rest on small studies, non-athlete samples, animal work or anecdote, and the authors state that more jetlag research is needed.",
+      "synthesisCaution": "Staff could read the melatonin and caffeine statements as dosing guidance, but the review cites inconsistent evidence and notes that melatonin products differ widely in actual content.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: general advice to 'avoid ... caffeine before and during travel' -> limited to the motion-sickness context where the review gives it; the review states caffeine's diuretic effect is over-stated and that caffeine intake during travel 'should be considered in terms of sleep management rather than hydration'."
+          ],
+          "residualConcerns": "Accepted-manuscript version; volume, issue and pages are not printed, so the citation carries year only.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1398",
+        "synthesisBatch": "pilot-synthesis-batch-84",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 5,
+      "sourceFile": "Nutrition for optimising immune function and recovery from injury in sports.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 66826,
+        "doi": "10.1016/j.clnesp.2025.01.031",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Educational narrative review by three authors in clinical nutrition and exercise immunology, covering injury and detraining, immunodepression and nutritional targets for energy, protein, carbohydrate, fat and micronutrients. It includes tables of nutritional targets after injury and of supplement recommendations, and concludes that quality whole-food diets come first and that supplements are mainly indicated for identified deficiencies such as vitamin D. No sample or primary data are reported.",
+      "limitations": "No search strategy, selection process or appraisal method is described, so the strength behind each recommendation cannot be checked from the text. Several dose statements draw on small, immobilisation or non-athlete studies, and the text itself notes limited evidence for immune-supporting supplements.",
+      "synthesisCaution": "Staff could treat the supplement tables, such as vitamin C, zinc, colostrum and quercetin, as endorsed doses, when many entries are rated as having limited or no clear benefit and the doses come from individual cited studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: 'Vitamin D ... treated when low, under medical supervision' -> seasonal check 'as part of routine medical examination' (Table 5); the 'under medical supervision' wording in the source applies to high-dose iron treatment.",
+            "identityCheck: noted Q06 is the pre-proof duplicate; this final version is kept as the INCLUDE record."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1399",
+        "synthesisBatch": "pilot-synthesis-batch-84",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 6,
+      "sourceFile": "Nutrition for optimizing immune function and recovery from injury in sports.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "Duplicate publication: pre-proof of the same article and DOI as Q05; excluded to avoid a duplicate record.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: INCLUDE -> EXCLUDE as a duplicate; pre-proof cover page prints DOI 10.1016/j.clnesp.2025.01.031, identical to Q05 (final version, Clinical Nutrition ESPEN 66 (2025) 101-114), with the same three authors and the same summary text.",
+            "exclusionReason: set to the duplicate-publication reason."
+          ],
+          "residualConcerns": "Taxonomy and paper fields are retained from the draft for reference only; Q05 is the record to publish.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 9,
+      "sourceFile": "Nutritional approaches applied to recovery of skeletal muscle injury immobilization - A review of nutrition aid for sport trauma.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 62796,
+        "doi": "10.23736/S0022-4707.24.16222-6",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Narrative review of nutritional strategies (energy intake, protein, carbohydrate, lipids, micronutrients and supplements) for skeletal muscle injury recovery in athletes. Most of the evidence it cites comes from healthy or recreationally active non-athletes under immobilization or bed rest, exercise-induced muscle damage (DOMS) models in athletes and active adults, and two case studies of Premier League soccer players after anterior cruciate ligament injury.",
+      "limitations": "No search strategy is described, so study selection cannot be checked. Evidence from injured athletes is scarce, and the authors state that specific guidelines cannot be set.",
+      "synthesisCaution": "Staff may apply the immobilization, soreness-model and case-study findings to a specific injured athlete's energy, protein or supplement plan.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: 'Injured Athletes' removed -> 'Mixed / Unspecified', 'Adult / Recreational'; the cited evidence is mostly healthy or recreationally active non-athletes under immobilization or bed rest ('these data were obtained from healthy individuals and hence should not be generalized to injured athletes'), with only two ACL case studies in injured athletes",
+            "evidenceSummary: clarified the evidence base (non-athletes under immobilization, DOMS models, two Premier League ACL case studies)",
+            "citation: removed '2024;64:1-10'; the issue is printed as 'Vol. 64 - No. ??' and pages 1-10 are online-first PDF pagination -> publisher's own form 'J Sports Med Phys Fitness 2024 Sep 17'",
+            "findings: draft reported only the positive creatine trial; added the n=22 positive trial and the n=30 null trial ('no alterations induced by creatine supplementation ... in SM mass or strength') so creatine evidence reads as mixed"
+          ],
+          "residualConcerns": "The intended population of the review is injured athletes, so staff searching that tag will not find it; the tag was dropped because only two ACL case studies involve injured athletes. Volume and pages should be confirmed against the final issue.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1400",
+        "synthesisBatch": "pilot-synthesis-batch-84",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 10,
+      "sourceFile": "Nutritional considerations for the power athlete.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text. Only reference-list DOIs appear (for example 10.1080/02640414.2011.574722 and 10.1186/s12970-020-00383-4). Otherwise the text is complete and readable.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "doi/decision: confirmed DEGRADED; no own DOI is printed anywhere in the text (only reference-list DOIs and the code '1537-890X/2107/224-231')",
+            "screeningLimitations, limitations: 'many recommendations come from general or endurance-sport evidence' was broader than the text shows -> named the specific non-power-sport sources (nitrate 'in studies of team sports', fat '2 g/kg ... after prolonged endurance training in excess of 2 h', weight-cut data from combat sports and wrestlers)"
+          ],
+          "residualConcerns": "Operator should verify the DOI externally before upgrading to INCLUDE. Sports could also carry Track & Field, Gymnastics and Combat Sports, since the review names weightlifting, gymnastics, sprinting, throwing and jumping events and draws weight-cutting data from combat sports.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 11,
+      "sourceFile": "Nutritional interventions for reducing the signs and symptoms of exercise-induced muscle damage and accelerate recovery in athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 32,
+        "extractedCharacters": 187377,
+        "doi": "10.1007/s00421-020-04432-3",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Invited review of nutritional interventions for exercise-induced muscle damage (EIMD), based on PubMed, EMBASE, Scopus and Web of Science searches. The authors group interventions by the amount of research: good (vitamin D, omega-3, creatine, tart cherry, beetroot, pomegranate), modest (for example citrulline, HMB, BCAA and whey protein, milk, curcumin, caffeine, vitamins C and E) and little or no evidence. They state that the good group has 'a good deal research completed on them as opposed to the supplement being unequivocally effective', and their own vitamin D section concludes there is 'no clear benefit in improving recovery following damaging exercise'.",
+      "limitations": "The review reports the databases and search terms but no study count, inclusion criteria or risk-of-bias assessment, so it is not a systematic review in the PRISMA sense. Most cited trials are small, use varied doses and outcomes, and many are in untrained or recreationally active people.",
+      "synthesisCaution": "Staff may read the good-evidence label as proof that a supplement speeds recovery, when the authors say it reflects the amount of research and their own vitamin D section finds no clear recovery benefit.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary, tldr, findings, synthesisCaution: vitamin D presented as a best-supported recovery aid -> noted the authors' own conclusion 'based on the available evidence there is no clear benefit in improving recovery following damaging exercise' and that the good group means 'a good deal research completed on them as opposed to the supplement being unequivocally effective'",
+            "limitations: added the vitamin D tiering inconsistency (Table 1 dose of 2,000-4,000 IU vs the no-clear-benefit conclusion)",
+            "evidenceSummary: modest-tier list now reflects the text section (citrulline, HMB, protein/BCAA, milk, curcumin, caffeine, vitamins C and E among others)",
+            "athleteDev: 'suggests ... could interfere with adaptation' overstated -> authors say 'there is no evidence that these interventions will blunt adaptation'; the concern is theoretical",
+            "practicalImplications: added that vitamin D should target sufficiency, not recovery",
+            "populations: removed 'Healthy Athletes'; the cited trials mix untrained, sedentary and recreationally active adults with athletes, so 'Mixed / Unspecified' only"
+          ],
+          "residualConcerns": "studyDesign kept as Systematic Review / Meta-analysis under the library rule because a database search is described, but the paper is an invited review with no inclusion criteria, study count or risk-of-bias assessment. No volume or pages printed (online-first), so the citation ends at the year.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1401",
+        "synthesisBatch": "pilot-synthesis-batch-84",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 15,
+      "sourceFile": "Nutritional priorities, practices and preferences of athletes and active individuals in the context of new product development in the sports nutrition sector.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 71317,
+        "doi": "10.3389/fspor.2023.1088979",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Cross-sectional online survey of 405 athletes and active adults in Ireland (mean age 29 years, 59% male, 73% in competitive sport), recruited by convenience sampling. Enhanced muscular recovery was the most-prioritised product claim (first choice 25%, top three 73%), 58% reported taking supplements, and whole-food products received the most first-choice rankings.",
+      "limitations": "The survey measures self-reported practices and product preferences, not health, performance or product efficacy outcomes. It used a convenience sample from one country during the COVID-19 period, with 59% of sport participants in intermittent team sports, 45% of competitors at local level and 27% not competing at all, so the results may not generalize to collegiate or elite athletes.",
+      "synthesisCaution": "Staff may read the most-wanted claims and whole-food preferences as evidence that these products work, when the survey measured what athletes want and buy, not what they do for performance or recovery.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: draft said the authors 'state that group differences could not be tested statistically, although the methods report Mann-Whitney U subgroup tests'; this is not an inconsistency as framed, since the limitation covers only rank-order questions ('Due to the nature of the format of the rank order questions, it was not possible to statistically compare answers') while Mann-Whitney U was applied to rating questions; the real inconsistency is the discussion calling gender effects on 'rank importance'",
+            "limitations: added text vs table mismatches (smoothie/juice 202 vs 220 top-three; scientific proof 87% vs 41% + 45% = 86%) and that focus groups 'did not reach idea saturation'",
+            "screeningLimitations: added competition-level mix (45.2% local, 27% non-competitive) and RIDS share (58.9%)",
+            "practicalImplications: replaced weak reasoning (84% willing to pay more as a reason to check claims) with the reported recovery practices (stretching n = 230, foam rolling n = 166) and low functional food use (nitrate 4%, polyphenols 6%)"
+          ],
+          "residualConcerns": "Relevance is moderate: the paper's aim is new product development for the sports nutrition sector rather than athlete health or performance. INCLUDE kept because it is original research describing athletes' self-reported nutrition practices, but its value to Baylor staff is mainly descriptive. Non-commercial funding (Irish Department of Agriculture, Food and the Marine) and no conflicts declared.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1402",
+        "synthesisBatch": "pilot-synthesis-batch-84",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 17,
+      "sourceFile": "Nutritional strategies to improve post-exercise recovery and subsequent exercise performance - A narrative review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 103240,
+        "doi": "10.1007/s40279-025-02213-6",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Review of nutritional strategies for recovery between exercise bouts about 2 to 24 h apart. The authors searched PubMed/MEDLINE and Google Scholar with keyword and Boolean strings and graded each strategy as strong (grade I), moderate (grade II) or limited (grade III) evidence. Carbohydrate, protein, carbohydrate-protein co-ingestion and fluids and electrolytes sit in the strong tier, sodium bicarbonate, creatine and caffeine in the moderate tier, and fats and micronutrients in the limited tier.",
+      "limitations": "The paper reports no search dates, study counts, inclusion criteria or quality appraisal, so the strength grades are the authors' judgments rather than a formal method. Much of the cited work uses male athletes and laboratory protocols that may not match field conditions.",
+      "synthesisCaution": "Staff could read the grade I ratings as proof that carbohydrate timing will improve performance in their own sport, when the review says subsequent performance effects are inconsistent across studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: grade I tier listed only carbohydrate and co-ingestion -> now also protein and fluids/electrolytes, which sit under '2 Grade I, Strong Evidence' in the text; dropped the 'Narrative review' lead so it does not conflict with the coded design.",
+            "findings: protein co-ingestion effect stated as established -> 'likely has a small, but positive, effect on performance, ranging from 0.6 to 1.6%', with the text's caveat that the glycogen benefit 'appears to occur only when protein is added to a suboptimal amount of carbohydrate'.",
+            "studyDesign: checked and kept as Systematic Review / Meta-analysis by library rule, since the text describes a database search ('PubMed/MEDLINE and Google Scholar, using combinations of keywords and Boolean operators') even though the title calls it a narrative review."
+          ],
+          "residualConcerns": "The paper is titled a narrative review and reports no study counts, dates, inclusion criteria or appraisal; the Systematic Review / Meta-analysis code rests only on the library rule for described searches. Table 1 gives sodium bicarbonate benefit for recovery of 40 min or less while the text says 30 to 90 min.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1403",
+        "synthesisBatch": "pilot-synthesis-batch-84",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 21,
+      "sourceFile": "Omega-3 Fatty Acids and Muscle Strength-Current State of Knowledge and Future Perspectives.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 59646,
+        "doi": "10.3390/nu16234075",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Narrative review of EPA and DHA supplementation and muscle strength, with a summary table of 12 studies: six in adults (13 to 30 participants each) and six in older adults (16 to 187 participants). The author describes a small but significant effect on strength in healthy adults and older adults, with inconsistent trial results and low certainty in the meta-analyses cited. Only two tabled trials used athlete samples (30 male athletes; 13 soccer players), and neither found a clear strength effect.",
+      "limitations": "No search method, selection criteria or quality appraisal is reported, so the trials discussed cannot be reproduced. Most trials are in general adults or older adults rather than athletes, and the mechanistic and inflammation sections draw partly on rodent studies.",
+      "synthesisCaution": "Staff could read the small, inconsistent strength effects as a reliable strength benefit for their athletes, when the positive trials were in recreationally trained, resistance-trained or older adults and the two athlete trials found no clear strength effect, or read the rodent resolvin findings as human evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "athlete relevance: draft did not flag that only two tabled trials used athletes -> evidenceSummary, findings, synthesisCaution and athleteDev now state that Lewis 2015 ('30 male athletes', 'unclear effect on MVC force') and Gravina 2017 (soccer players, 'no significant difference between groups') found no clear strength effect; positive trials were in recreationally trained, resistance-trained, physically active or older adults.",
+            "findings: omitted Lewis 2015 -> added.",
+            "athleteDev: 'can be considered as an adjunct to resistance training in trained adults' overstated support -> reframed around the weak athlete evidence.",
+            "practicalImplications: 'should be screened for atrial fibrillation risk' -> author's wording that AF risk 'particularly in high-risk patients, should be considered'.",
+            "citation: title punctuation changed from comma to colon to match the printed title separator.",
+            "populations: kept Adult / Recreational and Mixed / Unspecified with no athlete sex tags, since the sample mix is mostly non-athlete and older adults."
+          ],
+          "residualConcerns": "INCLUDE rests on exercise-performance relevance (muscle strength, some trained and athlete samples); most evidence is in non-athlete and older adults.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1404",
+        "synthesisBatch": "pilot-synthesis-batch-84",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 81,
+      "sourceFile": "Performance Enhancing Supplements and Cardiovascular Health.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 40026,
+        "doi": "10.1007/s11936-025-01086-2",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Nutrition",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Narrative review of performance enhancing supplements used by recreational athletes: anabolic-androgenic steroids (AAS), testosterone and hormone therapy, caffeine and pre-workout products, and creatine. It cites a Danish registry of 1189 suspected AAS users with a hazard ratio of 2.81 for mortality (mean follow-up 11 years) and the TRAVERSE trial of 5246 men, where testosterone was noninferior to placebo for major adverse cardiac events (7% vs 7.3%). No search strategy, selection criteria or quality appraisal is described.",
+      "limitations": "The review gives no search method or risk-of-bias appraisal, so its choice of evidence cannot be checked. The AAS mortality figure comes from registry data the authors describe as subject to confounding, and the TRT and hormone therapy sections draw on older hypogonadal men and postmenopausal women rather than athletes.",
+      "synthesisCaution": "Staff could treat the review's risk ranking across supplements as a measured comparison, when it blends trial, registry and observational data and includes the authors' own opinion.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: said the review calls for more study of caffeine long-term safety -> only creatine long-term effects are flagged ('though long-term effects require further study' refers to creatine); added that TRT/HT sections concern non-athlete groups",
+            "tldr: long-term caveat applied to both caffeine and creatine -> creatine only",
+            "findings: caffeine statement made definite -> kept the review's hedge ('may only have limited additive performance benefit but pose serious cardiovascular risk')",
+            "limitations: 'conclusions on caffeine and creatine rest on short- to medium-term data' -> creatine only ('in the short to medium term (from 10 months to 5 years)')",
+            "practicalImplications: screening advice reattributed to excessive stimulant use ('excessive stimulant use should merit caution and screening for underlying comorbidities, presence of genetic heart disease, and symptoms'); creatine caution tied to weight gain and fluid retention as printed"
+          ],
+          "residualConcerns": "Athlete relevance confirmed: the review states its focus is PES 'commonly used among recreational athletes', so INCLUDE stands and Adult / Recreational is the right level tag. No sex tag was added because there is no athlete sample. The TRT and hormone therapy sections concern older hypogonadal men and postmenopausal women, so staff should not read those figures as athlete data.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1405",
+        "synthesisBatch": "pilot-synthesis-batch-84",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 94,
+      "sourceFile": "Periodized Nutrition for        Athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 69074,
+        "doi": "10.1007/s40279-017-0694-2",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review defining periodized nutrition and summarising train-low, train-high, gut-training, dehydrated-training and supplement approaches. The author reports that train-low studies show signalling changes but few performance effects, that two sleep-low studies are the only ones of that concept, and that no reviewed ketogenic-diet study shows performance benefit in athletes.",
+      "limitations": "The review gives no search method and says it summarises methods rather than the full literature. It was published in a supplement supported by the Gatorade Sports Science Institute (PepsiCo), which paid the author an honorarium for writing it, and this industry tie should be weighed against its framing of carbohydrate-based methods.",
+      "synthesisCaution": "Staff could read train-low or sleep-low methods as proven performance tools, when the review says most have changed cellular or muscle markers and that performance effects come from very small samples.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: sleep-low result described as between-group 'against 10 controls' -> within-group improvement in sleep-low group but not control ('10-km running performance increased after 3 weeks in the sleep-low group but not in the control group'); added ketogenic diet result (-1.6% vs 6.6% and 5.5%)",
+            "paper.practicalImplications: 'ketogenic and dehydrated training as untested' -> ketogenic studies showed no benefit ('not a single study has demonstrated performance benefits'); dehydrated training rests on one study; caffeine and bicarbonate durations specified ('around 1 h', 'between 1 and 10 min')",
+            "paper.limitations, screeningLimitations: industry tie made explicit ('honorarium from the GSSI, a division of PepsiCo, Inc. for his meeting participation and the writing of this manuscript'); added single dehydrated-training study (Fleming and James, ten recreationally active individuals)"
+          ],
+          "residualConcerns": "Industry-funded supplement article (GSSI/PepsiCo honorarium to the sole author for writing it). Published 2017, so evidence on sleep low, keto and gut training has moved on since.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1406",
+        "synthesisBatch": "pilot-synthesis-batch-84",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 96,
+      "sourceFile": "Personalized fluid and fuel intake for performance optimization in the heat.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 23104,
+        "doi": "10.1016/j.jsams.2021.01.004",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Review built on modelled calculations of sweat losses for hypothetical 50 kg and 90 kg runners at 0.5, 1.0 and 1.5 L/h over 1, 2 and 4 hours in the heat. The authors calculate that dehydration would exceed 2% of body mass in 11 of 18 scenarios with no drinking, and that drinking to thirst, modelled at 50% replacement, gave too much or too little fluid in 14 of 18 scenarios. No participants or measured data are involved.",
+      "limitations": "All values come from assumed sweat rates, body masses and a 50% thirst-replacement assumption, not from measured trials. The source is an accepted manuscript before copyediting, and both authors list commercial affiliations with no conflict-of-interest statement printed.",
+      "synthesisCaution": "Staff could read the modelled hydration deficits as predictions for real runners, when they rest on fixed sweat rates and body masses with no measured sweat loss or thirst.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary, paper.findings: '14 of 18 ... fluid or fuel' merged two results -> 14/18 for fluid and 28/36 for fluid or fuel ('too much or too little drinking would occur ... in 14/18 cases'; 'in 28/36 scenarios some combination of fluid or fuel is not met')",
+            "evidenceSummary: 'report' -> 'calculate' to mark modelled, not measured, results",
+            "screeningLimitations: added commercial affiliations (Sports Science Synergy, LLC; Entrinsic Bioscience, Inc.) and absence of a conflict statement"
+          ],
+          "residualConcerns": "All results are modelled calculations, not measured athlete data. Pre-proof version; final volume and pages not printed.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1407",
+        "synthesisBatch": "pilot-synthesis-batch-84",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

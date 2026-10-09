@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-83-recovery-readiness",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Recovery & Readiness queue positions 8-37. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 8,
+      "sourceFile": "Nutritional and Supplementation Strategies to Prevent and Attenuate Exercise-Induced Muscle Damage- a Brief Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 104773,
+        "doi": "10.1186/s40798-018-0176-6",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Performance",
+        "Nutrition",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Brief narrative review of nutritional and supplementation strategies for exercise-induced muscle damage (soreness, force loss, creatine kinase and inflammatory markers), organised by nutrient source. Strategies were included only if at least two well-controlled studies had tested them, and oxidative stress outcomes were excluded; no sample is reported. The authors describe tart cherry, pomegranate, protease and taurine as promising, caffeine as mainly reducing soreness, vitamin C and E evidence as limited, and n-3 fatty acid and protein results as mixed.",
+      "limitations": "The review describes no systematic search, so study selection cannot be checked, and it excludes oxidative stress outcomes by design. The evidence it summarises comes from small, heterogeneous studies that differ in dose, duration, exercise stimulus and population.",
+      "synthesisCaution": "Staff could read the 'promising' supplements as proven recovery aids, when the review reports that many individual studies show mixed or null effects and that outcomes depend on the damage protocol.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1393",
+        "synthesisBatch": "pilot-synthesis-batch-83",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 12,
+      "sourceFile": "Nutritional interventions to improve sleep in team sport athletes - A narrative review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 53584,
+        "doi": "10.3390/nu13051586",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Nutrition & Hydration",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review with a semi-systematic search of six databases to November 2020, covering nutritional interventions for sleep. It identified four athlete studies (n=6 to 30: two in cyclists, one in basketball players and one in unspecified male athletes) and 16 trials in healthy adults and poor sleepers, covering high-glycemic-index carbohydrate, alpha-lactalbumin, tart cherry juice, kiwifruit, GABA, glycine and L-serine.",
+      "limitations": "Only four athlete studies were found, each with 6 to 30 participants, and most of the evidence comes from healthy adults and poor sleepers. The authors state that efficacy and real-world effectiveness in elite athletes is unclear.",
+      "synthesisCaution": "Staff may expect the non-athlete sleep gains, such as about 55 minutes more total sleep from kiwifruit or alpha-lactalbumin, in their own athletes, when the athlete data are four small studies with mixed results.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: 'mostly male cyclists and basketball players' -> sports per Table 1 (two cycling, one basketball, one unspecified) and the general-population trial count (6 healthy + 10 poor-sleeper rows)",
+            "limitations: expanded the attribution errors: text 'two in cycling [21,22] and another in basketball [23]' vs Table 1 (Daniel [22] 'State-level male basketball players', Shamloo [23] 'Male athletes', MacInnis [24] 'Elite male and female track cyclists'); Table 2 'Daniel, 2019 [24]' and 'Inagawa, 2006 [30]'; tart cherry text cites [31] for healthy individuals and [27] for insomnia, the reverse of Table 1",
+            "findings: added the two athlete studies the draft omitted (MacInnis null, n=6; Shamloo beetroot PSQI improvement, n=30) and the alpha-lactalbumin non-athlete result",
+            "practicalImplications: added that the recommended 20-40 g alpha-lactalbumin 2 h pre-bed matches the athlete trial that found no effect ('MacInnis ... 40 g ... 2 h pre-bed ... no change')"
+          ],
+          "residualConcerns": "Minor text vs table number mismatches remain in section 3.2 (SOL range 5.6-18.9 min and very-low-carbohydrate SOL 5.6 min in the text vs 8.5 and 5.4 min in Table 2). studyDesign kept as Systematic Review / Meta-analysis under the library rule (database search described), although the authors call it a narrative review.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1394",
+        "synthesisBatch": "pilot-synthesis-batch-83",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 14,
+      "sourceFile": "Nutritional modulation of sleep latency, duration, and efficiency - A randomized, repeated-measures, double-blind deception study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 57907,
+        "doi": "10.1249/MSS.0000000000003040",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized, double-blind, crossover deception trial in 16 healthy adults (9 males, 7 females, age 24 +/- 3 years) without diagnosed sleep disorders, comparing 3 nights of a blend (1000 mg tryptophan, 3000 mg glycine, 300 mg magnesium, 220 mg tart cherry powder, 200 mg L-theanine) taken 2 h before bed against a cellulose placebo, with diet, activity and light exposure standardized. Versus placebo, actigraphy sleep onset latency fell by 24 +/- 25 min (P = 0.002), total sleep time rose by 22 +/- 32 min (P = 0.01) and sleep efficiency rose by 2.4% (P = 0.03), with lower morning sleepiness; wake after sleep onset and time in bed did not differ.",
+      "limitations": "Participants were not athletes, the sample was small (n = 16), each condition lasted only 3 nights with a 4-day gap, and sleep was measured by actigraphy rather than polysomnography. The blend design cannot show which ingredient drove the effect, and the study was funded by Science in Sport, for which one author consults.",
+      "synthesisCaution": "Staff may expect the same sleep gains in athletes during heavy training, travel or night competition, when the study tested 3 nights in non-athlete young adults and measured no performance or recovery outcome.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: EXCLUDE (c) -> INCLUDE; the trial is a sleep-recovery nutrition study in an ACSM sport journal with diet, activity and exercise logging, and the library rules anticipate non-athlete samples by providing 'Adult / Recreational' for 'recreationally active adults, patients, staff or students'; sleep nutrition is a recovery practice staff use with athletes",
+            "all taxonomy, summary and paper fields filled from the text: design 'randomized, repeated-measures crossover and double-blind deception design', n = 16 (9 males, 7 females), results SOL -24 +/- 25 min P = 0.002, TST +22 +/- 32 min P = 0.01, SE +2.4% P = 0.03",
+            "citation: 'Med. Sci. Sports Exerc., Vol. 55, No. 2, pp. 289-300, 2023' and DOI 10.1249/MSS.0000000000003040 printed on page 289",
+            "populations: Adult / Recreational only; no athlete sex or health tags because participants were not athletes",
+            "limitations: noted industry funding ('funded by a research grant from Science in Sport (SiS plc)'; 'James P. Morton is a consultant for SiS plc')"
+          ],
+          "residualConcerns": "Relevance is a judgement call: the sample is not athletes and the athletic link is discussion only, so a reviewer could reasonably keep EXCLUDE (c). Sports tag 'Mixed / General Sport' is a placeholder because no sport applies. Industry funding of the tested blend.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1395",
+        "synthesisBatch": "pilot-synthesis-batch-83",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 28,
+      "sourceFile": "Optimizing athletes' recovery and performance - A review of vibration therapy, compression garments, and massage.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text. The text carries only the ACSM code 1537-8918/2406/177-185 and no DOI appears anywhere. Everything else is readable and complete, so the record is filled in and the operator may verify the DOI externally.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: 'Professional / Elite' and 'Adult / Recreational' alongside Mixed implied level-specific evidence -> 'Mixed / Unspecified' only ('ranged in athletic ability levels from sedentary to novice to amateur and professional')",
+            "screeningLimitations: 'narrative synthesis' -> describes vote counting by significance and no adverse-event extraction",
+            "paper.limitations: 70 vs 85 framed as a contradiction -> Figure 2 explains extraction from reviews, plus overlapping modality lists (ref 9 under vibration and massage); added Discussion reference-count mismatches and the unsupported 'all modalities reviewed seem safe' conclusion, with counter-examples (refs 34,57 slower sprints; ref 74 worse vertical jump)",
+            "paper.practicalImplications: authors' speculation 'may be of benefit to the athlete to return to training sooner' stated as plausible benefit -> flagged as untested; added supporting counts",
+            "paper.athleteDev: 'only to ease soreness' overstated compression (16 of 29) -> soreness signal mainly vibration and massage; added 2 of 11 compression studies with worse sprints"
+          ],
+          "residualConcerns": "DOI not printed; operator should verify externally. Design coded Systematic Review / Meta-analysis per library rule for a described database search, but the review is a vote-count synthesis without appraisal and its Discussion uses 'strong evidence' language for massage that the method cannot grade.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 37,
+      "sourceFile": "Overview of the impact of sleep monitoring on optimal performance, immune system function and injury risk reduction in athletes - A narrative review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 18,
+        "extractedCharacters": 54100,
+        "doi": "10.1177/00368504231206265",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of sleep in athletes covering sleep physiology, the effects of sleep loss on performance, immune function and injury risk, sleep monitoring tools (questionnaires, diaries, actigraphy and polysomnography), and nutrition and sleep-hygiene strategies. No search strategy, inclusion criteria or sample is described for the evidence base.",
+      "limitations": "The paper describes no search or selection method, so its evidence base cannot be checked. Several specific claims are attached to references whose titles do not match them, and some passages are garbled, so its numbers should not be used without checking the original studies.",
+      "synthesisCaution": "Staff could quote the review's injury and performance figures (for example a 65% higher injury risk with under 8 hours of sleep) as established effects, when the references attached to them do not match the claims and the original studies are not identified.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: presented the 65% injury, 1.7-times adolescent injury and sleep-extension endurance figures as cited results -> flagged as not established because the attached references do not match (ref 22 'Promises and challenges in the use of consumer-grade devices for sleep monitoring'; ref 26 'Consumer sleep tracking devices') or are missing (1.7 times has no citation); led with the sourced actigraphy validity data",
+            "paper.limitations: added ref 23 mismatch ('Increased circulating levels of betatrophin in individuals with long-standing type 1 diabetes' cited for a soccer sleep and injury claim) and refs 43/44 for sex differences; listed garbled passages ('octopography', 'I require 12 hours of sleep every night', 'half an afternoon')",
+            "paper.tldr, screeningLimitations, synthesisCaution: reframed so mismatched figures are not presented as established",
+            "paper.practicalImplications: 'avoiding caffeine late in the day' -> close to bedtime, as printed; added caution against using the review's numbers for policy",
+            "confidence: medium -> low"
+          ],
+          "residualConcerns": "Many citations in this review do not match the claims they support (refs 1, 22, 23, 26, 33, 37, 43, 44 among others), and several sentences are garbled. A reviewer should decide whether the record is worth publishing at all; if kept, no numeric claim from it should be quoted without the original source.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1396",
+        "synthesisBatch": "pilot-synthesis-batch-83",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}

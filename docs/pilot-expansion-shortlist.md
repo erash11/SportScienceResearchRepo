@@ -10,16 +10,16 @@ This queue contains 85 unrepresented, content-deduplicated local PDFs: 12 alloca
 
 1. **The Association Between Age of First Exposure to American Football at a Young Age and Later-Life Health Issues in Healthy, Community-Dwelling Adults** — Other — TITLE SCREENED<br>
    `The Association Between Age of First Exposure to American Football at a Young Age and Later-Life Health Issues in Healthy, Community-Dwelling Adults.pdf`
-2. **Performance effects of functional knee brace removal and prolonged use in healthy male athlete - Lower extremity power, acceleration, speed, and agility** — Other — TITLE SCREENED<br>
-   `Performance effects of functional knee brace removal and prolonged use in healthy male athlete - Lower extremity power, acceleration, speed, and agility.pdf`
-3. **Skeletal muscle properties and vascular function do not differ between healthy, young vegan and omnivorous men** — Other — TITLE SCREENED<br>
+2. **Skeletal muscle properties and vascular function do not differ between healthy, young vegan and omnivorous men** — Other — TITLE SCREENED<br>
    `Skeletal muscle properties and vascular function do not differ between healthy, young vegan and omnivorous men.pdf`
-4. **Open fractures in National Football League athletes - Analyzing performance and return to sport** — Other — TITLE SCREENED<br>
-   `Open fractures in National Football League athletes - Analyzing performance and return to sport.pdf`
-5. **Parametric modeling and analysis of NFL run plays** — Other — TITLE SCREENED<br>
-   `Parametric modeling and analysis of NFL run plays.pdf`
-6. **Pectoralis major ruptures in the NFL - Incidence, RTP, and Performance Analysis** — Other — TITLE SCREENED<br>
-   `Pectoralis major ruptures in the NFL - Incidence, RTP, and Performance Analysis.pdf`
+3. **Ten word list performance in healthy athletes and athletes at 3 to 5 days following concussion** — Other — TITLE SCREENED<br>
+   `Ten word list performance in healthy athletes and athletes at 3 to 5 days following concussion.pdf`
+4. **Positional movement demands during NFL football games - A 3-year review** — Other — TITLE SCREENED<br>
+   `Positional movement demands during NFL football games - A 3-year review.pdf`
+5. **Return to play and performance after surgical repair of distal biceps tendon ruptures in NFL athletes** — Other — TITLE SCREENED<br>
+   `Return to play and performance after surgical repair of distal biceps tendon ruptures in NFL athletes.pdf`
+6. **Return to play, performance, and economic analysis of National Football League players after Lisfrance injury** — Other — TITLE SCREENED<br>
+   `Return to play, performance, and economic analysis of National Football League players after Lisfrance injury.pdf`
 7. **Terminology and Interpretation Across Neuromuscular Profiling Methods - A Systematic Review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `Terminology and Interpretation Across Neuromuscular Profiling Methods - A Systematic Review.pdf`
 8. **The acute demands of repeated sprint training on physiological, neuromuscular, perceptual and performance outcomes in team sport athletes - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
@@ -89,12 +89,12 @@ This queue contains 85 unrepresented, content-deduplicated local PDFs: 12 alloca
 
 ## Recovery & Readiness
 
-37. **Objective measures of strain and subjective muscle soreness differ between positional groups and season phases in American college football** — Other — TITLE SCREENED<br>
-   `Objective measures of strain and subjective muscle soreness differ between positional groups and season phases in American college football.pdf`
-38. **Recovery practices in Division 1 collegiate athletes in North America** — Other — TITLE SCREENED<br>
+37. **Recovery practices in Division 1 collegiate athletes in North America** — Other — TITLE SCREENED<br>
    `Recovery practices in Division 1 collegiate athletes in North America.pdf`
-39. **Season long heart rate variability tracking reveals autonomic imbalance in American college football players** — Other — TITLE SCREENED<br>
+38. **Season long heart rate variability tracking reveals autonomic imbalance in American college football players** — Other — TITLE SCREENED<br>
    `Season long heart rate variability tracking reveals autonomic imbalance in American college football players.pdf`
+39. **Sleep deprived or concussed - The acute impact of self-reported insufficient sleep in college athletes** — Other — TITLE SCREENED<br>
+   `Sleep deprived or concussed - The acute impact of self-reported insufficient sleep in college athletes.pdf`
 40. **Predicting Future Perceived Wellness in Professional Soccer- The Role of Preceding Load and Wellness** — Other — TITLE SCREENED<br>
    `Predicting Future Perceived    Wellness in Professional Soccer- The Role of Preceding Load and    Wellness.pdf`
 41. **Routine, routine, routine - Sleep regularity and its association with sleep metrics in professional rugby union athletes** — Other — TITLE SCREENED<br>
@@ -103,43 +103,43 @@ This queue contains 85 unrepresented, content-deduplicated local PDFs: 12 alloca
    `Sleep architecture is altered with travel and matches in professional rugby union players.pdf`
 43. **The use of recovery strategies in professional soccer - A worldwide survey** — Other — TITLE SCREENED<br>
    `The use of recovery strategies in professional soccer - A worldwide survey.pdf`
-44. **Overtraining in Resistance Exercise- An Exploratory Systematic Review and Methodological Appraisal of the Literature** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `Overtraining in Resistance   Exercise- An Exploratory Systematic Review and Methodological Appraisal of   the Literature.pdf`
-45. **Salivary biomarkers of tactical athlete readiness - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+44. **Salivary biomarkers of tactical athlete readiness - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `Salivary biomarkers of tactical athlete readiness - A systematic review.pdf`
-46. **Sleep Interventions Designed to Improve Athletic Performance and Recovery- A Systematic Review of Current Approaches** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+45. **Sleep Interventions Designed to Improve Athletic Performance and Recovery- A Systematic Review of Current Approaches** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `Sleep Interventions Designed to                        Improve Athletic Performance and Recovery- A   Systematic        Review    of         Current    Approaches.pdf`
-47. **The impact of dietary factors on the sleep of athletically trained populations - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+46. **The impact of dietary factors on the sleep of athletically trained populations - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `The impact of dietary factors on the sleep of athletically trained populations - A systematic review.pdf`
-48. **The influence of exercise-induced fatigue on inter-limb asymmetries - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+47. **The influence of exercise-induced fatigue on inter-limb asymmetries - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `The influence of exercise-induced fatigue on inter-limb asymmetries - A systematic review.pdf`
+48. **Validity of the Elite HRV Smart Phone app for examining heart rate variability in a field based setting** — Other — TITLE SCREENED<br>
+   `Validity of the Elite HRV Smart      Phone app for examining heart rate variability in a field based      setting.pdf`
 
 ## Nutrition & Hydration
 
-49. **One week of single leg immobilization lowers muscle connective protein synthesis rates in healthy, young adults** — Other — TITLE SCREENED<br>
-   `One week of single leg immobilization lowers muscle connective protein synthesis rates in healthy, young adults.pdf`
-50. **Sports Dietitians Australia Position Statement- Nutrition for Exercise in Hot Environments** — Consensus / Position Statement — TITLE SCREENED<br>
+49. **Sports Dietitians Australia Position Statement- Nutrition for Exercise in Hot Environments** — Consensus / Position Statement — TITLE SCREENED<br>
    `Sports Dietitians Australia Position Statement- Nutrition for Exercise in Hot Environments.pdf`
-51. **Rise of intravenous nutrition products among professional team sport athletes - Reasons to be concerned** — Other — TITLE SCREENED<br>
+50. **Rise of intravenous nutrition products among professional team sport athletes - Reasons to be concerned** — Other — TITLE SCREENED<br>
    `Rise of intravenous nutrition products among professional team sport athletes - Reasons to be concerned.pdf`
-52. **Seasonal changes in free 25-(OH)D and vitamin D metabolite ratios and their relationship with psychophysical stress markers in male professional football players** — Other — TITLE SCREENED<br>
+51. **Seasonal changes in free 25-(OH)D and vitamin D metabolite ratios and their relationship with psychophysical stress markers in male professional football players** — Other — TITLE SCREENED<br>
    `Seasonal changes in free 25-(OH)D and vitamin D metabolite ratios and their relationship with psychophysical stress markers in male professional football players.pdf`
-53. **The new challenge of sports nutrition - Accepting insect food as dietary supplements in professional athletes** — Other — TITLE SCREENED<br>
+52. **The new challenge of sports nutrition - Accepting insect food as dietary supplements in professional athletes** — Other — TITLE SCREENED<br>
    `The new challenge of sports nutrition - Accepting insect food as dietary supplements in professional athletes.pdf`
-54. **Summary of the 2024 Professionals in Nutrition for Exercise and Sport “10 Questions -10 Experts” Session—Hot Topics for the Paris Olympic Games** — Other — TITLE SCREENED<br>
+53. **Summary of the 2024 Professionals in Nutrition for Exercise and Sport “10 Questions -10 Experts” Session—Hot Topics for the Paris Olympic Games** — Other — TITLE SCREENED<br>
    `Summary of the 2024 Professionals in Nutrition for Exercise and Sport “10 Questions -10 Experts” Session—Hot Topics for the Paris Olympic Games.pdf`
-55. **Nutritional and Supplementation Strategies to Prevent and Attenuate Exercise-Induced Muscle Damage- a Brief Review** — Other — TITLE SCREENED<br>
-   `Nutritional and Supplementation Strategies to Prevent and Attenuate Exercise-Induced Muscle Damage- a Brief Review.pdf`
-56. **Nutritional priorities, practices and preferences of athletes and active individuals in the context of new product development in the sports nutrition sector** — Other — TITLE SCREENED<br>
-   `Nutritional priorities, practices and preferences of athletes and active individuals in the context of new product development in the sports nutrition sector.pdf`
-57. **Periodized Nutrition for Athletes** — Other — TITLE SCREENED<br>
-   `Periodized Nutrition for        Athletes.pdf`
-58. **Post-exercise rehydration in athletes - Effects of sodium and carbohydrate in commercial hydration beverages** — Other — TITLE SCREENED<br>
+54. **Post-exercise rehydration in athletes - Effects of sodium and carbohydrate in commercial hydration beverages** — Other — TITLE SCREENED<br>
    `Post-exercise rehydration in athletes - Effects of sodium and carbohydrate in commercial hydration beverages.pdf`
-59. **Prevalence of adulteration in dietary supplements and recommendations for safe supplement practices in sport** — Other — TITLE SCREENED<br>
+55. **Prevalence of adulteration in dietary supplements and recommendations for safe supplement practices in sport** — Other — TITLE SCREENED<br>
    `Prevalence of adulteration in dietary supplements and recommendations for safe supplement practices in sport.pdf`
-60. **Protection Before Impact- the Potential Neuroprotective Role of Nutritional Supplementation in Sports-Related Head Trauma** — Other — TITLE SCREENED<br>
+56. **Protection Before Impact- the Potential Neuroprotective Role of Nutritional Supplementation in Sports-Related Head Trauma** — Other — TITLE SCREENED<br>
    `Protection Before Impact- the                        Potential Neuroprotective Role of Nutritional         Supplementation    in             Sports-Related Head Trauma.pdf`
+57. **Quality control of protein supplements - A review** — Other — TITLE SCREENED<br>
+   `Quality control of protein supplements - A review.pdf`
+58. **Risk associated with the use of selected ingredients in food supplements** — Other — TITLE SCREENED<br>
+   `Risk associated with the use of selected ingredients in food supplements.pdf`
+59. **Safety of beta-alanine supplementation in humans - A narrative review** — Narrative Review — TITLE SCREENED<br>
+   `Safety of beta-alanine supplementation in humans - A narrative review.pdf`
+60. **Seven points for athletes to consider before using a dietary supplement** — Other — TITLE SCREENED<br>
+   `Seven points for athletes to consider before using a dietary supplement.pdf`
 
 ## Brain Health & Psychology
 
@@ -151,10 +151,10 @@ This queue contains 85 unrepresented, content-deduplicated local PDFs: 12 alloca
    `Repetitive head-injury exposure and later-in-life cognitive and emotional outcomes among former collegiate football players - A CLEAATS investigation.pdf`
 64. **Tackle characteristics associated with concussion in elite men's rugby union - Unpicking the differences between tacklers and ball-carriers** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
    `Tackle characteristics associated with concussion in elite men's rugby union - Unpicking the differences between tacklers and ball-carriers.pdf`
-65. **Observation of risk for concussion following 'lowering the helmet to initiate contact' penalities in the NFL** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
-   `Observation of risk for concussion following 'lowering the helmet to initiate contact' penalities in the NFL.pdf`
-66. **Observation of risk for concussion following ‘lowering the helmet to initiate contact’ penalties in the NFL** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
-   `Observation of risk for concussion following ‘lowering the helmet to initiate contact’ penalties in the NFL.pdf`
+65. **Playing Rule Article Eight Decreases the Rate of Sport Related Concussion in NFL Players Over Two Seasons** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+   `Playing Rule Article Eight Decreases the Rate of Sport Related Concussion in NFL Players Over Two Seasons.pdf`
+66. **Subsequent musculoskeletal injury after concussion in National Football League players** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+   `Subsequent musculoskeletal injury after concussion in National Football League players.pdf`
 67. **The influence of psychological factors on the incidence and severity of sports-related concussions - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `The influence of psychological factors on the incidence and severity of sports-related concussions - A systematic review.pdf`
 68. **Phytochemicals for Improving Aspects of Cognitive Function and Psychological State Potentially Relevant to Sports Performance** — Other — TITLE SCREENED<br>

@@ -1,0 +1,1030 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-80-training-performance",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Training & Performance queue positions 1-95. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 1,
+      "sourceFile": "Nordic hamstring exercise training induces improved lower-limb swing phase mechanics and sustained strength preservation in sprinters.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 45918,
+        "doi": "10.1111/sms.13909",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Track & Field"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Single-group longitudinal study with repeated measures in 12 male regional-to-national class sprinters (mean age 21.3 years). A standardized 4-week high-intensity Nordic Hamstring Exercise block (6 assisted and 6 unassisted sessions, compliance 92-100%) raised camera-based isokinetic peak eccentric hamstring moment at 150 deg/s by 15.5% (d = 1.14) and sprint velocity by 1.4% (d = 0.26), with most swing-phase kinematic and kinetic changes small. Hamstring function (+6% to +14%) and thigh muscle balance (+8% to +10%) remained significantly above baseline at the 3-month retention test.",
+      "limitations": "The design has no control group, so usual sprint and resistance training, learning effects and the repeated-bout effect cannot be separated from the NHE effect. With 12 participants of mixed training history, the correlations between percentage changes are imprecise and do not show causation.",
+      "synthesisCaution": "Staff could read the swing-phase correlations as evidence that NHE training makes sprinters faster, but the sprint velocity change was small and its association with the isokinetic changes was not significant (P = .306 in Table 2).",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: placeholder volume and pages '2021;00:1-13' removed (header prints 'Scand J Med Sci Sports. 2021;00:1-13').",
+            "paper.findings: 'Changes in isokinetic measures' narrowed to gains in peak eccentric hamstring moment, the parameter with r = .909 and .849 in Table 2."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1365",
+        "synthesisBatch": "pilot-synthesis-batch-80",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 20,
+      "sourceFile": "Observation of risk for concussion following ‘lowering the helmet to initiate contact’ penalties in the NFL.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "Duplicate publication: same article and DOI as Q19 under a second filename; excluded to avoid a duplicate record.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: INCLUDE -> EXCLUDE as a duplicate; text/Q20.txt and text/Q19.txt are byte-identical (same title, authors and 'https://doi.org/10.1016/j.jorep.2024.100347').",
+            "taxonomy, summary and paper fields set to null; the full record is kept under Q19."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 22,
+      "sourceFile": "On media and messaging - Fighting fear with facts as the science of chronic traumatic encephalopathy evolves.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial or commentary: a two-page British Journal of Sports Medicine 'Discussion' piece by one author on media coverage of CTE. It reports no original methods and no structured review of evidence; it cites a few sources to support its arguments.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 27,
+      "sourceFile": "Optimizing acute static stretching protocols - Balancing range of motion and strength performance.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial or commentary: the article is labelled 'Invited Commentary' in Current Sports Medicine Reports. It discusses duration, intensity and timing of static stretching by citing selected studies, with no stated search method, no structured evidence review and no original methods.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "No DOI is printed in the text either; exclusion stands regardless.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 30,
+      "sourceFile": "Oral fluoroquinolones and the risk of Achilles tendon rupture.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) Not athlete evidence: a Danish nationwide nested case-control study of adults aged 30 to 100 (28,806 Achilles tendon lesion cases, 864,090 controls) comparing oral fluoroquinolone with amoxicillin exposure, with no athlete or sport sample. It is also published as a 'Letter to the editor' (article in press) that summarizes its methods briefly and refers to a previous publication for details.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: led with (b) and said the letter lacked methods -> leads with (c); the letter does describe original nested case-control methods ('We conducted a nationwide nested case-control study including subjects aged 30-100 years'), so (b) alone would not apply",
+            "exclusionReason: 'register cohort' -> nested case-control with 28,806 cases and 864,090 controls"
+          ],
+          "residualConcerns": "Borderline: this is a research letter with original data on a medication risk relevant to sports medicine prescribing (60-day HR 3.60, 95% CI 2.09 to 6.19 vs amoxicillin). If the library admits non-athlete pharmacoepidemiology with athlete-health relevance, it could be INCLUDE as a Case-control Study (own DOI printed: 10.1016/j.jshs.2024.04.001).",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 31,
+      "sourceFile": "Orthopedic Patients Are Highly Amenable to Cannabis-Based Products for the Treatment of Musculoskeletal Pain.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) Not relevant to athletes, sport, exercise performance or athlete health: a cross-sectional survey of 182 patients of an orthopedic sports medicine clinic (mean age 47.3, 53% female) about attitudes to THC and CBD products for musculoskeletal pain. The paper does not describe an athlete sample or sport participation. Borderline on (c) because the clinic is sports medicine, so the operator may wish to check.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 35,
+      "sourceFile": "Overreaching and overtraining in strength sports and resistance training A scoping review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 89651,
+        "doi": "10.1080/02640414.2020.1763077",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Other Sport",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Professional / Elite",
+        "Youth / Adolescent",
+        "Adult / Recreational",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Scoping review of 47 studies on overreaching (OR) and overtraining syndrome (OTS) in strength sports and resistance training, found by searching SPORTDiscus, Scopus and Web of Science in June 2019 (1170 records). Forty (85.1%) were observation or intervention studies, with 1 to 28 participants in the strength-sport theme and 1 to 43 in the resistance-training theme, plus 6 reviews and 1 post-hoc analysis. The authors report that short-term high-volume or high-intensity training can produce functional overreaching, that chronic high loads can produce non-functional overreaching, and that there is minimal evidence of true OTS.",
+      "limitations": "The review maps a heterogeneous literature of small studies and does not pool effects. Most strength-sport evidence comes from weightlifters, and no powerlifting, strongman or sprinting studies were included in the strength-sport theme.",
+      "synthesisCaution": "Staff could read planned overreaching as a safe, controlled stimulus, when the review states that no current test identifies the point at which functional overreaching becomes non-functional.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: added Professional / Elite, Youth / Adolescent and Adult / Recreational (elite and junior weightlifters plus recreationally trained men in Tables 1 and 2)",
+            "evidenceSummary: '1 to 43 participants' for all studies -> 1 to 28 (theme A) and 1 to 43 (theme B), and noted 6 reviews and 1 post-hoc analysis ('Participant cohort sizes ranged from 1 to 28 in theme A and 1-43 in theme B')",
+            "paper.findings: added the throwing study, the 2 to 8 week resumption after 10 x 1-RM and the authors' note that the protocol is 'unlikely to reflect RT practice'",
+            "paper.limitations: 'does not give a formal quality appraisal' -> 'no risk-of-bias appraisal is described'; added single-author concentration (23.5%)",
+            "paper.practicalImplications: 'Coaches can use short-term planned overreaching ... to produce FOR' -> described as common practice that 'often leads to FOR' without a known transition threshold"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1366",
+        "synthesisBatch": "pilot-synthesis-batch-80",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 36,
+      "sourceFile": "Overtraining in Resistance   Exercise- An Exploratory Systematic Review and Methodological Appraisal of   the Literature.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 58734,
+        "doi": "10.1007/s40279-019-01242-2",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Other Sport",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Systematic review of 22 studies (14 RCTs, 2 non-randomised controlled trials, 6 uncontrolled trials) that tried to induce overreaching or overtraining through resistance exercise in healthy participants. Searches of PubMed, Web of Science and SPORTDiscus ran from inception to June 2019. Twelve studies reported a performance decline, 8 of which included follow-up performance testing, and 10 reported no decline.",
+      "limitations": "Only 8 of the 22 studies combined a performance decline with follow-up testing, so FOR, NFOR or OTS could not be confirmed in most of the evidence. The authors could not perform a meta-analysis because methods and outcomes were heterogeneous, and most included studies came from one research group.",
+      "synthesisCaution": "Staff could read the included overload protocols as validated routes to overtraining, when the authors state that few studies established overreaching or overtraining and that no biomarker other than a sustained performance decrease has been validated.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed Healthy Athletes, Male Athletes and Female Athletes -> Mixed / Unspecified, Adult / Recreational; most included samples are resistance-trained or recreationally trained men, not athletes (Table 1)",
+            "paper.findings: 'Recovery times ... ranged from days to 8 weeks' -> listed reported return times by study and stated the Margonis conflict as printed (Table 2: '1RM strength returned to baseline values following 3 weeks of recovery'; Discussion: 'not restored following a 6-week taper period. These results suggest that athletes developed the OTS')",
+            "paper.rtp: 'Recovery times ... ranged from 2 days to 8 weeks' -> 'Follow-up periods ranged from 2 days to 8 weeks' (performance was 'not restored to baseline values following 2 days rest')"
+          ],
+          "residualConcerns": "Margonis et al. time course is printed two ways (3 weeks to baseline in Table 2; not restored after a 6-week taper in the Discussion); the original study should be checked before citing it as an OTS case. The text also says nine studies without performance decline appear in Table S4 although ten are listed in Fig. 2. Volume and pages are not printed.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1367",
+        "synthesisBatch": "pilot-synthesis-batch-80",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 42,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - April 2024.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the 'Pro Football Sports Science Research Update' newsletter (April 2024), carrying an Infinite Athlete footer, that opens with a citation list of 33 papers by other authors and then reprints each paper's published abstract. Any Key Points, practical-application or take-home sections in it belong to those reprinted abstracts; the newsletter adds no original methods, no review method of its own and no commentary, so it is not an eligible article.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: paper count and description corrected -> 33 papers counted from the opening citation list; content described as reprinted published abstracts",
+            "confidence: medium -> high (format unambiguous)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 43,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - April 2025.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the 'Pro Football Sports Science Research Update' newsletter (April 2025), carrying an Infinite Athlete footer, that opens with a citation list of 31 papers by other authors and then reprints each paper's published abstract. Any Key Points, practical-application or take-home sections in it belong to those reprinted abstracts; the newsletter adds no original methods, no review method of its own and no commentary, so it is not an eligible article.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: paper count and description corrected -> 31 papers counted from the opening citation list; content described as reprinted published abstracts",
+            "confidence: medium -> high (format unambiguous)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 44,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - April 2026.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the 'Pro Football Sports Science Research Update' newsletter (April 2026) that summarises 31 papers by other authors, each under the digest's own 'Purpose of the Study', 'Key Findings' and 'Practical Applications for NFL Sports Medicine & Performance Staff' headings. These are unattributed secondary summaries and opinion with no original methods and no described search or review method, so it is not an eligible article. Unlike other issues, this text carries no Infinite Athlete branding and no opening citation list.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: 'roughly 50' papers and 'branded Infinite Athlete' were wrong -> 31 papers (31 'Purpose of the Study/Article' sections, no opening list) and no Infinite Athlete text appears in this issue; NFL practical applications are confirmed as digest-written",
+            "confidence: medium -> high (format unambiguous)"
+          ],
+          "residualConcerns": "Digest-written practical advice (for example HRV-guided return-to-play clearance) is opinion, not evidence; individual cited papers would need their own source PDFs to enter the library.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 45,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - August 2024.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the 'Pro Football Sports Science Research Update' newsletter (August 2024), carrying an Infinite Athlete footer, that opens with a citation list of 32 papers by other authors and then reprints each paper's published abstract. Any Key Points, practical-application or take-home sections in it belong to those reprinted abstracts; the newsletter adds no original methods, no review method of its own and no commentary, so it is not an eligible article.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: paper count and description corrected -> 32 papers counted from the opening citation list; content described as reprinted published abstracts",
+            "confidence: medium -> high (format unambiguous)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 46,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - August 2025.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the 'Pro Football Sports Science Research Update' newsletter (August 2025), carrying an Infinite Athlete footer, that opens with a citation list of 30 papers by other authors and then reprints each paper's published abstract. Any Key Points, practical-application or take-home sections in it belong to those reprinted abstracts; the newsletter adds no original methods, no review method of its own and no commentary, so it is not an eligible article.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: paper count and description corrected -> 30 papers counted from the opening citation list; content described as reprinted published abstracts",
+            "exclusionReason: removed claim that the newsletter adds NFL practical applications -> the 'Practical Applications'/'Key Points' sections found belong to reprinted abstracts (e.g. JSCR and Sports Medicine formats)",
+            "confidence: medium -> high (format unambiguous)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 47,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - December 2023.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the 'Pro Football Sports Science Research Update' newsletter (December 2023), carrying an Infinite Athlete footer, that opens with a citation list of 22 papers by other authors and then reprints each paper's published abstract. Any Key Points, practical-application or take-home sections in it belong to those reprinted abstracts; the newsletter adds no original methods, no review method of its own and no commentary, so it is not an eligible article.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: paper count and description corrected -> 22 papers counted from the opening citation list; content described as reprinted published abstracts",
+            "exclusionReason: removed claim that the newsletter adds NFL practical applications -> the 'Practical Applications'/'Key Points' sections found belong to reprinted abstracts (e.g. JSCR and Sports Medicine formats)",
+            "confidence: medium -> high (format unambiguous)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 48,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - December 2024.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the 'Pro Football Sports Science Research Update' newsletter (December 2024), carrying an Infinite Athlete footer, that opens with a citation list of 27 papers by other authors and then reprints each paper's published abstract. Any Key Points, practical-application or take-home sections in it belong to those reprinted abstracts; the newsletter adds no original methods, no review method of its own and no commentary, so it is not an eligible article.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: paper count and description corrected -> 27 papers counted from the opening citation list; content described as reprinted published abstracts",
+            "exclusionReason: removed claim that the newsletter adds NFL practical applications -> the 'Practical Applications'/'Key Points' sections found belong to reprinted abstracts (e.g. JSCR and Sports Medicine formats)",
+            "confidence: medium -> high (format unambiguous)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 49,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - December 2025.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the Infinite Athlete 'Pro Football Sports Science Research Update' newsletter: a digest listing about 25 papers by other authors, each reprinted with that paper's own abstract or a short summary. The issue reports no original data or methods of its own and no structured review method (no search, selection or appraisal), so it is not an eligible article type. Individual listed papers would need their own source files to be screened.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: paper count overstated (about 30) -> about 25 (26 entries in the opening list); reason now also states no structured review method and that the items are other authors' abstracts.",
+            "identityCheck: added Infinite Athlete footer evidence and noted that the PFATS/PFPCA/PFRDS names do not appear in the text."
+          ],
+          "residualConcerns": "Decision EXCLUDE (b) confirmed. Several listed papers (football-relevant RCTs, cohorts and reviews) may merit separate screening if their own PDFs are sourced.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 50,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - February 2024.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the Infinite Athlete 'Pro Football Sports Science Research Update' newsletter: a digest listing about 40 papers by other authors, each reprinted with that paper's own abstract or a short summary. The issue reports no original data or methods of its own and no structured review method (no search, selection or appraisal), so it is not an eligible article type. Individual listed papers would need their own source files to be screened.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: paper count overstated (about 100) -> about 40 (42 entries in the opening list); reason now also states no structured review method and that the items are other authors' abstracts.",
+            "identityCheck: added Infinite Athlete footer evidence and noted that the PFATS/PFPCA/PFRDS names do not appear in the text."
+          ],
+          "residualConcerns": "Decision EXCLUDE (b) confirmed. Several listed papers (football-relevant RCTs, cohorts and reviews) may merit separate screening if their own PDFs are sourced.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 51,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - February 2025.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the Infinite Athlete 'Pro Football Sports Science Research Update' newsletter: a digest listing about 35 papers by other authors, each reprinted with that paper's own abstract or a short summary. The issue reports no original data or methods of its own and no structured review method (no search, selection or appraisal), so it is not an eligible article type. Individual listed papers would need their own source files to be screened.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: paper count overstated (about 100) -> about 35 (35 entries in the opening list); reason now also states no structured review method and that the items are other authors' abstracts.",
+            "identityCheck: added Infinite Athlete footer evidence and noted that the PFATS/PFPCA/PFRDS names do not appear in the text."
+          ],
+          "residualConcerns": "Decision EXCLUDE (b) confirmed. Several listed papers (football-relevant RCTs, cohorts and reviews) may merit separate screening if their own PDFs are sourced.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 52,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - February 2026.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the Infinite Athlete 'Pro Football Sports Science Research Update' newsletter: a digest listing about 35 papers by other authors, each reprinted with that paper's own abstract or a short summary. Several entries replace the abstract with unsigned summaries framing the study's relevance to the NFL (for example the cleat outsole and ECG diversity entries). The issue reports no original data or methods of its own and no structured review method (no search, selection or appraisal), so it is not an eligible article type. Individual listed papers would need their own source files to be screened.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: paper count overstated (about 90) -> about 35 (35 entries in the opening list); reason now also states no structured review method and that the items are other authors' abstracts. Commentary wording made specific: the NFL framing appears inside unsigned entry summaries, not as separate articles.",
+            "identityCheck: added Infinite Athlete footer evidence and noted that the PFATS/PFPCA/PFRDS names do not appear in the text."
+          ],
+          "residualConcerns": "Decision EXCLUDE (b) confirmed. Several listed papers (football-relevant RCTs, cohorts and reviews) may merit separate screening if their own PDFs are sourced.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 53,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - January 2024.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the Infinite Athlete 'Pro Football Sports Science Research Update' newsletter: a digest listing about 35 papers by other authors, each reprinted with that paper's own abstract or a short summary. Some listed items are themselves opinion or perspective pieces from other journals (for example 'Where to next for hamstrings?' in BJSM), reproduced as excerpts. The issue reports no original data or methods of its own and no structured review method (no search, selection or appraisal), so it is not an eligible article type. Individual listed papers would need their own source files to be screened.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: paper count overstated (about 100) -> about 35 (37 entries in the opening list); reason now also states no structured review method and that the items are other authors' abstracts. 'Plus one non-research opinion piece' reworded: the opinion items are other journals' articles excerpted in the digest, not the newsletter's own content.",
+            "identityCheck: added Infinite Athlete footer evidence and noted that the PFATS/PFPCA/PFRDS names do not appear in the text."
+          ],
+          "residualConcerns": "Decision EXCLUDE (b) confirmed. Several listed papers (football-relevant RCTs, cohorts and reviews) may merit separate screening if their own PDFs are sourced.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 54,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - January 2025.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the Infinite Athlete 'Pro Football Sports Science Research Update' newsletter: a digest listing about 30 papers by other authors, each reprinted with that paper's own abstract or a short summary. A few entries summarize commentary articles from other journals rather than abstracts (for example 'Refining the recipe or spoiling the broth?', introduced with 'Here's a summary'). The issue reports no original data or methods of its own and no structured review method (no search, selection or appraisal), so it is not an eligible article type. Individual listed papers would need their own source files to be screened.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: paper count overstated (about 90) -> about 30 (31 entries in the opening list); reason now also states no structured review method and that the items are other authors' abstracts. 'A few short commentary pieces' reworded: these are summaries of other journals' commentary articles.",
+            "identityCheck: added Infinite Athlete footer evidence and noted that the PFATS/PFPCA/PFRDS names do not appear in the text."
+          ],
+          "residualConcerns": "Decision EXCLUDE (b) confirmed. Several listed papers (football-relevant RCTs, cohorts and reviews) may merit separate screening if their own PDFs are sourced.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 55,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - July 2024.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the Infinite Athlete 'Pro Football Sports Science Research Update' newsletter: a digest listing about 40 papers by other authors, each reprinted with that paper's own abstract or a short summary. The issue reports no original data or methods of its own and no structured review method (no search, selection or appraisal), so it is not an eligible article type. Individual listed papers would need their own source files to be screened.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: paper count overstated (about 110) -> about 40 (41 entries in the opening list); reason now also states no structured review method and that the items are other authors' abstracts.",
+            "identityCheck: added Infinite Athlete footer evidence and noted that the PFATS/PFPCA/PFRDS names do not appear in the text."
+          ],
+          "residualConcerns": "Decision EXCLUDE (b) confirmed. Several listed papers (football-relevant RCTs, cohorts and reviews) may merit separate screening if their own PDFs are sourced.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 56,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - July 2025.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the Infinite Athlete 'Pro Football Sports Science Research Update' newsletter: a digest listing about 30 papers by other authors, each reprinted with that paper's own abstract or a short summary. Some entries use unsigned overview summaries instead of the paper's abstract (for example the 'Data everywhere, insight nowhere' entry, which begins 'Overview:'). The issue reports no original data or methods of its own and no structured review method (no search, selection or appraisal), so it is not an eligible article type. Individual listed papers would need their own source files to be screened.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: paper count overstated (about 100) -> about 30 (32 entries in the opening list); reason now also states no structured review method and that the items are other authors' abstracts. 'Short commentary sections' reworded: these are unsigned overview summaries of listed papers.",
+            "identityCheck: added Infinite Athlete footer evidence and noted that the PFATS/PFPCA/PFRDS names do not appear in the text."
+          ],
+          "residualConcerns": "Decision EXCLUDE (b) confirmed. Several listed papers (football-relevant RCTs, cohorts and reviews) may merit separate screening if their own PDFs are sourced.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 57,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - June 2024.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Commentary digest, not an eligible article. The PDF is the Infinite Athlete 'Pro Football Sports Science Research Update' newsletter (June 2024; footer 'To learn more about Infinite Athlete'). It opens with a citation list of other published studies, then reproduces each study's abstract, including any Key Points, Highlights or Practical Applications boxes printed with those articles. It has no original data or methods and no search or review method of its own. The cited studies are not admitted from this document.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: said the newsletter adds its own Key Points or Key Findings bullets -> the Key Points, Highlights and Practical Applications text sits inside reproduced abstracts of the cited articles (for example 'Key Points' after cited abstracts); no newsletter-authored commentary found"
+          ],
+          "residualConcerns": "Decision unchanged (EXCLUDE b). Whole text scanned: method language (PRISMA, systematic searches, sample sizes) appears only inside the digested studies' abstracts or summaries, never as the newsletter's own method. Individual cited studies may be worth sourcing separately.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 58,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - June 2025.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Commentary digest, not an eligible article. The PDF is the Infinite Athlete 'Pro Football Sports Science Research Update' newsletter (June 2025; footer 'To learn more about Infinite Athlete'). It opens with a citation list of other published studies, then reproduces each study's abstract, including any Key Points, Highlights or Practical Applications boxes printed with those articles. It has no original data or methods and no search or review method of its own. The cited studies are not admitted from this document.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: said the newsletter adds its own Key Points or Key Findings bullets -> the Key Points, Highlights and Practical Applications text sits inside reproduced abstracts of the cited articles (for example 'Key Points' after cited abstracts); no newsletter-authored commentary found"
+          ],
+          "residualConcerns": "Decision unchanged (EXCLUDE b). Whole text scanned: method language (PRISMA, systematic searches, sample sizes) appears only inside the digested studies' abstracts or summaries, never as the newsletter's own method. Individual cited studies may be worth sourcing separately.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 59,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - March 2024.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Commentary digest, not an eligible article. The PDF is the Infinite Athlete 'Pro Football Sports Science Research Update' newsletter (March 2024; footer 'To learn more about Infinite Athlete'). It opens with a citation list of other published studies, then reproduces each study's abstract, including any Key Points, Highlights or Practical Applications boxes printed with those articles. It has no original data or methods and no search or review method of its own. The cited studies are not admitted from this document.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: said the newsletter adds its own Key Points or Key Findings bullets -> the Key Points, Highlights and Practical Applications text sits inside reproduced abstracts of the cited articles (for example 'Key Points' after cited abstracts); no newsletter-authored commentary found"
+          ],
+          "residualConcerns": "Decision unchanged (EXCLUDE b). Whole text scanned: method language (PRISMA, systematic searches, sample sizes) appears only inside the digested studies' abstracts or summaries, never as the newsletter's own method. Individual cited studies may be worth sourcing separately.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 60,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - March 2025.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Commentary digest, not an eligible article. The PDF is the Infinite Athlete 'Pro Football Sports Science Research Update' newsletter (March 2025; footer 'To learn more about Infinite Athlete'). It opens with a citation list of other published studies, then reproduces each study's abstract, including any Key Points, Highlights or Practical Applications boxes printed with those articles. It has no original data or methods and no search or review method of its own. The cited studies are not admitted from this document.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: said the newsletter adds its own Key Points or Key Findings bullets -> the Key Points, Highlights and Practical Applications text sits inside reproduced abstracts of the cited articles (for example 'Key Points' after cited abstracts); no newsletter-authored commentary found"
+          ],
+          "residualConcerns": "Decision unchanged (EXCLUDE b). Whole text scanned: method language (PRISMA, systematic searches, sample sizes) appears only inside the digested studies' abstracts or summaries, never as the newsletter's own method. Individual cited studies may be worth sourcing separately.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 61,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - March 2026.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Commentary digest, not an eligible article. The PDF is the 'Pro Football Sports Science Research Update' newsletter (March 2026). It gives the citation of each of 32 other published studies, each followed by a newsletter-written summary under 'Purpose of the Study', 'Key Findings' and 'Practical Applications (for NFL Teams)' headings. It has no original data or methods and no search or review method of its own. The cited studies are not admitted from this document.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: said the issue has an Infinite Athlete footer and reproduces abstracts -> no Infinite Athlete footer appears in the text, and each entry is a newsletter-written summary ('Purpose of the Study', 'Key Findings', 'Practical Applications for NFL Teams'), not a reproduced abstract",
+            "identityCheck: removed implied footer evidence; identity confirmed by running header and 'March 2026'"
+          ],
+          "residualConcerns": "Decision unchanged (EXCLUDE b). Whole text scanned: method language (PRISMA, systematic searches, sample sizes) appears only inside the digested studies' abstracts or summaries, never as the newsletter's own method. Individual cited studies may be worth sourcing separately.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 62,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - May 2025.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Commentary digest, not an eligible article. The PDF is the Infinite Athlete 'Pro Football Sports Science Research Update' newsletter (May 2025; footer 'To learn more about Infinite Athlete'). It opens with a citation list of other published studies, then reproduces each study's abstract, including any Key Points, Highlights or Practical Applications boxes printed with those articles. It has no original data or methods and no search or review method of its own. The cited studies are not admitted from this document.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: said the newsletter adds its own Key Points or Key Findings bullets -> the Key Points, Highlights and Practical Applications text sits inside reproduced abstracts of the cited articles (for example 'Key Points' after cited abstracts); no newsletter-authored commentary found"
+          ],
+          "residualConcerns": "Decision unchanged (EXCLUDE b). Whole text scanned: method language (PRISMA, systematic searches, sample sizes) appears only inside the digested studies' abstracts or summaries, never as the newsletter's own method. Individual cited studies may be worth sourcing separately.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 63,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - November 2024.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Commentary digest, not an eligible article. The PDF is the Infinite Athlete 'Pro Football Sports Science Research Update' newsletter (November 2024; footer 'To learn more about Infinite Athlete'). It opens with a citation list of other published studies, then reproduces each study's abstract, including any Key Points, Highlights or Practical Applications boxes printed with those articles. It has no original data or methods and no search or review method of its own. The cited studies are not admitted from this document.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: said the newsletter adds its own Key Points or Key Findings bullets -> the Key Points, Highlights and Practical Applications text sits inside reproduced abstracts of the cited articles (for example 'Key Points' after cited abstracts); no newsletter-authored commentary found"
+          ],
+          "residualConcerns": "Decision unchanged (EXCLUDE b). Whole text scanned: method language (PRISMA, systematic searches, sample sizes) appears only inside the digested studies' abstracts or summaries, never as the newsletter's own method. Individual cited studies may be worth sourcing separately.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 64,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - November 2025.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Commentary digest, not an eligible article. The PDF is the Infinite Athlete 'Pro Football Sports Science Research Update' newsletter (November 2025; footer 'To learn more about Infinite Athlete'). It opens with a citation list of other published studies, then reproduces each study's abstract, including any Key Points, Highlights or Practical Applications boxes printed with those articles. It has no original data or methods and no search or review method of its own. The cited studies are not admitted from this document.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: said the newsletter adds its own Key Points or Key Findings bullets -> the Key Points, Highlights and Practical Applications text sits inside reproduced abstracts of the cited articles (for example 'Key Points' after cited abstracts); no newsletter-authored commentary found"
+          ],
+          "residualConcerns": "Decision unchanged (EXCLUDE b). Whole text scanned: method language (PRISMA, systematic searches, sample sizes) appears only inside the digested studies' abstracts or summaries, never as the newsletter's own method. Individual cited studies may be worth sourcing separately.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 65,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - October 2024.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the 'Pro Football Sports Science Research Update' newsletter (October 2024): a digest listing 24 papers by other authors, each reprinted with its title, journal citation and that paper's own published abstract or an excerpt of its text. Entries include original studies, reviews, two consensus statements (GESMUTE-SETRADE fibrosis, multiligament knee injury) and commentaries; the 'Practical Solutions' text under the training-load entry is part of that paper's own abstract. The issue has no original data or methods and no structured review method of its own (no search, selection or appraisal), and no DOI of its own, so it is not an eligible article type. Individual listed papers would need their own source files to be screened.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: entry count overstated, about 30 -> 24 (24 entries in the opening list, each with a matching body entry).",
+            "exclusionReason: 'titles, abstracts and summaries' reworded so it is clear every body text is the listed paper's own abstract or an excerpt of it; the newsletter adds no summaries, Key Points or commentary of its own; added that no structured review method exists.",
+            "identityCheck: added the Infinite Athlete footer evidence and that the society abbreviations in the filename do not appear in the text."
+          ],
+          "residualConcerns": "Decision EXCLUDE (b) confirmed. Football-relevant original studies and reviews listed in the issue may merit separate screening if their own PDFs are sourced.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 66,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - October 2025.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the 'Pro Football Sports Science Research Update' newsletter (October 2025): a digest listing 30 papers by other authors, each reprinted with its title, journal citation and that paper's own published abstract or an excerpt of its text. Entries include original studies, systematic and narrative reviews, and a case series. One entry reprints the abstract of the NFL team surgeon ACL survey (Hazzard et al.) that is screened separately as Q71. The issue has no original data or methods and no structured review method of its own (no search, selection or appraisal), and no DOI of its own, so it is not an eligible article type. Individual listed papers would need their own source files to be screened.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: entry count overstated, about 45 -> 30 (30 entries in the opening list, each with a matching body entry).",
+            "exclusionReason: 'titles, abstracts and summaries' reworded so it is clear every body text is the listed paper's own abstract or an excerpt of it; the newsletter adds no summaries, Key Points or commentary of its own; added that no structured review method exists.",
+            "identityCheck: added the Infinite Athlete footer evidence and that the society abbreviations in the filename do not appear in the text."
+          ],
+          "residualConcerns": "Decision EXCLUDE (b) confirmed. Football-relevant original studies and reviews listed in the issue may merit separate screening if their own PDFs are sourced.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 67,
+      "sourceFile": "PFATS-PFPCA-PFRDS Pro Football Sports Science Research Update - September 2024.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the 'Pro Football Sports Science Research Update' newsletter (September 2024): a digest listing 36 papers by other authors, each reprinted with its title, journal citation and that paper's own published abstract or an excerpt of its text. Entries are other authors' original studies, reviews, a Delphi study and commentaries; one entry (oral fluoroquinolones and Achilles rupture) gives only the title and '(No abstract available)', and the 'Practical Applications' text under the NFL Combine sprint entry is part of that paper's own abstract. The issue has no original data or methods and no structured review method of its own (no search, selection or appraisal), and no DOI of its own, so it is not an eligible article type. Individual listed papers would need their own source files to be screened.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: entry count overstated, about 60 -> 36 (36 entries in the opening list, each with a matching body entry).",
+            "exclusionReason: 'titles, abstracts and summaries' reworded so it is clear every body text is the listed paper's own abstract or an excerpt of it; the newsletter adds no summaries, Key Points or commentary of its own; added that no structured review method exists.",
+            "identityCheck: added the Infinite Athlete footer evidence and that the society abbreviations in the filename do not appear in the text."
+          ],
+          "residualConcerns": "Decision EXCLUDE (b) confirmed. Football-relevant original studies and reviews listed in the issue may merit separate screening if their own PDFs are sourced.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 68,
+      "sourceFile": "PFATS-PFSCCA-PFRDS Pro Football Sports Science Research Update - November 2023.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the 'Pro Football Sports Science Research Update' newsletter (November 2023): a digest listing 20 papers by other authors, each reprinted with its title, journal citation and that paper's own published abstract or an excerpt of its text. Two entries (cannabidiol in sports, sports hernias) carry an 'Overview' passage instead of a labeled abstract; the sports hernia passage is written in the review authors' voice ('The purpose of this comprehensive review'), so it reads as an excerpt of the article, not newsletter commentary. 'Practical Applications' text under two entries belongs to those papers' abstracts. The issue has no original data or methods and no structured review method of its own (no search, selection or appraisal), and no DOI of its own, so it is not an eligible article type. Individual listed papers would need their own source files to be screened.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: entry count overstated, about 35 -> 20 (20 entries in the opening list, each with a matching body entry).",
+            "exclusionReason: 'titles, abstracts and summaries' reworded so it is clear every body text is the listed paper's own abstract or an excerpt of it; the newsletter adds no summaries, Key Points or commentary of its own; added that no structured review method exists.",
+            "identityCheck: added the Infinite Athlete footer evidence and that the society abbreviations in the filename do not appear in the text."
+          ],
+          "residualConcerns": "Decision EXCLUDE (b) confirmed. Football-relevant original studies and reviews listed in the issue may merit separate screening if their own PDFs are sourced.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 69,
+      "sourceFile": "PFATS-PFSCCA-PFRDS Pro Football Sports Science Research Update - October 2023.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the 'Pro Football Sports Science Research Update' newsletter (October 2023): a digest listing 22 papers by other authors, each reprinted with its title, journal citation and that paper's own published abstract or an excerpt of its text. The 'Key Points' bullets under the vitamin and mineral, symptom-free waiting period and napping entries, and the 'KEY POINTS' under the media and mental health entry, belong to those articles' own published abstracts (one reads 'Our study findings can be used...'), not to the newsletter. Two entries (rectus femoris case report, soccer return-to-play practitioner survey) reproduce longer 'Overview' passages in the original authors' voice with their in-text reference numbers. The neck-injury entry is a standard structured abstract, not an extended summary. The issue has no original data or methods and no structured review method of its own (no search, selection or appraisal), and no DOI of its own, so it is not an eligible article type. Individual listed papers would need their own source files to be screened.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: about 25 -> 22; removed the claim of 'an extended summary of one neck-injury study' (that entry is the paper's ordinary structured abstract, Background/Methods/Results/Conclusion/Level of evidence III); added that Key Points bullets and Overview passages come from the reproduced articles.",
+            "exclusionReason: 'titles, abstracts and summaries' reworded so it is clear every body text is the listed paper's own abstract or an excerpt of it; the newsletter adds no summaries, Key Points or commentary of its own; added that no structured review method exists.",
+            "identityCheck: added that no sponsor footer appears in the text and that the society abbreviations in the filename do not appear in the text."
+          ],
+          "residualConcerns": "Decision EXCLUDE (b) confirmed. Football-relevant original studies and reviews listed in the issue may merit separate screening if their own PDFs are sourced.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 70,
+      "sourceFile": "PFATS-PFSCCA-PFRDS Pro Football Sports Science Research Update - September 2023.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Issue of the 'Pro Football Sports Science Research Update' newsletter (September 2023): a digest listing 17 papers by other authors, each reprinted with its title, journal citation and that paper's own published abstract or an excerpt of its text. The 'Key Points' bullets in the issue belong to the reproduced articles' own abstracts (for example the low carbohydrate availability entry), and the WADA cannabis entry quotes the opening of that editorial ('The purpose of this editorial is...') and excerpts its text, so the issue carries no commentary of its own. The issue has no original data or methods and no structured review method of its own (no search, selection or appraisal), and no DOI of its own, so it is not an eligible article type. Individual listed papers would need their own source files to be screened.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: entry count overstated, about 20 -> 17 (17 entries in the opening list, each with a matching body entry); added that Key Points bullets and the WADA editorial excerpt come from the reproduced articles.",
+            "exclusionReason: 'titles, abstracts and summaries' reworded so it is clear every body text is the listed paper's own abstract or an excerpt of it; the newsletter adds no summaries, Key Points or commentary of its own; added that no structured review method exists.",
+            "identityCheck: added that no sponsor footer appears in the text and that the society abbreviations in the filename do not appear in the text."
+          ],
+          "residualConcerns": "Decision EXCLUDE (b) confirmed. Football-relevant original studies and reviews listed in the issue may merit separate screening if their own PDFs are sourced.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 73,
+      "sourceFile": "Parametric modeling and analysis of NFL run plays.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 52514,
+        "doi": "10.3233/JSA-220657",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Statistical modeling study using NFL play-by-play data from the 2017 and 2018 regular seasons, filtered to 19,881 run plays. The authors fit a skew-t mixture model of yards gained by down, distance and line of scrimmage, with team adjustments, and print correlations of -0.432 and -0.515 between the team variance and skewness parameters and team yards per carry (p = 0.0135 and 0.00257). In a matched-pairs analysis of 2,628 pairs, outside runs gained 0.503 more yards on average (95% CI 0.160 to 0.846).",
+      "limitations": "Team- and play-level outcomes from two NFL regular seasons, with no athlete-level physical, health or injury data. The inside/outside label comes from an external run-gap field rather than the play scheme, the matched-pairs result is observational, and the source is an uncorrected author proof.",
+      "synthesisCaution": "Staff could read the outside-run yardage gain as a causal coaching lever for their own offense, when it comes from observational NFL data and labels that do not capture the play scheme.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.methods: data source given as nflfastR -> nflscrapR for the play-by-play data, nflfastR only for run-gap labels ('obtained via the nflscrapR package')",
+            "paper.limitations: 'direction needs checking against the source' -> reports the printed negative correlations and states the conflict with the text, Fig. 8 caption and positive EPA correlations without reinterpreting ('correlations of -0.432 and -0.515 respectively')",
+            "evidenceSummary/findings: worded as printed correlations with p values; added author-proof status to identityCheck and screeningLimitations ('Journal of Sports Analytics xx (20xx) x-xx', 'Uncorrected Author Proof')",
+            "audiences: removed Performance (team play-calling model with no athlete physical outcomes)"
+          ],
+          "residualConcerns": "Eligibility is borderline: this is a team-level play-calling statistical model with no athlete health or physical performance data. It is kept INCLUDE because it is sport-relevant original research and exclusion (c) does not apply, but a reviewer may judge it out of scope for an athlete health and performance library. Correlation sign conflict (-0.432/-0.515 printed vs positive interpretation) should not be resolved without the final published version. Volume, issue and pages are not printed (proof).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1368",
+        "synthesisBatch": "pilot-synthesis-batch-80",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 76,
+      "sourceFile": "Patterns of performance degradation and restoration during sleep restriction and subsequent recovery - a sleep dose response study.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) not relevant to athletes, sport, exercise performance or athlete health. The text is a laboratory sleep-restriction study of 66 volunteers (16 women, age 24 to 55, mean 43 years) who held valid Commercial Motor Vehicle driver licenses (Belenky et al., J Sleep Res 2003), with psychomotor vigilance task outcomes. Athletes, sport and exercise are not mentioned, so the paper is general sleep and alertness research.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [
+            "exclusionReason: added sample age and sex as printed ('Sixty-six volunteers (16 women, age 24-55, mean = 43 years)') and the PVT outcome; decision unchanged"
+          ],
+          "residualConcerns": "Exclusion (c) confirmed on a full-text search: no athlete, sport, exercise or physical-performance content; outcomes are cognitive (PVT speed and lapses) in middle-aged commercial drivers. A reviewer may still want this as background sleep-dose evidence, but it is not athlete evidence. No own DOI is printed, so it would be DEGRADED even if relevance were accepted.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 82,
+      "sourceFile": "Performance Nutrition for Athletes.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial/preface: the text is the Preface by the guest editor of a Sports Medicine supplement. It summarizes six other papers in the supplement and contains no original methods or structured review of evidence of its own.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 87,
+      "sourceFile": "Performance management in elite football - A teamwork modeling approach.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial: the text is a labelled EDITORIAL in the International Journal of Sports Physiology and Performance. It proposes a conceptual four-pillar teamwork model and recommendations, with no original methods and no structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 88,
+      "sourceFile": "Performance-based alternatives to race-norms in neuropsychological assessment.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Opinion piece: the text is labelled 'Viewpoint' in Cortex and argues for performance-based estimates of preexisting skill in place of race-norms. It has no original methods and no structured review of evidence. Reason (c) does not apply cleanly, because the argument is framed around neuropsychological assessment of ex-NFL players under the NFL concussion settlement, which is athlete health.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: removed the open 'flag for auditor' note and confirmed (b) over (c). The article is headed 'Viewpoint' and the author states 'The purpose of this article is to argue...'. (c) is not the right reason because the paper is built around the NFL concussion settlement assessment of ex-players."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 92,
+      "sourceFile": "Periodic Health Examination and Injury Prediction in Professional Football (Soccer)- Theoretically, the Prognosis is Good.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Current Opinion article in Sports Medicine ('This Current Opinion aims to examine the conceptual differences between aetiology and prediction of injury'): a conceptual discussion of aetiology, prediction and prognosis for periodic health examination, with no original data, no described search and no structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [
+            "exclusionReason: removed the note asking the auditor to confirm; confirmed opinion piece with no search method or structured review",
+            "confidence: medium -> high"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 93,
+      "sourceFile": "Periodization for success—In-season external training loads relative to competition load in American football.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 54932,
+        "doi": "10.3389/fspor.2025.1662240",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Observational study of 27 NCAA Division II American football players whose GPS training load was recorded in 32 in-season practices and 11 games. Practices four and three days before games (GD-4, GD-3) had higher duration, distance and 2D and 3D load than games, the practice two days before (GD-2) had shorter duration than games but similar distance, and yards per minute was higher on every practice day than in games.",
+      "limitations": "One team of 27 players, with only three linemen, limits the position and starter comparisons. The reported statistics contain inconsistencies (error df of 1,562, position groups summing to 26, abstract figures that differ from the results), so the significance results cannot be taken at face value.",
+      "synthesisCaution": "Staff could read the practice and game differences as a tested periodization model that prepares players for game demands, when the study only describes loads and does not test whether any periodization approach improves performance or reduces injury.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: 'practice two days before had lower duration and distance' -> lower duration only; GD-2 distance not significantly different from games (Table 2: 4,173.4 vs 4,301.2, no asterisk)",
+            "paper.findings: added that non-starters had higher hard running distance and efforts ('non-starters had significantly higher measures of hard running distance ... and hard running efforts'); framed the professional subgroup (n=5 vs 22) as an association",
+            "paper.limitations: added position-group sum of 26 (Linemen n=3, Big skill n=9, Skill n=14) vs 27 participants; abstract yards-per-minute range '+15% to -11%' vs results '+15% to +11%'; kept error df and GD-1 conflict, reported as printed ('Game day minus one ... GPS units were not worn' vs abstract 'GD-4 to GD-1')",
+            "screeningLimitations: updated to cover the full set of statistical inconsistencies",
+            "paper.abstract, paper.tldr: 'practices 2 to 4 days before games' higher -> GD-4 and GD-3 higher; GD-2 shorter",
+            "paper.practicalImplications: removed 'loads set by group rather than team-wide' as untested prescription"
+          ],
+          "residualConcerns": "Statistical reporting is internally inconsistent (error df 1,562; group sizes sum to 26; abstract GD-1 and yards-per-minute sign conflict with methods and results). Reported here as printed, not repaired. A human reviewer should judge whether the significance markers can be trusted. Sex of players is not stated, so no sex tag was added.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1369",
+        "synthesisBatch": "pilot-synthesis-batch-80",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 95,
+      "sourceFile": "Personalized Nutrition for the Enhancement of Elite Athletic Performance.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Special Issue perspective article that argues for a paradigm shift towards personalised sports nutrition ('will require the paradigm shift in the field of sports nutrition advocated here'). It does not describe itself as a review, gives no search method or structured synthesis of evidence, and relies on selected examples, unpublished data and forward-looking technology claims. Authors declare funding from nutrition industry (Maurten AB, Iovate Health Sciences, MarsterFoods) and Y.P. founded Human Telemetrics Ltd.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [
+            "exclusionReason: removed 'auditor should decide' note; confirmed opinion/perspective piece, not a self-described narrative review; added the Human Telemetrics founder interest"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,388 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-86-monitoring-technology",
+  "screenedOn": "2026-10-09",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Monitoring & Technology queue positions 2-91. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 2,
+      "sourceFile": "Normalization of rapid force to peak force in an isometric hamstring assessment using force plates.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 28673,
+        "doi": "10.1016/j.apunsm.2024.100450",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Female Athletes",
+        "Healthy Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Observational reliability study of 20 elite female soccer players (age 20.7 +/- 4.7 years) from one Super League squad, with no hamstring strain in the previous 6 months. Peak force and force at 100 and 200 ms (F100, F200), normalized to peak force, were measured from three maximal trials per leg in a single 90-90 isometric hamstring session on one force plate. Normalized F100 and F200 showed good absolute reliability (CV 6.12-7.62%) and moderate relative reliability (ICC 0.689-0.721 in Table 1), and peak force showed excellent absolute and good relative reliability (CV 2.25-3.05%, ICC 0.887-0.917).",
+      "limitations": "Only one test session is described, so the reliability figures reflect trial-to-trial consistency within a session, not between-day reliability, and the study reports a single squad with no injury outcomes. The quadrant classification and the fatigue and injury-risk uses are proposals that the study did not test.",
+      "synthesisCaution": "Staff could read the quadrant plots as validated training prescriptions or as a fatigue or injury-risk screen, but the study tested neither the classification nor its link to training change or injury.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: first author 'Barbera R' -> 'Barber R' (byline 'R. Barber^a' with superscript a; running header 'R. Barber, J.T. Fahey, P. Comfort et al.').",
+            "evidenceSummary/findings: normalized-force ICC range 0.689-0.703 (abstract) -> 0.689-0.721 (Table 1: N-F100 right 0.721, N-F200 right 0.715); added right-limb peak force CV 2.25%, ICC 0.917.",
+            "screeningLimitations/limitations/methods: 'text does not state whether between trials or sessions' -> only one session is described, so reliability is within-session trial-to-trial; added authors' caveat that the 90-90 position may lack specificity to the injury mechanism; noted abstract vs Table 1 ICC conflict."
+          ],
+          "residualConcerns": "The paper does not explicitly state how CV and ICC were computed; the within-session interpretation is inferred from the single described session.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1408",
+        "synthesisBatch": "pilot-synthesis-batch-86",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 18,
+      "sourceFile": "Objective measures of strain and subjective muscle soreness differ between positional groups and season phases in American college football.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 43565,
+        "doi": "10.1123/ijspp.2022-0347",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Prospective repeated-measures study of 23 male athletes from one NCAA Division I American football team, tested weekly over 10 weeks (3-week off-season, 4-week fall camp, 3-week in-season). Linear mixed models compared point-of-care oxidative stress markers (FORT, FORD, OSI), countermovement jump flight time and RSImod, and subjective soreness across 'Bigs' (n = 7), 'Combos' (n = 9) and 'Skills' (n = 7) groups. The authors report that 'Bigs' had higher redox strain and soreness in the off-season than in fall camp and in-season, and that 'Combos' had lower FORT and OSI.",
+      "limitations": "This is one team of 23 players observed over 10 weeks, so the findings describe association within this group and may not generalize. External load (GPS) data were about 25% missing and were presented descriptively without statistical testing.",
+      "synthesisCaution": "Staff could read the off-season strain pattern as a general training-load problem for all positions, when the study covers one team, uses descriptive GPS data with missing values, and does not test whether the markers predict injury or performance.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "abstract: 'Off-season strain and soreness were highest in the Bigs group' read as a between-group soreness comparison that was not tested -> now states the within-group phase difference ('off-season FORT ... and soreness ... were higher for Bigs' compared with fall camp and in-season).",
+            "athleteDev: causal 'Off-season training for linemen produced the largest strain signal' -> association language, since this is an observational single-team study and GPS load was not statistically tested.",
+            "findings: clarified that higher flight time and RSImod mean better jump performance at the same time as higher strain markers, and added the off-season FORD difference ('FORD was higher for the Skills group when compared with Bigs during off-season (P = .02)').",
+            "DOI 10.1123/ijspp.2022-0347 confirmed in the header ('https://doi.org/10.1123/ijspp.2022-0347'), although it was absent from the inputs candidate list."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1409",
+        "synthesisBatch": "pilot-synthesis-batch-86",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 23,
+      "sourceFile": "On-field kinematics of cut maneuvers in football players - Are wearable sensors reliable for assessing anterior cruciate ligament injury risk.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 57113,
+        "doi": "10.1080/02640414.2025.2493012",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Youth / Adolescent",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Cross-sectional on-field study that enrolled 47 youth academy soccer players (27 male, 20 female; mean age 15.9 years), each completing a planned 90-degree Agility T-test and an unplanned defensive deceiving cut while wearing eight inertial sensors; data from four players were excluded for sensor problems. The authors report moderate-to-excellent test-retest reliability for most joint parameters and weaker side-to-side reliability. Females showed lower knee and trunk flexion and some greater frontal and transverse-plane knee values than males, but several sex differences were small or inconsistent between text and tables.",
+      "limitations": "The design is cross-sectional with one sensor system, healthy youth players and no day-to-day reliability testing, so the findings describe reliability and normative values, not injury prediction. Forty-seven players were enrolled and four were excluded for sensor problems, but Table 1 and the abstract still report 47 and the analyzed count and sex split are not stated; 43 would fall below the a priori minimum of 44.",
+      "synthesisCaution": "Staff could read the female kinematic differences as an injury-risk profile for individual players, when the study measured normative patterns and sensor reliability and did not test whether any pattern predicts ACL injury.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "sample conflict: 'Data from four participants were excluded due to technical issues' vs Table 1 'N of players 47' -> evidenceSummary, abstract and screeningLimitations now say 47 enrolled, four excluded, analyzed n and sex split not stated, and note 43 would be below the a priori minimum of 44 ('estimated in 44 players').",
+            "findings: 'greater frontal and transverse-plane values in several knee, pelvis and trunk parameters ... effect sizes about 0.2 to 0.7 in Table 3' was not what Table 3 shows (trunk frontal-plane tilt is lower in females: 6.3 vs 3.5 degrees Agility, 7.0 vs 3.4 deceiving cut) -> replaced with the specific reported differences and their sources.",
+            "limitations: added the text vs Table 3 conflict on knee rotation direction in the deceiving cut ('female players showed greater peak knee internal rotation' vs Table 3 knee int-ext -2.2 female, -0.7 male, d = 0.68).",
+            "practicalImplications: added caution on pelvis and trunk frontal-plane values, which the authors rate 'not sufficiently reliable'."
+          ],
+          "residualConcerns": "Analyzed sample size and sex split after the four exclusions are not reported. The abstract's 'worse movement quality' summary for females is only partly supported by Table 3. A reviewer may want to check the appendices for the peak-value sex differences.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1410",
+        "synthesisBatch": "pilot-synthesis-batch-86",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 26,
+      "sourceFile": "Optimizing MRI annotation workflows for high-accuracy deep learning thigh muscle segmentation in athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 43270,
+        "doi": "10.1093/radadv/umag005",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "American Football",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Mixed / Unspecified",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Methodological validation study using 3 T thigh MRI from 94 male professional football athletes and 67 athletes with acute ACL injury (23 male). nnU-Net deep learning models trained on 5 to 120 annotated subjects were tested on 41 held-out subjects; at 20 training subjects the grand-total Dice was 0.94 ± 0.02, and fat fraction and volume ICCs against manual masks were 0.989 and 0.995.",
+      "limitations": "Single-site, single-scanner data, with ground truth produced by a semi-automatic method, so agreement with manual masks is not validation against an independent reference. The fixed test set was also used to identify the 20-subject operating point, so the figure may be optimistic for new data.",
+      "synthesisCaution": "Treating the 0.94 Dice and high ICCs as proof that the model works on other scanners, protocols or clinical populations, or as a basis for individual athlete decisions.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: '2026;3(1):1-11' used PDF page numbers -> article number umag005 as printed ('Radiology Advances, 2026, 3, umag005')",
+            "paper.findings: strict-threshold claim stated as fact -> attributed to the authors with Table 1 rounded values, since Table 1 grand-total Dice at 50 is 0.95 against a 'DSC > 0.95' criterion",
+            "paper.limitations: added second text-vs-table conflict -> Results 'consistently >0.95 with Ntrain = 30 or more' vs Table 1 grand-total 0.95 ± 0.02 at Ntrain 50 and 120"
+          ],
+          "residualConcerns": "Strict DSC > 0.95 criterion is reported as met at Ntrain = 50 although the tabled grand-total mean is 0.95; the unrounded value is not printed. Table 1 footnote cites learning curves as Figure 3, which the text shows as Figure 4.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1411",
+        "synthesisBatch": "pilot-synthesis-batch-86",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 40,
+      "sourceFile": "PEP - A tackle value measuring the prevention of expected points.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text. The only identifier is the arXiv number (arXiv:2407.08508v1), which is a preprint, not a DOI. Everything else is in order, so the operator may verify the DOI externally and upgrade the decision if one exists.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "Decision DEGRADED confirmed: arXiv preprint ('arXiv:2407.08508v1 [stat.AP] 11 Jul 2024') with no DOI printed anywhere in the text",
+            "paper.findings: added appendix sensitivity analyses ('leaving us with 5889 tackles'; 'A strong linear correlation (r = 0.88137)'); other fields checked against text and left unchanged"
+          ],
+          "residualConcerns": "Preprint; the operator should check whether a peer-reviewed version with a DOI exists before upgrading.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 80,
+      "sourceFile": "Percentile rankings and position differences for absolute and allometrically scaled performance measures from the NFL Scouting Combine.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed anywhere in the extracted text (no 'doi' string appears at all; doiCandidatesInText is empty), and the citation line has placeholders only ('J Strength Cond Res XX(X): 000-000, 2023'; '00(00)/1-12'). The record is complete otherwise; the operator can verify the DOI externally and upgrade the decision.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "degradedReason: confirmed no own DOI after full-text search (zero 'doi' strings) and recorded the placeholder citation line ('XX(X): 000-000, 2023')",
+            "paper.practicalImplications: attributed the scaled-score recommendation to the author ('the present results suggest that allometric scaling provides an appropriate method'); merged the last two sentences"
+          ],
+          "residualConcerns": "DOI must be verified externally before upgrade. Table 2 (20-yd split) scaled 'All' column prints Mean 0.025 and SD 0.0005, inconsistent with its percentile values (about 0.70 to 0.74), so that cell appears to be a typesetting error. Player sex is not stated, so no sex tag was added.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 85,
+      "sourceFile": "Performance and symmetry measures during vertical jump testing at return to sport after ACL reconstruction.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 51350,
+        "doi": "10.1136/bjsports-2022-106588",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Injured Athletes",
+        "Healthy Athletes",
+        "Professional / Elite",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Cross-sectional comparison of 126 male athletes tested at return to sport after ACL reconstruction (94 professional, 32 recreational; sport not stated) with 532 healthy male professional soccer players, using dual force plates for four jumps. Athletes after ACLR showed concentric impulse asymmetry compared with controls in all four jumps (P < 0.001), and greater peak landing force asymmetry in the countermovement jump (mean difference -11.6 percentage points, 95% CI -15.4 to -7.9) and double-leg drop jump. Jump height was lower after ACLR in all tests except the double-leg drop jump.",
+      "limitations": "The sample is male-only, from one institution, and mostly professional, and the sport of the ACLR group is not stated, so results may not transfer to women, recreational athletes or specific sports. Sample sizes vary by test (drop jump 65 ACLR vs 100 controls), and the controls are professional soccer players with higher Tegner scores (9.3 vs 8.5), so the comparisons are not matched on sport or activity.",
+      "synthesisCaution": "Staff could read the residual asymmetries as proof that athletes cleared to return are not ready, but the study compares cleared athletes with controls and does not link any deficit to re-injury or later performance.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "sports: ['Soccer'] -> ['Soccer', 'Mixed / General Sport']; only the controls are soccer players ('Control subjects were male professional athletes recruited from a cohort of professional soccer players'); the ACLR group is described only as 'professional or recreational athletes'",
+            "evidenceSummary/methods/screeningLimitations: added that the ACLR group's sport is not stated and that controls are professional soccer players",
+            "findings: added the single-leg drop jump eccentric impulse difference reported in Table 2 and the abstract (P = 0.018, MD -3.8)",
+            "limitations: clarified that the Discussion statement conflicts with both the abstract and Table 2, and that the summary follows Table 2",
+            "citation: journal name set to the printed abbreviation; placeholder '2023;0:1-8' remains omitted"
+          ],
+          "residualConcerns": "The Discussion says there were no eccentric deceleration impulse differences. Table 2 does show no difference in that metric for the two countermovement jumps, but the drop-jump eccentric impulse metric differed in the single-leg drop jump. The authors may have meant only the countermovement metric, and a reviewer should confirm the wording against the PDF.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1412",
+        "synthesisBatch": "pilot-synthesis-batch-86",
+        "publishedOn": "2026-10-09"
+      }
+    },
+    {
+      "originalQueueOrder": 91,
+      "sourceFile": "Performing Nordic hamstring strength testing with additional weight affects the maximal eccentric force measured - Do not compare apples to oranges.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 33274,
+        "doi": "10.1136/bmjsem-2023-001699",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Female Athletes",
+        "Male Athletes",
+        "Healthy Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Repeated-measures test study of 140 football players (84 women, 56 men) who performed NordBord Nordic hamstring tests with 0, 5 and 10 kg added weight. Maximal eccentric force was higher with added weight in both sexes and in players who could and could not control the final phase, with the authors reporting +17 N (5%) in women and +27 N (6%) in men at 10 kg.",
+      "limitations": "The study uses one test session per load and gives no reliability data for the visual control classification. The 15 and 20 kg subgroup (10 men) is too small to interpret, and the authors state that the rise with added weight is similar to the test's measurement error.",
+      "synthesisCaution": "Staff may treat the 2 to 8% rise with added load as a real strength difference, or use it to set individual test loads, when it reflects the test protocol and the authors say it is similar to the test's measurement error.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added fixed non-randomised load order ('performed with gradually increasing weight rather than in a randomised order')",
+            "synthesisCaution, paper.athleteDev: '2 to 7%' -> '2 to 8%' (Table 1 males with control at 10 kg: 8% (6%-9%))"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1413",
+        "synthesisBatch": "pilot-synthesis-batch-86",
+        "publishedOn": "2026-10-09"
+      }
+    }
+  ]
+}
