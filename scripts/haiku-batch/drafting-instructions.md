@@ -37,7 +37,7 @@ For EXCLUDE, the taxonomy, summary and `paper` fields may be null.
 - `year`: the journal issue/publication year from the citation line or the journal header. NOT the received, accepted or online-first date. If only an online-first date exists, use that year.
 - `doi`: the article's own DOI, exactly as printed, lowercase prefix "10.". Never use a DOI from the references.
 - `citation`: list authors as printed (surname + initials; use "et al." after 6 authors). Include volume, issue and pages only if they are printed for this article. Do not invent them.
-- `populations`: always add `Male Athletes` and/or `Female Athletes` when the sample's sex is stated. Add `Healthy Athletes` or `Injured Athletes` when health status is stated. Add the competition level (Professional / Elite, Collegiate, Youth / Adolescent, Adult / Recreational). Use `Mixed / Unspecified` only when the level really is mixed or unstated.
+- `populations`: add `Male Athletes` and/or `Female Athletes` when the sample is athletes and their sex is stated. Do not use athlete tags (sex or `Healthy Athletes`) for non-athlete samples such as recreationally active adults, patients, staff or students; use `Adult / Recreational` or `Mixed / Unspecified`. Add `Healthy Athletes` or `Injured Athletes` when health status is stated. Add the competition level (Professional / Elite, Collegiate, Youth / Adolescent, Adult / Recreational). Use `Mixed / Unspecified` only when the level really is mixed or unstated.
 - `studyDesign`: code scoping reviews with a described systematic search as `Systematic Review / Meta-analysis` (library precedent). Use `Narrative Review` only when no search method is described.
 - `primaryDomain`: the domain staff would browse to find this paper. Use Monitoring & Technology for papers whose main contribution is a measurement tool, test, device or monitoring method, including reliability, validity and test profiling.
 - If the abstract and the results/tables disagree, report the results/table values and note the conflict in `limitations`.
@@ -48,3 +48,6 @@ For EXCLUDE, the taxonomy, summary and `paper` fields may be null.
 - Each paper field: 1-3 plain sentences. `tldr`: one or two practitioner sentences. `athleteDev` = Performance Application. `rtp` = Return to Sport Application. If the study cannot inform return to sport, say what it cannot be used for.
 - Practical fields must follow from the findings. No generic advice the paper does not support.
 - Plain language, no em dashes.
+
+## Files
+Write only to `drafts/<ID>.json` and your own `helpers/<your-folder>/`. Never write anywhere else, including the filesystem root.
