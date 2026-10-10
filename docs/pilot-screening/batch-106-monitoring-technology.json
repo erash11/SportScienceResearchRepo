@@ -1,0 +1,701 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-106-monitoring-technology",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Monitoring & Technology queue positions 4-89. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 4,
+      "sourceFile": "The Modified-Athletic Shoulder Test - Reliability and validity of a new on-field assessment tool.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 42583,
+        "doi": "10.1016/j.ptsp.2022.08.003",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Test-retest and concordance study of 20 healthy male volunteers who trained upper-limb sports about 8 hours per week. The handheld-dynamometer version agreed well with the force plate version (ICC 0.864 to 0.952, no significant paired difference), and inter-session reliability was moderate to good (ICC 0.643 to 0.923), best in the I position.",
+      "limitations": "Only 20 healthy men playing mixed upper-limb sports were tested, with reliability measured one week apart. The findings establish agreement and reliability in healthy athletes, not validity against injury, fatigue or return to play.",
+      "synthesisCaution": "Staff could treat the modified test as a validated return-to-play or fatigue measure, but this study assessed agreement and reliability in healthy athletes only.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: clarified that the wide CI example is the inter-session ICC for the handheld Y position, not a concordance value (Table 3: 'Y position ICC 0.643 [0.233-0.849]')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1776",
+        "synthesisBatch": "pilot-synthesis-batch-106",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 14,
+      "sourceFile": "The Relationships Between Internal              and External Measures of Training Load and Intensity in Team      Sports-   A       Meta-Analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 18,
+        "extractedCharacters": 82384,
+        "doi": "10.1007/s40279-017-0830-z",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer",
+        "Rugby",
+        "Basketball",
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Systematic review (six databases, PRISMA) and random-effects meta-analysis of 13 studies, 15 datasets and 122 correlation estimates from 295 healthy team-sport athletes and 10,418 training or match sessions. Internal load measures were session RPE (sRPE), session RPE training load (sRPE-TL) and heart-rate training impulse (TRIMP); external measures were total distance, high-speed distance, accelerometer load and impacts. The pooled correlation of sRPE-TL with total distance was r = 0.79 (90% CI 0.74 to 0.83), and with accelerometer load was r = 0.63; sRPE with per-minute external measures was weak (r = 0.22 to 0.29). Training mode explained 24 to 100% of the between-estimate variance in four moderator models.",
+      "limitations": "The pooled studies are unstructured observational studies with varied devices, sampling rates and correlation methods, and some pooled repeated sessions as one sample. Many datasets had few estimates, several relationships could not be inferred, and the training-mode moderator analysis covered only four relationships.",
+      "synthesisCaution": "Staff could take the strong sRPE-TL and distance correlation as proof that session RPE can stand in for external load in every session, when the links shift with training mode and the authors warn that the session-total correlations may partly reflect mathematical coupling through session duration.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: 'do not cover injured athletes or women' -> sex is not reported and no exclusion of women is stated; adult-only inclusion added ('Participants aged >= 18 years or defined as senior athletes')",
+            "tldr: 'rose with external load in every case' -> pooled correlations were all positive ('The direction of all pooled estimates was positive'), avoiding causal wording",
+            "practicalImplications: 'the authors found that no single measure captures all training' -> authors say their data 'could also support the notion that multiple measures are needed'; ratio wording aligned to 'violates fundamental theoretical and empirical assumptions inherent to ratios'"
+          ],
+          "residualConcerns": "Online-first article: header shows only 'Sports Med' with no volume, issue or year. Year 2017 is taken from the printed copyright line ('Springer International Publishing AG, part of Springer Nature 2017') per the online-first rule; confirm the issue year when the DOI is checked.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1777",
+        "synthesisBatch": "pilot-synthesis-batch-106",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 16,
+      "sourceFile": "The Reliability of Individualized Load–Velocity Profiles.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 38421,
+        "doi": "10.1123/ijspp.2017-0610",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Reliability study in 18 resistance-trained men (mean age 27 years) who completed a baseline back-squat 1RM and three further 1RM trials 48 h apart, with bar peak velocity (PV), mean propulsive velocity (MPV) and mean velocity (MV) recorded at 20 to 100% 1RM. PV was highly reliable at all six loads, while MPV and MV were reliable at 20 to 90% but not at 100% 1RM (MPV ICC = .66, CV = 18.0%; MV ICC = .55, CV = 19.4%). Load-velocity profiles built from the reliable loads had almost perfect correlations in the abstract (r = .91 to .93 for PV, .92 to .94 for MPV, .94 to .95 for MV), and linear and second-order polynomial fits did not differ significantly.",
+      "limitations": "Only 18 resistance-trained men tested on one exercise (free-weight back squat) over three repeat trials, so the reliability estimates cannot be assumed for other lifts, sports, women or other training levels. The study does not test whether the profiles detect fatigue or training change over time.",
+      "synthesisCaution": "Staff could assume that any velocity-based profile is reliable, or that the velocities in these profiles will detect fatigue, when the study tested test-retest reliability of back-squat velocities in one lab setting and did not test sensitivity to training or fatigue.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1778",
+        "synthesisBatch": "pilot-synthesis-batch-106",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 17,
+      "sourceFile": "The Reliability, Bias, Differences, and Agreement Between Velocity Measurement Devices During the Hang Clean Pull.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text (no DOI string appears in the text). Operator to verify externally; all other fields are filled.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.abstract: said the men performed pulls 'while wearing' the devices -> devices attached to the barbell ('GA and TENDO devices attached to the barbell')",
+            "paper.tldr: Tendo 'read 4 to 7% higher on mean velocity' -> printed values 3.7 to 6.8% for mean and 1.8 to 2.9% for peak velocity ('overestimate MBV and PBV to a small extent (3.7-6.8% and 1.8-2.9%)')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 28,
+      "sourceFile": "The Thiol Oxidation State of Albumin Is Associated With Training Load Across an Australian Football Pre-Season.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 52843,
+        "doi": "10.1155/omcl/5534194",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "An observational study of 45 male professional AFL players from one team, who gave a fingertip dried blood spot each morning before training across three pre-season periods, one of them a COVID-affected period with lower training load. Thiol-oxidised albumin was highest in pre-season 1 and lowest in the COVID-affected period, and in linear mixed-effects models it was associated with total distance, distance at 10-20 and 20-25 km/h, and change-of-direction running (R2 = 0.12).",
+      "limitations": "This is a single-team, correlational study with a small sample and modest explained variance, so most of the variation in the marker is unexplained. Muscle damage, injury, collisions and recovery behaviours were not measured, and training adherence during the COVID period was not verified.",
+      "synthesisCaution": "Staff could read a modest association in one team as a validated training-load monitor, when the study tested no injury or muscle-damage outcomes and the authors call for more work before practical use.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: 'the marker was not linked to injury' implied a null finding -> injury was not tested ('the low rate of injuries during this pre-season has prevented us from relating changes ... with injury prevalence')",
+            "paper.citation: added article number printed in the header ('2026; 2026:5534194')"
+          ],
+          "residualConcerns": "Authors note pre-season 2 had higher loads than the COVID pre-season with no difference in the marker, which weakens the load interpretation.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1779",
+        "synthesisBatch": "pilot-synthesis-batch-106",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 34,
+      "sourceFile": "The Validity of Perceived Recovery Status as a Marker of Daily Recovery Following a High-Volume Back-Squat Protocol.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 36452,
+        "doi": "10.1123/ijspp.2021-0360",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "A repeated-measures study of 11 resistance-trained men, who completed a fatiguing high-volume back-squat protocol (8 sets of 10 at 70% 1RM) and then rated Perceived Recovery Status (PRS) and repeated countermovement jump (CMJ) and mean bar velocity (MBV) tests at 24, 48 and 72 hours. Within-person repeated-measures correlations between PRS and performance were strong (raw CMJ r = .84, raw MBV r = .80, all P < .001), and PRS was similarly correlated with CMJ and MBV recovery scores (r = .84 and .81).",
+      "limitations": "The sample was 11 resistance-trained men tested after one single-exercise protocol with no injured athletes or women, so the findings may not transfer to team-sport athletes or other training types. The correlations are within-person, so they do not show that the same PRS score means the same level of recovery across people.",
+      "synthesisCaution": "Staff could treat a PRS score as a fixed readiness cut-off for the whole group, when the authors found that the same score corresponded to different levels of objective recovery across individuals.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: described the sample as 'recreationally trained men' -> 'resistance-trained men' ('Eleven apparently healthy, resistance-trained men'; all reported 5+ y of training)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1780",
+        "synthesisBatch": "pilot-synthesis-batch-106",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 37,
+      "sourceFile": "The acute-chronic workload ratio and injury risk in semiprofessional football players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 25,
+        "extractedCharacters": 39623,
+        "doi": "10.1055/a-2282-0024",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "A prospective observational study of 17 outfield players from one Spanish Third Division (semiprofessional) team, tracked over 24 weeks of the 2020/21 season. Session RPE and an exponentially weighted acute:chronic workload ratio (ACWR) were compared with 10 non-contact time-loss injuries (5.91 per 1,000 hours). Spearman rho between ACWR and non-contact injury was 0.069 (N = 2,565 observations), and 5 of the 10 injuries occurred with an ACWR outside 0.8 to 1.5, which the authors conclude is insufficient for prediction.",
+      "limitations": "Only 10 non-contact injuries from a single squad of 17 players means the sensitivity and predictive estimates are very imprecise. The specificity reported in Table 4 (31.35%) equals the false-positive rate (801 of 2,555), so the specificity from the same table is 68.7%, not the figure quoted.",
+      "synthesisCaution": "Staff could read the 0.8 to 1.5 ACWR band as a reliable injury alarm, when this study found the ACWR alone did not predict non-contact injuries.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: 'Professional / Elite' -> 'Adult / Recreational'; the squad is a semiprofessional Spanish Third Division team ('4th national category ... which corresponded to TIER 3'), not professional or elite"
+          ],
+          "residualConcerns": "Taxonomy has no semiprofessional level; Adult / Recreational is the closest fit. Sex is implied ('he') but not explicitly stated, so no sex tag was added.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1781",
+        "synthesisBatch": "pilot-synthesis-batch-106",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 39,
+      "sourceFile": "The applicability of the risk score approach to competitive sport - Development of a physical success score for the Canadian Football League Combine.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed anywhere in the extracted text (no DOI string appears in the text at all). All other fields are filled; the operator may verify the DOI externally and upgrade the decision.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "primaryDomain: 'Training & Performance' -> 'Monitoring & Technology' (main contribution is a scoring tool built from combine tests, which the field rules place under Monitoring & Technology)",
+            "paper.practicalImplications: advised setting 'targets for sprint, jump and bench press work' -> jump, bench press and 3-cone coefficients were not significant in Table 5; only 40-yd sprint (p<0.001 in all groups), plus height and mass in some groups, were significant",
+            "paper.limitations: added complete-case model sizes (Table 5 n = 176, 141, 185) and the line sample conflict (abstract 'n = 211' vs Methods and Table 4 'n = 221')"
+          ],
+          "residualConcerns": "Own DOI is not printed in the text, so the record stays DEGRADED until the DOI is verified externally.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 40,
+      "sourceFile": "The association between alterations in redox homeostasis, cortisol, and commonly used objective and subjective markers of fatigue in American collegiate football.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 33607,
+        "doi": "10.1123/ijspp.2020-0933",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Collegiate"
+      ],
+      "evidenceSummary": "A repeated-measures observational study of 23 male NCAA Division I American football players assessed weekly for 10 weeks across off-season, camp and in-season phases. Fingertip free oxygen radical test and defense test (FORT, FORD), urinary cortisol, countermovement jump (CMJ) and daily wellness questionnaires were analysed with linear mixed models. FORT and FORD showed small associations with CMJ flight time, soreness and fatigue (effect sizes about 0.3 to 0.5), and cortisol showed moderate associations with CMJ concentric impulse and sleep (0.57 to 0.60).",
+      "limitations": "The sample was one team of 23 players over one season, and 39 models were run without a multiplicity correction, so the associations may be chance findings. The abstract's effect-size signs and conclusion conflict with the text in places (for example, a FORD-sleep effect reported as +0.42 but described as negative, and a soreness-cortisol link in the conclusion that the Discussion does not report).",
+      "synthesisCaution": "Staff could read the FORT/FORD test as a validated fatigue monitor that replaces soreness or CMJ checks, when the authors found only small associations in one squad and did not test validity or predictive value.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.methods: implied the wellness questionnaire was weekly -> it was daily ('a daily subjective wellness questionnaire'; 2086 responses)",
+            "paper.practicalImplications: 'Weekly subjective soreness scores' -> routine (questionnaires were daily)",
+            "paper.limitations: added the cortisol conflict ('Other than the expected association with FORT, cortisol was not associated with any of the other variables' vs Results 'Moderate positive associations ... cortisol-concentric impulse and sleep') and the Orreco consultancy disclosure",
+            "paper.athleteDev: removed 'which can guide daily load decisions', which the study did not test"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1782",
+        "synthesisBatch": "pilot-synthesis-batch-106",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 44,
+      "sourceFile": "The ballistic hip thrust test - A potential tool to monitor neuromuscular performance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 20033,
+        "doi": "10.5114/biolsport.2021.102920",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Youth / Adolescent",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Twenty-two male under-19 football players from a French Ligue 1 club completed two ballistic hip thrust (BHT) sessions one week apart on force plates to test reliability, then a pre- and post-training comparison of the BHT and countermovement jump (CMJ) for usefulness. Inter-day coefficients of variation were 7.2% for concentric mean force and 12.7% for takeoff peak force, and intra-day values were 5.5% and 4.2%, while peak power was far less consistent (CV 39.8 to 57.8%). The authors report similar moderate usefulness for the BHT and CMJ on force measures.",
+      "limitations": "This is a single-club sample of 22 youth players with a short familiarisation period, and the authors state that a longer familiarisation would likely have improved reliability. The study did not test the test's sensitivity to fatigue or injury, and the authors' abstract reverses the intra-day CVs for mean force and takeoff peak force relative to the table.",
+      "synthesisCaution": "Staff could take the BHT as a validated hamstring or posterior-chain injury-risk test, when the study only examined the test's reliability and usefulness in healthy youth players.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: first author initials 'Brown M' -> 'Brown MA' as printed ('CITATION: Brown MA, Hader K, Guilhem G et al.')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1783",
+        "synthesisBatch": "pilot-synthesis-batch-106",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 48,
+      "sourceFile": "The countermovement jump to monitor                                neuromuscular status- A meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 43929,
+        "doi": "10.1016/j.jsams.2016.08.011",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "This systematic review and random-effects meta-analysis pooled 151 studies (531 effect sizes, 4,834 participants, 80% male, 60% athletes across 21 sports) that used countermovement jump (CMJ) variables to monitor fatigue or supercompensation after interventions of at least three weeks. The authors report that average CMJ height was sensitive to fatigue (effect size -0.56, 95% CI -0.89 to -0.24) while highest CMJ height was not (-0.04), and that for supercompensation the average height effect was 0.74 (0.58 to 0.90) against 0.33 (0.27 to 0.38) for highest height. They conclude that average CMJ height is more sensitive than highest CMJ height for monitoring neuromuscular status.",
+      "limitations": "The fatigue comparison rests on only five average-value and nine highest-value effect sizes, and 85% of included studies reported the highest value, so the average-value evidence is thin. The authors also report that 52% of interventions were non-significant and that the mean CONSORT-based quality rating was 51%, though they judge publication bias unlikely to have changed the overall results.",
+      "synthesisCaution": "Staff could assume that averaging several CMJ trials is established as the better way to detect fatigue, when the average-value fatigue result comes from five effect sizes in three studies, and the authors say the number of trials to average is still unclear.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1784",
+        "synthesisBatch": "pilot-synthesis-batch-106",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 50,
+      "sourceFile": "The current state of subjective training load monitoring - Follow-up and future directions.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 55936,
+        "doi": "10.1186/s40798-022-00433-y",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Track & Field",
+        "Basketball"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Current opinion and narrative review, with no described search method, of how subjective training load (sRPE, dRPE) is calculated, modelled against performance, and fitted into coaching decisions. The authors illustrate their points with variable-selection and mixed models using two previously published datasets from elite international athletes (Olympic long jump, n = 4, 29 performance measures; basketball, n = 13, 171 performance measures). In those examples, training stress balance and its change before competition were the strongest explanatory variables, and SMA-based measures fitted better than EWMA measures.",
+      "limitations": "The paper is a discussion piece with no systematic literature search, and its performance models come from two small, athlete-specific datasets used only for explanation. The findings cannot establish optimal acute or chronic windows or smoothing methods for any sport.",
+      "synthesisCaution": "Staff could take the example period lengths (such as 9-day acute and 21-day chronic for basketball) as general targets, when the authors state they are specific to these two datasets and should be re-derived for each team or athlete.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added the text-table conflict for the athletics change-in-TSB p value (text 'p = 0.03, f2 = 0.313'; Table 2 '0.01*') and reworded the search-method note as an auditor observation, not an author statement"
+          ],
+          "residualConcerns": "Article type is printed as CURRENT OPINION. Kept as INCLUDE (Narrative Review) because it reports original illustrative analyses with described methods (AICc variable selection and mixed models, Tables 1 and 2); a reviewer may prefer EXCLUDE (b) under the opinion-piece rule.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1785",
+        "synthesisBatch": "pilot-synthesis-batch-106",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 51,
+      "sourceFile": "The deceleration deficit - A novel field-based method to quantify deceleration during change of direction performance.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text (no DOI in the header, footer or citation line). Operator may verify externally. All other fields are complete.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: 'Mixed / Unspecified' -> 'Adult / Recreational'; the level is stated ('Thirty-six (19 women and 17 men) recreationally active subjects' competing in an invasion sport)",
+            "paper.practicalImplications: said the test can be done with timing gates -> DD also needs a contact mat at the turn line ('smart jump contact mat ... positioned at the 15-m turning point'; full approach ends at '50% of GCT of the plant step')",
+            "paper.athleteDev: 'decide whether an athlete needs braking work or linear speed work' -> 'flag whether braking may be limiting', since no training intervention was tested"
+          ],
+          "residualConcerns": "Article's own DOI is not printed (only J Strength Cond Res 36(9):2434-2439, 2022); DEGRADED with doiMissing kept. Methods call the sample recreationally active but the discussion calls them competitive university-level athletes, so the level tag is a judgment call.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 58,
+      "sourceFile": "The effect of body mass on eccentric knee-flexor   strength assessed with an instrumented Nordic hamstring   device-Nordbord-in football players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 31506,
+        "doi": "10.1123/ijspp.2015-0513",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer",
+        "Other Sport"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Professional / Elite",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Cross-sectional analysis of single-visit Nordbord eccentric knee-flexor testing in 122 football players: 81 soccer players (U17, U19, U21 academy, 4th French division, and professional) and 41 Australian Football League players, all tested in season. Eccentric strength correlated largely with body mass (r = 0.55, 90% CI 0.42 to 0.64) and was not materially changed by adjustment for body fat. The authors report the regression equation eccentric strength (N) = 4 x body mass (kg) + 26.1, and that only the professional soccer players were likely slightly (about 20%) stronger than their body-mass-expected values.",
+      "limitations": "Data were collected as routine in-season monitoring in six squads, with one test visit per player and no injury outcomes, so the equation describes strength differences but cannot show that body-mass adjustment predicts injury risk. Sex is not stated explicitly in the text, and the regression is specific to these groups.",
+      "synthesisCaution": "Staff could read the body-mass equation as a validated injury threshold, when the study only quantifies how test scores vary with body mass and gives no injury data.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "athleteDev: removed unsupported advice 'Regular retesting would give stronger evidence of change' (not stated in the paper)",
+            "populations: added Healthy Athletes ('Data from players with an injury sustained within the 6 months preceding the study were not included')",
+            "screeningLimitations/limitations: 'Sex is not stated' -> 'not stated explicitly' (players are referred to as 'his' but sex is never reported)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1786",
+        "synthesisBatch": "pilot-synthesis-batch-106",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 89,
+      "sourceFile": "The fundamentals and applications of wearable sensor devices in sports medicine - A scoping review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 20,
+        "extractedCharacters": 79021,
+        "doi": "10.1016/j.arthro.2024.01.042",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Sports Medicine",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Scoping review of PubMed and EMBASE searches from inception through 2023, with two independent screeners and no formal quality appraisal. It included 43 studies of wearable sensor devices in sports medicine: 20 in athletic training, 16 in rehabilitation and 7 in research, reported descriptively rather than as pooled effects.",
+      "limitations": "No formal risk-of-bias or quality assessment was performed, and validation studies were excluded at the reviewer's discretion. Most included studies were small single-cohort or laboratory studies, and device validity and sensor guidelines remain inconsistent across vendors.",
+      "synthesisCaution": "The review describes what wearables can measure, not whether they reduce injuries or improve return-to-play decisions, so it should not be read as evidence that any device prevents injury.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1787",
+        "synthesisBatch": "pilot-synthesis-batch-106",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

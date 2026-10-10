@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-104-brain-health-psychology",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Brain Health & Psychology queue positions 15-79. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 15,
+      "sourceFile": "The Relationships Between Reaction Time Scores and False Start Penalties of Offensive Linemen in the National Football League (NFL).pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 39454,
+        "doi": "10.1177/00315125241288605",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Archival study of 85 NFL offensive linemen (centers excluded) who completed the Athletic Intelligence Quotient (AIQ) before their draft year between 2014 and 2021 and played at least 17 games. False starts per game differed by position (ANOVA p = .02), with tackles averaging more than guards on post hoc testing (0.16 vs 0.10). Simple reaction time commission errors and choice reaction time d-prime were correlated with false starts per game (r = .22 and .29). After controlling for draft pick and position, lower choice reaction time accuracy was the only unique predictor of false starts, and the reaction time measures added about 6% explained variance (full model R2 = .21).",
+      "limitations": "Small archival sample of 82 to 85 linemen from one test battery, with false starts as a narrow proxy for linemen performance. The unique contribution of the reaction time measure is modest, and the reported regression table is incomplete.",
+      "synthesisCaution": "Staff could use the choice reaction time score to select or screen linemen, when the study explains only a small added share of variance in one penalty type and does not test whether the score predicts game performance or improves with training.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "citation: removed placeholder '0(0):1-14' ('2024, Vol. 0(0) 1-14')",
+            "evidenceSummary: p = .02 attributed to tackles vs guards -> p = .02 is the three-group ANOVA; tackles > guards came from the post hoc test ('F (2,84) = 3.96, p = .02. A Student-Newman-Keuls post-hoc test revealed that tackles...')",
+            "limitations: added power for large effects only ('80% power for detecting large effect sizes'), borderline p = .05 for the added variance, and the lead author's role at Athletic Intelligence Measures, LLC ('He is also the Chief Science Officer for Athletic Intelligence Measures, LLC')"
+          ],
+          "residualConcerns": "Undeclared potential conflict: the lead author is Chief Science Officer of the company behind the AIQ test while the article states no conflicts. Online-first article with placeholder volume/issue; year 2024 is printed in the journal header.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1772",
+        "synthesisBatch": "pilot-synthesis-batch-104",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 62,
+      "sourceFile": "The effect of exercise-induced fatigue and heat exposure on soccer-specific decision-making during high intensity intermittent exercise.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 24,
+        "extractedCharacters": 92167,
+        "doi": "10.1371/journal.pone.0279109",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Laboratory study of nine well-trained male university soccer players who completed a 92-minute cycling intermittent sprint protocol at 32 C (hot) and 18 C (temperate), responding to soccer-specific decision-making trials during the protocol. Decision-making scores were lower in the heat (86.87 +/- 7.95% vs 92.49 +/- 3.13%, p = 0.030), with no condition by time interaction. Peak power fell from the first to the second half only in the heat, although it did not differ between conditions within either half, and plasma normetanephrine and metanephrine rose more in the heat. Ten players were planned, but testing stopped early because of the pandemic, so trial order was not fully counterbalanced.",
+      "limitations": "Only nine players were analysed, the trial order was only partly counterbalanced, and the protocol used cycling rather than running. The decision-making task was a single visual task, and with no interaction effect the lower scores in heat cannot be attributed to fatigue during exercise rather than to heat exposure itself.",
+      "synthesisCaution": "Staff could read the lower decision-making scores as a clear hot-weather effect on match decision-making, when the interaction was not significant and the sample was nine players in a cycling-based protocol.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "methods: 'high-intensity workload set from their own VO2max test' -> sprints 'against a resistance of 8% body mass' with '105-s of active recovery at 35% VO2peak'",
+            "evidenceSummary/findings: power decline qualified; between-condition comparisons in each half were not significant ('first half ... p = .328 ... second half ... p = .087')",
+            "limitations/screeningLimitations: added that decision-making was lower in heat at all time points including rest ('Decision-making score was found to be lower throughout all time-points ... passive exposure to hot conditions may have contributed')",
+            "findings: added small effect size for future planning ('d = 0.20'); metanephrine p-value range reflects text (p = .006) and abstract (p = .009)",
+            "practicalImplications/athleteDev: replaced generic coaching advice with the authors' suggested strategies ('acclimatisation, cognitive or emotional-regulation strategies such as re-appraisal')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1773",
+        "synthesisBatch": "pilot-synthesis-batch-104",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 79,
+      "sourceFile": "The effects of mobile phone dependence on athletic performance and its mechanisms.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 68822,
+        "doi": "10.3389/fpsyg.2024.1391258",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A narrative review of mobile phone dependence (MPD) and athletic performance, drawing on individual and environmental factors, proposed neurobiological mechanisms and psychological theories (general stress, self-determination, compensatory internet use, and uses and gratifications). The authors describe links between MPD and sleep loss, mental fatigue, poorer decision-making and weaker coach-athlete relationships, with the brain reward system proposed as the main mechanism. They present the social cognitive model of self-regulation and the integrative model of self-control as explanatory frameworks.",
+      "limitations": "No search method or appraisal of the cited studies is described, so the selection of evidence cannot be checked. Much of the cited evidence concerns acute phone or social-media use or general samples rather than dependence in athletes, and the neurobiological and microwave mechanisms are largely theoretical.",
+      "synthesisCaution": "Staff could read the proposed brain-reward and microwave pathways as established causes of poorer athletic performance, when the review cites no athlete studies testing them and says the pathways and mechanisms need further investigation.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution: said the review 'presents them as untested hypotheses' -> the review states the mechanisms 'have been elucidated' but cites no athlete tests and says 'the influence pathways and mechanisms ... need to be further investigated'",
+            "paper.limitations: attributed to the authors a statement that mechanisms 'have not been tested directly in athletes' -> authors' own wording on causal links and need for further investigation",
+            "paper.findings: added the 30-minute exposure, internal load and 100-m/400-m details for the swimming trial and reworded the mechanism caveat as a screener observation"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1774",
+        "synthesisBatch": "pilot-synthesis-batch-104",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

@@ -1,0 +1,675 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-102-recovery-readiness",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Recovery & Readiness queue positions 10-93. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 10,
+      "sourceFile": "The Power of Belief - Investigating the Placebo Effect in Post-Exercise Recovery Strategies for Football Players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 43451,
+        "doi": "10.3390/healthcare14010004",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Male Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Randomized crossover trial in 18 injury-free male youth football (soccer) players, mean age 15.3 years, who played two friendly matches 72 h apart. After each match they received either a sham (inactive) vagus nerve stimulation device presented as a recovery tool (placebo) or passive rest. Match play significantly worsened countermovement jump, 10 and 20 m sprint and Ln-rMSSD and increased soreness and perceived fatigue. The authors found no significant time by intervention interaction for any performance or heart rate variability measure, but effect sizes favored the placebo condition for dynamic soreness (r = 0.32) and perceived fatigue (r = 0.40) at post-recovery.",
+      "limitations": "Only 18 players from one team were analysed, all youth males, so the findings may not transfer to adults, women or other competitive levels. Belief in the device was not measured, so expectancy cannot be confirmed as the cause of any difference.",
+      "synthesisCaution": "Staff could read the non-significant soreness and fatigue differences as a real recovery benefit of the device, when the between-condition comparisons were not statistically significant and the placebo was compared with passive rest, not with an active recovery method.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings: 'significant declines in ... soreness and perceived fatigue' -> soreness and perceived fatigue increased after the match while jump, sprint and Ln-rMSSD worsened ('static soreness was higher at post-match'; 'perceived fatigue was higher at post-match and post-recovery compared to pre-match')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1753",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 13,
+      "sourceFile": "The Relationship Between Relative Rest and Team Performance Across Competitive Seasons in the National Football League.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text (no DOI string appears anywhere in the text, and the reference list contains none). Operator should verify the DOI externally.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "tldr: 'Teams that went deeper in the playoffs' had less rest -> only divisional-round losers and Super Bowl winners differed from non-playoff teams ('teams that did not make the playoffs had significantly greater RRI than those that lost in the divisional round (p = 0.001) and those that won the Super Bowl (p = 0.040)')",
+            "practicalImplications: 'not associated with win percentage' -> trivial negative association that was statistically significant ('significant, trivial, negative association (r = -0.064, p = 0.011')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 26,
+      "sourceFile": "The Temporal Relationship Between    Exercise, Recovery Processes and Changes in Performance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 23,
+        "extractedCharacters": 48960,
+        "doi": "10.1123/ijspp.2018-0668",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A narrative brief review of published studies on how recovery time courses differ across metabolic, neuromuscular, central and cardiocirculatory systems, and how these relate to performance recovery. No search method is described, and the two time-course figures are schematic and hypothetical. The authors conclude that recovery strategies should be individualized and periodized, because physiological markers rarely match the return of performance.",
+      "limitations": "No systematic literature search is described, so the evidence base cannot be audited, and study selection is not explained. The figures show hypothetical time courses rather than measured data.",
+      "synthesisCaution": "Staff could read the schematic time-course figures as measured recovery timelines for their own athletes, when the authors present them as hypothetical examples.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations and paper.limitations: claimed the evidence comes from 'small' team-sport and cycling studies, which the text does not state -> replaced with limits the text supports (no selection method; authors call intervention results 'still controversial')",
+            "paper.athleteDev: 'blunted strength-training adaptation' -> 'blunted hypertrophy adaptations during strength training periods' ('detrimental effects of regular CWI on hypertrophy adaptions')",
+            "paper.rtp: said the review 'supports using jump and sprint measures to judge recovery'; the review argues against single markers -> reworded to report the 5 to 96 h neuromuscular time course only"
+          ],
+          "residualConcerns": "Year 2019 is from the accepted-manuscript header ('© 2019 Human Kinetics', acceptance May 7, 2019); no volume, issue or pages printed.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1754",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 47,
+      "sourceFile": "The correlation between sleep quality and performance in football athlete.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 26041,
+        "doi": "10.1007/s41105-020-00307-4",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "This cross-sectional study assessed 100 male football academy students aged about 13 to 18 years, with sleep quality measured by the Pittsburgh Sleep Quality Index (PSQI) and resting heart rate, blood pressure and bleep-test VO2max measured in the morning. Eighty-two percent had poor sleep (PSQI above 5), and sleep quality correlated with resting heart rate (Pearson r = 0.384), systolic pressure (r = 0.421), diastolic pressure (r = 0.469) and VO2max (r = -0.412), all p < 0.001. The authors also report ordinal (gamma) correlations of 0.68 to 1.00 for the same measures.",
+      "limitations": "A single-time cross-sectional design shows association only, so it cannot show that poorer sleep causes higher resting heart rate or lower VO2max. The sample is 100 students from one academy, the outcomes are cardiovascular and fitness markers rather than sport performance, and training load, body mass and lifestyle were not controlled.",
+      "synthesisCaution": "Staff could read these correlations as proof that sleep quality drives performance, when the study measured resting heart rate, blood pressure and bleep-test VO2max as proxies at one point in time, and the authors' conclusion that athletes with good sleep 'would achieve peak performance' goes beyond the data.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: said nicotine and caffeine use were not examined -> smokers and coffee drinkers were excluded at entry; the unexamined factors are sleep apnea, BMI, diet, lifestyle and training adaptation ('did not smoke, consume coffee and alcohol'; 'This study did not examine the state of sleep apnea, body mass index, lifestyle...')"
+          ],
+          "residualConcerns": "Year 2021 comes only from the copyright line ('Japanese Society of Sleep Research 2021'); no volume, issue or pages are printed, so the citation carries the year only. Confirm the issue year externally.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1755",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 57,
+      "sourceFile": "The effect of acute sleep extension vs active recovery on post exercise recovery kinetics in rugby union players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 56929,
+        "doi": "10.1371/journal.pone.0273026",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Randomised single-blind crossover study of 10 male university rugby union players (12 recruited, 2 removed for poor sleep-protocol compliance). After a late evening training session, players either extended time in bed to about 10 hours or attended an early morning (07:30) active recovery session, across three weeks. Sleep extension increased time in bed and total sleep time versus control on the first night, but also increased sleep fragmentation; at 14 h post-training, cognitive (Stroop) recovery was faster with sleep extension, while HR recovery and upper-body neuromuscular function were likely better with active recovery; no between-group difference in recovery status was seen at 36 h.",
+      "limitations": "Ten players in one squad, with a single standardised session and actigraphy-only sleep measurement, limit generalisation. Between-group differences were reported as unclear or small for most outcomes, and the authors note baseline sleep was below recommended levels.",
+      "synthesisCaution": "Staff could read the cognitive benefit at 14 h as evidence that acute sleep extension improves recovery overall, when lower-body neuromuscular and 36 h recovery showed no clear between-group benefit.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: total sleep time difference 'about 2 h 30 min' -> 'about 2 h 25 min' from Table 3 night 1 means ('07:00 ± 0:43' SE vs '04:35 ± 00:36' CON); added the likely, non-significant push-up flight time advantage for active recovery ('likely longer flight time ... in the CON condition (p>0.05; -0.78 [-1.65 to 0.08])')",
+            "evidenceSummary: upper-body neuromuscular and HR recovery advantage qualified as 'likely' to match reported certainty",
+            "limitations: added absence of a no-intervention control ('The inclusion of a control group would have helped') and the Discussion/Results conflict on HR recovery ('Despite the absence of a substantial between group difference, HRR took longer to recover in the SE group' vs 'HRR was likely better in the CON condition ... (p<0.05)')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1756",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 59,
+      "sourceFile": "The effect of caffeine, nap opportunity and their combination on biomarkers of muscle damage and antioxidant defence during repeated sprint exercise.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 41282,
+        "doi": "10.5114/biolsport.2023.112088",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Nutrition",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Combat Sports"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Double-blind, counterbalanced, randomised crossover study of 14 highly trained male judo athletes at international level (20 were screened). Four sessions, at least one week apart: placebo with no nap, a 20-minute nap with placebo, 5 mg/kg caffeine without a nap, and caffeine plus a 20-minute nap, followed by a running-based anaerobic sprint test. Compared with placebo, all treatments increased maximum and mean sprint power, and caffeine (with or without a nap) increased minimum power; post-exercise creatine kinase and urea were higher with caffeine, and superoxide dismutase was higher after napping (glutathione peroxidase did not differ from placebo in the table).",
+      "limitations": "Only 14 male athletes, all caffeine-naive and non-habitual nappers, were tested in a laboratory repeated-sprint protocol that the authors say does not reflect field conditions. The study used one caffeine dose and a single 20-minute nap, and the authors caution that results may not carry over to regular caffeine users or female athletes.",
+      "synthesisCaution": "Staff could treat caffeine plus a short nap as a proven pre-session strategy for any athlete, when the sample was 14 well-rested, caffeine-naive male judokas and caffeine also raised post-exercise muscle-damage markers.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: 'superoxide dismutase and glutathione peroxidase rose after napping' -> SOD only; Table 2b GPx 'NS' for PLA vs N20, CAF and CAF+N20 and ANOVA 'F(3,39) 1.26 NS'",
+            "synthesisCaution: rewrote circular sentence to name the realistic over-read (small caffeine-naive, well-rested male sample; 'Caffeine ingestion resulted in higher muscle damage')",
+            "practicalImplications: 'highest sprint performance in most participants' -> specific '11 (79%) out of 14 participants have their highest Pmin during a CAF+N20 session'",
+            "limitations: 'The nap was subjectively timed' -> 'the actual sleep duration during the nap opportunity was subjectively rated'",
+            "findings/methods: added Pmin vs placebo and AST vs caffeine alone; 'one week apart' -> 'at least one week apart'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1757",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 71,
+      "sourceFile": "The effectiveness of cryostimulation exposure on sleep and recovery in male athletes - Timing considerations.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 52050,
+        "doi": "10.1002/ejsc.12200",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Randomised controlled crossover trial of 22 well-trained male athletes or triathletes, each completing an evening high-intensity running session and one night of sleep monitoring under three conditions: whole-body cryostimulation (WBC) straight after training (about 19:00), WBC one hour before bed (about 22:00), or control, one week apart. No sleep measure (headband, actigraphy or questionnaire) differed between conditions. Parasympathetic heart rate variability indices were higher only during a 10-minute slow-wave sleep window, mainly after the 22:00 exposure, when core body temperature after bedtime was also lowest.",
+      "limitations": "Only men were included, one night was measured per condition, and the sample is small, so the findings may not transfer to women or to longer exposure periods. The sleep result is null, so the positive findings rest on heart rate variability in a short deep-sleep window and on temperature rather than on sleep quality itself.",
+      "synthesisCaution": "Staff could read the autonomic and temperature changes as proof that cryostimulation improves sleep, when no sleep measure changed under either exposure timing.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: 'condition effect on slow-wave sleep' was wrong -> the condition effect was in heart rate variability during the slow-wave sleep window ('The ANOVA test revealed a condition effect only in the SWS period'); SWS duration did not differ ('We found no difference for any outcome variable between the three nights')",
+            "findings: 'decrease in muscle soreness at the 19:00 time point' presented as a finding -> soreness change was non-significant ('We found no statistical effect of WBC on muscle soreness or perceived recovery')",
+            "evidenceSummary/abstract: parasympathetic effect limited to the SWS window; whole-night and 4 h HRV were 'ns' (Table 2)",
+            "citation: removed online-first placeholder pages '1-10'; added D-day Consortium as printed in the author line",
+            "practicalImplications/athleteDev: removed generic 'test that timing with your own athletes' and 'track responses' advice; stated that performance effects were not tested"
+          ],
+          "residualConcerns": "The paper's Highlights state 'Cryotherapy improves sleep through better parasympathetic activation', which its own sleep results do not support. Online-first version: no volume or issue printed; year taken from the 'Eur J Sport Sci. 2024' line.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1758",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 72,
+      "sourceFile": "The effectiveness of two comprehensive recovery protocols on performance and physiological measures in elite soccer players - A parallel group-r.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 47085,
+        "doi": "10.1177/17479541231155585",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Parallel-group randomised trial in U-21 Mexican National Team players: 20 enrolled and 18 analysed after one player per group was injured during the game. After an unofficial game and the day after, one group used a carbohydrate-protein shake, foam roller, cold-water immersion and tart cherry juice, and the other used the shake, stretching and intermittent cold-water immersion. Creatine kinase was back to normal by 68 h post-game and neuromuscular and perceptual measures had levelled out by 44 h, with no statistically significant difference between the two protocols.",
+      "limitations": "Only male players were studied, the sample is small, and there was no control group, so the trial cannot show whether either protocol beats no intervention. The time effects could reflect natural recovery as much as either protocol.",
+      "synthesisCaution": "Staff could read the similar recovery curves as proof that both protocols speed recovery, when without a no-intervention group the trial only shows the two combinations did not differ from each other.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: reason for 18 analysed was wrong (goalkeepers/camp exclusions) -> 'two participants, one from each group, could not complete the study due to injuries that occurred during the game'",
+            "screeningLimitations/limitations: removed the claimed abstract-methods sample conflict; 20 enrolled minus 2 injured equals the 18 analysed",
+            "findings/limitations: interaction effects were for CMJ, non-dominant MVC and TQRper ('The interaction effect ... was present for the CMJ, MVC (non-dominant limb), and TQRper models'); muscle soreness interaction was not significant (MS 'χ2 3.36, p .34'), conflict with abstract noted",
+            "synthesisCaution: protocol (a) changes were declines, not better recovery ('the CHP + FR + CWI + CJ group showed a decrement of 3.2 cm') -> caution reframed around the missing control group",
+            "limitations: 'enrolling professional players is a common limitation' not in text -> 'In this professional context, establishing a comparison group (control) was not suitable'",
+            "practicalImplications/athleteDev: CK-GPS correlation advice overstated a single-game correlation -> framed as exploratory",
+            "citation: removed online-first placeholder pages '1-11'",
+            "populations: added Healthy Athletes ('None of them had any diseases')"
+          ],
+          "residualConcerns": "The methods describe CK as 'Venous blood sample collection' that 'involved players passively drooling directly into a plastic tube', which is internally inconsistent about sample type. Online-first version: no volume or issue printed ('0(0)'); year taken from the '© The Author(s) 2023' line.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1759",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 74,
+      "sourceFile": "The effects of cannabidiol oil on noninvasive measures of muscle damage in men.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 61337,
+        "doi": "10.1249/MSS.0000000000002606",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Nutrition"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Thirteen untrained men (mean age 21.85 years) completed a double-blind, placebo-controlled crossover trial comparing 150 mg per day CBD oil with placebo oil, separated by a 2-week washout, after 6 sets of 10 maximal eccentric elbow-flexor contractions. Condition-by-time interactions and condition main effects were not significant for perceived soreness, arm circumference, hanging joint angle, peak torque or RPE (P > 0.05). Collapsed across conditions, soreness, joint angle and RPE changed over time, while arm circumference and peak torque showed no significant time effect.",
+      "limitations": "The sample was small and untrained, with one dose (about 2 mg/kg per day) and only noninvasive markers, so the trial cannot rule out effects in trained athletes, at other doses or on blood markers of damage. The damage stimulus was modest (a 12% peak torque drop that was not significant over time, versus 21% to 44% in earlier studies), which limits the chance of detecting a recovery benefit.",
+      "synthesisCaution": "Staff could read the null result as proof that CBD does not aid recovery, when the authors tested one dose and schedule in untrained men.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: said joint angle and RPE changed 'in both conditions' and omitted RPE from the null list -> time effects stated as collapsed across conditions, RPE added to the null condition effects, and no time effect for arm circumference or peak torque noted ('There was no main effect for time (F(4,48) = 1.869, P > 0.05)')",
+            "screeningLimitations: added the modest damage stimulus ('a 12% reduction in PT ... statistical significance was not met'; prior studies 21%-44%)",
+            "paper.tldr: implied swelling and strength loss were induced and not reduced -> neither arm circumference nor peak torque changed significantly over time",
+            "paper.practicalImplications: dropped strength loss (not significantly induced) and limited the conclusion to this dose ('At the current dose and schedule, CBD oil may not be beneficial')"
+          ],
+          "residualConcerns": "Supplement study (CBD). The discussion gives the total dose as about 6 mg/kg over the protocol and about 2 mg/kg per day; the abstract reports four ANOVAs while the methods report five.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1760",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 81,
+      "sourceFile": "The effects of regular cold-water immersion use on training-induced changes in strength and endurance performance - A systematic review with meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 49135,
+        "doi": "10.1007/s40279-020-01362-0",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Systematic review and meta-analysis of 8 controlled trials (470 volunteers, healthy men classed as trained, physically active, recreationally active or sedentary) in which regular post-training cold-water immersion at 15 C or below was compared with control recovery during training of 3 weeks or more. In 5 resistance training studies, cold-water immersion was associated with smaller gains in 1RM, maximal isometric strength and strength endurance (overall SMD -0.60, 95% CI -0.87 to -0.33) and in ballistic efforts (overall SMD -0.61, 95% CI -1.11 to -0.11). In 4 endurance training studies, it had no effect on time-trial mean power or maximal aerobic power (overall SMD -0.07, 95% CI -0.54 to 0.53) or on time-trial duration (overall SMD 0.00).",
+      "limitations": "Only 8 studies were pooled, with 4 to 5 per training type, and mean PEDro quality was moderate (5.3), with high risk of bias for randomisation and blinding. The pooled results cannot separate the effects of water temperature, immersion duration and frequency, and most participants were not competitive athletes.",
+      "synthesisCaution": "Staff could read the null endurance result as showing that regular cold-water immersion is harmless or neutral for all endurance training, when it rests on 4 small studies of mostly non-elite men.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings: ballistic efforts were folded into the SMD -0.60 pooled estimate -> reported separately (\"Ballistic efforts performance (overall SMD = - 0.61; CI95% = - 1.11, - 0.11; p = 0.02)\")",
+            "evidenceSummary/findings: SMD -0.07 attributed to MAP and all time-trial performance -> it covers time-trial mean power and MAP; time-trial duration reported separately (\"time-trial performance (time) (overall SMD = 0.00 ... p = 1.00)\")",
+            "evidenceSummary: 'passive or active recovery' -> 'control recovery' (one control was neutral 23 C immersion: \"water immersion in a neutral temperature (15 min at 23 C)\")",
+            "synthesisCaution: endurance studies were not all recreationally active men -> 'mostly non-elite men' (\"trained [27], physically active [5, 21, 23], recreationally active [4, 24, 36], or sedentary [28]\")"
+          ],
+          "residualConcerns": "Year 2020 is taken from the copyright line; no volume, issue or pages are printed. The reported total of 470 volunteers is as printed but looks high for 8 small trials; a reviewer may want to confirm against the PDF.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1761",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 82,
+      "sourceFile": "The effects of relaxation techniques following acute, high intensity football training on parasympathetic reactivation.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 44549,
+        "doi": "10.3389/fspor.2023.1267631",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Non-randomised, repeated-measures experimental study of 38 Division-I male football players in preseason, each tested in three conditions on different Mondays after a high-intensity training session: 15 minutes of guided mindfulness, 15 minutes of seated rest, or usual post-training activity. Post-intervention heart rate was lower after mindfulness (77.0 bpm) and rest (89.9 bpm) than after no intervention (120.1 bpm), with higher SDNN and rMSSD in both relaxation conditions.",
+      "limitations": "The three conditions were given in a fixed order by week (no intervention, then mindfulness, then rest), so condition is confounded with time, and only one squad and one training session per condition were measured. Group sizes were 35, 36 and 33 against a stated total of 38, and no a priori power analysis was done.",
+      "synthesisCaution": "Staff could read this as proof that relaxation speeds recovery or improves performance, when it measured short-term heart rate and HRV changes in one squad after single sessions and did not measure performance or readiness.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: only first author listed -> first six authors plus et al., as printed (\"Renaghan E, Wishon MJ, Wittels HL, Feigenbaum LA, Bellamy K, Hatfield M, Girardi J...\")",
+            "paper.findings: added the mindfulness vs rest comparison (\"the mindfulness group showed a larger reduction in HR and RR compared to the rest group, p < 0.05\")",
+            "paper.practicalImplications: 'so it is the stronger option' overstated a fixed-order comparison -> noted the week-order confound (\"On the 1st, 2nd and 3rd Mondays, the no-intervention, mindfulness, and resting interventions were administered\")",
+            "paper.athleteDev: removed generic 'track HRV' advice not tested in the study",
+            "paper.rtp: 'uninjured starters' -> 'starters'; health status is not stated (\"athletes the coaches identified as 'starters'\")",
+            "paper.limitations: device maker relationship worded as printed (\"the owner of the Warfighter Monitor\"); added SDNN/rMSSD labelling inconsistency"
+          ],
+          "residualConcerns": "HRV labels are inconsistent: Table 1 gives pre-training rMSSD about 48-51 ms and SDNN about 81-84 ms, Table 2 gives pre-intervention SDNN about 19-20 ms and rMSSD about 9 ms, and the results text swaps rMSSD and SDNN differences. Author-employed device maker; authors' conclusion that the techniques may improve performance is not tested.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1762",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 84,
+      "sourceFile": "The effects of travel on performance a - 13 year analysis of the National Rugby League NRL competition.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 18737,
+        "doi": "10.1080/24733938.2021.1876243",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Other",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Retrospective analysis (short communication) of official NRL match results from 2007 to 2019 (2,352 league matches, 4,704 team observations). For every 1,000 km of away travel, estimated win probability fell by 2.7% (95% CI -5.7 to 0.3%) and points difference by 1.1 points (95% CI -2.0 to -0.2), with the travel effect smaller in later seasons and no clear differences between states.",
+      "limitations": "Travel was measured as straight-line distance from the away team's home stadium to the match venue, so actual route, time zones, and travel outside matches are not captured. The win-probability interval includes zero, so only the points-difference effect is clearly different from zero.",
+      "synthesisCaution": "Staff could treat the 2.7% win-probability loss as a reliable per-trip effect for their own team, when the interval crosses zero and the figures are league-wide observational averages.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: removed internal coding note ('coded as Other because...') and labelled as short communication (\"SHORT COMMUNICATION\")",
+            "populations: 'Mixed / Unspecified' -> 'Professional / Elite' (national top-tier league; authors cite \"the increasing professionalism and physical development of athletes\")",
+            "screeningLimitations/methods: 'distance between home venues' -> distance from the away team's home stadium to the match venue (\"distance between the venue of the match and the away teams home stadium\")",
+            "methods: exclusion was home fixtures played outside the home city, not 'matches played away from the home city' (\"132 matches where teams played a home fixture outside of their home city\"); added model covariates",
+            "findings: causal 'reduced' -> 'was associated with'; added the 2018-2019 estimate (\"1.1% [-1.2 to 3.3%]\")",
+            "limitations: 'sleep' data claim not in text -> \"unable to account for or collect data on all factors associated with travel\"; team quality wording made specific"
+          ],
+          "residualConcerns": "Sex of players is not stated in the text, so no sex tag was added. Part of the limitations paragraph is lost at a column break in the extracted text.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1763",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 93,
+      "sourceFile": "The impact of daytime napping following normal night time sleep on physical performance - A systematic review, meta-analysis and meta-regression.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 23,
+        "extractedCharacters": 72049,
+        "doi": "10.1007/s40279-023-01920-2",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review and random-effects meta-analysis of 18 studies (269 physically active or athletic participants, almost all male) comparing a daytime nap with no nap after normal night sleep. Naps improved 5-m shuttle run highest distance (ES 1.026) and total distance (ES 0.737) and reduced fatigue index (ES 0.839), but had no effect on muscle force (ES 0.175); other outcomes rested on too few studies for firm conclusions.",
+      "limitations": "Only 2 of 18 studies used polysomnography, and the sprint, jump, Wingate and endurance findings rest on one to three studies each. The fatigue index result had high heterogeneity (I2 77.9%) and visual evidence of publication bias.",
+      "synthesisCaution": "Staff may over-read the shuttle-run result as a general performance benefit of napping, when the pooled evidence covers only 5-m shuttle run measures and says little firm about sprint, jump or endurance performance.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "practicalImplications: recommended a 25 to 90 minute nap, which the paper does not state, and said longer gaps were 'linked to less fatigue' -> the meta-regression found no effect of nap duration (p = 0.39) and linked a longer nap-to-exercise gap to a larger fatigue index (performance decrement) benefit, not perceived fatigue (coefficient 0.01, p = 0.04)",
+            "athleteDev: removed the unsupported 25 to 90 minute range and added that other performance outcomes are not established"
+          ],
+          "residualConcerns": "Fatigue index direction is described inconsistently in the paper (abstract 'decrease in fatigue index', discussion 'FI increased by 2.5% in favor of napping'). Year 2023 is from the online-first copyright line; no issue citation printed.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1764",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}
