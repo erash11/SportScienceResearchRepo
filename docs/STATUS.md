@@ -8,9 +8,9 @@ Read this first. Update it before ending every session.
      updated 2026-09-26, including the completed SecondBrain vault push). -->
 
 ## Current state
-- 2026-10-10 (Mac): Batch 96 merged (84 records, IDs 1485-1568, library now **1,536 records**). Next unused ID 1569.
-  Eric chose to lower the named-sport shortlist gate from 24 to 22 (`scripts/audit-pilot-shortlist.mjs`); the
-  regenerated shortlist has 22. `npm run audit` and `pilot:check` pass. See `docs/handoffs/2026-10-10-mac-batch-96-103.md`.
+- 2026-10-10 (Mac): Batch 96 merged (84 records, IDs 1485-1568). Batch 97 added 77 records (IDs 1569-1645); library
+  now **1,613 records** on the branch `batch-97-99-staged`. Next unused ID 1646. Q26 coded DEGRADED (journal year not
+  printed). The shortlist was rebuilt (84 candidates, Athlete Wellbeing pool exhausted). `npm run audit` and `pilot:check` pass.
 - Backlog: about **466 unscreened unique PDFs** remain on the branch (`python3 scripts/haiku-batch/backlog.py`).
   Pipeline: `scripts/haiku-batch/` (Haiku 5.5 drafts, Opus 5.5 claim audit).
 - Ask the Library drafter merged (PR #12): `npm run pilot:draft -- <request.json>`. Stress-test eval in

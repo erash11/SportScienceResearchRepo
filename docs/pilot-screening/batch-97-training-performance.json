@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-97-training-performance",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Training & Performance queue positions 2-87. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 2,
+      "sourceFile": "Rhabdomyolysis due to nutritional supplements intake - Case report.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) Not relevant to athletes: a case report of a 26-year-old man with morbid obesity, schizophrenia and past substance use who developed rhabdomyolysis after taking a full bottle of thermogenic supplement capsules. The patient was not described as an athlete and reported no physical activity in the 48 hours before admission.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: 'obesity' -> 'morbid obesity' ('history of morbid obesity, substance abuse (ceased one year prior), and schizophrenia')",
+            "confidence: high -> medium, because the relevance call is borderline (case report in Apunts Sports Medicine on fat-burner supplements, but the patient was not an athlete: 'He reported no olanzapine use or engagement in physical activity within the past 48 h')"
+          ],
+          "residualConcerns": "Borderline exclusion. Case reports are an eligible design and the topic (thermogenic fat-burner supplement causing rhabdomyolysis and acute kidney injury) matters to sports nutrition and medical staff, but the patient was a non-athlete with an extreme overdose (about 60 capsules, about 1.8 g caffeine) and olanzapine as a possible co-factor. If the library counts supplement safety in the general population as athlete-health evidence, this should become INCLUDE with DOI 10.1016/j.apunsm.2025.100479 (Apunts Sports Medicine 2025;60:100479).",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 3,
+      "sourceFile": "Rise of intravenous nutrition products among professional team sport athletes - Reasons to be concerned.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial or commentary piece (Lewis et al., Br J Sports Med 2022) with no original methods and no structured review of evidence. The text is labelled 'Editorial' and argues about intravenous nutrition use in professional team sport.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 22,
+      "sourceFile": "Salary dispersion and team success - The impact of positional spending on win percentage in the National Football League.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) not relevant to athlete performance or health: the study models NFL team salary-cap allocation by position against win percentage, with no athlete health or athlete performance outcome.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Borderline (c): the paper is about sport (NFL salary-cap allocation vs team win percentage) but has no athlete health or athlete performance outcome, so it falls outside the library's athlete-evidence scope. Could suit a football analytics collection instead.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 25,
+      "sourceFile": "Scheduling concurrent training 48 vs 72 hours after simulated match play - Effects on neuromuscular function and fatigue.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 53417,
+        "doi": "10.1249/MSS.0000000000003044",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Ten male recreational team sport athletes completed two 5-day microcycles, each starting with a simulated soccer match (SAFT90) followed by a concurrent training session (intermittent sprints and a lower limb resistance session) either 48 h (MD+2) or 72 h (MD+3) later. After the simulated match, maximal voluntary force, potentiated twitch force and voluntary activation fell and fatigue and soreness rose; twitch force, voluntary activation, fatigue and soreness recovered by 24 h and maximal voluntary force by 48 h. Fatigue was higher at 48 and 72 h in the MD+2 condition, soreness was higher at 72 h in MD+2, and fatigue was still above baseline at 96 h only in the MD+3 condition.",
+      "limitations": "The sample was small (n=10) and recreational, the match was a non-contact simulation, and there was no control condition. The authors note that effects smaller than ES 0.71 could have gone undetected, and chronic effects of the scheduling were not studied.",
+      "synthesisCaution": "Staff could read this as showing that concurrent training 48 h after a match is safe for recovery in general, when it tested one session prescription in recreational athletes in a non-contact simulation.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: said fatigue 'fell' and all measures returned within 24 h -> fatigue and soreness rose; MVF recovered at 48 h ('remained below baseline at 24 h post ... before recovering at 48 h')",
+            "paper.findings: 'force and twitch fell further' after CT -> fell again from a recovered baseline ('Before CT (PRECT) in both conditions, all changes in neuromuscular function had returned to baseline')",
+            "paper.tldr and athleteDev: 'more fatigued and sore at 96 h' for MD+3 -> more fatigued only; soreness at 96 h was above baseline 'in both conditions' with no between-condition difference reported"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1569",
+        "synthesisBatch": "pilot-synthesis-batch-97",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 42,
+      "sourceFile": "Seven points for athletes to consider before using a dietary supplement.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial/commentary: the text is a 'Viewpoint' article (AMA Journal of Ethics, 2022) that offers seven considerations for athletes. It describes no original methods and no structured or systematic review of evidence, and its references are used as background only.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 43,
+      "sourceFile": "Sharing information is probably more helpful than providing generic training recommendations on return to play after COVID-19 home confinement.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial/commentary: the text is a Science and Medicine in Football editorial that argues against generic return-to-play training advice. It has no original methods and no structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 45,
+      "sourceFile": "Should GPS data be normalized for performance and fatigue monitoring in soccer - A theoretical-practical discussion on high-speed running.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Opinion/perspective piece: the text is labelled a 'Perspective' and calls itself a 'perspective discussion article'. It proposes a conceptual two-zone high-speed running framework, with no described search, no structured evidence review and no original data. Judgment call: the authors use the word 'review', but no review method is described.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Borderline between an opinion piece and a narrative review: the article is typed 'Perspective' (Front Sports Act Living 2025;7:1603767, DOI 10.3389/fspor.2025.1603767 printed) and argues for a framework, but it also summarises physiological and kinematic literature. A human reviewer may decide it qualifies as a narrative review.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 51,
+      "sourceFile": "Single leg power output and between      limbs imbalances in team sport players - Unilateral vs bilateral   combined    resistance training.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(a) source identity mismatch: the text is a different article, 'Single Session Intermittent Heat Exposure With More Frequent and Shorter Cooling Breaks' (cycling in heat, Int J Sports Physiol Perform 2024), not the single-leg power and limb imbalance study the filename names.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 56,
+      "sourceFile": "Slaves to (GPS) norms.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) editorial, commentary or opinion piece without original methods or a structured review of evidence: a Sport Performance & Science Reports feature that argues GPS normative targets are not evidence-based, with no systematic search or data.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 64,
+      "sourceFile": "Sleep and muscle recovery-        Endocrinological and molecular basis for a new and promising        hypothesis.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Hypothesis article (Medical Hypotheses) with no original methods and no structured review of evidence; it proposes that sleep debt impairs muscle recovery and cites mainly animal and general-population hormone studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 70,
+      "sourceFile": "Sleep debt induces skeletal muscle injuries in athletes - A promising hypothesis.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Hypothesis article (Medical Hypotheses) without original methods or a structured review of evidence. The authors propose a mechanism linking sleep debt to muscle injury and do not test it. Confidence medium: a reviewer who reads it as a narrative review could override to INCLUDE.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Borderline decision. The article (Medical Hypotheses 2020;142:109836, doi 10.1016/j.mehy.2020.109836) has no methods section and ends with 'we hypothesize that athletes who have poor sleep quality...', but its body summarises a substantial literature, including the authors' own animal and athlete studies. A reviewer who classes it as a narrative review could change it to INCLUDE.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 83,
+      "sourceFile": "Small Performance Effects of a Practical Mixed-Methods Cooling Strategy in Elite Team Sport Athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 40763,
+        "doi": "10.1080/02701367.2022.2125158",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Crossover laboratory study of 10 non-heat-acclimated elite male rugby sevens players, who completed two cycling heat response tests at 35°C and 80% humidity, one with combined ice slushy ingestion and ice towels to the head, neck and face (COOLING) and one without (HOT). COOLING lowered mean tympanic temperature by 0.4 ± 0.3°C, the only change that reached statistical significance, and produced a non-significant 7 ± 33 W (about 3%) higher 4-minute time-trial power.",
+      "limitations": "Ten athletes from one team, no control group, and a fixed order (HOT in week 1, COOLING in week 2). Tympanic rather than core temperature was measured, and the cycling protocol reproduces the perceived but not the physiological stress of running.",
+      "synthesisCaution": "Staff could read the 3% time-trial gain as a performance benefit, but it was not statistically significant and came from one test in 10 non-acclimated athletes in a non-randomised design.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1570",
+        "synthesisBatch": "pilot-synthesis-batch-97",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 87,
+      "sourceFile": "Specific Adaptations to 0 percent, 15 percent, 25 percent, and 50 percent_ Velocity-Loss Thresholds During Bench Press Training.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 46575,
+        "doi": "10.1123/ijspp.2021-0481",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Fifty resistance-trained young men (mean age 23) were allocated by 1RM, with ABBA counterbalancing, to four groups with velocity-loss thresholds of 0%, 15%, 25% or 50% (n = 12 to 13 each). They trained bench press twice weekly for 8 weeks at 55% to 70% of 1RM, and 1RM rose in the 15%, 25% and 50% groups (all P < .001) but not the 0% group, with the largest rise in the 25% group (68.0 to 78.8 kg).",
+      "limitations": "The participants were resistance-trained but not athletes, and the study used one exercise, 8 weeks and a single ultrasound slice for muscle size. The abstract says participants were randomly assigned, but the Methods describe allocation by 1RM with ABBA counterbalancing, so the allocation method is unclear.",
+      "synthesisCaution": "Staff could read the 25% threshold as a universal best setting, but most between-group gains did not differ and the advantage lies in effect sizes, in non-athletes doing bench press only.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr and paper.practicalImplications: VL50 chest-size result stated as a group advantage -> within-group increase only, with no between-group difference (\"No significant group x time interaction was observed for pectoralis major muscle CSA\")",
+            "paper.tldr: sample described more precisely (\"physically active sport science students\")"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1571",
+        "synthesisBatch": "pilot-synthesis-batch-97",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

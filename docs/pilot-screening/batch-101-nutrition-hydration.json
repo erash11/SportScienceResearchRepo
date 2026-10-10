@@ -1,0 +1,598 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-101-nutrition-hydration",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Nutrition & Hydration queue positions 6-96. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 6,
+      "sourceFile": "Risk associated with the use of selected ingredients in food supplements.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 29,
+        "extractedCharacters": 152603,
+        "doi": "10.1002/cbdv.202000686",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of four newer food supplement categories: pre-workout, fat burner or thermogenic, brain or cognitive booster, and hormone or testosterone booster. The authors report contamination with unauthorized substances, ingredients that are medicines or synthetic compounds, and substances prohibited by WADA, and conclude that these categories carry the highest risk of harmful ingredients. The review cites survey prevalence data on supplement use in athletes, students and soldiers, but it does not report new outcome data.",
+      "limitations": "This is a narrative review with no described search method; harms are drawn from case reports, small volunteer studies, product analyses and regulatory notifications rather than systematically collected outcome data. Much of the content is chemical, regulatory and doping-list material, and the ingredient selection was not systematic.",
+      "synthesisCaution": "Staff could read this review as showing how often these products harm athletes or cause failed doping tests, when it compiles case reports, product analyses and regulatory notices without incidence data.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'no clinical outcome data in athletes' -> harms drawn from case reports and notifications; the review does cite athlete adverse events ('The use of the dietary supplement Xenadrine resulted in the death of a baseball player from heat stroke')",
+            "synthesisCaution: 'without athlete outcome data' -> without incidence data, since athlete case reports and doping cases are cited ('An example of disqualification for unintended doping in 2013 was the female sprinter Sherone Simpson')",
+            "paper.findings: added the doping-case examples behind the sanctions claim ('Further examples of sanctions for doping caused by the detection of higenamine involve American athletes in 2018')",
+            "paper.limitations: 'contains no athlete clinical outcome data' -> evidence of harm comes from case reports, small volunteer studies and notifications",
+            "paper.athleteDev: 'avoid products with undeclared stimulants' (not actionable) -> be aware that products may contain undeclared compounds"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1621",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 14,
+      "sourceFile": "Role of ketogenic diet on body composition, physical health, psychosocial well-being and sports performance in athletes - A scoping review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 59100,
+        "doi": "10.3390/sports8100131",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Scoping review following JBI methodology of 12 studies (from 814 records) covering 101 trained or well-trained athletes (84 men, 17 women) from seven sports, aged 15 to 41, who followed a ketogenic diet of under 5% carbohydrate for three to twelve weeks. The authors report reductions in body weight and fat mass, increased fat oxidation, lower dietary iron intake and gut-microbiota shifts in the KD groups, mixed performance results, and a dip in well-being that recovered after about two weeks. The body-composition evidence is two small studies, and in the only randomized one (taekwondo) the non-KD group showed similar reductions.",
+      "limitations": "The included studies were small and mostly low quality, and several drew on the same athletes, so the findings cannot be generalized across sports. Performance outcomes were measured in laboratory settings rather than in competition.",
+      "synthesisCaution": "Staff could read the body-weight and fat-mass reductions as a reason to recommend a ketogenic diet for making weight, when the only randomized body-composition study found similar losses in the non-KD group and lean-mass and performance effects are not established.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/tldr/findings: body-weight and fat-mass losses presented as a KD effect -> added that the randomized taekwondo study found no between-group difference (\"Significant decreases were observed in weight, % body fat, FFM, and fat mass, however, there was no difference in effect between groups\"); tldr no longer says the diet 'reduced' weight causally",
+            "findings: added that fat-free mass fell in the taekwondo study (same quote, \"FFM\"); 2000 m improvement labelled within-group",
+            "populations: added Male Athletes and Female Athletes; sex is stated (\"84 males, 17 females\")",
+            "synthesisCaution: tied to the null between-group result"
+          ],
+          "residualConcerns": "Discussion says 'each of the studies' reported early well-being decreases although only one study measured well-being. Sample spans elite and youth athletes; sports could be tagged more specifically (race walking, gymnastics, taekwondo, CrossFit, cycling, running).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1622",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 21,
+      "sourceFile": "Safety of beta-alanine supplementation in humans - A narrative review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 35617,
+        "doi": "10.1007/s11332-023-01052-0",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of the safety of beta-alanine supplementation, drawing on clinical trials, a meta-analysis, a military-personnel safety review and position statements. No search method is described. The authors report no adverse events linked to beta-alanine, with paresthesia as the main side effect, reduced by splitting doses or using sustained-release forms, and no adverse effects reported up to 24 weeks at 3.2 g per day.",
+      "limitations": "No systematic search or quality appraisal is described, so the completeness of the evidence base cannot be judged. Most trials were not designed to assess safety, and the authors note that effects beyond 6 months are unknown.",
+      "synthesisCaution": "Staff may read 'no adverse events' as proof of long-term safety, when the authors state that evidence beyond 6 months is missing.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: 'does not support chronic high-dose use without monitoring' is not stated -> safety of chronic high-dose or >6-month use has not been studied ('No studies have evaluated the effects of beta-alanine supplementation for more than 6 months')",
+            "paper.limitations: added that clinical-marker studies used <=3.2 g/day for <=12 weeks, the abstract vs body paresthesia threshold conflict (<1.6 g vs <800 mg), and the declared author conflict of interest with Natural Alternatives International"
+          ],
+          "residualConcerns": "Co-author GGA declared funding and publication-fee support from Natural Alternatives International, a beta-alanine supplier.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1623",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 32,
+      "sourceFile": "Seasonal changes in free 25-(OH)D and vitamin D metabolite ratios and their relationship with psychophysical stress markers in male professional football players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 50199,
+        "doi": "10.3389/fphys.2023.1258678",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Longitudinal observational study of 20 male professional players from one Polish Ekstraklasa club, sampled six times from June 2021 to January 2022 across pre-season, competitive season and off-season. Total 25-(OH)D, bioavailable 25-(OH)D, vitamin D binding protein, 24,25-(OH)2D3 and 3-epi-25-(OH)D3 showed a seasonal rhythm and were higher in summer (V1 to V3) than winter (V4 to V6), while free 25-(OH)D and the stress markers (ferritin, liver enzymes, CK, testosterone, cortisol and T/C ratio) showed no seasonal rhythm. No correlations were found between free or total 25-(OH)D and the stress markers within any period.",
+      "limitations": "Twenty players from one club were analysed out of 42 recruited, the design is observational over half a year, and free 25-(OH)D was calculated rather than measured. Training load was described by session content and duration rather than quantified, and sporadic vitamin D intake was allowed. The text and Table 4 also disagree on one p-value (25-(OH)D3:24,25-(OH)2D3 ratio rhythm given as p<0.001 in the text and p=0.001 in Table 4).",
+      "synthesisCaution": "Staff may read the seasonal vitamin D changes as a reason to supplement on a schedule, or the lack of stress-marker links as proof that free vitamin D is not useful, when the study was small, one-club and observational.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: omitted that AST and ALT were significantly higher in summer than winter -> added ('AST (p = 0.027) and ALT (p = 0.018) were significantly higher than during winter'); added total 25-(OH)D values from Table 2",
+            "paper.practicalImplications: advice that vitamin D status 'may warrant periodic checks' is not tested by the study -> restated as the observed seasonal decline with group means above 30 ng/mL (Table 2 V6 33.7 +/- 4.5)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1624",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 44,
+      "sourceFile": "Short-Term D-Aspartic Acid Supplementation Does Not Affect Serum Biomarkers Associated With the Hypothalamic– Pituitary–Gonadal Axis in Male Climbers.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 31144,
+        "doi": "10.1123/ijsnem.2018-0076",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Single-blind, placebo-controlled crossover trial in 16 male climbers (mean age 35.4 years) who took D-aspartic acid (3 g/day) or placebo for 2 weeks, with a 2-week washout before the reverse order. Serum testosterone, calculated free testosterone and LH were not changed by DAA, and there were no treatment or treatment-by-time effects. Time effects across both conditions were a 6.8% rise in SHBG, a 13.6% fall in cortisol and a 3.1% rise in left-hand grip strength, none of which differed between DAA and placebo.",
+      "limitations": "Sixteen participants and a two-week dose with a short washout give little power to detect small hormonal changes or any performance effect. Only hand-grip strength and body mass were measured as performance-related outcomes, and diet was not controlled.",
+      "synthesisCaution": "The null hormone result should not be read as proof that DAA has no ergogenic effect, because the study did not test sport performance beyond grip strength.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: removed claim that the abstract overstates the null because of the grip time effect -> the +3.1% left grip change was a time main effect across both conditions with no treatment or interaction effect ('We found no significant treatment effects on the hormonal, physical function, and hematological variables, nor any treatment x time interactions'), so abstract and results agree",
+            "evidenceSummary and paper.findings: grip rise now stated as a time effect across both conditions that did not differ between DAA and placebo (Table 1 HGS-L treatment p=.982, interaction p=.306)",
+            "paper.findings: added that baseline-change correlations did not differ between treatments ('were not significantly different between the DAA and placebo conditions (p > .247)')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1625",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 53,
+      "sourceFile": "Skeletal muscle properties and vascular function do not differ between healthy, young vegan and omnivorous men.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 31,
+        "extractedCharacters": 48861,
+        "doi": "10.1080/17461391.2021.1923814",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Single-centre cross-sectional comparison of 9 habitual vegan and 16 omnivorous young, healthy, recreationally active men with no resistance or endurance training in the prior six months. Vegans ate less protein (0.9 vs 1.4 g/kg/d), saturated fat, cholesterol and vitamin B12, with moderate to extremely strong Bayesian evidence. Brachial FMD, carotid IMT, vastus lateralis thickness and pennation angle, knee extension MVIC and measured VO2max did not differ, but the evidence for no difference was only 'anecdotal' (BF01 about 1.2 to 2.8).",
+      "limitations": "The sample is small (9 vegans), untrained and young, and the Bayes factors give only weak support for equivalence, so the study cannot show that the diets have the same effects. Diet was taken from a three-day food diary, and vegans were older than omnivores (24 vs 21 years).",
+      "synthesisCaution": "Staff could read the title as proof that a vegan diet does not affect muscle or fitness in athletes, but the groups were untrained men and the Bayesian evidence for no difference was only anecdotal.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: EXCLUDE (c) -> INCLUDE; primary outcomes include exercise performance measures (knee extension MVIC and measured VO2max) in recreationally active men, and the INSTRUCTIONS population rule provides 'Adult / Recreational' for such samples ('recreationally active habitual vegan (VEG) and omnivorous (OMN) men')",
+            "all taxonomy, summary and paper fields: null -> filled from the full text",
+            "paper.limitations: notes abstract vs table conflicts (FMD and cholesterol values); table values used"
+          ],
+          "residualConcerns": "Relevance is borderline: the sample is untrained non-athletes, so the operator may prefer the original EXCLUDE (c). Abstract FMD, saturated fat and cholesterol values do not match Tables 2 and 3.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1626",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 54,
+      "sourceFile": "Skimmed, lactose-free milk ingestion postexercise - Rehydration effectiveness and gastrointestinal disturbances vs water and a sports drink in physically active people.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 40971,
+        "doi": "10.1123/ijsnem.2023-0253",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized crossover study in which 16 physically active college students (4 women, 12 men) lost about 2% of body mass cycling in a heat chamber at 32 degrees C, then drank 150% of the loss over 90 minutes of water, a sports drink or skimmed lactose-free milk, with follow-up for 3 hours. Fluid retention was about 70% with milk and 40% with water (p < .001), with the sports drink at about 56%, not significantly different from either; mild gastrointestinal symptoms did not differ among drinks.",
+      "limitations": "The sample was 16 physically active students rather than athletes, tested once per drink after a single 2% dehydration, with 3 hours of follow-up. Milk did not differ significantly from the sports drink on fluid retention, and the research was funded by a milk producers' cooperative, which staff should weigh.",
+      "synthesisCaution": "Staff could read milk as clearly superior to sports drinks for rehydration, but milk beat water on fluid retention while its retention and net fluid balance did not differ significantly from the sports drink, even though milk produced less urine.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings and synthesisCaution: omitted that milk produced significantly less accumulated urine than the sports drink -> added ('after 3 hr ... SD-SLM = 313.1 ml ... p < .001'; 'SLM had lower TUV versus both W and SD')",
+            "paper.limitations: GI 'did not differ' without caveat -> notes significant condition simple effect ('Simple effects were significant: ... condition (p = .025)')",
+            "paper.practicalImplications: 'sports drink was not significantly different from milk' unqualified -> limited to retention and net fluid balance",
+            "paper.athleteDev: framed results as found in athletes -> physically active adults, not athletes ('Sixteen college students ... classified as physically active')"
+          ],
+          "residualConcerns": "Internal inconsistency in the paper: milk had significantly lower urine output than the sports drink but fluid retention and net fluid balance did not differ significantly. Study funded by a milk producers' cooperative.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1627",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 55,
+      "sourceFile": "Skin Tattoos Alter Sweat Rate and        Na+ Concentration.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 27183,
+        "doi": "10.1249/MSS.0000000000001244",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Within-person laboratory study of 10 apparently healthy young men, each with a tattoo covering at least 5.2 cm2 on one side of the body and untattooed skin on the other. Sweat was induced at rest by pilocarpine iontophoresis, with sweat rate and sweat sodium measured from each site. Sweat rate was about half as high from tattooed skin (0.18 vs 0.35 mg/cm2/min, p = 0.001), and sweat Na+ was higher (69.1 vs 42.6 mmol/L, p = 0.02), with nine of ten men showing the higher sodium on the tattooed side.",
+      "limitations": "Ten healthy non-athlete men were tested at rest with no exercise or heat load, so the study cannot show effects on heat tolerance or hydration during training. The authors call the findings preliminary, the mechanism is unknown, and the link to athletes is background rather than tested.",
+      "synthesisCaution": "Staff could read this as proof that tattooed athletes sweat less and lose more sodium in training heat, but the study used resting pilocarpine stimulation with no heat or exercise, so it cannot support any change to hydration or heat plans.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1628",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 65,
+      "sourceFile": "Sleep and nutrition interactions -   Implications for athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 55780,
+        "doi": "10.3390/nu11040822",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review (Nutrients, 2019) of how sleep and nutrition interact, with athletes as the target group. It reports sleep effects of high glycaemic index evening carbohydrate, tart cherry juice, kiwifruit, melatonin and tryptophan-rich protein, drawn from quoted trials that mostly enrolled healthy adults or people with sleep complaints. It reports no new data.",
+      "limitations": "No search strategy or evidence grading is described, so study selection cannot be reproduced. The cited sleep trials are small, several have no control group, and few included athletes.",
+      "synthesisCaution": "Staff could read the listed foods and nutrients as proven sleep aids for athletes, when the review says athlete-specific evidence is lacking.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: said most 'antioxidant and sleep work' was in healthy adults -> limited to antioxidant studies, as the text states ('the majority of studies have been conducted on healthy adults' in the antioxidant section); deficiency caveat tied to the melatonin, magnesium and zinc supplement it refers to",
+            "paper.practicalImplications: said melatonin supplements are unlikely to help athletes without a deficiency, which contradicts the review's melatonin section ('low dose of melatonin ... can elicit a sleep-inducing effect') -> deficiency caveat now limited to magnesium and zinc"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1629",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 88,
+      "sourceFile": "Specific collagen peptides increase adaptions of patellar tendon morphology following 14-weeks of high-load resistance training  - A randomized-controlled trial.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 49885,
+        "doi": "10.1080/17461391.2023.2232758",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomised, double-blind, placebo-controlled trial in which 50 recruited healthy, moderately active men (mean age 28.6) did 14 weeks of high-load leg training, with 5 g a day of specific collagen peptides or maltodextrin placebo; 31 completed. Patellar tendon cross-sectional area rose 10.7% with collagen peptides and 6.5% with placebo, and the between-group difference was significant only at 60% and 70% of tendon length, while stiffness, strength and rectus femoris size rose in both groups without group differences.",
+      "limitations": "Men aged 18 to 40 with low to moderate activity, single centre, with 19 of 50 recruited men dropping out (9 supplement, 10 placebo). Only two of eleven tendon sites showed a significant group difference, so the effect is regional and specific to this collagen product.",
+      "synthesisCaution": "Staff could read the tendon result as proof that collagen supplements speed tendon repair or prevent injury, when the study measured tendon size in healthy men, not injury, tendon strength or healing.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added the abstract-results conflict on sample size (abstract: \"50 healthy, moderately active male participants completed\"; Results: \"A total of n = 31 participants successfully completed the study\")"
+          ],
+          "residualConcerns": "Completer-only analysis with 38% dropout; partly industry-funded by the supplement maker.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1630",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 95,
+      "sourceFile": "Sports Dietitians Australia Position Statement- Nutrition for Exercise in Hot Environments.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 96980,
+        "doi": "10.1123/ijsnem.2019-0300",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Athletic Training",
+        "Coaching",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "Sports Dietitians Australia position statement on nutrition and hydration for exercise in hot and humid environments, written by sports nutrition and sports science researchers and practitioners. It reviews heat stress physiology, gastrointestinal function, fluid and sodium losses and heat acclimation, then gives practical strategies and sport-specific recommendations for team, endurance, junior, travelling and para-sport athletes. It reports no new data.",
+      "limitations": "This is a consensus document. It does not describe a systematic search or grade the evidence behind each recommendation, so the strength of support for each strategy cannot be read from the text.",
+      "synthesisCaution": "Staff could read the sodium loading, hyperhydration and cold-beverage strategies as proven performance tools for every athlete, when the statement presents them as options to tailor to individual sweat losses, gut tolerance and event rules.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1631",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 96,
+      "sourceFile": "Sports Drinks on the Edge of a New        Era.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed anywhere in the extracted text, so the decision is DEGRADED with doiMissing true. The piece calls itself a perspective; it is coded here as a narrative review because it summarizes the literature historically and reports a pilot study with numbers. The operator should confirm that classification, since an opinion-piece reading would be exclusion (b).",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations and paper.limitations: pilot described as internally inconsistent -> the 4 vs 3 alginate athletes is explained in the text ('the bottles of one athlete were damaged during the run and thus this data has been omitted')",
+            "paper.findings: 30 to 60 g per hour presented as evidence of benefit -> attributed to ACSM guidance for 1 to 2.5 h exercise ('Current ACSM guidelines recommend the ingestion of 30 to 60 g/h during prolonged endurance exercise lasting between 1 and 2.5 h')"
+          ],
+          "residualConcerns": "Decision kept DEGRADED (no own DOI printed). The article sits in the 'FIMS: International Perspectives' section and calls itself a perspective; it is retained as a narrative review because it includes a historical evidence summary and original pilot data, but a reviewer should confirm it is not exclusion (b).",
+          "spotCheckPriority": "high"
+        }
+      }
+    }
+  ]
+}

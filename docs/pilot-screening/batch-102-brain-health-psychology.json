@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-102-brain-health-psychology",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Brain Health & Psychology queue positions 11-81. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 11,
+      "sourceFile": "Risk of two sport-related concussions in the same year - Is the second concussion worse.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 35568,
+        "doi": "10.1097/JSM.0000000000001156",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case-control Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Sports Medicine",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Injured Athletes",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Retrospective case-control study of 834 athletes aged 12-23 seen at a regional sports concussion clinic within 3 months of a sport-related concussion between 2017 and 2020, of whom 56 (6.7%) had a second concussion within 365 days. Personal migraine history (19.6% vs 9.5%), family migraine history (37.5% vs 24.5%) and family psychiatric history (25% vs 13.1%) were more common in the repeat group (P=.02, .03 and .01), while symptom resolution, return to learn and return to play did not differ. Within the 56 repeat athletes, the initial symptom score was higher at the second concussion (median 29.5 vs 20, P=.02), and amnesia was more common after the first (12.9% vs 5.4%, P=.03).",
+      "limitations": "History and prior concussions were self-reported, the repeat group was small (56) and came from one specialty clinic, and some second concussions were treated elsewhere for the first. The authors did not adjust for multiple comparisons, so the risk-factor results are exploratory.",
+      "synthesisCaution": "Staff could take the migraine and family-history links as a way to predict who will be concussed again, when they are unadjusted, exploratory associations drawn from 56 repeat cases in one clinic.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: added Male Athletes and Female Athletes; sex is stated (\"Female 20 (35.7%) ... 285 (36.6%)\")",
+            "paper.methods: all 56 repeat cases compared with their own first concussion -> initial-concussion data for 31 of 56 (\"31 (55.3%) were also evaluated for their initial concussion in our clinic\")"
+          ],
+          "residualConcerns": "Source internal inconsistencies: 31 plus the 15 treated elsewhere does not equal 56; amnesia at the repeat concussion is 11 (19.6%) in Table 2 but 3 (5.4%) in Table 3, which affects the within-group amnesia finding. Age range 12-23 means some participants may be college age.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1632",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 47,
+      "sourceFile": "Should we lose sleep over sleep disturbances after sports-related concussion - A scoping review of the literature.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 60701,
+        "doi": "10.1097/HTR.0000000000000701",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Scoping review (PRISMA-ScR) that searched Scopus, MEDLINE, SportDiscus and Web of Science for studies of sleep after sports-related concussion in adults. Ten studies were included, covering 896 concussed adults, with 1327 non-concussed adults in eight of them. Most subjective measures showed sleep disturbance after concussion, while the only polysomnography study found no differences from controls and the two actigraphy studies reported large variability in sleep duration.",
+      "limitations": "The review did not assess risk of bias, and the included studies used varied concussion definitions, sleep measures and designs, with several using unvalidated single questions. Only one study used polysomnography, with 10 concussed and 11 control participants.",
+      "synthesisCaution": "Staff could read this as evidence that concussion causes lasting sleep loss or raises neurodegeneration risk, but the paper reports only preliminary, mostly subjective associations and states that definitive clinical recommendations cannot yet be made.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution: 'states that no clinical recommendations can yet be made' -> 'definitive clinical recommendations cannot yet be made' ('it is not possible to provide definitive clinical recommendations'; the authors still recommend monitoring sleep)",
+            "paper.practicalImplications: sequence corrected; a positive finding (not only persistent problems) triggers fuller assessment, and referral is for ongoing disturbance or excessive daytime sleepiness ('an initial positive finding on sleep disturbances is an indication for a more in-depth sleep assessment'; 'reports ongoing sleep disturbances and/or excessive daytime sleepiness, it may be necessary to refer'); 'sleeping more or less' -> 'sleeping more than usual' ('recommend adding a question about sleeping more than usual')"
+          ],
+          "residualConcerns": "The paper is internally inconsistent on the polysomnography sample: Table 1 lists 10 concussed and 11 controls, while one discussion passage says 11 with SRC and 10 controls. Concussion topic, so clinically sensitive.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1633",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 71,
+      "sourceFile": "Sleep deprived or concussed - The acute impact of self-reported insufficient sleep in college athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 57506,
+        "doi": "10.1017/S135561772000065X",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Analysis of a university sports concussion programme (2002 to 2018) with 772 collegiate athletes. Athletes who slept 5.78 hours or less before baseline testing (n=100) reported more overall and cluster symptoms than those who slept over 7.07 hours (n=508), with no difference on cognitive composites. Compared with athletes who slept well before a post-concussion test, baseline athletes with short sleep (n=93 vs 76) differed only in sleep symptoms and headache.",
+      "limitations": "Sleep was one self-reported item for the night before testing, and the groups were defined by sample mean and SD cut-offs rather than a validated threshold. In Aim 2 the post-concussion group was older, and the null objective results do not establish equivalence between the groups.",
+      "synthesisCaution": "Staff could read the conclusion as proof that insufficient sleep causes concussion-like deficits. The objective cognitive measures did not differ, and the overlap is in self-reported symptoms.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added the abstract-versus-results conflict on symptom clusters (abstract: 'more symptoms from each of the five symptom clusters'; Table 5: affective cluster p = .08)",
+            "paper.practicalImplications: CBT-I referral was written as a study finding -> now attributed to the authors' recommendation, which the study did not test"
+          ],
+          "residualConcerns": "Concussion baseline-testing paper; the authors' conclusion of cognitive underperformance is not supported by their own objective composites.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1634",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 81,
+      "sourceFile": "Sleep-wake disorders after sports concussion - Risks, revelations, and interventions.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 45774,
+        "doi": "10.1097/WNP.0000000000000931",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Recovery & Readiness",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Invited narrative review of sleep and wake disorders after sports-related concussion and mild TBI, drawing on clinical series, polysomnography, actigraphy, quantitative EEG and a few athlete cohorts. The author reports that insomnia after concussion was linked to a 2.19-fold higher risk of persistent postconcussion syndrome in 1,507 NCAA student-athletes and a 2.79-fold higher risk in 1,334 high school athletes, and that polysomnography in mild TBI usually shows no gross change in sleep architecture.",
+      "limitations": "No literature search method is described, so the choice of studies cannot be reproduced. Most athlete data are observational, and several cited sleep findings come from mild TBI samples rather than sport-related concussion.",
+      "synthesisCaution": "Staff could read the link between poor sleep and slower recovery as proof that treating sleep speeds return to play, when the review says only that sleep disorders may play a causal role.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: acute poor-sleep finding attributed to mild TBI -> sports-related concussion, as stated (\"Poor sleep quality during the acute phase of SRC has been shown to predict lingering postconcussion symptoms... 1 year after injury\")"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1635",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

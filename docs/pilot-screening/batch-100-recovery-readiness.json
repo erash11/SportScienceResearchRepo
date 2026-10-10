@@ -1,0 +1,966 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-100-recovery-readiness",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Recovery & Readiness queue positions 15-85. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 15,
+      "sourceFile": "Routine, routine, routine - Sleep regularity and its association with sleep metrics in professional rugby union athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 38772,
+        "doi": "10.1186/s40798-024-00709-5",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Observational study of 23 professional male rugby union players from one Super Rugby team, monitored with wrist actigraphy and a daily wellness questionnaire over a three-week pre-season block. Players were split at the median sleep regularity index (76.4) into regular (n=11) and irregular (n=12) sleepers, and regular sleepers had longer average nightly sleep (7:42 vs 7:18 h:min, P=0.03) and more total sleep over three weeks (169:28 vs 160:07 h:min, P=0.02, d=0.97), along with more time in bed (9:09 vs 8:28 h:min, P<0.01). Sleep efficiency (85.2% vs 83.1%) and wake episodes (2.9 vs 3.8 per night) were not significantly different (P=0.09 each), and no wellness measures differed.",
+      "limitations": "This is an observational study of 23 players from one male team over three pre-season weeks, so it cannot show that routine itself lengthens sleep, and regular sleepers also spent about 41 minutes more in bed. Naps were not recorded, and the median split is a statistical choice rather than a clinical cut-off.",
+      "synthesisCaution": "Staff could read the 24-minute nightly difference as proof that regular timing adds sleep, when it is an observational link in 23 players over three weeks, and the efficiency and wake-episode differences were not significant.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings/screeningLimitations/limitations: omitted the time-in-bed difference -> added (Table 1 \"Average Time in Bed per night 9:09 ± 0:16 vs 8:28 ± 0:25, < 0.01, 1.84\")",
+            "limitations: noted the abstract assigns d=0.71 to efficiency and 0.69 to wake episodes, the reverse of Table 1 (\"Wake Episodes ... 0.71\"; \"Sleep Efficiency ... 0.69\"); removed the unsupported 'several comparisons without adjustment' clause in favor of this"
+          ],
+          "residualConcerns": "studyDesign is coded Cohort Study; SRI and sleep outcomes were measured over the same three-week window, so Cross-sectional Study is also defensible.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1604",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 31,
+      "sourceFile": "Season long heart rate variability tracking reveals autonomic imbalance in American college football players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 40005,
+        "doi": "10.1123/ijspp.2020-0801",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate"
+      ],
+      "evidenceSummary": "Prospective observational study of 20 first- or second-string players (8 linemen, 12 nonlinemen) from one NCAA Division 1 football program across a competitive season, with resting heart rate and LnRMSSD measured by a smartphone pulse sensor about three times a week (1,311 samples). Linemen showed lower LnRMSSD than preseason during playoff preparation (ES -1.01 in the text, -1.05 in Table 1), the national semifinal (ES -1.27) and the national championship (ES -1.16), and resting heart rate rose at the same points for the combined group. Nonlinemen showed no significant LnRMSSD differences (largest ES -0.66 at the semifinal), and body mass was associated with preseason-to-postseason changes in resting heart rate (r=0.50) and LnRMSSD (r=-0.68).",
+      "limitations": "The sample was small, from a single team, and the study had no performance or clinical cardiovascular measures. Measures were taken at the training facility rather than on waking, and no data were collected the day after matches, so the findings describe trends rather than causes of autonomic imbalance. The authors also note that they cannot tell whether low values reflect overreaching or more serious cardiovascular change.",
+      "synthesisCaution": "Staff may treat a falling LnRMSSD as proof of overreaching or cardiovascular damage in linemen, when the study measured neither and describes trends in one team's 20 players.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary, abstract, findings: nonlinemen 'only trivial to small changes' -> no significant differences but a moderate LnRMSSD effect at the semifinal (Table 1 'SF ... -0.66 +/- 0.83 a', a = moderate)",
+            "evidenceSummary: resting heart rate rise attributed to linemen -> observed for the combined group, with no position effect ('RHR without an effect for position (P = .058) or an interaction')",
+            "paper.limitations: added text vs Table 1 conflict for the playoff-preparation ES (-1.01 vs -1.05); removed note about year source"
+          ],
+          "residualConcerns": "Authors link suppressed HRV to possible cardiovascular maladaptation in linemen, which this study did not measure; record keeps that framing as speculation.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1605",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 58,
+      "sourceFile": "Sleep Hygiene and Light Exposure Can Improve Performance Following Long-Haul Air Travel.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 44501,
+        "doi": "10.1123/ijspp.2019-0931",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized matched-pairs trial in 20 healthy, physically trained males (10 per group) who flew 21 hours eastward across 8 time zones, with an intervention group using a light exposure and sleep hygiene plan and a control group given no travel instructions. Over the 4 days after travel the intervention group showed very likely greater countermovement jump peak power (ES 1.10, ±0.55) and likely faster 5-m and 20-m sprint times at 17:00, with longer sleep during travel (ES 1.61) and across the nights after travel (ES 0.99 in the results); T-test and Yo-Yo IR1 showed no substantial difference.",
+      "limitations": "Only 20 males were studied, the intervention covered one eastward flight and 4 days after arrival, and adherence was confirmed only verbally. Sleep was measured by actigraphy and diaries rather than polysomnography, and no measure of circadian phase shift was taken, so circadian adaptation was not confirmed.",
+      "synthesisCaution": "Staff could read the results as a general jet lag fix for all athletes and all tests, when the study tested one eastward flight in 20 males and found no benefit for T-test or Yo-Yo performance.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes, Healthy Athletes, Mixed / Unspecified -> Adult / Recreational (sample is 'Twenty healthy, physically trained males' training 2 to 3 times per week, not described as athletes)",
+            "evidenceSummary and paper.findings: post-travel sleep duration ES 1.28 -> 0.99; 1.28 is time in bed ('mean time in bed, sleep duration, and sleep efficiency was very likely, most likely, and likely greater (1.28, ±0.58; 0.99, ±0.55; and 0.64, ±0.54)')",
+            "paper.limitations: added the abstract vs results conflict on the post-travel sleep effect size"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1606",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 59,
+      "sourceFile": "Sleep Interventions Designed to                        Improve Athletic Performance and Recovery- A   Systematic        Review    of         Current    Approaches.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 21,
+        "extractedCharacters": 80908,
+        "doi": "10.1007/s40279-017-0832-x",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "PRISMA systematic review (PubMed, PsycINFO and Web of Science searched in 2016 and updated in 2017) of 10 sleep intervention studies with 218 competitive athletes aged 18 to 24 years from several sports. Sleep extension had the most beneficial effects on subsequent performance, while napping, sleep hygiene and post-exercise recovery strategies gave mixed results.",
+      "limitations": "Only 10 studies were included, four had 15 or fewer participants, seven used male athletes only, and study quality was mostly moderate (one good, one poor). The athletes ranged from amateur to elite, and the review reports no pooled effect estimate, so the evidence is narrative.",
+      "synthesisCaution": "Staff could read 'sleep extension improves performance' as an established athlete intervention, when it rests on a few small, mostly male studies and the authors call for further testing.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.athleteDev: 'a nap of about 2 hours after training' (reads as a 2-hour nap) -> naps taken at least 2 hours after training ('napping at least 2 h post-training may provide the most benefit')",
+            "paper.findings: 'one-month education program' -> one-month sleep hygiene leaflet, gains in players making more changes ('participants implementing more sleep hygiene changes were found to show greater subjective improvement'); recovery strategies 'small performance changes in one study' -> 'minor improvements in performance measures'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1607",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 61,
+      "sourceFile": "Sleep and athletic performance - A multidimensional review of physiological and molecular mechanisms.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 43,
+        "extractedCharacters": 160753,
+        "doi": "10.3390/jcm14217606",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Nutrition"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Review of sleep physiology, molecular effects of sleep loss, assessment tools, travel, diet, performance, sleep disorders, treatment and sleep-based recovery in athletes. The authors searched PubMed/Medline and Cochrane with athlete, sleep and performance terms (about 7,700 records screened to 178 articles, plus reference lists) and report that sleep deprivation impairs strength, power, endurance and skill, while sleep extension and short naps improve some performance outcomes.",
+      "limitations": "The authors call this a narrative review, but a database search is described, so it is coded as a review with a described search per library rules. Much of the supporting evidence is from small, heterogeneous studies, few female athletes were studied experimentally, and the molecular and hormonal mechanisms rest on a limited number of human studies.",
+      "synthesisCaution": "Staff could treat the molecular and hormonal mechanisms (for example the BAX, BCL2 and cortisol changes) as established in athletes, when they come from a few small studies, mostly outside sport, and the review itself says more research is needed to draw firm links.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "The authors call this a narrative review ('A narrative review was conducted using the PubMed/Medline and Cochrane databases'); it is coded Systematic Review / Meta-analysis only because a database search is described, with no formal appraisal. A reviewer may prefer Narrative Review. The paper also covers sleep medication and supplements.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1608",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 62,
+      "sourceFile": "Sleep and athletic performance.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed anywhere in the extracted text; the rest of the record is complete. The operator may verify the DOI externally.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 66,
+      "sourceFile": "Sleep and the Athlete.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text (no DOI appears anywhere in the extracted text). doiMissing is true; the operator may verify externally.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Two-page 'CAQ Review' column with 23 references; kept as an eligible clinical review rather than a commentary. Concussion content: the testing-sleep claim rests on one cited study (McClure et al.). DOI not printed; operator should look it up externally.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 67,
+      "sourceFile": "Sleep and the athlete - Narrative review and 2021 expert consensus recommendations.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 95555,
+        "doi": "10.1136/bjsports-2020-102025",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Narrative review and international expert consensus (British Journal of Sports Medicine, 2020, online first) on sleep inadequacy and performance in elite athletes. It covers measurement tools, travel and jet lag, caffeine and nutrition, gives five key recommendations on sleep and performance, and sets out a four-tool practitioner sleep toolbox (education, screening, naps, banking sleep). The paper reports no new primary data.",
+      "limitations": "Expert consensus with no described systematic search, so the evidence base and the weight given to each study cannot be checked. The authors themselves note that much sleep and performance research is of poor quality, with few female athletes and few controlled trials.",
+      "synthesisCaution": "Staff could treat the toolbox and sleep-banking advice as proven performance interventions, when the authors say research is still needed on napping and sleep extension and that sleep-extension studies often lack objective sleep measures or a control group.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: said the toolbox had five recommendations -> the five recommendations are Box 1 on sleep and performance; the toolbox (Box 2) has four tools ('Tool #1' to 'Tool #4')",
+            "synthesisCaution: said napping evidence mostly lacks controls -> the lack of controls is stated for sleep-extension studies ('these studies often lack objective measures of sleep or a control group'); napping is listed only as needing research",
+            "paper.citation: removed placeholder '2020;0:1-13' and replaced with the printed online-first date (first published 3 November 2020)",
+            "paper.findings: the not-maintained follow-up result came from one cited study (ref 159), now stated as 'in one study'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1609",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 68,
+      "sourceFile": "Sleep architecture in response to a late evening competition in team-sport athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 35651,
+        "doi": "10.1123/ijspp.2021-0292",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Volleyball",
+        "Basketball",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Observational study (International Journal of Sports Physiology and Performance, 2022) in 16 male team-sport players (field hockey, volleyball, basketball) who wore a portable polysomnography device for four nights: two before and two after an evening match. Within the group, bedtime was about 90 to 100 minutes later on the night after the match, and wake-up was later, but total sleep time, sleep efficiency, sleep stages and recovery scores did not change significantly.",
+      "limitations": "Small sample: 16 analysed of 25 eligible, from three sports at regional and national level, with a single match and no control group. Caffeine, alcohol, napping and screen use were not controlled, and non-significant results with n=16 do not show that there is no effect.",
+      "synthesisCaution": "Staff could read the unchanged sleep duration and quality as evidence that evening matches do not harm sleep, when the same study found a later bedtime and later wake-up.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.abstract: read the post-match bedtime '2 h 29 min' as a 2.5 h delay -> it is the mean clock time 02:29 (Table 1 'Bedtime ... 02:29 (01:15)'); the delay was +88 to +100 min",
+            "paper.abstract: conclusion softened from 'protected' to 'seemed to protect', matching 'The delayed wake-up time seems to protect'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1610",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 69,
+      "sourceFile": "Sleep architecture is altered with travel and matches in professional rugby union players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 46918,
+        "doi": "10.1080/02640414.2025.2473150",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Prospective observational study (Journal of Sports Sciences, 2025) using home-based polysomnography in 20 male professional rugby union players over a home match and an away match involving eastbound travel. The match night had a later bedtime (+71 min), about 94 min less sleep, a higher deep-sleep proportion (+9.8%) and a lower REM proportion (-6.9%) than two nights before the match. The away condition had longer sleep onset latency (+12 min) and less light sleep (-6.2%) than the home condition, and total sleep rebounded by about 96 min the following night.",
+      "limitations": "Only 69 of 120 planned nights were recorded, the condition order was fixed (home first), there was no night before the match (MD-1), and only one away trip in one season was studied. Sleep was staged manually by one scientist, and some players found the device uncomfortable.",
+      "synthesisCaution": "Staff could read the MD+1 rebound as full recovery. The authors warn that rebound sleep can mislead, because it can hide accumulated sleep debt and residual fatigue.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.athleteDev: said the authors suggest tracking fatigue alongside sleep as practice -> the authors list fatigue markers as future research ('Future studies should include fatigue markers'); now framed as reading rebound sleep in context ('high-performance staff need to consider the context')"
+          ],
+          "residualConcerns": "The Methods define MD+1 as 'the second night following matchday', while the abstract calls it 'the following night after'; the timing of the rebound night is ambiguous in the source.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1611",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 73,
+      "sourceFile": "Sleep duration and quality in elite athletes measured using wristwatch actigraphy.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 24095,
+        "doi": "10.1080/02640414.2012.660188",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Descriptive cross-sectional study of 46 GB national-squad Olympic athletes (canoeing, diving, rowing, short-track speed skating) and 20 age- and sex-matched non-athletic controls. Four nights of wristwatch actigraphy were recorded at home during a typical out-of-competition training phase. Athletes had similar time asleep to controls (p = 0.27) but lower sleep efficiency (80.6 +/- 6.4% vs 88.7 +/- 3.6%) and higher fragmentation index (36.0 +/- 12.4 vs 29.8 +/- 9.0), with values still within the healthy-sleep range; across the pooled sample of athletes and controls, males had 12 minutes more time awake and about 2.4 points lower sleep efficiency than females.",
+      "limitations": "Single four-night, out-of-competition snapshot in a small, mixed-sport sample; actigraphy estimates sleep rather than measuring it with polysomnography, and the study did not measure training load or other factors that could explain the differences.",
+      "synthesisCaution": "Staff could read the athlete-control gap as proof that training or competition causes poorer sleep, when the design only describes sleep in one training phase and cannot establish cause.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings: sex effect presented as if athlete-only -> clarified it comes from the pooled athletes plus controls sample (Table III: 'Males 23 ... Females 43'); added male vs female athlete time-in-bed difference ('mean difference: 54 minutes')",
+            "findings: 'larger spread on most variables' -> every variable ('larger measures of spread (SD) for every sleep variable')",
+            "limitations: added abstract vs Results discrepancy in sleep-efficiency CI lower bound ('0.1' vs '0.05')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1612",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 74,
+      "sourceFile": "Sleep habits in German athletes before important competitions or games.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 40465,
+        "doi": "10.1080/02640414.2011.565782",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Mixed / Unspecified",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Questionnaire survey of 632 German athletes (379 men, 253 women; mean age 21.9 years, range 14 to 55) from many sports, of whom 225 were team-sport and 407 individual-sport athletes, and 368 were in the national supported squad system. Of these, 65.8% reported poorer-than-usual sleep at least once before an important competition, and 62.3% in the previous 12 months; falling asleep was the most common problem (79.7% of the 416 athletes with poor sleep), and thoughts about the competition (76.6%) and nervousness (59.9%) were the most-cited reasons. Most athletes (57.1%) said the poor sleep did not affect their performance, while 27.4% reported daytime sleepiness and 12.9% worse competition performance.",
+      "limitations": "Retrospective, self-reported single-time-point survey of a non-representative German sample with no objective sleep measures, so it shows how common perceived pre-competition sleep problems are but not their causes or effects on performance.",
+      "synthesisCaution": "Staff could read the 'no influence on performance' result as evidence that poor sleep before competition does not matter, when most athletes simply did not perceive an effect and the study did not measure performance.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: added Mixed / Unspecified because the sample mixes 368 squad and 264 non-squad athletes aged 14 to 55 ('The remaining 264 athletes were not members of a supportive organization')",
+            "findings: unpleasant dreams p = 0.01 -> p < 0.01 (Table II '<0.01'); added nervousness p < 0.01 and thoughts about competition 80.8% vs 71.7%, p = 0.03 (Table III)",
+            "evidenceSummary/limitations/athleteDev: noted squad membership and mixed level; 'elite' softened to 'competitive' in athleteDev"
+          ],
+          "residualConcerns": "Several printed statistics are internally inconsistent (chi-square 3.40 with P = 0.40; chi-square 0.88 with P = 0.20; w = 0.41 for chi-square 11.1 at N = 416), so exact p-values and effect sizes should not be quoted without caution.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1613",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 75,
+      "sourceFile": "Sleep patterns before and after competition - A real-world examination of elite athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 64434,
+        "doi": "10.1080/02640414.2024.2308960",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Rugby",
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Observational study of 85 male elite athletes from one AFL club (n = 51) and one NRL club (n = 34), monitored at home over 2 to 3 week blocks with wrist actigraphy and sleep diaries (1,808 nights in total). Nights before competition days had earlier sleep onset and longer total sleep time than nights before free days (mean 7 h 57 min vs 6 h 55 min), with no difference in objective sleep efficiency or wake after sleep onset. Nights after competition had later onset (25:09 vs 23:04 h:min), shorter sleep (5 h 51 min vs 7 h 14 min) and lower subjective sleep quality (5.41 vs 6.54 out of 10) than nights after free days.",
+      "limitations": "Observational study of 85 men from two clubs, with no performance or recovery outcomes measured, so it describes sleep around matches but cannot show that sleep changes affect performance or recovery; the actigraphy method is also known to misestimate some sleep components.",
+      "synthesisCaution": "Staff could take the post-competition sleep loss as evidence that a specific sleep intervention works, when the study only describes sleep patterns and tests no intervention.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: added abstract-vs-table discrepancy for the sleep quality effect size (abstract 'd = 0.71'; Table 4 Subj. Sleep Quality After Free d = 0.65, SE (SD) d = 0.71)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1614",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 76,
+      "sourceFile": "Sleep quality but not quantity      altered with a change in training environment in elite Australian rules      football players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 30813,
+        "doi": "10.1123/ijspp.2016-0009",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Observational crossover study of 19 professional Australian Football League players from one club, with wrist-worn actigraphy and daily sleep diaries over 8 days at home and 8 days at a preseason training camp on the Sunshine Coast. On camp, time in bed rose by about 34 minutes (530.6 vs 496.5 min) and wake after sleep onset rose (96.5 vs 68.9 min), while total sleep time did not change (417.0 vs 419.4 min) and sleep efficiency fell (78.7% vs 84.7%, p < .001). Subjective sleep quality and session training load did not differ, and the responses varied between individual players.",
+      "limitations": "Small single-club sample of 19 players in one non-randomised comparison, where home and camp also differed in location, bedding, roommate, daytime temperature and daylight, so the change in sleep cannot be attributed to the environment alone.",
+      "synthesisCaution": "Staff could read the camp result as a general rule that camps reduce sleep quality for all players, when the study shows that individual responses varied and the sample was small.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1615",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 77,
+      "sourceFile": "Sleep recovery and performance - the new frontier in high performance athletics.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 28777,
+        "doi": "10.1016/j.ncl.2007.11.012",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Swimming & Diving",
+        "Ice Hockey",
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate",
+        "Youth / Adolescent",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Narrative review of sleep length, sleep quality and circadian timing in elite athletes, with three clinical case descriptions (a swimmer, an ice hockey goaltender and a swimmer with snoring) and two pilot questionnaire surveys. In a National Sport School group of 46 adolescents aged 14 to 18, 36 of 42 valid Pittsburgh Sleep Quality Index (PSQI) responses scored 5 or more (85.7%) and 9 scored 8 or more (21.4%); in 24 Bobsleigh Canada Skeleton athletes (mean age 27), 18 of 23 valid responses scored 5 or more (78.3%). The author describes these questionnaire results as a pilot signal of poor sleep rather than validated prevalence, and proposes sleep length, sleep quality and circadian phase as the key factors to assess.",
+      "limitations": "A narrative review with no described literature search, plus small convenience-sample questionnaire surveys (one not validated in adolescents) and anecdotal case reports, so it proposes a framework and screening approach rather than establishing how sleep changes performance or recovery.",
+      "synthesisCaution": "Staff could read the high PSQI scores as a measured prevalence of sleep disorder in their athletes, when the surveys were small, unvalidated in adolescents, and self-reported.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: added Collegiate (cases 1 and 3 are university swimmers: 'A 19-year-old male university swimmer', 'A 20-year-old female university swimmer')",
+            "limitations: noted that case treatment responses (light therapy, autoPAP) are single-case observations"
+          ],
+          "residualConcerns": "Case reports mention sleep medication (zopiclone) and antidepressant use (citalopram); the record makes no medication recommendation, but clinical staff should read the cases directly. The BCS PSQI SD is printed as 0.672 with a range of 2 to 13, which looks implausible.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1616",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 78,
+      "sourceFile": "Sleep regularity and predictors of sleep efficiency and sleep duration in elite team sport athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 38626,
+        "doi": "10.1186/s40798-022-00470-7",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer",
+        "Rugby",
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Observational study of 203 elite team-sport athletes (79 women, 124 men; netball, Australian rules football, rugby league and soccer) monitored for at least 7 nights outside competition, with wrist activity monitors and sleep diaries (1,975 nights). The median sleep regularity index was 85.1. Compared with the most irregular fifth (n = 46), the most regular fifth (n = 42) had higher sleep efficiency (87.7% vs 85.0%, p = 0.006) and less night-to-night variation in total sleep time (33 vs 77 min), sleep onset (27 vs 75 min) and sleep offset (23 vs 62 min), with no difference in median total sleep time (8 h 18 min vs 8 h 22 min). Regression models explained 78% of the variance in total sleep time on the hold-out set (mainly sleep offset time) but only 22% of the variance in sleep efficiency (mainly bedtime and sleep onset variability).",
+      "limitations": "A single observational study of mixed-sex, mixed-sport athletes with night-to-night monitoring outside competition, with the sleep regularity index not validated against outcomes such as illness, injury or performance, so it shows associations with sleep efficiency rather than effects on health or performance.",
+      "synthesisCaution": "Staff could read the regularity-efficiency link as proof that making bedtimes more consistent will raise sleep efficiency, when the model explained only 22% of efficiency variance and the design cannot show cause.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: added Key Points vs Results discrepancy in median SRI ('85 (80 to 88.3)' vs '85.1 (81.4 to 88.8)')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1617",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 79,
+      "sourceFile": "Sleep-related Issues for Recovery        and Performance in Athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 38240,
+        "doi": "10.1123/ijspp.2017-0746",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Basketball",
+        "Tennis",
+        "Gymnastics",
+        "Ice Hockey",
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Invited brief narrative review of sleep and athlete recovery and performance, covering how sleep is measured, the challenges of competition, training schedules, electronic devices, travel, dreams, and intervention options. It draws on earlier studies, such as actigraphy in 124 elite athletes averaging 6.8 hours of sleep at 86% efficiency, a survey in which 50% of 175 team-sport athletes were poor sleepers, and 107 professional ice hockey players reporting sleep problems in 22% off-season and 46% in season. No literature search method is described.",
+      "limitations": "A brief narrative review with no described search method, so its selection of studies may be partial, and it relies heavily on subjective surveys and laboratory findings that the authors themselves flag as limited for sport settings.",
+      "synthesisCaution": "Staff could take the review's suggested 30 to 60 extra minutes of sleep per night as a proven, prescribed target, when the authors describe it as a monitored self-experiment with limited supporting evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "sports: removed Soccer, which appears only in reference titles, not in the review body"
+          ],
+          "residualConcerns": "The review discusses sleep medication use (sedatives, jet-lag agents, insomnia treatment) in athletes; the record reflects the authors' caution against self-administration, but clinical staff should check that wording.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1618",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 80,
+      "sourceFile": "Sleep-wake behavior in elite athletes - A mixed-method approach.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 41339,
+        "doi": "10.3389/fpsyg.2021.658427",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Track & Field",
+        "Gymnastics",
+        "Combat Sports",
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Mixed-method study of 15 international-level individual-sport athletes (7 men, 8 women; mean age 21.7 years) at the French National Institute of Sport, monitored for about 20 in-season days with wrist actigraphy and sleep diaries, plus semi-structured interviews. Mean total sleep time was 418 min (95% CI 380 to 445) and sleep efficiency 88.3% (95% CI 84.6 to 90.2). Interviews grouped athletes by sleep-environment complaints (8 complainers vs 7 non-complainers; complainers had lower sleep efficiency, 87.6% vs 89.2%, and more wake after sleep onset, 47.4 vs 37.5 min), and by student status (10 students had 16 minutes less total sleep, with effects the authors describe as small).",
+      "limitations": "Only 15 athletes from one national training centre, monitored for about 20 days, with subgroups as small as 5 and 7 people and no correction for multiple comparisons, so the subgroup differences are preliminary and cannot show cause.",
+      "synthesisCaution": "Staff could read the complainer and student comparisons as proof that noise, temperature or study load cause poorer sleep, when the groups were formed from interview content in a very small sample.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Subgroup comparisons in 15 athletes reach p < 0.05 or p < 0.001 with small effect sizes (for example d = 0.20 for total sleep time), which suggests nights may have been analysed as independent observations; the Methods do not say, so the reported significance should be treated cautiously.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1619",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 82,
+      "sourceFile": "Slow wave sleep - a recovery period after exercise.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "No DOI is printed anywhere in the text; the only identifiers are the ISSN and copyright code. Everything else is readable and complete, so the operator may verify the DOI externally and upgrade the decision.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: 'control nights separated by two weeks' -> recorded two weeks before and two weeks after the race (\"2 weeks before the marathon... again 2 weeks after the marathon as a postrace control\")",
+            "paper.practicalImplications: 'longer and deeper sleep for about two nights' -> longer sleep for several nights, more slow-wave sleep for about two (\"Total sleep time increased significantly over control times on each of the four nights\")"
+          ],
+          "residualConcerns": "Science 1981 article; DOI not printed in the text, operator may verify externally.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 85,
+      "sourceFile": "Solving Heat Stress in Sport- Intermittent Cold Air Exposure Mitigates Deterioration of the Autonomic Nervous System in American Football Athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 29,
+        "extractedCharacters": 43182,
+        "doi": "10.1249/MSS.0000000000003686",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Collegiate",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Prospective cohort analysis of 50 Division I male football players in the 2023 season who did 45 to 60 minutes of warm-up and drills in an air-conditioned indoor facility (set at 15.6°C) at the start of each session and took a 5-minute indoor break mid-session, compared with 50 players in 2022 who had no cooling. The 2023 group trained longer (187.4 vs 161.1 min) and spent less time at 38°C or higher (9.7 vs 19.5 min) and 39°C or higher (0.9 vs 10.5 min), and within 2023 time above those thresholds was not associated with next-day heart rate or heart rate variability measures.",
+      "limitations": "The control is a separate, earlier season with no concurrent comparison, and the cold-air arm could not be split into pre-cooling and per-cooling effects. Skin temperature and hydration were not measured, and the sample is one male collegiate team in one hot climate.",
+      "synthesisCaution": "Staff may read the null next-day autonomic result as proof that cold air prevents autonomic decline, when the cooled and uncooled groups came from different seasons.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary and paper.methods: cold-air exposure described as 45 to 60 min 'before training' -> 45 to 60 min of warm-up and drills inside the air-conditioned facility at the start of the session (\"The first exposure occurred at the beginning of the training session where athletes performed their warmup routines and sport-specific drills for 45 to 60 minutes\"); HR recovery timing clarified (measured during next day's session)",
+            "paper.limitations: added the authors' caveat that longer 2023 sessions may reflect training variation and transitions (\"longer training durations in the 2023 cohort could be attributed to variation in training regimens\") and the armband-derived core temperature"
+          ],
+          "residualConcerns": "Between-season comparison only; 2023 regressions are compared descriptively with previously published 2022 results. Five authors are employees of the monitor's manufacturer.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1620",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

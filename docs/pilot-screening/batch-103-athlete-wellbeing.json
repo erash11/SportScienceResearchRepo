@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-103-athlete-wellbeing",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Athlete Wellbeing queue positions 18-93. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 18,
+      "sourceFile": "SARMS_~1.PDF",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 48443,
+        "doi": "10.1002/dta.3918",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Other",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Retrospective and prospective market-surveillance study across 14 OMCL laboratories in 13 countries, 2018 to 2023, analysing suspected illegal products containing SARMs, metabolic modulators and growth hormone secretagogues. Of 354 valid results, 65% were presented as medicines and 24% as dietary supplements, and the most reported molecules were ibutamoren, ligandrol, ostarine, cardarine and andarine. The authors state that most samples contained active doses and some were overdosed, based on limited quantitative data.",
+      "limitations": "Samples came from regulatory testing and seizures, not from users, so no athlete health outcomes were measured and product use cannot be linked to harm. Quantitative data were sparse and reported in mixed units, so dose statements are approximate.",
+      "synthesisCaution": "Staff may read the product findings as evidence of how many athletes are being harmed, when the study measures what is in seized products rather than who takes them or what happens to them.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: placeholder '2025;0:1-8' removed -> 'Drug Testing and Analysis. 2025.'",
+            "paper.findings: '336 samples, 12 excluded, leaving 354 valid results' was arithmetically wrong -> 324 samples, 354 results because some samples held several compounds ('Some samples contained more than one of the targeted compounds, which were reported as different results')",
+            "paper.limitations: removed false 324 vs 336 'count discrepancy' (336 reported minus 12 excluded = 324)",
+            "tldr/athleteDev: 'unknown ingredients' overstated; labelled contents matched analysis in about 88% of labelled samples -> unapproved drugs, sometimes unlabelled (48% labelled) or very high dose"
+          ],
+          "residualConcerns": "Eligibility is borderline: a product-surveillance study with no athlete participants, kept as INCLUDE because the products were bought as sport performance enhancers. Minor internal inconsistency: '209 of the 356 results (81.5%)'.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1636",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 72,
+      "sourceFile": "Sleep disordered breathing in the NFL.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text (no DOI appears anywhere in the extracted text, and the reference list has none). doiMissing is true; the operator may verify externally.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: said SDB was 'less common than their body size might suggest' -> the authors say prevalence 'appears to be in line with estimates of what would be predicted by the participants' BMI distribution'",
+            "paper.practicalImplications: removed the advice to screen large or loud-snoring players, which the findings do not support (snoring 'reported by 100%' of players; no lineman versus non-lineman difference; no significant anthropometric association)",
+            "paper.athleteDev: removed the advice to target heavier players for snoring questions, for the same reason"
+          ],
+          "residualConcerns": "Cardiovascular-risk paper. The DOI is not printed and should be verified externally.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 84,
+      "sourceFile": "Social media may cause emergent SARMs abuse by athletes - A content quality analysis of the most popular YouTube videos.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 30,
+        "extractedCharacters": 46185,
+        "doi": "10.1080/00913847.2022.2108352",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Cross-sectional content analysis of the first 100 YouTube videos returned for the term 'SARMs' on 28 November 2021, scored for source, content, JAMA reliability (mean 1.6 ± 0.7 of 4) and Global Quality Score (mean 2.5 ± 1.1 of 5). Patient-uploaded videos had lower educational quality than athletic trainer videos (GQS 2.11 vs 2.95, p < 0.01), 47% of videos gave cycle help, and 40% took a positive attitude to SARMs use.",
+      "limitations": "The sample is 100 videos from one search, on one date, on one platform, so it describes online content rather than athletes. The data do not link any video to actual SARMs use, and intraobserver variability was not measured.",
+      "synthesisCaution": "Staff could read this as evidence that YouTube drives SARMs abuse among athletes, when the study measured video quality and attitude only, not viewing or drug use.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added that the 'athletic trainer' category was broader than certified athletic trainers (\"uploaded by individuals with any athletic training or coaching credentials\")"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1637",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 86,
+      "sourceFile": "South African Institute of Drug-Free Sport Postion Statement on CBD (Cannabidiol) and THC (Tetrahydrocannabinol).pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 4,
+        "extractedCharacters": 26020,
+        "doi": "10.17159/2078-516X/2023/v35i1a16097",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Position statement from the South African Institute for Drug-free Sport, supported by the South African Sports Medicine Association, on CBD and THC in athletes, with no original data. It summarises WADA's 2022 expert group conclusion that THC meets the criteria for the Prohibited List, and notes that the cited CBD and THC studies are of low evidence level, for example no randomised controlled trials, small samples or case studies.",
+      "limitations": "A position statement with no described search method and no formal grading of evidence. It reflects an anti-doping viewpoint, and the legal position on cannabis varies by country and is still changing.",
+      "synthesisCaution": "Staff could read 'CBD is not prohibited' as safe to use before competition, when the statement warns that CBD products can contain THC and cause a positive test.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: 'few randomised trials' -> no randomised controlled trials (\"low level of evidence, e.g. no randomised controlled trials, small sample sizes or case studies\")",
+            "paper.findings: lack of performance benefit was listed as a criterion THC meets -> THC meets the criteria on health risk and spirit of sport, with no objective physiological enhancement but neuropsychological enhancement not excluded (\"does not support THC enhancement of physiological performance, while the potential for performance enhancement through neuropsychological effects still cannot be excluded\")",
+            "paper.tldr and paper.practicalImplications: TUE required 'before any medical cannabinoid use' -> before medical use of THC-containing products, since CBD is not prohibited (\"The chemical compound CBD is not a prohibited substance\")"
+          ],
+          "residualConcerns": "Anti-doping rules and thresholds are those in force in 2023; check the current WADA Prohibited List before applying.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1638",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 92,
+      "sourceFile": "Sport and exercise genomics - The FIMS 2019 consensus statement update.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 71662,
+        "doi": "10.1136/bjsports-2019-101532",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "International consensus update of a guiding reference for sport and exercise genomics, built from a SWOT (strengths, weaknesses, opportunities and threats) analysis by 20 authors. It reports no athlete sample and no empirical data; it sets out recommendations on ethics, data protection, genetic counselling, replication and the use of athletes' genomic information.",
+      "limitations": "The document is a SWOT-based guidance text with no described consensus method, such as a Delphi process or voting, so its recommendations reflect expert judgement. The authors note that most sport and exercise genetic associations lack replication in independent populations.",
+      "synthesisCaution": "Staff could read the document as evidence that genetic tests can predict injury or performance, when it states that most sport genetic associations lack replication and that injury-associated variants have no current clinical utility.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution: 'no current clinical utility' generalized to all sport variants -> attributed to injury-associated SNPs ('these SNPs have no current clinical utility because they have been replicated in limited independent populations')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1639",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 93,
+      "sourceFile": "Sport-related injury and performance enhancing substance use by young athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 43969,
+        "doi": "10.1177/19417381241287199",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Sports Medicine & Injury",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Cross-sectional analysis of 952 athletes aged 6 to 25 years (mean age 14, 56% female) who attended an injury prevention evaluation at a tertiary pediatric center from 2013 to 2020. Legal performance enhancing substance (PES) use was reported by 14% and consideration of banned PES use by 3%; unadjusted, season-ending injury was linked to legal PES use (OR 2.74), but after adjustment injury group was not associated with either outcome.",
+      "limitations": "Self-reported questionnaire data from an injury prevention clinic, in a largely white and middle-to-upper income sample, so it is not representative. The cross-sectional design cannot establish whether injury preceded PES use, and only three athletes reported banned PES use for performance, too few for analysis.",
+      "synthesisCaution": "Staff could read the unadjusted odds ratios, such as 2.74 for season-ending injury and legal PES use, as evidence that injury drives supplement use, when the adjusted models show no association with injury and the design cannot show direction.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1640",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}
