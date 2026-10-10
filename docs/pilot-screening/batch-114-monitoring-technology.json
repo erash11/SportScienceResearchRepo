@@ -1,0 +1,649 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-114-monitoring-technology",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Monitoring & Technology queue positions 7-95. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 7,
+      "sourceFile": "The impact of test loads on the accuracy of 1RM prediction using the load-velocity relationship.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 35466,
+        "doi": "10.1186/s13102-018-0099-z",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Methodological study in 12 recreational weight trainers (body mass 80.8 ± 5.7 kg, 1RM 84 ± 18 kg) who had their Smith machine bench press 1RM measured directly, then performed three bench press throws at each of 30, 40, 50, 60 and 70% of 1RM with a linear position transducer. Load-velocity regressions built from three loads predicted 1RM most accurately when peak velocity was used with 30, 40 and 50% of 1RM (R2 = 0.96, SSE = 4.2 kg), although the predictions were on average about 9 kg below the measured 1RM. Models built from mean velocity had R2 of 0.85 to 0.89 with no significant mean difference from the measured 1RM, but Bland-Altman plots showed accuracy problems.",
+      "limitations": "The sample is 12 recreational lifters, the test is a Smith machine bench press with bench press throws, and the authors note that between-session reliability was not assessed. The best model under-predicted 1RM by about 9 kg with a significant difference from the measured value (P < 0.001), and predicting 1RM means extrapolating beyond the tested loads, which the authors say severely compromises accuracy.",
+      "synthesisCaution": "Staff could take the high R2 for the 30 to 50% model as proof that a light-load test predicts 1RM accurately for any athlete, when the study has 12 recreational lifters, a fixed bias of about 9 kg, and no test of prediction for athletes or other lifts.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations and limitations: said the model 'was tested only within the load range it was built from', which is backwards; 1RM prediction extrapolates beyond the tested loads ('the accuracy of regression models that attempt to predict values outside of the range of the collected data is severely compromised')",
+            "limitations: 'tested in one session' -> two sessions (1RM, then BP-T 2-3 days later); velocity data from a single session",
+            "athleteDev: removed claim that the method can 'track strength changes'; no longitudinal test was done",
+            "practicalImplications: added Smith machine context and removed 'rechecked over time' advice not tested"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1853",
+        "synthesisBatch": "pilot-synthesis-batch-114",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 10,
+      "sourceFile": "The influence of cuff width sex and race on arterial     occlusion - Implications for blood flow restriction research.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 37706,
+        "doi": "10.1007/s40279-016-0473-5",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "A laboratory study of 249 young adults aged 18 to 34 (102 men, 147 women) who had arterial occlusion pressure measured in the standing position with 5, 10 and 12 cm cuffs. Mean occlusion pressure fell as cuff width increased (145, 123 and 120 mmHg), and arm circumference and resting systolic pressure explained the most variance. Regression equations were derived and cross-validated, and men and non-Hispanic Black participants had higher pressures, with the sex difference small and the race comparison based on 59 Black and 173 White participants.",
+      "limitations": "The sample was not athletes, and the study did not measure blood flow volume, exercise or training outcomes, so the equations are estimates for healthy young adults at rest. The racial comparison was analyzed retrospectively and limited to Black and White participants because of sample size.",
+      "synthesisCaution": "Staff could treat the prediction equations as a validated way to set training pressure for athletes, but they were built and tested on non-athlete adults at rest and only for three cuff widths.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Mixed / Unspecified -> Adult / Recreational (non-athlete adults aged 18 to 34)",
+            "screeningLimitations and paper.limitations: race comparison 'not a designed/powered aim' -> retrospective analysis limited by sample size ('we thought it necessary to retrospectively investigate'; 'limited to non-Hispanic Blacks and Whites due to sample size')",
+            "paper.findings: race effect labeled moderate -> d values reported with the authors' view ('racial differences in AOP were present, they appeared relatively small')",
+            "paper.methods: added counterbalanced cuff order ('applied in a counterbalanced manner')",
+            "confidence: low -> medium"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1854",
+        "synthesisBatch": "pilot-synthesis-batch-114",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 28,
+      "sourceFile": "The predictive validity of a single leg bridge test for      hamstring injuries in Australian Rules Football     players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 32116,
+        "doi": "10.1136/bjsports-2013-092356",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Prospective cohort of 482 amateur and semi-elite Australian Rules players (aged 16 to 34, 16 clubs) who had a preseason single leg hamstring bridge (SLHB) test in 2011 and were followed for hamstring strain injury through the season. Twenty-eight injuries occurred (16 right, 12 left); right-side injured players had a lower preseason right SLHB (20.3 vs 26.0 reps, P = 0.029), but in the right-side logistic regression no factor was significant, including the right SLHB (Exp(B) 1.047, 95% CI 0.978 to 1.12).",
+      "limitations": "Only 28 injuries occurred, too few for multivariable modelling, so the SLHB effect could not be separated from age, prior hamstring injury and prior knee injury. Sampling was incomplete, since not all players at each club were tested, and the 12 left-side injuries are too few to draw conclusions.",
+      "synthesisCaution": "Staff could read the significant univariate right-side difference as evidence that the SLHB flags at-risk players, when the multivariable analysis found no independent predictive value.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/paper.findings: 'odds ratio' and unqualified 'no factor was significant' -> right-side model specified; Table 4 labels the value 'Risk ratio' (Exp(B)), and Table 5 shows left leg dominance significant ('Dominant leg ... 8.664 ... <0.001')",
+            "paper.limitations: added the text-versus-Table 5 conflict ('no significant factors were identified' vs Table 5)",
+            "populations: added Healthy Athletes (players with recent hamstring or concurrent injury were excluded)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1855",
+        "synthesisBatch": "pilot-synthesis-batch-114",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 31,
+      "sourceFile": "The prognostic value of the hamstring outcome score to predict the risk of hamstring injuries.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 33351,
+        "doi": "10.1016/j.jsams.2021.01.001",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Prospective cohort analysed within a cluster-randomised trial: 356 adult male amateur soccer players (of 400 enrolled, 2016 to 2017 season) completed a baseline Hamstring Outcome Score (HaOS) and reported injuries weekly. Players with a new hamstring injury had lower HaOS totals (77.1 vs 85.5, P = 0.001). At the conventional 80% cut-off, the modelled probability of a new injury was 11%, 18% and 28% for players with 0, 1 or 2 hamstring injuries in the previous season.",
+      "limitations": "The HaOS was completed only once, at the start of the season. Injuries were confirmed by medical staff but not by imaging, and previous injuries were recalled over 12 months, which may introduce recall bias. Discrimination was modest (area under the ROC curve 0.67 to 0.69), and the model was not validated in a separate group.",
+      "synthesisCaution": "Staff could treat the 11% to 28% probabilities as individual risk predictions and target only players below the 80% cut-off, when the model discriminates only modestly, has not been validated in another group, and the authors still recommend prevention for all players.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: said authors suggest using HaOS to target prevention -> authors recommend prevention for all players for now ('Up till now, we recommend that all players participate in hamstring injury prevention programs')",
+            "paper.athleteDev: 'prioritise players for hamstring prevention work' not supported -> use for risk conversations, not to decide who skips prevention",
+            "synthesisCaution: added the authors' recommendation that all players do prevention",
+            "evidenceSummary/abstract: previous injuries clarified as previous-season injuries ('hamstring injuries in the previous season')",
+            "paper.rtp: removed speculative claim that scores might inform readiness conversations"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1856",
+        "synthesisBatch": "pilot-synthesis-batch-114",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 34,
+      "sourceFile": "The relationship between the NFL scouting combine and game performance over a 5-year period.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text (no DOI string appears in the text). All other fields are completed; the operator may verify the DOI externally.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings: the two moderate correlations were presented as whole-sample results -> they are linebacker values; whole-sample correlations were r = 0.10 to 0.15 (Table 4 avgCZ-avgS2 0.103, avgPZ-avgS2 0.146; Table 5 LBs 0.320, 0.332)",
+            "paper.limitations: replaced 'should be checked against the tables' with the actual conflicts (abstract vs tables on r values; 20.2% in text vs 0.219 in Table 7)",
+            "paper.athleteDev: arbitrary position list (LB, OL, RB, TE) -> the predictors each position model actually selected (Table 7)",
+            "evidenceSummary/methods: 'average snaps' clarified as snaps per game played ('TS was divided by GP')"
+          ],
+          "residualConcerns": "Abstract and tables disagree on whether the moderate correlations are whole-sample or linebacker-only; the record follows the tables. Sex of players is not stated, so no sex tag was added.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 50,
+      "sourceFile": "The validity and reliability of wearable microtechnology for intermittent team sports - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 88300,
+        "doi": "10.1007/s40279-020-01399-1",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A PRISMA systematic review of CINAHL, MEDLINE and SPORTDiscus, with reference-list searching, identifying 72 peer-reviewed studies of the validity and/or reliability of GNSS, local positioning and inertial devices for team sport movement (62 from the database search, 10 from reference lists). Quality scores on a modified Downs and Black checklist ranged from 64% to 100% (mean 86.4%). Validity and reliability depended on device brand, sampling rate, movement type and intensity: 10 Hz or higher GNSS was generally more accurate and reliable than 5 Hz or 1 Hz devices, LPS distance error was much larger with sub-optimal set-up, and LPS velocity and acceleration accuracy fell with repeated change of direction.",
+      "limitations": "The studies were too heterogeneous for meta-analysis, so the findings are narrative and count-based. Many criterion measures were timing gates or tape measures rather than gold-standard 3D motion capture, and intra-device reliability could not be separated from biological variation.",
+      "synthesisCaution": "Staff could read the review as clearing all wearable devices for load decisions, when accuracy depends on the specific device, sampling rate, set-up and movement type, and many metrics have only a few studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: attributed the 15 to 30% LPS distance bias to both sub-optimal set-up and repeated change of direction -> the bias is for sub-optimal set-up only (\"bias = 15.0-29.5%... compared to 'optimal' set-up (bias = 0.5-1.8%)\"); LPS distance was \"not compromised by frequent change of direction\", while instantaneous velocity and acceleration were",
+            "evidenceSummary: same LPS conflation clarified (distance vs velocity/acceleration)",
+            "paper.tldr: 'many metrics have too few studies to trust' -> 'several metrics have been tested in only one or a few studies'"
+          ],
+          "residualConcerns": "Year 2020 comes from the '(c) Crown 2020' line and the 28 November 2020 acceptance date; no issue volume or year is printed in the text.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1857",
+        "synthesisBatch": "pilot-synthesis-batch-114",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 76,
+      "sourceFile": "To jog or to stride - A comparison between two standardised running tests to monitor neuromuscular status in team sport athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 40560,
+        "doi": "10.1080/02640414.2024.2421667",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Collegiate",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Longitudinal observational study of 23 male university rugby union players monitored across one season, giving 71 player-match observations. Two submaximal running tests, a 5-minute shuttle run (SRT-jog) and repeated stride efforts (SRT-stride), were compared before a match and on the following two days. SRT-jog rose meaningfully the day after a match (ES 0.63), while SRT-stride showed small rises on days 1 and 2 (ES 0.24 and 0.33) and its change was linked to collisions (ES 0.58).",
+      "limitations": "One squad of 23 players over one season, and no gold-standard fatigue measure exists, so the tests are compared on sensitivity rather than validity. Recovery after the first test was not controlled at day 2, and the SRT-jog response was not associated with match load.",
+      "synthesisCaution": "Staff could read the SRT-stride result as proof that it is the better fatigue test for all team sports, when it comes from one rugby squad over one season with a two-day follow-up.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr: said the stride test was 'more sensitive to post-match fatigue than the shuttle test' -> SRT-jog had the larger day-1 effect (ES 0.63 vs 0.24); the stride test's advantage is persistence to day 2 and association with match load ('only the SRT-stride was related to match locomotor variables')",
+            "paper.limitations: added abstract vs table conflict ('significantly associated with total distance (ES: 0.41 [-0.01 to 0.83])')",
+            "paper.rtp: added the inclusion window ('injury free from the last six months')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1858",
+        "synthesisBatch": "pilot-synthesis-batch-114",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 79,
+      "sourceFile": "Towards Achilles Tendon Injury Prevention in Athletes with Structural MRI Biomarkers - A Machine Learning Approach.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 49192,
+        "doi": "10.1186/s40798-024-00786-6",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Cross-sectional study of 72 sports participants (45 men, 27 women) who trained at least twice a week in team or individual sports and had no Achilles tendon injury history. Each underwent MRI of both Achilles tendons, scored by a radiologist and by AI software, plus jump, balance, range-of-motion and muscle torque tests. AI-based structural scores gave higher maximal correlations in three of four functional groups and more significant associations in all four per Table 3, and models explained 33 to 59% of functional variance with AI inputs versus 6 to 20% with radiologist inputs.",
+      "limitations": "Cross-sectional and exploratory, with 72 people and many structure-function tests; models were selected partly on their fit to the whole dataset, so the variance figures are likely optimistic. The AI software belongs to the authors' company, which also funded the study, and the text says radiologist counts were higher for torque, which Table 3 does not show (12 AI vs 9 radiologist).",
+      "synthesisCaution": "Staff could read the AI-based MRI scores as an injury screen for Achilles tendons, when the study links tendon structure to function in healthy athletes and does not test whether the scores predict injury.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: 'in three of four functional groups, AI-based scores gave stronger correlations and more significant associations' -> stronger maximal correlations in three of four, more significant associations in all four per Table 3 (29/31, 9/11, 19/22, 9/12)",
+            "screeningLimitations and paper.limitations: 'built and scored on the same sample' -> 'best model was selected based on its r2 score on the given test set and the whole dataset'; added that stabilography excluded 28 participants",
+            "paper.findings: named the balance exception (0.35 radiologist vs 0.33 AI)"
+          ],
+          "residualConcerns": "Funding by Smarter Diagnostics, whose staff are authors and own the software, while the competing-interests statement says none. Text and Table 3 conflict on the torque count.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1859",
+        "synthesisBatch": "pilot-synthesis-batch-114",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 80,
+      "sourceFile": "Tracking devices and physical performance analysis in team sports - A comprehensive framework for research, trends and future directions.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 107052,
+        "doi": "10.3389/fspor.2023.1284086",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance",
+        "Sports Medicine & Injury",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Rugby",
+        "Basketball",
+        "American Football",
+        "Ice Hockey",
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "PRISMA-guided scoping review of 79 English-language studies (2011 to July 2023) on GPS and local positioning systems in elite team sports, most in football and futsal. Studies were grouped by use: characterizing and comparing drills, training and matches (62%), correlational work (27%), injury or fatigue prediction (9%), and experimental work (3%), with nutrition covered by only two studies. Mean study quality was 89.2% on a 16-item appraisal, and few studies integrated external and internal load.",
+      "limitations": "A scoping review with data extracted by one author and checked by another, moderate agreement on quality scoring (kappa 0.43), and exclusion of non-English work, prior systematic reviews and validity or reliability studies of tracking devices (n = 44). Its counts are descriptive and do not test the validity of any tracking metric.",
+      "synthesisCaution": "Staff could read this as an endorsement of specific tracking metrics or a validated injury-prediction framework, when it maps how the research has been used, proposes an agenda, and excludes device validity studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: 'chronic workload from tracking data is a better injury-risk indicator than total workload' -> the text says 'the ACWR is a more accurate predictor of injury than the total workload', cited from prior work, and calls the screened injury findings 'dichotomic reports'",
+            "paper.methods: added INPLASY registration (printed 'Systematic Review Registration: ... 2022120039')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1860",
+        "synthesisBatch": "pilot-synthesis-batch-114",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 81,
+      "sourceFile": "Tracking systems in team sports - A narrative review of applications of the data and sport specific analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 22,
+        "extractedCharacters": 125006,
+        "doi": "10.1186/s40798-022-00408-z",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "American Football",
+        "Soccer",
+        "Basketball",
+        "Ice Hockey",
+        "Rugby",
+        "Other Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Narrative review of tracking systems (GPS, optical, local positioning, and inertial measurement units) and how their data are used to describe, plan and monitor external load in team sports. The authors cover metric definitions, time-analysis approaches (moving averages, peak demands, time series segmentation), between-system agreement, and sport-specific considerations across seven team sports. No sample or pooled effect is reported.",
+      "limitations": "The review does not state a literature search method, so the selection of studies cannot be checked and the conclusions reflect the authors' judgement. Several sport-specific points rest on unpublished observations and data, which cannot be verified from the text.",
+      "synthesisCaution": "Staff could treat the review's suggested metrics, speed thresholds and peak-demand approaches as validated standards for their own sport, when the authors themselves call for context-specific validation and critical checking.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'GPS and optical systems differ notably for distance and high-speed running' -> graded by metric ('slight-to-moderate and moderate-to-large differences for total distance and HSR distance')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1861",
+        "synthesisBatch": "pilot-synthesis-batch-114",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 83,
+      "sourceFile": "Training Impulse and Session Ratings of Perceived Exertion as Perceived by Athletes and Observed by Coaches During Preseason Football Camp.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text (no DOI in the header, footer or reference list). All other fields are filled from the text; the operator can verify the DOI externally.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: removed the DOI note, which is a record issue not a study limitation (kept in degradedReason); added the authors' stated direction of HRmax error ('may have artificially lowered our TRIMP scores')"
+          ],
+          "residualConcerns": "No DOI printed in the text (header shows placeholder 'J Strength Cond Res XX(X): 000-000, 2025'); operator should verify the DOI externally. Athlete sex is not stated, so no sex tag was added.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 87,
+      "sourceFile": "Training load and acute performance decrements following different training sessions.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 38921,
+        "doi": "10.1123/ijspp.2022-0157",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Coaching",
+        "Performance"
+      ],
+      "sports": [
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomised crossover laboratory study of 11 recreationally active men who completed four cycling training sessions of different intensity and duration (equated for power-based TRIMP), each followed by a 3-km time trial. Seven training load methods were compared with the change in time-trial power (acute performance decrement). Only the short-duration interval session produced a significant decrement (5.3%, P = .003, large effect), and the authors report that RPE-based load, individualised TRIMP and Training Stress Score tracked this pattern, while total work done and most heart-rate methods over-weighted session duration.",
+      "limitations": "The sample was 11 recreational cyclists tested indoors on one ergometer, with sessions of fixed structure and a single 3-km time trial as the outcome. The findings may not transfer to outdoor, variable or longer training, or to other sports, and the authors note that a different performance test could change the conclusions.",
+      "synthesisCaution": "Staff could take RPE-based load as the validated load measure for all sessions, when the study used one small group, one indoor cycling protocol and one time-trial outcome, and the authors say the acute-decrement approach is not a gold standard.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: 'Banister and Edwards TRIMP ranked the long-duration session lowest' -> HR TRIMPs did not separate ShortDurInt from MedIntense and LowIntense ('ShortDurInt was equal to MedIntense and LowIntense for bTRIMP ... Edwards TRIMP ... Lucia TRIMP based on HR'); added that other TTs did not differ from baseline",
+            "limitations: added conflict between abstract (7 metrics) and methods ('Eight different TL methods were used')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1862",
+        "synthesisBatch": "pilot-synthesis-batch-114",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 95,
+      "sourceFile": "Training load monitoring in team sports - A practical approach to addressing missing data.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 54725,
+        "doi": "10.1080/02640414.2021.1923205",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Secondary analysis of session-RPE training load from 10 male professional soccer players over a 32-week season (2,240 player-days). Data were removed at random in 5% steps from 5% to 50%, and 12 imputation methods were compared by NRMSE and mean absolute deviation. Daily Team Mean had the lowest NRMSE at every level of missingness (0.42 to 0.46), Daily Team Median had slightly lower mean absolute deviation, and the figures show that unaddressed gaps distort ACWR, monotony and strain.",
+      "limitations": "Ten players from one club over one season, with missingness simulated as completely at random from a dataset with no gaps, limit generalisation. The team-mean method cannot be used for players training apart from the team, and its practicality in real use was not tested.",
+      "synthesisCaution": "Staff could read the study as showing that imputed session loads are reliable enough for injury-risk decisions, when it shows only that imputed values sat close to observed values in this one dataset.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: 'lowest error at every level' -> lowest NRMSE; Daily Team Median had lower MAD (Table 3: DTMean 07.3 to 72.1, DTMedian 06.8 to 70.6)",
+            "paper.findings: added that Daily Team Median had slightly lower MAD than Daily Team Mean (Table 3)",
+            "paper.limitations: added the discussion/table conflict ('the DTMedian performed best with values ranging from 7.3-72.1 ... while DTMean resulted in MAD values ranging from 6.8-70.6' vs Table 3)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1863",
+        "synthesisBatch": "pilot-synthesis-batch-114",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

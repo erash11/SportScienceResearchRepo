@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-112-brain-health-psychology",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Brain Health & Psychology queue positions 14-60. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 14,
+      "sourceFile": "The influence of psychological factors on the incidence and severity of sports-related concussions - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 46213,
+        "doi": "10.1177/0363546519882626",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "American Football",
+        "Soccer",
+        "Rugby"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Youth / Adolescent",
+        "Collegiate",
+        "Professional / Elite",
+        "Injured Athletes",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "A PRISMA systematic review, registered in PROSPERO, of 10 studies on preexisting psychological factors and sports-related concussion in athletes of all sports, with samples from 40 to 1,246 athletes, mostly male. The authors report that meanness, aggression and psychoticism were linked to more concussions in one study of male football players, and that baseline irritability, sadness, nervousness and depressive symptoms were linked to worse symptoms after concussion. No meta-analysis was done because the study designs were heterogeneous, and the authors describe the certainty of evidence as low to moderate.",
+      "limitations": "Most incidence findings come from one study of male football players, and several studies relied on self-reported concussion history that may be inaccurate. The included studies differ in samples, measures and designs, so the associations cannot be used to predict concussion for an individual athlete.",
+      "synthesisCaution": "Staff could use these traits to screen athletes for concussion risk, but the authors say the associations are unclear and rest on heterogeneous, mostly small studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: removed placeholder pagination '2019:1-9' (header reads 'AJSM Vol. XX, No. X, XXXX' and '1-9')",
+            "paper.findings: 'anger' -> alienation and physically expressed aggression (text: 'meanness, psychoticism, and alienation'; 'Aggression in the context of physically expressed anger ... (P = .004)')",
+            "paper.findings: added agreeableness result reported at P<.1 and that only 3 of 40 patients had life stressors (text: 'compared with 0 (P < .1)'; 'Only 3 of the 40 patients had life stressors')",
+            "paper.practicalImplications: added that the life-stressor finding rests on one small chart review",
+            "evidenceSummary and paper.abstract: 'certainty rated' -> authors describe certainty as low to moderate (no formal grading method reported)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1848",
+        "synthesisBatch": "pilot-synthesis-batch-112",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 33,
+      "sourceFile": "The relationship between mulitple concussions and multidimensional sleep quality in collegiate-aged, active athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 51662,
+        "doi": "10.1016/j.sleh.2024.04.005",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Collegiate",
+        "Healthy Athletes",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Cross-sectional study of 212 collegiate-aged athletes (mean age 21.0; 62.7% male) who completed retrospective interviews on concussion and contact-sport history and the Pittsburgh Sleep Quality Index. Each additional prior concussion (ACRM definition) was associated with a higher global PSQI score (B = 0.50, p < .001) and higher odds of poor sleep (PSQI > 5; OR = 1.52, p < .001). Repetitive head impact measures (years of contact sport, age of first exposure, TES criteria, contact vs noncontact sport) were not associated with any sleep measure.",
+      "limitations": "The design is cross-sectional and concussion history was recalled retrospectively, so the direction of the association cannot be established; the authors note poor sleep may also predispose athletes to concussion. Sleep was self-reported only, and the sample was homogeneous and strictly screened.",
+      "synthesisCaution": "Staff could read this as proof that concussion causes poor sleep, when it is a single cross-sectional association with self-reported sleep and per-concussion odds ratios of about 1.3 to 1.6.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: removed a filler sentence about the results and discussion citing the same values, which is not a limitation -> limitations now list only source-stated limits",
+            "paper.rtp: added the incomplete-recovery exclusion ('concussion within the past 6 months or incomplete recovery from previous concussion')"
+          ],
+          "residualConcerns": "Year 2024 comes from the copyright line of an in-press version (header shows 'xxx (xxxx)'); no volume or pages are printed. The sample is collegiate-aged athletes active in sport within 12 months, not necessarily collegiate-level competitors, so the Collegiate tag is approximate.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1849",
+        "synthesisBatch": "pilot-synthesis-batch-112",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 40,
+      "sourceFile": "The role of personality traits in athlete selection - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 89692,
+        "doi": "10.1016/j.actpsy.2025.105478",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Coaching",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate",
+        "Youth / Adolescent",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "PRISMA systematic review (PROSPERO-registered) of 22 mostly cross-sectional studies covering 4,181 participants from 14 countries and 18 sports, relating personality traits to performance or selection status. The authors report that higher conscientiousness and extraversion were consistently associated with better performance (effect sizes about 0.26 to 0.70) and that neuroticism was negatively related (up to -0.25). Study quality was rated with STROBE: 11 studies high, nine moderate and two low.",
+      "limitations": "Nearly all included studies are cross-sectional, so the associations cannot establish direction or causation, and heterogeneous personality tools and performance measures prevented a meta-analysis. The mechanism framework draws partly on neuroscience outside the included studies, which the authors themselves say is not empirically validated.",
+      "synthesisCaution": "Staff could read the dopamine and prefrontal mechanism diagram as established explanation for who gets selected, when it is largely the authors' conceptual model built on work outside the reviewed studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/tldr: '22 cross-sectional studies' -> 'mostly cross-sectional' ('21 studies employed cross-sectional methods, while one utilized a quasi-longitudinal approach'); 'athletes' -> 'participants' since several samples include non-athlete controls",
+            "evidenceSummary/findings: 'beta up to -0.25' -> 'up to -0.25' (text reports r = -0.25 for the source study)",
+            "paper.limitations: added mixed effect-size metrics and the review's internal inconsistency on the Palmateer baseball study ('no significant relationships' vs 'outperformed their peers on BABIP, OBP')",
+            "paper.athleteDev: replaced generic coaching advice with the anxiety-mediation findings reported in the review (Geukes, Gorelova and Halama)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1850",
+        "synthesisBatch": "pilot-synthesis-batch-112",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 60,
+      "sourceFile": "Thinking about elite performance - The experience and impact of mental fatigue in elite sport coaching.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 22794,
+        "doi": "10.1123/ijspp.2023-0033",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Coaching",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Case study of three elite netball staff (a head coach, an assistant coach and a head strength and conditioning coach; two women and one man) at a professional Australian team, followed through a 16-week preseason with weekly morning ratings of mental fatigue, physical fatigue and readiness to perform, plus salivary cortisol and alpha-amylase. Mental fatigue varied widely between individuals, and repeated-measures correlation showed an inverse relationship with readiness to perform (r = -.44, P = .002).",
+      "limitations": "Three staff from one team in one season give a descriptive case study with no comparison group, so the findings cannot be generalized. The reported confidence interval for the mental-physical fatigue correlation (-.45 to .10) includes zero, although the text calls it significant. The study did not measure coaching decisions, so the impact of mental fatigue on performance is not tested.",
+      "synthesisCaution": "Staff could read the coaches' fatigue scores as evidence that their coaching decisions are measurably impaired, when the study only links self-rated fatigue with self-rated readiness in three people.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: added the week 10 elevation and the nonsignificant physical fatigue-readiness correlation ('r = -.19 [-.45 to .1], P = .208'); salivary stress framed as the authors' interpretation",
+            "paper.practicalImplications: 'highest ratings' after travel periods overstated the data -> 'elevated ratings' ('Elevated ratings were observed in weeks 8 and 12'), and noted no workload change was tested"
+          ],
+          "residualConcerns": "The reported CI for the mental-physical fatigue correlation (r = .67 [-.45 to .1]) appears to be a copy error in the source.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1851",
+        "synthesisBatch": "pilot-synthesis-batch-112",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

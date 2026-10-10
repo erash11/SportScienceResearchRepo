@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-113-athlete-wellbeing",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Athlete Wellbeing queue positions 62-62. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 62,
+      "sourceFile": "Thriving on Pressure- A Factor Mixture Analysis of Sport Performers’ Responses to Competitive Encounters.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 85245,
+        "doi": "10.1123/jsep.2016-0293",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Cross-sectional survey of 535 sport performers (524 analysed; 401 men and 134 women) who rated their performance, vitality and positive affect in demanding competitive encounters over the past month. Factor mixture analysis found four profiles: thriving (27.9%), above average (25.0%), below average (39.9%) and low functioning (7.3%). Resilient qualities, psychological skills use, need satisfaction and need frustration, and challenge appraisal predicted profile membership, while social support and coach behaviors did not.",
+      "limitations": "A single survey at one time point, with self-report measures, so predictors cannot be shown to cause profile membership and common-method bias is possible. The profiles differ mainly in overall level rather than in shape, the analysis is data-driven and not yet replicated, and the sample is 75% male and 91% British. Analytic sample sizes differ between tables (458 in Table 4, 521 in Table 5).",
+      "synthesisCaution": "Staff could read the four profiles as distinct types of performers to be sorted, when the authors found the profiles differ mainly in overall level and the predictors were measured at the same time as the outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: omitted the psychological skills use result -> added (OR 0.660 below average, 0.354 low functioning vs thriving)",
+            "paper.limitations: 'Thriving is measured with single-item self-rated performance' -> thriving used three indicators; only subjective performance is a single item ('satisfaction with their sporting performance over the past month on an 11-point scale')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1852",
+        "synthesisBatch": "pilot-synthesis-batch-113",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

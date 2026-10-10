@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-111-nutrition-hydration",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Nutrition & Hydration queue positions 23-88. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 23,
+      "sourceFile": "The new challenge of sports nutrition - Accepting insect food as dietary supplements in professional athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 57346,
+        "doi": "10.3390/foods10051117",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "A questionnaire study of 61 Italian professional athletes (27 women, aged 19 to 39), recruited from one sports centre, that measured supplement use, nutrition knowledge, food neophobia, and willingness to taste and endorse a cricket-flour protein bar before and after an information text. Before the text, 26 athletes were willing to taste, 7 uncertain and 28 unwilling; the authors report a significant increase in willingness after the text (z = 4.16, p < 0.001), and 37.7 percent were willing to endorse the bar.",
+      "limitations": "Small convenience sample from one centre, measured by self-report questionnaire, with no actual tasting or product consumption. The authors acknowledge that the sample limits generalisation and that willingness was not converted into observed behaviour.",
+      "synthesisCaution": "Staff could read the rise in willingness after the information text as proof that athletes will accept insect-based supplements, when the study measured stated intention in one small sample and did not test the product's nutrition, safety or doping risk.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations/practicalImplications: 'doping risk was not tested' -> tasting could not be run because insects might count as hidden substances ('it was not possible to carry out a \"bug experience\" that they might be categorized as \"hidden substances\" considered as high risk of doping')",
+            "paper.findings: '43 willing to taste after the text' -> '43 classed as tasters' (text does not tie the taster grouping to the post-information rating)",
+            "paper.tldr: 'medical or dietitian advice' -> 'qualified personnel' (nutritionist/dietician/physician/pharmacy)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1842",
+        "synthesisBatch": "pilot-synthesis-batch-111",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 26,
+      "sourceFile": "The potential role of nutrition in overtraining syndrome - A narrative review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 18,
+        "extractedCharacters": 90900,
+        "doi": "10.3390/nu15234916",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review, with no described search or inclusion method, of overtraining syndrome (OTS) mechanisms and of dietary intake in athletes. It covers the cytokine, glutamine, central fatigue, glycogen, autonomic and oxidative stress hypotheses, then energy, fat, protein, carbohydrate, fluid and micronutrient intake. It reports no pooled sample and no new data.",
+      "limitations": "The literature was selected non-systematically, which the authors acknowledge may introduce selection error. Several mechanisms rest on animal or mechanistic work, and the authors note that exact prevalence and incidence data for overtraining syndrome are lacking.",
+      "synthesisCaution": "Staff could read the review's dose figures (for example 8 to 10 g/kg carbohydrate per day, creatine loading, or vitamin doses) as tested prescriptions for athletes in overtraining, when they are general guidance drawn from varied sources.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'gives no prevalence data' -> the review cites prevalence figures (e.g. 'about 35% of adolescent swimmers had been overtrained') but says 'exact data on prevalence and incidence are currently lacking'",
+            "paper.findings: 'calls for more research on ... ketone esters' -> review describes KEs as 'a powerful nutritional strategy'; research calls are for creatine and MCTs",
+            "paper.citation: 3 authors before et al. -> first 6 authors listed per citation rule"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1843",
+        "synthesisBatch": "pilot-synthesis-batch-111",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 59,
+      "sourceFile": "Thermoregulation, Fluid Balance,        and Sweat Losses in American Football Players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 73319,
+        "doi": "10.1007/s40279-016-0527-8",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Sports Medicine",
+        "Performance",
+        "Nutrition",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Collegiate",
+        "Professional / Elite",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "This review covers thermoregulation, fluid balance and sweat losses in American football players, drawing on laboratory and field studies found by a described search of PubMed and EBSCO from inception to January 2016, plus reference-list checks. Heat illness and heat stroke are reported as more common in football than in other sports, with linemen showing higher core temperatures, sweating rates and body mass than backs. Reported sweating rates were 1.0 to 2.9 L/h in college and professional players and 0.6 to 1.3 L/h in youth players, and most field studies show mean body mass losses of about 2% or less.",
+      "limitations": "The review describes a literature search but does not pool data or score study quality, so effect sizes cannot be graded. Most field data come from the northeastern U.S., with few studies of high school players or hot southern regions. All authors are employed by the Gatorade Sports Science Institute, which readers should weigh.",
+      "synthesisCaution": "Staff could apply the sweating-rate and sodium figures to every player at every level, when most field data come from northeastern U.S. college and professional teams and few from high school or hotter regions.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.methods: called it a narrative review, inconsistent with studyDesign -> described as a review with a described search and stated inclusion criteria ('The literature search was conducted using PubMed and EBSCO databases')",
+            "paper.findings: 'Full pads raise sweating rates compared with shorts' omitted that full and partial uniforms did not differ -> added ('no differences in sweating rate were found between full and partial uniforms'); condensed to 3 sentences"
+          ],
+          "residualConcerns": "studyDesign kept as Systematic Review / Meta-analysis per library precedent (described database search and inclusion criteria), although the paper is labelled a review article with narrative synthesis. Authors are Gatorade Sports Science Institute employees.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1844",
+        "synthesisBatch": "pilot-synthesis-batch-111",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 73,
+      "sourceFile": "Tirzepatide in Sport - A comprehensive review of its metaoblic impacts and potential applications for athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 29134,
+        "doi": "10.12775/QS.2025.37.57025",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Endurance Sport",
+        "Combat Sports"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of tirzepatide pharmacology, its effects on weight and body composition, and anti-doping considerations for athletes. The sources are mainly clinical trials and preclinical studies in people with type 2 diabetes or obesity, not athletes. The authors describe possible benefits for fat oxidation, lean mass, inflammation and recovery, and note that tirzepatide is not currently on the WADA prohibited list.",
+      "limitations": "No athlete trials are reviewed, so every athletic benefit is inferred from non-athlete data and mechanism. Databases and search terms are listed, but no inclusion criteria or systematic selection process is reported, so it is coded as a narrative review.",
+      "synthesisCaution": "Staff could read the review as showing that tirzepatide improves athletic performance or is safe for athletes, when the text offers only mechanistic and non-athlete evidence and calls for more research.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: said muscle power claims were stated as established -> the text hedges muscle power ('may improve muscle contractile function and power'); replaced with lean-mass preservation and mitochondrial biogenesis, which are stated as fact ('tirzepatide enhances mitochondrial function and stimulates mitochondrial biogenesis'); 'no search protocol' -> 'no inclusion criteria or selection process', since databases and terms are listed",
+            "paper.practicalImplications: tied side-effect list to the authors' misuse section ('gastrointestinal side effects ... hypoglycemia ... in the absence of clinical oversight')"
+          ],
+          "residualConcerns": "Medication topic. Several references in the reference list look unusual for the claims they support; the review should be treated as low-quality background only.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1845",
+        "synthesisBatch": "pilot-synthesis-batch-111",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 78,
+      "sourceFile": "Topical sodium bicarbonate - No improvement in blood buffering capacity or exercise performance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 36137,
+        "doi": "10.1123/ijspp.2019-0345",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Two small laboratory studies of 10 people each. Study A (recreationally active men and women) compared a topical sodium bicarbonate lotion with oral bicarbonate in a cycling task to exhaustion; Study B (moderately trained male cyclists and triathletes) tested the lotion against placebo in three 30-second Wingate sprints. The lotion did not raise blood bicarbonate or pH, and it did not change time to exhaustion or sprint power in either study.",
+      "limitations": "Two small repeated-measures lab studies of 10 people each, with no true placebo arm in Study A and no oral bicarbonate arm in Study B, so the lotion cannot be ranked directly against oral bicarbonate. The Study A oral condition also did not improve performance, which the authors attribute partly to variable responses in recreationally active participants.",
+      "synthesisCaution": "Staff could read 'no improvement' as proof that topical bicarbonate does nothing in every sport, when the study tested one product at one matched dose in 20 people using short sprint and time-to-exhaustion tasks.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr: 'Oral bicarbonate is the form with supporting evidence' -> in this study oral bicarbonate raised blood buffering but did not improve performance ('oral NaHCO3 ingestion did not appear to influence exercise performance')",
+            "paper.practicalImplications: removed the literature-based '2 to 3% gains in 1 to 7 minute efforts' and dosing advice, which this study did not test; kept the authors' advice to prefer oral over topical and to trial protocols ('the need for supplementation protocols to be trialed before being implemented in a competition setting')",
+            "paper.athleteDev: replaced generic consult-a-professional advice with the trial-before-competition point the paper supports",
+            "paper.findings: added GI symptoms (P = .423) and RPE (18.9 vs 18.3, P = .015)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1846",
+        "synthesisBatch": "pilot-synthesis-batch-111",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 88,
+      "sourceFile": "Training load and carbohydrate periodization practices of elite male Australian football players - Evidence of fueling for the work required.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 32990,
+        "doi": "10.1123/ijsnem.2019-0311",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Repeated-measures observational study of 42 professional male Australian football players across two in-season weekly microcycles (one home and one away fixture). GPS load was recorded, and carbohydrate intake was self-reported through 24-hour recall, food diaries and remote food photography. Total distance was highest on game day, and self-reported carbohydrate intake was highest on the day before a game (4.3 g/kg home, 4.8 g/kg away) and lowest on the day with no training (1.5 g/kg home, 1.4 g/kg away). Carbohydrate intake during games (59 ± 19 g, mostly from fluids) was far higher than during training (1 ± 1 g).",
+      "limitations": "Carbohydrate intake was self-reported, and the authors state that the values probably underestimate true intake. The data cover two microcycles at one club, and game-day carbohydrate data came from 22 games and 22 selected players, so the findings describe one squad over a short period.",
+      "synthesisCaution": "Staff could take the self-reported carbohydrate figures as the squad's actual intake and conclude that players underfuel by a fixed amount, when the authors state that the recalls are likely underreported and were not checked against measured intake.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: '75% from fluids' (abstract) -> results values 38 ± 18 g fluids vs 22 ± 20 g gels",
+            "limitations: added abstract vs results conflicts on fluid share and on training-session day ('training session completed 4 days before' vs 'on GD minus 2 (GD-2)')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1847",
+        "synthesisBatch": "pilot-synthesis-batch-111",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}
