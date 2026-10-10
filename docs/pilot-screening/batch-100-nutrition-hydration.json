@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-100-nutrition-hydration",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Nutrition & Hydration queue positions 31-31. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 31,
+      "sourceFile": "Reference Values for Hydration Biomarkers - Optimizing Athletic Performance and Recovery.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 20,
+        "extractedCharacters": 95492,
+        "doi": "10.2147/OAJSM.S508656",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "American Football",
+        "Endurance Sport",
+        "Combat Sports",
+        "Tennis"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate",
+        "Adult / Recreational",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "The authors (who call it a narrative review) searched PubMed and Google Scholar for English-language, full-text, peer-reviewed field studies of adults up to May 2024, and accepted 16 that measured body mass change, urine specific gravity and thirst rating in competitions, training, weight-making and free-living days. Across the studies, body mass change correlated with urine specific gravity (r = 0.50, P = .013) and with thirst rating (r = 0.68, P = .001) in the pooled group means from Tables 1 and 2. The tables report pre- and post-exercise values, such as a 1.3% body mass loss with urine specific gravity rising from 1.019 to 1.023 and thirst from 2 to 5 in a 9-hour road cycling event.",
+      "limitations": "The reference values are pooled group means from 16 small field studies (group sizes mostly 6 to 57), with different thirst scales, several studies missing standard deviations, and few combat sport data. Correlations are calculated from pooled group means rather than individual athletes.",
+      "synthesisCaution": "The tables are averages from specific sports, climates and studies, so staff could read them as normal ranges or hydration targets for their own athletes when they are only a comparison point alongside individual baselines.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "tldr: 'Body mass change, urine specific gravity and thirst rating rise together' (body mass falls) -> urine specific gravity and thirst rose when body mass was lost ('all thirst ratings increased and all urine specific gravity values increased when a net body water loss occurred')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1553",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

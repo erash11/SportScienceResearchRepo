@@ -8,7 +8,7 @@ Inputs: `inputs.json` gives each paper an ID, the filename it was catalogued und
 - `INCLUDE`: the text is the article the filename names, AND it is athlete health/performance evidence of one of these types: original research (any design, including case reports and validation studies), systematic review/meta-analysis, narrative or clinical review, or consensus/position statement.
 - `EXCLUDE` (give `exclusionReason`):
   - (a) source identity mismatch: the text is a different article from what the filename names. Compare the filename title with the title in the text carefully.
-  - (b) editorial, commentary, letter, or opinion piece without original methods or a structured review of evidence.
+  - (b) editorial, commentary, letter, or opinion piece without original methods or a structured review of evidence. Also (b): a study protocol with no results (decided by Eric 2026-10-10; no listed reason fits exactly, so use (b) and say "study protocol, no results" in the reason).
   - (c) not relevant to athletes, sport, exercise performance or athlete health.
 - `DEGRADED` (give `degradedReason`): the text is unreadable or truncated, critical sections are missing, or **the article's own DOI is not printed in the text**. Reference-list DOIs do not count. If the DOI is missing but everything else is fine, still fill in all fields and set `doiMissing: true`. The operator may verify the DOI externally and upgrade the decision.
 

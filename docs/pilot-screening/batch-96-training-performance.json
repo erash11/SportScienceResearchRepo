@@ -1,0 +1,627 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-96-training-performance",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Training & Performance queue positions 2-96. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 2,
+      "sourceFile": "Quantifying Leg Muscle Disuse Atrophy During Bed Rest Using DXA, CT, and MRI.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) Not relevant to athletes, sport, exercise performance or athlete health. The sample is 12 healthy young men (non-athletes) in a 2-week bed rest study comparing DXA, CT and MRI for disuse atrophy; apart from the journal name, the text frames the work around sickness, surgery, sarcopenia and clinical trials and has no athlete or sport context.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: \"the text has no athlete or sport context\" -> qualified to note the journal name and the clinical framing (\"periods of inactivity or bed rest, often due to sickness or surgery\")",
+            "confidence: high -> medium, because the (c) call is a judgement about relevance"
+          ],
+          "residualConcerns": "Borderline (c). The paper is a measurement-method comparison (DXA, CT, manual and automated MRI) of two-week disuse atrophy in healthy young men, published in a sport science journal, with its own DOI printed (10.1002/ejsc.12299). Rehab staff tracking muscle loss after injury immobilization might find it useful; if a reviewer judges it relevant, it would be a Methodological / Validation Study in Monitoring & Technology with Adult / Recreational population.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 10,
+      "sourceFile": "Rapid increase in plasma growth hormone after low     intensity resistance exercise with vascular occlusion.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text (no DOI candidates were found). All other fields are complete, so the operator may verify the DOI externally and upgrade the decision.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary, paper.findings: growth hormone 'under 290 times' resting -> 'about 290 times' (extraction artifact; 'a concentration ~290 times as high as that before exercise')",
+            "populations: removed 'Healthy Athletes' -> health status is not stated ('Six young male athletes aged 20-22 yr volunteered')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 12,
+      "sourceFile": "Re thinking athlete training loads would you rather have one big rock or lots of little rocks dropped on your foot.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Commentary: the article describes itself as a 'brief commentary' and presents no original methods or structured review of evidence; it argues for a new way to quantify training load.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 23,
+      "sourceFile": "Recovery of Force-Time    Characteristics After Australian Rules Football Matches- Examining the    Utility of the Isometric Midthigh Pull.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "Duplicate: this is the same article as ID 608 (Norris D, Joyce D, Siegler J, Clock J, Lovell R; IJSPP 2019; DOI 10.1123/ijspp.2018-0349), filed under another filename. ID 608 is kept as the library record.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: peak force week-to-week variation given as 4.4% to 8.4% (abstract) -> 4.4% to 9.4% per results ('4.8%, 4.4%, and 9.4% for G+2, G+3, and G+4'); conflict noted in limitations",
+            "paper.tldr: 'peak force returned to near baseline' implied an initial drop -> peak force showed only trivial changes at every time point ('all classified as trivial changes')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 28,
+      "sourceFile": "Redefining the draft pick valuation in the National Football League.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 36050,
+        "doi": "10.3389/fspor.2025.1628223",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Other",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "A retrospective brief research report of 4,996 NFL draft picks from 1993 to 2012 (pro-football-reference.com data), using fifth-order polynomial regressions of each pick's career weighted approximate value (wAV), games played (GP) and seasons started (ST), with round-specific trade-up dummies. The authors report that Rounds 4 to 7 outperform the Jimmy Johnson pick value chart, that the last first-round pick is worth about 56% of the first pick on GP (versus 20% on the chart), and that first-round trade-ups are associated with lower wAV, GP and ST. Model 2 explains only 22 to 31% of the variance (R2).",
+      "limitations": "The study measures draft value through career output of players in a single league, so it says little about training, health or injury, and it does not adjust for position, team, or the player's injury history. The trade-up models explain 22 to 31% of the variance, and trade-up effects were significant only in Round 1 (all three outcomes) and Round 4 (seasons started only).",
+      "synthesisCaution": "The paper's advice to accumulate Day 3 picks rests on average career outcomes across all positions and teams, so it should not be read as a guarantee that any particular late-round pick will be a productive starter.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'trade-up effects are small' -> effects were not small in Round 1 (GP coefficient -13.33); now states they were significant only in Round 1 (all outcomes) and Round 4 (ST only, P = .011)",
+            "evidenceSummary: noted article type ('TYPE Brief Research Report')"
+          ],
+          "residualConcerns": "Eligibility is borderline: this is front-office draft valuation analytics, not athlete health or performance evidence in the usual sense. Kept INCLUDE because it is original research on sport, but a reviewer may prefer EXCLUDE (c). The text also gives both 1993 to 2012 and 1994 to 2012 for the averaged dataset.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1485",
+        "synthesisBatch": "pilot-synthesis-batch-96",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 29,
+      "sourceFile": "Reduced Time to Surgery Improves Patient-Reported Outcome After Achilles Tendon Rupture.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) not relevant to athletes: a retrospective cohort of 228 surgical patients with acute Achilles tendon rupture, drawn from two RCTs. The text does not describe the participants as athletes and gives no sport or exercise participation data.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Borderline eligibility. The sample is general surgical patients (mean age 39 to 41 years, no sport or athlete description anywhere in the text), which matches batch precedent for excluding non-athlete clinical samples. However, Achilles tendon rupture is a common sports injury, the paper is in The American Journal of Sports Medicine with its own DOI (10.1177/0363546518793655, 2018), and INSTRUCTIONS allow patient samples tagged as Adult / Recreational. A reviewer may choose to INCLUDE it.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 32,
+      "sourceFile": "Refining the recipe or spoiling the broth - Reframing perceptions of programme adaptation in sports injury prevention.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) editorial, commentary or opinion piece: a two-page British Journal of Sports Medicine editorial that argues for purposeful modification of injury prevention programmes. It reports no original methods or structured review of evidence; the Copenhagen Adduction Exercise survey it mentions is cited from a separate study.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 38,
+      "sourceFile": "Relationship Between Preseason Training Load and In-Season Availability in Elite Australian Football Players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 35583,
+        "doi": "10.1123/ijspp.2015-0806",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "A single-cohort observational study of 46 elite male Australian Football League players from one club, divided into thirds by the share of preseason sessions completed (high >85%, n=15; medium 50 to 84.9%, n=16; low <50%, n=15). GPS-derived in-season loads, match availability and injuries were compared. The authors report that the high and medium groups covered more total distance and player load in the first half of the season than the low group (P=.02 to .03), and were available for 76.7% and 76.1% of matches versus 52.7% for the low group, while injury rates of 14.2, 17.7 and 26.8 per 1000 h did not differ significantly (chi-square P=.17).",
+      "limitations": "The study covers one club and one season with only 50 in-season injuries, so the injury comparison is underpowered. Groups were formed by preseason completion, which is linked to rehabilitation time (46% of preseason in the low group versus 4.6% in the high group), so injury or rehabilitation status may explain the differences. No internal load measures were included.",
+      "synthesisCaution": "Staff could read the lower injury rate in the high-completion group as proof that completing preseason training prevents injuries, when the injury difference was not significant and the groups differed in rehabilitation time before the season.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: match availability differences presented without noting significance -> added that they were P>.05 and only 'very likely' by magnitude-based inference ('P > .05, ES = 0.84 ... 97% very likely')",
+            "paper.tldr: 'were available for more matches' and 'prioritize preseason completion' implied a significant, causal effect -> notes non-significance and rehabilitation confound (LTL '46.0% +/- 33.5%' of preseason in rehabilitation)",
+            "paper.athleteDev: 'preseason participation should be treated as a performance priority' overstated causation from an observational grouping -> framed as a monitoring marker with the confound stated"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1486",
+        "synthesisBatch": "pilot-synthesis-batch-96",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 39,
+      "sourceFile": "Relationship Between Serum Vitamin D Levels and Chronic Musculoskeletal Pain in Adults - A Systematic Review.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) not relevant to athletes, sport, exercise performance or athlete health. The review pools observational studies of general adults with chronic musculoskeletal pain or fibromyalgia, and no athlete sample is included.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 41,
+      "sourceFile": "Relationship among depression, fatigue, and sleep after traumatic brain injury - The role of physical exercise as a non-pharmacological therapy.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) Narrative review of physical exercise as a non-drug therapy for depression, fatigue and sleep disturbance after traumatic brain injury. The population is people with TBI, not athletes; athletes and sport are mentioned only incidentally in the text.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Borderline relevance call. This is a review article (Experimental Neurology 2025;386:115156, doi 10.1016/j.expneurol.2025.115156) on exercise after TBI in general, mixing rodent and human evidence; sport-related concussion and student-athletes appear in a few sentences only ('mild acute physical activity within the first 14 days after a sport-related concussion has demonstrated beneficial effects'). A reviewer who treats exercise-based TBI rehabilitation as athlete health evidence could reasonably change this to INCLUDE as a Narrative Review.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 47,
+      "sourceFile": "Relationships between lower limb muscle characteristics and force-velocity profiles derived during sprinting and jumping.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 65704,
+        "doi": "10.1249/MSS.0000000000002605",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Youth / Adolescent",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Cross-sectional study of 19 subelite male rugby league players (mean age 19.2) from one NRL club's elite youth development system, all in full training with no lower limb injury in the prior 12 months. Vertical (squat jump) and horizontal (30 m sprint) force-velocity-power profiles were derived, and muscle architecture (ultrasound), muscle volumes (MRI) and estimated gastrocnemius fibre type (carnosine by MR spectroscopy) were measured. Estimated gastrocnemius fibre type and specific muscle volumes explained 43% to 63% of the variation in profile variables, with fibre type the main predictor of velocity and maximal power and adductor and knee extensor volumes the main predictors of force.",
+      "limitations": "Nineteen subelite male players at one time point, with many correlations tested, which the authors note inflates the chance of false positives. Fibre type was estimated from gastrocnemius carnosine, which explains only about half the variance in biopsy fibre type, and the findings are associations, not causal effects.",
+      "synthesisCaution": "Staff could read the fibre-type findings as a basis for selecting players or designing training from a muscle test; the study explains variation in performance measures in a small subelite sample and does not test any training intervention.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: horizontal Pmax model 'adductor and vastus medialis volume and GM fibre typology (p = 0.032)' from abstract -> Table 4 and results 'GM carnosine z-score and ADD and VI muscle volume' with model p = 0.001; conflict noted in limitations",
+            "evidenceSummary: 'vastus lateralis volume the most frequent predictor' -> GM fibre typology appears in four models; adductor and knee extensor volumes drive force models",
+            "findings: added force models (vF0 r2 = 0.430; hF0 r2 = 0.432) and that architecture explained little variation",
+            "populations: added Healthy Athletes ('no history of lower limb injury within 12 months') and Youth / Adolescent ('same elite youth development system within an Australian NRL club', age 19.2)",
+            "screeningLimitations/limitations: added type I error inflation and carnosine explaining about 50% of fibre type variance (authors' limitations)"
+          ],
+          "residualConcerns": "Competition level tag is a judgment call: players are described as subelite, mean age 19.2, from an NRL club's elite youth development system.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1487",
+        "synthesisBatch": "pilot-synthesis-batch-96",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 51,
+      "sourceFile": "Repeated sprint training - The effects of session volume on acute physiological, neuromuscular, perceptual and performance outcomes in athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 66468,
+        "doi": "10.1002/ejsc.12217",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Randomised, counterbalanced crossover study in 14 healthy, trained athletes (10 male, 4 female; mean age 23 years) who completed four repeated sprint training sessions, each two sets of 5 x 20 m, 10 x 20 m, 5 x 40 m or 10 x 40 m (200 to 800 m), one per week. Session heart rate, VO2, perceived exertion, sprint decrement and GPS loads were recorded, with countermovement jump, leg stiffness and hamstring strength measured before, after, and at 24 and 48 h. The 10 x 40 m protocol (800 m) gave the highest perceptual and session training load, sprint decrement and time above 90% VO2max, and the 5 x 20 m protocol (200 m) the lowest load. At matched 400 m volume, internal loads were similar, but acceleration load was higher with 10 x 20 m; the authors report more sprinting above 90% of maximal speed with 5 x 40 m. Neuromuscular recovery was unclear, with large inter-individual variation.",
+      "limitations": "Only 14 athletes were tested in one crossover series, so the authors describe the work as exploratory. Work-to-rest ratios differed between protocols, and all neuromuscular changes were unclear, so the recovery conclusions are weak. Sport and competitive level are not specified beyond local-level or higher.",
+      "synthesisCaution": "Staff could read the 800 m protocol as the best dose for aerobic adaptation, when the study measured acute responses only and did not test training adaptations or the neuromuscular recovery that would decide how often it can be used.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary / paper.methods: protocols are two sets each ('2 x 10', '2 x 5' in Table 1), so volumes are 200 to 800 m; added 'two sets of'",
+            "paper.findings / evidenceSummary: 10 x 40 m did not definitively give the highest heart rate and VO2 vs all protocols; average HR was higher only vs 5 x 20 ('Session average heart rate was higher for 10 x 40 and 5 x 40 when compared to 5 x 20') and VO2 differences were not definitive ('only definitive for an average heart rate')",
+            "paper.findings / evidenceSummary: >90% MSS distance for 5 x 40 vs 10 x 20 was not among the definitive results (only 10 x 40 vs 10 x 20 and 5 x 20, and 5 x 40 vs 5 x 20); reframed as the authors' descriptive values ('over 100 m ... compared to 67 m')",
+            "paper.athleteDev: removed generic monitoring advice (heart rate, sprint decrement, session RPE) not given by the authors"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1488",
+        "synthesisBatch": "pilot-synthesis-batch-96",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 52,
+      "sourceFile": "Repeated sprint training in heat and hypoxia - Acute responses to manipulating exercise to rest ratio.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 44720,
+        "doi": "10.1080/17461391.2022.2085631",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Randomised, repeated-measures laboratory study in 12 trained male team-sport athletes (mean age 19.8 years). Each athlete completed two cycling sessions in an environmental chamber set to 40 C, 50% relative humidity and a simulated altitude of about 3000 m. Sessions used either 3 x 5 x 10 s sprints with 5 min between sets (exercise-to-rest 1:2) or 3 x 10 x 5 s sprints with 2.5 min between sets (exercise-to-rest 1:4), with 20 s active recovery between sprints and matched sprint and total duration. The 1:4 protocol gave about 4 to 5% higher mean and peak power and total work, and a higher core temperature, while the 1:2 protocol gave greater muscle deoxygenation during sprints, higher RPE and a larger rise in blood lactate.",
+      "limitations": "This is a single-session acute study in 12 men in one environment, so it does not show any training adaptation. The chamber had no airflow, the sample was small, and the trials were run in a season when some heat acclimatisation may have been present.",
+      "synthesisCaution": "Staff could read the acute power gain with 1:4 as a training benefit, when the study measured only what happened within one session and did not test any change in fitness.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: inter-set rest was swapped; 1:2 had 5 min and 1:4 had 2.5 min between sets ('2.5 and 5-min between sets for E:R1:4 and E:R1:2 respectively' / '(a) 3 x 10 x 5-s ... 2.5-min (E:R1:4)')",
+            "paper.athleteDev: said RPE rises more with the 1:4 format; RPE was higher with 1:2 ('RPE readings were higher for E:R1:2 than E:R1:4 throughout the protocol (p = 0.019)'); removed the monitoring advice built on that error",
+            "paper.findings / evidenceSummary: added larger blood lactate rise with 1:2 ('14.5 vs 11.8', interaction p = 0.027) and that peak core temperature stayed below the ~38.5 C acclimation dose",
+            "paper.limitations: removed note framing peak vs session core temperature as a conflict; both are reported consistently"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1489",
+        "synthesisBatch": "pilot-synthesis-batch-96",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 56,
+      "sourceFile": "Research, urban myths and the never ending story.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial. The text is a 2-page British Journal of Sports Medicine editorial by Gabbett and Blanch (2019) on research evidence and training-load beliefs. It has no original methods and no structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 57,
+      "sourceFile": "Resistance training variable manipulations are less relevant  than intrinsic biology in affecting muscle fiber hypertrophy.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 56765,
+        "doi": "10.1111/sms.14134",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Within-subject randomized design in which 20 resistance-trained young men (19 for histology) had one leg assigned to standard progressive resistance training (RT-CON) and the other to variable RT (RT-VAR, manipulating load, volume, muscle action and rest) for 8 weeks, two sessions per week. Both protocols increased type I and type II fiber cross-sectional area by about 12 to 13% (within-group, p < 0.05), with no significant difference between protocols, and satellite cell and myonuclei content did not change. The authors report a strong between-leg correlation for fiber area change (r = 0.89) and poor alignment between fiber growth and most gene expression changes, except MyoD.",
+      "limitations": "Only one leg was biopsied at baseline, and the sample was 20 young resistance-trained men (19 for histology) training to or near concentric failure over a single 8-week block, so the results do not show how women, older adults, competitive athletes or other programs would respond. Chronic outcomes rest on a single post-training time point, which limits claims about causes and individual responses.",
+      "synthesisCaution": "Staff could read this as showing that varying training variables never adds hypertrophy, when it was tested only in trained young men training to or near failure for 8 weeks.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: placeholder '2022;00:1-12' -> removed (printed 'Scand J Med Sci Sports. 2022;00:1-12')",
+            "screeningLimitations: 'one post-training biopsy' was ambiguous (Post and 24 h biopsies were taken) -> single post-training time point for chronic outcomes",
+            "paper.limitations: added higher volume load in RT-VAR ('12.6% difference between legs; p < 0.001') and time-point caveat for gene expression"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1490",
+        "synthesisBatch": "pilot-synthesis-batch-96",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 58,
+      "sourceFile": "Responses from GhatGPT-4 show limited correlation with expert consensus statement on anterior shoulder instability.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) not relevant to athletes, sport, exercise performance or athlete health. The paper compares GPT-4 chatbot answers with an expert consensus statement on anterior shoulder instability. It has no athlete sample and no athlete outcome; the athlete-related content is only in the consensus questions being graded.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Borderline relevance call. The study rates GPT-4 answers against an expert consensus on anterior shoulder instability (a sports medicine injury; consensus items mention collision and competitive athletes and in-season return to play), but it produces no athlete health evidence itself. A reviewer may prefer INCLUDE as a Sports Medicine methodological study if the library wants AI-tool reliability papers.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 89,
+      "sourceFile": "Return to sports, return to preinjury sports, return to prior performance at sports - All meaningful parameters with different meanings and scales.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) editorial, commentary, letter, or opinion piece without original methods or a structured review of evidence. The text is Noyes FR, Editorial Commentary, Sports Health, on the Svantesson et al. study.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 95,
+      "sourceFile": "Review of WADA prohibited substances - Limited evidence for performance-enhancing effects.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 79188,
+        "doi": "10.1007/s40279-018-1014-1",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A review of PubMed-identified studies and reviews of the 23 substance classes on the 2018 WADA Prohibited List, using double-blind randomized trials in trained subjects as the main evidence standard. The authors report that 5 classes (anabolic agents, beta2-agonists, stimulants, glucocorticoids and beta-blockers) show evidence of enhancing actual sports performance, mainly strength or sprint performance, and growth hormone has similar evidence only in untrained subjects. The level 1 evidence base is 11 studies with 266 subjects, and the authors found no studies showing benefit on reliable markers of endurance performance.",
+      "limitations": "The search used PubMed alone with keyword combinations and reference checking, without PRISMA reporting, so study selection is not reproducible. Several cited studies had small samples, lacked a baseline or placebo comparison, or used untrained subjects, which the authors flag as limits on the conclusions.",
+      "synthesisCaution": "Staff could read the finding that most classes lack evidence as proof that the substances do not improve performance, when 11 classes simply have no well-designed studies and only 6 classes have evidence of no effect.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: stimulants described as 'two studies in the text that the authors describe as mixed' -> not in text; Table 1 lists 'Muscle strength, sprint performance, 1500 m run time Total: 58'",
+            "paper.findings: '11 of 23 classes had no well-designed studies in trained subjects' -> 'For 11 classes, no well-designed studies are available'; added 'for the remaining six classes, there is evidence of an absence of a positive effect'",
+            "paper.limitations: attributed PubMed-only search and other points to the authors as stated limitations -> no limitations section exists; now reviewer-stated search limits plus authors' points on elite populations ('very challenging, or even impossible') and VO2max",
+            "synthesisCaution: added that 6 classes do have evidence of no effect",
+            "evidenceSummary/tldr: 'no class showed a benefit on endurance performance' -> 'no studies showing positive effects on reliable markers of endurance performance' (EPO raised VO2max and time to exhaustion)"
+          ],
+          "residualConcerns": "Duplicate of Q96: same article and DOI (10.1007/s40279-018-1014-1); keep one record. studyDesign kept as Systematic Review / Meta-analysis under the INSTRUCTIONS rule that Narrative Review is used only when no search method is described; the authors describe a database search but call the work a narrative-style review and did not follow PRISMA, so a human may prefer Narrative Review. This copy is the online-first version (no volume or pages printed, year 2018); Q96 prints Sports Medicine (2019) 49:525-539.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1491",
+        "synthesisBatch": "pilot-synthesis-batch-96",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 96,
+      "sourceFile": "Review of WADA Prohibited Substances- Limited Evidence for Performance‑Enhancing Efects.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 79296,
+        "doi": "10.1007/s40279-018-1014-1",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A review of PubMed-identified studies and reviews of the 23 substance classes on the 2018 WADA Prohibited List, using double-blind randomized trials in trained subjects as the main evidence standard. The authors report that 5 classes (anabolic agents, beta2-agonists, stimulants, glucocorticoids and beta-blockers) show evidence of enhancing actual sports performance, mainly strength or sprint performance, and growth hormone has similar evidence only in untrained subjects. The level 1 evidence base is 11 studies with 266 subjects, and the authors found no studies showing benefit on reliable markers of endurance performance.",
+      "limitations": "The search used PubMed alone with keyword combinations and reference checking, without PRISMA reporting, so study selection is not reproducible. Several cited studies had small samples, lacked a baseline or placebo comparison, or used untrained subjects, which the authors flag as limits on the conclusions.",
+      "synthesisCaution": "Staff could read the finding that most classes lack evidence as proof that the substances do not improve performance, when 11 classes simply have no well-designed studies and only 6 classes have evidence of no effect.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: stimulants described as 'two studies in the text that the authors describe as mixed' -> not in text; Table 1 lists 'Muscle strength, sprint performance, 1500 m run time Total: 58'",
+            "paper.findings: '11 of 23 classes had no well-designed studies in trained subjects' -> 'For 11 classes, no well-designed studies are available'; added 'for the remaining six classes, there is evidence of an absence of a positive effect'",
+            "paper.limitations: attributed PubMed-only search and other points to the authors as stated limitations -> no limitations section exists; now reviewer-stated search limits plus authors' points on elite populations ('very challenging, or even impossible') and VO2max",
+            "synthesisCaution: added that 6 classes do have evidence of no effect",
+            "paper.tldr: 'none improve endurance performance' -> 'no studies showing positive effects on reliable markers of endurance performance' (EPO raised VO2max and time to exhaustion)"
+          ],
+          "residualConcerns": "Duplicate of Q95: same article and DOI (10.1007/s40279-018-1014-1); keep one record. studyDesign kept as Systematic Review / Meta-analysis under the INSTRUCTIONS rule that Narrative Review is used only when no search method is described; the authors describe a database search but call the work a narrative-style review and did not follow PRISMA, so a human may prefer Narrative Review. This copy prints the issue citation (2019) 49:525-539; Q95 is the online-first copy.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1492",
+        "synthesisBatch": "pilot-synthesis-batch-96",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

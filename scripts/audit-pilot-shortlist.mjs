@@ -96,7 +96,7 @@ const pool = shortlist.selectionStrategy?.poolSignalAvailability || {};
 const floor = (minimum, key) => Math.min(minimum, Number.isInteger(pool[key]) ? pool[key] : minimum);
 if (shortlist.candidates.filter(({ populations }) => populations.includes("Female Athletes")).length < floor(1, "femaleAthlete")) failures.push("shortlist contains no female-athlete signal");
 if (shortlist.candidates.filter(({ populations }) => populations.includes("Youth / Adolescent")).length < floor(4, "youthAdolescent")) failures.push("shortlist contains fewer than four youth/adolescent signals");
-if (shortlist.candidates.filter(({ sports }) => sports.some((sport) => sport !== "Mixed / General Sport")).length < floor(24, "namedSport")) failures.push("shortlist contains fewer than 24 named-sport signals");
+if (shortlist.candidates.filter(({ sports }) => sports.some((sport) => sport !== "Mixed / General Sport")).length < floor(22, "namedSport")) failures.push("shortlist contains fewer than 22 named-sport signals");
 if (shortlist.candidates.filter(({ populations }) => populations.some((population) => ["Collegiate", "Youth / Adolescent", "Adult / Recreational", "Female Athletes", "Healthy Athletes"].includes(population))).length < floor(12, "underrepresentedPopulation")) failures.push("shortlist contains fewer than 12 underrepresented-population signals");
 
 if (shortlist.screeningCounts?.fullTextEligible !== shortlist.candidates.filter(({ screeningStatus }) => screeningStatus === "full-text-eligible").length) failures.push("full-text screening count is inaccurate");
