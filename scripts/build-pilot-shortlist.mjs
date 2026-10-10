@@ -181,6 +181,21 @@ for (const pilotDomain of domainOrder) {
   }
 }
 
+// Named-sport swap: named-sport evidence is the pilot's main gap. Where an unselected named-sport candidate
+// exists in a domain's title pool, it replaces the lowest-priority selected candidate that carries no
+// named-sport and no underrepresented-population signal, so no other signal floor is lost.
+for (const pilotDomain of domainOrder) {
+  const selection = selectionsByDomain.get(pilotDomain);
+  const pool = sortCandidates(candidates.filter((candidate) => (candidate.primaryDomain === pilotDomain || candidate.domains.includes(pilotDomain)) && !selectedFiles.has(candidate.sourceFile) && namedSport(candidate)));
+  for (const incoming of pool) {
+    const outgoingIndex = selection.reduce((worst, row, index) => (!namedSport(row) && !underrepresentedPopulation(row) && (worst < 0 || row.priorityScore < selection[worst].priorityScore) ? index : worst), -1);
+    if (outgoingIndex < 0) break;
+    const [outgoing] = selection.splice(outgoingIndex, 1);
+    selectedFiles.delete(outgoing.sourceFile);
+    addCandidate(incoming, pilotDomain, incoming.primaryDomain === pilotDomain ? "primary-title-match" : "secondary-title-match");
+  }
+}
+
 const selected = TAXONOMY.domains.flatMap((domain) => selectionsByDomain.get(domain));
 const output = {
   schemaVersion: 2,

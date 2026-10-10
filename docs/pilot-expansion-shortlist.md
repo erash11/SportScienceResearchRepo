@@ -22,16 +22,16 @@ This queue contains 81 unrepresented, content-deduplicated local PDFs: 12 alloca
    `The relationship between the NFL scouting combine and game performance over a 5-year period.pdf`
 7. **The impact of nonoperative hip and core injuries on National Football League athlete performance** — Other — TITLE SCREENED<br>
    `The impact of nonoperative hip and core injuries on National Football League athlete performance.pdf`
-8. **The impact of sleep interventions on athletic performance - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `The impact of sleep interventions on athletic performance - A systematic review.pdf`
-9. **The placebo and nocebo effect on sports performance - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
-   `The placebo and nocebo effect on sports performance - A systematic review.pdf`
-10. **The relationship between isometric and dynamic strength following resistance training - A systematic review, meta-analysis, and level of agreement** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+8. **The relationship between isometric and dynamic strength following resistance training - A systematic review, meta-analysis, and level of agreement** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `The relationship between isometric and dynamic strength following resistance training - A systematic review, meta-analysis, and level of agreement.pdf`
-11. **The role of personality traits in athlete selection - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+9. **The role of personality traits in athlete selection - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `The role of personality traits in athlete selection - A systematic review.pdf`
-12. **The training of short distance sprint performance in football code athletes - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+10. **The training of short distance sprint performance in football code athletes - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `The training of short distance sprint performance in football code athletes - A systematic review and meta-analysis.pdf`
+11. **Thermoregulation, Fluid Balance, and Sweat Losses in American Football Players** — Other — TITLE SCREENED<br>
+   `Thermoregulation, Fluid Balance,        and Sweat Losses in American Football Players.pdf`
+12. **Training alters joint power distributions during running in National Football League Draft Preparation Players** — Other — TITLE SCREENED<br>
+   `Training alters joint power distributions during running in National Football League Draft Preparation Players.pdf`
 
 ## Sports Medicine & Injury
 
@@ -45,20 +45,20 @@ This queue contains 81 unrepresented, content-deduplicated local PDFs: 12 alloca
    `Video Analysis of Anterior Cruciate                                Ligament Tears in Professional American    Football               Athletes.pdf`
 17. **The impact of injury severity on sleep quality in soccer players** — Other — TITLE SCREENED<br>
    `The impact of injury severity on sleep quality in soccer players.pdf`
-18. **The “Strengthen your ankle” program to prevent recurrent injuries- A randomized controlled trial aimed at long-term effectiveness** — Randomized Controlled Trial — TITLE SCREENED<br>
-   `The “Strengthen your ankle” program to prevent recurrent injuries- A randomized controlled trial aimed at long-term effectiveness.pdf`
-19. **When progressing training loads, what are the considerations for healthy and injured athletes** — Other — TITLE SCREENED; secondary match, primary: Training & Performance<br>
+18. **When progressing training loads, what are the considerations for healthy and injured athletes** — Other — TITLE SCREENED; secondary match, primary: Training & Performance<br>
    `When progressing training loads, what are the considerations for healthy and injured athletes.pdf`
-20. **The mechanism of hamstring injuries - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+19. **The mechanism of hamstring injuries - A systematic review** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `The mechanism of hamstring injuries - A systematic review.pdf`
-21. **Therapeutic exercises and modalities in athletes with acute hamstring injuries - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+20. **Therapeutic exercises and modalities in athletes with acute hamstring injuries - A systematic review and meta-analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `Therapeutic exercises and modalities in athletes with acute hamstring injuries - A systematic review and meta-analysis.pdf`
-22. **Time of Season and Game Segment Is Not Related to Likelihood of Lower-Limb Injuries- A Meta-Analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
+21. **Time of Season and Game Segment Is Not Related to Likelihood of Lower-Limb Injuries- A Meta-Analysis** — Systematic Review / Meta-analysis — TITLE SCREENED<br>
    `Time of Season and Game Segment Is  Not Related to Likelihood of Lower-Limb Injuries- A Meta-Analysis.pdf`
-23. **The predictive validity of a single leg bridge test for hamstring injuries in Australian Rules Football players** — Other — TITLE SCREENED<br>
-   `The predictive validity of a single leg bridge test for      hamstring injuries in Australian Rules Football     players.pdf`
-24. **The injury mechanism of Achilles tendon rupture in professional athletes - A video analysis study** — Other — TITLE SCREENED<br>
-   `The injury mechanism of Achilles tendon rupture in professional athletes - A video analysis study.pdf`
+22. **The injury rate in NFL players was increased following cancellation of preseason games due to COVID-19** — Other — TITLE SCREENED<br>
+   `The injury rate in NFL players was increased following cancellation of preseason games due to COVID-19.pdf`
+23. **Thursday Night Footballs impact on all cause injuries in NFL players during 2012-2017** — Other — TITLE SCREENED<br>
+   `Thursday Night Footballs impact on  all cause injuries in NFL players during 2012-2017.pdf`
+24. **The mechanism of anterior cruciate ligament injuries in the National Football League - A systematic video review** — Other — TITLE SCREENED<br>
+   `The mechanism of anterior cruciate ligament injuries in the National Football League - A systematic video review.pdf`
 
 ## Rehabilitation & Return to Sport
 
@@ -103,16 +103,16 @@ This queue contains 81 unrepresented, content-deduplicated local PDFs: 12 alloca
    `The impact of long haul travel on the sleep of elite athletes.pdf`
 43. **Timing-based strategies to minimize the impact of long-haul travel on sleep - A pilot study in elite athletes traveling for competition** — Other — TITLE SCREENED<br>
    `Timing-based strategies to minimize the impact of long-haul travel on sleep - A pilot study in elite athletes traveling for competition.pdf`
-44. **The impact of long-haul travel and 13 h time change on sleep and rest activity circadian rhythm in speed skaters during World Cup competitions** — Other — TITLE SCREENED<br>
-   `The impact of long-haul travel and 13 h time change on sleep and rest activity circadian rhythm in speed skaters during World Cup competitions.pdf`
-45. **The multifaceted nature of recovery after exercise - A need for individualization** — Other — TITLE SCREENED<br>
+44. **The multifaceted nature of recovery after exercise - A need for individualization** — Other — TITLE SCREENED<br>
    `The multifaceted nature of recovery after exercise - A need for individualization.pdf`
-46. **The sleep and recovery practices of athletes** — Other — TITLE SCREENED<br>
+45. **The sleep and recovery practices of athletes** — Other — TITLE SCREENED<br>
    `The sleep and recovery practices of athletes.pdf`
-47. **The sleep parameters of Olympic athletes - Characteristics and assessment instruments** — Other — TITLE SCREENED<br>
+46. **The sleep parameters of Olympic athletes - Characteristics and assessment instruments** — Other — TITLE SCREENED<br>
    `The sleep parameters of Olympic athletes - Characteristics and assessment instruments.pdf`
-48. **Time to wake up - individualizing the approach to sleep promotion interventions** — Other — TITLE SCREENED<br>
+47. **Time to wake up - individualizing the approach to sleep promotion interventions** — Other — TITLE SCREENED<br>
    `Time to wake up - individualizing the approach to sleep      promotion interventions.pdf`
+48. **Two or four weeks acute-chronic workload ratio is more useful to prevent injuries in soccer** — Other — TITLE SCREENED; secondary match, primary: Sports Medicine & Injury<br>
+   `Two or four weeks acute-chronic workload ratio is more useful to prevent injuries in soccer.pdf`
 
 ## Nutrition & Hydration
 
