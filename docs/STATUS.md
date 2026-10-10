@@ -8,9 +8,9 @@ Read this first. Update it before ending every session.
      updated 2026-09-26, including the completed SecondBrain vault push). -->
 
 ## Current state
-- 2026-10-10 (Mac): master has **1,452 records** (Batches 19-95). Branch `batch-96-103-staged` adds Batch 96
-  (84 records, IDs 1485-1568, total 1,536). **Not merged.** The shortlist audit fails. See the handoff
-  `docs/handoffs/2026-10-10-mac-batch-96-103.md`. Eric must decide the shortlist rule before the PR.
+- 2026-10-10 (Mac): Batch 96 merged (84 records, IDs 1485-1568, library now **1,536 records**). Next unused ID 1569.
+  Eric chose to lower the named-sport shortlist gate from 24 to 22 (`scripts/audit-pilot-shortlist.mjs`); the
+  regenerated shortlist has 22. `npm run audit` and `pilot:check` pass. See `docs/handoffs/2026-10-10-mac-batch-96-103.md`.
 - Backlog: about **466 unscreened unique PDFs** remain on the branch (`python3 scripts/haiku-batch/backlog.py`).
   Pipeline: `scripts/haiku-batch/` (Haiku 5.5 drafts, Opus 5.5 claim audit).
 - Ask the Library drafter merged (PR #12): `npm run pilot:draft -- <request.json>`. Stress-test eval in
