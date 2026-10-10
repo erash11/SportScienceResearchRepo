@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-94-athlete-wellbeing",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Athlete Wellbeing queue positions 68-69. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 68,
+      "sourceFile": "Prevalence of cardiovascular disease and risk factors among former National Football League players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 44095,
+        "doi": "10.1016/j.jacc.2024.03.371",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Multicity cross-sectional screening study of 285 former NFL players aged 50 and over, who completed a health history, blood pressure, ECG and transthoracic echocardiogram (TTE) at 9 events in 2021 and 2022. The authors report hypertension in 89.8% of players, of whom 37.5% had reported a history, and structural cardiac abnormalities on TTE in 61.8%, with hypertension at screening independently associated with these abnormalities (OR 2.02, 95% CI 1.03 to 3.96).",
+      "limitations": "The sample is a volunteer group recruited through NFL alumni chapters, with no comparison group, and the authors note it was largely from the southern United States. Self-reported history and medication use were not checked against records, and the cross-sectional design cannot show that screening changes outcomes.",
+      "synthesisCaution": "Staff could read the high rate of structural abnormalities as proof that TTE screening improves outcomes in former players over 50, when the study measured prevalence only and did not test any screening benefit.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: sponsor role made exact ('The sponsor funded and was involved in all trial-related activities, including study design, data management, and statistical analyses'; events 'organized by the sponsor'; health history via 'a sponsor representative'); nine Edwards employees listed in disclosures",
+            "limitations: ECG P-value no longer framed as a conflict; Table 3 gives OR 1.68 (1.00-2.82), P=0.05, a borderline result consistent with the text's 'no longer significant'. Removed claim that the 61.8% appears only in the abstract (results say 'almost 2 of every 3')",
+            "findings: added denominators (145/178 unaware; 207 of 270 recommended follow-up, since 15 pilot participants were excluded: 'N = 15 participants from the pilot study were excluded')"
+          ],
+          "residualConcerns": "Cardiac and clinically sensitive; industry-sponsored (echocardiography device maker) study whose conclusion promotes TTE screening without outcome data.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1472",
+        "synthesisBatch": "pilot-synthesis-batch-94",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 69,
+      "sourceFile": "Prevalence of illness, poor mental health and sleep quality and low energy availability prior to the 2016 Summer Olympic Games.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 42455,
+        "doi": "10.1136/bjsports-2017-098208",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Sports Medicine & Injury",
+        "Nutrition & Hydration",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Nutrition",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Cross-sectional self-report survey of 132 Australian Olympic athletes from 11 sports, completed about 3 months before the 2016 Rio Games, out of 206 who consented. All reported at least one illness symptom in the previous month, and low energy availability (LEAF-Q) was associated with upper respiratory, gastrointestinal, bodily ache and head symptoms (odds ratios 3.8 to 5.8).",
+      "limitations": "The data are single-time-point and self-reported, with no healthy comparison group, so the associations cannot be read as causes. The LEAF-Q was validated in endurance athletes and dancers rather than Summer Olympic sports, and several confidence intervals are wide.",
+      "synthesisCaution": "Staff could read low energy availability as a cause of illness in Olympic athletes, when the authors measured it indirectly with a questionnaire and recommend that direct measurement be tested.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: added that Table 4 URT and GIT columns are identical in every row (e.g. probiotics 1.9, 0.8 to 4.5 in both; LEAF-Q 3.8, 1.3 to 12 in both), so the PSQI-URT OR 2.8 may be a duplication; confirmed probiotic-fatigue OR 3.6 (1.5 to 8.5); added the 42% vs 65% response-rate discrepancy ('206 consented ... from an estimated eligible population of 317, representing a response rate of 65%' vs abstract 'response rate was of 42%')",
+            "tldr: '40% of women' -> '40% of LEAF-Q responses' because Table 2 gives 36 yes / 54 no (n=90) against 85 women analysed",
+            "findings: PSQI association attributed to the Results text; added DASS-21 prevalences (Table 2: 17%, 19%, 14%) and the 317 eligible denominator",
+            "practicalImplications: removed 'mood should also be screened' as an illness-prevention step, since 'Poor mental health is prevalent but was not associated with illness'"
+          ],
+          "residualConcerns": "Table 4 appears to duplicate the URT and GIT columns; a reviewer should confirm against the PDF which associations are real. LEAF-Q denominator (90) exceeds the 85 women.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1473",
+        "synthesisBatch": "pilot-synthesis-batch-94",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

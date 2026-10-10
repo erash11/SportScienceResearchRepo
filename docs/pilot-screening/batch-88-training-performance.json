@@ -1,0 +1,772 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-88-training-performance",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Training & Performance queue positions 1-95. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 1,
+      "sourceFile": "Personalized resistance training mitigates neuromuscular and perceived fatigue - The autoregulation cluster training method.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 37870,
+        "doi": "10.1123/ijspp.2022-0382",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized crossover study of 26 resistance-trained men who completed three sessions of bench press and back squat at 75% 1RM, matched for load, volume (24 repetitions) and total rest (240 s): traditional sets (TRA), interset rest redistribution (IRR) and an autoregulated cluster method (ACT) that adjusted the cluster structure to a 20% velocity loss target. IRR and ACT produced less velocity loss than TRA (b = -2.09, P < .001), ACT produced less than IRR (b = -2.31, P < .001), and rate of fatigue followed the same pattern.",
+      "limitations": "Single-session, acute outcomes in 26 men at one load (75% 1RM), with one comparator cluster structure. No strength, hypertrophy or long-term adaptation outcomes were measured.",
+      "synthesisCaution": "Reading lower within-session velocity loss as evidence that ACT builds more strength or muscle than traditional sets, when the study measured only acute responses.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: framed the -2.09 vs +2.09 sign as unresolved and called the ROF interaction paragraph garbled -> sign resolved as a text typo (abstract, Table 3 and CI '-2.46 to -1.72' all negative); the mislabelled paragraph identified as the velocity loss interaction ('P = .136; b = -0.81 ... percent loss')",
+            "limitations: 'Two authors' -> named Dello Iacono and Watson ('Dello Iacono and Watson declare conflict of interest')",
+            "findings: added that structure by exercise interactions were not significant (Table 3: -0.81, 0.34, no asterisk)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1414",
+        "synthesisBatch": "pilot-synthesis-batch-88",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 3,
+      "sourceFile": "Pharmacological and physiological effects of cannabidiol - A dose escalation, placebo washout study protocol.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "Not an eligible evidence type: this is a published study protocol (Neary et al., BMC Neurology 2024;24:340) for an open-label, placebo-washout, dose-escalation phase 1 CBD trial in 40 healthy male contact-sport athletes. It reports no participant data or results ('No datasets were generated or analysed during the current study'). It fails the INCLUDE test because it is not original research evidence, a review or a consensus statement. Code (b) is the closest listed reason, but (b) as worded covers pieces 'without original methods', and this protocol does describe original methods, so no listed reason fits exactly.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: rewritten to rest on the INSTRUCTIONS eligibility rules alone, with the (b) wording mismatch made explicit; decision EXCLUDE unchanged ('No datasets were generated or analysed during the current study')"
+          ],
+          "residualConcerns": "Operator call needed. Judged on the INSTRUCTIONS rules alone, with no library precedent assumed: a protocol with no results is not one of the four INCLUDE evidence types, so it cannot be INCLUDE, and it is not unreadable or truncated, so DEGRADED does not fit. EXCLUDE is the only available outcome, but none of reasons (a) to (c) fits cleanly: (b) excludes items without original methods, and this protocol has detailed methods. If Eric wants protocols in the library (for example to flag upcoming concussion-relevant CBD evidence in football players, NCT06204003, NFL/NFLPA-funded), it would need a new category or an 'Other' study design. The topic is clinically sensitive (cannabinoid dosing, concussion). Identity and DOI (10.1186/s12883-024-03847-1, printed on page 1) are confirmed.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 7,
+      "sourceFile": "Physicians' knowledge, attitudes, and perceptions about medical cannabis in the United States - A scoping review.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) Not relevant to athletes, sport, exercise performance or athlete health. This scoping review (Yusupov, Lopez, Pino; Medical Cannabis and Cannabinoids 2025;8:58-64) covers US physicians' and trainees' attitudes toward medical cannabis across general clinical specialties. The only sport reference is a citation to the Ross et al. 2023 sports medicine survey, and no athlete population is studied.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 8,
+      "sourceFile": "Physiological Resilience - What Is It and How Might It Be Trained.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 66165,
+        "doi": "10.1111/sms.70032",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of physiological resilience, the decline of VO2max, economy and metabolic thresholds during prolonged exercise, proposed as a fourth determinant of endurance performance. It summarises interindividual variation in critical power after 2 hours of heavy cycling (about 10% at group mean, 1% to 33% range, in non-elite participants) and reviews observational and small training studies. It suggests that consistent long-term volume, prolonged sessions with race-pace or progressive efforts, and heavy strength and plyometric training may build resilience, but no training study has tested resilience directly.",
+      "limitations": "No literature search or appraisal method is described, and the training suggestions rest on observational data, small studies and an unpublished doctoral thesis. No longitudinal study has tested training for resilience.",
+      "synthesisCaution": "Treating the suggested training components (long-term volume, race-pace sessions, heavy strength work) as proven ways to build resilience, when the authors say data are scant and inferences rely partly on anecdote and conjecture.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "citation: 2025;35:e70032 -> 2025;35(3):e70032 (download banner '16000838, 2025, 3')",
+            "synthesisCaution: 'the evidence is scant and largely anecdotal' -> scant and partly reliant on anecdote ('rely to some extent on anecdote and conjecture')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1415",
+        "synthesisBatch": "pilot-synthesis-batch-88",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 9,
+      "sourceFile": "Physiological adaptations and practical efficacy of different blood flow restriction resistance training modes in athletic populations.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 68537,
+        "doi": "10.3389/fphys.2025.1683442",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Rehabilitation",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Review that describes a database search (CNKI, PubMed, Web of Science) of 412 articles, from which 14 studies of athletes with structured blood flow restriction (BFR) training and control groups were included. The included studies (Table 1, sample sizes 6 to 32) are summarized by three BFR modalities, and no pooled analysis is reported apart from a cited meta-analysis (Su et al. 2025).",
+      "limitations": "The authors call this a narrative review, describe Table 1 as a representative overview rather than an exhaustive systematic inventory, and do not appraise study quality; most mechanistic statements are hypotheses drawn from the wider literature rather than from the 14 studies. Several in-text citations do not match the reference titles (for example Su et al. 2025, Wang et al. 2023, Wang et al. 2022, Lubowitz et al. 2022, Mitchell et al. 2019 and Laurentino et al. 2012), so those specific claims could not be traced to the cited studies.",
+      "synthesisCaution": "Staff may read the mechanistic framework (fiber-type specialization by modality and a periodized phase plan) as established evidence, when the authors describe it as a preliminary framework built on small, heterogeneous studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: Korkmaz strength gains reported as exceeding HLRT -> noted that Table 1 marks strength as within-group only ('Knee joint MVC*' with '*Significant within-group changes but no between-group differences')",
+            "paper.findings: ES 0.65 meta-analysis labelled as BFR-LIRT evidence -> flagged that the Su et al. 2025 reference title is 'blood flow restriction combined with high-load training'",
+            "paper.findings: Che, Sarfabadi and Zhu grouped as 'S-BFRRT and C-BFRRT' -> attributed to C-BFRRT (Table 1 modality column)",
+            "paper.limitations: added Korkmaz table/text conflict and Scott 5 vs 6 week discrepancy ('no additional benefits from 5-week S-BFRRT'; table '2x/wk. For 6 wk')",
+            "screeningLimitations/methods: added authors' statement that Table 1 is 'a representative overview ... rather than ... an exhaustive systematic inventory' and Su 2025 to citation mismatches",
+            "evidenceSummary: 'cited meta-analysis of BFR-LIRT' -> 'cited meta-analysis (Su et al. 2025)'"
+          ],
+          "residualConcerns": "studyDesign kept as Systematic Review / Meta-analysis per library precedent because a database search (412 -> 14) is described, but the authors label it a narrative review and say Table 1 is not an exhaustive inventory; a reviewer may prefer Narrative Review. Multiple in-text citations do not match the reference list.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1416",
+        "synthesisBatch": "pilot-synthesis-batch-88",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 12,
+      "sourceFile": "Planned Load Reduction Versus Fixed        Load- A Strategy to Reduce the Perception of Effort With Similar        Improvements in Hypertrophy and Strength .pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "Duplicate: this is the accepted manuscript (not copyedited, 'will be published in a forthcoming issue') of the same article as Q13, the published version (Lima et al., IJSPP 2018;13(9):1164-1168, DOI 10.1123/ijspp.2018-0072). The published version Q13 is kept.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: INCLUDE -> EXCLUDE as duplicate accepted manuscript of Q13 ('This article will be published in a forthcoming issue ... It has not been copyedited'; same DOI https://doi.org/10.1123/ijspp.2018-0072 printed in both)",
+            "taxonomy, summary and paper fields set to null per EXCLUDE rule; record content retained in Q13"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 13,
+      "sourceFile": "Planned Load Reduction Versus Fixed Load- A Strategy to Reduce the Perception of Effort With Similar Improvements in Hypertrophy and Strength.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 27251,
+        "doi": "10.1123/ijspp.2018-0072",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized 16-week trial in 21 recreationally resistance-trained men (age 23.2 [4.2] y), assigned to constant load (CON), 5% load reduction (RED 5) or 10% load reduction (RED 10), 7 per group, training biceps curls and Scott curls to volitional fatigue 3 days per week. The authors report no between-group differences in muscle thickness, 10RM strength or volume load, and a lower average daily RPE for RED 10 than CON for the biceps curl and than CON and RED 5 for the Scott curl.",
+      "limitations": "Groups of 7 give limited precision for the no-difference findings, and the protocol used two single-joint elbow flexor exercises with 3 sets each. The results therefore do not show how load reduction behaves in multijoint lifts or in athletes.",
+      "synthesisCaution": "Staff could read the lower RPE as a sign that load reduction builds more muscle or strength, but the study found no difference in hypertrophy, strength or volume load between groups.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added abstract vs results conflict (abstract 'Volume load lifted ... CON, 38,495 ... P = .094' are Scott-curl values per results; abstract biceps RPE 'P = .001' vs results 'P = .002')",
+            "identityCheck: recorded that Q12 (accepted manuscript) is excluded as a duplicate and this published version is kept"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1417",
+        "synthesisBatch": "pilot-synthesis-batch-88",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 19,
+      "sourceFile": "Play Call Strategies and Modeling for Target Outcomes in Football.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) Not athlete health or performance evidence: a statistical play-calling model that ranks one team's pass plays by modeled probability of gaining a yardage threshold, with no athlete-level, training, physical performance or health outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: INCLUDE -> EXCLUDE (c); the paper models team play-call outcomes in yards for one FCS offense ('the play to be called is the one which maximizes the probability of the desired outcome') and reports no athlete performance, training or health measures, so it falls outside the athlete health/performance scope",
+            "Remaining fields left as drafted (checked against text: 1101 plays, 568 pass plays, 279 completions, SKEWER/LADDER/CORN rankings, not implemented or tested during the season) for reviewer reference"
+          ],
+          "residualConcerns": "Scope judgment: the paper is about sport (American football tactics), so a reviewer who reads criterion (c) literally could keep it; it was excluded because the INCLUDE rule requires athlete health/performance evidence and none is measured.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 20,
+      "sourceFile": "Player tracking technology and data for injury prevention in the National Football League.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Invited commentary. The text is labeled 'INVITED COMMENTARY' in Current Sports Medicine Reports (2021;20(9):436-439). It cites a 'literature review' plus the NFL website and news articles but describes no search strategy, no original methods and no structured review of evidence; several key sources are conference abstracts, news stories and press releases.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "decision: EXCLUDE (b) confirmed; page header reads 'Invited Commentary' and references include ESPN, ProFootballTalk and press releases",
+            "doiMissing: false -> true (no DOI for this article is printed anywhere in the text)",
+            "exclusionReason: added volume, issue and pages printed in the text and the nature of the cited sources"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 21,
+      "sourceFile": "Player-Level Tackle Training Interventions in Tackle-Collision Sports - A Systematic Scoping Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 23,
+        "extractedCharacters": 77782,
+        "doi": "10.1186/s40798-025-00888-9",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Coaching",
+        "Performance",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "American Football",
+        "Rugby"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Collegiate",
+        "Adult / Recreational",
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic scoping review (PRISMA-ScR; four databases searched January 2000 to 30 May 2024) of player-level tackle training interventions. Thirteen studies with 503 athletes (360 in American football, 143 in rugby) were included, 11 quasi-experimental and two randomised controlled trials, and the authors report that every study showed a favorable change in its outcome measure.",
+      "limitations": "The evidence is small and mostly short-term, with samples ranging from one case-study player to 180 participants, mostly in youth or amateur players, and many outcomes are tackle technique or head acceleration measured in laboratories rather than injury. The review did not pool effects, so the uniform 'all studies improved' conclusion is descriptive and cannot establish effect size or injury benefit.",
+      "synthesisCaution": "Reading the finding that every intervention improved its outcome as evidence that tackle training reduces concussion or match injury would overstate it, because most studies measured technique or head impacts in controlled or training settings.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: quality wording made precise; abstract says 'The quality of studies were rated as good' while results give only JBI scores ('average criteria score was 7 out of 9 (mode = 7, range 4-9)'; RCTs '10 out of 13' and '11'), with no threshold defining 'good'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1418",
+        "synthesisBatch": "pilot-synthesis-batch-88",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 31,
+      "sourceFile": "Positional differences in muscle to bone ratio in National Football League players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 25,
+        "extractedCharacters": 40238,
+        "doi": "10.1055/a-2089-8068",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Retrospective DXA analysis of 346 NFL players scanned before drafts or training camp between 2006 and 2011, compared with 228 age-matched healthy male controls from population-based studies. NFL players had higher lean mass and bone mineral content and a lower total muscle-to-bone ratio (18.50 vs 19.12, P < .001) and trunk ratio, with no difference in leg ratio (16.72 vs 16.85); the total ratio did not differ by position, although the leg ratio did.",
+      "limitations": "Cross-sectional, retrospective DXA data from one time point, with controls drawn from population studies rather than athletes. Only 346 of 411 measured players fit the scanner field, which may narrow the body-size range (Inference), and the abstract calls a body-fat percentage difference 'significantly lower' at P = .053, which does not meet the usual .05 threshold.",
+      "synthesisCaution": "Staff could read a lower total muscle-to-bone ratio as evidence of better bone-to-muscle balance or lower bone strength in NFL players, when the paper only compares groups at one time point and reports no link to performance or injury.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added the abstract's 'significantly lower percent total body fat (17.90 vs 22.93%, p=0.053)' as a misstatement of significance (previously only in screeningLimitations); Results text says only 'lower %BF'. Replaced 'wet versus dry bone mass' (which the authors use to explain differences from other studies' MBR values, not the NFL vs control difference) with the height and skeleton-size explanation they actually give",
+            "populations: added Male Athletes (players 'were matched to a population of healthy males'; controls 'age-matched healthy, male')",
+            "screeningLimitations: labelled the scanner-field inference with the house 'Inference' label and clarified the P = .053 issue"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1419",
+        "synthesisBatch": "pilot-synthesis-batch-88",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 32,
+      "sourceFile": "Positional movement demands during NFL football games - A 3-year review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 40646,
+        "doi": "10.3390/app13169278",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Retrospective analysis of NFL Next Gen Stats tracking data from 768 regular-season games (2018-2020), summarized per player per game for distance, maximum velocity, high-velocity efforts and distance, and acceleration and deceleration efforts and distance. High-velocity thresholds were set at 85% of each position's 75th-percentile maximum velocity; safeties, cornerbacks and wide receivers covered the most distance and reached the highest speeds, wide receivers made the most acceleration efforts (tight ends second), linebackers the most high-velocity efforts, and linemen the lowest values on every load metric.",
+      "limitations": "Only on-field tracking was analyzed, excluding sideline movement and collisions, and there are no injury or performance outcomes. Thresholds are relative to each position's own maximum velocity, so effort counts reflect relative rather than absolute intensity, and two authors are paid NFL consultants and four are NFL club employees.",
+      "synthesisCaution": "Staff could read the position averages as training or return-to-play load targets, when they describe on-field game activity from one league's tracking system and say nothing about injury risk or individual readiness.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/tldr: 'wide receivers and defensive backs had the highest ... acceleration counts' -> WR highest, TE second (Table 2 acceleration efforts WR 65.7, TE 49.6, CB 42.3, LB 41.1, S 40.4)",
+            "paper.limitations: Discussion vs Table 2 conflict was described incompletely (LB 41.1 vs S 40.4) -> cornerbacks actually lead defense at 42.3 and safeties are lowest of the three ('On defense, S had the highest number of acceleration efforts, with LB closely following'); added the abstract vs Table 2 conflict on acceleration efforts; removed the unclear-n remark, since Table 2 reports player-games separately from the Methods' per-position player counts",
+            "populations: Professional / Elite confirmed by text ('professional American football athletes', 'these elite athletes'), not only inferred; added Male Athletes (Table 1 defines efforts relative to 'his positional maximum velocity')"
+          ],
+          "residualConcerns": "Male Athletes rests on the pronoun 'his' in the metric definitions rather than an explicit sex statement. Funding and conflicts: two authors are paid NFL consultants and four are NFL club employees, and the work was supported by the NFL.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1420",
+        "synthesisBatch": "pilot-synthesis-batch-88",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 36,
+      "sourceFile": "Post-exercise recovery - Cooling and heating, a periodized approach.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Opinion piece. The journal header labels it 'OPINION' and it is a single-author proposal (Thorpe RT, Frontiers in Sports and Active Living, 2021) for a periodized cooling and heating framework, with no original methods and no structured review of evidence (no search, selection or appraisal of studies).",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 42,
+      "sourceFile": "Potential health risks of foodborne performance-enhancing drugs in competitive sports.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(a) source identity mismatch: the text is Geng et al., 'Potential Moderators of the Effects of Blood Flow Restriction Training on Muscle Strength and Hypertrophy: A Meta-analysis Based on a Comparison with High-Load Resistance Training' (Sports Medicine - Open 2024;10:58, DOI 10.1186/s40798-024-00719-3), not a paper on foodborne performance-enhancing drugs. No foodborne contamination content appears anywhere in the text.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Source PDF for the foodborne performance-enhancing drugs paper is missing; the catalogued file contains Geng et al. 2024 (BFR-RT vs HL-RT meta-analysis), which may be worth cataloguing separately.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 44,
+      "sourceFile": "Potential use of new cooling technologies during Tokyo 2020 Olympics and associated ethical dilemmas.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) editorial or commentary: the text is labelled 'Editorial' (British Journal of Sports Medicine, 2021; DOI 10.1136/bjsports-2021-104014). It discusses cooling wearables and ethical issues and presents no original methods or structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 45,
+      "sourceFile": "Power-Time Curve Comparison between Weightlifting Derivatives.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text, and no DOI string appears anywhere in the text. Fields are filled from the article as printed; the operator may verify the DOI externally.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "athleteDev/tldr: JS and HHP both exceeded HPC 'at each load' -> HHP did not exceed HPC at 80% ('With the exception of 80% 1RM HPC, the HHP also produced greater PPRel at every load'; Table 2 45.1 vs 44.9 W/kg)",
+            "screeningLimitations/limitations: 'single-session' -> acute comparison across separate sessions ('All data were collected during four separate testing sessions'); added load-order limitation stated by authors",
+            "DOI: confirmed no DOI string anywhere in the text (header '©Journal of Sports Science and Medicine (2017) 16, 407-413', no doi line); DEGRADED retained"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 52,
+      "sourceFile": "Predicting noncontact injuries of professional football players using machine learning.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(a) source identity mismatch: the text is a different article. Its title is 'Predicted motion pressure: metricizing pressure created by pass rushers in the NFL and predicting their motions using weighted K-nearest neighbors machine learning models' (Patzanovsky C, Appeltans S, Valkenborg D; Data Mining and Knowledge Discovery, 2026), which studies NFL pass-rush pressure from 2021 tracking data. It is not a noncontact injury study, and the word injury appears only in passing (player injuries as a play consequence, not as an outcome modelled).",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Identity mismatch confirmed: the whole 32-page text is Patzanovsky et al., 'Predicted motion pressure' (Data Mining and Knowledge Discovery 2026;40:16, doi 10.1007/s10618-026-01188-w); 'noncontact' never appears and 'injur' appears only 4 times in passing. The operator should locate the correct noncontact-injury PDF for this filename.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 58,
+      "sourceFile": "Preoperative rotator muscle strength ratio predicts shoulder function in patients after rotator cuff repair.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) Not relevant to athletes: the text is a retrospective cohort of 77 patients with small- to medium-sized rotator cuff tears who had arthroscopic repair (mean age about 60). Athletes, sport participation or athlete health status are not described in the text, so the paper falls outside the athlete health and performance library.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Confirmed no athlete or sport content: 77 patients with small to medium rotator cuff tears (mean age 59.0 and 61.0 by group, Table 1); 'sports' appears only in journal name, affiliations and references.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 59,
+      "sourceFile": "Preseason and in-season high speed running demands of 2 professional Australian Rules football teams.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 41969,
+        "doi": "10.1177/19417381241265114",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Observational cohort analysis of GPS data from 55 male athletes at 2 professional Australian Rules football clubs, covering the 2019 preseason and the first 8 rounds of the season (4,174 training and match GPS files). Weekly running volume was greater in preseason than in-season in the 71 to 80% Vmax band (P < 0.01, r = 0.56) and the 81 to 90% Vmax band (P < 0.01, r = 0.58), but not in the 91 to 100% Vmax band (P = 0.10, r = 0.22). Individual variation was large, with coefficients of variation of 51%, 39% and 41% across the three bands.",
+      "limitations": "Descriptive GPS data from two clubs in one season, with no injury, fitness or performance outcomes, so the study cannot show a protective or performance-enhancing running dose. Speed bands are relative to GPS-derived Vmax, and the abstract and Discussion describe the bands and significance differently from the Results.",
+      "synthesisCaution": "Staff could treat the preseason and in-season averages as a safe benchmark for sprint exposure, when the study has no injury or performance outcomes and only two clubs.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: added the Discussion inconsistency ('70% to 80%Vmax, 80% to 90%Vmax, and 90% to 100%Vmax all significantly (P < 0.05) lower in-season') vs Results P = 0.103, the abstract P = 0.01 vs Results P < 0.01, and the 'weekly' metric definition ('summed and then divided by the number of sessions in the respective week')",
+            "screeningLimitations: broadened band-label note to cover the Discussion inconsistency"
+          ],
+          "residualConcerns": "Velocity band labels confirmed: abstract uses 'above 70%Vmax' and 'above 80%Vmax'; Results and Table 4 use 71-80%, 81-90% and 91-100% bands. Record reports the Results values.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1421",
+        "synthesisBatch": "pilot-synthesis-batch-88",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 73,
+      "sourceFile": "Prevention forecast- cloudy with a chance of injury.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) editorial/commentary: a BJSM editorial (\"Editorial\" header, \"Provenance and peer review Not commissioned\") with no original methods or structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 77,
+      "sourceFile": "Primum non nocere- a call for balance when reporting on CTE.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) letter/correspondence: the named piece is a Lancet Neurology correspondence (Vol 18, March 2019, pp 231-233) with a signed call for balance in reporting on CTE and no original methods or structured review of evidence. The PDF also carries a separate PFO/natalizumab correspondence (Melis et al.) and a short art note on Balla's The Madwoman.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 78,
+      "sourceFile": "Pro Football Sports Science Research Update – January 2025 Audio Summary.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) commentary/digest: the text is a script for an audio digest that summarizes many separate articles. It has no original methods, no structured review of its own, and no article DOI, so it is not an eligible single source.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 79,
+      "sourceFile": "Programing high-speed and sprint running exposure in football - Beliefs and practices of more than 100 practitioners worldwide.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 44971,
+        "doi": "10.1123/ijspp.2023-0013",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Cross-sectional online survey of 102 football practitioners from 22 countries (data collected March to July 2022), covering beliefs and practices on high-speed and sprint running exposure, using descriptive statistics and mixed-effects and multinomial regression models. The authors report broad agreement on the importance of exposure, a lack of consensus on metric definitions and monitoring methods, and a probable link between match-outcome targets and the use of two microdosed sessions.",
+      "limitations": "The sample is a convenience sample of practitioners (not athletes), mostly Italian and male, and reflects reported opinion rather than measured training or outcomes. The match-outcome model results were non-significant and the authors describe them as probable, so they should not be read as an established relationship.",
+      "synthesisCaution": "Staff could read the authors' suggested scheduling of two sessions between MD+2 and MD-2 as an evidence-based standard, when it is a suggestion drawn from practitioner beliefs and a model with overlapping confidence intervals.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1422",
+        "synthesisBatch": "pilot-synthesis-batch-88",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 80,
+      "sourceFile": "Progressing rehabilitation after injury- consider the ‘control-chaos continuum’.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) editorial/opinion piece: the text is headed 'Editorial' and presents a practitioner framework (the control-chaos continuum) with an example central defender and planning templates. It has no original data or methods and no structured review of evidence; its references support the framework rather than being systematically reviewed. Borderline: the authors describe the model as based on experience and retrospective GPS loads, but no analysis is reported.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Headed 'Editorial' with no data or methods, so EXCLUDE follows the rules, but it is a practitioner return-to-sport framework (control-chaos continuum) that staff may want catalogued; operator may choose to override.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 89,
+      "sourceFile": "Psychological readiness to return to sport - Fear of reinjury is the leading reason for failure to return to competitive sport and is modifiable.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial piece with no original methods or structured review of evidence. It is labelled Editorial in the journal header and argues for measuring psychological readiness, citing prior literature in general terms.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 95,
+      "sourceFile": "Quadriceps Morphology 6- to 60-Months After Anterior Cruciate Ligament Tear.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(a) Source identity mismatch. The extracted text is a different article: van Melick, van der Weegen and van der Horst, 'Quadriceps and hamstrings strength reference values for athletes with and without ACL reconstruction who play popular pivoting sports, including soccer, basketball and handball: a scoping review' (J Orthop Sports Phys Ther, PRISMA-ScR, 42 included studies). It contains no quadriceps morphology or imaging study, and the words 'morphology' and 'MRI' do not occur in the text.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    }
+  ]
+}

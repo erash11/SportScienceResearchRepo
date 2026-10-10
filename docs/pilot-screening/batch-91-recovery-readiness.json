@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-91-recovery-readiness",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Recovery & Readiness queue positions 2-50. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 2,
+      "sourceFile": "Pharmacological and non-pharmacological strategies for enhancing sleep quality in athletes - Implications for performance and recovery.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 23,
+        "extractedCharacters": 48172,
+        "doi": "10.12775/QS.2025.41.60176",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Sports Medicine & Injury",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of sleep physiology, the primary and secondary causes of sleep disturbance in athletes (overtraining, evening training, jet lag, pre-competition stress, injury and pain, diabetes), and pharmacological options (melatonin, Z-drugs, cannabidiol, off-label antidepressants). It compares these with sleep hygiene, relaxation and CBT-I, and concludes that CBT-I is the long-term first-line approach while medications are short-term supports. No search method or sample is described.",
+      "limitations": "No search, selection or appraisal method is described, so the evidence base and its strength cannot be checked. Many supporting studies are from general or non-athlete populations.",
+      "synthesisCaution": "Treating the review's recommendations as graded evidence for athletes, when most claims are narrative and several are extrapolated from non-athlete studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: added a second citation mismatch -> ref 50 ('Poor quality control of over-the-counter melatonin') is cited for 'melatonin's efficacy in improving sleep onset latency ... in athletes'"
+          ],
+          "residualConcerns": "Medication content (Z-drugs, off-label antidepressants, CBD, melatonin) from a student-society narrative review with weak citation support; the practical fields only restate the review's cautious, guideline-consistent advice.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1460",
+        "synthesisBatch": "pilot-synthesis-batch-91",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 34,
+      "sourceFile": "Post game recovery of isometric hamstring strength in a high risk hamstring strain injury group throughout an Australian Football League season.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 25,
+        "extractedCharacters": 40973,
+        "doi": "10.1080/24733938.2022.2159061",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Two-part observational study in AFL players the club classed as high risk for hamstring strain injury (HSI in the previous two seasons or within their first three AFL seasons). Part A (16 players, three sessions over 15 pre-season days) found good inter-session reliability of an isometric knee flexion test (ICC 0.81 to 0.88, CV 6.73 to 7.33%). Part B tested 26 players over 16 in-season weeks (21 analyzed) with linear mixed models, which found that a larger post-game strength decrement was associated with a greater within-week strength change (estimate -0.69, 95% CI -0.89 to -0.49, P<0.001, reference one day post-game).",
+      "limitations": "The high-risk group was selected by the club, the sample is small (21 players in the Part B analysis), and testing covered only 16 of 23 weeks because of COVID-19 restrictions. The associations are observational, and no injury outcomes or cut-off values were studied, so the study cannot show that testing reduces injury or guides clearance.",
+      "synthesisCaution": "Staff could read the post-game decrement and recovery association as a validated injury-risk or return-to-play threshold, when the paper proposes only early individual testing and sets no cut-off.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: 'data were missing for 16 of 23 weeks' (inverted) -> testing was possible in 16 of 23 weeks ('Data was only collected on 16 of 23 weeks')",
+            "evidenceSummary/abstract: '26 players selected as high-risk' -> added selection definition (HSI within previous two seasons or first three years at AFL level) and that 21 of 26 were analyzed; abstract of paper says 'players with a previous hamstring strain injury', which understates the selection",
+            "methods: 'tested weekly before training' -> two tests per week (IT on medical screening day, RT before main training)",
+            "findings: added AFL-travel effect (estimate 7.62, P=0.029) from model 3",
+            "limitations: confirmed inter-tester vs inter-session and MAE 6.78 (text) vs 6.55 (Table 4) conflicts; added travel CI conflict (0.08 in text vs 0.8 in Table 5)",
+            "practicalImplications: removed unsupported 'testing timing should be consistent' -> authors' early-testing rationale"
+          ],
+          "residualConcerns": "Draft had inverted the data-coverage limitation (16 of 23 weeks); corrected. No other open issues.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1461",
+        "synthesisBatch": "pilot-synthesis-batch-91",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 38,
+      "sourceFile": "Post-match recovery of eccentric knee flexor strength in male professional football players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 37928,
+        "doi": "10.1016/j.ptsp.2020.11.032",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Quasi-experimental study of 15 professional male footballers (20 were initially included; five who played under 80 min were excluded) who performed the Nordic hamstring exercise on a custom two-load-cell device 24 h before, immediately after, and at 48 and 72 h after a friendly match. Eccentric knee flexor strength fell 12% immediately after the match (d=1.10, P=0.001) and was still 6% below baseline at 48 h (P=0.011); at 72 h the group mean was 3.5% below baseline, not significant (P=0.122), with 9 of 15 players (60%) classed as fully recovered.",
+      "limitations": "This is a single-club, single-group study of 15 players in late preseason friendly matches, with one match exposure and no control group, so external validity is limited, as the authors note. The 72 h comparison was non-significant, which does not show that strength returned to baseline, and sleep, hydration and match load were not recorded.",
+      "synthesisCaution": "Staff could take the near-baseline group mean at 72 h as proof that players are recovered, when 6 of 15 players (40%) were still classed as not fully recovered at that point.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: two players described as 'still below the minimal detectable change (14%)', which reads backwards -> deficits larger than the 14% MDC ('not recovered, when strength deficit was higher than minimal detectable change (MDC; i.e., deficit >14%)')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1462",
+        "synthesisBatch": "pilot-synthesis-batch-91",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 41,
+      "sourceFile": "Postmatch Recovery Practices Carried Out in Professional Football - A Survey of 56 Portuguese Professional Football Teams.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 38373,
+        "doi": "10.1123/ijspp.2021-0343",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Online questionnaire completed by one practitioner in each of 56 Portuguese professional football teams (88% of invited teams), covering male first, second and under-23 leagues and a female first league. Practitioners rated how often each recovery method was used immediately, at 12-24 h and at 24-72 h after home and away matches. Several methods were used more often in later postmatch periods after home matches, and most methods differed by period and by match location.",
+      "limitations": "This is a self-reported practitioner survey with one respondent per team, frequency rated on a Likert scale, and no data on dose, duration or intensity of each method. It cannot show whether the timing of recovery methods affected fatigue, performance or injury.",
+      "synthesisCaution": "Reading the reported timing of use as evidence of what teams should do, or as proof that the methods work, when the survey records only what practitioners said they use.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: r = 1.00 described only as a summed-rank statistic -> also flagged as internally inconsistent with Table 1, where sleep and nutrition swap ranks ('sleep was ranked first and nutrition second, while the opposite was observed for frequency of usage')",
+            "practicalImplications: said both active recovery and CWI timing should be checked against supporting evidence -> CWI reduction in later periods is the authors' recommendation, active recovery is flagged for research ('cold water immersion postmatch practices may need to be adjusted by decreasing its frequency of usage in latter postmatch periods'); later CWI use was significant only after away matches"
+          ],
+          "residualConcerns": "The reported importance-usage correlation (r = 1.00) cannot be exact given the swapped top ranks in Table 1; treat it as a reporting error or rounding.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1463",
+        "synthesisBatch": "pilot-synthesis-batch-91",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 43,
+      "sourceFile": "Potential role of cannabidiol on sports recovery - A narrative review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 36219,
+        "doi": "10.3389/fphys.2021.722550",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of preclinical and clinical literature on cannabidiol (CBD) and its anti-inflammatory, analgesic, sleep, mood and anxiety effects, as they might apply to exercise recovery. The author states there is no evidence directly exploring CBD for sports recovery, and most of the cited data come from preclinical work and clinical studies in patients. The author concludes the evidence is promising but not conclusive.",
+      "limitations": "The review uses a narrative design with no described search strategy or explicit selection criteria, which the author acknowledges. The cited evidence is largely non-athlete, so it cannot show effects on athletes' recovery.",
+      "synthesisCaution": "Reading the mechanistic and patient-based findings as evidence that CBD speeds athlete recovery, when the author states no study has tested this directly in athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1464",
+        "synthesisBatch": "pilot-synthesis-batch-91",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 50,
+      "sourceFile": "Precovery vs recovery - Understanding the role of cherry juice in exercise recovery.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 48553,
+        "doi": "10.1111/sms.14141",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Performance",
+        "Nutrition",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Rugby",
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review by one author of 15 randomized, placebo-controlled trials of tart cherry juice, concentrate, gel or powder given around an exercise insult, with an average of about 10 participants per study. Eight of the 11 studies with an adequate exercise insult and a muscle function measure showed enhanced MVC or CMJ recovery, and the author concludes that the supported regimen is several days of juice before exercise.",
+      "limitations": "A narrative review of 15 small trials with a non-systematic selection process cannot establish an effect size or an optimal dose, which the author states is unknown. The index of protection used to compare studies is the author's own calculation.",
+      "synthesisCaution": "Staff could read 'precovery' as a general recovery treatment, or read the function result as proof that cherry juice speeds recovery in every sport and at every dose.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: 'co-author of two included trials' -> 'at least two' (refs 6 and 8 list McHugh MP; the author list of ref 16 is truncated in the text, so the count cannot be confirmed)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1465",
+        "synthesisBatch": "pilot-synthesis-batch-91",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

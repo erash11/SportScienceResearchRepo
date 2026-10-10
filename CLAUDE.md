@@ -74,7 +74,7 @@ Paper data has a single source:
 | `index.html` | Vite entry point → `preview-main.jsx` |
 | `preview-main.jsx` | Mounts `<HealthPerformanceEvidenceLibrary />` |
 | `evidence-taxonomy.mjs` | Controlled vocabularies, deterministic inference, and backward-compatible `normalizePaper` adapter |
-| `paper-taxonomy.json` | 1,381-row taxonomy sidecar; generated legacy rows are marked unreviewed and published pilot rows retain full-text-reviewed provenance |
+| `paper-taxonomy.json` | 1,452-row taxonomy sidecar; generated legacy rows are marked unreviewed and published pilot rows retain full-text-reviewed provenance |
 | `.github/workflows/deploy.yml` | Auto-deploys `dist/` to `gh-pages` branch on every push to `master` |
 
 **To deploy:** just `git push origin master` — Actions handles the rest.
@@ -147,15 +147,15 @@ Two style objects reused across cells — `th` (header), `td` (data cell).
 
 ## Batch Import Progress
 
-Current state (2026-10-09): **1,381 canonical published rows** in `papers.json` (highest assigned stable ID 1413, with verified duplicate IDs removed and never reused). `session.md` preserves the April batch-import checkpoint, but its processed/remaining counts are superseded by `docs/library-coverage-manifest.json`.
+Current state (2026-10-10): **1,452 canonical published rows** in `papers.json` (highest assigned stable ID 1484, with verified duplicate IDs removed and never reused). `session.md` preserves the April batch-import checkpoint, but its processed/remaining counts are superseded by `docs/library-coverage-manifest.json`.
 
-- 1,269 local source-backed entries and 112 internal or external entries (including 103 reviewed Zotero publications)
+- 1,340 local source-backed entries and 112 internal or external entries (including 103 reviewed Zotero publications)
 - 2,155 local PDFs contain 2,125 unique file contents because 30 filename pairs are byte-identical
-- 1,265 unique source contents represented; 658 unscreened backlog PDFs remain (`python3 scripts/haiku-batch/backlog.py`)
-- Full-text screening covers Batches 01-87: 1,074 decisions (871 INCLUDE, 158 EXCLUDE, 45 DEGRADED). Batches 19-87 used the Haiku 5.5 draft + Opus 5.5 claim-audit pipeline in `scripts/haiku-batch/`. Screening and synthesis provenance are preserved under `docs/pilot-screening/` and `docs/pilot-synthesis/`; operator actions are in `docs/needs-eric.md`.
+- 1,336 unique source contents represented; 562 unscreened backlog PDFs remain (`python3 scripts/haiku-batch/backlog.py`)
+- Full-text screening covers Batches 01-95: 1,170 decisions (942 INCLUDE, 176 EXCLUDE, 52 DEGRADED). Batches 19-95 used the Haiku 5.5 draft + Opus 5.5 claim-audit pipeline in `scripts/haiku-batch/`. Screening and synthesis provenance are preserved under `docs/pilot-screening/` and `docs/pilot-synthesis/`; operator actions are in `docs/needs-eric.md`.
 - All audit gates pass: unique IDs, source identity, link resolution, required fields, and schema consistency
 - Batch pattern: `scripts/haiku-batch/README.md` (96 PDFs per batch, 12 Haiku drafters + 12 Opus auditors)
-- Next unused ID: **1414**; preserve existing IDs during cleanup
+- Next unused ID: **1485**; preserve existing IDs during cleanup
 - driveUrl pattern: `BASE_URL + encodeURIComponent(filename)` where `BASE_URL` = `https://raw.githubusercontent.com/erash11/SportScienceResearchRepo/master/SourcePapers/`
 
 Run `npm run audit` for publication, taxonomy, full-text-screening, synthesis, and pilot-queue gates. Full-text decisions belong in versioned JSON batches under `docs/pilot-screening/`; publication-ready records belong under `docs/pilot-synthesis/`. Run `npm run audit:screening` after screening, `npm run audit:synthesis` after authoring synthesis records, and `npm run synthesis:apply` to merge verified records into `papers.json`. Run `npm run audit:manifest` after corpus or publication changes to regenerate the deep content-hash manifest. Run `npm run taxonomy:build` after changing `papers.json`, and `npm run pilot:shortlist` only when intentionally regenerating the Phase 4 queue from title inference plus reviewed screening overrides.
