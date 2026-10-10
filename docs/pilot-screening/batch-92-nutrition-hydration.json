@@ -1,0 +1,289 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-92-nutrition-hydration",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Nutrition & Hydration queue positions 15-96. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 15,
+      "sourceFile": "Plant-based diets and sports performance - A clinical review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 23,
+        "extractedCharacters": 89543,
+        "doi": "10.1007/s11332-023-01074-8",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Clinical review built from a described single-author scoping search of PubMed, Ovid MEDLINE and Google Scholar (232 hits narrowed to 36 sources), including trials, cross-sectional studies, case reports and reviews of plant-based diets in athletes and active adults. The authors report no consistent difference in strength, power or endurance performance between plant-based and omnivorous diets, along with higher risks of micronutrient shortfalls, lower muscle creatine and lower protein intake on plant-based diets.",
+      "limitations": "The search was a single-author scoping search with abstract-only screening and no quality appraisal beyond a level-of-evidence label, and several included samples are not athletes (for example patients with type 2 diabetes, older men and recreational adults). The trials are mostly small (roughly 8 to 37 participants per arm) and run from 4 days to six months.",
+      "synthesisCaution": "Staff may read 'no significant difference in performance' as meaning that plant-based diets are equivalent for athletes, when the endurance evidence is mixed, the trials are small and short, and several participants are not athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: Narrative Review -> Systematic Review / Meta-analysis per library precedent for a review that describes a database search ('scoping searches ... Initial queries yielded 232 studies; this was narrowed to 36 sources')",
+            "paper.findings: strength trial sizes 'about 10 to 38' -> 19 to 38 (Campbell 19, Haub 21, Wells 21, Hevia-Larrain 38)",
+            "paper.findings: Lynch 2016 '27 vegetarian athletes had higher VO2 than 43 omnivores' -> noted the table entry also says 'No difference in oxygen consumption for between groups, but female vegetarians had higher peak oxygen intake (53.0 vs. 47.1)'",
+            "paper.findings: Raben sample 'elite endurance men' -> 'endurance-trained men' (Table 1 'Endurance-trained male athletes (N = 8)')",
+            "paper.limitations: replaced unsupported claim that omnivore-favoring endurance findings were given less weight with the Lynch 2016 inconsistency",
+            "screeningLimitations: per-arm size and duration range corrected (Hietavala 4 days; Veleba 37 per arm)"
+          ],
+          "residualConcerns": "Design coded per precedent even though the authors call it a clinical review with a single-author scoping search; the Burke et al. Table 1 entry (protein vs creatine) and Lynch 2016 VO2 values conflict with the narrative.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1466",
+        "synthesisBatch": "pilot-synthesis-batch-92",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 29,
+      "sourceFile": "Popular dietary trends impact on athletic performance - A critical analysis review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 22,
+        "extractedCharacters": 96993,
+        "doi": "10.3390/nu15163511",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Review of five diet patterns (Mediterranean, ketogenic, non-ketogenic low-carbohydrate, plant-based and intermittent fasting) and athletic performance, built from narrative and systematic reviews and meta-analyses found on PubMed for 2015-2022, plus the primary studies cited in them. The authors report performance gains from the Mediterranean diet in small uncontrolled studies, no performance decrement from ketogenic or low-carbohydrate diets in several trials, plant-based diets not shown to be inferior but with micronutrient and protein-quality concerns, and performance decrements from intermittent fasting in some studies, especially during Ramadan or multi-day fasts.",
+      "limitations": "The authors call this a narrative review; it names a PubMed search of 2015-2022 reviews but gives no search terms, inclusion criteria, study counts or quality appraisal, so study selection cannot be checked. Several cited trials are small or uncontrolled, and the conclusion's firm statement that intermittent fasting decreases performance is stronger than the body text's 'varying results'.",
+      "synthesisCaution": "Staff could read the Mediterranean diet's 'most robust research' claim as strong evidence for performance gains, when the cited performance studies are small, within-subject and uncontrolled, as the authors themselves note.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: Narrative Review -> Systematic Review / Meta-analysis per library precedent, because a database search is described ('evaluated narrative and systematic reviews as well as meta-analyses ... from 2015-2022 on PubMed'); text fields now note the authors self-describe it as narrative",
+            "paper.findings: 'Systematic reviews found plant-based and omnivorous athletes performed similarly' overstated agreement -> notes the later review 'did highlight differences between the groups in VO2max, submaximal endurance time to exhaustion, creatine muscle content, fat-free mass, and skeletal muscle mass'; added the null overnight-fast review for balance",
+            "paper.limitations: added internal protein-range inconsistency (Section 3.1 '1.2-2.0 g/kg/day' vs conclusion '1.2 to 1.7 g/kg')",
+            "paper.methods/abstract/screeningLimitations/evidenceSummary: removed claim that no search is described; now states the search lacks terms, criteria and appraisal"
+          ],
+          "residualConcerns": "Design coding follows the library precedent, but the paper calls itself a narrative review and its search is minimally reported (no terms, criteria or counts); a reviewer may prefer Narrative Review here.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1467",
+        "synthesisBatch": "pilot-synthesis-batch-92",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 37,
+      "sourceFile": "Post-exercise rehydration in athletes - Effects of sodium and carbohydrate in commercial hydration beverages.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 52347,
+        "doi": "10.3390/nu15224759",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Collegiate",
+        "Adult / Recreational",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Randomized, double-blind, placebo-controlled crossover trial in 26 physically fit men (intercollegiate and club athletes, personal trainers and former military) who lost about 2.6% of body mass in three 90 min interval sessions, then drank water, an oral rehydration solution (2.5% carbohydrate, 45 mmol/L sodium) or a sports drink (6% carbohydrate, 18 mmol/L sodium) equal to 100% of mass lost. Percent fluid retained at 3.5 h was 58.1 +/- 12.6% (water), 73.9 +/- 10.9% (sports drink) and 76.9 +/- 8.0% (ORS), with both drinks higher than water and not different from each other.",
+      "limitations": "Only male athletes were studied in a laboratory, with a single 3.5 h retention endpoint and no athlete-specific performance outcome. The sodium-balance correlation rests on 18 non-independent observations from six participants, so it is hypothesis-level evidence.",
+      "synthesisCaution": "Staff could read the abstract's early urine-suppression claim as proof that the ORS is the better choice for quick recovery, when the 3.5 h endpoint did not separate the two drinks and the Results show the sports drink also reduced early urine output versus water.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings/tldr/synthesisCaution: repeated abstract claim that the sports drink did not differ from water in the first 60 min -> Results: 'At the 30 min collection, significantly more urine was excreted for the water placebo than for the sports drink trial. At 60 min, the water placebo promoted more fluid loss than the sports drink or ORS'; the first-hour interaction reported is ORS vs sports drink",
+            "paper.limitations: added abstract vs Results conflict on early urine output",
+            "paper.limitations: industry funding made specific ('funded by the EAS Division of Abbott Nutrition'; C.A.H. honoraria from EAS and Abbott Nutrition; funder had no role)",
+            "paper.findings: sodium correlation context added; sub-sample fluid retained only a trend (Table 5, P=0.06)",
+            "paper.methods: 'trials at least 3 days apart' -> up to 3 weeks apart for first 20, 3 days apart for final six; counterbalanced crossover",
+            "evidenceSummary/populations: sample includes personal trainers and former military, not only athletes; added Healthy Athletes (free of cardiovascular, metabolic, endocrine or renal disease)",
+            "paper.practicalImplications: added body-mass deficit result (2% vs 1.3% and 1.5%) and labeled early-ORS and sodium claims as secondary/pilot"
+          ],
+          "residualConcerns": "Funding from Abbott Nutrition; the text does not state which company makes the ORS, so any product conflict is not assessed here. The Male Athletes tag covers a sample that also includes trainers and former military.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1468",
+        "synthesisBatch": "pilot-synthesis-batch-92",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 65,
+      "sourceFile": "Prevalence of adulteration in dietary supplements and recommendations for safe supplement practices in sport.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 77479,
+        "doi": "10.3389/fspor.2023.1239121",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of supplement adulteration, mislabelling and inadvertent doping, drawing on original studies, reviews and regulatory data; the authors state that a systematic review and meta-analysis were not possible. It summarises US-market analytical studies (Table 1) that found undeclared stimulants and anabolic agents, and cites a Norwegian dataset in which 49 of 192 anti-doping violations (2003 to 2020) were attributed by athletes to a supplement, with supporting urine evidence in 27 of those 49.",
+      "limitations": "The authors call it a narrative review and state a systematic review was not possible, but they describe a database search (four databases, named terms, reference checking), so it is coded Systematic Review / Meta-analysis under library precedent. No screening counts, eligibility criteria, quality appraisal or pooled estimates are reported, so source selection is not reproducible.",
+      "synthesisCaution": "Staff could read the statement that supplements carry 'a low risk of failing a drug test and experiencing adverse events' as an established finding, when the review is narrative and the risk estimates come from selected analytical, surveillance and self-report data.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: Narrative Review -> Systematic Review / Meta-analysis (library precedent; methods name databases and terms: 'Sources for this narrative review included PubMed, Medline, SPORT Discus, and Google Scholar, with search terms including...')",
+            "screeningLimitations/methods: rewritten to explain the precedent coding and that no screening counts or appraisal are reported",
+            "limitations: added the 12% to 58% figure from a cited 2017 review alongside the 14-50% (abstract) and 10-30% (conclusion) ranges; COI wording corrected (media work is writing for media outlets, not work with supplement companies; 'AJ, DG, and AG have consulted with and received external funding from companies who sell certain dietary ingredients')",
+            "practicalImplications: 'each season' unsupported -> 'routinely ... lists are typically updated annually'; added that certification programmes cannot test all prohibited substances; 'should keep' softened to 'may retain' ('it may be worthwhile to retain samples')"
+          ],
+          "residualConcerns": "Text internally inconsistent on fluoxetine (192 of 875 printed as 21.37%; 192/875 is about 22%); figure reported as printed. Authors include affiliates of BioMolecular Athlete LLC with industry ties.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1469",
+        "synthesisBatch": "pilot-synthesis-batch-92",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 96,
+      "sourceFile": "Quality control of protein supplements - A review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 71176,
+        "doi": "10.1123/ijsnem.2020-0287",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A review of quality-control studies of sport protein supplements, mainly whey protein. The authors searched ScienceDirect, PubMed and Web of Science for January 2005 to July 2020, assessed 81 full texts from 108 abstracts, and included 30 studies. The included reports describe label mismatches, undeclared pharmacological substances, and microbial and toxic-metal contamination.",
+      "limitations": "The review describes a search of three databases over 2005 to 2020 with screening counts, but it does not appraise study quality or pool results, so the systematic code reflects the described search only. The included studies are mostly small, product-specific analyses, and the authors note that some relevant studies may have been missed because many articles do not say whether they analysed protein supplements.",
+      "synthesisCaution": "Reading the reported label mismatches and contamination findings as the rate of problems across the protein supplement market, when they come from selected, mostly small studies of specific products.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations / paper.limitations: said several included studies did not state whether samples were protein supplements -> the stated limitation is that studies may have been missed ('some studies that presented irregularities in protein supplements may not have been included in this review, since it was not specified ... whether they evaluated protein samples')",
+            "paper.athleteDev: 'states that blocked lysine has not been established as a quality measure' -> 'more studies are needed to determine whether this is an appropriate parameter'; tied quality-seal advice to the authors",
+            "studyDesign: kept Systematic Review / Meta-analysis per library precedent (named databases, search terms, date range, 108/81/30 screening counts), though the paper is labelled 'Scholarly Review' and has no appraisal"
+          ],
+          "residualConcerns": "Design coding follows the described-search precedent; a reviewer may prefer Narrative Review given the 'Scholarly Review' label and no quality appraisal. Ahead-of-print version, so no volume or pages.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1470",
+        "synthesisBatch": "pilot-synthesis-batch-92",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

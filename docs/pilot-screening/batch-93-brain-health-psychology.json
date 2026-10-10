@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-93-brain-health-psychology",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Brain Health & Psychology queue positions 11-90. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 11,
+      "sourceFile": "Phytochemicals for Improving Aspects of Cognitive Function and Psychological State Potentially Relevant to Sports Performance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 20,
+        "extractedCharacters": 118811,
+        "doi": "10.1007/s40279-018-1007-0",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review with no described search method, covering human controlled-trial evidence on phenolics, terpenes, triterpenes and alkaloids for attention, memory, alertness and mood, drawn mainly from healthy non-athlete samples. The author reports consistent cardiovascular benefits of polyphenols, mixed cognitive results for most compounds, and almost no evidence from sporting contexts.",
+      "limitations": "Because no search method is described, study selection cannot be checked, and the review does not describe a quality appraisal. The author discloses research grants and consultancy from companies with an interest in phytochemicals, and the article was part of a supplement sponsored by the Gatorade Sports Science Institute.",
+      "synthesisCaution": "Staff could read the cognitive and mood findings as performance benefits for athletes, when the review itself says the sporting-context evidence is almost absent and that most findings come from healthy, mostly non-athletic samples.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.athleteDev: 'identifies no sport-specific trial showing that phytochemicals improve performance' -> notes the single 15-athlete triterpene study ('improved reaction times ... in a small sample of 15 athletes') and the 30-participant peppermint oil study ('the only study to date involving physical performance')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1471",
+        "synthesisBatch": "pilot-synthesis-batch-93",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 90,
+      "sourceFile": "Public chronic traumatic encephalopathy knowledge - Sources, accuracy and confidence.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text. The only DOIs present are reference-list DOIs (10.1177/01461672221117691 and 10.1201/b18959-7). The operator may verify the DOI externally and upgrade the decision.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: example read as if 'CTE is diagnosed only after death' were the error -> the error is not knowing this (only 33.21% answered 'CTE can only be diagnosed after death' correctly as True; 33.01% knew single-event causation is False)",
+            "paper.findings: 'largest estimated sources' -> 'named sources the authors identify as most used' ('Other' averaged 12.76%, above social media 10.14%, Table 3)",
+            "DOI: confirmed no own DOI anywhere in the text (only reference-list DOIs at lines 363-379); DEGRADED with doiMissing kept"
+          ],
+          "residualConcerns": "Own DOI not printed; operator should verify externally before upgrading. Article is labelled 'Special Communication' but reports original survey data.",
+          "spotCheckPriority": "high"
+        }
+      }
+    }
+  ]
+}

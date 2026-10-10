@@ -1,0 +1,655 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-95-monitoring-technology",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Monitoring & Technology queue positions 10-94. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 10,
+      "sourceFile": "Physiological and biomechanical monitoring in American football players - A scoping review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 31,
+        "extractedCharacters": 127359,
+        "doi": "10.3390/s23073538",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Scoping review following PRISMA guidance, searching PubMed, Web of Science and Scopus from 1995 to July 2022 (1629 records), with 112 research studies on American football players included after screening. The included studies were grouped by topic: concussion biomechanics (55), footwear (6), sport movement (6), football aerodynamics and catch (3), injury prediction (8), heat monitoring (8 in the abstract, 9 in the body) and training load (25).",
+      "limitations": "The review maps research activity rather than pooling effects, and most included work is laboratory simulation or small-sample sports science. Its searches were limited to English-language records to July 2022, and it excluded players under 18, retired players and strength-training studies, which the authors note could remove relevant papers.",
+      "synthesisCaution": "Staff could read the map of 112 studies as evidence that wearable monitoring has been validated for concussion or injury prediction, when most included work is simulation or small-sample sports science and the review rates its injury prediction models as high risk of bias.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'most head impacts had a median peak linear acceleration of 20.5 g' -> impacts skewed toward low severity with median 20.5 g ('skewed toward low severities, with a median peak linear acceleration of 20.5 g')"
+          ],
+          "residualConcerns": "Heat monitoring count confirmed as 9 in the body (Table 10, refs 135-143) versus 8 in the abstract; already noted in limitations. Largest topic is concussion biomechanics, so flagged for clinical sensitivity.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1474",
+        "synthesisBatch": "pilot-synthesis-batch-95",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 16,
+      "sourceFile": "Plasma myoglobin indicates muscle damage associated with acceleration-deceleration during football.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 25629,
+        "doi": "10.23736/S0022-4707.23.15203-0",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Recovery & Readiness",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Observational study of 15 male professional football players from one Japan Football League club, sampled before one official match and at 2, 16 and 40 h after it, using a point-of-care myoglobin device, laboratory creatine kinase (CK) and GPS load. Mean myoglobin was significantly higher at 2 h (140.1 ng/mL vs 38.3 at baseline) than at the other time points, while CK did not change significantly, and myoglobin at 2 h correlated most strongly with accelerations (r = 0.87).",
+      "limitations": "This is a single-club, 15-player, one-match observational study whose correlations cannot show that accelerations cause muscle damage, and playing time ranged from 10 to 90 minutes, so the load-myoglobin correlations may largely reflect minutes played. Five of the eight authors are affiliated with the three companies that supplied the devices and funded the study.",
+      "synthesisCaution": "Staff may read the study as showing that myoglobin is a better recovery marker than CK, when it measured short-term response patterns in 15 players after a single match.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'Three authors are affiliated with the companies' -> five of eight (Ohyama and Inoue, Sysmex; Nishimura and Nemoto, Micro Blood Science; Aoyagi, Dome)",
+            "screeningLimitations/limitations: added playing-time range as a confounder ('Six players played full-time ... two players played 10 min')",
+            "paper.findings: added individual persistence ('Three players continued to exhibit elevated MB concentration (more than 1.5-fold) at 16 h ... only one player ... at 40 h') and CK correlations with accelerations only (r = 0.77, 0.76)",
+            "paper.limitations: myoglobin 'back to baseline' reworded as not significantly different from baseline (61.9 vs 38.3 ng/mL); six vs five full-time players retained ('Six players played full-time'; 'full-time play (90 min) for five players')"
+          ],
+          "residualConcerns": "Significance markers in Table I are inconsistent with the r values (for example 0.72 unmarked while 0.76 is marked significant, with n = 15 and P < 0.01); reviewer may want to check.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1475",
+        "synthesisBatch": "pilot-synthesis-batch-95",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 22,
+      "sourceFile": "Playerload Variables are Sensitive        to Changes in Direction and Not Related to Collision Workloads in   Rugby      League Match-Play.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 21,
+        "extractedCharacters": 43124,
+        "doi": "10.1123/ijspp.2017-0557",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "Two-part study of accelerometer-derived PlayerLoad variables. In part one, 16 junior rugby league players completed three distance-matched 60 m drills with 0, 1 or 3 changes of direction (crossover design); in part two, 12,039 device-detected collisions from 25 professional NRL players over 270 appearances were correlated with PlayerLoad variables and distance. PlayerLoad variables increased with more changes of direction (large effects versus straight running), collisions per minute correlated moderately to largely with PlayerLoad variables but all below the authors' R2 0.50 'distinct' threshold (R2 0.20 to 0.38), and total distance per minute correlated very largely with most PlayerLoad variables (R2 0.53 to 0.62).",
+      "limitations": "Part one was a small crossover drill study in junior players, not match play, and the collision measure in part two is a device-derived count rather than video-verified collisions. The correlations are cross-sectional and cannot show causation, and the authors did not test progressive increases in collision demand.",
+      "synthesisCaution": "The conclusion that no PlayerLoad variable measures collision workload rests on correlations of r 0.45 to 0.62 falling below an R2 0.50 cutoff, so it should not be read as showing PlayerLoad is unrelated to contact.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: stated collisions related 'more strongly to total distance (R2 0.62 for PLVM)'; the R2 0.62 is total distance vs PLVM, not collisions -> corrected ('Total distance.min-1 demonstrated a very large relationship with PLVM.min-1 (R2 = 0.62)')",
+            "evidenceSummary: 'related weakly' -> moderate to large correlations below the R2 0.50 threshold (r 0.45 to 0.62, labeled moderate/large in text)",
+            "paper.tldr: 'reflects change-of-direction demands as well as contact' not supported -> distinct from collisions, closely tied to distance",
+            "paper.athleteDev: change-of-direction sensitivity was tested only in junior players, not professionals",
+            "synthesisCaution: reframed around the R2 0.50 cutoff"
+          ],
+          "residualConcerns": "Accepted manuscript (IJSPP 2018) with no volume or pages printed; citation should be completed from the published issue.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1476",
+        "synthesisBatch": "pilot-synthesis-batch-95",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 26,
+      "sourceFile": "Pooled Versus Individualized Load–Velocity Profiling in the Free-Weight Back Squat and Power Clean.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 41246,
+        "doi": "10.1123/ijspp.2020-0534",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Within-subject reliability study in 10 competitive weightlifters (8 men, 2 women; mean age 25.0 years) who completed a 1RM test and three incremental load-velocity profiles, 48 to 72 hours apart, in the back squat and power clean, with velocity measured by a linear position transducer. Individualized profiles produced stronger load-velocity correlations than pooled profiles, and the power clean met the authors' reliability criteria across all loads, while the back squat did not at heavier loads (MV at 95% or more, PV at 90% or more of 1RM).",
+      "limitations": "Ten lifters in a laboratory protocol with one velocity device limits how far the reliability values can be generalized to other athletes or equipment. The pooled and individualized profiles were compared through correlation size and reliability, not a direct statistical test.",
+      "synthesisCaution": "Staff could treat the power clean profile as a reliable test for any athlete at any load, when the sample was 10 weightlifters and the back squat failed the reliability criteria at heavy loads.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Year 2021 comes from the ahead-of-print header ('(c) 2021 Human Kinetics', downloaded 02/09/21); no issue year is printed, so the final issue year may differ. The individualized power clean MV range (r = .87-.99) has a lower bound below the pooled value (.89), so 'stronger' is the authors' summary rather than true for every lifter.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1477",
+        "synthesisBatch": "pilot-synthesis-batch-95",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 30,
+      "sourceFile": "Position-Specific Differences in Speed Profiles Among National Football League Scouting Combine Participants.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text (no DOI string appears anywhere in the text). All other fields are readable and complete, so the record is filled in with doiMissing true for operator verification.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "DEGRADED confirmed: a whole-text search finds no 'doi' string and no '10.xxxx/' pattern anywhere, including the references; the header gives only placeholder volume and pages ('J Strength Cond Res XX(X): 000-000, 2024', '00(00)/1-8'), which are omitted from the citation. Operator should verify the DOI externally. Year 2024 is the online-first year.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 47,
+      "sourceFile": "Practitioner usage, applications, and understanding of wearable GPS and accelerometer technology in team sports.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text, and no DOI string appears anywhere in the text. Fields are filled from the article as printed; the operator may verify the DOI externally.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: 'not psychometrically validated' (not stated in text) -> 'reviewed by a 7-person panel for face and content validity, no further validation reported' ('survey design was reviewed by a panel of 7 researchers and practitioners ... to ensure content and face validity')",
+            "DOI: confirmed no DOI string anywhere in the text (header 'Journal of Strength and Conditioning Research 00(00)/1-10', 'J Strength Cond Res XX(X): 000-000, 2024'); DEGRADED retained"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 49,
+      "sourceFile": "Precision of 7 Commercially Available Devices for Predicting the Bench Press 1-Repetition Maximum From the Individual Load-Velocity Relationship.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 24272,
+        "doi": "10.1123/ijspp.2018-0801",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Brief report validation study in 11 men (age 22.5 +/- 1.9 years) who performed Smith machine bench press at 45, 55, 65, 75 and 85% 1RM while seven commercial devices recorded mean velocity. The 1RM was predicted from the individual load-velocity relationship using 5 loads or only the 45% and 85% loads. T-Force, Chronojump, Speed4Lift, Velowin and PowerLift gave ES <= 0.40, r >= 0.94 and SEE <= 4.46 kg, while PUSH band (r 0.93-0.94, SEE 4.45-4.80 kg) and Beast sensor (r 0.50-0.68, SEE 9.44-11.2 kg) were less accurate.",
+      "limitations": "Eleven men experienced with the bench press, tested on one concentric-only Smith machine bench press protocol, limits transfer to free-weight lifting, other exercises, women or trained athletes. The text is an accepted manuscript before copyediting.",
+      "synthesisCaution": "Staff could read the device ranking as a product endorsement, or assume the two-point method works for any lift or any athlete, when it was tested only on Smith machine bench press in 11 men.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Mixed / Unspecified -> Adult / Recreational (sample is 'Eleven men ... experienced with the bench press', not athletes)",
+            "findings: added that T-Force, Speed4Lift, Velowin and PowerLift significantly overestimated actual 1RM (Table 1 p 0.001-0.045; estimated 87-90 kg vs actual 83.8 kg); added Beast ES range",
+            "limitations/practicalImplications/screeningLimitations: noted concentric-only protocol, fixed 0.17 m/s 1RM velocity and systematic overestimation"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1478",
+        "synthesisBatch": "pilot-synthesis-batch-95",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 51,
+      "sourceFile": "Predicting Future Perceived    Wellness in Professional Soccer- The Role of Preceding Load and    Wellness.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 25,
+        "extractedCharacters": 43063,
+        "doi": "10.1123/ijspp.2017-0864",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Observational study of 14 male professional soccer players (of 26 monitored) over one season, using individual gradient boosted regression tree models to predict next-day wellness (fatigue, sleep, soreness, stress, mood) from GPS and session RPE load and pre-session wellness. Pre-session wellness combined with load gave small effect sizes over a player's own average baseline for fatigue, soreness and stress, and for mood in some combinations, while load alone and cumulative load gave trivial effects.",
+      "limitations": "Only 14 of 26 players and about 20 test days per player were analysed, after dropping match and rest days and filling missing pre-session wellness with last observation carried forward. The models report effect sizes against a baseline but not the direction of any load effect, so they cannot show that a load change causes a wellness change.",
+      "synthesisCaution": "Staff could treat small gains over a player's own average as a validated tool that predicts next-day wellness, when the effects were small, came from 14 players and did not report the direction of load effects.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "practicalImplications: 'these items should be read with caution' implied the items themselves are unreliable -> clarified that only the prediction models add little for sleep and mood; authors say 'these items can be useful for assessing a player's status'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1479",
+        "synthesisBatch": "pilot-synthesis-batch-95",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 53,
+      "sourceFile": "Predicting sprint performance from the vertical and horizontal jumps in National Football League Combine athletes.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text. The only identifiers are the journal header ('Journal of Strength and Conditioning Research 38(8)/1433-1439, 2024'), and the text contains no DOI at all, so the operator must verify the DOI externally. Everything else is readable and complete.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Whole text searched: no DOI string of any kind appears (no 'doi', '10.1519' or 'JSC.0'), so DEGRADED with doiMissing is correct; the operator should verify the DOI externally. Equation 1's printed VJ coefficient (-0.90) gives about 1.06 s at the sample means vs a measured 1.68 s, while -0.090 gives about 1.73 s (equation 4 reproduces 4.85 vs 4.82 s), so the PDF coefficient should be checked before staff use equation 1.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 60,
+      "sourceFile": "Preseason screen cannot predict injury over three years of college football.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 41199,
+        "doi": "10.1249/MSS.0000000000002392",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Prospective descriptive epidemiology study of 208 male NCAA Division I football players over three consecutive seasons (343 player-season observations), each of whom completed the Functional Movement Screen (FMS) before preseason practice. Total FMS score, individual item scores and asymmetry counts were analyzed against noncontact injury by team and position group using mixed models that adjusted for exposure. Total FMS score and asymmetries did not predict noncontact injury, and only isolated item-level associations reached significance.",
+      "limitations": "Observational data from one NCAA Division I team over three seasons, with staff and training changes between years and injury mechanism classified by athletic trainers. Many item-level tests were run, so isolated significant results could reflect chance.",
+      "synthesisCaution": "Staff could read the push-up stability result (injury risk 13.44% at a score of 2 vs 3.67% at a score of 3 in the combo group) as a usable injury marker, when it is an isolated item finding from a screen that did not predict injury overall, and the rotary stability result ran opposite to the screen's premise.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "abstract: 'the only significant item-level associations were inconsistent with the screen's premise' -> push-up stability in the combo group was in the expected direction ('We only found a significant relationship in the expected direction with push-up stability in the combo group'); rotary stability was the opposite direction",
+            "tldr: 'not in the expected direction' applied to all item results -> push-up stability expected direction, rotary stability opposite",
+            "limitations: draft said the abstract reports push-up stability as the only significant item finding -> the abstract says it was the only significant finding in the expected direction; rotary stability results appear only in Table 4 and text",
+            "synthesisCaution: tightened to the specific push-up stability risk figures"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1480",
+        "synthesisBatch": "pilot-synthesis-batch-95",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 61,
+      "sourceFile": "Preseason shoulder range of motion screening and in-season risk of shoulder and elbow injuries in overhead athletes- systematic review and meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 59659,
+        "doi": "10.1136/bjsports-2019-100698",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Baseball / Softball",
+        "Volleyball",
+        "Tennis",
+        "Swimming & Diving",
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Youth / Adolescent",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Systematic review and meta-analysis (PROSPERO CRD42017072895) of 15 prospective cohort studies of overhead athletes, mostly baseball, with 3,314 athletes (385 female) in the review. In three studies of professional baseball pitchers, a throwing-arm external rotation less than 5 degrees greater than the non-throwing arm was associated with in-season shoulder or elbow injury (OR 1.90, 95% CI 1.24 to 2.92; I2 = 0%). Absolute shoulder range of motion and an internal rotation deficit of 20 degrees or more were not associated with injury in the pooled analyses.",
+      "limitations": "Each pooled ROM estimate came from only three studies, with high heterogeneity in age, position, level and injury definition, incomplete reporting of selection and reliability, and funnel-plot asymmetry for external rotation deficit. Most included studies did not adjust for previous injury or exposure, and the injury-rate denominator (3,750) differs from the enrolled sample (3,314).",
+      "synthesisCaution": "Staff could apply the professional pitcher external rotation finding to all overhead athletes, or to adolescent and high school pitchers, where the review found no consistent association.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed 'Collegiate'; Table 1 cohorts are professional, upper-division handball, high school, youth, junior and competitive swimmers, with no collegiate cohort",
+            "limitations: 3,314 vs 3,750 framed as an unexplained conflict -> 3,750 is 'After accounting for athletes evaluated for multiple seasons and lost to follow-up' and is the denominator for 17% (666/3750); added 'Only five studies adjusted the analysis for potential confounders'"
+          ],
+          "residualConcerns": "The 3,750 figure exceeds 3,314 although the text says it accounts for loss to follow-up; likely athlete-seasons, but the paper does not say so explicitly.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1481",
+        "synthesisBatch": "pilot-synthesis-batch-95",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 67,
+      "sourceFile": "Prevalence of carboxy‐ delta8‐tetrahydrocannabiniol in antidoping samples.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 20644,
+        "doi": "10.1002/dta.3631",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Laboratory study of 1,000 routine anti-doping urine samples that screened positive for THC-COOH, reanalysed by an LC-MS/MS method that separates the Δ8 and Δ9 isomers. Δ8-THC-COOH was detected in 119 samples (about 12%), where Δ8 made up 5% to 100% of the combined isomer signal, as reported by the authors.",
+      "limitations": "The denominator is screen-positive samples from one laboratory, and the report gives no athlete-level, sex or sport breakdown, so the figure cannot be read as a rate across all tested athletes. The study does not assess the effects or abuse potential of Δ8-THC.",
+      "synthesisCaution": "Staff could read the 12% as the share of athletes using Δ8-THC, when the figure applies only to samples that were already screen-positive for THC-COOH.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: added that the authors' conclusion of an 'increase in the use of Δ8-THC products in the athlete population' is not measured by this one-off sample set; other fields checked against text and kept (119 of 1,000; 5% to 100%; LoI 0.5 ng/mL; LoQ 2 and 0.5 ng/mL)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1482",
+        "synthesisBatch": "pilot-synthesis-batch-95",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 85,
+      "sourceFile": "Protocol standardization may improve precision error of InBody 720 body composition analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 40717,
+        "doi": "10.1123/ijsnem.2022-0219",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Performance",
+        "Nutrition",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Test-retest precision study in 18 healthy recreationally active adults from a variety of sports (10 men, 8 women, mean age 31 years) who completed two same-day and one next-or-previous-day InBody 720 bioelectrical impedance scans. Diet and activity were replicated over the 24 hours before the first scan. Within- and between-day %CV did not differ significantly for fat-free mass (FFM), fat mass (FM) or total body water (TBW), and equivalence tests placed the FFM and TBW differences inside the 1% bound but not FM.",
+      "limitations": "The design has no unstandardized or randomized-intake comparison day, so it cannot show that 24-hour standardization improves precision over current guidance. The sample of 18 is below the 30 the authors cite as needed for least significant change estimates, and diet was self-replicated without provided food.",
+      "synthesisCaution": "Reading the title's 'may improve precision' as a demonstrated benefit of diet and activity standardization, when the study had no comparison condition and the fat-mass result did not meet its equivalence bound.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed Male Athletes, Female Athletes and Healthy Athletes; sample is recreationally active adults ('met the Tier 1 definition of \"recreationally active\"'), so Adult / Recreational only",
+            "evidenceSummary: 'recreationally active athletes' -> 'recreationally active adults from a variety of sports'",
+            "limitations: CI wording flag confirmed; FFM (95% CI -0.013 to 0.29) and TBW (-0.14 to 0.48) lie inside the 1% bound while text says 'with the 95% CIs exceeding the upper equivalence bound'; added the discussion's conflicting limits (0.365%, 0.437%, 2.143%) and unrecorded incidental activity",
+            "practicalImplications: 'between-day error above the 1% bound' -> FM difference could not be shown to be within the bound (FM 95% CI -1.71 to 2.11); noted no comparison condition"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1483",
+        "synthesisBatch": "pilot-synthesis-batch-95",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 94,
+      "sourceFile": "Pyjamas, polysomnography and professional athletes - The role of sleep tracking technology in sport.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 71294,
+        "doi": "10.3390/sports11010014",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A narrative review of sleep-monitoring tools for athletes, covering polysomnography and home sleep tests, wrist- and finger-worn wearables, head-worn sensors, nearables, smart pyjamas, questionnaires and diaries, and the sleep metrics trackers report. It describes no systematic search method, and the device accuracy figures it reports are drawn from individual validation studies cited in the text, including a manufacturer validation for the Dreem headband.",
+      "limitations": "The review gives no search strategy or inclusion criteria, so the evidence base it draws on cannot be checked or graded. Two authors are employees of Cerebra, a sleep technology start-up whose sleep system appears as an example in Table 1, which the paper discloses.",
+      "synthesisCaution": "Treating the device accuracy figures as valid for every tracker, when the review says many algorithms are proprietary and not all wearables agree acceptably with polysomnography.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations / paper.limitations: industry tie made specific -> K.L. and A.M.B. 'are employees of Cerebra, a sleep technology start-up', and Table 1 lists 'Cerebra Sleep System' as a home PSG example",
+            "paper.limitations: 'nearable and smartphone app evidence is often lacking' not stated as such -> validation lacking for GO2SLEEP/Motiv rings and for smart pyjama sleep metrics ('no validation studies exist', 'yet to be validated for measuring important sleep metrics')",
+            "populations: added Mixed / Unspecified; cited evidence spans professional rugby league, male cricket athletes, highly trained amateur soccer players and non-athletes with insomnia"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1484",
+        "synthesisBatch": "pilot-synthesis-batch-95",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

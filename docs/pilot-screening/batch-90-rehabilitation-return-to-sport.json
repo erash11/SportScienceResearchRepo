@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-90-rehabilitation-return-to-sport",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Rehabilitation & Return to Sport queue positions 5-82. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 5,
+      "sourceFile": "Physical preparation of the football player with an intramuscular hamstring tendon tear- clinical perspective with video demonstrations.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 4,
+        "extractedCharacters": 13586,
+        "doi": "10.1136/bjsports-2017-098817",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Education review built around one case: an English Premier League footballer with a proximal intramuscular hamstring tendon tear, rehabilitated with progressive isometric, dynamic, strength, plyometric and high-speed running work. The player returned to competition in 120 days and, as the author reports, had eccentric knee flexor strength of 500 N (NordBord) with under 10% asymmetry before return and stayed injury free for 13 months.",
+      "limitations": "A single case with no comparator and no formal outcome testing. The progression gates are the author's clinical criteria, and the author states that the loading mechanisms he proposes are not yet supported by evidence.",
+      "synthesisCaution": "Treating this one player's timeline (return at 120 days) and its strength and asymmetry gates as a validated protocol for all intramuscular tendon injuries.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: conflict attributed to 'The author' (implying the writer and rehab lead, Taberner) -> co-author Cohen ('DC is a co-founder and shareholder in a company that makes force platforms')",
+            "tldr/findings: 'He' -> 'The player' (the text does not state sex); added 'The player achieved a new maximal speed during the RTP phase'"
+          ],
+          "residualConcerns": "Single-case return-to-play criteria (NordBord 500 N, under 10% asymmetry, 120 days). The record correctly limits these to one case, but return-to-play content warrants a human look.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1456",
+        "synthesisBatch": "pilot-synthesis-batch-90",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 35,
+      "sourceFile": "Post-Operative Rehabilitation and Return to Sport Criteria Following Distal Biceps Tendon Rupture Surgery.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 22,
+        "extractedCharacters": 30888,
+        "doi": "10.1016/j.jseint.2025.02.013",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review, reported as following PRISMA, of five studies (268 patients across 22 sports) on rehabilitation and return to sport after operative repair of distal biceps tendon rupture, with searches from inception to March 2022. The authors report that all five studies gave a return-to-sport timeline, that none reported objective, subjective or specific measurement criteria, and that the pooled return-to-sport rate was 146/171 (85%) across the four studies that reported one.",
+      "limitations": "The review pools only five studies, with a mean modified Coleman score of 61.6 (fair quality), and most cited series are small and retrospective. Athlete-specific competition level was unreported in most studies, so the findings cannot be applied to a defined athlete group.",
+      "synthesisCaution": "Staff could read the uniform time-based timelines as an accepted return-to-sport standard, when the authors found the timelines varied widely (8 weeks to 6 months in the Discussion) and that no study defined objective criteria.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: 'cannot be rebuilt from per-study figures' made specific -> Carter 51/62, Rantanen 15/15 and Gowd 57/61 sum to 123/138; Yetter gives only '70%' return without difficulty with no n printed",
+            "paper.limitations: confirmed Discussion 86% subgroup ('the return to sport rate at the same level was only 86%') is absent from Results ('14/15 (93%) of patients returned to the same level')",
+            "paper.findings: added 60% supervised physical therapy and that three of five studies mixed athletes and non-athletes ('the other three included both athletes and non-athletes')"
+          ],
+          "residualConcerns": "Pooled 146/171 (85%) is the authors' figure and depends on an unprinted Yetter denominator that counts 'return without difficulty'; treat it as approximate. Topic is return-to-sport criteria.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1457",
+        "synthesisBatch": "pilot-synthesis-batch-90",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 39,
+      "sourceFile": "Post-operative protein supplementation following orthopaedic surgery - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 47192,
+        "doi": "10.1016/j.smhs.2023.08.002",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Rehabilitation",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "PRISMA systematic review (PROSPERO-registered, searched April 2021) of 14 RCTs with 611 patients (224 male, 387 female) testing oral protein or amino acid supplementation after orthopaedic surgery: 3 ACL reconstruction trials (101 patients aged roughly 18 to 45), 3 total hip arthroplasty, 5 total knee arthroplasty and 3 hip fracture trials. No meta-analysis was done because of heterogeneity; the authors report less muscle atrophy (thigh cross-sectional area) with supplementation across surgery types and improved functional measures in 8 of 14 trials.",
+      "limitations": "Eleven of 14 trials are in arthroplasty or hip fracture patients, mostly older adults, and the ACLR trials do not report athlete status, so athlete relevance rests on three small ACLR trials. Study quality was fair to poor (mean modified Coleman scores 44 to 55), regimens all differed and follow-up was short (about 8 weeks).",
+      "synthesisCaution": "Staff could read the review's 'beneficial across all surgery types' conclusion as proof that protein supplementation speeds strength recovery after ACLR, when one of the three ACLR trials (leucine) found no strength benefit and another used an open design with no control supplement.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: EXCLUDE (c) not relevant -> INCLUDE. Rule (c) excludes papers not relevant to athletes, sport, exercise performance or athlete health; this sports medicine journal review includes 3 ACL reconstruction RCTs (n=101) and lists 'time to return to sport' as a secondary outcome, and authors note ACLR patients 'are often younger and often participating in athletics'. Post-operative muscle preservation is rehab/nutrition evidence the library audiences use.",
+            "all taxonomy and paper fields: null -> written from the full text, with populations Mixed / Unspecified because no included sample is described as athletes",
+            "identity and DOI confirmed: title matches; own DOI https://doi.org/10.1016/j.smhs.2023.08.002 printed under the article header"
+          ],
+          "residualConcerns": "Relevance is a judgment call: 11 of 14 trials are older arthroplasty or hip fracture patients and the ACLR samples are not described as athletes. Operator should confirm INCLUDE or revert to EXCLUDE (c). Per-study ACLR results come from Table 2 as extracted; Holm's table is partly garbled in the text layer.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1458",
+        "synthesisBatch": "pilot-synthesis-batch-90",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 82,
+      "sourceFile": "Proprioception and Central Nervous Excitability - Implications for Return-to-Play in Athletes with Ligament or Meniscal Injuries.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 37036,
+        "doi": "10.26603/001c.142068",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case-control Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Basketball"
+      ],
+      "populations": [
+        "Collegiate",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Case-control observational study of 21 female university basketball players: 15 with no knee injury (both legs tested, 30 legs) and 6 with a knee ligament or meniscal injury history who were cleared to play (6 injured knees, one of whom had not returned on schedule). Visual feedback gave a higher torque median frequency than verbal feedback in uninjured legs (0.38 vs 0.22 Hz, p < 0.001) and a higher LLR/Mmax ratio in injured knees (0.04 vs 0.03, p = 0.039), while injured knees showed no torque-frequency difference (p = 0.173).",
+      "limitations": "Six injured knees with heterogeneous injury types and times since injury give very low power, and the authors' sample size estimate assumed 6 per group. The single athlete who had not returned to sport is described without statistics and cannot support a group-level finding.",
+      "synthesisCaution": "Reading the conclusion as showing that visual feedback improves motor control after ligament or meniscal injury, when the torque-control measure did not reach significance in the injured knees.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: added that groups were never compared directly and the abstract's dominant vs non-dominant comparison was not done ('it was not possible to analyze differences between the dominant and non-dominant limbs'); injury mix now includes PCL and MCL and conservative cases per Table 1",
+            "abstract conclusion flag confirmed: only LLR/Mmax reached p = 0.039 in injured knees, torque median frequency p = 0.173; draft already handled this correctly"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1459",
+        "synthesisBatch": "pilot-synthesis-batch-90",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}
