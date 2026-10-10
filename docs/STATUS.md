@@ -29,9 +29,9 @@ Read this first. Update it before ending every session.
 - Unpublish ID for Batch 80 Q37 (sleep-monitoring review with mismatched citations, published at low confidence)?
   See `docs/pilot-screening/batches-80-87-review.md`.
 - Keep including anti-doping lab-method papers with no athlete participants (Batch 72 Q52, Q72)?
-- Should study protocols without results enter the library? Batch 88 Q03 and Q84 are EXCLUDE pending this call.
-  Other Batch 88-95 calls (Q39 ACLR protein review included, Q19 and Q72 excluded, Q80 framework editorial) are in
-  `docs/pilot-screening/batches-88-95-review.md`.
+- Decided 2026-10-10 (Eric): study protocols without results stay OUT of the library. Batch 88 Q03 and Q84
+  stay EXCLUDE. Other Batch 88-95 calls (Q39 ACLR protein review included, Q19 and Q72 excluded, Q80 framework
+  editorial) are in `docs/pilot-screening/batches-88-95-review.md`.
 
 ## Gotchas
 - Only one session should run the backlog at a time; two sessions would assign the same IDs. Check for open

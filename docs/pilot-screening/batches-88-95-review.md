@@ -11,7 +11,7 @@ Backlog queue drawn from the coverage manifest's unrepresented content groups (o
 | Decision changed by the audit | 5 |
 | High-priority spot checks | 44 |
 
-- Study protocols without results: Q03 (CBD dosing protocol in contact-sport athletes, NFL/NFLPA-funded) and Q84 (concussion mouthpiece co-design protocol) are both EXCLUDE (b) pending your call on whether protocols belong in the library. No listed exclusion reason fits exactly; the auditors split on Q84, and the operator session set it to EXCLUDE for consistency with Q03.
+- Study protocols without results: Q03 (CBD dosing protocol in contact-sport athletes, NFL/NFLPA-funded) and Q84 (concussion mouthpiece co-design protocol) are both EXCLUDE (b). **Decided 2026-10-10 (Eric): protocols without results stay out of the library.** No listed exclusion reason fits exactly; the auditors split on Q84, and it was set to EXCLUDE for consistency with Q03.
 - Duplicate: Q12 is the accepted manuscript of Q13 (same DOI 10.1123/ijspp.2018-0072); Q13 (published version) is kept.
 - Wrong PDFs (identity mismatch, re-stage the correct file): Q42, Q52, Q95.
 - Scope calls changed by the audit: Q19 (FCS play-calling statistics model) to EXCLUDE (c); Q39 (protein after orthopaedic surgery, 3 ACLR trials) to INCLUDE; Q72 (two-page PhD Academy summary) to EXCLUDE (b). Q80 (control-chaos continuum, labelled Editorial) stays EXCLUDE (b); you may want it as a narrative framework.
