@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-105-athlete-wellbeing",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Athlete Wellbeing queue positions 75-88. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 75,
+      "sourceFile": "The effects of electronic nicotine delivery systems on athletes.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text; the only DOI-like string is a reference-list link.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "No own DOI printed (only reference-list strings such as '10.1164/ajrccm-'), so DEGRADED with doiMissing; operator may verify the DOI externally. Citation details (Curr Sports Med Rep, Volume 19, Number 4, April 2020, pages 146-150) are printed in the running header and article code.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 88,
+      "sourceFile": "The functional and molecular effects of problematic alcohol consumption on skeletal muscle - A focus on athletic performance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 79669,
+        "doi": "10.1080/00952990.2022.2041025",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of human, in vitro and animal studies of alcohol effects on skeletal muscle, written with a focus on sportspeople. After eccentric exercise, alcohol at about 1.0 g/kg slowed strength recovery in young men, while doses of 0.88 to 1.09 g/kg lean mass did not clearly affect recovery in the young women studied; chronic alcohol reduces anabolic signalling and regeneration and increases inflammation, fibrosis and mitochondrial dysfunction in animal and clinical work.",
+      "limitations": "The search is described only as PubMed and Google Scholar with no systematic method, so coverage is unknown. Most mechanistic evidence comes from animals, cell cultures and patients with chronic alcohol misuse rather than athletes, and binge drinking is underrepresented.",
+      "synthesisCaution": "Staff could read the mechanistic chain (mTOR, fibrosis, mitochondria) as proof that drinking lowers athletes' muscle performance, when most of it comes from animal and clinical models of heavy chronic use.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'the lower doses tested in women' was inaccurate (women's doses were similar to men's) -> listed the doses; added null results in men at 0.5 g/kg and for trained tasks (\"a lower dose of alcohol (0.5 g/kg of body mass) did not affect skeletal muscle recovery\")",
+            "paper.practicalImplications: 'prolong muscle soreness' not stated for men -> increased muscle damage and slowed strength recovery (\"alcohol intake enhanced muscle injury and retarded the recovery of skeletal muscle strength\")",
+            "paper.athleteDev: removed generic 'plan recovery days around heavy nights out' advice; tied to the dose studied"
+          ],
+          "residualConcerns": "No volume, issue or pages are printed (online-first, published online 07 Apr 2022).",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1775",
+        "synthesisBatch": "pilot-synthesis-batch-105",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

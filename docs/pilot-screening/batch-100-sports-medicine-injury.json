@@ -1,0 +1,1270 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-100-sports-medicine-injury",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Sports Medicine & Injury queue positions 2-96. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 2,
+      "sourceFile": "The Influence of Time of Season on Injury Rates and the Epidemiology of Canadian Football Injuries.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 30023,
+        "doi": "10.1097/JSM.0000000000000824",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Prospective cohort analysis of routinely collected injury surveillance data from eight Canadian Football League seasons (2011 to 2018). Game medical-attention injuries occurred at 45.2 per 100 athletes at risk and time-loss game injuries at 30.7 per 100, with weekly rates falling about 1% per week over the season and about 30% in the playoffs compared with preseason. The number of ongoing time-loss injuries rose during the regular season.",
+      "limitations": "Observational data from one professional league, relying on staff and player reporting, with no practice exposure denominators. The study shows patterns across the season but cannot explain why rates change.",
+      "synthesisCaution": "Staff could read the small weekly decline as a reason to reduce injury prevention late in the season, but the drop is small, and the authors call their explanations for the playoff fall (players reporting fewer injuries) speculative and untested.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: placeholder '2020;00:1-7' removed ('Volume 00 Number 00') and authors corrected to six before et al. (Hoeber S added)",
+            "synthesisCaution: 'fewer teams playing' removed as an explanation for the lower playoff rate, because rates already use athletes at risk as an offset ('AAR as an offset to account for the different number of teams playing'); kept the reporting explanation the authors call 'speculative'"
+          ],
+          "residualConcerns": "Canadian football is coded under the American Football sport tag because no closer value exists.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1726",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 11,
+      "sourceFile": "The Protective Effect of Preseason Running Workload Against In-Season Hamstring Strain Injuries in Elite Soccer Players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 31336,
+        "doi": "10.1177/19417381251388482",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Retrospective cohort study of 67 athlete-seasons from 42 elite Japanese professional soccer players across 2021 to 2023, using GPS and session RPE data from the final four weeks of preseason. Seventeen noncontact hamstring strain injuries (HSI) occurred in the following 12 months. Higher preseason sprint distance (per 100 m, OR 0.896, 95% CI 0.822 to 0.976) and sprint count (per 10 sprints, OR 0.761, 95% CI 0.633 to 0.916) were associated with lower odds of in-season HSI, and these associations held after adjustment. Internal workload, total distance, high-speed distance and acceleration/deceleration count were not significantly associated after adjustment.",
+      "limitations": "Only 17 injury events across one country and three seasons, with cutoffs derived and tested in the same sample and no external validation. The analysis treats each athlete-season as independent even though some athletes contributed several seasons.",
+      "synthesisCaution": "Staff could read the 842 m and 34-sprint cutoffs as validated thresholds that prevent hamstring strains, when they are associations from one small sample and the design cannot show that more sprinting causes fewer injuries.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "methods: 'a propensity score for confounders' -> two multivariable models, direct covariate adjustment and a propensity score ('Model 1 includes age, previous HSI...'; 'Model 2 includes the propensity score')",
+            "limitations: added exclusion of 95 of 162 athlete-seasons for missing data and the abstract's '67 elite Japanese soccer players' versus 67 athlete-seasons from 42 athletes ('After excluding 95 athlete-seasons due to missing preseason GPS workload data or in-season injury information')"
+          ],
+          "residualConcerns": "Online-first article: volume, issue and month are placeholders ('vol. XX no. X', 'Mon XXXX'). Year 2025 is taken from the printed copyright line ('(c) 2025 The Author(s)') per the online-first rule; confirm the issue year when the DOI is checked.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1727",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 18,
+      "sourceFile": "The Risk Factors of Hamstring Strain Injury Induced by High-Speed Running.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text. Operator to verify externally; all other fields are filled.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed 'Injured Athletes'; athletes were uninjured at baseline and injury was the outcome ('Athletes with any pain or discomfort at recruitment were excluded')",
+            "paper.limitations: attributed selection bias to the matching design -> authors attribute it to a single team ('all athletes belonged to the same team (selection bias)')",
+            "paper.athleteDev: advised tracking 'sprint and jump exposure', which was not studied as a factor (event type had no significant relationship) -> record injury history only"
+          ],
+          "residualConcerns": "Controls were matched on injury history, so the history finding comes from a leg-level comparison; the extracted Table 1 cell counts (9/27 in both columns) do not reproduce the printed 25.0% vs 10.5% ratios. A reviewer should check Table 1 in the PDF.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 21,
+      "sourceFile": "The Role of Vitamin D in Postoperative Tendon Healing - A Scoping Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 38904,
+        "doi": "10.1177/23259671251371300",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Scoping review (PRISMA-ScR) of 10 non-randomized studies of adults undergoing tendon repair, 8 of them on rotator cuff repair, with sample sizes from 36 to 336,320. Five rotator cuff studies linked vitamin D deficiency to a higher risk of rotator cuff tears, revision surgery, retears or poorer function, one found no relationship, the biceps study linked deficiency to tendinopathy but not to repair or revision rates, and the lateral epicondyle study suggested a possible link.",
+      "limitations": "No randomized trials were found, MINORS scores ranged from 4 to 13 of 16 with most studies rated poor, and three studies classified deficiency by ICD codes rather than serum levels. Five studies drew on the same PearlDiver database, so patients overlap. No athletes were sampled, so applicability to athletes is inferred.",
+      "synthesisCaution": "Staff may read the association as evidence that vitamin D supplementation speeds tendon healing, when the review states causality is unproven, the studies are mostly retrospective and low quality, and nearly all data come from rotator cuff repair.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: omitted tear risk and overstated the biceps finding -> added rotator cuff tear risk and that the biceps study found no effect on repair or revision ('did not increase the rate of surgical repair or revision'; 'increased risk of rotator cuff tears')",
+            "paper.limitations: 'No athletic populations were studied' was an inference stated as a finding -> cohorts were surgical patients, none described as athletes"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1728",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 22,
+      "sourceFile": "The Significance of Body Surface Area to Mass Ratio for Thermal Responses to a Standardized Exercise-Heat Stress Test.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 32395,
+        "doi": "10.1249/MSS.0000000000003545",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Retrospective analysis of heat tolerance test records for 517 Israel Defense Forces soldiers (96% men, mean age 19.8 years) tested after exertional heat illness. Heat-intolerant men had a lower body surface area to mass ratio than heat-tolerant men (248 vs 262 cm2/kg, p < 0.01), and each unit increase in the ratio was associated with an odds ratio of 0.97 for intolerance (95% CI 0.95 to 0.99); the 22 women showed a similar trend that was not statistically significant.",
+      "limitations": "Retrospective registry data from one military testing program, with 96% men, so the female results are underpowered (3 heat-intolerant women). The test does not control for fitness or acclimatization, and the cohort was young soldiers rather than athletes, which the authors say may limit generalizability.",
+      "synthesisCaution": "Staff may treat a low body surface area to mass ratio as a screen for heat intolerance or as grounds to restrict return to play, when this is an observational association in one military cohort with a modest odds ratio.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1729",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 24,
+      "sourceFile": "The Structure, Function, and Adaptation of Lower-Limb Aponeuroses - Implications for Myo-Aponeurotic Injury.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 29,
+        "extractedCharacters": 131715,
+        "doi": "10.1186/s40798-024-00789-3",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Review of human lower-limb aponeurosis structure, mechanics and adaptation, drawing on PubMed studies to August 2022 found by a citation-based search. The authors report aponeurosis strain rises with contraction intensity (medial gastrocnemius anterior aponeurosis about 4 to 7% at 90 to 100% MVIC vs 1 to 4% at 10 to 30%), and that aponeurotic involvement in athletes is linked to longer return to play and higher re-injury rates; adaptation evidence rests on a few single intervention studies.",
+      "limitations": "A citation-based PubMed search screened by one author, with no flow diagram or quality appraisal, so coverage may be incomplete. Many mechanical values come from small cadaver and imaging samples that are mostly not athletes, and the authors note inconsistent terminology and measurement methods across studies.",
+      "synthesisCaution": "Staff may treat aponeurosis involvement as a proven independent risk factor for hamstring or calf injury, when the authors state these properties are not yet an independent risk factor and most re-injury figures come from observational studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'two unloading studies showed reduced stiffness or modulus' -> one unloading study showed reduced stress and modulus with increased CSA; the other showed only a more uniform strain pattern ('significant reduction in mechanical stress by 44.5%'; 'reductions (29%) of elastic modulus'); overload effect sizes added (width 2%, area 7%)",
+            "paper.methods: described as 'Narrative review', contradicting the studyDesign code -> 'Review using a retrospective, citation-based PubMed search'; exclusion reworded to match text ('did not delineate the aponeurosis from its attached free tendon')",
+            "populations: only elite and injured athlete tags, though most samples were cadavers and non-athletes -> added 'Mixed / Unspecified'",
+            "paper.limitations: added the two studies finding no re-injury increase ('no significant increase in re-injury rate within 12 months of return to sport')"
+          ],
+          "residualConcerns": "studyDesign kept as Systematic Review / Meta-analysis under the library rule because a search method is described (PubMed, inception to August 2022, keyword appendix, exclusion criteria), but the search was citation-based with one screener and no appraisal; the operator may prefer Narrative Review.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1730",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 25,
+      "sourceFile": "The Targeting Rule Does Not Increase the Rate of Lower Extremity Injuries in NFL Players Over Two Seasons.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 29374,
+        "doi": "10.1080/00913847.2021.1910873",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A retrospective review of NFL players placed on public injury reports for lower extremity injuries across four regular seasons (2016-2017 to 2019-2020), split into pre- and post-rule cohorts. The lower extremity injury rate was 34.3 per 1000 athlete-exposures before playing rule article 8 and 33.6 after (RR 0.97, 95% CI 0.92-1.04, not significant), while total games lost to lower extremity injury rose from 4011 to 5352 and the sport-related concussion rate fell from 5.5 to 3.3 per 1000 athlete-exposures (RR 0.60, 95% CI 0.50-0.73).",
+      "limitations": "Injury data came from public injury reports, so diagnosis, severity and medical clearance were not verified and reporting or selection errors are possible. Only four seasons were studied, and the games-lost finding was not adjusted for a few early season-ending injuries.",
+      "synthesisCaution": "The non-significant change in injury rate does not show the rule had no effect, because the paper also reports significantly more total games lost to lower extremity injury under the new rule.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: attributed a recommendation to track games lost to the authors, which the text does not make -> reworded to follow from the findings",
+            "paper.limitations: added the internal conflict on concussion time loss (discussion says significantly decreased; Table 3 'Time loss due to SRC (games) ... 0.61')"
+          ],
+          "residualConcerns": "Year 2021 comes from the accepted-manuscript 'To cite' line; no volume or pages printed. Concussion rates are a secondary outcome, so flagged for clinical sensitivity.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1731",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 29,
+      "sourceFile": "The Trade Secret Taboo - Open science methods are required to improve prediction models in sports medicine and performance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 38828,
+        "doi": "10.1007/s40279-023-01849-6",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A Current Opinion arguing that open science (shared data, code, protocols and transparent reporting) is needed to improve sports prediction models. The authors extracted open-science practices from the 30 studies in an earlier systematic review of sports injury prediction models, and found that only one (3%) had a public protocol, three (10%) reported TRIPOD adherence, and none shared model code or data.",
+      "limitations": "The 30-study extraction comes from a single earlier review, so it describes that set of studies rather than the whole sports literature. The recommendations are opinion-based and were not tested in a study.",
+      "synthesisCaution": "Staff could read the conclusion that no published sport prediction model is viable as a general verdict, when it rests on the reporting and validation of one earlier set of 30 injury prediction studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: 8 authors cut to 3 before et al. -> first 6 listed then et al. per house rule"
+          ],
+          "residualConcerns": "Eligibility is borderline: the article is labelled CURRENT OPINION, kept as INCLUDE because it reports a new secondary data extraction of open-science practices across 30 studies (Table 1). A reviewer may prefer EXCLUDE (b). Year 2023 is from the online-first copyright line ('© ... 2023', 'Accepted: 25 March 2023'); no volume, issue or pages printed.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1732",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 31,
+      "sourceFile": "The University of the NFL - How      technology injury surveillance and health care have improved the safety    of   America's game.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 47077,
+        "doi": "10.1055/s-0036-1584313",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "A special-focus narrative review by two orthopaedic surgeons describing the NFL's team-medicine network, sideline concussion and injury-surveillance systems, shared imaging and electronic medical records, and league injury data. The authors report concussions fell from 252 in 2011 to 202 in 2014 across preseason and regular season, with no rise in ACL or MCL sprains, and credit these systems and 39 player-safety rule changes since 2005 for improved safety.",
+      "limitations": "No search method is described, and much of the data come from league reports and presentations that the article does not verify. The article has no comparison group, so the link between the listed measures and the injury trends is not tested.",
+      "synthesisCaution": "Staff could read the league's concussion decline and its list of medical and technology measures as proof that those measures caused safer play, when the review has no comparison group.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'rate of injuries' on Thursday games -> 'number of injuries' ('no significant difference in the number of injuries occurring during Thursday games')",
+            "populations: removed Injured Athletes; the review describes league-wide medical systems for all NFL players, not an injured sample"
+          ],
+          "residualConcerns": "Concussion counts come from league data the review reports without independent verification; the text's 33% decline conflicts with Table 1 (252 to 202, about 20%), noted in limitations.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1733",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 41,
+      "sourceFile": "The association between noncontact injuries and the acute-chronic workload ratio in elite level athletes - A critically appraised topic.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 4,
+        "extractedCharacters": 15663,
+        "doi": "10.1123/jsr.2018-0207",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "This critically appraised topic reviewed three prospective cohort studies of session RPE acute:chronic workload ratio (ACWR, 1-week acute to 4-week chronic) and noncontact injury, in 70 Australian footballers, 28 cricket fast bowlers and 171 football players. The authors report that acute workload above chronic workload was associated with higher injury risk in the following week (relative risk 2.2 in fast bowlers, 2.13 in football players above an ACWR of 1.38), and that low chronic load with a low ACWR was associated with injury in Australian footballers (adjusted incidence risk ratio 2.52).",
+      "limitations": "The evidence comes from three observational cohorts in two team sports and one cricket squad, with a search limited to sRPE-based 1:4-week ACWRs. The authors note that none of the studies calculated statistical power, and that an ACWR between 0.8 and 1.3 does not rule out injury.",
+      "synthesisCaution": "Staff could treat the ACWR as a validated injury threshold, when the paper supports only an association seen in three cohorts that the authors themselves say should be applied with caution outside football and cricket.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1734",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 49,
+      "sourceFile": "The current state of concussion knowledge and attitudes in British American Football.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 55669,
+        "doi": "10.1080/00913847.2022.2156766",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Cross-sectional online survey of 236 players, coaches and support staff in British American Football (aged 18 or over, 75% male), using the RoCKAS knowledge and attitude tool plus questions on education, policy awareness and perceived risk. Mean concussion knowledge was 21.0 of 25 and mean attitude score was 55.6 of 65, which the authors describe as good knowledge and a safe attitude. However, 45.3% said they would continue playing with a headache from a minor concussion, and 48.3% reported no concussion education in the past 12 months.",
+      "limitations": "This is a single-time-point, self-report survey of a self-selected, mixed-role amateur sample recruited through varied channels, so results may not represent all BAF participants. The associations reported are correlations and cannot show that attitudes cause under-reporting.",
+      "synthesisCaution": "Staff could read the good average knowledge score as evidence that players will report concussions, but knowledge was only weakly linked to reporting intent (r = .172) compared with attitude (r = .440), and nearly half would play on with a concussion-related headache.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution: said the study links attitudes, not knowledge, to reporting intent -> knowledge also correlated with reporting likelihood, though more weakly (Table 5: CKI r .172, Sig. .008)",
+            "paper.findings: added the knowledge-reporting correlation omitted from the draft (Table 5: CKI r .172, .008**)"
+          ],
+          "residualConcerns": "The journal labels the article 'REVIEW' although it is an original survey; coded Cross-sectional Study. Table 3 heads the 45.34% headache item as a 'safer response' while the text calls it the riskiest behaviour; reviewer may want to confirm the direction. Concussion topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1735",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 54,
+      "sourceFile": "The differentiation of the competitive athlete with physiologic cardiac remodeling from the athlete with cardiomyopathy.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 47,
+        "extractedCharacters": 124746,
+        "doi": "10.1016/j.cpcardiol.2024.102473",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Clinical narrative review, with no search method described, of how to separate physiologic athlete's heart remodeling from hypertrophic, dilated and arrhythmogenic cardiomyopathy in competitive athletes. It compiles normal ECG and echocardiographic reference values by sport type (endurance, power, combined and mixed, for example LV septum 11.4 mm, 95% CI 9.8 to 13, in mixed sports such as basketball), sets out diagnostic criteria, and summarises treatment including exercise restriction, beta-blockers and ICD decisions. The review presents no new data, and its numbers are adapted from earlier sources.",
+      "limitations": "No systematic search or evidence grading is described, and the reference values come from a compiled table adapted from earlier sources, with some typographical errors in the printed values. The review contains no new data, so its recommendations cannot be checked against outcomes in this text.",
+      "synthesisCaution": "Staff could treat the sport-specific echo reference ranges as cut-offs that settle an individual athlete's diagnosis, when the review presents them as reference means with 95% confidence intervals and says diagnosis needs physician interpretation within a full evaluation.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Text is the Journal Pre-proof version (no volume, issue or pages printed; year 2024 from 'Current Problems in Cardiology (2024)'), so values may change in the final version. Cardiac and ICD return-to-play content is clinically sensitive.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1736",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 55,
+      "sourceFile": "The effect of Thursday night football on injuries in the National Football League.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 31415,
+        "doi": "10.26502/josm.511500115",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Descriptive epidemiological analysis of official NFL gamebook records of in-game injuries in regular-season games from 2011 to 2015, covering 27,712 injuries across 1,280 games (80 Thursday, 85 Monday, 1,115 Sunday). Mean injuries per game were 21.7 on Thursdays, 21.4 on Sundays and 18.2 on Mondays. Thursday and Sunday did not differ (p = 0.9264), but Monday games had fewer injuries than Sunday (p = 0.0028) and Thursday (p = 0.0214), and a team's injuries did not differ between the weeks before and after its Thursday game.",
+      "limitations": "This is a descriptive count from one league over five regular seasons, with only 80 Thursday games and no adjustment for player exposure or opponent. Injuries were recorded by league officials in gamebooks, so counts may be incomplete, and the design cannot show that the schedule causes injury differences.",
+      "synthesisCaution": "Staff could read the non-significant Thursday-Sunday difference as proof that short-week games carry no added injury risk, but this rests on only 80 Thursday games, gamebook injury records with no exposure adjustment, and Thursday still showed a slightly higher mean (21.7 vs 21.4).",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations and synthesisCaution: claimed the authors said their 80-game sample gave limited power and might explain the discrepancy with earlier studies -> the authors argue the opposite, that their larger injury count gives more power than earlier studies ('The most likely reason for this discrepancy lies in the power of our study. It is plausible that the previous authors would not have seen a statistical difference ... if they had access to a greater number of injuries'); limitations now list the authors' stated limits (five seasons, gamebook recording error, regular season only)",
+            "paper.limitations: added the Table 3 versus Table 4 weekday total conflict"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1737",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 56,
+      "sourceFile": "The effect of Thursday night games on in-game injury rates in the National Football League.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 25267,
+        "doi": "10.1177/0363546520919989",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Descriptive epidemiologic study using official NFL game books for regular-season games from the 2013 to 2016 seasons, covering 2,846 in-game injuries. Negative binomial regression compared injuries per team-game across short (4 days, 128 games), regular (6 to 8 days, 1,530 games) and long (10 or more days, 262 games) rest. Injury rates were 1.26, 1.53 and 1.34 per team-game respectively, with short rest lower than regular rest (P = .03) but not different from long rest (P = .56), and an overall difference across rest categories (P = .01).",
+      "limitations": "The game books record injuries for media coverage, so minor injuries that do not stop play may be missed, and the team-game analysis is unadjusted. The quarterback subgroup was underpowered (power 0.50), and the design cannot show that rest causes the observed differences.",
+      "synthesisCaution": "Staff could take the finding of fewer injuries after short rest as evidence that short weeks protect players, when the authors say shortened rest may reduce preparedness, recovery and performance even though injury counts did not rise, and the lower rate was seen only against regular rest.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: advised staff to 'watch quarterbacks on short rest' -> the quarterback difference was non-significant and underpowered and the authors only call for further study ('the limited number of injuries observed in quarterbacks ... may represent a type 2 error. Future studies with increased sample size should be conducted')",
+            "paper.limitations: fixed a run-on sentence, replaced an unsupported 'did not link rest to ... severity' clause with the authors' stated unadjusted-association limit ('only investigated unadjusted associations'), and added the quarterback P value conflict (abstract 'P = .08' vs discussion 'P = .16')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1738",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 60,
+      "sourceFile": "The effect of cam and pincer morphology on hamstring injury rates and return to play in elite young male football players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 4,
+        "extractedCharacters": 26131,
+        "doi": "10.5152/j.aott.2023.22115",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Youth / Adolescent",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Prognostic cohort study of 75 elite young male football academy players from one Turkish Super League club, with radiological screening for cam and pincer morphology at pre-season or pre-transfer examinations and six seasons of injury data. Players with cam and/or pincer morphology (n = 23) had a higher hamstring injury rate than players without (14/23, 60.9% vs 18/52, 34.6%; p = 0.034). Recurrence (35.7% vs 27.8%, p = 0.631) and treatment duration (18.4 +/- 10.1 vs 12.1 +/- 6.2 days) were higher in the morphology group, but these differences were not statistically significant.",
+      "limitations": "The morphology group was small (n = 23), and the two groups differed in age and body weight. Morphology was not separated into cam, pincer and mixed types, and the study has no kinematic or range-of-motion data, so it cannot show the mechanism.",
+      "synthesisCaution": "Staff could read the association as proof that cam and pincer morphology causes hamstring injury, when the study is a small single-club observational comparison with a significant unadjusted difference in injury rate.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: replaced unclear sentence 'Figure 1 treatment durations are not significant' with 'No p-value is reported for the treatment duration comparison' (text only says 'statistically the results were not significant (Figure 1)')",
+            "limitations: added Highlights value ('60.1% vs 34.6%') to the reported percentage inconsistency and noted the confusing inclusion criteria ('being diagnosed with a non-contact HMI within 1 year of the radiograph ... were determined as inclusion criteria')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1739",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 64,
+      "sourceFile": "The effect of fresh and used ankle taping on lower limb biomechanics in sports specfic movements.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "Journal year is not printed: the header shows placeholders ('Journal of Science and Medicine in Sport xxx (xxxx) xxx-xxx', 'Available online xxxx'), with only 'Accepted 1 July 2024' and '© 2024' given. Own DOI is printed and all other fields are complete; operator should confirm the year externally.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: INCLUDE -> DEGRADED; journal year not printed ('Journal of Science and Medicine in Sport xxx (xxxx) xxx-xxx', 'Available online xxxx')",
+            "paper.year: 2024 -> null (only accepted date and copyright year printed); citation: removed unprinted year",
+            "evidenceSummary/methods/limitations: 'Randomised repeated-measures' qualified; 'Randomization was applied between the BF and TF conditions ... TU was always performed after the TF condition'",
+            "limitations: 'Participants were healthy and not athletes' -> 'healthy volunteers not described as athletes' ('conducted in healthy volunteers with no lower limb complaints')",
+            "practicalImplications/athleteDev: 'staff should watch for overuse symptoms' reframed as the authors' stated possible risk ('indicating a potential elevated risk for overuse injuries such as plantar fasciitis')"
+          ],
+          "residualConcerns": "Confirm the journal year and volume/issue/pages externally before upgrading to INCLUDE. The authors' conclusion that taping 'offers significant protection against ankle sprains' goes beyond the biomechanical data.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 65,
+      "sourceFile": "The effect of game importance on concussion incidence in the NFL - An observational study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 27178,
+        "doi": "10.7759/cureus.6252",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Observational study of 166 documented NFL concussions from weeks 13-16 of the 2012-2015 seasons, matched to 256 games (from PBS Frontline Concussion Watch) and grouped by whether teams were still in the playoff hunt. Concussion incidence did not differ between games with at least one team in the hunt (0.651 per game) and games with neither team in the hunt (0.623 per game, p = 0.890). Running backs had a higher incidence in hunt games (p = 0.004), while plays per game was the only significant predictor in the regression (p = 0.025).",
+      "limitations": "The sample is small (166 concussions), several game-type groups are tiny, and week 17 was excluded, so the data cover less than half of the non-hunt games. The running back finding rests on very small counts and was not replicated in other positions, so it should be treated as exploratory.",
+      "synthesisCaution": "Staff could read the running back result as proof that high-stakes games raise concussion risk for backs, when the paper reports it as a small-sample signal that needs confirmation.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "domains: 'Athlete Wellbeing' -> 'Brain Health & Psychology' (concussion is the outcome studied)",
+            "athleteDev: 'use this to inform game-load planning' implied an actionable causal lever -> reframed as a game-level association ('plays per game ... the sum of total offensive plays for both teams')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1740",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 68,
+      "sourceFile": "The effect of probable COVID-19 infection on the National Football League players performance and endurance during the 2020 season.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 22422,
+        "doi": "10.7759/cureus.35821",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Retrospective single-arm cohort of 78 NFL players who spent at least 10 days on the COVID-19 Injury Reserve list in the 2020 season and played in at least two games before and after. Mean Pro Football Focus score was 62.15 before and 61.73 after infection (p = 0.33), and mean snaps per game was 38.99 before and 38.10 after (p = 0.30). Position-level declines were significant only for defensive backs in snaps (n = 6, down 18.30, p = 0.03) and defensive linemen in PFF score (n = 21, down 3.77, p = 0.03).",
+      "limitations": "This is a small, uncontrolled before-and-after comparison, and the position groups are very small (six defensive backs). PFF score and snap count are proxies for performance and endurance, and the design cannot separate infection effects from injuries, rest or other season changes.",
+      "synthesisCaution": "Staff could read the defensive back snap decline as evidence that COVID-19 impairs endurance, when that subgroup has six players and the authors judge the evidence inconclusive overall.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "practicalImplications: advice to track snaps and grades by position was not tested by the study -> states the two subgroup signals are hypotheses ('Defensive Backs ... n=6, p=0.03')",
+            "athleteDev: 'supports monitoring ... with particular attention to defensive backs and linemen' overstated two small uncorrected subgroup results -> reframed around the null whole-group result ('decrease of 0.42 after infection (n=78, p=0.33)')",
+            "findings: added null post hoc correlations ('No statistically significant correlations were found')",
+            "limitations: added that 16 position-level t-tests were run with no multiple-comparison correction described ('A p-value of less than 0.05 was considered statistically significant')",
+            "rtp: added cardiac screening to what the study does not address"
+          ],
+          "residualConcerns": "The authors' conclusion uses causal wording ('negatively impacted') for uncontrolled within-group subgroup results; the record avoids repeating it.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1741",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 69,
+      "sourceFile": "The effect of variations in knee and hip angles on electromyographic activity of the hamstrings and related muscles during the Nordic hamstring exercise.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 29611,
+        "doi": "10.26603/001c.92745",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Crossover laboratory study of 13 recreationally active male volunteers who performed 5-second isometric Nordic hamstring contractions on a platform inclined at 30 degrees, with knee angles of 30, 50 and 60 degrees and hip angles of 0, 30 and 45 degrees, while surface EMG was recorded. At a hip angle of 0 degrees, biceps femoris, semitendinosus and semimembranosus activity was higher at a knee angle of 30 degrees than at 50 or 60 degrees (p < 0.05). Knee angle had a significant main effect on hamstring EMG, while hip angle did not.",
+      "limitations": "The sample was 13 recreationally active men rather than athletes, the contractions were isometric, and the board was inclined at only one angle (30 degrees). The study measures muscle activation only, so it cannot show effects on strength, hamstring injury or return to sport.",
+      "synthesisCaution": "Staff could read the higher EMG at a 30-degree knee angle as proof that this position builds more hamstring strength or prevents injury, when the study measured only isometric muscle activation in recreational men.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings: added that hip angle had no significant main effect ('hip angle did not have a significant main effect for BFl ... ST ... or SM')",
+            "methods: 'pairwise tests' -> Tukey post hoc tests ('the Tukey post-hoc test was used')",
+            "limitations: added electrode movement, cross-talk and males-only limits ('surface electrodes may have moved', 'Potential cross-talk', 'only recruited and studied males')",
+            "practicalImplications: removed generic 'trial the angle with your own athletes' advice not drawn from the findings"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1742",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 73,
+      "sourceFile": "The effects of anticipation and visual and sensory performance on concussion risk in sport - A review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 70784,
+        "doi": "10.1186/s40798-020-00283-6",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football",
+        "Ice Hockey",
+        "Rugby",
+        "Soccer"
+      ],
+      "populations": [
+        "Healthy Athletes",
+        "Male Athletes",
+        "Youth / Adolescent",
+        "Collegiate"
+      ],
+      "evidenceSummary": "The authors reviewed seven studies of anticipated direct head impacts (five in vivo, two computational) and three studies of visual and sensorimotor performance in American football and ice hockey players. In a youth ice hockey study (n = 16), anticipation of medium-intensity impacts reduced rotational head acceleration, but no protective effect was seen for severe impacts, and a high school American football study (n = 32) found no clear difference. Better visual-motor and oculomotor performance was associated with lower impact severity or frequency in a college football study (n = 38) and a high school ice hockey study (n = 12), but not in a high school football study (n = 37).",
+      "limitations": "Most anticipation studies were laboratory or small single-team, single-season samples, and the computational models were not validated against live impacts. The visual performance evidence rests on three small studies that used arbitrary high and low performer cut-offs, and none is a controlled trial of vision training.",
+      "synthesisCaution": "Staff could read the review as showing that vision training reduces concussion risk, when the authors describe that evidence as preliminary and drawn from an uncontrolled study.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Male Athletes missing -> added (all athlete samples in Tables 1-2 are male, e.g. '16 male Bantam-level ice hockey players', '38 Div I college American Football players')",
+            "paper.methods: called a 'Narrative review', which conflicts with the Systematic Review coding -> 'Literature review' with the described database search ('The review uses journal articles identified up to December 2019 through the PubMed, SPORTDiscus...')"
+          ],
+          "residualConcerns": "Review describes a database search but no screening flow or quality appraisal; coded Systematic Review / Meta-analysis per the search-described rule, a reviewer may prefer Narrative Review.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1743",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 76,
+      "sourceFile": "The effects of knee ligament load using simulated hip abductor and hamstring muscle strengthening during cutting maneuver.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 35139,
+        "doi": "10.1097/MD.0000000000035742",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Forty healthy, recreationally active young men (mean age 21.85 years) performed a side-cutting task with motion capture and a force plate, and OpenSim musculoskeletal models simulated a 30% increase in hip abductor force, hamstring force, both, or neither. Ligament force differed across models for the anterior ACL bundle (P = .001) and two superficial MCL bundles (P = .016 and P = .022), with the hamstring model lowest in post hoc tests, and knee adduction and internal rotation moments were also lowest in the hamstring model. Abductor-only and combined strengthening did not reduce knee ligament load.",
+      "limitations": "The strength increase was simulated rather than trained, and the muscle force parameters come from cadaver-based data, so the findings are model predictions. Only one cutting speed was tested, without fatigue or unanticipated conditions, and no injury outcome was measured.",
+      "synthesisCaution": "Staff could read the abstract's claim that hamstring strengthening can prevent ACL or MCL injury, when this is a simulation and no injury or training outcome was measured.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: said only the hamstring model lowered ligament forces 'compared with the other models' -> post hoc comparisons stated per bundle; sample described as recreationally active ('participating in diverse sports activities three times a week')",
+            "paper.findings: grouped the posterior MCL bundle with the abductor/hamstring and abductor comparisons -> 'lower pMCL than the abductor and control models (P < .05)'",
+            "paper.limitations: added the text-versus-table conflict on post hoc pairs (Table 3 footnotes: 'Significant difference between abductor and hamstring', 'between hamstring and control') and the single 30% strengthening level"
+          ],
+          "residualConcerns": "Post hoc significance markers in Tables 2 and 3 are inconsistent with the results text; a reviewer may want to check the PDF tables. ACL injury-prevention framing rests on simulation only.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1744",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 80,
+      "sourceFile": "The effects of on-field heat index and altitude on concussion assessments and recovery among NCAA athletes.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "Journal issue year not printed in the text: this is the online-first version with no volume, issue, pages or publication year, showing only 'Accepted: 21 November 2020' and '© Springer Nature Switzerland AG 2020'. Year left blank for the operator to verify; all other fields are complete and the article's own DOI is printed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: INCLUDE -> DEGRADED; journal year not printed (online-first PDF with only 'Accepted: 21 November 2020' and '© Springer Nature Switzerland AG 2020', no volume/issue); paper.year 2020 -> null and year removed from citation",
+            "screeningLimitations and paper.limitations: claimed the Results text gives conflicting coefficients '0.14 vs 0.22 days' and 'P of 0.047 vs 0.114' -> those values come from the post hoc away-competition model ('In the models for away competitions only ... Every one-degree increase in heat index shortened clinical recovery by 0.22 days'); the real conflict is Table 3 (-0.3 days, heat index P = 0.010) versus text (0.14 days, P = 0.006)",
+            "paper.findings: added the home/away post hoc result (home models not significant, heat index p >= 0.245)",
+            "populations: added Male Athletes and Female Athletes ('Sex, male 132, 71%')",
+            "sports: added Baseball / Softball (baseball 6%, softball 3%)",
+            "paper.methods: added screening numbers, first-concussion rule and recovery definitions",
+            "paper.citation: added 'CARE Consortium Investigators' as printed in the byline"
+          ],
+          "residualConcerns": "Concussion recovery and return-to-play timing paper. Year must be verified externally before upgrade. Table 3 values do not match the Results text for heat index.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 86,
+      "sourceFile": "The evidence for common nonsurgical modalities in sports medicine, Part 1 - Kinesio tape, sports massage therapy, and acupuncture.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 41009,
+        "doi": "10.5435/JAAOSGlobal-D-19-00104",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Review article of publications from 2006 to 2019 found through PubMed and Google Scholar on Kinesio taping, sports massage therapy and acupuncture. The authors report low-level evidence for a small, short-term pain and range-of-motion effect of Kinesio tape (suggested for athletes with acute shoulder symptoms before activity), acupuncture for carpal tunnel syndrome and as an adjunct for low back pain, and little or conflicting evidence for sports massage or acupuncture effects on performance.",
+      "limitations": "The method is described only as PubMed and Google Scholar searches with no search terms, eligibility criteria or appraisal method, so it is a narrative review rather than a systematic one. Most cited trials are small, with short follow-up and limited blinding.",
+      "synthesisCaution": "Staff could read the performance section as evidence that taping, massage or acupuncture improves athletic performance, when the authors found little, small or conflicting evidence for performance outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: massage gave 'short-term shoulder and neck pain relief' -> immediate effects for both, short-term for shoulder only (\"immediate positive effects of massage therapy on both shoulder and neck pain with short-term positive effects for shoulder pain only\")",
+            "paper.limitations: 'several authors disclose' -> two authors (Dr. Ahmad and Dr. Popkin); 'most trials small, unblinded' softened to what the authors state",
+            "paper.practicalImplications: 'sports massage for short-term symptom relief' recommendation not made by authors -> \"There is a need for higher quality research to better elucidate the effect of sports massage therapy\"",
+            "paper.citation: only first author listed -> first six authors plus et al."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1745",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 87,
+      "sourceFile": "The evidence for common nonsurgical modalities in sports medicine, Part 2 - Cupping and blood flow restriction.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 42190,
+        "doi": "10.5435/JAAOSGlobal-D-19-00105",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Review article of cupping and blood flow restriction (BFR) publications from 2006 to 2019 found through PubMed and Google Scholar. The authors report that cupping may reduce nonspecific neck, back and shoulder pain with low risk, while low-load BFR may increase strength, endurance and muscle size, with heavy-load training giving larger strength gains and little athlete-specific performance evidence.",
+      "limitations": "The method is described only as PubMed and Google Scholar searches with no search terms or inclusion criteria, so it is a narrative review rather than a systematic one. The BFR evidence comes mostly from small trials with varying cuff pressures and outcome measures, and the authors describe the cupping trials as low quality with short follow-up.",
+      "synthesisCaution": "Staff could read the BFR strength gains as evidence that BFR improves athletic performance, when the athlete studies are few, small and measure strength or sprint times over short programs.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: only first author listed -> first six authors plus et al. (\"David P. Trofa, MD; Kyle K. Obana, BA; Carl L. Herndon, MD; Manish S. Noticewala, MD; Robert L. Parisien, MD; Charles A. Popkin, MD; Christopher S. Ahmad, MD\")"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1746",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 92,
+      "sourceFile": "The impact of body fat on thermoregulation during exercise in the heat - A systematic review and meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 24,
+        "extractedCharacters": 42639,
+        "doi": "10.1016/j.jsams.2021.06.004",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review and robust variance estimation meta-analysis of 10 studies (211 participants, mostly male) comparing high and low body fat groups during aerobic exercise in the heat, from 1,222 screened records. Pooling the interventions that allowed unbiased between-group comparisons, it found no differences in core temperature (ES 0.21, 95% CI -0.53 to 0.96), mean skin temperature or whole-body sweat loss.",
+      "limitations": "Participants were mostly physically inactive (70%), unacclimatized children and adults under 30 rather than athletes, and post-exercise core temperature never exceeded 38°C. The analyses of interventions that controlled for metabolic heat and body mass were underpowered, so the null result cannot separate no effect from type II error.",
+      "synthesisCaution": "The null pooled result does not show that body fat is unimportant for heat strain, so staff should not assume athletes with more body fat tolerate heat as well as leaner athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: said no differences 'among the 18 interventions' -> pooled estimates came only from interventions with unbiased comparisons ('Only studies that allowed for unbias comparisons were included in the RVE model')",
+            "screeningLimitations/limitations: 'physically active or inactive' -> mostly physically inactive (70%); added that core temperature never exceeded 38°C ('did not exceed 38°C'); added quality split (8 moderate, 2 low) and abstract 17.8% vs results 17.69% conflict",
+            "practicalImplications: advice to monitor body mass, surface area and acclimatization alongside body composition was not a finding (the paper's practical implications address research design only) -> states what the evidence cannot show and the one controlled study's higher core temperature in Hi-BF (Dervis et al.)",
+            "athleteDev: generic heat-planning advice -> limited to what the review reports (obese boys 'acclimatized at a slower rate')"
+          ],
+          "residualConcerns": "Exertional heat illness context; journal pre-proof with no volume or pages, year 2021 taken from the 'Please cite' line.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1747",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 96,
+      "sourceFile": "The impact of eccentric or isometric training on strength, architecture, and sprinting across an Australian football season.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 45,
+        "extractedCharacters": 65499,
+        "doi": "10.1249/MSS.0000000000003326",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Two-group training intervention in 25 male semi-professional Australian footballers (13 Nordic hamstring, 12 isometric knee flexor hold) over 38 weeks, with matched periodised sprint training; allocation method is not described as randomized. Both groups increased biceps femoris long head fascicle length and eccentric strength, and isometric strength fell in both groups. At the end of pre-season the Nordic group had a within-group 5 m split improvement (the isometric group's similar change was p = 0.056) and was faster over 40 m with higher maximal horizontal velocity than the isometric group, without a within-group 40 m change.",
+      "limitations": "There was no control group, so the effect of sprint training alone cannot be separated from the hamstring exercises, and the groups differed in age and baseline fascicle length. Fascicle length is estimated from an equation, and the sample is 25 athletes from one club, with no injury outcomes.",
+      "synthesisCaution": "Staff may over-read the architecture and strength gains as proof of lower hamstring injury risk, when the study measured fascicle length and strength but did not measure injury incidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "tldr: 'Only the Nordic group improved short sprint times and maximal velocity' -> maximal velocity and 40 m were between-group differences only ('There were no other significant within or between group changes in 40m'); the isometric 5 m change was d = -0.82, p = 0.056 vs Nordic d = -0.83, p = 0.043, with no between-group 5 m difference",
+            "practicalImplications: 'may suit athletes who cannot tolerate Nordic soreness' (soreness not measured) and 'use the Nordic option where short-sprint and maximal velocity gains are the goal' -> removed; isometric strength loss framed as the authors' joint angle or contraction mode explanation",
+            "athleteDev: removed recommendation to choose the Nordic for 5 m and maximal velocity gains",
+            "evidenceSummary: clarified within-group vs between-group sprint findings"
+          ],
+          "residualConcerns": "Semi-professional (VFL second tier) players coded Professional / Elite. Published ahead of print; year 2023 from the copyright line, no volume or pages printed.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1748",
+        "synthesisBatch": "pilot-synthesis-batch-100",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

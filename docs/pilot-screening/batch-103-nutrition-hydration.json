@@ -1,0 +1,397 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-103-nutrition-hydration",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Nutrition & Hydration queue positions 3-94. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 3,
+      "sourceFile": "The Infuence of Caffeine Supplementation on Resistance Exercise- A Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 78432,
+        "doi": "10.1007/s40279-018-0997-y",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review (no search method is described) of caffeine studies in resistance exercise, most in men and many in untrained or recreationally trained people, often with small samples. The authors conclude that caffeine acutely increases maximal strength, muscular endurance and power, and that doses of 3 to 9 mg per kg taken about 60 minutes before exercise seem adequate.",
+      "limitations": "As a narrative review without a described search, the study selection cannot be reproduced. Most included trials are small and mostly male, and several did not check whether blinding worked, which limits how far the dose and sex-specific advice applies.",
+      "synthesisCaution": "Staff could apply the 3 to 9 mg per kg dose and strength gains to competitive lifters or female athletes, but the review says that trained athletes and women are under-studied.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'many did not check whether participants were blinded' -> 'several did not check whether blinding worked' ('this question was not asked in several studies')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1765",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 6,
+      "sourceFile": "The Muscle Protein Synthetic Response to Meal Ingestion Following Resistance‑Type Exercise.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 72268,
+        "doi": "10.1007/s40279-019-01053-5",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review (no search method is described) of how protein dose, protein type, digestion rate, mixed meals, alcohol, energy intake, exercise, ageing, sex and body size modify muscle protein synthesis after feeding and resistance-type exercise. The authors report that about 20 g of rapidly digestible protein gives a near-maximal response, and that slower proteins or mixed meals may need about 40 g or more for a prolonged response.",
+      "limitations": "As a narrative review, the evidence selection cannot be checked. Most cited studies are short, small and based on isolated protein drinks, so they support general principles more than exact gram targets.",
+      "synthesisCaution": "Staff could read 20 g per meal as a universal target, or treat muscle protein synthesis as proof of muscle gain, but the review says the best dose depends on digestion rate, meal timing, age, sex, body fat and training.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr and paper.findings: 'excess body fat can blunt/reduce the response' stated as fact -> evidence is inconsistent and likely confounded ('these observations have not been consistent'; 'likely confounded by habitual physical activity levels and is perhaps less of a concern for athletes')",
+            "paper.limitations: 'mostly in young men ... women' -> 'mostly in healthy young adults'; the review states no sex difference in MPS response in healthy young adults ('no such sexual dimorphism is apparent')"
+          ],
+          "residualConcerns": "Two authors report research grants, consulting fees or honoraria from FrieslandCampina and PepsiCo, which is not noted in the record.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1766",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 38,
+      "sourceFile": "The anabolic response to protein ingestion during recovery from exercise has no upper limit in magnitude and duration in vivo in humans.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 22,
+        "extractedCharacters": 94164,
+        "doi": "10.1016/j.xcrm.2023.101324",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "A double-blind, placebo-controlled randomized trial in 36 healthy, recreationally active young men (12 per group) who ingested 0, 25 or 100 g of intrinsically labelled milk protein after one bout of whole-body resistance exercise, with sampling over 12 hours. The 100 g dose gave a greater and longer plasma amino acid response and higher muscle protein synthesis than 25 g, with myofibrillar synthesis about 20% higher in the first 4 hours and 40% higher from 4 to 12 hours; the authors report a negligible rise in amino acid oxidation.",
+      "limitations": "The sample was 36 healthy, recreationally active young men tested once after a single resistance session, so these findings are not athlete data and may not apply to trained athletes, women or older adults. The study measures acute protein handling over 12 hours, not training adaptation, performance or injury outcomes.",
+      "synthesisCaution": "Staff could read the title's 'no upper limit' as meaning larger protein doses always build more muscle, when only 0, 25 and 100 g were compared over 12 hours in healthy young men.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1767",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 45,
+      "sourceFile": "The benefits of Vitamin D supplementation for athletes - Better performance and reduced risk of COVID-19.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 79629,
+        "doi": "10.3390/nu12123741",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Collegiate",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "This narrative review draws on more than 15 observational COVID-19 studies, two small vitamin D treatment trials, mechanistic work, and small studies of vitamin D in athletes and other adults. The authors report that lower serum 25(OH)D went with greater COVID-19 risk or severity in most observational studies, and that the two small treatment trials (50 vs 26 and 16 vs 24 patients) favoured vitamin D. The athlete evidence is mixed and small: a meta-analysis of 163 athletes found no significant strength effect, while other small studies reported better strength, power or recovery, and the authors conclude that athletes should keep 25(OH)D above 40 ng/mL.",
+      "limitations": "The review states no search strategy, inclusion criteria or quality appraisal, so the selection of evidence cannot be checked. Much of the athlete and COVID-19 evidence is observational or from very small trials, and two of the three authors declare funding from Bio-Tech Pharmacal, Inc.",
+      "synthesisCaution": "Staff could read this as proof that vitamin D supplementation lowers athletes' COVID-19 risk or improves performance, when the COVID-19 trials are tiny and the review reports no athlete-specific COVID-19 trial.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: implied athlete studies supported benefit -> notes the null meta-analysis (Table 1: '163 healthy athletes ... No significant effect')",
+            "paper.findings: added the null strength meta-analysis and that recovery trials used non-athlete adults ('14 recreationally active adults', '30 reportedly healthy and modestly active adult males')",
+            "paper.athleteDev: said small studies linked supplementation to better strength, power or recovery -> states the evidence is mixed and recovery data are from non-athletes",
+            "paper.limitations: added abstract vs body count of observational studies ('approximately 30' vs 'More than 15') and that COVID-19 trials were in patients"
+          ],
+          "residualConcerns": "Supplement dosing (4000 to 10,000 IU/day plus bolus) and post-COVID cardiac content; two of three authors funded by a vitamin D supplier.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1768",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 46,
+      "sourceFile": "The birth of modern sports nutrition  tracing the path from muscle biopsies to creatine supplementation A narrative review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 41887,
+        "doi": "10.1080/15502783.2025.2463373",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "This narrative review combines first-hand accounts, including Roger Harris's recollections, with seminal studies from the Metabolic Research Laboratory in Stockholm from the 1960s to the early 1990s. The authors report that 1960s muscle biopsy studies showed diet changes muscle glycogen and endurance, and that in a 1992 study of 17 people (5 female, 12 male), repeated 5 g creatine monohydrate doses raised mean muscle total creatine from 126.8 to 148.6 mmol/kg dry muscle. They present these results as the basis of modern carbohydrate-loading and creatine practice.",
+      "limitations": "The review is historical and does not describe a search strategy, selection criteria or quality appraisal, so the choice of studies cannot be checked. Five of the seven authors declare industry ties, including consulting, sponsored research, advisory boards and a chief executive role at the International Society of Sports Nutrition.",
+      "synthesisCaution": "Staff could take the 1992 creatine result as proof that creatine improves sport performance, when the text reports only muscle creatine changes in 17 people and no sport performance outcome.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1769",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 61,
+      "sourceFile": "The effect of dietary supplements on endurance exercise performance and core temperature in hot environments - A meta-analysis and meta-regression.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "Journal publication year, volume, issue and pages are not printed in the text (online-first version showing only 'Accepted: 2 June 2021' and '© The Author(s) 2021'), so the issue year cannot be confirmed from the source. Own DOI is printed and all other fields are complete; operator should confirm the year externally.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: INCLUDE -> DEGRADED; journal issue year not printed (only 'Accepted: 2 June 2021' and '© The Author(s) 2021', no volume, issue or publication date)",
+            "paper.year: 2021 -> null (not printed as a journal year); citation: removed unprinted year",
+            "methods: '272 participants (88% male, 56% highly trained)' -> study-level percentages ('comprising both males and females (males 88%; both males and females 12%)'; 22 of 25 studies are male-only in Table 1)",
+            "findings: added caffeine submaximal core temperature effect ('Caffeine (Hedges' g = 0.49 ... P = 0.016) had a small significant positive effect') and the one significant moderator ('Exercise beforehand β = 0.449, P = 0.039')",
+            "findings/limitations: taurine end core temperature effect labelled 'medium' in abstract but 'large significant negative effect' in Results; conflict noted"
+          ],
+          "residualConcerns": "Confirm the journal issue year and volume/issue/pages externally before upgrading to INCLUDE.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 67,
+      "sourceFile": "The effect of pre-exercise hyperhydration on exercise performance, physiological outcomes and gastrointestinal symptoms - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 24,
+        "extractedCharacters": 102541,
+        "doi": "10.1007/s40279-023-01885-2",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Systematic review of electronic databases (Medline Complete, SPORTDiscus, Embase; final search 11 October 2022) of 38 studies from 37 records, with 403 participants of whom 361 were male. Of these, 22 studies assessed exercise performance or capacity, with time-trial improvements in 2 studies (5.7-11.4%) and increased exercise capacity in 5 (14.3-26.2%). During constant work rate exercise, 9 studies reported lower heart rate and 8 reported lower core temperature, and 10 reported higher plasma volume; gastrointestinal symptoms were reported in 26 studies.",
+      "limitations": "The evidence is mostly from males (about 90% of participants), with only one female-only study, few endurance running studies and few field studies. Gastrointestinal symptoms were not measured with validated tools across studies, so the symptom findings are hard to compare.",
+      "synthesisCaution": "Staff could read the handful of time-trial and capacity gains as a reliable performance benefit for endurance athletes, when the review itself describes the performance effect as equivocal and drawn from few studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "identityCheck: year justified from the Accepted date (not allowed for year) -> justified from the printed '© The Author(s) 2023' line",
+            "populations: added Male Athletes and Female Athletes ('403 participants (n = 361 males)'; exercise studies required 'Performance Level Two (PL2): Recreational Athletes' as a minimum)",
+            "screeningLimitations: 'only one field study' -> 'few field studies'; results describe three field-based trials (Souza 'field-based 10 km time-trial', triathlon, Wingo 'in the field') even though the discussion says 'only one field-based study'",
+            "abstract/tldr: causal 'through lower heart rate and core temperature' -> attributed mechanism ('may improve exercise capacity ... due to a reduced heart rate and core temperature')",
+            "findings: capacity result specified as 'five of seven studies reporting a significant increase in time to exhaustion'",
+            "limitations: added time-to-exhaustion reliability caveat ('time to exhaustion protocols have a high coefficient of variation (CV; > 10%)') and menstrual cycle point ('no study adequately accounted for the menstrual cycle')",
+            "practicalImplications: removed unsupported 'trial the protocol with their own athletes' advice; added the aliquoting finding ('aliquoting the hyperhydration treatment and bolus into equal doses does not elicit differences in gastrointestinal symptoms')"
+          ],
+          "residualConcerns": "Online-first version: no volume, issue or pages printed, so the year rests on the copyright line rather than an issue citation. The discussion's 'only one field-based study' may be scoped to endurance running; the results describe three field trials overall.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1770",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 94,
+      "sourceFile": "The impact of dietary factors on the sleep of athletically trained populations - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 25,
+        "extractedCharacters": 97940,
+        "doi": "10.3390/nu14163271",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review of 35 studies (four databases searched to May 2022) examining diet, meal timing and supplements in athletically trained, healthy people with a sleep or sleepiness outcome, of which 21 were rated positive quality. Evening caffeine above about 2 mg/kg was linked to shorter sleep and lower efficiency, and one polysomnography study found better sleep after a high-GI meal, while most tryptophan-rich protein trials showed no change.",
+      "limitations": "Only 16 of 35 studies measured sleep objectively, the 21 randomized trials recruited 314 participants in total, and females were underrepresented, which limits generalization across sexes and sports. Many studies gave limited detail on dietary control and attrition, and seven studies with only subjective outcomes did not use validated sleep tools.",
+      "synthesisCaution": "The abstract says tryptophan-rich protein may reduce sleep latency, but most protein trials in the body text found no sleep change, so staff should not treat protein as a proven sleep aid.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'often under 20 participants' is not stated -> '21 randomized control trials, a total of 314 participants'; 'several used unvalidated subjective tools' made specific (seven studies)",
+            "limitations: females 'about 20%' of trial participants -> 26% (n = 82) per results ('only 26% (n = 82) of these being female'), noting the limitations section says 20%",
+            "athleteDev: removed 'plan extra sleep opportunities the next day after any night of poor sleep', which the review does not study"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1771",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

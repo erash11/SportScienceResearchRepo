@@ -8,9 +8,10 @@ Read this first. Update it before ending every session.
      updated 2026-09-26, including the completed SecondBrain vault push). -->
 
 ## Current state
-- 2026-10-10 (Mac): Batches 96, 97 merged. Batch 98 is on branch `batch-98-staged` (66 records, IDs 1646-1711).
-  Next unused ID 1712. Q15 is a duplicate of ID 614 (EXCLUDE). The shortlist was rebuilt. `npm run audit` and `pilot:check` pass.
-- Backlog: about **370 unscreened unique PDFs** remain (`python3 scripts/haiku-batch/backlog.py`).
+- 2026-10-10 (Mac): Batches 96, 97, 98 merged (library 1,679 on master). Batch 99 is on branch `batch-99-staged`
+  (76 records, IDs 1712-1787), NOT merged: the shortlist named-sport gate fails (17 of 22). Eric must choose
+  (see `docs/handoffs/2026-10-10-mac-batch-99-blocked.md`). Next unused ID after merge: 1788.
+- Backlog: about **274 unscreened unique PDFs** remain (`python3 scripts/haiku-batch/backlog.py`).
   Pipeline: `scripts/haiku-batch/` (Haiku 5.5 drafts, Opus 5.5 claim audit).
 - Ask the Library drafter merged (PR #12): `npm run pilot:draft -- <request.json>`. Stress-test eval in
   `docs/ask-library-eval/`: 0 critical integrity failures, 12/12 useful. Known limitation: briefs are long.

@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-101-rehabilitation-return-to-sport",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Rehabilitation & Return to Sport queue positions 8-52. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 8,
+      "sourceFile": "The NFL orthopaedic surgery     outcomes database - The    effect of common orthopaedic procedures on     football   careers.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 39614,
+        "doi": "10.1177/0363546516651426",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Retrospective case series of 559 NFL athletes who had one of ten common orthopaedic procedures between 2003 and 2013, identified from public sources; 296 were included in the performance analysis. Overall 79.4% returned to play, with the lowest rate after patellar tendon repair (50.0%) and the highest after forearm fixation (96.3%), and ACL reconstruction and patellar tendon repair were followed by shorter careers (1.6 and 1.5 years).",
+      "limitations": "A level 4 case series from public sources with no control group, so procedure effects are confounded by injury severity, age and career stage. Return rates may be understated because some players left the league for non-medical reasons that public records cannot capture.",
+      "synthesisCaution": "Staff could read these league-level return rates as a prognosis for an individual player; the cohort is NFL players who had surgery, not a random group, and retirement drives the post-surgery numbers.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: authors corrected to six before et al. (Patel AA added; eight authors printed)",
+            "populations: added 'Male Athletes'; NFL players described as male ('his ability to return to baseline performance')"
+          ],
+          "residualConcerns": "Return-to-play outcomes paper: the 79.4% figure counts any regular-season game, and performance results cover only the 296 of 559 athletes eligible for performance analysis, so survivor bias applies to the seasons 2 to 3 recovery findings.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1749",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 32,
+      "sourceFile": "The Use of Dual-Energy X-ray Absorptiometry (DEXA) in Evaluating Recovery After Musculoskeletal Injuries in Athletes - A Scoping Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 70909,
+        "doi": "10.1177/23259671251387342",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified",
+        "Female Athletes",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "A PRISMA-ScR scoping review of 12 studies with 319 athletes (34% female), mostly after anterior cruciate ligament injury or reconstruction, that used DEXA to track bone mineral density and lean mass during recovery. Bone density typically fell about 4-10% in the first 6 months after injury or surgery and showed partial to near-complete recovery over 12-25 months in ACL studies, and the only randomised trial found that blood flow restriction therapy preserved more lean mass and bone and shortened time to return to sport (6.42 vs 8.30 months).",
+      "limitations": "Most included studies were observational or single-case reports with small samples, only one was a randomised trial, and no formal risk-of-bias assessment was done. The evidence is dominated by ACL studies with few upper-body injuries, and scanning protocols varied.",
+      "synthesisCaution": "Staff could treat DEXA bone and lean-mass changes as validated return-to-play markers, when the authors state that validated return-to-play thresholds are still needed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.athleteDev: claimed the authors link lean-mass asymmetry above about 10% to injury risk; no such threshold is in the text -> 'no significant correlations were observed between asymmetries and injury risk, marginal associations were noted'",
+            "evidenceSummary: 'recovered over 12-25 months' -> 'partial to near-complete recovery over 12 to 25 months' (text wording)",
+            "paper.citation: 7 authors, so list first 6 then et al. per house rule",
+            "paper.tldr: same 'recovered over 12-25 months' wording -> 'partial to near-complete recovery'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1750",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 33,
+      "sourceFile": "The Use of Fantasy Points to Evaluate Return-to-Play Performance After Time-Loss Injuries in the National Football League.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 35707,
+        "doi": "10.7759/cureus.99333",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A retrospective descriptive epidemiology study of 2,523 time-loss musculoskeletal injuries in NFL quarterbacks, running backs, wide receivers, tight ends and fullbacks across the 2017 to 2022 seasons. Fantasy points per game (PPG) in the season after injury were compared with the injury season, with an overall change of -0.50 PPG (95% CI -0.67 to -0.33); quarterbacks showed the largest decline (-1.95 PPG).",
+      "limitations": "Fantasy points are an indirect proxy: the authors found no link between games missed and PPG change, so the measure does not reflect injury severity, and team factors such as scheme, coaching and opposition were not controlled. Injuries rather than players were the unit of analysis, and several values in the text are internally inconsistent (see limitations).",
+      "synthesisCaution": "Staff could read a fantasy-point drop as a validated measure of recovery or injury severity, but the authors say it cannot replace clinical return-to-play assessment.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1751",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 52,
+      "sourceFile": "The deficits of isometric knee flexor strength in lengthend hamstring position after hamstring strain injury.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 35766,
+        "doi": "10.1016/j.ptsp.2021.11.011",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Soccer",
+        "Rugby",
+        "Baseball / Softball",
+        "Track & Field",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Injured Athletes",
+        "Healthy Athletes",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Cross-sectional laboratory study of 14 male college athletes with a self-reported history of hamstring strain injury (HSI) and 14 without. Isometric knee flexor peak torque and rate of torque development were measured at 30, 60 and 90 degrees of knee flexion with the hip at 85 degrees. In the HSI group, peak torque was lower in the previously injured limb at 30 degrees (P = 0.037, d = 0.55) but not at 60 or 90 degrees, and no between-limb differences were found in rate of torque development or hamstring flexibility.",
+      "limitations": "Injury history was self-reported and mostly undiagnosed, time since injury ranged from 1 month to 7 years, and only men were studied. The design is cross-sectional, so the deficit cannot be shown to be a cause or a consequence of HSI, or to predict reinjury.",
+      "synthesisCaution": "Staff could read the lengthened-position deficit as a proven reinjury risk marker, when the authors say prospective studies are needed to confirm whether it predicts reinjury.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1752",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}
