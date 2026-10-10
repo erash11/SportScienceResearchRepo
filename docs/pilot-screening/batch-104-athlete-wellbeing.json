@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-104-athlete-wellbeing",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Athlete Wellbeing queue positions 27-27. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 27,
+      "sourceFile": "Substance misuse in elite athletes - Early detection, brief intervention and referral to treatment.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 18,
+        "extractedCharacters": 62301,
+        "doi": "10.1016/j.csm.2023.06.008",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate"
+      ],
+      "evidenceSummary": "A clinical review in Clinics in Sports Medicine that covers alcohol, cannabis and tobacco/nicotine misuse in elite and collegiate athletes. It describes screening tools (AUDIT, CAGE-AID, CUDIT, Fagerstrom), brief motivational interventions and referral to levels of care, drawing on survey data and intervention studies of varying size, mostly in collegiate, high school or non-athlete samples. No systematic search method is described.",
+      "limitations": "No search strategy is described, so the selection of evidence cannot be checked. Much of the prevalence data is from US collegiate surveys, with sparse data on current professional athletes, and the intervention evidence for elite athletes is limited, which the authors acknowledge for cannabis and tobacco.",
+      "synthesisCaution": "Staff could treat the recommended screening and brief interventions as proven in elite sport, but most supporting trials were in high school, college or non-athlete samples, and the review does not test whether these steps reduce misuse in professional teams.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: described the intervention evidence as 'small intervention trials', but the myPlaybook trials had about 2000 to 3000 athletes each -> 'intervention studies of varying size' ('three iterative revision trials of 2000 to 3000 student athletes each')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1701",
+        "synthesisBatch": "pilot-synthesis-batch-104",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

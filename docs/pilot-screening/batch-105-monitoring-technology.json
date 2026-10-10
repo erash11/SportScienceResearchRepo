@@ -1,0 +1,587 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-105-monitoring-technology",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Monitoring & Technology queue positions 13-91. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 13,
+      "sourceFile": "Stability of salivary microRNA measures across an NCAA Division 1 football season - Implications for microRNA as a biomarker of concussion.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 37892,
+        "doi": "10.1371/journal.pone.0339614",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Collegiate",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Prospective longitudinal study of 50 male NCAA Division I football players, with saliva collected before the first pre-season practice and within 72 hours of the final game (49 completed post-season collection). Six pre-selected salivary microRNAs were measured by qPCR. No individual microRNA differed significantly between pre- and post-season (p = .07 to .46), but intraclass correlations were low for four targets (-0.16 to 0.21) and moderate only for miR-29c-3p (0.52) and miR-27a-5p (0.65).",
+      "limitations": "A single team of 50 men with no adjustment for head impacts, demographics or concussion history, and no analysis of samples taken at the time of a concussion, so the results show season-level variability rather than how these markers behave after injury. The sample is also too small and narrow to set reliability standards for a clinical test.",
+      "synthesisCaution": "Staff could read the discussion's claim that these microRNAs are 'sensitive to the cumulative demands of a season' as evidence of season-related change, when no individual microRNA changed significantly and the main finding is low reliability.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations/rtp: 'no concussed athletes' / 'did not measure concussed athletes' -> no samples taken at the time of or after a concussion; the paper does not report in-season concussion status (Table 1: previous concussions 17 pre, 20 post)",
+            "practicalImplications: 'season without diagnosed concussions' stated as fact -> attributed to the authors ('in the absence of a diagnosed concussive event')",
+            "limitations: added Table 1 rise in players with concussion history (17 -> 20) as an unexplained inconsistency",
+            "athleteDev: 'should not be used as a load or fatigue marker' (not tested) -> study gives no basis for that use"
+          ],
+          "residualConcerns": "Concussion biomarker paper. Table 1 suggests three players gained a concussion history during the season, which the authors do not address; median signs in Table 2 differ from the text for several targets.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1702",
+        "synthesisBatch": "pilot-synthesis-batch-105",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 25,
+      "sourceFile": "Subjective wellness acute-chronic workloads and injury risk in college football.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text (no DOI appears anywhere in the text). Everything else is readable and complete; operator to verify the DOI externally.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: said high ACWR was associated with 'lower ... soreness', which reverses the direction -> worse (more) soreness ('\"worse\" scores in overall wellness ..., muscle soreness ..., and energy')",
+            "paper.findings: said no clear injury association for wellness, sleep or energy alone, omitting soreness -> all four ('No clear effect on the likelihood of injury with \"better\" or \"worse\" reports of wellness, sleep, energy, or soreness'); added missing CI for RR 1.64 and the 15% absolute-risk ceiling ('the absolute risk did not exceed 15%')"
+          ],
+          "residualConcerns": "Self-citation line prints 2018 while the journal header and copyright print 2019; 2019 used. DOI must be verified externally.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 28,
+      "sourceFile": "Substantiating the use of ultrasound tissue characterization in the analysis of tendon structure - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 60108,
+        "doi": "10.1097/JSM.0000000000000749",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A systematic review (PubMed, Embase and Web of Science searched to September 2018) of 27 studies using ultrasound tissue characterization (UTC) of Achilles (18 studies), patellar (5) or both (4) tendons. Samples were mostly small cohorts of athletes and recreational or sedentary participants with and without tendinopathy, and the authors judged methods too heterogeneous to pool.",
+      "limitations": "The review is narrative and descriptive, with no formal quality appraisal and no pooled analysis, and many studies came from the same authors. Evidence on patellar tendinopathy is thin, and the search ended in September 2018, so later UTC studies are not included.",
+      "synthesisCaution": "Staff could read UTC as a validated tool for predicting or managing tendinopathy, but the authors found the predictive evidence inconclusive, reported no clear link between echo-type changes and symptoms, and noted UTC has been validated for equine rather than human tendon.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'most studies came from a small group of authors' overstated -> 'many studies came from the same authors' ('many of the same authors contributed to the scientific literature concerning UTC')",
+            "paper.methods: screening rounds misdescribed -> titles, abstracts, then full text ('the reviewers screened the titles followed by the abstract selection. In the third round, the full text was screened')",
+            "paper.limitations: added abstract vs results conflict in search yield ('a total of 1972 hits' vs 'The applied search yielded 1351 articles')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1703",
+        "synthesisBatch": "pilot-synthesis-batch-105",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 37,
+      "sourceFile": "Synthetic peptides in doping control - A powerful tool for an analytical challenge.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 83907,
+        "doi": "10.1021/acsomega.2c05296",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review in ACS Omega of the analytical chemistry used to detect and quantify WADA-listed synthetic peptides in doping control, covering the peptides on the prohibited list, reference-standard synthesis, sample pretreatment, LC-MS and high-resolution MS methods, and validation. The authors describe no systematic search, and the validation examples they cite were run mainly on urine, plasma and serum from clinical trials, pharmacokinetic or spiked samples, with athlete samples used less often.",
+      "limitations": "This is a narrative review of laboratory methods with no described search, and it reports no athlete outcomes or performance or health effects. Most cited validation work used clinical-trial, pharmacokinetic or spiked samples rather than routine athlete samples, so it says little about how these peptides affect athletes.",
+      "synthesisCaution": "Staff could read the review as showing that peptide doping is reliably detectable, when the authors stress that many peptides have short half-lives and that reference standards and validation guidance remain limited.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/screeningLimitations/limitations: 'a few samples from athletes' -> athlete samples used less often than clinical-trial or pharmacokinetic samples ('The use of samples from athletes has also been reported, although to a lesser extent'; 'Seo et al. reported the use of 209 serum samples collected from athletes')",
+            "findings: LOD range 'about 0.05 to 20 ng/mL' -> about 0.02 to 20 ng/mL (Table: desmopressin and vasopressin 'LOD = 20 pg/mL')",
+            "findings: 'few peptide reference materials are certified' -> peptides lack adequate reference materials ('there are many reference materials used in antidoping analysis. Unfortunately, this is not the case for peptide-type doping agents')"
+          ],
+          "residualConcerns": "Relevance is borderline: this is an analytical chemistry review of doping detection with no athlete health or performance outcomes. A reviewer may judge it out of scope under exclusion reason (c).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1704",
+        "synthesisBatch": "pilot-synthesis-batch-105",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 39,
+      "sourceFile": "THE RELATIONSHIP OF INFRARED THERMOGRAPHY WITH THE IDENTIFICATION OF CHANGES IN BIOLOGICAL MARKERS AFTER EXERCISE - A SYSTEMATIC REVIEW.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 28,
+        "extractedCharacters": 43375,
+        "doi": "10.1016/j.jbmt.2025.04.018",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Rugby",
+        "Soccer",
+        "Endurance Sport",
+        "Track & Field"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "PRISMA systematic review (PROSPERO CRD42022385463) of five experimental studies with 81 trained athletes aged 18 or older, including rugby, soccer, sprint and distance runners of both sexes, comparing infrared thermography skin temperature with blood creatine kinase (CK) or lactate after training, matches or races. Four studies found no meaningful correlation or predictive relationship between skin temperature and biomarkers, and one reported a moderate relationship between skin temperature and CK after two consecutive soccer matches.",
+      "limitations": "Only five small studies (10-21 athletes each) were included, with different protocols, time points and cameras, and most were rated uncertain on the reference standard domain of QUADAS-2. The review also reports 55 men and 26 women in the text but 60 men and 21 women in Table 1, and its discussion of the half-marathon study conflicts with Table 2.",
+      "synthesisCaution": "Staff could read the review's statement that infrared thermography is reliable for injury screening as shown by these studies, when the five included studies compared skin temperature with biomarkers and did not test screening accuracy.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "The source text also mentions Moreira et al. (2019) when describing missing sample characteristics, although that judo study is not one of the five included studies; this is an inconsistency in the paper.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1705",
+        "synthesisBatch": "pilot-synthesis-batch-105",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 50,
+      "sourceFile": "Techniques to derive and clean acceleration and deceleration data of athlete tracking technologies in team sports - A scoping review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 64357,
+        "doi": "10.1080/02640414.2022.2054535",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Scoping review (PRISMA-ScR) of studies that used acceleration or deceleration data from athlete tracking technologies in team sports. Four databases (PubMed, SPORTDiscus, Scopus, Web of Science) were searched to August 2020, and 276 studies were included. The authors report that 60% of studies did not explain how the data were derived and cleaned, and that acceleration and deceleration data were most often used as effort counts and distance metrics to describe movement demands.",
+      "limitations": "This is a map of methods, not a pooled estimate, and the review did not appraise study quality. One author ran the search and screening was partly single-reviewer, the search covered English-language work to August 2020, and the scope is team sports only.",
+      "synthesisCaution": "Staff could take effort counts from different tracking systems or software versions as directly comparable, when the review shows that filter, cut-off and threshold choices can change the number of efforts detected.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 60% figure (abstract only) presented as the results finding -> replaced with results values ('deriving techniques ... were not specified in 66%'; 'Most of the articles (88%) did not mention any data cleaning'), and effort-metric claim tied to the reported 59% ('only specified the effort by a set threshold')",
+            "paper.limitations: said the 92% figure was in the results -> 92% is in the discussion, results report 88%; inconsistency now stated accurately"
+          ],
+          "residualConcerns": "Year 2022 is the online-first year ('Published online: 21 Apr 2022'); no volume, issue or pages printed.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1706",
+        "synthesisBatch": "pilot-synthesis-batch-105",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 52,
+      "sourceFile": "Ten word list performance in healthy athletes and athletes at 3 to 5 days following concussion.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 33066,
+        "doi": "10.1097/JSM.0000000000000941",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Injured Athletes",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Cross-sectional study of 363 healthy university athletes (210 male, 153 female) measured at preseason baseline and 49 university athletes (30 male, 19 female) tested a median of 4.0 days after sport-related concussion. Immediate and delayed recall on the SCAT-5 10-word list did not differ between concussed and healthy athletes (immediate P = 0.228, delayed P = 0.908). Among healthy athletes, females recalled more words than males on immediate (mean difference 1.0, P = 0.002) and delayed (0.5, P = 0.006) recall.",
+      "limitations": "The healthy group was tested at preseason and the concussed group was compared with it, not with each athlete's own baseline, and the concussed group was small (n = 49). Subgroup analyses by sport and concussion history were not possible.",
+      "synthesisCaution": "Staff could read the null result as meaning the 10-word list is useless after concussion, or as clearance for return to play, when the study tested group differences at about 4 days only and did not measure return to play.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: healthy males 220 (abstract typo) -> 210 ('363 healthy baseline athletes (n = 210 male, n = 153 female)'; 210 + 153 = 363)",
+            "evidenceSummary, paper.findings: sex difference immediate recall P < 0.001 (abstract) -> P = 0.002 (results: 'mean difference = 1, Cohen's d = 0.35, P = 0.002')",
+            "paper.tldr: 'from their healthy preseason scores' implied a within-athlete comparison -> compared with healthy athletes tested at preseason (between-group design)",
+            "paper.limitations: listed basketball in the sport mix, but no concussed athlete played basketball (Table 1) -> removed; added age and concussion-history imbalance and the abstract-results conflicts"
+          ],
+          "residualConcerns": "Clinically sensitive concussion paper. Citation has only placeholder volume and pages ('2021;00:1-7'), so they are omitted.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1707",
+        "synthesisBatch": "pilot-synthesis-batch-105",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 54,
+      "sourceFile": "Terminology and Interpretation Across Neuromuscular Profiling Methods - A Systematic Review.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "Journal publication year not printed: the text has no citation line, volume, issue or online-publication date, only 'Accepted: 17 September 2025' and a copyright line ('Springer Nature Switzerland AG 2025'). Year left blank for the operator to confirm externally; DOI 10.1007/s40279-025-02330-2 is printed in the header.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: INCLUDE -> DEGRADED, because no journal publication year is printed (only 'Accepted: 17 September 2025' and the copyright line)",
+            "paper.year: 2025 -> null (accepted date and copyright year are not the journal issue year)",
+            "paper.citation: removed the unprinted year"
+          ],
+          "residualConcerns": "Operator should confirm the publication year (copyright line suggests 2025) and upgrade to INCLUDE. All content claims checked against the text and found accurate (1653 eligible, 184 included, 209 methods: 147 ratio-based, 62 non-ratio-based; search to 10 September 2024; protocol not pre-registered). The extracted limitations paragraph appears cut off mid-sentence after the subjectivity point.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 55,
+      "sourceFile": "Test and evaluation of heart rate derived core temperature algorithms for use in NCAA Division I football athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 51803,
+        "doi": "10.3390/jfmk5030046",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Collegiate",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Validation study in 13 male NCAA Division I football athletes during a summer training camp, comparing heart-rate-derived core temperature from Zephyr BioHarness devices with an ingestible core temperature pill. Concordance was 0.643 overall, with 78% of values within 1.0 F of the pill. In the upper body fat group (6 athletes, above 6.0%), concordance was 0.834 and 93% of values were within 1.0 F.",
+      "limitations": "The sample was 13 men from one team at one camp, and the body-fat split gave subgroups of 6 and 7, so subgroup results are imprecise. Limits of agreement were wide (about -1.8 to +1.4 F), so individual readings may be off by more than a degree.",
+      "synthesisCaution": "Staff could read the 0.834 concordance in the upper body fat group as the device's accuracy for all athletes, when that figure comes from a subgroup of six and the overall agreement was lower.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr: 'tracked an ingestible pill reasonably well' overstated agreement -> concordance 0.643 described as the authors do ('Statistically with CCC, this falls in the \"poor\" range')",
+            "paper.limitations: added omitted key limits (134 measurement pairs vs '402 measurement pairs would be required'; 'a majority of the core temperatures in the subjects did not exceed 102.5 F'; 3-h ingestion window) and removed a +/-1.0 F threshold the authors did not set (their acceptance range was +/-2 F)",
+            "paper.practicalImplications: 'useful trend' and screening advice went beyond the data -> states the device was not validated at heat-stroke temperatures and may underestimate by about 2 F ('not out of the realm of expectations ... to underestimate the Gold Standard by 2 F')"
+          ],
+          "residualConcerns": "Heat-illness monitoring is safety relevant. Abstract defines the body-fat split as Upper >=6.0% and Lower <6.0%, but methods and Table 1 use Upper >6.0% and Lower <=6.0%; the record follows the methods.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1708",
+        "synthesisBatch": "pilot-synthesis-batch-105",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 60,
+      "sourceFile": "The ALR‐RSI score can be used to evaluate psychological readiness to return to sport after acute Achilles tendon tear.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 34034,
+        "doi": "10.1007/s00167-023-07548-z",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Rehabilitation & Return to Sport",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Validation study following COSMIN methodology of the French ALR-RSI psychological readiness score, adapted for Achilles tendon repair, in 50 patients (42 men, 8 women) assessed 6 to 9 months after open surgical repair. The score correlated with EFAS (r = 0.68), FAAM Sport (r = 0.70), FAAM AVQ (r = 0.60) and VISA-A (r = 0.54), and was lower in the 39 patients who did not return to sport than in the 11 who did (60.7 vs 83.2, p = 0.001).",
+      "limitations": "Small single-series sample with only 11 returners, so the discrimination estimates and the 77.5-point cut-off are imprecise and were derived in the same patients. Reproducibility rests on a test-retest in 10 patients, and the score was adapted from ankle instability without the Achilles-specific ATRS for comparison.",
+      "synthesisCaution": "Staff may read the ALR-RSI as a validated predictor of who will return to sport, but this is a cross-sectional validity study at 6 to 9 months with no prospective prediction or independent cut-off check.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'returned to sport at a mean of 6.8 months' -> 6.8 months is the mean follow-up, not time to return ('had returned to sport at 6.8 months of follow-up'; Table 1 'Follow-up (months) 6.8')",
+            "paper.limitations: 'sport-specific effects could not be tested' -> they were tested and not associated, possibly from low power ('No correlation was found between the type, level of sport, and the return to sport'; 'could be explained by a lack of power')",
+            "populations: added Male Athletes and Female Athletes for consistency with the Injured Athletes tag ('8 women and 42 men'; all engaged in sport at least monthly)"
+          ],
+          "residualConcerns": "Sample is sport-active patients at mixed levels (10% professional, 50% amateur); a reviewer may prefer non-athlete tags instead of athlete sex tags.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1709",
+        "synthesisBatch": "pilot-synthesis-batch-105",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 70,
+      "sourceFile": "The Concurrent Validity of Session-Rating of Perceived Exertion Workload Obtained Face-to-Face Versus Via an Online ApplicationA Team Case S.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 4,
+        "extractedCharacters": 17080,
+        "doi": "10.1123/ijspp.2019-0908",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Basketball"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Observational team case study of 16 semiprofessional male basketball players in a second-tier Australian league, monitored across training sessions in the 2018 season (8 players, face-to-face RPE reporting) and the 2019 season (11 players, phone-based online app). Session RPE was compared with accumulated PlayerLoad and summated heart rate zone workload using repeated-measures correlations. Face-to-face session RPE correlated large with PlayerLoad (r = .69) and very large with summated heart rate zones (r = .74), while the online app correlated small with PlayerLoad (r = .29) and moderate with summated heart rate zones (r = .34), and all correlations were significant.",
+      "limitations": "The two reporting methods were used in different seasons with partly different players (only 3 players overlapped), so method and season are confounded. Reporting windows (30 vs 60 minutes), heart rate devices (chest strap vs shirt) and compliance also differed, giving 163 face-to-face samples against 57 app samples from one team.",
+      "synthesisCaution": "Staff could read the weaker online correlations as proof that any app-based RPE is invalid, when the study compared one team across two seasons with different reporting windows.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations/paper.limitations: added the compliance and sample imbalance and the heart rate device change between seasons ('163 and 57 samples obtained for the 2018 and 2019 seasons'; 'chest-worn straps ... during the 2018 season and via shirts ... during the 2019 season'; 'compliance was higher where RPE was reported face-to-face')"
+          ],
+          "residualConcerns": "Players are semiprofessional in a second-tier state league; the draft's Professional / Elite tag was kept as the closest level but a reviewer may prefer another tag. Year 2020 from the ahead-of-print copyright line; no volume or pages printed.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1710",
+        "synthesisBatch": "pilot-synthesis-batch-105",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 91,
+      "sourceFile": "The Functional Movement Screen’s Ability to Detect Changes in Movement Patterns After a Training Intervention.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 18702,
+        "doi": "10.1123/jsr.2013-0146",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Rehabilitation",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Combat Sports",
+        "American Football",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Critically appraised topic that searched the Cochrane Library, Medline, CINAHL and SPORTDiscus, plus reference lists, for level 3 or higher studies from 2004 to 2013 that measured the Functional Movement Screen (FMS) before and after an individualised training programme in physically active adults or athletes. Three studies (two randomised trials and one cohort study) were appraised. Two reported significant changes in movement patterns after training, and one using a 12-week programme found no significant change.",
+      "limitations": "Only three studies were appraised, and they differ in programme, population and design, so the authors grade the evidence as C (inconsistent). The FMS itself is questioned as a measure of movement capacity, and score gains may partly reflect familiarity with the test.",
+      "synthesisCaution": "Reading this inconsistent, three-study appraisal as proof that training improves movement quality or reduces injury risk, rather than as evidence that FMS scores changed in some small studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "sports: omitted American Football -> added, since one of the three appraised studies tested professional football players ('Kiesel et al3 used a cohort design where participants were stratified into 2 groups (football lineman, football non-lineman)')"
+          ],
+          "residualConcerns": "Table 2 (characteristics of the three included studies) is unreadable OCR in the extracted text, so study-level details (samples, programme lengths, populations) beyond what the narrative states could not be checked; the MMA population for Bodden et al rests on the reference title. Healthy Athletes tag is kept because inclusion required no current injury, but the Frost et al population is not stated in readable text.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1711",
+        "synthesisBatch": "pilot-synthesis-batch-105",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

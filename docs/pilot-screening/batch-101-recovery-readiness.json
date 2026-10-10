@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-101-recovery-readiness",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Recovery & Readiness queue positions 85-96. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 85,
+      "sourceFile": "The Effectiveness of    Photobiomodulation Therapy Versus Cryotherapy for Skeletal Muscle   Recovery-  A Critically Appraised Topic.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 31202,
+        "doi": "10.1123/jsr.2017-0359",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Critically appraised topic of five studies: three randomized, double-blinded, placebo-controlled human trials (50, 40 and 6 participants) and two translational rat studies (32 and 29 male rats). All five supported photobiomodulation therapy (PBMT) over cryotherapy after exercise, mainly through lower creatine kinase and inflammatory markers, and in the trials that measured them, better strength recovery and less soreness; the futsal trial found no group differences in Wingate peak or mean power. Cryotherapy alone did not differ from placebo for creatine kinase or blood lactate in the human trials.",
+      "limitations": "Only five studies, two of them in rats, and the human trials are small, in men who were untrained, of unstated training status, or six professional futsal players, so this is a narrative appraisal rather than a pooled analysis. Device type, dose and timing varied across studies, and the authors call the evidence moderate.",
+      "synthesisCaution": "Staff could read this as proof that photobiomodulation beats cryotherapy for athletes, when the human evidence comes from three small trials, only one of them in athletes, and cryotherapy was often no better than placebo.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: stated all five showed lower soreness and better performance recovery -> soreness and strength measured only in some trials, and the futsal trial found no Wingate power differences ('No significant differences in peak power or mean power among groups')",
+            "paper.findings: framed as direct PBMT-versus-cryotherapy effects over 1 to 96 hours -> human trials compared each treatment with placebo ('PBMT significantly increased MVC compared with PG from 24 to 96 h'; 'Cryotherapy as a single treatment ... not different from PG')",
+            "screeningLimitations and paper.athleteDev: 'mostly untrained or recreational men' -> 50 untrained men, 40 male volunteers of unstated training status, 6 professional futsal players (Table 2)",
+            "paper.limitations: added that most human comparisons were against placebo"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1691",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 96,
+      "sourceFile": "The Influence of Post-Exercise        Cold-Water Immersion on Adaptive Responses to Exercise- A Review of   the      Literature.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 93517,
+        "doi": "10.1007/s40279-018-0910-8",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of post-exercise cold-water immersion (CWI) and adaptation to training, based on a keyword search of Scopus (1963 to December 2017) plus reference lists. Single-session studies show short-term rises in PGC-1a mRNA after CWI, but two studies found no change in PGC-1a protein up to 3 hours later. Regular CWI during endurance training showed little or no effect on mitochondrial markers and mixed effects on performance, and regular CWI during resistance training attenuated strength or muscle mass gains in some studies but not others.",
+      "limitations": "Narrative review rather than a systematic review: one database, keyword search, no protocol and no formal quality appraisal of included studies. Much of the mechanistic evidence comes from small human samples (mostly 8 to 21 men) and rodent work, and many protocols used single-limb immersion or training frequencies below those of athletes.",
+      "synthesisCaution": "Reading the short-term rise in PGC-1a mRNA after cold immersion as proof that CWI improves training adaptation, or treating the review's proposed molecular mechanisms as established.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary and paper.findings: 'little or no change in the proteins it regulates' / 'other mitochondrial mRNA and protein markers showed no change within about 3 hours' -> two studies found no change in PGC-1a protein content up to 3 h ('two studies reporting no change in content up to 3 h after exercise')",
+            "paper.tldr, practicalImplications, athleteDev: advice to use CWI when between-session recovery is the constraint -> removed as unsupported; the review states this is untested ('It remains to be determined whether CWI alters training adaptations in situations where recovery between training sessions may be limited')",
+            "paper.athleteDev: 'no study showing that regular CWI improves ... mitochondrial adaptation' -> no conclusive evidence for increased mitochondrial content or function ('conclusive evidence for CWI-induced increases in the content of proteins associated with mitochondrial biogenesis ... is lacking'; one study reported slightly beneficial performance effects)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1692",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}
