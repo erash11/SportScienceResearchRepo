@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-104-monitoring-technology",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Monitoring & Technology queue positions 23-60. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 23,
+      "sourceFile": "Salivary biomarkers of tactical athlete readiness - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 27,
+        "extractedCharacters": 119690,
+        "doi": "10.1371/journal.pone.0321223",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "PRISMA-guided systematic review of 49 studies (1,118 participants in total, averaging 23 per study) that measured salivary biomarkers before and after acute stressors such as sleep loss, dehydration, altitude, cold and exercise. Cortisol and testosterone responded inconsistently, while osmolality and total protein tracked dehydration, and proteomic panels reached 83% to 96% accuracy in fatigue classification in single studies. Quality ratings were fair (22 studies) or good (27 studies) on the Downs and Black checklist.",
+      "limitations": "Heterogeneous designs, assays and biomarkers meant the results could not be pooled, and most studies lacked a control group or randomisation (only 1 used a true control group). Only 13 studies included both sexes, and only 5 of 49 reported power analyses.",
+      "synthesisCaution": "Staff may treat salivary cortisol or testosterone as a usable readiness test, when the review found them inconsistent across stressors and studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'most studies were quasi-experimental' -> most lacked control groups (22 uncontrolled cohort, 12 quasi-experimental, 'Only 1 study randomized participants into a stressor and true control group'); 'few' power analyses -> 5 of 49",
+            "paper.rtp: 'muscle-damage markers were reported in single studies' was wrong; muscle damage was the most studied stressor ('Muscle damage and fatigue were the most frequently studied acute stressors') -> corrected",
+            "paper.findings/practicalImplications: added that hydration signals came from only five dehydration studies ('Five studies examined dehydration')"
+          ],
+          "residualConcerns": "The text attributes the 96% fatigue accuracy to study [51] in one place and to study [86] in others.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1641",
+        "synthesisBatch": "pilot-synthesis-batch-104",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 29,
+      "sourceFile": "Scoping review of methods of monitoring acute changes in lower body neuromuscular function via force plates.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 39,
+        "extractedCharacters": 151501,
+        "doi": "10.1371/journal.pone.0322820",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Professional / Elite",
+        "Collegiate",
+        "Youth / Adolescent",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "PRISMA-ScR scoping review of 30 within-group repeated-measures studies that used force plates to track acute changes in lower-body neuromuscular function, searched across four databases to June 2024. The studies included 466 participants (average 15.5 per study), of whom about 82% were male and about 11% female, mainly team-sport athletes. Countermovement jump was the test in 23 studies, and jump height was the most reported metric (14 studies), but metric definitions, phase terminology, and data collection and reporting varied widely.",
+      "limitations": "The review is descriptive and qualitative, with no pooled estimates and no appraisal of study quality, and no protocol was registered. Only 24 of the 30 studies reported enough results to be tabulated. Chronic monitoring studies were set aside, and the sample is male-dominated.",
+      "synthesisCaution": "Staff may read the commonly used tests and metrics as a validated monitoring battery, when the review did not assess reliability or sensitivity and found that metric definitions and calculations differ between studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr and synthesisCaution: 'most metrics have no established reliability or sensitivity' overstates the review, which did not assess this -> authors call for reliability and sensitivity to be determined ('the test-retest reliability of these frequently reported ... metrics should be determined before appropriate practical conclusions can be constructed')",
+            "paper.findings: 'Verbal cues ... inconsistently reported' -> verbal cues were reported in 24 of 30 studies; zeroing and weighing each in only 6 ('the processes of weighing athletes (N = 6) and the zeroing of force plates (N = 6) was scarcely reported')",
+            "paper.limitations: added Results vs Discussion conflict in sex and participant counts ('Of the total 319 participants, males made up 80.25%')"
+          ],
+          "residualConcerns": "Results and Discussion report different participant totals and sex counts (466 vs 319); the record uses the Results values.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1642",
+        "synthesisBatch": "pilot-synthesis-batch-104",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 34,
+      "sourceFile": "Selecting Metrics That Matter - Comparing the Use of the Countermovement Jump for Performance Profiling, Neuromuscular Fatigue Monitoring, and I.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text; the only DOI-like strings are reference-list items or none. All other fields are filled and doiMissing is true, so the operator can verify the DOI externally.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: named time to take-off as a metric that changed over 24 to 72 h -> time to peak power and flight time:contraction time ratio; immediate changes were relative net impulse and flight time ('over subsequent days (e.g., 24-72 hours), metrics such as time to peak power ... and flight time:contraction time ratio')",
+            "evidenceSummary: implied the 151-study meta-analysis showed time-based metrics changed more -> attributed to other cited studies ('In contrast, previous studies have shown that some time-based metrics')"
+          ],
+          "residualConcerns": "Own DOI not printed; header shows 'VOLUME 00 | NUMBER 00 | MONTH 2023', so the 2023 year comes from an online-first header and volume/issue are omitted.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 39,
+      "sourceFile": "Serial ultrasonography for the assessment of healing of lower extremity bone stress injury and correlation with return to sport.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 32075,
+        "doi": "10.1177/19417381241231590",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Prospective observational cohort of adults aged 18 to 50 with an exercise-related lower-leg or metatarsal bone stress injury confirmed by MRI, followed with ultrasound every two weeks for 12 weeks; 30 patients were analysed (mean age 35.3 years, 70% female, 90% running-related). Soft tissue edema and power Doppler hyperemia fell significantly over 12 weeks, and hyperemia correlated with pain at weeks 4 and 6 (rho 0.45 and 0.42) and with lower return-to-sport ratings at week 6 (rho -0.45). Persistent marrow edema on MRI at 12 weeks did not correlate with pain or return to sport.",
+      "limitations": "Single-centre, uncontrolled cohort with 30 analysed patients, a subjective 0 to 3 ultrasound grading, and a non-validated return-to-sport Likert scale. Most correlations are weak (none above 0.5), and only a few time points were significant, so the study cannot show that ultrasound predicts return to sport.",
+      "synthesisCaution": "Staff could read the correlations as proof that ultrasound findings can time a return to sport, when the authors describe them as preliminary and call for research on their prognostic value.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added Results text vs Table 3 conflict on periosteal reaction ('Statistically significant decreases in soft tissue edema, periosteal reaction, and hyperemia ... all <0.01' vs Table 3 P = 0.23)",
+            "paper.limitations: 'no correlations were significant after week 6' -> no ultrasound correlations; MRI cortical fracture correlated with pain at week 12 (rho 0.39, 95% CI 0.02 to 0.66)",
+            "paper.findings: added week-6 hyperemia group comparison ('between-subjects effects P value for NRS ... was 0.04 and for the ability to return to sport/exercise was 0.06')"
+          ],
+          "residualConcerns": "Results text calls the week-6 hyperemia and return-to-sport correlation 'positive' while Table 5 and the Discussion give a negative rho (-0.45); the record follows the table. Return-to-sport topic. Citation has no volume or pages because only placeholders ('vol. XX no. X') are printed.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1643",
+        "synthesisBatch": "pilot-synthesis-batch-104",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 41,
+      "sourceFile": "Serum myokines as potential biomarkers of myostatin inhibition in sport doping - A preliminary study on their baseline levels in elite athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 41017,
+        "doi": "10.5114/biolsport.2024.132982",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Descriptive baseline study of serum myostatin and nine related myokines in elite athletes whose samples were collected for routine doping control and previously reported as negative (MYO n=53; 41 males, 12 females). Authors report concentrations spanning several orders of magnitude, higher FSTL-1 and musclin in females (p<0.05), higher IGF-1 and BDNF in power than endurance athletes, and musclin, FSTL-1 and oncostatin clustering most closely with myostatin in a paired subset (N=41).",
+      "limitations": "This is a preliminary, single-time-point study with a small female subgroup and no athletes exposed to myostatin inhibitors, so it cannot show that the panel detects doping. The authors themselves find the FOL/MYO and MYO/FSTL-1 ratios too variable (CV 64% and 85%) to set population thresholds.",
+      "synthesisCaution": "Staff should not read the myokine panel as a validated doping test; the paper gives baseline ranges and correlations in clean elite athletes only.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: ratio with mean 0.34 and CV 64% was labelled MYO/FOL -> FOL/MYO, below 1 ('serum concentration of MYO resulted to be 4 to 5 times higher than FOL ... resulted lower than 1 ... (mean value = 0.34)')",
+            "screeningLimitations: 'MYO/FOL' ratio -> 'FOL/MYO' (same source passage, heading 'FOL/MYO and MYO/FSTL-1 Ratios')",
+            "paper.limitations: female subgroup 'n=12-13' -> 'n=6 to 13 depending on the analyte' (Table 1: IRI females 6, OST females 11)",
+            "paper.practicalImplications: longitudinal sampling attributed to the authors ('it may be more appropriate to follow the variation of individual MYO/FOL ratio longitudinally')"
+          ],
+          "residualConcerns": "The paper itself labels ratios inconsistently (FOL/MYO vs MYO/FOL; MYO/FSTL-1 described with FSTL-1 higher than MYO yet ratio >1). Results text says ONC and MUS were below 1 ng/mL while the discussion and abstract say OST and MUS; Table 2 shows all three below 1 ng/mL.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1644",
+        "synthesisBatch": "pilot-synthesis-batch-104",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 60,
+      "sourceFile": "Sleep Monitoring in Athletes- Motivation, Methods, Miscalculations and Why it Matters.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 47252,
+        "doi": "10.1007/s40279-019-01119-4",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Narrative review of sleep assessment in athletes, covering polysomnography, actigraphy, consumer sleep technologies, smartphone apps, sleep diaries and questionnaires, with a suggested monitoring process, feedback principles and intervention options. The author reports that there are no guidelines for monitoring athlete sleep, that research-grade actigraphy agrees reasonably with polysomnography in athletes, and that consumer devices and apps are poorly validated and often overestimate sleep.",
+      "limitations": "No systematic search method is described, so study selection and the strength of the recommendations cannot be checked. Several validation studies cited are small and based on team-sport or semi-professional samples, and the review itself notes that some devices have no published validation.",
+      "synthesisCaution": "Staff could treat consumer wearables and sleep apps as valid sleep measures, when the review finds most have little validation against polysomnography and tend to overestimate sleep.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1645",
+        "synthesisBatch": "pilot-synthesis-batch-104",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}
