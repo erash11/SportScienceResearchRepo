@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-103-brain-health-psychology",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Brain Health & Psychology queue positions 5-62. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 5,
+      "sourceFile": "Sports-related Concussion V Genetic Factors copy.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text. The only DOI-like strings are reference-list links.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: pages 20-21 -> 20-22 (page header '1537-890X/1801/20Y22'; page 22 carries the references)",
+            "paper.findings: 'APOE ... show no association in sport-related concussion studies' -> general APOE genotype showed no association, but 'The APOE G-219T TT promoter genotype was significantly associated with self-reported concussion risk'",
+            "paper.findings: 'Some studies linked IL-6R CC ... and APOE4 to lower risk' -> one prospective cohort of 1056 college athletes ('The largest prospective cohort study ... included 1056 college athletes')"
+          ],
+          "residualConcerns": "Own DOI not printed; operator may verify externally and upgrade. Short clinical review column; concussion content.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 22,
+      "sourceFile": "Structural brain differences in professional Australian rules footballers following mild traumatic brain injury - When head size matters.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 64356,
+        "doi": "10.3389/fneur.2026.1701097",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case-control Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Case-control MRI study of 31 male professional Australian rules footballers scanned within 3 months of a suspected concussion (17 scanned within 12 days, 14 later) and 37 healthy male non-athlete controls matched for age. Players had lower proportional hippocampal and amygdala volumes than controls, and the bilateral hippocampal differences stayed significant after Bonferroni correction. Players also had lower right lateral orbitofrontal cortical thickness (an exploratory finding). Results depended on the intracranial volume method: only the right hippocampus differed when volumes were normalized to segmentation-based or supratentorial volume. In 12 players with follow-up scans, no subcortical volume changed significantly after correction.",
+      "limitations": "Controls were non-athletes and players had unknown prior concussion history, so injury and sport exposure cannot be separated. Most ROI results are uncorrected p-values and depend on the choice of intracranial volume estimate, and the longitudinal subset was only 12 players.",
+      "synthesisCaution": "Staff could read the smaller hippocampus as proof that concussion causes lasting brain damage or future neurodegeneration. The design cannot show that the difference came from injury rather than pre-existing or sport-related differences, and the authors show the result changes with the head-size method used.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Concussion imaging paper; claims checked against Results, Table 3 and Limitations. High priority only because the topic is clinically sensitive.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1699",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 29,
+      "sourceFile": "Subtypes of sport-related concussion - A systematic review and meta-cluster analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 55792,
+        "doi": "10.1007/s40279-020-01321-9",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Youth / Adolescent",
+        "Collegiate"
+      ],
+      "evidenceSummary": "A systematic review and meta-cluster analysis of 22 studies (5,592 athletes with sport-related concussion) searched in Medline, Embase, PsycINFO and SPORTDiscus up to December 2018. Multiple correspondence analysis of the reported symptom clusters identified five clusters (migraine, cognitive-emotional, sleep-emotional, neurological and undefined feelings), and 19 studies linked these clusters to clinical outcomes, most often longer recovery.",
+      "limitations": "Most included studies had limitations, and only 13.6% used exploratory data-driven clustering, so analysis bias may have shaped the clusters. The clusters were derived from published reports rather than individual data, the included athletes were mostly adolescents, and the review does not show that subtype-specific treatment improves recovery.",
+      "synthesisCaution": "Staff could treat the five clusters as proven concussion subtypes that should drive treatment choice; no included study tested subtype-targeted management, and the authors note it remains unclear which clusters relate to impairments in particular functional domains.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution: attributed to the authors a statement that subtype-targeted management is untested, which they do not make (they argue the findings 'strongly support a transition' to targeted management) -> states the review did not test it and cites what the authors do say ('it remains unclear if and which specific SRC symptom clusters are associated with impairments in particular functional domains')",
+            "paper.practicalImplications: 'in the first week' timing not supported by the findings and the assessment list did not match the authors' recommendation -> removed timing; list now follows 'systematic assessment of at least headache characteristics, neurocognitive functioning, emotional functioning, neurological functioning, and sleep'",
+            "paper.limitations: covariate adjustment made specific and added the one-month window ('only five of the included studies adjusted for covariates'; 'within 1 month post-injury')"
+          ],
+          "residualConcerns": "Year 2020 taken from the copyright line ('The Author(s) 2020'); no volume, issue or pages are printed. The authors describe the evidence as 'robust' although most included studies had high relative risk of bias.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1700",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 62,
+      "sourceFile": "The Association Between Age of First Exposure to American Football at a Young Age and Later-Life Health Issues in Healthy, Community-Dwelling Adults.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "Journal publication year not printed: the text has no citation line, volume, issue, pages or online-publication date, only 'Accepted: 20 April 2025' and a copyright line ('The Author(s) 2025'). Year left blank for the operator to confirm externally; DOI 10.1007/s40279-025-02239-w is printed in the header. All other fields are complete.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: INCLUDE -> DEGRADED, journal year not printed (only 'Accepted: 20 April 2025' and '(c) The Author(s) 2025'; no citation line, volume, issue, pages or online date); paper.year 2025 -> null and year removed from citation",
+            "paper.findings: added the unadjusted group differences that disappeared after adjustment ('PHQ-9 total score 6.6 +/- 6.5 vs 4.1 +/- 6.0, p = 0.042'; 'GAD-7 ... p = 0.034'; sleep problems p = 0.050; age 53.0 vs 65.3, d = 0.89)",
+            "paper.tldr / practicalImplications / synthesisCaution: concussion finding framed as the headline -> qualified as exploratory ('Though not a part of the a priori objectives, these findings highlight potential long-term effects of concussions'); younger age also predicted worse scores",
+            "populations: removed Male Athletes and Healthy Athletes -> Adult / Recreational, because the sample is community-dwelling adults (mean age 60.6) with past amateur football exposure, not current athletes"
+          ],
+          "residualConcerns": "Confirm the publication year externally to upgrade the decision. Population coding of former amateur players as non-athletes is a judgement call.",
+          "spotCheckPriority": "high"
+        }
+      }
+    }
+  ]
+}

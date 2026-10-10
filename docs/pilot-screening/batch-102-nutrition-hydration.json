@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-102-nutrition-hydration",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Nutrition & Hydration queue positions 33-86. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 33,
+      "sourceFile": "Supplement use in patients undergoing anterior cruciate ligament reconstruction - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 27,
+        "extractedCharacters": 51213,
+        "doi": "10.1016/j.arthro.2020.04.047",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Rehabilitation",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "PRISMA systematic review of 10 prospective randomized controlled trials published 2004-2019, including 292 patients who had or were planned to have ACL reconstruction. Among four protein or amino acid trials (177 patients), two found significant benefits in isokinetic strength or rehabilitation sessions needed to reach benchmarks and two found greater thigh hypertrophy than placebo, while one biopsy analysis and the glucosamine trial showed no benefit; creatine (60 patients), vitamin C and E (49 patients in one cohort) and testosterone (6 men) showed no benefit on muscle outcomes.",
+      "limitations": "Only 10 small trials were eligible, and the authors could not pool them because of differences in supplement, timing, dose and outcomes, so no meta-analysis was done. Half the trials were rated poor quality and one patient cohort was reported in three separate vitamin papers.",
+      "synthesisCaution": "Staff could read the protein finding as a supplement protocol to adopt, but the authors state that no specific protein protocol can be recommended on current evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: 'Injured Athletes' applied to ACL reconstruction patients whose athletic status is not stated -> 'Mixed / Unspecified' only (patients, 'patients who underwent anterior cruciate ligament reconstruction')",
+            "evidenceSummary/findings: implied all four protein trials showed benefit -> two showed significant strength or benchmark benefit, two showed hypertrophy, glucosamine trial and one biopsy analysis showed none ('the authors found no benefits with Glucosamine supplementation')",
+            "findings: testosterone 'no benefit in the injured leg at 24 weeks' -> no injured-leg or clinical-score difference at any time point ('no differences ... regarding extensor strength of the injured leg or clinical scores at any point')"
+          ],
+          "residualConcerns": "Testosterone trial concerns a prescription hormone; the record states no benefit and safety limits, which a reviewer may want to confirm.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1693",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 35,
+      "sourceFile": "Sweat characteristics of cramp-prone and cramp-resistant athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 52753,
+        "doi": "10.1123/ijsnem.2019-0308",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Multicenter cross-sectional study of 350 Division I college athletes (204 men, 146 women) from 11 sports, 245 with and 105 without a self-reported history of exercise-associated muscle cramps (EAMC), measured during one habitual practice or conditioning session with sweat patches and body-mass sweat rates. Within each sex, sweat rate and sweat sodium, potassium and chloride concentrations and content did not differ between crampers and non-crampers, and sweat variables predicted cramp history only in American football (AUC 0.65-0.72, P <= .005).",
+      "limitations": "Cramp history was self-reported, no athlete cramped during testing, and most American football data (about 71%) came from off-season conditioning without pads. Sweat patches were applied before exercise, so samples may include primary sweat, and the football finding rests on modest AUCs in a single sport.",
+      "synthesisCaution": "Staff could read the football result as proof that heavy sweaters need electrolyte replacement, when the authors found the predictive accuracy modest and the overall sweat differences absent in most sports.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: presented the SR/BSA > 0.75 L/hr/m2 sixfold odds as a significant predictor -> noted its AUC was not significant (Table 5: 'SR/BSA 0.62 [0.49, 0.73] .02'; significance set at p < .01)",
+            "limitations: removed the unneeded statement that abstract and results agree; added the SR/BSA caveat"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1694",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 36,
+      "sourceFile": "Swifter higher stronger - What's on the menu.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 58040,
+        "doi": "10.1126/science.aau2093",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Narrative review in Science of how elite athletes use nutrition across training and competition, covering fuel use, periodized carbohydrate and train-low strategies, protein timing, competition fueling, and supplements. The authors draw on their own research and on published studies, but describe no systematic search, and they note that most supporting data come from sub-elite or non-athlete samples.",
+      "limitations": "This is a narrative review with no described search method, so the selection of studies and the strength of the conclusions cannot be checked. Most of the evidence it cites comes from sub-elite or non-athlete samples, and the authors say intervention studies with world-class athletes are rare.",
+      "synthesisCaution": "Staff could read the review's examples of elite practice, such as a marathon race plan or a train-low regimen, as proven methods to copy, when the authors say it remains to be shown whether elite athletes succeed because of or in spite of their nutrition practices.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: 'some elite-athlete studies found no advantage' for train-low -> early studies failed to detect superior performance; benefit reported in subelite populations ('Early investigations failed to detect superior performance outcomes'; 'In subelite populations at least, better integration ... superior performance')",
+            "synthesisCaution: authors 'describe them as case histories that do not prove the nutrition caused the result' -> authors say it remains to be determined whether elite athletes succeed 'because, or in spite, of their nutrition practices'",
+            "practicalImplications/athleteDev: 'performance benefit is not established/unclear' -> 'less clear' ('the translation to performance enhancement has been less clear')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1695",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 58,
+      "sourceFile": "The 4R's framework of nutritional strategies for post-exercise recovery - A review with emphasis on new generation of carbohydrates.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 96802,
+        "doi": "10.3390/ijerph18010103",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Review of nutritional strategies for post-exercise recovery, built on a database search (ScienceDirect, PubMed/MEDLINE, Google Scholar) with a single search string, hand-searching, and a preference for English-language papers from 2010 onward. It proposes the 4R framework (Rehydrate, Refuel, Repair, Rest), in which the authors call combined carbohydrate and protein refuelling a good strategy and describe creatine and pre-sleep casein as helpful in some settings, with newer bioengineered carbohydrates needing more research.",
+      "limitations": "The search used one string across three databases and returned 1816 records, but screening was only 'based on article type, text availability and suitability', with no quality appraisal, so it is closer to a narrative synthesis than a systematic review; it is coded as a review with a described search under the library rule. No effect sizes are pooled, and the authors say the 4R framework is not a rigid protocol.",
+      "synthesisCaution": "Staff may treat the 4R framework and its specific fluid, carbohydrate and supplement amounts as established prescriptions, when the paper presents them as a strategic framework built on a loosely described search.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations / paper.limitations: 'no stated eligibility criteria' -> exclusion criteria and a screening step are stated ('we excluded articles that did not analyze the effects on post-exercise recovery, abstracts or articles with no full-text version available, and studies focused on the effects of performance and image enhancing drugs'; 1816 references screened 'based on article type, text availability and suitability')",
+            "paper.methods: added the 1816 records, screening basis and exclusion criteria",
+            "paper.tldr: 'best-supported parts' is not stated -> reworded and added the reported nuance that 'co-ingestion of carbohydrate plus protein ... resulted in no difference in the rate of muscle glycogen synthesis but it improves net protein balance'",
+            "paper.limitations: added the declared supplement-industry conflicts of interest ('current member of the Creatine in Health scientific advisory board for Creapure')"
+          ],
+          "residualConcerns": "Design coded as Systematic Review / Meta-analysis only because a search string is described; the paper calls itself a review and the synthesis is narrative.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1696",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 59,
+      "sourceFile": "The 4Rs Framework of Sports Nutrition - An Update with Recommendations to Evaluate Allostatic Load in Athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 31,
+        "extractedCharacters": 113576,
+        "doi": "10.3390/life15060867",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Review that incorporates PRISMA-ScR elements and searches PubMed/MEDLINE, Web of Science and Google Scholar, plus a biomarker database and snowballing, to update the 4Rs sports nutrition framework (Rehydrate, Refuel, Repair, Recuperate). The authors also propose a cautious allostatic load index (ALindex) of 10 equally weighted biomarkers, scored 0 to 10, for physique competitors and elite athletes, which they describe as not yet validated.",
+      "limitations": "The paper is a scoping-style review with no pooled analysis, and the authors state that the current information is primarily based on associations. The proposed ALindex and its biomarker cut-offs are not validated in athletes, and the authors say sex-specific and sport-specific cut-offs may be needed.",
+      "synthesisCaution": "Staff may take the proposed ALindex as a validated athlete monitoring tool, when the paper presents it as a cautious proposal that needs validation before routine use.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: seven authors listed before 'et al.' -> first six then 'et al.' per house rule (nine authors printed)",
+            "paper.limitations: added the declared supplement-industry conflicts of interest ('R.B.K. serves as Chair of the Creatine for Health scientific advisory board sponsored by Creapure ... while D.A.B., B.I.C., and J.R.S. serve as members')"
+          ],
+          "residualConcerns": "Design coded as Systematic Review / Meta-analysis because a search is described and PRISMA-ScR elements are cited, but the synthesis is narrative with no screening counts.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1697",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 86,
+      "sourceFile": "The Efficacy of Nutritional Strategies and Ergogenic Aids on Acute Responses and Chronic Adaptations to Exertional-Heat Exposure - A Narrative Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 25,
+        "extractedCharacters": 104528,
+        "doi": "10.3390/nu16223792",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Endurance Sport",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Review of nutrition and ergogenic aid studies in exertional heat (ambient temperature above 28 C) and heat acclimation of at least 5 days, searched in PubMed, SPORTDiscus, Scopus and Google Scholar through April 2024. It covers hydration, sodium loading, carbohydrate, protein, caffeine, nitrate, tyrosine and creatine, drawing on mostly small trials, most with male participants. The authors judge the evidence robust for some aids and equivocal for others, depending on test type, duration and sex.",
+      "limitations": "The authors label this a narrative review, but it reports a predetermined search with inclusion criteria, and it has no formal risk-of-bias assessment and no pooled analysis; the authors acknowledge selection bias. The trials differ in heat dose, supplement dose, timing and fitness, so the authors caution against prescribing for specific groups.",
+      "synthesisCaution": "Staff could treat the 'robust evidence' wording as a dosing protocol, but the authors say doses, timing and fitness levels vary across studies and the recommendations should be interpreted with caution.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr: listed nitrate and tyrosine as 'inconsistent' and omitted carbohydrate -> nitrate studies showed no improvement ('have shown no improvements in performance or thermoregulatory responses'), tyrosine mostly null, carbohydrate 30 to 90 g per hour recommended",
+            "domains: added Training & Performance (review centers on exercise performance in the heat)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1698",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

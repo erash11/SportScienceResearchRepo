@@ -1,0 +1,1296 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-99-sports-medicine-injury",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Sports Medicine & Injury queue positions 3-90. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 3,
+      "sourceFile": "Sports injuries and game stakes - Concussions in the National Football League.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 80403,
+        "doi": "10.1111/ecin.13173",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Observational analysis of NFL regular-season games from 2012 to 2015 (948 games, 563 concussions after exclusions; 1896 team-game observations), with concussions taken from public injury reports. The authors measure game stakes as how much a win changes a team's playoff qualification odds (the swing) and use linear probability models with team, season and game fixed effects and standard errors clustered by team. A team's chance of at least one concussion rose by about 10 percentage points when a win raised either team's playoff odds by 40 percentage points, and the model implies 24 percentage points for a game where a win guarantees qualification.",
+      "limitations": "This is an observational panel analysis, so it shows association and not causation, and unmeasured game factors may be linked to stakes. Concussion counts depend on the public injury reports, which may miss or misclassify events, and the sample is four NFL seasons only.",
+      "synthesisCaution": "Staff could read the 24 point figure as the concussion risk in any high-stakes game, when it is a model extrapolation to a swing value of 1.0 that lies beyond the observed swing range (0 to 0.41) in one league's regular season.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings: reported only the 24 point figure -> added the in-sample headline ('increases by 10 percentage points when a win increases one of the teams' odds of playoff contention by 40 percentage points') and clarified 24 points is for a swing value of one",
+            "synthesisCaution/limitations: added that the 24 point figure is an extrapolation beyond the observed swing range (Table 1: swing min 0.000, max 0.414)",
+            "methods: 'fixed effects' -> linear probability model with team, season and game fixed effects; 1896 and 1282 observations (Tables 2-3)",
+            "paper.citation: '2023;1-19' -> '2023' (early-view footer, volume 0 and article pagination only, treated as placeholder)",
+            "domains: added Brain Health & Psychology for concussion content"
+          ],
+          "residualConcerns": "Online early-view version; no volume or issue printed. Design coded Cross-sectional, though it is a four-season team-game panel; a reviewer may prefer Cohort Study.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1662",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 10,
+      "sourceFile": "Sprinting and hamstring strain injury - Beliefs and practices of professional physical performance coaches in Australian football.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 47948,
+        "doi": "10.1016/j.ptsp.2020.12.007",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Online Delphi-validated survey of high-performance managers at Australian Football League clubs, with 9 of 18 invited managers responding (50%; all male). Closed questions were summarised as counts and percentages, and open responses were coded into themes by two researchers. All nine rated acceleration and maximum-speed sprinting as common or very common activities linked to hamstring strain injury (HSI), all used weekly eccentric hamstring strength testing, and all reported regular sprint exposure.",
+      "limitations": "Only nine respondents from one league, with self-reported beliefs and practices rather than injury outcomes, so the results describe coach views and cannot show that any practice reduces HSI. Anonymous responses may also reflect response bias.",
+      "synthesisCaution": "Staff could read the coaches' consensus on sprinting and eccentric training as evidence that these methods prevent HSI, when the survey measured what coaches believe and do, not injury rates.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "practicalImplications: implied all respondents defined sprinting as >90% Vmax -> most common belief, 5 of 9 ('>90%Vmax (n = 5)')",
+            "athleteDev: 'respondents said the dose should suit each athlete' -> six of nine ('Individualisation 6 (66.7%)'); dropped unsupported 'periodised' instruction",
+            "findings/limitations: GPS count reported as 8 of 9 only -> noted results give n = 9 ('maximum running speed from GPS data (n = 9)') and discussion gives 8 of 9"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1663",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 11,
+      "sourceFile": "Sprinting technique and hamstring strain injuries - A concept mapping study.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "Journal issue year not printed: the text is an in-press proof whose header reads 'Journal of Science and Medicine in Sport xxx (xxxx) xxx' and 'Available online xxxx'; only received/accepted dates and a 2021 copyright line appear. Own DOI is printed; all other fields are complete.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: INCLUDE -> DEGRADED; journal issue year not printed ('Journal of Science and Medicine in Sport xxx (xxxx) xxx', 'Available online xxxx')",
+            "paper.year: 2021 -> null (2021 appears only as accepted date and copyright year)",
+            "paper.citation: trailing '2021.' removed because no issue year, volume or pages are printed",
+            "findings/tldr: '19 sorted and rated' -> 19 sorted, 20 rated importance and 19 rated confidence ('Twenty ... and 19 ... participants rated the statements for importance and confidence, respectively')",
+            "athleteDev/practicalImplications: told staff to treat technique and eccentric control as supporting areas -> eccentric control in swing was the 5th most important statement and several technique statements were in Go-Zone quadrant 4 (Table 1)",
+            "athleteDev: removed unsupported advice on changing stimulus and recovery over time",
+            "limitations: added participant self-selection bias ('likely that they agreed to participate because they believe sprinting is a risk factor')"
+          ],
+          "residualConcerns": "Year withheld because the proof shows placeholder volume/year; operator should confirm the issue year (likely 2021 or 2022) and citation externally and upgrade the decision.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 12,
+      "sourceFile": "Squatting Biomechanics After Femoroacetabular Impingement Surgery - A Systematic Review and Meta-Analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 50702,
+        "doi": "10.1097/JSM.0000000000001371",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "PRISMA systematic review (PROSPERO CRD42023473974) of 3D motion-analysis studies that compared the same patients before and after femoroacetabular impingement (FAI) surgery during squatting. Six studies (74 presurgical and 73 postsurgical patients, mostly male, assessed 6 to 32 months after surgery) were reviewed, and five were pooled for seven kinematic outcomes. The pooled analysis found no significant pre- to post-surgery differences, although individual studies reported some changes such as greater squat depth or pelvic sagittal range of motion in one study each.",
+      "limitations": "The samples are clinical FAI patients rather than athletes, and the review draws on only six studies, three of which share one cohort, with moderate MINORS quality and few women. Relevance to athletes is inferred, not tested.",
+      "synthesisCaution": "Staff could read 'no average change' as 'surgery does not help squat mechanics', when the pooled data are few and the individual studies disagree in direction on several measures.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: placeholder '2025;00:1-12' removed ('Volume 00 Number 00 Month 2025') -> 'Clin J Sport Med. 2025.'",
+            "paper.limitations: asserted Lamontagne 2011 Table 2 depth values run opposite to the text -> Table 2 does not state which direction is deeper (36.9 to 33.2 % of leg length), so flagged as hard to reconcile rather than contradictory"
+          ],
+          "residualConcerns": "Online-first article with placeholder volume and issue; year 2025 is printed in the running header and citation line.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1664",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 14,
+      "sourceFile": "Stingers—A Review of Current Understanding and Management.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 58932,
+        "doi": "10.3390/app15073510",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Other",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "American Football",
+        "Rugby",
+        "Combat Sports"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of stingers (transient sensory or motor loss in one arm from stretch or compression of the brachial plexus or cervical roots), drawing on case reports, reviews, retrospective and prospective studies, expert opinion and book chapters found through PubMed and Google Scholar. It reports that stingers accounted for 62.2% of neck injuries in NFL athletes in one study and that most are mild and self-limiting. It sets out grading, imaging, return-to-play and surgical options, with surgery reserved for severe nerve root or nerve injury.",
+      "limitations": "The authors state that this is not a systematic review and that all of the literature they drew on was level IV and V evidence, so coverage is selective and the review cannot give pooled estimates.",
+      "synthesisCaution": "Staff could read the return-to-play algorithm as a validated clinical rule, when the authors say it rests mainly on expert opinion and they lean toward MRI for all episodes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations/abstract/limitations: 'most sources are level IV and V' -> all ('All literature had level IV and V evidence')",
+            "screeningLimitations: removed coding note about studyDesign, which is not an evidence limitation (moved to residualConcerns)"
+          ],
+          "residualConcerns": "studyDesign kept as Other because a (non-systematic) search method is described; the authors call it a narrative review and Narrative Review may be the better library code. Return-to-play guidance rests on expert opinion.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1665",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 20,
+      "sourceFile": "Stretch imposed on active muscle elicits positive adaptations in strain risk factors and exercise-induced muscle damage.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 50183,
+        "doi": "10.1111/sms.13251",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized controlled trial in 26 recreationally active adults (16 men, 10 women; 13 per group) with no recent lower-limb injury. The experimental group did 6 weeks of twice-weekly maximal isokinetic eccentric knee extensor contractions (five sets of 12 three-second active stretches), while controls kept their usual activity. In the experimental group, knee flexion range of motion rose 5.2 degrees, peak passive moment (stretch tolerance) rose 55.4%, elastic energy storage rose 73.0%, isometric and eccentric strength rose 17.4% and 29.5%, and vastus lateralis thickness, pennation angle and tendon stiffness rose 7.8%, 9.0% and 8.7%. Passive muscle-tendon stiffness fell 9.4%, which was not significant. After a 20-minute downhill run, the CK rise was smaller after training (46.0% versus 107.6% before) and knee extensor soreness was absent or minimal, while the control group had similar CK rises (115.4% and 120.5%) and substantial soreness after both runs.",
+      "limitations": "The groups were small (13 per group) and the training targeted knee extensors only, so the results cannot be assumed for hamstrings or other muscles. The muscle-damage outcome was a single laboratory downhill run, and no injury outcomes were measured.",
+      "synthesisCaution": "Staff could read this as evidence that the protocol prevents hamstring or other strain injuries. The paper measured stiffness, range, strength and a laboratory muscle-damage response in healthy adults, not injury incidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: placeholder online-first pagination '2018;00:1-11' removed -> 'Scand J Med Sci Sports. 2018.'",
+            "evidenceSummary/findings: 'control group showed no change' misleading for CK -> controls had similar significant CK rises after both runs ('increase = 115.4 ± 50.7%' and '120.5 ± 36.3%') and substantial DOMS",
+            "paper.limitations: added that DOMS was ranked, not scored ('subjects were asked to rank DOMS only for presence ... and severity')",
+            "paper.athleteDev: unsupported 'sprint and deceleration tasks' -> authors' statement that eccentric strength is 'functionally important for improving athletic task performance'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1666",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 26,
+      "sourceFile": "Subsequent musculoskeletal injury after concussion in National Football League players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 45954,
+        "doi": "10.1136/bjsports-2023-107970",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A retrospective cohort of NFL players from the 2015 to 2021 preseason and regular seasons, using club-reported injury data. Concussed players (766 observations among 641 players) were compared with all non-concussed players in the same game (51,572 observations) and with players who had a time-loss upper extremity injury (789 observations), using Cox models adjusted for prior injuries, tenure and position. Over the full season, neither comparison showed a statistically significant difference in subsequent lower extremity or any musculoskeletal injury.",
+      "limitations": "Men in one elite league with a single set of comparison groups; the authors could not fully account for intrinsic risk or game schedule, and deconditioning was not measured. The adjusted hazard ratios are not statistically significant, so the study cannot show that concussion increases or decreases later injury risk.",
+      "synthesisCaution": "Staff could read the result as proof that concussion does not raise later injury risk, or conversely as proof that lost time causes injury; the study found no significant difference and did not measure deconditioning or cognitive function.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: placeholder '2024;0:1-7' removed -> 'Br J Sports Med. 2024.' (online first, 'first published ... on 8 August 2024')",
+            "paper.findings: added omitted significant results: 30-day any-injury HR 1.36 (1.08 to 1.70) vs non-concussed, and significantly lower 60-day LEX hazard vs upper extremity group ('HR=0.74, 95% CI: 0.56 to 0.98')",
+            "evidenceSummary: had no results -> added main result ('neither association was statistically significant') and 641 unique concussed players",
+            "paper.tldr, athleteDev, abstract: stated time lost drives risk as fact -> framed as the authors' suggestion ('we neither defined nor measured deconditioning')",
+            "paper.practicalImplications: 'Do not assume ... higher musculoskeletal risk' overstated a non-significant HR of 1.08 to 1.12 -> notes a modest increase cannot be ruled out"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1667",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 30,
+      "sourceFile": "Sudden cardiac death in young athletes - JACC State of the Art Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 21,
+        "extractedCharacters": 98334,
+        "doi": "10.1016/j.jacc.2023.10.032",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Collegiate",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "A state-of-the-art review in JACC (2024) of sudden cardiac death in young athletes, drawing on registries, autopsy series and national databases from the United States, Italy, the United Kingdom, Israel and Denmark. It summarises the causes (inherited cardiomyopathies, channelopathies and coronary anomalies), diagnostic overlap with the athlete's heart, screening and resuscitation, and shared decision making on exercise after cardiac disease. No systematic search method is described.",
+      "limitations": "The review has no described search method, so the evidence base cannot be reproduced. Reported incidence varies widely across cohorts because of differing definitions (sudden cardiac death or arrest), age ranges and case ascertainment, and many autopsy rates are low. Much of the guidance on exercise after cardiac disease rests on retrospective or observational data.",
+      "synthesisCaution": "Staff could read the review as showing that most athletes with a cardiac diagnosis can keep training at high intensity, but the authors stress that intensity and volume effects are not well established and that decisions should follow individual expert assessment.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: causes listed as 'inherited cardiomyopathies and coronary anomalies', omitting channelopathies and normal-heart deaths -> 'Inherited cardiac conditions and congenital abnormalities, such as coronary artery anomalies, are the most common etiologies'; added 'A normal heart at autopsy ... is an increasingly common finding'",
+            "paper.findings: added that the Israeli null result relied on newspaper searches ('This study relied on the systematic search of 2 major newspapers in Israel ... possible underestimation of the events')",
+            "paper.athleteDev: 'check with the team physician before increasing training intensity' was generic advice not drawn from the review -> grounded in the overlap and second-line testing message ('a gray area that often needs clarification through second line cardiac investigations')",
+            "paper.rtp: added the review's specific myocarditis guidance ('Athletes with myocarditis should refrain from intense exercise for at least 3 months')"
+          ],
+          "residualConcerns": "Clinically sensitive cardiac content; sports-participation statements summarise AHA/ACC and ESC guideline classes and should be checked against current guidelines before clinical use.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1668",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 32,
+      "sourceFile": "Superior labrum anterior-posterior      tears in the NFL.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 30100,
+        "doi": "10.1177/0363546516673350",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A descriptive epidemiology study combining NFL Injury Surveillance System records from 2000 to 2014 with the NFL Scouting Combine medical records of 2,965 athletes from 2003 to 2011. SLAP tears were 3.1% (65) of NFL shoulder injuries, most often in offensive linemen, and surgically treated tears missed more days (140.2 vs 21.5) and games (8.4 vs 2.6) than nonoperative ones. Of 25 Combine athletes with a prior SLAP repair, those drafted (n = 18) played fewer games (33.7 vs 48.3, P = .049) and started fewer (19.6 vs 35.4, P = .036) than 18 matched drafted controls.",
+      "limitations": "Small numbers (65 in-game and practice SLAP tears, 25 Combine athletes, 18 matched pairs), self-reported Combine history that likely underestimates the true rate, and a surveillance system that did not record SLAP subtype, severity or surgical detail. Days missed included estimated return dates, and two authors are employed by a firm the NFL funded to provide and analyse the data.",
+      "synthesisCaution": "Staff could read the surgery-related time loss as a direct effect of surgery; the authors say injury severity is a likely confounder that the data cannot separate, and the career differences come from a small matched sample.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: 'Cross-sectional Study' -> 'Cohort Study'; 15 seasons of prospective surveillance with time-loss outcomes plus a matched comparison of career outcomes over at least 2 years ('collected prospectively by each team's medical staff'; 'A minimum 2-year follow-up was available')",
+            "screeningLimitations: 'the authors are employed by a firm that consults for the NFL' overstated -> two authors ('K.F. and C.D.M. are employed by Quintiles ... The NFL funded provision of and analyses of these data')",
+            "paper.limitations: career statistics 'partly' from public sources -> from public sources ('Public sources including NFL.com, ESPN.com and pro-football-reference.com were then utilized to compile career statistics')",
+            "paper.practicalImplications: 'mainly tackling and blocking' overstated (22.7% each) -> 75% during contact, most commonly tackling or blocking ('Seventy-five percent of all in-game SLAP tears (n = 33) occurred during contact with another player, most commonly when the injured athlete was tackling (22.7%) or blocking (22.7%)')",
+            "paper.athleteDev: 'Plan load and contact exposure carefully for linemen returning from shoulder injury' was advice the study did not test -> tied to the screening and position findings"
+          ],
+          "residualConcerns": "Citation gives start page 167 only; printed page headers run 167 to 172 and the final reference page number is not visible in the text.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1669",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 38,
+      "sourceFile": "Systematic review of pre-injury migraines as a vulnerability factor for worse outcome following sport-related concussion.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 83689,
+        "doi": "10.3389/fneur.2022.915357",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Youth / Adolescent",
+        "Collegiate",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "PRISMA systematic review (PROSPERO CRD42019128292) of 27 articles, 25 with unique samples, covering 8,692 athletes with sport-related concussion of whom at least 1,015 (11.8%) had a pre-injury migraine history. Most studies (19 of 25) found no significant association with recovery outcome, six reported at least one significant result, and the largest studies were mixed or positive. A likelihood-ratio analysis favored the null hypothesis overall but favored a weak-to-moderate association in studies with 50 or more migraine participants (LR 8.05 at 80% power).",
+      "limitations": "Migraine status was mostly a single self-report item with little clinical detail, most studies were small and rated moderate risk of bias, and outcomes and time points varied too much for a pooled estimate. Only published studies were included, so publication bias cannot be excluded.",
+      "synthesisCaution": "Staff could read the review as proof that athletes with migraines recover more slowly, when the authors say the evidence is inconclusive and most studies were underpowered for this question.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1670",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 44,
+      "sourceFile": "Tackle characteristics associated with concussion in elite men's rugby union - Unpicking the differences between tacklers and ball-carriers.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 40003,
+        "doi": "10.1136/bmjsem-2025-002612",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case-control Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Case-control study of 231 video-confirmed tackle concussions (178 to tacklers, 53 to ball-carriers) in male English Premiership players over five seasons, compared with 9,963 control tackles. Head-to-torso contact had relatively low odds for the tackler, while head-to-knee had the highest odds (OR 156, 90% CI 75 to 322) and head-to-hip caused the most concussions per 1,000 tackles (3.1); for ball-carriers, head-to-head contact had the highest odds (OR 104, 90% CI 57 to 192) and head or neck first contact had higher odds than torso contact (OR 27, 90% CI 15 to 49).",
+      "limitations": "Video identified only 54% of reported tackle concussions, and ball-carrier concussions were harder to identify, so the sample is biased toward tackler events. The interaction analyses rested on very few events, and the design is observational, so the odds ratios describe associations rather than causal effects.",
+      "synthesisCaution": "Staff could read the odds ratios as absolute risks or as proof that a specific tackle height causes concussion, when the study estimates associations with wide 90% CIs in one league and the authors note that the tackler findings are more nuanced.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.athleteDev: said upright tackling was linked to higher odds -> upright tackler odds were higher only for first contact to the ball-carrier's head and neck versus torso, an interaction effect ('when tackler body position was upright ... head and neck versus torso (3.0 23.7 206.7)')",
+            "paper.limitations: added the two different printed CIs for the ball-carrier head and neck versus torso OR"
+          ],
+          "residualConcerns": "Concussion paper; clinically sensitive. Interaction ORs rest on very few events (for example 4 events for static ball-carrier with high-speed tackler).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1671",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 45,
+      "sourceFile": "Tackle techniques and characteristics associated with a concussion in tackling players in the National Football League.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 39698,
+        "doi": "10.1177/03635465251321005",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case-control Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Matched case-control study of 51 NFL tacklers who sustained a concussion in the 2015 to 2019 seasons, compared with 96 matched control tackles, all coded from multi-angle video for 20 technique and characteristic variables. Conditional logistic regression found that leading with the helmet (OR 5.18, 95% CI 1.87 to 14.33), helmet as primary loading (OR 4.61, 95% CI 1.41 to 15.05) and placing the head across the ball carrier's path (OR 4.17, 95% CI 1.58 to 11.01, versus head on the correct side) were associated with higher concussion risk, and closing speed was significant in every model.",
+      "limitations": "The study has 51 cases, and several predictors gave undefined or very wide odds ratios, so the estimates are imprecise. Only 1-on-1 tackles away from the sideline and goal line were analysed, controls were matched on tracking data rather than video-measured kinematics, and the study was funded by the NFL with an NFL employee among the authors.",
+      "synthesisCaution": "Staff could read the odds ratios as the size of the risk reduction from one technique change, when the study shows associations from a small, matched sample and closing speed was the strongest and most consistent factor.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: said tackle training should address approach speed -> not an author recommendation; authors recommend reducing helmet involvement, correct head placement and torso targeting",
+            "paper.athleteDev: attributed a 'teachable targets vs broader factor' statement to the authors that is not in the text -> replaced with the reported non-significant technique variables ('did not find significant associations ... shortening steps ... bending at the waist, or the tackler's use of his arms')",
+            "paper.tldr: 'used their helmet' implied helmet tackle type was significant (OR 2.40, 95% CI 0.17 to 34.64) -> leading with helmet and helmet primary loading"
+          ],
+          "residualConcerns": "Concussion paper; clinically sensitive. NFL-funded with an NFL employee author. Year 2025 rests on the copyright line; volume and issue are placeholders (Vol. XX) and were omitted.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1672",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 46,
+      "sourceFile": "Tackler and ball carrier technique during moderate and severe injuries compared with player-matched and team-matched injury free controls in elite Rugby Union.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 59470,
+        "doi": "10.1136/bjsports-2020-103759",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case-control Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Coaching",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Video analysis of 74 tackle-related moderate and severe injuries (at least 8 days lost; 31 tacklers, 43 ball-carriers) from the South African Currie Cup, 2014 to 2018, each compared with player-matched and team-matched injury-free tackles. Injury-causing tackles scored lower on standardised technical checklists than both the same player's injury-free tackles and teammates' injury-free tackles; for example, injured front-on tacklers scored 6.19 of 16 versus 8.90 for own controls and 9.93 for team controls.",
+      "limitations": "The analysis used a single analyst, a univariate comparison without adjustment for situational factors, and checklists validated mainly for shoulder and arm tackles. Only 74 of 288 moderate and severe contact injuries could be matched to video, so the injured sample is selected.",
+      "synthesisCaution": "Staff could read the lower technique scores as proof that poor technique caused these injuries, when the study shows that injury-causing tackles were less technically proficient than matched uninjured tackles, not that the technique gap is the cause.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: placeholder '2021;0:1-10' -> omitted, year only",
+            "paper.findings: 'injured tacklers were repeatedly weaker' was ambiguous -> clarified that body position and shoulder contact were low in both injury and own-control tackles versus team controls (Table 1: upright to low I 0.56, OC 0.50, TC 0.86; contact with shoulder I 0.56, OC 0.55, TC 0.91)",
+            "screening detail in paper.limitations: '74 of 288 could be matched to video' -> 108 identified on video, 74 met criteria ('108 were identified in the video ... 74 met our criteria')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1673",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 47,
+      "sourceFile": "Tacklers' head inertial accelerations can be decreased by alterning the way they engage in contact with ball carriers torsos.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 46,
+        "extractedCharacters": 85558,
+        "doi": "10.1249/MSS.0000000000002931",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Laboratory study in which 15 healthy, uninjured male amateur or semi-professional rugby league and union players performed 455 successful front-on, one-on-one torso tackles at 80% game intensity, recorded with 3D motion capture. Four tackle instructions were compared (two standard NRL variants and two modified variants). The tacklers' peak resultant linear and angular head accelerations were highest for the hip-area (dominant NRL) tackle, and the modified 'smother ball, pop and lock' tackle produced lower tackler linear head acceleration than the standard upper-torso smother tackle.",
+      "limitations": "The sample was 15 players, the tackles were slow, performed in a laboratory, and not taken to the ground, and only 455 of 600 trials were analysed after coach and author review. Head kinematics are not concussion outcomes, so the study cannot show that these tackles reduce concussion.",
+      "synthesisCaution": "Staff could read the lower head accelerations in the modified tackles as proof that these techniques prevent concussion in matches, when the study measures laboratory head kinematics at slow speed in 15 players and the authors note the ball-carrier trade-off.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: said pop-and-lock lowered tackler angular acceleration vs smother NRL and dominant torso and stick -> Table 2 post hoc shows angular differences only for DNRL ('angular acceleration only differed in the DNRL'); pop-and-lock linear acceleration was lower than both SNRL and DTS, not only SNRL",
+            "paper.limitations: added the results-text vs Table 2 conflict on tackler angular acceleration",
+            "paper.athleteDev: presented head-up, straight-back and head-outside cues as supported coaching advice and added generic practice advice -> these features co-occurred with the modified tackles and were not tested separately"
+          ],
+          "residualConcerns": "Head kinematics only, no concussion outcome. Published-ahead-of-print manuscript; Table 2 layout is garbled in extraction, so post hoc mapping should be spot-checked.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1674",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 53,
+      "sourceFile": "Tendon and Ligament Injuries in   Elite Rugby- The Potential Genetic Influence.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 27,
+        "extractedCharacters": 103335,
+        "doi": "10.3390/sports7060138",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Narrative review of tendon and ligament injury incidence and severity in elite rugby union and rugby league, with a discussion of tendon and ligament biology and possible genetic influence on injury susceptibility. The authors report a structured search by terms and reference-list checking, not a systematic protocol. They propose nine candidate genes for study in elite rugby (COL1A1, COL3A1, COL5A1, MIR608, MMP3, TIMP2, VEGFA, NID1, COLGALT1), and state that the genetic evidence is not yet strong.",
+      "limitations": "The search is described only by terms and reference lists, with no databases, dates or inclusion criteria, so this is coded as a narrative review, not a systematic review. The genetic evidence discussed is largely candidate-gene work that the authors describe as needing much stronger support, and no new data were analysed.",
+      "synthesisCaution": "Staff could read the proposed candidate genes as usable injury-risk markers, when the paper argues they are hypotheses for future research and not tested predictors.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1675",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 63,
+      "sourceFile": "The Association Between Central Nervous System Function and Core Body Temperature in Patients With Exertional Heat Stroke.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 35898,
+        "doi": "10.1097/JSM.0000000000001383",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Retrospective cross-sectional analysis of medical charts for 25 runners (14 men, 11 women, mean age 29 years) diagnosed with exertional heat stroke at an 11 km road race medical tent. In the 22 patients with at least one documented GCS score, Glasgow Coma Scale scores were compared with rectal temperature, and the authors report a significant but weak negative correlation overall (rs = -0.255, p = 0.004, R2 = 0.06) and no significant correlation when rectal temperature was above 40 C (rs = -0.209, p = 0.108).",
+      "limitations": "The design is a retrospective chart review of 25 patients from one race, and charts were recorded by scribes who did not always document persistent signs between time points. The correlations pool repeated observations from 22 patients, and the study did not test patient outcomes of GCS-guided versus temperature-guided cooling.",
+      "synthesisCaution": "Staff may take the weak GCS correlation as evidence that mental status can stand in for rectal temperature when cooling, when the authors say it cannot be used to end cold water immersion.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary / paper.methods: correlations were not run on all 25 patients -> 22 with at least one documented GCS ('EHS patients with at least 1 documented GCS score (n = 22) were included in correlational analyses')",
+            "paper.citation: removed placeholder volume/issue/pages '00(00):1-7' ('Clin J Sport Med 2025;00:1-7'; 'Volume 00 Number 00')",
+            "paper.practicalImplications: added the authors' caveat that estimating cooling time without rectal temperature 'does not represent best practice'",
+            "screeningLimitations: replaced unclear causal sentence with the pooled-observation and no-outcome-test limits"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1676",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 64,
+      "sourceFile": "The Association Between Early Sport Specialization and Injury and Career Outcomes Among National Football League Athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 64397,
+        "doi": "10.1002/ejsc.70120",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Retrospective cohort of 2,556 male NFL draftees from 2011 to 2023 who played at least 16 career games, classified as multisport or single-sport by high school varsity participation. Multisport athletes (about 64%) had lower total and major injury incidence rate ratios than single-sport athletes (IRR 0.80, 95% CI 0.76 to 0.85; major IRR 0.77, 95% CI 0.71 to 0.82, both p less than 0.001), and played 12.2 more NFL games (95% CI 9.2 to 15.1) and 0.7 more career years (95% CI 0.5 to 0.9).",
+      "limitations": "The design is retrospective and observational, with classification and injury data taken from public records and media, and models were not adjusted for age or other player characteristics. Only injuries leading to missed games or injured-reserve designation were captured, and the cohort is elite, male and drafted, so the findings may not apply to youth players.",
+      "synthesisCaution": "Staff may read the multisport advantage as proof that early football specialization causes injury or shorter careers, when the authors state that differences in athleticism or coaching could explain the association.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.methods: added the excluded injury types, notably concussions ('Injuries related to illness (including COVID-19), concussions, upper extremity fractures, jaw fractures, and facial bone fractures were excluded') and the multisport definition",
+            "paper.findings: vague 'most evident in several position groups, including defensive backs' -> the five positions significant after FDR and the three that were not (Tables 3 and 4; 'nonsignificant findings for offensive linemen, quarterbacks, and tight ends also remained nonsignificant after adjustment')",
+            "paper.limitations: added that 'early' specialization was measured only in high school ('unable to distinguish specialization that occurred before high school (<14 years of age) ... our classification aligns with what prior studies describe as later specialization')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1677",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 66,
+      "sourceFile": "The Athlete's Heart - Allometric considerations on published papers and relation to cardiovascular variables.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 42746,
+        "doi": "10.1007/s00421-024-05449-8",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Endurance Sport",
+        "Swimming & Diving",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Pooled analysis of published data from 150 studies (PubMed searched to April 2022, plus reference lists), covering 927 male athletes in skiing, rowing, swimming, cycling, running and weightlifting, and 173 untrained male controls. Left ventricular internal diameter was 7% to 15% larger than in controls, scaled to body weight, in all athletic groups except weightlifters, while wall thickness was 9% to 24% larger in all athletes. Internal diameter correlated with stroke volume, oxygen pulse, maximal oxygen uptake, cardiac output and blood volume (r about 0.9), but wall thickness did not correlate with these variables.",
+      "limitations": "The data come from different studies and populations, mostly cross-sectional and measured at rest, and sport disciplines within a sport were not separated. The correlations are between group means, so they describe the athlete group rather than individual hearts, and they do not show cause.",
+      "synthesisCaution": "Staff could read the scaled heart size differences as individual athlete heart findings or as a reason to flag an athlete, when the paper compares group means from different studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: wall thickness link to pressure stated as supported by the evidence -> framed as the authors' interpretation ('an increase in WT may reflect the effort of the heart to generate blood pressure')",
+            "paper.athleteDev: suggested comparing athletes against 'scaled norms' -> clarified these are pooled group means, not individual norms ('Data weighted according to the number of participants in each study')"
+          ],
+          "residualConcerns": "Cardiac topic. The article is labelled an invited, narrative review but describes a PubMed search and pooled weighted means, so it was kept as Systematic Review / Meta-analysis under the scoping-review precedent; a reviewer may prefer Narrative Review. Year 2024 from the copyright line; no volume or pages printed. Only male athletes were included.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1678",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 76,
+      "sourceFile": "The Dose–Response Relationship of Exercise-Based Injury Prevention Programmes - Implications for Research and Practice.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 44641,
+        "doi": "10.1007/s40279-025-02298-z",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A Current Opinion in Sports Medicine on the dose-response relationship of exercise-based injury prevention programmes (EIPPs), with the duration of practice as the dose and injury rates as the response. The authors screened the sports RCTs in six recent systematic reviews (36 studies after de-duplication) and found that 33 (92%) did not account for any of the three effects (dilution, re-injury or interaction). They re-present two analysis approaches on one previously published athletics RCT, where the odds ratio for weekly injury prevalence moved from 0.85 (0.67-1.09) in the primary analysis to 0.28 (0.16-0.48) with the exclusion approach.",
+      "limitations": "The literature screen was non-systematic and the numerical examples come from the authors' own re-analysis of one athletics trial, which they say needs replication. No pooled estimate of the EIPP dose-response is given.",
+      "synthesisCaution": "Staff could take the 0.28 odds ratio as the true effect of a prevention programme, when it is one trial re-analysed under an approach the authors themselves say needs validation.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Article type is a Sports Medicine 'Current Opinion'. It was kept as INCLUDE (Narrative Review) because it reports a non-systematic screen of 36 RCTs and a worked re-analysis, but a reviewer may judge it an opinion piece under rule (b).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1679",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 81,
+      "sourceFile": "The Effect of Bye Weeks on Injury Event Rates in the Canadian Football League.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 29331,
+        "doi": "10.1097/JSM.0000000000001272",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Retrospective cohort of CFL regular-season games from 2011 to 2018, using 6,236 game injury events. The game injury rate in the week after a bye week did not differ meaningfully from non-bye weeks (IRR 0.96, 95% CI 0.87 to 1.05), and the 2- and 3-week cumulative rates were also unchanged (IRR 1.02 and 1.00). When practice injuries were added, the rate in the week after a bye was higher (IRR 1.14, 95% CI 1.05 to 1.23).",
+      "limitations": "Observational data from a league injury database built for clinical records, with no practice exposure counts, so the combined game and practice analysis could not use athletes-at-risk rates. The authors report residual time trends in their sensitivity analyses, which gave slightly different results from the primary analysis.",
+      "synthesisCaution": "Staff could read the non-significant 4% reduction as a bye-week benefit, or the combined game and practice rise as a bye-week harm; the study supports neither, and the rise may reflect how returning injuries are charted.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: placeholder volume and pages '2024;00:1-6' -> removed; only the year is printed for this article ('Clin J Sport Med 2024;00:1-6', 'Volume 00 Number 00')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1680",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 82,
+      "sourceFile": "The Effect of Sport Specialization on Injury Risk in NCAA Athletes - Results From the SAFE Consortium.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 27259,
+        "doi": "10.1097/JSM.0000000000001225",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Retrospective cohort of 211 NCAA athletes from the SAFE Consortium (92 male, 119 female) who completed a questionnaire on sport specialization, injury history and days away from sport. Highly specialized athletes reported more injuries of any kind than low specialized athletes, along with more upper and lower extremity injuries and more surgery, and averaged 112 days away from sport versus 85 days for low specialization. Weekly hours in sport did not differ between specialization categories.",
+      "limitations": "Injuries were self-reported on a single questionnaire that the authors say is not fully validated, with recall bias and no medical record check. The design is cross-sectional in substance, so specialization and injury history cannot be ordered in time.",
+      "synthesisCaution": "Staff could read specialization as the cause of the injuries, but a single self-reported questionnaire cannot separate cause from who chooses early specialization, or from recall error.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: placeholder '2024;00:1-5' -> removed; only the year is printed ('Clin J Sport Med 2024;00:1-5')",
+            "paper.limitations: added that injury history covers the period before and after NCAA registration ('Participants were asked to document any injury before and after registration with the NCAA')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1681",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 84,
+      "sourceFile": "The Effect of the Number of Carries on Injury Risk and Subsequent Season’s Performance Among Running Backs in the National Football League.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 24512,
+        "doi": "10.1177/2325967117691941",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Retrospective cohort of 275 NFL running back player-seasons from 2004 to 2014, grouped by 150 to 250 carries (212) or 300 or more carries (63) in a season. In the following season, 66% of the moderate-carry group missed at least one game to injury, compared with 49% of the high-carry group (P=0.016), and high-carry players missed fewer games in both seasons. Yards per carry did not differ significantly between groups in either season.",
+      "limitations": "Retrospective data from public statistics and team injury reports, with some players counted in more than one season and injury detail missing in some cases. The high-carry group is a small, selected set of durable players, and play-calling, offensive line and opponent quality were not controlled, so workload and selection cannot be separated.",
+      "synthesisCaution": "Staff could read the result as high carry loads being safe, but the high-carry group missed fewer games and the authors attribute this to who those players are, not to workload.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1682",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 87,
+      "sourceFile": "The Epidemiology of Ankle Injuries Identified at the National Football League Combine, 2009-2015.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 40969,
+        "doi": "10.1177/2325967118786227",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Retrospective chart review of 2,285 college players invited to the NFL Combine from 2009 to 2015. Of these, 1,216 (53.2%) had a history of ankle injury, with 1,445 injured ankles, and sprains made up 86.0% of ankle injuries. Among the 1,207 players with radiographs, 611 (50.6%) had radiographic ankle arthrosis, mostly grade I. Running backs (61.9%), offensive linemen (60.3%) and tight ends (59.4%) had the highest proportions of players with an ankle injury, and kickers/punters (23.3%) and long snappers (37.5%) the lowest.",
+      "limitations": "This is a prevalence of past ankle injury in a selected group of invited players, with imaging done only where history or findings prompted it (about 10% had MRI). There are no exposure data and no injury dates, so incidence cannot be calculated and the paper's comparisons with other sports are approximate.",
+      "synthesisCaution": "The 53% figure is the share of combine players with a past ankle injury, not the chance of injury in football, and the position percentages are shares of all combine players at each position, not rates per exposure.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary, synthesisCaution, paper.methods: position percentages described as using players with imaging as the denominator -> denominators are all combine players per position (Table 2 counts 126+239+308+133+370+384+239+405+73+8 = 2,285; RB 148/239 = 61.9%)",
+            "evidenceSummary: 'ankle osteoarthritis' -> radiographic arthrosis, mostly grade I (562 of 689 tibiotalar OA ankles grade I)"
+          ],
+          "residualConcerns": "Table 2 labels the position denominators 'Players at Combine With Imaging', but they sum to all 2,285 participants; a reviewer may want to confirm against the PDF.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1683",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 88,
+      "sourceFile": "The Evolving Treatment Patterns of                        NCAA Division I Football Players by Orthopaedic Team           Physicians      Over     the     Past Decade, 2008-2016.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 36516,
+        "doi": "10.1177/1941738117745488",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate"
+      ],
+      "evidenceSummary": "Repeated survey of head orthopaedic team physicians for NCAA Division I football teams: 111 of 119 responded in 2008, and 115 of 128 responded between April 2016 and April 2017. Preferences shifted over the decade: patellar tendon autograft for ACL reconstruction rose from 67% to 83%, arthroscopic anterior shoulder stabilization from 69% to 93%, and arthroscopic single-bundle PCL reconstruction from 49% to 83%, while pregame Toradol use fell from 62% to 26% of physicians.",
+      "limitations": "The data are stated preferences from physicians, not clinical outcomes, and the authors name this as the main limitation. Response rates were 93% and 90%, and the 2008 survey comes from an earlier study, so some change may reflect who responded.",
+      "synthesisCaution": "Staff could read a shift in preference as proof that the newer techniques work better, but these numbers show what physicians prefer, not what gives better results.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "The sample is head orthopaedic team physicians, not athletes; the Collegiate tag describes the NCAA Division I football players they treat. Toradol and return-to-play content makes this clinically sensitive.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1684",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 90,
+      "sourceFile": "The Fragility Index of Risk Factors for Hamstring Injuries.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 39215,
+        "doi": "10.2519/jospt.2024.12300",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Retrospective secondary analysis of 41 studies of hamstring injury risk factors, identified by a systematic search of eight databases (January 2019 to October 2022) plus 78 articles from a prior review. Each study's 2x2 data were recalculated to find how many injured high-risk athletes would have to be reclassified before a relative risk stopped being significant. Across 262 variables, 63 were significant, with a median Fragility Index of 3 (Q1-Q3 2-6).",
+      "limitations": "The Fragility Index was designed for equal-sized randomised trials and was applied here to unbalanced observational data, and it ignores sensitivity and specificity. Only significant factors were analysed, and about one in three potentially eligible studies lacked the data needed for the calculation.",
+      "synthesisCaution": "Reading a Fragility Index of 3 as the size or importance of a risk factor, rather than as a measure of how few athletes would need to change status to remove significance.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: listed 3 authors before et al. -> first 6 of the 9 printed authors before et al., per house rule (byline 'MATTHEW ANTHIS ... ROD WHITELEY ... RYAN TIMMINS ... DAVID A. OPAR')",
+            "paper.limitations: attributed the 'one third' figure to the results section -> the Discussion ('One-third of all significant risk factors for hamstring injury had a Fragility Index of <=2')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1685",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

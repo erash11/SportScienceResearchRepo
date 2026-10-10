@@ -1,0 +1,1270 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-98-training-performance",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Training & Performance queue positions 1-95. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 1,
+      "sourceFile": "Sports Medicine - Nutritional Sciences and Nutritional Biochemistry, Focusing on Nutritional Supplements from the FFNFO Framework to Contamination.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial for a special issue. It summarises the special-issue papers and discusses the FFNFO framework and supplement contamination, with no original methods or structured review of evidence of its own.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: said the editorial 'proposes a framework' -> it cites the FFNFO framework from other authors ('Recently, some authors have introduced the framework Food First but Not Always Food Only (FFNFO)')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 2,
+      "sourceFile": "Sports concussions- can head impact sensors help biomedical engineers to design better headgear.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial (BJSM commentary by Wu on head impact sensors and headgear design). It reviews and comments on other work and has no original methods or structured review of its own.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [
+            "sourceFile: restored the exact inputs.json string (non-breaking space and trailing private-use character) that the draft had normalised"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 4,
+      "sourceFile": "Sports performance - is there evidence that the body clock plays a role.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 59347,
+        "doi": "10.1007/s00421-009-1066-x",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of the time-of-day pattern in athletic performance and whether the internal body clock contributes to it. It draws on laboratory and simulated-competition studies of strength, power, running, swimming, cycling and skilled tasks. The authors report performance peaks at about 15:30 to 20:30 hours, with amplitudes of 2 to 11 percent of the daily mean in studies that sampled at least six times across 24 hours.",
+      "limitations": "This is a narrative review with no described search method, so the choice of studies cannot be checked. The authors note that much of the cited work is short-duration and of poor quality, and that the body clock cannot yet be separated from time awake and environmental factors.",
+      "synthesisCaution": "Staff could read the evening performance peak as proof that the body clock drives it, when the authors say current evidence cannot separate the body clock from sleep, time awake and environmental cues.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: 'small or unbalanced designs' is not stated in the text -> poor-quality data and too-infrequent sampling ('many have compared performances at only two times of day'; 'sampling has been too infrequent')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1646",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 6,
+      "sourceFile": "Sprint running- from fundamental mechanics to practice—a review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 79100,
+        "doi": "10.1007/s00421-019-04139-0",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Track & Field",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Invited narrative review that applies fundamental mechanical principles to sprint running research. It assesses spring-mass models, force and power analyses based on total and horizontal (end-goal) force, and common coaching concepts. The authors argue that some models and power calculations from isolated horizontal force can lead to misinterpretation.",
+      "limitations": "This is a narrative review with no described search method, so the choice of literature cannot be checked. It is largely a theoretical argument, and its own calculations are illustrations that reuse previously published data sets rather than a new study.",
+      "synthesisCaution": "Staff could treat a model that fits sprint kinematics as proof of the underlying mechanism, which the authors say a model cannot establish.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "sourceFile: restored the exact inputs.json string (non-breaking spaces and dash) that the draft had normalised",
+            "paper.citation: title rewritten as '(a review)' -> 'from fundamental mechanics to practice - a review' (printed title uses a dash)",
+            "paper.athleteDev: 'the review gives no training prescription' -> the authors state 'sprint conditioning in most well-trained senior sprinters should be targeted to enhance step rate'",
+            "screeningLimitations/limitations: 'reports no new athlete data' -> its own calculations reuse previously published data sets (e.g. 'We calculated leg stiffness for our own data (national level sprinters)')"
+          ],
+          "residualConcerns": "Online-first version: only the 2019 copyright and received/accepted dates are printed, with no volume, issue or pages.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1647",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 7,
+      "sourceFile": "Sprint vs isolated eccentric training - Comparative effects on hamstring architecture and performance in soccer players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 72608,
+        "doi": "10.1371/journal.pone.0228283",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Healthy Athletes",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Soccer players from an elite regional division were randomly assigned within matched pairs to a sprint group, a Nordic hamstring exercise group or a soccer-only group for the six preseason weeks; 32 were recruited and 23 completed (8 sprint, 7 Nordic, 8 soccer-only). The sprint group showed small to large within-group improvements in sprint acceleration performance (5 m and 20 m times) and mechanical outputs, except only a small gain in maximal velocity, and a moderate increase in biceps femoris long head fascicle length, compared with a smaller increase in the Nordic group. Only the Nordic group showed a small increase in pennation angle.",
+      "limitations": "Very small analysed groups (7 to 8 per group), with no record of match or training load, and two-dimensional ultrasound estimates of fascicle length that the authors note have known limits. Between-group sprint differences versus soccer-only were mostly trivial or unclear, and injury was not measured.",
+      "synthesisCaution": "Staff could read the fascicle-length gain as proof that sprint training prevents hamstring injury, when the study measured muscle architecture and sprint performance only.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/tldr/practicalImplications/athleteDev: '50 m sprint performance' -> 5 m and 20 m times and acceleration mechanics (50 m was the test distance; 'sprint performance was described via the measurement of 5 m (s) and 20 m (s) times')",
+            "paper.rtp: 'players without recent hamstring injury' -> exclusion covered hip, knee or lumbo-pelvic joint injury, and previous hamstring injury was a matching variable ('matched depending on their position ..., playing status ..., and previous hamstring injury')",
+            "screeningLimitations/limitations: added that between-group sprint changes versus soccer-only were mostly trivial or unclear (Table 3: F0 0.07, RFmax 0.01, 5 m 0.11 'Trivial') and that magnitude-based inference was used",
+            "populations: Mixed / Unspecified -> Professional / Elite (players from 'the same Elite Division of Football Association of Porto')",
+            "methods: added randomised allocation within matched pairs and the full outcome set ('randomly assigned')"
+          ],
+          "residualConcerns": "The 'Elite Division' is a regional association league, so the Professional / Elite tag may overstate level; sex is not stated. Table 1 shows seven week-columns for a six-week program. Some Table 3 between-group signs look inconsistent with Table 2 within-group changes for the Nordic group.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1648",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 8,
+      "sourceFile": "Sprinting - A key piece of the hamstring injury risk management puzzle.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial (BJSM commentary by Edouard et al. proposing a sprint-based hamstring risk management approach). It has no original methods or structured review of evidence of its own.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 9,
+      "sourceFile": "Sprinting - A potential vaccine for hamstring injury.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial or commentary: a two-page viewpoint article that argues for a position on sprinting and hamstring injury prevention ('we think', 'we suggest') with no original methods and no structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 15,
+      "sourceFile": "Strength and power training in rehabilitation - Underpinning principles and practical strategies to return athletes to high performance.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "Duplicate: this is the same article as ID 614 (Maestroni L, Read P, Bishop C, Turner A; Sports Medicine 2020;50(2):239-252; DOI 10.1007/s40279-019-01195-6), filed under another filename. ID 614 is kept as the library record.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 16,
+      "sourceFile": "Strength training - In search of optimal strategies to maximize neuromuscular performance.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "Journal issue year not printed: the text is the ESSR 'Published Ahead-of-Print' version with no volume, issue, pages or online publication date; only an acceptance date (07/20/2020) and a 2020 copyright line appear. Own DOI is printed; all other fields are complete.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: INCLUDE -> DEGRADED; journal issue year not printed ('ESSR Published Ahead-of-Print', 'Accepted: 07/20/2020')",
+            "paper.year: 2020 -> null (2020 appears only as acceptance and copyright year)",
+            "paper.citation: '2020 (published ahead of print)' -> 'Published ahead of print.'",
+            "findings: added that doubling classical volume (8x6) gave a slightly larger 1RM gain than 3/7 ('slightly increased (p<0.05) the gain in 1RM load (35.9%) compared with the 3/7 method')",
+            "practicalImplications: 'BFR may suit patients and older or untrained people' -> benefits shown in frail and sarcopenic patients ('hypertrophy and strength in frail and sarcopenic patients'); noted 8x6 result",
+            "practicalImplications: framed 3/7 as suited to 'time-limited trainees' -> efficacy is defined as 'amount of progress relative to the total number of repetitions', not time"
+          ],
+          "residualConcerns": "Year withheld because only the ahead-of-print version is in the text; operator should confirm the issue year and volume externally and upgrade the decision.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 17,
+      "sourceFile": "Strength training with intermittent blood flow restriction improved strength without changes in neural aspects on quadriceps muscle.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 47246,
+        "doi": "10.1016/j.scispo.2018.10.012",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Twenty healthy men with at least 6 months of resistance training experience (mean age 23 years) were randomly assigned to 6 weeks (2 sessions per week) of unilateral knee extension at 20% of predicted 1RM, either with intermittent vascular occlusion (LIVO, n = 11) or without (LI, n = 9). Predicted 1RM rose significantly within the LIVO group in both legs (right 36.5 to 47.9 kg; left 35.9 to 47.4 kg), while the LI group's rise (right 29.9 to 37.9 kg; left 29.8 to 36.9 kg) was not significant, and no between-group differences in predicted 1RM were found at any session. Surface EMG RMS was higher in the LIVO group than the LI group in several sets during training sessions 1, 7 and 12, but RMS and median frequency did not change across the training period in either group.",
+      "limitations": "Very small groups (9 to 11 men), a single unilateral exercise, and 1RM estimated from a repetitions test rather than measured directly. Hypertrophy was not measured, so the strength gain cannot be attributed to muscle growth in this study.",
+      "synthesisCaution": "Staff could read this as showing occlusion training beats the same low-load training without occlusion, but the groups never differed significantly in predicted 1RM; only the within-group change in the LIVO group reached significance.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings: LI group's non-significant rise was omitted, making BFR look uniquely effective -> added LI values ('from 29.93 ± 8.41 kg to 37.91 ± 8.72 kg, P > 0.05')",
+            "synthesisCaution: reframed to the main over-read risk, the absent between-group difference ('No differences between groups in any session for both lower limbs were found')",
+            "tldr/practicalImplications/abstract/athleteDev: qualified strength gain as within-group, not superior to non-occluded training; hypertrophy explanation marked as unmeasured ('Despite hypertrophy not being measured in this research')",
+            "limitations: added lower LI baseline predicted 1RM"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1649",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 18,
+      "sourceFile": "Strength, conditioning, and nutritional considerations for high-level performers.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 57401,
+        "doi": "10.1123/kr.2019-0062",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Performance",
+        "Nutrition",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "A single-author narrative review of the history, professional roles and program components of strength and conditioning and sport nutrition for high-level athletes. It covers training principles (specificity, overload, progression, variation), periodization, and energy and macronutrient ranges by sport type (Table 2). It also summarizes the International Society of Sports Nutrition evidence grades for muscle-mass and performance supplements (Tables 3 and 4). No search method is described.",
+      "limitations": "No systematic search or evidence grading method is described, so the coverage and selection of sources cannot be checked. The author discloses research grants, performance-consulting roles, a scientific advisory role for nutrition companies, and expert witness work.",
+      "synthesisCaution": "Staff could treat the energy and macronutrient ranges or the ISSN evidence tiers as individual prescriptions, when the paper presents them as general guidance for active people and athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: ISSN strong-evidence lists were incomplete -> listed all Table 3 and 4 strong-evidence entries ('Calcium HMB (untrained)'; 'Sodium bicarbonate', 'Sodium phosphate', 'Water and glucose electrolyte solution', 'Energy drinks and preworkout supplements')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1650",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 21,
+      "sourceFile": "Strong and stringent hamstring strain science - trials and error.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial or commentary: a 2-page BJSM editorial (Thorborg K, Ishoi L, Krommes K) that proposes four steps for hamstring trial methodology. It has no original methods and no structured review of the evidence; its trial counts are informal illustrations.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 23,
+      "sourceFile": "Subclinical brain mainfestations of repeated mild traumatic brain injury are changed by chronic exposure to sleep loss, caffeine, and sleep aids.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) Not relevant to athletes, sport, exercise performance or athlete health. This is a laboratory study in 80 male Sprague-Dawley rats given repeated head rotational acceleration injuries, then caffeine, sleep restriction or zolpidem; no athletes, sport or exercise were studied, and any link to athlete health is indirect. Operator may override if the library admits animal concussion models.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Decision rests on treating a rat concussion model as not athlete evidence (no human, athlete or sport sample; sport mentioned only in the introduction). No library precedent for a pure animal study was found; operator should confirm the policy. If included, DOI 10.1016/j.expneurol.2024.114928 and year 2024 (Experimental Neurology 381 (2024) 114928) are printed.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 24,
+      "sourceFile": "Subconcussive is a dangerous misnomer - Hits of greater magnitude than concussive impacts may not cause symptoms.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial or commentary: a 3-page BJSM editorial (Nowinski CJ, Rhim HC, McKee AC, et al.) that argues for replacing 'subconcussive' with 'non-concussive' and 'subclinical TBI'. It has no original methods and no structured review of the evidence; the studies it cites are used to illustrate the argument.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 31,
+      "sourceFile": "Summary of the 2024 Professionals in Nutrition for Exercise and Sport “10 Questions -10 Experts” Session—Hot Topics for the Paris Olympic Games.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(a) source identity mismatch: the filename names the 2024 Professionals in Nutrition for Exercise and Sport '10 Questions/10 Experts' Paris Olympics hot-topics summary, but the text is the 2025 ACSM session summary 'Can Everyday Foods Replace Some Ergogenic Supplements and Commercially Available Sports Foods?' (IJSNEM, ahead of print, online 16 Oct 2025). No Paris Olympics content appears in the text.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "The correct Paris Olympics PINES summary PDF should be located and re-catalogued; the file holds the 2025 session summary (doi 10.1123/ijsnem.2025-0161).",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 40,
+      "sourceFile": "THEDEV~1.PDF",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) study protocol, no results: the text is the BMC Sports Science, Medicine and Rehabilitation protocol for the HAMIR observational cohort study ('The development of a HAMstring InjuRy (HAMIR) index ... protocol for an observational cohort study', Heiderscheit et al. 2022), which describes planned methods and reports no results.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "identityCheck: 'cannot be matched' -> the truncated name THEDEV matches the opening words of the text title 'The development of a HAMstring InjuRy (HAMIR) index'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 42,
+      "sourceFile": "Tackle Height and Tackle Success—An Analysis of 52,204 Tackle Events.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 60435,
+        "doi": "10.1002/ejsc.70003",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Coaching",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Video analysis of male rugby union matches from England, New Zealand, South Africa, Portugal and the USA, across seven groups from U12 to Senior Elite, using a multilevel logistic regression of tackle success on tackle type and first point of contact. Active shoulder and smother tackles had the highest probability of success and arm tackles the lowest; in the junior groups, shoulder contact had a higher probability of success than mid-torso contact, while at senior levels the gap was small (for example, active shoulder tackles at Senior Elite: shoulder 86%, mid-torso 82%).",
+      "limitations": "Video-coded tackle outcomes only, with no injury data, so the findings cannot show whether a contact height is safer. Only tackle type, contact point and a set of situational covariates were modelled, and tackle success was dichotomised, so the findings describe performance associations in male players only.",
+      "synthesisCaution": "Staff could read the shoulder-contact advantage as a reason to coach shoulder contact at all levels, when the authors recommend mid-torso contact for safety and the performance gap at senior levels is only a few percentage points.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: said active shoulder and smother tackles did not differ significantly from U16 upward -> Table 4 shows U18 Amateur active vs smother 3 (0 to 6), p = 0.043; conflict with text noted in limitations",
+            "paper.findings: implied shoulder over mid-torso advantage was a junior finding -> Table 3 shows shoulder vs mid-torso significant at every level including seniors; leg over mid-torso at U12 to U16, not only U12"
+          ],
+          "residualConcerns": "Text and tables disagree on senior shoulder vs mid-torso and on active vs smother at U18 Amateur; record follows the tables.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1651",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 43,
+      "sourceFile": "Tackle and ball carrier demands of rugby league - A seven-year league-wide study including over 1,000,000 tackle events.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(a) source identity mismatch: the filename names a seven-year league-wide study of tackle and ball carrier demands with over 1,000,000 tackle events, but the text is 'Tackle Risk Factors for Head Injury Assessments (HIAs) in Sub-Elite Rugby League and Recommendations for Prevention' (Lang et al., Sports Medicine - Open, 2024; 10:43), a single-season study of 131 HIAs and 2,088 control tackles from the 2019 Queensland Cup.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "The Lang et al. HIA paper (doi 10.1186/s40798-024-00696-7) is eligible in its own right if catalogued under its correct filename; the filename's seven-year study text is not in this file.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 48,
+      "sourceFile": "Tackling rugby safety through a collective approach.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) editorial or commentary piece: the text is marked 'Editorial' in the Br J Sports Med header and presents a position on a collective, socioecological approach to tackle safety without original methods or a structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 49,
+      "sourceFile": "Taking the plunge - When is best for hot water immersion to complement exercise in heat and hypoxia.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 42486,
+        "doi": "10.1080/02640414.2022.2133390",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomised, repeated-measures laboratory study in 10 recreationally active men who completed three repeated-sprint sessions in hypoxia (about 3000 m simulated altitude) at 40 C. Hot water immersion (30 min at 40 C) was given before the session (PRE), after it (POST), or not at all (CON). PRE reduced mean and peak power output and total work by about 15 to 17 percent compared with POST and CON, while POST power and core temperature during exercise were similar to CON.",
+      "limitations": "Ten recreationally active men were tested acutely, so the study shows single-session responses only and cannot show chronic heat acclimation or training adaptation. Participants were not trained athletes and fitness (VO2max) was not measured.",
+      "synthesisCaution": "Staff could read POST as a proven way to add heat to hypoxic sprint training, but the authors state that none of the findings support using POST over CON in an acute setting and that chronic effects remain untested.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'thermal sensation did not differ between conditions' was too broad (post-period thermal sensation did differ, Table 2 condition p = 0.006) -> limited to thermal sensation during exercise ('TS values were no different between conditions')"
+          ],
+          "residualConcerns": "Year 2022 is the online-first year ('Published online: 20 Oct 2022'); no volume, issue or pages are printed.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1652",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 51,
+      "sourceFile": "Telling the Whole Story - Bibliometric network analysis to evaluate impact of media attention on chronic traumatic encehalopathy research.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(c) not relevant to athletes, sport, exercise performance or athlete health. The paper is a cross-sectional bibliometric and altmetric analysis of citations, news coverage and social media reach for CTE publications. It measures publication impact, not athlete health, performance or sport outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Borderline relevance call. The short communication (Journal of Neurotrauma 2023;40:148-154, DOI 10.1089/neu.2022.0266) has original bibliometric methods and is about contact-sport CTE research, but its outcomes are citations, Altmetric scores and media reach, not athlete health. A reviewer may prefer INCLUDE if research-landscape papers are wanted in the library.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 57,
+      "sourceFile": "The 11 evidence-informed and inferred principles of microcycle periodization in elite football.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text; only reference-list DOIs appear. Otherwise the full text is readable and complete.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: speed exposure linked to 'lower injury rates' -> specifically lower match hamstring injury rates ('near-to-MSS exposures, particularly at >95% MSS ... during training sessions close to the match day (MD-2) are associated with lower rates of hamstring injuries'; 627 players, 96 injuries)",
+            "paper.citation: journal name 'Sports Performance Science Reports' is not printed in the text -> 'SPSR' as printed ('SPSR - 2024 | February | 218 | v1')"
+          ],
+          "residualConcerns": "Text extraction drops the letter t, so a DOI could be garbled; none of the article's own was found. Journal full name and DOI should be confirmed externally.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 61,
+      "sourceFile": "The Algorithmic Athlete - A Call to Standardize Assessment of Sensor Technologies and Artificial Intelligence.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial or commentary: an IJSPP editorial by Dhahbi and Chamari (first published online 2026) that calls for standard validation frameworks for AI and sensor technologies. It has no original methods and no structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 65,
+      "sourceFile": "The Association Between Training Load and Performance in Team Sports- A Systematic Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 32,
+        "extractedCharacters": 132160,
+        "doi": "10.1007/s40279-018-0982-5",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Rugby",
+        "Basketball",
+        "Volleyball",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Professional / Elite",
+        "Collegiate",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "Systematic review of 26 observational studies of team sport players, searched in PubMed, SPORTDiscus and PsycINFO for articles published before July 2018, with quality scores of 6 to 10 out of 11. Soccer was the most studied sport (11 studies), and 20 studies monitored only males. The authors report that training exposure was more strongly associated with aerobic performance than other external load measures, that heart rate-based high-intensity activity (90% of maximum heart rate or above) and the individualized training impulse model were strongly associated with aerobic performance, and that session RPE and other training impulse models showed weak associations.",
+      "limitations": "The authors synthesized findings narratively and did not pool effect sizes, so the associations cannot be read as a single weighted estimate. The included studies were mostly small, used different load measures and statistics, and many analysed only significance or only effect size.",
+      "synthesisCaution": "Staff could read the association between heart rate-based high-intensity activity and aerobic gains as a proven dose to prescribe, when it is an association across small, mostly soccer studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings: training exposure was described as among the strongest aerobic correlates overall -> it was stronger only relative to other external load measures ('Training exposure was more strongly associated with aerobic performance than other external training load measures')",
+            "evidenceSummary: 'most included players were male' -> 20 studies monitored only males, one only females, five unreported ('20 studies monitored only males, one monitored only females')",
+            "paper.limitations: claim that few studies used repeated-observation regression is a future-direction recommendation, not a finding -> replaced with the field-based-only caveat ('all of the relevant studies in this review were conducted in field-based sports')"
+          ],
+          "residualConcerns": "Year 2018 taken from the copyright line ('Springer Nature Switzerland AG 2018'); no volume, issue or pages are printed, so the citation omits them.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1653",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 67,
+      "sourceFile": "The Benefits of Research-Embedded Training Camps in Sport Sciences.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Invited commentary by Girard and Brocherie on research-embedded training camps. It has no original methods and no structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 68,
+      "sourceFile": "The Braking Performance Framework - Practical Recommendations and Guidelines to Enhance Horizontal Deceleration Ability in Multi-Directional Sports.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 31,
+        "extractedCharacters": 139531,
+        "doi": "10.47206/ijsc.v4i1.351",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Performance",
+        "Rehabilitation",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Practitioner-focused narrative review that proposes a Braking Performance Framework for horizontal deceleration in multi-directional sports, built on the neuromuscular and biomechanical determinants of deceleration. It sorts training methods into three categories: braking elementary exercises (for example high eccentric loading, including flywheel work, and eccentric yielding isometrics), braking development exercises (for example fast eccentric loading and overcoming isometrics) and braking performance exercises (unanticipated, contextual and game-specific decelerations). The authors give programming tables and note limited research on assisted braking steps and unknown dose-response for several methods.",
+      "limitations": "No search method is described, and the framework is an expert synthesis rather than a tested intervention. The authors note that much of the supporting evidence is limited, so the programming guidelines are not validated outcomes.",
+      "synthesisCaution": "Staff could treat the framework's exercise progressions as proven training effects on deceleration, when the authors describe much of the supporting evidence as limited.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings: framework described as two categories with overcoming isometrics and change of direction under braking performance -> three categories, with overcoming isometrics under braking development ('three main exercise categories: 1) braking elementary exercises, 2) braking development exercises, and 3) braking performance exercises')",
+            "evidenceSummary: 'eccentric quasi-isometric' work is not in the text -> removed; elementary methods listed as printed ('high eccentric loading ... eccentric yielding-isometrics')",
+            "paper.findings: dose-response limitation made specific ('the minimum effective dosage is currently unknown')"
+          ],
+          "residualConcerns": "Volume and issue appear only inside the DOI (v4i1), not printed as citation details, so they were omitted. Year 2024 is printed in the citation header.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1654",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 71,
+      "sourceFile": "The Correlations Between Training Load Parameters and Physical Performance Adaptations in Team Sports - A Systematic Review and Meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 26,
+        "extractedCharacters": 121217,
+        "doi": "10.1186/s40798-025-00952-4",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Rugby",
+        "Basketball",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Professional / Elite",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "Systematic review and meta-analysis of 40 studies with 726 men and women team sport players, searched in PubMed, Scopus, SPORTDiscus and Web of Science, with an updated search in September 2025. Heart rate-based training impulse correlated with changes in maximal oxygen uptake (r = 0.63), velocity at 2 mmol/L blood lactate (r = 0.47) and velocity at the onset of blood lactate accumulation (r = 0.43). Session RPE correlated with changes in velocity at 2 mmol/L lactate (r = 0.29), and external load measures showed weak associations with strength, power and speed.",
+      "limitations": "The GRADE certainty for every analysis was judged very low, mainly because of risk of bias and imprecision, and the studies were heterogeneous in sport, sex, level and load measures. Most studies were in soccer and other outdoor team sports, so the pooled correlations may not generalize to other sports.",
+      "synthesisCaution": "Staff could read the pooled correlations as a prescription that heart rate training impulse will produce a given VO2max gain, when the authors rate the evidence as very low certainty.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: added the sRPE and sprint result and the study mix ('correlation between sRPE and changes in linear sprint performance across >10 m was significant, small, and negative (r = -0.23 ...)'; 'most included studies investigated soccer players (n = 27)')",
+            "paper.limitations: claim that few studies covered youth is not in the text -> removed; imprecision made specific ('falling well below the optimal sample size of 800 participants')"
+          ],
+          "residualConcerns": "The direction of the sRPE and sprint correlation is described as 'potentially maladaptive' in the text but the figure caption says a negative correlation means higher load went with better sprint performance; a reviewer should check before quoting its meaning.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1655",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 72,
+      "sourceFile": "The Current State of Subjective Training Load Monitoring—a Practical Perspective and Call to Action.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Self-described commentary (Current Opinion) by Coyne et al. giving a practical perspective and call to action. It has no original methods and no structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Labelled Current Opinion and self-described as a commentary, although it discusses published evidence at length; exclusion (b) follows the article's own label.",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 73,
+      "sourceFile": "The Deceleration Dilemma - Leveraging The Relationship Between Quadriceps Function and Deceleration to Optimize Return to Sport.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Clinical commentary (IJSPT Clinical Viewpoint) that offers opinion, two suggested clinical tests and exercise examples. No original methods and no structured review of evidence; the single sEMG tracing is one illustrative patient, not a study.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 74,
+      "sourceFile": "The Deceleration Index - Is it the missing link in rehabilitation.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial commentary (IJSPT Editorial) arguing for the deceleration index. It has no methods, no data and no structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 75,
+      "sourceFile": "The Doctor is (Not) In - Implications of Increased Medical Malpractice Litigation on Team Physicians in the National Football League.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Law review student comment (Jeffrey S. Moorad Sports Law Journal, 2025) arguing a legal and policy position on malpractice liability for NFL team physicians. It has no original methods and no structured review of health evidence; it also offers no athlete health or performance evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "exclusionReason: coded (c) not relevant -> (b) opinion piece without methods; the text calls itself a Comment ('This Comment is brought to you') and the topic, NFL players' medical care, is athlete-health adjacent, so (b) fits better. Decision unchanged."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 77,
+      "sourceFile": "The Dose–Response of the Nordic Hamstring Exercise on Biceps Femoris Architecture and Eccentric Knee Flexor Strength_- A Randomized Interventional Trial.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 36411,
+        "doi": "10.1123/ijspp.2021-0276",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized trial of 40 recreationally active males allocated to four 6-week Nordic hamstring exercise (NHE) volume protocols (intermittent low, low, initial high then low, and progressively increasing), each followed by 4 weeks of detraining. Within groups, biceps femoris long head fascicle length rose after training in group 3 (+0.83 cm, +7%) and group 4 (+1.48 cm, +14%), and eccentric knee flexor strength rose in groups 2, 3 and 4 (+14% to +19%); group 4 was stronger than group 1 at posttest (+94.2 N).",
+      "limitations": "Groups of 10 recreationally active men with no untrained control group, and the fascicle-length values are estimated from an equation because the ultrasound field of view cannot capture whole fascicles. The group x time interaction for fascicle length was not significant (P = .147), so volume-specific architecture claims rest on within-group changes.",
+      "synthesisCaution": "Staff could read the within-group fascicle gains in the high-volume arms as proof that high volume beats low volume, but the between-group test for fascicle length was not significant.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr: said low volume of 24 or 48 total reps increased strength -> only the 48-rep weekly group increased strength; the 24-rep fortnightly group did not ('as few as 48 repetitions in 6 weeks did increase strength'; group 1 'no change (-1%) in strength')."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1656",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 78,
+      "sourceFile": "The Efect of Nordic Hamstring Exercise Intervention Volume on Eccentric Strength and Muscle Architecture Adaptations- A Systematic Review and Meta‑analyses.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 56085,
+        "doi": "10.1007/s40279-019-01178-7",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Rugby"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A PRISMA-guided systematic review and meta-analysis of 13 NHE training studies (searched in SPORTDiscus, Ovid and PubMed) that measured eccentric strength or biceps femoris architecture after at least 4 weeks. Individual-study pre-post effects after 6 or more weeks were large to very large for eccentric strength at both high and low volumes (abstract: g = 2.12 and 2.28) and very large for fascicle length (g of 2.58 or more), with pennation angle falling by a large to very large amount (g of 1.31 or more). No trend by volume was found, but volumes were not compared statistically.",
+      "limitations": "The effects are pre-post changes within each study, not tested comparisons between high and low volume, and study quality was low to moderate (TESTEX 3 to 11 of 15, mean 6) with high heterogeneity (I2 = 62% for strength, 88% for architecture). No protocol was pre-registered, and most studies did not report compliance.",
+      "synthesisCaution": "Staff could read the large within-study gains as proof that low-volume NHE works as well as high-volume NHE, but the review did not statistically compare volumes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: called g = 2.12 and 2.28 'pooled' effects -> individual-study pre-post effects as reported in the abstract; results say 'Only one study which assessed eccentric peak torque showed very large increases (g = 2.12)'.",
+            "paper.findings: attached the strength g values to fascicle length as well -> strength and fascicle length effects reported separately per results.",
+            "paper.methods: omitted fail-safe N and the search end date -> added ('fail-safe N using the Rosenthal method'; 'restricted to 1 December 2018').",
+            "paper.limitations: added the abstract versus results conflict on g = 2.28."
+          ],
+          "residualConcerns": "The abstract's g = 2.28 for low-volume strength does not appear in the results text; check the forest plots (Fig. 3 and 4) if the value matters.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1657",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 79,
+      "sourceFile": "The Efectiveness of Resisted Sled Training (RST) for Sprint Performance- A Systematic Review and Meta‑analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 23,
+        "extractedCharacters": 86442,
+        "doi": "10.1007/s40279-018-0947-8",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Rugby",
+        "Track & Field"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A systematic review and meta-analysis of 13 intervention studies of resisted sled training (RST) on sprint time, searched in PubMed, SPORTDiscus and Web of Science to January 2018, in at least recreationally active participants (144 in the acceleration analysis). Sprint time improved pre-post in the acceleration phase (ES 0.61) and the full sprint (ES 0.36), but not in the maximum-velocity phase (ES 0.27, P = .25). In the studies with control groups, RST was not significantly better than the same training without a sled in any phase.",
+      "limitations": "Most of the pooled effects are pre-post changes, and only 10 of 13 studies had a control group. Several subgroups rest on one or two studies (for example, the only study with more than 2 sessions a week, which gave ES 1.85), and the funnel-plot bias check was visual.",
+      "synthesisCaution": "Staff could read the acceleration gain as a benefit of the sled itself, but RST did not beat the same sprint training without a sled, so the gain may come from sprint training in general.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr: 'does not improve top speed' and prescription stated as a finding -> non-significant maximum-velocity change, prescription attributed to the authors (ES 0.27, p = 0.25).",
+            "paper.findings: added non-significant female (ES 0.14) and high-load subgroups ('non-significant improvements were found for female sex (ES 0.14)'; 'higher loads (>= 20% BM; ES 0.63)').",
+            "paper.athleteDev: added that RST did not beat unresisted sprinting and sourced the vertical-force suggestion ('Perhaps plyometric training')."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1658",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 80,
+      "sourceFile": "The Effect of A Flywheel Hip Extension Vs A Traditional Hip Extension Exercise on Hamstring Strength.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 41912,
+        "doi": "10.47206/ijsc.v4i1.272",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "Randomised trial of 20 U-20 male soccer players (22 enrolled, 2 withdrew for unrelated injury) assigned to a flywheel Romanian deadlift (n = 10) or a traditional Romanian deadlift (n = 10), twice weekly for 6 weeks alongside usual training, with no control group. Eccentric hamstring strength rose 13% (37 N, P = .03) in the flywheel group and 5% (14 N, P = .282) in the traditional group, while 3RM Romanian deadlift rose 18% (flywheel) and 28% (traditional), both P < .001; the group x time interaction was significant for 3RM (P = .02) but not for eccentric strength (P = .18).",
+      "limitations": "Ten players per group, six weeks only, no control group, and usual soccer training and pre-existing training experience were not controlled. The between-group test for eccentric strength was not significant, so a flywheel advantage is not established even though the within-group gain was.",
+      "synthesisCaution": "Staff could read the flywheel group's significant eccentric gain as proof that flywheel RDL beats traditional RDL for hamstring strength, when the between-group interaction for eccentric strength was not significant (P = .18) and the traditional group gained more 3RM.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.methods: eccentric strength device given as Nordbord -> Hamstring Solo ('positioned on a Hamstring Solo (Hamstring Solo Elite, Kilkenny, Ireland) device').",
+            "screeningLimitations: 'no matched training history' -> pre-existing training experience not controlled; all had at least 12 months of resistance training ('athletes' pre-existing training experience ... may have contributed').",
+            "paper.limitations: listed all four text versus Table 2 effect size differences."
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1659",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 83,
+      "sourceFile": "The Effect of a Synthetic-Grass Sport Surface on Physiology and Perception During Intermittent Exercise in Hot Conditions.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 35092,
+        "doi": "10.1123/ijspp.2024-0095",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Randomized crossover trial in 13 trained or developmental team-sport athletes (9 male, 4 female) who completed a 50-minute intermittent running protocol on synthetic and natural grass in hot conditions, one week apart. Skin temperatures at the calf, shoulder and chest, sweat rate and thermal sensation were higher on synthetic grass, while final core temperature was slightly higher on natural grass (38.4 vs 38.2 C). The change in core temperature, heart rate, thermal comfort and RPE did not differ between surfaces.",
+      "limitations": "The sample is small (13 athletes), each tested once per surface in a single 50-minute protocol, and the authors note they were likely partly acclimatized. Ambient conditions differed slightly between the two test days (mean air temperature 2.5 C, humidity 10.3%, WBGT 0.6 C), which the counterbalanced design was meant to offset.",
+      "synthesisCaution": "Higher skin temperature and thermal sensation on turf could be read as greater heat strain, but the change in core temperature, heart rate and RPE did not differ, so the study does not show more core-temperature strain on synthetic grass.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "primaryDomain: Athlete Wellbeing -> Training & Performance (study measures physiological and perceptual heat strain during a standardized running protocol)",
+            "populations: Mixed / Unspecified -> Adult / Recreational, Healthy Athletes added (adults >=18 'trained/developmental team-sport athletes' who had to 'pass the Exercise and Sport Science Australia Adult Pre-Exercise Screening System')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1660",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 89,
+      "sourceFile": "The Fitness–Fatigue Model - What’s in the Numbers_.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Invited commentary (the text is labelled INVITED COMMENTARY). Its one-subject local-optimisation illustration (Table 1) is a teaching example, not an original study or a structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 92,
+      "sourceFile": "The Hidden Cardiovascular Crisis Among Former NFL Athletes - After the HUDDLE.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Editorial comment (the text is labelled EDITORIAL COMMENT) on the HUDDLE study. It offers commentary on another paper's findings and has no original methods or structured review of its own.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 94,
+      "sourceFile": "The Impact of Weekly Acceleration and Deceleration Loads on Neuromuscular Performance in Soccer - A Session-to-Session Analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 52746,
+        "doi": "10.52082/jssm.2025.851",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "Descriptive repeated-measures observational study of 39 male under-19 outfield soccer players from two teams, followed over two consecutive microcycles. GNSS acceleration and deceleration counts were recorded for each session, countermovement jump (CMJ) and isometric hamstring strength were measured before and after training, and DOMS was rated each morning. Post-training CMJ and hamstring strength were lower than pre-training on every day, with the largest drops on MD-4 and MD-5 (about 8% each), and DOMS peaked on MD-3. No daily acceleration or deceleration count correlated significantly with the pre-post change in CMJ or hamstring strength.",
+      "limitations": "A single pair of under-19 teams, convenience sampling, two weeks of data, and two trials per test limit generalisability and precision. Only acceleration and deceleration counts were analysed, and the correlations are cross-sectional, so they cannot detect lagged effects the authors themselves suggest.",
+      "synthesisCaution": "Reading the absence of same-session correlations as proof that acceleration and deceleration load does not drive fatigue, or as a reason to ignore session loads.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: DOMS described as measured before and after training -> rated once each morning ('Athletes completed the scale individually each morning in their rooms, prior to breakfast')",
+            "paper.limitations: added the text/table conflicts (Methods: MD-5 'generating relatively few accelerations or decelerations' vs Table 3 MD-5 37.72; Results: pre-training MD-5 'significantly lower than MD-1, MD-2, MD-3, and MD-4' vs Table 1 MD-5 CMJ 34.66 cm) and the unreported next-day DOMS correlations ('correlations were also analyzed between accelerations and decelerations on a given day and DOMS scores on the following day'); condensed the remaining limits"
+          ],
+          "residualConcerns": "Several internal inconsistencies in the paper (MD-5 load description, pre-training MD-5 comparisons, DOMS MD-2 mean 0.27 in text vs 0.23 in Table 2) make the day-by-day post hoc claims less reliable; the abstract also says DOMS was measured before and after training, which the Methods contradict.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1661",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 95,
+      "sourceFile": "The Influence of Exercise Modality on Training Load Management.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Invited commentary (the text is labelled INVITED COMMENTARY). It presents a theoretical framework and a comparison of sport-level training volumes drawn from the literature and the authors' practical experience, with no original methods or structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      }
+    }
+  ]
+}
