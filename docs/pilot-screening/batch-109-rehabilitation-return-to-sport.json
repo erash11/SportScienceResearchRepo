@@ -1,0 +1,248 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-109-rehabilitation-return-to-sport",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Rehabilitation & Return to Sport queue positions 12-66. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 12,
+      "sourceFile": "The influence of limb dominance on performance-based outcomes after ACL reconstruction.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 35513,
+        "doi": "10.1177/19417381251343089",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A cross-sectional study of 279 patients (49.1% female, mean age 20.8 years) tested about 7.7 months after ACL reconstruction, comparing dominant-limb and nondominant-limb surgery, with dominance defined by the preferred kicking leg. Isometric knee extension limb symmetry index (LSI) was higher for dominant-limb surgery (73.7 vs 66.5%, P<0.001, d=0.42), and 18.7% vs 6.2% passed the 90% cut-off. Raw strength and most balance and hop measures did not differ, with small significant differences in 6-meter hop and COP distance LSI and in contralateral triple-hop distance.",
+      "limitations": "The study is cross-sectional, so it cannot show that limb dominance causes differences or predicts reinjury. Athletic status was not reported, rehabilitation was not standardized or monitored, balance data are missing for some patients, and most significant differences were small.",
+      "synthesisCaution": "Staff could read this as showing that limb dominance should change return-to-activity decisions, but the significant findings are small and isolated, and the study does not measure reinjury or return-to-sport outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.athleteDev: 'strength targets for athletes' -> patients not described as athletes (limitations: 'consisted largely of older adolescents and young adults'; no athletic status reported)",
+            "paper.findings: added direction of COP distance difference ('NDL was more symmetric during COP distance tests')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1828",
+        "synthesisBatch": "pilot-synthesis-batch-109",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 35,
+      "sourceFile": "The return to sport clearance continuum is a novel approach toward return to sport and performance for the professional athlete.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 41982,
+        "doi": "10.1016/j.asmr.2021.10.026",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Expert-opinion clinical review (Level V, as the authors state) that proposes the Return to Sport Clearance Continuum, a five-phase framework running from repair through rehabilitation, reconditioning and performance to training camp and preseason, with criterion-based testing and load monitoring throughout. It summarises common return-to-sport tests for lower-extremity injuries, including strength and limb symmetry, hop, balance, movement quality and force-plate measures. No sample, outcome data or validation of the continuum is presented.",
+      "limitations": "The framework is an opinion proposal with no data from its own use, so its effect on return to sport or performance is untested. No literature search method is described, and the cited evidence is mostly lower-extremity injury work, much of it on ACL reconstruction.",
+      "synthesisCaution": "Staff could treat the continuum as a validated clearance protocol and read the cited thresholds, such as limb symmetry above 85% or the 4 cm Y-balance difference, as universal pass marks.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: only 3 authors before 'et al.' for a 12-author paper -> first 6 authors listed per house rule",
+            "screeningLimitations/paper.limitations: 'largely in professional athletes' is not supported (cited work includes high school basketball and general ACL cohorts) -> 'especially ACL reconstruction'",
+            "paper.limitations: 'not available in every setting' reworded to the source wording ('will vary based on institutional resource availability')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1829",
+        "synthesisBatch": "pilot-synthesis-batch-109",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 41,
+      "sourceFile": "The role of strength-related factors on psychological readiness for return to sport following anterior cruciate ligament reconstruction.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 50544,
+        "doi": "10.3390/healthcare11202787",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Cross-sectional study of 12 university athletes (6 male, 6 female) tested more than 9 months after primary ACL reconstruction, split by ACL-RSI score into cases (n = 7, below 81.4%) and controls (n = 5). The authors report that quadriceps RTD at 100 ms (60 deg/s), time since surgery and hamstring RTD at 50 ms (60 deg/s) were significant predictors of ACL-RSI score (r2 = 0.915). Compared with controls, cases had lower quadriceps torque at 30 and 40 degrees from full extension and lower quadriceps RTD100, with no difference in peak torque.",
+      "limitations": "Twelve participants, with 7 and 5 in the two groups, is too few to estimate associations reliably, and the cross-sectional design cannot show that strength or power deficits come before low psychological readiness. Rehabilitation content and sport history were not captured, and the sample came from several sports.",
+      "synthesisCaution": "Staff could read the RTD and angle-specific findings as proof that power training raises psychological readiness, when this study shows only an association in 12 athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Stepwise regression with three predictors selected from many candidate variables in n = 12 gives an r2 of 0.915 that is likely overfitted; the record already flags the sample size.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1830",
+        "synthesisBatch": "pilot-synthesis-batch-109",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 55,
+      "sourceFile": "Therapeutic exercises and modalities in athletes with acute hamstring injuries - A systematic review and meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 64280,
+        "doi": "10.1177/19417381221118085",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A PRISMA systematic review and meta-analysis of nine randomised controlled trials (396 athletes with acute hamstring injuries, 317 men and 79 women, searched to July 2021, PROSPERO CRD42020183035). Loading exercise during extensive lengthening shortened time to return to play versus a conventional program (mean difference -28.29 days, P < 0.0001, two trials), with no difference in reinjury (P = 0.17). Strengthening with trunk stabilisation and agility did not significantly change time to return to play (mean difference -3.78 days, P = 0.16) but lowered 12-month reinjury (risk difference -0.41, 95% CI -0.70 to -0.11, two trials).",
+      "limitations": "Only nine small trials (22 to 80 athletes each), with mostly male samples, heterogeneous definitions of acute injury, and PEDro scores from 3 to 9; the loading result rests on two fair-quality trials. Most trials compared two active programs rather than a true control, the 12-month reinjury pooled estimate rests on two studies, and stretching and physical-modality trials could not be pooled.",
+      "synthesisCaution": "Staff could read the earlier return to play with loading as a general rule for all hamstring injuries, when the pooled evidence comes from two trials in elite football players and sprinters or jumpers using eccentric lengthening loads.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: '93.7% male' stated as fact -> notes the paper's 93.69% conflicts with its own counts ('There were 317 men ... accounting for 93.69% of participants, and 79 women (6.31%)'); added that the pooled loading trials scored PEDro 4 and 5 with I2 = 58%",
+            "screeningLimitations: added that the loading result rests on two fair-quality trials ('Two studies with PEDro scores of 4 and 5')",
+            "paper.practicalImplications: 'should not be relied on until better trials exist' went beyond the paper -> the review could not draw conclusions ('could not be concluded in this study due to limited evidence')"
+          ],
+          "residualConcerns": "Sex split is internally inconsistent in the source (317/396 men reported as 93.69%). The 12-month reinjury RD of -0.41 rests on two small trials; one reported 0/13 vs 1/13 with P < 0.001, which looks implausible and was not checked against the forest plot.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1831",
+        "synthesisBatch": "pilot-synthesis-batch-109",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 66,
+      "sourceFile": "Time for a Diferent Approach to Anterior Cruciate Ligament Injuries- Educate and Create Realistic Expectations.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) Opinion piece: published under the 'CURRENT OPINION' heading in Sports Medicine, in which the authors 'propose an individualised approach' to ACL management, with no original methods and no structured review of evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: INCLUDE -> EXCLUDE (b); text is headed 'CURRENT OPINION' and states 'In this article, we propose an individualised approach', with no search or structured review",
+            "exclusionReason: added",
+            "paper.methods/screeningLimitations: 'Narrative article' / 'opinion-style' -> 'Opinion article'",
+            "paper.findings: 'most do not pass return-to-sport criteria before 9 months' -> source wording ('patients rarely pass RTS criteria following ACLR before 9 months')"
+          ],
+          "residualConcerns": "Borderline genre call. Excluded for consistency with verified Q94 (also a Sports Medicine 'CURRENT OPINION', excluded under (b)). The piece is evidence-heavy (about 45 references) and carries usable ACL return-to-sport guidance (9-month floor, LSI above 90%), so the operator may prefer to treat it as a narrative review and INCLUDE. Taxonomy and paper fields were kept and checked against the text so an override needs no rework.",
+          "spotCheckPriority": "high"
+        }
+      }
+    }
+  ]
+}

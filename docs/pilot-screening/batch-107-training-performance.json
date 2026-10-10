@@ -1,0 +1,880 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-107-training-performance",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Training & Performance queue positions 8-86. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 8,
+      "sourceFile": "The implementation of velocity-based training paradigm for team sports - Framework, technologies, practical recommendations and challenges.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 53962,
+        "doi": "10.3390/sports9040047",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review and practical framework for velocity-based training (VBT) in team sports. It covers the limits of 1RM testing, the validity and error sources of velocity-tracking devices, individual load-velocity profiling with 4 to 6 incremental loads, combining velocity with repetitions in reserve, and monitoring trends over time. It includes worked examples (an 8-week load table and one player's profile) and presents no new study data; the text describes no search method.",
+      "limitations": "No search strategy or appraisal of the studies cited is described, and recommendations mix cited studies with the authors' experience; most underlying load-velocity research uses barbell lifts, often on Smith machines. The worked examples come from single individuals, and the abstract names injury prevention as an aim without evidence for it in the text.",
+      "synthesisCaution": "Staff could treat the proposed load-velocity profiling and velocity-loss cut-offs as validated for all team-sport athletes and exercises, when the paper is an expert framework built on barbell lifts and individual examples and it states that velocity relationships differ by exercise, sex, age and training status.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "rtp: removed unsupported suggestion that velocity monitoring could be part of a return-to-training plan; the text only cites RT importance for return to play in the introduction",
+            "limitations: velocity-loss thresholds are cited work ('Studies have observed that low velocity loss thresholds (i.e., 10-20% loss...)'), only the R2 0.92 cut-off is 'in our experience'",
+            "screeningLimitations: 'most recommendations rest on the authors' experience' -> recommendations mix cited studies and experience",
+            "tldr: framed recommendations as the authors' rather than established findings"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1788",
+        "synthesisBatch": "pilot-synthesis-batch-107",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 13,
+      "sourceFile": "The influence of movement tempo on acute neuromuscular, hormonal, and mechanical responses to resistance exercise - A mini review.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed anywhere in the extracted text (no DOI string appears in the body, header or footer). Content is complete and readable.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: 1RM reduction 'in several studies' -> in the one study that tested it (text: 'One study examined the effect of 2 tempos ... on the maximal 1RM load'; 'To date, there is no data regarding the differences in 1RM load between fast and slow')",
+            "synthesisCaution: 'tempo effects have not been tested in athletes' -> included samples were mostly resistance-trained or recreationally active adults (Table 7 samples)",
+            "paper.athleteDev: 'found no data on tempo effects on power output in athletes' -> 'there is a lack of data confirming the negative impact of slower movement tempo on power output'",
+            "populations: Mixed / Unspecified -> Adult / Recreational (included studies were healthy adults, mostly resistance-trained men, not athlete samples)",
+            "degradedReason: removed the reference-list remark; confirmed no DOI string anywhere in the text"
+          ],
+          "residualConcerns": "Study design kept as Systematic Review / Meta-analysis under the rule for reviews with a described search (databases, keywords, inclusion criteria), but the paper is labeled a Brief Review with no screening counts or quality appraisal; a reviewer may prefer Narrative Review. DOI should be confirmed externally to upgrade from DEGRADED.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 18,
+      "sourceFile": "The maximal intensity period - Rationalizing its use in team sports practice.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 50668,
+        "doi": "10.1186/s40798-022-00519-7",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer",
+        "Rugby",
+        "Basketball",
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "This conceptual review describes how the maximal intensity period (MIP) is calculated and compares MIP with whole-match averages in soccer, rugby, Australian football, Gaelic football, hurling and basketball, using figures from prior studies. The authors report that MIP values are far higher than match means, for example 160 to 251 percent greater for total distance across four codes.",
+      "limitations": "No systematic search is described, so the evidence base is a selected set of studies that the authors chose. The comparisons mix devices, speed thresholds and populations, and the paper contains no training intervention data.",
+      "synthesisCaution": "Staff could treat the match MIP as a training target for every session, when the authors say it suits some sport-specific drills only and is not a benchmark for interval, repeated sprint or linear speed work.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "sports: basketball data are discussed but tag was missing -> added Basketball ('basketball: 214%')",
+            "tldr/practicalImplications: presented MIP as able to set small-sided game intensity -> added the authors' caveat ('At most, it is inconclusive whether MIP data can or cannot be a useful method to evaluate the training intensities of technical-tactical focussed training')",
+            "findings: omitted rugby league SSG data and the mechanical-load exception -> added ('MIP for mechanical load ... was likely higher during 4v4 SSGs than matches')",
+            "limitations: reworded the untested-intervention point to match the text ('specific training intervention studies using MIP data within a training programme are required')"
+          ],
+          "residualConcerns": "Populations tag is Professional / Elite, but some cited data come from semi-professional basketball and sub-elite Australian football.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1789",
+        "synthesisBatch": "pilot-synthesis-batch-107",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 22,
+      "sourceFile": "The muscle morphology of elite sprint running.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 47,
+        "extractedCharacters": 75046,
+        "doi": "10.1249/MSS.0000000000002522",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Track & Field"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "A cross-sectional study comparing MRI muscle volumes and isometric strength in 5 elite sprinters (100 m season's best 10.10 s), 26 sub-elite sprinters (10.80 s) and 11 untrained controls, all healthy young men. Total lower-body muscle volume was 48 percent higher in elite and 20 percent higher in sub-elite sprinters than controls. Hip extensor volume (+32 percent absolute vs sub-elite) and gluteus maximus volume (+45 percent) distinguished elite from sub-elite sprinters and were strongly associated with 100 m times, while isometric strength did not differ between the two sprint groups.",
+      "limitations": "The elite group has only five athletes, so its estimates are imprecise. Seven of 26 sub-elite times were estimated from 60 m or 200 m results. Measurements and performance were taken at different times, and the cross-sectional design cannot establish cause.",
+      "synthesisCaution": "Staff could read the hip extensor and gluteus maximus associations as proof that building these muscles will make a sprinter faster, when the study is cross-sectional, in five elite athletes, and shows association only.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'not related to sprint time' -> no strength measure related to faster times; relative knee extensor strength related to slower times ('positive relationship between relative knee extensor strength and SBE100 (r= 0.485)'); added plantarflexors showed no sprint-group difference",
+            "paper.practicalImplications: 'did not separate the groups' -> 'did not separate the two sprint groups' (strength was greater than controls)",
+            "paper.athleteDev: reframed as the authors' own suggestion and added knee flexors ('developing large hip extensors and knee flexors, for example through resistance training, would be valuable')"
+          ],
+          "residualConcerns": "Text is the published-ahead-of-print manuscript (copyright 2020); final issue year, volume and pages are not printed and may differ.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1790",
+        "synthesisBatch": "pilot-synthesis-batch-107",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 24,
+      "sourceFile": "The perceptions and applications of cluster sets in strength and conditioning.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 41727,
+        "doi": "10.1177/17479541251403877",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "An online survey of 46 strength and conditioning professionals (39 men, 7 women) about how they perceive and programme cluster sets, with closed and open questions analysed by frequency counts and thematic analysis. Thirty-seven (80 percent) reported using cluster sets, most often in the strength-power phase (84 percent of users), and most used percentage of 1RM to set load; the authors judge practice broadly consistent with published recommendations.",
+      "limitations": "The sample is small, self-selected and recruited through chain sampling, and the survey records coaches' reported perceptions and practice, not athlete training data or outcomes. The authors note that more experienced coaches may differ from those surveyed.",
+      "synthesisCaution": "Staff could read the finding that practice aligns with recommendations as evidence that cluster sets improve athlete performance, when the survey measures what coaches report doing and believing, not athlete results.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr/practicalImplications: load increase 'about 5 to 15 percent' -> '2 to 15 percent of 1RM' ('practitioners increase training intensity by 2-15% of 1RM')",
+            "paper.abstract: 'heavy bench press and squat variants' -> bench press and squat variants needing un-racking and re-racking (no 'heavy' in text)",
+            "paper.limitations: removed stray punctuation"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1791",
+        "synthesisBatch": "pilot-synthesis-batch-107",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 25,
+      "sourceFile": "The placebo and nocebo effect on sports performance - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 62942,
+        "doi": "10.1080/17461391.2019.1655098",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Nutrition & Hydration",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "PRISMA systematic review of 32 placebo or nocebo studies with 1,513 apparently healthy or athlete participants, each with a no-treatment or baseline control and an objective performance outcome. The authors report small-to-moderate placebo (d = 0.36) and nocebo (d = 0.37) effects, and a pooled effect of d = 0.37 in the Results (0.38 in the Abstract).",
+      "limitations": "Methodological quality was generally low: only 4 of 32 studies (12%) met all risk-of-bias criteria, and 41% did not show that the placebo manipulation was effective. Designs and placebo types varied widely, so the pooled estimate cannot show that any specific ergogenic aid works or fails.",
+      "synthesisCaution": "Staff could read the average d of about 0.37 as proof that placebos reliably improve performance, when the effects are small, highly variable and drawn mostly from small, low-quality studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: 'Two effect sizes were estimated from figures' -> one study (Tallis et al.) had SDs estimated from figure SEs; Clark et al. was excluded ('the study was excluded from analysis')",
+            "paper.limitations: 'Between-study heterogeneity is large' (no formal heterogeneity statistic reported) -> spread stated as pooled d = 0.37 ± 0.42 ('d = 0.37 ± 0.42, 95% CI = 0.25-0.49')",
+            "paper.citation: 3 authors before et al. -> first 6 authors listed per citation rule"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1792",
+        "synthesisBatch": "pilot-synthesis-batch-107",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 39,
+      "sourceFile": "The role of lower-limb muscle volumes in vertical jump performance in NCAA Division 1 athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 21,
+        "extractedCharacters": 29841,
+        "doi": "10.1249/MSS.0000000000003943",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "American Football",
+        "Basketball",
+        "Ice Hockey",
+        "Soccer"
+      ],
+      "populations": [
+        "Collegiate",
+        "Healthy Athletes",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Cross-sectional study of 207 NCAA Division I athletes (164 male, 43 female; football, basketball, ice hockey and soccer) who had MRI-derived lower-limb muscle volumes and countermovement jump testing on force plates before their season. In multiple regression adjusted for sex and sport, vastus lateralis volume was associated with jump height (1.39 cm per unit of normalised volume, 95% CI 0.91 to 1.87) and peak power (1.67 W/kg, 95% CI 1.20 to 2.14), with R2 of 0.56 and 0.72. Other retained muscles had smaller or non-significant associations, and males jumped higher and produced more power than females.",
+      "limitations": "The design is cross-sectional at one institution, so the associations cannot show that muscle growth would raise jump performance. The model selection was exploratory (backward selection on BIC with a post hoc test), and muscle volume is not a direct measure of strength.",
+      "synthesisCaution": "Staff could read the vastus lateralis association as proof that quadriceps hypertrophy training will improve jumping, when the study only shows a cross-sectional link in healthy NCAA athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.abstract: 'Hockey and football athletes jumped higher and produced more power than basketball players' -> peak power difference only for football (results: 'hockey or soccer, compared to basketball, was not statistically significant'); conflict noted in limitations",
+            "paper.methods: '23 muscles segmented' -> 38 muscles per limb segmented, 23 analysed ('38 individual muscle volumes for each limb'; 'we only included the 23 lower extremity muscles')",
+            "paper.limitations: removed incorrect W vs W/kg unit conflict (text says peak power was normalised to W/kg); added author conflicts of interest and NFL funding as printed"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1793",
+        "synthesisBatch": "pilot-synthesis-batch-107",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 47,
+      "sourceFile": "The training of short distance sprint performance in football code athletes - A systematic review and meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 29,
+        "extractedCharacters": 152166,
+        "doi": "10.1007/s40279-020-01372-y",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Soccer",
+        "Rugby",
+        "Other Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Youth / Adolescent",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Systematic review and random-effects meta-analysis (PRISMA, registered on OSF) of 121 training studies with 3419 healthy, non-injured football code athletes (mostly soccer, plus rugby league, rugby union, rugby sevens, futsal and Australian rules), measuring 0-5, 0-10 and 0-20 m sprint performance. Pooled pre-to-post changes within training groups showed significant small-to-large improvements after combined, secondary and tertiary training, and after combined-specific training for 0-5 and 0-10 m only, with no significant change after primary or sport-only training. In the results section, football code, age and phase of season moderated the effects but sex and playing standard did not, and small-study effects suggested publication bias.",
+      "limitations": "Effects are pre-to-post changes within training groups, heterogeneity was high (I2 above 80% at all three distances), and the authors report significant small-study effects and publication bias. Most included trials were parallel-group studies in male soccer players, and secondary and combined-specific estimates rest on very few training groups.",
+      "synthesisCaution": "Staff could read the combined and tertiary methods as the best way to improve sprint speed for their sport, when the authors state that no individual method was clearly superior and subgroup support is uneven across codes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "sports: removed American Football ('No studies using Gaelic football or American football players satisfied the inclusion criteria')",
+            "evidenceSummary/screeningLimitations/findings/tldr: effects clarified as within-group pre-to-post SMDs; I2 'about 84% in one analysis' -> above 80% at all three distances (83.74%, 82.28%, 83.19%); SMD values added from Figs 2-4",
+            "paper.limitations: added abstract/discussion vs results conflict on playing standard ('There was no statistical difference between sex and playing standard groups' vs 'football code, age, playing standard and phase of season all moderated') and single-study sensitivity of secondary and combined-specific estimates",
+            "paper.athleteDev: 'best addressed with combined programmes' -> no single method clearly superior ('No individual mode was found to be the most effective')",
+            "paper.practicalImplications: tempered secondary-method recommendation given 3-5 training groups and sensitivity analysis"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1794",
+        "synthesisBatch": "pilot-synthesis-batch-107",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 48,
+      "sourceFile": "The use of acute exercise interventions as game day priming strategies to improve physical performance and athlete readiness in team-sport athletes - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 20,
+        "extractedCharacters": 89885,
+        "doi": "10.1007/s40279-020-01329-1",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review (PRISMA) of SPORTDiscus, PubMed and CENTRAL to February 2020, including 29 randomised and non-randomised comparative studies of healthy adults aged 18 to 40 with an acute exercise intervention 1 to 12 h before outcome testing; participants ranged from rugby, football, volleyball and basketball players to weightlifters, endurance athletes and recreationally trained or untrained adults. The authors report that heavy, low-volume resistance training 4 to 6 h beforehand improved strength and power, that running sprints improved subsequent sprint and repeat-sprint performance after 5 to 6 h (two rugby studies), and that cycling and endurance running or cycling showed little or no benefit. All studies scored 4, 5 or 6 out of 10 on the PEDro scale (fair to good).",
+      "limitations": "The included studies used different exercise types, recovery windows, comparators and outcomes, and the authors could not pool them, so the conclusions are narrative. Samples were small, few studies were designed to test priming, many participants were not team-sport athletes, and the key performance findings rest on one or two studies each.",
+      "synthesisCaution": "Staff could read the timing windows as validated game-day protocols, when the 1 to 12 h effects come from scattered small studies in healthy adults, mostly not run in real competition.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: 'healthy adults aged 18 to 40 in team sports' -> eligibility was healthy adults 18-40, not restricted to team sports (included 'top-level Finnish weightlifters', 'elite endurance athletes', 'healthy, untrained', runners)",
+            "evidenceSummary/limitations: PEDro 'examples ... are 5 or 6' -> 'All studies received a score of 4, 5 or 6 out of 10'",
+            "paper.tldr/screeningLimitations: noted sprint priming evidence comes from two rugby studies [14, 15] and that key findings rest on one or two studies"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1795",
+        "synthesisBatch": "pilot-synthesis-batch-107",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 52,
+      "sourceFile": "The worst-case scenario - Recovery between repeated high intensity efforts in rugby league match play.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 24131,
+        "doi": "10.1177/19417381221139437",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "A prospective cohort observational study of 104 male semi-elite rugby league players (mean age 24.3 years) from 11 Queensland Cup teams, tracked with 10 Hz GPS units during 28 matches. Recovery between repeated high-intensity efforts (RHIE) was classified into five duration bands. Most RHIE bouts had 10 seconds or less recovery in both Top 4 (58.2%) and Bottom 4 (49.8%) teams, and Top 4 teams had a somewhat greater proportion of these short-recovery bouts (effect size 0.27, 98% likely).",
+      "limitations": "Descriptive data from one semi-elite competition over 28 matches, with teams grouped by end-of-season ladder position. The effect sizes between Top 4 and Bottom 4 teams are small, the positional findings are not explained by video or tactical data, and the RHIE definition used was modified from prior work.",
+      "synthesisCaution": "Staff could read the finding as showing that better recovery between efforts causes higher ladder position, when the study only describes an association between recovery patterns and team ranking.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Sample is semi-elite Queensland Cup players; the 'Professional / Elite' population tag is the closest available level but overstates the standard. Comparisons use magnitude-based inference rather than null-hypothesis tests.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1796",
+        "synthesisBatch": "pilot-synthesis-batch-107",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 63,
+      "sourceFile": "Throwing cold water on muscle growth - A systematic review with meta-analysis of the effects of postexercise cold water immersion on resistance training-induced hypertrophy.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 68278,
+        "doi": "10.1002/ejsc.12074",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Systematic review and Bayesian meta-analysis of eight randomized trials (4 to 12 weeks; young adults aged 20 to 26, mostly men, trained and untrained) comparing resistance training with cold water immersion given after each session against resistance training with passive, active or sham recovery. The comparative pooled effect favored resistance training alone for muscle growth (cSMD -0.22, 95% CrI -0.47 to 0.04), with a posterior probability of 0.957 that the difference was below zero.",
+      "limitations": "Quality was fair to poor by the SMART-LD tool (mean 9.8 of 20) but good to fair by the Downs and Black checklist (mean 18.4 of 29), trials are small (8 to 21 participants), and only one included women. No trial included adolescents or older adults, the samples were healthy trained or untrained young adults rather than athletes, and the 95% credible interval for the main comparison includes zero.",
+      "synthesisCaution": "Staff could read the pooled result as proof that cold water immersion blunts muscle growth in athletes, when the interval crosses zero, the trials are small and of fair to poor quality, and the samples were healthy young adults rather than athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'Overall quality is fair to poor' applied to both tools -> SMART-LD fair to poor, Downs and Black good to fair ('The frequently used Downs and Black checklist indicated that the included studies were generally of good to fair quality')",
+            "populations: Mixed / Unspecified -> Adult / Recreational (healthy trained and untrained young adults aged 20 to 26, not athletes)",
+            "paper.citation: 'Piñero A, et al.' -> first six authors listed before et al. as printed",
+            "paper.rtp: grammar fix ('studies no return-to-sport outcomes' -> 'included no return-to-sport outcomes')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1797",
+        "synthesisBatch": "pilot-synthesis-batch-107",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 65,
+      "sourceFile": "Time course of neuromuscular, hormonal, and perceptual responses following moderate and high-load resistance priming exercise.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 47796,
+        "doi": "10.1123/ijspp.2020-0646",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomised, counterbalanced crossover trial in 15 males with at least 12 months of strength training, comparing control, high-load (87% 1RM) and moderate-load (65% 1RM) half-squat priming. Squat jump height rose 4.5% at 8 hours after high-load priming, and countermovement and squat jump height rose 6.1% and 6.5% at 32 hours after moderate-load priming. Control sessions also rose 3.9% and 4.5% at 32 hours, so the reported priming effects are changes from baseline within each condition, not differences between conditions.",
+      "limitations": "Repeated testing at every time point means priming and control could not be compared directly, and the authors say the 32-hour control gains may reflect repeated jump testing. The sample was strength-trained males, not elite athletes, and most changes are small and close to measurement error. Some Table 3 confidence intervals do not contain their own estimate (cortisol, control, 32 h).",
+      "synthesisCaution": "The paper concludes both priming loads improve athlete performance, but the control session improved by a similar amount at 32 hours, so staff should not credit priming for those late gains.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'Cortisol fell after all conditions, the testosterone response was unclear' -> testosterone fell at 8 and 32 h after both priming loads, cortisol fell in afternoons, authors judged priming did not considerably influence hormones ('priming did not considerably influence hormone status'); cortisol did not fall at 32 h after control ('but not at 32 hours after control')",
+            "paper.findings/practicalImplications: added omitted 24 h high-load finding and author caution ('priming exercise the day before early morning activity does not appear optimal ... and may be detrimental after HL priming')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1798",
+        "synthesisBatch": "pilot-synthesis-batch-107",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 74,
+      "sourceFile": "To Couple or not to Couple For Acute-Chronic Workload Ratios and Injury Risk, Does it Really Matter.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 4,
+        "extractedCharacters": 20351,
+        "doi": "10.1055/a-0955-5589",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Re-analysis of workload and injury data from 28 elite cricket fast bowlers (mean age 26), with workload estimated from session-RPE. Coupled and uncoupled acute:chronic workload ratios were compared, and the authors report a near-perfect relationship between them (R2 = 0.99) and no significant difference in injury risk between the two methods in any category. Higher ratios were associated with greater injury likelihood under both methods.",
+      "limitations": "The data come from one squad of 28 fast bowlers with one injury definition, and the number of injuries is not reported. The paper shows the two calculations give similar injury-risk patterns in this dataset; it does not show that either one predicts injury, and the authors say neither should be used in isolation.",
+      "synthesisCaution": "Staff could read the paper as proof that workload ratios predict injury in their own squads, when it shows only that the two calculation methods give similar results in one cricket cohort.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: claimed no significant difference 'whether the original or the converted data were used' -> significance tests are reported only for the original data ('When the original ACWR data were used, no significant differences...'); converted data only shifted the curve right above 1.0",
+            "paper.practicalImplications: said coupled thresholds 'can be applied to converted uncoupled values' -> authors say users of coupled thresholds with uncoupled ratios 'should consider converting these categories', and that unconverted use is acceptable because both reproduced rising risk",
+            "screeningLimitations: added that injury counts are not reported; softened 'predicts injury better' to 'predicts injury' (authors: 'our findings do not imply that injuries can be predicted from a single training variable')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1799",
+        "synthesisBatch": "pilot-synthesis-batch-107",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 82,
+      "sourceFile": "Train the Engine or the Brakes - Influence of Momentum on the Change of Direction Deficit.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 38530,
+        "doi": "10.1123/ijspp.2019-1007",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Healthy Athletes",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "Cross-sectional study of 17 male academy soccer players (mean age 16.8 years) who completed single-leg countermovement and drop jumps, a 40-m sprint with 0-10 m and 30-40 m splits, and the 505 change-of-direction test on both legs. Regression did not predict change of direction deficit (COD-D) on either leg, and COD-D was not correlated with momentum, speed or jump measures, but it correlated with 505 time (r = .65 to .69). When split at the median COD-D, the smaller-deficit group was faster on the 505 test (effect size -1.24, P = .03 in Table 3), while it was slower over 0-10 m (4%, d = 0.79, P = .33) and carried less momentum (11%, d = -0.81, P = .17).",
+      "limitations": "Cross-sectional data from 17 players at one academy cannot show that momentum or speed causes a larger deficit. The momentum and acceleration subgroup differences were not statistically significant, and poor 505 reliability (ICC .18 to .24) limits the precision of the COD measures.",
+      "synthesisCaution": "Staff could read the faster-athlete, larger-deficit pattern as an established link and prescribe eccentric or technical COD work on that basis, when the subgroup differences were not significant in 17 players.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "The Results text says the smaller-COD-D group 'carried greater acceleration momentum', which contradicts Table 3 and the abstract (less momentum); the record follows Table 3.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1800",
+        "synthesisBatch": "pilot-synthesis-batch-107",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 84,
+      "sourceFile": "Training alters joint power distributions during running in National Football League Draft Preparation Players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 53563,
+        "doi": "10.1080/14763141.2025.2498338",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate"
+      ],
+      "evidenceSummary": "Before-and-after laboratory study of 52 American football players (age 23.0 years) who had just finished their collegiate season, each running on a treadmill at about 6.4 m/s before and after a six-week NFL draft preparation camp. There was no control group. Negative total limb power fell on the left limb (r = .30, P = .035), mainly through lower negative ankle power on both limbs, and the left hip's share of negative power rose (P = .016). Total positive power and most joint-level magnitudes did not change.",
+      "limitations": "The design has no control group, so the changes cannot be attributed to the camp alone. The sample was a convenience sample with 23 of 75 recruited players excluded, the study used a single running trial per session on a treadmill, and footwear was not controlled. Most effects were small to medium (r = .01 to .36), and several claims in the discussion go beyond the joint power data measured.",
+      "synthesisCaution": "Staff could read the lower ankle absorption as proof that the players now run more efficiently, when the study measured joint power only, with no energy cost measure and no control group.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Year 2025 is from the online-first date (Published online 02 May 2025); no volume or issue is printed. Participant sex is not stated in the text, so no sex tag was added.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1801",
+        "synthesisBatch": "pilot-synthesis-batch-107",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 85,
+      "sourceFile": "Training for muscular strength - Methods for monitoring and adjusting training intensity.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 84553,
+        "doi": "10.1007/s40279-021-01488-9",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of methods for adjusting resistance training intensity: linear loading, the two-for-two rule, percent of 1RM, repetition maximum zones, RPE and repetitions in reserve, set-repetition best, autoregulatory progressive resistance exercise (APRE), and velocity-based training (VBT). The authors weigh each method's advantages and limits and propose combining outcome measures (such as velocity) with process measures of motor learning. No sample or pooled effect is reported, and the cited comparison studies are described only in summary.",
+      "limitations": "The review does not describe a literature search or selection process, so the evidence base and the authors' method preferences cannot be checked. Several cited comparisons are small, use student or thesis samples, or compare methods mainly against linear loading, which limits how far the ranking of methods can be relied on.",
+      "synthesisCaution": "Staff could treat the review's preferred methods, such as APRE, set-repetition best and VBT, as proven superior to other loading methods, when the cited comparisons are few, often small, and mostly against linear loading.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1802",
+        "synthesisBatch": "pilot-synthesis-batch-107",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 86,
+      "sourceFile": "Training interventions for improved deceleration ability in adult team-based field sports athletes - A systematic review and meta-analysis of the literature.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 25,
+        "extractedCharacters": 94896,
+        "doi": "10.47206/ijsc.v4i1.313",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Basketball",
+        "Soccer",
+        "American Football",
+        "Rugby",
+        "Volleyball",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review and random-effects meta-analysis of 12 randomised controlled trials in adult team field and court athletes, of which 9 (with 29 deceleration outcomes) were pooled. Training interventions (strength, plyometric, balance, agility, eccentric overload and small-sided games) were compared with control groups on deceleration-specific outcomes. The pooled standardised mean difference across deceleration performance outcomes was -0.04 (95% CI -0.50 to 0.42), slightly favouring control groups, with no heterogeneity (I2 = 0%).",
+      "limitations": "Across all included studies the risk of bias was judged high, with randomisation, deviation, missing-data and selective-reporting concerns, and the outcome definitions varied between studies. Only a few observations contributed to each outcome, and the prediction interval is wide, so the pooled null result cannot rule out meaningful effects in either direction.",
+      "synthesisCaution": "Staff could read the pooled null result as proof that deceleration training does not work, when the authors say none of the interventions were deceleration-specific and the risk of bias was high in every study.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "synthesisCaution: 'most interventions were not deceleration-specific' -> none were ('none of the training interventions were deceleration-specific')",
+            "findings: added joint kinetics CI and stated that all CIs cross zero (abstract prints p < 0.01 beside I2 for kinetics, which appears to be the heterogeneity test)",
+            "practicalImplications/athleteDev: deceleration-specific drills presented as tested advice -> framed as the authors' untested suggestion ('More integration is needed of more detailed and sport-specific training protocols')"
+          ],
+          "residualConcerns": "Kinetics and joint kinetics are printed with p < 0.01 alongside non-significant CIs; the p values are likely heterogeneity tests but the text does not say so.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1803",
+        "synthesisBatch": "pilot-synthesis-batch-107",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

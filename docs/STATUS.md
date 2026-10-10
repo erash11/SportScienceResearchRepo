@@ -8,11 +8,10 @@ Read this first. Update it before ending every session.
      updated 2026-09-26, including the completed SecondBrain vault push). -->
 
 ## Current state
-- 2026-10-10 (Mac, verified 2026-10-10 session): Batches 96, 97, 98, 99 merged. Batch 99 landed via PR #24
-  (76 records, IDs 1712-1787). The named-sport gate stayed at 22; a builder swap pass (commit 77cc584) met it.
-  Library is 1,755 rows on master. Next unused ID: **1788**. All `npm run audit` gates pass.
-  The earlier "blocked" handoff (`docs/handoffs/2026-10-10-mac-batch-99-blocked.md`) is superseded.
-- Backlog: **178 unscreened unique PDFs** remain (`python3 scripts/haiku-batch/backlog.py`, checked 2026-10-10).
+- 2026-10-10 (Mac): Batches 96-100 merged. Batch 100 (batches 107-114) landed with 76 records, IDs 1788-1863
+  (Q05 was a duplicate of Q04 and is EXCLUDE). Library is 1,831 rows on master. Next unused ID: **1864**.
+  All `npm run audit` gates pass. Shortlist now 72 candidates; Athlete Wellbeing has 0 candidates.
+- Backlog: **82 unscreened unique PDFs** remain (`python3 scripts/haiku-batch/backlog.py`, checked 2026-10-10).
   Pipeline: `scripts/haiku-batch/` (Haiku 5.5 drafts, Opus 5.5 claim audit).
 - Ask the Library drafter merged (PR #12): `npm run pilot:draft -- <request.json>`. Stress-test eval in
   `docs/ask-library-eval/`: 0 critical integrity failures, 12/12 useful. Known limitation: briefs are long.
@@ -20,7 +19,7 @@ Read this first. Update it before ending every session.
   9 legacy DOI collisions). Latest handoff: `docs/handoffs/2026-10-10-cloud-batches-88-95.md`.
 
 ## Next
-- Continue the backlog (178 PDFs left) from ID 1788, same commands as the handoffs. Check for open
+- Continue the backlog (82 PDFs left) from ID 1864, same commands as the handoffs. Check for open
   `batch-*-staged` branches first (see Gotchas).
 - After the backlog: update the roadmap, then hand Eric the pilot launch checklist (goal E).
 - Still Eric's: name a pilot lead, pick 3 staff across 2+ disciplines, record human claim audits.
