@@ -19,12 +19,17 @@ Read this first. Update it before ending every session.
   9 legacy DOI collisions). Latest handoff: `docs/handoffs/2026-10-10-cloud-batches-88-95.md`.
 
 ## Next
-- Resume the backlog from Batch 96 (IDs from 1485): same commands as the handoff. Eric's standing
-  instruction is to merge batch PRs as they go.
+- Eric answers the Batch 99 shortlist question below. Then merge `batch-99-staged` (76 records, IDs 1712-1787).
+  Next unused ID after that: 1788. Detail: `docs/handoffs/2026-10-10-mac-batch-99-blocked.md`.
+- Then continue the backlog (about 274 PDFs left) from the next unused ID, same commands as the handoffs.
 - After the backlog: update the roadmap, then hand Eric the pilot launch checklist (goal E).
 - Still Eric's: name a pilot lead, pick 3 staff across 2+ disciplines, record human claim audits.
 
 ## Open questions
+- Batch 99 shortlist gate: the named-sport shortlist has 17 candidates, but the audit needs 22. Choose ONE:
+  (A) lower the gate to 17 and merge Batch 99 now (quicker; the shortlist gets thinner), or
+  (B) keep the gate at 22 and change the shortlist builder to find more named-sport candidates, then merge
+  (slower; keeps the rule). Recommendation: B.
 - Has a real concierge pilot occurred on another machine or outside this checkout?
 - Who will lead the pilot and own the recurring evidence intake/review cadence?
 - Unpublish ID for Batch 80 Q37 (sleep-monitoring review with mismatched citations, published at low confidence)?
