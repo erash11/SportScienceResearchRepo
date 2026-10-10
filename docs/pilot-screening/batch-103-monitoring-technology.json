@@ -1,0 +1,444 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-103-monitoring-technology",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Monitoring & Technology queue positions 1-93. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 1,
+      "sourceFile": "Quantification of neuromuscular fatigue - What do we do wrong and why.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 44479,
+        "doi": "10.1007/s40279-019-01203-9",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Performance",
+        "Sports Medicine",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Short narrative review (Current Opinion) by two authors on the methodological pitfalls of quantifying neuromuscular fatigue with voluntary and evoked contractions. Drawing largely on their own laboratory studies, it covers how fatigue is defined and indexed, the delay between exercise end and testing, less painful alternatives to nerve stimulation, and stimulation intensity and M-wave analysis issues, and ends with seven practice recommendations. No search method is described and no new data are reported.",
+      "limitations": "Expert opinion and non-systematic review that relies heavily on the authors' own work. It addresses laboratory stimulation methods for researchers and clinicians, not field monitoring tools, and its recommendations were not tested against athlete outcomes.",
+      "synthesisCaution": "Staff could treat the seven recommendations as validated monitoring guidance, but they are expert suggestions for laboratory testing with electrical or magnetic stimulation.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: EXCLUDE (b) opinion piece -> INCLUDE as Narrative Review; the paper reviews cited studies and closes with recommendations (\"This short review will first reconsider the definition of NMF\"; \"This review, summarized in Fig. 2, shows that current practices ... can be problematic\")",
+            "exclusionReason: misread \"we do not aim to review the literature or the techniques\" (refers to NMF techniques generally); the next clause says the pitfalls have \"never been reviewed\" -> cleared",
+            "taxonomy, summary and paper fields: null -> completed from the full text (Sports Medicine (2020) 50:439-447, doi 10.1007/s40279-019-01203-9)"
+          ],
+          "residualConcerns": "The article is labeled CURRENT OPINION and calls itself an \"opinion paper\" as well as a \"short review\". A reviewer may judge it falls under exclusion (b) instead of narrative review.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1561",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 5,
+      "sourceFile": "RESIDE~1.PDF",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 47015,
+        "doi": "10.26603/001c.141279",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Rehabilitation",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Case series of three NCAA Division I quarterbacks (aged 19 to 21 years, no current or prior upper extremity injury) who were tested weekly over nine weeks with the Athletic Shoulder (ASH) test on portable force plates in the Y and T positions. Dominant-arm peak force was higher than non-dominant in both positions, with mean dominant-to-non-dominant limb symmetry indices of 1.13 (Y) and 1.14 (T). Across both arms and positions, athletes produced at least 14% of body weight in force on average.",
+      "limitations": "Three athletes from one institution over nine weeks, with no validity, reliability or normative data for the test in this population. Testing was not always on the same day of the week, and only descriptive statistics were reported.",
+      "synthesisCaution": "Staff could read the 14% of body weight figure as a normative benchmark for quarterbacks, but the authors used it only as an in-house proxy from three athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed Mixed / Unspecified; level is stated as Collegiate (\"NCAA Division 1 university\")",
+            "paper.methods: \"each the top scholarship quarterback on the depth chart\" -> \"the top three on the team's depth chart and the only scholarship quarterbacks on the roster\"",
+            "screeningLimitations and paper.limitations: the SD difference applies to all peak force and LSI values, and the text SDs are for \"all trials\" while Table 2 summarizes athlete averages, so it is not a single Y-position error; added the real conflict between the text Y range \"4%-16%\" and Table 2 ratios (1.04 to 1.19)",
+            "paper.practicalImplications: \"his own baseline\" -> \"their own baseline\" (sex is not stated in the text)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1562",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 11,
+      "sourceFile": "Rating of perceived exertion and velocity loss as variables for controlling the level of effort in the bench press exercise.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 41392,
+        "doi": "10.1080/14763141.2019.1640278",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Cross-sectional study of seven physically active men (mean age 22.9 years, at least one year of resistance training) who completed repetition-to-failure Smith machine bench press sets at loads targeting mean velocities of about 1.00, 0.70 and 0.50 m/s. Quadratic regressions showed strong fits between RPE and the percentage of possible repetitions completed (%REP, r2 = 0.89) and between velocity loss and %REP (r2 = 0.91). A multiple regression using RPE and velocity loss together improved the fit (r2 = 0.94, SEE 7.18%).",
+      "limitations": "Seven men with mixed training backgrounds, one paused Smith machine lift, and no athletes or injured people. Prediction and validation were run on the same 140 observations taken from seven people, so repeated measures are not independent and the equation has not been tested on new lifters.",
+      "synthesisCaution": "Staff may treat the %REP equation as a ready-made effort tool for any lifter or exercise, when it was derived from seven men on a paused Smith machine bench press.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: validity statistics read as if for the combined equation, random error 'about 9%' -> attributed to the separate RPE and VL equations with exact random errors ('moderate random errors (%REP predicted by RPE = 9.78%; %REP predicted by VL = 8.89%)')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1563",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 14,
+      "sourceFile": "Ready for impact - A validity and feasibility study of instrumented mouthguards (iMGs).pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 59052,
+        "doi": "10.1136/bjsports-2022-105523",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Four-phase validity and feasibility study of four instrumented mouthguard systems in rugby league. In the laboratory, three systems (Biocore-FRI, HitIQ and Prevent) had total concordance correlation coefficients of 0.965 to 0.986 against a headform reference, while ORB had 0.525. On-field, 51 male players from five Super League academies produced 80 player-match observations, with positive predictive values of 0.98, 0.90, 0.53 and 0.94 and sensitivity of 0.51, 0.40, 0.71 and 0.75 for Biocore-FRI, HitIQ, ORB and Prevent respectively.",
+      "limitations": "Only one camera view was used in nine matches, so some events were classed as assumed false positives. Each company set its own recording thresholds, which drove the sensitivity differences, and on-field head kinematics were not validated. Several authors have research or financial ties to Prevent Biometrics.",
+      "synthesisCaution": "Staff may read the results as one clear winner, when the best system depends on how false positives and false negatives are weighed, and counts are unreliable until checked against video.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: 'Professional / Elite' -> 'Mixed / Unspecified'; phase II players came from academies and phase III players from Super League clubs, with no level or age given ('Fifty-one male rugby league players from five Super League academies'; 'Eighteen male rugby league players ... from four Super League clubs')",
+            "evidenceSummary: added that phase II players were from Super League academies"
+          ],
+          "residualConcerns": "Concussion and head-impact monitoring topic. Several authors have research or financial ties to Prevent Biometrics, the system that performed best on field.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1564",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 45,
+      "sourceFile": "Relationship between repeated sprint ability, countermovement jump and thermography in elite football players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 43534,
+        "doi": "10.3390/s23020631",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Single-session study of 20 male players from a Spanish second-division professional team, with players with recent injury or pain excluded. Players were split into low (below 0.2 degrees C) and high (0.2 degrees C or more) skin thermal asymmetry groups for thighs, calves and hamstrings, then performed countermovement jumps before and after a 6 x 30 m repeated sprint test. Thigh and calf asymmetry showed no differences; the high hamstring asymmetry group had a larger slowdown from sprint 1 to sprint 2 and a lower post-sprint jump (32.78 vs 37.23 cm), but the pre-to-post jump change did not differ between groups.",
+      "limitations": "Twenty players split into subgroups of unreported size, a single thermography session and a low, club-chosen 0.2 degrees C cut-off limit what this can support. The hamstring results point in mixed directions across sprint variables and the jump drop itself did not differ between groups, so the data do not show that thermography detects fatigue.",
+      "synthesisCaution": "Staff could read the 0.2 degrees C hamstring cut-off as a validated fatigue threshold; it came from one small sample, was chosen by the club rather than derived from data, and the pre-to-post jump change did not differ between groups.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings: 'low asymmetry associated with smaller %Diff for the first sprint and larger %Best in sprints two and three' -> results: high-asymmetry group higher %Diff in sprint 2; low-asymmetry group higher %Best in sprints 2, 3 and 4 ('a higher %Best in the hamstring low-asymmetry group in sprints 2 ... 3 ... and 4')",
+            "findings: added CMJ values and that pre-RSA and Diff CMJ did not differ ('no significant differences ... in the CMJ Pre-RSA and Diff CMJ tests (p > 0.05)')",
+            "tldr/athleteDev: removed 'more fatigue-resistant' and 'low-cost' claims not supported by the data",
+            "populations: added Healthy Athletes ('Players with recent injuries or pain were excluded'); sample described as second-division professional team",
+            "limitations/methods: added that the 0.2 degrees C cut-off was a club policy decision and subgroup sizes are not reported"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1565",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 48,
+      "sourceFile": "Relative Motion between the Helmet and Head in Football Impact Test.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 51,
+        "extractedCharacters": 82403,
+        "doi": "10.1115/1.4043038",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Laboratory study in which two helmeted Hybrid III 50th percentile male crash test dummies were propelled into each other in seven helmet-to-helmet configurations at closing speeds of 8 to 11 m/s, each run once. Helmet and head kinematics were measured with helmet and head sensor packages and optical motion capture. The helmet translated 12 to 41 mm and rotated up to 37 degrees relative to the head, and its peak linear acceleration was about 2 to 5 times that of the head.",
+      "limitations": "The sample is crash test dummies, not athletes, with two helmet models and seven single-run impact configurations. The findings describe helmet and head motion in these set-ups and do not show injury risk for players.",
+      "synthesisCaution": "Staff could read the helmet-head motion results as a direct measure of how much a helmet protects a player; the study shows helmet motion relative to a dummy head in set impacts, and its main message is about measurement method.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: 'et al.' used after 4 authors -> all six authors listed (Sherwood C, Crandall J), per field rule of et al. only after 6",
+            "methods/evidenceSummary: added Hybrid III 50th percentile male dummies, two helmet models, 8 to 11 m/s closing speeds and single runs ('each test scenario was performed only once')",
+            "limitations: added authors' limitations (Hybrid III biofidelity, single runs, helmet fit and friction not varied, sensor failures)",
+            "practicalImplications: added authors' estimate that helmet-based angular velocity 'could be in error by as much as 71%'"
+          ],
+          "residualConcerns": "Accepted manuscript version; volume, issue and pages not printed. Populations tag is a placeholder because no humans were tested.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1566",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 50,
+      "sourceFile": "Reliability of three landmine-punch-throw variations and their load-velocity relationships performed with the dominant and nondominant hands.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 42958,
+        "doi": "10.1123/ijspp.2023-0235",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Combat Sports"
+      ],
+      "populations": [
+        "Healthy Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Within-session reliability and load-velocity profiling study in 14 healthy trained boxers (mean age 24.1 years). Each boxer performed three landmine punch throw variations (standing whole body, seated with trunk rotation, seated without trunk rotation) with 20, 22.5 and 25 kg, using each hand, with peak velocity measured by a linear position transducer. Most combinations had good reliability (lower 95% CI of the ICC 0.75 to 0.89), the non-dominant hand was as reliable or more reliable than the dominant hand, and group-average load-velocity relationships were very strong (R2 of 0.96 or higher). The whole-body variation produced the highest peak velocity.",
+      "limitations": "Only 14 boxers were tested in one visit with three loads 2.5 kg apart (20 to 25 kg), so the load-velocity profiles were not tested beyond that range. Sex and competitive level are not reported beyond at least one competitive bout and one year of strength training, and between-day reliability was not tested.",
+      "synthesisCaution": "Staff could take the group-average load-velocity line as a norm for each athlete, when the authors say individual profiles are needed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'three loads spanning 2.5 kg' -> loads 2.5 kg apart, spanning 20 to 25 kg ('20, 22.5, and 25 kg'); training history is partly reported ('at least 1 competitive boxing bout and at least 1 year of structured strength and conditioning training'); replaced unclear 'no athletes were tested for injury or after training' with single-session (no between-day) reliability",
+            "paper.findings / paper.limitations: abstract-vs-table ICC conflict restated accurately; Table 2 has 8 of 18 ICCs below .91 (.77 to .89), not only 'several dominant-hand ICCs 0.77 to 0.82'",
+            "paper.practicalImplications: removed advice that the nondominant hand 'may suit testing where consistency matters most'; authors say only that this 'should be confirmed' by future research"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1567",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 93,
+      "sourceFile": "Return-to-play criteria based on infrared thermography during anterior cruciate ligament rehabilitation in football players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 31646,
+        "doi": "10.5114/biolsport.2025.144295",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "A descriptive longitudinal study of 30 professional and semi-professional football players (23 men, 7 women) from three European leagues, who had infrared thermography of the knee region from 2 to 365 days after ACL reconstruction. A linear mixed model found that knee skin temperature asymmetry decreased by 0.01 degrees C per day after surgery (P < 0.01) and that sex was not significant (P = 0.18). The authors report a model estimate of 2.52 degrees C at surgery and 1.62 degrees C at day 90, with the asymmetry remaining at 0.46 +/- 0.13 degrees C at the final assessment.",
+      "limitations": "The study has no return-to-play dates, reinjury or performance outcomes, clubs used their own rehabilitation protocols, and only players who met functional criteria for return in the first year were included. The authors note thermal camera accuracy is normally about +/-2 degrees C, and no temperature value was tested against any return outcome.",
+      "synthesisCaution": "Staff could treat the falling asymmetry curve as a validated clearance criterion for return to play, when the study does not link any temperature value to safe return or reinjury risk.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'the authors say the data cannot yet support fixed pass or fail thresholds' -> removed, not stated in text (authors instead claim the study 'established a Tsk progression criterion')",
+            "paper.limitations: added abstract vs table conflict ('both predictor variables were significant' vs Table 2 'Gender 0.14 ... 0.18')",
+            "paper.practicalImplications: presented thigh temperature and strength balance as an author recommendation -> it is a future research line ('can be combined with those of the front and back thigh Tsk. This study did not include these values')",
+            "paper.athleteDev: 'around day 35 to 187 when the study shows the asymmetry trend' -> unsupported; the decline runs through the year and the authors note possibly 'no significant change ... between days 35 and 63'"
+          ],
+          "residualConcerns": "Authors frame thermography as a return-to-play criterion without any outcome validation; record now says this explicitly. Model intercept (1.92) and the authors' stated day-0 estimate (2.52 degrees C) do not reconcile in the text; both are reported as printed.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1568",
+        "synthesisBatch": "pilot-synthesis-batch-103",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

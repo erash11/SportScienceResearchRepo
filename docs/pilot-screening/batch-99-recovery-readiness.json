@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-99-recovery-readiness",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Recovery & Readiness queue positions 13-49. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 13,
+      "sourceFile": "Readiness to train - Return to baseline strength and velocity following strength and power training.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 31875,
+        "doi": "10.1177/1747954119900120",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Repeated-measures crossover study of strength-trained men (15 recruited in the Methods; the abstract says 14 completed) who did a strength session (five sets of five at 80% 1RM) and a power session (six sets of three at 50% 1RM) in random order, one week apart. Back-squat mean and peak velocity across 20% to 100% 1RM, 1RM, and countermovement jump peak velocity were measured at 24, 48, 72 and 96 h. After the strength session, velocity at 60% 1RM and above showed moderate reductions at 24 and 48 h and had returned to baseline by 72 h, while 1RM and jump peak velocity showed only trivial to small changes at all time points.",
+      "limitations": "Only 14 to 15 men, all strength-trained, one back-squat protocol, and no athletes or women. The authors note the countermovement jump may not be sensitive enough to detect the fatigue they found in velocity, and the abstract, Methods and result tables disagree on the power session's set scheme, participant numbers and some effect-size classifications.",
+      "synthesisCaution": "Staff may treat bar velocity as a proven readiness test after any session, when this study tested one back-squat protocol in 14 to 15 strength-trained men and found velocity recovery by 72 h after a single heavy session.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: stated the text's summary as fact -> attributed to the authors and noted that Table 1/2 effect-size flags conflict (e.g., Table 1 72 h PV at 80% 1RM '1.09 +/- 0.14 a' with 'a Medium'; Table 2 96 h PV at 1RM '0.74 +/- 0.12 c' with 'c Large')",
+            "paper.limitations, screeningLimitations: added the text-versus-table effect-size conflict",
+            "paper.tldr: '1RM and jump peak velocity recovered within 24 h' -> showed no meaningful change at any time ('Only trivial to small effect size differences were observed for countermovement jump peak velocity and one-repetition maximum at all time points')"
+          ],
+          "residualConcerns": "Table footnote markers (a Medium, b Small, c Large) may have been garbled in extraction; a reviewer should check Tables 1 and 2 in the PDF to confirm whether the text's 'no meaningful change at 72 h' and 'trivial to small after the power session' hold.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1547",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 20,
+      "sourceFile": "Recovery and Performance in Sport-                        Consensus Statement .pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 45110,
+        "doi": "10.1123/ijspp.2017-0759",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Consensus statement from an international symposium held in September 2016, at which invited experts from sport science, physiology, psychology and related fields discussed recovery and performance. It defines recovery, fatigue, functional and non-functional overreaching, underrecovery and overtraining, and reviews monitoring of training load and of physiological and psychological recovery markers. It presents general recommendations on individualised monitoring and periodised recovery, and it reports no new primary data.",
+      "limitations": "The statement is expert opinion from one symposium, and the text does not describe how agreement was reached or how evidence was graded. The authors say that evidence for many training-load indicators and recovery modalities is limited or conflicting, so the recommendations are not tested outcomes.",
+      "synthesisCaution": "Staff could read the monitoring and recovery recommendations as proven protocols, when the authors say the regular-use value of markers such as creatine kinase and urea nitrogen is unclear, the use of blood lactate is debated, and the long-term effects of most recovery modalities are undetermined.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: '16 experts' is not stated in the text -> 'invited experts' ('Various international experts from many disciplines')",
+            "synthesisCaution and paper.limitations: heart rate variability was listed as having unclear value; the text only says HRV interpretation must account for training phase and measurement error -> replaced with creatine kinase, urea nitrogen and blood lactate ('their value when using them on a regular basis remains unclear'; lactate 'appropriateness is still debated')",
+            "paper.citation: authors expanded as printed (Kellmann M, Bertollo M, Bosquet L, Brink M, Coutts A, Duffield R, et al.)"
+          ],
+          "residualConcerns": "The accepted manuscript is labelled 'Section: Invited Commentary', but the article is titled and structured as a consensus statement, so INCLUDE was kept. A reviewer may want to confirm this reading.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1548",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 21,
+      "sourceFile": "Recovery following the extra-time period in soccer - Practioner perspecties and applied practices.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 44819,
+        "doi": "10.5114/biolsport.2022.104066",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Online survey of 72 soccer practitioners (from 87 responses to 208 invitations) across several countries and competition tiers, with closed Likert and ranking items and open-ended answers analysed by inductive content analysis. Eighty-eight percent believed extra time delays recovery, and 68% reduced training loads and intensities for up to 48 hours after extra-time matches, with training mostly returning to normal by 72 hours. These are reported practitioner beliefs and practices, not measured player responses.",
+      "limitations": "The sample is a convenience sample of practitioners recruited through personal networks, with a 42% response rate and a bespoke, non-validated instrument piloted only for usability and face validity. Respondents knew the topic in advance, and no player physiological, performance or injury data were collected.",
+      "synthesisCaution": "Staff could read these percentages as evidence that extra time actually slows recovery or that the adapted practices work, when they describe what practitioners believe and do, and the authors say the efficacy of these strategies has not been tested.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.athleteDev: presented within-week load increases before knockout matches as a planning option without noting the authors doubt them -> added authors' view ('it is unlikely that such strategies elicit the desired adaptations in such a short timeframe')",
+            "paper.practicalImplications: prescriptive advice reframed as reported practice, and added the authors' note that prolonged cool-downs have no shown effect on soreness or glycogen resynthesis"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1549",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 22,
+      "sourceFile": "Recovery management in sport - Overview and outcomes of a nine-year multicenter research program.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 49376,
+        "doi": "10.1177/17479541241227527",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Research note that overviews the REGman programme (2012 to 2021, German federal funding) and links its 65 listed publications, which include original studies, reviews and meta-analyses on monitoring and recovery interventions in elite and high-performance sport. The authors report that most recovery interventions had inconclusive or marginal group-level effects, with possible individual differences, that several self-report and performance-related monitoring measures showed acceptable sensitivity to change, and that individualised reference ranges for blood markers classified athletes more accurately than group ranges.",
+      "limitations": "This is an overview written by the programme's own investigators, with no described search, selection or appraisal of studies beyond the programme. Sample sizes and effect sizes for the underlying studies are not given here, so the summary cannot be checked against the source data in this text.",
+      "synthesisCaution": "Staff could read the programme as showing which recovery tools work, when the authors conclude that most interventions had uncertain or minimal group-level effects and that individual responses need repeated testing before they are acted on.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: 'Internal Evidence Synthesis' -> 'Narrative Review' (published 'Research Note' summarising a programme's outputs with no search method described; per INSTRUCTIONS, Narrative Review when no search is described)",
+            "paper.citation: removed online-first pagination '1-11' (journal header prints volume as placeholder '0(0)')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1550",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 24,
+      "sourceFile": "Recovery practices in Division 1 collegiate athletes in North America.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 46535,
+        "doi": "10.1016/j.ptsp.2018.05.004",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Basketball",
+        "American Football",
+        "Soccer"
+      ],
+      "populations": [
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Online questionnaire (16 items, closed and open) completed by 152 NCAA Division 1 student-athletes from men's basketball (n=10), men's American football (n=116) and women's soccer (n=26) at one university, aged 18 to 24, with a 94% response rate. Sleep, cold water immersion (CWI) and nutrition were rated the most beneficial (about 88%, 84% and 80% believed in them), CWI was the most used modality in training (56%) and competition (66%), and only 24% both believed in and used sleep as a recovery practice.",
+      "limitations": "The data are self-reported beliefs and usage from a single institution and three teams, with a male-dominated sample (116 of 152 were football players). No objective measures of modality use, sleep or recovery were collected, and the authors note the sleep item may have been read as night sleep only.",
+      "synthesisCaution": "Staff could read the belief-use gaps as evidence that athletes are wrong about sleep or nutrition, or that CWI works, when the study measures what athletes say they believe and do, not whether any modality improves recovery.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.athleteDev: claimed 'the authors note it [CWI] should be avoided straight after strength or hypertrophy sessions'; this paper says nothing of the kind -> removed; replaced with what the paper does say (CWI widely used despite mixed support; 'any positive effects of CWI are small and more applicable to single sprints')",
+            "paper.athleteDev: early-morning starts and academic pressures were presented as causes to act on; the authors call these explanations speculative ('these theories remain speculative') -> reframed",
+            "paper.practicalImplications: removed unsupported 'especially after strength sessions' qualifier on CWI",
+            "paper.tldr: 'coach influence' presented as a finding; it is discussion speculation, not measured -> removed",
+            "paper.limitations: added abstract/methods conflict on questionnaire length ('16-item questionnaire' vs 'comprised of 17 questions')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1551",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 49,
+      "sourceFile": "Relative Rest Correlates to Winning Percentage in 2022 National Football League Season - A Preliminary Study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 24809,
+        "doi": "10.47206/ijsc.v5i1.403",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Retrospective correlational analysis of every regular-season game of the 2022 NFL season (n = 271 games, 32 teams, one canceled game excluded), using public schedule data. Each team's relative rest (its rest interval minus its opponent's, averaged over the season) was correlated with season winning percentage. Season relative rest correlated positively with winning percentage (r = 0.338, p = 0.029); playoff teams and winning teams had higher average relative rest than non-playoff and losing teams (about 0.2 vs -0.15 days, p = 0.022 for both comparisons), but winning percentage did not differ across the high, middle and low relative-rest tertiles.",
+      "limitations": "One season of team-level, ecological data cannot show that rest causes wins, and no individual player, load, injury or performance data were analysed. The authors describe the work as preliminary.",
+      "synthesisCaution": "Staff could read this as proof that schedule rest drives team success, when it is a single-season association between rest difference and winning percentage.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: 'Other' -> 'Cross-sectional Study' (retrospective analysis of one season of public game data: 'analyzed each game played in the 2022 NFL season as individual cases')",
+            "paper.limitations: removed unsupported claim that 'the authors note the result rests on the correlation and the two group comparisons'; the authors' stated primary limitation is 'only one season was examined'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1552",
+        "synthesisBatch": "pilot-synthesis-batch-99",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-101-brain-health-psychology",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Brain Health & Psychology queue positions 37-78. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 37,
+      "sourceFile": "Relating American football age of first exposure to patient-reported outcomes and medical diagnoses among former National Football League player.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 52655,
+        "doi": "10.1007/s40279-022-01795-9",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics",
+        "Athletic Training"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "A cross-sectional online or paper survey of 1,784 former NFL players (mean age 52.3 years, 86.9% with at least one lifetime concussion) that tested whether age of first exposure (AFE) to football was linked to PROMIS and Neuro-QOL self-report measures and to self-reported anxiety, depression, dementia and mild cognitive impairment, with age as a covariate. The authors report that each 1-year-later AFE was associated with small decreases in anxiety, depression, sleep disturbance, pain interference and emotional-behavioral dyscontrol scores (B from -0.16 to -0.22), with no AFE association with any diagnosis and no AFE-by-age interaction.",
+      "limitations": "The survey is cross-sectional, self-reported and voluntary, so recall and ascertainment bias are likely, and the authors raise survivorship bias in the oldest groups. Concussion history and total years of football were deliberately not adjusted for, and the effects are small (R2 0.03 to 0.06), so AFE explains little of these outcomes.",
+      "synthesisCaution": "Staff could read a significant AFE effect on mood and pain scores as evidence that starting tackle football young harms long-term health, when the authors report small effects, no link to diagnoses, and no causal inference.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: cognitive and physical function reported as 'p>=0.168' from the text -> Table 2 values p=0.116 and p=0.860, conflict noted in limitations",
+            "paper.limitations: added the text/table p-value conflict and the abstract (binomial) vs methods (Poisson) inconsistency",
+            "screeningLimitations: stated that not adjusting for concussion history biased the AFE estimates, which the paper does not say (authors argue adjusting would 'reduce the true effect estimate') -> neutral statement that these were deliberately not adjusted",
+            "paper.tldr and paper.practicalImplications: presented exercise, sleep and diet as more useful factors, which were not tested here ('modifiable factors... have been reported [33]') -> attributed to cited prior work",
+            "paper.athleteDev: 'should not be used to decide when a young athlete starts tackle football' -> cannot establish a safe or unsafe starting age"
+          ],
+          "residualConcerns": "Concussion and long-term brain-health topic. Sex of participants is not stated in the text, so no sex tag was added.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1554",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 53,
+      "sourceFile": "Repetitive head injuries in German American football players do not change blood-based biomarker candidates for CTE during a single season.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 32883,
+        "doi": "10.1186/s42466-024-00307-6",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Prospective pre-post study of 18 male American football players sampled before and after one active season, compared with 18 sex- and age-matched controls who did not play contact sports. Blood concentrations of seven candidate CTE biomarkers were measured, along with depression, apathy, quality of life, career length, training participation and concussion history. Phosphorylated tau was higher in players than controls at both time points (about 10.9 and 10.1 pg/ml vs 6.4 pg/ml, with no within-season change), while the other biomarkers did not differ significantly between groups or across the season. Several exploratory correlations were reported, for example between depression and lower amyloid-beta 42 and higher neurofilament light, some based on subgroups as small as three players.",
+      "limitations": "The sample was small (18 players and 18 controls), some correlations rest on subgroups as small as three players, and the authors state results can only be considered indicative. CTE cannot yet be diagnosed in life and these markers are still candidates, and the study measured no performance or return-to-play outcomes.",
+      "synthesisCaution": "Staff could read the elevated phosphorylated tau in players as evidence of CTE or brain injury, when it is a group difference in a small sample using candidate markers that have not been shown to diagnose CTE.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.athleteDev: training attendance correlated with amyloid-beta 42, not a 'tau-related marker' ('Subjects with a trainings' participation of 85% or more ... had lower Aß42 titers')",
+            "screeningLimitations / synthesisCaution: 'The authors state the biomarkers cannot diagnose CTE' -> the paper states 'CTE cannot be diagnosed in vivo' and studies the markers as candidates",
+            "evidenceSummary / paper.findings: correlations were not 'all in very small subgroups'; subgroups ranged from n = 3 (depression) to n = 9 (career length, headache)",
+            "paper.limitations: added conflict between text ('positively correlated with GFAP titers') and Table 1 (QoL up, GFAP down)",
+            "paper.practicalImplications: softened 'a single-season blood check cannot track CTE risk' to what the small study supports"
+          ],
+          "residualConcerns": "Concussion/CTE topic. Dropout handling (3 dropouts vs n = 18 at T1) and the GFAP direction conflict between text and Table 1 are unresolved in the source.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1555",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 54,
+      "sourceFile": "Repetitive head-injury exposure and later-in-life cognitive and emotional outcomes among former collegiate football players - A CLEAATS investigation.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 49265,
+        "doi": "10.1080/09540261.2024.2352572",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Survey and telephone cognitive screening study of 216 former male collegiate football players aged 50 to 87 years in the CLEAATS study, 157 of whom completed the telephone cognitive screen. Hierarchical regressions, adjusted for age and education, related three head-injury exposure measures (a cumulative head-injury exposure index, self-reported diagnosed concussions, and symptomatic hits) to subjective cognitive complaints, objective cognitive screening (TICS-m), and depression, anxiety and emotional dysregulation. The exposure index did not predict any outcome. Diagnosed concussions were associated with small increases in depressive symptoms and subjective cognitive complaints, and an emotional symptom index was strongly associated with subjective complaints (R2 = 0.36) but not with the objective screening score.",
+      "limitations": "This is a single cross-sectional survey in a homogeneous, well-educated, mostly White sample, with self-reported concussions and retrospective exposure recall. The authors note reverse causation is possible, the cognitive measure was a brief telephone screen, and the effects are small.",
+      "synthesisCaution": "Staff could read the emotional-symptom link as proof that concussion does not affect thinking, when the study measured one time point with a brief screen and cannot rule out other causes or reverse causation.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: 'only weakly to objective screening scores' -> not significantly related ('Emotional functioning did not correlate with objective cognitive performance (i.e. TICS-m, r = -.082)'); removed the overreaching rule that exposure history 'should not be used to predict later-life outcomes'",
+            "evidenceSummary: added that only 157 of 216 completed the telephone screen ('157 (73%) completed the TICS-m')",
+            "paper.limitations: added abstract vs Results conflict on percentage White ('91% White' vs Table 2 '92')"
+          ],
+          "residualConcerns": "Concussion topic. Sample is retired players aged 50 to 87; the 'Male Athletes' and 'Collegiate' tags describe their former playing level, which a reviewer may want to confirm fits library convention for retired-athlete samples.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1556",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 60,
+      "sourceFile": "Retired National Football League players are not at greater risk for suicide.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 54306,
+        "doi": "10.1093/arclin/acz023",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Narrative review of the literature from 1928 to 2018 on suicide risk in former professional football players and its link to CTE. The author cites epidemiological cohorts (Baron et al., 2012; Lehman et al., 2016) in which suicide was less frequent than expected against the general population (standardized mortality ratio 0.47 in the 1960-2013 cohort, with 12 of 537 deaths from intentional self-harm), and surveys showing depression, chronic pain and opioid use in a substantial minority of former players. The author concludes that suicidality is not an established clinical feature of CTE, and that a subgroup with depression and chronic pain is at increased risk of suicidal thoughts and behaviors.",
+      "limitations": "This is a narrative review with no described systematic search, so the choice of studies and the conclusions depend on the author's judgment. It relies on cited case series, surveys and cohorts (the author notes that highly selected autopsy case series carry ascertainment bias), and it does not test whether CTE pathology changes suicide risk.",
+      "synthesisCaution": "Staff could read this as showing that former NFL players are not at risk of suicide or that CTE is irrelevant, when the paper says a subgroup with depression, chronic pain or financial stress is at increased risk.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'several of which the author notes have ascertainment bias' overstated -> limited to autopsy case series ('ascertainment bias associated with highly selected autopsy case series')",
+            "paper.practicalImplications: 'Screen former players' is not stated -> rephrased to the author's claim ('retired football players with chronic pain, depression, substance abuse problems, life stress, and financial difficulty will be at increased risk for suicidal thoughts and behaviors')"
+          ],
+          "residualConcerns": "Text is identical to Q61 (same article, duplicate PDF under a near-identical filename). A reviewer should keep only one record. Clinically sensitive topic (suicide, CTE). Author discloses NFL research funding.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1557",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 61,
+      "sourceFile": "Retired National Football League players are not at greater risk of suicide.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 53266,
+        "doi": "10.1093/arclin/acz023",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "Narrative review of the literature from 1928 to 2018 on suicide risk in former professional football players and its link to CTE. The author cites epidemiological cohorts (Baron et al., 2012; Lehman et al., 2016) in which suicide was less frequent than expected against the general population (standardized mortality ratio 0.47 in the 1960-2013 cohort, with 12 of 537 deaths from intentional self-harm), and surveys showing depression, chronic pain and opioid use in a substantial minority of former players. The author concludes that suicidality is not an established clinical feature of CTE, and that a subgroup with depression and chronic pain is at increased risk of suicidal thoughts and behaviors.",
+      "limitations": "This is a narrative review with no described systematic search, so the choice of studies and the conclusions depend on the author's judgment. It relies on cited case series, surveys and cohorts (the author notes that highly selected autopsy case series carry ascertainment bias), and it does not test whether CTE pathology changes suicide risk.",
+      "synthesisCaution": "Staff could read this as showing that former NFL players are not at risk of suicide or that CTE is irrelevant, when the paper says a subgroup with depression, chronic pain or financial stress is at increased risk.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'several of which the author notes have ascertainment bias' overstated -> limited to autopsy case series ('ascertainment bias associated with highly selected autopsy case series')",
+            "paper.practicalImplications: 'Screen former players' is not stated -> rephrased to the author's claim ('retired football players with chronic pain, depression, substance abuse problems, life stress, and financial difficulty will be at increased risk for suicidal thoughts and behaviors')"
+          ],
+          "residualConcerns": "Text is identical to Q60 (same article, duplicate PDF under a near-identical filename). A reviewer should keep only one record. Clinically sensitive topic (suicide, CTE). Author discloses NFL research funding.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1558",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 78,
+      "sourceFile": "Return to play and risk of repeat concussion in collegiate football players- comparative analysis from the NCAA Concussion Study (1999–2001) and CARE Consortium (2014–2017).pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 45266,
+        "doi": "10.1136/bjsports-2019-100579",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Comparative analysis of two prospective cohorts of concussed NCAA football players: the NCAA Concussion Study (1999-2001, n=184) and the CARE Consortium (2014-2017, n=701). CARE athletes had longer symptom duration (median 5.92 vs 2.00 days), symptom-free waiting periods (median 6.00 vs 0.98 days) and time to return to play (mean 16.08 vs 6.67 days, all P<0.0001). Same-season repeat concussion was 3.85% in CARE vs 6.52% in the NCAA Study (P=0.17, not significant overall), but only 1 of 27 CARE repeats occurred within 10 days of injury, against 11 of 12 in the NCAA Study (P<0.0001).",
+      "limitations": "Two non-randomised cohorts about 15 years apart, so changes in management, awareness, reporting and diagnosis cannot be separated from one another. Recovery was based on athlete self-report, the study covers NCAA football players only, and the repeat-concussion rate difference was not statistically significant.",
+      "synthesisCaution": "Staff may read the lower repeat-concussion rate as proof that longer rest and symptom-free waiting periods prevent repeat injury, but the overall rate difference was not significant and the era, reporting and assessment changed at the same time.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: removed placeholder '2019;0:1-8' (Epub ahead of print)",
+            "paper.practicalImplications: 'The study supports keeping players out' -> consistent with consensus advice but cannot prove causation ('We cannot exclude the possibility that other system or cultural changes ... may also have impacted the observed risk'); removed unsupported claim about long-term repeat-injury rates",
+            "paper.limitations: added more severe acute injuries in NCAA cohort ('17.9% of CARE athletes had either LOC or PTA ... compared with 28.3%') and other era changes named by authors"
+          ],
+          "residualConcerns": "Concussion return-to-play paper; causal language in the source's conclusions ('appear to have reduced the risk') exceeds what the two-era design supports.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1559",
+        "synthesisBatch": "pilot-synthesis-batch-101",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

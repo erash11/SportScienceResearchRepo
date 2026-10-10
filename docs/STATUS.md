@@ -8,9 +8,10 @@ Read this first. Update it before ending every session.
      updated 2026-09-26, including the completed SecondBrain vault push). -->
 
 ## Current state
-- 2026-10-10 (cloud): the public Evidence Library has **1,452 records** (Batches 19-95 published via PRs #9-#11,
-  #13-#18 and the Batch 88-95 PR). Next unused ID 1485. `npm run audit` and `pilot:check` pass.
-- Backlog: **562 unscreened unique PDFs** remain (`python3 scripts/haiku-batch/backlog.py`), about 6 batches of 96.
+- 2026-10-10 (Mac): master has **1,452 records** (Batches 19-95). Branch `batch-96-103-staged` adds Batch 96
+  (84 records, IDs 1485-1568, total 1,536). **Not merged.** The shortlist audit fails. See the handoff
+  `docs/handoffs/2026-10-10-mac-batch-96-103.md`. Eric must decide the shortlist rule before the PR.
+- Backlog: about **466 unscreened unique PDFs** remain on the branch (`python3 scripts/haiku-batch/backlog.py`).
   Pipeline: `scripts/haiku-batch/` (Haiku 5.5 drafts, Opus 5.5 claim audit).
 - Ask the Library drafter merged (PR #12): `npm run pilot:draft -- <request.json>`. Stress-test eval in
   `docs/ask-library-eval/`: 0 critical integrity failures, 12/12 useful. Known limitation: briefs are long.

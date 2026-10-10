@@ -1,0 +1,1814 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-98-rehabilitation-return-to-sport",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Rehabilitation & Return to Sport queue positions 3-94. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 3,
+      "sourceFile": "Quantifying Muscle Volume Deficits Among 38 Lower Extremity Muscles in Collegiate Football Athletes After Anterior Cruciate Ligament Reconstruction.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 44694,
+        "doi": "10.1177/03635465241313235",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Cross-sectional secondary analysis of 30 male Division I football athletes, a mean of 27.9 months after primary unilateral ACL reconstruction, who were back to full football participation. Muscle volumes of 38 lower extremity muscles were measured on MRI with machine-learning segmentation and compared between surgical and nonsurgical limbs by paired t tests. The three quadriceps muscles had the largest surgical-limb deficits, followed by the gastrocnemii, while the combined fibularis muscles were larger on the surgical side and most other muscles did not differ.",
+      "limitations": "This is an exploratory cross-sectional analysis of one cohort of 30 athletes with no a priori power analysis, so many comparisons raise the chance of both false-positive and missed findings. Muscle volume is not a direct measure of strength or function, and the graft mix was uneven (22 of 30 patellar tendon autografts).",
+      "synthesisCaution": "Staff could read the gastrocnemius and fibularis results as proven rehabilitation targets, but the authors state their clinical meaning is unknown and untested.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: \"Ito N, Martin JA, et al.\" -> first six authors then et al.; placeholder pagination \"2025:1-8\" dropped because the header prints \"AJSM Vol. XX, No. X, XXXX\"",
+            "paper.findings: \"Quadriceps limb symmetry improved with time from surgery\" implied within-athlete change and included rectus femoris -> cross-sectional association for the vasti only (\"vastus medialis: R2 = 0.489 ... rectus femoris: R2 = 0.016, P = .48\")"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1514",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 4,
+      "sourceFile": "Questioning the rules of engagement - A critical analysis of the use of limb symmetry index for safe return to sport after anterior cruciate ligament reconstruction.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 54276,
+        "doi": "10.1136/bjsports-2024-108079",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Observational cohort study using prospectively collected data from the Project ACL rehabilitation registry, including 233 athletes aged 15 to 30 years with a pre-injury Tegner score of 6 or higher who had ACL reconstruction (51.1% women). The outcome was a safe return to sport, defined as no second ACL injury within 2 years of return. Limb symmetry index (LSI) cut-offs, continuous LSI and deviation from 100% symmetry did not meaningfully separate athletes with and without a safe return; meeting 80% or 85% LSI on all tests was linked to lower odds of safe return (OR 0.32 and 0.39), but the AUCs were poor (0.60 to 0.61).",
+      "limitations": "Observational registry data with athletes returning to sport at different times between scheduled follow-ups, and the Tegner return-to-sport rating does not record training exposure or the level of activity. Concomitant injuries were not recorded, and LSI ignores absolute values and possible changes in the uninjured limb.",
+      "synthesisCaution": "Staff could read the result as meaning LSI is useless, but the study shows that LSI alone does not identify a safe return; it does not test whether LSI adds value alongside other measures.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: placeholder \"2024;0:1-9\" removed (online first, \"first published ... on 20 December 2024\"); authors expanded to first six then et al.",
+            "populations: Youth / Adolescent and Adult / Recreational -> Mixed / Unspecified, since pre-injury Tegner ranged from 6 to 10 (\"10: 30 (12.9)\") across ages 15 to 30",
+            "screeningLimitations and paper.limitations: removed unsupported claim that the 2-year follow-up is short; added the authors' stated limits (self-reported second injury, \"Absolute values of the injured or the non-injured limb were not considered\") and the abstract vs Table 1 conflict on the vertical hop 1% LSI result"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1515",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 9,
+      "sourceFile": "Ramping isometrics for accelerated return to play following hamstring tendon repair - A case study.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 57562,
+        "doi": "10.54080/MOMV6327",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Performance",
+        "Nutrition"
+      ],
+      "sports": [
+        "Rugby"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Single case report of one 27-year-old male elite international rugby union player with a retracted semimembranosus tear, combined with semitendinosus and biceps femoris injury, treated with surgical repair. A low-jerk ramping isometric protocol began in the first rehabilitation session, alongside progressive loading and a nutrition plan. The player returned to team training at week 10 and to play exactly 12 weeks after surgery, with a 14% eccentric Nordic deficit remaining at return to training, and the authors report no reinjury over the following two seasons.",
+      "limitations": "This is one uncontrolled player with no comparison group, so the ramping protocol cannot be separated from the collagen, creatine, blood flow restriction and other interventions, or from the player's motivation and surgical approach. The authors state that most eccentric Nordic tests, up to and including week 12, were done post-running in a fatigued state, which likely reduced their validity.",
+      "synthesisCaution": "Staff may read the 12-week return as proof that early ramped isometrics shorten return to play, when it is one player on a bundled program and the authors say the protocol's effect on healing is not yet demonstrated.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: called 17.5% a 'limb symmetry index' -> it is the remaining eccentric LSI deficit at week 9 ('bar eccentric knee flexor limb symmetry index (LSI) on Nordic assessment at which a deficit of 17.5% remained')",
+            "screeningLimitations: fatigued eccentric testing said to be 'after week 8' -> most eccentric tests up to and including week 12 ('testing up to and including week 12 ... was all done post on-feet running sessions, in a fatigued state')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1516",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 15,
+      "sourceFile": "Reasons for not returning to pre-injury sport level after ACL reconstruction.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 39671,
+        "doi": "10.1055/a-2270-3306",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Cross-sectional survey of 91 athletes aged 14 to 50 (89 men and 2 women), about 2 years after hamstring-autograft ACL reconstruction, recruited in Jordan. Only 9 athletes (10%) had returned to their pre-injury sport level, and among the 82 who gave reasons, lack of confidence or fear of re-injury (68.3%) and post-surgical knee impairment (52.4%) were the most common. Knee giving-way was the only significant predictor of knee impairment as a reason (OR 8.3, 95% CI 2.48 to 27.42).",
+      "limitations": "Self-reported, cross-sectional and recall-based, with about 30% of eligible athletes not responding. Only two women were included, rehabilitation was not standardised, and knee giving-way was not confirmed by clinical tests or MRI.",
+      "synthesisCaution": "Staff may take the 10% return rate as the true local rate after ACL reconstruction, when it comes from 91 mostly male athletes in one Jordanian sample, with about 30% of eligible athletes not responding.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary, synthesisCaution: 'two centres in Jordan' not stated in text -> 'recruited in Jordan' (ethics from 'Jordan University of Science and Technology and King Abdullah University Hospital'; 'five senior surgeons')",
+            "paper.limitations: added abstract-versus-results percentage difference ('40 athletes (48.8 %) indicating a lack of confidence or fear of reinjury as the only or primary reason'; abstract also labels the giving-way figure 48.8%)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1517",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 19,
+      "sourceFile": "Recommendations for hamstring function recovery after ACL reconstruction.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 18,
+        "extractedCharacters": 97234,
+        "doi": "10.1007/s40279-020-01400-x",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Performance",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review and recommendation paper on restoring hamstring function after anterior cruciate ligament reconstruction (ACLR), with emphasis on hamstring tendon autograft. The authors report knee flexor strength deficits of about 0 to 20% at return to sport, and limb symmetry index (LSI) values of 54%, 70% and 76% at 4, 8 and 12 weeks after hamstring grafts. They propose a stage-based hamstring programme (Table 2) and return-to-sport screening thresholds, which are recommendations rather than tested outcomes.",
+      "limitations": "No search method is described, so the evidence base cannot be checked for completeness or reproduced. The authors state that much of the hamstring evidence comes from injury prevention and strain rehabilitation rather than ACLR, and that specific ACLR programme recommendations lack direct evidence.",
+      "synthesisCaution": "Staff could treat the stage timelines and return-to-sport thresholds (for example 90% knee flexor LSI and 1.5 Nm/kg) as validated cut-offs for every ACLR athlete, when the authors present them as recommendations that rest partly on clinical experience.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Return-to-sport clearance thresholds are author recommendations ('is recommended for all patients after ACLR'), not validated cut-offs; flagged high because the record informs RTS clearance.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1518",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 27,
+      "sourceFile": "Recurrent hamstring muscle injury - Applying the limited   evidence in the professional football setting with a seven   point program.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 80069,
+        "doi": "10.1136/bjsports-2012-091400",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A single-case report of one 26-year-old professional footballer who had five hamstring injuries in five months. A seven-part management plan (biomechanical correction, neurodynamics, core stability, eccentric strengthening, an overload running programme, injection therapies, and stretching/relaxation) was used after the fifth episode; two lumbar epidural steroid injections had already been given after the third episode and between the fourth and fifth. The player returned to team training at 33 days and to play at 42 days, then played 33 of 42 remaining games, with no further hamstring absences.",
+      "limitations": "This is one player treated with seven interventions at once, with no comparison group and no way to separate the effect of each component. The authors state it is impossible to know which parts of the programme produced the result.",
+      "synthesisCaution": "A successful single-player outcome should not be read as proof that the seven-part programme, or any single element of it such as epidural or Actovegin injections or the overload running load, reduces recurrence in other players.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/methods: epidural steroid injections described as part of the post-fifth-episode plan -> they preceded it ('This was undertaken following his third injury'; 'a second epidural was performed between the fourth and fifth episodes')",
+            "methods: added the actual post-fifth-episode components (osteopathic manual therapy, aggressive neural sliders, 'local anaesthetic followed by a mixture of Traumeel and Actovegin')",
+            "limitations: added conflict between Table 1 (episode 5: 28 days to RTT, 38 to RTP) and Outcome text ('RTT 33 days ... RTP 42 days'); reworded injection evidence to the authors' statement 'There have been no controlled trials'",
+            "populations: added Male Athletes (player described as 'he')",
+            "findings: 'improved freedom of movement' -> player 'reported subjective improvement in his hamstring freedom' (yoga sessions)"
+          ],
+          "residualConcerns": "Involves epidural corticosteroid and Actovegin/Traumeel injections; the record must not be read as endorsing these. Outcome timelines differ between Table 1 and the Outcome text.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1519",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 33,
+      "sourceFile": "Reframing Recovery - Fantasy sports metrics as scalable tools for measuring post-injury athletic performance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 57072,
+        "doi": "10.7759/cureus.91602",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football",
+        "Basketball",
+        "Baseball / Softball",
+        "Ice Hockey"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A narrative review of six PubMed-indexed studies (15 sport-specific cohorts, 785 professional athletes in the NFL, NBA, MLB and NHL) that used fantasy scores or wins above replacement (WAR) to measure performance after injury. The authors report that fantasy scores or WAR fell after injury in 14 of 15 cohorts, across ACL reconstruction, lumbar discectomy, Tommy John surgery, tibial fracture and ankle injury. Only two of the six studies explicitly referred to return to pre-injury performance (RPIP).",
+      "limitations": "The authors call the review narrative, although it used a defined PubMed search and PRISMA-style reporting, and no pooled estimate was calculated. The included studies are small (seven of 15 cohorts had fewer than 20 athletes), mostly retrospective, and rarely report inferential statistics, so the evidence cannot establish that fantasy metrics are a valid or scalable measure of RPIP.",
+      "synthesisCaution": "Staff could read the 14 of 15 declines as proof that fantasy scores validly measure return to pre-injury performance, when the review only shows that the scores fell in mostly small, retrospective samples and that the authors themselves propose RPIP as a future framework.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Authors label the paper a narrative review; coded Systematic Review / Meta-analysis per library precedent because a Boolean PubMed search and PRISMA-style flow are described. Note that several cohorts counted among the '14 of 15' declines had only about half of players decline (Table 3: NFL ACL 50%, NHL ACL 47%), and Table 3 sample sizes sum to 715 across 14 rows versus the stated 785 athletes in 15 cohorts. The conclusions say 'no study explicitly framed their analysis around RPIP', which conflicts with the results statement that two studies addressed RPIP; the draft follows the results.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1520",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 35,
+      "sourceFile": "Rehabilitation and return to play protocols after anterior cruciate ligament reconstruction in soccer players - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 55376,
+        "doi": "10.1177/03635465241233161",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A systematic review of 23 studies (8 prospective, including 2 randomized controlled trials, and 15 retrospective) covering 874 soccer players who had ACL reconstruction and rehabilitation; the pooled percentage of male participants was 100% (95% CI 95% to 100%) among studies reporting sex, and four studies did not report sex. The authors report wide variation in rehabilitation protocols and in the functional test batteries used, mean surgery-to-return-to-play times of 3 to 8 months, complications reported in only two studies, and significant PROM improvement in all nine studies that reported PROMs.",
+      "limitations": "The included studies are small, heterogeneous and mostly retrospective, with low inclusion of female players and little long-term follow-up (mean follow-up 4 to 19.2 months). The review was not able to identify which rehabilitation protocol or functional test predicts successful return to play, and the findings may not transfer to other sports.",
+      "synthesisCaution": "Staff could take the 3 to 8 month surgery-to-return-to-play range as a target timeline for soccer players, when it is a range of study-level means from small, mixed-protocol cohorts that the authors say lack standardization.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: '2 RCTs, 8 prospective and 15 retrospective' summed to 25 -> 8 prospective including the 2 RCTs, 15 retrospective (Table 1: 'Prospective: 8/23; retrospective: 15/23')",
+            "evidenceSummary: 'pooled 100% male sample (range 88 to 100%)' -> pooled 100% (95% CI 95%-100%) among studies reporting sex; 4 studies did not report sex (Table 2 dashes)",
+            "screeningLimitations and paper.limitations: 'only one study with follow-up to four years' unsupported -> 'mean follow-up time after surgery ranged from 4 to 19.2 months'; added single-reviewer risk-of-bias rating",
+            "paper.citation: removed placeholder pages '1-11' ('AJSM Vol. XX, No. X, XXXX')",
+            "populations: only 'Male Athletes' although the authors report 'limited representation of female soccer players' -> added 'Female Athletes'"
+          ],
+          "residualConcerns": "Sex mix is uncertain: pooled male percentage is 100% (95% CI 95%-100%), four studies did not report sex, and one (Arundale 2019, n=117) appears by its reference title to involve female players; the authors note limited female representation. Return-to-play topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1521",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 36,
+      "sourceFile": "Rehabilitation and return to sport testing after anterior cruciate ligament reconstruction - Where are we 2022.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 28363,
+        "doi": "10.1016/j.asmr.2021.10.025",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A clinical commentary that gives a critical overview of the literature on return-to-sport (RTS) testing after ACL reconstruction, covering strength (limb symmetry index), hop tests, movement quality, psychological readiness, rehabilitation content, timing and the consequences of test results. It cites a proportional meta-analysis in which 23% of patients passed RTS test batteries before return to sport, and it reports that passing criteria reduced graft rupture risk by 60% but raised contralateral rupture risk by 235%, as the cited review found.",
+      "limitations": "The paper is labelled a clinical commentary and describes no literature search, so it is coded as a narrative review of cited studies, not a structured evidence synthesis. Its arguments rely on cited figures, some from one meta-analysis and one cohort, and the abstract's claim of up to 40% second ACL injury in athletes under 20 differs from the body, which attributes 40% to men's Australian football.",
+      "synthesisCaution": "Staff could read the commentary's critique as proof that current RTS test batteries are invalid and should be abandoned, when the authors themselves call for better validated criteria and only summarize existing evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "The article labels itself a 'clinical commentary'. Kept as INCLUDE (Narrative Review) because INSTRUCTIONS exclusion (b) applies only to commentaries 'without original methods or a structured review of evidence', and this is a sectioned 'critical overview of the current literature' with 49 references; VERIFY.md also says commentaries are not eligible, so a reviewer should confirm the library precedent. Return-to-play clearance topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1522",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 62,
+      "sourceFile": "Return to Play After Shoulder        Instability Surgery in National Collegiate Athletic Association    Division   I   Intercollegiate Football Athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 32772,
+        "doi": "10.1177/0363546517705635",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Retrospective case series of 177 shoulder instability surgeries in 153 NCAA Division I football players from seven Pac-12, ACC and SEC programs, covering the 2004-2013 seasons, with mean follow-up of 3.3 years. Of 168 arthroscopic procedures, 85.4% of athletes with isolated arthroscopic surgery returned to play, and return rates did not differ by repair type (anterior, posterior, combined or open). Players played a higher percentage of games after surgery (71.5%) than before injury (49.9%, P < .0001), and scholarship players returned more often (90.9% vs 65.5%, P = .0003).",
+      "limitations": "The design is retrospective with possible recall and exclusion bias, has no control group, and games-played data were missing for two of the seven schools (20 patients), so only 142 players were used for that analysis. Only 9 open procedures were performed, so the open versus arthroscopic comparison is underpowered, and recurrent instability was captured only when it required reduction or revision surgery.",
+      "synthesisCaution": "Staff could read the 85% return-to-play rate as a reliable prognosis for their own athlete, when the study has no control group, covers seven programs, and recorded only instability that needed reduction or revision.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations/limitations: '(142 players)' described as missing -> 142 were analyzed; missing schools covered 20 patients ('2 of 7 teams were not able to collect these particular data points (20 patients)'; 'only 142 of the players were able to be used')",
+            "screeningLimitations/synthesisCaution/rtp: 'does not measure recurrent instability' overstated -> recurrent instability requiring reduction or revision was recorded ('10.3% of all athletes who returned to play were reported to have subsequent instability that required either manual reduction or revision')",
+            "paper.findings/practicalImplications: added 10.3% recurrent instability rate",
+            "paper.rtp: 'does not set ... reinjury risk' -> reinjury rates are reported; milder instability not captured"
+          ],
+          "residualConcerns": "Return-to-play clearance topic. Abstract says 'P \\ .0001' (extraction artifact for <).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1523",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 63,
+      "sourceFile": "Return to Play After Shoulder Stabilization –What If This Isn't Going Well.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 24,
+        "extractedCharacters": 72991,
+        "doi": "10.1016/j.otsm.2024.151134",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Clinical review chapter on return to play after shoulder stabilization in athletes, with no systematic search described. It cites return-to-sport rates of 63% to 100% after stabilization, performance that lags return to sport by 6% to 25% (most in throwers), and a study in which athletes who did not undergo criterion-based return-to-sport testing had a 22% recurrence rate versus 5% for those required to pass it. It sets out impairments (range of motion, strength, neuromuscular control, kinetic chain mobility and psychological readiness) and a phased rehabilitation framework.",
+      "limitations": "This is a narrative clinical review with no described search or appraisal method, so the evidence it cites was selected without a stated process. Several of its thresholds (an acute:chronic workload ratio above 1.3, a 20-degree internal rotation loss and a 5-degree total rotation asymmetry) come from studies of throwers and swimmers, and the chapter does not show that they transfer to other athletes.",
+      "synthesisCaution": "Staff could treat the listed range-of-motion, strength and workload thresholds as validated pass or fail cut-offs for their own athletes, when the chapter presents them as guidance drawn mainly from throwers and other overhead sports.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings/rtp: 'did not pass'/'did not complete' testing -> 'did not undergo' ('Athletes who did not undergo CBRST were 4.85 times more likely ... 22% recurrence rate compared to 5% rate among those required to pass CBRST')",
+            "screeningLimitations/limitations: psychological score >56 (SIRSI) wrongly attributed to thrower and swimmer studies -> list limited to ACWR, GIRD and TROM thresholds",
+            "paper.citation: placeholder volume '00' removed (printed 'Oper Tech Sports Med 00:151134')"
+          ],
+          "residualConcerns": "Article in press; no volume or issue printed. Return-to-play clearance topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1524",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 64,
+      "sourceFile": "Return to Play and Decreased         Performance After Anterior Cruciate Ligament Reconstruction in    National      Football League Defensive Players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 34564,
+        "doi": "10.1177/0363546517703361",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case-control Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Retrospective matched case-control and cohort study of 38 NFL defensive players who had ACL reconstruction between 2006 and 2012, compared with 38 controls matched on position and years of NFL experience. Of the injured players, 61% (23/38) played at least 8 games after surgery; before injury these returners started 81% of games and averaged 3.44 solo tackles per game, but after surgery they started 57% of games and averaged 2.38 solo tackles per game, while matched controls showed no significant decline. The authors conclude that returners were above-average players before injury and comparatively average after returning.",
+      "limitations": "The study is retrospective and relies on public media and NFL database records, so some injuries may be missed and concomitant injuries, graft type, surgical technique and rehabilitation are unknown. Position subgroups were small (only 3 linemen returned), no multivariable adjustment was made, and the results apply only to NFL defensive players.",
+      "synthesisCaution": "Staff could read the post-surgery decline as an expected loss for any defensive player after ACL reconstruction, when the study covers 23 returners from one league and cannot show what caused the decline.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: abstract-table mismatch described incompletely -> abstract control values (52%, 1.77) also differ from Table 3 controls (60.5%, 2.50); abstract control values match Table 1 non-returners",
+            "paper.athleteDev: 'linebackers lost solo tackles' not stated in text (text: 'Linebackers showed significant decreases in interceptions per game'; Table 4 flags differ) -> limited to defensive backs, the consistent finding, with small-subgroup caveat"
+          ],
+          "residualConcerns": "Position-specific linebacker results conflict between text (interceptions decreased) and Table 4 within-group flags (solo tackles marked, interceptions not). Return-to-play topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1525",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 65,
+      "sourceFile": "Return to Sport After Distal Biceps Tendon Repair - A Systematic Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 46872,
+        "doi": "10.1177/03635465241295618",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "American Football"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Adult / Recreational",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A PRISMA systematic review of 42 clinical studies covering 1,093 patients (1,100 elbows) who had distal biceps tendon repair. The patients were 99.2% male with a mean age of 44.9 years, and 169 (15.5%) were athletes. The pooled return-to-sport rate was 91.5% at a mean of 6.3 months, with 85.2% returning to preinjury level or higher; athletes alone had a 96.4% rate at a mean of 9.4 months.",
+      "limitations": "All included studies were level 3 or 4 evidence, with heterogeneous outcome measures, incision approaches, fixation methods and rehabilitation protocols. The authors could not access individual patient data, so the fixation and rehabilitation trends were not tested statistically.",
+      "synthesisCaution": "The 91.5% pooled return rate is mostly a patient estimate (15.5% athletes), so it should not be read as the expected rate for a given athlete.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "The athlete mean time of 9.4 months comes from 9 studies and the authors note it may be inflated by two NFL studies (11.46 and 12.55 months). Mixed population tags reflect a mostly non-athlete patient sample with an athlete subanalysis.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1526",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 66,
+      "sourceFile": "Return to Sport, Reinjury Rate, and Tissue Changes after Muscle Strain Injury - A Narrative Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 38967,
+        "doi": "10.1155/2024/2336376",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer",
+        "Track & Field"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Adult / Recreational",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A narrative review of randomized trials that used resistance training in rehabilitation for acute lower-limb muscle strain, plus observational tissue studies. Across eight trials, mean time to return to sport ranged from 15 to 86 days and reinjury rates from 0% to 70%, and the authors report that eccentric training at long muscle length and early rehabilitation shortened return time in individual trials. The review also reports that structural changes in the muscle and aponeurosis appear to persist after injury, regardless of rehabilitation program.",
+      "limitations": "No search method is described, so the included studies were not systematically identified. The trials are small, use different return-to-sport criteria and follow reinjury for six or twelve months, so the cross-study ranges are not directly comparable.",
+      "synthesisCaution": "The 15 to 86 day return range and the early-rehabilitation finding could be read as a protocol that safely shortens return, when reinjury rates varied from 0% to 70% and several trials found no difference in return time.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: claimed the sample was young male athletes -> sex of the pooled sample is not stated, now 'young athletes' (\"the participants' average age is 25 years\")"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1527",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 67,
+      "sourceFile": "Return to Sport-Specific     Performance After Primary Anterior Cruciate Ligament Reconstruction A     Systematic Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 46467,
+        "doi": "10.1177/0363546517732541",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Basketball",
+        "Ice Hockey",
+        "Soccer",
+        "American Football",
+        "Baseball / Softball",
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "A systematic review (PROSPERO CRD42016046709) of 15 prognostic studies of sport-specific performance after primary ACL reconstruction in competitive athletes in basketball, ice hockey, soccer, American football, alpine and snowboard skiing, and baseball. Reported return to sport ranged from 63% to 97% across studies, and most performance statistics declined or did not change after reconstruction, with results highly sport-specific. Twelve of the 15 studies were rated high risk of bias on the QUIPS tool, mainly in how athletes were identified.",
+      "limitations": "Nearly all studies were of high-performance or professional athletes, mostly male, and many identified players from public sources, so the findings cannot be generalized to other levels or ages. Sample sizes were small, few studies corrected for multiple testing, and athletes who did not return were not measured.",
+      "synthesisCaution": "The 63% to 97% return range and the statement that most elite athletes returned to preinjury level may be read as an expected performance outcome for any athlete, when the performance data come from small, highly biased samples of elite players.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: said control comparisons were 'not statistically significant' -> some were significant (e.g. Sikka hockey, Erickson hockey), now 'many lacked the numbers to show a difference' (\"the numbers of study participants were not sufficient to show a difference\")",
+            "populations: Mixed / Unspecified -> Male Athletes and Female Athletes added, since sex is stated per study (\"The majority of included individuals were males\"; WNBA and skier samples include females) and all samples are elite"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1528",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 69,
+      "sourceFile": "Return to performance - Machine learning insights into how absence time following muscle injuries affects match running performance in LaLiga soccer players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 58192,
+        "doi": "10.5114/biolsport.2025.151651",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Rehabilitation",
+        "Research & Analytics",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A retrospective study of 110 lower-limb muscle injuries in 90 male LaLiga players during the 2022-2023 season, comparing four matches before and four after each injury. Mean absence was 34.6 days (SD 27.9). Maximal speed had the strongest negative correlation with absence time (r = -0.355), and maximal speed, maximal acceleration, time played and the composite index differed significantly after injury. Random forest and linear regression models explained 44% and 35% of variance in absence time on the test set (training-set R2 0.34 and 0.12).",
+      "limitations": "The models were fitted on 110 injuries with an 80/20 split, so the test set is small, and the explained variance is modest. The study is observational and cannot separate absence effects from injury severity, tissue type, age or role, and no correction for multiple testing is reported.",
+      "synthesisCaution": "Staff could read the models as predicting how much speed or braking a given player will lose, when they explain only about a third to a half of the variance in absence time and show that longer absence goes with larger declines on average, not for each player.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations and paper.limitations: removed the claimed sign conflict for maximal deceleration -> deceleration is recorded as a negative value (pre -6.02, post -5.86 m/s2, difference +0.15), so the positive correlation (r = 0.185) means a larger loss of braking with longer absence, which matches the text",
+            "paper.findings: said relative sprint count had the weakest correlation (r = -0.149) -> total distance had a weaker correlation (r = 0.078); now 'weakest relationship with absence time in both models' (\"the variable that showed the weakest relationship with absence time in our two machine learning models\")",
+            "paper.athleteDev: 'are likely to lose' -> 'tended to show larger losses', to keep the finding associational"
+          ],
+          "residualConcerns": "The models predict absence time from performance changes rather than the reverse. Hamstring count is 51 in results and 52 in the discussion. The abstract gives the maximal speed MLR coefficient as 7.94 while results give -7.94.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1529",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 70,
+      "sourceFile": "Return to play after a hamstring strain injury - It is time to consider natural healing.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 57851,
+        "doi": "10.1007/s40279-021-01494-x",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A review article that combines hamstring return-to-play studies, two PubMed searches run in August 2020 and basic science on muscle healing to ask whether biological healing time should be a return-to-play criterion. The authors report average return to play of 11 to 25 days after grade 1 or 2 hamstring strain, with about 25% of re-injuries occurring in the first week after return and at the index site, and immature scar tissue at 2 to 3 weeks. They propose a minimum of 4 weeks before return for grade 1 and 2 injuries.",
+      "limitations": "The 4-week minimum is an expert recommendation built largely from basic science findings on muscle healing, not from trials that tested it against re-injury outcomes. The literature search used PubMed only plus hand searching, with no quality appraisal of included studies, so the synthesis is closer to a narrative review than a systematic one.",
+      "synthesisCaution": "Staff could treat the proposed 4-week minimum as a validated safe-return threshold, when it is a proposal the authors say needs clinical testing and the cited evidence is mainly biological.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: 'a single PubMed search' -> two PubMed searches, one per domain (\"the search strategies in both domains resulted together in 26 additional studies\")",
+            "screeningLimitations: 'single PubMed pass with expert judgment on inclusion' and 'animal or tissue-level findings' -> PubMed-only search plus hand searching with no quality appraisal; evidence described as basic science, since the text does not state expert-judgment screening or animal data",
+            "paper.findings: '131 Premier League teams' -> worldwide survey of 131 premier league football teams (\"Via a worldwide survey ... 131 premier league football teams\")",
+            "paper.limitations: 'animal and tissue studies' -> 'basic science studies of muscle healing'",
+            "paper.athleteDev: removed unsupported advice to introduce sport-specific loading as tissue matures -> states the paper gives no targets and that functional recovery precedes tissue healing (\"functional recovery precedes the biological healing of the muscle\")"
+          ],
+          "residualConcerns": "Return-to-play clearance guidance. The paper is a position-style review with a described PubMed search; it is coded Systematic Review / Meta-analysis under the search-method rule, but a reviewer may prefer Narrative Review.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1530",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 71,
+      "sourceFile": "Return to play after hamstring      injuries in football (soccer)- a worldwide Delphi procedure regarding      definition, medical criteria and decision-making.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 51752,
+        "doi": "10.1136/bjsports-2016-097206",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A four-round Delphi consensus study of 58 experts from 28 FIFA Medical Centres of Excellence, with response rates of 84% to 93%, on return to play after hamstring injury in football. The panel agreed a definition of return to play as criteria-based medical clearance plus mental readiness for full availability, and a set of criteria covering absence of pain on palpation and during strength, flexibility and functional testing, similar flexibility, performance on field tests, and psychological readiness. MRI findings were excluded as a criterion, and the sports physician was named as the ultimately responsible clinician.",
+      "limitations": "The consensus rests on expert opinion (the authors call it low-level evidence), with a 70% agreement cut-off and no thresholds for most criteria apart from a 0% to 10% flexibility difference. The panel was drawn from FIFA centres, and the authors note it may suit a professional setting better than an amateur one with fewer staff and tools.",
+      "synthesisCaution": "Staff could read the consensus as validated return-to-play criteria that reduce re-injury, when the panel itself says the criteria need prospective validation and the consensus gives almost no pass-fail cut-offs.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: criteria listed as 'pain on palpation, strength and flexibility' -> absence of pain on palpation and during strength, flexibility and functional testing, plus similar flexibility (\"absence of pain during strength and flexibility testing ... similar hamstring flexibility\")",
+            "screeningLimitations, synthesisCaution, paper.limitations: 'no thresholds' and 'authors note the criteria were not set as thresholds' -> a 0% to 10% flexibility range was agreed and the authors make no such statement (\"'similar hamstring flexibility' could involve a 0%-10% difference\")",
+            "paper.findings: eccentric strength described as a full consensus criterion -> added as a potential criterion with the panel divided (\"consensus was reached to add 'similar eccentric hamstring strength' ... as a potential criterion ... provided that both sides of the argument would be described\")"
+          ],
+          "residualConcerns": "Return-to-play clearance guidance based on expert opinion.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1531",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 73,
+      "sourceFile": "Return to play and career length after anterior cruciate ligament reconstruction among Canadian professional football players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 36235,
+        "doi": "10.1177/0363546520918224",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Retrospective study of 44 ACL reconstructions in 42 players from two Canadian Football League teams (2002 to 2017), most with hamstring tendon autograft (72.7%). Of 43 injuries analysed for return, 69.8% (n=30) returned to play in at least one game after a mean of 316 days, and those who returned played a mean of 2.8 further seasons (34.4 games). A concomitant medial collateral ligament injury was the only significant predictor of not returning in the regression model (odds ratio 6.03, P=.038).",
+      "limitations": "Small sample from two teams, with return and career data taken from public internet sources and no uninjured control group. Graft and concomitant-injury subgroups are very small, so comparison with NFL figures is descriptive only, and the CFL season is 18 games against 16 in the NFL.",
+      "synthesisCaution": "Staff may read the similar return rate for hamstring and patellar tendon grafts as proof that hamstring grafts are equally safe for professional players, but graft groups were small and graft type was not a significant predictor in a model that cannot rule out a difference.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: Case-control Study -> Cohort Study (Methods: 'A retrospective cohort study was designed'; there is no control group, despite the abstract label)",
+            "paper.citation: removed online-first page range 1-7 printed with a blank volume ('AJSM Vol., No. X, 2020')",
+            "paper.limitations: added that unadjusted RTP was similar with and without MCL injury and the OR CI was wide ('MCL injury Yes 70 (7) / No 68.7 (23)'; '1.108 32.763')",
+            "tldr, rtp, evidenceSummary, practicalImplications: specified that the MCL finding is from the adjusted regression model; added grade III MCL detail ('all 3 players with a grade III MCL injury ... were unable to RTP')"
+          ],
+          "residualConcerns": "Authors label the design case-control; recoded to Cohort Study because no controls were used.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1532",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 74,
+      "sourceFile": "Return to play and performance after anterior cruciate ligament reconstruction in National Football League players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 39201,
+        "doi": "10.1177/23259671221079637",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Database study of 312 NFL players who had ACL reconstruction between 2013 and 2018, with games, starts, snap counts and approximate value (AV) compared for the three seasons before and after injury. The authors report that 55.8% returned to play and only 28.5% (59 of 207) were still in the league three years after injury. Average games, starts, snaps and AV were all lower after injury, and running backs, defensive linemen and linebackers had the largest AV declines, while quarterbacks had the smallest.",
+      "limitations": "Uses publicly compiled injury and performance databases, with a composite AV metric that is team-based, not validated and not a direct measure of individual play. The 3-year analysis includes only the 59 players who stayed in the league, a selected group, and position groups are small.",
+      "synthesisCaution": "Staff may read the position rankings as a prediction of how a given player will perform after ACL reconstruction, but the study compares groups with unequal survival in the league and cannot separate the effect of the injury from career stage or position demands.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: added that only QB vs RB AV change differed in pairwise tests and snap-count change did not differ across positions ('significant difference in the AV percentage change between quarterbacks and running backs (P = .0038)'; 'not statistically different across positions ... (P = .1113)')",
+            "paper.athleteDev: removed claim that results show workload targets should be set by position -> position rankings beyond QB vs RB are descriptive",
+            "paper.practicalImplications: removed 'which varied by position in this database' given non-significant snap-count differences",
+            "screeningLimitations: noted AV is not validated ('has not previously been validated')",
+            "paper.rtp: '12.4-month median' -> '12.4-month average' (text: 'mean ± SD return-to-play time was 12.4 ± 2.5 months')"
+          ],
+          "residualConcerns": "Internal inconsistencies in return rates (55.4% vs 55.8% vs 51.3%, QB 92.9% vs 71.4%) and the reported preseason/offseason return comparison ('59.0% vs 29.0%') do not reconcile with Table 1 counts.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1533",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 75,
+      "sourceFile": "Return to play and performance after surgical repair of distal biceps tendon ruptures in NFL athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 22,
+        "extractedCharacters": 29212,
+        "doi": "10.1016/j.jse.2020.06.023",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Level IV case series of 25 surgical repairs of distal biceps tendon rupture in 22 NFL players (1998 to 2017), each compared with a position, age and experience matched control. Of the 25 cases, 21 (84%) returned to play, with a mean of 321 days to return, and Kaplan-Meier survival in the league was 76% at one year and 56% at two years. Post-injury career length (2.8 vs 3.4 years, P=0.049) and games per season (11 vs 13, P=0.02) were lower than in controls, while performance scores in the 16 returning defensive players did not differ significantly from pre-injury or from controls.",
+      "limitations": "Only 25 cases built from public databases, with no data on injury severity, surgical technique, rehabilitation or concomitant injuries, and offensive linemen were excluded from the performance analysis, leaving 16 players. The authors state that the career and games findings are likely confounded and should be read with caution.",
+      "synthesisCaution": "Staff may read the matched performance scores as proof that players return to their former level, but only 16 players were scored, defensive linemen trended toward lower scores (P=0.06), and the authors note that the lower career and games findings may be confounded.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary, findings, screeningLimitations: added that performance scoring covered only 16 cases and DL scores fell 3.2 to 2.4 (Table V: 'DL 9 3.2 +/- 0.9 2.4 +/- 0.9 0.06')",
+            "paper.athleteDev: removed advice that targets for returning players 'can reasonably mirror pre-injury standards' and planning for fewer games -> noted confounding and small, non-significant performance comparison",
+            "paper.limitations: removed claim attributed to authors that 2-year figure is a survival estimate rather than measured return (not stated); added authors' view that career-length difference is 'unlikely ... clinically significant'",
+            "tldr, synthesisCaution, practicalImplications: softened 'performed at a level similar' to non-significant difference in a small scored subgroup"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1534",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 76,
+      "sourceFile": "Return to play and re-injury rates in NCAA Division I football players following anterior cruciate ligament reconstruction using hamstring autograft.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 18,
+        "extractedCharacters": 37006,
+        "doi": "10.1016/j.arthro.2021.04.057",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Level IV retrospective case series of 34 male NCAA Division I football players at one institution who had ACL reconstruction with quadrupled hamstring autograft from 2001 to 2016, with follow-up by survey at a mean of 102 months. Of the 34, 29 (85.3%) returned to play after a mean of 318 days, and 2 of those 29 (6.9%) sustained a re-injury. The mean Tegner-Lysholm score was 90.7 out of 100 (n=33), and 25 of the 30 players with eligibility remaining (83%) used some or all of it.",
+      "limitations": "Retrospective single-surgeon, single-institution series with no comparison group, so it cannot show how hamstring grafts compare with patellar tendon grafts. The sample is small and heterogeneous by position, and the authors state that it was underpowered for most comparisons.",
+      "synthesisCaution": "Staff may read the 6.9% re-injury rate and 85% return as evidence that hamstring grafts are equivalent to patellar tendon grafts in elite players, but the study has no comparison arm and the re-injury count is only two players.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: 306 days in the Abstract is the isolated ACL value, not a multiligament value ('mean 306 24 days for isolated ACL, mean of 353 51 for 2 ligaments')",
+            "paper.athleteDev: removed generic advice to monitor knee function over the career, which the study did not test",
+            "paper.rtp: clearance was 'collaborative decision involving the football athletic training staff and the head orthopedic surgeon', not a single surgeon's criteria",
+            "paper.findings: added that both re-injuries were 'traumatic re-injuries with direct-blow contact'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1535",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 77,
+      "sourceFile": "Return to play and recurrence after calf muscle strain injuries in elite Australian football players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 47000,
+        "doi": "10.1177/0363546520959327",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Registry study of 149 MRI-confirmed calf muscle strain injuries (114 index, 35 recurrent) in elite Australian Football League players over four seasons (2014 to 2017), analysed with Kaplan-Meier, log-rank and Cox regression. Injuries with severe aponeurotic disruption (AD) on MRI took 31.3 days to return to play, compared with 19.4 days for injuries with no AD (P=.003), and a running-related mechanism was independently associated with a longer return (adjusted HR 0.59, P=.02). Older age (adjusted HR 1.1) and a previous calf strain (adjusted HR 6.7) were associated with recurrence within two seasons, while index MRI findings were not.",
+      "limitations": "Registry data from a single league with no uninjured comparison group, and club staff were not blinded to MRI results. Recurrence analyses rest on 35 recurrent injuries (19 early), and the return-to-play period was censored at season end, so the timing estimates are conditional on the data collected.",
+      "synthesisCaution": "Staff may read the MRI-based return-to-play timelines as individual prognosis, but the group means have wide spread (SD about 11 to 17 days), AD stayed independently linked to return time only for soleus injuries, and MRI findings did not predict recurrence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "studyDesign: Case-control Study -> Cohort Study (registry series of injuries followed for RTP and recurrence with no controls, despite the abstract label 'Case-control study')",
+            "paper.citation: removed online-first page range 1-10 printed with placeholder volume ('AJSM Vol. XX, No. X, XXXX')",
+            "paper.findings, practicalImplications, synthesisCaution: AD was independently associated with RTP only for soleus injuries (Table 3 All CMSI AD multivariable '0.72 (0.5-1.1) .11'; soleus '0.6 (0.4-0.9) .025')",
+            "synthesisCaution: SD range 11 to 13 -> 11 to 17 days (mild AD '26.7 6 16.8 days')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1536",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 79,
+      "sourceFile": "Return to play following Achilles tendon rupture in NFL players based on position.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 37083,
+        "doi": "10.1177/19386400211040351",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Retrospective cohort of 63 NFL wide receivers, tight ends, running backs, defensive backs and linebackers with an Achilles tendon rupture repaired between the 2009-2010 and 2015-2016 seasons, of whom 36 (57.1%) returned to play in at least one game. Return rates were highest for tight ends (71%) and linebackers (70%) and lowest for wide receivers (38%) and running backs (40%), with a mean of 12.6 months to return. The authors report that matched controls outperformed returning players before and after injury, and that returning players declined in all categories, although in Table 3 the only significant within-group change for returning players was in passes defended (P=.0306).",
+      "limitations": "Built from public press releases and injury reports, with concomitant injuries not recorded, a small sample split across five position groups, and matched controls who were a frame of reference rather than a true control. Several of the authors' statements about significant performance declines do not match the Table 3 P values.",
+      "synthesisCaution": "Staff may read the position return rates as a prediction of a given player's career, but the study shows that returning players were already more experienced before injury and the authors' claim of broad post-injury decline is not fully supported by the tables.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: added between-group differences versus controls (Table 3 last column: receptions/game .0106, tackles .0069, passes defended .0452)",
+            "paper.limitations: clarified that fumbles P=.0751 is not significant though called significant, and that the Discussion claims a significant increase in passes defended while Table 3 shows a fall (5.04 to 2.79); RBs not tested ('unable to make statistical comparisons for the RB group')",
+            "paper.practicalImplications: replaced illogical inference from the single within-group change with a statement that performance data are too small and inconsistent",
+            "paper.athleteDev: removed generic advice to monitor position-specific skills"
+          ],
+          "residualConcerns": "Multiple internal inconsistencies between abstract, Results, Discussion and Table 3 in this source; the journal header labels it a Review although it is original retrospective research.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1537",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 80,
+      "sourceFile": "Return to play following isolated and combined anterior cruciate ligament reconstruction - 25 years of experience treating NFL athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 31121,
+        "doi": "10.1177/2325967120959004",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Level IV case series of NFL players treated by two surgeons at one centre over more than 25 years, with 47 ACL reconstructions (41 primary, 6 revision) in 43 players. Return to game play after primary reconstruction was 73%, and return to previous participation (a new, broader definition) was 87.8%. Age of 25 years or younger was the only independent predictor of return to previous participation (adjusted OR 10.8, P=.02), and offensive position and draft rounds 1 to 4 were associated with more seasons played after surgery.",
+      "limitations": "Single-centre series from two surgeons who also made return decisions, with a new return definition that the authors themselves propose and did not validate. Follow-up duration was not recorded, revision and multiligament groups are very small, and the authors note the cohort is highly selected.",
+      "synthesisCaution": "Staff may read the 87.8% return rate as a general success rate for NFL ACL surgery, but it uses a broader definition than game return, comes from one centre and two surgeons, and the age and position findings are small-sample associations.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.methods: RTPP definition corrected from 'sustained for at least six weeks' to the Table 2 criteria ('Performs all position-specific activities for a minimum of 6 weeks', dynamic functional assessment, NFL physical, same level)",
+            "paper.limitations: P=.32 is from Table 3 univariate, not Table 5; added that text calls the RTGP primary vs revision difference significant while Table 4 gives P=.07, and that position was not significant in multivariate RTPP (Table 5 '.07')",
+            "paper.findings: added subsequent ACL tear rates ('ACL graft rupture occurred in 4.3% ... Contralateral ACL tears occurred in 8.5%')"
+          ],
+          "residualConcerns": "Table 7 reports beta 1.18 and 1.48 with SE 2.9 yet P=.009 and .008, which is internally implausible; the seasons-played estimates should be treated cautiously.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1538",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 81,
+      "sourceFile": "Return to play following meniscus surgery.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 26106,
+        "doi": "10.1016/j.csm.2016.05.010",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of return to play after partial meniscectomy, meniscus repair and meniscal allograft transplantation in athletes, with the authors' institutional rehabilitation protocols. No literature search method is described. The cited studies are small series; for example, 98% of 41 athletes returned to sport after partial lateral meniscectomy at an average of 55 days, and repair cohorts returned to sport at roughly 5 to 6 months.",
+      "limitations": "No search method is reported and the paper contains no new data or pooled analysis, so the evidence cannot establish safe return-to-play timelines or compare treatments directly. The cited athlete cohorts are small and differ in follow-up length and return-to-sport definitions.",
+      "synthesisCaution": "Staff could read the roughly 6-week meniscectomy return timeline as a safe standard, when it comes from one institution's protocol and small cohorts, and the authors themselves warn about early degenerative risk.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: NFL return described as '19 to 29 days' -> 'either 19 or 29 days' after midseason lateral meniscectomy ('able to return to play at either 19 or 29 days')",
+            "paper.athleteDev: criteria-based repair progression attributed to the authors -> attributed to the cited Kozlowski protocol ('Kozlowski and colleagues published a rehabilitation protocol ... based on patient abilities. Only the early phase is governed by time')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1539",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 84,
+      "sourceFile": "Return to play practices following hamstring injury - A worldwide survey of 131 Premier League football teams.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 57070,
+        "doi": "10.1007/s40279-019-01199-2",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Structured online survey of return-to-play practitioners (club doctors, physiotherapists, strength and conditioning coaches, sport scientists) at 310 professional teams in 34 premier leagues, about a typical hamstring injury. Of these, 131 teams (42%) completed the survey; 124 (95%) reported using a return-to-play continuum with clinical, functional and psychological criteria, and 105 (80%) reported shared decision-making with at least two people involved. Absence of pain, hamstring strength, training load and functional performance tests were the most frequently reported top criteria.",
+      "limitations": "The study describes practitioners' self-reported practice, not athlete outcomes, and it has a 42% response rate. The survey does not capture the metrics or thresholds used, and the authors rate the design as level 5 evidence. Findings cover hamstring injury in one sport only.",
+      "synthesisCaution": "Staff could read the high rate of criteria-based continuums as proof that teams apply research recommendations well, when the survey did not measure whether those criteria or thresholds predict re-injury.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed 'Mixed / Unspecified' because the competition level is stated (premier-league professional teams)",
+            "paper.findings: '68 teams reported meeting all criteria' -> 68 teams reported a 100% frequency of meeting all intended criteria ('a frequency of 100% was reported by 68 (52%) teams')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1540",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 86,
+      "sourceFile": "Return to sport after anterior cruciate ligament injury - Panther symposium ACL injury return to sport consensus group.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 64635,
+        "doi": "10.1177/2325967120930829",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Consensus statement from an international Panther Symposium group of 26 ACL experts (surgeons, sports medicine physicians, physical therapists and scientists), built by a modified Delphi process with an 80% agreement threshold and a MEDLINE literature review. Of 11 statements, consensus was reached that return to sport means regaining the preinjury level of sport, that purely time-based decisions should be abandoned (26 of 26), and that decisions need objective examination data (26 of 26), a validated test (23 of 26) and a validated psychological readiness measure (22 of 26). Coach involvement in the clearance decision did not reach consensus (7 of 26).",
+      "limitations": "The statements are expert opinion supported by a single MEDLINE search focused on the previous 5 to 10 years, with no described systematic review method. The authors state that the ideal test battery, psychological tools and biological healing measures remain unresolved.",
+      "synthesisCaution": "Staff could read the statements as a validated return-to-sport protocol with fixed criteria, when the authors describe them as consensus principles and say the exact test battery and thresholds still need research.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'the authors did not use a formal systematic review' (not stated by the authors) -> no systematic review method is described ('MEDLINE was searched in June 2019 ... with a focus on publications in the previous 5 to 10 years')"
+          ],
+          "residualConcerns": "ACL return-to-sport clearance guidance; statements are consensus opinion, not a validated protocol.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1541",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 87,
+      "sourceFile": "Return to sport and beyond following intramuscular tendon hamstring injury - A case report of an English Premier League football players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 55120,
+        "doi": "10.1016/j.ptsp.2022.05.013",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Single case report of a 23-year-old male elite football player with a grade 2c intramuscular tendon hamstring injury sustained in an English Premier League match. Rehabilitation used the control-chaos continuum, with isometric posterior chain force testing, ultrasound and GPS load monitoring. The player returned to on-pitch rehabilitation at 11 days, full team training at 35 days, and played 40 days after injury, with no reinjury for the rest of the season.",
+      "limitations": "This is one player in one club, with no comparison group, so the findings cannot show that the monitoring or loading approach causes a faster or safer return. The authors state that the timeline and responses are player-specific and may not transfer to other footballers.",
+      "synthesisCaution": "Staff could read the 35-day return to full training or the 40-day return to play as a benchmark for intramuscular tendon injuries, when they describe one player whose timeline depends on his injury, club context and coaching decisions.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: claims that the authors call the monitoring approach non-transferable and its link to reinjury unproven, and cite no validated IPC threshold, are not in the text -> restated to what the authors say ('acute injury presentation, on- and off-pitch rehabilitation loading progressions, response to load, healing and RTS timeframes are player-specific and may not directly transfer')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1542",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 90,
+      "sourceFile": "Return to the pre-injury level of sport after anterior cruciate ligament reconstruction - A practical review with medical recommendations.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 102335,
+        "doi": "10.1055/a-2270-3233",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "American Football",
+        "Basketball",
+        "Ice Hockey",
+        "Baseball / Softball",
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "A practical review of the return-to-sport literature after ACL reconstruction (ACLR). The authors searched Google Scholar, Medline and SPORTDiscus (June to November 2023) and used 158 unique articles, including cohort studies, consensus statements and clinical practice guidelines. The reported return-to-pre-injury-level rates vary by league and position, for example 97% in the NHL, 86% in the NBA, 64.3% for NFL linemen and 92% for NFL quarterbacks, and the authors summarize graft, meniscal and psychological-readiness findings.",
+      "limitations": "The authors state the search was not run to PRISMA or scoping-review standards, and no formal appraisal of study quality is reported, although two authors screened records independently. The cited studies are mostly observational cohorts with varying definitions of successful return, and the recommendations are the authors' synthesis rather than tested interventions.",
+      "synthesisCaution": "Staff could read the reported league return rates as expected outcomes for their own athletes, when they come from older, mostly retrospective professional cohorts with varying definitions of return.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: said selection was 'not systematic or reproducible' -> search terms, databases and dates are printed and 'at least two authors were involved in independently screening'; now says not PRISMA-standard and no formal appraisal",
+            "paper.limitations: 'search strategy is not reproducible' -> removed; search is 'not in accordance with the PRISMA guidelines or that of a scoping review'",
+            "paper.methods: 'narrative review' wording and missing dual screening -> added independent screening by at least two authors",
+            "paper.findings: added the non-injured comparison ('17 % of athletes after ACLR and 24 % of non-injured athletes demonstrating symmetric performance')"
+          ],
+          "residualConcerns": "studyDesign kept as Systematic Review / Meta-analysis under the INSTRUCTIONS rule that Narrative Review is used only when no search method is described; the authors describe a database search but call the work a practical review and did not follow PRISMA, so a human may prefer Narrative Review. Clinically relevant to ACL return-to-sport clearance.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1543",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 91,
+      "sourceFile": "Return-to-Play and Performance Outcomes of Professional Athletes in North America After Hip Arthroscopy From 1999 to 2016.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 56412,
+        "doi": "10.1177/0363546518773080",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Baseball / Softball",
+        "Basketball",
+        "American Football",
+        "Ice Hockey"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A retrospective descriptive study built from public sources of 227 hip arthroscopy procedures in 180 professional MLB, NBA, NFL and NHL players (1999 to 2016), with each player compared with his own pre-surgery season. Return to play (at least one regular-season game) occurred in 84.6% of procedures (192/227), with NHL players returning more often than other athletes (91.8% vs 81.2%, P = .048) and NFL offensive linemen less often (61.1%, P = .010). Performance scores fell by 15.8% in the first postoperative season (P = .022) and by 14.4% in seasons 2 and 3 (P = .008) across the cohort, and the decline was significant only for NHL players in season 1 (-35.1%, P = .002).",
+      "limitations": "The cases come from public media and team reports, so the sample may be biased toward high-profile players and the procedure details, rehabilitation and clearance dates are not available. The study has no matched control group without surgery, and the findings apply to male professional athletes only.",
+      "synthesisCaution": "Staff could read the 84.6% return rate as a prediction for their own athlete, when it comes from elite public-source cases with unknown rehabilitation, clearance and injury severity, and cannot show that surgery caused any change in performance.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: pitch velocity and pitch count changes attributed to all MLB pitchers -> lead-leg pitchers only ('MLB pitchers who underwent surgery specifically on their lead leg ... (-60.7%, P = .007)')",
+            "paper.citation: 'pp. 1-11' online-first pagination with placeholder 'AJSM Vol. XX, No. X, XXXX' -> omitted, now 'Am J Sports Med. 2018.'",
+            "paper.limitations: 'pooled' -> 'pooled in the headline return rate' (revision cases were also analysed separately: 'returned at a significantly lower rate')"
+          ],
+          "residualConcerns": "Hip arthroscopy return-to-play in professional athletes; return-time figures should not be read as clearance criteria.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1544",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 92,
+      "sourceFile": "Return-to-Sport Rates and Functional Outcomes After Hip Arthroscopy for Femoroacetabular Impingement in Young Football Athletes - A 9.8-Year Follow-up.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 39745,
+        "doi": "10.1177/23259671261419484",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Collegiate",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A retrospective case series of 36 hips in 27 male nonprofessional football players (mean age 18 years, 70% high school, 26% college) who had primary hip arthroscopy with labral repair for femoroacetabular impingement between 2010 and 2019, followed for a mean of 9.8 years. Of the 19 players who attempted to return, 16 (84%) returned to football at the same or higher level, and all modified Harris Hip Score, HOS-ADL and HOS-Sport scores improved significantly from baseline (for example, mHHS 68.5 to 90.5 among the 19 with PROM data).",
+      "limitations": "This is a single-institution, retrospective case series with no control group, and PROMs were available for only 19 of the 27 players. Loss to follow-up (11 of 36 hips) and a sample of 27 limited the power of the predictor analysis, and the 84% return rate excludes eight players who left football for non-medical reasons.",
+      "synthesisCaution": "Staff could read the 84% return rate as the expected outcome for any young football player after this surgery, when it applies only to those who attempted to return, and the overall return rate was 59% (16 of 27) once non-medical reasons are counted.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1545",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    },
+    {
+      "originalQueueOrder": 94,
+      "sourceFile": "Return-to-play criteria following a hamstring injury in professional football - A scoping review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 21,
+        "extractedCharacters": 57816,
+        "doi": "10.1080/15438627.2024.2439274",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A scoping review (PRISMA-ScR) of PubMed, MEDLINE, Web of Science and SPORTDiscus that included 19 studies of return-to-play criteria after hamstring strain in professional male football. The studies were surveys, Delphi studies, cohort and case studies, one randomized trial and one cross-sectional study, and the criteria were grouped as clinical (absence of pain in seven studies), strength (nine studies) and performance (six studies). The authors report heterogeneous criteria, with no validated return-to-play tools for psychological readiness, and a single trial in which 67% of players had at least one isokinetic deficit over 10% at return.",
+      "limitations": "The authors did not appraise the risk of bias of the included studies, and the included evidence is mostly expert opinion, case reports and small retrospective cohorts. The review only includes English-language papers, and the reported screening counts differ between the text (52 full texts) and the flow diagram (51 reports).",
+      "synthesisCaution": "Staff could take the grouped criteria as a validated return-to-play battery, when the authors state that no criterion has been validated and that the review does not assess the validity of any test.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "Clinically sensitive: return-to-play clearance criteria after hamstring injury; no claim errors found.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1546",
+        "synthesisBatch": "pilot-synthesis-batch-98",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}

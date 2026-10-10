@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-102-athlete-wellbeing",
+  "screenedOn": "2026-10-10",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Athlete Wellbeing queue positions 16-16. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 16,
+      "sourceFile": "Reasons for prescription opioid use while playing in the National Football League as risk factors for current use and misuse among former players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 33733,
+        "doi": "10.1097/JSM.0000000000000628",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Secondary analysis of 336 former NFL players (mean age 47.1) who had used prescription opioids during their playing careers, drawn from a telephone survey of retired players. In the past 30 days, 26.2% reported any opioid use (14.3% as prescribed and 11.9% misuse). Using opioids in the NFL 'to function' was associated with any current use (OR 1.30, 95% CI 1.12 to 1.50), and using them to relax or relieve stress was associated with current misuse compared with use as prescribed (OR 1.45, 95% CI 1.01 to 2.11).",
+      "limitations": "The sample is limited to former players who used opioids in the NFL and belong to the players' association, which the authors say may overestimate health and underestimate substance use. The design is cross-sectional, the data are self-reported and recalled, and 'to function' overlaps with pain management, so the reason categories are broad. Results are specific to American football.",
+      "synthesisCaution": "Staff may read the stress-relief and 'to function' links as proof that in-career use causes later misuse, when this is a cross-sectional association from self-report in 336 selected former players.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.athleteDev: 'use to function through injury was linked to later use' -> 'to function' during the NFL career was associated with current use (the 'through injury' framing is the authors' speculation: 'may be related to improving ability to play football despite pain')",
+            "paper.limitations: added text-versus-table discrepancy for stress-relief use among misusers ('35.2% of former NFL players currently misusing' vs Table 3 '35.0')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1560",
+        "synthesisBatch": "pilot-synthesis-batch-102",
+        "publishedOn": "2026-10-10"
+      }
+    }
+  ]
+}
