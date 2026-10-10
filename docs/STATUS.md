@@ -8,10 +8,11 @@ Read this first. Update it before ending every session.
      updated 2026-09-26, including the completed SecondBrain vault push). -->
 
 ## Current state
-- 2026-10-10 (Mac): Batches 96, 97, 98 merged (library 1,679 on master). Batch 99 is on branch `batch-99-staged`
-  (76 records, IDs 1712-1787), NOT merged: the shortlist named-sport gate fails (17 of 22). Eric must choose
-  (see `docs/handoffs/2026-10-10-mac-batch-99-blocked.md`). Next unused ID after merge: 1788.
-- Backlog: about **274 unscreened unique PDFs** remain (`python3 scripts/haiku-batch/backlog.py`).
+- 2026-10-10 (Mac, verified 2026-10-10 session): Batches 96, 97, 98, 99 merged. Batch 99 landed via PR #24
+  (76 records, IDs 1712-1787). The named-sport gate stayed at 22; a builder swap pass (commit 77cc584) met it.
+  Library is 1,755 rows on master. Next unused ID: **1788**. All `npm run audit` gates pass.
+  The earlier "blocked" handoff (`docs/handoffs/2026-10-10-mac-batch-99-blocked.md`) is superseded.
+- Backlog: **178 unscreened unique PDFs** remain (`python3 scripts/haiku-batch/backlog.py`, checked 2026-10-10).
   Pipeline: `scripts/haiku-batch/` (Haiku 5.5 drafts, Opus 5.5 claim audit).
 - Ask the Library drafter merged (PR #12): `npm run pilot:draft -- <request.json>`. Stress-test eval in
   `docs/ask-library-eval/`: 0 critical integrity failures, 12/12 useful. Known limitation: briefs are long.
@@ -19,17 +20,14 @@ Read this first. Update it before ending every session.
   9 legacy DOI collisions). Latest handoff: `docs/handoffs/2026-10-10-cloud-batches-88-95.md`.
 
 ## Next
-- Eric answers the Batch 99 shortlist question below. Then merge `batch-99-staged` (76 records, IDs 1712-1787).
-  Next unused ID after that: 1788. Detail: `docs/handoffs/2026-10-10-mac-batch-99-blocked.md`.
-- Then continue the backlog (about 274 PDFs left) from the next unused ID, same commands as the handoffs.
+- Continue the backlog (178 PDFs left) from ID 1788, same commands as the handoffs. Check for open
+  `batch-*-staged` branches first (see Gotchas).
 - After the backlog: update the roadmap, then hand Eric the pilot launch checklist (goal E).
 - Still Eric's: name a pilot lead, pick 3 staff across 2+ disciplines, record human claim audits.
 
 ## Open questions
-- Batch 99 shortlist gate: the named-sport shortlist has 17 candidates, but the audit needs 22. Choose ONE:
-  (A) lower the gate to 17 and merge Batch 99 now (quicker; the shortlist gets thinner), or
-  (B) keep the gate at 22 and change the shortlist builder to find more named-sport candidates, then merge
-  (slower; keeps the rule). Recommendation: B.
+- Batch 99 shortlist gate: RESOLVED. Option B was taken (gate kept at 22, builder swap pass in 77cc584, PR #24 merged).
+  Note: the gate was lowered once before (Batch 96, 24 to 22). Watch the named-sport pool; it is near the floor.
 - Has a real concierge pilot occurred on another machine or outside this checkout?
 - Who will lead the pilot and own the recurring evidence intake/review cadence?
 - Unpublish ID for Batch 80 Q37 (sleep-monitoring review with mismatched citations, published at low confidence)?
