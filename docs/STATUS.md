@@ -25,7 +25,7 @@ Read this first. Update it before ending every session.
 - Still Eric's: name a pilot lead, pick 3 staff across 2+ disciplines, record human claim audits.
 
 ## Open questions
-- ANSWERED 2026-10-10: Q66 and Q94 from Batch 100 (sports medicine opinion pieces, "Current Opinion" framework) stay EXCLUDE. Same rule as all opinion pieces. Reason logged in `docs/pilot-screening/batch-108-sports-medicine-injury.json` (not in the library).
+- ANSWERED 2026-10-10: Q66 and Q94 from Batch 100 (sports medicine opinion pieces, "Current Opinion" framework) stay EXCLUDE. Same rule as all opinion pieces. EXCLUDE records are not in the library. Audit notes are in the Batch 100 workdir (`~/Library/Caches/sportsci-batch-100/verified/`).
 - Batch 99 shortlist gate: RESOLVED. Option B was taken (gate kept at 22, builder swap pass in 77cc584, PR #24 merged).
   Note: the gate was lowered once before (Batch 96, 24 to 22). Watch the named-sport pool; it is near the floor.
 - Has a real concierge pilot occurred on another machine or outside this checkout?
