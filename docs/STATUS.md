@@ -8,7 +8,8 @@ Read this first. Update it before ending every session.
      updated 2026-09-26, including the completed SecondBrain vault push). -->
 
 ## Current state
-- 2026-10-11 (Mac): Batch 122 STAGED on `batch-122-staged` (NOT merged). Q22 promoted from DEGRADED to INCLUDE
+- 2026-10-11 (Mac): Batch 122 MERGED (PR #28). Q22 is ID 1926. Next unused ID: **1927**.
+  Previously staged: Q22 promoted from DEGRADED to INCLUDE
   (ID 1926, injury history and CMJ, Monitoring & Technology). Old DEGRADED entry removed from batch-13. The other 22
   files in the 23-paper set were duplicates of published or screened papers and were not added. All audits pass.
 - 2026-10-11 (Mac): Batch 115-121 MERGED (PR #27, merge 2146133). IDs 1864-1925 live. Next unused ID: **1926**.
