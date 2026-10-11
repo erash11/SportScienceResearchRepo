@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-122-monitoring-technology",
+  "screenedOn": "2026-10-11",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Monitoring & Technology queue positions 22-22. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 22,
+      "sourceFile": "The influence of injury history on countermovement jump performance and movement strategy in professional soccer players - Implications for prof.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 34873,
+        "doi": "10.1123/jsr.2020-0243",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Cross-sectional comparison of 20 full-time professional outfield players at one English Championship club: 10 had a previous lower-limb injury that kept them out of training for at least 3 months, and 10 had none. Double-leg jump height and flight time to contraction time ratio did not differ between groups, but single-leg jumps did, with the previously injured group jumping lower and producing less eccentric and concentric force, including in the uninjured limb.",
+      "limitations": "Ten players per group from one club, with no pre-injury baseline and no classification of injury type, so the group differences cannot be attributed to the injury. Single-leg analysis pooled both limbs of each player as if independent, and the Table 3 r-squared values for the non-injured group conflict with the text: the text gives 44% for jump height and 89% for time ratio, but Table 3 places 0.89 against jump height and 0.44 against time ratio, and its time-ratio second step (0.44) is lower than its first (0.78).",
+      "synthesisCaution": "Staff may treat single-leg jump deficits as a validated return-to-play test or as proof of injury-caused weakness, when this is a small group comparison that cannot show whether a given player is ready or at risk.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: Table 3 r-squared description made precise. The text gives 44% for jump height and 89% for time ratio (noninjured group); Table 3 lists 0.89 against jump height and 0.44 against time ratio, and its time-ratio step 2 (0.44) is below step 1 (0.78).",
+            "paper.limitations: 'the Table 3 values do not match the text' -> 'the noninjured values in Table 3 (0.89 for jump height, 0.44 for time ratio) are reversed relative to the text (44% and 89%)'.",
+            "Confirmed without change: identity and full title, DOI 10.1123/jsr.2020-0243 (printed page 1), 2021;30(5):768-773 (JSR Vol. 30, No. 5 printed), 3 authors, 10 vs 10 with injured defined as out of team training 3 months or more, 20 full-time outfield players at an English Championship club, 5 trials per limb, double-leg null results, single-leg p = 0.007 (jump height) and p = 0.005 (time ratio), depth 22.29 vs 16.68 cm (Table 2), injured-group Table 3 values (75%, 84%, 70%, 89%)."
+          ],
+          "residualConcerns": "Table 3 noninjured row labels and r-squared values disagree with the text and with a stepwise reading; the text values are used. A reviewer should check the original Table 3 layout before relying on the noninjured R-squared figures.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1926",
+        "synthesisBatch": "pilot-synthesis-batch-122",
+        "publishedOn": "2026-10-11"
+      }
+    }
+  ]
+}
