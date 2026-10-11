@@ -8,7 +8,8 @@ Read this first. Update it before ending every session.
      updated 2026-09-26, including the completed SecondBrain vault push). -->
 
 ## Current state
-- 2026-10-11 (Mac): Batch 115-121 STAGED on `batch-115-121-staged` (NOT merged). 82 PDFs drafted (Haiku 5.5) and
+- 2026-10-11 (Mac): Batch 115-121 MERGED (PR #27, merge 2146133). IDs 1864-1925 live. Next unused ID: **1926**.
+  Previously staged; 82 PDFs drafted (Haiku 5.5) and
   claim-audited (Opus 5.5). 62 INCLUDE, IDs 1864-1925; 14 EXCLUDE; 6 DEGRADED. Q03 = EXCLUDE (duplicate of ID 1068).
   All `npm run audit` gates pass. Eric must decide the flagged items in `docs/pilot-screening/batches-115-121-review.md`
   before merge (Q50 wrong PDF, Q63 200 vs 300 trials, Q65 anti-doping policy, Q39 judgment call, Q51 table conflict).
