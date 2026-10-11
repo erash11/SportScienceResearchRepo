@@ -8,6 +8,10 @@ Read this first. Update it before ending every session.
      updated 2026-09-26, including the completed SecondBrain vault push). -->
 
 ## Current state
+- 2026-10-11 (Mac): Batch 115-121 STAGED on `batch-115-121-staged` (NOT merged). 82 PDFs drafted (Haiku 5.5) and
+  claim-audited (Opus 5.5). 62 INCLUDE, IDs 1864-1925; 14 EXCLUDE; 6 DEGRADED. Q03 = EXCLUDE (duplicate of ID 1068).
+  All `npm run audit` gates pass. Eric must decide the flagged items in `docs/pilot-screening/batches-115-121-review.md`
+  before merge (Q50 wrong PDF, Q63 200 vs 300 trials, Q65 anti-doping policy, Q39 judgment call, Q51 table conflict).
 - 2026-10-10 (Mac): Batches 96-100 merged. Batch 100 (batches 107-114) landed with 76 records, IDs 1788-1863
   (Q05 was a duplicate of Q04 and is EXCLUDE). Library is 1,831 rows on master. Next unused ID: **1864**.
   All `npm run audit` gates pass. Shortlist now 72 candidates; Athlete Wellbeing has 0 candidates.

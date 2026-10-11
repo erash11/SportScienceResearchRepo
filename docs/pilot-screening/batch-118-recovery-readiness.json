@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-118-recovery-readiness",
+  "screenedOn": "2026-10-11",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Recovery & Readiness queue positions 32-70. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 32,
+      "sourceFile": "Using bar velocity to assess post-match neuromuscular fatigue in young soccer players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 57,
+        "extractedCharacters": 97450,
+        "doi": "10.1055/a-2150-0960",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Youth / Adolescent"
+      ],
+      "evidenceSummary": "Repeated-measures field study with 21 outfield U-19 male players (from 34 recruited) who played at least 60 minutes in one of three official matches. Countermovement jump, horizontal jump, and mean propulsive velocity in half-squat, bench press and hip-thrust (about 70% estimated 1RM) were measured before the match and at +30 min, +24 h and +48 h. The authors report that half-squat velocity fell 6.8% immediately after the match and recovered by 24 h, hip-thrust velocity remained reduced at 48 h, bench press was unchanged, and horizontal jump increased at 48 h.",
+      "limitations": "The sample is small (21 players from two teams across three matches) and has 41 to 45% missing data at 24 h, with submaximal loads estimated rather than tested. Abstract and results do not fully agree (for example, the 24 h countermovement jump change and the 48 h hip-thrust change are reported differently), and the study measured external match load only.",
+      "synthesisCaution": "Staff could take the hip-thrust finding as a general rule that posterior-chain training must wait 48 h after every match, when the study is a small single-cohort observation with missing data and mixed reporting of percentages.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'single team-season context' -> two teams across three matches ('from two teams competing'; 'Three official matches were analyzed (Team A, n=2; Team B, n=1)')",
+            "paper.tldr: bench press described as recovering faster -> it never declined ('Bar velocity in the bench press exercise did not differ from baseline values at any time point')",
+            "paper.athleteDev: advice to avoid hip-thrust as the first loaded lift is not supported (exercise order was not tested and hip-thrust was always performed last) -> caution on glute and hamstring loading at MD+1 and MD+2, as the authors recommend ('should be avoided at MD+1 and MD+2')",
+            "paper.limitations: added that reported percentages do not match the reported means ('0.67 +/- 0.09 vs. 0.64 +/- 0.09' reported as 6.8% in results and '5.05%' in discussion)",
+            "populations: removed Healthy Athletes because health status is not stated for the sample"
+          ],
+          "residualConcerns": "Percent changes in the abstract, results and discussion are internally inconsistent with the reported means (CMJ at 24 h given as -1.7% though 39.58 to 36.67 cm is about -7%; hip-thrust at 48 h given as -7.4% though 0.62 to 0.58 m/s is about -6.5%). The extracted text also contains a second, tracked-changes copy of the manuscript with the same results.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1900",
+        "synthesisBatch": "pilot-synthesis-batch-118",
+        "publishedOn": "2026-10-11"
+      }
+    },
+    {
+      "originalQueueOrder": 70,
+      "sourceFile": "Whole-Body Cryotherapy in Sports Medicine.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the extracted text; only reference-list DOIs appear. All other fields are readable and complete. The operator may verify the DOI externally and upgrade the decision.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: 'Professional / Elite' -> 'Mixed / Unspecified' (cited samples include 'physically active males', 'students from the Polish National Military Academy', 'overweight and obese men' and patients alongside professional athletes)",
+            "evidenceSummary and paper.findings: 'Anti-inflammatory and lipid findings are mixed' -> reported as favourable; mixed findings are CK, haematology, cortisol and functional recovery ('the evidence suggests that WBC has a net positive effect on an individual's lipid profile'; CK: 'the evidence is mixed')",
+            "evidenceSummary: 'mostly small samples of professional rugby, tennis and kayak athletes' -> adds physically active men, students and patients",
+            "paper.findings: added the null functional-recovery studies ('WBC had no effect on knee joint position sense ... or muscle soreness'; review of 'four laboratory-based randomized controlled trials with no reported benefits') and the osteoprotegerin rise",
+            "paper.tldr and paper.practicalImplications: 'monitor blood pressure and heart rate responses' -> skilled supervision and caution with cardiovascular disease, since the text does not advise monitoring ('WBC should only be performed in the presence of skilled personnel'; 'Caution must be taken in patients with pre-existing cardiovascular issues')",
+            "paper.limitations: 'safety data are largely from case reports' -> 'only two complications cited come from case reports' ('There are only two published complications related to WBC')",
+            "paper.athleteDev: removed claim about training adaptation, which the review does not discuss; added the tennis shot-accuracy result",
+            "paper.rtp: 'not injury rehabilitation' -> notes the adhesive capsulitis, osteoarthritis and rheumatoid arthritis patient trials the review does cite"
+          ],
+          "residualConcerns": "Own DOI not printed. Another paper in this batch (Q69 reference 5) cites this article as doi 10.1249/JSR.0000000000000584; the operator should confirm externally before upgrading.",
+          "spotCheckPriority": "high"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "batchId": "pilot-synthesis-batch-121",
+  "sourceScreeningBatch": "batch-121-monitoring-technology",
+  "preparedOn": "2026-10-11",
+  "records": [
+    {
+      "sourceFile": "Training monitoring in professional Australian football - theoretical basis and recommendations for coaches and scientists.pdf",
+      "paper": {
+        "id": "1906",
+        "year": 2020,
+        "citation": "Ryan S, Kempton T, Impellizzeri FM, Coutts AJ. Training monitoring in professional Australian football: theoretical basis and recommendations for coaches and scientists. Science and Medicine in Football. 2020;4(1):52-58.",
+        "doi": "10.1080/24733938.2019.1641212",
+        "abstract": "This narrative review describes the theoretical basis for athlete monitoring systems and their role in planning and delivering training for professional Australian football players. It summarises commonly used external and internal load measures, wellness questionnaires and neuromuscular or fitness tests.",
+        "tldr": "Monitoring in professional Australian football rests on a fitness-fatigue framework, but many monitoring measures have unclear sensitivity to training load and unknown links to injury risk and match performance. Use them together with coach expertise rather than as stand-alone readiness tests.",
+        "methods": "Narrative review of the theoretical basis of athlete monitoring and the evidence for commonly used measures in professional Australian football. No systematic search is described.",
+        "findings": "The authors report that external load (locomotor and mechanical) and session-RPE internal load show associations with subsequent running performance, but not clearly with football performance measures in competition. Wellness questionnaires lack established validity. Adductor strength and countermovement jump are reduced after matches but their sensitivity to training load is unknown. Eccentric hamstring strength is associated with later hamstring injury risk but has limited utility for acute readiness. Submaximal heart rate measures give an index of aerobic fitness over short periods.",
+        "limitations": "The review is narrative with no described search. The authors state that the theoretical monitoring framework has not been tested empirically in this population and call for longitudinal studies of large, multi-team cohorts to link training load with match performance.",
+        "practicalImplications": "Use locomotor and mechanical external load and session-RPE load when judging an individual player's readiness to train. Treat wellness questionnaires and neuromuscular screens as prompts for further investigation, and interpret them alongside other data. Check the validity and reliability of the specific protocols your club uses.",
+        "athleteDev": "Performance Application: use external load, session-RPE and a small set of neuromuscular or heart rate measures together to adjust acute training load between matches. The review does not show that these measures improve performance or reduce injury, so treat them as decision support rather than proof.",
+        "rtp": "Return to Sport Application: this review does not address return to sport or injury rehabilitation decisions. It can inform readiness monitoring only in general terms and should not be used to clear an injured player."
+      }
+    },
+    {
+      "sourceFile": "Ultrasound Does Not Detect Acute   Changes in Glycogen in Vastus Lateralis of Man.pdf",
+      "paper": {
+        "id": "1907",
+        "year": 2019,
+        "citation": "Routledge HE, Bradley WJ, Shepherd SO, Cocks M, Erskine RM, Close GL, et al. Ultrasound Does Not Detect Acute Changes in Glycogen in Vastus Lateralis of Man. Med Sci Sports Exerc. 2019 (published ahead of print).",
+        "doi": "10.1249/MSS.0000000000002052",
+        "abstract": "Tested whether a cloud-based ultrasound pixel-intensity score tracks vastus lateralis glycogen. Study 1 measured 14 academy rugby league players before and after a match; Study 2 measured 16 recreational men after high or low carbohydrate intake following glycogen depletion. Ultrasound scores did not track glycogen in either study.",
+        "tldr": "The ultrasound glycogen score did not change when glycogen fell after a rugby match and did not differ between high and low glycogen states. Practitioners should not use it to judge glycogen status; biopsy remains the reference.",
+        "methods": "Study 1: 14 academy rugby league players had vastus lateralis biopsies and ultrasound scans before and within 40 minutes after an 80-minute match. Study 2: 16 recreational men completed a randomised crossover of glycogen depletion followed by 36 hours of high or low carbohydrate intake, with biopsy and scan on day 3. Scores were compared with paired t-tests and correlated with biopsy glycogen.",
+        "findings": "After the match, glycogen fell from 443 to 271 mmol/kg dw while the ultrasound score did not change (P=0.4); the two changes were not correlated. In Study 2, glycogen was 531 vs 252 mmol/kg dw between the high and low trials, with ultrasound scores of 56 vs 54 (P=0.9). The cycling depletion exercise did lower ultrasound scores (P<0.001), but no biopsies were taken around that exercise, so this could not be linked to glycogen.",
+        "limitations": "Small samples. Study 2 had no biopsy before and after the depletion exercise, and hydration and muscle water were not controlled in Study 1. The study was partly funded by the company that sells the software.",
+        "practicalImplications": "Do not use this ultrasound score to set carbohydrate or refuelling plans. If glycogen status matters for a decision, use biopsy or a measure validated in the relevant range.",
+        "athleteDev": "Do not use the ultrasound glycogen score as a fuelling or readiness guide, because its readings did not follow glycogen changes after a match.",
+        "rtp": "The study tested healthy players and did not address injury or return to sport, so it cannot inform return-to-sport decisions."
+      }
+    },
+    {
+      "sourceFile": "Under pressure - Integrating machine learning to qantify clutch moments in American football.pdf",
+      "paper": {
+        "id": "1908",
+        "year": 2025,
+        "citation": "Aich A, Bhattacharjee D, Saikia H. Under pressure: Integrating machine learning to quantify clutch moments in American football. Int J Sports Sci Coach. 2025.",
+        "doi": "10.1177/17479541251350134",
+        "abstract": "Introduces offensive and defensive pressure indices for American football, built from time remaining, score differential, field position, down and timeouts, and tests whether machine learning models using them predict touchdown drives in the 2023 NFL season.",
+        "tldr": "A game-context pressure index predicted touchdown drives well in 2023 NFL play-by-play data, with gradient boosting performing best. It is a descriptive analytics tool, not evidence of how well teams perform under pressure.",
+        "methods": "Play-by-play data for 5,946 drives from the 2023 NFL season (nflfastR) were split 80/20. The weight of the composite offensive index was chosen by grid search to maximise AUC. Logistic regression, random forest and gradient boosting models were then fitted using the indices and timeouts, and evaluated by AUC, accuracy, precision, recall and F1.",
+        "findings": "On 1,189 test drives, gradient boosting had AUC 0.944 and accuracy 90.0%, random forest AUC 0.924, and logistic regression AUC 0.908. In the logistic model both pressure indices were significant predictors and each remaining timeout was associated with higher odds of a successful drive. The Carolina Panthers had the highest average offensive pressure index, and the San Francisco 49ers the highest average defensive pressure index, which the authors read as their defence exerting the most pressure.",
+        "limitations": "A single season, with no player-level, physical or injury data. The composite weight was tuned against drive success, and the paper does not state that this was confined to training data, so performance may be overstated. The validation description is inconsistent (no k-fold cross-validation in the methods, 'cross-validation and resampling' later), and the authors' strategic interpretations of team results were not tested.",
+        "practicalImplications": "Analysts could use the pressure index to describe game situations in a season review, treating its link to drive success as a model result rather than proof of coaching quality. Validation on other teams or seasons would be needed before wider use.",
+        "athleteDev": "Not a physical development tool. The index describes game-context pressure for analysing team decisions and drive outcomes.",
+        "rtp": "The study has no injury or rehabilitation content and cannot inform return-to-sport decisions."
+      }
+    },
+    {
+      "sourceFile": "Use of Ankle-GO to Assess and Predict Return to Sport After Lateral Ankle Reconstruction for Chronic Ankle Instability.pdf",
+      "paper": {
+        "id": "1909",
+        "year": 2025,
+        "citation": "Hardy A, Freiha K, Moussa MK, Valentin E, Rauline G, Alvino K, et al. Use of Ankle-GO to Assess and Predict Return to Sport After Lateral Ankle Reconstruction for Chronic Ankle Instability. Orthop J Sports Med. 2025;13(3):23259671251322903.",
+        "doi": "10.1177/23259671251322903",
+        "abstract": "In 51 patients undergoing arthroscopic lateral ankle ligament reconstruction for chronic ankle instability, the Ankle-GO score discriminated return to sport at 4 and 6 months. A 4-month score moderately predicted return to sport at 6 months.",
+        "tldr": "In this surgical cohort, a higher Ankle-GO score separated patients who returned to sport from those who did not at 4 and 6 months. A 4-month score above 6 was a sensitive but non-specific marker of return at 6 months.",
+        "methods": "Prospective multicenter cohort of patients with chronic ankle instability who had arthroscopic anatomic lateral ankle ligament reconstruction with gracilis autograft or allograft; sedentary patients were excluded. The Ankle-GO score (0 to 25) combines four functional tests and three questionnaires and was measured at 4 and 6 months. Return to sport was a yes or no patient answer at any level, compared between groups with what the authors call a paired t test, and the 4-month score was tested as a predictor of 6-month return with ROC analysis and logistic regression.",
+        "findings": "Return to sport was 45% at 4 months (23 of 51) and 76.5% at 6 months (39 of 51). Mean Ankle-GO scores were higher in returners at 4 months (12 vs 8.8, P = .02, Cohen d 0.69) and at 6 months (16.8 vs 11.3, P = .002, Cohen d 1.43). The 4-month score predicted 6-month return with an AUC of 0.74 (95% CI, 0.58-0.90; P = .005). The optimal threshold was 6 (sensitivity 95%, specificity 50%), with an odds ratio of 18.5 (95% CI, 3-113.95; P = .002) for return above the cut-off.",
+        "limitations": "Small sample of 51 patients from two centres, with no follow-up beyond 6 months, no control group, and the level of sport at return not determined. The abstract gives P = .003 for the 4-month comparison while the Results and Table 3 give P = .02; the 4-month mean score is 10.3 in Table 3 but 10.9 in Table 5 and the Discussion; mean age is 32.8 in the abstract and 32.7 in Table 2. A paired t test is reported for an independent-groups comparison, the odds ratio has a very wide confidence interval, and two authors disclose being educational consultants for Arthrex.",
+        "practicalImplications": "Ankle-GO may help structure return-to-sport discussions after lateral ligament reconstruction, especially with a 4-month test. Use the score alongside clinical judgment, because the cut-off is sensitive but not specific.",
+        "athleteDev": "Not directly applicable to training prescription. The functional tests and questionnaires could inform the testing battery used with athletes returning from ankle surgery.",
+        "rtp": "Directly addresses return to sport after surgery for chronic ankle instability. The score supports the discussion of readiness at 4 and 6 months, but a score above 6 should not be read as clearance on its own, given its 50% specificity and the self-reported, any-level return-to-sport outcome."
+      }
+    },
+    {
+      "sourceFile": "Use of GPS to meaure external load and estimate the incidence of muscle injuries in men's soccer - A novel descriptive study.pdf",
+      "paper": {
+        "id": "1910",
+        "year": 2022,
+        "citation": "Guitart M, Casals M, Casamichana D, Cortés J, Valle FX, McCall A, et al. Use of GPS to measure external load and estimate the incidence of muscle injuries in men's football: A novel descriptive study. PLoS ONE. 2022;17(2):e0263494.",
+        "doi": "10.1371/journal.pone.0263494",
+        "abstract": "In 71 male players from one elite club over a season, GPS external load and lower-limb muscle injury incidence were examined by category, position and day relative to match day. Load metrics and injury incidence were highest on match day and three days before the match, and midfielders had the highest incidence.",
+        "tldr": "GPS load peaks on match day and three days before the match, and muscle injuries cluster on those days in this club. Use GPS load alongside exposure time to flag high-risk days, not as a proven injury predictor.",
+        "methods": "Descriptive study of 71 male players (41 youth, 30 professional) in the 2017-2018 season. GPS data (WIMU PRO) were analysed for HMLD, HSR, Player Load and total distance, by category, position and day relative to match. Lower-limb muscle injuries were recorded using UEFA consensus definitions and OSICS coding, and incidence was calculated per 1000 hours and per GPS load unit, with descriptive statistics only.",
+        "findings": "Across 631 training sessions and 154 official matches, 34 muscle injuries occurred (19 time-loss). Per exposure hour, incidence was 2.57 per 1000 hours overall and highest on match day (4.55) then -3MD (4.07); per HMLD, HSR, Player Load and total distance, incidence was highest at -3MD, followed by match day (HMLD, Player Load, total distance) or preseason (HSR). Median GPS loads were highest on match day and -3MD, with similar distributions in youth and professional players. Midfielders had the highest injury incidence across all metrics, followed by forwards.",
+        "limitations": "One club and one season with 34 injuries, so the rate estimates are imprecise and the position and day subgroups are small (for example, 2 injuries at -4MD). The authors call the study descriptive, made no statistical comparisons, and the abstract's claim that load and incidence are proportional is not tested. Data are restricted by the club and not publicly available. The cited device reliability (ICC 0.65 for x-coordinate, 0.85 for y-coordinate) comes from a reference on an indoor ultra-wide-band tracking system rather than this outdoor GPS use.",
+        "practicalImplications": "Track HMLD, HSR and total distance alongside exposure time to see when load and injury risk cluster. Treat the match-day and -3MD pattern as a reason to review load planning, and check midfielders' exposure more closely.",
+        "athleteDev": "Supports using GPS external load to plan the week around match day and the pre-match days, with the midfielder pattern noted for monitoring. The paper does not test whether changing load reduces injury.",
+        "rtp": "Not applicable. The paper concerns injury incidence in healthy squad players and does not address return to sport."
+      }
+    },
+    {
+      "sourceFile": "Use of phase angle as an indicator of overtraining in sport and physical training.pdf",
+      "paper": {
+        "id": "1911",
+        "year": 2024,
+        "citation": "Annunziata G, Paoli A, Frias-Toral E, Marra S, Campa F, Verde L, et al. Use of phase angle as an indicator of overtraining in sport and physical training. J Transl Med. 2024;22:1084.",
+        "doi": "10.1186/s12967-024-05918-w",
+        "abstract": "The authors review the use of raw bioelectrical impedance parameters, especially phase angle, in sport and propose PhA as an indicator of overtraining. They link PhA to muscle mass, fitness, inflammation and oxidative stress, and argue it could detect overreaching early.",
+        "tldr": "Phase angle from BIA may reflect cell health, muscle quality and inflammation, so it could be a useful trend to watch alongside training load. Its use for detecting overtraining is still a hypothesis without athlete-specific validation.",
+        "methods": "This is a narrative review. The article does not describe a systematic search or selection process, and it draws on prior reviews, meta-analyses and mechanistic studies on BIA, PhA, resistance training and inflammation.",
+        "findings": "The review reports that PhA is higher in trained athletes than in non-athletes and tends to rise with resistance training in the studies cited, mostly through changes in resistance and muscle hydration. PhA has been linked to inflammatory markers and to fitness in non-athlete samples. The authors state that no study has measured PhA directly under overtraining syndrome, and they propose that a sudden fall in PhA during training could signal overtraining.",
+        "limitations": "The review is not systematic, and most cited evidence comes from clinical, elderly or non-athlete populations. The authors state that the athlete-specific evidence, the overreaching and overtraining definitions, and the validated protocols are all lacking. The proposed prognostic use is explicitly speculative.",
+        "practicalImplications": "Measure PhA with consistent BIA protocols and track it over time alongside training load, performance and mood. Interpret a sudden fall in PhA as a prompt to review load and recovery, not as a diagnosis of overtraining.",
+        "athleteDev": "Performance Application: Monitoring PhA trends over a season may help coaches and nutrition staff see when body-cell mass or fluid balance is shifting alongside load. The review does not give validated PhA thresholds or training-load rules, so it cannot set training prescriptions.",
+        "rtp": "Return to Sport Application: The review does not study return to sport or injury recovery in a way that can inform return-to-play decisions. It can at most suggest that PhA could reflect muscle damage or fluid change after injury, which would need separate study."
+      }
+    },
+    {
+      "sourceFile": "Utility of VOMS, SCAT3, and ImPACT baseline evaluations for acute concussion identification in collegaite athletes - Findings from the NCAA-DoD CARE Consortium.pdf",
+      "paper": {
+        "id": "1912",
+        "year": 2022,
+        "citation": "Ferris LM, Kontos AP, Eagle SR, Elbin RJ, Collins MW, Mucha A, et al. Utility of VOMS, SCAT3, and ImPACT baseline evaluations for acute concussion identification in collegiate athletes: findings from the NCAA-DoD CARE Consortium. Am J Sports Med. 2022.",
+        "doi": "10.1177/03635465211072261",
+        "abstract": "The authors compared raw post-injury scores with preseason change scores for the VOMS, SCAT3 and ImPACT in collegiate athletes from the NCAA-DoD CARE Consortium. Raw VOMS, SCAT3 symptom and ImPACT symptom scores identified concussion well, test-retest reliability was poor to moderate, and incorporating baseline performance did not significantly improve accuracy.",
+        "tldr": "Post-injury symptom scores from the VOMS, SCAT3 and ImPACT identify concussion well on their own. Adding preseason baseline change scores did not improve accuracy, so the value of routine baseline testing for these tools is limited.",
+        "methods": "The study used CARE Consortium data from NCAA and military academy athletes. It analysed 3958 preseason and 496 acute evaluations, calculated consecutive-year test-retest reliability in 447 pairs, derived reliable change indices, and compared raw post-injury scores with preseason change scores using ROC curves, the Youden method and DeLong tests.",
+        "findings": "Post-injury VOMS Total (d = 2.44; AUC 0.85), SCAT3 Symptom Evaluation (d = 1.74; AUC 0.82) and ImPACT PCSS (d = 1.67; AUC 0.80) had large effect sizes and useful discrimination. SAC, mBESS and ImPACT composites had small effects and poor AUCs. Test-retest reliability was poor to moderate for most measures (for VOMS Total r = 0.23, ICC 0.36), and change scores did not improve AUCs, with VOMS Total significantly reduced.",
+        "limitations": "Most participants came from NCAA Division I programmes, and the population may not represent other athletes or age groups. Symptom reports are subjective and motivation at baseline may vary, and the authors used parametric reliability methods on mostly non-normal data. The abstract gives an AUC range of 0.48 to 0.59 for the weaker measures, while the results give 0.48 to 0.60, and the discussion calls the SCAT3 and PCSS AUC drops with change scores significant although their reported P values (0.028 and 0.036) exceed the study's alpha of 0.01.",
+        "practicalImplications": "Interpret post-injury VOMS, SCAT3 symptom and ImPACT PCSS scores on their own (raw scores) rather than as an individual preseason change score for these tools. When weighing the cost of routine preseason baseline concussion testing, note that baselines gave no accuracy gain in this sample, while the authors still see value in preseason sessions for education and for flagging preexisting conditions.",
+        "athleteDev": "Performance Application: Not applicable to training or performance planning. The study concerns concussion identification, and it does not measure training, fitness or performance outcomes.",
+        "rtp": "Return to Sport Application: The study does not address return-to-play decisions or recovery time. It supports using post-injury symptom and vestibular-ocular scores as part of the acute concussion evaluation, but it does not establish criteria for when an athlete can return."
+      }
+    },
+    {
+      "sourceFile": "Valid but Invalid- Suboptimal ImPACT Baseline Performance in University Athletes.pdf",
+      "paper": {
+        "id": "1913",
+        "year": 2018,
+        "citation": "Walton SR, Broshek DK, Freeman JR, Cullum CM, Resch JE. Valid but Invalid: Suboptimal ImPACT Baseline Performance in University Athletes. Med Sci Sports Exerc. 2018;50(7):1377-1384.",
+        "doi": "10.1249/MSS.0000000000001592",
+        "abstract": "Baseline ImPACT was given to 769 university athletes. Athletes scoring below the 16th percentile on any composite were retested up to two more times. Nine tests (1%) were invalid, and 14.6% had a composite score below the 16th percentile despite passing validity checks. After one retest, 71.4% of those athletes reached the 16th percentile or higher, and 88% did so after a third test.",
+        "tldr": "About 1% of ImPACT baselines were invalid, and about 15% had a low composite score that still passed ImPACT's validity checks. Most low scores rose on retest, so a low baseline should be repeated before it is used as the comparison point after injury.",
+        "methods": "Baseline ImPACT was given to Division I student-athletes individually or in pairs, with an athletic trainer trained in ImPACT administering the test when investigators were absent. Athletes with any composite below the 16th percentile were retested no earlier than 7 days later, and up to a third time if still low. Groups were compared with independent t-tests, and composite scores across baseline 1, 2 and 3 with paired t-tests and ImPACT's reliable change index.",
+        "findings": "Of 769 records, 9 were flagged invalid by ImPACT. Of the 760 valid profiles, 112 (14.7%) had at least one composite below the 16th percentile at baseline 1; of those, 80 (71.4%) reached the 16th percentile or higher on baseline 2, and 18 of the 32 still low did so at baseline 3. All four composites improved significantly from baseline 1 to baseline 2 and to baseline 3, but only Verbal Memory and Visual Motor Speed improved significantly from baseline 2 to baseline 3. Athletes with self-reported learning disability or ADHD were more often in the low-score group.",
+        "limitations": "Single university, no stand-alone measure of effort, and no record of prior ImPACT exposure. Many retests took place while athletes were in regular training, and the authors note a practice effect may have been present because athletes without low scores were not retested. The figures of 14.6% (112/769), 14.7% (112/760), 13% (98/760) and about 16% use different numerators or denominators and do not conflict.",
+        "practicalImplications": "Check ImPACT's validity indicators and composite percentiles at baseline. When any composite falls below the 16th percentile, repeat the test before accepting that baseline as the comparison point.",
+        "athleteDev": "Run baseline cognitive testing in a controlled, proctored session. Repeat any low composite before accepting it as the athlete's baseline, since many first low scores rose on retest.",
+        "rtp": "Relevant to return to sport only through the baseline comparison after a concussion. The study cannot show whether any individual baseline is accurate, so it cannot support a return-to-play decision on its own."
+      }
+    },
+    {
+      "sourceFile": "Validation of a Composite Outcome Score for Assessing Return to Sports After Achilles Tendon Repair.pdf",
+      "paper": {
+        "id": "1914",
+        "year": 2025,
+        "citation": "Lopes R, Freiha K, Carmont MR, Valentin E, Alvino K, Mousa M, et al. Validation of a Composite Outcome Score for Assessing Return to Sports After Achilles Tendon Repair. Am J Sports Med. 2025.",
+        "doi": "10.1177/03635465251333142",
+        "abstract": "The Ankle-GO composite score (four functional tests and two patient-reported measures) was tested in 50 patients at 6 and 9 months after Achilles tendon repair, with 30 controls. The score improved from 6 to 9 months and differed from controls at 9 months. The 6-month score predicted same-level return to sport at 9 months with fair to good discrimination (AUC 0.71). Only 28% of patients returned to their preinjury level.",
+        "tldr": "In 50 patients after Achilles tendon repair, the Ankle-GO score rose from 10.7 at 6 months to 15.5 at 9 months. Only 28% had returned to preinjury sport by 9 months, and a 6-month cut-off of 8 points predicted same-level return with 82% sensitivity but only 41% specificity.",
+        "methods": "Prospective multicentre study following COSMIN guidance. The Ankle-GO (single-leg stance, modified star excursion, side hop and figure-of-8 hop tests, plus FAAM and ALR-RSI) was given at 6 and 9 months after open primary repair. Floor and ceiling effects, internal consistency, structural and discriminant validity were assessed, and the 6-month score was used in an ROC analysis to predict same-level return at 9 months.",
+        "findings": "The Ankle-GO rose from 10.7 to 15.5 between 6 and 9 months (P < .0001), and 9-month scores differed from controls. No floor or ceiling effects were seen, and internal consistency was 0.78. The 6-month score predicted same-level return with AUC 0.71 (95% CI 0.56-0.85); the cut-off of 8 gave sensitivity 81.8% and specificity 41.2%.",
+        "limitations": "Test-retest reliability was not assessed in this population; the authors judged retesting during rehabilitation inappropriate. Controls were younger, had lower BMI and fewer competitive athletes than patients, and the sex counts conflict between the text (24 women, 26 men) and Table 2 (24 male, 30 female). Few patients returned to preinjury level, and the tool's value for identifying re-rupture risk is untested.",
+        "practicalImplications": "A low Ankle-GO score at 6 months after Achilles repair flags a patient less likely to return to the same level by 9 months. It should be read alongside function and psychological readiness, not used as a clearance test.",
+        "athleteDev": "Track function from 6 to 9 months after repair with the Ankle-GO's functional tests plus the FAAM and ALR-RSI. Scores rose by about 5 points on average in this sample over that period.",
+        "rtp": "Supports using the Ankle-GO as a return-to-sport outcome score 6 to 9 months after Achilles repair. It does not show that a cut-off makes return safe or prevents re-rupture, and it should not be the sole clearance test."
+      }
+    },
+    {
+      "sourceFile": "Validity and reliability of Strive Sense 3 for muscle activity monitoring during the squat exercise.pdf",
+      "paper": {
+        "id": "1915",
+        "year": 2020,
+        "citation": "Davarzani S, Helzer D, Rivera J, Saucier D, Jo E, Burch RF V, et al. Validity and Reliability of Strive Sense3 for Muscle Activity Monitoring During the Squat Exercise. Int J Kinesiol Sports Sci. 2020;8(4):1-18.",
+        "doi": "10.7575/aiac.ijkss.v.8n.4p.1",
+        "abstract": "The Strive Sense3 smart-textile sEMG system was compared with a research-grade Noraxon system for rectus femoris activity during back squats at 30%, 60% and 80% of estimated 1RM in 17 participants. Correlation and ICC values were computed per trial. Results ranged from poor to excellent, with most trials good or better, and better agreement at medium and heavy loads. Outliers pointed to poor lubrication and fit. The authors conclude the system can track sEMG activity compared with a research-grade system.",
+        "tldr": "The Strive Sense3 shorts tracked quadriceps activity reasonably well against a lab-grade EMG system in recreational adults doing squats with dampened electrodes, and the authors attribute most poor trials to poor sensor contact or shorts fit. Medium and heavy loads gave better agreement than light loads.",
+        "methods": "Seventeen recreationally trained adults performed three continuous repetitions at each of 30%, 60% and 80% of estimated 1RM, with both systems recording rectus femoris sEMG concurrently. Signals were downsampled, time-aligned by cross-correlation, and analysed with Pearson r and a two-way mixed ICC for consistency. Five basketball coaches added an autoethnographic commentary.",
+        "findings": "Correlation with the research-grade system was good or better in 93% of trials. Reliability was good or better in 87% of absolute sEMG trials and 98% of normalised trials. Outliers in participants 2, 10, 12, 13 and 15 were attributed to poor electrode contact or shorts fit. Medium and heavy loads gave higher validity and reliability than light loads.",
+        "limitations": "Recreationally trained adults, not athletes. Data from participants 3 and 14 were removed (the methods say all of participant 3's data, while the limitations section describes excluding participant 3's medium and heavy trials), and the device sampled at 21.33 Hz. The authors note the sensors must be lubricated before use, the coach commentary is autoethnographic, and one author has a former student employed by Strive.",
+        "practicalImplications": "Lubricate sensor pads and check shorts fit before each session, since poor contact caused most outliers. Use the device for relative changes in quadriceps activity at medium to heavy loads, and read light-load data with more caution.",
+        "athleteDev": "Check electrode contact and shorts fit before each squat session, and treat light-load data with caution. The study used recreational adults, so validity in athletes has not been tested.",
+        "rtp": "The study does not address injury, recovery or return to sport, so it cannot be used to judge muscle readiness after injury."
+      }
+    },
+    {
+      "sourceFile": "Validity of Four Consumer-Grade Optical Heart Rate Sensors for Assessing Volume and Intensity Distribution of Physical Activity.pdf",
+      "paper": {
+        "id": "1916",
+        "year": 2024,
+        "citation": "Neudorfer M, Kumar D, Smeddinck JD, Kulnik ST, Niebauer J, Treff G, et al. Validity of Four Consumer-Grade Optical Heart Rate Sensors for Assessing Volume and Intensity Distribution of Physical Activity. Scand J Med Sci Sports. 2024;34:e14756.",
+        "doi": "10.1111/sms.14756",
+        "abstract": "Four consumer optical heart rate sensors were compared with a medical-grade ECG in 32 participants over 24 hours of laboratory and free-living activity, with day-to-day reliability assessed across two laboratory visits. Mean absolute percentage error ranged from 2.2% to 4.7% and ICCs from 0.91 to 0.98. Time in moderate or vigorous intensity was valid for all sensors except Polar M2 for moderate and Garmin V2 for vigorous activity, and upper arm sensors outperformed wrist sensors, especially with arm movement and at higher intensities.",
+        "tldr": "All four consumer optical heart rate sensors met a 5% error cut-off against ECG overall, but upper arm sensors were more accurate and more repeatable than wrist sensors, especially during arm movement. Only the Polar Verity Sense detected both minimum and maximum heart rate within 3 bpm in most participants.",
+        "methods": "Prospective validation study registered at ClinicalTrials.gov (NCT05525000). Participants wore the four sensors with a 3-lead Holter ECG for about 24 hours: laboratory day 1 (daily-living tasks, modified Bruce treadmill test to exhaustion, ergometer cycling at light, moderate and vigorous zones set from measured HRmax), free living, and laboratory day 2 repeating the daily-living tasks and cycling. Validity used MAPE (cut-off 5% or less), ICC, Bland-Altman analysis and mean error in activity minutes (cut-off under 10%), and reliability used the change in mean error between days.",
+        "findings": "Overall MAPE ranged from 2.2% (Polar Verity Sense) to 4.7% (Polar M2); both wrist sensors exceeded 5% during daily-living tasks and Polar M2 exceeded it during treadmill running (6.1%). Activity minutes were within 10% except Polar M2 for moderate (12.8%, +15.3 min) and Garmin V2 for vigorous (-15.9%, -5.5 min) intensity, and only the Polar Verity Sense met the 3 bpm criterion for both HRmin and HRmax (Polar M2 HRmax error -10.9 bpm). Day-to-day differences were 1 bpm or less for the upper arm sensors and 1.5 to 4.6 bpm for the wrist sensors.",
+        "limitations": "Older, partly clinical sample with heart rate limiting medication in 11 participants; only 6 participants had darker skin, so skin tone could not be analysed. The text gives 12 healthy subjects and 14 patients but then lists 20 participants with conditions, and the methods paragraph swaps the wrist and upper arm labels for the two Polar devices, which the abstract, results and tables give as Verity Sense on the upper arm and Vantage M2 on the wrist. Manufacturers did not disclose sampling routines or filters.",
+        "practicalImplications": "For heart rate based intensity monitoring, an upper arm optical sensor gave closer and more repeatable agreement with ECG than the wrist sensors tested. The Garmin Venu 2S under-counted vigorous minutes and the Polar Vantage M2 over-counted moderate minutes and under-read HRmax, so those uses need caution.",
+        "athleteDev": "If athletes use these consumer sensors for heart rate zones or HRmax, upper arm devices were the more accurate option, and the Polar Verity Sense was the only one that captured HRmax within 3 bpm in most participants. Accuracy in younger athletes at higher heart rates was not tested.",
+        "rtp": "The study tested sensor accuracy, not injured athletes or recovery, so it cannot inform return-to-sport decisions beyond choosing a heart rate device."
+      }
+    },
+    {
+      "sourceFile": "Validity of force-velocity profiling assessed with a pneumatic leg press device.pdf",
+      "paper": {
+        "id": "1917",
+        "year": 2021,
+        "citation": "Lindberg K, Eythorsdottir I, Solberg P, Gløersen Ø, Seynnes O, Bjørnsen T, et al. Validity of Force-Velocity Profiling Assessed With a Pneumatic Leg Press Device. Int J Sports Physiol Perform. 2021 (ahead of print).",
+        "doi": "10.1123/ijspp.2020-0954",
+        "abstract": "Concurrent validity of force-velocity variables from five Keiser leg press devices was tested against two force plates and a linear encoder in 14 participants across 997 repetitions. Average and peak force and velocity agreed closely with reference measures. Extrapolated theoretical maximal force, velocity and power were precise, while single-repetition power was less precise. The authors recommend theoretical maximal power over single-repetition power.",
+        "tldr": "Keiser pneumatic leg press force and velocity agreed closely with force plates and a linear encoder, but single-repetition power, especially with maximal effort, was underestimated and imprecise. Use theoretical Pmax and the force-velocity profile from average values when profiling on this device.",
+        "methods": "Fourteen regularly active participants completed 997 leg press repetitions across five Keiser units, with two force plates and a linear encoder recording at the same time. Protocol 1 used submaximal loads from 25 to 450 kgf in 14 participants; protocol 2 used maximal efforts across the Keiser 10-step test in 11 participants. Force-velocity profiles were fitted by linear regression for each participant and compared with reference data using bias, CV, correlation and ICC.",
+        "findings": "Average and peak force and velocity correlated at 0.994 to 0.999 with coefficients of variation of 1.5% to 8.6%, and overall biases were trivial to small. Average and peak power had CVs of 11.6% and 17.2%, and on maximal-effort repetitions predicted power bias ranged from -10.5% to -31.3%. Theoretical F0, V0, Pmax and slope had CVs of 1.4% to 5.9%, and device-to-device deviations from the overall bias were trivial (-2.7% to 3.2%) but reached -8.5% for power on maximal efforts.",
+        "limitations": "Only 14 participants, with sex not reported, using one leg press model across five units. Inertia of the pedals and lever arms is not captured by the Keiser, which underestimated force and power on maximal-effort repetitions at low resistance, and peak values come from different parts of the movement than the force plates. The authors acknowledge the force plates were not validated in situ, and results may not transfer to other devices.",
+        "practicalImplications": "When profiling athletes on the Keiser pneumatic leg press, use theoretical maximal power (Pmax) and an FV profile built from average rather than peak force and velocity, instead of single-repetition power. The authors conclude the five units can be used interchangeably within about plus or minus 5%, though device differences were larger for maximal-effort power.",
+        "athleteDev": "Use the force-velocity profile (F0, V0, Pmax, slope) from the pneumatic leg press to monitor training change, with theoretical Pmax as the power measure. This study tested agreement with reference devices, not test-retest reliability, so it does not by itself define the smallest real change.",
+        "rtp": "The study has no injured participants and no return-to-sport outcomes, so it cannot be used to judge strength or readiness after injury."
+      }
+    },
+    {
+      "sourceFile": "Validity of the Elite HRV Smart      Phone app for examining heart rate variability in a field based      setting.pdf",
+      "paper": {
+        "id": "1918",
+        "year": 2017,
+        "citation": "Perrotta AS, Jeklin A, Hives BA, Meanwell LE, Warburton DER. Validity of the Elite HRV Smart Phone Application for Examining Heart Rate Variability in a Field Based Setting. J Strength Cond Res. 2017 (ahead of print).",
+        "doi": "10.1519/JSC.0000000000001841",
+        "abstract": "R-R intervals were recorded on waking for 14 days with the Elite HRV app and exported to Kubios HRV 2.2 for analysis. The app and Kubios rMSSD (log) correlated at r = 0.92, with a bias of -2.7% and 6.4% of residuals outside the limits of agreement. The authors judged the app not valid, and suggested it may be reliable rather than valid.",
+        "tldr": "The Elite HRV app's rMSSD correlated strongly with Kubios (r = 0.92), but showed a mean bias of -2.7% and 6.4% of readings fell outside the limits of agreement. The authors judged it not valid against Kubios and suggested it might be reliable, which this study did not test.",
+        "methods": "Thirty-seven recreational athletes (29 men, 8 women; age 30.8 +/- 11.7 years) lived in a dormitory for 14 days and recorded resting R-R intervals with a Polar H7 on waking, supine, for a planned 10 minutes. App rMSSD values were recorded each morning, and the same R-R files were exported to Kubios HRV 2.2 with medium artifact correction. Log rMSSD from the two sources was compared by Pearson correlation and Bland-Altman analysis.",
+        "findings": "The app and Kubios correlated at r = 0.92 (95% CI 0.90 to 0.93, P < 0.0001). The mean bias was -2.7% (95% CI -3.1 to -2.3%), with limits of agreement of -12.0% to 7.0% and 6.4% of residuals outside them, above the authors' 5% criterion. The authors state that the bias CI did not include the line of equality and that discrepancies were larger at higher rMSSD values.",
+        "limitations": "One heart rate monitor and one reference software were used, with no reliability testing. Recording durations varied beyond 10 minutes, the app cannot trim recordings, and its artifact-correction technique is not disclosed, so the source of disagreement could not be identified. The sample was mostly male recreational athletes, so results may not transfer to elite or female athletes.",
+        "practicalImplications": "Do not treat Elite HRV rMSSD values as interchangeable with Kubios values. The authors suggest that, given the strong correlation, the app may still be usable if all comparisons and long-term monitoring for an athlete stay within the app, but its reliability was not tested.",
+        "athleteDev": "If the app is used for morning HRV, keep each athlete's trend within the app and do not mix its values with Kubios-derived values, given the -2.7% bias and limits of agreement of -12% to +7%.",
+        "rtp": "The study addresses HRV measurement agreement in recreational athletes. It does not assess injured or returning athletes and cannot inform return-to-sport decisions."
+      }
+    },
+    {
+      "sourceFile": "Validity of the Training-Load Concept.pdf",
+      "paper": {
+        "id": "1919",
+        "year": 2022,
+        "citation": "Passfield L, Murias JM, Sacchetti M, Nicolò A. Validity of the Training-Load Concept. Int J Sports Physiol Perform. 2022;17(4):507-514.",
+        "doi": "10.1123/ijspp.2021-0536",
+        "abstract": "Training load is widely used to prescribe and monitor training and is linked to injury, illness and overtraining risk. The authors argue that training load has never been validated as a measure of training dose. They highlight their own studies comparing the acute performance decrement after a session with that session's training load metrics, which suggest that most metrics do not match the training dose and that exercise duration confounds their calculation.",
+        "tldr": "Most current training-load metrics may not reflect the stress of a session, because multiplying by session duration distorts them. The authors suggest reporting duration and intensity separately and interpreting existing metrics with caution.",
+        "methods": "Brief review. The authors summarise their own research groups' studies that compared post-session performance decrement with training load metrics. No systematic search is described.",
+        "findings": "The authors report that most training-load metrics were not consistent with the notional training dose, that exercise duration confounded their calculation, and that total work done is not an appropriate basis for comparing training interventions of different duration and intensity.",
+        "limitations": "The evidence comes mainly from the authors' own studies and no systematic search is described. The review does not propose a validated alternative metric.",
+        "practicalImplications": "Use and interpret current training-load metrics with caution, and consider reporting session duration and intensity (or time in each exercise domain) separately rather than multiplying them. Do not compare the total work of sessions that differ in duration and intensity as if they were equivalent doses.",
+        "athleteDev": "When planning endurance sessions, avoid treating a single training-load number as a true measure of training dose. Use it alongside session intensity, duration and the athlete's response.",
+        "rtp": "The paper does not address return to sport. It cannot be used to set return-to-sport training loads or readiness criteria."
+      }
+    },
+    {
+      "sourceFile": "Velocity loss as a variable for    monitoring resistance exercise.pdf",
+      "paper": {
+        "id": "1920",
+        "year": 2017,
+        "citation": "González-Badillo JJ, Yañez-García JM, Mora-Custodio R, Rodríguez-Rosell D. Velocity Loss as a Variable for Monitoring Resistance Exercise. Int J Sports Med. 2017;38:217-225.",
+        "doi": "10.1055/s-0042-120324",
+        "abstract": "The study analysed the pattern of repetition velocity decline during a set to failure against submaximal bench press loads from 50% to 85% 1RM, and the reliability of the percentage of repetitions performed for a given velocity loss. Velocity loss tracked the percentage of repetitions performed very closely across loads, especially at 50-70% 1RM. The percentage of repetitions for a given velocity loss showed high absolute reliability, and prediction equations are provided.",
+        "tldr": "Velocity loss within a set predicts how many repetitions a lifter has left in the tank on the bench press. It is a useful monitoring tool, but the equations are estimates and were built on bench press data.",
+        "methods": "Study I: 22 young healthy men performed eight maximum-repetition tests to failure at 50-85% 1RM in random order, 6-7 days apart. Study II: 28 men performed two maximum-repetition tests at 60% 1RM. All participants were physically active sport science students with at least 8 months of recreational bench press experience, and repetition velocity was measured with a linear transducer on a Smith machine.",
+        "findings": "In Study I, velocity loss and the percentage of repetitions performed were closely related at all loads; the percentage completed at a given velocity loss was similar for 50-70% 1RM and progressively higher at 75, 80 and 85% 1RM, so separate equations are given. In Study II, test-retest CV for the percentage of repetitions performed was 2.1-6.6%, falling as velocity loss increased. In Study I, the between-individual CV for the percentage of repetitions performed ranged from 2.7% to 12.1%, depending on the velocity loss, compared with about 20% for the raw number of repetitions.",
+        "limitations": "Only the Smith machine bench press with a pause between phases was tested, and 1RM was estimated from load-velocity relationships in young recreationally trained men. Between-individual CVs in Study I exceeded 10% at low velocity-loss levels. The results report this CV range as 2.7-12.1% while the discussion gives 2.7-11.6%; the table supports 12.1%.",
+        "practicalImplications": "Monitoring repetition velocity during a bench press set can estimate how many repetitions remain in reserve. Use the authors' equations as approximate guides for bench press sets rather than exact counts.",
+        "athleteDev": "Use velocity loss to set bench press set endpoints, for example stopping at a chosen velocity loss rather than a fixed repetition count. Expect the estimate of repetitions remaining to be approximate.",
+        "rtp": "The study tested healthy men on the bench press and did not include injured athletes or return-to-sport tasks. It cannot be used to judge readiness after injury."
+      }
+    },
+    {
+      "sourceFile": "Visual motor expertise in athletes Insights from semiparametric modelling of 2317 athletes tested on the Nike SPARQ Sensory Station.pdf",
+      "paper": {
+        "id": "1921",
+        "year": 2020,
+        "citation": "Burris K, Liu S, Appelbaum L. Visual-motor expertise in athletes: Insights from semiparametric modelling of 2317 athletes tested on the Nike SPARQ Sensory Station. J Sports Sci. 2020;38(3):320-329.",
+        "doi": "10.1080/02640414.2019.1698090",
+        "abstract": "Analysis of 2317 athletes on a digital visual-motor test battery, with a model estimating differences by level, gender and sport type.",
+        "tldr": "Visual-motor test scores differ by athletic level, sex and sport type. Interceptive-sport athletes showed better visual clarity and reaction time, and strategic-sport athletes better spatial working memory.",
+        "methods": "Cross-sectional analysis of 2317 athletes (1871 male, 446 female) who completed the Nike SPARQ Sensory Station. Level was self-reported (middle school, high school, college or professional). A multivariate Gaussian transformation model estimated differences by level, gender and sport type.",
+        "findings": "Higher-level athletes performed better on all modelled tasks except Target Capture, with the largest level differences in motor-control tasks such as eye-hand coordination, near-far quickness and reaction time. Holding level and sport type constant, males ranked higher on near-far quickness and females on eye-hand coordination and perception span. Athletes in interceptive sports such as baseball and tennis had better visual clarity, contrast sensitivity, near-far quickness and reaction time, while athletes in strategic sports such as soccer and basketball scored higher on perception span (spatial working memory).",
+        "limitations": "The design is cross-sectional with self-reported athletic level, so the results are associations. Level and age are highly confounded, so developmental and expertise effects cannot be separated, and the sample includes only athletes who had access to the stations. Sample sizes differ by sex, level and sport (only 3 professional female interceptive athletes), and the study does not link test scores to competitive performance.",
+        "practicalImplications": "Visual-motor profiles from this battery vary by level and sport type, so scores should be compared with sport-specific and level-specific norms. The study does not show that these scores predict performance.",
+        "athleteDev": "Performance Application: The sport-type and level patterns can help benchmark an athlete against peers in a similar sport type and level. They are group differences, not individual predictions, and the study does not show that training these skills improves performance.",
+        "rtp": "Return to Sport Application: The study does not address injury, rehabilitation or return to sport and should not be used for return-to-play decisions."
+      }
+    },
+    {
+      "sourceFile": "Wearable and ingestible technology to evaluate and prevent exertional heat illness - A narrative review.pdf",
+      "paper": {
+        "id": "1922",
+        "year": 2024,
+        "citation": "Hintz CN, Butler CR. Wearable and ingestible technology to evaluate and prevent exertional heat illness: A narrative review. PM&R. 2024;1-6.",
+        "doi": "10.1002/pmrj.13155",
+        "abstract": "This narrative review examines wearable and ingestible technology that estimates core temperature to evaluate and prevent exertional heat illness (EHI) in athletes, military members and laborers. The authors find few data on the accuracy of newer wearable devices during true heat stroke physiology and caution against overreliance on these devices. They argue that accuracy and real-world diagnostic value must be proven, and that education and prevention policy remain the main tools.",
+        "tldr": "Ingestible capsules track core temperature reasonably well against rectal readings, but recent (post-2022) wearable core-temperature studies all showed unacceptable agreement, and wearables have little evidence for detecting real heat stroke. Use them as a supplement to education and prevention, not as a stand-alone screen for heat illness.",
+        "methods": "A narrative review using a PubMed and ScienceDirect search (June 23, 2023) with terms for wearable or ingestible technology, exertional heat illness and military, sports or workforce settings, with no date limit. Studies had to estimate core temperature noninvasively or ingestibly against a rectal, GI or telemetry reference; 75 articles were screened down to 15 (nine ingestible, four wearable core-temperature, two wearable EHS prediction).",
+        "findings": "Ingestible capsules showed mean differences from rectal temperature of 0.13 +/- 0.26 C (Teunissen) and 0.15 C (Gant), and capsule-to-capsule discordance widened from -0.40 to +0.42 C at rest to -0.86 to +0.68 C after activity. Post-2022 wearable core-temperature studies all reported unacceptable limits of agreement. For EHS, one study found all six casualties 3.5 minutes before collapse with a 6.1% false-positive rate (n = 209), while another reported 20% sensitivity and 98.9% specificity.",
+        "limitations": "The review is limited by its search of two databases, English-only inclusion and the absence of a described quality appraisal. Its conclusions rest on a small number of EHS prediction studies, and the authors acknowledge that wearable accuracy may fall with body composition, movement, clothing and sweat. No abstract-to-results conflict was found.",
+        "practicalImplications": "A team using ingestible capsules should calibrate them, plan ingestion so the capsule is still in the gut when needed, and budget for single-use capsules and a recorder within about 2 feet of the athlete. Wearables should not replace education on EHI signs, acclimation, WBGT monitoring, work-rest cycles, hydration and rapid cooling, and flagged athletes need clinical review rather than reliance on the device alone.",
+        "athleteDev": "Performance Application: Ingestible capsules can track core temperature during training in the heat once calibrated, but recent (post-2022) wearable core-temperature studies all showed unacceptable agreement with reference measures, so any training decision based on a wearable needs local validation first.",
+        "rtp": "Return to Sport Application: This review is not a return-to-sport study and cannot establish when an athlete recovering from exertional heat illness is safe to return. It does support not clearing an athlete on a wearable reading alone, because the authors warn that device estimates can give false reassurance."
+      }
+    },
+    {
+      "sourceFile": "Weighted Approaches to Assessing Injury Burden in Team Sports.pdf",
+      "paper": {
+        "id": "1923",
+        "year": 2025,
+        "citation": "Glazer A, Binney Z, Seth T. Weighted Approaches to Assessing Injury Burden in Team Sports. Journal of Sports Analytics. 2025;10(4):1-9.",
+        "doi": "10.1177/22150218241304941",
+        "abstract": "The authors compare games missed, AGL, a position-weighted metric (wAGL) and a player-weighted metric (WAIL) as measures of NFL team injury burden. Each measure was tested against the gap between actual and preseason-projected team performance and wins across the 2015-2019 seasons. wAGL was the strongest of the measures tested, and WAIL was the weakest.",
+        "tldr": "When the question is how injuries affect team results, weighting each injury by its position's value (wAGL) tracked those results better than counting games lost or using unweighted AGL. The player-level WAIL metric tracked them worst, so the weighting method matters.",
+        "methods": "Team-level analysis of NFL regular seasons from 2015-2019, with 2020-2021 excluded because of COVID-19. Metrics were AGL, wAGL (AGL weighted by 2019 franchise-tag position values, with reserve players counted at 0.6 of a starter), WAIL (games missed weighted by PFF WAR-Adjusted Injuries Lost) and a simple count of games missed. Each was correlated with the difference between actual and preseason-projected DVOA and win totals, and a sensitivity analysis doubled the QB weight in wAGL.",
+        "findings": "wAGL had the strongest correlation with both outcomes: r = -0.37 with the DVOA difference and -0.38 with the win difference. AGL gave -0.32 and -0.35, games missed gave -0.35 and -0.35, and WAIL gave -0.18 and -0.19. Doubling the QB weight raised wAGL to -0.39 and -0.40, and wAGL and AGL correlated 0.92 with each other. These are associations with a proxy outcome rather than causal effects, and the differences between metrics are small.",
+        "limitations": "The text and tables conflict in two places: the prose gives the 2015-2019 wAGL standard deviation as 26.5 while the Table 4 caption gives 36.5, and the appendix text says franchise-tag weights outperform the alternatives while Table 6 shows the Clay weights slightly higher (-0.38 and -0.39 versus -0.37 and -0.38). No p-values or confidence intervals are reported, and the gold standard is a proxy that the authors call likely flawed. Public injury reports can understate incidence, in-game departures were not captured, and the QB-doubled wAGL variant was tuned on the same outcomes it was evaluated against.",
+        "practicalImplications": "For questions about how injuries affect team results, a position-weighted measure such as wAGL can be used alongside a count of games missed. For questions about whether a rule or prevention program reduces injuries, the authors recommend plain counts of games missed or injuries instead. The weights are NFL-specific, and the authors' view that the concept extends to other sports was not tested.",
+        "athleteDev": "Performance staff can use the paper's logic only when the question is about team-level impact, since the authors recommend plain counts for descriptive injury questions. The franchise-tag weights are NFL-specific and would need to be rebuilt before use with another league or roster structure.",
+        "rtp": "This study cannot inform return-to-sport decisions. It is a team-season metric built from public injury report designations and preseason projections, with no individual recovery, readiness or clearance data."
+      }
+    },
+    {
+      "sourceFile": "What role do chronic workloads play in the acute to chronic workload ratio - Time to dismiss ACWR and its underlying theory.pdf",
+      "paper": {
+        "id": "1924",
+        "year": 2020,
+        "citation": "Impellizzeri FM, Woodcock S, Coutts AJ, Fanchini M, McCall A, Vigotsky AD. What Role Do Chronic Workloads Play in the Acute to Chronic Workload Ratio? Time to Dismiss ACWR and Its Underlying Theory. Sports Medicine. 2020.",
+        "doi": "10.1007/s40279-020-01378-6",
+        "abstract": "This methodological study reanalysed a previously published dataset from 34 players on a professional Italian Serie A team over three seasons. The authors replaced the chronic workload in the acute to chronic workload ratio (ACWR) with fixed and randomly generated values to test whether the ratio's reported injury association reflects the chronic load itself or statistical artefacts. They conclude that ACWR has no predictive value and should be dismissed as a framework and model.",
+        "tldr": "In one professional squad, the ACWR's injury association was reproduced by dividing acute load by fixed or random numbers, and ACWR predicted injury no better than an intercept-only model. Do not treat ACWR as a validated injury-risk model on the strength of this paper, which rests on a single dataset.",
+        "methods": "Secondary analysis of a published dataset (34 players, three seasons, 1919 weekly sessions, 70 non-contact time-loss injuries) using session-RPE training load. The authors reproduced the original generalised estimating equation logistic models, then compared the original ACWR with contrived ACWRs that divided acute load by fixed values (500 to 2500 AU) and by randomly generated chronic loads across a range of means and coefficients of variation. Predictive performance was assessed with Brier scores and c-statistics against an intercept-only model.",
+        "findings": "The original ACWR (4 weeks) was associated with injury (OR 2.45, 95% CI 1.28 to 4.71), and acute load divided by a fixed average chronic load of 1510 AU gave a similar association (OR 1.95, 95% CI 1.08 to 3.52). Random chronic loads with the original spread gave ORs from 1.16 to 2.07 (mean 1.53), and halving the spread raised the mean OR to 1.89 (range 1.42 to 2.70), which the authors attribute to shrinking the denominator's variance; in the low chronic load subgroup the ACWR association was larger (OR 3.58, 95% CI 1.72 to 7.46), which the authors attribute to reclassification artefacts. ACWR and acute load alone had c-statistics of 0.574 and 0.544 against 0.5 for an intercept-only model, and Brier scores equal to the intercept-only model (0.035).",
+        "limitations": "The analysis uses one club's data, with 36 weekly loads and 2 injuries excluded for missing data, and the authors state the data cannot be shared. The abstract gives the lower confidence limit for the fixed-chronic-load OR as 1.18, while Table 3 and the Discussion give 1.08 (and 1.078 in Table 3); the table value is reported here. In the low chronic load subgroup the Discussion gives ACWR as OR 2.9 (1.6 to 5.1) and acute/1510 as 3.5 (1.7 to 7.3), whereas Table 3 gives 3.58 (1.72 to 7.46) for ACWR and 2.90 (1.64 to 5.14) for acute/1510; the table values are used here. The authors note the manuscript does not follow STROBE or TRIPOD reporting, and the paper's argument rests on simulations and reanalysis rather than new injury data.",
+        "practicalImplications": "Staff should not use ACWR values or ACWR cut-offs as evidence of injury risk on the basis of this paper. The authors recommend choosing load proxies from a conceptual model and testing predictions on hold-out data, rather than tuning ratios to reach statistical significance.",
+        "athleteDev": "Performance staff should not use ACWR as a load target or as the basis for session or load limits. The paper argues that load decisions need a conceptual rationale and out-of-sample validation before they are linked to injury risk.",
+        "rtp": "This study cannot inform return-to-sport decisions. It analyses non-contact time-loss injury occurrence across seasons in one squad, not rehabilitation progression or readiness after injury, so it should not be used to justify or reject a return-to-play load ratio."
+      }
+    },
+    {
+      "sourceFile": "Workload efficiency as a new tool to describe external and internal competitive match load of a professional soccer team A descriptive study on the.pdf",
+      "paper": {
+        "id": "1925",
+        "year": 2019,
+        "citation": "Grünbichler J, Federolf P, Gatterer H. Workload efficiency as a new tool to describe external and internal competitive match load of a professional soccer team: A descriptive study on the relationship between pre-game training loads and relative match load. Eur J Sport Sci. 2019.",
+        "doi": "10.1080/17461391.2019.1697374",
+        "abstract": "Training and match data from one professional team (14 players, 44 training sessions, 16 matches) were used to build a workload efficiency index and test whether loads in the five days before a match predicted it.",
+        "tldr": "In one second-division team, higher sprint distance 3 to 4 days before a match and higher total distance the day before were linked to better match workload efficiency, while high load and long sessions the day before were linked to worse efficiency. The evidence is observational and needs testing before it changes pre-match planning.",
+        "methods": "Observational study using Polar Team Pro 10 Hz GPS and heart-rate sensors. For each match, workload efficiency was equivalent distance divided by TRIMPMOD. Z-scored training variables from D-1 to D-5 were entered into a hierarchical multiple regression as predictors.",
+        "findings": "Positive predictors of match workload efficiency: sprint distance at D-3 (beta 0.477), total distance at D-1 (beta 0.380) and sprint distance at D-4 (beta 0.312). Negative predictors: Polar training load at D-1 (beta -0.259) and training duration at D-1 (beta -0.216). The model explained 26.6 percent of variance (corrected R2 0.266).",
+        "limitations": "Small sample from a single team, with a team-average model that the authors say may not hold for individuals. Heart-rate and GPS-based measures are affected by factors such as psychological stress, temperature and GPS validity at high speeds and accelerations. The design is observational and does not support causal advice.",
+        "practicalImplications": "Consider scheduling the main sprint work 3 to 4 days before matches and keeping the day before short and low in load, matching this team's pattern. Treat the efficiency index as a monitoring idea to test in your own squad rather than as a target.",
+        "athleteDev": "Performance Application: The index may help staff compare how efficiently players turn pre-match training into match output, but with 26.6 percent of variance explained it should sit alongside other monitoring data. The sprint-timing and pre-match load patterns are candidates for a controlled trial.",
+        "rtp": "Return to Sport Application: The study does not address injury, rehabilitation or return to play, so it cannot inform return-to-sport decisions."
+      }
+    }
+  ]
+}

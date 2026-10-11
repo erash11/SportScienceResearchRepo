@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-120-brain-health-psychology",
+  "screenedOn": "2026-10-11",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Brain Health & Psychology queue positions 71-82. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 71,
+      "sourceFile": "Why Exercise may be Beneficial in    Concussion Rehabilitation- A Cellular Perspective.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 26,
+        "extractedCharacters": 44640,
+        "doi": "10.1016/j.jsams.2019.06.007",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of concussion pathophysiology (ion dysregulation, energy crisis, impaired neurovascular coupling) and of cellular signalling pathways (BDNF, CREB, mTOR, PGC-1a) that mild exercise may influence after concussion. The authors argue that mild, sub-symptom exercise introduced early may support recovery, while noting that higher intensity may be harmful. They cite human studies in which absolute rest was not better than usual care with progressive activity, and note that several human studies infer autonomic dysfunction from proxy measures.",
+      "limitations": "No systematic search is described, and the cellular argument is largely theoretical, supported by mouse data and indirect human measures rather than measured human cellular responses. The exercise dose estimates it cites come from other sources and are not tested here.",
+      "synthesisCaution": "Staff could read the mechanistic pathways as proof that early exercise speeds concussion recovery, when the review presents these links as theoretical and the dose as needing individual judgement.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "sourceFile: internal spaces collapsed in draft -> restored exactly as catalogued in inputs.json",
+            "evidenceSummary:'absolute rest did worse than usual care' -> 'absolute rest was not better than usual care' ('absolute rest ... has not resulted in a positive outcome as compared to \"usual care\"')",
+            "paper.practicalImplications: 'The review does not give a dose, duration or intensity' -> reports the cited estimates ('10 - 15 minutes at 40 - 50% of heart rate maximum in untrained individuals, and 15 - 20 minutes at 60-70% ... in trained individuals') and the caution on moderate or higher intensity and sessions over 45 minutes",
+            "paper.rtp: 'gives no dose-response or athlete safety data' -> cited estimates exist but are not clearance criteria",
+            "screeningLimitations: 'animal and in vitro work' -> theoretical rationale with mouse data ('While the above is technically a theoretical rationale'); removed claim that no dose thresholds are given",
+            "paper.findings: added the mouse BDNF timing result and the Leddy treadmill trial ('home activity at 80% of the initial assessment intensity ... more beneficial in time to recovery as compared to a stretching group')",
+            "evidenceSummary and paper.tldr: added the authors' warning that higher intensity may be harmful ('Exercise can be harmful ... if exercise is too intense')"
+          ],
+          "residualConcerns": "Clinically sensitive concussion content. The heart-rate prescriptions are reported second-hand from reference 60 and should not be used as a protocol without checking the primary source.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1904",
+        "synthesisBatch": "pilot-synthesis-batch-120",
+        "publishedOn": "2026-10-11"
+      }
+    },
+    {
+      "originalQueueOrder": 82,
+      "sourceFile": "_EFFECT~2.PDF",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 74018,
+        "doi": "10.3390/ijerph20032038",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Training & Performance",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Professional / Elite",
+        "Collegiate",
+        "Youth / Adolescent",
+        "Adult / Recreational",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review of 32 randomised controlled trials of mindfulness-based interventions in athletes (1,788 athletes in total, mean age 23.7 years, across many sports and levels), searched in five databases with no date limit. Seven trials were reported in the abstract as meta-analysed, but the results report pooled analyses of 3 trials (mindfulness; SMD 0.50, 95% CI 0.17 to 0.83), 5 trials (mindfulness-related psychological components; SMD 0.81, 95% CI 0.53 to 1.10) and 4 trials (mental health; SMD -0.03, 95% CI -0.35 to 0.29, not significant). Performance was synthesised narratively, with the authors reporting that all included studies showed improvement.",
+      "limitations": "Each pooled analysis rests on only 3 to 5 trials, with high heterogeneity (I2 up to 89 percent), so the estimates are fragile. The paper's own study counts conflict (seven in the abstract, nineteen quantitatively analysed in the discussion), and 6 of 32 trials were rated high risk of bias.",
+      "synthesisCaution": "Staff could read the pooled effects as evidence that mindfulness training improves athletic performance, when performance was only summarised narratively across varied measures and the quantitative results are for mindfulness and psychological factors.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: removed \"twelve across the results\" (not found in text)."
+          ],
+          "residualConcerns": "Identity rests on the 8.3 stub _EFFECT~2.PDF matching the title word \"Effects\". Confirm the file is this paper. Text gives 6 (29%) high risk of bias; 6 of 32 is 19%, so the printed percentage conflicts with the count.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1905",
+        "synthesisBatch": "pilot-synthesis-batch-120",
+        "publishedOn": "2026-10-11"
+      }
+    }
+  ]
+}
