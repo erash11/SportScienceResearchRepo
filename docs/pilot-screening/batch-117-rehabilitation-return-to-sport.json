@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-117-rehabilitation-return-to-sport",
+  "screenedOn": "2026-10-11",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Rehabilitation & Return to Sport queue positions 5-64. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 5,
+      "sourceFile": "Treatment after anterior cruciate ligament injury - Panther symposium ACL Treatment Consensus Group.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 65643,
+        "doi": "10.1177/2325967120931097",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Consensus statement from the Panther Symposium 2019 ACL Consensus Meeting, which drew 66 experts from 18 countries; the operative versus nonoperative treatment working group had 34 participants and 23 voting members, who used a modified Delphi process (an online pre-meeting survey, then in-person discussion and a show-of-hands vote) with 80% agreement set as consensus. The authors report 12 finalised statements: 9 unanimous, 2 with nonunanimous consensus, and 1 (delayed surgery to allow temporary return to cutting and pivoting sports, 43.4% agreement) with no consensus. Operative treatment was preferred for active patients who want to return to jumping, cutting and pivoting sports, and nonoperative treatment with progressive rehabilitation was accepted for straight-plane activities.",
+      "limitations": "This is an expert consensus rather than primary evidence, and the authors state that most of the underlying literature is low-level. The statements are framed for active ACL-injured patients in general, so the recommendations cannot be applied to a specific athlete without the clinical assessment and shared decision-making they describe.",
+      "synthesisCaution": "Staff could read the consensus as settled evidence for surgery, when the authors describe most of the supporting literature as low-level and call for randomised trials with longer follow-up.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: implied all 66 experts took part in the Delphi vote -> working group of 34, 23 voting members ('The operative versus nonoperative treatment consensus group consisted of 34 participants'; votes 'agree 23/23')",
+            "paper.methods: same participant correction; added show-of-hands vote and non-voting liaisons ('Consensus was determined by show of hands')",
+            "paper.citation: only first author listed and a non-citation note appended -> first six authors plus et al., note removed",
+            "paper.limitations: presented 11 of 13 vs 11 of 12 as a conflict -> explained that 1 of 13 statements was removed for redundancy, so the figures agree",
+            "paper.practicalImplications: made reconstruction for cutting and pivoting athletes conditional on persistent instability -> operative treatment is the preferred option for these patients (statement 8, 100%), with the instability trigger applying to straight-plane and rehabilitation pathways"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1891",
+        "synthesisBatch": "pilot-synthesis-batch-117",
+        "publishedOn": "2026-10-11"
+      }
+    },
+    {
+      "originalQueueOrder": 9,
+      "sourceFile": "Turf Toe Injuries in the Athlete - An updated review of treatment options, rehabilitation protocols, and return to play outcomes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 57800,
+        "doi": "10.1007/s12178-023-09870-y",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of first metatarsophalangeal (turf toe) sprains in athletes, covering the Anderson grading system, risk factors, imaging, non-operative and operative treatment, phased rehabilitation protocols and return-to-play outcomes. The authors report that under 2% of turf toe injuries need surgery, that grade I injuries usually return in 3 to 5 days, grade II injuries lose about 2 to 4 weeks, and grade III injuries lose 4 to 6 weeks or more. They also report that about 70% of athletes with higher-grade injuries, treated either way, are expected to keep their prior performance level. No search method is described.",
+      "limitations": "This is a narrative review with no described search, and the return-to-play figures draw on case series, single-league surveillance data and small cohorts. The grading table and timelines are composites of sources, and the review notes that time to return varies widely with sport, position and level, so the numbers are typical values rather than criteria.",
+      "synthesisCaution": "Staff could take the 2 to 4 week and 4 to 6 week loss estimates as fixed return timelines for each grade, when the review shows return times ranging from days to many months depending on position, level and treatment.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: removed appended non-citation note about missing volume and pages",
+            "paper.tldr: 'Most turf toe injuries are grade I or II' is not stated in the text -> fewer than 2% need surgery and grade I/II are managed non-operatively ('Less than 2% of TT injuries require surgery')",
+            "paper.findings: 'one NFL study found power ratings comparable' -> NFL studies (three references cited for this statement, [46, 49, 50])",
+            "paper.athleteDev: 'higher-grade injuries can reduce performance in as many as 73%' -> figure applies to operatively treated patients ('Of those patients undergoing operative treatment, 71-90% are expected to resume pre-injury activity, although the level of performance may suffer in as many as 73%')",
+            "paper.limitations: added the internal conflict on grade II time loss (Table 1 'Loss of playing time for up to 2 weeks' vs abstract '2-4 weeks of play')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1892",
+        "synthesisBatch": "pilot-synthesis-batch-117",
+        "publishedOn": "2026-10-11"
+      }
+    },
+    {
+      "originalQueueOrder": 22,
+      "sourceFile": "Updated return-to-play recommendations for collision athletes after cervical spine injury - A moified Delphi Consensus Study with the Cervical Spine Research Society.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 43730,
+        "doi": "10.1093/neuros/nyaa308",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Professional / Elite",
+        "Collegiate"
+      ],
+      "evidenceSummary": "A three-round modified Delphi survey of Cervical Spine Research Society members and NFL team physicians produced 13 return-to-play statements for collision athletes after cervical spine injury. Round 1 had 48 expert respondents; round 2 was voted on by 95 meeting attendees (average engagement 71%), and round 3 was a clarification survey of 8 NFL-affiliated surgeons on 2-level ACDF. Strong consensus was reached for return to play in asymptomatic athletes after an episode of transient paralysis with no T2 signal change and canal diameter above 10 mm (90.5%), and for a solid 1-/2-level ACDF with no T2 signal change but not a 3-level ACDF (84.4%); in round 3 no consensus was reached for 2-level ACDF (50% agreed).",
+      "limitations": "These are expert opinion statements (48 round-1 respondents, 95 round-2 voters, 8 round-3 surgeons), and the authors state the results 'should not be interpreted as scientific fact, as they are only a measurement of expert opinion.' Neurosurgeon participation was low, not all injury types were covered, and no return-to-play timelines were set.",
+      "synthesisCaution": "Staff could treat these statements as settled return-to-play rules, but several scenarios (2-level ACDF, pseudarthrosis, persistent MRI change) reached only weak or no consensus.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: placeholder '2020;0(0):1-8' removed -> 'Neurosurgery. 2020.' (header reads 'Neurosurgery 0:1-8, 2020')",
+            "screeningLimitations and paper.limitations: attributed 'simple survey methodology' and small panel to this study -> that limitation belongs to the earlier France et al. survey ('the study was limited by the small number of experts surveyed, as well as the use of a simple survey methodology'); replaced with the authors' own limits ('dependence on a panel of experts', 'low rate of neurosurgeon participation', 'did not allow our team to account for all possible types of cervical spine injuries', 'only a measurement of expert opinion')",
+            "evidenceSummary and paper.findings: added the qualifier that the 90.5% and 81.25% statements apply 'Following an episode of transient paralysis'; reworded the 3-level ACDF item as agreement that 3-level ACDF athletes 'should not RTP'"
+          ],
+          "residualConcerns": "Clinically sensitive cervical spine return-to-play clearance content.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1893",
+        "synthesisBatch": "pilot-synthesis-batch-117",
+        "publishedOn": "2026-10-11"
+      }
+    },
+    {
+      "originalQueueOrder": 23,
+      "sourceFile": "Uphill Walking Unveils Hidden Instability and Biomechanical Adaptations in Anterior Cruciate Ligament-Deficient Copers.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 26,
+        "extractedCharacters": 49087,
+        "doi": "10.1016/j.gaitpost.2025.110008",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A gait laboratory comparison of 13 adults with unilateral ACL deficiency classed as copers (7 men, 6 women, age 41.8 +/- 12.6 years, 3 months to 5 years post-injury) and 13 matched healthy adults walking up 3, 6 and 9 degree slopes, analysed with two-way mixed ANOVA. Copers matched controls for hip, knee and ankle moments on level walking, but uphill they showed reduced cadence, greater anterior knee forces, lower affected-knee extensor moment and posterior force late in stance, a more anterior tibial angle, and greater trunk anterior tilt, hip extensor moment and terminal double-limb support dorsiflexion. There were no group by slope interactions.",
+      "limitations": "Small single-centre patient sample, cross-sectional, with instability inferred from compensatory kinematics and kinetics rather than measured directly (no muscle activity or giving-way data). Uphill and level walking were not compared in one statistical model, and participants were not described as athletes.",
+      "synthesisCaution": "Staff could read this as evidence that uphill walking should guide surgical or return-to-sport decisions, but the paper only shows group-level compensations in 13 copers and does not test the assessment against outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: EXCLUDE (c) -> INCLUDE. ACL deficiency and coper assessment is a core sports injury and rehabilitation topic, and INSTRUCTIONS tag patient samples rather than exclude them (library precedent Q10 included a general-population MCL injury study)",
+            "full record written: studyDesign Cross-sectional Study (matched-group lab comparison at one time point with a within-subject slope factor); primaryDomain Rehabilitation & Return to Sport rather than Monitoring & Technology because uphill walking is proposed, not validated, as an assessment",
+            "populations: Mixed / Unspecified only, no athlete tags ('recruited from the university hospital', mean age 41.8, sport level unstated)",
+            "paper.limitations: noted internal conflicts ('conducted exclusively on young ACLD copers' vs 'age: 41.8+/-12.6 years'; abstract limits force changes to the affected knee while Results say 'in both knees')"
+          ],
+          "residualConcerns": "Decision changed from EXCLUDE; operator should confirm the library wants patient-sample ACL biomechanics papers. Journal Pre-proof without volume or pages; the DOI is printed, so not DEGRADED.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1894",
+        "synthesisBatch": "pilot-synthesis-batch-117",
+        "publishedOn": "2026-10-11"
+      }
+    },
+    {
+      "originalQueueOrder": 25,
+      "sourceFile": "Use of Fantasy points in evaluating professional athlete performance after anterior cruciate ligament reconstruction.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 27202,
+        "doi": "10.7759/cureus.35855",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "American Football",
+        "Basketball",
+        "Ice Hockey",
+        "Baseball / Softball"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Injured Athletes",
+        "Male Athletes"
+      ],
+      "evidenceSummary": "A descriptive cross-sectional study of 83 male professional players in the NFL, NBA, NHL and MLB who missed games for ACL reconstruction between 1992 and 2015, using publicly available data. Fantasy points (NFL, NBA, NHL) and WAR (MLB) were compared before and after surgery without statistical testing. About half of players (44 of 83) showed a decline in fantasy or WAR scores, only 33% to 42% by league regained their pre-injury level, and reported return-to-play rates were 82% (NHL), 93% (MLB), 85% (NBA) and 88% (NFL).",
+      "limitations": "Descriptive design using public data, with no statistical tests, no age-matched controls and no measure of injury severity, graft or rehabilitation. Fantasy points and WAR are proxies for performance, and career length is an underestimate because players who continued after 2015 were not followed.",
+      "synthesisCaution": "Staff could read the post-surgery decline as caused by ACL reconstruction, as the authors suggest ('points to the ACL injury as the major contributing factor'), but there were no controls for age, other injuries or position, and the abstract's '33% to 42%' figure is the share of players who regained pre-injury performance, not the size of the score drop.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary, paper.abstract and paper.findings: 'Fantasy scores fell by 33% to 42%' -> about half of players declined (NFL 13/25, NBA 14/26, NHL 8/17, MLB 9/15) and 33% to 42% regained pre-injury performance (Table 6: 'Percentage of players that were able to reach pre-injury performance 36 42 35 33'); no magnitude of decline is reported",
+            "populations: added Male Athletes ('our small sample of male-only professional athletes')",
+            "evidenceSummary, paper.methods and screeningLimitations: added that analysis was descriptive with no statistical tests and no age-matched controls ('Our study lacked age-matched controls')",
+            "synthesisCaution: now names the authors' causal attribution without controls ('points to the ACL injury as the major contributing factor') and the misleading 33-42% figure",
+            "paper.limitations: added the abstract vs Table 6 conflict and arithmetic inconsistencies ('11/17 (82%)'; NFL '13 players (50%)' of 25)",
+            "paper.tldr and paper.athleteDev: reworded to the reported proportions; fantasy scores as a marker attributed to the authors",
+            "paper.findings: recovery time range given as 8 to 13 months per Table 6 (Results text says 'ranging from 9 to 13 months')"
+          ],
+          "residualConcerns": "Several internal numeric inconsistencies in the source (NHL return-to-play fraction, NFL percentages, recovery-time range). The '33% to 42%' abstract wording is ambiguous; the interpretation used here follows Table 6.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1895",
+        "synthesisBatch": "pilot-synthesis-batch-117",
+        "publishedOn": "2026-10-11"
+      }
+    },
+    {
+      "originalQueueOrder": 27,
+      "sourceFile": "Use of extracorporeal shockwave therapies for athletes and physically active individuals - A systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 75012,
+        "doi": "10.1136/bjsports-2023-107567",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Adult / Recreational",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "PRISMA systematic review of four databases (searched April 2023) covering 56 studies with 1874 athletes or physically active individuals, including 18 level I studies. Findings were synthesised narratively because heterogeneity precluded meta-analysis; the authors report ESWT may be effective alone for plantar fasciitis, lateral epicondylitis and proximal hamstring tendinopathy, and as an adjunct to exercise for medial tibial stress syndrome and osteitis pubis, with mostly low-level evidence for patellar tendinopathy.",
+      "limitations": "Narrative synthesis only, with heterogeneous comparators, doses and outcomes; 25 of 56 included studies were case series or reports with positive outcomes. Only 20 of 56 studies reported adverse events and the review was restricted to English-language publications.",
+      "synthesisCaution": "Staff could read the review as proof that ESWT speeds return to sport across injuries, when the level I evidence covers only a few conditions and the authors say the benefit over exercise alone is uncertain for patellar tendinopathy.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: '2024:1-12' carried the placeholder online-first pagination ('2024;0:1-12') -> journal and year only",
+            "paper.practicalImplications: 'Do not expect it to add benefit to eccentric loading' overstated the finding -> benefit is uncertain ('the benefit of adding ESWT to eccentric exercises is uncertain')",
+            "paper.athleteDev: continued training stated without the bone-injury exception -> added ('Except for bone-related injuries, there was no strict activity restriction')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1896",
+        "synthesisBatch": "pilot-synthesis-batch-117",
+        "publishedOn": "2026-10-11"
+      }
+    },
+    {
+      "originalQueueOrder": 31,
+      "sourceFile": "Using a Bayesian network to classify time to return to sport based on football injury epidemiological data.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 19,
+        "extractedCharacters": 66697,
+        "doi": "10.1371/journal.pone.0314184",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Professional / Elite",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Retrospective analysis of 6143 time-loss injuries in 3374 player seasons from seven Bundesliga seasons (2014/15 to 2020/21), collected from public sources. The authors built a discrete Bayesian network with expert-constrained structure and tested it with 10-fold cross-validation. Sensitivity for days to return to sport ranged from 0.24 to 0.97 across six categories, and sensitivity for injury severity ranged from 0.73 to 1.00 across four categories, with type of injury and body region the most influential variables.",
+      "limitations": "Data came from public media and databases without diagnosis, injury location detail or rehabilitation information, and the model is static and specific to the Bundesliga. Performance was weak for mid-range return times (8 to 14 days, sensitivity 0.24), and the results are a validation of classification accuracy, not evidence that the tool improves outcomes.",
+      "synthesisCaution": "Staff could take the network's probabilities as individual return-to-play forecasts, when they are population-level estimates from public data with weak accuracy in the mid-range categories and only a hypothetical case example.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.methods: 'Twelve variables were discretised' -> twelve variables included, with continuous ones manually discretised ('We manually discretised the continuous data'); added that the data were prospectively collected ('retrospective analysis of prospectively collected injury data')",
+            "paper.limitations: omitted the exclusion that removes long-term absences -> added ('Injured players who did not return to the Bundesliga in the same season and those without complete data were excluded')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1897",
+        "synthesisBatch": "pilot-synthesis-batch-117",
+        "publishedOn": "2026-10-11"
+      }
+    },
+    {
+      "originalQueueOrder": 49,
+      "sourceFile": "Vertical jump impulse deficits persist from six to nine months after ACL reconstruction.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 20,
+        "extractedCharacters": 52773,
+        "doi": "10.1080/14763141.2021.1945137",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Injured Athletes",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Longitudinal study of 44 amateur male multidirectional field sport athletes (Gaelic football, hurling, soccer, rugby) tested at 6 and 9 months after anterior cruciate ligament reconstruction with a hamstring tendon or bone-patellar tendon-bone graft (22 each). Phase-specific countermovement jump impulse and isokinetic knee strength asymmetries were compared between sessions and graft types with mixed-model ANOVAs. The authors report that knee strength asymmetry improved between 6 and 9 months, and that the concentric CMJ impulse asymmetry fell mainly because the uninvolved limb's concentric impulse decreased. Eccentric deceleration impulse fell in both limbs. Changes in strength asymmetry explained little of the change in impulse asymmetry, and graft type did not change the rate of progression.",
+      "limitations": "The study is observational with two time points, so it cannot show what caused the changes, and rehabilitation was neither monitored nor controlled. More athletes had returned to sport by 9 months (22, with 12 at pre-injury level) than at 6 months (2), which may have influenced the results.",
+      "synthesisCaution": "Staff could read the persisting jump deficits as proof that jump impulse should drive return-to-sport decisions, but the study only describes changes between 6 and 9 months and does not test any return-to-sport criterion.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations and paper.limitations: claimed the athletes' sport and competition level were not stated -> they are stated ('Forty-four 18-35-year-old amateur male multidirectional field sport athletes'; 'Gaelic football (39%), hurling (23%), soccer (32%) and rugby (16%)'); replaced with the authors' stated limitations (uncontrolled rehabilitation, more sport exposure at 9 months, older HT group, double-leg task, GRF not joint loading)",
+            "populations: 'Mixed / Unspecified' -> 'Adult / Recreational' (amateur athletes)",
+            "evidenceSummary: 'graft type did not change these findings' -> graft type did not change the rate of progression ('No significant interaction effects (time*graft)'), and findings now note persistently larger asymmetries in patellar tendon graft athletes ('BPTB athletes consistently displayed significantly larger CMJ impulse and knee extensor strength asymmetries')",
+            "paper.practicalImplications and rtp: added the authors' central caution that asymmetry indices can overestimate reconstructed-limb function when the uninvolved limb declines ('measuring asymmetry progression alone may overestimate functional ACLR-limb performance by concealing deleterious uninvolved limb deficits')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1898",
+        "synthesisBatch": "pilot-synthesis-batch-117",
+        "publishedOn": "2026-10-11"
+      }
+    },
+    {
+      "originalQueueOrder": 64,
+      "sourceFile": "When Is It Safe to Return to Sport After ACL Reconstruction Reviewing the Criteria.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 28416,
+        "doi": "10.1177/1941738119846502",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Descriptive review of return-to-sport criteria after ACL reconstruction. The authors searched CENTRAL, MEDLINE, EMBase, CINAHL and a musculoskeletal register to October 2018 and reviewed 83 articles after removing duplicates and low-quality studies. Five criteria emerged: psychological factors, performance and functional tests, strength tests, time, and modifiable and nonmodifiable risk factors.",
+      "limitations": "The review was not a formal meta-analysis and did not grade the strength of each criterion. The authors state that evidence for the validity of strength and functional tests is weak. Authors report no conflicts of interest.",
+      "synthesisCaution": "Staff could read the 9-month minimum as a validated safe-return rule; the paper proposes it from a limited set of studies and calls the test-based criteria only preliminary.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: said the passing group's reinjury percentage was not stated -> 5.6% of those who passed vs 37.5% who did not ('Only 5.6% of patients who successfully passed RTS criteria before returning to level 1 sports suffered reinjuries compared with 37.5% who did not')",
+            "paper.tldr: 'matters most for a safe return' -> 'is a major factor' (text: 'a major factor in successful safe return to sport (SRTS) decision making'; 'most strongly associated' refers to returning to preinjury activity, not safety)"
+          ],
+          "residualConcerns": "Return-to-play clearance topic. The authors call it a 'descriptive review' with a minimal search description and no appraisal; coded Systematic Review / Meta-analysis under the described-search rule, but it reads like a narrative review. Search end date conflicts (abstract October 2018, methods May 2018). The 9-month recommendation rests mainly on one cited cohort (Grindem 2016).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1899",
+        "synthesisBatch": "pilot-synthesis-batch-117",
+        "publishedOn": "2026-10-11"
+      }
+    }
+  ]
+}

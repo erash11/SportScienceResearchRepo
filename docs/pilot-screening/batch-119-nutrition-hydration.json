@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-119-nutrition-hydration",
+  "screenedOn": "2026-10-11",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Nutrition & Hydration queue positions 17-57. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 17,
+      "sourceFile": "Undeclared doping substances are highly prevalent in commercial sports nutrition supplements.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 59556,
+        "doi": "10.52082/jssm.2021.328",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Cross-sectional laboratory survey of 66 high-risk sports nutrition supplements (claiming hormone modulation, muscle gain, fat loss or energy) bought from 17 Dutch web shops in December 2014 and tested by an accredited anti-doping laboratory. Undeclared doping substances were found in 25 products (38%), including high levels of synthetic stimulants in three. The authors estimate that three products could impose general health risks at the recommended dose, and that several high-level findings could produce a positive doping test.",
+      "limitations": "Products were bought in 2014, so the prevalence reflects that market and a preselected high-risk subset rather than today's products. Low-level findings were qualitative, and exposure estimates assume maximum recommended doses and reference medicine values. The trend comparison with earlier surveys rests on data not shown.",
+      "synthesisCaution": "Staff could read the 38% figure as the chance that any supplement is contaminated, when the sample was a purposive set of high-risk products bought in 2014 and is not a random sample of the market.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: low-level findings described as 'mainly the steroids boldione and 17alpha-AED, plus higenamine', omitting the stimulant DMAA, which was as frequent as 17alpha-AED -> counts added ('boldione was detected the most (11 findings) followed by ... 17α-AED and the stimulant 4-methylhexan-2-amine (both 6 findings). The beta-2 agonist higenamine was detected 4 times')"
+          ],
+          "residualConcerns": "The 38% depends on reporting thresholds the authors applied for steroids and ephedrine; without them 50% of products would have been positive.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1901",
+        "synthesisBatch": "pilot-synthesis-batch-119",
+        "publishedOn": "2026-10-11"
+      }
+    },
+    {
+      "originalQueueOrder": 33,
+      "sourceFile": "Utility of Body Weight, Urine Color, and Thirst Perception (WUT) in Determining Hydration in Young Adults.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 35,
+        "extractedCharacters": 53128,
+        "doi": "10.1249/MSS.0000000000003514",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Two free-living cohorts (Study 1, 58 participants for 3 days; Study 2, 35 participants for 7 days) of healthy adults aged 18 to 35 (93 total, 47 female) provided reference change values for body mass, urine color and thirst, then Study 2 underwent 2 hours of passive heating followed by random assignment to control, sweat-loss or fluid-restriction conditions. Body mass change, urine color and thirst each separated the groups for predicted dehydration probability, and ridge regression gave body mass 58% and thirst 26% of relative importance in the weighted WUT model.",
+      "limitations": "Participants were healthy, non-athlete young adults who exercised no more than 10 hours a week, and the authors say results may not transfer to athletes, older adults or people with illness. The model was fitted and tested on the same data without a holdout set, and the authors caution that the importance weights may be overfitted.",
+      "synthesisCaution": "Staff could take the 58% and 26% weightings or the 90% dehydration probabilities as validated athlete hydration thresholds, when they come from healthy non-athlete young adults (free-living data plus a 35-person heat and 24 h fluid-manipulation protocol), with no athlete data.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: urine color result attributed p = 0.044 to the restriction vs control comparison -> 0.044 is the overall ANOVA and the restriction vs control post-hoc was p = 0.047 ('Restriction (Mean +/- SD, 0.832 +/- 0.143, p = 0.047)')",
+            "synthesisCaution: said the 90% probabilities came from the 2-hour heat protocol -> they come from reference change values in the free-living data ('Using the free-living data (Study 1 and Study 2), the reference change values (RCV) were calculated')",
+            "paper.limitations: added the small manipulation sample and the internal conflict between CI and p value ('0.34 [95% CI, -0.11, 0.57]' with 'p = 0.003')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1902",
+        "synthesisBatch": "pilot-synthesis-batch-119",
+        "publishedOn": "2026-10-11"
+      }
+    },
+    {
+      "originalQueueOrder": 56,
+      "sourceFile": "Vitamin C supplementation and athletic performance - A review.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text; only the journal name and URL appear.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.citation: added printed pages 255-259 ('Volume 22 Number 7 July 2023'; '1537-890X/2207/255-259')",
+            "paper.findings: added that all three positive trials used co-supplementation and that 'Vitamin C alone did not appear to have a positive effect on markers of muscle damage with long-term supplementation'; specified blunted adaptations came from vitamin C plus vitamin E trials; 'Most studies used vitamin C with at least one other supplement' -> 'Only two studies used vitamin C alone' ('only two of the studies supplemented with vitamin C alone')"
+          ],
+          "residualConcerns": "Own DOI not printed; operator should verify externally before upgrading the decision.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 57,
+      "sourceFile": "Vitamin D and the Athlete- Current                        Perspectives and New Challenges.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 66801,
+        "doi": "10.1007/s40279-017-0841-9",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Recovery & Readiness",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of vitamin D in athletes, covering bone health, extra-skeletal roles in muscle, immunity and cardiac structure, the safety of high-dose supplementation and the role of ethnicity and bioavailable vitamin D. No systematic search is described. The authors report that serum 25(OH)D has consistently failed to show a relationship with bone health in athletes, describe possible effects on recovery and infection risk, and raise concern about very high doses.",
+      "limitations": "This is a narrative review with no described search, so the choice of evidence cannot be checked, and it includes the authors' own laboratory data. The article is part of a supplement from an expert panel meeting, and one author received honoraria from GSSI, a division of PepsiCo.",
+      "synthesisCaution": "Staff could treat free (bioavailable) vitamin D testing as an established standard, but the authors note that no gold-standard assay or validated thresholds exist yet and that new thresholds still need to be set.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: 'a weak link between serum 25(OH)D and bone health' -> no consistent relationship ('data have consistently failed to demonstrate any relationship between serum 25[OH]D and bone health'); added cardiac structure to the coverage list",
+            "synthesisCaution: 'the review only calls for re-examining the data, not for a validated clinical test' -> the review does recommend free vitamin D assays when testing is warranted, but no gold standard exists ('If testing is warranted, practitioners should use the appropriate assays to determine bioavailable (free) vitamin D'; 'No comparison of techniques and establishment of a gold standard have yet been reported')",
+            "paper.athleteDev: 'possible toxicity' -> the concern is a raised catabolite at 70,000 IU/week ('the highest dose (70,000 IU/week) also raised the product of vitamin D catabolism, 24,25[OH]D'); 'largely mechanistic' -> mechanistic, observational or small trial data",
+            "paper.practicalImplications: added the authors' advice against 'blanket approaches to supplementation, mega doses of vitamin D, bolus doses' and their preference for bioavailable assays",
+            "paper.findings: added the authors' observation of smaller cardiac dimensions in severely deficient athletes"
+          ],
+          "residualConcerns": "Includes cardiac and supplement-dosing content; cardiac findings come from the authors' own cross-sectional study.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1903",
+        "synthesisBatch": "pilot-synthesis-batch-119",
+        "publishedOn": "2026-10-11"
+      }
+    }
+  ]
+}
