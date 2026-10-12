@@ -8,6 +8,10 @@ Read this first. Update it before ending every session.
      updated 2026-09-26, including the completed SecondBrain vault push). -->
 
 ## Current state
+- 2026-10-12 (Mac): DEGRADED DOI lookup (Crossref). 72 DOIs accepted in `docs/doi-lookup/2026-10-12-accepted-dois.json`
+  (doi.org confirmed 61; 11 publisher 403 or 202 kept). 1 unconfirmed (network error). 6 CHECK_BY_HAND and 11 NO_MATCH
+  listed in `docs/doi-lookup/2026-10-12-degraded-doi-candidates.json`. Screening decisions NOT changed. Accepted DOIs
+  still need a new screening and synthesis pass before publishing.
 - 2026-10-12 (Mac): Backlog is EMPTY. `python3 scripts/haiku-batch/backlog.py` reports 0 unscreened PDFs
   (2,155 PDFs on disk, 1,732 screening decisions, 1,894 papers.json rows, max ID 1926). The "82 left" note
   below is stale: those 82 were batch 115-121, now merged. Next unused ID: **1927**.
