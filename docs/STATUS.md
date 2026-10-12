@@ -8,6 +8,9 @@ Read this first. Update it before ending every session.
      updated 2026-09-26, including the completed SecondBrain vault push). -->
 
 ## Current state
+- 2026-10-12 (Mac): Backlog is EMPTY. `python3 scripts/haiku-batch/backlog.py` reports 0 unscreened PDFs
+  (2,155 PDFs on disk, 1,732 screening decisions, 1,894 papers.json rows, max ID 1926). The "82 left" note
+  below is stale: those 82 were batch 115-121, now merged. Next unused ID: **1927**.
 - 2026-10-11 (Mac): Batch 122 MERGED (PR #28). Q22 is ID 1926. Next unused ID: **1927**.
   Previously staged: Q22 promoted from DEGRADED to INCLUDE
   (ID 1926, injury history and CMJ, Monitoring & Technology). Old DEGRADED entry removed from batch-13. The other 22
@@ -28,8 +31,9 @@ Read this first. Update it before ending every session.
   9 legacy DOI collisions). Latest handoff: `docs/handoffs/2026-10-10-cloud-batches-88-95.md`.
 
 ## Next
-- Continue the backlog (82 PDFs left) from ID 1864, same commands as the handoffs. Check for open
-  `batch-*-staged` branches first (see Gotchas).
+- No PDF backlog left. Next work needs a decision: (a) new sources (for example, Zotero items not yet in
+  `SourcePapers/`), or (b) clear `docs/needs-eric.md` (24 wrong PDFs, 88 DEGRADED missing DOIs) so those records can be re-screened.
+  Before any new batch, check for open `batch-*-staged` branches (see Gotchas).
 - After the backlog: update the roadmap, then hand Eric the pilot launch checklist (goal E).
 - Still Eric's: name a pilot lead, pick 3 staff across 2+ disciplines, record human claim audits.
 
