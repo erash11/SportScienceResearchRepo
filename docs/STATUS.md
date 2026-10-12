@@ -7,6 +7,12 @@ Read this first. Update it before ending every session.
      docs/handoffs/2026-09-25-evidence-library-batch18-ask-library.md (closeout addendum
      updated 2026-09-26, including the completed SecondBrain vault push). -->
 
+## Where everything lives
+
+| What | Where |
+|---|---|
+| Drive outputs | `~/Library/CloudStorage/GoogleDrive-eric.rash11@gmail.com/My Drive/00_Primary_Storage_Drive/01_PROJECTS/_STALLED/2023-09-12_SportScienceResearchRepo` (Windows: `G:\My Drive\00_Primary_Storage_Drive\01_PROJECTS\_STALLED\2023-09-12_SportScienceResearchRepo`) |
+
 ## Current state
 - 2026-10-12 (Mac): DEGRADED DOI lookup (Crossref). 72 DOIs accepted in `docs/doi-lookup/2026-10-12-accepted-dois.json`
   (doi.org confirmed 61; 11 publisher 403 or 202 kept). 1 unconfirmed (network error). 6 CHECK_BY_HAND and 11 NO_MATCH
