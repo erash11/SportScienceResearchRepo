@@ -35,6 +35,7 @@ Read this first. Update it before ending every session.
   9 legacy DOI collisions). Latest handoff: `docs/handoffs/2026-10-10-cloud-batches-88-95.md`.
 
 ## Next
+- Eric: answer the open question "DOI re-screen: option 1 or 2" below. Reply `1` (re-screen the 72 accepted DOIs) or `2` (check the 6 CHECK_BY_HAND and 11 NO_MATCH first).
 - No PDF backlog left. Next work needs a decision: (a) new sources (for example, Zotero items not yet in
   `SourcePapers/`), or (b) clear `docs/needs-eric.md` (24 wrong PDFs, 88 DEGRADED missing DOIs) so those records can be re-screened.
   Before any new batch, check for open `batch-*-staged` branches (see Gotchas).
@@ -42,6 +43,9 @@ Read this first. Update it before ending every session.
 - Still Eric's: name a pilot lead, pick 3 staff across 2+ disciplines, record human claim audits.
 
 ## Open questions
+- DOI re-screen: option 1 or 2? Option 1 re-screens the 72 accepted DOIs (`docs/doi-lookup/2026-10-12-accepted-dois.json`) through the batch pipeline. That uses many agent calls. Option 2 checks the 6 CHECK_BY_HAND and 11 NO_MATCH in `docs/doi-lookup/2026-10-12-degraded-doi-candidates.json` by hand first. Recommended: option 2.
+- Confirm the one unconfirmed DOI, `10.26603/ijspt20200326` (Criteria-based return to sprinting progression), because the doi.org check failed with a network error.
+- Replace the 24 wrong PDFs in `docs/needs-eric.md` section 1. Each needs the correct article downloaded into `SourcePapers/` under the same filename.
 - ANSWERED 2026-10-10: Q66 and Q94 from Batch 100 (sports medicine opinion pieces, "Current Opinion" framework) stay EXCLUDE. Same rule as all opinion pieces. EXCLUDE records are not in the library. Audit notes are in the Batch 100 workdir (`~/Library/Caches/sportsci-batch-100/verified/`).
 - Batch 99 shortlist gate: RESOLVED. Option B was taken (gate kept at 22, builder swap pass in 77cc584, PR #24 merged).
   Note: the gate was lowered once before (Batch 96, 24 to 22). Watch the named-sport pool; it is near the floor.
