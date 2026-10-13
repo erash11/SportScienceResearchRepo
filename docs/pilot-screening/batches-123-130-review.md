@@ -188,3 +188,19 @@ Clinically sensitive topics, decision changes, substantive corrections, or remai
 - **Q66** (INCLUDE, ID 1993) Training Impulse and Session Ratings of Perceived Exertion as Perceived by Athletes and Observed by Coaches Du
   - Audit changes: paper.limitations: added the R2 check showing the Discussion value fits r = 0.41, not 0.49 ('S&C (R2 = 0.17 ...)'; 'the SCC (r = 0.41)'); paper.limitations: added the Figure 2 observation count conflict ('all observations (N = 129)' vs 'accumulated 139 total observations'); paper.limitations: added impossible Table 1 combined body fat ('30.82 ... 25.6 ... 29.96'); paper.findings: added subgroup correlations, first...
   - Concern: Several internal numerical conflicts (SCC r 0.49 vs 0.41, N 139 vs 129, swapped Figure 3 group sizes, Table 1 body fat). Edwards TRIMP and athlete-rated load share the same first-year median (780), which may be a reporting error. Athlete sex is not stated explicitly, so no sex tag was added.
+
+## Independent Crossref check (2026-10-13, added after the audit)
+
+Each of the 68 INCLUDE DOIs (IDs 1927-1994) was looked up in Crossref `works/{doi}`. The first author's surname and the journal were compared with the stored citation.
+
+- **58 of 68 match** on first author and journal.
+- **4 are journal abbreviations, not errors:** 1934 (J Appl Physiol), 1947, 1948 and 1968 (Curr Sports Med Rep).
+- **3 have no journal name in the citation.** Their DOIs resolve to the right journal, but the citation should be completed: 1939 (Scand J Med Sci Sports, 2023), 1946 (same journal, 2018) and 1974 (Internal Medicine Journal, 2022).
+- **3 DOI problems that need Eric before merge:**
+  - **1942 (Q25):** the DOI is the Medicine & Science in Sports & Exercise printing. The PDF is the Current Sports Medicine Reports printing.
+  - **1976 (Q02):** the DOI is an OSF preprint DOI with no journal record in Crossref. The PDF is the published JOSPT manuscript.
+  - **1981 (Q31):** the DOI is the Journal of Quantitative Analysis in Sports version. The PDF is the arXiv preprint of the same paper.
+
+Result: the external-DOI path is sound for 58 of 68 records. The other 10 need a human look, and the three DOI problems must be fixed before merge.
+
+Q08's abstract was written by the batch owner, not by the drafter or the Opus pass. The source is a case report with no printed abstract. The summary was taken from the Introduction and results, and the change is logged in `verification.changes`.
