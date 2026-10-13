@@ -123,28 +123,6 @@
       }
     },
     {
-      "originalQueueOrder": 17,
-      "sourceFile": "A cherry tree ripe for picking - The relationship between the acute-chronic workload ratio and health problems.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the text (no DOI appears anywhere in the extracted text). No publication year, volume or pages are printed either; the copyright line shows an unfilled '${year}' placeholder and the only date is a site download stamp (January 29, 2021).",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "primaryDomain: Training & Performance -> Monitoring & Technology (main contribution is a critique of a load-monitoring method, ACWR)",
-            "paper.year: null -> 2021 (no publication year printed; 2021 taken from the download stamp 'January 29, 2021' so the field is an integer)",
-            "paper.findings: strongest-association sentence implied text and figure describe the same combination -> now states the text names coupled 7:21 EWMA pre-defined low-to-high (OR 5.27) while Figure 1 gives that combination OR 0.87 and assigns 5.28 to 7:28 NC RA Z; added new non-contact injuries 2/36",
-            "paper.limitations: added the text-versus-figure conflict on the strongest association; kept the Table 2 count conflicts",
-            "degradedReason: noted the unfilled '${year}' copyright placeholder"
-          ],
-          "residualConcerns": "No DOI, volume, pages or publication year are printed in this accepted-manuscript text. The year 2021 is a placeholder from the download stamp and must be verified externally along with the DOI. The paper's own tables, figure and text disagree on several counts.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 18,
       "sourceFile": "A comparison between%c2%a0the%c2%a0force–velocity relationships of%c2%a0unloaded and%c2%a0sled-resisted sprinting- single vs. multiple trial methods.pdf",
       "decision": "INCLUDE",
@@ -470,24 +448,6 @@
         "paperId": "897",
         "synthesisBatch": "pilot-synthesis-batch-34",
         "publishedOn": "2026-10-09"
-      }
-    },
-    {
-      "originalQueueOrder": 42,
-      "sourceFile": "A systematic review and meta-analysis of wearable satellite system technology for liner sprint profiling - Technological innovations and practical applications.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the text; the only DOI-like strings are reference-list links. Operator may verify the DOI externally and upgrade the decision.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "populations: Mixed / Unspecified only -> added Male Athletes and Female Athletes because Table 1 reports the percentage of women in each included study (e.g. 'Cormier et al (14) 15 100', 'Alphin et al (2) 24 100'); level remains mixed (recreationally trained to elite)"
-          ],
-          "residualConcerns": "DOI not printed in the text (header shows only 'J Strength Cond Res XX(X): 000-000, 2023'); operator should verify the DOI externally before upgrading from DEGRADED.",
-          "spotCheckPriority": "normal"
-        }
       }
     },
     {

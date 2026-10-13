@@ -626,25 +626,6 @@
       }
     },
     {
-      "originalQueueOrder": 76,
-      "sourceFile": "An overview of blood flow restriction physiology and clinical considerations.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed anywhere in the extracted text (no DOI string appears in the text at all). All other fields are complete, so the record is held for the operator to verify the DOI externally.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "paper.limitations: said the review presents both rhabdomyolysis views 'without resolving them' -> the review offers an interpretation based on protocols to failure ('Wernbom's referenced studies almost exclusively used protocols that required exertion to muscle failure')",
-            "paper.practicalImplications: gave only 40% AOP -> adds the 40% to 80% position-statement range and cardiovascular disagreement ('Other guidelines have recommended a target AOP of 40% to 80%'; Spranger et al 'advise caution')"
-          ],
-          "residualConcerns": "DOI not printed in the extracted text; operator should verify externally. Safety and VTE screening content is clinically sensitive.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 77,
       "sourceFile": "Analysis of Return to Sport and    Weight Training After Repair of the Pectoralis Major Tendon.pdf",
       "decision": "INCLUDE",

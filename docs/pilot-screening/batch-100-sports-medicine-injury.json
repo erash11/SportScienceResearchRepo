@@ -742,28 +742,6 @@
       }
     },
     {
-      "originalQueueOrder": 64,
-      "sourceFile": "The effect of fresh and used ankle taping on lower limb biomechanics in sports specfic movements.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "Journal year is not printed: the header shows placeholders ('Journal of Science and Medicine in Sport xxx (xxxx) xxx-xxx', 'Available online xxxx'), with only 'Accepted 1 July 2024' and '© 2024' given. Own DOI is printed and all other fields are complete; operator should confirm the year externally.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "DECISION_CHANGED",
-          "changes": [
-            "decision: INCLUDE -> DEGRADED; journal year not printed ('Journal of Science and Medicine in Sport xxx (xxxx) xxx-xxx', 'Available online xxxx')",
-            "paper.year: 2024 -> null (only accepted date and copyright year printed); citation: removed unprinted year",
-            "evidenceSummary/methods/limitations: 'Randomised repeated-measures' qualified; 'Randomization was applied between the BF and TF conditions ... TU was always performed after the TF condition'",
-            "limitations: 'Participants were healthy and not athletes' -> 'healthy volunteers not described as athletes' ('conducted in healthy volunteers with no lower limb complaints')",
-            "practicalImplications/athleteDev: 'staff should watch for overuse symptoms' reframed as the authors' stated possible risk ('indicating a potential elevated risk for overuse injuries such as plantar fasciitis')"
-          ],
-          "residualConcerns": "Confirm the journal year and volume/issue/pages externally before upgrading to INCLUDE. The authors' conclusion that taping 'offers significant protection against ankle sprains' goes beyond the biomechanical data.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 65,
       "sourceFile": "The effect of game importance on concussion incidence in the NFL - An observational study.pdf",
       "decision": "INCLUDE",
@@ -1029,30 +1007,6 @@
         "paperId": "1744",
         "synthesisBatch": "pilot-synthesis-batch-100",
         "publishedOn": "2026-10-10"
-      }
-    },
-    {
-      "originalQueueOrder": 80,
-      "sourceFile": "The effects of on-field heat index and altitude on concussion assessments and recovery among NCAA athletes.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "Journal issue year not printed in the text: this is the online-first version with no volume, issue, pages or publication year, showing only 'Accepted: 21 November 2020' and '© Springer Nature Switzerland AG 2020'. Year left blank for the operator to verify; all other fields are complete and the article's own DOI is printed.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "DECISION_CHANGED",
-          "changes": [
-            "decision: INCLUDE -> DEGRADED; journal year not printed (online-first PDF with only 'Accepted: 21 November 2020' and '© Springer Nature Switzerland AG 2020', no volume/issue); paper.year 2020 -> null and year removed from citation",
-            "screeningLimitations and paper.limitations: claimed the Results text gives conflicting coefficients '0.14 vs 0.22 days' and 'P of 0.047 vs 0.114' -> those values come from the post hoc away-competition model ('In the models for away competitions only ... Every one-degree increase in heat index shortened clinical recovery by 0.22 days'); the real conflict is Table 3 (-0.3 days, heat index P = 0.010) versus text (0.14 days, P = 0.006)",
-            "paper.findings: added the home/away post hoc result (home models not significant, heat index p >= 0.245)",
-            "populations: added Male Athletes and Female Athletes ('Sex, male 132, 71%')",
-            "sports: added Baseball / Softball (baseball 6%, softball 3%)",
-            "paper.methods: added screening numbers, first-concussion rule and recovery definitions",
-            "paper.citation: added 'CARE Consortium Investigators' as printed in the byline"
-          ],
-          "residualConcerns": "Concussion recovery and return-to-play timing paper. Year must be verified externally before upgrade. Table 3 values do not match the Results text for heat index.",
-          "spotCheckPriority": "high"
-        }
       }
     },
     {

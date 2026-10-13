@@ -270,22 +270,6 @@
       }
     },
     {
-      "originalQueueOrder": 62,
-      "sourceFile": "Sleep and athletic performance.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed anywhere in the extracted text; the rest of the record is complete. The operator may verify the DOI externally.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "VERIFIED",
-          "changes": [],
-          "residualConcerns": "",
-          "spotCheckPriority": "normal"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 66,
       "sourceFile": "Sleep and the Athlete.pdf",
       "decision": "DEGRADED",
@@ -888,25 +872,6 @@
         "paperId": "1619",
         "synthesisBatch": "pilot-synthesis-batch-100",
         "publishedOn": "2026-10-10"
-      }
-    },
-    {
-      "originalQueueOrder": 82,
-      "sourceFile": "Slow wave sleep - a recovery period after exercise.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "No DOI is printed anywhere in the text; the only identifiers are the ISSN and copyright code. Everything else is readable and complete, so the operator may verify the DOI externally and upgrade the decision.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "paper.limitations: 'control nights separated by two weeks' -> recorded two weeks before and two weeks after the race (\"2 weeks before the marathon... again 2 weeks after the marathon as a postrace control\")",
-            "paper.practicalImplications: 'longer and deeper sleep for about two nights' -> longer sleep for several nights, more slow-wave sleep for about two (\"Total sleep time increased significantly over control times on each of the four nights\")"
-          ],
-          "residualConcerns": "Science 1981 article; DOI not printed in the text, operator may verify externally.",
-          "spotCheckPriority": "normal"
-        }
       }
     },
     {

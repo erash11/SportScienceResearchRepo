@@ -226,41 +226,6 @@
       }
     },
     {
-      "originalQueueOrder": 30,
-      "sourceFile": "Position-Specific Differences in Speed Profiles Among National Football League Scouting Combine Participants.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text (no DOI string appears anywhere in the text). All other fields are readable and complete, so the record is filled in with doiMissing true for operator verification.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "VERIFIED",
-          "changes": [],
-          "residualConcerns": "DEGRADED confirmed: a whole-text search finds no 'doi' string and no '10.xxxx/' pattern anywhere, including the references; the header gives only placeholder volume and pages ('J Strength Cond Res XX(X): 000-000, 2024', '00(00)/1-8'), which are omitted from the citation. Operator should verify the DOI externally. Year 2024 is the online-first year.",
-          "spotCheckPriority": "normal"
-        }
-      }
-    },
-    {
-      "originalQueueOrder": 47,
-      "sourceFile": "Practitioner usage, applications, and understanding of wearable GPS and accelerometer technology in team sports.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text, and no DOI string appears anywhere in the text. Fields are filled from the article as printed; the operator may verify the DOI externally.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "limitations: 'not psychometrically validated' (not stated in text) -> 'reviewed by a 7-person panel for face and content validity, no further validation reported' ('survey design was reviewed by a panel of 7 researchers and practitioners ... to ensure content and face validity')",
-            "DOI: confirmed no DOI string anywhere in the text (header 'Journal of Strength and Conditioning Research 00(00)/1-10', 'J Strength Cond Res XX(X): 000-000, 2024'); DEGRADED retained"
-          ],
-          "residualConcerns": "",
-          "spotCheckPriority": "normal"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 49,
       "sourceFile": "Precision of 7 Commercially Available Devices for Predicting the Bench Press 1-Repetition Maximum From the Individual Load-Velocity Relationship.pdf",
       "decision": "INCLUDE",
@@ -362,22 +327,6 @@
         "paperId": "1479",
         "synthesisBatch": "pilot-synthesis-batch-95",
         "publishedOn": "2026-10-10"
-      }
-    },
-    {
-      "originalQueueOrder": 53,
-      "sourceFile": "Predicting sprint performance from the vertical and horizontal jumps in National Football League Combine athletes.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text. The only identifiers are the journal header ('Journal of Strength and Conditioning Research 38(8)/1433-1439, 2024'), and the text contains no DOI at all, so the operator must verify the DOI externally. Everything else is readable and complete.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "VERIFIED",
-          "changes": [],
-          "residualConcerns": "Whole text searched: no DOI string of any kind appears (no 'doi', '10.1519' or 'JSC.0'), so DEGRADED with doiMissing is correct; the operator should verify the DOI externally. Equation 1's printed VJ coefficient (-0.90) gives about 1.06 s at the sample means vs a measured 1.68 s, while -0.090 gives about 1.73 s (equation 4 reproduces 4.85 vs 4.82 s), so the PDF coefficient should be checked before staff use equation 1.",
-          "spotCheckPriority": "high"
-        }
       }
     },
     {

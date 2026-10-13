@@ -63,28 +63,6 @@
       }
     },
     {
-      "originalQueueOrder": 13,
-      "sourceFile": "The influence of movement tempo on acute neuromuscular, hormonal, and mechanical responses to resistance exercise - A mini review.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed anywhere in the extracted text (no DOI string appears in the body, header or footer). Content is complete and readable.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "evidenceSummary: 1RM reduction 'in several studies' -> in the one study that tested it (text: 'One study examined the effect of 2 tempos ... on the maximal 1RM load'; 'To date, there is no data regarding the differences in 1RM load between fast and slow')",
-            "synthesisCaution: 'tempo effects have not been tested in athletes' -> included samples were mostly resistance-trained or recreationally active adults (Table 7 samples)",
-            "paper.athleteDev: 'found no data on tempo effects on power output in athletes' -> 'there is a lack of data confirming the negative impact of slower movement tempo on power output'",
-            "populations: Mixed / Unspecified -> Adult / Recreational (included studies were healthy adults, mostly resistance-trained men, not athlete samples)",
-            "degradedReason: removed the reference-list remark; confirmed no DOI string anywhere in the text"
-          ],
-          "residualConcerns": "Study design kept as Systematic Review / Meta-analysis under the rule for reviews with a described search (databases, keywords, inclusion criteria), but the paper is labeled a Brief Review with no screening counts or quality appraisal; a reviewer may prefer Narrative Review. DOI should be confirmed externally to upgrade from DEGRADED.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 18,
       "sourceFile": "The maximal intensity period - Rationalizing its use in team sports practice.pdf",
       "decision": "INCLUDE",

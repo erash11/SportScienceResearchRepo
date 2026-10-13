@@ -241,25 +241,6 @@
       }
     },
     {
-      "originalQueueOrder": 10,
-      "sourceFile": "Nutritional considerations for the power athlete.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the text. Only reference-list DOIs appear (for example 10.1080/02640414.2011.574722 and 10.1186/s12970-020-00383-4). Otherwise the text is complete and readable.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "doi/decision: confirmed DEGRADED; no own DOI is printed anywhere in the text (only reference-list DOIs and the code '1537-890X/2107/224-231')",
-            "screeningLimitations, limitations: 'many recommendations come from general or endurance-sport evidence' was broader than the text shows -> named the specific non-power-sport sources (nitrate 'in studies of team sports', fat '2 g/kg ... after prolonged endurance training in excess of 2 h', weight-cut data from combat sports and wrestlers)"
-          ],
-          "residualConcerns": "Operator should verify the DOI externally before upgrading to INCLUDE. Sports could also carry Track & Field, Gymnastics and Combat Sports, since the review names weightlifting, gymnastics, sprinting, throwing and jumping events and draws weight-cutting data from combat sports.",
-          "spotCheckPriority": "normal"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 11,
       "sourceFile": "Nutritional interventions for reducing the signs and symptoms of exercise-induced muscle damage and accelerate recovery in athletes.pdf",
       "decision": "INCLUDE",

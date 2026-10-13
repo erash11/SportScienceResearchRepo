@@ -816,29 +816,6 @@
       }
     },
     {
-      "originalQueueOrder": 58,
-      "sourceFile": "Vitamin D for improved bone health and prevention of stress fractures - A review of the literature.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the text; only reference-list DOIs appear.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "paper.tldr, paper.practicalImplications, paper.athleteDev: 'supplementation benefit for fractures is unproven' and 'the review does not show that supplementation prevents fractures' -> cites the Navy recruit RCT ('Those who had supplementation had a 20% lower incidence of stress fracture') and the authors' recommendation ('we recommend vitamin D3 supplementation to maintain 25(OH)D status, especially in athletes at high risk of stress fracture') with no supported dose or target ('the data are not strong enough to support a dose or target serum level')",
-            "paper.rtp: 'cannot be used to set return-to-run timelines' with no evidence noted -> adds the British Army recovery-time finding ('mean recovery time in weeks was 10.1 (+/-2.5) in the 25(OH)D sufficient group, 11.9(+/-2.4) in the insufficient group ... and 13 (+/-1.6) in the deficient group')",
-            "paper.findings and evidenceSummary: single cohort example -> adds the military meta-analysis (pooled mean difference -2.44 ng/mL), the Navy trial, and the Bolland meta-analysis showing no fracture prevention in older adults",
-            "paper.limitations: added that the female runner hazard ratio presented as protective has a confidence interval including 1 ('adjusted hazard ratio of 0.67 (0.34 to 1.31)')",
-            "paper.citation: added printed pages 202-208 ('Volume 19 Number 6 June 2020'; '1537-890X/1906/202-208')",
-            "synthesisCaution: reworded to flag that the prevention trial combined calcium with vitamin D"
-          ],
-          "residualConcerns": "Own DOI not printed; operator should verify externally. Return-to-run and supplement dosing content is clinically relevant.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 59,
       "sourceFile": "WHATAR~1.PDF",
       "decision": "INCLUDE",
@@ -888,22 +865,6 @@
         "paperId": "1890",
         "synthesisBatch": "pilot-synthesis-batch-116",
         "publishedOn": "2026-10-11"
-      }
-    },
-    {
-      "originalQueueOrder": 81,
-      "sourceFile": "Zurich to Berlin - ‘‘Where’’ Are We Now with the Concussion in Sport Group_.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text. The only DOI in the text is the reference-list DOI for the fifth consensus statement (10.1136/bjsports-2017-097699), which does not count. The operator may verify the DOI externally and upgrade the decision.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "VERIFIED",
-          "changes": [],
-          "residualConcerns": "Own DOI not printed. Only reference-list DOI 10.1136/bjsports-2017-097699 appears, which does not count. Citation (Curr Sports Med Rep 2018;17(1):26-30) confirmed in text. Clinical topic: check after DOI is found externally.",
-          "spotCheckPriority": "high"
-        }
       }
     }
   ]

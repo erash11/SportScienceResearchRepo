@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-128-brain-health-psychology",
+  "screenedOn": "2026-10-13",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Brain Health & Psychology queue positions 29-55. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 29,
+      "sourceFile": "Oxygen straight to the brain - An overview of hyperbaric oxygen therapy for a variety of brain morbidities.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 40289,
+        "doi": "10.1249/jsr.0000000000001158",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review in a sports medicine journal of off-label hyperbaric oxygen therapy (HBOT) for traumatic brain injury and postconcussion syndrome, posttraumatic stress disorder and migraine. No search method or new sample is described; the cited studies are mostly in military personnel and veterans. The authors report some short-term symptom and imaging improvements after HBOT for TBI and PTSD that were not sustained in the one trial with long follow-up, and conclude that HBOT for migraine is not supported.",
+      "limitations": "This is a narrative review with no described search, and the evidence it cites comes from small military, veteran and patient samples, not athletes. The authors state that studies use nonstandardized protocols, rely on subjective symptom reports and are confounded by comorbidities.",
+      "synthesisCaution": "Staff could read this as support for using HBOT after sport concussion, when the review cites no athlete studies and concludes that HBOT remains an unproven, costly intervention without standardized protocols.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: EXCLUDE (c) -> INCLUDE. The exclusion reason was factually wrong: the text does have sport context ('Current recommendations for concussion treatment involve initial rest, followed soon thereafter by activities of daily living, mild aerobic exercise', citing the Concussion in Sport consensus) and its main topic, treatment of prolonged postconcussion symptoms, is athlete health. It is a narrative review in a sports medicine journal, an eligible type.",
+            "all taxonomy, summary and paper fields: filled from the text (previously null)",
+            "paper.doi: set to externalDoi 10.1249/jsr.0000000000001158 (title and authors match crossrefTitle)"
+          ],
+          "residualConcerns": "Relevance is a judgment call: the HBOT evidence is from military, veteran and patient samples, and the PTSD and migraine sections have little athlete relevance. A reviewer may prefer EXCLUDE (c); if so, the original exclusion reason should still be corrected because it says there is no sport or exercise context. Clinically sensitive (concussion).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1971",
+        "synthesisBatch": "pilot-synthesis-batch-128",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 40,
+      "sourceFile": "Public chronic traumatic encephalopathy knowledge - Sources, accuracy and confidence.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 34541,
+        "doi": "10.1249/jsr.0000000000001131",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "This cross-sectional online survey included 529 adults from the general public in the United States, recruited through university research credit, Amazon MTurk and social media. Average CTE knowledge accuracy was 48.02% (SD 0.23), with the lowest accuracy on the cause and diagnosis of CTE. Confidence in CTE knowledge was positively correlated with comfort allowing a child to play a high-contact sport (r = 0.199, p <= 0.001), while accuracy was not correlated with that comfort (r = 0.004), and television/movies and professional athletes were associated with higher accuracy.",
+      "limitations": "The sample is the general public, not athletes, and the outcomes are self-reported knowledge, confidence and comfort rather than athlete health. Knowledge was scored from six forced true/false items, so overall accuracy near 48% is close to what guessing would give, and recruitment through course credit, MTurk and social media limits generalization.",
+      "synthesisCaution": "Staff could read the low accuracy as evidence about how athletes or families actually behave around sport, when the survey measured public knowledge and stated comfort, not athlete health or participation decisions.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'Answers were true/false with a free-text other option' -> the 'other' free text applied to information sources, knowledge items were forced true/false ('they were still asked to select either \"true\" or \"false\"')",
+            "paper.findings: added null confidence-accuracy correlation ('CTE knowledge confidence was not associated with CTE knowledge accuracy (r = -0.040, P = 0.385)')",
+            "paper.tldr and findings: source-accuracy links described as weak (r = 0.088 and 0.127)",
+            "paper.limitations: added never-heard-of-CTE share and chance-level caveat ('9.26% of the total sample reported ... that they have never heard of CTE'); removed the year-matches-Crossref sentence"
+          ],
+          "residualConcerns": "Header reads 'SPECIAL COMMUNICATION' but the paper has methods and results, so INCLUDE stands as original research. Relevance to athletes is indirect (public knowledge and parental comfort with youth contact sport). The chance-level reading of 48% accuracy is the auditor's inference, not the authors'.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1972",
+        "synthesisBatch": "pilot-synthesis-batch-128",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 55,
+      "sourceFile": "The Association Between Age of First Exposure to American Football at a Young Age and Later-Life Health Issues in Healthy, Community-Dwelling Adults.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 58370,
+        "doi": "10.1007/s40279-025-02239-w",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Sports Medicine & Injury",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Cross-sectional online survey of 107 men (mean age 60.6 years) with past amateur American football exposure, recruited through the ResearchMatch registry. After adjusting for age, number of concussions and total years of football, starting before age 12 was not a significant predictor of depression, anxiety, neurobehavioral, cognitive, general health, motor or functional outcomes (for example PHQ-9 B = 0.51, p = 0.682), while more self-reported lifetime concussions were associated with worse PHQ-9, GAD-7, NSI and BC-CCI scores.",
+      "limitations": "The design is cross-sectional, with retrospective self-reported exposure, concussions and symptoms from registry volunteers, so recall bias and selection are likely. The under-12 group was younger (mean 53 versus 65 years), and the authors note that a younger, healthier, amateur sample may explain the null result, so it is not strong evidence of safety.",
+      "synthesisCaution": "Staff could read the null age-of-first-exposure result as proof that early tackle football is harmless, when the study has 41 players in the under-12 group, a mean age of 60, and no record of whether the self-reported concussions happened in football.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: removed 'Male Athletes' and 'Healthy Athletes' -> 'Adult / Recreational' only; the sample is community-dwelling registry adults (mean age 60.6) with past amateur football, not current athletes",
+            "findings: unadjusted differences said to lose significance 'after adjustment for age' -> after adjustment for age, concussions and years of play; added current depression 29.3% vs 13.6% (p = 0.048) and the continuous-AFE sensitivity analysis",
+            "limitations: added internal conflicts (text 'p = 0.021' vs Table 2 't = -3.76, p < 0.001' for years of football; Table 1 under-12 concussion counts inconsistent; abstract 'young' vs mean age 60.6); removed the 'dichotomy at age 12' point, since the continuous analysis gave the same result",
+            "synthesisCaution: 'no measure of when ... the concussions occurred' -> date of most recent concussion was collected; the gap is that concussions were not tied to football",
+            "practicalImplications/athleteDev: removed 'managing head impacts at every age' and 'reviewing history when planning contact load', which the findings do not test"
+          ],
+          "residualConcerns": "Clinically sensitive (concussion, youth tackle football). Table 1 concussion distribution for the AFE < 12 column appears garbled in the PDF; check against the published table.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1973",
+        "synthesisBatch": "pilot-synthesis-batch-128",
+        "publishedOn": "2026-10-13"
+      }
+    }
+  ]
+}

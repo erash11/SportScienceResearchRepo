@@ -18,7 +18,15 @@ for k, i in inp.items():
         txt = open(f"{W}/text/{k}.txt").read().lower(); d = (v["paper"].get("doi") or "").lower()
         # OCR scans can add diacritics to DOI letters (e.g. "ÍJSPP"); compare accent-folded text too.
         fold = lambda t: "".join(c for c in unicodedata.normalize("NFKD", t) if not unicodedata.combining(c))
-        if d and d not in txt and d not in re.sub(r"\s+", "", txt) and d not in fold(re.sub(r"\s+", "", txt)):
+        # Batch 123: a DOI from Crossref is not printed in the PDF. It is accepted only with a recorded identity check
+        # (title, first author and journal matched, and Crossref returned this same DOI). Equality alone is not enough.
+        ext = (inp[k].get("externalDoi") or "").strip().lower()
+        ident = inp[k].get("externalDoiIdentity") or {}
+        ident_ok = ((ident.get("crossrefDoi") or "").strip().lower() == d
+                    and all(ident.get(f) is True for f in ("titleMatch", "authorMatch", "journalMatch")))
+        if d and d == ext:
+            if not ident_ok: bad.append((k, "external DOI lacks identity check", d))
+        elif d and d not in txt and d not in re.sub(r"\s+", "", txt) and d not in fold(re.sub(r"\s+", "", txt)):
             # Layout text can split a DOI across a column break; check the reading-order extraction too.
             import subprocess
             raw = subprocess.run(["pdftotext", f"{R}/SourcePapers/{i['sourceFile']}", "-"], capture_output=True, text=True).stdout.lower()

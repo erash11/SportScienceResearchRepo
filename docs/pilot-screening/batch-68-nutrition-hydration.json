@@ -225,26 +225,6 @@
       }
     },
     {
-      "originalQueueOrder": 62,
-      "sourceFile": "Intermittent Fasting and Its    Effects on Athletic Performance- A Review.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the text. The text shows only the journal name, ISSN, volume, issue, pages and copyright line, with no DOI. The operator may verify the DOI externally and upgrade the decision.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "identityCheck and paper.citation: title given as 'Intermittent Fasting and Athletic Performance: A Review' (running header) -> full printed title 'Intermittent Fasting and Its Effects on Athletic Performance: A Review'",
-            "paper.practicalImplications: removed unsupported advice to 'check training quality during fasting blocks' and softened 'should expect' to the authors' 'need to be aware of the negative or neutral effects'",
-            "paper.limitations: reframed Abstract vs mouse-study point; the 'no benefit' statement refers to human performance studies"
-          ],
-          "residualConcerns": "DEGRADED for missing DOI only; no DOI is printed anywhere in the text (only '1537-890X/1807/266-269'). Operator may verify externally.",
-          "spotCheckPriority": "normal"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 64,
       "sourceFile": "International Association of Athletics Federations Consensus Statement 2019- Nutrition for Athletics.pdf",
       "decision": "INCLUDE",

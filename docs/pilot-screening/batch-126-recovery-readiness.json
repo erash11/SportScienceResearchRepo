@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-126-recovery-readiness",
+  "screenedOn": "2026-10-13",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Recovery & Readiness queue positions 6-71. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 6,
+      "sourceFile": "Acupuncture and dry needling for sports performance and recovery.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 41772,
+        "doi": "10.1249/jsr.0000000000000968",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Track & Field",
+        "Soccer",
+        "Basketball",
+        "Endurance Sport",
+        "Other Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Male Athletes",
+        "Healthy Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "A narrative review of acupuncture and dry needling for sports performance and recovery, drawing on RCTs, case reports and a systematic review of case reports, plus one meta-analysis of six RCTs with 210 participants on delayed-onset muscle soreness. The authors report mixed evidence that needling improves strength and power, little evidence for aerobic endurance, short-term flexibility gains, and a pooled reduction in soreness and creatine kinase with better strength after strenuous exercise. They conclude that needling is safe when performed by qualified practitioners but that higher quality studies are needed.",
+      "limitations": "No search strategy is described, so the selection of studies cannot be checked, and much of the performance evidence comes from small, single-session trials in healthy adults or students. Many cited sources are case reports or uncontrolled studies, and the authors state that the evidence base is not yet strong enough for specific recommendations.",
+      "synthesisCaution": "Staff may treat needling as an ergogenic aid or as a proven way to speed return to play, when the performance evidence is small and mixed, the recovery evidence is limited to soreness, and the return-to-play evidence is case-based.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: '32 female students' cited as a non-penetrating sham example was wrong -> that sham used nonacupoints with needles 'only inserted 2 to 4 mm', and 'both groups had significant improvements compared with baseline'",
+            "findings: 'Most studies reported immediate strength or torque gains' -> text says majority improved, and where no gain occurred 'the results were usually assessed immediately after treatment'",
+            "findings/practicalImplications: added marathon RCT 'increase in pain of the soleus at days 1 and 2 in the dry needling groups' and Kim et al. 'decreased quadriceps strength'; removed advice to use needling for range of motion 'before testing'",
+            "evidenceSummary: flexibility was listed as 'mixed' -> authors say needling 'overall seem[s] to improve flexibility'",
+            "populations: removed Female Athletes (female sample was 'healthy female students'; ballet dancers' sex not stated); sports: added Endurance Sport (62 half and full marathon runners)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1960",
+        "synthesisBatch": "pilot-synthesis-batch-126",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 14,
+      "sourceFile": "Effects of Nightly Electronic Device Restriction and Morning Bright Light on Sleep, Mood, and Performance Among Elite Athletes (1).pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 48010,
+        "doi": "10.1519/jsc.0000000000005201",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Athlete Wellbeing",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Randomised controlled trial of 25 elite athletes from 12 individual sports (12 in the intervention group, 13 in the control group) over 2 weeks. The intervention group turned off devices 30 minutes before bed and had 20 minutes of morning bright light (about 10,000 lux). Group by day interactions were significant for POMS vigor, reaction time, rebound jump height and rebound jump index, all of which improved within the intervention group, while actigraphy sleep measures did not change and the Epworth sleepiness and squat jump interactions were not significant (p=0.095 and p=0.085).",
+      "limitations": "Only 25 athletes were analysed after 13 of the 38 randomised were excluded, leaving 12 and 13 per group, and the author reports a post hoc power of 0.68. The intervention group started with lower rebound jump height and index than controls, no blinding is described, and training could not be controlled.",
+      "synthesisCaution": "Staff could read this as proof that screen restriction and morning light improve athletes' sleep or performance, when measured sleep did not change, the jump gains came in a group that started lower than controls, and comparisons were small and underpowered.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: added abstract vs table conflict for reaction time (abstract 'reaction time (p = 0.016)'; Table 3 'Reaction time ... 0.001')",
+            "findings: added that ESS, POMS fatigue and left grip improved within both groups (Table 3 CON within-group p=0.019, 0.006, 0.010) and the wake-time difference ('earliest wake-up time ... was earlier in the INT group (p = 0.012)'); consolidated to 3 sentences",
+            "synthesisCaution/tldr: added the baseline imbalance in rebound jump ('28.6 +/- 5.2**' vs '30.6 +/- 2.3', ** p<0.01 between groups) and softened causal wording",
+            "evidenceSummary: '12 individual and combined sports' -> 12 individual sports",
+            "athleteDev: removed generic monitoring advice not drawn from the paper"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1961",
+        "synthesisBatch": "pilot-synthesis-batch-126",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 28,
+      "sourceFile": "Optimizing athletes' recovery and performance - A review of vibration therapy, compression garments, and massage.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 51481,
+        "doi": "10.1249/jsr.0000000000001259",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Athletic Training",
+        "Performance",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Literature review of PubMed articles (2000 to May 2022, English only) on vibration therapy, compression garments and massage as recovery modalities, with 29, 31 and 25 eligible studies respectively. Participants ranged from sedentary people to professional athletes, and outcomes covered pain or DOMS, strength, jump, performance, range of motion, swelling, stiffness and biomarkers. Massage most consistently reduced perceived pain and DOMS (17 of 19 studies), vibration reduced pain in 17 of 22 studies and was not shown to improve performance, and compression garments reduced pain in 16 of 29 studies with inconsistent effects on swelling and biomarkers.",
+      "limitations": "The review uses a single database (PubMed) and the text describes no formal risk-of-bias appraisal. Included studies varied widely in design, sample size (8 to 220), protocol, device settings and practitioner expertise, and the authors note possible publication bias.",
+      "synthesisCaution": "Staff could read the pain and soreness reductions as evidence that these modalities improve performance or recovery, when the authors found little or inconsistent evidence for performance, swelling or biomarker effects.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: compression 'performance effects were mixed' -> added counts and the authors' conclusion ('there does not seem to be any performance or range of motion benefit with compression garments'; 8 of 12 strength, 1 of 11 sports performance)",
+            "identityCheck: 'matches the Crossref record' overclaimed (only crossrefTitle and crossrefYear were available) -> matches crossrefYear"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1962",
+        "synthesisBatch": "pilot-synthesis-batch-126",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 45,
+      "sourceFile": "Sleep and athletic performance.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text, and the Crossref externalDoi (10.1016/b978-0-323-65403-6.00024-x) belongs to a different publication: a 2024 book chapter 'Sleep and athletic performance' by Scott J. Kutscher in Atlas of Clinical Sleep Medicine, not this 2017 journal article by Watson. A Crossref bibliographic search on 2026-10-13 returned 10.1249/jsr.0000000000000418 for Watson AM, Curr Sports Med Rep 2017;16(6):413-418; the operator should confirm it and upgrade the decision.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "decision: DEGRADED confirmed; externalDoi checked on Crossref (2026-10-13) and is type 'book-chapter', author Kutscher SJ, container 'Atlas of Clinical Sleep Medicine', 2024, so it is a different publication from this journal article ('Andrew M. Watson, MD, MS'; 'Current Sports Medicine Reports'; 'Volume 16 & Number 6 & November/December 2017')",
+            "degradedReason and identityCheck: named the book chapter's author and container and added the Crossref search candidate DOI for the operator; doi stays empty",
+            "evidenceSummary and paper.findings: 'more likely to be injured' -> 'more likely to report an injury' ('70% more likely to report an injury than those who slept more than 8 h')",
+            "paper.findings: infection claim reworded to match the text ('nearly three times as likely to develop an infection compared with those who slept 8 h or more')",
+            "paper.practicalImplications: naps 'early in the day' -> brief and not late in the day ('Naps should be relatively brief (~30 min) ... and avoided late in the day')",
+            "paper.limitations: year note rewritten; the 2024 Crossref year belongs to the book chapter, not this article"
+          ],
+          "residualConcerns": "PDF year 2017 differs from crossrefYear 2024 because the Crossref match is a different publication (Kutscher 2024 book chapter). Candidate DOI 10.1249/jsr.0000000000000418 came from a Crossref bibliographic search, not from the PDF; the operator should confirm it before upgrading to INCLUDE. If the batch rule is read as requiring EXCLUDE whenever the PDF differs from the Crossref record, a human should decide; this record is kept DEGRADED because the PDF does match its filename.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 46,
+      "sourceFile": "Slow wave sleep - a recovery period after exercise.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 2,
+        "extractedCharacters": 15138,
+        "doi": "10.1126/science.7302594",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 403 (publisher blocks automated check)"
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Sleep laboratory recordings in six young athletes (aged 18 to 26) on four successive nights after a 92 km road marathon, compared with the mean of pre-race and post-race control nights. Total sleep time was longer than control on all four nights, and slow-wave sleep rose as a percentage of sleep on nights 1 and 2 (mainly stage 4 on night 1), while REM sleep fell. The authors conclude that slow-wave sleep increases after a large metabolic stress and support the view that it is a recovery period after exercise.",
+      "limitations": "Six participants, one extreme event, and single control nights recorded two weeks before and two weeks after the race with changing training status leave the effect open to night-to-night variation and a first-night effect. The study measured no muscle function, performance or injury outcomes, so it cannot show that the sleep change speeds recovery.",
+      "synthesisCaution": "Staff could read the rise in deep sleep after a 92 km race as proof that sleep drives recovery or that every hard session needs extra sleep, but the study tested one extreme event in six athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.methods: 'mean of two pre-race control nights two weeks apart' -> one recorded pre-race control night after an unrecorded adaptation night ('The first of these was to allow for the \"first-night effect\" and was not recorded. The second of these was used as a prerace baseline level')",
+            "paper.limitations: 'no readaptation night was run before the pre-race control' -> the missing adaptation night was before the marathon night and the post-race control ('impossible to have the subjects in the laboratory on the night before the marathon (for readaptation), we decided not to have a readaptation night before the postrace control')",
+            "screeningLimitations: 'control nights two weeks apart' -> control nights two weeks before and two weeks after the race ('2 weeks before the marathon'; 'recorded again 2 weeks after the marathon')",
+            "paper.tldr and paper.practicalImplications: longer sleep limited to two nights -> longer sleep on all four nights, more slow-wave sleep on two ('Total sleep time increased significantly over control times on each of the four nights')",
+            "paper.athleteDev: 'supports treating deep sleep as part of recovery' -> 'consistent with'; recovery was not measured",
+            "paper.rtp: removed unsupported 'uninjured'"
+          ],
+          "residualConcerns": "Old OCR text; the statistics were checked against the readable text but the figures could not be read. Sex is not stated (baseline compared with 'normative studies of males of similar age'), so no sex tag was added.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1963",
+        "synthesisBatch": "pilot-synthesis-batch-126",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 62,
+      "sourceFile": "The Relationship Between Relative Rest and Team Performance Across Competitive Seasons in the National Football League.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 23484,
+        "doi": "10.1519/jsc.0000000000005148",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Other",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Archival, observational analysis of 12,290 NFL regular-season games from 1970-71 to 2022-23, with each franchise-season treated as a team (1,569 team-seasons). The relative rest index (the difference in days since each team's previous game, compared with its opponent) had a trivial negative correlation with win/loss ratio (r = -0.064, P = 0.011, R2 = 0.004), and win/loss ratio did not differ across eight RRI categories (P = 0.233). Teams that did not make the playoffs had higher average RRI than teams that lost in the divisional round (P = 0.001) or won the Super Bowl (P = 0.040).",
+      "limitations": "This is team-level archival data with no player, injury, training load or recovery measures, so it cannot show how rest affects individual athletes. The authors note confounders such as team skill, injuries and recovery practices, and say a more sensitive analysis is needed.",
+      "synthesisCaution": "Staff could read the null result as proof that rest between games does not matter for players, when the study only measured team win/loss ratio and playoff depth across seasons.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "tldr/abstract: 'teams that went deepest/further in the playoffs had less favorable rest' -> only divisional-round losers (p = 0.001) and Super Bowl winners (p = 0.040) differed from non-playoff teams",
+            "methods: added time-zone and week 1 handling of RRI",
+            "athleteDev: removed generic advice to manage recovery with athlete-level data, which the study does not test"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1964",
+        "synthesisBatch": "pilot-synthesis-batch-126",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 71,
+      "sourceFile": "Whole-Body Cryotherapy in Sports Medicine.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 30855,
+        "doi": "10.1249/jsr.0000000000000584",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of whole-body cryotherapy (WBC) in sports medicine, covering inflammation, muscle damage, bone, blood, hormone and lipid markers, functional recovery, clinical use in arthritis and adhesive capsulitis, and safety. The authors report anti-inflammatory and lipid changes, mixed creatine kinase and blood findings, and limited, mixed results for functional recovery and performance, which they summarize as relatively weak but supportive evidence for recovery.",
+      "limitations": "No search method or quality appraisal is described, so the selection of studies cannot be checked. Many cited studies are small, uncontrolled or laboratory-based, and they use different temperatures, durations and session counts. The samples mix athletes with patients, military students, healthy women and overweight men, and the clinical data are in arthritis and shoulder conditions, not injured athletes.",
+      "synthesisCaution": "Staff could read the anti-inflammatory and lipid marker changes, or the few positive recovery trials, as evidence that WBC reliably speeds recovery or improves performance. The authors call the functional evidence limited and mixed and say high-quality research is still needed.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/tldr/synthesisCaution/athleteDev: 'most controlled trials found no functional or performance benefit' -> evidence is limited and mixed; the text lists four positive trials (Hausswirth, Ziemann, Schaal, Kruger) and three negative sources (Costello, a systematic review, Fonda) ('Several studies have examined the effects of WBC on functional recovery and performance with limited and mixed results'; 'relatively weak, but supportive literature')",
+            "paper.findings: added the positive trail-running and swimmer results the draft omitted and the rugby creatine kinase decrease",
+            "paper.practicalImplications: removed 'not as a performance aid', which the authors do not say; added cold intolerance, blood pressure rise and the two reported complications ('aortic aneurysm, global amnesia')",
+            "paper.rtp: removed illogical link between contraindications and return-to-play criteria; specified the adhesive capsulitis trial was randomized ('randomized to receive either physical therapy or physical therapy and WBC')",
+            "paper.limitations: added citation mismatches in the source"
+          ],
+          "residualConcerns": "The source has several citation-number mismatches (Wozniak cited as ref 14, Lombardi and Sutkowy described as rugby and tennis players), so individual study details should be checked against primaries.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1965",
+        "synthesisBatch": "pilot-synthesis-batch-126",
+        "publishedOn": "2026-10-13"
+      }
+    }
+  ]
+}

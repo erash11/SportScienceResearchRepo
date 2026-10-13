@@ -275,24 +275,6 @@
       }
     },
     {
-      "originalQueueOrder": 18,
-      "sourceFile": "Incidence of acute hamstring injuries in soccer - A systematic review of 13 studies involving more than 3800 athletes with 2 million sport exposure hours.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the text (only reference-list DOIs appear), so doiMissing is true. The publication year is also not printed in the text (the only 2020 date is a 'Downloaded from' stamp), so year is left null for the operator to verify. Otherwise the text is complete.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "screeningLimitations: referred to a \"pooled range\" although no pooling was done -> \"reported range\" (\"Quantitative analysis was precluded ... we conducted a descriptive synthesis\")"
-          ],
-          "residualConcerns": "Text is the accepted manuscript with no printed DOI or publication year (copyright line reads ${year}); operator should verify JOSPT DOI and year externally. The Conclusions and Key Points say hamstring injuries were 5% to 13% of all injuries, while Results and Table 3 say 5% to 15%; the record uses 5% to 15%.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 19,
       "sourceFile": "Calf muscle injury in elite athletics - An 8-season prospective cohort study.pdf",
       "decision": "INCLUDE",

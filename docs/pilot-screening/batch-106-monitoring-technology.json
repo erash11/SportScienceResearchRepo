@@ -168,25 +168,6 @@
       }
     },
     {
-      "originalQueueOrder": 17,
-      "sourceFile": "The Reliability, Bias, Differences, and Agreement Between Velocity Measurement Devices During the Hang Clean Pull.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text (no DOI string appears in the text). Operator to verify externally; all other fields are filled.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "paper.abstract: said the men performed pulls 'while wearing' the devices -> devices attached to the barbell ('GA and TENDO devices attached to the barbell')",
-            "paper.tldr: Tendo 'read 4 to 7% higher on mean velocity' -> printed values 3.7 to 6.8% for mean and 1.8 to 2.9% for peak velocity ('overestimate MBV and PBV to a small extent (3.7-6.8% and 1.8-2.9%)')"
-          ],
-          "residualConcerns": "",
-          "spotCheckPriority": "normal"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 28,
       "sourceFile": "The Thiol Oxidation State of Albumin Is Associated With Training Load Across an Australian Football Pre-Season.pdf",
       "decision": "INCLUDE",
@@ -340,26 +321,6 @@
         "paperId": "1781",
         "synthesisBatch": "pilot-synthesis-batch-106",
         "publishedOn": "2026-10-10"
-      }
-    },
-    {
-      "originalQueueOrder": 39,
-      "sourceFile": "The applicability of the risk score approach to competitive sport - Development of a physical success score for the Canadian Football League Combine.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed anywhere in the extracted text (no DOI string appears in the text at all). All other fields are filled; the operator may verify the DOI externally and upgrade the decision.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "primaryDomain: 'Training & Performance' -> 'Monitoring & Technology' (main contribution is a scoring tool built from combine tests, which the field rules place under Monitoring & Technology)",
-            "paper.practicalImplications: advised setting 'targets for sprint, jump and bench press work' -> jump, bench press and 3-cone coefficients were not significant in Table 5; only 40-yd sprint (p<0.001 in all groups), plus height and mass in some groups, were significant",
-            "paper.limitations: added complete-case model sizes (Table 5 n = 176, 141, 185) and the line sample conflict (abstract 'n = 211' vs Methods and Table 4 'n = 221')"
-          ],
-          "residualConcerns": "Own DOI is not printed in the text, so the record stays DEGRADED until the DOI is verified externally.",
-          "spotCheckPriority": "high"
-        }
       }
     },
     {
@@ -570,26 +531,6 @@
         "paperId": "1785",
         "synthesisBatch": "pilot-synthesis-batch-106",
         "publishedOn": "2026-10-10"
-      }
-    },
-    {
-      "originalQueueOrder": 51,
-      "sourceFile": "The deceleration deficit - A novel field-based method to quantify deceleration during change of direction performance.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text (no DOI in the header, footer or citation line). Operator may verify externally. All other fields are complete.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "populations: 'Mixed / Unspecified' -> 'Adult / Recreational'; the level is stated ('Thirty-six (19 women and 17 men) recreationally active subjects' competing in an invasion sport)",
-            "paper.practicalImplications: said the test can be done with timing gates -> DD also needs a contact mat at the turn line ('smart jump contact mat ... positioned at the 15-m turning point'; full approach ends at '50% of GCT of the plant step')",
-            "paper.athleteDev: 'decide whether an athlete needs braking work or linear speed work' -> 'flag whether braking may be limiting', since no training intervention was tested"
-          ],
-          "residualConcerns": "Article's own DOI is not printed (only J Strength Cond Res 36(9):2434-2439, 2022); DEGRADED with doiMissing kept. Methods call the sample recreationally active but the discussion calls them competitive university-level athletes, so the level tag is a judgment call.",
-          "spotCheckPriority": "high"
-        }
       }
     },
     {

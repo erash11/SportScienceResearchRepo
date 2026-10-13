@@ -10,26 +10,6 @@
   },
   "records": [
     {
-      "originalQueueOrder": 5,
-      "sourceFile": "Sports-related Concussion V Genetic Factors copy.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text. The only DOI-like strings are reference-list links.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "paper.citation: pages 20-21 -> 20-22 (page header '1537-890X/1801/20Y22'; page 22 carries the references)",
-            "paper.findings: 'APOE ... show no association in sport-related concussion studies' -> general APOE genotype showed no association, but 'The APOE G-219T TT promoter genotype was significantly associated with self-reported concussion risk'",
-            "paper.findings: 'Some studies linked IL-6R CC ... and APOE4 to lower risk' -> one prospective cohort of 1056 college athletes ('The largest prospective cohort study ... included 1056 college athletes')"
-          ],
-          "residualConcerns": "Own DOI not printed; operator may verify externally and upgrade. Short clinical review column; concussion content.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 22,
       "sourceFile": "Structural brain differences in professional Australian rules footballers following mild traumatic brain injury - When head size matters.pdf",
       "decision": "INCLUDE",
@@ -132,27 +112,6 @@
         "paperId": "1700",
         "synthesisBatch": "pilot-synthesis-batch-103",
         "publishedOn": "2026-10-10"
-      }
-    },
-    {
-      "originalQueueOrder": 62,
-      "sourceFile": "The Association Between Age of First Exposure to American Football at a Young Age and Later-Life Health Issues in Healthy, Community-Dwelling Adults.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "Journal publication year not printed: the text has no citation line, volume, issue, pages or online-publication date, only 'Accepted: 20 April 2025' and a copyright line ('The Author(s) 2025'). Year left blank for the operator to confirm externally; DOI 10.1007/s40279-025-02239-w is printed in the header. All other fields are complete.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "DECISION_CHANGED",
-          "changes": [
-            "decision: INCLUDE -> DEGRADED, journal year not printed (only 'Accepted: 20 April 2025' and '(c) The Author(s) 2025'; no citation line, volume, issue, pages or online date); paper.year 2025 -> null and year removed from citation",
-            "paper.findings: added the unadjusted group differences that disappeared after adjustment ('PHQ-9 total score 6.6 +/- 6.5 vs 4.1 +/- 6.0, p = 0.042'; 'GAD-7 ... p = 0.034'; sleep problems p = 0.050; age 53.0 vs 65.3, d = 0.89)",
-            "paper.tldr / practicalImplications / synthesisCaution: concussion finding framed as the headline -> qualified as exploratory ('Though not a part of the a priori objectives, these findings highlight potential long-term effects of concussions'); younger age also predicted worse scores",
-            "populations: removed Male Athletes and Healthy Athletes -> Adult / Recreational, because the sample is community-dwelling adults (mean age 60.6) with past amateur football exposure, not current athletes"
-          ],
-          "residualConcerns": "Confirm the publication year externally to upgrade the decision. Population coding of former amateur players as non-athletes is a judgement call.",
-          "spotCheckPriority": "high"
-        }
       }
     }
   ]

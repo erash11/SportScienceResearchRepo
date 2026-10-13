@@ -334,26 +334,6 @@
       }
     },
     {
-      "originalQueueOrder": 31,
-      "sourceFile": "Considerations for Velocity Based Training - The instruction to move as fast as possible is less effective than a target velocity .pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text (no DOI appears; the text has no reference-list DOIs either). All other fields are complete, so the record is filled in with doiMissing set to true for external DOI verification.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "evidenceSummary/paper.findings: velocities described as overall mean velocity -> fastest mean velocity per set ('The fastest mean velocity attained with a 45% 1RM load during each 5-repetition set was the dependent variable'); added set effect ('sets 2, 3, and 4 were also found to be significantly higher than set 1') and labelled effect size as omega-squared",
-            "paper.methods: added that both sessions gave velocity feedback after each repetition and the outcome definition",
-            "paper.limitations: added authors' caveat about analysing only the fastest repetition ('if all repetitions in a set were considered ... there may have been no statistically significant differences')"
-          ],
-          "residualConcerns": "DEGRADED: the article's own DOI is not printed in the extracted text (online-first JSCR version, 'XX(X): 000-000, 2019'); operator should verify the DOI and final volume/pages externally.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 35,
       "sourceFile": "Content versus Label Claims in Cannabidiol CBD Containing Products Obtained from Commercial Outlets in the State of Mississippi.pdf",
       "decision": "EXCLUDE",

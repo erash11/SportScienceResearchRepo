@@ -14,6 +14,29 @@ Read this first. Update it before ending every session.
 | Drive outputs | `~/Library/CloudStorage/GoogleDrive-eric.rash11@gmail.com/My Drive/00_Primary_Storage_Drive/01_PROJECTS/_STALLED/2023-09-12_SportScienceResearchRepo` (Windows: `G:\My Drive\00_Primary_Storage_Drive\01_PROJECTS\_STALLED\2023-09-12_SportScienceResearchRepo`) |
 
 ## Current state
+- 2026-10-13 (Mac): Library candidate step for three Zotero papers. Paper Briefs saved through the bridge:
+  IHXYT82G (Stahl 2020), VVSYTGU4 (Staton 2026), H54I3EL2 (Macadam 2017). Briefs now carry the "Why it was
+  promoted" text (drafter's reading, Eric to adjust). Candidates rebuilt and pass `candidate:check`. STAGED 2026-10-13 by Eric Rash
+  (`docs/zotero-synthesis/zotero-publication-*.json`): IHXYT82G = 1995, VVSYTGU4 = 1996, H54I3EL2 = 1997. NOT applied
+  to `papers.json`; `candidate:apply` and merge are still open. NEY6YYVZ = 1998 (staged 2026-10-13). Next unused ID after staging: **1999**.
+  NEY6YYVZ (Mokha 2026, American Football joint power) is 1998, staged. Its brief has an unresolved Kruskal-Wallis
+  vs F-statistic mismatch; check the PDF before merge. Zotero DOI and date were added by Eric. Five papers already in the library (IDs 667, 487, 584, 577, 585) were not re-added.
+  SLIXJHBF (WKP858A4) PDF is still missing on this Mac.
+- 2026-10-13 (Mac): Batch 123-130 STAGED (branch `batch-123-staged`, DRAFT PR, NOT merged). Re-screen of the 72 DOI
+  candidates from 2026-10-12 (Eric chose option 1). Result: 68 INCLUDE (IDs 1927-1994), 3 DEGRADED, 1 EXCLUDE.
+  Pipeline: Haiku 5.5 draft, Opus 5.5 claim audit (all 72 audited; 67 CORRECTED, 3 DECISION_CHANGED, 2 VERIFIED).
+  `npm run audit` passes. Published rows 1,894 -> 1,962. Next unused ID: **1995**.
+  Crossref check of the 68 INCLUDE DOIs: 58 match on author and journal; 3 DOI problems (IDs 1942, 1976, 1981);
+  3 citations missing a journal name (1939, 1946, 1974); rest are abbreviations. Eric must check before merge, in
+  `docs/pilot-screening/batches-123-130-review.md`. Paper IDs:
+  - DOI problems: 1942 (Q25, other journal's printing), 1976 (Q02, OSF preprint DOI), 1981 (Q31, arXiv vs journal). FIXED 2026-10-13 (Codex review R2): 1942 to the CSMR DOI, 1976 to the JOSPT DOI (year 2021), 1981 to the arXiv v1 DOI.
+  - Codex review of PR #29 (cross-provider, 3 rounds, 2026-10-13): R1 and R2 fixed, R3 (1976 year text) fixed. Round 3 verdict APPROVED for the reviewed scope. Approval is not merge: merging still publishes records and is Eric's decision.
+  - Codex review R1 fixed 2026-10-13: `scripts/haiku-batch/validate.py` accepts a Crossref-sourced DOI only with a recorded identity check (title, author, journal, same DOI). Batch 123 cache: 10 external DOIs still lack the check (Q02 and Q25 now corrected in the repo; Q31 is an arXiv DOI not printed in its PDF; Q05, Q09, Q41, Q42, Q44, Q47, Q48 need a reviewer check).
+  - Printed DOI used instead of accepted one: 1951 (Q60, correction-notice DOI).
+  - Decision changes: 1956 (Q11, EXCLUDE to INCLUDE, practitioner survey) and 1971 (Q29, EXCLUDE to INCLUDE, concussion review).
+  - Borderline: 1958 (Q16, labelled "special communication").
+  - DEGRADED: Q20 (wrong DOI cleared), Q35 and Q45 (DOI blank; Crossref suggests 10.1249/jsr.0000000000000418 for Q45, unconfirmed).
+  - Handoff (addendum text, DOI failure patterns, Zotero findings): `docs/handoffs/2026-10-13-batch-123-external-doi.md`.
 - 2026-10-12 (Mac): DEGRADED DOI lookup (Crossref). 72 DOIs accepted in `docs/doi-lookup/2026-10-12-accepted-dois.json`
   (doi.org confirmed 61; 11 publisher 403 or 202 kept). 1 unconfirmed (network error). 6 CHECK_BY_HAND and 11 NO_MATCH
   listed in `docs/doi-lookup/2026-10-12-degraded-doi-candidates.json`. Screening decisions NOT changed. Accepted DOIs
@@ -41,15 +64,26 @@ Read this first. Update it before ending every session.
   9 legacy DOI collisions). Latest handoff: `docs/handoffs/2026-10-10-cloud-batches-88-95.md`.
 
 ## Next
-- Eric: answer the open question "DOI re-screen: option 1 or 2" below. Reply `1` (re-screen the 72 accepted DOIs) or `2` (check the 6 CHECK_BY_HAND and 11 NO_MATCH first).
-- No PDF backlog left. Next work needs a decision: (a) new sources (for example, Zotero items not yet in
-  `SourcePapers/`), or (b) clear `docs/needs-eric.md` (24 wrong PDFs, 88 DEGRADED missing DOIs) so those records can be re-screened.
+- Eric: review the draft PR for `batch-123-staged` against `docs/pilot-screening/batches-123-130-review.md` and
+  decide the flagged items before merge. Merging publishes the records.
+- New sources (Zotero), not started. `zotero-research-library-pp-cli sync` ran 2026-10-13. 880 Zotero journal
+  articles have a PDF attached and a DOI, and are not in `papers.json` or any screening file. Admission needs the
+  candidate workflow (`docs/contracts/zotero-publication-candidate-v1.md`), which needs `zotero-bridge`. That
+  bridge is a Python project at `~/DEV/ZoteroInjestion` (`.venv` already present; it runs on this Mac). It has no
+  Zotero credentials yet, so `doctor` fails with ConfigurationError. Setting them is Eric's step (do not paste the key
+  into chat). Zotero MCP tools return "tenant gate is not configured". Windows laptop stays hands-off, so the bridge
+  does not run there.
+- Clear `docs/needs-eric.md` section 1 (24 wrong PDFs) and section 2 (21 DEGRADED) when Eric has time.
   Before any new batch, check for open `batch-*-staged` branches (see Gotchas).
 - After the backlog: update the roadmap, then hand Eric the pilot launch checklist (goal E).
 - Still Eric's: name a pilot lead, pick 3 staff across 2+ disciplines, record human claim audits.
 
 ## Open questions
-- DOI re-screen: option 1 or 2? Option 1 re-screens the 72 accepted DOIs (`docs/doi-lookup/2026-10-12-accepted-dois.json`) through the batch pipeline. That uses many agent calls. Option 2 checks the 6 CHECK_BY_HAND and 11 NO_MATCH in `docs/doi-lookup/2026-10-12-degraded-doi-candidates.json` by hand first. Recommended: option 2.
+- ANSWERED 2026-10-13 (Eric): option 1. The 72 accepted DOIs went through the batch pipeline (batch 123-130, staged).
+- New sources: pick one. (1) Mac bridge, pilot 10 papers first (recommended): Eric sets the bridge's Zotero key once,
+  then the bridge's batch and Paper Brief steps run on 10 papers to check cost and quality before any scale-up.
+  (2) Park Zotero and first fix `docs/needs-eric.md` section 1 (24 wrong PDFs), since those block re-screens too.
+- Unconfirmed DOI `10.26603/ijspt20200326` (Criteria-based return to sprinting) is not in batch 123. Still needs a check at doi.org.
 - Confirm the one unconfirmed DOI, `10.26603/ijspt20200326` (Criteria-based return to sprinting progression), because the doi.org check failed with a network error.
 - Replace the 24 wrong PDFs in `docs/needs-eric.md` section 1. Each needs the correct article downloaded into `SourcePapers/` under the same filename.
 - ANSWERED 2026-10-10: Q66 and Q94 from Batch 100 (sports medicine opinion pieces, "Current Opinion" framework) stay EXCLUDE. Same rule as all opinion pieces. EXCLUDE records are not in the library. Audit notes are in the Batch 100 workdir (`~/Library/Caches/sportsci-batch-100/verified/`).

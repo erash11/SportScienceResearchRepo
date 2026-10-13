@@ -653,26 +653,6 @@
       }
     },
     {
-      "originalQueueOrder": 26,
-      "sourceFile": "Scheduling of eccentric lower limb injury prevention exercises during the soccer micro-cycle - Which day of the week.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "Accepted author manuscript. The journal, year and pages are not printed in the text, so the publication year cannot be confirmed. The article DOI is printed (10.1111/sms.13226). Operator should confirm the year.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "DECISION_CHANGED",
-          "changes": [
-            "decision: DEGRADED for missing journal year -> INCLUDE; the article's own DOI is printed ('Please cite this article as doi: 10.1111/sms.13226') and no DEGRADED criterion (missing DOI, unreadable or truncated text) applies",
-            "populations: removed 'Healthy Athletes'; health status of the sample is not stated (sex also not stated)",
-            "paper.practicalImplications: removed unsupported generic advice to check schedules against each player's soreness and CK responses"
-          ],
-          "residualConcerns": "Text is the accepted author manuscript; journal name, issue year, volume and pages are not printed, so paper.year is null and the citation is incomplete. Operator should fill year and citation from the DOI.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 27,
       "sourceFile": "Sciatic Nerve Conductivity is Impaired by Hamstring Strain Injuries.pdf",
       "decision": "INCLUDE",
@@ -987,25 +967,6 @@
         "paperId": "1589",
         "synthesisBatch": "pilot-synthesis-batch-98",
         "publishedOn": "2026-10-10"
-      }
-    },
-    {
-      "originalQueueOrder": 48,
-      "sourceFile": "Shoulder Instability in Contact and Collision Athletes - A Focused Review on Assessment, Management, and Treatment.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text. The text gives only the journal name, volume, issue, pages and ISSN-style header (1537-8918/2409/298-304), and no DOI string appears outside the reference list (the inputs list no DOI candidates). The operator may verify the DOI externally.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "paper.practicalImplications: 'nonoperative care with close monitoring' -> 'on the understanding that recurrence is an indication for surgery' ('with the understanding that recurrence of symptoms is an indication for surgical stabilization'; close monitoring is not stated)",
-            "paper.rtp: 'do not give validated return criteria' -> notes the consensus-based criteria the review does give ('Athletes should demonstrate full range of motion, strength, and an absence of apprehension with provocative tests before returning to play')"
-          ],
-          "residualConcerns": "DOI not printed; operator should verify externally before upgrading. Return-to-play guidance after shoulder instability, so clinically sensitive.",
-          "spotCheckPriority": "high"
-        }
       }
     },
     {

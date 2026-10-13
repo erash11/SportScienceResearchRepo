@@ -115,30 +115,6 @@
       }
     },
     {
-      "originalQueueOrder": 11,
-      "sourceFile": "Sprinting technique and hamstring strain injuries - A concept mapping study.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "Journal issue year not printed: the text is an in-press proof whose header reads 'Journal of Science and Medicine in Sport xxx (xxxx) xxx' and 'Available online xxxx'; only received/accepted dates and a 2021 copyright line appear. Own DOI is printed; all other fields are complete.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "DECISION_CHANGED",
-          "changes": [
-            "decision: INCLUDE -> DEGRADED; journal issue year not printed ('Journal of Science and Medicine in Sport xxx (xxxx) xxx', 'Available online xxxx')",
-            "paper.year: 2021 -> null (2021 appears only as accepted date and copyright year)",
-            "paper.citation: trailing '2021.' removed because no issue year, volume or pages are printed",
-            "findings/tldr: '19 sorted and rated' -> 19 sorted, 20 rated importance and 19 rated confidence ('Twenty ... and 19 ... participants rated the statements for importance and confidence, respectively')",
-            "athleteDev/practicalImplications: told staff to treat technique and eccentric control as supporting areas -> eccentric control in swing was the 5th most important statement and several technique statements were in Go-Zone quadrant 4 (Table 1)",
-            "athleteDev: removed unsupported advice on changing stimulus and recovery over time",
-            "limitations: added participant self-selection bias ('likely that they agreed to participate because they believe sprinting is a risk factor')"
-          ],
-          "residualConcerns": "Year withheld because the proof shows placeholder volume/year; operator should confirm the issue year (likely 2021 or 2022) and citation externally and upgrade the decision.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 12,
       "sourceFile": "Squatting Biomechanics After Femoroacetabular Impingement Surgery - A Systematic Review and Meta-Analysis.pdf",
       "decision": "INCLUDE",

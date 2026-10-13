@@ -332,26 +332,6 @@
       }
     },
     {
-      "originalQueueOrder": 15,
-      "sourceFile": "A biopsychosocial model for understanding training load, fatigue, and musculoskeletal sport injury in university athletes - A scoping review.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text (no DOI string appears; only journal headers and encoded download tokens). Everything else reads fully, so the operator may verify the DOI externally and upgrade the decision.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "methods: 'PCC-style search' -> 'Population, Intervention/Exposure, Comparison, and Outcome framework'",
-            "findings: '42 noncontact injuries in football' -> 42 is the player sample ('NCAA Division I men's Football (n = 42)'); added 'no study considered both male and female athletes together' and basketball n = 19",
-            "limitations: clarified the Sampson count conflict and replaced the unsupported 'no included study measured training load and injury concurrently in the holistic way' with the text's counts ('Two studies examined training load with respect to injury'; 'a single study examined athlete fatigue responses in conjunction with accepted injury surveillance')"
-          ],
-          "residualConcerns": "Own DOI not printed in the text; operator should verify externally (JSCR 2024;38(6):1177-1188). Scoping review mapped to the Systematic Review / Meta-analysis design value because no scoping category exists.",
-          "spotCheckPriority": "normal"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 29,
       "sourceFile": "A new conceptual framework for managing hamstring injury risk in soccer–implementing a data-informed approach - A narrative review.pdf",
       "decision": "INCLUDE",
@@ -564,27 +544,6 @@
         "paperId": "843",
         "synthesisBatch": "pilot-synthesis-batch-28",
         "publishedOn": "2026-10-09"
-      }
-    },
-    {
-      "originalQueueOrder": 53,
-      "sourceFile": "Activity distribution among the hamstring muscles during high‐speed running - A descriptive multichannel surface EMG study.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The text is an accepted manuscript (not the version of record) and prints no journal name, publication year, volume or pages for this article, so the year field is null and the citation is incomplete. The article's own DOI (10.1111/sms.14326) is printed in the 'Please cite this article as doi' line, so the DOI itself is not missing. The operator should verify the journal and year externally before the record is used.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "paper.limitations: 'a single maximal contraction was used for normalization' -> three MVICs were performed at a single knee angle ('Three maximum voluntary isometric contractions (MVIC) were performed'; 'a single MVIC can result in a fractional under- or overestimation' refers to one joint position)",
-            "paper.limitations: 'players with past hamstring injury ... were not excluded' -> only injuries older than 12 months were not excluded ('history of a hamstring injury, older than 12 months')",
-            "paper.limitations: added that participants came from control and NHE trial arms with test timing relative to the intervention not stated",
-            "degradedReason: kept DEGRADED for missing journal and year; confirmed own DOI is printed"
-          ],
-          "residualConcerns": "DEGRADED only because journal name and year are not printed in the accepted manuscript (a Wiley download banner shows the DOI but no year). The operator should confirm journal and year externally; otherwise the record is complete.",
-          "spotCheckPriority": "normal"
-        }
       }
     },
     {

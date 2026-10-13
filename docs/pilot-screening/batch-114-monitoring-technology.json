@@ -524,24 +524,6 @@
       }
     },
     {
-      "originalQueueOrder": 83,
-      "sourceFile": "Training Impulse and Session Ratings of Perceived Exertion as Perceived by Athletes and Observed by Coaches During Preseason Football Camp.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text (no DOI in the header, footer or reference list). All other fields are filled from the text; the operator can verify the DOI externally.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "paper.limitations: removed the DOI note, which is a record issue not a study limitation (kept in degradedReason); added the authors' stated direction of HRmax error ('may have artificially lowered our TRIMP scores')"
-          ],
-          "residualConcerns": "No DOI printed in the text (header shows placeholder 'J Strength Cond Res XX(X): 000-000, 2025'); operator should verify the DOI externally. Athlete sex is not stated, so no sex tag was added.",
-          "spotCheckPriority": "normal"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 87,
       "sourceFile": "Training load and acute performance decrements following different training sessions.pdf",
       "decision": "INCLUDE",

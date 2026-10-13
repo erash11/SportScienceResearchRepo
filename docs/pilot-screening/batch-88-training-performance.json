@@ -522,26 +522,6 @@
       }
     },
     {
-      "originalQueueOrder": 45,
-      "sourceFile": "Power-Time Curve Comparison between Weightlifting Derivatives.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text, and no DOI string appears anywhere in the text. Fields are filled from the article as printed; the operator may verify the DOI externally.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "athleteDev/tldr: JS and HHP both exceeded HPC 'at each load' -> HHP did not exceed HPC at 80% ('With the exception of 80% 1RM HPC, the HHP also produced greater PPRel at every load'; Table 2 45.1 vs 44.9 W/kg)",
-            "screeningLimitations/limitations: 'single-session' -> acute comparison across separate sessions ('All data were collected during four separate testing sessions'); added load-order limitation stated by authors",
-            "DOI: confirmed no DOI string anywhere in the text (header '©Journal of Sports Science and Medicine (2017) 16, 407-413', no doi line); DEGRADED retained"
-          ],
-          "residualConcerns": "",
-          "spotCheckPriority": "normal"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 52,
       "sourceFile": "Predicting noncontact injuries of professional football players using machine learning.pdf",
       "decision": "EXCLUDE",

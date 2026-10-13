@@ -262,28 +262,6 @@
       }
     },
     {
-      "originalQueueOrder": 61,
-      "sourceFile": "The effect of dietary supplements on endurance exercise performance and core temperature in hot environments - A meta-analysis and meta-regression.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "Journal publication year, volume, issue and pages are not printed in the text (online-first version showing only 'Accepted: 2 June 2021' and '© The Author(s) 2021'), so the issue year cannot be confirmed from the source. Own DOI is printed and all other fields are complete; operator should confirm the year externally.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "DECISION_CHANGED",
-          "changes": [
-            "decision: INCLUDE -> DEGRADED; journal issue year not printed (only 'Accepted: 2 June 2021' and '© The Author(s) 2021', no volume, issue or publication date)",
-            "paper.year: 2021 -> null (not printed as a journal year); citation: removed unprinted year",
-            "methods: '272 participants (88% male, 56% highly trained)' -> study-level percentages ('comprising both males and females (males 88%; both males and females 12%)'; 22 of 25 studies are male-only in Table 1)",
-            "findings: added caffeine submaximal core temperature effect ('Caffeine (Hedges' g = 0.49 ... P = 0.016) had a small significant positive effect') and the one significant moderator ('Exercise beforehand β = 0.449, P = 0.039')",
-            "findings/limitations: taurine end core temperature effect labelled 'medium' in abstract but 'large significant negative effect' in Results; conflict noted"
-          ],
-          "residualConcerns": "Confirm the journal issue year and volume/issue/pages externally before upgrading to INCLUDE.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 67,
       "sourceFile": "The effect of pre-exercise hyperhydration on exercise performance, physiological outcomes and gastrointestinal symptoms - A systematic review.pdf",
       "decision": "INCLUDE",
