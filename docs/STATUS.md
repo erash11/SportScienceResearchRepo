@@ -22,7 +22,8 @@ Read this first. Update it before ending every session.
   NEY6YYVZ (Mokha 2026, American Football joint power) is 1998, staged. Its brief has an unresolved Kruskal-Wallis
   vs F-statistic mismatch; check the PDF before merge. Zotero DOI and date were added by Eric. Five papers already in the library (IDs 667, 487, 584, 577, 585) were not re-added.
   SLIXJHBF (WKP858A4) PDF is still missing on this Mac.
-- 2026-10-13 (Mac): Batch 123-130 STAGED (branch `batch-123-staged`, DRAFT PR, NOT merged). Re-screen of the 72 DOI
+- 2026-10-13 (Mac): PR #29 (batch 123-130) MERGED to master, merge commit `1c914e2`. `papers.json` = 1,962 rows, max ID 1994. Codex review approved on round 3. Staged, NOT applied: candidates 1995 (Stahl 2020), 1996 (Staton 2026), 1997 (Macadam 2017), 1998 (Mokha 2026). Next unused ID: **1999**. `npm run audit` passes on master.
+- 2026-10-13 (Mac): Batch 123-130 history (branch `batch-123-staged`, now merged). Re-screen of the 72 DOI
   candidates from 2026-10-12 (Eric chose option 1). Result: 68 INCLUDE (IDs 1927-1994), 3 DEGRADED, 1 EXCLUDE.
   Pipeline: Haiku 5.5 draft, Opus 5.5 claim audit (all 72 audited; 67 CORRECTED, 3 DECISION_CHANGED, 2 VERIFIED).
   `npm run audit` passes. Published rows 1,894 -> 1,962. Next unused ID: **1995**.
@@ -64,8 +65,8 @@ Read this first. Update it before ending every session.
   9 legacy DOI collisions). Latest handoff: `docs/handoffs/2026-10-10-cloud-batches-88-95.md`.
 
 ## Next
-- Eric: review the draft PR for `batch-123-staged` against `docs/pilot-screening/batches-123-130-review.md` and
-  decide the flagged items before merge. Merging publishes the records.
+- Eric: decide whether to apply staged candidates 1995-1998 (`npm run candidate:apply -- docs/zotero-synthesis/PUBLICATION.json`, then commit). Applying writes `papers.json`; merging publishes.
+- Eric: reviewer check for seven DOIs that lack an identity record (Q05 1939, Q09 1974, Q41 1934, Q42 1946, Q44 1947, Q47 1968, Q48 1948). Also check 1981's arXiv DOI (not printed in its PDF) and 1998's Kruskal-Wallis vs F mismatch.
 - New sources (Zotero), not started. `zotero-research-library-pp-cli sync` ran 2026-10-13. 880 Zotero journal
   articles have a PDF attached and a DOI, and are not in `papers.json` or any screening file. Admission needs the
   candidate workflow (`docs/contracts/zotero-publication-candidate-v1.md`), which needs `zotero-bridge`. That
