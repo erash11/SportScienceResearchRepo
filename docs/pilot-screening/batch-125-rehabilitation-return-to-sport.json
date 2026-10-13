@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-125-rehabilitation-return-to-sport",
+  "screenedOn": "2026-10-13",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Rehabilitation & Return to Sport queue positions 7-53. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 7,
+      "sourceFile": "An overview of blood flow restriction physiology and clinical considerations.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 40521,
+        "doi": "10.1249/jsr.0000000000000948",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A narrative overview of blood flow restriction (BFR) physiology, cuff and pressure selection, alternative uses and contraindications, drawing on RCTs, meta-analyses and safety studies in rehabilitation, training and older adults. The authors report that low-load BFR (about 30% of 1RM) produces hypertrophy and strength gains, that it gives smaller strength gains than heavy loading, and that VTE and muscle damage risks appear low when protocols are screened and submaximal. They conclude BFR is generally safe and useful in rehabilitation, with more research needed on mechanisms and protocols.",
+      "limitations": "The paper describes no search strategy, and most cited evidence comes from patients, older adults or healthy adults rather than athletes; athlete-specific content is limited to a sentence on aerobic BFR for elite athletes. The safety conclusions rest partly on incidence figures from Japan, and the authors report an unresolved debate over rhabdomyolysis and muscle damage risk.",
+      "synthesisCaution": "Staff may read BFR as safe for any athlete at any load, or as equal to heavy resistance training for strength, when the review shows smaller strength gains than heavy loading and safety depends on screening, cuff choice and avoiding failure.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: 'Rhabdomyolysis estimates differed between authors (0.07% to 0.2% vs 0.008% in Japan)' misattributed -> both figures are Thompson et al.'s ('0.07% to 0.2% in published studies and 0.008% in Japan'); Wernbom et al. 'contested this' citing evidence of muscle damage, mostly with protocols to failure",
+            "findings/practicalImplications: 'higher pressures did not improve outcomes' and a single ~40% target overstated -> 'higher pressures may not provide additional improvements'; guidance range '40% to 80% of the AOP'",
+            "limitations/practicalImplications: added the cardiovascular-risk disagreement (Spranger et al. 'advise caution ... in patients with underlying cardiovascular disease') and cardiovascular screening",
+            "tldr: 'a substitute only when heavy loads are not tolerated' softened to the authors' 'primary value in individuals who cannot tolerate heavy loads'"
+          ],
+          "residualConcerns": "Clinically sensitive content (VTE, cardiovascular risk, contraindication list) comes from a narrative review with no search method; the authors' claim that BFR is 'proven to be a consistently safe' tool is stronger than the mixed safety evidence they describe.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1954",
+        "synthesisBatch": "pilot-synthesis-batch-125",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 8,
+      "sourceFile": "Blood Flow Restriction Training for        Postoperative Lower-Extremity Weakness- A Report of Three Cases.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 4,
+        "extractedCharacters": 17148,
+        "doi": "10.1249/jsr.0000000000000470",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Case Report / Case Series",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A case series of three patients with persistent knee weakness after arthroscopic knee surgery: one female collegiate athlete and two male active-duty soldiers, one of whom also had earlier blast injuries. Each completed 2 to 4 weeks of supervised blood flow restriction (BFR) strength training at 30% of 1RM. The authors report isokinetic peak torque deficits fell in all three, with average relative gains of 51% (flexion) and 50% (extension) and total work gains of 190% and 108%.",
+      "limitations": "Three patients with no control group, no statistical testing and no randomization, and each had already failed conventional physical therapy before BFR. Only one patient is described as an athlete, so the evidence does not isolate effects in trained athletes.",
+      "synthesisCaution": "Staff could read three favorable cases as proof that BFR restores strength faster than standard rehabilitation or is safe to add to any post-surgical knee program.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/tldr/methods: 'after arthroscopic surgery or injury' -> all three had arthroscopic knee procedures ('three highly active patients who underwent arthroscopic knee procedures'); patient 3's blast injury preceded his surgery",
+            "methods: added 30 s rest and three exercises per patient; noted session frequency is not reported",
+            "limitations: added implausible source values (Table 2 case 2 flexion improvement 398.50%; Table 1 headed 'Peak Torque (Joules)')",
+            "populations: removed Injured Athletes, since only 1 of 3 patients is an athlete ('21-yr-old female collegiate athlete'; the others are 'active duty male soldier[s]')",
+            "Recomputed table means: flexion peak torque (26.3+82.3+43.6)/3 = 50.7%, extension 49.9%, total work 190.2% and 108.1%, matching the authors' 51/50/190/108",
+            "paper.abstract: was blank (the source is a case report with no printed abstract) -> summary taken from the Introduction and results"
+          ],
+          "residualConcerns": "Source tables contain questionable values (peak torque reported in joules; patient 2 flexion total work rising from 59.62 to 297.42 J, a 398.5% gain, and flexion peak torque ending 63% above the uninvolved limb). Return-to-activity outcomes are anecdotal.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1955",
+        "synthesisBatch": "pilot-synthesis-batch-125",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 11,
+      "sourceFile": "Current implementation and barriers to using blood flow restriction training - Insights from a survey of allied health practitioners.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 52691,
+        "doi": "10.1519/jsc.0000000000004656",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Global online survey of allied health practitioners who prescribe exercise for clinical, injured or older clients, with 397 of 520 consenting respondents analysed: 308 who had prescribed blood flow restriction (BFR) exercise and 89 who had not. Most users applied BFR for musculoskeletal rehabilitation (91.6%), set cuff pressure from measured limb or arterial occlusion pressure (81.1%) and screened clients for contraindications (68.2%). Delayed-onset muscle soreness was the most commonly reported side effect (65.8%), and the main barriers for non-users were lack of equipment (60.2%), insufficient education (55.7%) and safety concerns (31.8%).",
+      "limitations": "This is a self-reported practitioner survey with no athlete or patient outcome data, and recruitment targeted practitioners working with clinical and older populations. Respondents were mostly physiotherapists (76.6%) in North America (69.7%), so the findings describe current practice, not whether BFR is safe or effective.",
+      "synthesisCaution": "Staff could read the prescription patterns as an endorsed BFR protocol for athletes, when they describe what surveyed practitioners report doing and side-effect rates are practitioner recall, not measured incidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: EXCLUDE (c) not relevant to athletes -> INCLUDE; criterion (c) is relevance to sport, exercise performance or athlete health, and this is original research on prescription and safety of an exercise rehabilitation modality ('Injury rehabilitation 257 83.4%', 'Sporting environment 66 (21.4%)', key word 'sports medicine')",
+            "all text fields: null -> filled from the text",
+            "confidence: high -> medium (relevance is a judgement call)",
+            "sports: Other Sport -> Mixed / General Sport; domains: added Training & Performance; audiences: added Sports Medicine",
+            "citation: removed placeholder note"
+          ],
+          "residualConcerns": "Decision reversed from EXCLUDE; reviewer should confirm the library wants practitioner surveys focused on clinical and older clients. PDF prints 2023 (online-first, 'XX(X): 000-000, 2023') while crossrefYear is 2024. Two authors declare BFR education businesses.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1956",
+        "synthesisBatch": "pilot-synthesis-batch-125",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 15,
+      "sourceFile": "Effects of photobiomodulation on pain and return to play of injured athletes - A systematic review and meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 53391,
+        "doi": "10.1519/jsc.0000000000004752",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review of six randomised controlled trials (205 competitive and recreational athletes, mean age 24 years) of photobiomodulation for injury, with comparators of placebo, an aloe-based gel or standard physical therapy. Five trials reported pain and were pooled in a random-effects meta-analysis, which favoured photobiomodulation (SMD 1.03, 95% CI 0.43 to 1.63, p=0.0089, I2 46.9%). The two trials that measured return to play were summarised narratively and did not show a benefit.",
+      "limitations": "Only five small trials were pooled for pain, against a mix of placebo, aloe-based gel and standard physical therapy comparators, with moderate heterogeneity. The two return-to-play trials used different designs and could not be pooled. The protocol was not prospectively registered, and injury severity was not reported in the included studies.",
+      "synthesisCaution": "Staff could read the pooled pain effect as evidence that photobiomodulation shortens return to play, when the two trials that measured return to play did not show a benefit.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/tldr/findings: implied six trials were pooled for pain -> five pooled ('Our meta-analysis of musculoskeletal pain only had 5 studies'; the Results sentence 'Six studies evaluated pain' cites only refs 3, 50, 52, 53, 57)",
+            "limitations: resolved the 5 vs 6 inconsistency and added comparator and power caveats ('The aloe gel used in this study was not solely aloe vera'; 'this study was powered to detect large effects')",
+            "practicalImplications: noted that the dosing advice is the authors' suggestion, not a tested result"
+          ],
+          "residualConcerns": "The reported 95% CI (0.43 to 1.63) with SE 0.22 is consistent with a t-based interval on 4 degrees of freedom, supporting five pooled studies. In one pooled trial (Ammendolia) the gel comparator reduced pain more than PBM, so the direction of that study's SMD should be checked on the forest plot, which is not in the extracted text. Return-to-play content.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1957",
+        "synthesisBatch": "pilot-synthesis-batch-125",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 16,
+      "sourceFile": "Exertional Heat Stroke, the Return to Play Decision, and the Role of Heat Tolerance Testing- A Clinician’s Dilemma.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 28754,
+        "doi": "10.1249/jsr.0000000000000502",
+        "doiVerification": "Crossref title match (similarity 0.995) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Special communication in Current Sports Medicine Reports that reviews return-to-play/duty decisions after exertional heat stroke, using a case vignette of a 20-year-old runner with a second event in two years. It summarises ACSM guidance, US and French military recurrence data, and Israel Defense Force heat tolerance test (HTT) data, in which 6 of 145 soldiers tested after a prior heat stroke had a recurrent exertional heat illness (only one was heat stroke), with a reported sensitivity of 66.7% and specificity of 77.7%.",
+      "limitations": "No systematic search or appraisal is described, so the review is selective and its conclusion is stated as the authors' collective opinion. The HTT evidence comes from one military programme in young, moderately fit soldiers, and the criteria are not adjusted for sex, fitness or acclimatisation. The article states that the data are insufficient to support HTT as a diagnostic test.",
+      "synthesisCaution": "Staff could treat a passed heat tolerance test as clearance that rules out recurrence, when the only recurrent heat stroke in the cited IDF data occurred in an athlete classified as heat tolerant and the criteria were developed for young soldiers.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "rtp: 'the test cannot yet be relied on as a diagnostic or clearance tool' -> authors call a successful HTT 'a reliable tool when incorporated into a decision making process' while data are 'insufficient to support HTT as a diagnostic test'",
+            "athleteDev: removed invented advice 'should not use it to rank athletes' heat tolerance' -> stated what the paper supports (criteria 'established for relatively young and moderately fit individuals')",
+            "evidenceSummary/findings/synthesisCaution: added that only one of six recurrences was heat stroke and it occurred in a heat-tolerant soldier ('Only one of the six recurrent events was diagnosed as EHS and involved a heat-tolerant individual')",
+            "findings: added Nelson et al. odds ratio ('a prior serious EHI event was associated with a 4.02 greater odds of experiencing a mild EHI event later') and test speed and incline; consolidated to 3 sentences"
+          ],
+          "residualConcerns": "Article is labelled a special communication and ends with a stated 'collective opinion'. INCLUDE as Narrative Review is defensible because it structures guidance and evidence, but a reviewer may classify it as commentary. Clinically sensitive return-to-play clearance content.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1958",
+        "synthesisBatch": "pilot-synthesis-batch-125",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 53,
+      "sourceFile": "Testing Limb Symmetry and Asymmetry After Anterior Cruciate Ligament Injury - 4 Considerations to Increase Its Utility.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 46074,
+        "doi": "10.1519/ssc.0000000000000821",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review (no search method is described) of the limb symmetry index (LSI) and asymmetry index used after anterior cruciate ligament reconstruction. The authors propose four considerations: choose the benchmark carefully, because the postinjury contralateral limb can itself be affected; treat movement asymmetries as task-dependent and variable; measure task performance and movement strategy alongside the LSI; and assess both limbs against a sport-specific envelope of function.",
+      "limitations": "The review has no described search, so the choice of supporting studies cannot be checked, and the authors state that the evidence for the LSI in return-to-sport decisions is mixed. The envelope-of-function approach is presented as a proposal, and the authors say the evidence base for return-to-sport testing is in its infancy.",
+      "synthesisCaution": "Staff could treat the four considerations as a validated replacement for LSI cut-offs, when the paper gives no new pass or fail thresholds and calls for future research to test them.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1959",
+        "synthesisBatch": "pilot-synthesis-batch-125",
+        "publishedOn": "2026-10-13"
+      }
+    }
+  ]
+}

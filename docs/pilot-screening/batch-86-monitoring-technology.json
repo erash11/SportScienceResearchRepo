@@ -232,44 +232,6 @@
       }
     },
     {
-      "originalQueueOrder": 40,
-      "sourceFile": "PEP - A tackle value measuring the prevention of expected points.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the text. The only identifier is the arXiv number (arXiv:2407.08508v1), which is a preprint, not a DOI. Everything else is in order, so the operator may verify the DOI externally and upgrade the decision if one exists.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "Decision DEGRADED confirmed: arXiv preprint ('arXiv:2407.08508v1 [stat.AP] 11 Jul 2024') with no DOI printed anywhere in the text",
-            "paper.findings: added appendix sensitivity analyses ('leaving us with 5889 tackles'; 'A strong linear correlation (r = 0.88137)'); other fields checked against text and left unchanged"
-          ],
-          "residualConcerns": "Preprint; the operator should check whether a peer-reviewed version with a DOI exists before upgrading.",
-          "spotCheckPriority": "normal"
-        }
-      }
-    },
-    {
-      "originalQueueOrder": 80,
-      "sourceFile": "Percentile rankings and position differences for absolute and allometrically scaled performance measures from the NFL Scouting Combine.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed anywhere in the extracted text (no 'doi' string appears at all; doiCandidatesInText is empty), and the citation line has placeholders only ('J Strength Cond Res XX(X): 000-000, 2023'; '00(00)/1-12'). The record is complete otherwise; the operator can verify the DOI externally and upgrade the decision.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "degradedReason: confirmed no own DOI after full-text search (zero 'doi' strings) and recorded the placeholder citation line ('XX(X): 000-000, 2023')",
-            "paper.practicalImplications: attributed the scaled-score recommendation to the author ('the present results suggest that allometric scaling provides an appropriate method'); merged the last two sentences"
-          ],
-          "residualConcerns": "DOI must be verified externally before upgrade. Table 2 (20-yd split) scaled 'All' column prints Mean 0.025 and SD 0.0005, inconsistent with its percentile values (about 0.70 to 0.74), so that cell appears to be a typesetting error. Player sex is not stated, so no sex tag was added.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 85,
       "sourceFile": "Performance and symmetry measures during vertical jump testing at return to sport after ACL reconstruction.pdf",
       "decision": "INCLUDE",

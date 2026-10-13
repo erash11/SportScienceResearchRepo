@@ -251,29 +251,6 @@
       }
     },
     {
-      "originalQueueOrder": 16,
-      "sourceFile": "Strength training - In search of optimal strategies to maximize neuromuscular performance.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "Journal issue year not printed: the text is the ESSR 'Published Ahead-of-Print' version with no volume, issue, pages or online publication date; only an acceptance date (07/20/2020) and a 2020 copyright line appear. Own DOI is printed; all other fields are complete.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "DECISION_CHANGED",
-          "changes": [
-            "decision: INCLUDE -> DEGRADED; journal issue year not printed ('ESSR Published Ahead-of-Print', 'Accepted: 07/20/2020')",
-            "paper.year: 2020 -> null (2020 appears only as acceptance and copyright year)",
-            "paper.citation: '2020 (published ahead of print)' -> 'Published ahead of print.'",
-            "findings: added that doubling classical volume (8x6) gave a slightly larger 1RM gain than 3/7 ('slightly increased (p<0.05) the gain in 1RM load (35.9%) compared with the 3/7 method')",
-            "practicalImplications: 'BFR may suit patients and older or untrained people' -> benefits shown in frail and sarcopenic patients ('hypertrophy and strength in frail and sarcopenic patients'); noted 8x6 result",
-            "practicalImplications: framed 3/7 as suited to 'time-limited trainees' -> efficacy is defined as 'amount of progress relative to the total number of repetitions', not time"
-          ],
-          "residualConcerns": "Year withheld because only the ahead-of-print version is in the text; operator should confirm the issue year and volume externally and upgrade the decision.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 17,
       "sourceFile": "Strength training with intermittent blood flow restriction improved strength without changes in neural aspects on quadriceps muscle.pdf",
       "decision": "INCLUDE",

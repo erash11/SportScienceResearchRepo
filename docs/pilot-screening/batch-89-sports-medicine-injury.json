@@ -1459,26 +1459,6 @@
       }
     },
     {
-      "originalQueueOrder": 81,
-      "sourceFile": "Progressive Workload Periodization Maximizes Effects of Nordic Hamstring Exercise on Muscle Injury Risk Factors.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text (no DOI appears anywhere in the text). Content is otherwise complete and readable; the operator can verify the DOI externally.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "populations: added Male Athletes (players referred to as 'he'/'his' throughout, premier league rugby union squad)",
-            "limitations: clarified group-size conflict; leg counts support PTG 11/CTG 10 ('20 legs for CTG and 22 legs for PTG'), opposite of methods text '11 in the CTG and 10 in the PTG'",
-            "decision: DEGRADED confirmed; whole text searched, no DOI string printed anywhere (header shows only 'J Strength Cond Res XX (X): 000-000, 2018')"
-          ],
-          "residualConcerns": "",
-          "spotCheckPriority": "normal"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 83,
       "sourceFile": "Protection Before Impact- the                        Potential Neuroprotective Role of Nutritional         Supplementation    in             Sports-Related Head Trauma.pdf",
       "decision": "INCLUDE",
@@ -1547,29 +1527,6 @@
             "decision: INCLUDE -> EXCLUDE (b) by the operator session for consistency with Q03, the other protocol without results in this batch ('Data collection is complete, and the analysis plan is outlined below')"
           ],
           "residualConcerns": "Operator call for Eric: should study protocols without results enter the library? Q03 and Q84 are both excluded pending that decision. Eligibility is a judgment call for the operator: a study protocol is not one of the listed eligible article types, and its only quantitative results (HAE kinematics) are summarized from a prior publication. If the library excludes protocols, change to EXCLUDE (b). The conclusion's claim that 'results of this study demonstrate the value of engaging community members' is not supported by reported outcome data.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
-      "originalQueueOrder": 86,
-      "sourceFile": "Proximal rectus femoris tendon tear in a professional football placekicker - A case report.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text (no DOI appears anywhere in the text). Content is otherwise complete and readable; the operator can verify the DOI externally and upgrade the decision.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "tldr/rtp: 'returned to pain-free kicking by about 3 months and full play by 6 months' and 'running at 6 months' -> kicking began at 3 months, pain-free running and kicking at 6 months, game return not reported ('Return to kicking began at 3 months. At 6 months ... had returned to running and kicking pain-free')",
-            "evidenceSummary/findings: removed 'suture-anchor' from this athlete's surgery; the case states only 'open RF tendon repair' (suture anchor technique is described generically in the discussion)",
-            "findings: added that ultrasound poorly visualized the indirect head",
-            "practicalImplications: replaced generic documentation advice with the authors' shared decision factors ('injury timing, athlete's career stage and goals')",
-            "rtp: added nonoperative 4 and 7 week returns in the two NFL punters",
-            "decision: DEGRADED confirmed; full text searched, no DOI printed (only '1537-890X/2206/187-190')"
-          ],
-          "residualConcerns": "",
           "spotCheckPriority": "high"
         }
       }

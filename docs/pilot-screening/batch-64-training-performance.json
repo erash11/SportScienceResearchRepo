@@ -42,26 +42,6 @@
       }
     },
     {
-      "originalQueueOrder": 3,
-      "sourceFile": "How Do They Decide - Performance Support Staff Perceptions of Decision-Making in Elite-Sport Environments.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text (online-first JSCR version, 'XX(X): 000-000, 2024'). All other content is complete.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "DECISION_CHANGED",
-          "changes": [
-            "decision: EXCLUDE (c) -> DEGRADED. The paper is original research on staff in professional and international sport, so it is relevant to sport; library precedent includes staff surveys about athlete care as Cross-sectional Study (e.g. iMG manager survey, GPS feedback survey). No own DOI is printed, so DEGRADED with doiMissing true.",
-            "all taxonomy, summary and paper fields: null -> written from full text ('191 subjects (179 male and 12 female subjects)', 'only 31% had received formal decision-making education').",
-            "limitations: noted text vs Table 1H conflict (44% in text, 40% in table)."
-          ],
-          "residualConcerns": "Decision depends on applying the staff-survey precedent; the topic is general staff decision-making rather than a specific athlete-care practice. DOI needs external verification before upgrade.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 4,
       "sourceFile": "How Humans Run Faster - The Neuromechanical Contributions of Functional Muscle Groups to Running at Different Speeds.pdf",
       "decision": "INCLUDE",
@@ -728,30 +708,6 @@
       }
     },
     {
-      "originalQueueOrder": 81,
-      "sourceFile": "Ischemic strength training - a low load alternative to     heavy resistance exercise.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed anywhere in this manuscript proof. The publication year, volume, issue and pages are also not printed, so the year must be confirmed against the published article.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "paper.year: 2008 (inferred from latest-cited references, not printed) -> null; no publication year is printed in the proof (latest cited items are 2008, incl. 'Int J Sports Med 2008 Jan 22: [Epub ahead of print]')",
-            "paper.citation: removed the unprinted year 2008; journal name kept as printed in the proof header",
-            "degradedReason: removed the inferred-year claim; states that DOI, year, volume, issue and pages are not printed",
-            "paper.tldr: 'not a replacement for heavy training' (editorial) -> authors' framing 'possible alternative or complement to conventional high-load resistance training in certain situations'",
-            "paper.practicalImplications: removed 'before routine use' and 'high level of effort' advice not in text; added the authors' no-cuff option ('relative ischemia already at loads of ~20-30% of 1RM if performed in a non-stop manner to fatigue')",
-            "paper.athleteDev: replaced unsupported 'should not replace heavy strength work' with the review's tendon finding ('only the high load protocol significantly increased stiffness in the tendon-aponeurosis complex')",
-            "paper.limitations: noted that the year is also not printed"
-          ],
-          "residualConcerns": "No publication year is printed, so paper.year is null rather than an integer; the operator must confirm year, DOI, volume and pages against the published Scand J Med Sci Sports article before upgrading. This is a pre-publication proof, so the published wording may differ.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 85,
       "sourceFile": "Ketogenic diets are beneficial for athletic performance.pdf",
       "decision": "EXCLUDE",
@@ -881,26 +837,6 @@
           "changes": [],
           "residualConcerns": "",
           "spotCheckPriority": "normal"
-        }
-      }
-    },
-    {
-      "originalQueueOrder": 95,
-      "sourceFile": "Load, Overload, and Recovery in the Athlete- Select Issues for the Team PhysicianVA Consensus Statement.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text. All other fields are complete, so the operator may verify the DOI externally and upgrade the decision.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "paper.athleteDev: 'notes that the injury evidence for them remains mixed' applied to both concepts -> only calendar congestion is described as mixed ('While data remains mixed, the literature suggests competitive calendar congestion ... increases injury risk'); ACWR is described as 'may be an important determinant of injuries'",
-            "paper.tldr: overload definition aligned to text ('load that is excessive or not well managed') and recovery to 'the period and process during which the body responds to load'",
-            "decision: DEGRADED confirmed; no DOI for this article appears anywhere in the extracted text (only journal header 1537-890X/1804/141Y148)"
-          ],
-          "residualConcerns": "Own DOI not printed; operator should verify externally before upgrading. Author attribution is ambiguous: the text lists an Executive Committee (Herring, Kibler, Putukian) and an Expert Panel with no formal byline, so the citation 'Herring SA, Kibler WB, Putukian M, et al.' follows the committee order and should be checked against the journal record.",
-          "spotCheckPriority": "high"
         }
       }
     },

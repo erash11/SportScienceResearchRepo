@@ -399,27 +399,6 @@
       }
     },
     {
-      "originalQueueOrder": 72,
-      "sourceFile": "Pain Medication Data from the 2021 and 2022 National Football League Prescription Drug Monitoring Program.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text. The text has no DOI string at all, so the record is complete except for the DOI.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "DOI: confirmed no own DOI is printed; the text has no 'doi' string or '10.' DOI anywhere (header shows only '1537-8918/2310/348-351', Current Sports Medicine Reports 23(10) October 2024), so DEGRADED with doiMissing true is correct.",
-            "paper.methods: data window ran 'through 1 week following the club's last game of the season', not through the last game; corrected.",
-            "identityCheck: noted the 'SPECIAL COMMUNICATION' label and why it does not make the paper a commentary.",
-            "All numbers checked against Tables 2 and 3 and the results text and verified (3142/3152 players; 14,903/14,880 prescriptions; 2207 (70.2%)/2189 (69.4%); NSAIDs 84.6%/85.5%; opioids 3.1%/2.7%, 319 (10.2%)/300 (9.5%) players; 576 unique opioid recipients; 17.7/18.4 tablets per opioid prescription). Citation details match the printed header."
-          ],
-          "residualConcerns": "Operator should look up the DOI externally to upgrade from DEGRADED. Medication topic: the authors' comparison with US population opioid data is indirect, which the record already flags. Sex of the sample is not stated in the text, so no sex tag was added.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 74,
       "sourceFile": "Past-season, pre-season and in-season risk assessment of groin problems in male football players - A prospective full-season study.pdf",
       "decision": "INCLUDE",

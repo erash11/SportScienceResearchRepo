@@ -167,28 +167,6 @@
       }
     },
     {
-      "originalQueueOrder": 28,
-      "sourceFile": "Optimizing athletes' recovery and performance - A review of vibration therapy, compression garments, and massage.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text. The text carries only the ACSM code 1537-8918/2406/177-185 and no DOI appears anywhere. Everything else is readable and complete, so the record is filled in and the operator may verify the DOI externally.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "populations: 'Professional / Elite' and 'Adult / Recreational' alongside Mixed implied level-specific evidence -> 'Mixed / Unspecified' only ('ranged in athletic ability levels from sedentary to novice to amateur and professional')",
-            "screeningLimitations: 'narrative synthesis' -> describes vote counting by significance and no adverse-event extraction",
-            "paper.limitations: 70 vs 85 framed as a contradiction -> Figure 2 explains extraction from reviews, plus overlapping modality lists (ref 9 under vibration and massage); added Discussion reference-count mismatches and the unsupported 'all modalities reviewed seem safe' conclusion, with counter-examples (refs 34,57 slower sprints; ref 74 worse vertical jump)",
-            "paper.practicalImplications: authors' speculation 'may be of benefit to the athlete to return to training sooner' stated as plausible benefit -> flagged as untested; added supporting counts",
-            "paper.athleteDev: 'only to ease soreness' overstated compression (16 of 29) -> soreness signal mainly vibration and massage; added 2 of 11 compression studies with worse sprints"
-          ],
-          "residualConcerns": "DOI not printed; operator should verify externally. Design coded Systematic Review / Meta-analysis per library rule for a described database search, but the review is a vote-count synthesis without appraisal and its Discussion uses 'strong evidence' language for massage that the method cannot grade.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 37,
       "sourceFile": "Overview of the impact of sleep monitoring on optimal performance, immune system function and injury risk reduction in athletes - A narrative review.pdf",
       "decision": "INCLUDE",

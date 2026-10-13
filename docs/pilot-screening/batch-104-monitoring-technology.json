@@ -117,25 +117,6 @@
       }
     },
     {
-      "originalQueueOrder": 34,
-      "sourceFile": "Selecting Metrics That Matter - Comparing the Use of the Countermovement Jump for Performance Profiling, Neuromuscular Fatigue Monitoring, and I.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the text; the only DOI-like strings are reference-list items or none. All other fields are filled and doiMissing is true, so the operator can verify the DOI externally.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "paper.findings: named time to take-off as a metric that changed over 24 to 72 h -> time to peak power and flight time:contraction time ratio; immediate changes were relative net impulse and flight time ('over subsequent days (e.g., 24-72 hours), metrics such as time to peak power ... and flight time:contraction time ratio')",
-            "evidenceSummary: implied the 151-study meta-analysis showed time-based metrics changed more -> attributed to other cited studies ('In contrast, previous studies have shown that some time-based metrics')"
-          ],
-          "residualConcerns": "Own DOI not printed; header shows 'VOLUME 00 | NUMBER 00 | MONTH 2023', so the 2023 year comes from an online-first header and volume/issue are omitted.",
-          "spotCheckPriority": "normal"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 39,
       "sourceFile": "Serial ultrasonography for the assessment of healing of lower extremity bone stress injury and correlation with return to sport.pdf",
       "decision": "INCLUDE",

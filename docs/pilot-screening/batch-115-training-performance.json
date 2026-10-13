@@ -305,31 +305,6 @@
       }
     },
     {
-      "originalQueueOrder": 48,
-      "sourceFile": "Velocity-based resistance training - Impact of velocity loss in the set on neuromuscular performance and hormonal response.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the text; only reference-list DOIs appear. The text is an accepted ('Just-IN') manuscript with no journal year, volume or pages printed, so year, volume and pages are left null for the operator to verify. All other fields are filled from the text.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "evidenceSummary and paper.findings: presented the CMJ advantage for VL10% as a group difference -> no significant interaction for CMJ or strength; only T10 and T20 showed a significant interaction ('significant \"time x group\" interaction (p<0.05) for T10 and T20, whereas no significant \"time x group\" interaction was observed for any strength variable or CMJ performance')",
-            "paper.findings: 'Only VL10% showed slight increases in EMG variables' -> EMG changes were not significant in either group ('both experimental groups showed no significant changes in EMG variables'; 'The VL30% group only showed in a slight increase in Fmax')",
-            "evidenceSummary and paper.findings: omitted the significant troponin T increases -> added (Table 3: VL10% +59.9%, VL30% +128.4%; 'changes in TnT protein were significantly greater in VL30%')",
-            "paper.limitations: claimed no between-group test statistics were reported -> results report interaction tests; replaced with the abstract vs results EMG conflict and estimated 1RM",
-            "screeningLimitations: updated to state that only sprint times differed significantly between groups",
-            "paper.tldr: implied jump and sprint gains were both better with 10% -> jump similar, sprint improved only in VL10%",
-            "paper.methods: added the VL30% progression from 20% to 30% ('the VL followed a progression from 20% to 30%') and troponin T measurement",
-            "paper.citation: listed 3 authors then et al. and a placeholder phrase -> first 6 authors then et al., journal and 'Accepted manuscript (Just-IN)'"
-          ],
-          "residualConcerns": "DOI and publication year not printed; operator should verify externally. Troponin T is reported in ng/mL and interpreted by the authors as a muscle-damage marker; a clinician may want to check how this is presented.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 50,
       "sourceFile": "Vibration therapy - A clinical commentary.pdf",
       "decision": "EXCLUDE",

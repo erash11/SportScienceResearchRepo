@@ -14,6 +14,14 @@ Read this first. Update it before ending every session.
 | Drive outputs | `~/Library/CloudStorage/GoogleDrive-eric.rash11@gmail.com/My Drive/00_Primary_Storage_Drive/01_PROJECTS/_STALLED/2023-09-12_SportScienceResearchRepo` (Windows: `G:\My Drive\00_Primary_Storage_Drive\01_PROJECTS\_STALLED\2023-09-12_SportScienceResearchRepo`) |
 
 ## Current state
+- 2026-10-13 (Mac): Batch 123-130 STAGED (branch `batch-123-staged`, DRAFT PR, NOT merged). Re-screen of the 72 DOI
+  candidates from 2026-10-12 (Eric chose option 1). Result: 68 INCLUDE (IDs 1927-1994), 3 DEGRADED, 1 EXCLUDE.
+  Pipeline: Haiku 5.5 draft, Opus 5.5 claim audit (all 72 CORRECTED or VERIFIED). `npm run audit` passes.
+  Published rows 1,894 -> 1,962. Next unused ID: **1995**. Eric must check before merge, in
+  `docs/pilot-screening/batches-123-130-review.md`: DOI conflicts (Q02 preprint DOI, Q25 DOI is the other journal's
+  printing, Q31 journal vs preprint, Q60 printed DOI used instead of the accepted one), decision changes (Q11
+  DEGRADED-to-INCLUDE relevance call, Q29 EXCLUDE-to-INCLUDE), DEGRADED (Q20 wrong DOI cleared, Q35 and Q45 DOI
+  blank; Crossref suggests 10.1249/jsr.0000000000000418 for Q45, unconfirmed).
 - 2026-10-12 (Mac): DEGRADED DOI lookup (Crossref). 72 DOIs accepted in `docs/doi-lookup/2026-10-12-accepted-dois.json`
   (doi.org confirmed 61; 11 publisher 403 or 202 kept). 1 unconfirmed (network error). 6 CHECK_BY_HAND and 11 NO_MATCH
   listed in `docs/doi-lookup/2026-10-12-degraded-doi-candidates.json`. Screening decisions NOT changed. Accepted DOIs
@@ -41,15 +49,21 @@ Read this first. Update it before ending every session.
   9 legacy DOI collisions). Latest handoff: `docs/handoffs/2026-10-10-cloud-batches-88-95.md`.
 
 ## Next
-- Eric: answer the open question "DOI re-screen: option 1 or 2" below. Reply `1` (re-screen the 72 accepted DOIs) or `2` (check the 6 CHECK_BY_HAND and 11 NO_MATCH first).
-- No PDF backlog left. Next work needs a decision: (a) new sources (for example, Zotero items not yet in
-  `SourcePapers/`), or (b) clear `docs/needs-eric.md` (24 wrong PDFs, 88 DEGRADED missing DOIs) so those records can be re-screened.
+- Eric: review the draft PR for `batch-123-staged` against `docs/pilot-screening/batches-123-130-review.md` and
+  decide the flagged items before merge. Merging publishes the records.
+- New sources (Zotero), not started. `zotero-research-library-pp-cli sync` ran 2026-10-13. 880 Zotero journal
+  articles have a PDF attached and a DOI, and are not in `papers.json` or any screening file. Admission needs the
+  candidate workflow (`docs/contracts/zotero-publication-candidate-v1.md`), which needs `zotero-bridge`. That
+  bridge is not on this Mac (Windows only). Zotero MCP tools return "tenant gate is not configured".
+- Clear `docs/needs-eric.md` section 1 (24 wrong PDFs) and section 2 (21 DEGRADED) when Eric has time.
   Before any new batch, check for open `batch-*-staged` branches (see Gotchas).
 - After the backlog: update the roadmap, then hand Eric the pilot launch checklist (goal E).
 - Still Eric's: name a pilot lead, pick 3 staff across 2+ disciplines, record human claim audits.
 
 ## Open questions
-- DOI re-screen: option 1 or 2? Option 1 re-screens the 72 accepted DOIs (`docs/doi-lookup/2026-10-12-accepted-dois.json`) through the batch pipeline. That uses many agent calls. Option 2 checks the 6 CHECK_BY_HAND and 11 NO_MATCH in `docs/doi-lookup/2026-10-12-degraded-doi-candidates.json` by hand first. Recommended: option 2.
+- ANSWERED 2026-10-13 (Eric): option 1. The 72 accepted DOIs went through the batch pipeline (batch 123-130, staged).
+- New sources: Zotero route or not? Needs `zotero-bridge`, which runs only on Windows. Decide where the Zotero step runs before any Zotero item is admitted.
+- Unconfirmed DOI `10.26603/ijspt20200326` (Criteria-based return to sprinting) is not in batch 123. Still needs a check at doi.org.
 - Confirm the one unconfirmed DOI, `10.26603/ijspt20200326` (Criteria-based return to sprinting progression), because the doi.org check failed with a network error.
 - Replace the 24 wrong PDFs in `docs/needs-eric.md` section 1. Each needs the correct article downloaded into `SourcePapers/` under the same filename.
 - ANSWERED 2026-10-10: Q66 and Q94 from Batch 100 (sports medicine opinion pieces, "Current Opinion" framework) stay EXCLUDE. Same rule as all opinion pieces. EXCLUDE records are not in the library. Audit notes are in the Batch 100 workdir (`~/Library/Caches/sportsci-batch-100/verified/`).

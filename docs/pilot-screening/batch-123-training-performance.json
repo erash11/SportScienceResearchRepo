@@ -1,0 +1,640 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-123-training-performance",
+  "screenedOn": "2026-10-13",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Training & Performance queue positions 10-72. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 10,
+      "sourceFile": "Considerations for Velocity Based Training - The instruction to move as fast as possible is less effective than a target velocity .pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 32115,
+        "doi": "10.1519/jsc.0000000000003233",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Within-subject crossover study of 13 male powerlifters (mean age 26.8 years, at least one sanctioned competition) who completed two sessions in randomised order. In each session they performed 4 sets of 5 bench press repetitions at 45% 1RM, instructed either to reach a target mean velocity of 1.0 m/s or to move as fast as possible. The fastest repetition velocity in each set was higher with the target instruction (0.84 vs 0.82 m/s, p=0.0002), and the number of repetitions completed in a subsequent 75% 1RM set did not differ (9.6 vs 10.0, p=0.43).",
+      "limitations": "Only 13 powerlifters were analysed, on one exercise and one load, with both conditions given feedback after each repetition. The outcome was the fastest repetition of each set, and the authors note that an average of all repetitions might have shown no difference. The 1.0 m/s target was fixed rather than individualised, and only one participant reached it.",
+      "synthesisCaution": "Staff could read the 0.02 m/s difference in best-repetition velocity as evidence that target velocity improves training adaptations or strength, when the study measured only same-session velocity and one repetition test.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings/methods: described the 0.84 vs 0.82 m/s outcome as mean velocity across the sets -> it is the fastest mean velocity in each set ('The fastest mean velocity attained with a 45% 1RM load during each 5-repetition set was the dependent variable')",
+            "screeningLimitations/limitations: added the authors' caveat that all-repetition averages may not differ ('if all repetitions in a set were considered ... there may have been no statistically significant differences')",
+            "practicalImplications/athleteDev: 'attainable velocity target' -> the target was not attained by most ('One participant exceeded this 1.00 m/s target')",
+            "citation: removed placeholder note and 00(00) issue string"
+          ],
+          "residualConcerns": "PDF prints 2019 (online-first, 'J Strength Cond Res XX(X): 000-000, 2019') while crossrefYear is 2021, probably the issue year. PDF year kept per rules; reviewer should confirm.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1927",
+        "synthesisBatch": "pilot-synthesis-batch-123",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 12,
+      "sourceFile": "Effects of four different velocity-based training programming models on strength gains and physical performance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 46322,
+        "doi": "10.1519/jsc.0000000000003934",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomised comparison of four 8-week velocity-based back squat programmes (linear, undulating, reverse and constant) in 43 young, moderately strength-trained men (physically active sport science students, 1.5 to 4 years of resistance training experience) who trained twice a week. All four groups increased 1RM squat, squat velocity, countermovement jump height and 20 m sprint performance within the group (for example, 1RM gains of 10.9% to 18.0%), but the authors report no significant group by time interactions for any outcome.",
+      "limitations": "The sample was young, moderately strength-trained men who were physically active sport science students, not described as competitive athletes, and the study used a Smith machine and only two sessions a week. There was no non-training control group, and the constant group trained at a higher mean relative intensity than the others, so the study shows no detectable difference between models rather than a ranking of them.",
+      "synthesisCaution": "Staff could read the within-group gains as proof that a given velocity-based programme works, when the study found no significant between-model differences and had no untrained control group.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: added the abstract vs Table 2 conflict ('All groups trained with similar relative average intensity (67.5% 1RM)' vs 'The CP group trained with higher MRI-MPV than the other groups (CP: 0.88 ... [~67.5% 1RM] vs. LP: 0.96 ... [~62.5% 1RM]')",
+            "findings: 'constant group trained with slower average velocity' -> also higher mean relative intensity; added interaction p-values",
+            "screeningLimitations: 'groups differed in training intensity and loading patterns' -> stated the specific difference and the lack of a control group",
+            "practicalImplications: 'which matters if strength gain is the priority' -> removed advice built on a non-significant observation ('no statistically significant differences between groups were found in the evolution of the estimated 1RM')",
+            "athleteDev: causal wording softened because there was no control group",
+            "citation: removed placeholder note"
+          ],
+          "residualConcerns": "PDF prints 2020 (online-first, 'XX(X): 000-000, 2020') while crossrefYear is 2021. Figure 1 legend gives n=46 with 12 per group in three groups, while all other results use n=43.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1928",
+        "synthesisBatch": "pilot-synthesis-batch-123",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 13,
+      "sourceFile": "Effects of low load resistance training with vascular     occlusion on the mechanical properties of muscle and tendon.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 29808,
+        "doi": "10.1123/jab.22.2.112",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 403 (publisher blocks automated check)"
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Within-subject study in nine healthy young men (age 25 years) who trained one knee extensor with low load (20% 1RM) and vascular occlusion, and the other with high load (80% 1RM) without occlusion, three times a week for 12 weeks. Both protocols increased maximal isometric torque and quadriceps muscle volume. Within each leg, only high-load training significantly increased vastus lateralis specific tension (5.5%), voluntary activation and tendon-aponeurosis stiffness (45.6 to 59.3 N/mm), but the direct comparisons between protocols were not statistically significant.",
+      "limitations": "Only nine men were studied, the design compared two legs in each person over one exercise, and no sport or performance task was measured. The between-protocol differences in strength gain (p=0.107) and stiffness gain (p=0.131) were not statistically significant, so the contrast rests on within-leg changes.",
+      "synthesisCaution": "Staff could read the tendon result as showing that occlusion training fails to adapt tendon or that high-load training is needed for tendon health, when the direct comparison between protocols was not significant and only nine healthy men were studied.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/tldr/athleteDev: within-leg significance was presented as a difference between methods ('appear to adapt the muscle-tendon unit differently') -> stated that between-protocol tests were not significant ('tended to be greater for HL than for LLO (p = 0.131)')",
+            "screeningLimitations: 'only borderline (p=0.107 and p=0.131)' -> not statistically significant; removed muddled statement about uncorrected tendon outcome (only patella tendon elongation was uncorrected: 'we did not correct for the measurement of patella tendon elongation')",
+            "findings: added voluntary activation and mEMG results that underpin the authors' conclusion ('increased significantly, 3.2% for HL (p = 0.031), but not for LLO'); consolidated to 3 sentences",
+            "limitations: added text vs Table 1 conflict on muscle volume change (text 5.9% LLO; table 1892 to 2032 cm3)",
+            "populations: Mixed / Unspecified -> Adult / Recreational (healthy non-athlete young men)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1929",
+        "synthesisBatch": "pilot-synthesis-batch-123",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 19,
+      "sourceFile": "How Do They Decide - Performance Support Staff Perceptions of Decision-Making in Elite-Sport Environments.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 46409,
+        "doi": "10.1519/jsc.0000000000004989",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Online mixed-methods survey of 191 performance support staff (179 men, 12 women) working in professional (n = 147) or international (n = 44) sport, recruited by social media and referral. Most rated decision-making as very important (98% scored 5 or higher on a 7-point scale), but only 31% had formal decision-making training, 69% had no formal strategy for scoring key decisions, and 22% consistently reviewed and updated plans. Thematic analysis of open responses identified environmental pressures, lack of systems, underdeveloped decision skills, dysfunctional team dynamics and cognitive biases as obstacles.",
+      "limitations": "Nonprobability recruitment from the authors' networks and a sample that is 94% male limit generalizability. The findings describe staff perceptions rather than measured decision quality or athlete outcomes.",
+      "synthesisCaution": "Staff could read the survey percentages as a measure of how common poor decision-making is across elite sport, when this was a self-selected sample of mostly men recruited through the authors' networks.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: ['Professional / Elite'] -> ['Mixed / Unspecified'] because the sample is staff, not athletes (INSTRUCTIONS: non-athlete samples such as staff use 'Adult / Recreational' or 'Mixed / Unspecified')",
+            "screeningLimitations: removed the tagging justification sentence, which is not a limitation of the evidence",
+            "evidenceSummary: added the professional (n = 147) and international (n = 44) split ('professional (n 5 147) or international (n 5 44)')"
+          ],
+          "residualConcerns": "Year: the PDF prints 2024 (online-first, J Strength Cond Res 00(00), downloaded 01/20/2025) while crossrefYear is 2025, likely the issue year. The PDF year 2024 is kept per the batch rule; a reviewer may want to update year and add volume and pages once the issue citation is confirmed.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1930",
+        "synthesisBatch": "pilot-synthesis-batch-123",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 24,
+      "sourceFile": "Ischemic strength training - a low load alternative to     heavy resistance exercise.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 40,
+        "extractedCharacters": 100891,
+        "doi": "10.1111/j.1600-0838.2008.00788.x",
+        "doiVerification": "Crossref title match (similarity 0.994) on 2026-10-12; doi.org HTTP 403 (publisher blocks automated check)"
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Performance",
+        "Rehabilitation",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of strength training combined with vascular occlusion (ischemic or Kaatsu training), covering motor unit recruitment, hormones, growth factors, safety, cuff width and dose. The authors cite 13 training studies with 116 subjects, mostly untrained or physically active adults with a few studies in older adults, rugby players and track athletes, in which low-load training with a cuff produced strength and muscle size gains comparable to heavy training in several studies. They conclude the method appears relatively safe in the short term, but the mechanisms are unclear and tendon and possibly neural adaptations appear smaller than with heavy training.",
+      "limitations": "The review states it summarizes current opinion and mentions a literature search without describing its method, so study selection cannot be reproduced. Most training studies lasted 2 to 8 weeks, and much of the safety data comes from a national survey published by the same research group that ran most of the training studies.",
+      "synthesisCaution": "Staff could assume that low-load cuff training matches heavy lifting for every goal, when the paper reports smaller tendon and possibly neural effects and notes that the occlusion groups trained to failure while most comparison groups did not.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.rtp: 'Any use should be under clinical oversight' is not in the paper -> rehab positioning and the Kubo tendon finding ('only the high load protocol significantly increased stiffness in the tendon-aponeurosis complex')",
+            "screeningLimitations: 'describes no search method' -> mentions a search without a method ('In our literature search, we found 13 training studies'); removed 'two of 16 weeks' detail as the Kubo study ran 12 weeks",
+            "synthesisCaution: 'most gains came from sets taken to or near failure' -> occlusion groups trained to failure while comparison groups generally did not ('the groups that have trained without tourniquets have generally not trained to failure, whereas the occlusion groups have')",
+            "evidenceSummary: sample description extended to the older adults, rugby players and track athletes listed in Table 1",
+            "paper.findings: added 12-week duration, muscle activation result and 105 centers ('based on reports from 105 training centers in Japan')"
+          ],
+          "residualConcerns": "The PDF is a journal page proof ('Manuscript ID: draft', 'Date Submitted by the Author: n/a') with no publication year, volume or pages printed. Year 2008 is taken from crossrefYear and is consistent with the newest references (2008, including an Epub January 2008). Final published wording may differ from the proof.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1931",
+        "synthesisBatch": "pilot-synthesis-batch-123",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 26,
+      "sourceFile": "Managing Fatigue in Team Sports - A Brief Review of Concurrent Training Effects Within the Microcycle.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 64514,
+        "doi": "10.1519/ssc.0000000000000903",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Narrative review of concurrent training (combined resistance and energy-system conditioning) and fatigue management in high-intensity intermittent team sports, with a decision tree for adjusting training within a microcycle. No search method or sample is described; the review draws on cited studies and practical experience across training variables (intensity, volume, session order) and nontraining factors (travel, sleep, nutrition). The authors offer adaptable guidelines, with the decision tree presented as a starting point rather than a prescription.",
+      "limitations": "This is a narrative review with no described search, so the selection of evidence cannot be checked. The authors state that RPE and RIR autoregulation research mainly involves recreational and powerlifting trainees, that molecular interference evidence comes mostly from lower-body samples, and that travel management recommendations rely mainly on expert opinion.",
+      "synthesisCaution": "Staff could treat the volume, session order and nutrition suggestions as settled rules for team sport athletes, when the review calls them guidelines and notes the evidence for them is limited.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'much of the concurrent training data comes from recreational, powerlifting' -> that statement is about RPE/RIR autoregulation research ('Current research primarily focuses on recreational and powerlifting trainees'); 'travel and sleep recommendations rest mainly on expert opinion' -> travel only ('recommendations for management strategies predominantly rely on expert opinions')",
+            "paper.limitations: 'interference-effect evidence comes from untrained, endurance or resistance-trained cohorts' misread -> text says molecular responses vary across those cohorts and literature cohorts likely have lower training age than team sport athletes",
+            "identityCheck: 'matches the Crossref record' overclaimed (only crossrefTitle and crossrefYear were available) -> matches crossrefYear"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1932",
+        "synthesisBatch": "pilot-synthesis-batch-123",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 34,
+      "sourceFile": "Position-Specific Longitudinal Assessment of Total and Regional Body Composition in NCAA Division I Football Players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 39636,
+        "doi": "10.1519/jsc.0000000000005303",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Nutrition & Hydration"
+      ],
+      "audiences": [
+        "Performance",
+        "Nutrition",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Collegiate"
+      ],
+      "evidenceSummary": "This longitudinal analysis of previously collected DXA scans included 188 male NCAA Division I football players with paired preseason and postseason scans (376 scans) from 2019 to 2023, grouped into nine position groups. Total lean mass decreased from preseason to postseason in defensive backs, offensive linemen, punters/kickers, running backs, tight ends and wide receivers, and gynoid lean mass decreased in all positions except quarterbacks. Total body mass and fat mass did not change significantly across the season for the whole cohort.",
+      "limitations": "This is a single-season, retrospective analysis without nutrition, training or performance data, so the lean mass changes cannot be attributed to any specific in-season factor. Several position groups are small (n = 10 to 14), and the authors note that players' seniority and eligibility year were not recorded.",
+      "synthesisCaution": "Staff could read the in-season lean mass losses as caused by the training or nutrition load of the season, when the study recorded neither training nor nutrition data.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr: gynoid region described as 'lower trunk' -> 'hips and upper thighs' ('gynoid (region including hips and upper thighs)')",
+            "paper.findings: 'Leg lean mass decreased in most positions' made specific ('leg LM decreased ... in DBs, DLs, OLs, PKs, RBs, TEs, and WRs')",
+            "paper.limitations: added Discussion vs Results conflict on DL total lean mass ('decreased in every position except LBs and QBs' vs 'no significant changes in total LM in DLs, LBs, or QBs') and duplicated table values (Table 3 arm LM row identical to Table 2 total BMC row)"
+          ],
+          "residualConcerns": "PDF year is 2025 ('J Strength Cond Res XX(X): 000-000, 2025', 'Copyright 2025') but crossrefYear is 2026; PDF year kept. Several table values appear to be copy errors (Table 2 total BMC equals Table 3 arm LM; Table 1 total mass 187.9 kg; Table 5 DB leg LM SD 29.84; Table 6 RB and TE gynoid FM equal their android FM), so a reviewer should not quote BMC or gynoid FM numbers from this paper.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1933",
+        "synthesisBatch": "pilot-synthesis-batch-123",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 35,
+      "sourceFile": "Power-Time Curve Comparison between Weightlifting Derivatives.pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text. The batch externalDoi (10.1123/ijspp.2016-0147) belongs to the Crossref title Force-Time-Curve Comparison Between Weight-Lifting Derivatives, a different IJSPP paper by the same authors that this PDF cites separately in its reference list, so it was not used. The operator should find the DOI for this JSSM 2017;16:407-413 article.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "decision: DEGRADED confirmed. Text matches the filename ('Power-Time Curve Comparison between Weightlifting Derivatives', JSSM 2017) but not crossrefTitle; the reference list cites the Crossref title as a separate paper ('Suchomel, T.J. and Sole, C.J. (2016) Force-time curve comparison between weightlifting derivatives. International Journal of Sports Physiology and Performance'), so externalDoi was not used and doi stays empty",
+            "degradedReason/identityCheck: shortened; removed the cited volume/pages (11, 61-65) because the same numbers are printed for a different reference (Suchomel 2016b), so they are unreliable",
+            "paper.tldr: 'jump shrug and hang high pull outperformed the hang power clean across the loads tested' -> HHP did not exceed HPC at 80% ('With the exception of 80% 1RM HPC, the HHP also produced greater PPRel at every load'; Table 2 44.9 vs 45.1 W/kg)",
+            "paper.methods: 'four testing sessions after a 1RM test' -> four sessions in total, the first being the 1RM test ('All data were collected during four separate testing sessions. The first testing session was to determine each participant's 1RM HPC')",
+            "paper.findings: added HHP vs HPC relative work (d = 0.73)",
+            "paper.limitations: added abstract vs results effect size conflict ('d = 0.80' abstract vs 'd = 0.79' results); removed non-limitation about single force platform"
+          ],
+          "residualConcerns": "Own DOI not printed and the Crossref match (similarity 0.934) is the authors' companion force-time paper, so the operator must look up the DOI for J Sports Sci Med 2017;16:407-413 before upgrading. Sample mixes NCAA Division III track and field athletes with club or intramural players, so the Male Athletes tag is approximate.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 41,
+      "sourceFile": "Rapid increase in plasma growth hormone after low     intensity resistance exercise with vascular occlusion.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 30191,
+        "doi": "10.1152/jappl.2000.88.1.61",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 403 (publisher blocks automated check)"
+      },
+      "studyDesign": "Laboratory / Experimental Study",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Acute, within-subject study in six young male athletes (aged 20-22) who did five sets of bilateral seated knee extensions at about 20% of 1RM to exhaustion, once with a thigh pressure tourniquet (214 mmHg) and once without, one week apart with matched intensity and repetitions. With occlusion, plasma lactate, norepinephrine and growth hormone (GH) rose sharply, and GH reached about 290 times resting level 15 min after exercise, while the control session caused little change. IL-6 rose gradually and stayed slightly above control at 24 h, CPK and lipid peroxide did not differ significantly, and EMG activity per concentric action was about 1.8 times higher with occlusion.",
+      "limitations": "This was one acute session in six men, with the control session a week later, so it cannot show hypertrophy or strength change even though the authors discuss both. Muscle damage was inferred only from CPK, lipid peroxide and IL-6, and no vascular or tissue outcomes were measured.",
+      "synthesisCaution": "Staff could read the large GH rise as evidence that very light occlusion training builds muscle, but the study measured hormones and EMG in a single session and reported no training outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.rtp: 'healthy young male athletes' -> 'young male athletes'; health status is not stated ('Six young male athletes aged 20-22 yr volunteered for the study')",
+            "paper.citation: added issue (1), printed in the article URL ('/content/88/1/61')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1934",
+        "synthesisBatch": "pilot-synthesis-batch-123",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 50,
+      "sourceFile": "Strength training - In search of optimal strategies to maximize neuromuscular performance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 55,
+        "extractedCharacters": 82872,
+        "doi": "10.1249/jes.0000000000000234",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Perspective-style narrative review (no search method is described) comparing high-load strength training with low-load exercise under blood flow restriction (BFR), and summarising meta-analyses that disagree on whether high-load training gives larger strength gains while showing similar hypertrophy. The authors also report their own 3/7 method studies: in a 12-week bench press study in physically active people, 1RM rose 29.8% with 3/7 versus 21.8% with volume-matched 4x6 (p < 0.05), although doubling volume (8x6) gave a larger 1RM gain (35.9%) than 3/7.",
+      "limitations": "This is a narrative perspective with no described search, so the selection of studies cannot be checked. It relies heavily on the authors' own 3/7 studies, the text does not give their sample sizes, and the authors state that their proposed protocols need more testing.",
+      "synthesisCaution": "Staff could read the 3/7 method as a proven superior protocol, when the advantage comes from the authors' own studies in active or moderately trained people, a higher-volume 8x6 protocol gave a larger bench press 1RM gain, and the paper calls for more experiments.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: 'a high-load advantage of about 7% appeared in one analysis and not in another' -> two meta-analyses showed smaller BFR strength gains (7% in Lixandrao), one showed none ('One analysis on patients ... and another analysis on various population ... both indicated that the increase in muscle strength was less after low-load exercise training with BFR')",
+            "evidenceSummary/limitations/synthesisCaution: added that 8x6 beat 3/7 for bench press 1RM (35.9%) and peak power ('Doubling the number of sets ... slightly increased (p<0.05) the gain in 1RM load (35.9%) compared with the 3/7 method')",
+            "practicalImplications: garbled 'combining heavy loads and moderate loads with brief rests' -> the three options the authors list (alternate high-load and low-load BFR, moderate-to-high loads with brief rests, or periodise)",
+            "athleteDev: removed 'heavier loads with longer rests' as an authors' recommendation and added the 8x6 caveat"
+          ],
+          "residualConcerns": "Year: PDF is the 2020 published-ahead-of-print version (accepted 07/20/2020, copyright 2020); Crossref gives 2021 (issue year). 2020 kept per rule.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1935",
+        "synthesisBatch": "pilot-synthesis-batch-123",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 61,
+      "sourceFile": "The influence of movement tempo on acute neuromuscular, hormonal, and mechanical responses to resistance exercise - A mini review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 100352,
+        "doi": "10.1519/jsc.0000000000003636",
+        "doiVerification": "Crossref title match (similarity 0.996) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Mini review of isotonic resistance-exercise studies that varied movement tempo (the eccentric, pause, concentric and pause durations of each repetition), identified through keyword searches of seven databases with stated inclusion criteria. The included studies were mostly small acute experiments in resistance-trained or recreationally trained adults, and the review does not pool effect sizes. It reports that slower tempos lower the load and number of repetitions a lifter can complete while increasing time under tension, and that lactate, hormone, EMG, RPE and muscle damage responses are inconsistent across studies.",
+      "limitations": "The review gives a narrative synthesis with no pooled estimates or formal quality appraisal, so the strength of each finding is hard to judge. Most included studies were small, single-session, and used different tempo notation, loads and exercises, which limits direct comparison. Some practical recommendations rest on the authors' example programs and unpublished data rather than the reviewed studies.",
+      "synthesisCaution": "Staff could read tempo as a proven lever for strength or muscle gain, when the review covers acute single-session responses only and its hormone and lactate findings are inconsistent.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "methods: called it a 'narrative mini review', conflicting with the Systematic Review coding -> describes the stated database search and inclusion criteria and what is missing",
+            "findings: 'EMG, RPE, muscle damage or cardiovascular ... findings were mixed' -> blood pressure studies showed no clear tempo effect and the one DOMS study favoured faster eccentrics (Arazi and Chegini)",
+            "practicalImplications: trial-and-error statement misattributed -> authors say programming is trial and error only without tempo-specific testing",
+            "screeningLimitations: added reliance on example programs and unpublished data"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1936",
+        "synthesisBatch": "pilot-synthesis-batch-123",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 67,
+      "sourceFile": "Velocity-based resistance training - Impact of velocity loss in the set on neuromuscular performance and hormonal response.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 47,
+        "extractedCharacters": 86006,
+        "doi": "10.1139/apnm-2019-0829",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 403 (publisher blocks automated check)"
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Randomized two-group study of 25 young healthy men (10% velocity loss per set, n = 12; 30% velocity loss, n = 13) who trained twice weekly for 8 weeks with velocity-based full-squat sets at 70-85% 1RM. Both groups improved strength and the fatigue test similarly; the 10% group had larger percentage gains in countermovement jump and was the only group to improve 10 m and 20 m sprint time, despite about half the repetitions. The only significant time-by-group interactions were for sprint times; strength, jump, EMG and hormone changes did not differ significantly between groups.",
+      "limitations": "Small sample of physically active sport science students with 1-3 years of resistance training, not athletes, with two training arms and no untrained control. Only the full squat was trained and tested, the 1RM was estimated from bar velocity, and most hormone and EMG changes were not significant. The dose-response curves combine four group means from this and an earlier study by the same group.",
+      "synthesisCaution": "Staff could read the 10% velocity-loss result as proof that low-fatigue sets are superior for athletes in general. This was an 8-week study in active students; strength and jump differences between groups were not significant, and only sprint time differed by group.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added the troponin T conflict ('changes in TnT protein were significantly greater in VL30% than in VL10%' vs 'There was no significant time x group interaction for any hormonal or biochemical marker')",
+            "paper.tldr: 'only the 30% group showed a larger rise in troponin T' -> troponin T rose in both groups, more in the 30% group (Table 3: 59.9% ** and 128.4% ***)",
+            "evidenceSummary/synthesisCaution: stated that sprint time was the only significant group interaction ('significant time x group interaction (p<0.05) for T10 and T20, whereas no significant ... for any strength variable or CMJ')",
+            "paper.methods: added that the 30% group progressed from 20% to 30% loss ('the VL followed a progression from 20% to 30%, the average VL ... being 29.4 ± 1.3%')",
+            "paper.athleteDev: repetitions per set 'about 2 to 4' -> about 2 to 3 as performed (Table 1 overall 2.3 ± 0.2; the authors' text says 2-4)",
+            "screeningLimitations: added prior training experience and the pooled four-point dose-response curves ('results of both the present study and those obtained by Pareja-Blanco et al. (2017c) were used')"
+          ],
+          "residualConcerns": "Troponin T is reported in ng/mL with resting values of 3.4 to 7.9 ng/mL, which would be far above clinical cardiac thresholds; the unit is probably misprinted, and the authors interpret it as muscle damage although the cited source concerns cardiac biomarkers. Staff should not read this as cardiac injury from squat training. Accepted manuscript; final version may differ.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1937",
+        "synthesisBatch": "pilot-synthesis-batch-123",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 72,
+      "sourceFile": "Zurich to Berlin - ‘‘Where’’ Are We Now with the Concussion in Sport Group_.pdf",
+      "decision": "EXCLUDE",
+      "exclusionReason": "(b) commentary or opinion: a section-by-section critique of the 5th Concussion in Sport Group consensus statement (Berlin 2016). It has no original methods and no structured review of evidence; it summarizes one published statement and adds the authors' opinions (for example, calling for an end to baseline computerized neuropsychological testing and a 10-day wait before contact). Staff needing guidance should use the consensus statement and its systematic reviews directly.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper: null -> year, citation and DOI filled, because the batch addendum requires paper.doi = externalDoi when identity matches (Crossref 'Zurich to Berlin, \"Where\" Are We Now with the Concussion in Sport Group?', 2018; PDF 'Volume 17 Number 1 January 2018', '1537-890X/1701/26-30')",
+            "exclusionReason: tightened; removed the suggestion to upgrade to INCLUDE and stated why it is commentary ('We review significant updates' of one statement, with opinion such as 'organizations, and schools should discontinue the unnecessary practice of baseline testing')"
+          ],
+          "residualConcerns": "Decision confirmed as EXCLUDE (b), but it is borderline: the abstract says 'We review significant updates' and it sits in a review journal, so a reviewer could class it as a clinical review. It reviews a single consensus document rather than a body of evidence, and its own additions (10-day repeat-concussion window, discontinuing baseline testing) are opinion supported by a few cited studies. Concussion and return-to-play content is clinically sensitive, and the CISG statement it discusses may since have been superseded.",
+          "spotCheckPriority": "high"
+        }
+      }
+    }
+  ]
+}

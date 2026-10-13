@@ -63,31 +63,6 @@
         "synthesisBatch": "pilot-synthesis-batch-118",
         "publishedOn": "2026-10-11"
       }
-    },
-    {
-      "originalQueueOrder": 70,
-      "sourceFile": "Whole-Body Cryotherapy in Sports Medicine.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text; only reference-list DOIs appear. All other fields are readable and complete. The operator may verify the DOI externally and upgrade the decision.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "populations: 'Professional / Elite' -> 'Mixed / Unspecified' (cited samples include 'physically active males', 'students from the Polish National Military Academy', 'overweight and obese men' and patients alongside professional athletes)",
-            "evidenceSummary and paper.findings: 'Anti-inflammatory and lipid findings are mixed' -> reported as favourable; mixed findings are CK, haematology, cortisol and functional recovery ('the evidence suggests that WBC has a net positive effect on an individual's lipid profile'; CK: 'the evidence is mixed')",
-            "evidenceSummary: 'mostly small samples of professional rugby, tennis and kayak athletes' -> adds physically active men, students and patients",
-            "paper.findings: added the null functional-recovery studies ('WBC had no effect on knee joint position sense ... or muscle soreness'; review of 'four laboratory-based randomized controlled trials with no reported benefits') and the osteoprotegerin rise",
-            "paper.tldr and paper.practicalImplications: 'monitor blood pressure and heart rate responses' -> skilled supervision and caution with cardiovascular disease, since the text does not advise monitoring ('WBC should only be performed in the presence of skilled personnel'; 'Caution must be taken in patients with pre-existing cardiovascular issues')",
-            "paper.limitations: 'safety data are largely from case reports' -> 'only two complications cited come from case reports' ('There are only two published complications related to WBC')",
-            "paper.athleteDev: removed claim about training adaptation, which the review does not discuss; added the tennis shot-accuracy result",
-            "paper.rtp: 'not injury rehabilitation' -> notes the adhesive capsulitis, osteoarthritis and rheumatoid arthritis patient trials the review does cite"
-          ],
-          "residualConcerns": "Own DOI not printed. Another paper in this batch (Q69 reference 5) cites this article as doi 10.1249/JSR.0000000000000584; the operator should confirm externally before upgrading.",
-          "spotCheckPriority": "high"
-        }
-      }
     }
   ]
 }

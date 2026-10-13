@@ -1188,25 +1188,6 @@
         "synthesisBatch": "pilot-synthesis-batch-51",
         "publishedOn": "2026-10-09"
       }
-    },
-    {
-      "originalQueueOrder": 95,
-      "sourceFile": "Exertional Heat Stroke, the Return to Play Decision, and the Role of Heat Tolerance Testing- A Clinician’s Dilemma.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the text. Only the ISSN line appears, and no DOI is given for this article. All other fields are complete and were filled from the readable text.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "paper.findings: omitted that 'Only one of the six recurrent events was diagnosed as EHS and involved a heat-tolerant individual' -> added",
-            "screeningLimitations/synthesisCaution/tldr/rtp: 'not validated as a diagnostic tool' -> 'data are currently insufficient to support HTT as a diagnostic test'; quoted 'our collective opinion'"
-          ],
-          "residualConcerns": "DEGRADED for missing own DOI (Curr Sports Med Rep 2018;17(7):244-248). Special communication with an opening case and explicit collective-opinion conclusions; kept as Narrative Review because it reviews ACSM guidance, military epidemiology and IDF test data, but a reviewer may judge it closer to an opinion piece. Clinically sensitive return-to-play content.",
-          "spotCheckPriority": "high"
-        }
-      }
     }
   ]
 }

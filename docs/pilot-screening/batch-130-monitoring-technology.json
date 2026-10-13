@@ -1,0 +1,1054 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-130-monitoring-technology",
+  "screenedOn": "2026-10-13",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Monitoring & Technology queue positions 2-68. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 2,
+      "sourceFile": "A cherry tree ripe for picking - The relationship between the acute-chronic workload ratio and health problems.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 26,
+        "extractedCharacters": 55879,
+        "doi": "10.31236/osf.io/nhqbx",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Performance",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Youth / Adolescent",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "A prospective cohort of 86 elite U-19 football players (47 male, 39 female, from six teams) logged daily training load (session RPE times duration) and health problems for 105 days, recording 196 health problems. Of 108 random-effects analyses of acute:chronic workload ratio (ACWR) variants against three health outcomes, the text reports 24 (22%) as significant, while Table 2 and the figure add up to 22; significance was most common with EWMA-based ACWR and low-versus-high comparisons. The authors frame the study as a critique showing that results depend on method choices.",
+      "limitations": "Daily self-report questionnaires that were not validated, with 31% of daily questionnaires unanswered and no adjustment for sex, age or clustering in the main models. Only about one in five analyses was significant and the authors state the study is not evidence for an ACWR-injury relationship, so the paper cannot show that ACWR predicts health problems.",
+      "synthesisCaution": "Staff may read the significant ACWR associations as evidence that ACWR predicts injury, when the authors present the study as a critique of methods and say it is not evidence for that relationship.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings/evidenceSummary: total significant analyses -> Table 2 subgroup counts (e.g., comparisons 2+8+12, outcomes 11+9+2) and the forest-plot CIs both sum to 22, not the 24 stated in the abstract and Results text; now reported as a conflict",
+            "findings: largest OR attributed to 'non-coupled 7:28 rolling-average z-score' from the figure label -> assigned to coupled 7:21 EWMA pre-defined, where Table 2 low-to-high ranges put the 15.25 upper CI (EWMA, 21-day, coupled, pre-defined) and text says 'coupled 7-day acute, 21-day chronic ... EWMA ... pre-defined categories (OR: 5.27)' and figure row labels contradict Table 2 (figure shows non-coupled rows with 15 significant results, Table 2 gives non-coupled 7 (19%))",
+            "limitations: removed comparisons whose direction was not a true conflict; added 88 unclassified problems and the 29% under-reporting figure ('Thirteen players (29%) admitted they had not reported all health problems')",
+            "identityCheck/confidence: flagged OSF-prefix DOI vs JOSPT manuscript; confidence lowered to medium"
+          ],
+          "residualConcerns": "externalDoi 10.31236/osf.io/nhqbx is an OSF/SportRxiv-style preprint DOI, while the PDF is the JOSPT accepted manuscript; kept per the batch addendum because title and authors match crossrefTitle, but a reviewer should decide whether the JOSPT version DOI should replace it. The PDF prints no year ('Copyright (c) ${year}'), so 2020 relies on crossrefYear, which comes from the same preprint record; if the JOSPT DOI is substituted, the year must be rechecked too. Internal number conflicts (24 vs 22 significant; figure labels vs Table 2) are in the source itself.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1976",
+        "synthesisBatch": "pilot-synthesis-batch-130",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 3,
+      "sourceFile": "A Review of the Validity and Reliability of Accelerometer-Based Metrics From Upper Back–Mounted GNSS Player Tracking Systems for Athlete Training Load Monitoring.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 106667,
+        "doi": "10.1519/jsc.0000000000004835",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Rugby",
+        "Other Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "A narrative review of accelerometer-based load metrics (PlayerLoad, Body Load, Dynamic Stress Load) from upper back-mounted GNSS units in team sports. The authors report that reliability of the raw accelerometer data is mostly high to very high, while metric reliability and validity against motion capture and ground reaction force vary with filtering, device and activity. Links to internal load and injury are mixed: the main injury result cited is a 4-week PlayerLoad accumulation with an AUC of 0.585, which the authors call moderate.",
+      "limitations": "The review describes no search strategy or inclusion criteria, so the evidence base cannot be checked for completeness. Most validity and reliability data come from single devices, specific filters and short activity protocols, and the authors note that internal biomechanical load is rarely measured.",
+      "synthesisCaution": "Staff may treat PlayerLoad or Dynamic Stress Load as valid measures of tissue load or injury risk, when the review finds the injury and internal-load links are weak or mixed and the metrics are not comparable across devices, manufacturers or athletes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings/rtp: 'moderate association' for injury stated without context -> AUC 0.585 (95% CI 0.482-0.672) reported as the authors' 'moderate' label, with note that the printed CI includes 0.5",
+            "findings: 'metrics correlate moderately to very highly with distance' generalized PlayerLoad to all metrics -> PlayerLoad r = 0.70 to 0.98; Dynamic Stress Load 'no correlation (r = -0.01) with distance covered per minute' in futsal",
+            "findings: 'mostly good CVs' applied to raw data only -> added that metric CVs were poor in Barreira et al. (PL CV 14.5-24.5%, Table 5)",
+            "practicalImplications: recommendation to use PlayerLoadSlow for rugby collisions removed -> Hulin et al. 'reported a lower correlation for PlayerLoadSlow ... should be used with caution'; added authors' 20 Hz / 10 Hz filtering guidance"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1977",
+        "synthesisBatch": "pilot-synthesis-batch-130",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 4,
+      "sourceFile": "A systematic review and meta-analysis of wearable satellite system technology for liner sprint profiling - Technological innovations and practical applications.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 68932,
+        "doi": "10.1519/jsc.0000000000004689",
+        "doiVerification": "Crossref title match (similarity 0.997) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Track & Field",
+        "Soccer",
+        "Rugby",
+        "Ice Hockey",
+        "Other Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "A systematic review with meta-analysis of 16 concurrent validity and reliability studies of GNSS sensors for linear sprint profiling in athletes from recreationally trained to elite level (PubMed and SPORTDiscus, searched to July 2023). Against radar or laser criteria, pooled standardized mean differences were small for maximal sprint speed (d = 0.22, 95% CI 0.01 to 0.42, the only estimate whose CI excluded zero), tau, V0, relative F0 and relative Pmax, with moderate to high heterogeneity. Sampling rate and manufacturer moderated results, and the acceleration metrics tau and F0 showed weaker agreement and reliability than speed metrics.",
+      "limitations": "Only 16 small studies were retained, the meta-analysis used radar- or laser-criterion data only, and heterogeneity was high across devices, filters, protocols and criteria. Several manufacturers' processing steps are undisclosed, so the pooled estimates cannot be applied to a specific device without checking its own validity.",
+      "synthesisCaution": "Staff may read the small pooled effects as proof that any GNSS device gives valid sprint-profile metrics, when tau and F0 had poor signal-to-noise and CVs above 5%, and agreement depended on sampling rate, filtering and manufacturer.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: 'most with radar or laser criteria' was wrong -> radar (3,11,13,36,45) and laser (32,45,56) cover 7 studies; timing gates (2,3,5,31,48), video (6) and sliding platform (1) the rest",
+            "findings/evidenceSummary: added that MSS is the only pooled CI excluding zero and that at >=10 Hz MSS SMD was 0.11 (95% CI -0.04 to 0.26) (Table 5)",
+            "synthesisCaution/practicalImplications: Pmax grouped with tau and F0 as weakly reliable -> text reports 'CVs <5% for MSS, V0, and relative Pmax, whereas F0 and t were >5%' and signal-to-noise 'good for MSS, V0, and Pmax, but poor for F0 and t'",
+            "limitations: timing-gate statement sharpened to 'timing gates ... overestimates certain FV metrics associated with the acceleration phase'; added 'only 2 GNSS studies reported all specific filtering specifications'",
+            "populations: added Healthy Athletes (exclusion criterion: 'subjects had any musculoskeletal disorders')"
+          ],
+          "residualConcerns": "PDF prints 2023 ('J Strength Cond Res XX(X): 000-000, 2023', online-first version) while crossrefYear is 2024; PDF year kept per rule. Final volume, issue and pages are not printed, so the citation has none.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1978",
+        "synthesisBatch": "pilot-synthesis-batch-130",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 17,
+      "sourceFile": "Focused review of sleep wearable technology and its application in sports performance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 39022,
+        "doi": "10.1249/jsr.0000000000001258",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of actigraphy and consumer sleep wearable studies in athletes and non-athletes, which the authors state is more narrative than structured. Wearables detect sleep reasonably well but are weaker at detecting wake, with wake accuracy of about 49% to 60% in validation studies. The authors report that proprietary summary sleep scores have no identified link to training, performance or recovery.",
+      "limitations": "The review describes no search or selection method and presents no new data. The authors note that the field has few studies, many of them industry sponsored, so the review cannot show whether wearable sleep data change performance or recovery outcomes.",
+      "synthesisCaution": "Staff could read a consumer sleep score as a validated measure of recovery, when the authors state its clinical meaning is unknown.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'Most validation work is industry sponsored, and few studies are athlete-specific' overstated the text -> now 'few studies, many of them industry sponsored' ('there are currently few research studies, and many of these are done with industry sponsorship')"
+          ],
+          "residualConcerns": "The rtp field touches concussion detection; the paper only says wearables 'represent an opportunity' and are 'likely not sensitive or specific', so it must not be cited as support for wearable-based concussion screening.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1979",
+        "synthesisBatch": "pilot-synthesis-batch-130",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 18,
+      "sourceFile": "Height restrictions for dual-energy x-ray absorptiometry - What are our options for body composition and bone health precision.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 31486,
+        "doi": "10.1519/jsc.0000000000004775",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Athletic Training",
+        "Performance",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Basketball",
+        "American Football",
+        "Volleyball"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Cross-sectional DXA precision study of 60 adults (34.8 +/- 11.9 years; 30 men and 30 women; mean BMI 26) who had three total-body scans on a GE Lunar Prodigy (n = 15) or Hologic Horizon A (n = 45), with one GE Lunar iDXA used for exploratory analysis. A combined scan built from an upper-body region of the head-first scan and a lower-body region of the flipped scan added 0.25% to 0.63% error on the Lunar Prodigy, but added about 4.35% BMC error on the Horizon A and 3.71% BMC error on the iDXA.",
+      "limitations": "The sample was non-athlete adults who were all shorter than 193 cm, so the method was not tested on athletes who actually exceed the table. The iDXA result comes from one participant and is exploratory.",
+      "synthesisCaution": "Staff could read the combined-scan method as a precise way to track any tall athlete on any DXA model, when the bone mineral content error was large on the newer Hologic and GE units.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: Horizon A soft-tissue values were garbled ('fat mass and lean mass changed by less than 0.5% and 0.31%') -> FM +0.31%, BFLBM <0.01%, BMC +4.35% from 0.80% to 5.15% (Table 2: 'BMC 0.80% 5.15%', 'BFLBM 0.48% 0.48% <0.01%', 'FM 0.95% 1.26% 0.31%')",
+            "paper.limitations: removed the extraction-artifact note about '14.35%' (moved to residualConcerns, it is not a study limitation)",
+            "paper.athleteDev: implied the combined scan works on any unit -> combined scan only on the Lunar Prodigy, shortest common region on newer units ('newer DXA systems cannot use the stitched scan technique')",
+            "screeningLimitations: added that all participants were shorter than 193 cm ('were shorter than 193 cm. This ensured that subjects would comfortably fit')"
+          ],
+          "residualConcerns": "The extracted text renders the plus sign as '1', so Table 2 and the Discussion read '14.35%' and '13.71%'; the abstract ('0.01-4.35%') and Table 2 baseline and combined CVs confirm +4.35% and 3.71%. Citation omits volume and pages because the PDF shows only the XX(X):000-000 placeholder.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1980",
+        "synthesisBatch": "pilot-synthesis-batch-130",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 31,
+      "sourceFile": "PEP - A tackle value measuring the prevention of expected points.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 36,
+        "extractedCharacters": 48781,
+        "doi": "10.1515/jqas-2024-0099",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 202"
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Research & Analytics",
+        "Coaching",
+        "Performance"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Methodological study that develops a tackle-value metric, prevented expected points (PEP), from NFL 2022 tracking data for 11,313 tackles across the first nine weeks of the season. The metric compares the observed end-of-play yard line with a random-forest prediction for the hypothetical play in which the tackle was missed, converts the difference to expected points, and fits a mixed-effects model to estimate each tackler's effect. The authors report that the top-ranked tacklers are sensible when compared with leaderboard data, but they do not validate PEP against outcomes.",
+      "limitations": "The metric is built from one half-season of tracking data and has no external validation against outcomes. The authors state that passing plays may favor cornerbacks who allow catches, and that missed tackles are excluded from the main analysis.",
+      "synthesisCaution": "Staff could treat the PEP tackler ranking as a definitive measure of tackling ability, when the authors describe it as one piece of a wider evaluation, with known biases on pass plays and a single season of data.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'top three 2022 leaderboard inside linebackers' -> top three players on the 2022 NFL tackles leaderboard ('the top three players from the 2022 NFL tackles leaderboard (Nick Bolton, Foyesade Oluokun, and Jordyn Brooks) are all found in top ten inside linebackers')"
+          ],
+          "residualConcerns": "PDF is the arXiv preprint 2407.08508v1 (11 Jul 2024); externalDoi 10.1515/jqas-2024-0099 resolves to the Journal of Quantitative Analysis in Sports version (Crossref: vol 22(1):35-51, issued online 2025-06-30; batch input crossrefYear 2026). Title and all four authors match, so the DOI is kept, but the journal version may differ from the preprint numbers. PDF year 2024 kept; differs from crossrefYear 2026. Preprint is not peer reviewed in this form.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1981",
+        "synthesisBatch": "pilot-synthesis-batch-130",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 32,
+      "sourceFile": "Percentile rankings and position differences for absolute and allometrically scaled performance measures from the NFL Scouting Combine.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 65008,
+        "doi": "10.1519/jsc.0000000000004546",
+        "doiVerification": "Crossref title match (similarity 0.927) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate",
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "Cross-sectional normative analysis of 3,015 players at the NFL Scouting Combine from 2015 to 2019, giving percentile ranks and means for the 40-yd dash (with 10- and 20-yd splits), bench press repetitions, vertical and broad jump, pro agility and L-cone times, both raw and allometrically scaled to body mass. Absolute results showed skill positions (DB, WR) fastest and highest jumping, with linemen strongest on the bench press, and after allometric scaling DL, LB, RB and TE tended to score highest while QB and OL scored lowest.",
+      "limitations": "The norms come from combine invitees in 2015 to 2019 only, not the general population, and do not show how the measures relate to NFL success. Body composition was not measured, so the explanations for position differences rely on other studies, and the authors state that further research is needed on how body mass and fat-free mass affect scaling.",
+      "synthesisCaution": "Staff could treat the allometric percentile tables as a fair, complete way to rank players or predict draft success, when the study only describes combine test norms and found that the shape of the body mass relationship differed by test, with ratio scaling possibly adequate for the 10-yd split and L-cone.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.athleteDev: 'linemen with stronger relative bench press' was wrong; linemen lead only in absolute terms. After scaling: 'For the bench press test, RB, LB > DL > DB, TE > OL, WR' (OL scaled mean 0.0566 vs RB 0.0697)",
+            "synthesisCaution: 'the best scaling model varied by test' -> the best-fit body mass model varied by test; the author supports allometric scaling overall and notes ratio scaling 'may potentially be appropriate' for the 10-yd split and LC",
+            "identityCheck: 'matches the Crossref record' overclaimed (only crossrefTitle and crossrefYear were available) -> matches crossrefYear"
+          ],
+          "residualConcerns": "Citation is the online-first version ('J Strength Cond Res XX(X): 000-000, 2023'); volume, issue and pages are not printed. Player sex is not stated in the text, so no sex tag was added.",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1982",
+        "synthesisBatch": "pilot-synthesis-batch-130",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 33,
+      "sourceFile": "Position-Specific Differences in Speed Profiles Among National Football League Scouting Combine Participants.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 45193,
+        "doi": "10.1519/jsc.0000000000004958",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "This cross-sectional analysis used publicly available NFL Scouting Combine data from 2,156 American football players (2017, 2018, 2019, 2022 and 2023) with valid 40-yard dash and 10- and 20-yard split times. The authors calculated maximal velocity (vmax), acceleration time constant (t) and maximal acceleration (amax) from the splits, compared eight position groups with one-way ANOVA, and correlated these variables with other combine tests. Skill positions (DB and WR) had the highest vmax and amax and the lowest t, and offensive linemen had the lowest vmax and amax and the highest t.",
+      "limitations": "The speed profiles are estimated from split times in a single testing setting, and the study has no training, injury or on-field data. The position differences are cross-sectional and cannot show what causes them, and the authors note that body size and position selection may explain part of the gap.",
+      "synthesisCaution": "Staff could read the position gaps as the result of position-specific training, when the author could not separate training adaptation from body size and selection for each position.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr: 'can show a different picture' overstated the author's hedge -> 'may add information' ('it is possible that vmax, t, and amax may provide unique information')",
+            "paper.findings: added that RB did not differ from DB/WR for t and amax ('WR, DB = RB, p >= 0.507'; 'DB, WR = RB, p >= 0.721')",
+            "paper.limitations: removed cross-reference to another batch record; kept year note and author limitation",
+            "synthesisCaution: draft said the author attributes 'much of the difference' to selection; author also proposes training adaptation ('position-specific adaptations ... may largely account for the differences') -> now says the two could not be separated",
+            "paper.athleteDev: removed advice to track an athlete against his own profile over time (study is cross-sectional) -> position reference values and author's untested suggestion"
+          ],
+          "residualConcerns": "PDF year is 2024 (online-first, 'Copyright 2024', J Strength Cond Res XX(X)) but crossrefYear is 2025; PDF year kept, the operator may want the issue year. Professional / Elite tag is inferred from NFL Scouting Combine participation; participants are draft prospects and sex is not stated in the text.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1983",
+        "synthesisBatch": "pilot-synthesis-batch-130",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 36,
+      "sourceFile": "Practitioner usage, applications, and understanding of wearable GPS and accelerometer technology in team sports.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 10,
+        "extractedCharacters": 48843,
+        "doi": "10.1519/jsc.0000000000004781",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Rugby"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "This cross-sectional online survey (May 2021 to May 2022) asked 72 practitioners who regularly use GPS and accelerometer load monitoring in outdoor or invasion team sports about their usage, understanding and opinions. All respondents supported GPS use, 87.5% agreed that wearable data informs training prescription, and only 50% agreed that it influences decisions in competition. GPS metrics were used and understood more than accelerometer-derived metrics, with 47.2% agreeing that accelerometer metrics are easy to understand, and 93.1% said wearable technology needs further standardization.",
+      "limitations": "This is a self-selected survey of practitioners' opinions and reported practice, not a measure of athlete load, validity or outcomes. Respondents were not asked to separate sports or competition levels, and self-rated understanding did not match the quality of the definitions they gave.",
+      "synthesisCaution": "Staff could read these practitioner opinions as evidence about how accurate or useful the wearable metrics are, when the survey measured what practitioners believe and do, not whether the metrics are valid.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.athleteDev: removed unsupported advice to 'check it against GPS measures such as total distance and high-speed running'; attributed 'different formulas' to respondents, not authors ('Every brand has different formulas and is difficult to compare.' in Table 3 quotes)",
+            "paper.practicalImplications: 'many practitioners' -> 'several' (Table 2: 7 poor, 5 incorrect of 38 definitions); garment/unit advice attributed to cited literature ('This is also concurrent with suggestions from previous literature')",
+            "paper.limitations: added within-survey inconsistency ('used by 39% of respondents (n = 28)' vs 'in a later question, 56% ... (n = 40)')",
+            "sports: added Soccer and Rugby ('soccer or football (n = 49), rugby league or union (n = 19)')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1984",
+        "synthesisBatch": "pilot-synthesis-batch-130",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 37,
+      "sourceFile": "Predicting sprint performance from the vertical and horizontal jumps in National Football League Combine athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 32288,
+        "doi": "10.1519/jsc.0000000000004799",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Professional / Elite"
+      ],
+      "evidenceSummary": "This retrospective analysis used publicly available NFL Combine data from 1999 to 2020 and split the players into a training set (n = 2,071) and a test set (n = 2,070). Regression equations predicted 9.14-m, 9.14 to 18.29-m, 18.29 to 36.58-m and 36.58-m sprint times from vertical jump, broad jump, height and body mass, with adjusted R2 values of 0.74 to 0.84. In the test set, biases were -0.05 to -0.02 s and RMSE was 0.05 to 0.12 s, with 5 to 6% of predictions outside the limits of agreement.",
+      "limitations": "The equations come from one retrospective data set of NFL Combine testing, using a hand-trigger, three-point sprint start and a Vertec vertical jump, and they were fitted with stepwise regression on a single random split. Their accuracy in other squads, other sprint setups or other jump methods is untested, and the paper's own sample counts disagree (see limitations).",
+      "synthesisCaution": "Staff could treat the predicted sprint time as the athlete's true sprint ability, or read a faster or slower actual time as a technical or physical deficit, when 5 to 6% of predictions fell outside the agreement limits and the authors say the gap needs further investigation.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'standard errors of 0.05 to 0.12 s' -> 0.04 to 0.12 s ('9.14- to 18.29-m time (adjusted R2 = 0.74, SEE = 0.04 seconds)')",
+            "paper.limitations: added download count conflict ('Data for 7,171 subjects were downloaded' vs 'Data from 7,174 athletes were downloaded'); removed the year-matches-Crossref sentence",
+            "paper.tldr: use of predicted-vs-actual gap framed as the authors' proposal, not a validated finding ('coaches should view the difference ... as an item that warrants further investigation')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1985",
+        "synthesisBatch": "pilot-synthesis-batch-130",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 43,
+      "sourceFile": "Selecting Metrics That Matter - Comparing the Use of the Countermovement Jump for Performance Profiling, Neuromuscular Fatigue Monitoring, and I.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 45076,
+        "doi": "10.1519/ssc.0000000000000772",
+        "doiVerification": "Crossref title match (similarity 0.909) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance",
+        "Rehabilitation & Return to Sport"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Other Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified",
+        "Healthy Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Narrative review, with no search method described, of how countermovement jump (CMJ) metrics should be chosen for performance profiling, neuromuscular fatigue monitoring and injury rehabilitation testing. Jump height and peak power track strength and speed, but a meta-analysis cited by the authors found maximal jump height and peak power were not sensitive to fatigue (ES -0.04 each), while other cited studies found time-based metrics such as flight time and time to peak power changed more after intense exercise and over 24-72 h. Tables 2 and 3 use example data (20 athletes, stated to be hypothetical; 3 athletes) to show how a change is judged against the test's coefficient of variation.",
+      "limitations": "The paper gives no search strategy, so the selection of evidence cannot be reproduced and its completeness cannot be judged. Several recommendations rest on the authors' own experience and on correlations, and the worked examples are not real athlete data.",
+      "synthesisCaution": "Staff could take the metric choices as validated for their own squads, or read the worked examples as real athlete results.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary and paper.findings: time-based metric results were worded as part of the meta-analysis finding -> attributed to other cited studies ('In contrast, previous studies have shown that some time-based metrics...' (20,21))",
+            "evidenceSummary, paper.methods, paper.limitations, synthesisCaution: Table 3 called hypothetical -> only Table 2 is stated to be hypothetical ('This data is hypothetical'); Table 3 is 'example data for 3 individual athletes'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1986",
+        "synthesisBatch": "pilot-synthesis-batch-130",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 51,
+      "sourceFile": "Subjective wellness acute-chronic workloads and injury risk in college football.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 37502,
+        "doi": "10.1519/jsc.0000000000003000",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Cohort Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate"
+      ],
+      "evidenceSummary": "Retrospective analysis of one 17-week NCAA Division I football season: 42 players, 1,807 aligned daily workload and wellness records, and 55 noncontact injuries. Injury risk over the next 3 days was very likely higher when the 7:21-day EWMA acute:chronic workload ratio (ACWR) was 2 SD above (RR 3.05, 90% CI 1.14 to 8.16) or 2 SD below (RR 2.49, 90% CI 1.11 to 5.58) the mean, and wellness showed no clear association with injury.",
+      "limitations": "This is a single-team, single-season observational analysis, and the authors say the interaction tests were likely underpowered. Only field-based workloads were measured, so the findings cannot separate ACWR effects from unmeasured resistance work, academic stress or positional demands.",
+      "synthesisCaution": "Staff could read the high-ACWR with 'better' soreness result as a reliable warning sign, when it is an exploratory interaction with wide intervals in one team, and it does not supply a validated load threshold.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: 'the abstract overstates them' -> both abstract and results label the overall-wellness interactions 'likely' under magnitude-based inference although 90% CIs include 1 ('likely higher risk ... (RR: 1.52, 90% CI: 0.91-2.54)'); added the abstract misprint '0.83 to 674' versus results '0.83-6.74'",
+            "methods: 'next-morning wellness' -> wellness reported about 2 hours before the next field session; added magnitude-based inference",
+            "practicalImplications: 'day-to-day ACWR changes above 1 SD' -> 'daily fluctuations >1 SD of a player's average'"
+          ],
+          "residualConcerns": "Year: the abstract citation line prints '2018' while the running header and copyright print 2019; Crossref gives 2019, so 2019 is kept. Sex of the 42 players is not stated, so no sex tag was added.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1987",
+        "synthesisBatch": "pilot-synthesis-batch-130",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 52,
+      "sourceFile": "Terminology and Interpretation Across Neuromuscular Profiling Methods - A Systematic Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 31,
+        "extractedCharacters": 174670,
+        "doi": "10.1007/s40279-025-02330-2",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review (PRISMA guidelines, protocol not pre-registered) of PubMed, Scopus and SPORTDiscus searches to September 2024: 10,574 records identified, 1,653 assessed for eligibility and 184 included, covering 209 neuromuscular profiling outputs from six methods (DSI, EUR, RSI, RSImod, force-velocity profiling and impulse analysis). Labels such as 'explosive', 'springy', 'stiff' and 'strong/weak' were often applied by logical inference rather than direct measurement, definitions and calculations were inconsistent, and only 47 of 184 studies (26%) reported any reliability statistics.",
+      "limitations": "The quality tool was customised by the authors and was not validated, the review was not pre-registered, and the labels were coded interpretively by the review team. Included studies averaged a 'good' quality score (6.1 of 10), with the EUR and RSI groups rated only 'fair', and the summary labels are the authors' interpretation rather than validated definitions.",
+      "synthesisCaution": "Staff could treat the review's label list as validated athlete categories, when the authors say the labels reflect interpretive usage and that common value ranges could not be set for EUR, RSI or RSImod.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: '1,653 studies screened' -> 10,574 identified, 1,653 assessed for eligibility ('Out of the 10574 studies identified ... resulting in 1653 studies assessed for eligibility')",
+            "evidenceSummary: labels 'usually applied by logical inference' -> 'often', since several RSI/RSImod label groups were supported by measured stiffness, strength or RFD ('Sixteen studies measured lower extremity stiffness'; 'Studies supported this claim by measuring various RFD variables')",
+            "findings: 'no common output range could be set for any method' -> DSI values ranged 0.46-0.92 with thresholds; common ranges were not set for EUR, RSI and RSImod",
+            "findings: 'RSI and RSImod labels were mostly inferred' -> mix of measured and inferred; DSI 'explosive' was inferred",
+            "synthesisCaution: 'no consistent cut-off ranges could be set for any method' corrected likewise",
+            "methods: search dates and quality tool wording clarified; athleteDev: removed invented 'one or two methods'"
+          ],
+          "residualConcerns": "Year: PDF is the online-first version (accepted 17 September 2025, copyright 2025); Crossref gives 2026 (issue year). 2025 kept per rule.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1988",
+        "synthesisBatch": "pilot-synthesis-batch-130",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 54,
+      "sourceFile": "The applicability of the risk score approach to competitive sport - Development of a physical success score for the Canadian Football League Combine.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 41672,
+        "doi": "10.1519/jsc.0000000000004047",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Secondary analysis of publicly posted Canadian Football League (CFL) Combine results and draft outcomes (2011 to 2019) for three position groups: line (n = 221), big skill (n = 177) and skill (n = 231), with the final models fitted on 176, 141 and 185 players. Binary logistic models with repeated cross-validation produced a physical success score for each group, with mean validation AUCs of 0.77 (line), 0.76 (big skill) and 0.83 (skill), compared with 0.71, 0.67 and 0.78 for a classification tree benchmark.",
+      "limitations": "The outcome is drafted or not, not performance in the field, and the scores come from one league's past combine selections without external validation. The paper's own AUC figures are inconsistent between sections, so the discrimination estimates are approximate.",
+      "synthesisCaution": "Staff could read a high score or a predicted draft probability as a forecast for an individual player's draft or career, when the model describes past combine selections and omits skill.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/limitations: added that models were fitted on 176, 141 and 185 complete cases, not 221/177/231 (Table 5 'n 176 141 185')",
+            "limitations: added that the final PSS was the best-scoring validation fold ('The final PSS was the PSS with the highest AUC among the AUC of the validation data of each fold'); removed the unsupported 'competition level is not stated' sentence",
+            "findings: 'the 40-yard sprint was significant in all three models' kept and clarified as the only predictor significant in all three (Table 5)",
+            "primaryDomain: Training & Performance -> Monitoring & Technology (main contribution is a test-profiling score, per INSTRUCTIONS)",
+            "athleteDev: training-priority advice attributed to the authors rather than stated as a finding"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1989",
+        "synthesisBatch": "pilot-synthesis-batch-130",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 56,
+      "sourceFile": "The deceleration deficit - A novel field-based method to quantify deceleration during change of direction performance.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 34998,
+        "doi": "10.1519/jsc.0000000000003856",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Female Athletes",
+        "Male Athletes",
+        "Healthy Athletes",
+        "Collegiate"
+      ],
+      "evidenceSummary": "Cross-sectional study of 36 university-level invasion-sport athletes (19 women, 17 men; mean age 20.3 years) who completed 505 change-of-direction trials in both turning directions and 15-m sprints in one session. Linear sprint times correlated strongly with 505 time (r = 0.71 to 0.76) but not with the change-of-direction deficit (CODD) or the new deceleration deficit (DD); DD correlated moderately with 505 time (r = 0.41 to 0.44) and largely with CODD (r = 0.59 to 0.62). In 78 percent of athletes, DD and CODD z-scores differed by more than a moderate worthwhile change in at least one turning direction.",
+      "limitations": "This is a single-session correlational study with no reliability or validity testing of DD, and the authors say those analyses are needed before DD is used with individual athletes. Braking forces were not measured, and the sample's performance level limits generalisation.",
+      "synthesisCaution": "Staff could treat DD as a validated measure of deceleration ability that pinpoints each athlete's limiter, when the paper shows only correlations from one session and calls for reliability and validity work.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: repeated the authors' claim that DD correlations 'are all below 0.5' -> tables show DD vs CODD r = 0.59/0.62 and vs full approach r = 0.54 (ND) (Tables 3 and 4); conflict now stated",
+            "limitations: abstract-vs-table conflict extended to note full approach correlates most strongly with 505 (r = 0.86/0.87)",
+            "evidenceSummary/abstract: DD-CODD relation 'only moderately' -> 'large' per the paper's scale (0.5-0.7 large)",
+            "findings: added DD vs full approach r and the 28 of 36 count (12 + 15 + 1)",
+            "limitations: added that divergence may partly reflect unmeasured measurement error, since DD reliability was not tested"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1990",
+        "synthesisBatch": "pilot-synthesis-batch-130",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 63,
+      "sourceFile": "The Reliability, Bias, Differences, and Agreement Between Velocity Measurement Devices During the Hang Clean Pull.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 6,
+        "extractedCharacters": 39803,
+        "doi": "10.1519/jsc.0000000000005004",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Repeated-measures, cross-sectional validation study in 14 resistance-trained men (mean age 25.5 years, at least 4 years of training experience) who performed hang clean pulls at seven loads from 20% to 140% of their 1RM hang power clean. A GymAware PowerTool and a Tendo Power Analyzer were attached to the barbell and compared for reliability, bias and agreement. Both devices were reliable for mean barbell velocity (ICC 0.93 to 0.97), and the Tendo overestimated mean and peak barbell velocity by 3.7 to 6.8% and 1.8 to 2.9%, with small between-device effect sizes (MBV g = 0.35 to 0.57; PBV g = 0.23 to 0.54).",
+      "limitations": "The GymAware was used as the criterion device because 3D motion capture was unavailable, and the sample was resistance-trained men only, so results may not transfer to other populations or to women. The authors note that few comparable studies exist for this lift, and that the Tendo's peak velocity reliability fell at heavier loads.",
+      "synthesisCaution": "Staff could read the device agreement as proof that the two velocity devices can be swapped freely, when the authors say they calculate velocity differently and should not be used interchangeably, especially at 140% 1RM.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings/abstract: proportional bias read as general -> Table 2 shows proportional and fixed bias only at 140% 1RM",
+            "methods: 'test-retest ICCs' -> within-session reliability across three single repetitions per load",
+            "practicalImplications: horizontal-movement explanation stated as fact -> authors say 'possibly due to'",
+            "limitations: added text-table conflict on GymAware peak velocity ICC (0.88 at 120%)",
+            "populations: Mixed / Unspecified -> Adult / Recreational (resistance-trained men, not described as athletes)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1991",
+        "synthesisBatch": "pilot-synthesis-batch-130",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 64,
+      "sourceFile": "The Role of Speed, Change of Direction, and Momentum by Position and Starting Status in Division 1 Collegiate Football Players.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 7,
+        "extractedCharacters": 37096,
+        "doi": "10.1519/jsc.0000000000004944",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Cross-sectional Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate"
+      ],
+      "evidenceSummary": "Retrospective analysis of 15 years of data from 496 first-year NCAA Division 1 football players from one program (big positions n = 122, mid n = 178, skill n = 196), who completed the 40-yard sprint, pro-agility and L drill tests, with momentum calculated from body mass and average velocity. Positional differences were moderate to very large, and starters were faster and had greater momentum than nonstarters with small to moderate effects (for example, 40-yard sprint of 5.18 vs 5.30 s in big positions). ROC cutoffs to separate starters from nonstarters had AUC values of 0.57 to 0.76 (poor to fair) and positive predictive values of 15% to 43%.",
+      "limitations": "All data came from one program under a single head coach, and starter status was the only selection outcome, so the results may reflect that program's style of play and selection decisions. The ROC thresholds discriminated poorly, and the study tested athletes after a 6-week winter program, not at other times of the year.",
+      "synthesisCaution": "Staff could use the ROC cutoffs as a way to pick or cut players, when the authors found the thresholds had poor to fair discrimination and low positive predictive value, and they advise against using them for selection.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "limitations: added hand timing, first-year testing vs career starter status, and the Table 5 AUC label inconsistency (0.57 labelled 'fair')",
+            "athleteDev: position priorities stated as directives -> attributed to the authors as recommendations from cross-sectional data"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1992",
+        "synthesisBatch": "pilot-synthesis-batch-130",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 66,
+      "sourceFile": "Training Impulse and Session Ratings of Perceived Exertion as Perceived by Athletes and Observed by Coaches During Preseason Football Camp.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 9,
+        "extractedCharacters": 44699,
+        "doi": "10.1519/jsc.0000000000005169",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "American Football"
+      ],
+      "populations": [
+        "Collegiate"
+      ],
+      "evidenceSummary": "Prospective study of 24 NCAA Division II football athletes (6 first-year, 18 returning) and 2 coaches over the first 6 days of preseason camp. It compares heart-rate training impulse (Edwards TRIMP, from chest-strap monitors) with session RPE load rated by athletes and by one football coach and one strength and conditioning coach. The authors report significant but low-to-moderate correlations (athletes r = 0.62, football coach r = 0.68, strength and conditioning coach r = 0.49), stronger in first-year athletes, and conclude the measures are not interchangeable.",
+      "limitations": "Agreement was assessed with correlations only, not bias or limits of agreement, and the 139 observations are repeated measures on 24 athletes from one team. Each coach role is a single person, so coach findings describe two individuals, not coach types. Maximal heart rate was mostly estimated (220 minus age), and the paper has several internal numerical inconsistencies.",
+      "synthesisCaution": "Staff could read these correlations as showing that coach observation or athlete ratings can replace heart-rate monitoring, or that football coaches judge load better than strength coaches in general. The authors say the measures are not interchangeable, and the coach comparison rests on one coach of each type.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: added the R2 check showing the Discussion value fits r = 0.41, not 0.49 ('S&C (R2 = 0.17 ...)'; 'the SCC (r = 0.41)')",
+            "paper.limitations: added the Figure 2 observation count conflict ('all observations (N = 129)' vs 'accumulated 139 total observations')",
+            "paper.limitations: added impossible Table 1 combined body fat ('30.82 ... 25.6 ... 29.96')",
+            "paper.findings: added subgroup correlations, first-year HRV/RHR differences and opposite coach rating differences ('SCC observed first-year athletes to have a greater TL'; 'FBC observed first-year athletes to have a lower TL')",
+            "screeningLimitations/synthesisCaution/athleteDev: added that each coach type is n = 1 ('1 FBC (>10 years' experience...) and 1 SCC (<1-year experience...)')",
+            "paper.methods: added enrollment and exclusion (29 enrolled, 5 excluded)"
+          ],
+          "residualConcerns": "Several internal numerical conflicts (SCC r 0.49 vs 0.41, N 139 vs 129, swapped Figure 3 group sizes, Table 1 body fat). Edwards TRIMP and athlete-rated load share the same first-year median (780), which may be a reporting error. Athlete sex is not stated explicitly, so no sex tag was added.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1993",
+        "synthesisBatch": "pilot-synthesis-batch-130",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 68,
+      "sourceFile": "Velocity-Based Training With Weightlifting Derivatives - Barbell and System Velocity Comparisons.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 49921,
+        "doi": "10.1519/jsc.0000000000004962",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Methodological / Validation Study",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Repeated-measures study in 14 resistance-trained men who were not competitive weightlifters. Each performed three individual repetitions per load of the jump shrug, hang high pull, hang power clean, hang clean pull and countermovement shrug across 4 to 7 loads (20% to 140% of hang power clean 1RM), measured with a barbell linear position transducer and a force platform. Mean and peak barbell velocities were significantly greater than system (body plus bar) velocities at every exercise and load (p < 0.001, Hedges g at least 1.49), and the authors conclude the two measures should not be substituted for one another.",
+      "limitations": "Only individual repetitions were tested, not sets, and several loads (20% to 40% of hang power clean 1RM) are lighter than these lifts are usually prescribed; system velocity was not maximal at the lightest loads for four exercises. The sample was 14 men who were not competitive weightlifters, so generalization to women, weightlifters or other groups is limited.",
+      "synthesisCaution": "Staff could treat a device's barbell velocity as a measure of whole-body velocity, or apply mean-velocity zones built for squats to these pulls. The study shows the two velocities differ greatly; the authors' advice to use peak velocity and to pick exercises for force or velocity emphasis is their interpretation, not something the study tested.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'Most system velocities were below 1.00 m/s' -> all mean system velocities below 1.00 m/s except jump shrug 20-60% ('all MSV were below 1.00 m·s-1'); peak system velocities were all above 1.0",
+            "paper.findings/screeningLimitations: 'System velocity CVs exceeded 10% at some light loads' -> only one CV exceeded 10% (Table 2: jump shrug 20% MSV 11.7%); ICC range corrected to 0.77-0.99",
+            "evidenceSummary/methods: 'single repetitions' clarified as three individual repetitions per load ('3 repetitions were performed with each load')",
+            "synthesisCaution: rewritten; draft wording that staff might treat the measures as interchangeable because of the gap was illogical",
+            "paper.practicalImplications/athleteDev: authors' peak-velocity and exercise-selection advice labeled as interpretation not tested by the study"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1994",
+        "synthesisBatch": "pilot-synthesis-batch-130",
+        "publishedOn": "2026-10-13"
+      }
+    }
+  ]
+}

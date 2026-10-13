@@ -111,25 +111,6 @@
       }
     },
     {
-      "originalQueueOrder": 56,
-      "sourceFile": "Vitamin C supplementation and athletic performance - A review.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the text; only the journal name and URL appear.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "paper.citation: added printed pages 255-259 ('Volume 22 Number 7 July 2023'; '1537-890X/2207/255-259')",
-            "paper.findings: added that all three positive trials used co-supplementation and that 'Vitamin C alone did not appear to have a positive effect on markers of muscle damage with long-term supplementation'; specified blunted adaptations came from vitamin C plus vitamin E trials; 'Most studies used vitamin C with at least one other supplement' -> 'Only two studies used vitamin C alone' ('only two of the studies supplemented with vitamin C alone')"
-          ],
-          "residualConcerns": "Own DOI not printed; operator should verify externally before upgrading the decision.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 57,
       "sourceFile": "Vitamin D and the Athlete- Current                        Perspectives and New Challenges.pdf",
       "decision": "INCLUDE",

@@ -316,28 +316,6 @@
       }
     },
     {
-      "originalQueueOrder": 38,
-      "sourceFile": "Effects of four different velocity-based training programming models on strength gains and physical performance.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the text; the only DOI present (10.1055/a-1171-2287) is a reference-list citation to a different paper.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "decision: DEGRADED confirmed; only DOI in text is reference-list 10.1055/a-1171-2287, header shows 'J Strength Cond Res XX(X): 000-000, 2020' with no own DOI",
-            "populations: removed Male Athletes and Healthy Athletes -> Adult / Recreational; participants were 'physically active sport science students', not athletes",
-            "paper.findings: 'constant group trained with heavier absolute loads than the others' -> slower average MPV and higher mean relative intensity (Table 2: MRI-MPV ~67.5% vs ~62.5% 1RM); CMJ range made exact (2.0 to 4.2 cm)",
-            "paper.limitations: 'no untrained control group' -> no non-training control group",
-            "paper.athleteDev: removed unsupported 'athlete preference' framing; noted untested in athletes and higher frequencies"
-          ],
-          "residualConcerns": "Own DOI needs external lookup before upgrade. Online-first year 2020 used (issue year not printed).",
-          "spotCheckPriority": "normal"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 39,
       "sourceFile": "Effects of horizontally vs vertically loaded resistance exercises on performance and muscle architecture.pdf",
       "decision": "INCLUDE",
@@ -388,27 +366,6 @@
         "paperId": "1065",
         "synthesisBatch": "pilot-synthesis-batch-50",
         "publishedOn": "2026-10-09"
-      }
-    },
-    {
-      "originalQueueOrder": 41,
-      "sourceFile": "Effects of low load resistance training with vascular     occlusion on the mechanical properties of muscle and tendon.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text and no DOI appears in the reference list. All other fields are complete; the operator can verify the DOI externally.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "populations: Male Athletes and Healthy Athletes tagged for a non-athlete sample -> Mixed / Unspecified ('Nine healthy young men ... voluntarily participated')",
-            "findings/tldr: added that patellar tendon stiffness and CSA did not change in either protocol ('the stiffness values of the patella tendon did not change after training for both protocols'); MVC and stiffness between-protocol p values reworded as not significant",
-            "limitations: added PCSA table-vs-text discrepancy (table 75.6 to 81.3 LLO, 74.5 to 79.0 HL vs text 6.1% LLO and 7.5% HL)",
-            "screeningLimitations/athleteDev: stated that the sample is non-athletes of unstated training status"
-          ],
-          "residualConcerns": "Text and Table 1 disagree on relative gains in muscle volume and PCSA (the text values look swapped or computed per participant). Kept DEGRADED: no DOI printed anywhere in the text. Sample is healthy young men, not athletes; retained as exercise-training evidence under the relevance rule.",
-          "spotCheckPriority": "high"
-        }
       }
     },
     {

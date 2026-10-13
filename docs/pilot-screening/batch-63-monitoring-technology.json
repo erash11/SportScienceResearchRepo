@@ -118,25 +118,6 @@
       }
     },
     {
-      "originalQueueOrder": 26,
-      "sourceFile": "Focused review of sleep wearable technology and its application in sports performance.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the text. Only reference-list DOIs appear. All other fields are complete, so the operator may verify the DOI externally.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "paper.practicalImplications: 'trusting the athlete and looking for other causes' is not in the text -> now follows Table 2 ('Validate athlete's subjective feelings of poor sleep even if the wearable states that they are getting good sleep. There may be opportunities to improve sleep.')",
-            "decision: DEGRADED confirmed; no DOI for this article is printed (header shows only '1537-8918/2406/171-176'), all printed DOIs are in the reference list"
-          ],
-          "residualConcerns": "",
-          "spotCheckPriority": "normal"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 35,
       "sourceFile": "From data to action - A scoping review of wearable technologies and biomechanical assessments informing injury prevention strategies in sport.pdf",
       "decision": "INCLUDE",
@@ -425,27 +406,6 @@
         "paperId": "1223",
         "synthesisBatch": "pilot-synthesis-batch-63",
         "publishedOn": "2026-10-09"
-      }
-    },
-    {
-      "originalQueueOrder": 86,
-      "sourceFile": "Height restrictions for dual-energy x-ray absorptiometry - What are our options for body composition and bone health precision.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the text; the text contains no DOI string at all. All other sections are present. The operator may verify the DOI externally and upgrade the decision.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "paper.limitations: removed the claimed 14.35% vs 4.35% arithmetic conflict; the extraction renders '+' as '1' (Table 1 LP 'precision difference' 10.55%, 10.25%, 10.63% = +0.55, +0.25, +0.63 matching abstract '0.25-0.63%'), so 14.35% is +4.35%",
-            "paper.findings: 'BMC CV rose ... (significant, p < 0.001)' misattributed significance to the CV -> paired t-tests compared tissue values ('Paired t-tests compared the mean tissue values'); added significant FM difference on HA and BMC on LP, with trivial effect sizes",
-            "screeningLimitations, paper.limitations: 'non-athlete adults' not stated -> general adults, overweight on mean BMI, all under 193 cm; athlete status not reported",
-            "paper.abstract: 'BMC error rose to about 4 to 5%' -> added up to 4.35% error"
-          ],
-          "residualConcerns": "DEGRADED only because no DOI is printed; the operator should verify it externally. Year 2024 is from the ahead-of-print header (J Strength Cond Res XX(X), 2024).",
-          "spotCheckPriority": "normal"
-        }
       }
     }
   ]

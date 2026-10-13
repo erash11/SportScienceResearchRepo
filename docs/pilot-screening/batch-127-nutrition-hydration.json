@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-127-nutrition-hydration",
+  "screenedOn": "2026-10-13",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Nutrition & Hydration queue positions 20-69. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 20,
+      "sourceFile": "Improvement of Functional Ankle Properties Following Supplementation with Specific Collagen Peptides in Athletes with Chronic Ankle Instability .pdf",
+      "decision": "DEGRADED",
+      "degradedReason": "The article's own DOI is not printed in the text, and the externalDoi cannot be used: 10.1016/j.jbmt.2018.09.037 is registered in Crossref to Journal of Bodywork and Movement Therapies 22(4):858, a one-page item with the same title and authors, not this 7-page Journal of Sports Science and Medicine article (2018;17:298-304). No JSSM DOI was found in Crossref.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: INCLUDE -> DEGRADED; externalDoi belongs to a different publication (Crossref: Journal of Bodywork and Movement Therapies 22(4), page 858) while the PDF header reads '©Journal of Sports Science and Medicine (2018) 17, 298-304'",
+            "paper.doi: '10.1016/j.jbmt.2018.09.037' -> '' and doiMissing: false -> true",
+            "identityCheck: rewritten to state the Crossref mismatch plainly",
+            "paper.findings: 'the between-group difference at 6 months was significant' implied collagen ended higher -> clarified it was the change (interaction p < 0.001) and that final CAIT was TG 20.76 vs PG 21.45 (Table 1)",
+            "synthesisCaution: 'confounded by a baseline difference' -> adds that the collagen group's final mean CAIT stayed below placebo and in the CAI range ('in mean (20.76) athletes were still classified as CAI')",
+            "paper.practicalImplications: removed 'bracing or balance training', which the paper does not discuss -> neuromuscular, proprioceptive and strength work ('focusing on the improvement of neuromuscular, proprioceptive and strength deficits')",
+            "paper.limitations: added Table 1 vs text p-value conflict; reworded the conflict note to 'Parts of the costs were paid by Gelita AG ... There are no conflicts of interest'"
+          ],
+          "residualConcerns": "Operator should search for a DOI for the JSSM article itself; Crossref queries on 2026-10-13 (title plus author Dressler, and container-title JSSM) returned only the JBMT item. If none exists, the record stays DEGRADED with doiMissing true. The JBMT one-page item is probably an abstract reprint, which should not be used as this record's DOI.",
+          "spotCheckPriority": "high"
+        }
+      }
+    },
+    {
+      "originalQueueOrder": 23,
+      "sourceFile": "Intermittent Fasting and Its    Effects on Athletic Performance- A Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 4,
+        "extractedCharacters": 22718,
+        "doi": "10.1249/jsr.0000000000000614",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Performance",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of studies of intermittent fasting, including Ramadan fasting, time-restricted eating and alternate-day fasting, across high-intensity, endurance and resistance exercise. Most cited studies are small crossover or observational studies in footballers, cyclists, rowers or resistance-trained men, plus one mouse study. The authors report mixed results, with some studies showing reduced sprint, cycling, rowing or endurance performance and others showing no effect, and no human study showing a performance benefit; only the mouse study found improved endurance.",
+      "limitations": "The review describes no search strategy or inclusion criteria, and its evidence is mostly small studies and Ramadan fasting, which also changes sleep and fluid intake. The authors also define the 5:2 diet inconsistently between the Introduction (alternating days) and the Discussion (5 days fasting, 2 days eating).",
+      "synthesisCaution": "Staff could read 'no benefit' as proof that intermittent fasting harms performance, when the authors describe mixed results from mostly small, short-term studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: 'no study showing a performance benefit' conflicted with the mouse study it lists -> 'no human study' ('mice with ADF deprivation ran significantly further')",
+            "paper.tldr and paper.practicalImplications: 'current data do not support its use for rapid weight loss' -> no data ('there is a paucity of data regarding using IFast to rapidly drop weight ... it is unclear if it could be used')",
+            "paper.findings: added the significant Aziz et al. sprint result ('Sprint times ... were significantly slower in the fasting period')",
+            "paper.limitations: removed 'small samples' as an author-stated limitation (not stated) -> varied definitions, outcome measures, few 5:2 and 16:8 studies, short-term data",
+            "paper.practicalImplications: tracking advice not in the paper -> the authors' point that clinicians should be aware of 'the negative or neutral effects on athletic performance'"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1966",
+        "synthesisBatch": "pilot-synthesis-batch-127",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 27,
+      "sourceFile": "Nutritional considerations for the power athlete.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 48656,
+        "doi": "10.1249/jsr.0000000000000975",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Track & Field",
+        "Gymnastics",
+        "Combat Sports",
+        "Other Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of nutrition for power athletes (for example weightlifting, gymnastics, sprinting, and throwing or jumping), covering energy and macronutrient needs by training phase, hydration, supplements, and weight-cutting and relative energy deficiency in sport. No search method or sample is described; the review summarizes cited consensus statements, position stands and studies. Its main points are protein intake of about 1.5-1.7 g/kg/day, targeted carbohydrate and fat by training phase, and a small set of supplements (caffeine, creatine, nitrate, beta-alanine, sodium bicarbonate) with evidence of benefit that varies between individuals.",
+      "limitations": "This is a narrative review with no described search, so the evidence base cannot be checked for completeness. The authors state that supplement effects vary widely between individuals, that optimal hydration recommendations are not available for power athletes, and that their general guidelines must be adjusted to the individual athlete, environment and sweat rate.",
+      "synthesisCaution": "Staff could read the supplement list and protein targets as a general prescription for every power athlete, when the review says supplement effects are highly individual and that hydration guidance for this group is not yet established.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: 'the review does not cover detailed nutritional recommendations' is not in the text (the review is a nutrition guide) -> replaced with the authors' stated need to individualize ('the individual athlete, environment, and sweat rate should all be taken into consideration')",
+            "paper.limitations: transgender sentence narrowed to what is stated ('these authors are not aware of resting metabolic rate (RMR) calculations available for transitioned or transitioning transgender athletes')",
+            "identityCheck: 'matches the Crossref record' overclaimed (only crossrefTitle and crossrefYear were available) -> matches crossrefYear"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1967",
+        "synthesisBatch": "pilot-synthesis-batch-127",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 47,
+      "sourceFile": "Sports Drinks on the Edge of a New        Era.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 30822,
+        "doi": "10.1249/jsr.0000000000000475",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Endurance Sport",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Perspective piece that traces the history of fluid and carbohydrate advice for exercise and argues that the 2% body-mass dehydration threshold lacks support in elite distance running. It also reports an ongoing pilot in well-trained Kenyan runners on a 25.1 km run at about 2,000 m altitude, in which runners lost 4.2 +/- 1.0% of body mass (range 2.2-5.9%) and three runners using an alginate hydrogel carbohydrate drink consumed about 291 mL over 95 min with no reported gastrointestinal distress. The authors present the hydrogel delivery system as promising but not yet shown to improve carbohydrate oxidation or gastric emptying.",
+      "limitations": "This is an opinion-led perspective with no described search, so the selection of cited evidence cannot be checked. The only original data are a brief pilot with three analysed runners and no performance, oxidation or gastric emptying measures.",
+      "synthesisCaution": "Staff could read the hydrogel pilot and the use of the drink by recent marathon winners as evidence that it improves performance, when the authors say efficacy is unconfirmed and the cited support is indirect.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.practicalImplications: 'The cited guideline ... still applies' -> restated as cited ACSM guidance with the authors' caveat ('there is research that suggests no further benefit of ingesting CHO in excess of about 60 g/h under more realistic conditions'); 4-6% losses attributed to 'some data show top performers with 4% to 6% body mass losses'"
+          ],
+          "residualConcerns": "Eligibility is borderline: the piece is labelled 'FIMS: International Perspectives' and is largely opinion-led, but it summarizes research across topics and reports original pilot data with brief methods, so it was kept as INCLUDE (narrative review) rather than EXCLUDE (b). A reviewer may prefer EXCLUDE (b).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1968",
+        "synthesisBatch": "pilot-synthesis-batch-127",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 57,
+      "sourceFile": "The effect of dietary supplements on endurance exercise performance and core temperature in hot environments - A meta-analysis and meta-regression.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 21,
+        "extractedCharacters": 85723,
+        "doi": "10.1007/s40279-021-01500-2",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Endurance Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review and meta-analysis of 25 placebo-controlled studies of dietary supplements and endurance exercise in the heat (ambient temperature of 30 C or higher), with 272 healthy participants who were highly trained or recreationally active; 22 of the 25 studies (88%) tested males only. Overall supplementation had a trivial significant effect on exercise performance (Hedges' g = 0.18, 95% CI 0.007 to 0.352, P = 0.042, I2 = 0%), and a small non-significant increase in end core temperature (g = 0.20, P = 0.104). Caffeine raised end core temperature (g = 0.82, P < 0.001) without a significant performance effect (g = 0.16, P = 0.263), and taurine (one study) lowered it (g = -0.96, P = 0.035).",
+      "limitations": "Most included studies were small, acute-dosing, laboratory crossover trials, mainly in males, and only one study tested taurine, so subgroup estimates are fragile. Egger's test indicated publication bias for end core temperature (P = 0.015), and the authors could not explain the findings with the moderators they tested.",
+      "synthesisCaution": "Staff could read the null performance results as proof that caffeine and nitrate do not work in the heat, or read the taurine and amino acid signals as recommendations, when the performance effects were non-significant or came from very few studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: '272 participants who were 88% male' misread the study-level split -> 88% of studies used all-male samples ('males 88%; both males and females 12%' refers to the 25 studies)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1969",
+        "synthesisBatch": "pilot-synthesis-batch-127",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 69,
+      "sourceFile": "Vitamin C supplementation and athletic performance - A review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 28225,
+        "doi": "10.1249/jsr.0000000000001083",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Review of 14 double-blind, placebo-controlled randomized trials of supraphysiologic vitamin C in athletes and active adults, identified by a PubMed search of 2012 to 2022 (97 articles screened). Only two trials used vitamin C alone; the rest combined it with vitamin E, quercetin or alpha-lipoic acid. The authors report that three trials found lower muscle damage markers with vitamin C-containing supplements, while the other 11 found neutral or negative effects on muscle damage, performance, soreness or training adaptation.",
+      "limitations": "The review is a single PubMed search with a narrow keyword set, no meta-analysis and no formal quality grading. Most trials were small and combined vitamin C with other antioxidants, so vitamin C effects cannot be separated. The summary table and text disagree on several trial details.",
+      "synthesisCaution": "Staff could read this as showing that vitamin C itself blunts training adaptation, when the adaptation findings come from vitamin C plus vitamin E trials, mostly small, and in one case rest on within-group rather than between-group results.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: 'placebo groups had larger gains ... in strength and hypertrophy in recreational weightlifters' -> within-group gains in placebo only, no between-group difference reported ('found no significant difference in muscle strength or hypertrophy, whereas the placebo group showed statistically significant gains ... compared with baseline values')",
+            "paper.findings: Gillam benefit attributed to vitamin E, not vitamin C ('No change in serum ascorbate or effect of vitamin C on post-run CK was noted (P > 0.1)')",
+            "paper.limitations: added table-text conflicts for de Oliveira vitamin E dose (table 235 mg, text 400 IU), Morrison duration (table 8 wk, text 4 wk), Askari population (table 'male students', text 'male athletes'), Chou myoglobin p (0.021 vs 0.016) and the vitamin E trial count (text ten, table eleven)",
+            "synthesisCaution/athleteDev: reframed so the blunting claim is tied to vitamin C plus vitamin E trials",
+            "evidenceSummary: specified that only two trials used vitamin C alone ('only two of the studies supplemented with vitamin C alone')"
+          ],
+          "residualConcerns": "Many internal table-text discrepancies suggest transcription errors in the source review; trial-level details should be checked against the primary trials before citing them. Coded as Systematic Review per library precedent (described search and inclusion criteria), though the authors title it a review and do no appraisal.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1970",
+        "synthesisBatch": "pilot-synthesis-batch-127",
+        "publishedOn": "2026-10-13"
+      }
+    }
+  ]
+}

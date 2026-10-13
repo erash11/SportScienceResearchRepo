@@ -332,28 +332,6 @@
       }
     },
     {
-      "originalQueueOrder": 33,
-      "sourceFile": "Improvement of Functional Ankle Properties Following Supplementation with Specific Collagen Peptides in Athletes with Chronic Ankle Instability .pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text (only the journal URL http://www.jssm.org appears; no DOI string is present). The operator may verify the DOI externally and upgrade the decision.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "decision: DEGRADED with doiMissing kept; no DOI string appears anywhere in the text (header shows only '(2018) 17, 298-304 http://www.jssm.org')",
-            "evidenceSummary/abstract/findings: 'fewer ankle sprains and injuries were reported' -> yes/no counts for 'reduced ankle sprains' (24 vs 9) and 'reduced ankle injuries' (23 vs 15) from Table 2; placebo CAIT change 0.65 added",
-            "limitations/screeningLimitations: added funding conflict ('Parts of the costs were paid by Gelita AG') and that post-treatment CAIT 20.76 was still in the CAI range",
-            "practicalImplications: removed 'alongside standard rehabilitation' (both groups did only a 10-minute home loading routine)",
-            "athleteDev/rtp: removed redundant field-label prefixes"
-          ],
-          "residualConcerns": "DOI must be verified externally before upgrade. Industry-funded single trial with baseline imbalance favouring the treatment group's room to improve.",
-          "spotCheckPriority": "normal"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 37,
       "sourceFile": "In it to Win it - Competitiveness Concussion Knowledge and Nondisclosure in Athletes.pdf",
       "decision": "INCLUDE",
@@ -583,25 +561,6 @@
         "paperId": "1241",
         "synthesisBatch": "pilot-synthesis-batch-65",
         "publishedOn": "2026-10-09"
-      }
-    },
-    {
-      "originalQueueOrder": 50,
-      "sourceFile": "Initial assessment and management of select musculoskeletal injuries - A Team Physician Consensus Statement - 2024.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text (no DOI string appears in the text). All other fields are complete, so the operator can verify the DOI externally.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "evidenceSummary: topic list omitted meniscal tears -> added (section on meniscus tears, 'Locked knee warrants prompt surgical referral').",
-            "practicalImplications: 'Treat imaging as confirmatory' was stated generally -> scoped to the disabled throwing shoulder ('In most cases, imaging should be considered confirmatory, not solely diagnostic', DTS section); removed unsupported clause about tests not substituting for clinical judgment."
-          ],
-          "residualConcerns": "No DOI is printed in the extracted text, so DEGRADED stands; operator should verify the DOI externally. The text notes the article is co-published in Medicine & Science in Sports & Exercise 2024;56(3):385-401, so check the library for a duplicate record of the MSSE version.",
-          "spotCheckPriority": "normal"
-        }
       }
     },
     {

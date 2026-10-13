@@ -37,7 +37,10 @@ for dom in DOM_ORDER:
         if dec=='INCLUDE':
             pap=v['paper']; doi=(pap.get('doi') or '').strip()
             assert doi, k
-            r['sourceVerification']={'status':'PASS','pages':inp['pages'],'extractedCharacters':inp['extractedCharacters'],'doi':doi,'doiVerification':'DOI printed in the local PDF text.'}
+            # Batch 123: an external DOI (Crossref title match, not printed in the PDF) keeps its own provenance note.
+            dv='DOI printed in the local PDF text.'
+            if inp.get('externalDoi') and doi.lower()==inp['externalDoi'].strip().lower(): dv=inp.get('externalDoiVerification') or 'External DOI (Crossref title match); not printed in the local PDF text.'
+            r['sourceVerification']={'status':'PASS','pages':inp['pages'],'extractedCharacters':inp['extractedCharacters'],'doi':doi,'doiVerification':dv}
             for f in ['studyDesign','primaryDomain','domains','audiences','sports','populations','evidenceSummary']: r[f]=v[f]
             r['limitations']=v['screeningLimitations']; r['synthesisCaution']=v['synthesisCaution']
             paper={'id':str(nid),**{f:pap.get(f) for f in F[1:]}}; paper['doi']=doi; paper['year']=int(paper['year'])

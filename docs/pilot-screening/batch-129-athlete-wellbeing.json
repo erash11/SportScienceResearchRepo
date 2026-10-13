@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-129-athlete-wellbeing",
+  "screenedOn": "2026-10-13",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Athlete Wellbeing queue positions 9-59. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 9,
+      "sourceFile": "Cannabis, cannabidiol and tetrahydrocannabinol in sport - An overview.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 15,
+        "extractedCharacters": 33556,
+        "doi": "10.1111/imj.15724",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 403 (publisher blocks automated check)"
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Recovery & Readiness",
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Single-author narrative review of cannabis, cannabidiol (CBD) and THC use in sport. It covers pharmacology, use surveys in elite and lower-level athletes, and adverse effects, and it summarises three small CBD exercise studies (13 to 23 participants each): one parallel-group study comparing CBD with an MCT oil vehicle and no intervention, and two double-blind placebo-controlled crossover studies. The author reports that acute THC impaired aerobic performance and possibly strength, and that the CBD studies combined suggest no substantial positive or negative effect on performance or symptomatic muscle damage.",
+      "limitations": "The literature search was not systematic (PubMed, Medline, Google and the author's own reprints), so selection of studies is open to bias. The CBD evidence in sport rests on three small trials, and the author states there are virtually no controlled studies of CBD in athletes.",
+      "synthesisCaution": "Staff could read the CBD recovery results as proof that CBD speeds recovery in athletes, when the author concludes the three trials showed no substantial effect: the faster DOMS recovery came from a group that lifted heavier loads, and the lower CK and myoglobin in a second trial came with no change in performance.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: called all three CBD studies 'placebo-controlled' -> first study was CBD vs MCT vehicle vs no intervention, not crossed over; only studies 2 and 3 were double-blind ('8 subjects were administered 1 ml medium chain triglyceride ... 7 subjects (the Null group) did not have any intervention')",
+            "synthesisCaution: 'the one reported recovery difference' -> two differences were reported, DOMS recovery in study 1 and lower CK and myoglobin in study 2 ('CBD resulted in decreases in the levels of CK and Myo at the p<0.05 level')",
+            "tldr: 'CBD trials in trained lifters' -> third trial was in untrained men ('completed by 13 untrained males')",
+            "findings: rugby survey wording implied CBD use for pain and sleep was common among all 517 players -> 133 of 517 had used CBD, and 80% and 78% are proportions of users ('133 had or still used it ... recovery from pain (80%) and sleep (78%)')",
+            "practicalImplications: 'Cardiac history should be considered before any cannabinoid use' -> limited to the author's warning, which rests on THC reports; CBD is described as 'free of serious adverse effects on a normal cardiovascular system'",
+            "populations: Professional / Elite + Adult / Recreational + Mixed / Unspecified -> Mixed / Unspecified only (review spans all levels)",
+            "citation: removed bracketed placeholder note"
+          ],
+          "residualConcerns": "Year 2022 is inferred from Crossref and in-text context; no publication year, journal name, volume or pages are printed in this accepted manuscript. Content covers drugs, anti-doping and cardiac risk.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1974",
+        "synthesisBatch": "pilot-synthesis-batch-129",
+        "publishedOn": "2026-10-13"
+      }
+    },
+    {
+      "originalQueueOrder": 59,
+      "sourceFile": "The effects of electronic nicotine delivery systems on athletes.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 5,
+        "extractedCharacters": 31266,
+        "doi": "10.1249/jsr.0000000000000705",
+        "doiVerification": "Crossref title match (similarity 1.0) on 2026-10-12; doi.org HTTP 200"
+      },
+      "studyDesign": "Narrative Review",
+      "primaryDomain": "Athlete Wellbeing",
+      "domains": [
+        "Athlete Wellbeing",
+        "Recovery & Readiness",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Narrative review of electronic nicotine delivery systems (ENDS, or vaping) in athletes and the general population, covering prevalence, cardiovascular, pulmonary, sleep and injury-healing effects, and vaping-associated lung injury (VALI). No systematic search or original sample is described. The authors report that ENDS effects on the heart and lungs appear smaller than those of cigarettes but are not harmless, and that at the time of writing more than 805 VALI cases and 12 deaths had been reported from 46 states and one US territory.",
+      "limitations": "The review does not describe how sources were searched or selected, so the evidence base cannot be checked. The authors say athlete-specific data are very limited, and much of the cardiovascular, sleep and injury-healing evidence comes from non-athlete, small or preclinical studies.",
+      "synthesisCaution": "Staff could read the ENDS risks as established performance or recovery effects in athletes, when the authors say athlete performance research is very limited and the injury-healing evidence is largely preclinical.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "1975",
+        "synthesisBatch": "pilot-synthesis-batch-129",
+        "publishedOn": "2026-10-13"
+      }
+    }
+  ]
+}

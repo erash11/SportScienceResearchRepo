@@ -823,26 +823,6 @@
       }
     },
     {
-      "originalQueueOrder": 71,
-      "sourceFile": "Cannabis, cannabidiol and tetrahydrocannabinol in sport - An overview.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "Publication year and journal details not printed: the text is an accepted manuscript (not copyedited) whose own DOI (10.1111/imj.15724) appears only in the 'Please cite this article as' notice, with no journal name, year, volume, issue or pages. The operator should supply the year and journal from the publisher record before upgrading; the content is otherwise an INCLUDE-eligible narrative review on sport.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "paper.citation: journal name 'Internal Medicine Journal' is not printed in the text (only the DOI prefix imj) -> removed and noted as not printed",
-            "evidenceSummary: 'three small CBD trials in trained and untrained men' -> first trial was '23 male and female trained weight lifters' and second '16 (14 male 2 female)'",
-            "degradedReason: clarified that the article's own DOI is printed (doiMissing false) and that journal name as well as year is missing"
-          ],
-          "residualConcerns": "Year is null because no publication year is printed (internal dates point to 2022 but are not a publication date). Operator should confirm year and journal externally. Contains cardiac adverse-effect content.",
-          "spotCheckPriority": "high"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 73,
       "sourceFile": "Cardiac cycle timing and contractility following acute sport-related concussion.pdf",
       "decision": "INCLUDE",

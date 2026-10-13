@@ -66,25 +66,6 @@
       }
     },
     {
-      "originalQueueOrder": 25,
-      "sourceFile": "Subjective wellness acute-chronic workloads and injury risk in college football.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the extracted text (no DOI appears anywhere in the text). Everything else is readable and complete; operator to verify the DOI externally.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "paper.findings: said high ACWR was associated with 'lower ... soreness', which reverses the direction -> worse (more) soreness ('\"worse\" scores in overall wellness ..., muscle soreness ..., and energy')",
-            "paper.findings: said no clear injury association for wellness, sleep or energy alone, omitting soreness -> all four ('No clear effect on the likelihood of injury with \"better\" or \"worse\" reports of wellness, sleep, energy, or soreness'); added missing CI for RR 1.64 and the 15% absolute-risk ceiling ('the absolute risk did not exceed 15%')"
-          ],
-          "residualConcerns": "Self-citation line prints 2018 while the journal header and copyright print 2019; 2019 used. DOI must be verified externally.",
-          "spotCheckPriority": "normal"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 28,
       "sourceFile": "Substantiating the use of ultrasound tissue characterization in the analysis of tendon structure - A systematic review.pdf",
       "decision": "INCLUDE",
@@ -346,26 +327,6 @@
         "paperId": "1707",
         "synthesisBatch": "pilot-synthesis-batch-105",
         "publishedOn": "2026-10-10"
-      }
-    },
-    {
-      "originalQueueOrder": 54,
-      "sourceFile": "Terminology and Interpretation Across Neuromuscular Profiling Methods - A Systematic Review.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "Journal publication year not printed: the text has no citation line, volume, issue or online-publication date, only 'Accepted: 17 September 2025' and a copyright line ('Springer Nature Switzerland AG 2025'). Year left blank for the operator to confirm externally; DOI 10.1007/s40279-025-02330-2 is printed in the header.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "DECISION_CHANGED",
-          "changes": [
-            "decision: INCLUDE -> DEGRADED, because no journal publication year is printed (only 'Accepted: 17 September 2025' and the copyright line)",
-            "paper.year: 2025 -> null (accepted date and copyright year are not the journal issue year)",
-            "paper.citation: removed the unprinted year"
-          ],
-          "residualConcerns": "Operator should confirm the publication year (copyright line suggests 2025) and upgrade to INCLUDE. All content claims checked against the text and found accurate (1653 eligible, 184 included, 209 methods: 147 ratio-based, 62 non-ratio-based; search to 10 September 2024; protocol not pre-registered). The extracted limitations paragraph appears cut off mid-sentence after the subjectivity point.",
-          "spotCheckPriority": "high"
-        }
       }
     },
     {

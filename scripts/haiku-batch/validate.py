@@ -18,7 +18,8 @@ for k, i in inp.items():
         txt = open(f"{W}/text/{k}.txt").read().lower(); d = (v["paper"].get("doi") or "").lower()
         # OCR scans can add diacritics to DOI letters (e.g. "ÍJSPP"); compare accent-folded text too.
         fold = lambda t: "".join(c for c in unicodedata.normalize("NFKD", t) if not unicodedata.combining(c))
-        if d and d not in txt and d not in re.sub(r"\s+", "", txt) and d not in fold(re.sub(r"\s+", "", txt)):
+        ext = (inp[k].get("externalDoi") or "").strip().lower()  # batch 123: DOI from Crossref, not in text
+        if d and d != ext and d not in txt and d not in re.sub(r"\s+", "", txt) and d not in fold(re.sub(r"\s+", "", txt)):
             # Layout text can split a DOI across a column break; check the reading-order extraction too.
             import subprocess
             raw = subprocess.run(["pdftotext", f"{R}/SourcePapers/{i['sourceFile']}", "-"], capture_output=True, text=True).stdout.lower()

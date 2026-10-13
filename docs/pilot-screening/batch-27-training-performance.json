@@ -284,26 +284,6 @@
       }
     },
     {
-      "originalQueueOrder": 54,
-      "sourceFile": "Acupuncture and dry needling for sports performance and recovery.pdf",
-      "decision": "DEGRADED",
-      "degradedReason": "The article's own DOI is not printed in the text; only DOIs from the reference list appear (e.g., 10.1155/... in references). The content is otherwise complete, with journal, year, volume, issue and pages printed (Current Sports Medicine Reports, June 2022, 21(6):213-218), so the operator may verify the DOI externally and upgrade the decision.",
-      "workflow": {
-        "draftedBy": "claude-haiku-5-5",
-        "verifiedBy": "claude-opus-5-5 claim audit",
-        "verification": {
-          "status": "CORRECTED",
-          "changes": [
-            "paper.findings: 'in one case' for the jump study -> 'one reported' (it was a study, not a case: 'One study showed an average increase of 1.2 in. 10 min after needling'); added 210 participants and soleus specificity ('increase in pain of the soleus at days 1 and 2')",
-            "paper.athleteDev: removed attribution of the four-week strength result to elite soccer players (text says only 'after four weekly needling treatments, improvements in maximal knee extensor strength can persist for up to four wk (46)') and removed generic advice about not replacing training",
-            "degradedReason: confirmed no own DOI is printed; added printed citation details"
-          ],
-          "residualConcerns": "DEGRADED for missing own DOI only. The review's Abstract and Conclusions ('can likely be promoted in athletes') are more positive than its body text.",
-          "spotCheckPriority": "normal"
-        }
-      }
-    },
-    {
       "originalQueueOrder": 57,
       "sourceFile": "Acute effects of cannabis consumption on exercise performance - A systematic and umbrella review.pdf",
       "decision": "INCLUDE",
