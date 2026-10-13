@@ -16,12 +16,17 @@ Read this first. Update it before ending every session.
 ## Current state
 - 2026-10-13 (Mac): Batch 123-130 STAGED (branch `batch-123-staged`, DRAFT PR, NOT merged). Re-screen of the 72 DOI
   candidates from 2026-10-12 (Eric chose option 1). Result: 68 INCLUDE (IDs 1927-1994), 3 DEGRADED, 1 EXCLUDE.
-  Pipeline: Haiku 5.5 draft, Opus 5.5 claim audit (all 72 CORRECTED or VERIFIED). `npm run audit` passes.
-  Published rows 1,894 -> 1,962. Next unused ID: **1995**. Eric must check before merge, in
-  `docs/pilot-screening/batches-123-130-review.md`: DOI conflicts (Q02 preprint DOI, Q25 DOI is the other journal's
-  printing, Q31 journal vs preprint, Q60 printed DOI used instead of the accepted one), decision changes (Q11
-  DEGRADED-to-INCLUDE relevance call, Q29 EXCLUDE-to-INCLUDE), DEGRADED (Q20 wrong DOI cleared, Q35 and Q45 DOI
-  blank; Crossref suggests 10.1249/jsr.0000000000000418 for Q45, unconfirmed).
+  Pipeline: Haiku 5.5 draft, Opus 5.5 claim audit (all 72 audited; 67 CORRECTED, 3 DECISION_CHANGED, 2 VERIFIED).
+  `npm run audit` passes. Published rows 1,894 -> 1,962. Next unused ID: **1995**.
+  Crossref check of the 68 INCLUDE DOIs: 58 match on author and journal; 3 DOI problems (IDs 1942, 1976, 1981);
+  3 citations missing a journal name (1939, 1946, 1974); rest are abbreviations. Eric must check before merge, in
+  `docs/pilot-screening/batches-123-130-review.md`. Paper IDs:
+  - DOI problems: 1942 (Q25, other journal's printing), 1976 (Q02, OSF preprint DOI), 1981 (Q31, arXiv vs journal).
+  - Printed DOI used instead of accepted one: 1951 (Q60, correction-notice DOI).
+  - Decision changes: 1956 (Q11, EXCLUDE to INCLUDE, practitioner survey) and 1971 (Q29, EXCLUDE to INCLUDE, concussion review).
+  - Borderline: 1958 (Q16, labelled "special communication").
+  - DEGRADED: Q20 (wrong DOI cleared), Q35 and Q45 (DOI blank; Crossref suggests 10.1249/jsr.0000000000000418 for Q45, unconfirmed).
+  - Handoff (addendum text, DOI failure patterns, Zotero findings): `docs/handoffs/2026-10-13-batch-123-external-doi.md`.
 - 2026-10-12 (Mac): DEGRADED DOI lookup (Crossref). 72 DOIs accepted in `docs/doi-lookup/2026-10-12-accepted-dois.json`
   (doi.org confirmed 61; 11 publisher 403 or 202 kept). 1 unconfirmed (network error). 6 CHECK_BY_HAND and 11 NO_MATCH
   listed in `docs/doi-lookup/2026-10-12-degraded-doi-candidates.json`. Screening decisions NOT changed. Accepted DOIs
@@ -54,7 +59,10 @@ Read this first. Update it before ending every session.
 - New sources (Zotero), not started. `zotero-research-library-pp-cli sync` ran 2026-10-13. 880 Zotero journal
   articles have a PDF attached and a DOI, and are not in `papers.json` or any screening file. Admission needs the
   candidate workflow (`docs/contracts/zotero-publication-candidate-v1.md`), which needs `zotero-bridge`. That
-  bridge is not on this Mac (Windows only). Zotero MCP tools return "tenant gate is not configured".
+  bridge is a Python project at `~/DEV/ZoteroInjestion` (`.venv` already present; it runs on this Mac). It has no
+  Zotero credentials yet, so `doctor` fails with ConfigurationError. Setting them is Eric's step (do not paste the key
+  into chat). Zotero MCP tools return "tenant gate is not configured". Windows laptop stays hands-off, so the bridge
+  does not run there.
 - Clear `docs/needs-eric.md` section 1 (24 wrong PDFs) and section 2 (21 DEGRADED) when Eric has time.
   Before any new batch, check for open `batch-*-staged` branches (see Gotchas).
 - After the backlog: update the roadmap, then hand Eric the pilot launch checklist (goal E).
@@ -62,7 +70,9 @@ Read this first. Update it before ending every session.
 
 ## Open questions
 - ANSWERED 2026-10-13 (Eric): option 1. The 72 accepted DOIs went through the batch pipeline (batch 123-130, staged).
-- New sources: Zotero route or not? Needs `zotero-bridge`, which runs only on Windows. Decide where the Zotero step runs before any Zotero item is admitted.
+- New sources: pick one. (1) Mac bridge, pilot 10 papers first (recommended): Eric sets the bridge's Zotero key once,
+  then the bridge's batch and Paper Brief steps run on 10 papers to check cost and quality before any scale-up.
+  (2) Park Zotero and first fix `docs/needs-eric.md` section 1 (24 wrong PDFs), since those block re-screens too.
 - Unconfirmed DOI `10.26603/ijspt20200326` (Criteria-based return to sprinting) is not in batch 123. Still needs a check at doi.org.
 - Confirm the one unconfirmed DOI, `10.26603/ijspt20200326` (Criteria-based return to sprinting progression), because the doi.org check failed with a network error.
 - Replace the 24 wrong PDFs in `docs/needs-eric.md` section 1. Each needs the correct article downloaded into `SourcePapers/` under the same filename.
