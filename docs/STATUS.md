@@ -16,11 +16,13 @@ Read this first. Update it before ending every session.
 ## Current state
 - 2026-10-13 (Mac): Library candidate step for three Zotero papers. Paper Briefs saved through the bridge:
   IHXYT82G (Stahl 2020), VVSYTGU4 (Staton 2026), H54I3EL2 (Macadam 2017). Briefs now carry the "Why it was
-  promoted" text (drafter's reading, Eric to adjust). Candidates rebuilt and pass `candidate:check`. Candidate files
-  are in scratchpad, not in the repo. NOT staged or applied: `candidate:stage` needs a reviewer name.
+  promoted" text (drafter's reading, Eric to adjust). Candidates rebuilt and pass `candidate:check`. STAGED 2026-10-13 by Eric Rash
+  (`docs/zotero-synthesis/zotero-publication-*.json`): IHXYT82G = 1995, VVSYTGU4 = 1996, H54I3EL2 = 1997. NOT applied
+  to `papers.json`; `candidate:apply` and merge are still open. Next unused ID after staging: **1998**.
   NEY6YYVZ (Mokha 2026, American Football joint power): DOI 10.53520/rsp2026.105179 (Research in Strength and
-  Performance, Vol 6 No 1, published 2026-03-02). Its brief has an unresolved Kruskal-Wallis vs F-statistic
-  mismatch and no synthesis yet. Five papers already in the library (IDs 667, 487, 584, 577, 585) were not re-added.
+  Performance, Vol 6 No 1, published 2026-03-02). Not built: no bridge-tracked brief exists. The only brief is an
+  older untracked vault file, and replacing it needs Eric's keep-or-replace decision. Its brief has an unresolved
+  Kruskal-Wallis vs F-statistic mismatch. Five papers already in the library (IDs 667, 487, 584, 577, 585) were not re-added.
   SLIXJHBF (WKP858A4) PDF is still missing on this Mac.
 - 2026-10-13 (Mac): Batch 123-130 STAGED (branch `batch-123-staged`, DRAFT PR, NOT merged). Re-screen of the 72 DOI
   candidates from 2026-10-12 (Eric chose option 1). Result: 68 INCLUDE (IDs 1927-1994), 3 DEGRADED, 1 EXCLUDE.
