@@ -29,7 +29,8 @@ Read this first. Update it before ending every session.
   Crossref check of the 68 INCLUDE DOIs: 58 match on author and journal; 3 DOI problems (IDs 1942, 1976, 1981);
   3 citations missing a journal name (1939, 1946, 1974); rest are abbreviations. Eric must check before merge, in
   `docs/pilot-screening/batches-123-130-review.md`. Paper IDs:
-  - DOI problems: 1942 (Q25, other journal's printing), 1976 (Q02, OSF preprint DOI), 1981 (Q31, arXiv vs journal).
+  - DOI problems: 1942 (Q25, other journal's printing), 1976 (Q02, OSF preprint DOI), 1981 (Q31, arXiv vs journal). FIXED 2026-10-13 (Codex review R2): 1942 to the CSMR DOI, 1976 to the JOSPT DOI (year 2021), 1981 to the arXiv v1 DOI.
+  - Codex review R1 fixed 2026-10-13: `scripts/haiku-batch/validate.py` accepts a Crossref-sourced DOI only with a recorded identity check (title, author, journal, same DOI). Batch 123 cache: 10 external DOIs still lack the check (Q02 and Q25 now corrected in the repo; Q31 is an arXiv DOI not printed in its PDF; Q05, Q09, Q41, Q42, Q44, Q47, Q48 need a reviewer check).
   - Printed DOI used instead of accepted one: 1951 (Q60, correction-notice DOI).
   - Decision changes: 1956 (Q11, EXCLUDE to INCLUDE, practitioner survey) and 1971 (Q29, EXCLUDE to INCLUDE, concussion review).
   - Borderline: 1958 (Q16, labelled "special communication").

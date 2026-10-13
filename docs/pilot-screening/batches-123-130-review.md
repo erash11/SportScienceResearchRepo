@@ -197,9 +197,9 @@ Each of the 68 INCLUDE DOIs (IDs 1927-1994) was looked up in Crossref `works/{do
 - **4 are journal abbreviations, not errors:** 1934 (J Appl Physiol), 1947, 1948 and 1968 (Curr Sports Med Rep).
 - **3 have no journal name in the citation.** Their DOIs resolve to the right journal, but the citation should be completed: 1939 (Scand J Med Sci Sports, 2023), 1946 (same journal, 2018) and 1974 (Internal Medicine Journal, 2022).
 - **3 DOI problems that need Eric before merge:**
-  - **1942 (Q25):** the DOI is the Medicine & Science in Sports & Exercise printing. The PDF is the Current Sports Medicine Reports printing.
-  - **1976 (Q02):** the DOI is an OSF preprint DOI with no journal record in Crossref. The PDF is the published JOSPT manuscript.
-  - **1981 (Q31):** the DOI is the Journal of Quantitative Analysis in Sports version. The PDF is the arXiv preprint of the same paper.
+  - **1942 (Q25):** the DOI was the Medicine & Science in Sports & Exercise printing. The PDF is the Current Sports Medicine Reports printing. **Fixed 2026-10-13:** DOI now 10.1249/jsr.0000000000000589 (CSMR, Crossref 2019, 18(4)); authors checked in PDF text.
+  - **1976 (Q02):** the DOI was an OSF preprint DOI with no journal record in Crossref. The PDF is the published JOSPT manuscript. **Fixed 2026-10-13:** DOI now 10.2519/jospt.2021.9893; year 2021 (Crossref issued date; PDF downloaded January 2021).
+  - **1981 (Q31):** the DOI was the Journal of Quantitative Analysis in Sports version. The PDF is the arXiv v1 preprint. **Fixed 2026-10-13:** DOI now 10.48550/arXiv.2407.08508 (arXiv v1, 2024). The journal text was not compared, so the journal DOI is not used.
 
 Result: the external-DOI path is sound for 58 of 68 records. The other 10 need a human look, and the three DOI problems must be fixed before merge.
 
