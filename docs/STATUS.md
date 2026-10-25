@@ -14,6 +14,11 @@ Read this first. Update it before ending every session.
 | Drive outputs | `~/Library/CloudStorage/GoogleDrive-eric.rash11@gmail.com/My Drive/00_Primary_Storage_Drive/01_PROJECTS/_STALLED/2023-09-12_SportScienceResearchRepo` (Windows: `G:\My Drive\00_Primary_Storage_Drive\01_PROJECTS\_STALLED\2023-09-12_SportScienceResearchRepo`) |
 
 ## Current state
+- 2026-10-25 (Mac): Untracked `node_modules/` (2,254 files, already in `.gitignore` but committed in
+  aebf01d) and `.claude/settings.local.json` (local paths; now ignored). Files stay on disk. CI runs `npm ci`,
+  so the deploy does not need them. The drafter-eval `.log` briefs stay tracked on purpose. Local
+  `npm run build` fails with "Permission denied" on `node_modules/.bin/vite` (Windows-era copy, no exec
+  bit); fix with `npm ci` locally when needed.
 - 2026-10-13 (Mac): Library candidate step for three Zotero papers. Paper Briefs saved through the bridge:
   IHXYT82G (Stahl 2020), VVSYTGU4 (Staton 2026), H54I3EL2 (Macadam 2017). Briefs now carry the "Why it was
   promoted" text (drafter's reading, Eric to adjust). Candidates rebuilt and pass `candidate:check`. STAGED 2026-10-13 by Eric Rash
