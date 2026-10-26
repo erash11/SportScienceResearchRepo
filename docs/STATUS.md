@@ -14,6 +14,14 @@ Read this first. Update it before ending every session.
 | Drive outputs | `~/Library/CloudStorage/GoogleDrive-eric.rash11@gmail.com/My Drive/00_Primary_Storage_Drive/01_PROJECTS/_STALLED/2023-09-12_SportScienceResearchRepo` (Windows: `G:\My Drive\00_Primary_Storage_Drive\01_PROJECTS\_STALLED\2023-09-12_SportScienceResearchRepo`) |
 
 ## Current state
+- 2026-10-25 (Mac): Batch 131-132 STAGED on branch `batch-131-staged` (draft PR, NOT merged). Two new open-access
+  papers found by web search, not in the library: ID 1999 (Chen 2025, concussion prevention meta-analysis,
+  Sports Medicine & Injury) and ID 2000 (Zhu 2026, hamstring strain rehab meta-analysis, Rehabilitation & Return
+  to Sport). PDFs added to `SourcePapers/`. Haiku 5.5 draft, Opus 5.5 claim audit (both CORRECTED, both high
+  spot-check priority). Flags in `docs/pilot-screening/batches-131-132-review.md`. All audits pass EXCEPT the
+  Zotero order rule: staged candidates 1995-1998 must be applied first. Merge order: apply 1995-1998 on master,
+  then rebase this branch, re-run `npm run synthesis:apply`, `taxonomy:build`, `audit:manifest`, `audit`, then merge.
+  Next unused ID after this batch: **2001**.
 - 2026-10-25 (Mac): Untracked `node_modules/` (2,254 files, already in `.gitignore` but committed in
   aebf01d) and `.claude/settings.local.json` (local paths; now ignored). Files stay on disk. CI runs `npm ci`,
   so the deploy does not need them. The drafter-eval `.log` briefs stay tracked on purpose. Local

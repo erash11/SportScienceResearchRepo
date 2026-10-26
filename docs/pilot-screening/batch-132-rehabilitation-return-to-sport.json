@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-132-rehabilitation-return-to-sport",
+  "screenedOn": "2026-10-25",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Rehabilitation & Return to Sport queue positions 2-2. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 2,
+      "sourceFile": "Effects of rehabilitation interventions on time to return to play and reinjury rate in athletes with acute hamstring strain injuries.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 21,
+        "extractedCharacters": 105977,
+        "doi": "10.1038/s41598-026-70693-1",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Athletic Training",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Soccer",
+        "Track & Field",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes",
+        "Professional / Elite",
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Systematic review and meta-analysis of 14 randomized controlled trials (693 athletes) with acute hamstring strain, searched to January 2026 and graded with RoB 2 and GRADE. Two trials of a lengthening-focused protocol (L-protocol) showed a weighted mean difference of -28.29 days to return to play (95% CI -41.60 to -14.99; moderate certainty), with a non-significant re-injury difference (0/65 vs 3/66 events). Two progressive agility and trunk stabilization (PATS) trials showed no significant return-to-play difference and an inconclusive re-injury estimate (RD -0.35, 95% CI -0.74 to 0.03; 2/29 vs 10/24 events), while three platelet-rich plasma (PRP) trials gave a pooled WMD of -6.77 days (95% CI -10.79 to -2.75; I2 = 70%) with no significant re-injury difference.",
+      "limitations": "Most outcomes rest on two or three trials, and GRADE certainty is low or very low for most estimates, so the re-injury results are inconclusive. The review also notes that return-to-play definitions varied and that the search was completed before the PROSPERO registration (May 2026), with screening starting after registration.",
+      "synthesisCaution": "Staff could read the PATS re-injury estimate (RD -0.35) as a 35% absolute reduction, or the PRP and rESWT single-trial results as settled, when each rests on two or three small trials with inconclusive or low-certainty evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "findings: pain-threshold strength result was worded as a within-group 15% increase -> between-group mean difference 15% (95% CI 1 to 28%) versus pain-free rehabilitation.",
+            "limitations: added two internal conflicts: PRP I2 70% (Results) vs 62% (GRADE text); mean age range 20.3 to 46.6 years vs Table 2 means of about 20 to 30 years."
+          ],
+          "residualConcerns": "Population level is mixed (elite, professional, semi-professional, amateur); both Professional / Elite and Adult / Recreational tags kept. PRP pooled WMD (-6.77 days) is below the authors' 7-day MCID, which supports the low-certainty reading.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2000",
+        "synthesisBatch": "pilot-synthesis-batch-132",
+        "publishedOn": "2026-10-25"
+      }
+    }
+  ]
+}
