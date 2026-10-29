@@ -24,8 +24,8 @@ Read this first. Update it before ending every session.
   `https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=<PMCID>.` lists files; take
   `<PMCID>.<ver>/<PMCID>.<ver>.pdf` (not `*_ESM.pdf` or `Data_Sheet_*.PDF`, which are supplements). Replaces the
   Chrome download steps. Europe PMC `?pdf=render` and PMC pages still 403 to curl.
-- 2026-10-29: 15 new PDFs landed in `SourcePapers/` at 16:43 (not from the PerformanceSnapshot session that
-  ran closeout; their source is not recorded). No other change.
+- 2026-10-29: The "new PDFs in `SourcePapers/`" seen by a closeout session at 16:43 were this batch's downloads
+  (24 PDFs, commit f6b7328, entry above). No other new files.
 - 2026-10-25 (Mac): PR #30 MERGED. Zotero candidates 1995-1998 applied (published 2026-10-25, Eric's go-ahead),
   then batch 131-132: ID 1999 (Chen 2025, concussion prevention meta-analysis, Sports Medicine & Injury) and ID 2000
   (Zhu 2026, hamstring strain rehab meta-analysis, Rehabilitation & Return to Sport). Two open-access PDFs found by web
