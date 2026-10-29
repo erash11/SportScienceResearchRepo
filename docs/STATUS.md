@@ -14,7 +14,7 @@ Read this first. Update it before ending every session.
 | Drive outputs | `~/Library/CloudStorage/GoogleDrive-eric.rash11@gmail.com/My Drive/00_Primary_Storage_Drive/01_PROJECTS/_STALLED/2023-09-12_SportScienceResearchRepo` (Windows: `G:\My Drive\00_Primary_Storage_Drive\01_PROJECTS\_STALLED\2023-09-12_SportScienceResearchRepo`) |
 
 ## Current state
-- 2026-10-29 (Mac): Batch 133-139 STAGED on branch `batch-133-staged` (draft PR, NOT merged). 24 new open-access
+- 2026-10-29 (Mac): PR #31 MERGED (`b2b939a`, Eric's go-ahead; 2020 creatine kept INCLUDE). Batch 133-139: 24 new open-access
   papers from a Europe PMC search (OA, 2025-09 to 2026-10, SR/MA/RCT/guideline): IDs 2001-2024, all INCLUDE.
   Haiku 5.5 draft, Opus 5.5 claim audit (22 CORRECTED, 1 VERIFIED, 1 DECISION_CHANGED: creatine/kidney paper
   EXCLUDE (c) -> INCLUDE). 18 spot checks, 5 scope calls in `docs/pilot-screening/batches-133-139-review.md`.
@@ -89,9 +89,10 @@ Read this first. Update it before ending every session.
   9 legacy DOI collisions). Latest handoff: `docs/handoffs/2026-10-10-cloud-batches-88-95.md`.
 
 ## Next
-- Batch 133: `git checkout batch-133-staged`. It holds 24 open-access PMC PDFs (commit f6b7328, 2026-10-29), not yet
-  drafted. Run `python3 scripts/haiku-batch/prepare.py <workdir> --files <list.txt>`, then draft, verify, validate,
-  and `assemble.py <workdir> <date> 2001 133`, and open a draft PR. Next unused ID: 2001.
+- ~~Batch 133~~ DONE 2026-10-29: batches 133-139 merged in PR #31 (IDs 2001-2024). Next unused ID: **2025**, next
+  batch number: **140**. More papers: Europe PMC search, then the PMC open-data bucket (Current state, 2026-10-29).
+- `docs/needs-eric.md` did not pick up batch 133-139's 5 scope calls (`needs_eric.py` output unchanged); they are only
+  in `docs/pilot-screening/batches-133-139-review.md`. Cause not checked.
 - ~~Apply staged candidates 1995-1998~~ DONE 2026-10-25 in PR #30.
 - Eric: reviewer check for seven DOIs that lack an identity record (Q05 1939, Q09 1974, Q41 1934, Q42 1946, Q44 1947, Q47 1968, Q48 1948). Also check 1981's arXiv DOI (not printed in its PDF) and 1998's Kruskal-Wallis vs F mismatch.
 - New sources (Zotero), not started. `zotero-research-library-pp-cli sync` ran 2026-10-13. 880 Zotero journal
