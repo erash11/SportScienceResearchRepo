@@ -14,6 +14,8 @@ Read this first. Update it before ending every session.
 | Drive outputs | `~/Library/CloudStorage/GoogleDrive-eric.rash11@gmail.com/My Drive/00_Primary_Storage_Drive/01_PROJECTS/_STALLED/2023-09-12_SportScienceResearchRepo` (Windows: `G:\My Drive\00_Primary_Storage_Drive\01_PROJECTS\_STALLED\2023-09-12_SportScienceResearchRepo`) |
 
 ## Current state
+- 2026-10-29: 15 new PDFs landed in `SourcePapers/` at 16:43 (not from the PerformanceSnapshot session that
+  ran closeout; their source is not recorded). No other change.
 - 2026-10-25 (Mac): PR #30 MERGED. Zotero candidates 1995-1998 applied (published 2026-10-25, Eric's go-ahead),
   then batch 131-132: ID 1999 (Chen 2025, concussion prevention meta-analysis, Sports Medicine & Injury) and ID 2000
   (Zhu 2026, hamstring strain rehab meta-analysis, Rehabilitation & Return to Sport). Two open-access PDFs found by web
