@@ -89,12 +89,13 @@ Read this first. Update it before ending every session.
   9 legacy DOI collisions). Latest handoff: `docs/handoffs/2026-10-10-cloud-batches-88-95.md`.
 
 ## Next
-- ~~Batch 133~~ DONE 2026-10-29: batches 133-139 merged in PR #31 (IDs 2001-2024). Next unused ID: **2025**, next
-  batch number: **140**. More papers: Europe PMC search, then the PMC open-data bucket (Current state, 2026-10-29).
-- `docs/needs-eric.md` did not pick up batch 133-139's 5 scope calls (`needs_eric.py` output unchanged); they are only
-  in `docs/pilot-screening/batches-133-139-review.md`. Cause not checked.
+- Eric: open `docs/pilot-screening/batches-123-130-review.md` and check the seven DOIs that lack an identity record (Q05 1939, Q09 1974, Q41 1934, Q42 1946, Q44 1947, Q47 1968, Q48 1948). Also check 1981's arXiv DOI (not printed in its PDF) and 1998's Kruskal-Wallis vs F mismatch.
+- More papers (batch 140, first ID **2025**): Europe PMC search, download from the PMC open-data bucket
+  (Current state, 2026-10-29), then `python3 scripts/haiku-batch/prepare.py <workdir> --files <list.txt>`.
+- ~~Batch 133~~ DONE 2026-10-29: batches 133-139 merged in PR #31 (IDs 2001-2024). Its 5 "scope calls" are borderline
+  INCLUDE notes in `docs/pilot-screening/batches-133-139-review.md`; `needs_eric.py` lists only EXCLUDE scope calls,
+  so `docs/needs-eric.md` correctly did not change.
 - ~~Apply staged candidates 1995-1998~~ DONE 2026-10-25 in PR #30.
-- Eric: reviewer check for seven DOIs that lack an identity record (Q05 1939, Q09 1974, Q41 1934, Q42 1946, Q44 1947, Q47 1968, Q48 1948). Also check 1981's arXiv DOI (not printed in its PDF) and 1998's Kruskal-Wallis vs F mismatch.
 - New sources (Zotero), not started. `zotero-research-library-pp-cli sync` ran 2026-10-13. 880 Zotero journal
   articles have a PDF attached and a DOI, and are not in `papers.json` or any screening file. Admission needs the
   candidate workflow (`docs/contracts/zotero-publication-candidate-v1.md`), which needs `zotero-bridge`. That
@@ -131,7 +132,10 @@ Read this first. Update it before ending every session.
 - Zotero order audit: STAGED candidate IDs must equal max(`papers.json` ID)+1, in order. Apply staged candidates
   before a batch with higher IDs merges. `candidate:apply` runs the full audit, so move new batch JSON files aside
   while applying, or it rolls back ("published screening ID ... has no taxonomy record"). See PR #30.
-- PMC and Springer block `curl` with a bot check. Chrome (claude-in-chrome) or the PMC open-data bucket works.
+- PMC and Springer block `curl` with a bot check. Use the PMC open-data bucket (Current state, 2026-10-29); take only
+  `<PMCID>.<ver>.pdf`, not supplement PDFs in the same folder.
+- Drafter subagents may read only selected sections of long papers, or start their own sub-agents. Tell them not to.
+  The Opus audit reads the full text and is the real gate.
 - Only one session should run the backlog at a time; two sessions would assign the same IDs. Check for open
   `batch-*-staged` branches before starting.
 - `node_modules` and `dist` are committed with Windows binaries. Build on Linux only in a scratch copy.
