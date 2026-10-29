@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-137-nutrition-hydration",
+  "screenedOn": "2026-10-29",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Nutrition & Hydration queue positions 16-20. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 16,
+      "sourceFile": "Effects of Acute Caffeine Ingestion on Repeated Sprint Ability - A Systematic Review and Meta-Analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 52535,
+        "doi": "10.3390/nu17213475",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Performance",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review and fixed-effects meta-analysis of 13 placebo-controlled studies (6 male-only, 6 female-only, 1 mixed; samples of 10 to 52) on acute caffeine and repeated sprint ability (RSA) peak power output, with running sprint times converted to power by formula. Caffeine increased peak power versus placebo (WMD 5.28, 95% CI 2.49-8.07; I2 = 7%), with a significant effect at 6 mg/kg or more (WMD 6.67, 95% CI 3.32-10.02) but not at lower doses (WMD 2.16, 95% CI -2.87 to 7.19).",
+      "limitations": "Small crossover samples, a fixed-effects model, and running sprint times converted to peak power make the pooled values hard to interpret in real units. No formal tests of subgroup differences are reported for dose, modality or sex, and adverse effects were not analyzed.",
+      "synthesisCaution": "Staff could take the pooled benefit as applying to any dose and any sprint test, when the lower-dose estimate crosses zero, the paper contradicts itself on whether cycling or running showed the larger effect, and match performance was not tested.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.limitations: said caffeine was given in several forms including mouth rinse and drinks -> only powder and capsule forms were included ('the present analysis included only powder and capsule forms without distinguishing their effects separately')",
+            "evidenceSummary/findings: 'cycling protocols outperformed running' and 'higher doses outperformed lower doses' implied tested comparisons -> reported as within-subgroup effects; noted the abstract vs results contradiction ('with running-based RSA exhibiting a more pronounced effect') and absent subgroup-difference tests",
+            "paper.methods: added fixed-effects pooling ('Data were pooled using fixed-effects models'), formula conversion of running sprint times to power, search date 6 September 2025, Cochrane, PEDro and GRADE",
+            "paper.practicalImplications/athleteDev: '6 mg/kg or more' -> 6 mg/kg, the authors' stated dose ('acute caffeine ingestion at 6 mg/kg BW, administered 60 min pre-exercise'); added 9 mg/kg side-effect note and that adverse effects were not analyzed",
+            "paper.rtp: 'healthy adults' -> healthy participants including adolescent samples (mean ages 16.7, 16.9 and 18.3 years in three female studies)",
+            "paper.tldr: removed 'no significant sex difference' as a finding, since no between-sex test is reported"
+          ],
+          "residualConcerns": "The authors rate certainty as high despite small samples, substantial funnel plot asymmetry and an internal contradiction on modality; a reviewer may wish to temper that rating. The WMD units are not stated and include formula-converted running data.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2019",
+        "synthesisBatch": "pilot-synthesis-batch-137",
+        "publishedOn": "2026-10-29"
+      }
+    },
+    {
+      "originalQueueOrder": 20,
+      "sourceFile": "Effect of creatine supplementation on kidney function - a systematic review and meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 37030,
+        "doi": "10.1186/s12882-025-04558-6",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Nutrition & Hydration",
+      "domains": [
+        "Nutrition & Hydration",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Nutrition",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "American Football"
+      ],
+      "populations": [
+        "Adult / Recreational",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review of 21 human studies of oral creatine and kidney function (2000 to March 2025), with 12 studies (177 creatine and 263 control participants) pooled for serum creatinine and 5 studies (69 vs 74) for glomerular filtration rate (GFR). Creatine was associated with a small, statistically significant rise in serum creatinine (MD 0.07, 95% CI 0.01 to 0.12, p = 0.03), significant at 1 week or less and beyond 12 weeks but not at 1 to 12 weeks. GFR did not differ significantly from control, and no study reported serious kidney adverse effects.",
+      "limitations": "Samples mixed healthy sedentary adults, military volunteers, American football players, and patients with type 2 diabetes, peripheral artery disease or postmenopausal status, with no athlete subgroup and no samples with kidney disease among the studies listed in Table 1. Most trials were short and rated 'some concerns', funnel plots were asymmetric, and the text gives no pooled GFR effect size.",
+      "synthesisCaution": "Staff could read this as proof that creatine is safe for every athlete's kidneys at any dose or duration, when trials were mostly short, excluded kidney disease, and some GFR values were estimated from creatinine, which creatine itself raises.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "DECISION_CHANGED",
+          "changes": [
+            "decision: EXCLUDE (c) -> INCLUDE; the paper frames creatine as an athletic supplement ('both competitive and recreational athletes are increasingly turning to methods') and includes American football players and trained adults, so it addresses athlete health under rule (c)",
+            "all taxonomy, summary and paper fields: null -> filled from the full text",
+            "confidence: kept medium because of the unit and study-count inconsistencies noted in limitations"
+          ],
+          "residualConcerns": "Decision call: rule (c) excludes only papers not relevant to athletes, sport, exercise performance or athlete health; creatine kidney safety is an athlete-health question, the introduction is framed around athletes, and at least two included studies are of American football players (Mayhew 2002, Kreider 2003) plus resistance-trained and military samples, so INCLUDE follows library precedent even though most pooled samples are not athletes. Populations carry no athlete tags for that reason. Data concerns: the creatinine MD is printed as 0.07 umol/L, which seems implausibly small for a significant rise and may be mg/dL (auditor inference, not stated in the text); study counts for the creatinine analysis disagree (12, 14, 16); no pooled GFR estimate or the >12-week subgroup value is printed; GFR pooled estimated and measured values together, and creatinine-based eGFR is itself raised by creatine. Table 1 is partly garbled in extraction and lists only the pooled studies, so the kidney-disease statement covers those, not all 21. The American Football tag rests on 'Football Players' in two US studies (Mayhew, Kreider). Medication or supplement safety topic, so a human should confirm before staff use.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2020",
+        "synthesisBatch": "pilot-synthesis-batch-137",
+        "publishedOn": "2026-10-29"
+      }
+    }
+  ]
+}

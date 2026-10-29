@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-135-rehabilitation-return-to-sport",
+  "screenedOn": "2026-10-29",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Rehabilitation & Return to Sport queue positions 2-22. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 2,
+      "sourceFile": "Establishing weighted criteria for return to play after hamstring injury - a systematic review and methodological quality analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 23,
+        "extractedCharacters": 117610,
+        "doi": "10.1186/s12891-026-10072-z",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Track & Field",
+        "Other Sport"
+      ],
+      "populations": [
+        "Injured Athletes",
+        "Professional / Elite",
+        "Adult / Recreational",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "This PRISMA systematic review searched PubMed, SportDiscuss, Web of Science and SciELO on 20 April 2026 for studies on criteria to return to activity after hamstring injury. The text reports 26 included studies (13 primary and 13 secondary reviews) with no pooled analysis, and the authors build a weighted hierarchy of criteria from them. Pain was reported as the most common criterion, with 10 of the 12 studies that addressed it favoring absence of pain, and all 8 studies that analyzed functional tests supporting them.",
+      "limitations": "The included studies are small and of uneven quality (PEDro 3 to 6 of 10 for the three trials in Table 1, STROBE 8 to 19 of 22, PRISMA 2 to 17 of 27), and the weighted hierarchy is the authors' own judgment rather than a validated scoring method. The abstract reports 22 included studies while the results report 26, and Table 4 lists 11 primary studies against 13 in the text.",
+      "synthesisCaution": "Staff could read the 10% maximum limb deficit and the weighted criteria hierarchy as validated return-to-play cut-offs, when the review says no consensus exists and a secondary review it cites reports that none of the return criteria have been validated.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Collegiate had no included study behind it and Male Athletes was not stated for any included sample -> removed both (Table 4 samples are UEFA first-team, professional, elite Australian football, sprinters, recreational athletes, patients 18-50 and 'Female athletes with grade 1 and 2 hamstring injuries')"
+          ],
+          "residualConcerns": "RTP clearance paper, so clinically sensitive. The paper is internally inconsistent: the abstract reports 22 included studies vs 26 in the results, Table 4 lists 11 primary studies vs 13 in the quality tables, the text calls pain the most common criterion while Fig. 3 discussion says 'Walking without pain' is most cited and Fig. 2 puts functional tests and flexibility at the centre, and the search date (20 April 2026) is after the received date (18 July 2025). The 10% limb-deficit 'consensus' and the weighting model are author judgment, not validated thresholds.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2012",
+        "synthesisBatch": "pilot-synthesis-batch-135",
+        "publishedOn": "2026-10-29"
+      }
+    },
+    {
+      "originalQueueOrder": 9,
+      "sourceFile": "Are There Sex Disparities in Return to Sport After Anterior Cruciate Ligament Reconstruction_ A Systematic Review and Exploratory Meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 54262,
+        "doi": "10.1177/03635465261448489",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review and exploratory random-effects meta-analysis of 25 observational studies (7,183 athletes: 2,892 females, 4,291 males) comparing return to sport after primary ACL reconstruction by sex. Female athletes had lower odds of return to sport at 12 months (OR 0.76, 95% CI 0.62-0.92) and up to and including 24 months (OR 0.72, 95% CI 0.61-0.85), but not at exactly 24 months or at the longest follow-up. There was no significant sex difference in time to return, return to competition or return to preinjury level.",
+      "limitations": "The authors call the pooled analysis exploratory and hypothesis generating; 24 of 25 studies were at serious overall risk of bias and all were at serious risk from confounding. Studies varied in populations, graft types, sports and return-to-sport definitions, and the analysis was not stratified by graft, age or body mass index.",
+      "synthesisCaution": "Staff could read the 0.72 to 0.76 odds ratios as a fixed sex effect on return, when the gap appears only in the midterm window, long-term return rates and time to return did not differ, and the data are observational and heavily confounded.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.athleteDev: claimed performance staff should not assume the same return-to-sport timeline by sex -> time to return did not differ ('mean difference was 0.48 months (95% CI, 20.19 to 1.14 ...) showing no statistically significant differences', minus sign lost in extraction)",
+            "evidenceSummary/findings: omitted the non-significant 24-month and longest follow-up results -> added (24 months 'OR 0.69 (95% CI, 0.44-1.06 ...) no statistically significant sex difference'; longest 'OR 0.82 (95% CI, 0.63-1.07)')",
+            "screeningLimitations/limitations: risk of bias missing -> added ('All studies were found to be at serious risk of bias due to confounding. Twenty-four studies were found to have a serious risk of bias overall')",
+            "paper.tldr/practicalImplications: implied the review supports planning sex-specific programs -> stated the review did not test them ('highlight the need for sex-specific rehabilitation and psychological support strategies')",
+            "paper.methods: search end date and follow-up wording -> 27 September 2025 and outcomes at 12 months ('reported outcomes at 12 months of follow-up')",
+            "synthesisCaution: rewritten to reflect that the gap is limited to the midterm window"
+          ],
+          "residualConcerns": "The results section labels two different analyses 'At 24 months' (5 studies, OR 0.69, and 16 studies, OR 0.72); the record treats the 16-study result as 'up to and including 24 months' to match the abstract. Male totals differ slightly between abstract (4,291) and longest follow-up analysis (4,296).",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2013",
+        "synthesisBatch": "pilot-synthesis-batch-135",
+        "publishedOn": "2026-10-29"
+      }
+    },
+    {
+      "originalQueueOrder": 10,
+      "sourceFile": "Return-to-Sport Outcomes and Psychological Readiness to Return to Sport After Revision Compared to the Primary Anterior Cruciate Ligament Reconstruction - A Systematic Review and Meta-Analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 65643,
+        "doi": "10.1186/s40798-026-01006-z",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review and meta-analysis of 19 observational studies (3,209 athletes, mean age 26.0 years, 2,517 male and 692 female) comparing revision with primary ACL reconstruction. Revision patients had lower odds of return to sport (10 studies; OR 0.66, 95% CI 0.49-0.89; 73% vs 79%) and of return at the preinjury competition level (11 studies; OR 0.52, 95% CI 0.36-0.76), a 1.2-month longer time to return (7 studies; SMD 0.38), and lower psychological readiness (3 studies; SMD -0.75, 95% CI -1.14 to -0.36; about 14.2 ACL-RSI points). GRADE certainty was very low for every outcome.",
+      "limitations": "All evidence is observational (mostly level III and IV) with very low GRADE certainty and mostly short- to medium-term follow-up (mean 43 months), and revision groups were much smaller than primary groups. The psychological readiness result rests on three studies with high heterogeneity (I2 = 81%).",
+      "synthesisCaution": "Staff could read the pooled odds ratios as evidence that revision surgery itself lowers return to sport, when observational comparisons cannot separate the procedure from the injury history that led to it and certainty is very low.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: athlete sex tags missing although sex is stated -> added Male Athletes and Female Athletes ('3209 respondents, 2517 males and 692 females')",
+            "paper.methods: search described as running up to November 2024 from inception -> January 2015 to October 2024, updated 15 November 2024 ('searched from January 2015 to October 2024 ... an updated search of databases was performed on November 15, 2024')",
+            "evidenceSummary/findings/limitations: certainty and per-outcome evidence base omitted -> added very low GRADE for all outcomes, MINORS mean 16.7, study counts per outcome and I2 values ('the overall GRADE score for RTS outcomes and psychological readiness to return to sport was very low')",
+            "paper.limitations: CI sign error confirmed and extended -> abstract and results print '0.12 to -0.63' and the sensitivity analysis prints '0.18 to -0.69'",
+            "paper.practicalImplications: 'readiness assessment belongs in the plan' based on the largest gap -> hedged, since readiness rests on three studies ('Psychological readiness to return to sport was addressed only in three investigations ... interpreted with some caution'); added that the authors' exercise plus psychology recommendation is untested ('further studies should verify the effectiveness')",
+            "paper.limitations: vague 'methodological limitations that need further analysis' -> specific limits, including the 830 + 2,736 vs 3,209 sample inconsistency"
+          ],
+          "residualConcerns": "The time-to-return CI upper bounds are printed with a sign error in three places; the record assumes 0.63 and 0.69, consistent with the reported p = 0.004. Reported group sizes (830 revision, 2,736 primary) sum to more than the stated 3,209 participants.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2014",
+        "synthesisBatch": "pilot-synthesis-batch-135",
+        "publishedOn": "2026-10-29"
+      }
+    },
+    {
+      "originalQueueOrder": 12,
+      "sourceFile": "Comparative effectiveness of resistance training modalities after anterior cruciate ligament reconstruction - a network meta-analysis of randomized controlled trials.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 64154,
+        "doi": "10.3389/fphys.2026.1792091",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Rehabilitation",
+        "Sports Medicine",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Network meta-analysis of 22 randomized controlled trials (n = 797; 12 BFRT, 8 eccentric, 3 isokinetic and 2 plyometric trials) of resistance training after primary ACL reconstruction in adults or adolescents, compared mainly with usual multimodal rehabilitation. Blood flow restriction training ranked first for quadriceps strength (SMD 0.40 vs usual rehabilitation, 95% CI 0.07-0.73) and quadriceps mass (SMD 0.82, 95% CI 0.11-1.53), both at moderate certainty. Eccentric training ranked first for quality of life (SMD 1.31, 95% CI 0.01-2.63; very low certainty), and isokinetic training ranked highest for knee function without any significant pairwise difference.",
+      "limitations": "Only the BFRT versus usual rehabilitation comparisons for quadriceps strength and mass reached moderate certainty; knee function and quality of life comparisons were all very low certainty, and isokinetic and plyometric nodes rest on 3 and 2 trials. Trial participants are post-surgery patients not described as athletes, and most outcomes were measured at the end of the intervention.",
+      "synthesisCaution": "Staff could read the SUCRA rankings as a hierarchy, when only BFRT versus usual rehabilitation for quadriceps strength and mass is moderately certain and the isokinetic and eccentric rankings rest on very low certainty evidence.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/screeningLimitations/findings/limitations: GRADE certainty omitted -> added moderate certainty only for BFRT vs CON (strength and mass) and very low for all knee function and QoL comparisons ('For knee function, all comparisons were rated as very low certainty ... For QoL, all comparisons were rated as very low certainty')",
+            "paper.tldr/practicalImplications: presented eccentric training for quality of life as an outcome match -> hedged as provisional ('ET may be considered ... although this finding should be interpreted cautiously given the limited certainty of evidence'); added p = 0.050 and I2 73.5%",
+            "evidenceSummary/findings: added trial counts by modality and per outcome (18/693, 10/339, 10/293, 7/173) and risk of bias (14 low, 8 some concerns)",
+            "synthesisCaution: broadened from isokinetic only to all rankings beyond BFRT vs CON"
+          ],
+          "residualConcerns": "Eligibility: kept INCLUDE. Trials enrolled adults or adolescents after primary ACL reconstruction who are not described as athletes, but post-ACLR resistance rehabilitation is exercise and athlete-health evidence that the paper frames around return to pivoting sport, so exclusion reason (c) does not apply. Under the population rule the patients get Mixed / Unspecified (mean ages 15.7 to 41.7 years), not athlete tags such as Injured Athletes.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2015",
+        "synthesisBatch": "pilot-synthesis-batch-135",
+        "publishedOn": "2026-10-29"
+      }
+    },
+    {
+      "originalQueueOrder": 21,
+      "sourceFile": "Platelet-Rich Plasma Accelerates the Return to Sport in Athletes with Acute Muscle Injuries - A Systematic Review and Statistical Fragility Index-Based Meta-Analysis of Randomized Controlled Trials.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 55372,
+        "doi": "10.1186/s40798-026-01017-w",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review and fragility-index meta-analysis of nine RCTs (474 patients, about 93% male, mean age 27) comparing platelet-rich plasma (PRP) injection with rehabilitation alone, saline, Traumeel or hematoma evacuation for acute muscle injuries, six of them hamstring-only. PRP shortened time to return to sport by 7.5 days overall (95% CI 4.51 to 10.46, p < 0.001, I2 92%), 8.8 days in the four double-blind trials and 7.5 days in the hamstring trials. Pain improved more with PRP only in the hamstring sub-analysis (0.4 points), and re-injury and complication rates did not differ.",
+      "limitations": "Five of the nine trials were rated high risk of bias and five were only single-blind against rehabilitation alone, and GRADE certainty was low for overall return to sport (moderate only for the double-blind subgroup). The text describes participants as patients, not athletes, and gives no activity or competition level.",
+      "synthesisCaution": "Staff could read 'accelerates return to sport' as an established benefit for athletes, when the main estimate is low-certainty, highly heterogeneous (I2 92%), drawn from patients whose sport level is not reported, and the authors note PRP has a large placebo effect.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Injured Athletes -> Mixed / Unspecified only; the text calls participants 'patients' and Table 3 gives no activity or competition level ('acute muscle injury patients')",
+            "sports: removed Soccer; soccer appears only in one reference title (Bezuglov, 'professional soccer players'), not in any sample description",
+            "synthesisCaution: treated the CFI of 188 as a weakness -> it indicates robustness; the real cautions are low GRADE certainty, I2 92%, unknown athlete status and placebo effect",
+            "screeningLimitations: 'fragility indices for re-injury and complications were small (5 and 7)' -> five high-risk-of-bias trials, five single-blind, GRADE low for overall RTS; FI 7 is classed 'moderately robust' by the authors",
+            "paper.findings: added study counts, sample sizes and FI classes per analysis, and the strength and imaging results",
+            "paper.limitations: added comparator mix, I2 92%, missing RTS criteria and the discussion's incorrect claim that the double-blind subgroup confirmed the VAS result",
+            "paper.methods: added PROSPERO ID, search date and pooling models",
+            "audiences: Research & Analytics -> Athletic Training (clinical return-to-sport topic)"
+          ],
+          "residualConcerns": "Title and keywords say athletes, but the body describes 'patients' with no activity level; one trial (Martinez-Zapata) had a mean age of about 46 and mainly gastrocnemius injuries, so the population may include non-athletes. Against that, all nine trials reported time to return to sport for every participant, so participants were sport participants of unstated level; a reviewer who reads the rule that way can add Injured Athletes. The overall RTS estimate is highly heterogeneous (I2 92%), and how return to sport was defined in each trial is not reported. Return-to-sport and injection-therapy topic, so clinically sensitive.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2016",
+        "synthesisBatch": "pilot-synthesis-batch-135",
+        "publishedOn": "2026-10-29"
+      }
+    },
+    {
+      "originalQueueOrder": 22,
+      "sourceFile": "Return-to-sport rate and time in elite athletes after ankle syndesmosis injuries - a systematic review and meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 46743,
+        "doi": "10.1186/s13018-025-06566-6",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Rehabilitation & Return to Sport",
+      "domains": [
+        "Rehabilitation & Return to Sport",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Athletic Training"
+      ],
+      "sports": [
+        "American Football",
+        "Soccer",
+        "Rugby",
+        "Ice Hockey",
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Systematic review and meta-analysis of 14 mostly observational studies (901 professional and collegiate athletes, mean age 26.8) with ankle syndesmosis injuries, pooling return-to-sport rates with logit-transformed random-effects models. The pooled rate of return to match play was 96% (95% CI 93-98%; I2 27%), 98% after suture-button fixation and 98% after nonoperative management. Time to return was only averaged across studies (unweighted, about 58 days, range 13-133).",
+      "limitations": "Thirteen of 14 studies reported 100% return, the only lower rate came from the largest NFL cohort (478 of 533, 89.7%), and Egger's test suggested publication bias (p = 0.0002). GRADE certainty was low for return rate and very low for return time, which was not pooled.",
+      "synthesisCaution": "Staff could plan on 'about two months' for any syndesmosis injury, when that figure is an unweighted average that mixes stable injuries managed nonoperatively (about 13 to 45 days) with high-grade injuries fixed with suture-button (about 41 to 133 days).",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "sports: added Soccer (D'Hooghe, Qatar 'professional football players', described in the discussion as 'professional soccer players') and Mixed / General Sport (Calde, Taylor, Nussbaum, Altmeppen list 'athletes' or 'college athletes'); kept American Football (NFL and collegiate football), Rugby and Ice Hockey from Table 1",
+            "populations: added Collegiate (Miller 'collegiate football players', Taylor and Nussbaum 'college athletes')",
+            "screeningLimitations and synthesisCaution: added that 13 of 14 studies reported 100% return and only the NFL cohort (478/533) was lower, GRADE low/very low, and that the 58-day figure mixes nonoperative and surgical cases",
+            "paper.findings: added subgroup CIs, the 90% rate in treatment-not-reported studies (p = 0.0136), the leave-one-out result and the treatment-specific time ranges from Table 1",
+            "paper.tldr, practicalImplications, athleteDev: 'roughly two-month timeline as planning benchmarks' -> timeline set by injury grade and treatment (nonoperative about 13-45 days, suture-button 41-133 days in Table 1)",
+            "paper.limitations: added confounding by injury grade between treatment groups and the five-versus-four database discrepancy",
+            "paper.methods: listed databases, PROSPERO ID, designs and GRADE"
+          ],
+          "residualConcerns": "The treatment-specific time ranges are read from Table 1, not pooled by the authors. Table 1 lists 'hockey players' without saying ice hockey (Canadian and US professional cohorts), and Sikka et al. is described with an 'anterior talofibular ligament' injury, a lateral ligament, which may be a table error. Sex was not reported, so no sex tags were added. Return-to-sport topic, so clinically sensitive.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2017",
+        "synthesisBatch": "pilot-synthesis-batch-135",
+        "publishedOn": "2026-10-29"
+      }
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-133-training-performance",
+  "screenedOn": "2026-10-29",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Training & Performance queue positions 5-18. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 5,
+      "sourceFile": "The effects of three hamstring programmes on strength and sprinting performance in female footballers - A randomised controlled trial.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 14,
+        "extractedCharacters": 54592,
+        "doi": "10.1371/journal.pone.0342529",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Randomized Controlled Trial",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Coaching"
+      ],
+      "sports": [
+        "Other Sport"
+      ],
+      "populations": [
+        "Female Athletes",
+        "Collegiate",
+        "Healthy Athletes"
+      ],
+      "evidenceSummary": "Randomized controlled trial of 35 female Gaelic footballers at a university academy (NHE n=12, single leg hamstring bridge n=11, razor hamstring curl n=12) completing a supervised 4-week programme of two sessions per week. Isometric knee flexor and hip extensor torque rose over time across groups, and eccentric NHE torque rose in the NHE and razor curl groups (about 12% to 18%) but barely in the bridge group (0.1% to 1.9%). No group-by-time interaction was significant, and no sprint time or sprint mechanic changed significantly.",
+      "limitations": "There was no control group without strengthening work, no blinding, and only 35 completers, below the study's own power target of 36. Strength was measured isometrically and as slow eccentric NHE torque, which the authors say may not capture the properties that drive sprinting.",
+      "synthesisCaution": "Staff may read the within-group strength gains as caused by these exercises, or the null group results as proof the three exercises are equal, but there was no control group and the study was small and unblinded.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary, paper.findings: knee flexor torque was said to rise in all groups -> eccentric NHE torque rose only 0.1% to 1.9% in the SLHB group (Table 3: 'SLHB: 1.9 and 0.1%'); time effects were described as within-group -> main effects of time pooled across groups; interaction claim limited to isometric measures (NHE torque used Wilcoxon and Kruskal-Wallis, no interaction test)",
+            "paper.tldr, paper.athleteDev: causal 'builds strength' -> gains cannot be credited to the exercises ('it is not clear if the improvements were due to the interventions or other factors, such as the regular training')",
+            "paper.limitations: 'The Methods say 35 were randomized' -> the abstract says so (Methods do not state the randomized number)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2001",
+        "synthesisBatch": "pilot-synthesis-batch-133",
+        "publishedOn": "2026-10-29"
+      }
+    },
+    {
+      "originalQueueOrder": 17,
+      "sourceFile": "Effects of resisted sprint training on sprint, jump, and change-of-direction performance in athletes - a systematic review and meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 18,
+        "extractedCharacters": 65573,
+        "doi": "10.3389/fphys.2025.1711992",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Rugby",
+        "Track & Field",
+        "Tennis",
+        "Other Sport"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Youth / Adolescent",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review and meta-analysis of 16 controlled trials (404 participants) of resisted sprint training (RST) against unresisted sprint training (UST) or regular training in competitive or recreational athletes, pooled with random-effects models and rated with GRADE. Within-group, RST improved linear sprint (SMD 0.65, p < 0.001) and change-of-direction (COD) ability (SMD 1.10, p < 0.001), and UST improved sprint (SMD 0.42) and COD (SMD 0.60). Compared with UST, RST gave a larger COD gain (p = 0.043) with no significant difference for linear sprint (p = 0.057) or vertical jump (p = 0.102).",
+      "limitations": "All included trials were rated 'some concerns' for risk of bias, most involved male soccer players, and only 6 studies addressed vertical jump and 5 addressed COD. The vertical jump effect is printed with a negative sign (SMD -0.38) in the abstract, results and Table 7 while being described as an improvement, and several subgroup tables do not match the text, so the jump and regular-training comparisons are hard to interpret.",
+      "synthesisCaution": "Staff could apply the large RST change-of-direction effect (SMD 1.10) to all athletes, when that pooled estimate rests on five studies and the advantage over unresisted sprinting is borderline (p = 0.043).",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: said the -0.38 sign conflict should be checked in the tables -> the negative sign also appears in the results text and Table 7 ('SMD = -0.38, 95% CI: -0.67~-0.08'; Table 7 RST -0.85, RT -0.53), so it is unexplained throughout; added 'some concerns' risk of bias for all trials",
+            "paper.findings: 'abstract prints SMD -0.38' -> reported as SMD -0.38 with a negative sign throughout; added the 0-10/0-20/0-30 m and youth/adult SMDs behind the subgroup claims ('0.81vs.0.34vs.0.71', '0.81vs.0.72')",
+            "paper.limitations: added Egger's test publication bias (t = 3.11, p = 0.003) with trim-and-fill CI crossing zero ('SMD = 0.55, 95% CI: -0.12-1.22'), and table mismatches with the text (Table 6 RT sprint row SMD 0.18 vs discussion 'RST (SMD = 0.53, p < 0.001)'; Table 8 RT COD p 0.686 vs text p = 0.064)",
+            "paper.tldr and practicalImplications: 'prioritise resisted sprint training' / 'advantage clearest for 0-10 m' -> no overall sprint advantage over UST (p = 0.057), COD edge borderline, 0-10 m edge from the authors' subgroup analysis",
+            "paper.athleteDev: pairing with plyometrics framed as the authors' suggestion, not a tested finding",
+            "sports: added every sport with an included study in Table 4: Track & Field (three sprinter studies), Other Sport (three handball studies) and Tennis (Moya-Ramon)",
+            "populations: added Female Athletes ('included both male and female subjects'; Luteberget female handball, Stavridis and Zisi male + female)",
+            "paper.methods: added PROSPERO ID, RoB 2, trial designs and 4-12 week duration"
+          ],
+          "residualConcerns": "The vertical jump SMDs are negative in every place they are printed while described as improvements, and the paper notes elsewhere that negative SMD means faster times, so the direction cannot be confirmed from the text; the forest plots are figures not in the extraction. The authors' '0-10 m' and 'youth' advantages over UST rest on subgroup p-values that appear to test each subgroup against zero (0-30 m SMD 0.71 is close to 0-10 m 0.81, youth 0.81 vs adult 0.72), so they may not be true between-method differences. GRADE rated sprint risk of bias 'not serious' although every trial was 'some concerns', and Zisi et al. (2022) was a four-day acute study rather than a training program.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2002",
+        "synthesisBatch": "pilot-synthesis-batch-133",
+        "publishedOn": "2026-10-29"
+      }
+    },
+    {
+      "originalQueueOrder": 18,
+      "sourceFile": "The Relationship Between Inter-limb Asymmetry and Sprinting Performance in Sprint Athletes - A Systematic Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 23,
+        "extractedCharacters": 86776,
+        "doi": "10.1186/s40798-026-01082-1",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Training & Performance",
+      "domains": [
+        "Training & Performance",
+        "Monitoring & Technology"
+      ],
+      "audiences": [
+        "Performance",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Track & Field"
+      ],
+      "populations": [
+        "Healthy Athletes",
+        "Male Athletes",
+        "Female Athletes",
+        "Professional / Elite",
+        "Youth / Adolescent",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review of 10 mostly cross-sectional studies (684 participants; 4,811 records screened) on lower-limb inter-limb asymmetry and sprinting performance in healthy, injury-free sprint athletes, with no meta-analysis because studies were few and heterogeneous. Most functional, morphological, kinematic and kinetic asymmetry measures were not significantly associated with sprint performance, with a few metric- and sex-specific associations in single studies. GRADE certainty was very low for every outcome.",
+      "limitations": "Every association comes from a single study (k = 1 per outcome), all but one study were cross-sectional, and only 3 of 10 checked the reliability of their asymmetry measures. Training level was reported for only 162 participants (16 world class, 8 elite, 138 highly trained), and the largest cohort (Trivers et al., n = 288) had no training status reported.",
+      "synthesisCaution": "Staff could read the mostly null results as proof that asymmetry never matters for sprinting, or the few significant single-study correlations as a reason to target it, when the certainty is very low and the design cannot show cause and effect.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: 'the evidence was rated mixed with GRADE' -> GRADE certainty was very low for every outcome ('The certainty of evidence across all outcomes was rated as very low'); added 684 participants and mostly cross-sectional design",
+            "paper.findings: only the 60 m composite kinematic result -> added the null kinetic results in 64 sprinters, the single-study significant associations with their sample sizes (Bissas n = 16, Exell n = 8, Golas n = 8, with no significance stated for the 50 m correlations) and the very small Trivers effects ('R2 = 0.02 to 0.05')",
+            "screeningLimitations: added k = 1 per outcome, one longitudinal study, reliability in 3 of 10, and that the largest cohort had no training status ('In one particular study, the training level was not specified')",
+            "paper.limitations: added very low certainty and the Trivers direction conflict between results ('positively associated with mean velocity over 90 m') and discussion ('associated with poorer performance (i.e. lower mean velocities')",
+            "populations: added Professional / Elite (16 world class, 8 elite) and Youth / Adolescent (Prvulovic, mean age 15.9, 18 females)",
+            "paper.methods: added sprint distance scope, citation tracking, quality score range and narrative synthesis",
+            "paper.practicalImplications: dropped 'standardised assessment before drawing practical conclusions' as advice -> consistent task, metric and known reliability, matching the review's reliability finding"
+          ],
+          "residualConcerns": "The direction of the Trivers knee-width finding cannot be settled from the text (positive beta with velocity in results, 'poorer performance' in the discussion). Sex counts (324 male, 265 female, 95 unreported) and the Trivers cohort sizes in Table 6 (288 and 163) do not reconcile cleanly, and one Trivers study scored IAAF results from 100 m to 800 m. Citation numbers in the text and Table 6 do not match the reference list for several studies.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2003",
+        "synthesisBatch": "pilot-synthesis-batch-133",
+        "publishedOn": "2026-10-29"
+      }
+    }
+  ]
+}

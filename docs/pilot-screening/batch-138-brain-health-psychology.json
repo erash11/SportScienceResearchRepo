@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-138-brain-health-psychology",
+  "screenedOn": "2026-10-29",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Brain Health & Psychology queue positions 11-11. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 11,
+      "sourceFile": "The Role of Psychosocial Factors in Returning to Physical Activity and Sport Among Female Football Players After Anterior Cruciate Ligament Injury - A Scoping Review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 82884,
+        "doi": "10.1186/s40798-026-01118-6",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Brain Health & Psychology",
+      "domains": [
+        "Brain Health & Psychology",
+        "Rehabilitation & Return to Sport",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Female Athletes",
+        "Injured Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Scoping review (PRISMA-ScR) of six databases searched on 1 May 2025 that included seven studies (five qualitative, two cross-sectional) covering 403 female football players after ACL injury, all of them soccer players apart from one rugby union and one touch football participant. Uncertainty, fear, lack of confidence and poor social support were perceived barriers to return to sport and physical activity, while confidence, motivation, strong social support and athletic identity were perceived facilitators.",
+      "limitations": "Seven studies, no critical appraisal of study quality, and 380 of the 403 players come from two cross-sectional studies by the same research group (Faltstrom et al.), while the qualitative studies contributed 2 to 9 women each. Six of seven studies were mixed-sex with roughly 10% female participants, and the mostly qualitative evidence cannot show causal links.",
+      "synthesisCaution": "Staff could treat these barriers and facilitators as measured predictors of return to sport, when they are perceived experiences from a few small, mostly qualitative soccer studies and the review does not show that changing them improves outcomes.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "sports and screeningLimitations: claimed the studies were drawn from soccer, rugby union, Gaelic and Australian football -> soccer only ('all studies included athletes who played soccer, with one study including one participant who played rugby union ... and another study including one participant who played touch football'); removed Rugby and Other Sport tags",
+            "evidenceSummary/findings: sample and design missing -> added 403 female players, 222 returned, five qualitative and two cross-sectional studies ('A total of 403 female participants ranging from age 16-56 were included')",
+            "screeningLimitations/limitations: added no quality appraisal ('the included studies were not critically analysed for quality') and dominance of two Faltstrom cross-sectional studies (198 and 182 players)",
+            "paper.limitations: added the abstract vs PRISMA count mismatch (582/74 vs 581/73)",
+            "paper.tldr/athleteDev: directive 'build these into the return plan' and 'should track' -> hedged to match perceptual, untested evidence ('Further research is needed to evaluate screening tools, referral pathways, and intervention strategies')"
+          ],
+          "residualConcerns": "The two Faltstrom studies (2016, 182 players; 2024, 198 players) are both preseason web questionnaire cohorts of elite to recreational players with data collected in 2013 to 2014 and 2013 to 2015 and may share participants, which would inflate the 403 total; the review does not address this.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2021",
+        "synthesisBatch": "pilot-synthesis-batch-138",
+        "publishedOn": "2026-10-29"
+      }
+    }
+  ]
+}
