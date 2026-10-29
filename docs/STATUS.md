@@ -77,7 +77,10 @@ Read this first. Update it before ending every session.
   9 legacy DOI collisions). Latest handoff: `docs/handoffs/2026-10-10-cloud-batches-88-95.md`.
 
 ## Next
-- Eric: decide whether to apply staged candidates 1995-1998 (`npm run candidate:apply -- docs/zotero-synthesis/PUBLICATION.json`, then commit). Applying writes `papers.json`; merging publishes.
+- Batch 133: `git checkout batch-133-staged`. It holds 24 open-access PMC PDFs (commit f6b7328, 2026-10-29), not yet
+  drafted. Run `python3 scripts/haiku-batch/prepare.py <workdir> --files <list.txt>`, then draft, verify, validate,
+  and `assemble.py <workdir> <date> 2001 133`, and open a draft PR. Next unused ID: 2001.
+- ~~Apply staged candidates 1995-1998~~ DONE 2026-10-25 in PR #30.
 - Eric: reviewer check for seven DOIs that lack an identity record (Q05 1939, Q09 1974, Q41 1934, Q42 1946, Q44 1947, Q47 1968, Q48 1948). Also check 1981's arXiv DOI (not printed in its PDF) and 1998's Kruskal-Wallis vs F mismatch.
 - New sources (Zotero), not started. `zotero-research-library-pp-cli sync` ran 2026-10-13. 880 Zotero journal
   articles have a PDF attached and a DOI, and are not in `papers.json` or any screening file. Admission needs the
@@ -112,6 +115,10 @@ Read this first. Update it before ending every session.
   editorial) are in `docs/pilot-screening/batches-88-95-review.md`.
 
 ## Gotchas
+- Zotero order audit: STAGED candidate IDs must equal max(`papers.json` ID)+1, in order. Apply staged candidates
+  before a batch with higher IDs merges. `candidate:apply` runs the full audit, so move new batch JSON files aside
+  while applying, or it rolls back ("published screening ID ... has no taxonomy record"). See PR #30.
+- PMC and Springer block `curl` with a bot check. Chrome (claude-in-chrome) or the PMC open-data bucket works.
 - Only one session should run the backlog at a time; two sessions would assign the same IDs. Check for open
   `batch-*-staged` branches before starting.
 - `node_modules` and `dist` are committed with Windows binaries. Build on Linux only in a scratch copy.
