@@ -1,0 +1,483 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-134-sports-medicine-injury",
+  "screenedOn": "2026-10-29",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Sports Medicine & Injury queue positions 1-24. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 1,
+      "sourceFile": "Comparative Effectiveness of Exercise Interventions for Hamstring Injury Prevention in Football Players - A Systematic Review and Network Meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 75290,
+        "doi": "10.1186/s40798-026-01087-w",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Youth / Adolescent",
+        "Collegiate",
+        "Professional / Elite",
+        "Adult / Recreational",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Systematic review and random-effects network meta-analysis of 11 randomized controlled trials (9,282 football players, published 2008 to 2023) comparing Nordic hamstring exercise (NHE), FIFA 11, FIFA 11+, FIFA 11+ Kids, a bounding exercise program (BEP) and usual training. FIFA 11+ had an IRR of 0.55 (95% CI 0.31 to 0.98) versus usual training and the highest P-score (0.84), NHE showed a non-significant reduction, and FIFA 11 and BEP showed no clear benefit; male-only results were broadly similar.",
+      "limitations": "The ranking rests on indirect comparisons through usual training in a star-shaped network with several nodes supported by a single trial, and the evidence from female players is too thin for a female-only analysis. Injury definitions and adherence differed across trials, and the FIFA 11+ result was no longer significant under time-loss definitions.",
+      "synthesisCaution": "Staff could read FIFA 11+ as proven better than NHE, but no trial compared the two directly and the certainty of evidence is low to very low.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: athlete sex tags missing although sex is stated -> added Male Athletes and Female Athletes ('9 of the 11 included trials enrolled male players, whereas only two trials enrolled female players')",
+            "paper.tldr: 'use it as a sensible whole-team warm-up' was firmer than the authors -> 'can be considered as a whole-team warm-up' ('FIFA 11 + may be considered a scalable team-level warm-up option')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2004",
+        "synthesisBatch": "pilot-synthesis-batch-134",
+        "publishedOn": "2026-10-29"
+      }
+    },
+    {
+      "originalQueueOrder": 3,
+      "sourceFile": "Mechanisms, injury patterns, and kinematic features of hamstring strain injuries in football (soccer) - a systematic review and meta-analysis of video-analysis studies.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 12,
+        "extractedCharacters": 65390,
+        "doi": "10.3389/fpubh.2026.1846524",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Performance",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Systematic review and random-effects meta-analysis of 7 match video-analysis studies covering 342 hamstring strain injuries in 11-a-side football, mostly from professional male players (six male studies, one female study). The authors report higher relative reporting of non-contact vs indirect-contact injuries (OR 2.51, 95% CI 1.31 to 4.82) and of sprint-type vs mixed-type injuries (OR 2.01, 95% CI 1.04 to 3.87). Sprint vs stretch, offensive vs defensive, and first vs second half showed no clear difference.",
+      "limitations": "Only seven small studies were pooled, with heterogeneity of I2 67% to 71% for the two significant comparisons and 84% for sprint vs stretch. Video studies have no exposure-time denominators, so the results describe reported event patterns, not injury risk.",
+      "synthesisCaution": "Staff could read the odds ratios as proof of injury risk factors or as evidence that a specific training or prevention strategy works, but the authors say video data cannot show that any training strategy prevents hamstring injury.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "VERIFIED",
+          "changes": [],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2005",
+        "synthesisBatch": "pilot-synthesis-batch-134",
+        "publishedOn": "2026-10-29"
+      }
+    },
+    {
+      "originalQueueOrder": 4,
+      "sourceFile": "Intervention components, training dose, and adherence in exercise-based prevention of hamstring strain injury in football - a systematic review and meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 17,
+        "extractedCharacters": 60797,
+        "doi": "10.1080/07853890.2026.2652116",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate",
+        "Youth / Adolescent",
+        "Adult / Recreational",
+        "Male Athletes",
+        "Female Athletes"
+      ],
+      "evidenceSummary": "Systematic review and random-effects meta-analysis of 15 randomised and cluster-randomised trials (n = 7,465) of exercise-based hamstring injury prevention in football participants, compared with usual practice or standard warm-up. Programmes reduced hamstring strain risk (RR 0.51, 95% CI 0.36 to 0.71; I2 57%), with a prediction interval crossing the null (0.18 to 1.40). The authors report the benefit was concentrated in high-adherence implementations (RR 0.36 at 75% or more adherence vs RR 0.92 below 75%), and rate the certainty of evidence as low.",
+      "limitations": "Adherence and dose were defined inconsistently across trials, and the adherence finding comes from study-level meta-regression across 14 trials, which cannot establish individual-level causality. Eleven of the 15 trials enrolled only male players, so the female and youth evidence is small.",
+      "synthesisCaution": "Staff could treat the adherence and dose findings as a proven programme design rule, but the authors describe them as hypothesis-generating and say the evidence cannot rank programme types or components.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.tldr, paper.abstract: adherence effect was framed as individual players completing sessions -> framed as trial-level adherence ('adherence-outcome associations do not establish individual-level causality')",
+            "paper.practicalImplications: 'Track session completion for each player ... benefit was seen only at high adherence' -> 'Monitor programme session completion ... clear benefit was seen only in trials with high adherence' (low adherence RR 0.92, 95% CI 0.68 to 1.23)",
+            "paper.athleteDev: 'protection depended on players completing the programme' was causal -> 'was associated with high programme completion at the trial level'; 'The 1 to 4 sessions per week range was not less protective than higher doses' compared the range with itself -> 1 to 2 vs 3 to 4 sessions per week (RR 0.56 vs 0.45; P for interaction 0.54)"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2006",
+        "synthesisBatch": "pilot-synthesis-batch-134",
+        "publishedOn": "2026-10-29"
+      }
+    },
+    {
+      "originalQueueOrder": 7,
+      "sourceFile": "Situations Leading to Anterior Cruciate Ligament Injury in Sports - A Systematic Review with Meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 22,
+        "extractedCharacters": 92086,
+        "doi": "10.1007/s40279-026-02436-1",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "American Football",
+        "Basketball",
+        "Rugby",
+        "Combat Sports",
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Systematic review with meta-analysis (PRISMA; PROSPERO CRD42022337340) of 39 video-analysis studies reporting 1551 video-verified ACL injuries, mostly in soccer, American football, Australian rules football or rugby, and basketball; 79.2% of injuries were in men. Pooled estimates were 44.0% noncontact, 36.4% indirect contact and 19.5% direct contact, with cutting, pressing/tackling, deceleration and landing the most common noncontact situations and 67.5% of injuries occurring during ball possession.",
+      "limitations": "The pooled figures are shares of injuries, not injury rates, because no exposure data were pooled and the movement and situation categories overlap. Study quality averaged moderate (QA-SIVAS mean 66%), and several sport-level moderator results rest on one or two studies.",
+      "synthesisCaution": "Staff could read the share of injuries that involved cutting or tackling as the risk of those actions, when the review has no data on how often athletes perform them.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.findings: implied direct contact was most common in contact-oriented football overall -> highest among team sports, with the single judo study at 64.7% ('more common in judo (64.7%; number of studies (n) = 1) than in COF (32.1%...)')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2007",
+        "synthesisBatch": "pilot-synthesis-batch-134",
+        "publishedOn": "2026-10-29"
+      }
+    },
+    {
+      "originalQueueOrder": 8,
+      "sourceFile": "Lateral Extra-articular Procedures Reduce the Risk of Revision of Anterior Cruciate Ligament Reconstruction in Elite Athletes - A Systematic Review and Meta-analysis of Comparative Studies.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 8,
+        "extractedCharacters": 35916,
+        "doi": "10.1177/03635465251376655",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Rehabilitation"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Rugby"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Systematic review and random-effects meta-analysis (PRISMA, PROSPERO CRD42025637843) of four comparative studies, Oxford level of evidence 3, covering 586 elite athletes with isolated ACL reconstruction and 417 with ACL reconstruction plus a lateral extra-articular procedure (LEAP). Ipsilateral rerupture was 14.0% (95% CI 7.9-21.5%) with isolated reconstruction and 5.0% (95% CI 1.2-10.8%) with LEAP, a significant between-group difference (P = .042). The pooled odds ratio was 0.35 (95% CI 0.20-0.59; P < .001).",
+      "limitations": "Only four non-randomized comparative studies were pooled, with varying graft types, LEAP techniques, attachment points and concomitant surgery, so the pooled estimate rests on a small and heterogeneous base. The review reports rerupture and odds ratios only, with no return-to-sport outcomes.",
+      "synthesisCaution": "Staff could read a 65% lower odds of rerupture as a proven effect that applies to every elite athlete, when it comes from four non-randomized studies.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "sports: only Mixed / General Sport -> added Soccer and Rugby, the largest samples in Table 1 (Hopper: 'Soccer, 120 ... Rugby, 98'; Borque 2022: 'Soccer, 254 ... Rugby, 136'; Borque 2024: 'Rugby')",
+            "paper.practicalImplications: 'these four studies show fewer reruptures' -> 'these four non-randomized studies reported fewer reruptures' (all level 3 comparative designs)",
+            "paper.limitations: called the conclusion's '.60%' garbled -> identified as '>60%' rendered by the extraction ('I2 . 50%', 'failure rates .30%')"
+          ],
+          "residualConcerns": "Two of the four pooled studies share a lead author and both include rugby players treated with the modified Lemaire procedure (Borque 2022 and Borque 2024); the text does not say whether their cohorts overlap, which could double-count athletes. MINORS mean of 15 is out of 24 for comparative studies, though the authors call it good. The text says return-to-sport data were extracted but none are reported.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2008",
+        "synthesisBatch": "pilot-synthesis-batch-134",
+        "publishedOn": "2026-10-29"
+      }
+    },
+    {
+      "originalQueueOrder": 13,
+      "sourceFile": "Prevention strategies and modifiable risk factors for concussion - a systematic review and meta-analysis for the Female, woman and girl_or Athlete Injury pRevention (FAIR) consensus.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 18,
+        "extractedCharacters": 112222,
+        "doi": "10.1136/bjsports-2025-109915",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Coaching",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Rugby",
+        "Ice Hockey",
+        "Combat Sports",
+        "Other Sport"
+      ],
+      "populations": [
+        "Female Athletes",
+        "Youth / Adolescent",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review with meta-analyses and GRADE of 108 studies (67 on prevention strategies, 41 on modifiable risk factors), of which 40 (37%) reported female, woman or girl-specific estimates and 72 (67%) included participants under 18. Headgear was associated with lower concussion rates in adolescent female lacrosse and soccer (IRR 0.70, 95% CI 0.50-0.99; two cohort studies and one RCT), eyewear was not protective (IRR 1.08, 95% CI 0.69-1.68), and artificial turf vs grass showed no difference in adult female soccer (IRR 0.95, 95% CI 0.62-1.45); all three were very low certainty.",
+      "limitations": "Most included studies reported only aggregated male and female data, female-specific evidence came from a limited set of sports, and confounding was controlled to some degree in only 43% of female-specific studies. The headgear estimate pools hard-shell lacrosse and soft-shell soccer headgear and is very low certainty.",
+      "synthesisCaution": "Staff could treat headgear as an established concussion prevention measure for female athletes, when the only protective estimate is very low certainty, combines different headgear types, and comes from adolescent lacrosse and soccer.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations/evidenceSummary: headgear estimate described as cohort evidence only -> two cohort studies and one RCT ('Very-low certainty evidence (two cohort and one RCT) demonstrated headgear use reduced sport-related concussion rates by 30-39%'); added as-treated IRR 0.61",
+            "paper.methods: listed seven databases without EMBASE -> eight databases including EMBASE, searched 2001 to October/November 2023 ('searching eight databases ... EMBASE-OVID'); added inclusion rule and Downs and Black tool",
+            "paper.rtp: said the review does not study return-to-play -> four management studies examined time to return to play with aggregate data ('four studies (4/11; 36%) examined time to return to play (RTP)')",
+            "paper.practicalImplications: 'low-certainty' -> 'very low certainty'; added that eyewear may still protect against eye, head and face injury ('may be recommended for protection against eye and other head/face injuries')",
+            "paper.citation/identityCheck: title used 'girl and/or' -> printed 'girl/or'; placeholder volume '0' and '2025, pp.' format replaced with 'Br J Sports Med. 2025:1599-1616'",
+            "sports: removed American Football (no included study with female estimates) and added Combat Sports (taekwondo and karate studies)"
+          ],
+          "residualConcerns": "Not a re-issue of Eliason 2023: Q13 cites 'Eliason PH, Galarneau J-M, Kolstad AT, et al. Prevention strategies and modifiable risk factors for sport-related concussions and head impacts: a systematic review and meta-analysis. Br J Sports Med 2023;57:749-61' as reference 13, the earlier aggregate-data review in which only 3% of studies were female focused. Q13 has a different first author (Shill), its own PROSPERO registration (CRD42023485808), new searches (October and November 2023), the FAIR female-specific question and new meta-analyses, so it is a new review that overlaps in authorship and topic. The printed citation line reads '2025;0:1599-1616' (volume placeholder 0); the record keeps the printed pages and omits the volume. A correction notice says the title was amended after Online First.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2009",
+        "synthesisBatch": "pilot-synthesis-batch-134",
+        "publishedOn": "2026-10-29"
+      }
+    },
+    {
+      "originalQueueOrder": 23,
+      "sourceFile": "Comparative efficacy of portable active cooling vs. passive cooling for reducing core temperature in exertional heat stroke - a systematic review and meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 16,
+        "extractedCharacters": 68163,
+        "doi": "10.3389/fpubh.2026.1811173",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Recovery & Readiness"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Performance"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Adult / Recreational"
+      ],
+      "evidenceSummary": "Systematic review and random-effects meta-analysis (PRISMA 2020; PROSPERO CRD420261292698) of 11 randomized trials, 10 of them crossover (148 healthy, physically active volunteers, 78% male), comparing portable active cooling with passive cooling after exercise-induced hyperthermia (core temperature 38.0-39.5 C, no central nervous system dysfunction). Active cooling lowered core temperature slightly faster (MD 0.02 C/min, 95% CI 0.01-0.03, I2 88%), with the advantage limited to external refrigerant-based devices (type A, MD 0.04 C/min) and mainly to ice-water tarp cooling, while wearable pre-cooled vests (type B) showed no advantage (MD 0.00 C/min).",
+      "limitations": "No participant had exertional heat stroke: these were healthy volunteers with moderate hyperthermia in laboratory or field trials of 10 to 18 people, so the findings cannot be read as treatment evidence for clinical heat stroke. Heterogeneity was high (I2 88%) and Egger's test suggested publication bias (p = 0.005).",
+      "synthesisCaution": "Staff could read this as evidence that a portable device is adequate treatment for exertional heat stroke, when no heat stroke patients were studied, clinical outcomes were not measured, and the authors state cold-water immersion remains the gold standard.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "populations: Healthy Athletes, Mixed / Unspecified -> Adult / Recreational; Table 1 describes healthy, physically active volunteers ('predominantly healthy, physically active young adults'), not athlete samples",
+            "sports: removed Soccer; soccer appears only as the exercise task in one study (DeMartini, 'outdoor ball sports (including soccer and ultimate frisbee)')",
+            "screeningLimitations, synthesisCaution, practicalImplications, rtp: removed wording implying clinical heat stroke evidence ('For field management of exertional heat stroke... prefer') -> volunteers with exercise-induced hyperthermia, cold-water immersion remains gold standard ('no participants exhibited central nervous system dysfunction')",
+            "paper.findings: type A CI 0.02-0.04 (abstract) -> 0.02-0.07 from the results ('pooled MD = 0.04 C/min; 95% CI: 0.02-0.07'); added that the type A advantage was driven by tarp cooling (MD 0.11 vs 0.02 for ice sheets and blankets), I2 88%, and the 1 C cooling-time data",
+            "paper.limitations: 'poor allocation concealment and outcome-assessment blinding' -> these were unreported (unknown risk); added high-risk blinding in all trials, five high-risk sequence generation, Egger's p = 0.005, and the abstract-versus-results CI conflict",
+            "paper.methods: added databases, search date, age criterion and crossover pooling method",
+            "confidence: kept medium because of the indirect population and high heterogeneity"
+          ],
+          "residualConcerns": "The title and conclusions refer to exertional heat stroke, but no included participant had heat stroke; the record frames all findings as exercise-induced hyperthermia in volunteers. The two Hosokawa studies list identical samples (n = 14) and may share participants, and Wang et al. (a phase-change material blanket) is classed as type A although the paper defines type A as continuous external refrigerant. Clinically sensitive emergency-care topic.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2010",
+        "synthesisBatch": "pilot-synthesis-batch-134",
+        "publishedOn": "2026-10-29"
+      }
+    },
+    {
+      "originalQueueOrder": 24,
+      "sourceFile": "2025 Update to the Female Athlete Triad Coalition Consensus Statement Part 2 - Clinical Guidelines for Screening, Diagnosis, Treatment, and Return to Play for Adolescents and Adults.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 53,
+        "extractedCharacters": 293088,
+        "doi": "10.1007/s40279-025-02332-0",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Consensus / Position Statement",
+      "primaryDomain": "Sports Medicine & Injury",
+      "domains": [
+        "Sports Medicine & Injury",
+        "Nutrition & Hydration",
+        "Rehabilitation & Return to Sport",
+        "Athlete Wellbeing"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Nutrition",
+        "Rehabilitation",
+        "Performance",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport"
+      ],
+      "populations": [
+        "Female Athletes",
+        "Youth / Adolescent",
+        "Adult / Recreational",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Consensus statement (part 2 of the 2025 Female Athlete Triad Coalition update) with no study sample, written by a 16-member expert panel that graded each evidence-based statement from Level A to D and accepted it only after more than 85% voted 'agree' with no 'disagree'. It gives clinical guidance on screening, diagnosis, treatment, and clearance and return to play for adolescent and adult female athletes, covering energy deficiency, eating disorders and disordered eating, menstrual disturbance and bone health including bone stress injury. It moves away from an energy-availability threshold, revises the 2014 six-item Triad cumulative risk assessment (CRA) for clearance decisions, and introduces an adolescent version of the CRA.",
+      "limitations": "Most statements are graded Level B or C, and much of the pharmacological bone evidence comes from women with anorexia nervosa rather than athletes. The authors state that the 2025 changes to the CRA (new questionnaire cutoffs, scoring substitutions and the adolescent tool) still need validation, and guidance on return to play in eating pathology, especially for adolescents, is limited.",
+      "synthesisCaution": "Staff could treat the revised CRA as fully validated, but only the original 2014 tool has prospective evidence for predicting bone stress injury; the 2025 cutoffs, substitutions and adolescent version are untested, and the score bands for clearance are a consensus decision rule meant to be applied by a physician.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/tldr: said the update 'adds' a six-item CRA -> the CRA dates from 2014; this update revises it and introduces an adolescent version ('In 2014, the ... Consensus Statement ... introduced a standardized risk stratification protocol'; 'an updated Triad CRA tool including one for adolescents')",
+            "synthesisCaution: claimed the tool's bone evidence comes from one study of 239 collegiate athletes -> several prospective studies are cited ('validated in prospective studies ... predictive of BSI [56, 230-232]'); caution now targets the unvalidated 2025 revisions ('additional work is required to validate these recommendations')",
+            "athleteDev: listed menstrual and bone markers as energy-deficiency indicators -> indicators are serial weight, BMI, EA, eating behaviour and, if resources allow, RMR ratio and metabolic hormones (Fig. 3, Section 2.2); added lean-sport and 12 h/week risk groups",
+            "limitations: 'favours individualised, staged return-to-play decisions over fixed rules' was not a limitation -> anorexia-nervosa-based pharmacological evidence, unvalidated CRA changes, and the DXA grade conflict (Level B in Section 5.2.2 vs Level A in Table 12)",
+            "practicalImplications: RTP example was not identified as adolescent eating-disorder guidance (Sections 6.7-6.8) -> labelled; added physician-only CRA decisions ('decisions resulting from the use of the CRA should only be made by physicians'), three-discipline evaluation and LEAF-Q caution",
+            "methods: added 16-member panel, >85% agree with no disagree voting rule, and Level A-D grading",
+            "findings: added clearance bands 0-1/2-5/>=6 (Fig. 6), 300-600 kcal/day statement (Level B), REFUEL BMD non-improvement, transdermal estradiol vs combined oral contraceptive results",
+            "rtp: added categorical restriction for anorexia nervosa BMI <16 or bulimia purging >4/week (Fig. 6 legend) and BSI prognostic factors (MRI grade, bone type, skeletal site)",
+            "screeningLimitations: replaced vague 'limited direct trials' with the specific evidence gaps",
+            "citation: 'Sports Med.' -> journal name as printed 'Sports Medicine. 2026;56:375-427' (header 'Sports Medicine (2026) 56:375-427'); year 2026 and DOI confirmed",
+            "audiences: added Rehabilitation (physical therapist BSI role, Table 3); populations: added Adult / Recreational because adult guidance and exercising women are explicitly covered"
+          ],
+          "residualConcerns": "Return-to-play clearance guidance is clinically sensitive. The DXA statement grade differs between the text (Level B) and Table 12 (Level A). Fig. 5b legend refers to the '2024 consensus papers'; the panel is described as 16 people but 15 authors are listed; Fig. 5a and Table 10 thresholds differ slightly in wording (for example TFEQ '>14' vs '>=14' and the EDE-Q moderate band). Figure text for the adolescent CRA (Fig. 5b) did not extract, so adolescent-specific CRA cutoffs were not checked.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2011",
+        "synthesisBatch": "pilot-synthesis-batch-134",
+        "publishedOn": "2026-10-29"
+      }
+    }
+  ]
+}

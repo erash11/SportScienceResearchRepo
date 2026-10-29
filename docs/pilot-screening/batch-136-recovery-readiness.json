@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-136-recovery-readiness",
+  "screenedOn": "2026-10-29",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Recovery & Readiness queue positions 19-19. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 19,
+      "sourceFile": "The Impact of Cold-Water Immersion on Post-Match Recovery in Trained Soccer Players - A Systematic Review and Meta-Analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 13,
+        "extractedCharacters": 48237,
+        "doi": "10.1111/sms.70202",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Recovery & Readiness",
+      "domains": [
+        "Recovery & Readiness",
+        "Training & Performance"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine"
+      ],
+      "sports": [
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review with random-effects meta-analysis of 10 randomized trials (about 210 competitive soccer players by Table 1, only 9 of them female) comparing cold-water immersion (CWI) with passive rest after a match or simulated match. Compared with passive rest, CWI improved recovery of maximal voluntary contraction (SMD 1.02, 95% CI 0.55-1.50) and countermovement jump (SMD 0.38, 95% CI 0.12-0.64, significant at 48 h only), and lowered creatine kinase (SMD -0.77, 95% CI -1.17 to -0.37) and soreness (SMD -1.04, 95% CI -1.91 to -0.17). There was no effect on 20 m sprint (SMD -0.59, 95% CI -1.41 to 0.23).",
+      "limitations": "The trials were small, no trial blinded participants or therapists, and five used simulated rather than real matches. Every outcome's 95% prediction interval includes no effect, and nearly all players were male.",
+      "synthesisCaution": "Staff could treat CWI as a proven recovery aid for sprint performance or for every post-match outcome, when sprint showed no effect and all prediction intervals include no effect.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary: 'competitive male and female soccer players (aged 15 to 45)' -> about 210 players by Table 1, only 9 female; 15 to 45 is the inclusion criterion, not the sample (Rupp et al. '13 males, 9 females', all others males)",
+            "evidenceSummary: 'compared with control or placebo' -> passive rest, the comparator the results report ('compared to passive rest')",
+            "screeningLimitations: added no participant or therapist blinding in any trial ('In none of the included studies were participants and/or therapists blinded') and simulated match protocols",
+            "paper.findings: added time-point SMDs and that the 48 h MVC CI crosses zero ('SMD = 1.10 [95% CI: -0.02 to 2.21]'); soreness not reduced at 48 h",
+            "paper.methods: added databases, search dates, PROSPERO ID, CWI protocol criteria and analysis model",
+            "paper.limitations: added single-study 72 h soreness result, one trial with 9 females, and trial size range",
+            "paper.athleteDev: 'Timing matters, since the jump benefit appeared only at 48 hours' (implied CWI timing) -> the benefit was seen only at the 48 h test",
+            "verification: total sample is not stated in the text; about 210 is the sum of Table 1 and is labelled that way in evidenceSummary"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2018",
+        "synthesisBatch": "pilot-synthesis-batch-136",
+        "publishedOn": "2026-10-29"
+      }
+    }
+  ]
+}

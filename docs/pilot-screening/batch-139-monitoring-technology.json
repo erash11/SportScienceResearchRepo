@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "batchId": "batch-139-monitoring-technology",
+  "screenedOn": "2026-10-29",
+  "screeningScope": "Full-text source, eligibility, taxonomy, and synthesis-readiness review of Monitoring & Technology queue positions 6-15. Drafted by Claude Haiku 5.5 and claim-audited against source text by Claude Opus 5.5 (docs/haiku-calibration/).",
+  "decisionDefinitions": {
+    "INCLUDE": "Eligible for evidence extraction and synthesis after full-text review.",
+    "EXCLUDE": "Not eligible; exclusion reason required.",
+    "DEGRADED": "A required source or verification element was unavailable."
+  },
+  "records": [
+    {
+      "originalQueueOrder": 6,
+      "sourceFile": "Hamstring strength assessment methods in sport - A systematic review and meta-analysis of post-activity strength decrements, asymmetry benchmarks, and measurement reliability.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 43,
+        "extractedCharacters": 161194,
+        "doi": "10.1371/journal.pone.0352509",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Recovery & Readiness",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Athletic Training",
+        "Sports Medicine",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer"
+      ],
+      "populations": [
+        "Male Athletes",
+        "Female Athletes",
+        "Healthy Athletes",
+        "Professional / Elite",
+        "Collegiate",
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "PRISMA 2020 systematic review and meta-analysis (PROSPERO CRD42025571001) of 161 included studies, 106 of them quantitative, most of them cross-sectional (132, 82%). The included studies report 6,803 participants, 78% male, and soccer was the most common sport (81 studies, 50%). The authors report pooled post-activity decrements (Hedges' g) of -0.66 immediately, -0.67 at 24 hours, -0.52 at 48 hours and -0.40 at 72 hours, and a weighted non-directional limb difference of 3.5% across 77 studies.",
+      "limitations": "The pooled decrement estimates rest on 8 to 11 studies per time point (145 to 186 participants), with only 2 studies in each concentric subgroup at 24 to 72 hours, and data extraction was done by one reviewer with no formal certainty-of-evidence rating. The sample is 78% male and half the studies are soccer, and the search excluded the term injury, which the authors say may have missed injury-focused screening studies.",
+      "synthesisCaution": "Staff could treat the pooled 3 to 4 percent limb difference as a cutoff for an individual athlete, when it is a study-level average from healthy athletes that the authors say may approach test measurement error.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "screeningLimitations: implied the exclusion of the term injury caused thin female and non-soccer coverage -> separated the two ('may have inadvertently excluded some screening or mitigation studies reporting hamstring strength outcomes within an injury-focused context'; 'approximately half of the studies included were derived from soccer cohorts')",
+            "paper.athleteDev: 'pooled time-course data show similar post-activity decrements across the assessment approaches' -> an author observation, since subgroups were by contraction mode, not device ('as reflected by the relatively similar effect sizes between studies')"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2022",
+        "synthesisBatch": "pilot-synthesis-batch-139",
+        "publishedOn": "2026-10-29"
+      }
+    },
+    {
+      "originalQueueOrder": 14,
+      "sourceFile": "Role of video review for sport-related concussion identification - a systematic review.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 54496,
+        "doi": "10.1136/bjsports-2024-109603",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Sports Medicine & Injury",
+        "Brain Health & Psychology"
+      ],
+      "audiences": [
+        "Sports Medicine",
+        "Athletic Training",
+        "Research & Analytics"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "American Football",
+        "Ice Hockey",
+        "Rugby",
+        "Baseball / Softball",
+        "Other Sport"
+      ],
+      "populations": [
+        "Professional / Elite",
+        "Collegiate",
+        "Male Athletes",
+        "Female Athletes",
+        "Injured Athletes"
+      ],
+      "evidenceSummary": "Systematic review of 29 studies (3,281 clinically diagnosed concussions; 26 in professional competition, 27 in male athletes only) on visible signs and injury mechanisms identified by video review. Six diagnostic accuracy studies (718 concussions) found most individual visible signs had sensitivity below 50% and specificity above 90%, except 'slow to get up' (sensitivity 80%, specificity 27%), and no visible sign was seen in 23.6% of concussions. The authors conclude expert video review can reliably identify visible signs but must be complemented by multimodal assessment.",
+      "limitations": "Only eight studies had low risk of bias, the review was not preregistered, and differing sign definitions make the summary sensitivity and specificity approximate. All diagnostic accuracy data come from male professional athletes; the only two studies with female athletes examined injury mechanism, and under-18 and Para athletes were not covered.",
+      "synthesisCaution": "Staff could treat the absence of a visible sign on video as reassurance, when no sign was seen in about a quarter of diagnosed concussions and most signs missed more than half of cases.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "evidenceSummary/findings: omitted the 'slow to get up' exception and the no-visible-sign rate -> added ('slow to get up with a summary sensitivity of 80% and a summary specificity of 27%'; 'no visible sign seen (23.6%)')",
+            "screeningLimitations: added that the review was not preregistered ('The review was not preregistered prior to it being conducted') and that all accuracy data are from male athletes ('27 focused exclusively on male athletes, one on female athletes and one compared both sexes'; the two female studies were mechanism-of-injury studies)",
+            "paper.citation: placeholder pages from '2025;0:1-11' (Epub ahead of print) removed -> 'Br J Sports Med. 2025.'",
+            "sports: Soccer appears in only one study -> replaced with American Football, Ice Hockey, Baseball / Softball and Other Sport (Australian football, cricket) alongside Rugby; populations: added Collegiate (NCAA Division 1 studies)",
+            "paper.findings/limitations: added inter-rater reliability results, mechanism findings and Premier League funding and employment",
+            "paper.rtp/athleteDev: reframed from clearance to identification and removal ('Relevant to concussion identification ... not return-to-play progression')"
+          ],
+          "residualConcerns": "The study was funded by the Premier League and three authors were Premier League employees at the time; the conclusions read as cautious but a reviewer may want to note the funding when presenting it to staff.",
+          "spotCheckPriority": "high"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2023",
+        "synthesisBatch": "pilot-synthesis-batch-139",
+        "publishedOn": "2026-10-29"
+      }
+    },
+    {
+      "originalQueueOrder": 15,
+      "sourceFile": "Acute-chronic workload ratio and load management for team sports - a multilevel meta-analysis.pdf",
+      "decision": "INCLUDE",
+      "sourceVerification": {
+        "status": "PASS",
+        "pages": 11,
+        "extractedCharacters": 55605,
+        "doi": "10.3389/fpubh.2026.1896651",
+        "doiVerification": "DOI printed in the local PDF text."
+      },
+      "studyDesign": "Systematic Review / Meta-analysis",
+      "primaryDomain": "Monitoring & Technology",
+      "domains": [
+        "Monitoring & Technology",
+        "Training & Performance",
+        "Sports Medicine & Injury"
+      ],
+      "audiences": [
+        "Performance",
+        "Sports Medicine",
+        "Research & Analytics",
+        "Coaching"
+      ],
+      "sports": [
+        "Mixed / General Sport",
+        "Soccer",
+        "Rugby"
+      ],
+      "populations": [
+        "Mixed / Unspecified"
+      ],
+      "evidenceSummary": "Systematic review and three-level multilevel meta-analysis of observational studies in competitive team-sport athletes. Of 41 eligible studies, 16 (797 athletes) were pooled, and elevated acute:chronic workload ratio (ACWR) showed a small-to-moderate association with injury (Hedges g 0.35, 95% CI 0.16-0.54; I2 = 95.8%), stronger for contact and non-contact injuries and near null for time-loss injuries.",
+      "limitations": "Heterogeneity was very high (I2 = 95.8%), several moderator analyses rested on few studies, and ACWR calculation methods, time windows, load metrics, injury definitions and pre-injury exclusion windows varied. The evidence is observational with possible reverse causation, so it shows association only and cannot establish causation or prediction.",
+      "synthesisCaution": "Staff could read the pooled g of 0.35 as a 35% increase in injury risk, which the authors explicitly reject, and treat ACWR as a stand-alone injury predictor or threshold, which they also reject.",
+      "workflow": {
+        "draftedBy": "claude-haiku-5-5",
+        "verifiedBy": "claude-opus-5-5 claim audit",
+        "verification": {
+          "status": "CORRECTED",
+          "changes": [
+            "paper.methods/evidenceSummary: designs described as prospective cohorts or trials only -> methods also include retrospective cohorts ('Eligible designs included prospective or retrospective cohort studies, randomized controlled trials, and other longitudinal observational studies'); added databases, search date and English-only restriction",
+            "paper.limitations/screeningLimitations: added moderate Newcastle-Ottawa quality, reverse causation, no grey literature and the registration date after the search ('registered 18 August 2025')",
+            "paper.findings: added moderator effect sizes and leave-one-out range",
+            "paper.practicalImplications/rtp: added the authors' statements on heuristic thresholds and not using ACWR alone for return-to-play decisions"
+          ],
+          "residualConcerns": "",
+          "spotCheckPriority": "normal"
+        }
+      },
+      "publication": {
+        "status": "PUBLISHED",
+        "paperId": "2024",
+        "synthesisBatch": "pilot-synthesis-batch-139",
+        "publishedOn": "2026-10-29"
+      }
+    }
+  ]
+}
