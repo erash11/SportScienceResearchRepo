@@ -14,6 +14,7 @@ Read this first. Update it before ending every session.
 | Drive outputs | `~/Library/CloudStorage/GoogleDrive-eric.rash11@gmail.com/My Drive/00_Primary_Storage_Drive/01_PROJECTS/_STALLED/2023-09-12_SportScienceResearchRepo` (Windows: `G:\My Drive\00_Primary_Storage_Drive\01_PROJECTS\_STALLED\2023-09-12_SportScienceResearchRepo`) |
 
 ## Current state
+- 2026-10-30 (Mac): open questions tidied by the startup audit (duplicate DOI line removed; Batch 99 gate item starts with RESOLVED so `/startup` hides it). No paper work today.
 - 2026-10-29 (Mac): PR #31 MERGED (`b2b939a`, Eric's go-ahead; 2020 creatine kept INCLUDE). Batch 133-139: 24 new open-access
   papers from a Europe PMC search (OA, 2025-09 to 2026-10, SR/MA/RCT/guideline): IDs 2001-2024, all INCLUDE.
   Haiku 5.5 draft, Opus 5.5 claim audit (22 CORRECTED, 1 VERIFIED, 1 DECISION_CHANGED: creatine/kidney paper
