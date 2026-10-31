@@ -107,22 +107,21 @@ Read this first. Update it before ending every session.
   Before any new batch, check for open `batch-*-staged` branches (see Gotchas).
 - After the backlog: update the roadmap, then hand Eric the pilot launch checklist (goal E).
 - Still Eric's: name a pilot lead, pick 3 staff across 2+ disciplines, record human claim audits.
+- Unpublish Batch 80 Q37 (decision audit 2026-10-31; not done yet).
+- Pilot the Mac bridge on 10 papers (decision audit 2026-10-31); Eric sets the bridge's Zotero key once, then the batch and Paper Brief steps run on the 10.
 
 ## Open questions
 - ANSWERED 2026-10-13 (Eric): option 1. The 72 accepted DOIs went through the batch pipeline (batch 123-130, staged).
-- New sources: pick one. (1) Mac bridge, pilot 10 papers first (recommended): Eric sets the bridge's Zotero key once,
-  then the bridge's batch and Paper Brief steps run on 10 papers to check cost and quality before any scale-up.
-  (2) Park Zotero and first fix `docs/needs-eric.md` section 1 (24 wrong PDFs), since those block re-screens too.
+- ANSWERED 2026-10-31: New sources: Mac bridge or park Zotero? Mac bridge, pilot on 10 papers first (Eric sets the bridge's Zotero key once).
 - Confirm the one unconfirmed DOI, `10.26603/ijspt20200326` (Criteria-based return to sprinting progression), because the doi.org check failed with a network error.
 - Replace the 24 wrong PDFs in `docs/needs-eric.md` section 1. Each needs the correct article downloaded into `SourcePapers/` under the same filename.
 - ANSWERED 2026-10-10: Q66 and Q94 from Batch 100 (sports medicine opinion pieces, "Current Opinion" framework) stay EXCLUDE. Same rule as all opinion pieces. EXCLUDE records are not in the library. Audit notes are in the Batch 100 workdir (`~/Library/Caches/sportsci-batch-100/verified/`).
 - RESOLVED: Batch 99 shortlist gate. Option B was taken (gate kept at 22, builder swap pass in 77cc584, PR #24 merged).
   Note: the gate was lowered once before (Batch 96, 24 to 22). Watch the named-sport pool; it is near the floor.
-- Has a real concierge pilot occurred on another machine or outside this checkout?
-- Who will lead the pilot and own the recurring evidence intake/review cadence?
-- Unpublish ID for Batch 80 Q37 (sleep-monitoring review with mismatched citations, published at low confidence)?
-  See `docs/pilot-screening/batches-80-87-review.md`.
-- Keep including anti-doping lab-method papers with no athlete participants (Batch 72 Q52, Q72)?
+- ANSWERED 2026-10-31: Has a real concierge pilot occurred? No.
+- ANSWERED 2026-10-31: Who leads the pilot and owns the recurring evidence intake/review cadence? Eric Rash.
+- ANSWERED 2026-10-31: Unpublish Batch 80 Q37 (sleep-monitoring review with mismatched citations)? Yes, unpublish it (not done yet; see `docs/pilot-screening/batches-80-87-review.md`).
+- ANSWERED 2026-10-31: Keep anti-doping lab-method papers with no athlete participants (Batch 72 Q52, Q72)? Keep them.
 - Decided 2026-10-10 (Eric): study protocols without results stay OUT of the library. Batch 88 Q03 and Q84
   stay EXCLUDE. Other Batch 88-95 calls (Q39 ACLR protein review included, Q19 and Q72 excluded, Q80 framework
   editorial) are in `docs/pilot-screening/batches-88-95-review.md`.
