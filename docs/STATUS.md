@@ -14,6 +14,7 @@ Read this first. Update it before ending every session.
 | Drive outputs | `~/Library/CloudStorage/GoogleDrive-eric.rash11@gmail.com/My Drive/00_Primary_Storage_Drive/01_PROJECTS/_STALLED/2023-09-12_SportScienceResearchRepo` (Windows: `G:\My Drive\00_Primary_Storage_Drive\01_PROJECTS\_STALLED\2023-09-12_SportScienceResearchRepo`) |
 
 ## Current state
+- 2026-10-31: decision audit recorded Eric's answers under `## Open questions` (`8711725`). Row stays archived: only the answers were written, no project work.
 - 2026-10-30 (Mac): open questions tidied by the startup audit (duplicate DOI line removed; Batch 99 gate item starts with RESOLVED so `/startup` hides it). No paper work today.
 - 2026-10-29 (Mac): PR #31 MERGED (`b2b939a`, Eric's go-ahead; 2020 creatine kept INCLUDE). Batch 133-139: 24 new open-access
   papers from a Europe PMC search (OA, 2025-09 to 2026-10, SR/MA/RCT/guideline): IDs 2001-2024, all INCLUDE.
