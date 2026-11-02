@@ -14,6 +14,7 @@ Read this first. Update it before ending every session.
 | Drive outputs | `~/Library/CloudStorage/GoogleDrive-eric.rash11@gmail.com/My Drive/00_Primary_Storage_Drive/01_PROJECTS/_STALLED/2023-09-12_SportScienceResearchRepo` (Windows: `G:\My Drive\00_Primary_Storage_Drive\01_PROJECTS\_STALLED\2023-09-12_SportScienceResearchRepo`) |
 
 ## Current state
+- 2026-11-02 (Mac): wrong-PDF fetch, 14 of 24 replaced in `SourcePapers/` (old files in `SourcePapers/_wrong_2026-11-02/`); 10 need Eric. Details: `docs/pilot-screening/wrong-pdf-fetch-2026-11-02.md`.
 - 2026-10-31: decision audit recorded Eric's answers under `## Open questions` (`8711725`). Row stays archived: only the answers were written, no project work.
 - 2026-10-30 (Mac): open questions tidied by the startup audit (duplicate DOI line removed; Batch 99 gate item starts with RESOLVED so `/startup` hides it). No paper work today.
 - 2026-10-29 (Mac): PR #31 MERGED (`b2b939a`, Eric's go-ahead; 2020 creatine kept INCLUDE). Batch 133-139: 24 new open-access
@@ -114,8 +115,8 @@ Read this first. Update it before ending every session.
 ## Open questions
 - ANSWERED 2026-10-13 (Eric): option 1. The 72 accepted DOIs went through the batch pipeline (batch 123-130, staged).
 - ANSWERED 2026-10-31: New sources: Mac bridge or park Zotero? Mac bridge, pilot on 10 papers first (Eric sets the bridge's Zotero key once).
-- Confirm the one unconfirmed DOI, `10.26603/ijspt20200326` (Criteria-based return to sprinting progression), because the doi.org check failed with a network error.
-- Replace the 24 wrong PDFs in `docs/needs-eric.md` section 1. Each needs the correct article downloaded into `SourcePapers/` under the same filename.
+- RESOLVED 2026-11-02: DOI `10.26603/ijspt20200326` resolves and matches "Criteria-based return to sprinting progression" (see `docs/pilot-screening/wrong-pdf-fetch-2026-11-02.md`).
+- Replace the 24 wrong PDFs in `docs/needs-eric.md` section 1. 2026-11-02: 14 replaced from open-access sources; 10 still need Eric by hand (list in `docs/pilot-screening/wrong-pdf-fetch-2026-11-02.md`). Replaced files are not yet re-queued with `prepare.py --files`.
 - ANSWERED 2026-10-10: Q66 and Q94 from Batch 100 (sports medicine opinion pieces, "Current Opinion" framework) stay EXCLUDE. Same rule as all opinion pieces. EXCLUDE records are not in the library. Audit notes are in the Batch 100 workdir (`~/Library/Caches/sportsci-batch-100/verified/`).
 - RESOLVED: Batch 99 shortlist gate. Option B was taken (gate kept at 22, builder swap pass in 77cc584, PR #24 merged).
   Note: the gate was lowered once before (Batch 96, 24 to 22). Watch the named-sport pool; it is near the floor.
