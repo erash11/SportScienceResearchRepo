@@ -116,7 +116,7 @@ Read this first. Update it before ending every session.
 - ANSWERED 2026-10-13 (Eric): option 1. The 72 accepted DOIs went through the batch pipeline (batch 123-130, staged).
 - ANSWERED 2026-10-31: New sources: Mac bridge or park Zotero? Mac bridge, pilot on 10 papers first (Eric sets the bridge's Zotero key once).
 - RESOLVED 2026-11-02: DOI `10.26603/ijspt20200326` resolves and matches "Criteria-based return to sprinting progression" (see `docs/pilot-screening/wrong-pdf-fetch-2026-11-02.md`).
-- Replace the 24 wrong PDFs in `docs/needs-eric.md` section 1. 2026-11-02: 14 replaced from open-access sources; 10 still need Eric by hand (list in `docs/pilot-screening/wrong-pdf-fetch-2026-11-02.md`). Replaced files are not yet re-queued with `prepare.py --files`.
+- ANSWERED 2026-11-02 (Decision Desk 2026-11-02-ssr-pdfs; the 10 left are a hand task in Next): Replace the 24 wrong PDFs in `docs/needs-eric.md` section 1. 2026-11-02: 14 replaced from open-access sources; 10 still need Eric by hand (list in `docs/pilot-screening/wrong-pdf-fetch-2026-11-02.md`). Replaced files are not yet re-queued with `prepare.py --files`.
 - ANSWERED 2026-10-10: Q66 and Q94 from Batch 100 (sports medicine opinion pieces, "Current Opinion" framework) stay EXCLUDE. Same rule as all opinion pieces. EXCLUDE records are not in the library. Audit notes are in the Batch 100 workdir (`~/Library/Caches/sportsci-batch-100/verified/`).
 - RESOLVED: Batch 99 shortlist gate. Option B was taken (gate kept at 22, builder swap pass in 77cc584, PR #24 merged).
   Note: the gate was lowered once before (Batch 96, 24 to 22). Watch the named-sport pool; it is near the floor.
