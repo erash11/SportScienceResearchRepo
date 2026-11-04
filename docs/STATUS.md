@@ -14,6 +14,7 @@ Read this first. Update it before ending every session.
 | Drive outputs | `~/Library/CloudStorage/GoogleDrive-eric.rash11@gmail.com/My Drive/00_Primary_Storage_Drive/01_PROJECTS/_STALLED/2023-09-12_SportScienceResearchRepo` (Windows: `G:\My Drive\00_Primary_Storage_Drive\01_PROJECTS\_STALLED\2023-09-12_SportScienceResearchRepo`) |
 
 ## Current state
+- 2026-11-04: startup only: the wrong-PDF open question marked ANSWERED (Decision Desk 2026-11-02-ssr-pdfs). No project work.
 - 2026-11-02 (Mac): wrong-PDF fetch, 14 of 24 replaced in `SourcePapers/` (old files in `SourcePapers/_wrong_2026-11-02/`); 10 need Eric. Details: `docs/pilot-screening/wrong-pdf-fetch-2026-11-02.md`.
 - 2026-10-31: decision audit recorded Eric's answers under `## Open questions` (`8711725`). Row stays archived: only the answers were written, no project work.
 - 2026-10-30 (Mac): open questions tidied by the startup audit (duplicate DOI line removed; Batch 99 gate item starts with RESOLVED so `/startup` hides it). No paper work today.
